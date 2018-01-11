@@ -1,0 +1,95 @@
+﻿=========================================================================================================
+----- Overall -----
+
+Check out 
+	http://overpass-turbo.eu/s/ulp
+	https://wiki.openstreetmap.org/wiki/Query-to-map
+
+Check out 
+	https://www.reddit.com/r/TheSilphRoad/comments/7peg9a/my_pokemon_go_tips_to_my_earlier_self_guidelines/
+
+Add something to sprites to indicate regional.
+
+Find places to add more pics. (Funny ones if nothing else.)
+
+Add add id attribute to all "Sections" (<h2>, <h3> etc.) so we can levarage #xxx in URLs
+
+Search for TODO to find work that needs done.
+
+Make my own code to decrypt GAME_MASTER protobuf.
+
+Add a mechanism to do sorting and filtering in tables. (Especially in MoveSets and PokeStats.)
+Find a PERFORMANT way to create scrolling tables.
+
+=========================================================================================================
+----- Top Level -----
+
+
+
+
+=========================================================================================================
+----- Resources -----
+Add twitter groups to Seattle area (if there are any.)
+Review Social section with Josh to see if there is anything missing.
+
+Finish a Tips page.
+	- Evolving Eevees:
+		- One-time names
+		- buddy km + evolve time
+	- EX Raids
+
+
+=========================================================================================================
+----- Charts -----
+Evolutions: 
+	- Add ability to show (combobox? 3 radios? 2 checkboxes?):
+		A) All
+		B) Only Released
+		C) Only Unreleased.
+
+
+---------------------------------------------------------------------------------------------------------
+----- RaidBoss -----
+Add weaknesses based on moveset.
+	(E.G. with Ho Oh, you would want different attackers for hyperbeam vs. the other one.)
+
+=========================================================================================================
+----- Tools -----
+Create tool to determine effectiveness of a Move against a Pokemon.
+
+On ShoppingBoxTool Mark values that have been modified. (Bold? Background?)
+
+Finish SEAPokeMap Filter Generator.
+	- Add ability to specify Min IV
+	- 
+
+Evolutions:
+	- Add Filter for types.
+
+=========================================================================================================
+----- Technical Reference -----
+Add final details to MoveSets Formula page.
+
+Add pages for formulas for CP and HP
+
+Add pictures to moves/index.html
+	- Energy bar from Pokemon battle
+	- Charge-up bar when tap-and-hold for charged move.
+
+Do Example on moves/index page. (Include link to Move Sets.)
+
+?Add Collapsers to tech/index.html
+
+Add to PokeStats:
+	- Can be shiny
+	- What weather gives them a boost
+	- Icon for Types and Boost
+
+Fast Moves and Charged Moves
+	- Add icons for Types and Boost
+
+
+---------------------------------------------------------------------------------------------------------
+----- GAME_MASTER -----
+?Add Collapsers to index.html
+

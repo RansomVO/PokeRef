@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ABA266C-D738-4890-85F7-C260203E6DDA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PokeRef</RootNamespace>
+    <AssemblyName>www.PokeRef</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' OR '$(Configuration)' == 'DebugHome' OR '$(Configuration)' == 'DebugWork'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <WebContent Include="_sectionname.txt" />
+    <WebContent Include="contactinfo.html" />
+    <WebContent Include="feedbacknote.html" />
+    <WebContent Include="favicon.ico" />
+    <WebContent Include="footernote.html" />
+    <WebContent Include="index.css" />
+    <FixSourceFile Include="index.js" />
+    <Resource Include="images\originals\icon.48.png" />
+    <Resource Include="images\originals\icon.48.ball.png" />
+    <Resource Include="images\originals\icon.32.book.png" />
+    <Resource Include="images\originals\icon.48.book.png" />
+    <Resource Include="images\originals\icon.32.png" />
+    <Resource Include="images\originals\icon.32.ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="^\XSLT\Mappings.XSD">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="^\__TODO.txt" />
+    <None Include="^\_blank.html" />
+    <None Include="^\index.html" />
+    <None Include="^\XSLT\Effectiveness.XSD" />
+    <None Include="^\XSLT\GAME_MASTER.XSD" />
+    <None Include="^\XSLT\Moves.XSD" />
+    <None Include="^\XSLT\MoveSets.XSD" />
+    <None Include="^\XSLT\Pokemon.XSD" />
+    <None Include="^\XSLT\RaidBoss.XSD" />
+    <None Include="^\XSLT\Settings.XSD" />
+    <None Include="^\XSLT\Stats.XSD" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="_\index.css" />
+    <FixSourceFile Include="_\index.js" />
+    <WebContent Include="_\_sectionname.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="charts\raidboss\raidbosses.xsl" />
+    <WebContent Include="images\logo.png" />
+    <Resource Include="images\originals\icon.64.book.png" />
+    <Resource Include="images\originals\icon.64.ball.png" />
+    <Resource Include="images\originals\qzx.png" />
+    <Content Include="__Debugging\debug.page.xml" />
+    <Content Include="__Debugging\debug.xsl" />
+    <Content Include="__Debugging\index.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="css\unicode.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="images\EeveeDi.png" />
+    <WebContent Include="images\GoIV-Clipboard_Multiple.png" />
+    <WebContent Include="images\GoIV-Clipboard_Single.png" />
+    <WebContent Include="images\GoIV-FinalResult.png" />
+    <WebContent Include="images\GoIV-PrelimResult.png" />
+    <WebContent Include="images\GoIV-Refining.png" />
+    <WebContent Include="images\GoIV-Renamed.png" />
+    <WebContent Include="images\GoIV-Start.png" />
+    <WebContent Include="images\NotJustAGame.png" />
+    <WebContent Include="images\TrappedWeedle.png" />
+    <WebContent Include="images\type_bug.png" />
+    <WebContent Include="images\type_dark.png" />
+    <WebContent Include="images\type_dragon.png" />
+    <WebContent Include="images\type_electric.png" />
+    <WebContent Include="images\type_fairy.png" />
+    <WebContent Include="images\type_fighting.png" />
+    <WebContent Include="images\type_fire.png" />
+    <WebContent Include="images\type_flying.png" />
+    <WebContent Include="images\type_ghost.png" />
+    <WebContent Include="images\type_grass.png" />
+    <WebContent Include="images\type_ground.png" />
+    <WebContent Include="images\type_ice.png" />
+    <WebContent Include="images\type_normal.png" />
+    <WebContent Include="images\type_poison.png" />
+    <WebContent Include="images\type_psychic.png" />
+    <WebContent Include="images\type_rock.png" />
+    <WebContent Include="images\type_steel.png" />
+    <WebContent Include="images\type_water.png" />
+    <WebContent Include="images\weather_clear.png" />
+    <WebContent Include="images\weather_cloudy.png" />
+    <WebContent Include="images\weather_fog.png" />
+    <WebContent Include="images\weather_partlycloudy.png" />
+    <WebContent Include="images\weather_rainy.png" />
+    <WebContent Include="images\weather_snow.png" />
+    <WebContent Include="images\weather_sunny.png" />
+    <WebContent Include="images\weather_windy.png" />
+    <Resource Include="images\originals\EeveeDi.pub" />
+    <Resource Include="images\originals\EeveeDi.2.png" />
+    <Resource Include="images\originals\EeveeDi.png" />
+    <Resource Include="images\originals\GoIV-FinalResult.png" />
+    <Resource Include="images\originals\GoIV-PrelimResult.png" />
+    <Resource Include="images\originals\GoIV-Refining.png" />
+    <Resource Include="images\originals\GoIV-Start.png" />
+    <Resource Include="images\originals\Screenshot_20171031-160459.png" />
+    <Resource Include="images\originals\type_bug.png" />
+    <Resource Include="images\originals\type_dark.png" />
+    <Resource Include="images\originals\type_dragon.png" />
+    <Resource Include="images\originals\type_electric.png" />
+    <Resource Include="images\originals\type_fairy.png" />
+    <Resource Include="images\originals\type_fighting.png" />
+    <Resource Include="images\originals\type_fire.png" />
+    <Resource Include="images\originals\type_flying.png" />
+    <Resource Include="images\originals\type_ghost.png" />
+    <Resource Include="images\originals\type_grass.png" />
+    <Resource Include="images\originals\type_ground.png" />
+    <Resource Include="images\originals\type_ice.png" />
+    <Resource Include="images\originals\type_normal.png" />
+    <Resource Include="images\originals\type_poison.png" />
+    <Resource Include="images\originals\type_psychic.png" />
+    <Resource Include="images\originals\type_rock.png" />
+    <Resource Include="images\originals\type_steel.png" />
+    <Resource Include="images\originals\type_water.png" />
+    <Resource Include="images\originals\weather_clear.png" />
+    <Resource Include="images\originals\weather_cloudy.png" />
+    <Resource Include="images\originals\weather_fog.png" />
+    <Resource Include="images\originals\weather_partlycloudy_day.png" />
+    <Resource Include="images\originals\weather_rain.png" />
+    <Resource Include="images\originals\weather_snow.png" />
+    <Resource Include="images\originals\weather_sunny.png" />
+    <Resource Include="images\originals\weather_windy.png" />
+    <Resource Include="images\originals\TrappedWeedle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="charts\_sectionname.txt" />
+    <WebContent Include="charts\index.css" />
+    <FixSourceFile Include="charts\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="charts\movesets\index.css" />
+    <WebContent Include="charts\movesets\_linkslist.html" />
+    <WebContent Include="charts\movesets\_sectionname.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="charts\raidboss\_sectionname.txt" />
+    <WebContent Include="charts\raidboss\index.css" />
+    <FixSourceFile Include="charts\raidboss\index.js" />
+    <DataFile Include="charts\raidboss\raidbosses.current.xml" />
+    <Content Include="charts\raidboss\raidbosses.legacy.xml" />
+    <WebContent Include="charts\raidboss\images\appraise.png" />
+    <WebContent Include="charts\raidboss\images\bestattribute-1.png" />
+    <WebContent Include="charts\raidboss\images\bestattribute-2.png" />
+    <WebContent Include="charts\raidboss\images\hp.png" />
+    <WebContent Include="charts\raidboss\images\raidbosscp.png" />
+    <WebContent Include="charts\raidboss\images\weatherboosted.png" />
+    <Resource Include="charts\raidboss\images\originals\2246-124-MewTwo.png" />
+    <Resource Include="charts\raidboss\images\originals\2246MewTwo.png" />
+    <Resource Include="charts\raidboss\images\originals\appraise.png" />
+    <Resource Include="charts\raidboss\images\originals\bestattribute.png" />
+    <Resource Include="charts\raidboss\images\originals\mewtwo.png" />
+    <Resource Include="charts\raidboss\images\originals\photo0.png" />
+    <Resource Include="charts\raidboss\images\originals\RaidBossCatch.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.big.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.mewtwo.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.old.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-185936.jpg" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-185946.jpg" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-234651.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-234832.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235003.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235121.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235206.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235316.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235330.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235406.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171015-132031.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160821.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="resources\index.css" />
+    <FixSourceFile Include="resources\index.js" />
+    <WebContent Include="resources\_sectionname.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="tech\index.css" />
+    <FixSourceFile Include="tech\index.js" />
+    <WebContent Include="tech\_sectionname.txt" />
+    <WebContent Include="charts\images\notveryeffective.png" />
+    <WebContent Include="charts\images\supereffective.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="tech\GAME_MASTER\archive\index.css" />
+    <WebContent Include="tech\GAME_MASTER\archive\0000015638B96885_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\00000156A5379E92_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\00000156B50BE126_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\00000157153CDA4A_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015840804D3D_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\000001585572A2E1_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015888C74FCD_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\00000158F4CAF439_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\000001597FF747A8_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\000001597FF747A8_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015A4929C982_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015A959194C1_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015A959194C1_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015AA56F3405_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015AF8B44322_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015AFCED535C_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015AFCED535C_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015B1BBB017A_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015B686F6C5A_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015B686F6C5A_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015BDA516F3B_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015CC436FE0B_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015CC436FE0B_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015CEC096F1D_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015CEC096F1D_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015CF6E7776C_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015D8C7A22BC_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015D8C7A22BC_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015DDC138A59_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015DDC138A59_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015E35489938_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015E35489938_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015E7817537F_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015E7817537F_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015E9622D4A5_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015E9622D4A5_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015EE92EAAD1_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015EE92EAAD1_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015F319D5A38_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015F319D5A38_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015F3728C9B1_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000015F3728C9B1_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000016037A497F9_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\0000016037A497F9_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\000001607B20D037_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\000001607B20D037_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="tech\GAME_MASTER\index.css" />
+    <WebContent Include="tech\GAME_MASTER\_sectionname.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="tech\GAME_MASTER\moves\index.css" />
+    <WebContent Include="tech\GAME_MASTER\moves\_linkslist.html" />
+    <WebContent Include="tech\GAME_MASTER\moves\_sectionname.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="tech\GAME_MASTER\pokestats\index.css" />
+    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_linkslist.html" />
+    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_sectionname.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebContent Include="tools\index.css" />
+    <FixSourceFile Include="tools\shoppingboxes.js">
+      <DependentUpon>shoppingboxes.html</DependentUpon>
+    </FixSourceFile>
+    <WebContent Include="tools\_sectionname.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <StyleSheet Include="xsl\global.xsl">
+      <SubType>Designer</SubType>
+    </StyleSheet>
+    <StyleSheet Include="xsl\settings.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <DataFile Include="_datafiles\moves.charged.xml" />
+    <DataFile Include="_datafiles\moves.fast.xml" />
+    <DataFile Include="_datafiles\movesets.gen1.xml" />
+    <DataFile Include="_datafiles\movesets.gen2.xml" />
+    <DataFile Include="_datafiles\movesets.gen3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DataFile Include="_datafiles\pokestats.gen1.xml" />
+    <DataFile Include="_datafiles\pokestats.gen2.xml" />
+    <DataFile Include="_datafiles\pokestats.gen3.xml" />
+    <DataFile Include="_datafiles\pokestats.gen4.xml" />
+    <DataFile Include="_datafiles\pokestats.gen5.xml" />
+    <DataFile Include="_datafiles\pokestats.gen6.xml" />
+    <DataFile Include="_datafiles\pokestats.gen7.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DataFile Include="_datafiles\effectiveness.xml" />
+    <DataFile Include="_datafiles\GAME_MASTER.xml" />
+    <DataFile Include="_datafiles\mappings.xml" />
+    <DataFile Include="_datafiles\settings.xml" />
+    <DataFile Include="_datafiles\stats.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DataFile Include="_datafiles\raidboss.absol.xml" />
+    <DataFile Include="_datafiles\raidboss.alakazam.xml" />
+    <DataFile Include="_datafiles\raidboss.arcanine.xml" />
+    <DataFile Include="_datafiles\raidboss.articuno.xml" />
+    <DataFile Include="_datafiles\raidboss.bayleef.xml" />
+    <DataFile Include="_datafiles\raidboss.blastoise.xml" />
+    <DataFile Include="_datafiles\raidboss.celebi.xml" />
+    <DataFile Include="_datafiles\raidboss.charizard.xml" />
+    <DataFile Include="_datafiles\raidboss.charmeleon.xml" />
+    <DataFile Include="_datafiles\raidboss.cloyster.xml" />
+    <DataFile Include="_datafiles\raidboss.croconaw.xml" />
+    <DataFile Include="_datafiles\raidboss.electabuzz.xml" />
+    <DataFile Include="_datafiles\raidboss.entei.xml" />
+    <DataFile Include="_datafiles\raidboss.exeggutor.xml" />
+    <DataFile Include="_datafiles\raidboss.flareon.xml" />
+    <DataFile Include="_datafiles\raidboss.gengar.xml" />
+    <DataFile Include="_datafiles\raidboss.golem.xml" />
+    <DataFile Include="_datafiles\raidboss.groudon.xml" />
+    <DataFile Include="_datafiles\raidboss.ho-oh.xml" />
+    <DataFile Include="_datafiles\raidboss.ivysaur.xml" />
+    <DataFile Include="_datafiles\raidboss.jirachi.xml" />
+    <DataFile Include="_datafiles\raidboss.jolteon.xml" />
+    <DataFile Include="_datafiles\raidboss.kyogre.xml" />
+    <DataFile Include="_datafiles\raidboss.lapras.xml" />
+    <DataFile Include="_datafiles\raidboss.latias.xml" />
+    <DataFile Include="_datafiles\raidboss.latios.xml" />
+    <DataFile Include="_datafiles\raidboss.lugia.xml" />
+    <DataFile Include="_datafiles\raidboss.machamp.xml" />
+    <DataFile Include="_datafiles\raidboss.magikarp.xml" />
+    <DataFile Include="_datafiles\raidboss.magmar.xml" />
+    <DataFile Include="_datafiles\raidboss.magneton.xml" />
+    <DataFile Include="_datafiles\raidboss.marowak.xml" />
+    <DataFile Include="_datafiles\raidboss.mawile.xml" />
+    <DataFile Include="_datafiles\raidboss.metapod.xml" />
+    <DataFile Include="_datafiles\raidboss.mew.xml" />
+    <DataFile Include="_datafiles\raidboss.mewtwo.xml" />
+    <DataFile Include="_datafiles\raidboss.moltres.xml" />
+    <DataFile Include="_datafiles\raidboss.muk.xml" />
+    <DataFile Include="_datafiles\raidboss.nidoking.xml" />
+    <DataFile Include="_datafiles\raidboss.nidoqueen.xml" />
+    <DataFile Include="_datafiles\raidboss.ninetales.xml" />
+    <DataFile Include="_datafiles\raidboss.omastar.xml" />
+    <DataFile Include="_datafiles\raidboss.poliwrath.xml" />
+    <DataFile Include="_datafiles\raidboss.porygon.xml" />
+    <DataFile Include="_datafiles\raidboss.quilava.xml" />
+    <DataFile Include="_datafiles\raidboss.raikou.xml" />
+    <DataFile Include="_datafiles\raidboss.rayquaza.xml" />
+    <DataFile Include="_datafiles\raidboss.regice.xml" />
+    <DataFile Include="_datafiles\raidboss.regirock.xml" />
+    <DataFile Include="_datafiles\raidboss.registeel.xml" />
+    <DataFile Include="_datafiles\raidboss.rhydon.xml" />
+    <DataFile Include="_datafiles\raidboss.sableye.xml" />
+    <DataFile Include="_datafiles\raidboss.sandslash.xml" />
+    <DataFile Include="_datafiles\raidboss.scyther.xml" />
+    <DataFile Include="_datafiles\raidboss.snorlax.xml" />
+    <DataFile Include="_datafiles\raidboss.suicune.xml" />
+    <DataFile Include="_datafiles\raidboss.tentacruel.xml" />
+    <DataFile Include="_datafiles\raidboss.tyranitar.xml" />
+    <DataFile Include="_datafiles\raidboss.vaporeon.xml" />
+    <DataFile Include="_datafiles\raidboss.venusaur.xml" />
+    <DataFile Include="_datafiles\raidboss.victreebel.xml" />
+    <DataFile Include="_datafiles\raidboss.wartortle.xml" />
+    <DataFile Include="_datafiles\raidboss.wailmer.xml" />
+    <DataFile Include="_datafiles\raidboss.weezing.xml" />
+    <DataFile Include="_datafiles\raidboss.zapdos.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>58399</DevelopmentServerPort>
+          <DevelopmentServerVPath>/bin/www</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58399/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild" />
+  </Target>
+  <Target Name="AfterBuild" />
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="ʭcustom.targets">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xslt.proj">
+      <DependentUpon>ʭcustom.targets</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="updatecachedates.proj">
+      <DependentUpon>ʭcustom.targets</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="ʭcustom.targets" />
+</Project>

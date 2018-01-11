@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Root [
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY Stats SYSTEM "/_datafiles/stats.xml">
+  <!ENTITY Pokestats SYSTEM "/_datafiles/pokestats.gen2.xml">
+  <!ENTITY MoveSets SYSTEM "/_datafiles/movesets.gen2.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="movesets.xsl"?>
+<Root>
+  &Settings; 
+  &Mappings;
+  &Mappings;
+  &Stats;
+  &Pokestats;
+  &MoveSets;
+</Root>

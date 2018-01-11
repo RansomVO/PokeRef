@@ -1,0 +1,75 @@
+﻿
+<html lang="en-us">
+<head>
+    <!-- This is to make the font size consistent on mobile. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="/js/global.js?cacherefresh={$CurrentDate}"></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh={$CurrentDate}" />
+
+    <title>Charts</title>
+</head>
+<body>
+    <h1>Charts</h1>
+    <p>
+        Everybody loves charts for quickly looking things up.
+    </p>
+
+    <br />
+    <hr />
+    <h2 class="PARENT"><a href="raidboss/">Possible IVs for Raid Bosses</a></h2>
+    <div class="CHILD INDENT">
+        <p class="CHILD">
+            After you defeat a Raid Boss in a Raid, it is time to try to catch him.
+            But how good is he?
+        </p>
+        <div class="INDENT">
+            If you look at the CP of the Raid Boss, you can figure out what possible IVs it may have.
+            <br />Click on any of the Raid Bosses below to see a chart of the possibilities.
+            <script>InsertURL('raidboss/_linkslist.html')</script>
+        </div>
+    </div>
+
+    <h2><a href="movesets/">Pokemon MoveSets</a></h2>
+    <div class="INDENT">
+        <p>
+            As mentioned above, there are Fast moves and Charged moves.
+            Every Pokemon has only one of each.
+            <br />
+            Of course, some moves are more effective than others.
+            These pages show lists of each possible combination for each type of Pokemon, which then tells how much damage it will do.
+        </p>
+        <p class="NOTE">
+            <b>NOTE</b>: If you find you want to change the Move Set one of your Pokemons have, you can make use of "TMs" that can be one of the rewards you get from defeating a Raid Boss.
+        </p>
+        <p class="PARENT">
+            I have created a chart for each generation of Pokemon:
+        </p>
+        <div class="CHILD">
+            <script>InsertURL('movesets/_linkslist.html')</script>
+        </div>
+    </div>
+
+    <br />
+    <hr />
+    <h2><a href="effectiveness.html"><b>Move Effectiveness</b></a></h2>
+    <p>
+        When an Attack Move is used against a Pokemon, it may either be <img src="images/supereffective.png" style="height:1em;" alt="Super Effective" /> or <img src="images/notveryeffective.png" style="height:1em;" alt="Not Very Effective" />.
+        This is based on the Type of the Attack Move being used vs. the Type of the Pokemon being attacked.
+        <br />This page will help you to determine what Attack Moves will be most effective against a Pokemon in battle.
+    </p>
+
+    <br />
+    <hr />
+    <h2 class="PARENT"><a href="namingtechnique.html"><b>Pokemon Naming Technique</b></a></h2>
+    <div class="CHILD INDENT">
+        <p class="CHILD">
+            If you want to create groups of Pokemon that you can find easily, you can set the names of the Pokemon and then leverage sorting and searching to get to them rapidly.
+        </p>
+    </div>
+
+
+    <!-- This script is defined in /js/global.js -->
+    <script>WriteFooter();</script>
+</body>
+</html>

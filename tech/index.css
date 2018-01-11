@@ -1,0 +1,25 @@
+@import url('../index.css');
+
+.FORMULA  {
+    border: 1px solid;
+    padding: 1em;
+}
+
+table.FORMULA td {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.DIVIDE_BY {
+    border-top: 2px solid;
+}
+
+.TYPE_IMAGE {
+    width: 2em; 
+    margin:0; 
+    padding:0;
+    vertical-align:middle;
+}
+

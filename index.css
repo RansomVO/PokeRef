@@ -1,0 +1,284 @@
+/* ========================================================================================== */
+/* Root Level Styles */
+/* ========================================================================================== */
+
+ul, ol, blockquote {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+td, th {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+th {
+    font-size: larger;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.TODO {
+    font-size: larger;
+    font-weight: bold;
+    color: red;
+}
+
+.CELL_FILLED {
+    padding: 0;
+    height: 1px;
+}
+
+.CELL_FILLER {
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.FLOAT_RIGHT {
+    float: right;
+    margin: 0 0 .5em .5em;
+}
+
+.FLOAT_LEFT {
+    float: left;
+    margin: 0 .5em .5em 0;
+    margin-right: 1em;
+}
+
+.FLOAT_END {
+    clear: both;
+}
+
+.IMAGE_FULL_WIDTH {
+    width: 80%;
+    max-width: 1280px;
+}
+
+.IMAGE_HALF_WIDTH {
+    width: 50%;
+    max-width: 256px;
+}
+
+.NOTE {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.NOTE_BLOCK {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 1em;
+    background-color: lightyellow;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.STRIKETHROUGH_TL_BR {
+    background: linear-gradient(to right top, transparent 49%, currentColor 50%, currentColor 50%, transparent 51%);
+}
+
+.STRIKETHROUGH_BL_TR {
+    background: linear-gradient(to left top, transparent 49%, currentColor 50%, currentColor 50%, transparent 51%);
+}
+
+.INDENT {
+    margin-left: 2.5em;
+}
+
+.INDENT_SMALL {
+    margin-left: 1em;
+}
+
+.PARENT {
+    margin-bottom: 0px;
+}
+
+.CHILD {
+    margin-top: 0px;
+}
+
+.DISABLED {
+    pointer-events: none;
+    cursor: default;
+    color: grey;
+    opacity: 0.2;
+}
+
+.UNAVAILABLE {
+    color: grey;
+}
+
+.UNAVAILABLE_ROW {
+    color: lightgrey;
+    background-color: darkgrey;
+}
+
+.BOTTOM_BORDER {
+    border-width: 2px;
+    border-color: darkgrey;
+    clear: both;
+}
+
+.SEPARATOR_BORDER {
+    width: 50%;
+    margin-left: 0;
+}
+
+.SPRITE {
+    max-width: 65px;
+    max-height: 65px;
+}
+
+.SPRITE_FILLER {
+    text-align: center;
+    display: table;
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+}
+
+.SPRITE_DIV_FILLER {
+    display:table-cell; 
+    height:100%; 
+    width:100%; 
+    padding:.5em;
+}
+
+.SPRITE_SMALL {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.LINK_HOME_PAGE {
+    font-size: x-large;
+}
+
+.LINK_SECTION_PAGE {
+    font-size: large;
+}
+
+.LINK_PARENT_PAGE {
+    font-size: medium;
+}
+
+.LINK_SIBLING_PAGE {
+    font-size: smaller;
+}
+
+/* ========================================================================================== */
+/* Colors*/
+.GREAT {
+    background-color: #80E070;
+    font-weight: bold;
+}
+
+.GOOD {
+    background-color: palegreen;
+}
+
+.OKAY {
+    background-color: #FFFF80;
+}
+
+.POOR {
+    background-color: #FFC060;
+}
+
+.BAD {
+    background-color: #F08080;
+}
+
+.HORRENDOUS {
+    background-color: #D02020;
+}
+
+.UNUSED {
+    background-color: darkgrey;
+}
+
+.SHADED {
+    background-color: Gainsboro;
+}
+
+.HATCH_ONLY_2K {
+    background-color: #B0D0A0;
+}
+
+.HATCH_ONLY_5K {
+    background-color: #F0C070;
+}
+
+.HATCH_ONLY_10K {
+    background-color: #B0A0D0;
+}
+
+.RAIDBOSS_ONLY_EX {
+    background-color: #9090E0;
+    color: gold;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px black;
+}
+
+.RAIDBOSS_ONLY {
+    background-color: #9F9FEF;
+}
+
+.REGIONAL {
+    font-style: italic;
+}
+
+.LEGENDARY {
+    /* 
+        Not using this because the border spills outside of the cell:
+        border: 5px ridge gold;
+    */
+    box-shadow: inset -5px 0 3px gold, inset 0 -5px 3px gold, inset 5px 0 3px gold, inset 0 5px 3px gold;
+}
+
+.GEN1 {
+    background-color: #CBC8FD;
+}
+
+.GEN2 {
+    background-color: #CED8FC;
+}
+
+.GEN3 {
+    background-color: #B5CCFE;
+}
+
+.GEN4 {
+    /* This color is a total guess. Update when it comes out. */
+    background-color: #6FCFCF;
+}
+
+.GEN5 {
+    /* This color is a total guess. Update when it comes out. */
+    background-color: #6FCFAF;
+}
+
+.GEN6 {
+    /* This color is a total guess. Update when it comes out. */
+    background-color: LightGreen;
+}
+
+.GEN7 {
+    /* This color is a total guess. Update when it comes out. */
+    background-color: #DFFF80;
+}
+
+/* ========================================================================================== */

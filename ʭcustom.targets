@@ -1,0 +1,136 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="updatecachedates.proj" />
+  <Import Project="xslt.proj" />
+
+  <PropertyGroup>
+    <SearchPokemon>Pokemon([ \,\:\.\'\&lt;])</SearchPokemon>
+    <ReplacePokemon>Pokémon$1</ReplacePokemon>
+    <SearchCacheDate>{$CurrentDate}</SearchCacheDate>
+    <ReplaceCacheDate>$([System.DateTime]::Now.ToString("yyyy-MM-dd_HH:mm:ss"))</ReplaceCacheDate>
+    <!--<ReplaceCacheDate>$([System.DateTime]::Now.Year)-$([System.DateTime]::Now.Month)-$([System.DateTime]::Now.Day)_$([System.DateTime]::Now.Hour):$([System.DateTime]::Now.Minute):$([System.DateTime]::Now.Second)</ReplaceCacheDate>-->
+    <RootOutputFolder>$(OutDir)www\</RootOutputFolder>
+    <IntDir>obj\www\</IntDir>
+  </PropertyGroup>
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- This is the MSBuild Task that does the transformation with special work for us. (E.G. resolving paths to included files, etc. -->
+  <!-- For Debugging VSBuildTasks: -->
+  <UsingTask AssemblyFile="D:\rvanorman\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="XslTransformation" Condition="'$(Configuration)' == 'DebugWork'" />
+  <UsingTask AssemblyFile="D:\rvanorman\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="SearchAndReplace" Condition="'$(Configuration)' == 'DebugWork'" />
+  <UsingTask AssemblyFile="C:\users\ranso\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="XslTransformation" Condition="'$(Configuration)' == 'DebugHome'" />
+  <UsingTask AssemblyFile="C:\users\ranso\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="SearchAndReplace" Condition="'$(Configuration)' == 'DebugHome'" />
+  <!-- For builds in this project. -->
+  <UsingTask AssemblyFile="packages\VSBuildTasks.dll" TaskName="XslTransformation" />
+  <UsingTask AssemblyFile="packages\VSBuildTasks.dll" TaskName="SearchAndReplace" />
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- Copy files to the web folder without any modification. -->
+  <!--
+        NOTE: All source that should be on website, without modification, should use this Build Action instead of plain "Content".
+          This puts the items in the bin\www\ so we have a complete, filtered view of the web site.
+   -->
+  <Target Name="WebContent" AfterTargets="BeforeBuild"
+          Inputs="%(WebContent.Identity)"
+          Outputs="$(RootOutputFolder)%(WebContent.Identity)">
+
+    <Copy SourceFiles="%(WebContent.Identity)" DestinationFolder="$(RootOutputFolder)%(RelativeDir)" SkipUnchangedFiles="true" />
+  </Target>
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- Fix issues in source files. -->
+  <!--
+        NOTEs:
+          - The dependencies for these items are unnecessary since we are just updating text.
+          - Some of these files are used by other Targets. Those will be output to the OBJ folder.
+  -->
+
+  <!-- Update SourceFiles: Change "Pokemon" to "Pokémon" -->
+  <Target Name="FixSourceFiles" AfterTargets="BeforeBuild"
+          Inputs="%(FixSourceFile.Identity)"
+          Outputs="$(RootOutputFolder)%(FixSourceFile.Identity)">
+
+    <SearchAndReplace InputFilePath="%(FixSourceFile.Identity)" OutputFilePath="$(RootOutputFolder)%(FixSourceFile.Identity)"
+                      Search="$(SearchPokemon)" Replace="$(ReplacePokemon)" RegEx="true" />
+  </Target>
+
+  <!-- Update StyleSheets: Change "Pokemon" to "Pokémon". (Output to OBJ dir.) -->
+  <Target Name="StyleSheets" AfterTargets="BeforeBuild"
+          Inputs="%(StyleSheet.Identity)"
+          Outputs="$(IntDir)%(StyleSheet.Identity)">
+
+    <SearchAndReplace InputFilePath="%(StyleSheet.Identity)" OutputFilePath="$(IntDir)%(StyleSheet.Identity)"
+                    Search="$(SearchPokemon)"
+                      Replace="$(ReplacePokemon)"
+                      RegEx="true" />
+  </Target>
+
+  <!-- Remove "standalone" from XML files. (Output to OBJ dir.) -->
+  <Target Name="DataFiles" AfterTargets="BeforeBuild"
+          Inputs="%(DataFile.Identity)"
+          Outputs="$(IntDir)%(DataFile.Identity)">
+
+    <SearchAndReplace InputFilePath="%(DataFile.Identity)" OutputFilePath="$(IntDir)%(DataFile.Identity)"
+                      Search=" standalone=&quot;yes&quot;"
+                      Replace="" />
+  </Target>
+
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- Update '?created=XXX' so that cached files will refreshed when there are changes. (It also changes "Pokemon" to "Pokémon") -->
+  <Target Name="UpdateCacheDates" AfterTargets="BeforeBuild"
+          Inputs="%(UpdateCacheDate.Identity);%(UpdateCacheDate.Dependencies);$(IntDir)%(UpdateCacheDate.Identity)"
+          Outputs="$(RootOutputFolder)%(UpdateCacheDate.Identity)">
+    <!-- TODO QZX: Figure out a way to do conditional transforms so that %(relativedir)%(XslTransform.DependentUpon); is only included in Inputs if %(XslTransform.DependentUpon) is specified. -->
+
+    <!-- Fix Pokemon string and output to OBJ folder -->
+    <SearchAndReplace InputFilePath="%(UpdateCacheDate.Identity)" OutputFilePath="$(IntDir)%(UpdateCacheDate.Identity)"
+                      Search="$(SearchPokemon)"
+                      Replace="$(ReplacePokemon)"
+                      RegEx="true" />
+
+    <!-- Read from OBJ folder, fix CacheData and output to $(RootOutputFolder) -->
+    <SearchAndReplace InputFilePath="$(IntDir)%(UpdateCacheDate.Identity)" OutputFilePath="$(RootOutputFolder)%(UpdateCacheDate.Identity)"
+                      Search="$(SearchCacheDate)"
+                      Replace="$(ReplaceCacheDate)" />
+  </Target>
+
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- Perform XSL Transforms. -->
+  <Target Name="XslTransforms" AfterTargets="BeforeBuild" DependsOnTargets="DataFiles;StyleSheets"
+          Inputs="%(XslTransform.Identity);%(RelativeDir)%(XslTransform.DependentUpon);%(XslTransform.Dependencies);xsl\global.xsl;_datafiles\settings.xml"
+          Outputs="$(RootOutputFolder)%(RelativeDir)%(XslTransform.OutputFileName)">
+
+    <XslTransformation ProjectDir="$(ProjectDir)" TargetDir="$(RootOutputFolder)"
+                       XmlInputFilePath="%(XslTransform.Identity)"
+                       XslInputFilePath="$(IntDir)%(RelativeDir)%(XslTransform.DependentUpon)"
+                       SearchPath="$(IntDir)"
+                       OutputFilePath="$(RootOutputFolder)%(RelativeDir)%(XslTransform.OutputFileName)" />
+  </Target>
+
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- These are to make it so items can be changed in VS UI -->
+  <ItemGroup>
+    <AvailableItemName Include="XslTransform">
+      <Visible>false</Visible>
+    </AvailableItemName>
+    <AvailableItemName Include="StyleSheet">
+      <Visible>false</Visible>
+    </AvailableItemName>
+    <AvailableItemName Include="FixSourceFile">
+      <Visible>false</Visible>
+    </AvailableItemName>
+    <AvailableItemName Include="DataFile">
+      <Visible>false</Visible>
+    </AvailableItemName>
+    <AvailableItemName Include="UpdateCacheDate">
+      <Visible>false</Visible>
+    </AvailableItemName>
+    <AvailableItemName Include="WebContent">
+      <Visible>false</Visible>
+    </AvailableItemName>
+  </ItemGroup>
+</Project>
+

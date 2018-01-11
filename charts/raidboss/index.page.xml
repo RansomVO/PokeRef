@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Root [
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY PokestatsGen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
+  <!ENTITY PokestatsGen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
+  <!ENTITY PokestatsGen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
+  <!ENTITY PokestatsGen4 SYSTEM "/_datafiles/pokestats.gen4.xml">
+  <!ENTITY PokestatsGen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
+  <!ENTITY PokestatsGen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
+  <!ENTITY PokestatsGen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
+  <!ENTITY RaidBosses SYSTEM "raidbosses.current.xml">
+  <!ENTITY LegacyRaidBosses SYSTEM "raidbosses.legacy.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Settings; 
+  &Mappings;
+  &Mappings;
+  &PokestatsGen1;
+  &PokestatsGen2;
+  &PokestatsGen3;
+  &PokestatsGen4;
+  &PokestatsGen5;
+  &PokestatsGen6;
+  &PokestatsGen7;
+  &RaidBosses;
+  &LegacyRaidBosses;
+</Root>
+

@@ -1,0 +1,56 @@
+@import url('index.css?cacherefresh={$CurrentDate}');
+
+/* ========================================================================================== */
+
+td a  {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.NEWS_BOX {
+    border: 4px outset darkgrey;
+    margin: 1em;
+    float: left;
+}
+
+.NEWS {
+    margin: 1em;
+}
+
+.NEWS_TITLE {
+    margin-top: 0px;
+    padding-bottom: .25em;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+.NEWS_HEADLINE {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.NEWS_SEPARATOR {
+    width: 75%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.BOTTOM_BORDER {
+    border-width: 2px;
+    border-color: darkgrey;
+}
+
+.SECTION {
+    display: table;
+    margin-top: 1em;
+}
+
+.SECTION_TITLE {
+    font-size: 1.75em; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+

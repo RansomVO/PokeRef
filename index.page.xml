@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Root [
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY News SYSTEM "news.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Settings;
+  &Mappings;
+  &News;
+
+  <Sections>
+    <Section>
+      <Color>D5D5F5</Color>
+      <Title>Tools</Title>
+      <HRef>tools/</HRef>
+      <Text>
+        There are a lot of places to get generic information about all sorts of stuff in Pokemon GO.
+        But what if you want to focus on stuff that is specific to <i>you</i>?
+        <br />This sections has some tools that could be helpful.
+      </Text>
+    </Section>
+    <Section>
+      <Color>FDC1C0</Color>
+      <HRef>charts/</HRef>
+      <Title>Charts</Title>
+      <Text>
+        Everybody loves charts for quickly looking things up.
+        Like possible IVs for a Raid Bosses or the effectiveness of different Move Sets.
+        <br />All that and more can be found in this section.
+      </Text>
+    </Section>
+    <Section>
+      <Color>FFEEB8</Color>
+      <HRef>resources/</HRef>
+      <Title>Pokemon Resources</Title>
+      <Text>
+        There are a lot of web sites, chat groups, reference data, etc. that provide a lot of resources.
+        <br />Here are a bunch of places that you could find useful.
+      </Text>
+    </Section>
+    <Section>
+      <Color>CBEBF2</Color>
+      <Title>Technical Reference</Title>
+      <HRef>tech/</HRef>
+      <Text>
+        There are a lot of technical things under the covers of Pokemon GO.
+        <br />This section contains gory details about how things work, including the GAME_MASTER information.
+      </Text>
+    </Section>
+  </Sections>
+
+</Root>
+

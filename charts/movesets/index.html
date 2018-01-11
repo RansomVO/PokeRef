@@ -1,0 +1,45 @@
+﻿<html lang="en-us">
+<head>
+    <!-- This is to make the font size consistent on mobile. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="/js/global.js?cacherefresh={$CurrentDate}"></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh={$CurrentDate}" />
+
+    <title>Pokemon Move Sets</title>
+</head>
+<body>
+    <h1>Pokemon Move Sets</h1>
+    <p>
+        Each type of Pokemon has a set of "Fast" Moves and "Charged" Moves that they may have.
+        Then each individual Pokemon has only one combination.
+        Of course, some moves are more effective than others.
+        <br />
+        This page shows a list of each possible combination for each type of Pokemon, which then tells how much damage it will do.
+        <br />
+        And since I have older GAME_MASTER files, I have included the Legacy moves.
+        (Moves that Pokemon could have gotten in the past, but no longer can.)
+    </p>
+    <p>
+        Note that MoveSets have changed over time.
+        In other words, you may have Pokemon that have MoveSets that are no longer listed in the GAME_MASTER.
+        These are referred to as "Legacy MoveSets".
+        <br />
+        However, since I have a collection of historical GAME_MASTER files, I have been able to find out what has been available in the past, and I have included them in the MoveSets table.
+        <br />
+        <span class="NOTE">(To keep be able to easily distinguish Legacy MoveSets, I am displaying them with a grey font.)</span>
+    </p>
+    <p class="PARENT">
+        <br />I have created a chart for each generation of Pokemon:
+    </p>
+    <div class="CHILD">
+        <script>InsertURL('_linkslist.html')</script>
+    </div>
+    <p class="NOTE">
+        <b>NOTE</b>: If you find you want to change the Move Set one of your Pokemon has, you can make use of "TMs" that may be one of the rewards you get from defeating a Raid Boss.
+    </p>
+
+    <!-- This script is defined in /js/global.js -->
+    <script>WriteFooter();</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Root [
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY PokeStats_Gen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
+  <!ENTITY PokeStats_Gen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
+  <!ENTITY PokeStats_Gen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
+  <!ENTITY PokeStats_Gen4 SYSTEM "/_datafiles/pokestats.gen4.xml">
+  <!ENTITY PokeStats_Gen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
+  <!ENTITY PokeStats_Gen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
+  <!ENTITY PokeStats_Gen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="pokemon.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Settings;
+  &Mappings;
+  &PokeStats_Gen1;
+  &PokeStats_Gen2;
+  &PokeStats_Gen3;
+  &PokeStats_Gen4;
+  &PokeStats_Gen5;
+  &PokeStats_Gen6;
+  &PokeStats_Gen7;
+</Root>
