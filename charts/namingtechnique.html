@@ -3,7 +3,6 @@
     <!-- This is to make the font size consistent on mobile. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="index.js?cacherefresh={$CurrentDate}"></script>
     <script src="/js/global.js?cacherefresh={$CurrentDate}"></script>
     <link type="text/css" rel="stylesheet" href="/css/unicode.css?cacherefresh={$CurrentDate}" />
     <link type="text/css" rel="stylesheet" href="index.css?cacherefresh={$CurrentDate}" />
@@ -38,7 +37,7 @@
 
     <br />
     <hr />
-    <h2>Sort Order for Names in Pokemon Go on Android <button id="SORT_ORDER_COLLAPSER" /></h2>
+    <h2 id="SortOrderAndroid">Sort Order for Names in Pokemon Go on Android <button id="SORT_ORDER_COLLAPSER" /></h2>
     <div id="SORT_ORDER" class="INDENT">
         <p>
             Of course you need to know what chars will end up where when you sort.
@@ -166,7 +165,7 @@
 
     <br />
     <hr />
-    <h2>Numerics <button id="NUMERICS_COLLAPSER" /></h2>
+    <h2 id="Numerics">Numerics <button id="NUMERICS_COLLAPSER" /></h2>
     <div id="NUMERICS" class="INDENT">
         <p>
             There are some neato Unicode chars, that can be used to combine a couple of digits into a single char. (Like for IV scores.)
@@ -548,7 +547,7 @@
 
     <br />
     <hr />
-    <h2>Examples:</h2>
+    <h2 id="Examples">Examples:</h2>
     <table>
         <tr><td class="CHARS" style="text-align:left;">&#x277F;&#x24FF;</td><td>-</td><td>Pokemon with Perfect IV (100%)</td></tr>
         <tr><td class="CHARS" style="text-align:left;">82&#x246C;&#x246A;&#x246D;</td><td>-</td><td>Pokemon with Attack=13 / Defense=11 / HP=14</td></tr>

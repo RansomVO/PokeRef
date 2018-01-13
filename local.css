@@ -1,4 +1,4 @@
-@import url('index.css?cacherefresh={$CurrentDate}');
+﻿@import url('index.css?cacherefresh={$CurrentDate}');
 
 /* ========================================================================================== */
 
@@ -38,11 +38,6 @@ td a  {
     margin-bottom: 2em;
 }
 
-.BOTTOM_BORDER {
-    border-width: 2px;
-    border-color: darkgrey;
-}
-
 .SECTION {
     display: table;
     margin-top: 1em;
@@ -54,3 +49,7 @@ td a  {
     font-weight: bold;
 }
 
+.SITE_MAP_SECTION {
+    font-weight: bold;
+    text-decoration: underline;
+}

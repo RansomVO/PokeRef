@@ -1,10 +1,12 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- ==================================================================================================================================================== -->
   <!-- These are the files that we will Transform. -->
+  <!-- ==================================================================================================================================================== -->
+
+  <!-- Root Folder -->
   <ItemGroup>
     <StyleSheet Include="index.xsl">
       <Visible>true</Visible>
-      <OutputFileName>index.html</OutputFileName>
     </StyleSheet>
     <Datafile Include="news.xml">
       <Visible>true</Visible>
@@ -14,7 +16,6 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
-        index.js;
         js\global.js;
         local.css;
         index.css;
@@ -25,7 +26,41 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
+    <StyleSheet Include="Web.sitemap.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="Web.sitemap.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>Web.sitemap.xsl</DependentUpon>
+      <Dependencies>
+        Web.sitemap;
+      </Dependencies>
+      <OutputFileName>Web.sitemap.html</OutputFileName>
+    </XslTransform>
   </ItemGroup>
+
+  <!-- JS -->
+  <ItemGroup>
+    <StyleSheet Include="js\pokemon.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="js\pokemon.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokemon.xsl</DependentUpon>
+      <Dependencies>
+        _datafiles/pokestats.gen1.xml;
+        _datafiles/pokestats.gen2.xml;
+        _datafiles/pokestats.gen3.xml;
+        _datafiles/pokestats.gen4.xml;
+        _datafiles/pokestats.gen5.xml;
+        _datafiles/pokestats.gen6.xml;
+        _datafiles/pokestats.gen7.xml;
+      </Dependencies>
+      <OutputFileName>pokemon.js</OutputFileName>
+    </XslTransform>
+  </ItemGroup>
+
+  <!-- Charts/MoveSets -->
   <ItemGroup>
     <StyleSheet Include="charts\movesets\movesets.xsl">
       <Visible>true</Visible>
@@ -61,6 +96,8 @@
       <OutputFileName>movesets.gen3.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
+
+  <!-- Charts/RaidBoss -->
   <ItemGroup>
     <StyleSheet Include="charts\raidboss\_linkslist.xsl">
       <Visible>true</Visible>
@@ -80,8 +117,6 @@
       </Dependencies>
       <OutputFileName>_linkslist.html</OutputFileName>
     </XslTransform>
-  </ItemGroup>
-  <ItemGroup>
     <StyleSheet Include="charts\raidboss\index.xsl">
       <Visible>true</Visible>
     </StyleSheet>
@@ -101,402 +136,597 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
-  </ItemGroup>
-  <ItemGroup>
     <StyleSheet Include="charts\raidboss\raidboss.xsl">
       <Visible>true</Visible>
     </StyleSheet>
     <XslTransform Include="charts\raidboss\raidboss.absol.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.absol.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.absol.xml;
+      </Dependencies>
       <OutputFileName>raidboss.absol.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.alakazam.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.alakazam.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.alakazam.xml;
+      </Dependencies>
       <OutputFileName>raidboss.alakazam.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.arcanine.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.arcanine.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.arcanine.xml;
+      </Dependencies>
       <OutputFileName>raidboss.arcanine.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.articuno.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.articuno.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.articuno.xml;
+      </Dependencies>
       <OutputFileName>raidboss.articuno.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.bayleef.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.bayleef.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.bayleef.xml;
+      </Dependencies>
       <OutputFileName>raidboss.bayleef.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.blastoise.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.blastoise.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.blastoise.xml;
+      </Dependencies>
       <OutputFileName>raidboss.blastoise.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.celebi.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.celebi.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.celebi.xml;
+      </Dependencies>
       <OutputFileName>raidboss.celebi.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.charizard.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.charizard.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.charizard.xml;
+      </Dependencies>
       <OutputFileName>raidboss.charizard.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.charmeleon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.charmeleon.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.charmeleon.xml;
+      </Dependencies>
       <OutputFileName>raidboss.charmeleon.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.cloyster.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.cloyster.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.cloyster.xml;
+      </Dependencies>
       <OutputFileName>raidboss.cloyster.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.croconaw.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.croconaw.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.croconaw.xml;
+      </Dependencies>
       <OutputFileName>raidboss.croconaw.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.electabuzz.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.electabuzz.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.electabuzz.xml;
+      </Dependencies>
       <OutputFileName>raidboss.electabuzz.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.entei.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.entei.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.entei.xml;
+      </Dependencies>
       <OutputFileName>raidboss.entei.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.exeggutor.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.exeggutor.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.exeggutor.xml;
+      </Dependencies>
       <OutputFileName>raidboss.exeggutor.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.flareon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.flareon.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.flareon.xml;
+      </Dependencies>
       <OutputFileName>raidboss.flareon.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.gengar.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.gengar.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.gengar.xml;
+      </Dependencies>
       <OutputFileName>raidboss.gengar.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.golem.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.golem.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.golem.xml;
+      </Dependencies>
       <OutputFileName>raidboss.golem.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.groudon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.groudon.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.groudon.xml;
+      </Dependencies>
       <OutputFileName>raidboss.groudon.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.ho-oh.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.ho-oh.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.ho-oh.xml;
+      </Dependencies>
       <OutputFileName>raidboss.ho-oh.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.ivysaur.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.ivysaur.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.ivysaur.xml;
+      </Dependencies>
       <OutputFileName>raidboss.ivysaur.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.jirachi.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.jirachi.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.jirachi.xml;
+      </Dependencies>
       <OutputFileName>raidboss.jirachi.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.jolteon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.jolteon.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.jolteon.xml;
+      </Dependencies>
       <OutputFileName>raidboss.jolteon.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.kyogre.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.kyogre.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.kyogre.xml;
+      </Dependencies>
       <OutputFileName>raidboss.kyogre.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.lapras.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.lapras.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.lapras.xml;
+      </Dependencies>
       <OutputFileName>raidboss.lapras.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.latias.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.latias.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.latias.xml;
+      </Dependencies>
       <OutputFileName>raidboss.latias.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.latios.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.latios.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.latios.xml;
+      </Dependencies>
       <OutputFileName>raidboss.latios.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.lugia.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.lugia.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.lugia.xml;
+      </Dependencies>
       <OutputFileName>raidboss.lugia.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.machamp.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.machamp.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.machamp.xml;
+      </Dependencies>
       <OutputFileName>raidboss.machamp.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.magikarp.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.magikarp.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.magikarp.xml;
+      </Dependencies>
       <OutputFileName>raidboss.magikarp.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.magmar.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.magmar.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.magmar.xml;
+      </Dependencies>
       <OutputFileName>raidboss.magmar.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.magneton.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.magneton.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.magneton.xml;
+      </Dependencies>
       <OutputFileName>raidboss.magneton.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.marowak.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.marowak.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.marowak.xml;
+      </Dependencies>
       <OutputFileName>raidboss.marowak.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.mawile.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.mawile.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.mawile.xml;
+      </Dependencies>
       <OutputFileName>raidboss.mawile.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.metapod.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.metapod.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.metapod.xml;
+      </Dependencies>
       <OutputFileName>raidboss.metapod.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.mew.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.mew.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.mew.xml;
+      </Dependencies>
       <OutputFileName>raidboss.mew.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.mewtwo.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.mewtwo.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.mewtwo.xml;
+      </Dependencies>
       <OutputFileName>raidboss.mewtwo.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.moltres.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.moltres.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.moltres.xml;
+      </Dependencies>
       <OutputFileName>raidboss.moltres.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.muk.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.muk.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.muk.xml;
+      </Dependencies>
       <OutputFileName>raidboss.muk.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.nidoking.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.nidoking.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.nidoking.xml;
+      </Dependencies>
       <OutputFileName>raidboss.nidoking.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.nidoqueen.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.nidoqueen.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.nidoqueen.xml;
+      </Dependencies>
       <OutputFileName>raidboss.nidoqueen.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.ninetales.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.ninetales.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.ninetales.xml;
+      </Dependencies>
       <OutputFileName>raidboss.ninetales.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.omastar.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.omastar.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.omastar.xml;
+      </Dependencies>
       <OutputFileName>raidboss.omastar.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.poliwrath.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.poliwrath.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.poliwrath.xml;
+      </Dependencies>
       <OutputFileName>raidboss.poliwrath.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.porygon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.porygon.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.porygon.xml;
+      </Dependencies>
       <OutputFileName>raidboss.porygon.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.quilava.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.quilava.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.quilava.xml;
+      </Dependencies>
       <OutputFileName>raidboss.quilava.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.raikou.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.raikou.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.raikou.xml;
+      </Dependencies>
       <OutputFileName>raidboss.raikou.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.rayquaza.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.rayquaza.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.rayquaza.xml;
+      </Dependencies>
       <OutputFileName>raidboss.rayquaza.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.regice.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.regice.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.regice.xml;
+      </Dependencies>
       <OutputFileName>raidboss.regice.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.regirock.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.regirock.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.regirock.xml;
+      </Dependencies>
       <OutputFileName>raidboss.regirock.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.registeel.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.registeel.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.registeel.xml;
+      </Dependencies>
       <OutputFileName>raidboss.registeel.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.rhydon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.rhydon.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.rhydon.xml;
+      </Dependencies>
       <OutputFileName>raidboss.rhydon.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.sableye.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.sableye.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.sableye.xml;
+      </Dependencies>
       <OutputFileName>raidboss.sableye.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.sandslash.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.sandslash.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.sandslash.xml;
+      </Dependencies>
       <OutputFileName>raidboss.sandslash.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.scyther.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.scyther.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.scyther.xml;
+      </Dependencies>
       <OutputFileName>raidboss.scyther.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.snorlax.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.snorlax.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.snorlax.xml;
+      </Dependencies>
       <OutputFileName>raidboss.snorlax.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.suicune.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.suicune.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.suicune.xml;
+      </Dependencies>
       <OutputFileName>raidboss.suicune.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.tentacruel.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.tentacruel.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.tentacruel.xml;
+      </Dependencies>
       <OutputFileName>raidboss.tentacruel.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.tyranitar.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.tyranitar.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.tyranitar.xml;
+      </Dependencies>
       <OutputFileName>raidboss.tyranitar.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.vaporeon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.vaporeon.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.vaporeon.xml;
+      </Dependencies>
       <OutputFileName>raidboss.vaporeon.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.venusaur.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.venusaur.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.venusaur.xml;
+      </Dependencies>
       <OutputFileName>raidboss.venusaur.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.victreebel.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.victreebel.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.victreebel.xml;
+      </Dependencies>
       <OutputFileName>raidboss.victreebel.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.wailmer.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.wailmer.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.wailmer.xml;
+      </Dependencies>
       <OutputFileName>raidboss.wailmer.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.wartortle.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.wartortle.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.wartortle.xml;
+      </Dependencies>
       <OutputFileName>raidboss.wartortle.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.weezing.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.weezing.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.weezing.xml;
+      </Dependencies>
       <OutputFileName>raidboss.weezing.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.zapdos.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>_datafiles\raidboss.zapdos.xml</Dependencies>
+      <Dependencies>
+        charts\raidboss\index.js;
+        _datafiles\raidboss.zapdos.xml;
+      </Dependencies>
       <OutputFileName>raidboss.zapdos.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
+
+  <!-- Charts/Effectiveness -->
   <ItemGroup>
     <StyleSheet Include="charts\effectiveness.xsl">
       <Visible>true</Visible>
@@ -508,6 +738,8 @@
       <OutputFileName>effectiveness.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
+
+  <!-- Tech/GAME_MASTER -->
   <ItemGroup>
     <StyleSheet Include="tech\GAME_MASTER\archive\index.xsl">
       <Visible>true</Visible>
@@ -518,8 +750,6 @@
       <Dependencies>_datafiles/GAME_MASTER.xml</Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
-  </ItemGroup>
-  <ItemGroup>
     <StyleSheet Include="tech\GAME_MASTER\moves\moves.xsl">
       <Visible>true</Visible>
     </StyleSheet>
@@ -535,8 +765,6 @@
       <Dependencies>_datafiles/moves.fast.xml</Dependencies>
       <OutputFileName>moves.fast.html</OutputFileName>
     </XslTransform>
-  </ItemGroup>
-  <ItemGroup>
     <StyleSheet Include="tech\GAME_MASTER\pokestats\pokestats.xsl">
       <Visible>true</Visible>
     </StyleSheet>
@@ -565,6 +793,8 @@
       <OutputFileName>pokestats.gen4.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
+
+  <!-- TOOLS -->
   <ItemGroup>
     <StyleSheet Include="tools\evolutions.xsl">
       <Visible>true</Visible>
@@ -588,10 +818,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
     </FixSourceFile>
-    <StyleSheet Include="tools\seapokemapfilter.xsl">
+  </ItemGroup>
+
+  <!-- Resources -->
+  <ItemGroup>
+    <StyleSheet Include="resources\seapokemapfilter.xsl">
       <Visible>true</Visible>
     </StyleSheet>
-    <XslTransform Include="tools\seapokemapfilter.page.xml">
+    <XslTransform Include="resources\seapokemapfilter.page.xml">
       <Visible>true</Visible>
       <DependentUpon>seapokemapfilter.xsl</DependentUpon>
       <Dependencies>
@@ -605,30 +839,12 @@
       </Dependencies>
       <OutputFileName>seapokemapfilter.html</OutputFileName>
     </XslTransform>
-    <FixSourceFile Include="tools\seapokemapfilter.js">
+    <FixSourceFile Include="resources\seapokemapfilter.js">
       <DependentUpon>seapokemapfilter.xsl</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
     </FixSourceFile>
   </ItemGroup>
-  <ItemGroup>
-    <StyleSheet Include="js\pokemon.xsl">
-      <Visible>true</Visible>
-    </StyleSheet>
-    <XslTransform Include="js\pokemon.page.xml">
-      <Visible>true</Visible>
-      <DependentUpon>pokemon.xsl</DependentUpon>
-      <Dependencies>
-        _datafiles/pokestats.gen1.xml;
-        _datafiles/pokestats.gen2.xml;
-        _datafiles/pokestats.gen3.xml;
-        _datafiles/pokestats.gen4.xml;
-        _datafiles/pokestats.gen5.xml;
-        _datafiles/pokestats.gen6.xml;
-        _datafiles/pokestats.gen7.xml;
-      </Dependencies>
-      <OutputFileName>pokemon.js</OutputFileName>
-    </XslTransform>
-  </ItemGroup>
+
 </Project>
 

@@ -2,6 +2,8 @@
 /* Root Level Styles */
 /* ========================================================================================== */
 
+/* ------------------------------------------------------------------------------------------ */
+/*#region Styles that should be applied to html elements by default. */
 ul, ol, blockquote {
     margin-top: 0;
     margin-bottom: 0;
@@ -28,49 +30,32 @@ h1, h2, h3, h4 {
     margin-bottom: 0px;
 }
 
-/* ------------------------------------------------------------------------------------------ */
+/*#endregion*/
 
+
+/* ------------------------------------------------------------------------------------------ */
+/*#region Classes that contain styles */
+
+/*#region Classes that are used to provide general styles throughout the site. */
+.DISABLED {
+    pointer-events: none;
+    cursor: default;
+    color: grey;
+    opacity: 0.2;
+}
+
+.SEPARATOR_BORDER {
+    width: 50%;
+    margin-left: 0;
+}
+
+/*#endregion*/
+
+/*#region Classes that affect text size, style, color, etc. */
 .TODO {
     font-size: larger;
     font-weight: bold;
     color: red;
-}
-
-.CELL_FILLED {
-    padding: 0;
-    height: 1px;
-}
-
-.CELL_FILLER {
-    text-align: center;
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-.FLOAT_RIGHT {
-    float: right;
-    margin: 0 0 .5em .5em;
-}
-
-.FLOAT_LEFT {
-    float: left;
-    margin: 0 .5em .5em 0;
-    margin-right: 1em;
-}
-
-.FLOAT_END {
-    clear: both;
-}
-
-.IMAGE_FULL_WIDTH {
-    width: 80%;
-    max-width: 1280px;
-}
-
-.IMAGE_HALF_WIDTH {
-    width: 50%;
-    max-width: 256px;
 }
 
 .NOTE {
@@ -78,23 +63,13 @@ h1, h2, h3, h4 {
     font-style: italic;
 }
 
-.NOTE_BLOCK {
-    display: inline-block;
-    border: 1px solid black;
-    padding: 1em;
-    background-color: lightyellow;
-    font-size: smaller;
-    font-style: italic;
+.UNAVAILABLE {
+    color: grey;
 }
 
-.STRIKETHROUGH_TL_BR {
-    background: linear-gradient(to right top, transparent 49%, currentColor 50%, currentColor 50%, transparent 51%);
-}
+/*#endregion*/
 
-.STRIKETHROUGH_BL_TR {
-    background: linear-gradient(to left top, transparent 49%, currentColor 50%, currentColor 50%, transparent 51%);
-}
-
+/*#region Classes that affect positioning and/or spacing. */
 .INDENT {
     margin-left: 2.5em;
 }
@@ -111,15 +86,28 @@ h1, h2, h3, h4 {
     margin-top: 0px;
 }
 
-.DISABLED {
-    pointer-events: none;
-    cursor: default;
-    color: grey;
-    opacity: 0.2;
+.NOTE_BLOCK {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 1em;
+    background-color: lightyellow;
+    font-size: smaller;
+    font-style: italic;
 }
 
-.UNAVAILABLE {
-    color: grey;
+/*#endregion*/
+
+/*#region Classes that are used for dealing with tables and cells. */
+.CELL_FILLED {
+    padding: 0;
+    height: 1px;
+}
+
+.CELL_FILLER {
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 
 .UNAVAILABLE_ROW {
@@ -127,17 +115,9 @@ h1, h2, h3, h4 {
     background-color: darkgrey;
 }
 
-.BOTTOM_BORDER {
-    border-width: 2px;
-    border-color: darkgrey;
-    clear: both;
-}
+/*#endregion*/
 
-.SEPARATOR_BORDER {
-    width: 50%;
-    margin-left: 0;
-}
-
+/*#region Classes for outputting Pokemon images. */
 .SPRITE {
     max-width: 65px;
     max-height: 65px;
@@ -163,24 +143,46 @@ h1, h2, h3, h4 {
     max-height: 40px;
 }
 
-.LINK_HOME_PAGE {
-    font-size: x-large;
+/*#endregion*/
+
+/*#region Classes for images */
+.FLOAT_RIGHT {
+    float: right;
+    margin: 0 0 .5em .5em;
 }
 
-.LINK_SECTION_PAGE {
-    font-size: large;
+.FLOAT_LEFT {
+    float: left;
+    margin: 0 .5em .5em 0;
+    margin-right: 1em;
 }
 
-.LINK_PARENT_PAGE {
-    font-size: medium;
+.FLOAT_END {
+    clear: both;
 }
 
-.LINK_SIBLING_PAGE {
-    font-size: smaller;
+.IMAGE_FULL_WIDTH {
+    width: 80%;
+    max-width: 1280px;
 }
 
-/* ========================================================================================== */
-/* Colors*/
+.IMAGE_HALF_WIDTH {
+    width: 50%;
+    max-width: 256px;
+}
+
+/*#endregion*/
+
+/*#region Classes that are leveraged for outputting content general to all pages. (E.G. Footer) */
+.BOTTOM_BORDER {
+    border-width: 2px;
+    border-color: darkgrey;
+    clear: both;
+}
+
+/*#endregion*/
+
+/*#region Classes that specify Colors for various states. */
 .GREAT {
     background-color: #80E070;
     font-weight: bold;
@@ -281,4 +283,6 @@ h1, h2, h3, h4 {
     background-color: #DFFF80;
 }
 
-/* ========================================================================================== */
+/*#endregion*/
+
+/*#endregion*/

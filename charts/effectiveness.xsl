@@ -14,12 +14,6 @@
 
         <script>
           <xsl:attribute name="src">
-            <xsl:text>index.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
-          </xsl:attribute>
-        </script>
-        <script>
-          <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
@@ -61,7 +55,7 @@
 
   <!-- Template to create the key for the table -->
   <xsl:template name="CreateKey">
-    <h2>
+    <h2 id="Key">
       Key <button id="EFFECTIVENESS_KEY_COLLAPSER" />
     </h2>
     <div id="EFFECTIVENESS_KEY" class="INDENT">

@@ -38,13 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <WebContent Include="_sectionname.txt" />
+    <FixSourceFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />
     <WebContent Include="feedbacknote.html" />
     <WebContent Include="favicon.ico" />
     <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
-    <FixSourceFile Include="index.js" />
     <Resource Include="images\originals\icon.48.png" />
     <Resource Include="images\originals\icon.48.ball.png" />
     <Resource Include="images\originals\icon.32.book.png" />
@@ -53,6 +52,9 @@
     <Resource Include="images\originals\icon.32.ball.png" />
   </ItemGroup>
   <ItemGroup>
+    <FixSourceFile Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </FixSourceFile>
     <None Include="^\XSLT\Mappings.XSD">
       <SubType>Designer</SubType>
     </None>
@@ -160,17 +162,16 @@
     <Resource Include="images\originals\TrappedWeedle.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <WebContent Include="charts\_sectionname.txt" />
+    <FixSourceFile Include="charts\_sectionname.txt" />
     <WebContent Include="charts\index.css" />
-    <FixSourceFile Include="charts\index.js" />
   </ItemGroup>
   <ItemGroup>
     <WebContent Include="charts\movesets\index.css" />
-    <WebContent Include="charts\movesets\_linkslist.html" />
-    <WebContent Include="charts\movesets\_sectionname.txt" />
+    <FixSourceFile Include="charts\movesets\_linkslist.html" />
+    <FixSourceFile Include="charts\movesets\_sectionname.txt" />
   </ItemGroup>
   <ItemGroup>
-    <WebContent Include="charts\raidboss\_sectionname.txt" />
+    <FixSourceFile Include="charts\raidboss\_sectionname.txt" />
     <WebContent Include="charts\raidboss\index.css" />
     <FixSourceFile Include="charts\raidboss\index.js" />
     <DataFile Include="charts\raidboss\raidbosses.current.xml" />
@@ -208,13 +209,11 @@
   </ItemGroup>
   <ItemGroup>
     <WebContent Include="resources\index.css" />
-    <FixSourceFile Include="resources\index.js" />
-    <WebContent Include="resources\_sectionname.txt" />
+    <FixSourceFile Include="resources\_sectionname.txt" />
   </ItemGroup>
   <ItemGroup>
     <WebContent Include="tech\index.css" />
-    <FixSourceFile Include="tech\index.js" />
-    <WebContent Include="tech\_sectionname.txt" />
+    <FixSourceFile Include="tech\_sectionname.txt" />
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
@@ -361,12 +360,12 @@
   </ItemGroup>
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\index.css" />
-    <WebContent Include="tech\GAME_MASTER\_sectionname.txt" />
+    <FixSourceFile Include="tech\GAME_MASTER\_sectionname.txt" />
   </ItemGroup>
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\moves\index.css" />
-    <WebContent Include="tech\GAME_MASTER\moves\_linkslist.html" />
-    <WebContent Include="tech\GAME_MASTER\moves\_sectionname.txt" />
+    <FixSourceFile Include="tech\GAME_MASTER\moves\_linkslist.html" />
+    <FixSourceFile Include="tech\GAME_MASTER\moves\_sectionname.txt" />
   </ItemGroup>
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\pokestats\index.css" />
@@ -378,7 +377,7 @@
     <FixSourceFile Include="tools\shoppingboxes.js">
       <DependentUpon>shoppingboxes.html</DependentUpon>
     </FixSourceFile>
-    <WebContent Include="tools\_sectionname.txt" />
+    <FixSourceFile Include="tools\_sectionname.txt" />
   </ItemGroup>
   <ItemGroup>
     <StyleSheet Include="xsl\global.xsl">

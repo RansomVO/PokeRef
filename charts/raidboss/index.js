@@ -1,8 +1,4 @@
 ﻿// ================================================================================================
-var TitleRaidBosses = 'Possible IVs for Raid Bosses'
-var CollapserBeforeId = 'BEFORE';
-var CollapserAfterId = 'AFTER';
-
 var PartialTitleRaidBoss = '- RaidBoss Possible IVs';
 
 // ================================================================================================
@@ -16,10 +12,7 @@ var CookieSettings = [
 //  (E.G. Collapsers, javascript initial values/calculations, etc.)
 function LocalScript() {
     try {
-        if (document.title === TitleRaidBosses) {
-            SetCollapser(CollapserBeforeId);
-            SetCollapser(CollapserAfterId);
-        } else if (document.title.indexOf(PartialTitleRaidBoss) >= 0) {
+        if (document.title.indexOf(PartialTitleRaidBoss) >= 0) {
             GetFields();
             ApplyCookie();
         }

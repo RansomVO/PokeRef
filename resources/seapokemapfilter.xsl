@@ -101,6 +101,79 @@
           This page is a tool to help you generate javascript that can adjust the filter on SEAPokeMap.
         </p>
 
+        <p class="PARENT">
+          Follow the instructions below for your environment:
+        </p>
+        <div class="INDENT CHILD">
+          <table border="1">
+            <tr style="font-size:x-large;">
+              <th style="width:0px;">Environment</th>
+              <th>Setup</th>
+              <th>Use</th>
+            </tr>
+            <tr>
+              <th>Desktop</th>
+              <td>
+                <ol>
+                  <li>Create a new shortcut in your browser.</li>
+                  <li>Edit the shortcut.</li>
+                  <li>Copy and paste the desired script from the table above into the URL field and save it.</li>
+                </ol>
+              </td>
+              <td>
+                <ol>
+                  <li>Open seapokemap.com.</li>
+                  <li>Click on the shortcut created in Setup.</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th>Android</th>
+              <td>
+                Copy and paste the scripts from the table above to a location convenient for your device.
+              </td>
+              <td>
+                <ol>
+                  <li>Open seapokemap.com.</li>
+                  <li>Copy and paste the desired script address bar and click Go.</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">Apple</th>
+              <td colspan="2">
+                <div class="NOTE">
+                  <b>NOTE</b>: I do not have an Apple device, so I have not personally verified this works.
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ol>
+                  <li>Open browser.</li>
+                  <li>Add a bookmark.</li>
+                  <li>Open bookmark list.</li>
+                  <li>Go to edit mode.</li>
+                  <li>
+                    Select the bookmark and edit the 2<sup>nd</sup> field to the desired script from the table above.
+                  </li>
+                </ol>
+              </td>
+              <td>
+                <ol>
+                  <li>Open seapokemap.com.</li>
+                  <li>Click on the shortcut created in Setup.</li>
+                  <li>
+                    Refresh.
+                    <br /><span class="NOTE">(I am not sure if this step is necessary because the javascript I have supplied should do it for you.)</span>
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+
         <br />
         <hr />
         <table border="1" width="100%" style="table-layout:fixed;">

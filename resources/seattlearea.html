@@ -1,9 +1,9 @@
-﻿﻿<html lang="en-us">
+﻿﻿
+<html lang="en-us">
 <head>
     <!-- This is to make the font size consistent on mobile. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="index.js?cacherefresh={$CurrentDate}"></script>
     <script src="/js/global.js?cacherefresh={$CurrentDate}"></script>
     <link type="text/css" rel="stylesheet" href="index.css?cacherefresh={$CurrentDate}" />
 
@@ -31,7 +31,7 @@
     <script>WriteFeedbackNote();</script>
 
     <hr />
-    <h2>Discord <button id="DISCORD_COLLAPSER" /></h2>
+    <h2 id="Discord">Discord <button id="DISCORD_COLLAPSER" /></h2>
     <div id="DISCORD" class="INDENT">
         <p>
             <a href="https://discordapp.com/">Discord</a> is a service that is used by gamers to communicate with each other.
@@ -82,11 +82,11 @@
 
     <br />
     <hr />
-    <h2>Maps <button id="MAPS_COLLAPSER" /></h2>
+    <h2 id="Maps">Maps <button id="MAPS_COLLAPSER" /></h2>
     <div id="MAPS" class="INDENT">
         <p>Some websites have been created to show maps of where Pokemon can be found.</p>
 
-        <h3>SEAPokeMap</h3>
+        <h3 id="SEAPokeMap">SEAPokeMap</h3>
         <div class="INDENT">
             <p class="PARENT">
                 SEAPokeMap runs a couple of maps in addition to its Discord group:
@@ -96,15 +96,36 @@
                 <li><b>Raid Map</b>: <a href="https://seapokemap.com/gym.html">https://seapokemap.com/gym.html</a></li>
                 <li><b>Twitter Feed</b>: <a href="https://twitter.com/seapokemap">https://twitter.com/seapokemap</a></li>
             </ul>
+
+            <!-- TODO QZX: When ready, uncomment this and delete everything between the next 2 TODO QZX
+            <h4><a href="seapokemapfilter.html">SEAPokeMap Filter Generator</a> <span class="TODO">(Beta)</span></h4>
+            <div class="INDENT CHILD">
+                <p>
+                    To keep costs down, SEAPokeMap doesn't supply icons on their maps.
+                    <br />However, by using javascript to manipulate site's cookies you can get the map to use icons you supply.
+                    <span class="NOTE">(This is <b>intentionally</b> not documented!)</span>
+                </p>
+                <p>
+                    You can also use javascript to manipulate the cookies to quickly set the other search criteria, such as Minimum IV and which Pokemon to show.
+                    <br />For example, if I am sitting at home I may want to see a lot of Pokemon, but if I am at work I may only want to see a few <i>really</i> desirable ones.
+                </p>
+                <p>
+                    As such, I have created this tool so you can create multiple javascript filters that you can easily apply instead of having to check and uncheck each Pokemon 1 at a time, etc.
+                </p>
+            </div>
+            -->
+
+            <!-- TODO QZX: When SEAPokeMap Filter Generator is ready, delete everyting from here to the next TODO QZX. -->
             <p>
                 To keep costs down, SEAPokeMap doesn't supply icons on their maps.
                 <br />
-                However, by manipulating site's cache you can get the map to use icons you supply.
+                However, by using javascript to manipulate site's cookies you can get the map to use icons you supply.
                 <span class="NOTE">(This is <b>intentionally</b> not documented!)</span>
             </p>
-            <p class="PARENT">
+            <p>
                 Here are some javascript scripts that will manipulate the cache to set icons and/or other useful information.
             </p>
+
             <div class="INDENT CHILD">
                 <table border="1">
                     <tr><th /><th>JavaScript</th></tr>
@@ -144,8 +165,6 @@
                     Just remove the "<code>javascript:</code>" from all but the first one.
                     <br />In all cases, when pasting scripts make sure the "<code>javascript:</code>" is retained on the front.
                     Many browsers automatically cut it off as a security precaution.
-                </p>
-
                 </p>
             </div>
             <p class="PARENT">
@@ -211,9 +230,10 @@
                     </tr>
                 </table>
             </div>
+            <!-- TODO QZX: When SEAPokeMap Filter Generator is ready, delete everyting from here to the previous TODO QZX. -->
         </div>
 
-        <h3>SeatlePokeMaps (SPM)</h3>
+        <h3>SeattlePokeMaps (SPM)</h3>
         <div class="INDENT">
             <p class="PARENT">
                 SeattlePokeMaps also runs a couple of maps in addition to its Discord group:
@@ -238,8 +258,8 @@
 
     <br />
     <hr />
-    <h2 class="PARENT">Social Groups <button id="SOCIAL_COLLAPSER" /></h2>
-    <div id="SOCIAL" class="INDENT CHILD">
+    <h2 id="Social">Social Groups <button id="SOCIAL_COLLAPSER" /></h2>
+    <div id="SOCIAL" class="INDENT">
         <p>
             There are a lot of Social Groups out there that are constantly talking about the latest issues.
             <br />These are some of the best.

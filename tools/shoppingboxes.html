@@ -45,6 +45,16 @@
                     display: table-cell;
                     content: counter(item) ')';
                 }
+
+        .HIDE_SPINNERS {
+            -moz-appearance: textfield;
+        }
+
+            .no-spinners::-webkit-outer-spin-button,
+            .no-spinners::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
     </style>
 </head>
 <body>
@@ -62,8 +72,8 @@
 
     <br />
     <hr />
-    <h2 id="SHOPPING_INSTRUCTIONS">Instructions <button id="SHOPPING_INSTRUCTIONS_COLLAPSER" /></h2>
-    <ol>
+    <h2 name="Instructions">Instructions <button id="SHOPPING_INSTRUCTIONS_COLLAPSER" /></h2>
+    <ol id="SHOPPING_INSTRUCTIONS">
         <li>
             Make sure the <table style="display:inline-table;">
                 <tr>
@@ -212,7 +222,7 @@
         <tr>
             <td valign="top" id="SpecialBox">
                 <table comment="Special Box" border="1">
-                    <tr><th colspan="3"><span style="font-size:1em;">Winter Box</span></th></tr>
+                    <tr><th colspan="3"><span style="font-size:1em;">Special Box</span></th></tr>
                     <tr><th>Item</th><th>Qty</th><th>Value</th></tr>
                     <tr>
                         <th>Price</th>
@@ -304,7 +314,7 @@
                     </tr>
                     <tr>
                         <th colspan="2" align="right">Discount</th>
-                        <td><input id="SpecialBox_Discount" type="number" readonly />%</td>
+                        <td><input id="SpecialBox_Discount" type="number" class="HIDE_SPINNERS" readonly />%</td>
                     </tr>
                 </table>
             </td>
@@ -319,7 +329,7 @@
                     </tr>
                     <tr>
                         <th>Premium Raid Pass</th>
-                        <td class="INPUT"><input class="INPUT" id="GreatBox_PremiumRaidPass_Qty" type="number" class="" /></td>
+                        <td class="INPUT"><input class="INPUT" id="GreatBox_PremiumRaidPass_Qty" type="number" /></td>
                         <td class="INPUT_CALCULATED"><input class="INPUT_CALCULATED" id="GreatBox_PremiumRaidPass_Value" type="number" readonly /></td>
                     </tr>
                     <tr>
@@ -403,7 +413,7 @@
                     </tr>
                     <tr>
                         <th colspan="2" align="right">Discount</th>
-                        <td><input id="GreatBox_Discount" type="number" readonly />%</td>
+                        <td><input id="GreatBox_Discount" type="number" class="HIDE_SPINNERS" readonly />%</td>
                     </tr>
                 </table>
             </td>
@@ -502,7 +512,7 @@
                     </tr>
                     <tr>
                         <th colspan="2" align="right">Discount</th>
-                        <td><input id="UltraBox_Discount" type="number" readonly />%</td>
+                        <td><input id="UltraBox_Discount" type="number" class="HIDE_SPINNERS" readonly />%</td>
                     </tr>
                 </table>
             </td>

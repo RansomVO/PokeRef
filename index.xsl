@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:exslt="http://exslt.org/common"
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
                 xmlns:pokeref="urn:pokeref"
 >
@@ -12,9 +13,18 @@
         <!-- This is to make the font size consistent on mobile. -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script src="index.js?cacherefresh={$CurrentDate}"></script>
-        <script src="/js/global.js?cacherefresh={$CurrentDate}"></script>
-        <link rel="stylesheet" type="text/css" href="local.css?cacherefresh={$CurrentDate}" />
+        <script>
+          <xsl:attribute name="src">
+            <xsl:text>/js/global.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <link type="text/css" rel="stylesheet" >
+          <xsl:attribute name="href">
+            <xsl:text>local.css?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </link>
 
         <title>Pokemon Reference</title>
       </head>
@@ -35,7 +45,7 @@
         <!-- Add a box here with the latest news. -->
         <xsl:apply-templates select="News" />
 
-        <h2>
+        <h2 id="Sections">
           <u>Sections</u>
           <xsl:text> </xsl:text>
           <button id="SECTIONS_COLLAPSER" />
@@ -45,13 +55,53 @@
             I have tried to organize this site into sections to help you be able to find what you want a little quicker.
           </p>
           <table style="border:0px; border-collapse:collapse; border-spacing:0px;">
-            <xsl:apply-templates select="Sections/Section" />
+            <xsl:variable name="Sections">
+              <Section>
+                <Color>D5D5F5</Color>
+                <Title>Tools</Title>
+                <HRef>tools/</HRef>
+                <Text>
+                  There are a lot of places to get generic information about all sorts of stuff in Pokemon GO.
+                  But what if you want to focus on stuff that is specific to <i>you</i>?
+                  <br />This sections has some tools that could be helpful.
+                </Text>
+              </Section>
+              <Section>
+                <Color>FDC1C0</Color>
+                <HRef>charts/</HRef>
+                <Title>Charts</Title>
+                <Text>
+                  Everybody loves charts for quickly looking things up.
+                  Like possible IVs for a Raid Bosses or the effectiveness of different Move Sets.
+                  <br />All that and more can be found in this section.
+                </Text>
+              </Section>
+              <Section>
+                <Color>FFEEB8</Color>
+                <HRef>resources/</HRef>
+                <Title>Pokemon Resources</Title>
+                <Text>
+                  There are a lot of web sites, chat groups, reference data, etc. that provide a lot of resources.
+                  <br />Here are a bunch of places that you could find useful.
+                </Text>
+              </Section>
+              <Section>
+                <Color>CBEBF2</Color>
+                <Title>Technical Reference</Title>
+                <HRef>tech/</HRef>
+                <Text>
+                  There are a lot of technical things under the covers of Pokemon GO.
+                  <br />This section contains gory details about how things work, including the GAME_MASTER information.
+                </Text>
+              </Section>
+            </xsl:variable>
+            <xsl:apply-templates select="exslt:node-set($Sections)/Section" />
           </table>
         </div>
 
         <br />
         <hr />
-        <h2>
+        <h2 id="QuickAccess">
           <u>Quick Access</u>
           <xsl:text> </xsl:text>
           <button id="QUICK_ACCESS_COLLAPSER" />
@@ -63,7 +113,7 @@
           </p>
           <div class="INDENT">
             <div class="SECTION">
-              <h2>
+              <h2 id="RaidBosses">
                 <a href="charts/raidboss">Possible IVs for Raid Bosses</a>
                 <xsl:text> </xsl:text>
                 <button id="RAID_BOSSES_COLLAPSER" />
@@ -83,7 +133,7 @@
               </div>
             </div>
 
-            <h2 id="EVOLUTIONS">
+            <h2 id="Evolutions">
               <a href="tools/evolutions.html">Evolutions Chart</a>
             </h2>
             <div>
@@ -94,7 +144,7 @@
               </p>
             </div>
 
-            <h2 id="MOVESETS">
+            <h2 id="Movesets">
               <a href="charts/movesets/">Pokemon Move Sets</a>
             </h2>
             <div>
@@ -109,7 +159,7 @@
               </div>
             </div>
 
-            <h2 id="GAME_MASTER">
+            <h2 id="GameMaster">
               <a href="tech/GAME_MASTER">GAME_MASTER</a>
             </h2>
             <div>
@@ -118,7 +168,7 @@
                 <br />I use the data in them to generate various tables, etc.
               </p>
               <div class="INDENT">
-                <h2 id="POKESTATS">
+                <h2 id="PokeStats">
                   <a href="tech/GAME_MASTER/pokestats/">Pokemon Stats</a>
                 </h2>
                 <div>
@@ -151,11 +201,11 @@
         }
       ]]>
     </script>
-    <h2 class="NEWS_TITLE">
+    <h2 id="News" class="NEWS_TITLE">
       <xsl:text>Latest News! </xsl:text>
       <button id="NEWS_COLLAPSER" />
     </h2>
-    <div ID="NEWS" class="NEWS">
+    <div id="NEWS" class="NEWS">
       <xsl:apply-templates select="Article" />
     </div>
     <xsl:value-of select="concat($lt, '/div', $gt)" disable-output-escaping="yes" />
@@ -223,7 +273,7 @@
 
   </xsl:template>
 
-  <!-- Template to  -->
+  <!-- Local functions (C#)  -->
   <msxsl:script language="C#" implements-prefix="pokeref">
     <![CDATA[  
       // Method to determine what color should be specified for an "outset" border.

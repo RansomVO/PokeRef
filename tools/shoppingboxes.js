@@ -1,8 +1,8 @@
 ﻿// ================================================================================================
 // ********** Values that should be updated each time new boxes come out. *************************
 // ------------------------------------------------------------------------------------------------
-var ShoppingBox_Update_Date = '26 Dec 2017?';
-var ShoppingBox_Update_Note = '(New Options During Holiday Season)';
+var ShoppingBox_Update_Date = '12 Jan 2018';
+var ShoppingBox_Update_Note = '(I have no idea what the occasion is.)';
 
 var SpecialBox = {};
 var GreatBox = {};
@@ -11,7 +11,7 @@ var UltraBox = {};
 function GetBoxes() {
     // Special Box
     SpecialBox['Price'] = 480;
-    SpecialBox['PremiumRaidPass'] = 2;
+    SpecialBox['PremiumRaidPass'] = 6;
     SpecialBox['MaxRevives'] = 0;
     SpecialBox['MaxPotions'] = 0;
     SpecialBox['PokeBalls'] = 0;
@@ -19,18 +19,18 @@ function GetBoxes() {
     SpecialBox['UltraBalls'] = 0;
     SpecialBox['Lures'] = 0;
     SpecialBox['Incubator'] = 0;
-    SpecialBox['LuckyEggs'] = 4;
-    SpecialBox['Incense'] = 0;
-    SpecialBox['StarPiece'] = 5;
+    SpecialBox['LuckyEggs'] = 0;
+    SpecialBox['Incense'] = 3;
+    SpecialBox['StarPiece'] = 0;
     SpecialBox['SuperIncubator'] = 0;
     SpecialBox['RazzBerries'] = 0;
     SpecialBox['NanabBerries'] = 0;
-    SpecialBox['PinappBerries'] = 0;
+    SpecialBox['PinappBerries'] = 10;
     SpecialBox['GoldenBerries'] = 0;
 
     // Great Box
     GreatBox['Price'] = 780;
-    GreatBox['PremiumRaidPass'] = 3;
+    GreatBox['PremiumRaidPass'] = 9;
     GreatBox['MaxRevives'] = 0;
     GreatBox['MaxPotions'] = 0;
     GreatBox['PokeBalls'] = 0;
@@ -38,29 +38,29 @@ function GetBoxes() {
     GreatBox['UltraBalls'] = 0;
     GreatBox['Lures'] = 0;
     GreatBox['Incubator'] = 0;
-    GreatBox['LuckyEggs'] = 8;
+    GreatBox['LuckyEggs'] = 0;
     GreatBox['Incense'] = 0;
     GreatBox['StarPiece'] = 10;
-    GreatBox['SuperIncubator'] = 2;
+    GreatBox['SuperIncubator'] = 0;
     GreatBox['RazzBerries'] = 0;
     GreatBox['NanabBerries'] = 0;
-    GreatBox['PinappBerries'] = 0;
+    GreatBox['PinappBerries'] = 10;
     GreatBox['GoldenBerries'] = 0;
 
     // Ultra Box
-    UltraBox['Price'] = 1680;
-    UltraBox['PremiumRaidPass'] = 10;
-    UltraBox['MaxRevives'] = 0;
+    UltraBox['Price'] = 1480;
+    UltraBox['PremiumRaidPass'] = 15;
+    UltraBox['MaxRevives'] = 6;
     UltraBox['MaxPotions'] = 0;
     UltraBox['PokeBalls'] = 0;
     UltraBox['GreatBalls'] = 0;
     UltraBox['UltraBalls'] = 0;
     UltraBox['Lures'] = 0;
     UltraBox['Incubator'] = 0;
-    UltraBox['LuckyEggs'] = 16;
+    UltraBox['LuckyEggs'] = 6;
     UltraBox['Incense'] = 0;
     UltraBox['StarPiece'] = 20;
-    UltraBox['SuperIncubator'] = 6;
+    UltraBox['SuperIncubator'] = 0;
     UltraBox['RazzBerries'] = 0;
     UltraBox['NanabBerries'] = 0;
     UltraBox['PinappBerries'] = 0;
@@ -73,7 +73,6 @@ function GetBoxes() {
 // Called when any non-value modifications should be done.
 //  (E.G. Collapsers, javascript initial values/calculations, etc.)
 function LocalScript() {
-    SetCollapser('SHOPPING_INSTRUCTIONS');
     GetFields();
     GetBoxes();
 

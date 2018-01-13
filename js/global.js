@@ -8,10 +8,12 @@ var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
 // Called when page is loaded to perform up-front work.
 // ==============================================================================================
 window.onload = function () {
-    // This allows individual page to define scripts that are local to them.
-    //  Any non-value modifications should be done here.
-    //  (E.G. Collapsers, javascript initial values/calculations, etc.)
     try {
+        SetCollapsers();
+
+        // This allows individual page to define scripts that are local to them.
+        //  Any non-value modifications should be done here.
+        //  (E.G. javascript initial values/calculations, etc.)
         if (typeof LocalScript === "function") {
             LocalScript();
         }
@@ -268,7 +270,8 @@ function GetNavigation(href) {
 
     var navigation = '';
     if (href === '/') {
-        navigation = '<h2>Navigation</h2>';
+        navigation = '<h2>Navigation</h2>'
+            + '<div style="font-size:1.75em;">';
     } else if (href === location.pathname || location.pathname.substring(href.length, location.pathname.length) === 'index.html') {
         // We don't need a link for this, so just do the sublinks.
         return navigation = navigation + ReadURL(href + '_linkslist.html' + CacheDate);
@@ -277,9 +280,9 @@ function GetNavigation(href) {
     var sectionName = ReadURL(href + '_sectionname.txt' + CacheDate);
     if (sectionName !== '') {
         navigation = navigation +
-            '<ul>\r\n' +
+            '<ul style="font-size:smaller;">\r\n' +
             '  <li>\r\n' +
-            '    <a ' + GetLinkStyle(href) + 'href="' + href + '">Back to ' + ReadURL(href + '_sectionname.txt' + CacheDate) + '</a>\r\n';
+            '    <a ' + 'href="' + href + '">Back to ' + ReadURL(href + '_sectionname.txt' + CacheDate) + '</a>\r\n';
 
         var subhref = location.pathname.substring(0, location.pathname.indexOf('/', href.length) + 1);
         if (subhref.length !== 0) {
@@ -294,22 +297,12 @@ function GetNavigation(href) {
             '</ul>\r\n';
     }
 
+    if (href === '/') {
+        navigation = navigation + '</div>';
+    }
+
     return navigation;
 }
-
-function GetLinkStyle(href) {
-    if (href === '/')
-        return 'class="LINK_HOME_PAGE"';
-
-    if (href[href.length - 1] === '/')
-        return 'class="LINK_SECTION_PAGE"';
-
-    if (href === '.')
-        return 'class="LINK_PARENT_PAGE"';
-
-    return 'class="LINK_SIBLING_PAGE"';
-}
-
 
 // ==============================================================================================
 //  Methods for hooking up a Collapser for a field.
@@ -319,15 +312,25 @@ var CollapserMarker = '_COLLAPSER';
 var StatusUp = 'UP';
 var StatusDown = 'DOWN';
 
-function SetCollapser(CollapserId) {
-    var collapser = document.getElementById(CollapserId + CollapserMarker);
-    collapser.formTarget = CollapserId;
-    var collapsee = document.getElementById(CollapserId);
+function SetCollapsers() {
+    var buttons = document.getElementsByTagName("button");
+    for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].id.indexOf(CollapserMarker) !== 0) {
+            SetCollapser(buttons[i]);
+        }
+    }
+}
 
-    collapser.setAttribute('onclick', 'ToggleCollapser(event)');
+function SetCollapser(collapser) {
+    var collapsee = document.getElementById(collapser.id.slice(0, -CollapserMarker.length));
 
-    var state = GetCookieSetting(CollapserId + '_COLLAPSE', collapser.value);
-    SetCollapseState(state !== null ? state : StatusDown, collapser, collapsee);
+    if (collapsee !== null) {
+        collapser.formTarget = collapsee.id;
+        collapser.setAttribute('onclick', 'ToggleCollapser(event)');
+
+        var state = GetCookieSetting(collapser.formTarget + '_COLLAPSE', collapser.value);
+        SetCollapseState(state !== null ? state : StatusDown, collapser, collapsee);
+    }
 }
 
 function ToggleCollapser(event) {

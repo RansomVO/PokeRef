@@ -24,7 +24,10 @@ Find a PERFORMANT way to create scrolling tables.
 =========================================================================================================
 ----- Top Level -----
 
-
+Create tool to dynamically create Web.sitemap 
+	Read all .html files under bin
+		Get their title, url and description. (Perhaps add a hidden paragraph at the top that has the description?)
+		Get all anchors. (Figure out how to distinguish what is anchor and what is for looking up? Use @name instead of @id?)
 
 
 =========================================================================================================
