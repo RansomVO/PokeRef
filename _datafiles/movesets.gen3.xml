@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Generation>3</Generation>
 	<MoveSet>
@@ -4380,16 +4380,16 @@
 		</Pokemon>
 		<Attack>
 			<Fast>Bite</Fast>
-			<Charged>Crunch</Charged>
+			<Charged>Stomp</Charged>
 		</Attack>
 		<STAB>
 			<Fast>false</Fast>
-			<Charged>false</Charged>
+			<Charged>true</Charged>
 		</STAB>
 		<Damage>
-			<DPS>16.1038961038961</DPS>
-			<TrueDPS>12.73</TrueDPS>
-			<PercentOfMax>0.93</PercentOfMax>
+			<DPS>17.8963414634146</DPS>
+			<TrueDPS>14.27</TrueDPS>
+			<PercentOfMax>1</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -4408,7 +4408,7 @@
 		<Damage>
 			<DPS>14.7619047619048</DPS>
 			<TrueDPS>11.67</TrueDPS>
-			<PercentOfMax>0.85</PercentOfMax>
+			<PercentOfMax>0.81</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -4427,7 +4427,7 @@
 		<Damage>
 			<DPS>17.0114942528736</DPS>
 			<TrueDPS>13.57</TrueDPS>
-			<PercentOfMax>1</PercentOfMax>
+			<PercentOfMax>0.95</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -4437,16 +4437,16 @@
 		</Pokemon>
 		<Attack>
 			<Fast>Rock Smash</Fast>
-			<Charged>Crunch</Charged>
+			<Charged>Stomp</Charged>
 		</Attack>
 		<STAB>
 			<Fast>false</Fast>
-			<Charged>false</Charged>
+			<Charged>true</Charged>
 		</STAB>
 		<Damage>
-			<DPS>15.4761904761905</DPS>
-			<TrueDPS>12.03</TrueDPS>
-			<PercentOfMax>0.88</PercentOfMax>
+			<DPS>17.530487804878</DPS>
+			<TrueDPS>13.66</TrueDPS>
+			<PercentOfMax>0.95</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -4465,7 +4465,7 @@
 		<Damage>
 			<DPS>14.2857142857143</DPS>
 			<TrueDPS>11.1</TrueDPS>
-			<PercentOfMax>0.81</PercentOfMax>
+			<PercentOfMax>0.77</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -4484,7 +4484,7 @@
 		<Damage>
 			<DPS>16.6666666666667</DPS>
 			<TrueDPS>12.99</TrueDPS>
-			<PercentOfMax>0.95</PercentOfMax>
+			<PercentOfMax>0.91</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -14330,63 +14330,6 @@
 			<DPS>20</DPS>
 			<TrueDPS>28.89</TrueDPS>
 			<PercentOfMax>0.89</PercentOfMax>
-		</Damage>
-	</MoveSet>
-	<MoveSet>
-		<Pokemon>
-			<ID>382</ID>
-			<Name>Kyogre</Name>
-		</Pokemon>
-		<Attack>
-			<Fast>Dragon Tail</Fast>
-			<Charged>Hydro Pump</Charged>
-		</Attack>
-		<STAB>
-			<Fast>false</Fast>
-			<Charged>true</Charged>
-		</STAB>
-		<Damage>
-			<DPS>20.7575757575758</DPS>
-			<TrueDPS>30.07</TrueDPS>
-			<PercentOfMax>0.93</PercentOfMax>
-		</Damage>
-	</MoveSet>
-	<MoveSet>
-		<Pokemon>
-			<ID>382</ID>
-			<Name>Kyogre</Name>
-		</Pokemon>
-		<Attack>
-			<Fast>Dragon Tail</Fast>
-			<Charged>Blizzard</Charged>
-		</Attack>
-		<STAB>
-			<Fast>false</Fast>
-			<Charged>false</Charged>
-		</STAB>
-		<Damage>
-			<DPS>19.0184049079755</DPS>
-			<TrueDPS>27.61</TrueDPS>
-			<PercentOfMax>0.85</PercentOfMax>
-		</Damage>
-	</MoveSet>
-	<MoveSet>
-		<Pokemon>
-			<ID>382</ID>
-			<Name>Kyogre</Name>
-		</Pokemon>
-		<Attack>
-			<Fast>Dragon Tail</Fast>
-			<Charged>Thunder</Charged>
-		</Attack>
-		<STAB>
-			<Fast>false</Fast>
-			<Charged>false</Charged>
-		</STAB>
-		<Damage>
-			<DPS>17.9487179487179</DPS>
-			<TrueDPS>26.09</TrueDPS>
-			<PercentOfMax>0.8</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>

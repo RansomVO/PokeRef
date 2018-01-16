@@ -31,7 +31,7 @@
           <br />
           This file is updated on a semi-regular basis on the Niantic servers and Pokemon GO downloads it.
           <br />
-          It is encoded to make downloading faster, but there are utilities that will decode it and convert it into a format called JSON.
+          It is encoded in a format called "protobuf" to make downloading faster, but there are utilities that will decode it and convert it into a format called JSON.
           JSON is a format that is easily read by computer code.
           It can even make sense to a human.
           (If you are a little geeky.)
@@ -60,7 +60,9 @@
         <br />
         <table border="1">
           <xsl:call-template name="CreateTableHeaders" />
-          <xsl:apply-templates select="GAME_MASTERS/GAME_MASTER" />
+          <xsl:apply-templates select="GAME_MASTERS/GAME_MASTER">
+            <xsl:sort select="TimeStamp_DEC" order="descending" />
+          </xsl:apply-templates>
         </table>
 
         <!-- This script is defined in /js/global.js -->
@@ -72,9 +74,15 @@
   <!-- Template to create the headers for the table -->
   <xsl:template name="CreateTableHeaders">
     <tr style="font-size:x-large;">
-      <th>Time Stamp (UTC)</th>
-      <th>Original GAME_MASTER File</th>
-      <th>GAME_MASTER JSON File</th>
+      <th>
+        Time Stamp<br />(UTC)
+      </th>
+      <th>
+        Protobuf<br />GAME_MASTER
+      </th>
+      <th>
+        JSON<br />GAME_MASTER
+      </th>
     </tr>
   </xsl:template>
 
@@ -82,7 +90,9 @@
   <xsl:template match="GAME_MASTER">
     <tr align="left" style="border-top-width:5px">
       <td id="TimeStamp">
-        <xsl:value-of select="TimeStamp" />
+        <code>
+          <xsl:value-of select="TimeStamp" />
+        </code>
       </td>
       <td id="FileName">
         <a>
@@ -90,7 +100,9 @@
           <xsl:attribute name="href">
             <xsl:value-of select="FileName" />
           </xsl:attribute>
-          <xsl:value-of select="FileName" />
+          <code>
+            <xsl:value-of select="FileName" />
+          </code>
         </a>
       </td>
       <td id="FileNameJSON">
@@ -99,7 +111,9 @@
           <xsl:attribute name="href">
             <xsl:value-of select="FileNameJSON" />
           </xsl:attribute>
-          <xsl:value-of select="FileNameJSON" />
+          <code>
+            <xsl:value-of select="FileNameJSON" />
+          </code>
         </a>
       </td>
     </tr>

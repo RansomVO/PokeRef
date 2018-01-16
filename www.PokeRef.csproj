@@ -357,6 +357,12 @@
     <WebContent Include="tech\GAME_MASTER\archive\000001607B20D037_GAME_MASTER.json">
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\00000160EC3209ED_GAME_MASTER">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
+    <WebContent Include="tech\GAME_MASTER\archive\00000160EC3209ED_GAME_MASTER.json">
+      <DependentUpon>index.page.xml</DependentUpon>
+    </WebContent>
   </ItemGroup>
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\index.css" />

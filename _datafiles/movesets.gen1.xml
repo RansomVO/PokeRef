@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Generation>1</Generation>
 	<MoveSet>
@@ -21050,26 +21050,6 @@
 		<Damage>
 			<DPS>0</DPS>
 			<TrueDPS>0</TrueDPS>
-			<PercentOfMax>0</PercentOfMax>
-		</Damage>
-	</MoveSet>
-	<MoveSet>
-		<Pokemon>
-			<ID>132</ID>
-			<Name>Ditto</Name>
-		</Pokemon>
-		<Attack>
-			<Fast>Pound</Fast>
-			<Charged>Struggle</Charged>
-		</Attack>
-		<Legacy>X</Legacy>
-		<STAB>
-			<Fast>true</Fast>
-			<Charged>true</Charged>
-		</STAB>
-		<Damage>
-			<DPS>19.8863636363636</DPS>
-			<TrueDPS>10.91</TrueDPS>
 			<PercentOfMax>0</PercentOfMax>
 		</Damage>
 	</MoveSet>
