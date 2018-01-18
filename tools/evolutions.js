@@ -13,7 +13,7 @@ function LocalScript() {
 
 // TODO QZX: Add a Reset button that clears the cache and sets the defaults.
 
-var CookieFieldIds = {
+var CookieSettings = {
     'Gen1_Check': 'true',
     'Gen2_Check': 'true',
     'Gen3_Check': 'true',
@@ -28,7 +28,7 @@ var CookieFieldIds = {
 // Read the Cookie and apply it to the fields.
 function ApplyCookies() {
     try {
-        ApplyCookieSettings(CookieFieldIds);
+        ApplyCookieSettings(CookieSettings);
         OnFilterCriteriaChanged();
     }
     catch (err) {
