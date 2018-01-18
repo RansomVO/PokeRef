@@ -34,9 +34,7 @@
         <title>Evolutions Chart</title>
       </head>
       <body>
-        <h1>
-          Evolutions Chart <span class="TODO NOTE">(Beta)</span>
-        </h1>
+        <h1>Evolutions Chart</h1>
         <div class="INDENT">
           <p class="NOTE PARENT">
             Please let me know if you find any issues!

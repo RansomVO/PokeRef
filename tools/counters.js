@@ -6,6 +6,6 @@
 // Functions for Counters
 // ****************************************************************************************************************
 
-var CookieFieldIds = [
-    //['Field', 'DefaultValue'],
-];
+var CookieFieldIds = {
+    //'Field': 'DefaultValue',
+};

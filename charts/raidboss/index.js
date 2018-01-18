@@ -3,10 +3,20 @@ var PartialTitleRaidBoss = '- RaidBoss Possible IVs';
 
 // ================================================================================================
 // Fields that should be saved in cookies, with their default values.
-var CookieSettings = [
-    ['Checkbox_Boosted', 'false'],
-];
+var CookieSettings = {
+    'Checkbox_Boosted': 'false',
+};
 
+// Read the Cookie and apply it to the fields.
+function ApplyCookie() {
+    try {
+        ApplyCookieSettings(CookieSettings);
+        ToggleChart();
+    }
+    catch (err) {
+        ShowError(err);
+    }
+}
 
 // Called when any non-value modifications should be done.
 //  (E.G. Collapsers, javascript initial values/calculations, etc.)
@@ -27,17 +37,6 @@ function GetFields() {
     try {
         var Regular = document.getElementById('Regular');
         var Boosted = document.getElementById('Boosted');
-    }
-    catch (err) {
-        ShowError(err);
-    }
-}
-
-// Read the Cookie and apply it to the fields.
-function ApplyCookie() {
-    try {
-        ApplyCookieSettingsQZX(CookieSettings);
-        ToggleChart();
     }
     catch (err) {
         ShowError(err);

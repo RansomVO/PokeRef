@@ -38,58 +38,6 @@ function IsMobile() {
 // Code to work with Cookies
 // ==============================================================================================
 
-// -----------------------------------------------------------------------------------------------------------------------------------
-// TODO QZX: All javascript that calls this function needs to be updated to use the new function then the function should be removed.
-function ApplyCookieSettingsQZX(settings) {
-    try {
-        for (var i = 0, len = settings.length; i < len; i++) {
-            if (Array.isArray(settings[i])) {
-                ApplyCookieSetting(settings[i][0], settings[i][1]);
-            } else if (settings[i] != null) {
-                ApplyCookieSetting(settings[i]);
-            }
-        }
-    }
-    catch (err) {
-        ShowError(err);
-    }
-}
-
-// TODO QZX: All javascript that calls this function needs to be updated to use the new function then the function should be removed.
-function UpdateCookieSettingsQZX(fieldIds) {
-    try {
-        for (var i = 0, len = settings.length; i < len; i++) {
-            if (Array.isArray(settings[i])) {
-                UpdateCookieSetting(settings[i][0], settings[i][1]);
-            } else if (settings[i] != null) {
-                UpdateCookieSetting(settings[i]);
-            }
-        }
-    }
-    catch (err) {
-        ShowError(err);
-    }
-}
-
-// TODO QZX: All javascript that calls this function needs to be updated to use the new function then the function should be removed.
-function ClearCookieSettingsQZX(settings) {
-    try {
-        for (var i = 0, len = settings.length; i < len; i++) {
-            if (Array.isArray(settings[i])) {
-                localStorage.removeItem(settings[i][0]);
-            } else if (settings[i] != null) {
-                localStorage.removeItem(settings[i]);
-            }
-        }
-    }
-    catch (err) {
-        ShowError(err);
-    }
-}
-
-// -----------------------------------------------------------------------------------------------------------------------------------
-
-
 // Applies a single cookie setting to the field with the specified fieldId.
 //  (If there is no cookie setting, the set the field to the defaultValue.)
 function ApplyCookieSetting(fieldId, defaultValue) {
@@ -188,7 +136,7 @@ function ClearCookieSettings(cookieSettings) {
     }
 }
 
-// Clear the entire cookie.
+// Clear the entire cookie for the entire web site.
 function ClearCookie() {
     try {
         localStorage.clear()

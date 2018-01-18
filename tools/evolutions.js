@@ -13,17 +13,29 @@ function LocalScript() {
 
 // TODO QZX: Add a Reset button that clears the cache and sets the defaults.
 
-var CookieFieldIds = [
-    ['Gen1_Check', 'true'],
-    ['Gen2_Check', 'true'],
-    ['Gen3_Check', 'true'],
-    ['Gen4_Check', 'false'],
-    ['Gen5_Check', 'false'],
-    ['Gen6_Check', 'false'],
-    ['Gen7_Check', 'false'],
-    ['GenFilterType_Combobox', GenFilterType_Combobox_Default],
-    ['Filter_Text', ''],
-];
+var CookieFieldIds = {
+    'Gen1_Check': 'true',
+    'Gen2_Check': 'true',
+    'Gen3_Check': 'true',
+    'Gen4_Check': 'false',
+    'Gen5_Check': 'false',
+    'Gen6_Check': 'false',
+    'Gen7_Check': 'false',
+    'GenFilterType_Combobox': GenFilterType_Combobox_Default,
+    'Filter_Text': '',
+};
+
+// Read the Cookie and apply it to the fields.
+function ApplyCookies() {
+    try {
+        ApplyCookieSettings(CookieFieldIds);
+        OnFilterCriteriaChanged();
+    }
+    catch (err) {
+        ShowError(err);
+    }
+}
+
 
 function OnFilterCriteriaChanged(field) {
     if (field !== undefined && field !== null) {
@@ -95,13 +107,3 @@ function OnFilterCriteriaChanged(field) {
     }
 }
 
-// Read the Cookie and apply it to the fields.
-function ApplyCookies() {
-    try {
-        ApplyCookieSettingsQZX(CookieFieldIds);
-        OnFilterCriteriaChanged();
-    }
-    catch (err) {
-        ShowError(err);
-    }
-}
