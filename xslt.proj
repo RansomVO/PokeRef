@@ -818,6 +818,34 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
     </FixSourceFile>
+
+    <StyleSheet Include="tools\counters.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="tools\counters.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>counters.xsl</DependentUpon>
+      <Dependencies>
+        _datafiles/settings.xml;
+        _datafiles/mappings.xml;
+        _datafiles/pokestats.gen1.xml;
+        _datafiles/pokestats.gen2.xml;
+        _datafiles/pokestats.gen3.xml;
+        _datafiles/pokestats.gen4.xml;
+        _datafiles/pokestats.gen5.xml;
+        _datafiles/pokestats.gen6.xml;
+        _datafiles/pokestats.gen7.xml;
+        _datafiles/movesets.gen1.xml;
+        _datafiles/movesets.gen2.xml;
+        _datafiles/movesets.gen3.xml;
+      </Dependencies>
+      <OutputFileName>counters.html</OutputFileName>
+    </XslTransform>
+    <FixSourceFile Include="tools\counters.js">
+      <DependentUpon>counters.xsl</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>true</Visible>
+    </FixSourceFile>
   </ItemGroup>
 
   <!-- Resources -->

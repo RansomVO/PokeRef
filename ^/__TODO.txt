@@ -12,8 +12,6 @@ Add something to sprites to indicate regional.
 
 Find places to add more pics. (Funny ones if nothing else.)
 
-Add add id attribute to all "Sections" (<h2>, <h3> etc.) so we can levarage #xxx in URLs
-
 Search for TODO to find work that needs done.
 
 Make my own code to decrypt GAME_MASTER protobuf.
@@ -58,6 +56,28 @@ Add weaknesses based on moveset.
 
 =========================================================================================================
 ----- Tools -----
+Create a tool to figure out best counters for a RaidBoss.
+	***** Try doing this as an app. *****
+	For RaidBoss both Regular and Boosted:
+		Get the DPS for each of the RaidBoss's possible MoveSets 
+		Figure out how long until it kills the Attacker
+	For Attacker Moves both Regular and Boosted:
+		Figure out how much damage the Attacker will do before it is killed.
+			Take into account level, IV
+
+---------------------------------------------------------------------------
+|Raid Boss	|		Move Sets				|		True DPS				|
+|			|Quick Move	|	Charged Move	|	Regular	|	Boosted			|
+---------------------------------------------------------------------------
+|Kyogre		|Waterfall	|	Hydro Pump		|	22.35	|	(icon)	12.34	|
+|			---------------------------------------------------------------
+|			|Waterfall	|	Blizzard		|	30.11	|	(icon)	56.78	|
+|			---------------------------------------------------------------
+|			|Waterfall	|	Thunder			|	28.00	|	(icon)	90.12	|
+---------------------------------------------------------------------------
+
+			 
+
 Create tool to determine effectiveness of a Move against a Pokemon.
 
 On ShoppingBoxTool Mark values that have been modified. (Bold? Background?)

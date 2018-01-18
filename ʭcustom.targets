@@ -2,6 +2,7 @@
 
   <Import Project="updatecachedates.proj" />
   <Import Project="xslt.proj" />
+  <Import Project="dependencies.proj" />
 
   <PropertyGroup>
     <SearchPokemon>Pokemon([ \,\:\.\'\&lt;])</SearchPokemon>

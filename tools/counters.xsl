@@ -1,0 +1,135 @@
+﻿<xsl:stylesheet version="1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:exslt="http://exslt.org/common"
+>
+
+  <xsl:include href="/charts/movesets/movesets.xsl" />
+
+  <!-- Global Variables -->
+  <xsl:variable name="DPSFilter" select="$MaxTrueDPS * $DPSGood" />
+
+  <xsl:template match="/">
+    <xsl:apply-templates select="Root" mode="Counters" />
+  </xsl:template>
+
+  <xsl:template match="Root" mode="Counters">
+    <html lang="en-us">
+      <head>
+        <!-- This is to make the font size consistent on mobile. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script>
+          <xsl:attribute name="src">
+            <xsl:text>/js/global.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <link type="text/css" rel="stylesheet" >
+          <xsl:attribute name="href">
+            <xsl:text>index.css?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </link>
+
+        <title>Raidboss Counters</title>
+      </head>
+      <body>
+        <h1>Raidboss Counters</h1>
+        <p>
+          When it comes to Raids, you want the best chance of defeating the Boss.
+          But which of <i>your</i> Pokemon will do best against the boss?
+          <br />Use this tool to find out.
+        </p>
+
+        <br />
+        <hr />
+
+
+        <!--
+        <div style="border:1px solid red">
+          <xsl:copy-of select="MoveSets/MoveSet[Damage/TrueDPS >= $DPSFilter]" />
+        </div>
+-->
+        <table border="1" style="white-space:nowrap;">
+          <xsl:call-template name="CreateTableHeaders" />
+
+          <xsl:apply-templates select="MoveSets/MoveSet[Damage/TrueDPS >= $DPSFilter]" />
+
+          <!--
+          <xsl:for-each select="MoveSets/MoveSet[Damage/TrueDPS >= $DPSFilter and not(preceding-sibling::MoveSet/Pokemon/ID = Pokemon/ID)]">
+            <xsl:call-template name="PokemonMoveSets">
+              <xsl:with-param name="PokemonID" select="Pokemon/ID" />
+            </xsl:call-template>
+          </xsl:for-each>
+-->
+        </table>
+
+
+        <!-- This script is defined in /js/global.js -->
+        <script>WriteFooter();</script>
+      </body>
+    </html>
+  </xsl:template>
+
+  <!--
+
+  <xsl:template name="CreateTableHeaders">
+    <tr>
+      <th colspan="3">Pokemon</th>
+      <th colspan="2">Move Set</th>
+      <th rowspan="2">True DPS</th>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Fast</th>
+      <th>Charged</th>
+    </tr>
+  </xsl:template>
+
+
+  <xsl:template name="PokemonMoveSets">
+    <xsl:param name="PokemonID" />
+
+    <xsl:variable name="Rows" select="count(/Root/MoveSets/MoveSet[Pokemon/ID=$PokemonID]) + 1" />
+
+    <tr>
+      <td id="Image" class="CELL_FILLED">
+        <xsl:attribute name="rowspan">
+          <xsl:value-of select="$Rows" />
+        </xsl:attribute>
+        <xsl:apply-templates select="/Root/PokemonStats/Pokemon[ID = $PokemonID]" />
+      </td>
+      <td>
+        <xsl:attribute name="rowspan">
+          <xsl:value-of select="$Rows"/>
+        </xsl:attribute>
+        <xsl:value-of select="Pokemon/ID" />
+      </td>
+      <td>
+        <xsl:attribute name="rowspan">
+          <xsl:value-of select="$Rows"/>
+        </xsl:attribute>
+        <xsl:value-of select="Pokemon/Name" />
+      </td>
+      <td colspan="8" style="height:0px; margin:0px; padding:0px; border:none;" />
+    </tr>
+
+    <xsl:for-each select="/Root/MoveSets/MoveSet[Pokemon/ID=$PokemonID]">
+      <tr>
+        <td>
+          <xsl:value-of select="Attack/Fast"/>
+        </td>
+        <td>
+          <xsl:value-of select="Attack/Charged"/>
+        </td>
+        <td>
+          <xsl:value-of select="Damage/TrueDPS"/>
+        </td>
+      </tr>
+    </xsl:for-each>
+
+  </xsl:template>
+-->
+
+</xsl:stylesheet>

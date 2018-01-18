@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Root [
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY Stats SYSTEM "/_datafiles/stats.xml">
+  <!ENTITY PokeStats_Gen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
+  <!ENTITY PokeStats_Gen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
+  <!ENTITY PokeStats_Gen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
+  <!ENTITY MoveSets_Gen1 SYSTEM "/_datafiles/movesets.gen1.xml">
+  <!ENTITY MoveSets_Gen2 SYSTEM "/_datafiles/movesets.gen2.xml">
+  <!ENTITY MoveSets_Gen3 SYSTEM "/_datafiles/movesets.gen3.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="counters.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Settings; 
+  &Mappings;
+  &Stats;
+  &PokeStats_Gen1;
+  &PokeStats_Gen2;
+  &PokeStats_Gen3;
+  &MoveSets_Gen1;
+  &MoveSets_Gen2;
+  &MoveSets_Gen3;
+</Root>

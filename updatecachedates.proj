@@ -23,6 +23,8 @@
         charts\movesets\_linkslist.html;
         charts\raidboss\_sectionname.txt;
         charts\raidboss\_linkslist.page.xml;
+        charts\raidboss\raidbosses.current.xml;
+        charts\raidboss\raidbosses.legacy.xml;
         resources\_sectionname.txt;
         tech\GAME_MASTER\_sectionname.txt;
         tech\GAME_MASTER\moves\_sectionname.txt;
@@ -185,6 +187,9 @@
       </Dependencies>
       <OutputFileName>shoppingboxes.html</OutputFileName>
     </UpdateCacheDate>
+    <FixSourceFile Include="tools\shoppingboxes.js">
+      <DependentUpon>shoppingboxes.html</DependentUpon>
+    </FixSourceFile>
   </ItemGroup>
   <ItemGroup>
     <UpdateCacheDate Include="_\index.html">
