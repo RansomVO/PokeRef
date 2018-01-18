@@ -188,7 +188,11 @@
       <OutputFileName>shoppingboxes.html</OutputFileName>
     </UpdateCacheDate>
     <FixSourceFile Include="tools\shoppingboxes.js">
+      <Visible>true</Visible>
       <DependentUpon>shoppingboxes.html</DependentUpon>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
     </FixSourceFile>
   </ItemGroup>
   <ItemGroup>

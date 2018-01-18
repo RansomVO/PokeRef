@@ -1,80 +1,173 @@
-﻿// ================================================================================================
+﻿// ============================================================================
+// ===== Global Variables
+// ============================================================================
+
+// #region Global Variables
+
+// Constants: Prices in Shop
+var PremiumRaidPass_Value_Qty = 1; var PremiumRaidPass_Value_Price = 100;
+var MaxRevives_Value_Qty = 6; var MaxRevives_Value_Price = 180;
+var MaxPotions_Value_Qty = 10; var MaxPotions_Value_Price = 200;
+var PokeBalls_Value_Qty = 200; var PokeBalls_Value_Price = 800;
+var Lures_Value_Qty = 8; var Lures_Value_Price = 680;
+var Incubator_Value_Qty = 1; var Incubator_Value_Price = 150;
+var LuckyEggs_Value_Qty = 25; var LuckyEggs_Value_Price = 1250;
+var Incense_Value_Qty = 25; var Incense_Value_Price = 1250;
+
+// Constants: Assumed Values for items that may be in boxes, but are not in Shop.
+var StarPiece_AssumedValue = Incense_Value_Price / Incense_Value_Qty;
+var SuperIncubator_AssumedValue = 200;
+var GreatBalls_AssumedValue = PokeBalls_Value_Price / PokeBalls_Value_Qty + 3;
+var UltraBalls_AssumedValue = GreatBalls_AssumedValue + 3;
+var RazzBerries_AssumedValue = 1;
+var NanabBerries_AssumedValue = 1;
+var PinappBerries_AssumedValue = 1;
+var GoldenBerries_AssumedValue = 10;
+
+// #endregion Global Variables
+
+// ================================================================================================
 // ********** Values that should be updated each time new boxes come out. *************************
 // ------------------------------------------------------------------------------------------------
 var ShoppingBox_Update_Date = '12 Jan 2018';
 var ShoppingBox_Update_Note = '(I have no idea what the occasion is.)';
 
-var SpecialBox = {};
-var GreatBox = {};
-var UltraBox = {};
+var SpecialBox = {
+    'Price': 480,
+    'PremiumRaidPass': 6,
+    'MaxRevives': 0,
+    'MaxPotions': 0,
+    'PokeBalls': 0,
+    'GreatBalls': 0,
+    'UltraBalls': 0,
+    'Lures': 0,
+    'Incubator': 0,
+    'LuckyEggs': 0,
+    'Incense': 3,
+    'StarPiece': 0,
+    'SuperIncubator': 0,
+    'RazzBerries': 0,
+    'NanabBerries': 0,
+    'PinappBerries': 10,
+    'GoldenBerries': 0,
+};
 
-function GetBoxes() {
-    // Special Box
-    SpecialBox['Price'] = 480;
-    SpecialBox['PremiumRaidPass'] = 6;
-    SpecialBox['MaxRevives'] = 0;
-    SpecialBox['MaxPotions'] = 0;
-    SpecialBox['PokeBalls'] = 0;
-    SpecialBox['GreatBalls'] = 0;
-    SpecialBox['UltraBalls'] = 0;
-    SpecialBox['Lures'] = 0;
-    SpecialBox['Incubator'] = 0;
-    SpecialBox['LuckyEggs'] = 0;
-    SpecialBox['Incense'] = 3;
-    SpecialBox['StarPiece'] = 0;
-    SpecialBox['SuperIncubator'] = 0;
-    SpecialBox['RazzBerries'] = 0;
-    SpecialBox['NanabBerries'] = 0;
-    SpecialBox['PinappBerries'] = 10;
-    SpecialBox['GoldenBerries'] = 0;
+var GreatBox = {
+    'Price': 780,
+    'PremiumRaidPass': 9,
+    'MaxRevives': 0,
+    'MaxPotions': 0,
+    'PokeBalls': 0,
+    'GreatBalls': 0,
+    'UltraBalls': 0,
+    'Lures': 0,
+    'Incubator': 0,
+    'LuckyEggs': 0,
+    'Incense': 0,
+    'StarPiece': 10,
+    'SuperIncubator': 0,
+    'RazzBerries': 0,
+    'NanabBerries': 0,
+    'PinappBerries': 10,
+    'GoldenBerries': 0,
+};
 
-    // Great Box
-    GreatBox['Price'] = 780;
-    GreatBox['PremiumRaidPass'] = 9;
-    GreatBox['MaxRevives'] = 0;
-    GreatBox['MaxPotions'] = 0;
-    GreatBox['PokeBalls'] = 0;
-    GreatBox['GreatBalls'] = 0;
-    GreatBox['UltraBalls'] = 0;
-    GreatBox['Lures'] = 0;
-    GreatBox['Incubator'] = 0;
-    GreatBox['LuckyEggs'] = 0;
-    GreatBox['Incense'] = 0;
-    GreatBox['StarPiece'] = 10;
-    GreatBox['SuperIncubator'] = 0;
-    GreatBox['RazzBerries'] = 0;
-    GreatBox['NanabBerries'] = 0;
-    GreatBox['PinappBerries'] = 10;
-    GreatBox['GoldenBerries'] = 0;
+var UltraBox = {
+    'Price': 1480,
+    'PremiumRaidPass': 15,
+    'MaxRevives': 6,
+    'MaxPotions': 0,
+    'PokeBalls': 0,
+    'GreatBalls': 0,
+    'UltraBalls': 0,
+    'Lures': 0,
+    'Incubator': 0,
+    'LuckyEggs': 6,
+    'Incense': 0,
+    'StarPiece': 20,
+    'SuperIncubator': 0,
+    'RazzBerries': 0,
+    'NanabBerries': 0,
+    'PinappBerries': 0,
+    'GoldenBerries': 0,
+};
 
-    // Ultra Box
-    UltraBox['Price'] = 1480;
-    UltraBox['PremiumRaidPass'] = 15;
-    UltraBox['MaxRevives'] = 6;
-    UltraBox['MaxPotions'] = 0;
-    UltraBox['PokeBalls'] = 0;
-    UltraBox['GreatBalls'] = 0;
-    UltraBox['UltraBalls'] = 0;
-    UltraBox['Lures'] = 0;
-    UltraBox['Incubator'] = 0;
-    UltraBox['LuckyEggs'] = 6;
-    UltraBox['Incense'] = 0;
-    UltraBox['StarPiece'] = 20;
-    UltraBox['SuperIncubator'] = 0;
-    UltraBox['RazzBerries'] = 0;
-    UltraBox['NanabBerries'] = 0;
-    UltraBox['PinappBerries'] = 0;
-    UltraBox['GoldenBerries'] = 0;
+// ================================================================================================
+// ================================================================================================
+
+// #region Cookies
+
+// Fields that should be saved in cookies.
+var CookieSettings = {
+    'PremiumRaidPass_Check': 'true',
+    'MaxRevives_Check': 'true',
+    'MaxPotions_Check': 'true',
+    'PokeBalls_Check': 'true',
+    'Lures_Check': 'true',
+    'Incubator_Check': 'true',
+    'LuckyEggs_Check': 'true',
+    'Incense_Check': 'true',
+
+    'StarPiece_Check': 'true',
+    'SuperIncubator_Check': 'true',
+    'GreatBalls_Check': 'false',
+    'UltraBalls_Check': 'false',
+    'RazzBerries_Check': 'false',
+    'NanabBerries_Check': 'false',
+    'PinappBerries_Check': 'false',
+    'GoldenBerries_Check': 'false',
+
+    'PremiumRaidPass_Qty': PremiumRaidPass_Value_Qty,
+    'PremiumRaidPass_Price': PremiumRaidPass_Value_Price,
+    'PremiumRaidPass_Value': PremiumRaidPass_Value_Price / PremiumRaidPass_Value_Qty,
+    'MaxRevives_Qty': MaxRevives_Value_Qty,
+    'MaxRevives_Price': MaxRevives_Value_Price,
+    'MaxRevives_Value': MaxRevives_Value_Price / MaxRevives_Value_Qty,
+    'MaxPotions_Qty': MaxPotions_Value_Qty,
+    'MaxPotions_Price': MaxPotions_Value_Price,
+    'MaxPotions_Value': MaxPotions_Value_Price / MaxPotions_Value_Qty,
+    'PokeBalls_Qty': PokeBalls_Value_Qty,
+    'PokeBalls_Price': PokeBalls_Value_Price,
+    'PokeBalls_Value': PokeBalls_Value_Price / PokeBalls_Value_Qty,
+    'Lures_Qty': Lures_Value_Qty,
+    'Lures_Price': Lures_Value_Price,
+    'Lures_Value': Lures_Value_Price / Lures_Value_Qty,
+    'Incubator_Qty': Incubator_Value_Qty,
+    'Incubator_Price': Incubator_Value_Price,
+    'Incubator_Value': Incubator_Value_Price / Incubator_Value_Qty,
+    'LuckyEggs_Qty': LuckyEggs_Value_Qty,
+    'LuckyEggs_Price': LuckyEggs_Value_Price,
+    'LuckyEggs_Value': LuckyEggs_Value_Price / LuckyEggs_Value_Qty,
+    'Incense_Qty': Incense_Value_Qty,
+    'Incense_Price': Incense_Value_Price,
+    'Incense_Value': Incense_Value_Price / Incense_Value_Qty,
+
+    'StarPiece_Value': StarPiece_AssumedValue,
+    'SuperIncubator_Value': SuperIncubator_AssumedValue,
+    'GreatBalls_Value': GreatBalls_AssumedValue,
+    'UltraBalls_Value': UltraBalls_AssumedValue,
+    'RazzBerries_Value': RazzBerries_AssumedValue,
+    'NanabBerries_Value': NanabBerries_AssumedValue,
+    'PinappBerries_Value': PinappBerries_AssumedValue,
+    'GoldenBerries_Value': GoldenBerries_AssumedValue,
+};
+
+// Read the Cookie and apply it to the fields.
+function ApplyCookie() {
+    try {
+        ApplyCookieSettings(CookieSettings);
+    }
+    catch (err) {
+        ShowError(err);
+    }
 }
 
-// ================================================================================================
-// ================================================================================================
+// #endregion Cookies
 
 // Called when any non-value modifications should be done.
 //  (E.G. Collapsers, javascript initial values/calculations, etc.)
 function LocalScript() {
     GetFields();
-    GetBoxes();
 
     var updateDate = GetCookieSetting('ShoppingBox_Update_Date');
     Reset(updateDate !== ShoppingBox_Update_Date);
@@ -179,22 +272,12 @@ function GetFields() {
     }
 }
 
-// Read the Cookie and apply it to the fields.
-function ApplyCookie() {
-    try {
-        ApplyCookieSettingsQZX(CookieSettings);
-    }
-    catch (err) {
-        ShowError(err);
-    }
-}
-
 // Reset all of the fields.
 //  (If clearCache, also reset the cookies.)
 function Reset(clearCache) {
     try {
         if (clearCache) {
-            ClearCookieSettingsQZX(CookieSettings);
+            ClearCookieSettings(CookieSettings);
         }
 
         InitializeChecks();
@@ -881,81 +964,3 @@ function OnAllItemsCheckChanged() {
         ShowError(err);
     }
 }
-
-// ============================================================================
-// ===== Global Variables
-// ============================================================================
-// Constants: Prices in Shop
-var PremiumRaidPass_Value_Qty = 1; var PremiumRaidPass_Value_Price = 100;
-var MaxRevives_Value_Qty = 6; var MaxRevives_Value_Price = 180;
-var MaxPotions_Value_Qty = 10; var MaxPotions_Value_Price = 200;
-var PokeBalls_Value_Qty = 200; var PokeBalls_Value_Price = 800;
-var Lures_Value_Qty = 8; var Lures_Value_Price = 680;
-var Incubator_Value_Qty = 1; var Incubator_Value_Price = 150;
-var LuckyEggs_Value_Qty = 25; var LuckyEggs_Value_Price = 1250;
-var Incense_Value_Qty = 25; var Incense_Value_Price = 1250;
-
-// Constants: Assumed Values for items that may be in boxes, but are not in Shop.
-var StarPiece_AssumedValue = Incense_Value_Price / Incense_Value_Qty;
-var SuperIncubator_AssumedValue = 200;
-var GreatBalls_AssumedValue = PokeBalls_Value_Price / PokeBalls_Value_Qty + 3;
-var UltraBalls_AssumedValue = GreatBalls_AssumedValue + 3;
-var RazzBerries_AssumedValue = 1;
-var NanabBerries_AssumedValue = 1;
-var PinappBerries_AssumedValue = 1;
-var GoldenBerries_AssumedValue = 10;
-
-// Fields that should be saved in cookies.
-var CookieSettings = [
-    ['PremiumRaidPass_Check', 'true'],
-    ['MaxRevives_Check', 'true'],
-    ['MaxPotions_Check', 'true'],
-    ['PokeBalls_Check', 'true'],
-    ['Lures_Check', 'true'],
-    ['Incubator_Check', 'true'],
-    ['LuckyEggs_Check', 'true'],
-    ['Incense_Check', 'true'],
-
-    ['StarPiece_Check', 'true'],
-    ['SuperIncubator_Check', 'true'],
-    ['GreatBalls_Check', 'false'],
-    ['UltraBalls_Check', 'false'],
-    ['RazzBerries_Check', 'false'],
-    ['NanabBerries_Check', 'false'],
-    ['PinappBerries_Check', 'false'],
-    ['GoldenBerries_Check', 'false'],
-
-    ['PremiumRaidPass_Qty', PremiumRaidPass_Value_Qty],
-    ['PremiumRaidPass_Price', PremiumRaidPass_Value_Price],
-    ['PremiumRaidPass_Value', PremiumRaidPass_Value_Price / PremiumRaidPass_Value_Qty],
-    ['MaxRevives_Qty', MaxRevives_Value_Qty],
-    ['MaxRevives_Price', MaxRevives_Value_Price],
-    ['MaxRevives_Value', MaxRevives_Value_Price / MaxRevives_Value_Qty],
-    ['MaxPotions_Qty', MaxPotions_Value_Qty],
-    ['MaxPotions_Price', MaxPotions_Value_Price],
-    ['MaxPotions_Value', MaxPotions_Value_Price / MaxPotions_Value_Qty],
-    ['PokeBalls_Qty', PokeBalls_Value_Qty],
-    ['PokeBalls_Price', PokeBalls_Value_Price],
-    ['PokeBalls_Value', PokeBalls_Value_Price / PokeBalls_Value_Qty],
-    ['Lures_Qty', Lures_Value_Qty],
-    ['Lures_Price', Lures_Value_Price],
-    ['Lures_Value', Lures_Value_Price / Lures_Value_Qty],
-    ['Incubator_Qty', Incubator_Value_Qty],
-    ['Incubator_Price', Incubator_Value_Price],
-    ['Incubator_Value', Incubator_Value_Price / Incubator_Value_Qty],
-    ['LuckyEggs_Qty', LuckyEggs_Value_Qty],
-    ['LuckyEggs_Price', LuckyEggs_Value_Price],
-    ['LuckyEggs_Value', LuckyEggs_Value_Price / LuckyEggs_Value_Qty],
-    ['Incense_Qty', Incense_Value_Qty],
-    ['Incense_Price', Incense_Value_Price],
-    ['Incense_Value', Incense_Value_Price / Incense_Value_Qty],
-
-    ['StarPiece_Value', StarPiece_AssumedValue],
-    ['SuperIncubator_Value', SuperIncubator_AssumedValue],
-    ['GreatBalls_Value', GreatBalls_AssumedValue],
-    ['UltraBalls_Value', UltraBalls_AssumedValue],
-    ['RazzBerries_Value', RazzBerries_AssumedValue],
-    ['NanabBerries_Value', NanabBerries_AssumedValue],
-    ['PinappBerries_Value', PinappBerries_AssumedValue],
-    ['GoldenBerries_Value', GoldenBerries_AssumedValue],
-];
