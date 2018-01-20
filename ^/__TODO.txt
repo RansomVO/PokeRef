@@ -1,14 +1,11 @@
-﻿Install these extensions:
-	- Web Essentials
-	- Web Extension Pack
-
-=========================================================================================================
+﻿=========================================================================================================
 ----- Work in Progress -----
 SEAPokeMap Filter
 
 RaidBoss Counters
 
 MoveSet Sort and Filter
+	- Add ability to specify a range of numbers.
 
 =========================================================================================================
 ----- Overall -----
@@ -32,6 +29,7 @@ Search for TODO to find work that needs done.
 Make my own code to decrypt GAME_MASTER protobuf.
 
 Add a mechanism to do sorting and filtering in tables. (Especially in MoveSets and PokeStats.)
+
 Find a PERFORMANT way to create scrolling tables.
 
 Make an animated Loading GIF and use it in appropriate locations.
@@ -114,7 +112,6 @@ Add pages for formulas for CP and HP
 
 Add pictures to moves/index.html
 	- Energy bar from Pokemon battle
-	- Charge-up bar when tap-and-hold for charged move.
 
 Do Example on moves/index page. (Include link to Move Sets.)
 

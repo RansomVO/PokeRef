@@ -6,7 +6,6 @@
   <xsl:include href="/xsl/global.xsl"/>
   <!--
     ***** TODO *****
-    - Create javascript to create a combobos of Pokemon #/Name then display just the results for that Pokemon.
     - Make it so table scrolls, leaving the headers at the top.
 -->
 
@@ -321,13 +320,17 @@
     <xsl:variable name="valueDamageTrueDPS" select="format-number(Damage/TrueDPS, '#0.00')" />
     <xsl:variable name="valueDamagePercentOfMax" select="format-number((Damage/PercentOfMax) * 100, '##0')" />
 
+    <xsl:variable name="FastMoveName" select="Attack/Fast" />
     <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="Attack/Fast" />
+      <xsl:with-param name="Content" select="$FastMoveName" />
+      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[Name=$FastMoveName]/Type" />
       <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
       <xsl:with-param name="Legacy" select="$legacy" />
     </xsl:call-template>
+    <xsl:variable name="ChargedMoveName" select="Attack/Charged" />
     <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="Attack/Charged" />
+      <xsl:with-param name="Content" select="$ChargedMoveName" />
+      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[Name=$ChargedMoveName]/Type" />
       <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
       <xsl:with-param name="Legacy" select="$legacy" />
     </xsl:call-template>
@@ -376,6 +379,7 @@
     <xsl:param name="Percent" />
     <xsl:param name="Legacy" />
     <xsl:param name="Align" />
+    <xsl:param name="TypeIcon" />
 
     <td>
       <xsl:choose>
@@ -450,6 +454,13 @@
         </xsl:attribute>
       </xsl:if>
 
+      <xsl:if test="$TypeIcon">
+        <xsl:call-template name="OutputTypeIcon">
+          <xsl:with-param name="Type" select="$TypeIcon" />
+        </xsl:call-template>
+        <xsl:text> </xsl:text>
+      </xsl:if>
+      
       <xsl:value-of select="$Content" />
       <xsl:if test="$Percent != ''">
         <xsl:text>%</xsl:text>

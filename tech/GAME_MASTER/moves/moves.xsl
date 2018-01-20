@@ -117,7 +117,11 @@
       <th align="left">
         <xsl:value-of select="Name"/>
       </th>
-      <td align="center">
+      <td align="left">
+        <xsl:call-template name="OutputTypeIcon">
+          <xsl:with-param name="Type" select="Type" />
+        </xsl:call-template>
+        <xsl:text> </xsl:text>
         <xsl:value-of select="Type"/>
       </td>
       <td align="right">
