@@ -1,15 +1,20 @@
-﻿var GenFilterType_Combobox_Default = 1; // 'Any of Selected Gens'
+﻿// #region Common
 
-function LocalScript() {
-    ApplyCookies();
+// ============================================================================
+// ===== Global Variables
+// ============================================================================
+// #region Global Variables
 
-    document.getElementById('Loading').style.display = 'none';
-    document.getElementById('Loaded').style.display = '';
-}
+var FilterType_Combobox_Gen_Any = 1;
+var FilterType_Combobox_Gen_All = 2;
+var FilterType_Combobox_Gen_Default = FilterType_Combobox_Gen_Any;
 
-// ****************************************************************************************************************
-// Functions for Evolutions Chart
-// ****************************************************************************************************************
+// #endregion Global Variables
+
+// ============================================================================
+// ===== Cookies
+// ============================================================================
+// #region Cookies
 
 // TODO QZX: Add a Reset button that clears the cache and sets the defaults.
 
@@ -21,8 +26,8 @@ var CookieSettings = {
     'Gen5_Check': 'false',
     'Gen6_Check': 'false',
     'Gen7_Check': 'false',
-    'GenFilterType_Combobox': GenFilterType_Combobox_Default,
-    'Filter_Text': '',
+    'FilterType_Combobox_Gen': FilterType_Combobox_Gen_Default,
+    'Filter_Text_Evolutions': '',
 };
 
 // Read the Cookie and apply it to the fields.
@@ -36,13 +41,32 @@ function ApplyCookies() {
     }
 }
 
+// #endregion Cookies
+
+
+// ============================================================================
+// ===== LocalScript (Called when page is loaded to perform any initial work.)
+// ============================================================================
+function LocalScript() {
+    ApplyCookies();
+
+    document.getElementById('Loading').classList.add('DIV_HIDDEN');
+    document.getElementById('Loaded').classList.remove('DIV_HIDDEN');
+    document.getElementById('Loaded').classList.add('DIV_SHOWN');
+}
+
+// #endregion Common
+
+// ============================================================================
+// ===== Functions specific to this page.
+// ============================================================================
 
 function OnFilterCriteriaChanged(field) {
     if (field !== undefined && field !== null) {
         UpdateCookieSetting(field.id);
     }
 
-    var genFilterType = document.getElementById('GenFilterType_Combobox').value;
+    var genFilterType = document.getElementById('FilterType_Combobox_Gen').value;
     var gen1 = document.getElementById('Gen1_Check').checked;
     var gen2 = document.getElementById('Gen2_Check').checked;
     var gen3 = document.getElementById('Gen3_Check').checked;
@@ -50,7 +74,7 @@ function OnFilterCriteriaChanged(field) {
     var gen5 = document.getElementById('Gen5_Check').checked;
     var gen6 = document.getElementById('Gen6_Check').checked;
     var gen7 = document.getElementById('Gen7_Check').checked;
-    var filter = document.getElementById('Filter_Text').value;
+    var filter = document.getElementById('Filter_Text_Evolutions').value;
     var isNumber = !isNaN(filter);
 
     var found = 0;

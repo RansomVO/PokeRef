@@ -5,6 +5,8 @@
   <!ENTITY Stats SYSTEM "/_datafiles/stats.xml">
   <!ENTITY Pokestats SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY MoveSets SYSTEM "/_datafiles/movesets.gen1.xml">
+  <!ENTITY FastMoves SYSTEM "/_datafiles/moves.fast.xml">
+  <!ENTITY ChargedMoves SYSTEM "/_datafiles/moves.charged.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="movesets.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -14,4 +16,6 @@
   &Stats;
   &Pokestats;
   &MoveSets;
+  &FastMoves;
+  &ChargedMoves;
 </Root>

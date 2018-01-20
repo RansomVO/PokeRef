@@ -1,7 +1,6 @@
 ﻿// ============================================================================
 // ===== Global Variables
 // ============================================================================
-
 // #region Global Variables
 
 // Constants: Prices in Shop
@@ -26,9 +25,9 @@ var GoldenBerries_AssumedValue = 10;
 
 // #endregion Global Variables
 
-// ================================================================================================
-// ********** Values that should be updated each time new boxes come out. *************************
-// ------------------------------------------------------------------------------------------------
+// ****************************************************************************
+// ***** Values that should be updated each time new boxes come out. **********
+// ****************************************************************************
 var ShoppingBox_Update_Date = '12 Jan 2018';
 var ShoppingBox_Update_Note = '(I have no idea what the occasion is.)';
 
@@ -92,9 +91,11 @@ var UltraBox = {
     'GoldenBerries': 0,
 };
 
-// ================================================================================================
-// ================================================================================================
+// #region Common
 
+// ============================================================================
+// ===== Cookies
+// ============================================================================
 // #region Cookies
 
 // Fields that should be saved in cookies.
@@ -164,8 +165,9 @@ function ApplyCookie() {
 
 // #endregion Cookies
 
-// Called when any non-value modifications should be done.
-//  (E.G. Collapsers, javascript initial values/calculations, etc.)
+// ============================================================================
+// ===== LocalScript (Called when page is loaded to perform any initial work.)
+// ============================================================================
 function LocalScript() {
     GetFields();
 
@@ -173,6 +175,12 @@ function LocalScript() {
     Reset(updateDate !== ShoppingBox_Update_Date);
     SetCookieSetting('ShoppingBox_Update_Date', ShoppingBox_Update_Date);
 }
+
+// #endregion Common
+
+// ============================================================================
+// ===== Functions specific to this page.
+// ============================================================================
 
 // Get the fields we will be using multiple times.
 function GetFields() {

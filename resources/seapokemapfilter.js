@@ -1,12 +1,17 @@
-﻿// ================================================================================================
-// Constants
+﻿// #region Common
+
+// ============================================================================
+// ===== Global Variables
+// ============================================================================
+// #region Global Variables
 var FilterScriptIdsMarker = '{0}';
 var FilterScript = 'javascript:var show=[' + FilterScriptIdsMarker + '];for(i=1;i<1000;i++){localStorage.setItem(i,"0");};for(i=0;i<show.length;i++){localStorage.setItem(show[i],"1");};location.reload();';
 var CheckIdPrefix = 'Check_';
 var CellIdPrefix = 'Cell_';
 var PokemonCheckDefault = 'false';
+// #endregion Global Variables
 
-// Variables that need to be updated when SEAPokeMap makes changes.
+// #region Variables that need to be updated when SEAPokeMap makes changes.
 var SeaPokeMap_Disabled = [
     'Hoothoot',
     'Hoppip',
@@ -124,34 +129,17 @@ var SeaPokeMap_HaveIV = [
     'Whiscash',
     'Wigglytuff',
 ];
+// #endregion Variables that need to be updated when SEAPokeMap makes changes.
 
-// Variable to hold fields and default values that will be saved in cookies.
-//  (Additional settings will be added in GetFields().)
+// ============================================================================
+// ===== Cookies
+// ============================================================================
+// #region Cookies
+
 var CookieSettings = {
     'Check_Icons': 'false',
     'Check_IVOnly': 'false',
     'Input_MinIV': '0',
-}
-
-// ================================================================================================
-
-// Called when any non-value modifications should be done.
-//  (E.G. Collapsers, javascript initial values/calculations, etc.)
-function LocalScript() {
-    GetFields();
-    DoSeaPokeMapDisable();
-    ApplyCookie();
-}
-
-function GetFields() {
-    var FilterResults = document.getElementById('FilterResults');
-
-    for (var i = 1; i < 1000; i++) {
-        var fieldId = CheckIdPrefix + i;
-        if (document.getElementById(fieldId) != null) {
-            CookieSettings[fieldId] = PokemonCheckDefault;
-        }
-    }
 }
 
 // Read the Cookie and apply it to the fields.
@@ -164,6 +152,35 @@ function ApplyCookie() {
         ShowError(err);
     }
 }
+
+// #endregion Cookies
+
+// ============================================================================
+// ===== LocalScript (Called when page is loaded to perform any initial work.)
+// ============================================================================
+function LocalScript() {
+    GetFields();
+    DoSeaPokeMapDisable();
+    ApplyCookie();
+}
+
+// #endregion Common
+
+// ============================================================================
+// ===== Functions specific to this page.
+// ============================================================================
+
+function GetFields() {
+    var FilterResults = document.getElementById('FilterResults');
+
+    for (var i = 1; i < 1000; i++) {
+        var fieldId = CheckIdPrefix + i;
+        if (document.getElementById(fieldId) != null) {
+            CookieSettings[fieldId] = PokemonCheckDefault;
+        }
+    }
+}
+
 
 // Clear the cookie for the current Filter and Reset all of the fields.
 function Reset() {

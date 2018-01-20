@@ -51,11 +51,11 @@
           <h1>Loading...</h1>
         </div>
         <!-- Leave this hidden until we have loaded everything and applied it. -->
-        <div id="Loaded" style="display:none;">
+        <div id="Loaded" class="DIV_HIDDEN">
           <h2>Selection Criteria</h2>
           <div class="INDENT">
             <xsl:text>Family Must Contain: </xsl:text>
-            <select class="PARENT" id="GenFilterType_Combobox" onchange="OnFilterCriteriaChanged(this);">
+            <select class="PARENT" id="FilterType_Combobox_Gen" onchange="OnFilterCriteriaChanged(this);">
               <option value="1">Any of Selected Gens</option>
               <option value="2">All Selected Gens</option>
             </select>
@@ -71,7 +71,7 @@
             </div>
 
             <xsl:text>Filter by Name or ID: </xsl:text>
-            <input id="Filter_Text" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
+            <input id="Filter_Text_Evolutions" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
           </div>
 
           <br />
@@ -137,7 +137,13 @@
       │    (2)    │    (2)    ├───────────┤
       │           │           │ Politoed  │
       └───────────┴───────────┴───────────┘
-        
+
+      ┌───────────┬───────────┬───────────┐   
+      │ Wurmple   │ Silcoon   │ Beautifly │
+      │    (2)    ├───────────├───────────┤
+      │           │ Cascoon   │ Dustox    │
+      └───────────┴───────────┴───────────┘
+
       ( TODO QZX: I haven't handled this yet. We'll see what happens when Pokemon GO gets there.)
       ┌───────────┬───────────────────────┐
       │ Nincada   │ Ninjask               │

@@ -27,6 +27,12 @@
 
         <script>
           <xsl:attribute name="src">
+            <xsl:text>movesets.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <script>
+          <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
@@ -98,11 +104,62 @@
         <p>
           For a technical description of the formulas used, check out the <a href="/tech/movesetformulas.html">Move Set Formulas</a>.
         </p>
+
         <br />
-        <table border="1">
-          <xsl:call-template name="CreateTableHeaders" />
-          <xsl:apply-templates select="MoveSets" />
+        <hr />
+        <h2>Selection Criteria</h2>
+        <table class="INDENT">
+          <tr>
+            <td valign="top">
+              <table>
+                <tr style="display:none;" comment="TODO QZX: Remove display:none when sorting is supported.">
+                  <td colspan="2">
+                    <xsl:text>Sort By:</xsl:text>
+                    <select class="PARENT" id="SortType_Combobox" onchange="OnFilterCriteriaChanged(this);">
+                      <option value="1">Name</option>
+                      <option value="2">Id</option>
+                      <option value="3">TrueDPS</option>
+                    </select>
+                    <br />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Filter by Pokemon Name or ID:</td>
+                  <td style="padding:0">
+                    <input id="Filter_Text_PokeStat" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Move Name or Type:</td>
+                  <td style="padding:0">
+                    <input id="Filter_Text_Move" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td valign="top">
+              <input id="ShowOnlyReleased_Checkbox" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
+              <xsl:text>Show Only Released</xsl:text>
+            </td>
+          </tr>
+          <br />
         </table>
+
+        <br />
+        <hr />
+        <div id="Loading">
+          <h1>Loading...</h1>
+        </div>
+        <!-- Leave this hidden until we have loaded everything and applied it. -->
+        <div id="Loaded" class="DIV_HIDDEN">
+          <table border="1" id="MoveSets">
+            <xsl:call-template name="CreateTableHeaders" />
+          </table>
+
+          <table id="MoveSetsSource" style="display:none;">
+            <xsl:apply-templates select="MoveSets" />
+          </table>
+        </div>
 
         <!-- This script is defined in /js/global.js -->
         <script>WriteFooter();</script>
@@ -112,7 +169,7 @@
 
   <!-- Template to create the headers for the table -->
   <xsl:template name="CreateTableHeaders">
-    <tr style="font-size:xx-large;">
+    <tr class="Header" style="font-size:xx-large;">
       <th colspan="3" valign="bottom">Pokemon</th>
       <th colspan="2" valign="bottom">Move Set</th>
       <th class="ROTATED_CONTAINER" rowspan="2">
@@ -121,7 +178,7 @@
       <th colspan="2" valign="bottom">STAB</th>
       <th colspan="3" valign="bottom">Damage</th>
     </tr>
-    <tr style="font-size:large;">
+    <tr class="Header" style="font-size:large;">
       <th colspan="2" valign="bottom">ID</th>
       <th valign="bottom" align="left">Name</th>
       <th valign="bottom">Fast</th>
@@ -138,10 +195,10 @@
     </tr>
 
     <!-- Write the Key for the table. -->
-    <tr>
+    <tr class="Header">
       <td colspan="11" height="2px" style="background-color:black" />
     </tr>
-    <tr comment="GREAT">
+    <tr class="Header" comment="GREAT">
       <th colspan="3" rowspan="4" style="font-size:x-large; text-align:right;">Key:</th>
       <td class="GREAT" colspan="5">
         True DPS is &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible.
@@ -153,7 +210,7 @@
         &gt;= <xsl:value-of select="100*$DPSPercentGreat" />
       </td>
     </tr>
-    <tr comment="GOOD">
+    <tr class="Header" comment="GOOD">
       <td class="GOOD" colspan="5">
         True DPS is &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible.
       </td>
@@ -164,7 +221,7 @@
         &gt;= <xsl:value-of select="100*$DPSPercentGood" />
       </td>
     </tr>
-    <tr comment="POOR">
+    <tr class="Header" comment="POOR">
       <td class="POOR" colspan="5">
         True DPS is Above Average.
       </td>
@@ -175,7 +232,7 @@
         &gt;= <xsl:value-of select="100*$DPSPercentOkay" />
       </td>
     </tr>
-    <tr comment="BAD">
+    <tr class="Header" comment="BAD">
       <td class="BAD" colspan="5">
         True DPS is Below Average.
       </td>
@@ -186,7 +243,7 @@
         &lt; <xsl:value-of select="100*$DPSPercentOkay" />
       </td>
     </tr>
-    <tr>
+    <tr class="Header">
       <td colspan="11" height="1px" style="background-color:grey" />
     </tr>
   </xsl:template>
@@ -194,13 +251,31 @@
   <!-- Template to create merged cells for each Pokemon #/Name, then call template to create the MoveSet rows for that Pokemon -->
   <xsl:template match="MoveSets">
     <xsl:for-each select="MoveSet[not(Pokemon/ID=preceding-sibling::MoveSet/Pokemon/ID)]">
-      <xsl:sort select="Pokemon/Name"/>
       <xsl:variable name="PokemonID" select="Pokemon/ID" />
+      <xsl:variable name="PokemonStats" select="/Root/PokemonStats/Pokemon[ID=$PokemonID]" />
       <xsl:variable name="PokemonMoveSetCount" select="count(../MoveSet[Pokemon/ID=$PokemonID])" />
+
       <tr align="left" style="border-top-width:5px">
-        <xsl:if test="contains(/Root/PokemonStats/Pokemon[ID=$PokemonID]/Availability,'Unavailable')">
+        <xsl:if test="contains($PokemonStats/Availability,'Unavailable')">
           <xsl:attribute name="class">UNAVAILABLE_ROW</xsl:attribute>
         </xsl:if>
+        <xsl:attribute name="id">
+          <xsl:value-of select="$PokemonStats/ID" />
+        </xsl:attribute>
+        <xsl:attribute name="name">
+          <xsl:value-of select="$PokemonStats/Name" />
+        </xsl:attribute>
+        <xsl:attribute name="quickMoves">
+          <xsl:call-template name="MovesAttribute">
+            <xsl:with-param name="Moves" select="../MoveSet[Pokemon/ID=$PokemonID]/Attack/Fast" />
+          </xsl:call-template>
+        </xsl:attribute>
+        <xsl:attribute name="chargedMoves">
+          <xsl:call-template name="MovesAttribute">
+            <xsl:with-param name="Moves" select="../MoveSet[Pokemon/ID=$PokemonID]/Attack/Charged" />
+          </xsl:call-template>
+        </xsl:attribute>
+
         <td id="Image" class="CELL_FILLED">
           <xsl:attribute name="rowspan">
             <xsl:value-of select="$PokemonMoveSetCount + 1" />
@@ -380,6 +455,17 @@
         <xsl:text>%</xsl:text>
       </xsl:if>
     </td>
+  </xsl:template>
+
+  <!-- Concats a group of Moves into 1 string containing Move name and type. -->
+  <xsl:template name="MovesAttribute">
+    <xsl:param name="Moves" />
+
+    <xsl:for-each select="$Moves">
+      <xsl:variable name="Name" select="./text()" />
+      <xsl:value-of select="concat(' ',$Name)" />
+      <xsl:value-of select="concat(' ',/Root/Moves/Move[Name=$Name]/Type)"/>
+    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>

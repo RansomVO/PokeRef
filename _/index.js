@@ -1,8 +1,42 @@
-﻿function LocalScript()
-{
+﻿// #region Common
+
+// ============================================================================
+// ===== Global Variables
+// ============================================================================
+// #region Global Variables
+// #endregion Global Variables
+
+// ============================================================================
+// ===== Cookies
+// ============================================================================
+// #region Cookies
+
+var CookieSettings = {
+    //'Field': 'DefaultValue',
+};
+
+// Read the Cookie and apply it to the fields.
+function ApplyCookie() {
     try {
-        // Not used at this time.
-    } catch (err) {
+        ApplyCookieSettings(CookieSettings);
+    }
+    catch (err) {
         ShowError(err);
     }
 }
+
+// #endregion Cookies
+
+// ============================================================================
+// ===== LocalScript (Called when page is loaded to perform any initial work.)
+// ============================================================================
+function LocalScript() {
+    ApplyCookie();
+}
+
+// #endregion Common
+
+// ============================================================================
+// ===== Functions specific to this page.
+// ============================================================================
+

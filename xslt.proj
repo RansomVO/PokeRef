@@ -65,10 +65,18 @@
     <StyleSheet Include="charts\movesets\movesets.xsl">
       <Visible>true</Visible>
     </StyleSheet>
+    <FixSourceFile Include="charts\movesets\movesets.js">
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
+    </FixSourceFile>
     <XslTransform Include="charts\movesets\movesets.gen1.page.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
+        charts\movesets\movesets.js;
         _datafiles\stats.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\movesets.gen1.xml;
@@ -79,6 +87,7 @@
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
+        charts\movesets\movesets.js;
         _datafiles\stats.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\movesets.gen2.xml;
@@ -89,6 +98,7 @@
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
+        charts\movesets\movesets.js;
         _datafiles\stats.xml;
         _datafiles\pokestats.gen3.xml;
         _datafiles\movesets.gen3.xml;
@@ -143,7 +153,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.absol.xml;
       </Dependencies>
       <OutputFileName>raidboss.absol.html</OutputFileName>
@@ -152,7 +162,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.alakazam.xml;
       </Dependencies>
       <OutputFileName>raidboss.alakazam.html</OutputFileName>
@@ -161,7 +171,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.arcanine.xml;
       </Dependencies>
       <OutputFileName>raidboss.arcanine.html</OutputFileName>
@@ -170,7 +180,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.articuno.xml;
       </Dependencies>
       <OutputFileName>raidboss.articuno.html</OutputFileName>
@@ -179,7 +189,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.bayleef.xml;
       </Dependencies>
       <OutputFileName>raidboss.bayleef.html</OutputFileName>
@@ -188,7 +198,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.blastoise.xml;
       </Dependencies>
       <OutputFileName>raidboss.blastoise.html</OutputFileName>
@@ -197,7 +207,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.celebi.xml;
       </Dependencies>
       <OutputFileName>raidboss.celebi.html</OutputFileName>
@@ -206,7 +216,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.charizard.xml;
       </Dependencies>
       <OutputFileName>raidboss.charizard.html</OutputFileName>
@@ -215,7 +225,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.charmeleon.xml;
       </Dependencies>
       <OutputFileName>raidboss.charmeleon.html</OutputFileName>
@@ -224,7 +234,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.cloyster.xml;
       </Dependencies>
       <OutputFileName>raidboss.cloyster.html</OutputFileName>
@@ -233,7 +243,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.croconaw.xml;
       </Dependencies>
       <OutputFileName>raidboss.croconaw.html</OutputFileName>
@@ -242,7 +252,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.electabuzz.xml;
       </Dependencies>
       <OutputFileName>raidboss.electabuzz.html</OutputFileName>
@@ -251,7 +261,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.entei.xml;
       </Dependencies>
       <OutputFileName>raidboss.entei.html</OutputFileName>
@@ -260,7 +270,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.exeggutor.xml;
       </Dependencies>
       <OutputFileName>raidboss.exeggutor.html</OutputFileName>
@@ -269,7 +279,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.flareon.xml;
       </Dependencies>
       <OutputFileName>raidboss.flareon.html</OutputFileName>
@@ -278,7 +288,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.gengar.xml;
       </Dependencies>
       <OutputFileName>raidboss.gengar.html</OutputFileName>
@@ -287,7 +297,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.golem.xml;
       </Dependencies>
       <OutputFileName>raidboss.golem.html</OutputFileName>
@@ -296,7 +306,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.groudon.xml;
       </Dependencies>
       <OutputFileName>raidboss.groudon.html</OutputFileName>
@@ -305,7 +315,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.ho-oh.xml;
       </Dependencies>
       <OutputFileName>raidboss.ho-oh.html</OutputFileName>
@@ -314,7 +324,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.ivysaur.xml;
       </Dependencies>
       <OutputFileName>raidboss.ivysaur.html</OutputFileName>
@@ -323,7 +333,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.jirachi.xml;
       </Dependencies>
       <OutputFileName>raidboss.jirachi.html</OutputFileName>
@@ -332,7 +342,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.jolteon.xml;
       </Dependencies>
       <OutputFileName>raidboss.jolteon.html</OutputFileName>
@@ -341,7 +351,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.kyogre.xml;
       </Dependencies>
       <OutputFileName>raidboss.kyogre.html</OutputFileName>
@@ -350,7 +360,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.lapras.xml;
       </Dependencies>
       <OutputFileName>raidboss.lapras.html</OutputFileName>
@@ -359,7 +369,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.latias.xml;
       </Dependencies>
       <OutputFileName>raidboss.latias.html</OutputFileName>
@@ -368,7 +378,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.latios.xml;
       </Dependencies>
       <OutputFileName>raidboss.latios.html</OutputFileName>
@@ -377,7 +387,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.lugia.xml;
       </Dependencies>
       <OutputFileName>raidboss.lugia.html</OutputFileName>
@@ -386,7 +396,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.machamp.xml;
       </Dependencies>
       <OutputFileName>raidboss.machamp.html</OutputFileName>
@@ -395,7 +405,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.magikarp.xml;
       </Dependencies>
       <OutputFileName>raidboss.magikarp.html</OutputFileName>
@@ -404,7 +414,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.magmar.xml;
       </Dependencies>
       <OutputFileName>raidboss.magmar.html</OutputFileName>
@@ -413,7 +423,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.magneton.xml;
       </Dependencies>
       <OutputFileName>raidboss.magneton.html</OutputFileName>
@@ -422,7 +432,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.marowak.xml;
       </Dependencies>
       <OutputFileName>raidboss.marowak.html</OutputFileName>
@@ -431,7 +441,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.mawile.xml;
       </Dependencies>
       <OutputFileName>raidboss.mawile.html</OutputFileName>
@@ -440,7 +450,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.metapod.xml;
       </Dependencies>
       <OutputFileName>raidboss.metapod.html</OutputFileName>
@@ -449,7 +459,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.mew.xml;
       </Dependencies>
       <OutputFileName>raidboss.mew.html</OutputFileName>
@@ -458,7 +468,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.mewtwo.xml;
       </Dependencies>
       <OutputFileName>raidboss.mewtwo.html</OutputFileName>
@@ -467,7 +477,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.moltres.xml;
       </Dependencies>
       <OutputFileName>raidboss.moltres.html</OutputFileName>
@@ -476,7 +486,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.muk.xml;
       </Dependencies>
       <OutputFileName>raidboss.muk.html</OutputFileName>
@@ -485,7 +495,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.nidoking.xml;
       </Dependencies>
       <OutputFileName>raidboss.nidoking.html</OutputFileName>
@@ -494,7 +504,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.nidoqueen.xml;
       </Dependencies>
       <OutputFileName>raidboss.nidoqueen.html</OutputFileName>
@@ -503,7 +513,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.ninetales.xml;
       </Dependencies>
       <OutputFileName>raidboss.ninetales.html</OutputFileName>
@@ -512,7 +522,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.omastar.xml;
       </Dependencies>
       <OutputFileName>raidboss.omastar.html</OutputFileName>
@@ -521,7 +531,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.poliwrath.xml;
       </Dependencies>
       <OutputFileName>raidboss.poliwrath.html</OutputFileName>
@@ -530,7 +540,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.porygon.xml;
       </Dependencies>
       <OutputFileName>raidboss.porygon.html</OutputFileName>
@@ -539,7 +549,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.quilava.xml;
       </Dependencies>
       <OutputFileName>raidboss.quilava.html</OutputFileName>
@@ -548,7 +558,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.raikou.xml;
       </Dependencies>
       <OutputFileName>raidboss.raikou.html</OutputFileName>
@@ -557,7 +567,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.rayquaza.xml;
       </Dependencies>
       <OutputFileName>raidboss.rayquaza.html</OutputFileName>
@@ -566,7 +576,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.regice.xml;
       </Dependencies>
       <OutputFileName>raidboss.regice.html</OutputFileName>
@@ -575,7 +585,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.regirock.xml;
       </Dependencies>
       <OutputFileName>raidboss.regirock.html</OutputFileName>
@@ -584,7 +594,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.registeel.xml;
       </Dependencies>
       <OutputFileName>raidboss.registeel.html</OutputFileName>
@@ -593,7 +603,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.rhydon.xml;
       </Dependencies>
       <OutputFileName>raidboss.rhydon.html</OutputFileName>
@@ -602,7 +612,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.sableye.xml;
       </Dependencies>
       <OutputFileName>raidboss.sableye.html</OutputFileName>
@@ -611,7 +621,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.sandslash.xml;
       </Dependencies>
       <OutputFileName>raidboss.sandslash.html</OutputFileName>
@@ -620,7 +630,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.scyther.xml;
       </Dependencies>
       <OutputFileName>raidboss.scyther.html</OutputFileName>
@@ -629,7 +639,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.snorlax.xml;
       </Dependencies>
       <OutputFileName>raidboss.snorlax.html</OutputFileName>
@@ -638,7 +648,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.suicune.xml;
       </Dependencies>
       <OutputFileName>raidboss.suicune.html</OutputFileName>
@@ -647,7 +657,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.tentacruel.xml;
       </Dependencies>
       <OutputFileName>raidboss.tentacruel.html</OutputFileName>
@@ -656,7 +666,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.tyranitar.xml;
       </Dependencies>
       <OutputFileName>raidboss.tyranitar.html</OutputFileName>
@@ -665,7 +675,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.vaporeon.xml;
       </Dependencies>
       <OutputFileName>raidboss.vaporeon.html</OutputFileName>
@@ -674,7 +684,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.venusaur.xml;
       </Dependencies>
       <OutputFileName>raidboss.venusaur.html</OutputFileName>
@@ -683,7 +693,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.victreebel.xml;
       </Dependencies>
       <OutputFileName>raidboss.victreebel.html</OutputFileName>
@@ -692,7 +702,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.wailmer.xml;
       </Dependencies>
       <OutputFileName>raidboss.wailmer.html</OutputFileName>
@@ -701,7 +711,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.wartortle.xml;
       </Dependencies>
       <OutputFileName>raidboss.wartortle.html</OutputFileName>
@@ -710,7 +720,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.weezing.xml;
       </Dependencies>
       <OutputFileName>raidboss.weezing.html</OutputFileName>
@@ -719,7 +729,7 @@
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
-        charts\raidboss\index.js;
+        charts\raidboss\raidboss.js;
         _datafiles\raidboss.zapdos.xml;
       </Dependencies>
       <OutputFileName>raidboss.zapdos.html</OutputFileName>
@@ -803,6 +813,7 @@
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
       <Dependencies>
+        tools/evolutions.js;
         _datafiles/pokestats.gen1.xml;
         _datafiles/pokestats.gen2.xml;
         _datafiles/pokestats.gen3.xml;
@@ -814,11 +825,12 @@
       <OutputFileName>evolutions.html</OutputFileName>
     </XslTransform>
     <FixSourceFile Include="tools\evolutions.js">
-      <DependentUpon>evolutions.xsl</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
+      <DependentUpon>evolutions.xsl</DependentUpon>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
     </FixSourceFile>
-
     <StyleSheet Include="tools\counters.xsl">
       <Visible>true</Visible>
     </StyleSheet>
@@ -843,8 +855,10 @@
     </XslTransform>
     <FixSourceFile Include="tools\counters.js">
       <DependentUpon>counters.xsl</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
     </FixSourceFile>
   </ItemGroup>
 

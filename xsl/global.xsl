@@ -256,20 +256,20 @@
 
   <msxsl:script language="C#" implements-prefix="pokeref">
     <![CDATA[  
-       public string Replace(string text, string oldValue, string newValue)
-       {  
-         return text.Replace(oldValue, newValue);
-       }  
+      public string Replace(string text, string oldValue, string newValue)
+      {  
+        return text.Replace(oldValue, newValue);
+      }  
 
-       public string ToLower(string text)
-       {  
-         return text.ToLower();
-       }  
+      public string ToLower(string text)
+      {  
+        return text.ToLower();
+      }  
 
-       public string ToUpper(string text)
-       {  
-         return text.ToUpper();
-       }  
+      public string ToUpper(string text)
+      {  
+        return text.ToUpper();
+      }  
     ]]>
 
   </msxsl:script>

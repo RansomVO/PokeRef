@@ -5,8 +5,8 @@
   <Import Project="dependencies.proj" />
 
   <PropertyGroup>
-    <SearchPokemon>Pokemon([ \,\:\.\'\&lt;])</SearchPokemon>
-    <ReplacePokemon>Pokémon$1</ReplacePokemon>
+    <SearchPokemon>([^_])Pokemon([ \,\:\.\'\&lt;])</SearchPokemon>
+    <ReplacePokemon>$1Pokémon$2</ReplacePokemon>
     <SearchCacheDate>{$CurrentDate}</SearchCacheDate>
     <ReplaceCacheDate>$([System.DateTime]::Now.ToString("yyyy-MM-dd_HH:mm:ss"))</ReplaceCacheDate>
     <!--<ReplaceCacheDate>$([System.DateTime]::Now.Year)-$([System.DateTime]::Now.Month)-$([System.DateTime]::Now.Day)_$([System.DateTime]::Now.Hour):$([System.DateTime]::Now.Minute):$([System.DateTime]::Now.Second)</ReplaceCacheDate>-->

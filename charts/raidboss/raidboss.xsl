@@ -17,7 +17,7 @@
 
         <script>
           <xsl:attribute name="src">
-            <xsl:text>index.js?cacherefresh=</xsl:text>
+            <xsl:text>raidboss.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
         </script>
