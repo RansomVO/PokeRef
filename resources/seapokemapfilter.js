@@ -128,6 +128,21 @@ var SeaPokeMap_HaveIV = [
     'Walrein',
     'Whiscash',
     'Wigglytuff',
+    'Aggron',
+    'Armaldo',
+    'Aron',
+    'Cacturne',
+    'Camerupt',
+    'Claydol',
+    'Cradily',
+    'Exploud',
+    'Flygon',
+    'Lairon',
+    'Loudred',
+    'Lunatone',
+    'Solrock',
+    'Torkoal',
+    'Vibrava',
 ];
 // #endregion Variables that need to be updated when SEAPokeMap makes changes.
 

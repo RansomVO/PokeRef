@@ -48,15 +48,39 @@
       <Visible>true</Visible>
       <DependentUpon>pokemon.xsl</DependentUpon>
       <Dependencies>
-        _datafiles/pokestats.gen1.xml;
-        _datafiles/pokestats.gen2.xml;
-        _datafiles/pokestats.gen3.xml;
-        _datafiles/pokestats.gen4.xml;
-        _datafiles/pokestats.gen5.xml;
-        _datafiles/pokestats.gen6.xml;
-        _datafiles/pokestats.gen7.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
       </Dependencies>
       <OutputFileName>pokemon.js</OutputFileName>
+    </XslTransform>
+  </ItemGroup>
+
+  <!-- Charts/Pokemon -->
+  <ItemGroup>
+    <StyleSheet Include="charts\pokemon\index.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="charts\pokemon\index.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>index.xsl</DependentUpon>
+      <Dependencies>
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\stats.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
+      </Dependencies>
+      <OutputFileName>index.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
 

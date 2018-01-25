@@ -3174,6 +3174,26 @@
 		</Pokemon>
 		<Attack>
 			<Fast>Thunder Shock</Fast>
+			<Charged>Surf</Charged>
+		</Attack>
+		<Legacy>X</Legacy>
+		<STAB>
+			<Fast>true</Fast>
+			<Charged>false</Charged>
+		</STAB>
+		<Damage>
+			<DPS>18.4322033898305</DPS>
+			<TrueDPS>11.87</TrueDPS>
+			<PercentOfMax>0.76</PercentOfMax>
+		</Damage>
+	</MoveSet>
+	<MoveSet>
+		<Pokemon>
+			<ID>25</ID>
+			<Name>Pikachu</Name>
+		</Pokemon>
+		<Attack>
+			<Fast>Thunder Shock</Fast>
 			<Charged>Thunder</Charged>
 		</Attack>
 		<Legacy>X</Legacy>
@@ -3185,6 +3205,26 @@
 			<DPS>20.2205882352941</DPS>
 			<TrueDPS>12.95</TrueDPS>
 			<PercentOfMax>0.83</PercentOfMax>
+		</Damage>
+	</MoveSet>
+	<MoveSet>
+		<Pokemon>
+			<ID>25</ID>
+			<Name>Pikachu</Name>
+		</Pokemon>
+		<Attack>
+			<Fast>Quick Attack</Fast>
+			<Charged>Surf</Charged>
+		</Attack>
+		<Legacy>X</Legacy>
+		<STAB>
+			<Fast>false</Fast>
+			<Charged>false</Charged>
+		</STAB>
+		<Damage>
+			<DPS>18.4210526315789</DPS>
+			<TrueDPS>12.64</TrueDPS>
+			<PercentOfMax>0.81</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>

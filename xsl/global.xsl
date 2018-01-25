@@ -24,6 +24,9 @@
   <xsl:variable name="gt">
     <xsl:text>&#x3E;</xsl:text>
   </xsl:variable>
+  <xsl:variable name="quot">
+    <xsl:text>"</xsl:text>
+  </xsl:variable>
 
 
   <!-- ************************************************************************************************************************ -->
@@ -31,10 +34,43 @@
   <!-- ************************************************************************************************************************ -->
 
   <!-- Template to Output a Pokemon. -->
+  <!--
+    Settings parameter:
+      @small
+          0: DEFAULT Use standard sized icon.
+          1: Use reduced size icon.
+          
+      @hide_icons (Default: 0)
+          0: DEFAULT Display Type and Boost icons.
+          1: Do not display the Type or Boost icons.
+      @hide_name
+          0: DEFAULT Display the Name of the Pokemon.
+          1: Do not display the Name of the Pokemon.
+      @show_disabled
+          0: DEFAULT Display unreleased Pokemon as disabled.
+          1: Display unreleased Pokemon as enabled. (Will still draw disabled if base stats are 1-1-1)
+          
+      @href
+          Make the Image a link to the specified href
+      @valign
+          vertical alignment of the image within the box. ("top", "bottom", "middle", etc.)
+  -->
   <xsl:template match="Pokemon">
     <xsl:param name="Settings" />
     <xsl:param name="Header" />
     <xsl:param name="Footer" />
+
+    <xsl:variable name="Name" select="." />
+    <xsl:variable name="Pokemon" select="/Root/PokemonStats/Pokemon[Name = $Name]" />
+
+    <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
+    <xsl:if test="exslt:node-set($Settings)/*/@href">
+      <xsl:value-of select="concat($lt, 'a href=', $quot, exslt:node-set($Settings)/*/@href, $quot,' class=', $quot, 'CELL_FILLER')" disable-output-escaping="yes" />
+      <xsl:if test="Stats/Base/Attack = 1 and Stats/Base/Defense = 1 and Stats/Base/Stamina = 1">
+        <xsl:text> DISABLED</xsl:text>
+      </xsl:if>
+      <xsl:value-of select="concat($quot, $gt)" disable-output-escaping="yes" />
+    </xsl:if>
 
     <div>
       <xsl:attribute name="class">
@@ -117,6 +153,26 @@
         </xsl:if>
       </div>
     </div>
+
+    <xsl:if test="exslt:node-set($Settings)/*/@href">
+      <xsl:value-of select="concat($lt, '/a', $gt)" disable-output-escaping="yes" />
+    </xsl:if>
+
+  </xsl:template>
+
+  <!-- Template to output the Pokemon in a Table cell -->
+  <xsl:template match="Pokemon" mode="Cell">
+    <xsl:param name="Settings" />
+    <xsl:param name="Header" />
+    <xsl:param name="Footer" />
+
+    <td height="1px" align="center" class="CELL_FILLED">
+      <xsl:apply-templates select=".">
+        <xsl:with-param name="Settings" select="$Settings" />
+        <xsl:with-param name="Header" select="$Header" />
+        <xsl:with-param name="Footer" select="$Footer" />
+      </xsl:apply-templates>
+    </td>
   </xsl:template>
 
   <!-- Template to create the image of the specified Pokemon -->
@@ -249,6 +305,31 @@
       </img>
     </xsl:if>
   </xsl:template>
+
+
+  <!-- ************************************************************************************************************************ -->
+  <!-- Support Templates -->
+  <!-- ************************************************************************************************************************ -->
+
+  <xsl:template match="*" mode="AddSetting">
+    <xsl:param name="Setting" />
+    <xsl:param name="Value" />
+    
+    <xsl:copy>
+      <!-- Copy the existing attributes -->
+      <xsl:for-each select="@*">
+        <xsl:attribute name="{name(.)}">
+          <xsl:value-of select="." />
+        </xsl:attribute>
+      </xsl:for-each>
+      
+      <!-- Add the new attribute -->
+      <xsl:attribute name="{$Setting}">
+        <xsl:value-of select="$Value" />
+      </xsl:attribute>
+    </xsl:copy>
+  </xsl:template>
+
 
   <!-- ************************************************************************************************************************ -->
   <!-- pokeref methods  (C#) -->

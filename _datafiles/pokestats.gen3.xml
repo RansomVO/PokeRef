@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<PokemonStats>
+<PokemonStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Generation>
 		<ID>3</ID>
 		<Region>Hoenn</Region>
@@ -1976,7 +1976,7 @@
 			<CP>603</CP>
 			<HP>113</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>294</ID>
@@ -2023,7 +2023,7 @@
 			<CP>1233</CP>
 			<HP>144</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>295</ID>
@@ -2070,7 +2070,7 @@
 			<CP>2267</CP>
 			<HP>176</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>296</ID>
@@ -2258,7 +2258,7 @@
 			<CP>831</CP>
 			<HP>59</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>300</ID>
@@ -2399,6 +2399,7 @@
 			<CP>1305</CP>
 			<HP>90</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -2446,6 +2447,7 @@
 			<CP>1484</CP>
 			<HP>90</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -2493,7 +2495,7 @@
 			<CP>1232</CP>
 			<HP>90</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>305</ID>
@@ -2540,7 +2542,7 @@
 			<CP>2004</CP>
 			<HP>106</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>306</ID>
@@ -2587,7 +2589,7 @@
 			<CP>3004</CP>
 			<HP>122</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>307</ID>
@@ -3339,7 +3341,7 @@
 			<CP>957</CP>
 			<HP>106</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>323</ID>
@@ -3386,7 +3388,7 @@
 			<CP>2016</CP>
 			<HP>122</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>324</ID>
@@ -3433,7 +3435,7 @@
 			<CP>2036</CP>
 			<HP>122</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>Regional: India, Thailand &amp; Surrounding Area</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>325</ID>
@@ -3621,7 +3623,7 @@
 			<CP>1092</CP>
 			<HP>82</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>329</ID>
@@ -3668,7 +3670,7 @@
 			<CP>1065</CP>
 			<HP>90</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>330</ID>
@@ -3715,7 +3717,7 @@
 			<CP>2458</CP>
 			<HP>138</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>331</ID>
@@ -3762,7 +3764,7 @@
 			<CP>1080</CP>
 			<HP>90</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>332</ID>
@@ -3809,7 +3811,7 @@
 			<CP>2092</CP>
 			<HP>122</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>333</ID>
@@ -4044,7 +4046,7 @@
 			<CP>2245</CP>
 			<HP>154</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>Regional: Rotating</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>338</ID>
@@ -4091,7 +4093,7 @@
 			<CP>2245</CP>
 			<HP>154</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>Regional: Rotating</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>339</ID>
@@ -4326,7 +4328,7 @@
 			<CP>676</CP>
 			<HP>75</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>344</ID>
@@ -4373,7 +4375,7 @@
 			<CP>1782</CP>
 			<HP>106</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>345</ID>
@@ -4420,7 +4422,7 @@
 			<CP>1181</CP>
 			<HP>116</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>346</ID>
@@ -4467,7 +4469,7 @@
 			<CP>2081</CP>
 			<HP>147</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>347</ID>
@@ -4514,7 +4516,7 @@
 			<CP>1310</CP>
 			<HP>82</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>348</ID>
@@ -4561,7 +4563,7 @@
 			<CP>2675</CP>
 			<HP>130</HP>
 		</Max>
-		<Availability>Unavailable</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
 		<ID>349</ID>
@@ -4796,6 +4798,7 @@
 			<CP>872</CP>
 			<HP>81</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -4843,6 +4846,7 @@
 			<CP>2073</CP>
 			<HP>113</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -4890,6 +4894,7 @@
 			<CP>523</CP>
 			<HP>43</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -4937,6 +4942,7 @@
 			<CP>1335</CP>
 			<HP>75</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -5078,6 +5084,7 @@
 			<CP>2280</CP>
 			<HP>114</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -5172,6 +5179,7 @@
 			<CP>772</CP>
 			<HP>90</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -5219,6 +5227,7 @@
 			<CP>1945</CP>
 			<HP>138</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>

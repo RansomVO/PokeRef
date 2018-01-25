@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<PokemonStats>
+<PokemonStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Generation>
 		<ID>1</ID>
 		<Region>Kanto</Region>
@@ -1177,6 +1177,7 @@
 			<CP>787</CP>
 			<HP>67</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -1224,6 +1225,7 @@
 			<CP>2025</CP>
 			<HP>106</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -6065,6 +6067,7 @@
 			<CP>220</CP>
 			<HP>43</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>
@@ -6112,6 +6115,7 @@
 			<CP>3281</CP>
 			<HP>162</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>General</Availability>
 	</Pokemon>
 	<Pokemon>

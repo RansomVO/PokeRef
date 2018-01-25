@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<PokemonStats>
+<PokemonStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Generation>
 		<ID>2</ID>
 		<Region>Johto</Region>
@@ -989,6 +989,7 @@
 			<CP>376</CP>
 			<HP>43</HP>
 		</Max>
+		<ShinyAvailable>X</ShinyAvailable>
 		<Availability>Hatch Only: 2K</Availability>
 	</Pokemon>
 	<Pokemon>

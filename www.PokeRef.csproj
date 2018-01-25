@@ -65,7 +65,9 @@
     <None Include="^\XSLT\GAME_MASTER.XSD" />
     <None Include="^\XSLT\Moves.XSD" />
     <None Include="^\XSLT\MoveSets.XSD" />
-    <None Include="^\XSLT\Pokemon.XSD" />
+    <None Include="^\XSLT\PokeStats.XSD">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="^\XSLT\RaidBoss.XSD" />
     <None Include="^\XSLT\Settings.XSD" />
     <None Include="^\XSLT\Stats.XSD" />
@@ -76,6 +78,8 @@
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
   <ItemGroup>
+    <FixSourceFile Include="charts\pokemon\_sectionname.txt" />
+    <WebContent Include="charts\pokemon\index.css" />
     <Content Include="charts\raidboss\raidbosses.xsl" />
     <WebContent Include="images\logo.png" />
     <Resource Include="images\originals\icon.64.book.png" />
@@ -175,7 +179,7 @@
     <WebContent Include="charts\raidboss\index.css" />
     <FixSourceFile Include="charts\raidboss\raidboss.js" />
     <DataFile Include="charts\raidboss\raidbosses.current.xml" />
-    <Content Include="charts\raidboss\raidbosses.legacy.xml" />
+    <DataFile Include="charts\raidboss\raidbosses.legacy.xml" />
     <WebContent Include="charts\raidboss\images\appraise.png" />
     <WebContent Include="charts\raidboss\images\bestattribute-1.png" />
     <WebContent Include="charts\raidboss\images\bestattribute-2.png" />

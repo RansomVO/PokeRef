@@ -7,9 +7,9 @@
 
   <xsl:template match="Root">
     <xsl:apply-templates select="RaidBosses">
-        <xsl:with-param name="Settings">
-          <Show small="true" show_disabled="true" hide_name="true" hide_icons="true" />
-        </xsl:with-param>
+      <xsl:with-param name="Settings">
+        <Show small="true" show_disabled="true" hide_name="true" hide_icons="true" />
+      </xsl:with-param>
     </xsl:apply-templates>
   </xsl:template>
 
