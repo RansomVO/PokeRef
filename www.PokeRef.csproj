@@ -37,6 +37,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
+  <!-- / -->
   <ItemGroup>
     <FixSourceFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />
@@ -44,17 +46,16 @@
     <WebContent Include="favicon.ico" />
     <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
-    <Resource Include="images\originals\icon.48.png" />
-    <Resource Include="images\originals\icon.48.ball.png" />
-    <Resource Include="images\originals\icon.32.book.png" />
-    <Resource Include="images\originals\icon.48.book.png" />
-    <Resource Include="images\originals\icon.32.png" />
-    <Resource Include="images\originals\icon.32.ball.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Web.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <FixSourceFile Include="Web.sitemap">
       <SubType>Designer</SubType>
     </FixSourceFile>
+  </ItemGroup>
+
+  <!-- /^ -->
+  <ItemGroup>
     <None Include="^\XSLT\Mappings.XSD">
       <SubType>Designer</SubType>
     </None>
@@ -72,182 +73,22 @@
     <None Include="^\XSLT\Settings.XSD" />
     <None Include="^\XSLT\Stats.XSD" />
   </ItemGroup>
+
+  <!-- /_ -->
   <ItemGroup>
     <WebContent Include="_\index.css" />
     <FixSourceFile Include="_\index.js" />
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
+
+  <!-- /_data.latest -->
   <ItemGroup>
-    <Content Include="charts\raidboss\raidbosses.xsl" />
-    <WebContent Include="images\logo.png" />
-    <Resource Include="images\originals\icon.64.book.png" />
-    <Resource Include="images\originals\icon.64.ball.png" />
-    <WebContent Include="images\shiny.png" />
-    <DataFile Include="_datafiles\raidboss.aggron.xml" />
     <DataFile Include="_data.latest\eggs.xml" />
-    <Content Include="tools\evolutions.js" />
-    <Content Include="tools\evolutions.page.xml" />
-    <Content Include="tools\evolutions.xsl" />
-    <Content Include="__Debugging\debug.page.xml" />
-    <Content Include="__Debugging\debug.xsl" />
-    <Content Include="__Debugging\index.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="css\unicode.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="images\EeveeDi.png" />
-    <WebContent Include="images\GoIV-Clipboard_Multiple.png" />
-    <WebContent Include="images\GoIV-Clipboard_Single.png" />
-    <WebContent Include="images\GoIV-FinalResult.png" />
-    <WebContent Include="images\GoIV-PrelimResult.png" />
-    <WebContent Include="images\GoIV-Refining.png" />
-    <WebContent Include="images\GoIV-Renamed.png" />
-    <WebContent Include="images\GoIV-Start.png" />
-    <WebContent Include="images\NotJustAGame.png" />
-    <WebContent Include="images\TrappedWeedle.png" />
-    <WebContent Include="images\type_bug.png" />
-    <WebContent Include="images\type_dark.png" />
-    <WebContent Include="images\type_dragon.png" />
-    <WebContent Include="images\type_electric.png" />
-    <WebContent Include="images\type_fairy.png" />
-    <WebContent Include="images\type_fighting.png" />
-    <WebContent Include="images\type_fire.png" />
-    <WebContent Include="images\type_flying.png" />
-    <WebContent Include="images\type_ghost.png" />
-    <WebContent Include="images\type_grass.png" />
-    <WebContent Include="images\type_ground.png" />
-    <WebContent Include="images\type_ice.png" />
-    <WebContent Include="images\type_normal.png" />
-    <WebContent Include="images\type_poison.png" />
-    <WebContent Include="images\type_psychic.png" />
-    <WebContent Include="images\type_rock.png" />
-    <WebContent Include="images\type_steel.png" />
-    <WebContent Include="images\type_water.png" />
-    <WebContent Include="images\weather_clear.png" />
-    <WebContent Include="images\weather_cloudy.png" />
-    <WebContent Include="images\weather_fog.png" />
-    <WebContent Include="images\weather_partlycloudy.png" />
-    <WebContent Include="images\weather_rainy.png" />
-    <WebContent Include="images\weather_snow.png" />
-    <WebContent Include="images\weather_sunny.png" />
-    <WebContent Include="images\weather_windy.png" />
-    <Resource Include="images\originals\EeveeDi.pub" />
-    <Resource Include="images\originals\EeveeDi.2.png" />
-    <Resource Include="images\originals\EeveeDi.png" />
-    <Resource Include="images\originals\GoIV-FinalResult.png" />
-    <Resource Include="images\originals\GoIV-PrelimResult.png" />
-    <Resource Include="images\originals\GoIV-Refining.png" />
-    <Resource Include="images\originals\GoIV-Start.png" />
-    <Resource Include="images\originals\Screenshot_20171031-160459.png" />
-    <Resource Include="images\originals\type_bug.png" />
-    <Resource Include="images\originals\type_dark.png" />
-    <Resource Include="images\originals\type_dragon.png" />
-    <Resource Include="images\originals\type_electric.png" />
-    <Resource Include="images\originals\type_fairy.png" />
-    <Resource Include="images\originals\type_fighting.png" />
-    <Resource Include="images\originals\type_fire.png" />
-    <Resource Include="images\originals\type_flying.png" />
-    <Resource Include="images\originals\type_ghost.png" />
-    <Resource Include="images\originals\type_grass.png" />
-    <Resource Include="images\originals\type_ground.png" />
-    <Resource Include="images\originals\type_ice.png" />
-    <Resource Include="images\originals\type_normal.png" />
-    <Resource Include="images\originals\type_poison.png" />
-    <Resource Include="images\originals\type_psychic.png" />
-    <Resource Include="images\originals\type_rock.png" />
-    <Resource Include="images\originals\type_steel.png" />
-    <Resource Include="images\originals\type_water.png" />
-    <Resource Include="images\originals\weather_clear.png" />
-    <Resource Include="images\originals\weather_cloudy.png" />
-    <Resource Include="images\originals\weather_fog.png" />
-    <Resource Include="images\originals\weather_partlycloudy_day.png" />
-    <Resource Include="images\originals\weather_rain.png" />
-    <Resource Include="images\originals\weather_snow.png" />
-    <Resource Include="images\originals\weather_sunny.png" />
-    <Resource Include="images\originals\weather_windy.png" />
-    <Resource Include="images\originals\TrappedWeedle.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <FixSourceFile Include="charts\_sectionname.txt" />
-    <WebContent Include="charts\index.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="charts\movesets\index.css" />
-    <FixSourceFile Include="charts\movesets\_linkslist.html" />
-    <FixSourceFile Include="charts\movesets\_sectionname.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <FixSourceFile Include="charts\raidboss\_sectionname.txt" />
-    <WebContent Include="charts\raidboss\index.css" />
-    <FixSourceFile Include="charts\raidboss\raidboss.js" />
     <DataFile Include="_data.latest\raidbosses.current.xml" />
     <DataFile Include="_data.latest\raidbosses.legacy.xml" />
-    <WebContent Include="charts\raidboss\images\appraise.png" />
-    <WebContent Include="charts\raidboss\images\bestattribute-1.png" />
-    <WebContent Include="charts\raidboss\images\bestattribute-2.png" />
-    <WebContent Include="charts\raidboss\images\hp.png" />
-    <WebContent Include="charts\raidboss\images\raidbosscp.png" />
-    <WebContent Include="charts\raidboss\images\weatherboosted.png" />
-    <Resource Include="charts\raidboss\images\originals\2246-124-MewTwo.png" />
-    <Resource Include="charts\raidboss\images\originals\2246MewTwo.png" />
-    <Resource Include="charts\raidboss\images\originals\appraise.png" />
-    <Resource Include="charts\raidboss\images\originals\bestattribute.png" />
-    <Resource Include="charts\raidboss\images\originals\mewtwo.png" />
-    <Resource Include="charts\raidboss\images\originals\photo0.png" />
-    <Resource Include="charts\raidboss\images\originals\RaidBossCatch.png" />
-    <Resource Include="charts\raidboss\images\originals\raidbosscp.big.png" />
-    <Resource Include="charts\raidboss\images\originals\raidbosscp.mewtwo.png" />
-    <Resource Include="charts\raidboss\images\originals\raidbosscp.old.png" />
-    <Resource Include="charts\raidboss\images\originals\raidbosscp.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-185936.jpg" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-185946.jpg" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-234651.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-234832.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235003.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235121.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235206.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235316.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235330.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235406.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171015-132031.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160821.png" />
-    <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160826.png" />
   </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="resources\index.css" />
-    <FixSourceFile Include="resources\_sectionname.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="tech\index.css" />
-    <FixSourceFile Include="tech\_sectionname.txt" />
-    <WebContent Include="charts\images\notveryeffective.png" />
-    <WebContent Include="charts\images\supereffective.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="tech\GAME_MASTER\index.css" />
-    <FixSourceFile Include="tech\GAME_MASTER\_sectionname.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="tech\GAME_MASTER\moves\index.css" />
-    <FixSourceFile Include="tech\GAME_MASTER\moves\_linkslist.html" />
-    <FixSourceFile Include="tech\GAME_MASTER\moves\_sectionname.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="tech\GAME_MASTER\pokestats\index.css" />
-    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_linkslist.html" />
-    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_sectionname.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebContent Include="tools\index.css" />
-    <FixSourceFile Include="tools\_sectionname.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <StyleSheet Include="xsl\global.xsl">
-      <SubType>Designer</SubType>
-    </StyleSheet>
-    <StyleSheet Include="xsl\settings.xsl" />
-  </ItemGroup>
+
+  <!-- /_datafiles (moves/movesets) -->
   <ItemGroup>
     <DataFile Include="_datafiles\moves.charged.xml" />
     <DataFile Include="_datafiles\moves.fast.xml" />
@@ -255,6 +96,8 @@
     <DataFile Include="_datafiles\movesets.gen2.xml" />
     <DataFile Include="_datafiles\movesets.gen3.xml" />
   </ItemGroup>
+
+  <!-- /_datafiles (pokestats) -->
   <ItemGroup>
     <DataFile Include="_datafiles\pokestats.gen1.xml" />
     <DataFile Include="_datafiles\pokestats.gen2.xml" />
@@ -264,15 +107,11 @@
     <DataFile Include="_datafiles\pokestats.gen6.xml" />
     <DataFile Include="_datafiles\pokestats.gen7.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <DataFile Include="_datafiles\effectiveness.xml" />
-    <DataFile Include="_datafiles\GAME_MASTER.xml" />
-    <DataFile Include="_datafiles\mappings.xml" />
-    <DataFile Include="_datafiles\settings.xml" />
-    <DataFile Include="_datafiles\stats.xml" />
-  </ItemGroup>
+
+  <!-- /_datafiles (raidboss) -->
   <ItemGroup>
     <DataFile Include="_datafiles\raidboss.absol.xml" />
+    <DataFile Include="_datafiles\raidboss.aggron.xml" />
     <DataFile Include="_datafiles\raidboss.alakazam.xml" />
     <DataFile Include="_datafiles\raidboss.arcanine.xml" />
     <DataFile Include="_datafiles\raidboss.articuno.xml" />
@@ -338,11 +177,212 @@
     <DataFile Include="_datafiles\raidboss.weezing.xml" />
     <DataFile Include="_datafiles\raidboss.zapdos.xml" />
   </ItemGroup>
+
+  <!-- /_datafiles (various) -->
   <ItemGroup>
-    <Content Include="Web.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <DataFile Include="_datafiles\effectiveness.xml" />
+    <DataFile Include="_datafiles\GAME_MASTER.xml" />
+    <DataFile Include="_datafiles\mappings.xml" />
+    <DataFile Include="_datafiles\settings.xml" />
+    <DataFile Include="_datafiles\stats.xml" />
   </ItemGroup>
+
+  <!-- /__Debugging -->
+  <ItemGroup>
+    <Content Include="__Debugging\debug.page.xml" />
+    <Content Include="__Debugging\debug.xsl" />
+    <Content Include="__Debugging\index.css" />
+  </ItemGroup>
+
+  <!-- /css -->
+  <ItemGroup>
+    <WebContent Include="css\unicode.css" />
+  </ItemGroup>
+
+  <!-- /images -->
+  <ItemGroup>
+    <WebContent Include="images\logo.png" />
+    <WebContent Include="images\EeveeDi.png" />
+    <WebContent Include="images\GoIV-Clipboard_Multiple.png" />
+    <WebContent Include="images\GoIV-Clipboard_Single.png" />
+    <WebContent Include="images\GoIV-FinalResult.png" />
+    <WebContent Include="images\GoIV-PrelimResult.png" />
+    <WebContent Include="images\GoIV-Refining.png" />
+    <WebContent Include="images\GoIV-Renamed.png" />
+    <WebContent Include="images\GoIV-Start.png" />
+    <WebContent Include="images\NotJustAGame.png" />
+    <WebContent Include="images\TrappedWeedle.png" />
+    <WebContent Include="images\shiny.png" />
+    <WebContent Include="images\type_bug.png" />
+    <WebContent Include="images\type_dark.png" />
+    <WebContent Include="images\type_dragon.png" />
+    <WebContent Include="images\type_electric.png" />
+    <WebContent Include="images\type_fairy.png" />
+    <WebContent Include="images\type_fighting.png" />
+    <WebContent Include="images\type_fire.png" />
+    <WebContent Include="images\type_flying.png" />
+    <WebContent Include="images\type_ghost.png" />
+    <WebContent Include="images\type_grass.png" />
+    <WebContent Include="images\type_ground.png" />
+    <WebContent Include="images\type_ice.png" />
+    <WebContent Include="images\type_normal.png" />
+    <WebContent Include="images\type_poison.png" />
+    <WebContent Include="images\type_psychic.png" />
+    <WebContent Include="images\type_rock.png" />
+    <WebContent Include="images\type_steel.png" />
+    <WebContent Include="images\type_water.png" />
+    <WebContent Include="images\weather_clear.png" />
+    <WebContent Include="images\weather_cloudy.png" />
+    <WebContent Include="images\weather_fog.png" />
+    <WebContent Include="images\weather_partlycloudy.png" />
+    <WebContent Include="images\weather_rainy.png" />
+    <WebContent Include="images\weather_snow.png" />
+    <WebContent Include="images\weather_sunny.png" />
+    <WebContent Include="images\weather_windy.png" />
+    <Resource Include="images\originals\EeveeDi.pub" />
+    <Resource Include="images\originals\EeveeDi.2.png" />
+    <Resource Include="images\originals\EeveeDi.png" />
+    <Resource Include="images\originals\GoIV-FinalResult.png" />
+    <Resource Include="images\originals\GoIV-PrelimResult.png" />
+    <Resource Include="images\originals\GoIV-Refining.png" />
+    <Resource Include="images\originals\GoIV-Start.png" />
+    <Resource Include="images\originals\icon.32.png" />
+    <Resource Include="images\originals\icon.32.ball.png" />
+    <Resource Include="images\originals\icon.32.book.png" />
+    <Resource Include="images\originals\icon.48.png" />
+    <Resource Include="images\originals\icon.48.ball.png" />
+    <Resource Include="images\originals\icon.48.book.png" />
+    <Resource Include="images\originals\icon.64.ball.png" />
+    <Resource Include="images\originals\icon.64.book.png" />
+    <Resource Include="images\originals\Screenshot_20171031-160459.png" />
+    <Resource Include="images\originals\type_bug.png" />
+    <Resource Include="images\originals\type_dark.png" />
+    <Resource Include="images\originals\type_dragon.png" />
+    <Resource Include="images\originals\type_electric.png" />
+    <Resource Include="images\originals\type_fairy.png" />
+    <Resource Include="images\originals\type_fighting.png" />
+    <Resource Include="images\originals\type_fire.png" />
+    <Resource Include="images\originals\type_flying.png" />
+    <Resource Include="images\originals\type_ghost.png" />
+    <Resource Include="images\originals\type_grass.png" />
+    <Resource Include="images\originals\type_ground.png" />
+    <Resource Include="images\originals\type_ice.png" />
+    <Resource Include="images\originals\type_normal.png" />
+    <Resource Include="images\originals\type_poison.png" />
+    <Resource Include="images\originals\type_psychic.png" />
+    <Resource Include="images\originals\type_rock.png" />
+    <Resource Include="images\originals\type_steel.png" />
+    <Resource Include="images\originals\type_water.png" />
+    <Resource Include="images\originals\weather_clear.png" />
+    <Resource Include="images\originals\weather_cloudy.png" />
+    <Resource Include="images\originals\weather_fog.png" />
+    <Resource Include="images\originals\weather_partlycloudy_day.png" />
+    <Resource Include="images\originals\weather_rain.png" />
+    <Resource Include="images\originals\weather_snow.png" />
+    <Resource Include="images\originals\weather_sunny.png" />
+    <Resource Include="images\originals\weather_windy.png" />
+    <Resource Include="images\originals\TrappedWeedle.jpg" />
+  </ItemGroup>
+
+  <!-- /charts -->
+  <ItemGroup>
+    <FixSourceFile Include="charts\_sectionname.txt" />
+    <WebContent Include="charts\index.css" />
+    <WebContent Include="charts\images\notveryeffective.png" />
+    <WebContent Include="charts\images\supereffective.png" />
+  </ItemGroup>
+
+  <!-- /charts/movesets -->
+  <ItemGroup>
+    <WebContent Include="charts\movesets\index.css" />
+    <FixSourceFile Include="charts\movesets\_linkslist.html" />
+    <FixSourceFile Include="charts\movesets\_sectionname.txt" />
+  </ItemGroup>
+
+  <!-- /charts/raidboss -->
+  <ItemGroup>
+    <FixSourceFile Include="charts\raidboss\_sectionname.txt" />
+    <WebContent Include="charts\raidboss\index.css" />
+    <WebContent Include="charts\raidboss\images\appraise.png" />
+    <WebContent Include="charts\raidboss\images\bestattribute-1.png" />
+    <WebContent Include="charts\raidboss\images\bestattribute-2.png" />
+    <WebContent Include="charts\raidboss\images\hp.png" />
+    <WebContent Include="charts\raidboss\images\raidbosscp.png" />
+    <WebContent Include="charts\raidboss\images\weatherboosted.png" />
+    <Resource Include="charts\raidboss\images\originals\2246-124-MewTwo.png" />
+    <Resource Include="charts\raidboss\images\originals\2246MewTwo.png" />
+    <Resource Include="charts\raidboss\images\originals\appraise.png" />
+    <Resource Include="charts\raidboss\images\originals\bestattribute.png" />
+    <Resource Include="charts\raidboss\images\originals\mewtwo.png" />
+    <Resource Include="charts\raidboss\images\originals\photo0.png" />
+    <Resource Include="charts\raidboss\images\originals\RaidBossCatch.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.big.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.mewtwo.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.old.png" />
+    <Resource Include="charts\raidboss\images\originals\raidbosscp.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-185936.jpg" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-185946.jpg" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-234651.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-234832.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235003.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235121.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235206.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235316.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235330.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171014-235406.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171015-132031.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160821.png" />
+    <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160826.png" />
+  </ItemGroup>
+
+  <!-- /resources -->
+  <ItemGroup>
+    <WebContent Include="resources\index.css" />
+    <FixSourceFile Include="resources\_sectionname.txt" />
+  </ItemGroup>
+
+  <!-- /tech -->
+  <ItemGroup>
+    <WebContent Include="tech\index.css" />
+    <FixSourceFile Include="tech\_sectionname.txt" />
+    <WebContent Include="charts\images\notveryeffective.png" />
+    <WebContent Include="charts\images\supereffective.png" />
+  </ItemGroup>
+
+  <!-- /tech/GAME_MASTER -->
+  <ItemGroup>
+    <WebContent Include="tech\GAME_MASTER\index.css" />
+    <FixSourceFile Include="tech\GAME_MASTER\_sectionname.txt" />
+  </ItemGroup>
+
+  <!-- /tech/GAME_MASTER/moves -->
+  <ItemGroup>
+    <WebContent Include="tech\GAME_MASTER\moves\index.css" />
+    <FixSourceFile Include="tech\GAME_MASTER\moves\_linkslist.html" />
+    <FixSourceFile Include="tech\GAME_MASTER\moves\_sectionname.txt" />
+  </ItemGroup>
+
+  <!-- /tech/GAME_MASTER/pokestats -->
+  <ItemGroup>
+    <WebContent Include="tech\GAME_MASTER\pokestats\index.css" />
+    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_linkslist.html" />
+    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_sectionname.txt" />
+  </ItemGroup>
+
+  <!-- /tools -->
+  <ItemGroup>
+    <WebContent Include="tools\index.css" />
+    <FixSourceFile Include="tools\_sectionname.txt" />
+  </ItemGroup>
+
+  <!-- /xsl -->
+  <ItemGroup>
+    <StyleSheet Include="xsl\global.xsl">
+      <SubType>Designer</SubType>
+    </StyleSheet>
+    <StyleSheet Include="xsl\settings.xsl" />
+  </ItemGroup>
+
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
   </PropertyGroup>
