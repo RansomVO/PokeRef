@@ -78,13 +78,16 @@
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
   <ItemGroup>
-    <FixSourceFile Include="charts\pokemon\_sectionname.txt" />
-    <WebContent Include="charts\pokemon\index.css" />
     <Content Include="charts\raidboss\raidbosses.xsl" />
     <WebContent Include="images\logo.png" />
     <Resource Include="images\originals\icon.64.book.png" />
     <Resource Include="images\originals\icon.64.ball.png" />
-    <Resource Include="images\originals\qzx.png" />
+    <WebContent Include="images\shiny.png" />
+    <DataFile Include="_datafiles\raidboss.aggron.xml" />
+    <DataFile Include="_data.latest\eggs.xml" />
+    <Content Include="tools\evolutions.js" />
+    <Content Include="tools\evolutions.page.xml" />
+    <Content Include="tools\evolutions.xsl" />
     <Content Include="__Debugging\debug.page.xml" />
     <Content Include="__Debugging\debug.xsl" />
     <Content Include="__Debugging\index.css" />
@@ -178,8 +181,8 @@
     <FixSourceFile Include="charts\raidboss\_sectionname.txt" />
     <WebContent Include="charts\raidboss\index.css" />
     <FixSourceFile Include="charts\raidboss\raidboss.js" />
-    <DataFile Include="charts\raidboss\raidbosses.current.xml" />
-    <DataFile Include="charts\raidboss\raidbosses.legacy.xml" />
+    <DataFile Include="_data.latest\raidbosses.current.xml" />
+    <DataFile Include="_data.latest\raidbosses.legacy.xml" />
     <WebContent Include="charts\raidboss\images\appraise.png" />
     <WebContent Include="charts\raidboss\images\bestattribute-1.png" />
     <WebContent Include="charts\raidboss\images\bestattribute-2.png" />

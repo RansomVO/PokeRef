@@ -41,7 +41,6 @@
         <p class="NOTE">
           <b>NOTE</b>: Last Updated <xsl:value-of select="$GameMaster_TimeStamp" />
         </p>
-
         <xsl:call-template name="CreateKey" />
 
         <br />
@@ -68,50 +67,7 @@
       </tr>
       <tr>
         <td valign="top">
-          <table border="1">
-            <comment commment="Limited Availablility">
-              <tr>
-                <th rowspan="2">Limited Availability</th>
-                <td class="REGIONAL">Regional Availability</td>
-              </tr>
-              <tr>
-                <td class="UNAVAILABLE">Unavailable</td>
-              </tr>
-            </comment>
-
-            <comment commment="Limited Origin">
-              <tr>
-                <th rowspan="5">Limited Origin</th>
-                <td class="HATCH_ONLY_2K">Available From 2K Egg Only</td>
-              </tr>
-              <tr>
-                <td class="HATCH_ONLY_5K">Available From 5K Egg Only</td>
-              </tr>
-              <tr>
-                <td class="HATCH_ONLY_10K">Available From 10K Egg Only</td>
-              </tr>
-              <tr>
-                <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
-              </tr>
-              <tr>
-                <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
-              </tr>
-            </comment>
-
-            <comment commment="Special">
-              <tr>
-                <th>Special</th>
-                <td class="LEGENDARY">Legendary</td>
-              </tr>
-            </comment>
-
-            <tr>
-              <td colspan="2" class="NOTE">
-                May combine one from each section.
-              </td>
-            </tr>
-
-          </table>
+          <xsl:call-template name="PokemonImageKey" />
         </td>
         <td valign="top">
           <table border="1">
@@ -140,13 +96,16 @@
   <xsl:template name="CreateTableHeaders">
     <tr>
       <th rowspan="2" colspan="5" valign="bottom">Pokemon</th>
-      <th rowspan="3" colspan="1" valign="bottom">Type of Candies</th>
+      <th rowspan="3" colspan="1" valign="bottom">Type<br/>of<br/>Candies</th>
       <th rowspan="2" colspan="4" valign="bottom">Evolves From</th>
       <th rowspan="3" colspan="1" valign="bottom">
         Buddy<br/>Km<br/>for<br/>Candy
       </th>
       <th rowspan="1" colspan="12" valign="bottom">Base Stats</th>
       <th rowspan="2" colspan="2" valign="bottom">Max</th>
+      <th class="ROTATED_CONTAINER" rowspan="3">
+        <div class="ROTATED">Shiny?</div>
+      </th>
       <th rowspan="3" colspan="1" valign="bottom">Availability</th>
     </tr>
     <tr>
@@ -161,8 +120,9 @@
       <th colspan="2">ID</th>
       <th>Name</th>
       <th colspan="2" valign="bottom">Type</th>
-      <th>Candies</th>
       <th>#</th>
+      <th>Name</th>
+      <th>Candies</th>
       <th>Special</th>
       <th>ATK</th>
       <th>DEF</th>
@@ -388,6 +348,9 @@
           </xsl:choose>;
         </xsl:attribute>
         <xsl:value-of select="Max/HP" />
+      </td>
+      <td id="ShinyAvailable">
+        <xsl:value-of select="ShinyAvailable" />
       </td>
       <td id="Availability">
         <xsl:value-of select="Availability" />

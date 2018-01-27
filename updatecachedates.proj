@@ -23,8 +23,6 @@
         charts\movesets\_linkslist.html;
         charts\raidboss\_sectionname.txt;
         charts\raidboss\_linkslist.page.xml;
-        charts\raidboss\raidbosses.current.xml;
-        charts\raidboss\raidbosses.legacy.xml;
         resources\_sectionname.txt;
         tech\GAME_MASTER\_sectionname.txt;
         tech\GAME_MASTER\moves\_sectionname.txt;
@@ -32,6 +30,8 @@
         tech\GAME_MASTER\pokestats\_sectionname.txt;
         tech\GAME_MASTER\pokestats\_linkslist.html;
         tools\_sectionname.txt;
+        _data.latest\raidbosses.current.xml;
+        _data.latest\raidbosses.legacy.xml;
       </Dependencies>
       <OutputFileName>global.js</OutputFileName>
     </UpdateCacheDate>

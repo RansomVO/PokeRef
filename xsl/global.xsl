@@ -27,6 +27,10 @@
   <xsl:variable name="quot">
     <xsl:text>"</xsl:text>
   </xsl:variable>
+  <xsl:variable name="apos">
+    <xsl:text>-</xsl:text>
+  </xsl:variable>
+  
 
 
   <!-- ************************************************************************************************************************ -->
@@ -39,10 +43,13 @@
       @small
           0: DEFAULT Use standard sized icon.
           1: Use reduced size icon.
+      @boxed
+          0: DEFAULT Have Pokmeon expand to fill parent container.
+          1: Put the Pokemon in a box that can be displayed inline.
           
       @hide_icons (Default: 0)
-          0: DEFAULT Display Type and Boost icons.
-          1: Do not display the Type or Boost icons.
+          0: DEFAULT Display Type, Boost and shiny icons.
+          1: Do not display Type, Boost and shiny icons.
       @hide_name
           0: DEFAULT Display the Name of the Pokemon.
           1: Do not display the Name of the Pokemon.
@@ -57,6 +64,7 @@
   -->
   <xsl:template match="Pokemon">
     <xsl:param name="Settings" />
+    <xsl:param name="CustomAttributes" />
     <xsl:param name="Header" />
     <xsl:param name="Footer" />
 
@@ -73,8 +81,18 @@
     </xsl:if>
 
     <div>
+      <xsl:attribute name="title">
+        <xsl:value-of select="Name" />
+      </xsl:attribute>
       <xsl:attribute name="class">
-        <xsl:text>SPRITE_FILLER </xsl:text>
+        <xsl:choose>
+          <xsl:when test="exslt:node-set($Settings)/*/@boxed">
+            <xsl:text>SPRITE_BOXED </xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>SPRITE_FILLER </xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
         <xsl:choose>
           <xsl:when test="contains(Availability,$Availability_HatchOnly_2K)">
             <xsl:text>HATCH_ONLY_2K </xsl:text>
@@ -105,9 +123,43 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:attribute>
-      <xsl:attribute name="title">
+      <xsl:attribute name="name">
         <xsl:value-of select="Name" />
       </xsl:attribute>
+      <xsl:attribute name="gen">
+        <xsl:value-of select="../Generation/ID" />
+      </xsl:attribute>
+      <xsl:attribute name="id">
+        <xsl:value-of select="ID" />
+      </xsl:attribute>
+      <xsl:attribute name="type">
+        <xsl:value-of select="concat(Type/Primary, ' ', Type/Secondary)" />
+      </xsl:attribute>
+      <xsl:attribute name="family">
+        <xsl:value-of select="CandyType" />
+      </xsl:attribute>
+      <xsl:attribute name="evolvesFrom">
+        <xsl:value-of select="EvolvesFrom/Pokemon/ID" />
+      </xsl:attribute>
+      <xsl:attribute name="shiny">
+        <xsl:value-of select="ShinyAvailable" />
+      </xsl:attribute>
+      <xsl:attribute name="availability">
+        <xsl:value-of select="Availability" />
+      </xsl:attribute>
+      <xsl:attribute name="boost">
+        <xsl:variable name="Type1" select="Type/Primary" />
+        -<xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type1]/Weather" />
+        <xsl:variable name="Type2" select="Type/Secondary" />
+        -<xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type2]/Weather" />
+      </xsl:attribute>
+      <xsl:if test="count(exslt:node-set($CustomAttributes)) != 0">
+        <xsl:for-each select="exslt:node-set($CustomAttributes)/*/@*">
+          <xsl:attribute name="{name()}">
+            <xsl:value-of select="."/>
+          </xsl:attribute>
+        </xsl:for-each>
+      </xsl:if>
 
       <div>
         <xsl:attribute name="style">
@@ -130,11 +182,16 @@
           <br />
         </xsl:if>
 
+        <!-- Add Shiny Icon here. -->
+        <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0 and ShinyAvailable">
+          <img class="SHINY_ICON" src="/images/shiny.png" alt="Shiny" />
+        </xsl:if>
+
         <xsl:apply-templates select="." mode="Sprite">
           <xsl:with-param name="Settings" select="$Settings" />
         </xsl:apply-templates>
 
-        <!-- Add Type Icons here. -->
+        <!-- Add Type/Boost Icons here. -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
           <br />
           <xsl:apply-templates select="Type" mode="icons" />
@@ -163,12 +220,14 @@
   <!-- Template to output the Pokemon in a Table cell -->
   <xsl:template match="Pokemon" mode="Cell">
     <xsl:param name="Settings" />
+    <xsl:param name="CustomAttributes" />
     <xsl:param name="Header" />
     <xsl:param name="Footer" />
 
     <td height="1px" align="center" class="CELL_FILLED">
       <xsl:apply-templates select=".">
         <xsl:with-param name="Settings" select="$Settings" />
+        <xsl:with-param name="CustomAttributes" select="$CustomAttributes" />
         <xsl:with-param name="Header" select="$Header" />
         <xsl:with-param name="Footer" select="$Footer" />
       </xsl:apply-templates>
@@ -213,7 +272,6 @@
               </xsl:otherwise>
             </xsl:choose>
 
-            <xsl:variable name="apos">'</xsl:variable>
             <xsl:value-of select="translate(Name, concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ é:♀♂.',$apos), 'abcdefghijklmnopqrstuvwxyz-e')" />
 
             <xsl:choose>
@@ -245,7 +303,7 @@
       </xsl:attribute>
 
       <xsl:attribute name="alt">
-        <xsl:text>(Missing Image For </xsl:text>
+        <xsl:text>(</xsl:text>
         <xsl:value-of select="Name" />
         <xsl:text>)</xsl:text>
       </xsl:attribute>
@@ -261,7 +319,7 @@
       <xsl:with-param name="Type" select="Secondary" />
     </xsl:call-template>
 
-    <img style="width:.5em;" src="/images/blank.png" />
+    <img class="SPACER_ICON" src="/images/blank.png" />
 
     <xsl:call-template name="OutputBoostIcon">
       <xsl:with-param name="Type" select="Primary" />
@@ -275,7 +333,7 @@
     <xsl:param name="Type" />
 
     <xsl:if test="$Type != ''">
-      <img style="width:1em;">
+      <img class="TAG_ICON">
         <xsl:attribute name="src">
           <xsl:text>/images/type_</xsl:text>
           <xsl:value-of select="pokeref:ToLower($Type)" />
@@ -292,18 +350,73 @@
     <xsl:param name="Type" />
 
     <xsl:if test="$Type != ''">
-      <xsl:variable name="Weather" select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
-      <img style="width:1em;">
-        <xsl:attribute name="src">
-          <xsl:text>/images/weather_</xsl:text>
-          <xsl:value-of select="pokeref:ToLower(pokeref:Replace($Weather, ' ', ''))" />
-          <xsl:text>.png</xsl:text>
-        </xsl:attribute>
-        <xsl:attribute name="title">
-          <xsl:value-of select="$Weather" />
-        </xsl:attribute>
-      </img>
+      <xsl:call-template name="OutputBoostIconByWeather">
+        <xsl:with-param name="Weather" select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
+      </xsl:call-template>
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="OutputBoostIconByWeather">
+    <xsl:param name="Weather" />
+
+    <img class="TAG_ICON">
+      <xsl:attribute name="src">
+        <xsl:text>/images/weather_</xsl:text>
+        <xsl:value-of select="pokeref:ToLower(pokeref:Replace($Weather, ' ', ''))" />
+        <xsl:text>.png</xsl:text>
+      </xsl:attribute>
+      <xsl:attribute name="title">
+        <xsl:value-of select="$Weather" />
+      </xsl:attribute>
+    </img>
+  </xsl:template>
+
+
+  <xsl:template name="PokemonImageKey">
+    <table border="1">
+      <comment commment="Limited Availablility">
+        <tr>
+          <th rowspan="2">Limited Availability</th>
+          <td class="REGIONAL">Regional Availability</td>
+        </tr>
+        <tr>
+          <td class="UNAVAILABLE">Unavailable</td>
+        </tr>
+      </comment>
+
+      <comment commment="Limited Origin">
+        <tr>
+          <th rowspan="5">Limited Origin</th>
+          <td class="HATCH_ONLY_2K">Available From 2K Egg Only</td>
+        </tr>
+        <tr>
+          <td class="HATCH_ONLY_5K">Available From 5K Egg Only</td>
+        </tr>
+        <tr>
+          <td class="HATCH_ONLY_10K">Available From 10K Egg Only</td>
+        </tr>
+        <tr>
+          <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
+        </tr>
+        <tr>
+          <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
+        </tr>
+      </comment>
+
+      <comment commment="Special">
+        <tr>
+          <th>Special</th>
+          <td class="LEGENDARY">Legendary</td>
+        </tr>
+      </comment>
+
+      <tr>
+        <td colspan="2" class="NOTE">
+          May combine one from each section.
+        </td>
+      </tr>
+
+    </table>
   </xsl:template>
 
 
@@ -314,7 +427,7 @@
   <xsl:template match="*" mode="AddSetting">
     <xsl:param name="Setting" />
     <xsl:param name="Value" />
-    
+
     <xsl:copy>
       <!-- Copy the existing attributes -->
       <xsl:for-each select="@*">
@@ -322,7 +435,7 @@
           <xsl:value-of select="." />
         </xsl:attribute>
       </xsl:for-each>
-      
+
       <!-- Add the new attribute -->
       <xsl:attribute name="{$Setting}">
         <xsl:value-of select="$Value" />

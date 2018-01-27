@@ -60,14 +60,14 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Charts/Pokemon -->
+  <!-- Charts -->
   <ItemGroup>
-    <StyleSheet Include="charts\pokemon\index.xsl">
+    <StyleSheet Include="charts\evolutions.xsl">
       <Visible>true</Visible>
     </StyleSheet>
-    <XslTransform Include="charts\pokemon\index.page.xml">
+    <XslTransform Include="charts\evolutions.page.xml">
       <Visible>true</Visible>
-      <DependentUpon>index.xsl</DependentUpon>
+      <DependentUpon>evolutions.xsl</DependentUpon>
       <Dependencies>
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -79,9 +79,44 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        charts\evolutions.js;
       </Dependencies>
-      <OutputFileName>index.html</OutputFileName>
+      <OutputFileName>evolutions.html</OutputFileName>
     </XslTransform>
+    <FixSourceFile Include="charts\evolutions.js">
+      <Visible>true</Visible>
+      <DependentUpon>evolutions.xsl</DependentUpon>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
+    </FixSourceFile>
+    <StyleSheet Include="charts\pokechart.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="charts\pokechart.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
+        charts\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.html</OutputFileName>
+    </XslTransform>
+    <FixSourceFile Include="charts\pokechart.js">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
+    </FixSourceFile>
   </ItemGroup>
 
   <!-- Charts/MoveSets -->
@@ -140,14 +175,14 @@
       <Visible>true</Visible>
       <DependentUpon>_linkslist.xsl</DependentUpon>
       <Dependencies>
-        charts/raidboss/raidbosses.current.xml;
-        _datafiles/pokestats.gen1.xml;
-        _datafiles/pokestats.gen2.xml;
-        _datafiles/pokestats.gen3.xml;
-        _datafiles/pokestats.gen4.xml;
-        _datafiles/pokestats.gen5.xml;
-        _datafiles/pokestats.gen6.xml;
-        _datafiles/pokestats.gen7.xml;
+        _data.latest\raidbosses.current.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
       </Dependencies>
       <OutputFileName>_linkslist.html</OutputFileName>
     </XslTransform>
@@ -158,15 +193,15 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
-        charts/raidboss/raidbosses.current.xml;
-        charts/raidboss/raidbosses.legacy.xml;
-        _datafiles/pokestats.gen1.xml;
-        _datafiles/pokestats.gen2.xml;
-        _datafiles/pokestats.gen3.xml;
-        _datafiles/pokestats.gen4.xml;
-        _datafiles/pokestats.gen5.xml;
-        _datafiles/pokestats.gen6.xml;
-        _datafiles/pokestats.gen7.xml;
+        _data.latest\raidbosses.current.xml;
+        _data.latest\raidbosses.legacy.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
@@ -181,6 +216,15 @@
         _datafiles\raidboss.absol.xml;
       </Dependencies>
       <OutputFileName>raidboss.absol.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\raidboss\raidboss.aggron.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        _datafiles\raidboss.aggron.xml;
+      </Dependencies>
+      <OutputFileName>raidboss.aggron.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.alakazam.page.xml">
       <Visible>true</Visible>
@@ -768,7 +812,7 @@
     <XslTransform Include="charts\effectiveness.page.xml">
       <Visible>true</Visible>
       <DependentUpon>effectiveness.xsl</DependentUpon>
-      <Dependencies>_datafiles/effectiveness.xml</Dependencies>
+      <Dependencies>_datafiles\effectiveness.xml</Dependencies>
       <OutputFileName>effectiveness.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
@@ -781,7 +825,7 @@
     <XslTransform Include="tech\GAME_MASTER\archive\index.page.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
-      <Dependencies>_datafiles/GAME_MASTER.xml</Dependencies>
+      <Dependencies>_datafiles\GAME_MASTER.xml</Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
     <StyleSheet Include="tech\GAME_MASTER\moves\moves.xsl">
@@ -790,13 +834,13 @@
     <XslTransform Include="tech\GAME_MASTER\moves\moves.charged.page.xml">
       <Visible>true</Visible>
       <DependentUpon>moves.xsl</DependentUpon>
-      <Dependencies>_datafiles/moves.charged.xml</Dependencies>
+      <Dependencies>_datafiles\moves.charged.xml</Dependencies>
       <OutputFileName>moves.charged.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="tech\GAME_MASTER\moves\moves.fast.page.xml">
       <Visible>true</Visible>
       <DependentUpon>moves.xsl</DependentUpon>
-      <Dependencies>_datafiles/moves.fast.xml</Dependencies>
+      <Dependencies>_datafiles\moves.fast.xml</Dependencies>
       <OutputFileName>moves.fast.html</OutputFileName>
     </XslTransform>
     <StyleSheet Include="tech\GAME_MASTER\pokestats\pokestats.xsl">
@@ -805,56 +849,31 @@
     <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen1.page.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
-      <Dependencies>_datafiles/pokestats.gen1.xml</Dependencies>
+      <Dependencies>_datafiles\pokestats.gen1.xml</Dependencies>
       <OutputFileName>pokestats.gen1.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen2.page.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
-      <Dependencies>_datafiles/pokestats.gen2.xml</Dependencies>
+      <Dependencies>_datafiles\pokestats.gen2.xml</Dependencies>
       <OutputFileName>pokestats.gen2.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen3.page.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
-      <Dependencies>_datafiles/pokestats.gen3.xml</Dependencies>
+      <Dependencies>_datafiles\pokestats.gen3.xml</Dependencies>
       <OutputFileName>pokestats.gen3.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen4.page.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
-      <Dependencies>_datafiles/pokestats.gen4.xml</Dependencies>
+      <Dependencies>_datafiles\pokestats.gen4.xml</Dependencies>
       <OutputFileName>pokestats.gen4.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
 
   <!-- TOOLS -->
   <ItemGroup>
-    <StyleSheet Include="tools\evolutions.xsl">
-      <Visible>true</Visible>
-    </StyleSheet>
-    <XslTransform Include="tools\evolutions.page.xml">
-      <Visible>true</Visible>
-      <DependentUpon>evolutions.xsl</DependentUpon>
-      <Dependencies>
-        tools/evolutions.js;
-        _datafiles/pokestats.gen1.xml;
-        _datafiles/pokestats.gen2.xml;
-        _datafiles/pokestats.gen3.xml;
-        _datafiles/pokestats.gen4.xml;
-        _datafiles/pokestats.gen5.xml;
-        _datafiles/pokestats.gen6.xml;
-        _datafiles/pokestats.gen7.xml;
-      </Dependencies>
-      <OutputFileName>evolutions.html</OutputFileName>
-    </XslTransform>
-    <FixSourceFile Include="tools\evolutions.js">
-      <Visible>true</Visible>
-      <DependentUpon>evolutions.xsl</DependentUpon>
-      <Dependencies>
-        js/global.js;
-      </Dependencies>
-    </FixSourceFile>
     <StyleSheet Include="tools\counters.xsl">
       <Visible>true</Visible>
     </StyleSheet>
@@ -862,18 +881,18 @@
       <Visible>true</Visible>
       <DependentUpon>counters.xsl</DependentUpon>
       <Dependencies>
-        _datafiles/settings.xml;
-        _datafiles/mappings.xml;
-        _datafiles/pokestats.gen1.xml;
-        _datafiles/pokestats.gen2.xml;
-        _datafiles/pokestats.gen3.xml;
-        _datafiles/pokestats.gen4.xml;
-        _datafiles/pokestats.gen5.xml;
-        _datafiles/pokestats.gen6.xml;
-        _datafiles/pokestats.gen7.xml;
-        _datafiles/movesets.gen1.xml;
-        _datafiles/movesets.gen2.xml;
-        _datafiles/movesets.gen3.xml;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
+        _datafiles\movesets.gen1.xml;
+        _datafiles\movesets.gen2.xml;
+        _datafiles\movesets.gen3.xml;
       </Dependencies>
       <OutputFileName>counters.html</OutputFileName>
     </XslTransform>
@@ -895,13 +914,13 @@
       <Visible>true</Visible>
       <DependentUpon>seapokemapfilter.xsl</DependentUpon>
       <Dependencies>
-        _datafiles/pokestats.gen1.xml;
-        _datafiles/pokestats.gen2.xml;
-        _datafiles/pokestats.gen3.xml;
-        _datafiles/pokestats.gen4.xml;
-        _datafiles/pokestats.gen5.xml;
-        _datafiles/pokestats.gen6.xml;
-        _datafiles/pokestats.gen7.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
       </Dependencies>
       <OutputFileName>seapokemapfilter.html</OutputFileName>
     </XslTransform>

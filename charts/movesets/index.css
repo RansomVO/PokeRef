@@ -5,20 +5,3 @@
 td, th {
     white-space: nowrap;
 }
-
-/* ------------------------------------------------------------------------------------------ */
-
-.ROTATED {
-    transform: rotate(-90deg);
-    padding: 1em 0 0 0;
-    margin: 3em 0 0 0;
-    width: 1em;
-}
-
-.ROTATED_CONTAINER {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-    vertical-align: bottom;
-}
-

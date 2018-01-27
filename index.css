@@ -123,12 +123,39 @@ h1, h2, h3, h4 {
     background-color: darkgrey;
 }
 
+.ROTATED_CONTAINER {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.ROTATED {
+    transform: rotate(-90deg);
+    padding: 1em 0 0 0;
+    margin: 3em 0 0 0;
+    width: 1em;
+}
+
+.KEY_TABLE {
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 /*#endregion*/
 
 /*#region Classes for outputting Pokemon images. */
 .SPRITE {
     max-width: 65px;
     max-height: 65px;
+}
+
+.SPRITE_SMALL {
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .SPRITE_FILLER {
@@ -140,15 +167,29 @@ h1, h2, h3, h4 {
 }
 
 .SPRITE_DIV_FILLER {
-    display:table-cell; 
-    height:100%; 
-    width:100%; 
-    padding:.5em;
+    display: table-cell; 
+    height: 100%; 
+    width: 100%; 
+    padding: .5em;
 }
 
-.SPRITE_SMALL {
-    max-width: 40px;
-    max-height: 40px;
+.SPRITE_BOXED {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.SPACER_ICON {
+    width: .5em;
+}
+
+.TAG_ICON {
+    width: 1em;
+}
+
+.SHINY_ICON {
+    float: left;
+    width: 1.5em;
 }
 
 /*#endregion*/
