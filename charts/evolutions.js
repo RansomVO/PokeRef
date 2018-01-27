@@ -27,7 +27,7 @@ var CookieSettings = {
     'Gen6_Check': 'false',
     'Gen7_Check': 'false',
     'Gen_FilterType_Combobox': Gen_FilterType_Combobox_Any,
-    'Filter_Text_Evolutions': '',
+    'Filter_Evolutions_Text': '',
 };
 
 // Read the Cookie and apply it to the fields.
@@ -74,7 +74,7 @@ function OnFilterCriteriaChanged(field) {
     var gen5 = document.getElementById('Gen5_Check').checked;
     var gen6 = document.getElementById('Gen6_Check').checked;
     var gen7 = document.getElementById('Gen7_Check').checked;
-    var filter = document.getElementById('Filter_Text_Evolutions').value;
+    var filter = document.getElementById('Filter_Evolutions_Text').value;
     var isNumber = !isNaN(filter);
 
     var found = 0;

@@ -71,7 +71,7 @@
             </div>
 
             <xsl:text>Filter by Name or ID: </xsl:text>
-            <input id="Filter_Text_Evolutions" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
+            <input id="Filter_Evolutions_Text" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
           </div>
 
           <br />
