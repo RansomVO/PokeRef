@@ -1,8 +1,16 @@
-﻿// ==============================================================================================
+﻿// ============================================================================
+// #region ===== Global Variables
+// ============================================================================
+
+// ==============================================================================================
 // Variables to help make it so cached files will be updated appropriately.
 // ==============================================================================================
 var CacheDate = '?cacherefresh={$CurrentDate}'; // This line will be updated with the build
 var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
+
+
+// #endregion Global Variables
+
 
 // ==============================================================================================
 // Called when page is loaded to perform up-front work.
@@ -23,11 +31,9 @@ window.onload = function () {
     }
 }
 
-
 // ==============================================================================================
-// Add Functions that are missing from some browsers (usually IE)
+// #region Add Functions that are missing from some browsers (usually IE)
 // ==============================================================================================
-// #region Add Missing Functions
 
 if (!String.prototype.startsWith) {
     String.prototype.startsWith = function (searchString, position) {
@@ -39,9 +45,8 @@ if (!String.prototype.startsWith) {
 // #endregion Add Missing Functions
 
 // ==============================================================================================
-// Various Helper functions.
+// #region Various Helper functions.
 // ==============================================================================================
-// #region Helper Functions
 
 function IsMobile() {
     return /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
@@ -80,9 +85,8 @@ function SetFieldValueById(fieldId, value) {
 // #endregion Helper Functions
 
 // ==============================================================================================
-// Code to work with Cookies
+// #region Code to work with Cookies
 // ==============================================================================================
-// #region Cookies
 
 // Applies a single cookie setting to the field with the specified fieldId.
 //  (If there is no cookie setting, the set the field to the defaultValue.)
@@ -190,9 +194,8 @@ function RemoveCookieSetting(id) {
 // #endregion Cookies
 
 // ==============================================================================================
-// Basic methods access a file from a specified URL.
+// #region Basic methods access a file from a specified URL.
 // ==============================================================================================
-// #region URL access
 
 function ReadURL(url) {
     var request = new XMLHttpRequest();
@@ -209,13 +212,26 @@ function InsertURL(url) {
     document.write(ReadURL(url));
 }
 
+function InsertLinksList(url) {
+    document.write(GetLinksList(url));
+}
+
+function GetLinksList(url, style) {
+    var results = '<ul';
+    if (style !== undefined && style !== '') {
+        results += ' style="' + style + '"';
+    }
+    results += '>' + ReadURL(url) + '</ul>';
+
+    return results;
+}
+
 // #endregion URL access
 
 // ==============================================================================================
-// A bunch of methods that can be used to insert specific content.
+// #region A bunch of methods that can be used to insert specific content.
 //  (So we can update it in one place.)
 // ==============================================================================================
-// #region Content
 
 function WriteContactInfo() {
     document.write(ReadURL('/contactinfo.html' + CacheDate));
@@ -254,7 +270,7 @@ function GetNavigation(href) {
             + '<div style="font-size:1.75em;">';
     } else if (href === location.pathname || location.pathname.substring(href.length, location.pathname.length) === 'index.html') {
         // We don't need a link for this, so just do the sublinks.
-        return navigation = navigation + ReadURL(href + '_linkslist.html' + CacheDate);
+        return GetLinksList(href + '_linkslist.html' + CacheDate, 'font-size:smaller;')
     }
 
     var sectionName = ReadURL(href + '_sectionname.txt' + CacheDate);
@@ -262,14 +278,14 @@ function GetNavigation(href) {
         navigation = navigation +
             '<ul style="font-size:smaller;">\r\n' +
             '  <li>\r\n' +
-            '    <a ' + 'href="' + href + '">Back to ' + ReadURL(href + '_sectionname.txt' + CacheDate) + '</a>\r\n';
+            '    <a ' + 'href="' + href + '">Back to ' + sectionName + '</a>\r\n';
 
         var subhref = location.pathname.substring(0, location.pathname.indexOf('/', href.length) + 1);
         if (subhref.length !== 0) {
             navigation = navigation + GetNavigation(subhref);
         } else {
             // We are at the bottom. Add sibling links here.
-            navigation = navigation + ReadURL(subhref + '_linkslist.html' + CacheDate);
+            navigation = navigation + GetLinksList(subhref + '_linkslist.html' + CacheDate, 'font-size:smaller;');
         }
 
         navigation = navigation +
@@ -287,20 +303,17 @@ function GetNavigation(href) {
 // #endregion Content
 
 // ==============================================================================================
-//  Methods for hooking up a Collapser for a field.
+// #region Methods for hooking up a Collapser for a field.
 // ==============================================================================================
-// #region Collapsers
 
 var CollapserMarker = '_COLLAPSER';
 var StatusUp = 'UP';
 var StatusDown = 'DOWN';
 
 function SetCollapsers() {
-    var buttons = document.getElementsByTagName("button");
-    for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].id.indexOf(CollapserMarker) !== 0) {
-            SetCollapser(buttons[i]);
-        }
+    var collapsers = document.getElementsByClassName('COLLAPSER');
+    for (var i = 0; i < collapsers.length; i++) {
+        SetCollapser(collapsers[i]);
     }
 }
 
@@ -311,7 +324,7 @@ function SetCollapser(collapser) {
         collapser.formTarget = collapsee.id;
         collapser.setAttribute('onclick', 'ToggleCollapser(event)');
 
-        var state = GetCookieSetting(collapser.formTarget + '_COLLAPSE', collapser.value);
+        var state = GetCookieSetting(collapser.formTarget + CollapserMarker, collapser.value);
         SetCollapseState(state !== null ? state : StatusDown, collapser, collapsee);
     }
 }
@@ -334,14 +347,14 @@ function SetCollapseState(state, collapser, collapsee) {
         collapsee.style.display = 'none';
 
         // Update state.
-        collapser.innerHTML = '&bigtriangleup;'
+        collapser.style.cssText = 'transform: rotate(90deg);';
         collapser.value = StatusUp;
     } else {
         // Show collapsee
         collapsee.style.display = 'block';
 
         // Update state.
-        collapser.innerHTML = '&bigtriangledown;'
+        collapser.style.cssText = 'transform: rotate(-90deg);';
         collapser.value = StatusDown;
     }
 }

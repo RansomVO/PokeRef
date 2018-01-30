@@ -56,7 +56,10 @@
   <!-- Template to create the key for the table -->
   <xsl:template name="CreateKey">
     <h2 id="Key">
-      Key <button id="EFFECTIVENESS_KEY_COLLAPSER" />
+      <xsl:text>Key</xsl:text>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'EFFECTIVENESS_KEY'" />
+      </xsl:call-template>
     </h2>
     <div id="EFFECTIVENESS_KEY" class="INDENT">
       <table border="1" style="white-space:nowrap">

@@ -37,9 +37,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-
   <!-- / -->
   <ItemGroup>
+    <UpdateCacheDate Include="__Debugging\index.html" />
     <FixSourceFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />
     <WebContent Include="feedbacknote.html" />
@@ -53,7 +53,6 @@
       <SubType>Designer</SubType>
     </FixSourceFile>
   </ItemGroup>
-
   <!-- /^ -->
   <ItemGroup>
     <None Include="^\XSLT\Mappings.XSD">
@@ -73,21 +72,18 @@
     <None Include="^\XSLT\Settings.XSD" />
     <None Include="^\XSLT\Stats.XSD" />
   </ItemGroup>
-
   <!-- /_ -->
   <ItemGroup>
     <WebContent Include="_\index.css" />
     <FixSourceFile Include="_\index.js" />
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
-
   <!-- /_data.latest -->
   <ItemGroup>
     <DataFile Include="_data.latest\eggs.xml" />
     <DataFile Include="_data.latest\raidbosses.current.xml" />
     <DataFile Include="_data.latest\raidbosses.legacy.xml" />
   </ItemGroup>
-
   <!-- /_datafiles (moves/movesets) -->
   <ItemGroup>
     <DataFile Include="_datafiles\moves.charged.xml" />
@@ -96,7 +92,6 @@
     <DataFile Include="_datafiles\movesets.gen2.xml" />
     <DataFile Include="_datafiles\movesets.gen3.xml" />
   </ItemGroup>
-
   <!-- /_datafiles (pokestats) -->
   <ItemGroup>
     <DataFile Include="_datafiles\pokestats.gen1.xml" />
@@ -107,7 +102,6 @@
     <DataFile Include="_datafiles\pokestats.gen6.xml" />
     <DataFile Include="_datafiles\pokestats.gen7.xml" />
   </ItemGroup>
-
   <!-- /_datafiles (raidboss) -->
   <ItemGroup>
     <DataFile Include="_datafiles\raidboss.absol.xml" />
@@ -177,7 +171,6 @@
     <DataFile Include="_datafiles\raidboss.weezing.xml" />
     <DataFile Include="_datafiles\raidboss.zapdos.xml" />
   </ItemGroup>
-
   <!-- /_datafiles (various) -->
   <ItemGroup>
     <DataFile Include="_datafiles\effectiveness.xml" />
@@ -186,19 +179,16 @@
     <DataFile Include="_datafiles\settings.xml" />
     <DataFile Include="_datafiles\stats.xml" />
   </ItemGroup>
-
   <!-- /__Debugging -->
   <ItemGroup>
     <Content Include="__Debugging\debug.page.xml" />
     <Content Include="__Debugging\debug.xsl" />
     <Content Include="__Debugging\index.css" />
   </ItemGroup>
-
   <!-- /css -->
   <ItemGroup>
     <WebContent Include="css\unicode.css" />
   </ItemGroup>
-
   <!-- /images -->
   <ItemGroup>
     <WebContent Include="images\logo.png" />
@@ -283,7 +273,6 @@
     <Resource Include="images\originals\weather_windy.png" />
     <Resource Include="images\originals\TrappedWeedle.jpg" />
   </ItemGroup>
-
   <!-- /charts -->
   <ItemGroup>
     <FixSourceFile Include="charts\_sectionname.txt" />
@@ -291,14 +280,12 @@
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
-
   <!-- /charts/movesets -->
   <ItemGroup>
     <WebContent Include="charts\movesets\index.css" />
     <FixSourceFile Include="charts\movesets\_linkslist.html" />
     <FixSourceFile Include="charts\movesets\_sectionname.txt" />
   </ItemGroup>
-
   <!-- /charts/raidboss -->
   <ItemGroup>
     <FixSourceFile Include="charts\raidboss\_sectionname.txt" />
@@ -334,13 +321,11 @@
     <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160821.png" />
     <Resource Include="charts\raidboss\images\originals\Screenshot_20171107-160826.png" />
   </ItemGroup>
-
   <!-- /resources -->
   <ItemGroup>
     <WebContent Include="resources\index.css" />
     <FixSourceFile Include="resources\_sectionname.txt" />
   </ItemGroup>
-
   <!-- /tech -->
   <ItemGroup>
     <WebContent Include="tech\index.css" />
@@ -348,33 +333,28 @@
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
-
   <!-- /tech/GAME_MASTER -->
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\index.css" />
     <FixSourceFile Include="tech\GAME_MASTER\_sectionname.txt" />
   </ItemGroup>
-
   <!-- /tech/GAME_MASTER/moves -->
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\moves\index.css" />
     <FixSourceFile Include="tech\GAME_MASTER\moves\_linkslist.html" />
     <FixSourceFile Include="tech\GAME_MASTER\moves\_sectionname.txt" />
   </ItemGroup>
-
   <!-- /tech/GAME_MASTER/pokestats -->
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\pokestats\index.css" />
     <FixSourceFile Include="tech\GAME_MASTER\pokestats\_linkslist.html" />
     <FixSourceFile Include="tech\GAME_MASTER\pokestats\_sectionname.txt" />
   </ItemGroup>
-
   <!-- /tools -->
   <ItemGroup>
     <WebContent Include="tools\index.css" />
     <FixSourceFile Include="tools\_sectionname.txt" />
   </ItemGroup>
-
   <!-- /xsl -->
   <ItemGroup>
     <StyleSheet Include="xsl\global.xsl">
@@ -382,7 +362,6 @@
     </StyleSheet>
     <StyleSheet Include="xsl\settings.xsl" />
   </ItemGroup>
-
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
   </PropertyGroup>

@@ -2,6 +2,8 @@
   <!-- ==================================================================================================================================================== -->
   <!-- These are the files that reference other files which the browser may cache. -->
   <!-- The <UpdateCacheDate> target leverages the SearchAndReplace task to modify URLs to cause the browser to reload the referenced files.. -->
+
+  <!-- \ -->
   <ItemGroup>
     <UpdateCacheDate Include="local.css">
       <Visible>true</Visible>
@@ -11,8 +13,10 @@
       <OutputFileName>local.css</OutputFileName>
     </UpdateCacheDate>
   </ItemGroup>
+
+  <!-- \js\ -->
   <ItemGroup>
-      <UpdateCacheDate Include="js\global.js">
+    <UpdateCacheDate Include="js\global.js">
       <Visible>true</Visible>
       <Dependencies>
         _sectionname.txt;
@@ -36,6 +40,8 @@
       <OutputFileName>global.js</OutputFileName>
     </UpdateCacheDate>
   </ItemGroup>
+
+  <!-- \charts\ -->
   <ItemGroup>
     <UpdateCacheDate Include="charts\index.html">
       <Visible>true</Visible>
@@ -46,17 +52,6 @@
         index.css;
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
-    </UpdateCacheDate>
-    <UpdateCacheDate Include="charts\namingtechnique.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        js\global.js;
-        charts\index.js;
-        charts\index.css;
-        index.css;
-        css\unicode.css;
-      </Dependencies>
-      <OutputFileName>namingtechnique.html</OutputFileName>
     </UpdateCacheDate>
     <UpdateCacheDate Include="charts\movesets\index.html">
       <Visible>true</Visible>
@@ -69,50 +64,13 @@
       <OutputFileName>index.html</OutputFileName>
     </UpdateCacheDate>
   </ItemGroup>
+
+  <!-- \resources\ -->
   <ItemGroup>
-    <UpdateCacheDate Include="resources\index.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        resources\index.js;
-        js\global.js;
-        resources\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>index.html</OutputFileName>
-    </UpdateCacheDate>
-    <UpdateCacheDate Include="resources\seattlearea.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        resources\index.js;
-        js\global.js;
-        resources\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>seattlearea.html</OutputFileName>
-    </UpdateCacheDate>
-    <UpdateCacheDate Include="resources\tips.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        resources\index.js;
-        js\global.js;
-        resources\index.css;
-        index.css;
-        css\unicode.css;
-      </Dependencies>
-      <OutputFileName>tips.html</OutputFileName>
-    </UpdateCacheDate>
   </ItemGroup>
+
+  <!-- \tech\ -->
   <ItemGroup>
-    <UpdateCacheDate Include="tech\index.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        tech\index.js;
-        js\global.js;
-        tech\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>index.html</OutputFileName>
-    </UpdateCacheDate>
     <UpdateCacheDate Include="tech\cpm.html">
       <Visible>true</Visible>
       <Dependencies>
@@ -123,16 +81,6 @@
         css\unicode.css;
       </Dependencies>
       <OutputFileName>cpm.html</OutputFileName>
-    </UpdateCacheDate>
-    <UpdateCacheDate Include="tech\movesetformulas.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        tech\index.js;
-        js\global.js;
-        tech\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>movesetformulas.html</OutputFileName>
     </UpdateCacheDate>
     <UpdateCacheDate Include="tech\GAME_MASTER\index.html">
       <Visible>true</Visible>
@@ -167,6 +115,8 @@
       <OutputFileName>index.html</OutputFileName>
     </UpdateCacheDate>
   </ItemGroup>
+
+  <!-- \tools\ -->
   <ItemGroup>
     <UpdateCacheDate Include="tools\index.html">
       <Visible>true</Visible>
@@ -177,24 +127,9 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </UpdateCacheDate>
-    <UpdateCacheDate Include="tools\shoppingboxes.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        tools\shoppingboxes.js;
-        js\global.js;
-        tools\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>shoppingboxes.html</OutputFileName>
-    </UpdateCacheDate>
-    <FixSourceFile Include="tools\shoppingboxes.js">
-      <Visible>true</Visible>
-      <DependentUpon>shoppingboxes.html</DependentUpon>
-      <Dependencies>
-        js/global.js;
-      </Dependencies>
-    </FixSourceFile>
   </ItemGroup>
+
+  <!-- \_\ -->
   <ItemGroup>
     <UpdateCacheDate Include="_\index.html">
       <Visible>true</Visible>

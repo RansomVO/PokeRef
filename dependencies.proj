@@ -1,8 +1,9 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- ==================================================================================================================================================== -->
-  <!-- These are the files that we will Transform. -->
+  <!-- These are the files that have manually added Dependencies. -->
   <!-- ==================================================================================================================================================== -->
 
+  <!-- \tech\GAME_MASTER\archive\ -->
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\archive\index.css" />
     <WebContent Include="tech\GAME_MASTER\archive\0000015638B96885_GAME_MASTER.json">

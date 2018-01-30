@@ -117,6 +117,8 @@ function GetFields() {
         var GEN5_Collection = document.getElementById('GEN5_Collection');
         var GEN6_Collection = document.getElementById('GEN6_Collection');
         var GEN7_Collection = document.getElementById('GEN7_Collection');
+
+        var Selected_Pokemon = document.getElementById('Selected_Pokemon');
     }
     catch (err) {
         ShowError(err);
@@ -297,4 +299,40 @@ function OnToggleAllBoosts() {
     Boost_Snow_Check.checked = Boost_All_Check.checked;
 
     OnFilterCriteriaChanged();
+}
+
+// Called when a Pokemon is selected.
+function SelectPokemon(pokemon) {
+    Selected_Pokemon.innerHTML = pokemon.outerHTML;
+
+    // Generation
+    // Gender Ratio
+    // Max CP/HP
+    // Buddy KM for Candy
+    // Shiny
+    // Availability
+    // If Raidboss, link to Possible IVs.
+
+
+    // Base IV
+    //      Attack Defense Stamina
+    // Capture Rate
+    // Flee Rate
+
+    // Evolutions (Row from Evolutions Chart) +
+    //      # Name Candies Special
+    // MoveSets (Rows from MoveSets chart)
+
+    /*
+    id="1" 
+    name="Bulbasaur" 
+    type="Grass Poison" 
+    boost = "&#xA;        -Sunny &#xA;        -Cloudy"
+
+    gen="1" 
+    family="Bulbasaur" 
+    evolvesFrom="" 
+    shiny="" 
+    availability = "General"
+*/
 }

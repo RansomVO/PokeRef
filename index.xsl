@@ -47,8 +47,9 @@
 
         <h2 id="Sections">
           <u>Sections</u>
-          <xsl:text> </xsl:text>
-          <button id="SECTIONS_COLLAPSER" />
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="'SECTIONS'" />
+          </xsl:call-template>
         </h2>
         <div id="SECTIONS">
           <p>
@@ -103,8 +104,9 @@
         <hr />
         <h2 id="QuickAccess">
           <u>Quick Access</u>
-          <xsl:text> </xsl:text>
-          <button id="QUICK_ACCESS_COLLAPSER" />
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="'QUICK_ACCESS'" />
+          </xsl:call-template>
         </h2>
         <div id="QUICK_ACCESS">
           <p>
@@ -115,8 +117,9 @@
             <div class="SECTION">
               <h2 id="RaidBosses">
                 <a href="charts/raidboss">Possible IVs for Raid Bosses</a>
-                <xsl:text> </xsl:text>
-                <button id="RAID_BOSSES_COLLAPSER" />
+                <xsl:call-template name="Collapser">
+                  <xsl:with-param name="CollapseeID" select="'RAID_BOSSES'" />
+                </xsl:call-template>
               </h2>
               <div id="RAID_BOSSES">
                 <p>
@@ -202,8 +205,10 @@
       ]]>
     </script>
     <h2 id="News" class="NEWS_TITLE">
-      <xsl:text>Latest News! </xsl:text>
-      <button id="NEWS_COLLAPSER" />
+      <xsl:text>Latest News!</xsl:text>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'NEWS'" />
+      </xsl:call-template>
     </h2>
     <div id="NEWS" class="NEWS">
       <xsl:apply-templates select="Article" />

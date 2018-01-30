@@ -125,7 +125,12 @@
                 <tr>
                   <td>Filter by Pokemon Name or ID:</td>
                   <td style="padding:0">
-                    <input id="Filter_Text_PokeStat" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
+                    <input id="Filter_Text_PokeStat" type="text" onkeyup="OnFilterCriteriaChanged(this)">
+                      <xsl:attribute name="id">
+                        <xsl:text>Filter_Text_PokeStat_gen</xsl:text>
+                        <xsl:value-of select="MoveSets/Generation"/>
+                      </xsl:attribute>
+                    </input>
                   </td>
                 </tr>
                 <tr>

@@ -8,33 +8,24 @@
   <xsl:include href="settings.xsl"/>
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Global variables -->
+  <!-- Region - Global variables -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Variable that tells how many generations of Pokemon have been released. -->
   <xsl:variable name="Gens" select="3" />
 
   <!-- Constants -->
-  <xsl:variable name="nbsp">
-    <xsl:text>&#xA0;</xsl:text>
-  </xsl:variable>
-  <xsl:variable name="lt">
-    <xsl:text>&#x3C;</xsl:text>
-  </xsl:variable>
-  <xsl:variable name="gt">
-    <xsl:text>&#x3E;</xsl:text>
-  </xsl:variable>
-  <xsl:variable name="quot">
-    <xsl:text>"</xsl:text>
-  </xsl:variable>
-  <xsl:variable name="apos">
-    <xsl:text>-</xsl:text>
-  </xsl:variable>
-  
+  <xsl:variable name="nbsp">&#xA0;</xsl:variable>
+  <xsl:variable name="lt">&#x3C;</xsl:variable>
+  <xsl:variable name="gt">&#x3E;</xsl:variable>
+  <xsl:variable name="quot">"</xsl:variable>
+  <xsl:variable name="apos">'</xsl:variable>
+  <xsl:variable name="caretup">&#x2038;</xsl:variable>
 
+  <!-- EndRegion - Global variables -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Templates to output Pokemon image -->
+  <!-- Region - Templates to output Pokemon image -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Template to Output a Pokemon. -->
@@ -371,7 +362,6 @@
     </img>
   </xsl:template>
 
-
   <xsl:template name="PokemonImageKey">
     <table border="1">
       <comment commment="Limited Availablility">
@@ -419,9 +409,29 @@
     </table>
   </xsl:template>
 
+  <!-- EndRegion - Templates to output Pokemon image -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Support Templates -->
+  <!-- Region - Collapser template -->
+  <!-- ************************************************************************************************************************ -->
+
+  <xsl:template name="Collapser">
+    <xsl:param name="CollapseeID" />
+    <xsl:value-of select="$nbsp" />
+    <div style="display:inline-block">
+      <span class="COLLAPSER" style="transform:rotate(-90deg);">
+        <xsl:attribute name="id">
+          <xsl:value-of select="concat($CollapseeID, '_COLLAPSER')" />
+        </xsl:attribute>
+        <xsl:text>&#9001;</xsl:text>
+      </span>
+    </div>
+  </xsl:template>
+
+  <!-- EndRegion - Collapser template -->
+
+  <!-- ************************************************************************************************************************ -->
+  <!-- Region - Support Templates -->
   <!-- ************************************************************************************************************************ -->
 
   <xsl:template match="*" mode="AddSetting">
@@ -443,9 +453,10 @@
     </xsl:copy>
   </xsl:template>
 
+  <!-- EndRegion - Support Templates -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- pokeref methods  (C#) -->
+  <!-- Region - pokeref methods  (C#) -->
   <!-- ************************************************************************************************************************ -->
 
   <msxsl:script language="C#" implements-prefix="pokeref">
@@ -468,9 +479,10 @@
 
   </msxsl:script>
 
+  <!-- EndRegion - pokeref methods  (C#) -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- DEBUGGING TEMPLATES -->
+  <!-- Region - DEBUGGING TEMPLATES -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Templates to output the contents of Node(s). -->
@@ -501,5 +513,7 @@
       </xsl:for-each>
     </xsl:if>
   </xsl:template>
+
+  <!-- EndRegion - DEBUGGING TEMPLATES -->
 
 </xsl:stylesheet>

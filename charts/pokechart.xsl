@@ -31,6 +31,12 @@
         </link>
 
         <title>Pokemon</title>
+
+        <style>
+          input {
+          width:5em;
+          }
+        </style>
       </head>
       <body>
         <h1>
@@ -41,8 +47,66 @@
           <br /><span class="NOTE">(Pokemon that are not yet released are greyed out.)</span>
         </p>
 
+        <!-- ======================================================================================== -->
+        <!-- The box to contain data from selected pokemon -->
+        <div class="MODAL_DIALOG" style="top:0; right:0; width:25em; height:20em; border:4px outset grey;">
+          <span class="FLOAT_LEFT" id="Selected_Pokemon" tyle="white-space:nowrap;" />
+          <table>
+            <tr>
+              <td>Generation:</td>
+              <td style="width:5em; border:1px solid black;"></td>
+            </tr>
+            <tr>
+              <td>Gender Ratio:</td>
+              <td style="border:1px solid black;"></td>
+            </tr>
+            <tr>
+              <td>Shiny:</td>
+              <td style="border:1px solid black;"></td>
+            </tr>
+            <tr>
+              <td>Availability:</td>
+              <td style="border:1px solid black;"></td>
+            </tr>
+          </table>
+          <table class="FLOAT_END" style="white-space:nowrap;">
+            <tr>
+              <td>Max CP/HP:</td>
+              <td style="border:1px solid black;"></td>
+            </tr>
+            <tr>
+              <td>Buddy KM for Candy:</td>
+              <td style="width:5em; border:1px solid black;"></td>
+            </tr>
+            <tr>
+              <td>Base ATK/DEF/STA:</td>
+              <td style="border:1px solid black;"></td>
+            </tr>
+            <tr>
+              <td>Capture Rate</td>
+              <td style="border:1px solid black;"></td>
+            </tr>
+            <tr>
+              <td>Flee Rate</td>
+              <td style="border:1px solid black;"></td>
+            </tr>
+          </table>
+          <div class="TODO">
+            <br />(Evolutions (Row from Evolutions Chart) + Candies/Special
+            <br />
+            <br />MoveSets (Rows from MoveSets chart)
+          </div>
+        </div>
+        <!-- ======================================================================================== -->
+
+        <br />
+
+
         <h2>
-          Selection Criteria <button id="POKEMON_CRITERIA_COLLAPSER" />
+          <xsl:text>Selection Criteria</xsl:text>
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="'POKEMON_CRITERIA'" />
+          </xsl:call-template>
         </h2>
         <br />
         <div id="POKEMON_CRITERIA">
@@ -190,7 +254,7 @@
           <hr />
           <xsl:call-template name="PokemonImageKey" />
         </div>
-        
+
         <xsl:apply-templates select="PokemonStats[Generation/ID = 1]" />
         <xsl:apply-templates select="PokemonStats[Generation/ID = 2]" />
         <xsl:apply-templates select="PokemonStats[Generation/ID = 3]" />
@@ -214,24 +278,34 @@
       </xsl:attribute>
       <xsl:text>Generation </xsl:text>
       <xsl:value-of select="Generation/ID" />
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="concat('GENERATION_', Generation/ID)" />
+      </xsl:call-template>
     </h2>
     <div>
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('GEN', Generation/ID, '_Collection')" />
+        <xsl:value-of select="concat('GENERATION_', Generation/ID)" />
       </xsl:attribute>
-      <xsl:for-each select="Pokemon">
-        <xsl:variable name="Name" select="Name" />
-        <xsl:apply-templates select=".">
-          <xsl:with-param name="Settings">
-            <Show boxed="true" />
-          </xsl:with-param>
-          <xsl:with-param name="CustomAttributes">
-            <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
-              <Attributes raidboss="true" />
-            </xsl:if>
-          </xsl:with-param>
-        </xsl:apply-templates>
-      </xsl:for-each>
+      <div>
+        <xsl:attribute name="id">
+          <xsl:value-of select="concat('GEN', Generation/ID, '_Collection')" />
+        </xsl:attribute>
+        <xsl:for-each select="Pokemon">
+          <xsl:variable name="Name" select="Name" />
+          <xsl:apply-templates select=".">
+            <xsl:with-param name="Settings">
+              <Show boxed="true" />
+            </xsl:with-param>
+            <xsl:with-param name="CustomAttributes">
+              <Attributes onclick="SelectPokemon(this)">
+                <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
+                  <xsl:attribute name="raidboss">true</xsl:attribute>
+                </xsl:if>
+              </Attributes>
+            </xsl:with-param>
+          </xsl:apply-templates>
+        </xsl:for-each>
+      </div>
     </div>
   </xsl:template>
 

@@ -15,9 +15,9 @@ var SortBy_Default = SortBy_Name;
 // #region FieldIDs
 
 var ID_SortType_Combobox = 'SortType_Combobox';
-var ID_Filter_Text_PokeStat = 'Filter_Text_PokeStat';
 var ID_Filter_Text_Move = 'Filter_Text_Move';
 var ID_ShowOnlyReleased_Checkbox = 'ShowOnlyReleased_Checkbox';
+var ID_Filter_Text_PokeStat = 'Filter_Text_PokeStat_' + document.URL.split('.')[1];
 
 // #endregion FieldIDs
 
@@ -28,9 +28,9 @@ var ID_ShowOnlyReleased_Checkbox = 'ShowOnlyReleased_Checkbox';
 
 var CookieSettings = {
     'SortType_Combobox': SortBy_Default,
-    'Filter_Text_PokeStat': '',
     'Filter_Text_Move': '',
     'ShowOnlyReleased_Checkbox': 'false',
+    //  'Filter_Text_PokeStat_GenX': '', // This will be added manually when the page loads so it is different for each generation.
 };
 
 // Read the Cookie and apply it to the fields.
@@ -49,9 +49,12 @@ function ApplyCookie() {
 // ===== LocalScript (Called when page is loaded to perform any initial work.)
 // ============================================================================
 function LocalScript() {
+    CookieSettings[ID_Filter_Text_PokeStat] = '';   // Add this manually since it changes depending upon Gen.
+
     ApplyCookie();
     OnFilterCriteriaChanged();
 
+    // Now that is it loaded, expose it.
     document.getElementById('Loading').classList.add('DIV_HIDDEN');
     document.getElementById('Loaded').classList.remove('DIV_HIDDEN');
     document.getElementById('Loaded').classList.add('DIV_SHOWN');
@@ -70,15 +73,15 @@ function OnFilterCriteriaChanged(field) {
     }
 
     var source = document.getElementById('MoveSetsSource');
-    var table = document.getElementById('MoveSets');
+    var target = document.getElementById('MoveSets');
     var sort = GetFieldValueById(ID_SortType_Combobox);
 
-    // Delete moveset rows from table.
-    for (var i = table.rows.length - 1; i >= 0; i--) {
-        if (table.rows[i].classList.contains('Header')) {
+    // Delete moveset rows from target.
+    for (var i = target.rows.length - 1; i >= 0; i--) {
+        if (target.rows[i].classList.contains('Header')) {
             break;
         }
-        table.removeChild(table.rows[i]);
+        target.removeChild(target.rows[i]);
     }
 
     // TODO QZX: Figure out how to sort.
@@ -87,19 +90,19 @@ function OnFilterCriteriaChanged(field) {
         var row = source.rows[i];
 
         if (!FilteredOut(row)) {
-            // Copy from the source to the table.
-            table.appendChild(row.cloneNode(true));
+            // Copy from the source to the target.
+            target.appendChild(row.cloneNode(true));
             for (var j = 1; j < row.cells[0].rowSpan; j++)
-                table.appendChild(source.rows[i + j].cloneNode(true));
+                target.appendChild(source.rows[i + j].cloneNode(true));
             found++;
         }
     }
 
-    // If nothing fit the criteria, hide the entire table.
+    // If nothing fit the criteria, hide the entire target.
     if (found === 0) {
-        table.style.display = 'none';
+        target.style.display = 'none';
     } else {
-        table.style.display = '';
+        target.style.display = 'table';
     }
 }
 

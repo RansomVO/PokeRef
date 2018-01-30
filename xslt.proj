@@ -87,6 +87,7 @@
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
     </FixSourceFile>
+    
     <StyleSheet Include="charts\pokechart.xsl">
       <Visible>true</Visible>
     </StyleSheet>
@@ -114,6 +115,23 @@
         js/global.js;
       </Dependencies>
     </FixSourceFile>
+
+    <StyleSheet Include="charts\namingtechnique.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="charts\namingtechnique.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>namingtechnique.xsl</DependentUpon>
+      <Dependencies>
+        js\global.js;
+        charts\index.js;
+        charts\index.css;
+        index.css;
+        css\unicode.css;
+      </Dependencies>
+      <OutputFileName>namingtechnique.html</OutputFileName>
+    </XslTransform>
+
   </ItemGroup>
 
   <!-- Charts/MoveSets -->
@@ -165,7 +183,9 @@
 
   <!-- Charts/RaidBoss -->
   <ItemGroup>
-    <FixSourceFile Include="charts\raidboss\raidbosses.xsl" />
+    <FixSourceFile Include="charts\raidboss\raidbosses.xsl">
+      <Visible>true</Visible>
+    </FixSourceFile>
 
     <StyleSheet Include="charts\raidboss\_linkslist.xsl">
       <Visible>true</Visible>
@@ -825,6 +845,39 @@
     </XslTransform>
   </ItemGroup>
 
+  <!-- Tech -->
+  <ItemGroup>
+    <StyleSheet Include="tech\index.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="tech\index.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>index.xsl</DependentUpon>
+      <Dependencies>
+        tech\index.js;
+        js\global.js;
+        tech\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>index.html</OutputFileName>
+    </XslTransform>
+
+    <StyleSheet Include="tech\movesetformulas.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="tech\movesetformulas.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesetformulas.xsl</DependentUpon>
+      <Dependencies>
+        tech\index.js;
+        js\global.js;
+        tech\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>movesetformulas.html</OutputFileName>
+    </XslTransform>
+  </ItemGroup>
+
   <!-- Tech/GAME_MASTER -->
   <ItemGroup>
     <StyleSheet Include="tech\GAME_MASTER\archive\index.xsl">
@@ -880,7 +933,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- TOOLS -->
+  <!-- Tools -->
   <ItemGroup>
     <StyleSheet Include="tools\counters.xsl">
       <Visible>true</Visible>
@@ -911,6 +964,28 @@
         js/global.js;
       </Dependencies>
     </FixSourceFile>
+
+    <StyleSheet Include="tools\shoppingboxes.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="tools\shoppingboxes.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>shoppingboxes.xsl</DependentUpon>
+      <Dependencies>
+        tools\shoppingboxes.js;
+        js\global.js;
+        tools\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>shoppingboxes.html</OutputFileName>
+    </XslTransform>
+    <FixSourceFile Include="tools\shoppingboxes.js">
+      <Visible>true</Visible>
+      <DependentUpon>shoppingboxes.xsl</DependentUpon>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
+    </FixSourceFile>
   </ItemGroup>
 
   <!-- Resources -->
@@ -937,6 +1012,33 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
     </FixSourceFile>
+
+    <StyleSheet Include="resources\index.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="resources\index.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>index.xsl</DependentUpon>
+      <OutputFileName>index.html</OutputFileName>
+    </XslTransform>
+
+    <StyleSheet Include="resources\seattlearea.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="resources\seattlearea.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>seattlearea.xsl</DependentUpon>
+      <OutputFileName>seattlearea.html</OutputFileName>
+    </XslTransform>
+
+    <StyleSheet Include="resources\tips.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
+    <XslTransform Include="resources\tips.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>tips.xsl</DependentUpon>
+      <OutputFileName>tips.html</OutputFileName>
+    </XslTransform>
   </ItemGroup>
 
 </Project>

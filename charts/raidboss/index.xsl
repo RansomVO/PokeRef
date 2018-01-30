@@ -41,9 +41,12 @@
           </p>
 
           <h3>
-            Before you throw any balls... <button id="BEFORE_COLLAPSER" />
+            <xsl:text>Before you throw any balls...</xsl:text>
+            <xsl:call-template name="Collapser">
+              <xsl:with-param name="CollapseeID" select="'BEFORE_THROW'" />
+            </xsl:call-template>
           </h3>
-          <ol id="BEFORE">
+          <ol id="BEFORE_THROW">
             <li>
               Determine whether or not the Raid Boss has a Weather Boost and set the checkbox accordingly.
               <br /><img class="INDENT" width="210" style="border:1px solid black;" src="images/weatherboosted.png" />
@@ -111,9 +114,12 @@
           </ol>
 
           <h3>
-            After you catch the Pokemon... <button id="AFTER_COLLAPSER" />
+            <xsl:text>After you catch the Pokemon...</xsl:text>
+            <xsl:call-template name="Collapser">
+              <xsl:with-param name="CollapseeID" select="'AFTER_THROW'" />
+            </xsl:call-template>
           </h3>
-          <ol id="AFTER">
+          <ol id="AFTER_THROW">
             <li>
               Open the Pokemon's page, check the Pokemon's HP and compare it to the values in the chart.
               <br /><img class="INDENT" width="210" src="images/hp.png" />

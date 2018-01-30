@@ -75,6 +75,25 @@ h1, h2, h3, h4 {
     color: grey;
 }
 
+.COLLAPSER {
+    color: silver;
+    display: inline-block;
+    /* Stuff that needs to be the same in hover */
+    font-size: smaller;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+    .COLLAPSER:hover {
+        color: white;
+        background-color: silver;
+        /* Stuff that needs to be the same as default. */
+        display: inline-block;
+        font-size: smaller;
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+
 /*#endregion*/
 
 /*#region Classes that affect positioning and/or spacing. */
@@ -101,6 +120,15 @@ h1, h2, h3, h4 {
     background-color: lightyellow;
     font-size: smaller;
     font-style: italic;
+}
+
+.MODAL_DIALOG {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 1em; /* Location of the box */
+    /*overflow: auto;*/ /* Enable scroll if needed */
+    background-color: white;
+    /*background-color: rgba(128,128,128,0.4);*/ /* Black w/ opacity */
 }
 
 /*#endregion*/
@@ -167,9 +195,9 @@ h1, h2, h3, h4 {
 }
 
 .SPRITE_DIV_FILLER {
-    display: table-cell; 
-    height: 100%; 
-    width: 100%; 
+    display: table-cell;
+    height: 100%;
+    width: 100%;
     padding: .5em;
 }
 

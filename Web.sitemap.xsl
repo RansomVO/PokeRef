@@ -68,13 +68,9 @@
     </a>
 
     <xsl:if test="count(sitemap:siteMapNode[contains(@url, '#')]) != 0">
-      <xsl:text> </xsl:text>
-      <button>
-        <xsl:attribute name="id">
-          <xsl:value-of select="@url"/>
-          <xsl:text>_COLLAPSER</xsl:text>
-        </xsl:attribute>
-      </button>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="@url" />
+      </xsl:call-template>
     </xsl:if>
     <div class="CHILD">
       <xsl:attribute name="id">
@@ -89,17 +85,12 @@
         <br />
         <div class="INDENT" style="font-size:smaller;">
           <span class="SITE_MAP_SECTION">Anchors On Page</span>
-          <xsl:text>: </xsl:text>
-          <button>
-            <xsl:attribute name="id">
-              <xsl:value-of select="@url"/>
-              <xsl:text>_ANCHORS_COLLAPSER</xsl:text>
-            </xsl:attribute>
-          </button>
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="concat(@url, '_ANCHORS')" />
+          </xsl:call-template>
           <ul>
             <xsl:attribute name="id">
-              <xsl:value-of select="@url"/>
-              <xsl:text>_ANCHORS</xsl:text>
+              <xsl:value-of select="concat(@url, '_ANCHORS')"/>
             </xsl:attribute>
 
             <xsl:apply-templates select="sitemap:siteMapNode[contains(@url, '#')]" mode="child">
@@ -112,18 +103,12 @@
         <br />
         <div class="INDENT" style="font-size:smaller;">
           <span class="SITE_MAP_SECTION">Sub Pages</span>
-          <xsl:text>: </xsl:text>
-          <button>
-            <xsl:attribute name="id">
-              <xsl:value-of select="@url"/>
-              <xsl:text>_SUBPAGE_COLLAPSER</xsl:text>
-            </xsl:attribute>
-          </button>
-
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="concat(@url, '_SUBPAGE')" />
+          </xsl:call-template>
           <ul>
             <xsl:attribute name="id">
-              <xsl:value-of select="@url"/>
-              <xsl:text>_SUBPAGE</xsl:text>
+              <xsl:value-of select="concat(@url, '_SUBPAGE')" />
             </xsl:attribute>
 
             <xsl:apply-templates select="sitemap:siteMapNode[not(contains(@url, '#'))]" mode="child">
