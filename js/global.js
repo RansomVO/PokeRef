@@ -1,6 +1,6 @@
-﻿// ============================================================================
-// #region ===== Global Variables
-// ============================================================================
+﻿// ==============================================================================================
+// #region Global Variables
+// ==============================================================================================
 
 // ==============================================================================================
 // Variables to help make it so cached files will be updated appropriately.
@@ -9,8 +9,7 @@ var CacheDate = '?cacherefresh={$CurrentDate}'; // This line will be updated wit
 var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
 
 
-// #endregion Global Variables
-
+// #endregion
 
 // ==============================================================================================
 // Called when page is loaded to perform up-front work.
@@ -42,7 +41,7 @@ if (!String.prototype.startsWith) {
     };
 }
 
-// #endregion Add Missing Functions
+// #endregion
 
 // ==============================================================================================
 // #region Various Helper functions.
@@ -82,7 +81,58 @@ function SetFieldValueById(fieldId, value) {
     SetFieldValue(document.getElementById(fieldId), value);
 }
 
-// #endregion Helper Functions
+// #endregion
+
+// ==============================================================================================
+// #region Code for Pop-ups
+// ==============================================================================================
+
+var Popup = null;
+var PopupStartLeft;
+var PopupStartTop;
+var MouseStartX;
+var MouseStartY;
+
+// Applies a single cookie setting to the field with the specified fieldId.
+//  (If there is no cookie setting, the set the field to the defaultValue.)
+function ShowPopup(popup) {
+    if (Popup !== null) {
+        OnClosePopup(Popup);
+    }
+
+    Popup = popup;
+    var header = document.getElementById(popup.id + '_Header');
+    header = header ? header : popup;
+    header.onmousedown = PopupMouseDown;
+    Popup.style.display = '';
+}
+
+function PopupMouseDown(e) {
+    PopupStartLeft = Popup.offsetLeft;
+    PopupStartTop = Popup.offsetTop;
+    MouseStartX = e.clientX;
+    MouseStartY = e.clientY;
+
+    document.onmousemove = PopupDrag;
+    document.onmouseup = PopupMouseUp;
+}
+
+function PopupDrag(e) {
+    Popup.style.left = PopupStartLeft - (MouseStartX - e.clientX);
+    Popup.style.top = PopupStartTop - (MouseStartY - e.clientY);
+}
+
+function PopupMouseUp(e) {
+    document.onmouseup = null;
+    document.onmousemove = null;
+}
+
+function OnClosePopup() {
+    Popup.style.display = 'none';
+    Popup = null;
+}
+
+// #endregion
 
 // ==============================================================================================
 // #region Code to work with Cookies
@@ -191,7 +241,7 @@ function RemoveCookieSetting(id) {
     localStorage.removeItem(id);
 }
 
-// #endregion Cookies
+// #endregion
 
 // ==============================================================================================
 // #region Basic methods access a file from a specified URL.
@@ -226,7 +276,7 @@ function GetLinksList(url, style) {
     return results;
 }
 
-// #endregion URL access
+// #endregion
 
 // ==============================================================================================
 // #region A bunch of methods that can be used to insert specific content.
@@ -300,7 +350,7 @@ function GetNavigation(href) {
     return navigation;
 }
 
-// #endregion Content
+// #endregion
 
 // ==============================================================================================
 // #region Methods for hooking up a Collapser for a field.
@@ -359,7 +409,7 @@ function SetCollapseState(state, collapser, collapsee) {
     }
 }
 
-// #endregion Collapsers
+// #endregion
 
 // ==============================================================================================
 // Called to display a message when there is an Exception.

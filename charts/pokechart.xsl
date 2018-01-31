@@ -23,6 +23,12 @@
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
         </script>
+        <script>
+          <xsl:attribute name="src">
+            <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
@@ -33,8 +39,9 @@
         <title>Pokemon</title>
 
         <style>
-          input {
-          width:5em;
+          .DATA_BOX {
+          width: 5em;
+          border: 1px solid black;
           }
         </style>
       </head>
@@ -49,59 +56,98 @@
 
         <!-- ======================================================================================== -->
         <!-- The box to contain data from selected pokemon -->
-        <div class="MODAL_DIALOG" style="top:0; right:0; width:25em; height:20em; border:4px outset grey;">
-          <span class="FLOAT_LEFT" id="Selected_Pokemon" tyle="white-space:nowrap;" />
-          <table>
-            <tr>
-              <td>Generation:</td>
-              <td style="width:5em; border:1px solid black;"></td>
-            </tr>
-            <tr>
-              <td>Gender Ratio:</td>
-              <td style="border:1px solid black;"></td>
-            </tr>
-            <tr>
-              <td>Shiny:</td>
-              <td style="border:1px solid black;"></td>
-            </tr>
-            <tr>
-              <td>Availability:</td>
-              <td style="border:1px solid black;"></td>
-            </tr>
-          </table>
-          <table class="FLOAT_END" style="white-space:nowrap;">
-            <tr>
-              <td>Max CP/HP:</td>
-              <td style="border:1px solid black;"></td>
-            </tr>
-            <tr>
-              <td>Buddy KM for Candy:</td>
-              <td style="width:5em; border:1px solid black;"></td>
-            </tr>
-            <tr>
-              <td>Base ATK/DEF/STA:</td>
-              <td style="border:1px solid black;"></td>
-            </tr>
-            <tr>
-              <td>Capture Rate</td>
-              <td style="border:1px solid black;"></td>
-            </tr>
-            <tr>
-              <td>Flee Rate</td>
-              <td style="border:1px solid black;"></td>
-            </tr>
-          </table>
-          <div class="TODO">
-            <br />(Evolutions (Row from Evolutions Chart) + Candies/Special
-            <br />
-            <br />MoveSets (Rows from MoveSets chart)
+        <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG" style="top:0; right:0; width:28em; height:25em; border:4px outset grey; display:none;">
+          <div id="Selected_Pokemon_Dialog_Header" style="top:0px; left:0px; right:0px; padding:0; background-color:silver; font-size:x-large;">
+            <span style="float:right; color:white; cursor:pointer; margin-right:.5em;" onclick="OnClosePopup();">
+              <xsl:value-of select="$times" />
+            </span>
+            <span id="Selected_Pokemon_Title" />
+          </div>
+
+          <div class="FLOAT_END" style="padding:.25em;">
+            <span class="FLOAT_LEFT" id="Selected_Pokemon" />
+            <table style="white-space:nowrap;">
+              <tr>
+                <td style="width:1px">Generation:</td>
+                <td id="Selected_Pokemon_Generation" class="DATA_BOX" />
+              </tr>
+              <tr>
+                <td style="width:1px">Candies:</td>
+                <td id="Selected_Pokemon_Family" class="DATA_BOX" />
+              </tr>
+              <tr>
+                <td style="width:1px">
+                  <xsl:value-of select="concat($Gender_Male, $nbsp, ':', $nbsp, $Gender_Female)"/>
+                </td>
+                <td id="Selected_Pokemon_GenderRatio" class="DATA_BOX" />
+              </tr>
+              <tr>
+                <td style="width:1px">Shiny Available:</td>
+                <td id="Selected_Pokemon_Shiny" class="DATA_BOX" />
+              </tr>
+            </table>
+            <table class="FLOAT_END" style="white-space:nowrap;">
+              <tr>
+                <td valign="top" style="width:1px;" rowspan="2">Type(s):</td>
+                <td id="Selected_Pokemon_Type1" class="DATA_BOX" />
+              </tr>
+              <tr>
+                <td id="Selected_Pokemon_Type2" class="DATA_BOX" />
+              </tr>
+              <tr>
+                <td valign="top" style="width:1px;" rowspan="2">Boost(s):</td>
+                <td id="Selected_Pokemon_Boost1" class="DATA_BOX" />
+              </tr>
+              <tr>
+                <td id="Selected_Pokemon_Boost2" class="DATA_BOX" />
+              </tr>
+              <tr>
+                <td style="width:1px">Availability:</td>
+                <td id="Selected_Pokemon_Availability" class="DATA_BOX" />
+              </tr>
+              <tr style="width:1px;">
+                <!-- TODO QZX -->
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+                <td>Max CP/HP:</td>
+                <td id="Selected_Pokemon_Max_CP_HP" class="DATA_BOX" />
+              </tr>
+              <tr style="width:1px;">
+                <!-- TODO QZX -->
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+                <td>Buddy KM for Candy:</td>
+                <td id="Selected_Pokemon_BuddyKM" class="DATA_BOX" />
+              </tr>
+              <tr style="width:1px;">
+                <!-- TODO QZX -->
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+                <td>Base ATK/DEF/STA:</td>
+                <td id="Selected_Pokemon_BaseIV" class="DATA_BOX" />
+              </tr>
+              <tr style="width:1px;">
+                <!-- TODO QZX -->
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+                <td>Capture Rate:</td>
+                <td id="Selected_Pokemon_Capture" class="DATA_BOX" />
+              </tr>
+              <tr style="width:1px;">
+                <!-- TODO QZX -->
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+                <td>Flee Rate:</td>
+                <td id="Selected_Pokemon_Flee" class="DATA_BOX" />
+              </tr>
+            </table>
+            <!-- 
+            <div>
+              <br />Evolutions (Row from Evolutions Chart) + Candies/Special
+              <br />
+              <br />MoveSets (Rows from MoveSets chart)
+            </div>
+-->
           </div>
         </div>
         <!-- ======================================================================================== -->
 
         <br />
-
-
         <h2>
           <xsl:text>Selection Criteria</xsl:text>
           <xsl:call-template name="Collapser">
@@ -297,7 +343,7 @@
               <Show boxed="true" />
             </xsl:with-param>
             <xsl:with-param name="CustomAttributes">
-              <Attributes onclick="SelectPokemon(this)">
+              <Attributes onclick="OnSelectPokemon(this)">
                 <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
                   <xsl:attribute name="raidboss">true</xsl:attribute>
                 </xsl:if>

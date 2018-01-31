@@ -1,9 +1,8 @@
 ﻿// #region Common
 
 // ============================================================================
-// ===== Cookies
-// ============================================================================
 // #region Cookies
+// ============================================================================
 
 var CookieSettings = {
     'Filter_Text': '',
@@ -118,7 +117,23 @@ function GetFields() {
         var GEN6_Collection = document.getElementById('GEN6_Collection');
         var GEN7_Collection = document.getElementById('GEN7_Collection');
 
+        var Selected_Pokemon_Dialog = document.getElementById('Selected_Pokemon_Dialog');
+        var Selected_Pokemon_Title = document.getElementById('Selected_Pokemon_Title');
         var Selected_Pokemon = document.getElementById('Selected_Pokemon');
+        var Selected_Pokemon_Generation = document.getElementById('Selected_Pokemon_Generation');
+        var Selected_Pokemon_Family = document.getElementById('Selected_Pokemon_Family');
+        var Selected_Pokemon_Type1 = document.getElementById('Selected_Pokemon_Type1');
+        var Selected_Pokemon_Type2 = document.getElementById('Selected_Pokemon_Type2');
+        var Selected_Pokemon_Boost1 = document.getElementById('Selected_Pokemon_Boost1');
+        var Selected_Pokemon_Boost2 = document.getElementById('Selected_Pokemon_Boost2');
+        var Selected_Pokemon_GenderRatio = document.getElementById('Selected_Pokemon_GenderRatio');
+        var Selected_Pokemon_Shiny = document.getElementById('Selected_Pokemon_Shiny');
+        var Selected_Pokemon_Availability = document.getElementById('Selected_Pokemon_Availability');
+        var Selected_Pokemon_Max_CP_HP = document.getElementById('Selected_Pokemon_Max_CP_HP');
+        var Selected_Pokemon_BuddyKM = document.getElementById('Selected_Pokemon_BuddyKM');
+        var Selected_Pokemon_BaseIV = document.getElementById('Selected_Pokemon_BaseIV');
+        var Selected_Pokemon_Capture = document.getElementById('Selected_Pokemon_Capture');
+        var Selected_Pokemon_Flee = document.getElementById('Selected_Pokemon_Flee');
     }
     catch (err) {
         ShowError(err);
@@ -181,34 +196,37 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (!((Type_Bug_Check.checked && pokemon.attributes['type'].value.indexOf('Bug') >= 0) ||
-        (Type_Dark_Check.checked && pokemon.attributes['type'].value.indexOf('Dark') >= 0) ||
-        (Type_Dragon_Check.checked && pokemon.attributes['type'].value.indexOf('Dragon') >= 0) ||
-        (Type_Electric_Check.checked && pokemon.attributes['type'].value.indexOf('Electric') >= 0) ||
-        (Type_Fairy_Check.checked && pokemon.attributes['type'].value.indexOf('Fairy') >= 0) ||
-        (Type_Fighting_Check.checked && pokemon.attributes['type'].value.indexOf('Fighting') >= 0) ||
-        (Type_Fire_Check.checked && pokemon.attributes['type'].value.indexOf('Fire') >= 0) ||
-        (Type_Flying_Check.checked && pokemon.attributes['type'].value.indexOf('Flying') >= 0) ||
-        (Type_Ghost_Check.checked && pokemon.attributes['type'].value.indexOf('Ghost') >= 0) ||
-        (Type_Grass_Check.checked && pokemon.attributes['type'].value.indexOf('Grass') >= 0) ||
-        (Type_Ground_Check.checked && pokemon.attributes['type'].value.indexOf('Ground') >= 0) ||
-        (Type_Ice_Check.checked && pokemon.attributes['type'].value.indexOf('Ice') >= 0) ||
-        (Type_Normal_Check.checked && pokemon.attributes['type'].value.indexOf('Normal') >= 0) ||
-        (Type_Poison_Check.checked && pokemon.attributes['type'].value.indexOf('Poison') >= 0) ||
-        (Type_Psychic_Check.checked && pokemon.attributes['type'].value.indexOf('Psychic') >= 0) ||
-        (Type_Rock_Check.checked && pokemon.attributes['type'].value.indexOf('Rock') >= 0) ||
-        (Type_Steel_Check.checked && pokemon.attributes['type'].value.indexOf('Steel') >= 0) ||
-        (Type_Water_Check.checked && pokemon.attributes['type'].value.indexOf('Water') >= 0))) {
+    var types = pokemon.attributes['type1'].value + ' ' + pokemon.attributes['type2'].value;
+    if (!((Type_Bug_Check.checked && types.indexOf('Bug') >= 0) ||
+        (Type_Dark_Check.checked && types.indexOf('Dark') >= 0) ||
+        (Type_Dragon_Check.checked && types.indexOf('Dragon') >= 0) ||
+        (Type_Electric_Check.checked && types.indexOf('Electric') >= 0) ||
+        (Type_Fairy_Check.checked && types.indexOf('Fairy') >= 0) ||
+        (Type_Fighting_Check.checked && types.indexOf('Fighting') >= 0) ||
+        (Type_Fire_Check.checked && types.indexOf('Fire') >= 0) ||
+        (Type_Flying_Check.checked && types.indexOf('Flying') >= 0) ||
+        (Type_Ghost_Check.checked && types.indexOf('Ghost') >= 0) ||
+        (Type_Grass_Check.checked && types.indexOf('Grass') >= 0) ||
+        (Type_Ground_Check.checked && types.indexOf('Ground') >= 0) ||
+        (Type_Ice_Check.checked && types.indexOf('Ice') >= 0) ||
+        (Type_Normal_Check.checked && types.indexOf('Normal') >= 0) ||
+        (Type_Poison_Check.checked && types.indexOf('Poison') >= 0) ||
+        (Type_Psychic_Check.checked && types.indexOf('Psychic') >= 0) ||
+        (Type_Rock_Check.checked && types.indexOf('Rock') >= 0) ||
+        (Type_Steel_Check.checked && types.indexOf('Steel') >= 0) ||
+        (Type_Water_Check.checked && types.indexOf('Water') >= 0))) {
         return false;
     }
 
-    if (!((Boost_Sunny_Check.checked && pokemon.attributes['boost'].value.indexOf('-Sunny') >= 0) ||
-        (Boost_Windy_Check.checked && pokemon.attributes['boost'].value.indexOf('-Windy') >= 0) ||
-        (Boost_Cloudy_Check.checked && pokemon.attributes['boost'].value.indexOf('-Cloudy') >= 0) ||
-        (Boost_PartlyCloudy_Check.checked && pokemon.attributes['boost'].value.indexOf('-Partly Cloudy') >= 0) ||
-        (Boost_Fog_Check.checked && pokemon.attributes['boost'].value.indexOf('-Fog') >= 0) ||
-        (Boost_Rainy_Check.checked && pokemon.attributes['boost'].value.indexOf('-Rainy') >= 0) ||
-        (Boost_Snow_Check.checked && pokemon.attributes['boost'].value.indexOf('-Snow') >= 0))) {
+    // Using the '~' so we don't get Partly Cloudy when Cloudy is true.
+    var boosts = '~' + pokemon.attributes['boost1'].value + '~' + pokemon.attributes['boost2'].value;
+    if (!((Boost_Sunny_Check.checked && boosts.indexOf('~Sunny') >= 0) ||
+        (Boost_Windy_Check.checked && boosts.indexOf('~Windy') >= 0) ||
+        (Boost_PartlyCloudy_Check.checked && boosts.indexOf('~Partly Cloudy') >= 0) ||
+        (Boost_Cloudy_Check.checked && boosts.indexOf('~Cloudy') >= 0) ||
+        (Boost_Fog_Check.checked && boosts.indexOf('~Fog') >= 0) ||
+        (Boost_Rainy_Check.checked && boosts.indexOf('~Rainy') >= 0) ||
+        (Boost_Snow_Check.checked && boosts.indexOf('~Snow') >= 0))) {
         return false;
     }
 
@@ -266,6 +284,7 @@ function OnToggleAllTypes() {
     Type_Steel_Check.checked = Type_All_Check.checked;
     Type_Water_Check.checked = Type_All_Check.checked;
 
+    UpdateCookieSettings(CookieSettings);
     OnFilterCriteriaChanged();
 }
 
@@ -298,41 +317,56 @@ function OnToggleAllBoosts() {
     Boost_Rainy_Check.checked = Boost_All_Check.checked;
     Boost_Snow_Check.checked = Boost_All_Check.checked;
 
+    UpdateCookieSettings(CookieSettings);
     OnFilterCriteriaChanged();
 }
 
 // Called when a Pokemon is selected.
-function SelectPokemon(pokemon) {
-    Selected_Pokemon.innerHTML = pokemon.outerHTML;
+function OnSelectPokemon(pokemon) {
+    Selected_Pokemon_Title.innerHTML = GetPokemonName(pokemon);
 
-    // Generation
-    // Gender Ratio
-    // Max CP/HP
-    // Buddy KM for Candy
-    // Shiny
-    // Availability
-    // If Raidboss, link to Possible IVs.
+    var remove = {};
+    remove.name = true;
+    Selected_Pokemon.innerHTML = GetPokemonIcon(pokemon, remove);
+    Selected_Pokemon_Generation.innerHTML = GetPokemonGeneration(pokemon);
+    Selected_Pokemon_Family.innerHTML = GetPokemonFamily(pokemon);
 
+    Selected_Pokemon_Type1.innerHTML = GetPokemonType1(pokemon);
+    var type2 = GetPokemonType2(pokemon);
+    if (type2 === null) {
+        Selected_Pokemon_Type2.style.display = 'none';
+    } else {
+        Selected_Pokemon_Type2.style.display = '';
+        Selected_Pokemon_Type2.innerHTML = type2;
+    }
 
-    // Base IV
-    //      Attack Defense Stamina
-    // Capture Rate
-    // Flee Rate
+    Selected_Pokemon_Boost1.innerHTML = GetPokemonBoost1(pokemon);
+    var boost2 = GetPokemonBoost2(pokemon);
+    if (boost2 === null) {
+        Selected_Pokemon_Boost2.style.display = 'none';
+    } else {
+        Selected_Pokemon_Boost2.style.display = '';
+        Selected_Pokemon_Boost2.innerHTML = boost2;
+    }
 
-    // Evolutions (Row from Evolutions Chart) +
-    //      # Name Candies Special
-    // MoveSets (Rows from MoveSets chart)
+    Selected_Pokemon_GenderRatio.innerHTML = GetPokemonGenderRatio(pokemon);
+    Selected_Pokemon_Shiny.innerHTML = GetPokemonShiny(pokemon);
+    Selected_Pokemon_Availability.innerHTML = GetPokemonAvailability(pokemon);
+    Selected_Pokemon_Max_CP_HP.innerHTML = GetPokemonMax_CP_HP(pokemon);
+    Selected_Pokemon_BuddyKM.innerHTML = GetPokemonBuddyKM(pokemon);
+    Selected_Pokemon_BaseIV.innerHTML = GetPokemonBaseIV(pokemon);
+    Selected_Pokemon_Capture.innerHTML = GetPokemonCaptureRate(pokemon);
+    Selected_Pokemon_Flee.innerHTML = GetPokemonFleeRate(pokemon);
 
-    /*
-    id="1" 
-    name="Bulbasaur" 
-    type="Grass Poison" 
-    boost = "&#xA;        -Sunny &#xA;        -Cloudy"
+    // TODO QZX: If Raidboss, link to Possible IVs.
 
-    gen="1" 
-    family="Bulbasaur" 
-    evolvesFrom="" 
-    shiny="" 
-    availability = "General"
-*/
+    // TODO QZX: Evolutions (Row from Evolutions Chart) +
+    // TODO QZX:    # Name Candies Special
+    // TODO QZX: MoveSets (Rows from MoveSets chart)
+
+    // TODO QZX: Resize the Dialog to fit the contents.
+    // TODO QZX: Make the dialog resizeable?
+
+    ShowPopup(Selected_Pokemon_Dialog);
 }
+

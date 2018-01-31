@@ -20,7 +20,7 @@
   <xsl:variable name="gt">&#x3E;</xsl:variable>
   <xsl:variable name="quot">"</xsl:variable>
   <xsl:variable name="apos">'</xsl:variable>
-  <xsl:variable name="caretup">&#x2038;</xsl:variable>
+  <xsl:variable name="times">&#xD7;</xsl:variable>
 
   <!-- EndRegion - Global variables -->
 
@@ -123,8 +123,11 @@
       <xsl:attribute name="id">
         <xsl:value-of select="ID" />
       </xsl:attribute>
-      <xsl:attribute name="type">
-        <xsl:value-of select="concat(Type/Primary, ' ', Type/Secondary)" />
+      <xsl:attribute name="type1">
+        <xsl:value-of select="Type/Primary" />
+      </xsl:attribute>
+      <xsl:attribute name="type2">
+        <xsl:value-of select="Type/Secondary" />
       </xsl:attribute>
       <xsl:attribute name="family">
         <xsl:value-of select="CandyType" />
@@ -138,11 +141,16 @@
       <xsl:attribute name="availability">
         <xsl:value-of select="Availability" />
       </xsl:attribute>
-      <xsl:attribute name="boost">
-        <xsl:variable name="Type1" select="Type/Primary" />
-        -<xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type1]/Weather" />
-        <xsl:variable name="Type2" select="Type/Secondary" />
-        -<xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type2]/Weather" />
+      <xsl:attribute name="boost1">
+        <xsl:variable name="Type" select="Type/Primary" />
+        <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
+      </xsl:attribute>
+      <xsl:attribute name="boost2">
+        <xsl:variable name="Type" select="Type/Secondary" />
+        <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
+      </xsl:attribute>
+      <xsl:attribute name="genderRatio">
+        <xsl:value-of select="GenderRatio" />
       </xsl:attribute>
       <xsl:if test="count(exslt:node-set($CustomAttributes)) != 0">
         <xsl:for-each select="exslt:node-set($CustomAttributes)/*/@*">
@@ -169,8 +177,9 @@
         </xsl:attribute>
 
         <xsl:if test="$Header != ''">
-          <xsl:copy-of select="$Header"/>
-          <br />
+          <div id="Pokemon_Header_Field">
+            <xsl:copy-of select="$Header"/>
+          </div>
         </xsl:if>
 
         <!-- Add Shiny Icon here. -->
@@ -184,20 +193,23 @@
 
         <!-- Add Type/Boost Icons here. -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
-          <br />
-          <xsl:apply-templates select="Type" mode="icons" />
+          <div id="Pokemon_Icons_Field">
+            <xsl:apply-templates select="Type" mode="icons" />
+          </div>
         </xsl:if>
 
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_name) = 0">
-          <br />
-          <xsl:value-of select="ID"/>
-          <xsl:text>&#xA0;-&#xA0;</xsl:text>
-          <xsl:value-of select="Name"/>
+          <div id="Pokemon_Name_Field">
+            <xsl:value-of select="ID"/>
+            <xsl:text>&#xA0;-&#xA0;</xsl:text>
+            <xsl:value-of select="Name"/>
+          </div>
         </xsl:if>
 
         <xsl:if test="$Footer != ''">
-          <br />
+          <div id="Pokemon_Footer_Field">
           <xsl:copy-of select="$Footer"/>
+          </div>
         </xsl:if>
       </div>
     </div>
@@ -418,7 +430,7 @@
   <xsl:template name="Collapser">
     <xsl:param name="CollapseeID" />
     <xsl:value-of select="$nbsp" />
-    <div style="display:inline-block">
+    <div style="display:inline-block; cursor:pointer;">
       <span class="COLLAPSER" style="transform:rotate(-90deg);">
         <xsl:attribute name="id">
           <xsl:value-of select="concat($CollapseeID, '_COLLAPSER')" />
