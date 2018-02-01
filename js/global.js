@@ -88,38 +88,58 @@ function SetFieldValueById(fieldId, value) {
 // ==============================================================================================
 
 var Popup = null;
-var PopupStartLeft;
-var PopupStartTop;
-var MouseStartX;
-var MouseStartY;
+var OriginalPos = {};
 
 // Applies a single cookie setting to the field with the specified fieldId.
 //  (If there is no cookie setting, the set the field to the defaultValue.)
 function ShowPopup(popup) {
-    if (Popup !== null) {
-        OnClosePopup(Popup);
-    }
+    try {
+        // If they are just refreshing the current popup, just proceed.
+        if (popup !== Popup) {
+            // If there is a Popup already open, close it
+            if (Popup !== null) {
+                OnClosePopup(Popup);
+            }
+            Popup = popup;
 
-    Popup = popup;
-    var header = document.getElementById(popup.id + '_Header');
-    header = header ? header : popup;
-    header.onmousedown = PopupMouseDown;
-    Popup.style.display = '';
+            // Hook up the header (or whole pop-up if there isn't one) to allow moving.
+            var header = document.getElementById(Popup.id + '_Header');
+            header = header ? header : Popup;
+            header.onmousedown = PopupMouseDown;
+        }
+
+        // If the pop-up hasn't been shown before, set it to be in the middle of the screen.
+        if (window.getComputedStyle(Popup).left.startsWith('-1')) {
+            // Set it to be off the screen, then "display" it so we get the real dimensions.
+            Popup.style.left = -100000;
+            Popup.style.display = 'table';
+
+            // No move it into view at the center.
+            Popup.style.left = (window.innerWidth - Popup.offsetWidth) / 2;
+            Popup.style.top = (window.innerHeight - Popup.offsetHeight) / 2;
+        }
+        else {
+            Popup.style.display = 'table';
+        }
+    }
+    catch (err) {
+        ShowError(err);
+    }
 }
 
 function PopupMouseDown(e) {
-    PopupStartLeft = Popup.offsetLeft;
-    PopupStartTop = Popup.offsetTop;
-    MouseStartX = e.clientX;
-    MouseStartY = e.clientY;
+    OriginalPos['PopupLeft'] = Popup.offsetLeft;
+    OriginalPos['PopupTop'] = Popup.offsetTop;
+    OriginalPos['MouseX'] = e.clientX;
+    OriginalPos['MouseY'] = e.clientY;
 
     document.onmousemove = PopupDrag;
     document.onmouseup = PopupMouseUp;
 }
 
 function PopupDrag(e) {
-    Popup.style.left = PopupStartLeft - (MouseStartX - e.clientX);
-    Popup.style.top = PopupStartTop - (MouseStartY - e.clientY);
+    Popup.style.left = OriginalPos['PopupLeft'] - (OriginalPos['MouseX'] - e.clientX);
+    Popup.style.top = OriginalPos['PopupTop'] - (OriginalPos['MouseY'] - e.clientY);
 }
 
 function PopupMouseUp(e) {
@@ -415,8 +435,8 @@ function SetCollapseState(state, collapser, collapsee) {
 // Called to display a message when there is an Exception.
 // ==============================================================================================
 function ShowError(err) {
-    alert('ERROR!'
-        + 'It would very, very appreciated if you would send a screenshot of this dialog to Jay Arvitu at pokeeref@gmail.com'
+    alert('ERROR!!!\n'
+        + 'It would be very, very appreciated if you would send a screenshot of this dialog to Jay Arvitu at pokeeref@gmail.com'
         + '\n'
         + '\n' + err.message
         + '\n'

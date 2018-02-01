@@ -152,6 +152,51 @@
       <xsl:attribute name="genderRatio">
         <xsl:value-of select="GenderRatio" />
       </xsl:attribute>
+      <xsl:attribute name="maxCP">
+        <xsl:value-of select="Max/CP" />
+      </xsl:attribute>
+      <xsl:attribute name="maxHP">
+        <xsl:value-of select="Max/HP" />
+      </xsl:attribute>
+      <xsl:attribute name="buddyKM">
+        <xsl:value-of select="BuddyKM" />
+      </xsl:attribute>
+      <xsl:attribute name="baseAttack">
+        <xsl:value-of select="Stats/Base/Attack" />
+      </xsl:attribute>
+      <xsl:attribute name="baseDefense">
+        <xsl:value-of select="Stats/Base/Defense" />
+      </xsl:attribute>
+      <xsl:attribute name="baseStamina">
+        <xsl:value-of select="Stats/Base/Stamina" />
+      </xsl:attribute>
+      <xsl:attribute name="captureRate">
+        <xsl:value-of select="Stats/Rates/Capture" />
+      </xsl:attribute>
+      <xsl:attribute name="fleeRate">
+        <xsl:value-of select="Stats/Rates/Flee" />
+      </xsl:attribute>
+      <!-- Not using these at this time.
+      <xsl:attribute name="heightStandard">
+        <xsl:value-of select="Stats/Height/Standard" />
+      </xsl:attribute>
+      <xsl:attribute name="heightDeviation">
+        <xsl:value-of select="Stats/Height/Deviation" />
+      </xsl:attribute>
+      <xsl:attribute name="weightStandard">
+        <xsl:value-of select="Stats/Weight/Standard" />
+      </xsl:attribute>
+      <xsl:attribute name="weightDeviation">
+        <xsl:value-of select="Stats/Weight/Deviation" />
+      </xsl:attribute>
+      <xsl:attribute name="probabilityAttack">
+        <xsl:value-of select="Stats/Probability/Attack" />
+      </xsl:attribute>
+      <xsl:attribute name="probabilityDodge">
+        <xsl:value-of select="Stats/Probability/Dodge" />
+      </xsl:attribute>
+-->
+      
       <xsl:if test="count(exslt:node-set($CustomAttributes)) != 0">
         <xsl:for-each select="exslt:node-set($CustomAttributes)/*/@*">
           <xsl:attribute name="{name()}">
@@ -208,7 +253,7 @@
 
         <xsl:if test="$Footer != ''">
           <div id="Pokemon_Footer_Field">
-          <xsl:copy-of select="$Footer"/>
+            <xsl:copy-of select="$Footer"/>
           </div>
         </xsl:if>
       </div>
@@ -431,7 +476,7 @@
     <xsl:param name="CollapseeID" />
     <xsl:value-of select="$nbsp" />
     <div style="display:inline-block; cursor:pointer;">
-      <span class="COLLAPSER" style="transform:rotate(-90deg);">
+      <span class="COLLAPSER BUTTON" style="transform:rotate(-90deg);">
         <xsl:attribute name="id">
           <xsl:value-of select="concat($CollapseeID, '_COLLAPSER')" />
         </xsl:attribute>

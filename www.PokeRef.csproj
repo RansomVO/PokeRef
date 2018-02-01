@@ -39,7 +39,7 @@
   </PropertyGroup>
   <!-- / -->
   <ItemGroup>
-    <UpdateCacheDate Include="__Debugging\index.html" />
+    <Content Include="__Debugging\index.html" />
     <FixSourceFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />
     <WebContent Include="feedbacknote.html" />

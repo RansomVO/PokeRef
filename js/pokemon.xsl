@@ -150,23 +150,29 @@ function GetPokemonAvailability(pokemon) {
 }
 
 function GetPokemonMax_CP_HP(pokemon) {
-    return 'TODO QZX';
+    return pokemon.attributes['maxCP'].value + '</xsl:text>
+    <xsl:value-of select="concat($nbsp, '/', $nbsp)" />
+    <xsl:text>' + pokemon.attributes['maxHP'].value;
 }
 
 function GetPokemonBuddyKM(pokemon) {
-    return 'TODO QZX';
+    return pokemon.attributes['buddyKM'].value;
 }
 
 function GetPokemonBaseIV(pokemon) {
-    return 'TODO QZX';
+    return pokemon.attributes['baseAttack'].value + '</xsl:text>
+    <xsl:value-of select="concat($nbsp, '/', $nbsp)" />
+    <xsl:text>' + pokemon.attributes['baseDefense'].value + '</xsl:text>
+    <xsl:value-of select="concat($nbsp, '/', $nbsp)" />
+    <xsl:text>' + pokemon.attributes['baseStamina'].value;
 }
 
 function GetPokemonCaptureRate(pokemon) {
-    return 'TODO QZX';
+    return pokemon.attributes['captureRate'].value;
 }
 
 function GetPokemonFleeRate(pokemon) {
-    return 'TODO QZX';
+    return pokemon.attributes['fleeRate'].value;
 }
 
 function GetPokemonRaidBossLink(pokemon) {

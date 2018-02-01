@@ -36,12 +36,16 @@
           </xsl:attribute>
         </link>
 
-        <title>Pokemon</title>
+        <title>Pokemon Chart</title>
 
         <style>
           .DATA_BOX {
-          width: 5em;
           border: 1px solid black;
+          }
+
+          .POPUP_CELL {
+          padding-left: .25em;
+          padding-right: .25em;
           }
         </style>
       </head>
@@ -55,85 +59,80 @@
         </p>
 
         <!-- ======================================================================================== -->
-        <!-- The box to contain data from selected pokemon -->
-        <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG" style="top:0; right:0; width:28em; height:25em; border:4px outset grey; display:none;">
-          <div id="Selected_Pokemon_Dialog_Header" style="top:0px; left:0px; right:0px; padding:0; background-color:silver; font-size:x-large;">
-            <span style="float:right; color:white; cursor:pointer; margin-right:.5em;" onclick="OnClosePopup();">
+        <!-- Region The box to contain data from selected pokemon -->
+        <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
+          <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER">
+            <span class="BUTTON" style="float: right;" onclick="OnClosePopup();">
               <xsl:value-of select="$times" />
             </span>
-            <span id="Selected_Pokemon_Title" />
+            <span id="Selected_Pokemon_Title" class="POPUP_DIALOG_HEADER_TITLE" />
           </div>
 
-          <div class="FLOAT_END" style="padding:.25em;">
-            <span class="FLOAT_LEFT" id="Selected_Pokemon" />
+          <div style="padding:.25em;">
             <table style="white-space:nowrap;">
+              <!-- This stupid row is so the stupid columns will be as narrow as possible. -->
               <tr>
-                <td style="width:1px">Generation:</td>
-                <td id="Selected_Pokemon_Generation" class="DATA_BOX" />
+                <th style="width:1px;"/>
+                <th style="width:1px;"/>
+                <th style="width:1px;"/>
+                <th style="width:1px;"/>
               </tr>
               <tr>
-                <td style="width:1px">Candies:</td>
-                <td id="Selected_Pokemon_Family" class="DATA_BOX" />
+                <td rowspan="4" id="Selected_Pokemon" class="POPUP_CELL" />
+                <td colspan="2" class="POPUP_CELL">Generation:</td>
+                <td id="Selected_Pokemon_Generation" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
               <tr>
-                <td style="width:1px">
+                <td colspan="2" class="POPUP_CELL">Candies:</td>
+                <td id="Selected_Pokemon_Family" class="POPUP_CELL DATA_BOX" />
+              </tr>
+              <tr>
+                <td colspan="2" class="POPUP_CELL">
                   <xsl:value-of select="concat($Gender_Male, $nbsp, ':', $nbsp, $Gender_Female)"/>
                 </td>
-                <td id="Selected_Pokemon_GenderRatio" class="DATA_BOX" />
+                <td id="Selected_Pokemon_GenderRatio" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td style="width:1px">Shiny Available:</td>
-                <td id="Selected_Pokemon_Shiny" class="DATA_BOX" />
-              </tr>
-            </table>
-            <table class="FLOAT_END" style="white-space:nowrap;">
-              <tr>
-                <td valign="top" style="width:1px;" rowspan="2">Type(s):</td>
-                <td id="Selected_Pokemon_Type1" class="DATA_BOX" />
+                <td colspan="2" class="POPUP_CELL">Shiny Available:</td>
+                <td id="Selected_Pokemon_Shiny" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td id="Selected_Pokemon_Type2" class="DATA_BOX" />
+                <td colspan="2" rowspan="2" valign="top" class="POPUP_CELL">Type(s):</td>
+                <td colspan="2" id="Selected_Pokemon_Type1" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td valign="top" style="width:1px;" rowspan="2">Boost(s):</td>
-                <td id="Selected_Pokemon_Boost1" class="DATA_BOX" />
+                <td colspan="2" id="Selected_Pokemon_Type2" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td id="Selected_Pokemon_Boost2" class="DATA_BOX" />
+                <td colspan="2"  rowspan="2" valign="top" class="POPUP_CELL">Boost(s):</td>
+                <td colspan="2" id="Selected_Pokemon_Boost1" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td style="width:1px">Availability:</td>
-                <td id="Selected_Pokemon_Availability" class="DATA_BOX" />
+                <td colspan="2" id="Selected_Pokemon_Boost2" class="POPUP_CELL DATA_BOX" />
               </tr>
-              <tr style="width:1px;">
-                <!-- TODO QZX -->
-                <xsl:attribute name="style">display:none;</xsl:attribute>
-                <td>Max CP/HP:</td>
-                <td id="Selected_Pokemon_Max_CP_HP" class="DATA_BOX" />
+              <tr>
+                <td colspan="2" class="POPUP_CELL">Availability:</td>
+                <td colspan="2" id="Selected_Pokemon_Availability" class="POPUP_CELL DATA_BOX" />
               </tr>
-              <tr style="width:1px;">
-                <!-- TODO QZX -->
-                <xsl:attribute name="style">display:none;</xsl:attribute>
-                <td>Buddy KM for Candy:</td>
-                <td id="Selected_Pokemon_BuddyKM" class="DATA_BOX" />
+              <tr>
+                <td colspan="2" class="POPUP_CELL">Max CP/HP:</td>
+                <td colspan="2" id="Selected_Pokemon_Max_CP_HP" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
-              <tr style="width:1px;">
-                <!-- TODO QZX -->
-                <xsl:attribute name="style">display:none;</xsl:attribute>
-                <td>Base ATK/DEF/STA:</td>
-                <td id="Selected_Pokemon_BaseIV" class="DATA_BOX" />
+              <tr>
+                <td colspan="2" class="POPUP_CELL">Buddy KM for Candy:</td>
+                <td colspan="2" id="Selected_Pokemon_BuddyKM" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
-              <tr style="width:1px;">
-                <!-- TODO QZX -->
-                <xsl:attribute name="style">display:none;</xsl:attribute>
-                <td>Capture Rate:</td>
-                <td id="Selected_Pokemon_Capture" class="DATA_BOX" />
+              <tr>
+                <td colspan="2" class="POPUP_CELL">Base ATK/DEF/STA:</td>
+                <td colspan="2" id="Selected_Pokemon_BaseIV" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
-              <tr style="width:1px;">
-                <!-- TODO QZX -->
-                <xsl:attribute name="style">display:none;</xsl:attribute>
-                <td>Flee Rate:</td>
-                <td id="Selected_Pokemon_Flee" class="DATA_BOX" />
+              <tr>
+                <td colspan="2" class="POPUP_CELL">Capture Rate:</td>
+                <td colspan="2" id="Selected_Pokemon_Capture" class="POPUP_CELL DATA_BOX NUMERIC" />
+              </tr>
+              <tr>
+                <td colspan="2" class="POPUP_CELL">Flee Rate:</td>
+                <td colspan="2" id="Selected_Pokemon_Flee" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
             </table>
             <!-- 
@@ -145,6 +144,8 @@
 -->
           </div>
         </div>
+        
+        <!-- EndRegion  -->
         <!-- ======================================================================================== -->
 
         <br />
@@ -343,7 +344,7 @@
               <Show boxed="true" />
             </xsl:with-param>
             <xsl:with-param name="CustomAttributes">
-              <Attributes onclick="OnSelectPokemon(this)">
+              <Attributes onclick="OnSelectPokemon(this)" style="cursor:pointer;">
                 <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
                   <xsl:attribute name="raidboss">true</xsl:attribute>
                 </xsl:if>

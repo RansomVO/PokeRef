@@ -183,10 +183,6 @@
 
   <!-- Charts/RaidBoss -->
   <ItemGroup>
-    <FixSourceFile Include="charts\raidboss\raidbosses.xsl">
-      <Visible>true</Visible>
-    </FixSourceFile>
-
     <StyleSheet Include="charts\raidboss\_linkslist.xsl">
       <Visible>true</Visible>
     </StyleSheet>
@@ -225,6 +221,10 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
+
+    <StyleSheet Include="charts\raidboss\raidbosses.xsl">
+      <Visible>true</Visible>
+    </StyleSheet>
 
     <StyleSheet Include="charts\raidboss\raidboss.xsl">
       <Visible>true</Visible>

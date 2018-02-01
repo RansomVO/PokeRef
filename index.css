@@ -72,27 +72,29 @@ h1, h2, h3, h4 {
 }
 
 .UNAVAILABLE {
+    color: silver;
     color: grey;
 }
 
-.COLLAPSER {
-    color: silver;
+.BUTTON {
     display: inline-block;
-    /* Stuff that needs to be the same in hover */
     font-size: smaller;
     padding-left: .25em;
     padding-right: .25em;
+    cursor: context-menu;
 }
-
-    .COLLAPSER:hover {
+    .BUTTON:hover {
         color: white;
         background-color: silver;
-        /* Stuff that needs to be the same as default. */
-        display: inline-block;
-        font-size: smaller;
-        padding-left: .25em;
-        padding-right: .25em;
     }
+
+.COLLAPSER {
+    /* Currently just used for look-up. */
+}
+
+.NUMERIC {
+    text-align: right;
+}
 
 /*#endregion*/
 
@@ -123,12 +125,36 @@ h1, h2, h3, h4 {
 }
 
 .POPUP_DIALOG {
+    display: none; /* Start as hidden. */
     position: fixed; /* Do not move when page is scrolled. */
     z-index: 1; /* Stay in front */
     padding: 0;
     background-color: white;
+    border: 4px outset grey;
+    margin: auto;
+    left: -1px;
 }
 
+.POPUP_DIALOG_HEADER {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    padding: 0 .25em 0 .25em;
+    font-size: x-large;
+    background-color: aliceblue;
+    cursor: move;
+}
+
+.POPUP_DIALOG_HEADER_TITLE {
+    font-size: x-large;
+    cursor: move;
+}
+
+.POPUP_DIALOG_HEADER_CLOSE_BUTTON {
+    float: right;
+    margin-top: .1em;
+    cursor: move;
+}
 /*#endregion*/
 
 /*#region Classes that are used for dealing with tables and cells. */

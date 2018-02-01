@@ -1,25 +1,26 @@
 ﻿// #region Common
 
 // ============================================================================
-// ===== Global Variables
-// ============================================================================
 // #region Global Variables
+// ============================================================================
 
 var SortBy_Name = 1;
 var SortBy_Id = 2;
 var SortBy_TrueDPS = 3;
 var SortBy_Default = SortBy_Name;
 
-// #endregion Global Variables
 
 // #region FieldIDs
 
 var ID_SortType_Combobox = 'SortType_Combobox';
 var ID_Filter_Text_Move = 'Filter_Text_Move';
 var ID_ShowOnlyReleased_Checkbox = 'ShowOnlyReleased_Checkbox';
-var ID_Filter_Text_PokeStat = 'Filter_Text_PokeStat_' + document.URL.split('.')[1];
+var urlMarker = 'movesets.gen';
+var ID_Filter_Text_PokeStat = 'Filter_Text_PokeStat_Gen' + document.URL.substr(document.URL.indexOf(urlMarker) + urlMarker.length, 1);
 
 // #endregion FieldIDs
+
+// #endregion Global Variables
 
 // ============================================================================
 // ===== Cookies
@@ -49,7 +50,7 @@ function ApplyCookie() {
 // ===== LocalScript (Called when page is loaded to perform any initial work.)
 // ============================================================================
 function LocalScript() {
-    CookieSettings[ID_Filter_Text_PokeStat] = '';   // Add this manually since it changes depending upon Gen.
+    CookieSettings['' + ID_Filter_Text_PokeStat] = '';   // Add this manually since it changes depending upon Gen.
 
     ApplyCookie();
     OnFilterCriteriaChanged();
