@@ -14,11 +14,9 @@
   <!-- Variable that tells how many generations of Pokemon have been released. -->
   <xsl:variable name="Gens" select="3" />
 
-  <!-- Constants -->
-  <!-- NOTES:
-        - Need these because XSL doesn't like them raw in select statements, etc.
-        - Need to use things like "&#xA" instead of "&amp;nbsp;" because they may be in .js which doesn't parse it correctly.
-  -->
+  <!-- Constants (Needed because XSL doesn't like them raw in select statements, etc.)-->
+  <!-- NOTE:  -->
+  
   <!-- Need these because they may intefere with quotes in strings. -->
   <xsl:variable name="quot">"</xsl:variable>
   <xsl:variable name="apos">'</xsl:variable>
@@ -26,15 +24,14 @@
   <!-- ===================================================== -->
   <!-- Must use disable-output-escaping="yes" with the rest. -->
   <!-- ===================================================== -->
-  <!-- Need these because xml/xsl/html throws a total fit if you try to include '<' anywhere but node declarations. -->
+  <!-- Need these because xml/xsl/html throws a total fit if you try to include '<' inside a string. -->
   <xsl:variable name="lt">&#x003C;</xsl:variable>
   <xsl:variable name="gt">&#x003E;</xsl:variable>
 
-  <!-- Need these because they are commonly used chars that aren't easily typed. -->
-  <!-- TODO QZX: Try changing from "&#x00A0;" to "&amp;nbsp;" and similar to the rest. -->
-  <xsl:variable name="nbsp">&#x00A0;</xsl:variable>
-  <xsl:variable name="times">&#x00D7;</xsl:variable>
-  <xsl:variable name="dagger">&#x2020;</xsl:variable>
+  <!-- Need these because they are commonly used chars but not recognized by XSLT processor. -->
+  <xsl:variable name="nbsp">&amp;nbsp;</xsl:variable>
+  <xsl:variable name="times">&amp;times;</xsl:variable>
+  <xsl:variable name="dagger">&amp;dagger;</xsl:variable>
 
   <!-- EndRegion - Global variables -->
 
@@ -190,6 +187,7 @@
       <xsl:attribute name="fleeRate">
         <xsl:value-of select="Stats/Rates/Flee" />
       </xsl:attribute>
+      
       <!-- Not using these at this time.
       <xsl:attribute name="heightStandard">
         <xsl:value-of select="Stats/Height/Standard" />

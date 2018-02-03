@@ -330,11 +330,11 @@ function OnSelectPokemon(pokemon) {
 
     var type1 = GetPokemonType1(pokemon, true);
     var type2 = GetPokemonType2(pokemon, true);
-    Selected_Pokemon_Types.innerHTML = type1 + (type2 !== null ? ',' + type2 : '');
+    Selected_Pokemon_Types.innerHTML = type1 + (type2 !== null ? '&nbsp;&nbsp;&nbsp;' + type2 : '');
 
     var boost1 = GetPokemonBoost1(pokemon, true);
     var boost2 = GetPokemonBoost2(pokemon, true);
-    Selected_Pokemon_Boosts.innerHTML = boost1 + (boost2 !== null ? '<br />' + boost2 : '');
+    Selected_Pokemon_Boosts.innerHTML = boost1 + (boost2 !== null ? '&nbsp;&nbsp;&nbsp;&nbsp;' + boost2 : '');
 
     Selected_Pokemon_GenderRatio.innerHTML = GetPokemonGenderRatio(pokemon);
     Selected_Pokemon_Shiny.innerHTML = GetPokemonShiny(pokemon, true);

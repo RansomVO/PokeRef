@@ -83,14 +83,14 @@
 
   <!-- ==================================================================================================================================================== -->
   <!-- Region -Perform XSL Transforms. (Use *.page.xml) -->
-  <Target Name="XslTransforms" AfterTargets="BeforeBuild" DependsOnTargets="FixIntermediateFiles"
+  <Target Name="XslTransforms" AfterTargets="BeforeBuild" DependsOnTargets="FixIntermediateFiles;FixOutputFiles"
           Inputs="%(XslTransform.Identity);%(RelativeDir)%(XslTransform.DependentUpon);%(XslTransform.Dependencies);xsl\global.xsl;_datafiles\settings.xml"
           Outputs="$(RootOutputFolder)%(RelativeDir)%(XslTransform.OutputFileName)">
 
     <XslTransformation ProjectDir="$(ProjectDir)" TargetDir="$(RootOutputFolder)"
                        XmlInputFilePath="%(XslTransform.Identity)"
                        XslInputFilePath="$(IntDir)%(RelativeDir)%(XslTransform.DependentUpon)"
-                       SearchPath="$(IntDir)"
+                       SearchPath="$(IntDir);$(RootOutputFolder)"
                        OutputFilePath="$(RootOutputFolder)%(RelativeDir)%(XslTransform.OutputFileName)" />
   </Target>
 
@@ -99,7 +99,7 @@
   <!-- ==================================================================================================================================================== -->
   <!-- These are to make it so items can be changed in VS UI -->
   <ItemGroup>
-    <AvailableItemName Include="XslTransform">
+    <AvailableItemName Include="WebContent">
       <Visible>false</Visible>
     </AvailableItemName>
     <AvailableItemName Include="FixOutputFile">
@@ -108,7 +108,10 @@
     <AvailableItemName Include="FixIntermediateFile">
       <Visible>false</Visible>
     </AvailableItemName>
-    <AvailableItemName Include="WebContent">
+    <AvailableItemName Include="XslTransform">
+      <Visible>false</Visible>
+    </AvailableItemName>
+    <AvailableItemName Include="WebSitemap">
       <Visible>false</Visible>
     </AvailableItemName>
   </ItemGroup>

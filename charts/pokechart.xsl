@@ -124,7 +124,7 @@
                 <td colspan="2" id="Selected_Pokemon_BaseIV" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
               <tr>
-                <td colspan="2" class="POPUP_CELL">Capture/Flee Rate:</td>
+                <td colspan="2" class="POPUP_CELL">Base Capture/Flee Rate:</td>
                 <td colspan="2" id="Selected_Pokemon_Rates" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
             </table>

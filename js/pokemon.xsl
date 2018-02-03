@@ -95,7 +95,6 @@ function GetPokemonGeneration(pokemon) {
 }
 
 function GetPokemonFamily(pokemon) {
-    // TODO QZX: Add these to gens 4-7.
     return pokemon.attributes['family'].value;
 }
 
@@ -117,7 +116,7 @@ function GetPokemonType(type, icon) {
         return (icon === undefined || !icon ? '' : '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
     <xsl:text>img class="TAG_ICON" src="/images/type_' + type.toLowerCase() + '.png" title="' + type + '" /</xsl:text>
-    <xsl:value-of select="concat($gt, '&amp;nbsp;')" disable-output-escaping="yes" />
+    <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>') + type;
     }
 }
@@ -140,21 +139,21 @@ function GetPokemonBoost(boost, icon) {
         return (icon === undefined || !icon ? '' : '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
     <xsl:text>img class="TAG_ICON" src="/images/weather_' + boost.toLowerCase().replace(/ /g,'') + '.png" title="' + boost + '" /</xsl:text>
-    <xsl:value-of select="concat($gt, '&amp;nbsp;')" disable-output-escaping="yes" />
+    <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>') + boost;
     }
 }
 
 function GetPokemonGenderRatio(pokemon) {
-    var value = pokemon.attributes['genderRatio'].value;
-    return value === '' ? '???' : value;
+    var genderRatio = pokemon.attributes['genderRatio'].value;
+    return genderRatio === '' ? '???' : genderRatio;
 }
 
 function GetPokemonShiny(pokemon, icon) {
     return pokemon.attributes['shiny'].value === '' ? 'No' : (icon === undefined || !icon ? '' : '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>img class="SHINY_ICON" src="/images/shiny.png" alt="Shiny" /</xsl:text>
-    <xsl:value-of select="concat($gt, '&amp;nbsp;')" disable-output-escaping="yes" />
+    <xsl:text>img class="TAG_ICON" src="/images/shiny.png" alt="Shiny" /</xsl:text>
+    <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>') + 'Yes';
 }
 
@@ -169,15 +168,20 @@ function GetPokemonMax_CP_HP(pokemon) {
 }
 
 function GetPokemonBuddyKM(pokemon) {
-    return pokemon.attributes['buddyKM'].value;
+    var buddyKM = pokemon.attributes['buddyKM'].value;
+    return buddyKM === '' ? '???' : buddyKM;
 }
 
 function GetPokemonBaseIV(pokemon) {
-    return pokemon.attributes['baseAttack'].value + '</xsl:text>
+    var baseAttack = pokemon.attributes['baseAttack'].value;
+    var baseDefense = pokemon.attributes['baseDefense'].value;
+    var baseStamina = pokemon.attributes['baseStamina'].value;
+
+    return (baseAttack === '' ? '???' : baseAttack) + '</xsl:text>
     <xsl:value-of select="concat($nbsp, '/', $nbsp)" disable-output-escaping="yes" />
-    <xsl:text>' + pokemon.attributes['baseDefense'].value + '</xsl:text>
+    <xsl:text>' + (baseDefense === '' ? '???' : baseDefense) + '</xsl:text>
     <xsl:value-of select="concat($nbsp, '/', $nbsp)" disable-output-escaping="yes" />
-    <xsl:text>' + pokemon.attributes['baseStamina'].value;
+    <xsl:text>' + (baseStamina === '' ? '???' : baseStamina);
 }
 
 function GetPokemonCaptureRate(pokemon) {

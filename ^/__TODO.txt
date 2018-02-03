@@ -3,8 +3,6 @@
 =========================================================================================================
 ----- Work in Progress -----
 
-BUG: Click on image in Popup in in PokeChart
-
 SEAPokeMap Filter
 
 RaidBoss Counters
@@ -12,17 +10,10 @@ RaidBoss Counters
 MoveSet Sort and Filter
 	- Add ability to specify a range of numbers.
 	- Need to add sort.
-	- Change Cookies so name/number are per gen.
-
-Web.sitemap
-	- Need to find a way to make it so SearchAndReplace is done on Web.sitemap before XslTansform.
 
 =========================================================================================================
 ----- Overall -----
 
-See what happens if "<xsl:variable name="nbsp">&#x00A0;</xsl:variable>" was changed to "<xsl:variable name="nbsp">&amp;nbsp;</xsl:variable>"
-	(Specifically check in .js results.)
-	Also for dagger and times.
 
 Add ability to specify "?Key=^" or "?Key=" to force collapsers to be up or down.
 
@@ -82,11 +73,12 @@ MoveSets:
 	- Put a line through the move that is Legacy.
 
 PokeChart:
-	- Make it so when you tap on a Pokemon a dialog telling about that Pokemon pops up.
-		- Decide whether to separate Types/Boosts with ", " or "<br />"
+	- Add family to gens 4-7 in PokeStat.xsl.
+	- Add to Popup:
 		- If a Raid Boss, it would be nice to have a link to the Raid Boss page for it.
 		- Weak against (Effectiveness)
 		- Strong against (Effectiveness)
+	- Long-term Add to Popup:
 		- MoveSets
 		- Evolutions
 		- What egg it might hatch from. (eventually.)
