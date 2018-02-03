@@ -324,7 +324,7 @@ function OnSelectPokemon(pokemon) {
 
     var remove = {};
     remove.name = true;
-    Selected_Pokemon.innerHTML = GetPokemonIcon(pokemon, remove);
+    Selected_Pokemon.innerHTML = GetPokemonIcon(pokemon, remove).replace('onclick="OnSelectPokemon(this)"', '').replace('style="cursor:pointer;"', '');
     Selected_Pokemon_Generation.innerHTML = GetPokemonGeneration(pokemon);
     Selected_Pokemon_Family.innerHTML = GetPokemonFamily(pokemon);
 
