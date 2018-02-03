@@ -34,7 +34,7 @@
 
         <br />
         <hr />
-        <h2>
+        <h2 id="anchor_damage">
           Damage Formula
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_DAMAGE'" />
@@ -74,7 +74,7 @@
                 <td>
                   <b>(</b>BaseAttack + AttackIV<b>)</b> * AttackerCPM
                 </td>
-                <td>Power * STAB</td>
+                <td>Power * STAB * WeatherBoost</td>
               </tr>
               <tr>
                 <td class="DIVIDE_BY" />
@@ -108,12 +108,6 @@
               <tr>
                 <th valign="top">FLOOR</th>
                 <td>Chop off everything after the decimal point.</td>
-              </tr>
-              <tr>
-                <th valign="top">Power</th>
-                <td>
-                  The Power of the move. <div class="TODO INDENT">More details to be added.</div>
-                </td>
               </tr>
               <tr>
                 <th valign="top">BaseAttack</th>
@@ -164,6 +158,12 @@
                 </td>
               </tr>
               <tr>
+                <th valign="top">Power</th>
+                <td>
+                  How much damage will be caused by the move.
+                </td>
+              </tr>
+              <tr>
                 <th valign="top">
                   <xsl:text>STAB</xsl:text>
                   <br />
@@ -196,6 +196,26 @@
                 </td>
               </tr>
               <tr>
+                <th valign="top">
+                  <xsl:text>WeatherBoost</xsl:text>
+                </th>
+                <td>
+                  If the type of the attack is boosted by the current weather then it is <b>1.25</b>, otherwise it is <b>1</b>. <span class="NOTE">(Similar to STAB)</span>
+                  <div class="NOTE" style="margin-top:.5em;">
+                    <b>For example</b>:
+                    <div class="INDENT">
+                      Vine Whip is a <b>Grass</b> type move and Grass types are boosted by <b>Sunny</b> weather.
+                      <br />So, if the weather is Sunny Vine Whip <b>
+                        <u>WILL</u>
+                      </b> be boosted. (WeatherBoost = 1.25)
+                      <br />On the other hand if the weather is <b>Cloudy</b> Vine Whip <b>
+                      <u>WILL NOT</u>
+                    </b> get boosted. (WeatherBoost = 1)
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
                 <th valign="top">Effectiveness</th>
                 <td>A measure of how effective a Move will be against a Pokemon.</td>
               </tr>
@@ -209,6 +229,9 @@
           <div class="NOTE">
             <b>NOTES</b>:
             <ul>
+              <li>
+                The Power for a Move can be looked up on the <a href="GAME_MASTER/moves/moves.fast.html">Fast Moves</a> or <a href="GAME_MASTER/moves/moves.charged.html">Charged Moves</a> pages.
+              </li>
               <li>
                 The BaseAttack and BaseDefense for a Pokemon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokemon Stats</a> pages.
               </li>
@@ -227,7 +250,7 @@
 
         <br />
         <hr />
-        <h2>
+        <h2 id="anchor_dps">
           <b>
             <u>D</u>
           </b>amage <b>
@@ -268,7 +291,7 @@
           </div>
           <p>
             <b style="font-size:x-large;">
-              <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" />
+              <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
               <i>
                 <xsl:value-of select="concat('...', $nbsp, 'BUT', $nbsp, '...')" disable-output-escaping="yes" />
               </i>
@@ -326,7 +349,7 @@
               <tr>
                 <td rowspan="7" style="font-size:4em">(</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('*', $nbsp)" disable-output-escaping="yes" />
+                  <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
                 </td>
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
@@ -409,13 +432,12 @@
             <li>Plus the amount of Damage done by the Charged Move,</li>
             <li>All divided by the amount of time it takes to do all of that.</li>
           </ul>
-          <br />
           <span class="NOTE">(If you can call that "simply".)</span>
         </div>
 
         <br />
         <hr />
-        <h2>
+        <h2 id="anchor_truedps">
           Simplifying <span class="NOTE">(True DPS)</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_TRUE_DPS'" />
@@ -437,6 +459,12 @@
               The Pokemon being attacked has no + or - Effectiveness values.
               <div class="INDENT">
                 Doing that, we can just remove Effectiveness from the formula.
+              </div>
+            </li>
+            <li>
+              Nothing is boosted by weather.
+              <div class="INDENT">
+                Doing that, we can just remove WeatherBoost from the formula.
               </div>
             </li>
             <li>
@@ -483,7 +511,7 @@
               </tr>
               <tr>
                 <td>
-                  <b>(</b>BaseAttack<xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" /><b>)</b><xsl:value-of select="concat($nbsp, '*', $nbsp, 'Power', $nbsp, '*', $nbsp, 'STAB')" disable-output-escaping="yes" />
+                  <b>(</b><xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" /><b>)</b><xsl:value-of select="concat($nbsp, '*', $nbsp, 'Power', $nbsp, '*', $nbsp, 'STAB')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -653,7 +681,7 @@
 
         <br />
         <hr />
-        <h2>
+        <h2 id="anchor_movesetdps">
           Even Simpler <span class="NOTE">(MoveSet DPS)</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DPS'" />
@@ -679,28 +707,28 @@
                 <td>
                   <table align="center">
                     <tr>
-                      <td rowspan="7" style="font-size:5em">(</td>
-                      <td rowspan="7" style="font-size:4em">(</td>
-                      <td rowspan="7" style="padding-top:.5em;">FLOOR</td>
-                      <td rowspan="5" style="font-size:3em">(</td>
-                      <td rowspan="7" style="padding-top:.5em;">
+                      <td rowspan="8" style="font-size:5em">(</td>
+                      <td rowspan="8" style="font-size:4em">(</td>
+                      <td rowspan="8" style="padding-top:.5em;">FLOOR</td>
+                      <td rowspan="6" style="font-size:3em">(</td>
+                      <td rowspan="8" style="padding-top:.5em;">
                         <xsl:value-of select="concat('FastPower', $nbsp, '*', $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
                       </td>
-                      <td rowspan="5" width="1" style="font-size:3em">)</td>
-                      <td rowspan="7" style="padding-top:.5em;">+ 1</td>
-                      <td rowspan="7" style="font-size:4em">)</td>
-                      <td rowspan="7" style="padding-top:.5em;">*</td>
-                      <td rowspan="7" style="padding-top:.5em;">CEILING</td>
-                      <td rowspan="5" style="font-size:3em">(</td>
+                      <td rowspan="6" width="1" style="font-size:3em">)</td>
+                      <td rowspan="8" style="padding-top:.5em;">+ 1</td>
+                      <td rowspan="8" style="font-size:4em">)</td>
+                      <td rowspan="8" style="padding-top:.5em;">*</td>
+                      <td rowspan="8" style="padding-top:.5em;">CEILING</td>
+                      <td rowspan="8" style="font-size:3em">(</td>
                       <td />
-                      <td rowspan="5" style="font-size:3em">)</td>
-                      <td rowspan="7" style="font-size:5em">)</td>
-                      <td rowspan="7" style="padding-top:.5em;">+</td>
-                      <td rowspan="5" style="font-size:3em">(</td>
+                      <td rowspan="6" style="font-size:3em">)</td>
+                      <td rowspan="8" style="font-size:5em">)</td>
+                      <td rowspan="8" style="padding-top:.5em;">+</td>
+                      <td rowspan="6" style="font-size:3em">(</td>
                       <td />
-                      <td rowspan="5" style="font-size:3em">)</td>
-                      <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('+', $nbsp)" disable-output-escaping="yes" />
+                      <td rowspan="6" style="font-size:3em">)</td>
+                      <td rowspan="8" style="padding-top:.5em;">
+                        <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -713,9 +741,12 @@
                     </tr>
                     <tr>
                       <td>ChargedMoveEnergy</td>
-                      <td rowspan="2">
+                      <td rowspan="3">
                         <xsl:value-of select="concat('ChargedPower', $nbsp, '*', $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
                       </td>
+                    </tr>
+                    <tr>
+                      <td class="DIVIDE_BY" />
                     </tr>
                     <tr>
                       <td>FastMoveEnergy</td>
@@ -756,7 +787,9 @@
                       <td rowspan="6" style="font-size:3em">)</td>
                       <td rowspan="7" style="font-size:4em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">+</td>
-                      <td colspan="2" rowspan="7" style="padding-top:.5em;">ChargedMoveTime</td>
+                      <td colspan="2" rowspan="7" style="padding-top:.5em;">
+                        <xsl:value-of select="concat($nbsp, 'ChargedMoveTime')" disable-output-escaping="yes" />
+                      </td>
                       <td colspan="2" rowspan="7" />
                     </tr>
                     <tr>
@@ -794,7 +827,7 @@
 
         <br />
         <hr />
-        <h2>Sum-Up</h2>
+        <h2 id="anchor_sumup">Sum-Up</h2>
         <p>
           Although these formulas are a quite technical, I have programmed them into a spreadsheet that does all the calculations.
           If any of the values change in the future, I just copy-and-paste them in and re-generate the data for the pages on this site.

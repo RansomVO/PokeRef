@@ -237,7 +237,15 @@
         <siteMapNode title="GAME_MASTER Archive" description="Archive of GAME_MASTER files and the associated JSON." url="/tech/GAME_MASTER/archive/" />
         <!-- EndRegion -->
       </siteMapNode>
-      <siteMapNode title="Move Set Formulas" description="Technical description of formulas for determining how much damage is done by a Move Set." url="/tech/movesetformulas.html" />
+      <siteMapNode title="Move Set Formulas" description="Technical description of formulas for determining how much damage is done by a Move Set." url="/tech/movesetformulas.html">
+        <!-- Region -Links to anchors on the page. -->
+        <siteMapNode title="Damage Formula" description="Basic formula for the Damage inflicted by a Single attack Move" url="/tech/movesetformulas.html#damage" />
+        <siteMapNode title="Damage Per Second (DPS) Formula" description="Formula for the Damage over time for a Move Set" url="/tech/movesetformulas.html#dps" />
+        <siteMapNode title="Simplifying (True DPS)" description="Formula that merges simplified versions the Damage and DPS formulas" url="/tech/movesetformulas.html#truedps" />
+        <siteMapNode title="Even Simpler (MoveSet DPS)" description="Simplified version of True DPS formula." url="/tech/movesetformulas.html#movesetdps" />
+        <siteMapNode title="Sum-Up" description="Sum up." url="/tech/movesetformulas.html#sumup" />
+        <!-- EndRegion -->
+      </siteMapNode>
       <siteMapNode title="CP Modifiers (CPM)" description="Table of CP Modifiers." url="/tech/cpm.html" />
       <!-- EndRegion -->
     </siteMapNode>
