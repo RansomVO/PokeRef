@@ -49,7 +49,7 @@
               <tr>
                 <td rowspan="7" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('Damage', $nbsp, $nbsp, '=', $nbsp)" />
+                    <xsl:value-of select="concat('Damage', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td rowspan="7" style="padding-top:.5em;">FLOOR</td>
@@ -67,7 +67,7 @@
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -88,10 +88,10 @@
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -168,7 +168,7 @@
                   <xsl:text>STAB</xsl:text>
                   <br />
                   <span class="NOTE" style="font-weight:normal">
-                    <xsl:value-of select="concat($nbsp, $nbsp)" />(<b>
+                    <xsl:value-of select="concat($nbsp, $nbsp)" disable-output-escaping="yes" />(<b>
                       <u>S</u>
                     </b>ame <b>
                       <u>T</u>
@@ -253,7 +253,7 @@
               <tr>
                 <td rowspan="3" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('DPS', $nbsp, $nbsp, '=', $nbsp)" />
+                    <xsl:value-of select="concat('DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td>Damage</td>
@@ -270,7 +270,7 @@
             <b style="font-size:x-large;">
               <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" />
               <i>
-                <xsl:value-of select="concat('...', $nbsp, 'BUT', $nbsp, '...')" />
+                <xsl:value-of select="concat('...', $nbsp, 'BUT', $nbsp, '...')" disable-output-escaping="yes" />
               </i>
             </b>
             <br />
@@ -285,12 +285,12 @@
               <tr>
                 <td rowspan="15" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('DPS', $nbsp, $nbsp, '=', $nbsp)" />
+                    <xsl:value-of select="concat('DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td rowspan="7" style="font-size:4em">(</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('FastMoveDamage', $nbsp, '*', $nbsp, 'CEILING')" />
+                  <xsl:value-of select="concat('FastMoveDamage', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
                 </td>
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
@@ -300,7 +300,7 @@
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -314,7 +314,7 @@
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -326,19 +326,19 @@
               <tr>
                 <td rowspan="7" style="font-size:4em">(</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('*', $nbsp)" />
+                  <xsl:value-of select="concat('*', $nbsp)" disable-output-escaping="yes" />
                 </td>
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
                 <td rowspan="6" style="font-size:3em">)</td>
                 <td rowspan="7" style="font-size:4em">)</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('+', $nbsp, 'ChargedMoveTime')" />
+                  <xsl:value-of select="concat('+', $nbsp, 'ChargedMoveTime')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -352,7 +352,7 @@
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -466,7 +466,7 @@
               <tr>
                 <td rowspan="7" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('Damage', $nbsp, $nbsp, '=', $nbsp)" />
+                    <xsl:value-of select="concat('Damage', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td rowspan="7" style="padding-top:.5em;">FLOOR</td>
@@ -478,12 +478,12 @@
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <b>(</b>BaseAttack<xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" /><b>)</b><xsl:value-of select="concat($nbsp, '*', $nbsp, 'Power', $nbsp, '*', $nbsp, 'STAB')" />
+                  <b>(</b>BaseAttack<xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" /><b>)</b><xsl:value-of select="concat($nbsp, '*', $nbsp, 'Power', $nbsp, '*', $nbsp, 'STAB')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -494,7 +494,7 @@
               </tr>
               <tr>
                 <td>
-                  <xsl:value-of select="$nbsp" />
+                  <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -510,7 +510,7 @@
               <tr>
                 <td rowspan="3" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('True DPS', $nbsp, $nbsp, '=', $nbsp)" />
+                    <xsl:value-of select="concat('True DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td>
@@ -525,46 +525,46 @@
                       <td rowspan="7" style="padding-top:.5em;">+ 1</td>
                       <td rowspan="7" style="font-size:4em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('*', $nbsp, 'CEILING')" />
+                        <xsl:value-of select="concat('*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td />
                       <td rowspan="6" style="font-size:3em">)</td>
                       <td rowspan="7" style="font-size:5em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('+', $nbsp, 'FLOOR')" />
+                        <xsl:value-of select="concat('+', $nbsp, 'FLOOR')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td />
                       <td rowspan="6" style="font-size:3em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('+', $nbsp, '1')" />
+                        <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <b>(</b>
-                        <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" />
+                        <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" />
                         <b>)</b>
-                        <xsl:value-of select="concat($nbsp, '*', $nbsp, 'FastPower', $nbsp, '*', $nbsp, 'FastSTAB')" />
+                        <xsl:value-of select="concat($nbsp, '*', $nbsp, 'FastPower', $nbsp, '*', $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
                       </td>
                       <td>ChargedMoveEnergy</td>
                       <td>
                         <b>(</b>
-                        <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" />
+                        <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" />
                         <b>)</b>
-                        <xsl:value-of select="concat($nbsp, '*', $nbsp, 'ChargedPower', $nbsp, '*', $nbsp, 'ChargedSTAB')" />
+                        <xsl:value-of select="concat($nbsp, '*', $nbsp, 'ChargedPower', $nbsp, '*', $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -579,13 +579,13 @@
                     </tr>
                     <tr>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -604,11 +604,11 @@
                   <table align="center">
                     <tr>
                       <td colspan="7" rowspan="7">
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="7" width="1px" style="font-size:4em">(</td>
                       <td colspan="3" rowspan="7" width="1px" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" />
+                        <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td colspan="4" />
@@ -620,7 +620,7 @@
                     </tr>
                     <tr>
                       <td colspan="4">
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -634,7 +634,7 @@
                     </tr>
                     <tr>
                       <td colspan="4">
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -673,7 +673,7 @@
               <tr>
                 <td rowspan="3" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('True DPS', $nbsp, $nbsp, '=', $nbsp)" />
+                    <xsl:value-of select="concat('True DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td>
@@ -684,7 +684,7 @@
                       <td rowspan="7" style="padding-top:.5em;">FLOOR</td>
                       <td rowspan="5" style="font-size:3em">(</td>
                       <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('FastPower', $nbsp, '*', $nbsp, 'FastSTAB')" />
+                        <xsl:value-of select="concat('FastPower', $nbsp, '*', $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="5" width="1" style="font-size:3em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">+ 1</td>
@@ -700,21 +700,21 @@
                       <td />
                       <td rowspan="5" style="font-size:3em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('+', $nbsp)" />
+                        <xsl:value-of select="concat('+', $nbsp)" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
                       <td>ChargedMoveEnergy</td>
                       <td rowspan="2">
-                        <xsl:value-of select="concat('ChargedPower', $nbsp, '*', $nbsp, 'ChargedSTAB')" />
+                        <xsl:value-of select="concat('ChargedPower', $nbsp, '*', $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -722,10 +722,10 @@
                     </tr>
                     <tr>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td>
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -745,11 +745,11 @@
                   <table align="center">
                     <tr>
                       <td colspan="7" rowspan="7">
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="7" width="1px" style="font-size:4em">(</td>
                       <td colspan="3" rowspan="7" width="1px" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" />
+                        <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td colspan="4" />
@@ -761,7 +761,7 @@
                     </tr>
                     <tr>
                       <td colspan="4">
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -775,7 +775,7 @@
                     </tr>
                     <tr>
                       <td colspan="4">
-                        <xsl:value-of select="$nbsp" />
+                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>

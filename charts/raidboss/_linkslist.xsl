@@ -6,8 +6,8 @@
   <xsl:include href="raidbosses.xsl"/>
 
   <xsl:template match="Root">
-    <!-- Trick to allow non-list to be displayed in nvaigation bar. -->
-    <xsl:value-of select="concat($lt, '/u', $gt)" disable-output-escaping="yes" />
+    <!-- Trick to allow non-list to be displayed in navigation bar. -->
+    <xsl:value-of select="concat($lt, '/ul', $gt)" disable-output-escaping="yes" />
     
     <xsl:apply-templates select="RaidBosses">
       <xsl:with-param name="Settings">
@@ -16,7 +16,7 @@
     </xsl:apply-templates>
     
     <!-- Trick to allow non-list to be displayed in nvaigation bar. -->
-    <xsl:value-of select="concat($lt, 'u', $gt)" disable-output-escaping="yes" />
+    <xsl:value-of select="concat($lt, 'ul', $gt)" disable-output-escaping="yes" />
   </xsl:template>
 
 </xsl:stylesheet>

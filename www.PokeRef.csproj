@@ -40,7 +40,7 @@
   <!-- / -->
   <ItemGroup>
     <Content Include="__Debugging\index.html" />
-    <FixSourceFile Include="_sectionname.txt" />
+    <FixOutputFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />
     <WebContent Include="feedbacknote.html" />
     <WebContent Include="favicon.ico" />
@@ -49,9 +49,9 @@
     <Content Include="Web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <FixSourceFile Include="Web.sitemap">
+    <FixOutputFile Include="Web.sitemap">
       <SubType>Designer</SubType>
-    </FixSourceFile>
+    </FixOutputFile>
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
@@ -75,109 +75,109 @@
   <!-- /_ -->
   <ItemGroup>
     <WebContent Include="_\index.css" />
-    <FixSourceFile Include="_\index.js" />
+    <FixOutputFile Include="_\index.js" />
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
   <!-- /_data.latest -->
   <ItemGroup>
-    <DataFile Include="_data.latest\eggs.xml" />
-    <DataFile Include="_data.latest\raidbosses.current.xml" />
-    <DataFile Include="_data.latest\raidbosses.legacy.xml" />
+    <FixIntermediateFile Include="_data.latest\eggs.xml" />
+    <FixIntermediateFile Include="_data.latest\raidbosses.current.xml" />
+    <FixIntermediateFile Include="_data.latest\raidbosses.legacy.xml" />
   </ItemGroup>
   <!-- /_datafiles (moves/movesets) -->
   <ItemGroup>
-    <DataFile Include="_datafiles\moves.charged.xml" />
-    <DataFile Include="_datafiles\moves.fast.xml" />
-    <DataFile Include="_datafiles\movesets.gen1.xml" />
-    <DataFile Include="_datafiles\movesets.gen2.xml" />
-    <DataFile Include="_datafiles\movesets.gen3.xml" />
+    <FixIntermediateFile Include="_datafiles\moves.charged.xml" />
+    <FixIntermediateFile Include="_datafiles\moves.fast.xml" />
+    <FixIntermediateFile Include="_datafiles\movesets.gen1.xml" />
+    <FixIntermediateFile Include="_datafiles\movesets.gen2.xml" />
+    <FixIntermediateFile Include="_datafiles\movesets.gen3.xml" />
   </ItemGroup>
   <!-- /_datafiles (pokestats) -->
   <ItemGroup>
-    <DataFile Include="_datafiles\pokestats.gen1.xml" />
-    <DataFile Include="_datafiles\pokestats.gen2.xml" />
-    <DataFile Include="_datafiles\pokestats.gen3.xml" />
-    <DataFile Include="_datafiles\pokestats.gen4.xml" />
-    <DataFile Include="_datafiles\pokestats.gen5.xml" />
-    <DataFile Include="_datafiles\pokestats.gen6.xml" />
-    <DataFile Include="_datafiles\pokestats.gen7.xml" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen1.xml" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen2.xml" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen3.xml" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen4.xml" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen5.xml" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen6.xml" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen7.xml" />
   </ItemGroup>
   <!-- /_datafiles (raidboss) -->
   <ItemGroup>
-    <DataFile Include="_datafiles\raidboss.absol.xml" />
-    <DataFile Include="_datafiles\raidboss.aggron.xml" />
-    <DataFile Include="_datafiles\raidboss.alakazam.xml" />
-    <DataFile Include="_datafiles\raidboss.arcanine.xml" />
-    <DataFile Include="_datafiles\raidboss.articuno.xml" />
-    <DataFile Include="_datafiles\raidboss.bayleef.xml" />
-    <DataFile Include="_datafiles\raidboss.blastoise.xml" />
-    <DataFile Include="_datafiles\raidboss.celebi.xml" />
-    <DataFile Include="_datafiles\raidboss.charizard.xml" />
-    <DataFile Include="_datafiles\raidboss.charmeleon.xml" />
-    <DataFile Include="_datafiles\raidboss.cloyster.xml" />
-    <DataFile Include="_datafiles\raidboss.croconaw.xml" />
-    <DataFile Include="_datafiles\raidboss.electabuzz.xml" />
-    <DataFile Include="_datafiles\raidboss.entei.xml" />
-    <DataFile Include="_datafiles\raidboss.exeggutor.xml" />
-    <DataFile Include="_datafiles\raidboss.flareon.xml" />
-    <DataFile Include="_datafiles\raidboss.gengar.xml" />
-    <DataFile Include="_datafiles\raidboss.golem.xml" />
-    <DataFile Include="_datafiles\raidboss.groudon.xml" />
-    <DataFile Include="_datafiles\raidboss.ho-oh.xml" />
-    <DataFile Include="_datafiles\raidboss.ivysaur.xml" />
-    <DataFile Include="_datafiles\raidboss.jirachi.xml" />
-    <DataFile Include="_datafiles\raidboss.jolteon.xml" />
-    <DataFile Include="_datafiles\raidboss.kyogre.xml" />
-    <DataFile Include="_datafiles\raidboss.lapras.xml" />
-    <DataFile Include="_datafiles\raidboss.latias.xml" />
-    <DataFile Include="_datafiles\raidboss.latios.xml" />
-    <DataFile Include="_datafiles\raidboss.lugia.xml" />
-    <DataFile Include="_datafiles\raidboss.machamp.xml" />
-    <DataFile Include="_datafiles\raidboss.magikarp.xml" />
-    <DataFile Include="_datafiles\raidboss.magmar.xml" />
-    <DataFile Include="_datafiles\raidboss.magneton.xml" />
-    <DataFile Include="_datafiles\raidboss.marowak.xml" />
-    <DataFile Include="_datafiles\raidboss.mawile.xml" />
-    <DataFile Include="_datafiles\raidboss.metapod.xml" />
-    <DataFile Include="_datafiles\raidboss.mew.xml" />
-    <DataFile Include="_datafiles\raidboss.mewtwo.xml" />
-    <DataFile Include="_datafiles\raidboss.moltres.xml" />
-    <DataFile Include="_datafiles\raidboss.muk.xml" />
-    <DataFile Include="_datafiles\raidboss.nidoking.xml" />
-    <DataFile Include="_datafiles\raidboss.nidoqueen.xml" />
-    <DataFile Include="_datafiles\raidboss.ninetales.xml" />
-    <DataFile Include="_datafiles\raidboss.omastar.xml" />
-    <DataFile Include="_datafiles\raidboss.poliwrath.xml" />
-    <DataFile Include="_datafiles\raidboss.porygon.xml" />
-    <DataFile Include="_datafiles\raidboss.quilava.xml" />
-    <DataFile Include="_datafiles\raidboss.raikou.xml" />
-    <DataFile Include="_datafiles\raidboss.rayquaza.xml" />
-    <DataFile Include="_datafiles\raidboss.regice.xml" />
-    <DataFile Include="_datafiles\raidboss.regirock.xml" />
-    <DataFile Include="_datafiles\raidboss.registeel.xml" />
-    <DataFile Include="_datafiles\raidboss.rhydon.xml" />
-    <DataFile Include="_datafiles\raidboss.sableye.xml" />
-    <DataFile Include="_datafiles\raidboss.sandslash.xml" />
-    <DataFile Include="_datafiles\raidboss.scyther.xml" />
-    <DataFile Include="_datafiles\raidboss.snorlax.xml" />
-    <DataFile Include="_datafiles\raidboss.suicune.xml" />
-    <DataFile Include="_datafiles\raidboss.tentacruel.xml" />
-    <DataFile Include="_datafiles\raidboss.tyranitar.xml" />
-    <DataFile Include="_datafiles\raidboss.vaporeon.xml" />
-    <DataFile Include="_datafiles\raidboss.venusaur.xml" />
-    <DataFile Include="_datafiles\raidboss.victreebel.xml" />
-    <DataFile Include="_datafiles\raidboss.wartortle.xml" />
-    <DataFile Include="_datafiles\raidboss.wailmer.xml" />
-    <DataFile Include="_datafiles\raidboss.weezing.xml" />
-    <DataFile Include="_datafiles\raidboss.zapdos.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.absol.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.aggron.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.alakazam.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.arcanine.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.articuno.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.bayleef.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.blastoise.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.celebi.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.charizard.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.charmeleon.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.cloyster.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.croconaw.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.electabuzz.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.entei.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.exeggutor.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.flareon.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.gengar.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.golem.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.groudon.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.ho-oh.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.ivysaur.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.jirachi.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.jolteon.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.kyogre.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.lapras.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.latias.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.latios.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.lugia.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.machamp.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.magikarp.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.magmar.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.magneton.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.marowak.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.mawile.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.metapod.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.mew.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.mewtwo.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.moltres.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.muk.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.nidoking.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.nidoqueen.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.ninetales.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.omastar.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.poliwrath.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.porygon.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.quilava.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.raikou.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.rayquaza.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.regice.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.regirock.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.registeel.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.rhydon.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.sableye.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.sandslash.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.scyther.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.snorlax.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.suicune.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.tentacruel.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.tyranitar.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.vaporeon.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.venusaur.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.victreebel.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.wartortle.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.wailmer.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.weezing.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.zapdos.xml" />
   </ItemGroup>
   <!-- /_datafiles (various) -->
   <ItemGroup>
-    <DataFile Include="_datafiles\effectiveness.xml" />
-    <DataFile Include="_datafiles\GAME_MASTER.xml" />
-    <DataFile Include="_datafiles\mappings.xml" />
-    <DataFile Include="_datafiles\settings.xml" />
-    <DataFile Include="_datafiles\stats.xml" />
+    <FixIntermediateFile Include="_datafiles\effectiveness.xml" />
+    <FixIntermediateFile Include="_datafiles\GAME_MASTER.xml" />
+    <FixIntermediateFile Include="_datafiles\mappings.xml" />
+    <FixIntermediateFile Include="_datafiles\settings.xml" />
+    <FixIntermediateFile Include="_datafiles\stats.xml" />
   </ItemGroup>
   <!-- /__Debugging -->
   <ItemGroup>
@@ -275,7 +275,7 @@
   </ItemGroup>
   <!-- /charts -->
   <ItemGroup>
-    <FixSourceFile Include="charts\_sectionname.txt" />
+    <FixOutputFile Include="charts\_sectionname.txt" />
     <WebContent Include="charts\index.css" />
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
@@ -283,12 +283,12 @@
   <!-- /charts/movesets -->
   <ItemGroup>
     <WebContent Include="charts\movesets\index.css" />
-    <FixSourceFile Include="charts\movesets\_linkslist.html" />
-    <FixSourceFile Include="charts\movesets\_sectionname.txt" />
+    <FixOutputFile Include="charts\movesets\_linkslist.html" />
+    <FixOutputFile Include="charts\movesets\_sectionname.txt" />
   </ItemGroup>
   <!-- /charts/raidboss -->
   <ItemGroup>
-    <FixSourceFile Include="charts\raidboss\_sectionname.txt" />
+    <FixOutputFile Include="charts\raidboss\_sectionname.txt" />
     <WebContent Include="charts\raidboss\index.css" />
     <WebContent Include="charts\raidboss\images\appraise.png" />
     <WebContent Include="charts\raidboss\images\bestattribute-1.png" />
@@ -324,36 +324,36 @@
   <!-- /resources -->
   <ItemGroup>
     <WebContent Include="resources\index.css" />
-    <FixSourceFile Include="resources\_sectionname.txt" />
+    <FixOutputFile Include="resources\_sectionname.txt" />
   </ItemGroup>
   <!-- /tech -->
   <ItemGroup>
     <WebContent Include="tech\index.css" />
-    <FixSourceFile Include="tech\_sectionname.txt" />
+    <FixOutputFile Include="tech\_sectionname.txt" />
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER -->
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\index.css" />
-    <FixSourceFile Include="tech\GAME_MASTER\_sectionname.txt" />
+    <FixOutputFile Include="tech\GAME_MASTER\_sectionname.txt" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER/moves -->
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\moves\index.css" />
-    <FixSourceFile Include="tech\GAME_MASTER\moves\_linkslist.html" />
-    <FixSourceFile Include="tech\GAME_MASTER\moves\_sectionname.txt" />
+    <FixOutputFile Include="tech\GAME_MASTER\moves\_linkslist.html" />
+    <FixOutputFile Include="tech\GAME_MASTER\moves\_sectionname.txt" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER/pokestats -->
   <ItemGroup>
     <WebContent Include="tech\GAME_MASTER\pokestats\index.css" />
-    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_linkslist.html" />
-    <FixSourceFile Include="tech\GAME_MASTER\pokestats\_sectionname.txt" />
+    <FixOutputFile Include="tech\GAME_MASTER\pokestats\_linkslist.html" />
+    <FixOutputFile Include="tech\GAME_MASTER\pokestats\_sectionname.txt" />
   </ItemGroup>
   <!-- /tools -->
   <ItemGroup>
     <WebContent Include="tools\index.css" />
-    <FixSourceFile Include="tools\_sectionname.txt" />
+    <FixOutputFile Include="tools\_sectionname.txt" />
   </ItemGroup>
   <!-- /xsl -->
   <ItemGroup>
@@ -401,7 +401,7 @@
       <DependentUpon>ʭcustom.targets</DependentUpon>
       <SubType>Designer</SubType>
     </None>
-    <None Include="updatecachedates.proj">
+    <None Include="fix.proj">
       <DependentUpon>ʭcustom.targets</DependentUpon>
       <SubType>Designer</SubType>
     </None>

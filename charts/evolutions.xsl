@@ -52,7 +52,7 @@
         </div>
         <!-- Leave this hidden until we have loaded everything and applied it. -->
         <div id="Loaded" class="DIV_HIDDEN">
-          <h2>Selection Criteria</h2>
+          <h2 id="anchor_evolution_criteria">Selection Criteria</h2>
           <div class="INDENT">
             <xsl:text>Family Must Contain: </xsl:text>
             <select class="PARENT" id="Gen_FilterType_Combobox" onchange="OnFilterCriteriaChanged(this);">
@@ -77,16 +77,18 @@
           <br />
           <hr />
           <!-- Go through families of hatchlings, then through each generation -->
-          <table id="Evolutions" border="1" style="height:1em;">
-            <xsl:apply-templates select="PokemonStats/Pokemon[contains(Availability,'Hatch') and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-            <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '1' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-            <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '2' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-            <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '3' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-            <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '4' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-            <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '5' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-            <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '6' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-            <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '7' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-          </table>
+          <div id="anchor_evolutions">
+            <table id="Evolutions" border="1" style="height:1em;">
+              <xsl:apply-templates select="PokemonStats/Pokemon[contains(Availability,'Hatch') and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '1' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '2' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '3' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '4' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '5' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '6' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '7' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+            </table>
+          </div>
         </div>
 
         <!-- This script is defined in /js/global.js -->

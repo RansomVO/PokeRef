@@ -40,7 +40,7 @@
             Here's what you do:
           </p>
 
-          <h3>
+          <h3 id="anchor_before">
             <xsl:text>Before you throw any balls...</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'BEFORE_THROW'" />
@@ -113,7 +113,7 @@
             </li>
           </ol>
 
-          <h3>
+          <h3 id="anchor_after">
             <xsl:text>After you catch the Pokemon...</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'AFTER_THROW'" />
@@ -187,7 +187,7 @@
         <br />
 
         <hr />
-        <p>
+        <p id="anchor_bossescurrent">
           Click on any of the Raid Bosses below to see a chart of the possibilities.
         </p>
         <xsl:apply-templates select="RaidBosses[@category='Current']">
@@ -195,9 +195,10 @@
             <Show show_disabled="true" valign="bottom" />
           </xsl:with-param>
         </xsl:apply-templates>
+        
         <br />
         <hr />
-        <p>
+        <p id="anchor_bosseslegacy">
           Here is a list of "Legacy" Raid Bosses.
           <span class="NOTE">(In case you are interested.)</span>
         </p>

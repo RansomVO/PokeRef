@@ -394,7 +394,7 @@ function SetCollapser(collapser) {
         collapser.formTarget = collapsee.id;
         collapser.setAttribute('onclick', 'ToggleCollapser(event)');
 
-        var state = GetCookieSetting(collapser.formTarget + CollapserMarker, collapser.value);
+        var state = GetCookieSetting(collapser.formTarget + CollapserMarker);
         SetCollapseState(state !== null ? state : StatusDown, collapser, collapsee);
     }
 }
@@ -408,7 +408,7 @@ function ToggleCollapser(event) {
     var state = collapser.value === StatusDown ? StatusUp : StatusDown;
     SetCollapseState(state, collapser, collapsee);
 
-    SetCookieSetting(collapser.formTarget + '_COLLAPSE', state);
+    SetCookieSetting(collapser.formTarget + '_COLLAPSER', state);
 }
 
 function SetCollapseState(state, collapser, collapsee) {

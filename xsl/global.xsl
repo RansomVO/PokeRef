@@ -15,12 +15,26 @@
   <xsl:variable name="Gens" select="3" />
 
   <!-- Constants -->
-  <xsl:variable name="nbsp">&#xA0;</xsl:variable>
-  <xsl:variable name="lt">&#x3C;</xsl:variable>
-  <xsl:variable name="gt">&#x3E;</xsl:variable>
+  <!-- NOTES:
+        - Need these because XSL doesn't like them raw in select statements, etc.
+        - Need to use things like "&#xA" instead of "&amp;nbsp;" because they may be in .js which doesn't parse it correctly.
+  -->
+  <!-- Need these because they may intefere with quotes in strings. -->
   <xsl:variable name="quot">"</xsl:variable>
   <xsl:variable name="apos">'</xsl:variable>
-  <xsl:variable name="times">&#xD7;</xsl:variable>
+
+  <!-- ===================================================== -->
+  <!-- Must use disable-output-escaping="yes" with the rest. -->
+  <!-- ===================================================== -->
+  <!-- Need these because xml/xsl/html throws a total fit if you try to include '<' anywhere but node declarations. -->
+  <xsl:variable name="lt">&#x003C;</xsl:variable>
+  <xsl:variable name="gt">&#x003E;</xsl:variable>
+
+  <!-- Need these because they are commonly used chars that aren't easily typed. -->
+  <!-- TODO QZX: Try changing from "&#x00A0;" to "&amp;nbsp;" and similar to the rest. -->
+  <xsl:variable name="nbsp">&#x00A0;</xsl:variable>
+  <xsl:variable name="times">&#x00D7;</xsl:variable>
+  <xsl:variable name="dagger">&#x2020;</xsl:variable>
 
   <!-- EndRegion - Global variables -->
 
@@ -245,9 +259,7 @@
 
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_name) = 0">
           <div id="Pokemon_Name_Field">
-            <xsl:value-of select="ID"/>
-            <xsl:text>&#xA0;-&#xA0;</xsl:text>
-            <xsl:value-of select="Name"/>
+            <xsl:value-of select="concat(ID, $nbsp, '-', $nbsp, Name)" disable-output-escaping="yes" />
           </div>
         </xsl:if>
 
@@ -320,7 +332,7 @@
               </xsl:otherwise>
             </xsl:choose>
 
-            <xsl:value-of select="translate(Name, concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ é:♀♂.',$apos), 'abcdefghijklmnopqrstuvwxyz-e')" />
+            <xsl:value-of select="translate(Name, concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ é:♀♂.', $apos), 'abcdefghijklmnopqrstuvwxyz-e')" disable-output-escaping="yes" />
 
             <xsl:choose>
               <xsl:when test="ID = 29">
@@ -474,7 +486,7 @@
 
   <xsl:template name="Collapser">
     <xsl:param name="CollapseeID" />
-    <xsl:value-of select="$nbsp" />
+    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
     <div style="display:inline-block; cursor:pointer;">
       <span class="COLLAPSER BUTTON" style="transform:rotate(-90deg);">
         <xsl:attribute name="id">

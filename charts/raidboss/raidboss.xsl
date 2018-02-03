@@ -273,13 +273,12 @@
         <xsl:when test="$IV/Percent != ''">
           <xsl:attribute name="style">padding-left:2em; padding-right:2em;</xsl:attribute>
           <b>
-            <xsl:value-of select="format-number($percent * 100, '#0')"/>
-            <xsl:text>%:&#xA0;</xsl:text>
+            <xsl:value-of select="concat(format-number($percent * 100, '#0'), '%', $nbsp)" disable-output-escaping="yes" />
           </b>
           <xsl:apply-templates select="$IV/Score" />
         </xsl:when>
         <xsl:otherwise>
-          <xsl:text>&#xA0;</xsl:text>
+          <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
         </xsl:otherwise>
       </xsl:choose>
     </td>
@@ -287,15 +286,9 @@
 
   <!-- Template to output a single score -->
   <xsl:template match="Score">
-    <xsl:value-of select="Attack" />
-    <xsl:text>&#160;&#8226;&#160;</xsl:text>
-    <xsl:value-of select="Defense" />
-    <xsl:text>&#xA0;&#8226;&#xA0;</xsl:text>
-    <xsl:value-of select="Stamina" />
+    <xsl:value-of select="concat(Attack, $nbsp, '&#x2022;', $nbsp, Defense, $nbsp, '&#x2022;', $nbsp, Stamina)" disable-output-escaping="yes" />
     <i>
-      <xsl:text>&#xA0;(</xsl:text>
-      <xsl:value-of select="HP" />
-      <xsl:text>)</xsl:text>
+      <xsl:value-of select="concat($nbsp, '(', HP, ')')" disable-output-escaping="yes" />
     </i>
   </xsl:template>
 

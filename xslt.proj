@@ -5,13 +5,13 @@
 
   <!-- Root Folder -->
   <ItemGroup>
-    <StyleSheet Include="index.xsl">
+    <FixIntermediateFile Include="index.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
-    <Datafile Include="news.xml">
+    </FixIntermediateFile>
+    <FixIntermediateFile Include="news.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
-    </Datafile>
+    </FixIntermediateFile>
     <XslTransform Include="index.page.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
@@ -26,9 +26,9 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
-    <StyleSheet Include="Web.sitemap.xsl">
+    <FixIntermediateFile Include="Web.sitemap.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="Web.sitemap.page.xml">
       <Visible>true</Visible>
       <DependentUpon>Web.sitemap.xsl</DependentUpon>
@@ -41,9 +41,9 @@
 
   <!-- JS -->
   <ItemGroup>
-    <StyleSheet Include="js\pokemon.xsl">
+    <FixIntermediateFile Include="js\pokemon.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="js\pokemon.page.xml">
       <Visible>true</Visible>
       <DependentUpon>pokemon.xsl</DependentUpon>
@@ -62,9 +62,9 @@
 
   <!-- Charts -->
   <ItemGroup>
-    <StyleSheet Include="charts\evolutions.xsl">
+    <FixIntermediateFile Include="charts\evolutions.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="charts\evolutions.page.xml">
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
@@ -83,14 +83,14 @@
       </Dependencies>
       <OutputFileName>evolutions.html</OutputFileName>
     </XslTransform>
-    <FixSourceFile Include="charts\evolutions.js">
+    <FixOutputFile Include="charts\evolutions.js">
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
-    </FixSourceFile>
+    </FixOutputFile>
     
-    <StyleSheet Include="charts\pokechart.xsl">
+    <FixIntermediateFile Include="charts\pokechart.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="charts\pokechart.page.xml">
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
@@ -108,17 +108,17 @@
       </Dependencies>
       <OutputFileName>pokechart.html</OutputFileName>
     </XslTransform>
-    <FixSourceFile Include="charts\pokechart.js">
+    <FixOutputFile Include="charts\pokechart.js">
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
       <Dependencies>
         js/global.js;
       </Dependencies>
-    </FixSourceFile>
+    </FixOutputFile>
 
-    <StyleSheet Include="charts\namingtechnique.xsl">
+    <FixIntermediateFile Include="charts\namingtechnique.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="charts\namingtechnique.page.xml">
       <Visible>true</Visible>
       <DependentUpon>namingtechnique.xsl</DependentUpon>
@@ -136,16 +136,16 @@
 
   <!-- Charts/MoveSets -->
   <ItemGroup>
-    <StyleSheet Include="charts\movesets\movesets.xsl">
+    <FixIntermediateFile Include="charts\movesets\movesets.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
-    <FixSourceFile Include="charts\movesets\movesets.js">
+    </FixIntermediateFile>
+    <FixOutputFile Include="charts\movesets\movesets.js">
       <DependentUpon>movesets.xsl</DependentUpon>
       <Visible>true</Visible>
       <Dependencies>
         js/global.js;
       </Dependencies>
-    </FixSourceFile>
+    </FixOutputFile>
     <XslTransform Include="charts\movesets\movesets.gen1.page.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
@@ -183,9 +183,9 @@
 
   <!-- Charts/RaidBoss -->
   <ItemGroup>
-    <StyleSheet Include="charts\raidboss\_linkslist.xsl">
+    <FixIntermediateFile Include="charts\raidboss\_linkslist.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="charts\raidboss\_linkslist.page.xml">
       <Visible>true</Visible>
       <DependentUpon>_linkslist.xsl</DependentUpon>
@@ -202,9 +202,9 @@
       <OutputFileName>_linkslist.html</OutputFileName>
     </XslTransform>
 
-    <StyleSheet Include="charts\raidboss\index.xsl">
+    <FixIntermediateFile Include="charts\raidboss\index.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="charts\raidboss\index.page.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
@@ -222,20 +222,20 @@
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
 
-    <StyleSheet Include="charts\raidboss\raidbosses.xsl">
+    <FixIntermediateFile Include="charts\raidboss\raidbosses.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
 
-    <StyleSheet Include="charts\raidboss\raidboss.xsl">
+    <FixIntermediateFile Include="charts\raidboss\raidboss.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
-    <FixSourceFile Include="charts\raidboss\raidboss.js">
+    </FixIntermediateFile>
+    <FixOutputFile Include="charts\raidboss\raidboss.js">
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Visible>true</Visible>
       <Dependencies>
         js/global.js;
       </Dependencies>
-    </FixSourceFile>
+    </FixOutputFile>
     <XslTransform Include="charts\raidboss\raidboss.absol.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
@@ -834,9 +834,9 @@
 
   <!-- Charts/Effectiveness -->
   <ItemGroup>
-    <StyleSheet Include="charts\effectiveness.xsl">
+    <FixIntermediateFile Include="charts\effectiveness.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="charts\effectiveness.page.xml">
       <Visible>true</Visible>
       <DependentUpon>effectiveness.xsl</DependentUpon>
@@ -847,9 +847,9 @@
 
   <!-- Tech -->
   <ItemGroup>
-    <StyleSheet Include="tech\index.xsl">
+    <FixIntermediateFile Include="tech\index.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="tech\index.page.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
@@ -862,9 +862,9 @@
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
 
-    <StyleSheet Include="tech\movesetformulas.xsl">
+    <FixIntermediateFile Include="tech\movesetformulas.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="tech\movesetformulas.page.xml">
       <Visible>true</Visible>
       <DependentUpon>movesetformulas.xsl</DependentUpon>
@@ -880,18 +880,18 @@
 
   <!-- Tech/GAME_MASTER -->
   <ItemGroup>
-    <StyleSheet Include="tech\GAME_MASTER\archive\index.xsl">
+    <FixIntermediateFile Include="tech\GAME_MASTER\archive\index.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="tech\GAME_MASTER\archive\index.page.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>_datafiles\GAME_MASTER.xml</Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
-    <StyleSheet Include="tech\GAME_MASTER\moves\moves.xsl">
+    <FixIntermediateFile Include="tech\GAME_MASTER\moves\moves.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="tech\GAME_MASTER\moves\moves.charged.page.xml">
       <Visible>true</Visible>
       <DependentUpon>moves.xsl</DependentUpon>
@@ -904,9 +904,9 @@
       <Dependencies>_datafiles\moves.fast.xml</Dependencies>
       <OutputFileName>moves.fast.html</OutputFileName>
     </XslTransform>
-    <StyleSheet Include="tech\GAME_MASTER\pokestats\pokestats.xsl">
+    <FixIntermediateFile Include="tech\GAME_MASTER\pokestats\pokestats.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen1.page.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
@@ -935,9 +935,9 @@
 
   <!-- Tools -->
   <ItemGroup>
-    <StyleSheet Include="tools\counters.xsl">
+    <FixIntermediateFile Include="tools\counters.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="tools\counters.page.xml">
       <Visible>true</Visible>
       <DependentUpon>counters.xsl</DependentUpon>
@@ -957,17 +957,17 @@
       </Dependencies>
       <OutputFileName>counters.html</OutputFileName>
     </XslTransform>
-    <FixSourceFile Include="tools\counters.js">
+    <FixOutputFile Include="tools\counters.js">
       <DependentUpon>counters.xsl</DependentUpon>
       <Visible>true</Visible>
       <Dependencies>
         js/global.js;
       </Dependencies>
-    </FixSourceFile>
+    </FixOutputFile>
 
-    <StyleSheet Include="tools\shoppingboxes.xsl">
+    <FixIntermediateFile Include="tools\shoppingboxes.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="tools\shoppingboxes.page.xml">
       <Visible>true</Visible>
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
@@ -979,20 +979,20 @@
       </Dependencies>
       <OutputFileName>shoppingboxes.html</OutputFileName>
     </XslTransform>
-    <FixSourceFile Include="tools\shoppingboxes.js">
+    <FixOutputFile Include="tools\shoppingboxes.js">
       <Visible>true</Visible>
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
       <Dependencies>
         js/global.js;
       </Dependencies>
-    </FixSourceFile>
+    </FixOutputFile>
   </ItemGroup>
 
   <!-- Resources -->
   <ItemGroup>
-    <StyleSheet Include="resources\seapokemapfilter.xsl">
+    <FixIntermediateFile Include="resources\seapokemapfilter.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="resources\seapokemapfilter.page.xml">
       <Visible>true</Visible>
       <DependentUpon>seapokemapfilter.xsl</DependentUpon>
@@ -1007,33 +1007,33 @@
       </Dependencies>
       <OutputFileName>seapokemapfilter.html</OutputFileName>
     </XslTransform>
-    <FixSourceFile Include="resources\seapokemapfilter.js">
+    <FixOutputFile Include="resources\seapokemapfilter.js">
       <DependentUpon>seapokemapfilter.xsl</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
-    </FixSourceFile>
+    </FixOutputFile>
 
-    <StyleSheet Include="resources\index.xsl">
+    <FixIntermediateFile Include="resources\index.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="resources\index.page.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
 
-    <StyleSheet Include="resources\seattlearea.xsl">
+    <FixIntermediateFile Include="resources\seattlearea.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="resources\seattlearea.page.xml">
       <Visible>true</Visible>
       <DependentUpon>seattlearea.xsl</DependentUpon>
       <OutputFileName>seattlearea.html</OutputFileName>
     </XslTransform>
 
-    <StyleSheet Include="resources\tips.xsl">
+    <FixIntermediateFile Include="resources\tips.xsl">
       <Visible>true</Visible>
-    </StyleSheet>
+    </FixIntermediateFile>
     <XslTransform Include="resources\tips.page.xml">
       <Visible>true</Visible>
       <DependentUpon>tips.xsl</DependentUpon>

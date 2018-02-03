@@ -122,18 +122,15 @@ function GetFields() {
         var Selected_Pokemon = document.getElementById('Selected_Pokemon');
         var Selected_Pokemon_Generation = document.getElementById('Selected_Pokemon_Generation');
         var Selected_Pokemon_Family = document.getElementById('Selected_Pokemon_Family');
-        var Selected_Pokemon_Type1 = document.getElementById('Selected_Pokemon_Type1');
-        var Selected_Pokemon_Type2 = document.getElementById('Selected_Pokemon_Type2');
-        var Selected_Pokemon_Boost1 = document.getElementById('Selected_Pokemon_Boost1');
-        var Selected_Pokemon_Boost2 = document.getElementById('Selected_Pokemon_Boost2');
+        var Selected_Pokemon_Types = document.getElementById('Selected_Pokemon_Types');
+        var Selected_Pokemon_Boosts = document.getElementById('Selected_Pokemon_Boosts');
         var Selected_Pokemon_GenderRatio = document.getElementById('Selected_Pokemon_GenderRatio');
         var Selected_Pokemon_Shiny = document.getElementById('Selected_Pokemon_Shiny');
         var Selected_Pokemon_Availability = document.getElementById('Selected_Pokemon_Availability');
         var Selected_Pokemon_Max_CP_HP = document.getElementById('Selected_Pokemon_Max_CP_HP');
         var Selected_Pokemon_BuddyKM = document.getElementById('Selected_Pokemon_BuddyKM');
         var Selected_Pokemon_BaseIV = document.getElementById('Selected_Pokemon_BaseIV');
-        var Selected_Pokemon_Capture = document.getElementById('Selected_Pokemon_Capture');
-        var Selected_Pokemon_Flee = document.getElementById('Selected_Pokemon_Flee');
+        var Selected_Pokemon_Rates = document.getElementById('Selected_Pokemon_Rates');
     }
     catch (err) {
         ShowError(err);
@@ -331,32 +328,21 @@ function OnSelectPokemon(pokemon) {
     Selected_Pokemon_Generation.innerHTML = GetPokemonGeneration(pokemon);
     Selected_Pokemon_Family.innerHTML = GetPokemonFamily(pokemon);
 
-    Selected_Pokemon_Type1.innerHTML = GetPokemonType1(pokemon);
-    var type2 = GetPokemonType2(pokemon);
-    if (type2 === null) {
-        Selected_Pokemon_Type2.style.display = 'none';
-    } else {
-        Selected_Pokemon_Type2.style.display = '';
-        Selected_Pokemon_Type2.innerHTML = type2;
-    }
+    var type1 = GetPokemonType1(pokemon, true);
+    var type2 = GetPokemonType2(pokemon, true);
+    Selected_Pokemon_Types.innerHTML = type1 + (type2 !== null ? ',' + type2 : '');
 
-    Selected_Pokemon_Boost1.innerHTML = GetPokemonBoost1(pokemon);
-    var boost2 = GetPokemonBoost2(pokemon);
-    if (boost2 === null) {
-        Selected_Pokemon_Boost2.style.display = 'none';
-    } else {
-        Selected_Pokemon_Boost2.style.display = '';
-        Selected_Pokemon_Boost2.innerHTML = boost2;
-    }
+    var boost1 = GetPokemonBoost1(pokemon, true);
+    var boost2 = GetPokemonBoost2(pokemon, true);
+    Selected_Pokemon_Boosts.innerHTML = boost1 + (boost2 !== null ? '<br />' + boost2 : '');
 
     Selected_Pokemon_GenderRatio.innerHTML = GetPokemonGenderRatio(pokemon);
-    Selected_Pokemon_Shiny.innerHTML = GetPokemonShiny(pokemon);
+    Selected_Pokemon_Shiny.innerHTML = GetPokemonShiny(pokemon, true);
     Selected_Pokemon_Availability.innerHTML = GetPokemonAvailability(pokemon);
     Selected_Pokemon_Max_CP_HP.innerHTML = GetPokemonMax_CP_HP(pokemon);
     Selected_Pokemon_BuddyKM.innerHTML = GetPokemonBuddyKM(pokemon);
     Selected_Pokemon_BaseIV.innerHTML = GetPokemonBaseIV(pokemon);
-    Selected_Pokemon_Capture.innerHTML = GetPokemonCaptureRate(pokemon);
-    Selected_Pokemon_Flee.innerHTML = GetPokemonFleeRate(pokemon);
+    Selected_Pokemon_Rates.innerHTML = GetPokemonCaptureRate(pokemon) + '&nbsp;/&nbsp' + GetPokemonFleeRate(pokemon);
 
     // TODO QZX: If Raidboss, link to Possible IVs.
 

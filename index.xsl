@@ -45,13 +45,13 @@
         <!-- Add a box here with the latest news. -->
         <xsl:apply-templates select="News" />
 
-        <h2 id="Sections">
+        <h2 id="anchor_sections">
           <u>Sections</u>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SECTIONS'" />
           </xsl:call-template>
         </h2>
-        <div id="SECTIONS">
+        <div>
           <p>
             I have tried to organize this site into sections to help you be able to find what you want a little quicker.
           </p>
@@ -59,22 +59,22 @@
             <xsl:variable name="Sections">
               <Section>
                 <Color>D5D5F5</Color>
-                <Title>Tools</Title>
-                <HRef>tools/</HRef>
-                <Text>
-                  There are a lot of places to get generic information about all sorts of stuff in Pokemon GO.
-                  But what if you want to focus on stuff that is specific to <i>you</i>?
-                  <br />This sections has some tools that could be helpful.
-                </Text>
-              </Section>
-              <Section>
-                <Color>FDC1C0</Color>
                 <HRef>charts/</HRef>
                 <Title>Charts</Title>
                 <Text>
                   Everybody loves charts for quickly looking things up.
                   Like possible IVs for a Raid Bosses or the effectiveness of different Move Sets.
                   <br />All that and more can be found in this section.
+                </Text>
+              </Section>
+              <Section>
+                <Color>FDC1C0</Color>
+                <Title>Tools</Title>
+                <HRef>tools/</HRef>
+                <Text>
+                  There are a lot of places to get generic information about all sorts of stuff in Pokemon GO.
+                  But what if you want to focus on stuff that is specific to <i>you</i>?
+                  <br />This sections has some tools that could be helpful.
                 </Text>
               </Section>
               <Section>
@@ -102,7 +102,7 @@
 
         <br />
         <hr />
-        <h2 id="QuickAccess">
+        <h2 id="anchor_quick">
           <u>Quick Access</u>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'QUICK_ACCESS'" />
@@ -115,13 +115,13 @@
           </p>
           <div class="INDENT">
             <div class="SECTION">
-              <h2 id="RaidBosses">
+              <h2 id="anchor_raidbosses">
                 <a href="charts/raidboss">Possible IVs for Raid Bosses</a>
                 <xsl:call-template name="Collapser">
                   <xsl:with-param name="CollapseeID" select="'RAID_BOSSES'" />
                 </xsl:call-template>
               </h2>
-              <div id="RAID_BOSSES">
+              <div>
                 <p>
                   After you defeat a Raid Boss in a Raid, it is time to try to catch him.
                   But how good is he?
@@ -136,7 +136,7 @@
               </div>
             </div>
 
-            <h2 id="Evolutions">
+            <h2 id="anchor_evolutions">
               <a href="tools/evolutions.html">Evolutions Chart</a>
             </h2>
             <div>
@@ -147,7 +147,7 @@
               </p>
             </div>
 
-            <h2 id="Movesets">
+            <h2 id="anchor_movesets">
               <a href="charts/movesets/">Pokemon Move Sets</a>
             </h2>
             <div>
@@ -162,7 +162,7 @@
               </div>
             </div>
 
-            <h2 id="GameMaster">
+            <h2 id="anchor_gamemaster">
               <a href="tech/GAME_MASTER">GAME_MASTER</a>
             </h2>
             <div>
@@ -171,7 +171,7 @@
                 <br />I use the data in them to generate various tables, etc.
               </p>
               <div class="INDENT">
-                <h2 id="PokeStats">
+                <h2 id="anchor_pokestats">
                   <a href="tech/GAME_MASTER/pokestats/">Pokemon Stats</a>
                 </h2>
                 <div>
@@ -204,7 +204,7 @@
         }
       ]]>
     </script>
-    <h2 id="News" class="NEWS_TITLE">
+    <h2 id="anchor_news" class="NEWS_TITLE">
       <xsl:text>Latest News!</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'NEWS'" />

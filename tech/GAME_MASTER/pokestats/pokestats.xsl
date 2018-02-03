@@ -151,23 +151,23 @@
           <xsl:text>REGIONAL </xsl:text>
         </xsl:if>
       </xsl:attribute>
-      <td id="Icon" style="padding:0;">
+      <td comment="Icon" style="padding:0;">
         <xsl:apply-templates select=".">
           <xsl:with-param name="Settings">
             <Show hide_name="true" />
           </xsl:with-param>
         </xsl:apply-templates>
       </td>
-      <td id="ID" align="right">
+      <td comment="ID" align="right">
         <xsl:value-of select="ID" />
       </td>
-      <td id="Name">
+      <td comment="Name">
         <xsl:value-of select="Name" />
       </td>
-      <td id="TypePrimary">
+      <td comment="TypePrimary">
         <xsl:value-of select="Type/Primary" />
       </td>
-      <td id="TypeSecondary">
+      <td comment="TypeSecondary">
         <xsl:choose>
           <xsl:when test="Type/Secondary != ''">
             <xsl:value-of select="Type/Secondary" />
@@ -177,7 +177,7 @@
           </xsl:otherwise>
         </xsl:choose>
       </td>
-      <td id="Candy">
+      <td comment="Candy">
         <xsl:value-of select="CandyType" />
       </td>
       <xsl:choose>
@@ -201,31 +201,31 @@
           </td>
         </xsl:otherwise>
       </xsl:choose>
-      <td id="BuddyKM" align="right">
+      <td comment="BuddyKM" align="right">
         <xsl:value-of select="BuddyKM" />
       </td>
-      <td id="BaseAttack" align="right">
+      <td comment="BaseAttack" align="right">
         <xsl:value-of select="Stats/Base/Attack" />
       </td>
-      <td id="BaseDefense" align="right">
+      <td comment="BaseDefense" align="right">
         <xsl:value-of select="Stats/Base/Defense" />
       </td>
-      <td id="BaseStamina" align="right">
+      <td comment="BaseStamina" align="right">
         <xsl:value-of select="Stats/Base/Stamina" />
       </td>
-      <td id="Height" align="right">
+      <td comment="Height" align="right">
         <xsl:value-of select="format-number(Stats/Height/Standard, '#0.0')" />
       </td>
-      <td id="Height StandardDev" align="right">
+      <td comment="Height StandardDev" align="right">
         <xsl:value-of select="format-number(Stats/Height/Deviation, '#0.0000')" />
       </td>
-      <td id="Weight" align="right">
+      <td comment="Weight" align="right">
         <xsl:value-of select="format-number(Stats/Weight/Standard, '#0.0')" />
       </td>
-      <td id="Weight StandardDev" align="right">
+      <td comment="Weight StandardDev" align="right">
         <xsl:value-of select="format-number(Stats/Weight/Deviation, '#0.0000')" />
       </td>
-      <td id="Capture Rate" align="right">
+      <td comment="Capture Rate" align="right">
         <xsl:attribute name="class">
           <xsl:choose>
             <xsl:when test="Stats/Rates/Capture >= $Capture_Easy">
@@ -245,7 +245,7 @@
         <xsl:value-of select="format-number(Stats/Rates/Capture * 100, '#0')" />
         <xsl:text>%</xsl:text>
       </td>
-      <td id="Flee Rate" align="right">
+      <td comment="Flee Rate" align="right">
         <xsl:attribute name="class">
           <xsl:choose>
             <xsl:when test="Stats/Rates/Flee >= $Flee_Bad">
@@ -265,7 +265,7 @@
         <xsl:value-of select="format-number(Stats/Rates/Flee * 100, '#0')" />
         <xsl:text>%</xsl:text>
       </td>
-      <td id="Attack Probability" align="right">
+      <td comment="Attack Probability" align="right">
         <xsl:attribute name="class">
           <xsl:choose>
             <xsl:when test="Stats/Probability/Attack >= $Attack_Bad">
@@ -285,7 +285,7 @@
         <xsl:value-of select="format-number(Stats/Probability/Attack * 100, '#0')" />
         <xsl:text>%</xsl:text>
       </td>
-      <td id="Dodge Probability" align="right">
+      <td comment="Dodge Probability" align="right">
         <xsl:attribute name="class">
           <xsl:choose>
             <xsl:when test="Stats/Probability/Dodge >= $Dodge_Bad">
@@ -305,13 +305,13 @@
         <xsl:value-of select="format-number(Stats/Probability/Dodge * 100, '#0')" />
         <xsl:text>%</xsl:text>
       </td>
-      <td id="Gender" align="center">
+      <td comment="Gender" align="center">
         <xsl:if test="string-length(GenderRatio)=1">
           <xsl:attribute name="style">font-size:larger;</xsl:attribute>
         </xsl:if>
         <xsl:value-of select="GenderRatio" />
       </td>
-      <td id="MaxCP" align="right">
+      <td comment="MaxCP" align="right">
         <xsl:attribute name="class">
           <xsl:choose>
             <xsl:when test="Max/CP > $CP_Great">
@@ -330,7 +330,7 @@
         </xsl:attribute>
         <xsl:value-of select="Max/CP" />
       </td>
-      <td id="MaxHP" align="right">
+      <td comment="MaxHP" align="right">
         <xsl:attribute name="class">
           <xsl:choose>
             <xsl:when test="Max/HP > $HP_Great">
@@ -349,10 +349,10 @@
         </xsl:attribute>
         <xsl:value-of select="Max/HP" />
       </td>
-      <td id="ShinyAvailable">
+      <td comment="ShinyAvailable">
         <xsl:value-of select="ShinyAvailable" />
       </td>
-      <td id="Availability">
+      <td comment="Availability">
         <xsl:value-of select="Availability" />
       </td>
     </tr>

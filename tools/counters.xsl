@@ -94,7 +94,7 @@
     <xsl:variable name="Rows" select="count(/Root/MoveSets/MoveSet[Pokemon/ID=$PokemonID]) + 1" />
 
     <tr>
-      <td id="Image" class="CELL_FILLED">
+      <td class="CELL_FILLED">
         <xsl:attribute name="rowspan">
           <xsl:value-of select="$Rows" />
         </xsl:attribute>

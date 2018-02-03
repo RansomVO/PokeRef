@@ -36,7 +36,7 @@
 
         <br />
         <hr />
-        <h2 id="Tips">
+        <h2 id="anchor_tips">
           <a href="tips.html">Pokemon GO Tips</a>
         </h2>
         <div class="INDENT">
@@ -48,7 +48,7 @@
 
         <br />
         <hr />
-        <h2 id="WebSites">
+        <h2 id="anchor_websites">
           <xsl:text>Web Sites</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'WEB_SITES'" />
@@ -232,7 +232,7 @@
 
         <br />
         <hr />
-        <h2 id="AndroidTools">
+        <h2 id="anchor_tools_android">
           <xsl:text>Tools for Android</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'ANDROID_TOOLS'" />
@@ -249,7 +249,7 @@
             <br />I am totally against using any tools of that nature.
             <br />As far as I know, the ones listed here do not violate the terms.
           </p>
-          <h3 id="GOIV">
+          <h3 id="anchor_goiv">
             <xsl:text>GoIV</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'GOIV_TOOL'" />
@@ -314,7 +314,7 @@
           </div>
 
           <hr class="SEPARATOR_BORDER" />
-          <h3 id="ToolKit">
+          <h3 id="anchor_toolkit">
             <xsl:text>IV &amp; ToolKit for Pokemon Go</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'IV_TOOLKIT'" />
@@ -367,7 +367,7 @@
 
         <br />
         <hr />
-        <h2 id="SeattleArea">
+        <h2 id="anchor_seattlearea">
           <a href="seattlearea.html">Greater Seattle Area</a>
         </h2>
         <p>

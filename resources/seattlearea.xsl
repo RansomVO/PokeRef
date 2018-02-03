@@ -47,7 +47,7 @@
         <script>WriteFeedbackNote();</script>
 
         <hr />
-        <h2 id="Discord">
+        <h2 id="anchor_discord">
           <xsl:text>Discord</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SEATTLE_DISCORD'" />
@@ -123,7 +123,7 @@
 
         <br />
         <hr />
-        <h2 id="Maps">
+        <h2 id="anchor_maps">
           <xsl:text>Maps</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SEATTLE_MAPS'" />
@@ -132,7 +132,7 @@
         <div id="SEATTLE_MAPS" class="INDENT">
           <p>Some websites have been created to show maps of where Pokemon can be found.</p>
 
-          <h3 id="SEAPokeMap">SEAPokeMap</h3>
+          <h3 id="anchor_seapokemap">SEAPokeMap</h3>
           <div class="INDENT">
             <p class="PARENT">
               SEAPokeMap runs a couple of maps in addition to its Discord group:
@@ -345,7 +345,7 @@
 
         <br />
         <hr />
-        <h2 id="Social">
+        <h2 id="anchor_social">
           <xsl:text>Social Groups</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SEATTLE_SOCIAL'" />

@@ -106,7 +106,7 @@
 
         <br />
         <hr />
-        <h2>Selection Criteria</h2>
+        <h2 id="anchor_criteria">Selection Criteria</h2>
         <table class="INDENT">
           <tr>
             <td valign="top">
@@ -156,9 +156,11 @@
         </div>
         <!-- Leave this hidden until we have loaded everything and applied it. -->
         <div id="Loaded" class="DIV_HIDDEN">
-          <table border="1" id="MoveSets">
-            <xsl:call-template name="CreateTableHeaders" />
-          </table>
+          <div id="anchor_movesets">
+            <table border="1" id="MoveSets">
+              <xsl:call-template name="CreateTableHeaders" />
+            </table>
+          </div>
 
           <table id="MoveSetsSource" style="display:none;">
             <xsl:apply-templates select="MoveSets" />
@@ -269,7 +271,7 @@
         <xsl:attribute name="name">
           <xsl:value-of select="$PokemonStats/Name" />
         </xsl:attribute>
-        <xsl:attribute name="quickMoves">
+        <xsl:attribute name="fastMoves">
           <xsl:call-template name="MovesAttribute">
             <xsl:with-param name="Moves" select="../MoveSet[Pokemon/ID=$PokemonID]/Attack/Fast" />
           </xsl:call-template>
@@ -280,7 +282,7 @@
           </xsl:call-template>
         </xsl:attribute>
 
-        <td id="Image" class="CELL_FILLED">
+        <td class="CELL_FILLED">
           <xsl:attribute name="rowspan">
             <xsl:value-of select="$PokemonMoveSetCount + 1" />
           </xsl:attribute>
@@ -291,13 +293,13 @@
           </xsl:apply-templates>
 
         </td>
-        <th id="ID" style="font-size:large;" align="right">
+        <th style="font-size:large;" align="right">
           <xsl:attribute name="rowspan">
             <xsl:value-of select="$PokemonMoveSetCount + 1" />
           </xsl:attribute>
           <xsl:value-of select="$PokemonID" />
         </th>
-        <th id="Name" style="font-size:large;">
+        <th style="font-size:large;">
           <xsl:attribute name="rowspan">
             <xsl:value-of select="$PokemonMoveSetCount + 1" />
           </xsl:attribute>
@@ -465,7 +467,7 @@
         </xsl:call-template>
         <xsl:text> </xsl:text>
       </xsl:if>
-      
+
       <xsl:value-of select="$Content" />
       <xsl:if test="$Percent != ''">
         <xsl:text>%</xsl:text>

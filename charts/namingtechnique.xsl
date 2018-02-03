@@ -53,7 +53,7 @@
 
         <br />
         <hr />
-        <h2 id="SortOrderAndroid">
+        <h2 id="anchor_sortorderandroid">
           <xsl:text>Sort Order for Names in Pokemon Go on Android</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'NAMING_SORT_ORDER'" />
@@ -66,7 +66,7 @@
           </p>
           <table class="INDENT">
             <tr>
-              <td id="#1 Special Chars" rowspan="100%" valign="top">
+              <td id="anchor_sortorderandroidspecialchars" rowspan="100%" valign="top">
                 <table style="width:100%; border:1px solid; vertical-align:top;">
                   <tr>
                     <th colspan="2" style="border: 1px solid;">
@@ -247,12 +247,12 @@
                   </tr>
                 </table>
               </td>
-              <td id="(spacing column)" width="25" rowspan="100%"></td>
-              <td valign="top">
-                <table id="#2 Numerics" border="1" style="width:100%">
+              <td comment="(spacing column)" width="25" rowspan="100%"></td>
+              <td id="anchor_sortorderandroidnumerics" valign="top">
+                <table border="1" style="width:100%">
                   <tr>
                     <th colspan="3">
-                      <span style="font-size:x-large">#2</span><br />Numerics
+                      <span style="font-size:x-large">#2</span><br />Numerical Chars
                     </th>
                   </tr>
                   <tr>
@@ -264,14 +264,15 @@
                     <td>0-9</td>
                     <td>Sorted Alphabetically</td>
                     <td>
-                      "1" &lt; "13" &lt; "2"</td>
+                      "1" &lt; "13" &lt; "2"
+                    </td>
                   </tr>
                 </table>
                 <br />
-                <table id="#3 Alphabetics" border="1" style="width:100%">
+                <table id="anchor_sortorderandroidalphabetics" border="1" style="width:100%">
                   <tr>
                     <th colspan="3">
-                      <span style="font-size:x-large">#3</span><br />Alphabetics
+                      <span style="font-size:x-large">#3</span><br />Alphabetical Chars
                     </th>
                   </tr>
                   <tr>
@@ -281,31 +282,35 @@
                   <tr>
                     <td>Base letters are sorted alphabetically.</td>
                     <td>
-                      "a" &lt; "b"</td>
+                      "a" &lt; "b"
+                    </td>
                   </tr>
                   <tr>
                     <td>When all else is equal, decorated letters (with accents, etc.) come after base.</td>
                     <td>
-                      "as" &lt; "ás" &lt; "at"</td>
+                      "as" &lt; "ás" &lt; "at"
+                    </td>
                   </tr>
                   <tr>
                     <td>When all else is equal, capital letters come after lower case.</td>
                     <td>
-                      "ao" &lt; "Ao" &lt; "aó"</td>
+                      "ao" &lt; "Ao" &lt; "aó"
+                    </td>
                   </tr>
                   <tr>
                     <td>
                       Some special chars come <i>BEFORE</i> their similar base.
                     </td>
                     <td>
-                      "r" &lt; "ß" &lt; "s"</td>
+                      "r" &lt; "ß" &lt; "s"
+                    </td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
               <td valign="bottom">
-                <table id="Special Cases" border="1" style="width:100%">
+                <table id="anchor_sortorderandroidspecialcases" border="1" style="width:100%">
                   <tr>
                     <th colspan="2">
                       <span style="font-size:x-large">Special Cases</span>
@@ -333,7 +338,7 @@
                   </tr>
                 </table>
                 <br />
-                <table id="Notes" border="1" style="width:100%">
+                <table id="anchor_sortorderandroidnotes" border="1" style="width:100%">
                   <tr>
                     <th colspan="2">
                       <span style="font-size:x-large">Notes</span>
@@ -364,7 +369,7 @@
 
         <br />
         <hr />
-        <h2 id="Numerics">
+        <h2 id="anchor_numerics">
           <xsl:text>Numerics</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'NAMING_NUMERICS'" />
@@ -387,7 +392,7 @@
             Instead, you'll need to copy and paste them.
           </p>
           <table class="INDENT" border="1" style="word-wrap:unset; text-align:center;">
-            <tr id="DIGIT (0030-0039)">
+            <tr comment="DIGIT (0030-0039)">
               <th align="left">DIGIT</th>
               <td class="CHARS">&#x0030;</td>
               <td class="CHARS">&#x0031;</td>
@@ -400,7 +405,7 @@
               <td class="CHARS">&#x0038;</td>
               <td class="CHARS">&#x0039;</td>
             </tr>
-            <tr id="CIRCLED (24EA, 2460-2473, 3251-325F, 32B1-32BF)">
+            <tr comment="CIRCLED (24EA, 2460-2473, 3251-325F, 32B1-32BF)">
               <th align="left">CIRCLED</th>
               <td class="CHARS">&#x24EA;</td>
               <td class="CHARS">&#x2460;</td>
@@ -453,13 +458,15 @@
               <td class="CHARS">&#x32BE;</td>
               <td class="CHARS">&#x32BF;</td>
             </tr>
-            <tr id="DINGBAT CIRCLED SANS-SERIF (2780-2789)">
+            <tr comment="DINGBAT CIRCLED SANS-SERIF (2780-2789)">
               <th align="left">
                 DINGBAT<br />CIRCLED SANS-SERIF
               </th>
               <td class="CHARS">
-                &#x1F10B;<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                &#x1F10B;<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger" disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </td>
               <td class="CHARS">&#x2780;</td>
@@ -473,7 +480,7 @@
               <td class="CHARS">&#x2788;</td>
               <td class="CHARS">&#x2789;</td>
             </tr>
-            <tr id="DOUBLE CIRCLED (24F5-24FE)">
+            <tr comment="DOUBLE CIRCLED (24F5-24FE)">
               <th align="left">DOUBLE CIRCLED</th>
               <td class="CHARS" bgcolor="lightgrey" />
               <td class="CHARS">&#x24F5;</td>
@@ -487,7 +494,7 @@
               <td class="CHARS">&#x24FD;</td>
               <td class="CHARS">&#x24FE;</td>
             </tr>
-            <tr id="NEGATIVE CIRCLED (24FF, 2776-2777F, 24EB-24F4)">
+            <tr comment="NEGATIVE CIRCLED (24FF, 2776-2777F, 24EB-24F4)">
               <th align="left">NEGATIVE CIRCLED</th>
               <td class="CHARS">&#x24FF;</td>
               <td class="CHARS" bgcolor="lightgrey" />
@@ -511,7 +518,7 @@
               <td class="CHARS">&#x24F3;</td>
               <td class="CHARS">&#x24F4;</td>
             </tr>
-            <tr id="DINGBAT NEGATIVE CIRCLED (2776-277F)">
+            <tr comment="DINGBAT NEGATIVE CIRCLED (2776-277F)">
               <th align="left">
                 DINGBAT<br />NEGATIVE CIRCLED
               </th>
@@ -527,13 +534,15 @@
               <td class="CHARS">&#x277E;</td>
               <td class="CHARS">&#x277F;</td>
             </tr>
-            <tr id="DINGBAT NEGATIVE CIRCLED SANS-SERIF (278A-2793)">
+            <tr comment="DINGBAT NEGATIVE CIRCLED SANS-SERIF (278A-2793)">
               <th align="left">
                 DINGBAT<br />NEGATIVE CIRCLED SANS-SERIF
               </th>
               <td class="CHARS">
-                &#x1F10C;<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                &#x1F10C;<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </td>
               <td class="CHARS">&#x278A;</td>
@@ -547,7 +556,7 @@
               <td class="CHARS">&#x2792;</td>
               <td class="CHARS">&#x2793;</td>
             </tr>
-            <tr id="SUPERSCRIPT (2070, 00B9, 00B2-00B3, 2074-2079)">
+            <tr comment="SUPERSCRIPT (2070, 00B9, 00B2-00B3, 2074-2079)">
               <th align="left">SUPERSCRIPT</th>
               <td class="CHARS">&#x2070;</td>
               <td class="CHARS">&#x00B9;</td>
@@ -560,7 +569,7 @@
               <td class="CHARS">&#x2078;</td>
               <td class="CHARS">&#x2079;</td>
             </tr>
-            <tr id="SUBSCRIPT (2080-2089)">
+            <tr comment="SUBSCRIPT (2080-2089)">
               <th align="left">SUBSCRIPT</th>
               <td class="CHARS">&#x2080;</td>
               <td class="CHARS">&#x2081;</td>
@@ -573,7 +582,7 @@
               <td class="CHARS">&#x2088;</td>
               <td class="CHARS">&#x2089;</td>
             </tr>
-            <tr id="PARENTHESIZED (2474-2487)">
+            <tr comment="PARENTHESIZED (2474-2487)">
               <th align="left">PARENTHESIZED</th>
               <td class="CHARS" bgcolor="lightgrey" />
               <td class="CHARS">&#x2474;</td>
@@ -597,11 +606,13 @@
               <td class="CHARS">&#x2486;</td>
               <td class="CHARS">&#x2487;</td>
             </tr>
-            <tr id="FULL STOP (2488-249B)">
+            <tr comment="FULL STOP (2488-249B)">
               <th align="left">FULL STOP</th>
               <td class="CHARS">
-                &#x1F100;<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                &#x1F100;<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </td>
               <td class="CHARS">&#x2488;</td>
@@ -625,7 +636,7 @@
               <td class="CHARS">&#x249A;</td>
               <td class="CHARS">&#x249B;</td>
             </tr>
-            <tr id="FULLWIDTH (FF10-FF19)">
+            <tr comment="FULLWIDTH (FF10-FF19)">
               <th align="left">FULLWIDTH</th>
               <td class="CHARS">&#xFF10;</td>
               <td class="CHARS">&#xFF11;</td>
@@ -638,10 +649,12 @@
               <td class="CHARS">&#xFF18;</td>
               <td class="CHARS">&#xFF19;</td>
             </tr>
-            <tr id="MATHEMATICAL BOLD (1D7CE-1D7D7)">
+            <tr comment="MATHEMATICAL BOLD (1D7CE-1D7D7)">
               <th align="left">
-                MATHEMATICAL<br />BOLD<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                MATHEMATICAL<br />BOLD<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </th>
               <td class="CHARS">&#x1D7CE;</td>
@@ -655,10 +668,12 @@
               <td class="CHARS">&#x1D7D6;</td>
               <td class="CHARS">&#x1D7D7;</td>
             </tr>
-            <tr id="MATHEMATICAL DOUBLE-STRUCK (1D7D8-1D7E1)">
+            <tr comment="MATHEMATICAL DOUBLE-STRUCK (1D7D8-1D7E1)">
               <th align="left">
-                MATHEMATICAL<br />DOUBLE-STRUCK<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                MATHEMATICAL<br />DOUBLE-STRUCK<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </th>
               <td class="CHARS">&#x1D7D8;</td>
@@ -672,10 +687,12 @@
               <td class="CHARS">&#x1D7E0;</td>
               <td class="CHARS">&#x1D7E1;</td>
             </tr>
-            <tr id="MATHEMATICAL SANS-SERIF (1D7E2-1D7EB)">
+            <tr comment="MATHEMATICAL SANS-SERIF (1D7E2-1D7EB)">
               <th align="left">
-                MATHEMATICAL<br />SANS-SERIF<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                MATHEMATICAL<br />SANS-SERIF<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </th>
               <td class="CHARS">&#x1D7E2;</td>
@@ -689,10 +706,12 @@
               <td class="CHARS">&#x1D7EA;</td>
               <td class="CHARS">&#x1D7EB;</td>
             </tr>
-            <tr id="MATHEMATICAL SANS-SERIF BOLD (1D7EC-1D7F5)">
+            <tr comment="MATHEMATICAL SANS-SERIF BOLD (1D7EC-1D7F5)">
               <th align="left">
-                MATHEMATICAL<br />SANS-SERIF BOLD<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                MATHEMATICAL<br />SANS-SERIF BOLD<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </th>
               <td class="CHARS">&#x1D7EC;</td>
@@ -706,10 +725,12 @@
               <td class="CHARS">&#x1D7F4;</td>
               <td class="CHARS">&#x1D7F5;</td>
             </tr>
-            <tr id="MATHEMATICAL MONOSPACE (1D7F6-1D7FF)">
+            <tr comment="MATHEMATICAL MONOSPACE (1D7F6-1D7FF)">
               <th align="left">
-                MATHEMATICAL<br />MONOSPACE<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                MATHEMATICAL<br />MONOSPACE<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </th>
               <td class="CHARS">&#x1D7F6;</td>
@@ -723,10 +744,12 @@
               <td class="CHARS">&#x1D7FE;</td>
               <td class="CHARS">&#x1D7FF;</td>
             </tr>
-            <tr id="COMMA  (1F101-1F10A)">
+            <tr comment="COMMA  (1F101-1F10A)">
               <th align="left">
-                COMMA<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                COMMA<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </th>
               <td class="CHARS">&#x1F101;</td>
@@ -740,8 +763,8 @@
               <td class="CHARS">&#x1F109;</td>
               <td class="CHARS">&#x1F10A;</td>
             </tr>
-            <tr id="(spacing row)" style="height:.25em" />
-            <tr id="FRACTIONS  (002F, 00BC-00BE, 2044, 2150-215F, 2189)">
+            <tr comment="(spacing row)" style="height:.25em" />
+            <tr comment="FRACTIONS  (002F, 00BC-00BE, 2044, 2150-215F, 2189)">
               <th align="left">FRACTIONS</th>
               <td class="CHARS">&#x002F;</td>
               <td class="CHARS">&#x00BC;</td>
@@ -766,7 +789,7 @@
               <td class="CHARS">&#x215F;</td>
               <td class="CHARS">&#x2189;</td>
             </tr>
-            <tr id="CIRCLED ON BLACK SQUARE (3248-324F)">
+            <tr comment="CIRCLED ON BLACK SQUARE (3248-324F)">
               <th align="left">
                 CIRCLED<br />ON BLACK SQUARE
               </th>
@@ -779,35 +802,43 @@
               <td class="CHARS">&#x324E;</td>
               <td class="CHARS">&#x324F;</td>
             </tr>
-            <tr id="Various">
+            <tr comment="Various">
               <th align="left">Various</th>
               <td class="CHARS">&#xA698;</td>
               <td class="CHARS">&#xA699;</td>
               <td class="CHARS">
-                &#x1F51E;<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                &#x1F51E;<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </td>
               <td class="CHARS">
-                &#x1F51F;<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                &#x1F51F;<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </td>
               <td class="CHARS">
-                &#x1F4AF;<a href="#NoShow">
-                  <sup style="font-size:initial; color:red;">&#x86;</sup>
+                &#x1F4AF;<a href="#noshow">
+                  <sup style="font-size:initial; color:red;">
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                  </sup>
                 </a>
               </td>
             </tr>
           </table>
-          <p id="NoShow">
-            <sup style="font-size:initial; color:red;">&#x86;</sup>Characters outside the base 16-bit chars. <span class="NOTE">(I don't think any of these would show up in Pokemon Go's font.)</span>
+          <p id="anchor_noshow">
+            <sup style="font-size:initial; color:red;">
+              <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+            </sup>Characters outside the base 16-bit chars. <span class="NOTE">(I don't think any of these would show up in Pokemon Go's font.)</span>
           </p>
         </div>
 
         <br />
         <hr />
-        <h2 id="Examples">Examples:</h2>
+        <h2 id="anchor_examples">Examples:</h2>
         <table>
           <tr>
             <td class="CHARS" style="text-align:left;">&#x277F;&#x24FF;</td>

@@ -64,7 +64,7 @@ var MarkerSectionEnd = '</xsl:text>
 
 function GetPokemonName(pokemon) {
     return pokemon.attributes['id'].value + '</xsl:text>
-    <xsl:value-of select="concat($nbsp, '-', $nbsp)" />
+    <xsl:value-of select="concat($nbsp, '-', $nbsp)" disable-output-escaping="yes" />
     <xsl:text>' + pokemon.attributes['name'].value;
 }
 
@@ -100,38 +100,48 @@ function GetPokemonFamily(pokemon) {
 }
 
 // Do Type1 and Type2 separately so caller can combine them any way they want.
-function GetPokemonType1(pokemon) {
-    // TODO QZX: Add icon
-    return pokemon.attributes['type1'].value;
+function GetPokemonType1(pokemon, icon) {
+    return GetPokemonType(pokemon.attributes['type1'].value, icon);
 }
 
 // Do Type1 and Type2 separately so caller can combine them any way they want.
 //  (E.G. If this returns null, hide the field.)
-function GetPokemonType2(pokemon) {
-    var type = pokemon.attributes['type2'].value;
+function GetPokemonType2(pokemon, icon) {
+    return GetPokemonType(pokemon.attributes['type2'].value, icon);
+}
+
+function GetPokemonType(type, icon) {
     if (type === '') {
         return null;
     } else {
-        // TODO QZX: Add icon
-        return type;
+        return (icon === undefined || !icon ? '' : '</xsl:text>
+    <xsl:value-of select="$lt" disable-output-escaping="yes" />
+    <xsl:text>img class="TAG_ICON" src="/images/type_' + type.toLowerCase() + '.png" title="' + type + '" /</xsl:text>
+    <xsl:value-of select="concat($gt, '&amp;nbsp;')" disable-output-escaping="yes" />
+    <xsl:text>') + type;
     }
 }
 
 // Do Boost1 and Boost2 separately so caller can combine them any way they want.
-function GetPokemonBoost1(pokemon) {
-    // TODO QZX: Add icon
-    return pokemon.attributes['boost1'].value;
+function GetPokemonBoost1(pokemon, icon) {
+    return GetPokemonBoost(pokemon.attributes['boost1'].value, icon);
 }
 
 // Do Boost1 and Boost2 separately so caller can combine them any way they want.
 //  (E.G. If this returns null, hide the field.)
-function GetPokemonBoost2(pokemon) {
-    var boost = pokemon.attributes['boost2'].value;
+function GetPokemonBoost2(pokemon, icon) {
+    return GetPokemonBoost(pokemon.attributes['boost2'].value, icon);
+}
+
+function GetPokemonBoost(boost, icon) {
     if (boost === '') {
         return null;
     } else {
-        // TODO QZX: Add icon
-        return boost;
+        return (icon === undefined || !icon ? '' : '</xsl:text>
+    <xsl:value-of select="$lt" disable-output-escaping="yes" />
+    <xsl:text>img class="TAG_ICON" src="/images/weather_' + boost.toLowerCase().replace(/ /g,'') + '.png" title="' + boost + '" /</xsl:text>
+    <xsl:value-of select="concat($gt, '&amp;nbsp;')" disable-output-escaping="yes" />
+    <xsl:text>') + boost;
     }
 }
 
@@ -140,9 +150,12 @@ function GetPokemonGenderRatio(pokemon) {
     return value === '' ? '???' : value;
 }
 
-function GetPokemonShiny(pokemon) {
-    // TODO QZX: Add icon
-    return pokemon.attributes['shiny'].value === '' ? 'No' : 'Yes';
+function GetPokemonShiny(pokemon, icon) {
+    return pokemon.attributes['shiny'].value === '' ? 'No' : (icon === undefined || !icon ? '' : '</xsl:text>
+    <xsl:value-of select="$lt" disable-output-escaping="yes" />
+    <xsl:text>img class="SHINY_ICON" src="/images/shiny.png" alt="Shiny" /</xsl:text>
+    <xsl:value-of select="concat($gt, '&amp;nbsp;')" disable-output-escaping="yes" />
+    <xsl:text>') + 'Yes';
 }
 
 function GetPokemonAvailability(pokemon) {
@@ -151,7 +164,7 @@ function GetPokemonAvailability(pokemon) {
 
 function GetPokemonMax_CP_HP(pokemon) {
     return pokemon.attributes['maxCP'].value + '</xsl:text>
-    <xsl:value-of select="concat($nbsp, '/', $nbsp)" />
+    <xsl:value-of select="concat($nbsp, '/', $nbsp)"  disable-output-escaping="yes"/>
     <xsl:text>' + pokemon.attributes['maxHP'].value;
 }
 
@@ -161,18 +174,22 @@ function GetPokemonBuddyKM(pokemon) {
 
 function GetPokemonBaseIV(pokemon) {
     return pokemon.attributes['baseAttack'].value + '</xsl:text>
-    <xsl:value-of select="concat($nbsp, '/', $nbsp)" />
+    <xsl:value-of select="concat($nbsp, '/', $nbsp)" disable-output-escaping="yes" />
     <xsl:text>' + pokemon.attributes['baseDefense'].value + '</xsl:text>
-    <xsl:value-of select="concat($nbsp, '/', $nbsp)" />
+    <xsl:value-of select="concat($nbsp, '/', $nbsp)" disable-output-escaping="yes" />
     <xsl:text>' + pokemon.attributes['baseStamina'].value;
 }
 
 function GetPokemonCaptureRate(pokemon) {
-    return pokemon.attributes['captureRate'].value;
+    // STUPID BUG: 0.07 * 100 = 7.000000000000001 due to "non-exact nature of floating point values".
+    // As such, we need to use ".toFixed()" to correct it.
+    return (pokemon.attributes['captureRate'].value * 100).toFixed() + '%';
 }
 
 function GetPokemonFleeRate(pokemon) {
-    return pokemon.attributes['fleeRate'].value;
+    // STUPID BUG: 0.07 * 100 = 7.000000000000001 due to "non-exact nature of floating point values".
+    // As such, we need to use ".toFixed()" to correct it.
+    return (pokemon.attributes['fleeRate'].value * 100).toFixed() + '%';
 }
 
 function GetPokemonRaidBossLink(pokemon) {

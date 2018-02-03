@@ -87,7 +87,7 @@
 
         <br />
         <hr />
-        <h2 name="Instructions">
+        <h2 id="anchor_instructions">
           Instructions
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SHOPPING_INSTRUCTIONS'" />
@@ -141,7 +141,7 @@
 
         <br />
         <hr />
-        <table id="PricesAndValues">
+        <table id="anchor_values">
           <tr>
             <td>
               <table id="shopprices" comment="Shop Prices and Values" border="1">
@@ -377,7 +377,7 @@
           </tr>
         </table>
         <br />
-        <table id="boxes" comment="Boxes">
+        <table id="anchor_boxes" comment="Boxes">
           <tr>
             <td valign="top" id="SpecialBox">
               <table comment="Special Box" border="1">

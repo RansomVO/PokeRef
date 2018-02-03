@@ -55,14 +55,14 @@
 
   <!-- Template to create the key for the table -->
   <xsl:template name="CreateKey">
-    <h2 id="Key">
+    <h2 id="anchor_key">
       <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'EFFECTIVENESS_KEY'" />
       </xsl:call-template>
     </h2>
     <div id="EFFECTIVENESS_KEY" class="INDENT">
-      <table border="1" style="white-space:nowrap">
+      <table id="anchor_table" border="1" style="white-space:nowrap">
         <tr>
           <th class="UNUSED" />
           <th>Meaning</th>
@@ -245,7 +245,7 @@
   <xsl:template match="MoveEffectiveness">
     <tr>
       <th align="right" valign="bottom" style="padding-right:0;">
-        <xsl:value-of select="concat(MoveType, $nbsp)" />
+        <xsl:value-of select="concat(MoveType, $nbsp)" disable-output-escaping="yes" />
         <xsl:call-template name="OutputTypeIcon">
           <xsl:with-param name="Type" select="MoveType" />
         </xsl:call-template>

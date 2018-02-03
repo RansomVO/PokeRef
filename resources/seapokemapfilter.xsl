@@ -101,7 +101,7 @@
           This page is a tool to help you generate javascript that can adjust the filter on SEAPokeMap.
         </p>
 
-        <p class="PARENT">
+        <p id="anchor_instructions" class="PARENT">
           Follow the instructions below for your environment:
         </p>
         <div class="INDENT CHILD">
@@ -173,16 +173,15 @@
           </table>
         </div>
 
-
         <br />
         <hr />
-        <table border="1" width="100%" style="table-layout:fixed;">
+        <table id="anchor_results" border="1" width="100%" style="table-layout:fixed;">
           <tr>
             <td id="FilterResults" style="overflow-wrap:break-word;" />
           </tr>
         </table>
         <br />
-        <table>
+        <table id="anchor_criteria">
           <tr>
             <td valign="top">
               <button onclick="Reset();">Reset</button>
@@ -198,7 +197,7 @@
           </tr>
         </table>
         <br />
-        <table border="1" style="table-layout:fixed;">
+        <table comment="(more criteria)" border="1" style="table-layout:fixed;">
           <tr>
             <xsl:call-template name="OutputTableHeaders" />
           </tr>

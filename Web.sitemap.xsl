@@ -67,7 +67,7 @@
       </b>
     </a>
 
-    <xsl:if test="count(sitemap:siteMapNode[contains(@url, '#')]) != 0">
+    <xsl:if test="count(sitemap:siteMapNode[contains(@url, '#')]) != 0 or count(sitemap:siteMapNode[not(contains(@url, '#'))]) != 0">
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="@url" />
       </xsl:call-template>

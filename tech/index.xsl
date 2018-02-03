@@ -36,7 +36,7 @@
 
         <br />
         <hr />
-        <h2>
+        <h2 id="anchor_gamemaster">
           <a href="GAME_MASTER/">GAME_MASTER</a>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'TECH_GAME_MASTER'" />
@@ -103,7 +103,7 @@
 
         <br />
         <hr />
-        <h2>
+        <h2 id="anchor_movesetformulas">
           <a href="movesetformulas.html">
             <b>Move Set Formulas</b>
           </a>
@@ -115,7 +115,7 @@
 
         <br />
         <hr />
-        <h2>
+        <h2 id="anchor_cpm">
           <a href="cpm.html">
             <b>CP Modifiers</b>
           </a>

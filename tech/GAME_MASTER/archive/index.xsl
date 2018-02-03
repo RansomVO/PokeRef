@@ -89,23 +89,32 @@
   <!-- Template to create row for a GAME_MASTER. -->
   <xsl:template match="GAME_MASTER">
     <tr align="left" style="border-top-width:5px">
-      <td id="TimeStamp">
+      <td>
         <code>
           <xsl:value-of select="TimeStamp" />
         </code>
       </td>
-      <td id="FileName">
-        <a>
-          <xsl:attribute name="download" />
-          <xsl:attribute name="href">
-            <xsl:value-of select="FileName" />
-          </xsl:attribute>
-          <code>
-            <xsl:value-of select="FileName" />
-          </code>
-        </a>
+      <td>
+        <xsl:choose>
+          <xsl:when test="FileName != ''">
+            <a>
+              <xsl:attribute name="download" />
+              <xsl:attribute name="href">
+                <xsl:value-of select="FileName" />
+              </xsl:attribute>
+              <code>
+                <xsl:value-of select="FileName" />
+              </code>
+            </a>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:attribute name="class">
+              <xsl:value-of select="UNUSED" />
+            </xsl:attribute>
+          </xsl:otherwise>
+        </xsl:choose>
       </td>
-      <td id="FileNameJSON">
+      <td>
         <a>
           <xsl:attribute name="download" />
           <xsl:attribute name="href">

@@ -133,7 +133,7 @@ function FilteredOut(row) {
     // If there is a Move Name or Type, filter out any that don't have that a move with that name or type. 
     var filterMove = GetFieldValueById(ID_Filter_Text_Move);
     if (filterMove !== '' &&
-        row.getAttribute('quickMoves').toUpperCase().indexOf(' ' + filterMove.toUpperCase()) === -1 &&
+        row.getAttribute('fastMoves').toUpperCase().indexOf(' ' + filterMove.toUpperCase()) === -1 &&
         row.getAttribute('chargedMoves').toUpperCase().indexOf(' ' + filterMove.toUpperCase()) === -1) {
         return true;
     }
