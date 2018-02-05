@@ -83,7 +83,7 @@
             </span> Tells whether the Pokemon get a 25% bonus because the Move's Type is the same as the Pokemon's type.
           </li>
           <li>
-            <b>MoveSet DPS</b>: <span class="NOTE">
+            <b>Move Set DPS</b>: <span class="NOTE">
               (<b>
                 <u>D</u>
               </b>amage <b>
@@ -254,7 +254,7 @@
     </tr>
   </xsl:template>
 
-  <!-- Template to create merged cells for each Pokemon #/Name, then call template to create the MoveSet rows for that Pokemon -->
+  <!-- Template to create merged cells for each Pokemon #/Name, then call template to create the Move Set rows for that Pokemon -->
   <xsl:template match="MoveSets">
     <xsl:for-each select="MoveSet[not(Pokemon/ID=preceding-sibling::MoveSet/Pokemon/ID)]">
       <xsl:variable name="PokemonID" select="Pokemon/ID" />
@@ -320,7 +320,7 @@
     </xsl:for-each>
   </xsl:template>
 
-  <!-- Template to create rows for a Pokemon's MoveSets -->
+  <!-- Template to create rows for a Pokemon's Move Sets -->
   <xsl:template match="MoveSet">
     <xsl:variable name="legacy" select="Legacy != ''" />
     <xsl:variable name="valueDamageDPS" select="format-number(Damage/DPS, '#0.00')" />

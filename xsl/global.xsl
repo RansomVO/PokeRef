@@ -8,7 +8,7 @@
   <xsl:include href="settings.xsl"/>
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Region - Global variables -->
+  <!-- #region -Global variables -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Variable that tells how many generations of Pokemon have been released. -->
@@ -33,10 +33,10 @@
   <xsl:variable name="times">&amp;times;</xsl:variable>
   <xsl:variable name="dagger">&amp;dagger;</xsl:variable>
 
-  <!-- EndRegion - Global variables -->
+  <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Region - Templates to output Pokemon image -->
+  <!-- #region -Templates to output Pokemon image -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Template to Output a Pokemon. -->
@@ -476,10 +476,10 @@
     </table>
   </xsl:template>
 
-  <!-- EndRegion - Templates to output Pokemon image -->
+  <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Region - Collapser template -->
+  <!-- #region -Collapser template -->
   <!-- ************************************************************************************************************************ -->
 
   <xsl:template name="Collapser">
@@ -495,10 +495,10 @@
     </div>
   </xsl:template>
 
-  <!-- EndRegion - Collapser template -->
+  <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Region - Support Templates -->
+  <!-- #region -Support Templates -->
   <!-- ************************************************************************************************************************ -->
 
   <xsl:template match="*" mode="AddSetting">
@@ -520,10 +520,10 @@
     </xsl:copy>
   </xsl:template>
 
-  <!-- EndRegion - Support Templates -->
+  <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Region - pokeref methods  (C#) -->
+  <!-- #region -pokeref methods  (C#) -->
   <!-- ************************************************************************************************************************ -->
 
   <msxsl:script language="C#" implements-prefix="pokeref">
@@ -546,10 +546,10 @@
 
   </msxsl:script>
 
-  <!-- EndRegion - pokeref methods  (C#) -->
+  <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- Region - DEBUGGING TEMPLATES -->
+  <!-- #region -DEBUGGING TEMPLATES -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Templates to output the contents of Node(s). -->
@@ -581,6 +581,6 @@
     </xsl:if>
   </xsl:template>
 
-  <!-- EndRegion - DEBUGGING TEMPLATES -->
+  <!-- #endregion -->
 
 </xsl:stylesheet>

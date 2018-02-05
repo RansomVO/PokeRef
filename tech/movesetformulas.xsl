@@ -57,13 +57,19 @@
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
                 <td rowspan="6" style="font-size:3em">)</td>
-                <td rowspan="7" style="padding-top:.5em;">*</td>
+                <td rowspan="7" style="padding-top:.5em;">
+                  <xsl:value-of select="$times" disable-output-escaping="yes"/>
+                </td>
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
                 <td rowspan="6" style="font-size:3em">)</td>
-                <td rowspan="7" style="padding-top:.5em;"> * Effectiveness</td>
+                <td rowspan="7" style="padding-top:.5em;">
+                  <xsl:value-of select="concat($times, $nbsp, 'Effectiveness')" disable-output-escaping="yes"/>
+                </td>
                 <td rowspan="7" style="font-size:4em">)</td>
-                <td rowspan="7" style="padding-top:.5em;">+ 1</td>
+                <td rowspan="7" style="padding-top:.5em;">
+                  <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes"/>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -72,9 +78,14 @@
               </tr>
               <tr>
                 <td>
-                  <b>(</b>BaseAttack + AttackIV<b>)</b> * AttackerCPM
+                  <b>(</b>
+                  <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, 'AttackIV')" disable-output-escaping="yes"/>
+                  <b>)</b>
+                  <xsl:value-of select="concat($nbsp, $times, $nbsp, 'AttackerCPM')" disable-output-escaping="yes"/>
                 </td>
-                <td>Power * STAB * WeatherBoost</td>
+                <td>
+                  <xsl:value-of select="concat('Power', $nbsp, $times, $nbsp, 'STAB', $nbsp, $times, $nbsp, 'WeatherBoost')" disable-output-escaping="yes"/>
+                </td>
               </tr>
               <tr>
                 <td class="DIVIDE_BY" />
@@ -82,7 +93,10 @@
               </tr>
               <tr>
                 <td>
-                  <b>(</b>BaseDefense + DefenseIV<b>)</b> * DefenderCPM
+                  <b>(</b>
+                  <xsl:value-of select="concat('BaseDefense', $nbsp, '+', $nbsp, 'DefenseIV')" disable-output-escaping="yes"/>
+                  <b>)</b>
+                  <xsl:value-of select="concat($nbsp, $times, $nbsp, 'DefenderCPM')" disable-output-escaping="yes"/>
                 </td>
                 <td>2</td>
               </tr>
@@ -209,15 +223,15 @@
                         <u>WILL</u>
                       </b> be boosted. (WeatherBoost = 1.25)
                       <br />On the other hand if the weather is <b>Cloudy</b> Vine Whip <b>
-                      <u>WILL NOT</u>
-                    </b> get boosted. (WeatherBoost = 1)
+                        <u>WILL NOT</u>
+                      </b> get boosted. (WeatherBoost = 1)
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
                 <th valign="top">Effectiveness</th>
-                <td>A measure of how effective a Move will be against a Pokemon.</td>
+                <td>A bonus or penalty depending upon the Type of the Move and the Type of the Defending Pokemon.</td>
               </tr>
               <tr>
                 <th valign="top">AttackTime</th>
@@ -230,13 +244,13 @@
             <b>NOTES</b>:
             <ul>
               <li>
-                The Power for a Move can be looked up on the <a href="GAME_MASTER/moves/moves.fast.html">Fast Moves</a> or <a href="GAME_MASTER/moves/moves.charged.html">Charged Moves</a> pages.
+                The Power for a Move can be looked up on the <a href="GAME_MASTER/moves/moves.fast.html">Fast Moves</a> and <a href="GAME_MASTER/moves/moves.charged.html">Charged Moves</a> pages.
               </li>
               <li>
                 The BaseAttack and BaseDefense for a Pokemon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokemon Stats</a> pages.
               </li>
               <li>
-                Whether a Move in a Move Set gets a STAB bonus or not can be looked up on the <a href="GAME_MASTER/movesets/">Pokemon Move Sets</a> page.
+                Whether a Move in a Move Set gets a STAB bonus for a specific Pokemon can be looked up on the <a href="GAME_MASTER/movesets/">Pokemon Move Sets</a> page.
               </li>
               <li>
                 CPM is a value based on the Pokemon's Level. See <a href="cpm.html">CPM</a> page.
@@ -269,7 +283,7 @@
                 <i>Single</i>
               </u>
             </b> Move!
-            To get the DPS for that Move you would only need to do:
+            To get the DPS for that one Move you would only need to do:
           </p>
           <div class="INDENT">
             <table class="FORMULA">
@@ -289,8 +303,8 @@
               </tr>
             </table>
           </div>
-          <p>
-            <b style="font-size:x-large;">
+          <p style="margin-top:2em; margin-bottom:2em;">
+            <b style="font-size:xx-large;">
               <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
               <i>
                 <xsl:value-of select="concat('...', $nbsp, 'BUT', $nbsp, '...')" disable-output-escaping="yes" />
@@ -299,9 +313,20 @@
             <br />
           </p>
           <p class="PARENT">
-            To get the DPS for a <u>
-              <i>Move Set</i>
-            </u> you have to use this formula:
+            To get the DPS for a <b>
+              <i>
+                <u>Move Set</u>
+              </i>
+            </b> you need to figure out:
+          </p>
+          <ol class="CHILD">
+            <li>How many Fast Moves have to be performed to generate the Energy for the Charged Move.</li>
+            <li>How long it takes to perform all of those Fast Moves</li>
+            <li>How long it takes to perform the Charged Move</li>
+            <li>What the total damage is for all of the Fast Moves and the Charged Move</li>
+          </ol>
+          <p class="Parent">
+            In the end, the formula looks like this:
           </p>
           <div class="INDENT">
             <table class="FORMULA">
@@ -313,13 +338,15 @@
                 </td>
                 <td rowspan="7" style="font-size:4em">(</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('FastMoveDamage', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
+                  <xsl:value-of select="concat('FastMoveDamage', $nbsp, $times, $nbsp, 'CEILING')" disable-output-escaping="yes" />
                 </td>
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
                 <td rowspan="6" style="font-size:3em">)</td>
                 <td rowspan="7" style="font-size:4em">)</td>
-                <td rowspan="7" style="padding-top:.5em;">+ ChargedMoveDamage</td>
+                <td rowspan="7" style="padding-top:.5em;">
+                  <xsl:value-of select="concat('+', $nbsp, 'ChargedMoveDamage')" disable-output-escaping="yes"/>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -349,7 +376,7 @@
               <tr>
                 <td rowspan="7" style="font-size:4em">(</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
+                  <xsl:value-of select="concat('FastMoveTime', $nbsp, $times, $nbsp, 'CEILING')" disable-output-escaping="yes" />
                 </td>
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
@@ -445,49 +472,47 @@
         </h2>
         <div id="FORMULA_TRUE_DPS" class="INDENT">
           <p>
-            Obviously, we would like to do things to simplify the formula.
-          </p>
-          <p>
-            First of all, the formulas really require us to know what Pokemon we are attacking.
-            <br />There are a lot of options, but we just are looking for a way to compare one Move Set to another.
+            Unfortunately, there are some things that will change for each situation.
+            <br />For example, some parts of the formulas really require us to know what Pokemon is being attacked.
+            <span class="NOTE">(Effectiveness, CPM, BaseIV, etc.)</span>
           </p>
           <p class="PARENT">
-            Leveraging that, we can simplify a few things by assuming:
+            However, we can choose to assume several things to get a good idea of the damage a specific Attacking Pokemon can inflict with a specific Move Set:
           </p>
           <ul class="CHILD">
             <li>
-              The Pokemon being attacked has no + or - Effectiveness values.
+              The Moves have no + or - Effectiveness against the defending Pokemon.
               <div class="INDENT">
-                Doing that, we can just remove Effectiveness from the formula.
+                <span class="NOTE">Doing that, we can just remove Effectiveness from the formula.</span>
               </div>
             </li>
             <li>
               Nothing is boosted by weather.
               <div class="INDENT">
-                Doing that, we can just remove WeatherBoost from the formula.
+                <span class="NOTE">Doing that, we can just remove WeatherBoost from the formula.</span>
               </div>
             </li>
             <li>
-              The Pokemon being attacked is the same level as the attacking Pokemon.
+              The defending Pokemon is the same level as the attacking Pokemon.
               <div class="INDENT">
-                Doing that, the CPMs cancel each other out.
+                <span class="NOTE">Doing that, the CPMs cancel each other out.</span>
               </div>
             </li>
             <li>
               A generic value for BaseDefense + DefenseIV.
               <div class="INDENT">
-                For example, 100.
+                <span class="NOTE">For example, 100.</span>
               </div>
             </li>
             <li>
               The AttackIV for the attacking Pokemon is perfect.
               <div class="INDENT">
-                That is 15.
+                <span class="NOTE">That is 15.</span>
               </div>
             </li>
           </ul>
           <p class="PARENT">
-            With those assumptions, the formula (after simplification) becomes:
+            With those assumptions, the Damage formula <span class="NOTE">(after simplification)</span> becomes:
           </p>
           <div class="INDENT CHILD">
             <table class="FORMULA CHILD">
@@ -502,7 +527,9 @@
                 <td />
                 <td rowspan="6" style="font-size:3em">)</td>
                 <td />
-                <td rowspan="7" style="padding-top:.5em;">+ 1</td>
+                <td rowspan="7" style="padding-top:.5em;">
+                  <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes"/>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -511,7 +538,10 @@
               </tr>
               <tr>
                 <td>
-                  <b>(</b><xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" /><b>)</b><xsl:value-of select="concat($nbsp, '*', $nbsp, 'Power', $nbsp, '*', $nbsp, 'STAB')" disable-output-escaping="yes" />
+                  <b>(</b>
+                  <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" />
+                  <b>)</b>
+                  <xsl:value-of select="concat($nbsp, $times, $nbsp, 'Power', $nbsp, $times, $nbsp, 'STAB')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -531,7 +561,7 @@
             </table>
           </div>
           <p class="PARENT">
-            Then, merging in the True DPS formula <span class="NOTE">(which is a little easier than it would have been with the full formula)</span>, we end up with:
+            Then, merging that into the DPS formula <span class="NOTE">(which is now a little easier than it would have been with the full Damage formula)</span>, we end up with:
           </p>
           <div class="INDENT CHILD">
             <table class="FORMULA">
@@ -550,10 +580,12 @@
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td />
                       <td rowspan="6" width="1" style="font-size:3em">)</td>
-                      <td rowspan="7" style="padding-top:.5em;">+ 1</td>
+                      <td rowspan="7" style="padding-top:.5em;">
+                        <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes"/>
+                      </td>
                       <td rowspan="7" style="font-size:4em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
+                        <xsl:value-of select="concat($times, $nbsp, 'CEILING')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td />
@@ -585,14 +617,14 @@
                         <b>(</b>
                         <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" />
                         <b>)</b>
-                        <xsl:value-of select="concat($nbsp, '*', $nbsp, 'FastPower', $nbsp, '*', $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
+                        <xsl:value-of select="concat($nbsp, $times, $nbsp, 'FastPower', $nbsp, $times, $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
                       </td>
                       <td>ChargedMoveEnergy</td>
                       <td>
                         <b>(</b>
                         <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, '15')" disable-output-escaping="yes" />
                         <b>)</b>
-                        <xsl:value-of select="concat($nbsp, '*', $nbsp, 'ChargedPower', $nbsp, '*', $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
+                        <xsl:value-of select="concat($nbsp, $times, $nbsp, 'ChargedPower', $nbsp, $times, $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
                       </td>
                     </tr>
                     <tr>
@@ -636,7 +668,7 @@
                       </td>
                       <td rowspan="7" width="1px" style="font-size:4em">(</td>
                       <td colspan="3" rowspan="7" width="1px" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
+                        <xsl:value-of select="concat('FastMoveTime', $nbsp, $times, $nbsp, 'CEILING')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td colspan="4" />
@@ -682,17 +714,18 @@
         <br />
         <hr />
         <h2 id="anchor_movesetdps">
-          Even Simpler <span class="NOTE">(MoveSet DPS)</span>
+          Even Simpler <span class="NOTE">(Move Set DPS)</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DPS'" />
           </xsl:call-template>
         </h2>
         <div id="FORMULA_MOVESET_DPS" class="INDENT">
           <p>
-            Obviously, this is still very complex.
-            <br />To simplify it, many people will assume that both of the Pokemon's Base + IV scores cancel each other out.
-            <span class="NOTE">(Which in reality is rarely the case.)</span>
+            Obviously, True DPS is still quite a complex formula.
+            <br />To simplify it further, many people will assume the BaseIV + IV scores for the Attacking Pokemon exactly cancel out the scores for the Defending Pokemon.
+            <span class="NOTE">(Which is almost never the case.)</span>
           </p>
+
           <p class="PARENT">
             With that, we end up with:
           </p>
@@ -701,7 +734,7 @@
               <tr>
                 <td rowspan="3" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('True DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
+                    <xsl:value-of select="concat('Move Set DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td>
@@ -712,20 +745,26 @@
                       <td rowspan="8" style="padding-top:.5em;">FLOOR</td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td rowspan="8" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('FastPower', $nbsp, '*', $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
+                        <xsl:value-of select="concat('FastPower', $nbsp, $times, $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" width="1" style="font-size:3em">)</td>
-                      <td rowspan="8" style="padding-top:.5em;">+ 1</td>
+                      <td rowspan="8" style="padding-top:.5em;">
+                        <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
+                      </td>
                       <td rowspan="8" style="font-size:4em">)</td>
-                      <td rowspan="8" style="padding-top:.5em;">*</td>
+                      <td rowspan="8" style="padding-top:.5em;">
+                        <xsl:value-of select="$times" disable-output-escaping="yes" />
+                      </td>
                       <td rowspan="8" style="padding-top:.5em;">CEILING</td>
-                      <td rowspan="8" style="font-size:3em">(</td>
+                      <td rowspan="6" style="font-size:3em">(</td>
                       <td />
                       <td rowspan="6" style="font-size:3em">)</td>
                       <td rowspan="8" style="font-size:5em">)</td>
                       <td rowspan="8" style="padding-top:.5em;">+</td>
                       <td rowspan="6" style="font-size:3em">(</td>
-                      <td />
+                      <td rowspan="7" style="padding-top:.5em;">
+                        <xsl:value-of select="concat('ChargedPower', $nbsp, $times, $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
+                      </td>
                       <td rowspan="6" style="font-size:3em">)</td>
                       <td rowspan="8" style="padding-top:.5em;">
                         <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
@@ -735,15 +774,9 @@
                       <td>
                         <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
-                      <td>
-                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-                      </td>
                     </tr>
                     <tr>
                       <td>ChargedMoveEnergy</td>
-                      <td rowspan="3">
-                        <xsl:value-of select="concat('ChargedPower', $nbsp, '*', $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
-                      </td>
                     </tr>
                     <tr>
                       <td class="DIVIDE_BY" />
@@ -755,15 +788,13 @@
                       <td>
                         <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                       </td>
-                      <td>
-                        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-                      </td>
                     </tr>
                     <tr>
                       <td />
                       <td />
                       <td colspan="3" />
-                      <td colspan="3" />
+                      <td />
+                      <td />
                     </tr>
                   </table>
                 </td>
@@ -780,7 +811,7 @@
                       </td>
                       <td rowspan="7" width="1px" style="font-size:4em">(</td>
                       <td colspan="3" rowspan="7" width="1px" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('FastMoveTime', $nbsp, '*', $nbsp, 'CEILING')" disable-output-escaping="yes" />
+                        <xsl:value-of select="concat('FastMoveTime', $nbsp, $times, $nbsp, 'CEILING')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="6" style="font-size:3em">(</td>
                       <td colspan="4" />
@@ -828,6 +859,10 @@
         <br />
         <hr />
         <h2 id="anchor_sumup">Sum-Up</h2>
+        <p>
+          I have included both True DPS and Move Set DPS in the <a href="GAME_MASTER/movesets/">Pokemon Move Sets</a> page.
+          However, in my humble opinion, the True DPS formula is the most useful, and the one I pay attention to the most.
+        </p>
         <p>
           Although these formulas are a quite technical, I have programmed them into a spreadsheet that does all the calculations.
           If any of the values change in the future, I just copy-and-paste them in and re-generate the data for the pages on this site.

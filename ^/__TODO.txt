@@ -11,17 +11,21 @@ MoveSet Sort and Filter
 	- Add ability to specify a range of numbers.
 	- Need to add sort.
 
+PokeChart:
+	- Add family to gens 4-7 in PokeStat.xsl.
+	- Add to Popup:
+		- Weak against (Effectiveness)
+		- Strong against (Effectiveness)
+		- If a Raid Boss, it would be nice to have a link to the Raid Boss page for it.
+
 =========================================================================================================
 ----- Overall -----
-
-be consistent with MoveSet vs Move Set, etc.
 
 Add ability to specify "?Key=^" or "?Key=" to force collapsers to be up or down.
 
 Check out 
 	http://overpass-turbo.eu/s/ulp
 	https://wiki.openstreetmap.org/wiki/Query-to-map
-
 
 Double check appearance with IE. (Sections on home page is bad.)
 	Issue is that CELL_FILLER works differently on IE.
@@ -34,8 +38,6 @@ Search for TODO to find work that needs done.
 
 Make my own code to decrypt GAME_MASTER protobuf.
 
-Add a mechanism to do sorting and filtering in tables. (Especially in MoveSets and PokeStats.)
-
 Find a PERFORMANT way to create scrolling tables.
 
 Make an animated Loading GIF and use it in appropriate locations.
@@ -46,8 +48,7 @@ Make an animated Loading GIF and use it in appropriate locations.
 Create tool to dynamically create Web.sitemap 
 	Read all .html files under bin
 		Get their title, url and description. (Perhaps add a hidden paragraph at the top that has the description?)
-		Get all anchors. (Figure out how to distinguish what is anchor and what is for looking up? Use @name instead of @id?)
-
+		Get all anchors. (id="anchor_xxx")
 
 =========================================================================================================
 ----- Resources -----
