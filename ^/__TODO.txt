@@ -12,17 +12,23 @@ MoveSet Sort and Filter
 	- Need to add sort.
 
 PokeChart:
-	- Add family to gens 4-7 in PokeStat.xsl.
 	- Add to Popup:
-		- Weak against (Effectiveness)
-		- Strong against (Effectiveness)
-		- For Effectiveness, figure out how to list Immune
 		- If a Raid Boss, it would be nice to have a link to the Raid Boss page for it.
 
 =========================================================================================================
 ----- Overall -----
 
-change all .css files to use XSLT to do cached date.
+Add something to sprites to indicate regional.
+
+Make an animated Loading GIF and use it in appropriate locations.
+
+Double check appearance with IE. (Sections on home page is bad.)
+	Issue is that CELL_FILLER works differently on IE.
+
+Find places to add more pics. (Funny ones if nothing else.)
+
+Search for TODO to find work that needs done.
+
 
 Add ability to specify "?Key=^" or "?Key=" to force collapsers to be up or down.
 
@@ -30,20 +36,10 @@ Check out
 	http://overpass-turbo.eu/s/ulp
 	https://wiki.openstreetmap.org/wiki/Query-to-map
 
-Double check appearance with IE. (Sections on home page is bad.)
-	Issue is that CELL_FILLER works differently on IE.
-
-Add something to sprites to indicate regional.
-
-Find places to add more pics. (Funny ones if nothing else.)
-
-Search for TODO to find work that needs done.
-
 Make my own code to decrypt GAME_MASTER protobuf.
 
 Find a PERFORMANT way to create scrolling tables.
 
-Make an animated Loading GIF and use it in appropriate locations.
 
 =========================================================================================================
 ----- Top Level -----
