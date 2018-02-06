@@ -39,13 +39,21 @@
         <title>Pokemon Chart</title>
 
         <style>
-          .DATA_BOX {
-          border: 1px solid black;
+          th {
+          font-size: medium;
           }
 
           .POPUP_CELL {
           padding-left: .25em;
           padding-right: .25em;
+          }
+
+          .DATA_BOX {
+          border: 1px solid black;
+          }
+
+          .LABEL_BOX {
+          text-align: left;
           }
         </style>
       </head>
@@ -59,7 +67,7 @@
         </p>
 
         <!-- ======================================================================================== -->
-        <!-- Region The box to contain data from selected pokemon -->
+        <!-- #region The box to contain data from selected pokemon -->
         <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
           <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER">
             <span class="BUTTON" style="float: right;" onclick="OnClosePopup();">
@@ -69,7 +77,7 @@
           </div>
 
           <div style="padding:.25em;">
-            <table style="white-space:nowrap;">
+            <table  width="100%" style="white-space:nowrap;">
               <!-- This stupid row is so the stupid columns will be as narrow as possible. -->
               <tr>
                 <th style="width:1px;"/>
@@ -79,66 +87,72 @@
               </tr>
               <tr>
                 <td rowspan="4" id="Selected_Pokemon" class="POPUP_CELL" />
-                <td colspan="2" class="POPUP_CELL">Generation:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Generation:</th>
                 <td id="Selected_Pokemon_Generation" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
               <tr>
-                <td colspan="2" class="POPUP_CELL">Candies:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Candies:</th>
                 <td id="Selected_Pokemon_Family" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td colspan="2" class="POPUP_CELL">
+                <td colspan="2" class="POPUP_CELL LABEL_BOX">
                   <xsl:value-of select="concat($Gender_Male, $nbsp, ':', $nbsp, $Gender_Female)" disable-output-escaping="yes" />
                 </td>
                 <td id="Selected_Pokemon_GenderRatio" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td colspan="2" class="POPUP_CELL">Shiny Available:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Shiny Available:</th>
                 <td id="Selected_Pokemon_Shiny" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr />
               <tr>
-                <td colspan="2" class="POPUP_CELL">Availability:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Availability:</th>
                 <td colspan="2" id="Selected_Pokemon_Availability" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td colspan="2" valign="top" class="POPUP_CELL">Type(s):</td>
+                <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Type(s):</th>
                 <td colspan="2" id="Selected_Pokemon_Types" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr>
-                <td colspan="2" valign="top" class="POPUP_CELL">Boost(s):</td>
+                <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Boost(s):</th>
                 <td colspan="2" id="Selected_Pokemon_Boosts" class="POPUP_CELL DATA_BOX" />
               </tr>
               <tr />
               <tr>
-                <td colspan="2" class="POPUP_CELL">Buddy KM for Candy:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Buddy Km for Candy:</th>
                 <td colspan="2" id="Selected_Pokemon_BuddyKM" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
               <tr>
-                <td colspan="2" class="POPUP_CELL">Max CP/HP:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Max CP/HP:</th>
                 <td colspan="2" id="Selected_Pokemon_Max_CP_HP" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
               <tr />
               <tr>
-                <td colspan="2" class="POPUP_CELL">Base ATK/DEF/STA:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Base ATK/DEF/STA:</th>
                 <td colspan="2" id="Selected_Pokemon_BaseIV" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
               <tr>
-                <td colspan="2" class="POPUP_CELL">Base Capture/Flee Rate:</td>
+                <th colspan="2" class="POPUP_CELL LABEL_BOX">Base Capture/Flee Rate:</th>
                 <td colspan="2" id="Selected_Pokemon_Rates" class="POPUP_CELL DATA_BOX NUMERIC" />
               </tr>
             </table>
-            <!-- 
-            <div>
-              <br />Evolutions (Row from Evolutions Chart) + Candies/Special
-              <br />
-              <br />MoveSets (Rows from MoveSets chart)
-            </div>
--->
+            
+            <table width="100%" style="margin-top:.25em; white-space:nowrap;">
+              <tr>
+                <th style="border-bottom:2px solid black;">Strong Against</th>
+                <td width="1em" />
+                <th style="border-bottom:2px solid black;">Weak Against</th>
+              </tr>
+              <tr>
+                <td id="Selected_Pokemon_Strengths" valign="top" />
+                <td />
+                <td id="Selected_Pokemon_Weaknesses" valign="top" />
+              </tr>
+            </table>
           </div>
         </div>
         
-        <!-- EndRegion  -->
+        <!-- #endregion  -->
         <!-- ======================================================================================== -->
 
         <br />

@@ -9,8 +9,8 @@
   <!ENTITY PokestatsGen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
   <!ENTITY PokestatsGen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
   <!ENTITY PokestatsGen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
-  <!ENTITY RaidBosses SYSTEM "/_data.latest/raidbosses.current.xml">
-  <!ENTITY LegacyRaidBosses SYSTEM "/_data.latest/raidbosses.legacy.xml">
+  <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.current.xml">
+  <!ENTITY LegacyRaidBosses SYSTEM "/_datafiles.manual/raidbosses.legacy.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

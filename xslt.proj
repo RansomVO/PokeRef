@@ -190,7 +190,7 @@
       <Visible>true</Visible>
       <DependentUpon>_linkslist.xsl</DependentUpon>
       <Dependencies>
-        _data.latest\raidbosses.current.xml;
+        __datafiles.manual\raidbosses.current.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -209,8 +209,8 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
-        _data.latest\raidbosses.current.xml;
-        _data.latest\raidbosses.legacy.xml;
+        _datafiles.manual\raidbosses.current.xml;
+        _datafiles.manual\raidbosses.legacy.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;

@@ -256,7 +256,7 @@
                 CPM is a value based on the Pokemon's Level. See <a href="cpm.html">CPM</a> page.
               </li>
               <li>
-                Effectiveness is determined by comparing the Move's Type to the Defending Pokemon's Type. See <a href="effectiveness.html">Move Effectiveness</a> page.
+                Effectiveness is determined by comparing the Move's Type to the Defending Pokemon's Type. See <a href="/charts/effectiveness.html">Move Effectiveness</a> page.
               </li>
             </ul>
           </div>

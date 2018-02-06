@@ -10,6 +10,7 @@
   <!ENTITY PokeStats_Gen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
   <!ENTITY PokeStats_Gen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
   <!ENTITY PokeStats_Gen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
+  <!ENTITY Effectiveness SYSTEM "/_datafiles/effectiveness.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="pokemon.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -22,4 +23,5 @@
   &PokeStats_Gen5;
   &PokeStats_Gen6;
   &PokeStats_Gen7;
+  &Effectiveness;
 </Root>

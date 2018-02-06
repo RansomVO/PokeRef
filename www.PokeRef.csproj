@@ -80,9 +80,9 @@
   </ItemGroup>
   <!-- /_data.latest -->
   <ItemGroup>
-    <FixIntermediateFile Include="_data.latest\eggs.xml" />
-    <FixIntermediateFile Include="_data.latest\raidbosses.current.xml" />
-    <FixIntermediateFile Include="_data.latest\raidbosses.legacy.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\eggs.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\raidbosses.current.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\raidbosses.legacy.xml" />
   </ItemGroup>
   <!-- /_datafiles (moves/movesets) -->
   <ItemGroup>

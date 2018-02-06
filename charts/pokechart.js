@@ -131,6 +131,8 @@ function GetFields() {
         var Selected_Pokemon_BuddyKM = document.getElementById('Selected_Pokemon_BuddyKM');
         var Selected_Pokemon_BaseIV = document.getElementById('Selected_Pokemon_BaseIV');
         var Selected_Pokemon_Rates = document.getElementById('Selected_Pokemon_Rates');
+        var Selected_Pokemon_Strengths = document.getElementById('Selected_Pokemon_Strengths');
+        var Selected_Pokemon_Weaknesses = document.getElementById('Selected_Pokemon_Weaknesses');
     }
     catch (err) {
         ShowError(err);
@@ -329,29 +331,70 @@ function OnSelectPokemon(pokemon) {
     Selected_Pokemon_Family.innerHTML = GetPokemonFamily(pokemon);
 
     var type1 = GetPokemonType1(pokemon, true);
-    var type2 = GetPokemonType2(pokemon, true);
-    Selected_Pokemon_Types.innerHTML = type1 + (type2 !== null ? '&nbsp;&nbsp;&nbsp;' + type2 : '');
-
     var boost1 = GetPokemonBoost1(pokemon, true);
+    var type2 = GetPokemonType2(pokemon, true);
     var boost2 = GetPokemonBoost2(pokemon, true);
-    Selected_Pokemon_Boosts.innerHTML = boost1 + (boost2 !== null ? '&nbsp;&nbsp;&nbsp;&nbsp;' + boost2 : '');
+    if (type2 === null) {
+        Selected_Pokemon_Types.innerHTML = type1;
+        Selected_Pokemon_Boosts.innerHTML = boost1;
+    } else {
+        Selected_Pokemon_Types.innerHTML =
+            '<table width="100%" style="white-space: nowrap"><tr><td width="50%">' + type1 + '</td><td width="50%">' + type2 + '</td><tr></table>';
+        Selected_Pokemon_Boosts.innerHTML =
+            '<table width="100%" style="white-space: nowrap"><tr><td width="50%">' + boost1 + '</td><td width="50%">' + boost2 + '</td><tr></table>';
+    }
 
     Selected_Pokemon_GenderRatio.innerHTML = GetPokemonGenderRatio(pokemon);
     Selected_Pokemon_Shiny.innerHTML = GetPokemonShiny(pokemon, true);
     Selected_Pokemon_Availability.innerHTML = GetPokemonAvailability(pokemon);
-    Selected_Pokemon_Max_CP_HP.innerHTML = GetPokemonMax_CP_HP(pokemon);
+    Selected_Pokemon_Max_CP_HP.innerHTML = GetPokemonMax_CP(pokemon) + '&nbsp;/&nbsp;' + GetPokemonMax_HP(pokemon);
     Selected_Pokemon_BuddyKM.innerHTML = GetPokemonBuddyKM(pokemon);
-    Selected_Pokemon_BaseIV.innerHTML = GetPokemonBaseIV(pokemon);
+    Selected_Pokemon_BaseIV.innerHTML = GetPokemonBaseAttack(pokemon) + '&nbsp;/&nbsp;' + GetPokemonBaseDefense(pokemon) + '&nbsp;/&nbsp;' + GetPokemonBaseStamina(pokemon);
     Selected_Pokemon_Rates.innerHTML = GetPokemonCaptureRate(pokemon) + '&nbsp;/&nbsp' + GetPokemonFleeRate(pokemon);
+
+    var weaknesses = GetPokemonWeakAgainst(pokemon);
+    var strengths = GetPokemonStrongAgainst(pokemon);
+    var immunities = GetPokemonImmuneAgainst(pokemon);
+
+    var counts = {}
+    var types = GetAllTypes();
+    for (var i = 0; i < types.length; i++) {
+        counts[types[i]] = 0;
+    }
+    for (var i = 0; i < weaknesses.length; i++) {
+        counts[weaknesses[i]] -= 1;
+    }
+    for (var i = 0; i < strengths.length; i++) {
+        counts[strengths[i]] += 1;
+    }
+    for (var i = 0; i < immunities.length; i++) {
+        counts[immunities[i]] += 2;
+    }
+
+    Selected_Pokemon_Strengths.innerHTML = '';
+    Selected_Pokemon_Weaknesses.innerHTML = '';
+    for (var key in counts) {
+        if (counts[key] < 0) {
+            Selected_Pokemon_Weaknesses.innerHTML += GetPokemonType(key, true);
+            if (counts[key] !== -1) {
+                Selected_Pokemon_Weaknesses.innerHTML += '&nbsp;&times;&nbsp;' + -counts[key];
+            }
+            Selected_Pokemon_Weaknesses.innerHTML += '<br />';
+        } else if (counts[key] > 0) {
+            Selected_Pokemon_Strengths.innerHTML += GetPokemonType(key, true);
+            if (counts[key] !== 1) {
+                Selected_Pokemon_Strengths.innerHTML += '&nbsp;&times;&nbsp;' + counts[key];
+            }
+            Selected_Pokemon_Strengths.innerHTML += '<br />';
+        }
+    }
 
     // TODO QZX: If Raidboss, link to Possible IVs.
 
     // TODO QZX: Evolutions (Row from Evolutions Chart) +
     // TODO QZX:    # Name Candies Special
-    // TODO QZX: MoveSets (Rows from MoveSets chart)
 
-    // TODO QZX: Resize the Dialog to fit the contents.
-    // TODO QZX: Make the dialog resizeable?
+    // TODO QZX: MoveSets (Rows from MoveSets chart)
 
     ShowPopup(Selected_Pokemon_Dialog);
 }

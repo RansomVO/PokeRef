@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Effectiveness>
 	<Key>
 		<SuperEffective>
@@ -21,116 +21,116 @@
 	<MoveEffectiveness>
 		<MoveType>Bug</MoveType>
 		<PokemonType>
-			<Bug/>
+			<Bug>○</Bug>
 			<Dark>+</Dark>
-			<Dragon/>
-			<Electric/>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
 			<Fairy>-</Fairy>
 			<Fighting>-</Fighting>
 			<Fire>-</Fire>
 			<Flying>-</Flying>
 			<Ghost>-</Ghost>
 			<Grass>+</Grass>
-			<Ground/>
-			<Ice/>
-			<Normal/>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
 			<Poison>-</Poison>
 			<Psychic>+</Psychic>
-			<Rock/>
+			<Rock>○</Rock>
 			<Steel>-</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Dark</MoveType>
 		<PokemonType>
-			<Bug/>
+			<Bug>○</Bug>
 			<Dark>-</Dark>
-			<Dragon/>
-			<Electric/>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
 			<Fairy>-</Fairy>
 			<Fighting>-</Fighting>
-			<Fire/>
-			<Flying/>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
 			<Ghost>+</Ghost>
-			<Grass/>
-			<Ground/>
-			<Ice/>
-			<Normal/>
-			<Poison/>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
 			<Psychic>+</Psychic>
-			<Rock/>
-			<Steel/>
-			<Water/>
+			<Rock>○</Rock>
+			<Steel>○</Steel>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Dragon</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
 			<Dragon>+</Dragon>
-			<Electric/>
+			<Electric>○</Electric>
 			<Fairy>×</Fairy>
-			<Fighting/>
-			<Fire/>
-			<Flying/>
-			<Ghost/>
-			<Grass/>
-			<Ground/>
-			<Ice/>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
-			<Rock/>
+			<Fighting>○</Fighting>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
+			<Ghost>○</Ghost>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
+			<Rock>○</Rock>
 			<Steel>-</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Electric</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
 			<Dragon>-</Dragon>
 			<Electric>-</Electric>
-			<Fairy/>
-			<Fighting/>
-			<Fire/>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
+			<Fire>○</Fire>
 			<Flying>+</Flying>
-			<Ghost/>
+			<Ghost>○</Ghost>
 			<Grass>-</Grass>
 			<Ground>×</Ground>
-			<Ice/>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
-			<Rock/>
-			<Steel/>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
+			<Rock>○</Rock>
+			<Steel>○</Steel>
 			<Water>+</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Fairy</MoveType>
 		<PokemonType>
-			<Bug/>
+			<Bug>○</Bug>
 			<Dark>+</Dark>
 			<Dragon>+</Dragon>
-			<Electric/>
-			<Fairy/>
+			<Electric>○</Electric>
+			<Fairy>○</Fairy>
 			<Fighting>+</Fighting>
 			<Fire>-</Fire>
-			<Flying/>
-			<Ghost/>
-			<Grass/>
-			<Ground/>
-			<Ice/>
-			<Normal/>
+			<Flying>○</Flying>
+			<Ghost>○</Ghost>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
 			<Poison>-</Poison>
-			<Psychic/>
-			<Rock/>
+			<Psychic>○</Psychic>
+			<Rock>○</Rock>
 			<Steel>-</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
@@ -138,111 +138,111 @@
 		<PokemonType>
 			<Bug>-</Bug>
 			<Dark>+</Dark>
-			<Dragon/>
-			<Electric/>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
 			<Fairy>-</Fairy>
-			<Fighting/>
-			<Fire/>
+			<Fighting>○</Fighting>
+			<Fire>○</Fire>
 			<Flying>-</Flying>
 			<Ghost>×</Ghost>
-			<Grass/>
-			<Ground/>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
 			<Ice>+</Ice>
 			<Normal>+</Normal>
 			<Poison>-</Poison>
 			<Psychic>-</Psychic>
 			<Rock>+</Rock>
 			<Steel>+</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Fire</MoveType>
 		<PokemonType>
 			<Bug>+</Bug>
-			<Dark/>
-			<Dragon/>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
 			<Electric>-</Electric>
-			<Fairy/>
-			<Fighting/>
-			<Fire/>
-			<Flying/>
-			<Ghost/>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
+			<Ghost>○</Ghost>
 			<Grass>+</Grass>
-			<Ground/>
+			<Ground>○</Ground>
 			<Ice>+</Ice>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
-			<Rock/>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
+			<Rock>○</Rock>
 			<Steel>+</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Flying</MoveType>
 		<PokemonType>
 			<Bug>+</Bug>
-			<Dark/>
-			<Dragon/>
-			<Electric/>
-			<Fairy/>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
+			<Fairy>○</Fairy>
 			<Fighting>+</Fighting>
-			<Fire/>
-			<Flying/>
-			<Ghost/>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
+			<Ghost>○</Ghost>
 			<Grass>+</Grass>
-			<Ground/>
-			<Ice/>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
 			<Rock>-</Rock>
 			<Steel>-</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Ghost</MoveType>
 		<PokemonType>
-			<Bug/>
+			<Bug>○</Bug>
 			<Dark>-</Dark>
-			<Dragon/>
-			<Electric/>
-			<Fairy/>
-			<Fighting/>
-			<Fire/>
-			<Flying/>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
 			<Ghost>+</Ghost>
-			<Grass/>
-			<Ground/>
-			<Ice/>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
 			<Normal>-</Normal>
-			<Poison/>
+			<Poison>○</Poison>
 			<Psychic>+</Psychic>
-			<Rock/>
-			<Steel/>
-			<Water/>
+			<Rock>○</Rock>
+			<Steel>○</Steel>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Grass</MoveType>
 		<PokemonType>
 			<Bug>-</Bug>
-			<Dark/>
-			<Dragon/>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
 			<Electric>-</Electric>
-			<Fairy/>
-			<Fighting/>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
 			<Fire>-</Fire>
 			<Flying>-</Flying>
-			<Ghost/>
+			<Ghost>○</Ghost>
 			<Grass>-</Grass>
 			<Ground>+</Ground>
-			<Ice/>
-			<Normal/>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
 			<Poison>-</Poison>
-			<Psychic/>
+			<Psychic>○</Psychic>
 			<Rock>+</Rock>
 			<Steel>-</Steel>
 			<Water>+</Water>
@@ -251,45 +251,45 @@
 	<MoveEffectiveness>
 		<MoveType>Ground</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
-			<Dragon/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
 			<Electric>+</Electric>
-			<Fairy/>
-			<Fighting/>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
 			<Fire>+</Fire>
 			<Flying>×</Flying>
-			<Ghost/>
-			<Grass/>
+			<Ghost>○</Ghost>
+			<Grass>○</Grass>
 			<Ground>-</Ground>
 			<Ice>-</Ice>
-			<Normal/>
+			<Normal>○</Normal>
 			<Poison>+</Poison>
-			<Psychic/>
+			<Psychic>○</Psychic>
 			<Rock>+</Rock>
 			<Steel>+</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Ice</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
 			<Dragon>+</Dragon>
-			<Electric/>
-			<Fairy/>
-			<Fighting/>
+			<Electric>○</Electric>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
 			<Fire>-</Fire>
 			<Flying>+</Flying>
-			<Ghost/>
+			<Ghost>○</Ghost>
 			<Grass>+</Grass>
 			<Ground>+</Ground>
 			<Ice>-</Ice>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
-			<Rock/>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
+			<Rock>○</Rock>
 			<Steel>-</Steel>
 			<Water>-</Water>
 		</PokemonType>
@@ -297,113 +297,113 @@
 	<MoveEffectiveness>
 		<MoveType>Normal</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
-			<Dragon/>
-			<Electric/>
-			<Fairy/>
-			<Fighting/>
-			<Fire/>
-			<Flying/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
 			<Ghost>×</Ghost>
-			<Grass/>
-			<Ground/>
-			<Ice/>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
 			<Rock>-</Rock>
 			<Steel>-</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Poison</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
-			<Dragon/>
-			<Electric/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
 			<Fairy>+</Fairy>
-			<Fighting/>
-			<Fire/>
-			<Flying/>
+			<Fighting>○</Fighting>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
 			<Ghost>-</Ghost>
 			<Grass>+</Grass>
 			<Ground>-</Ground>
-			<Ice/>
-			<Normal/>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
 			<Poison>-</Poison>
-			<Psychic/>
+			<Psychic>○</Psychic>
 			<Rock>-</Rock>
 			<Steel>×</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Psychic</MoveType>
 		<PokemonType>
-			<Bug/>
+			<Bug>○</Bug>
 			<Dark>×</Dark>
-			<Dragon/>
-			<Electric/>
-			<Fairy/>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
+			<Fairy>○</Fairy>
 			<Fighting>+</Fighting>
-			<Fire/>
-			<Flying/>
-			<Ghost/>
-			<Grass/>
-			<Ground/>
-			<Ice/>
-			<Normal/>
+			<Fire>○</Fire>
+			<Flying>○</Flying>
+			<Ghost>○</Ghost>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
 			<Poison>+</Poison>
 			<Psychic>-</Psychic>
-			<Rock/>
+			<Rock>○</Rock>
 			<Steel>-</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Rock</MoveType>
 		<PokemonType>
 			<Bug>+</Bug>
-			<Dark/>
-			<Dragon/>
-			<Electric/>
-			<Fairy/>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
+			<Electric>○</Electric>
+			<Fairy>○</Fairy>
 			<Fighting>-</Fighting>
 			<Fire>+</Fire>
 			<Flying>+</Flying>
-			<Ghost/>
-			<Grass/>
+			<Ghost>○</Ghost>
+			<Grass>○</Grass>
 			<Ground>-</Ground>
 			<Ice>+</Ice>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
-			<Rock/>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
+			<Rock>○</Rock>
 			<Steel>-</Steel>
-			<Water/>
+			<Water>○</Water>
 		</PokemonType>
 	</MoveEffectiveness>
 	<MoveEffectiveness>
 		<MoveType>Steel</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
-			<Dragon/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
 			<Electric>-</Electric>
 			<Fairy>+</Fairy>
-			<Fighting/>
+			<Fighting>○</Fighting>
 			<Fire>-</Fire>
-			<Flying/>
-			<Ghost/>
-			<Grass/>
-			<Ground/>
+			<Flying>○</Flying>
+			<Ghost>○</Ghost>
+			<Grass>○</Grass>
+			<Ground>○</Ground>
 			<Ice>+</Ice>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
 			<Rock>+</Rock>
 			<Steel>-</Steel>
 			<Water>-</Water>
@@ -412,23 +412,23 @@
 	<MoveEffectiveness>
 		<MoveType>Water</MoveType>
 		<PokemonType>
-			<Bug/>
-			<Dark/>
-			<Dragon/>
+			<Bug>○</Bug>
+			<Dark>○</Dark>
+			<Dragon>○</Dragon>
 			<Electric>-</Electric>
-			<Fairy/>
-			<Fighting/>
+			<Fairy>○</Fairy>
+			<Fighting>○</Fighting>
 			<Fire>+</Fire>
-			<Flying/>
-			<Ghost/>
+			<Flying>○</Flying>
+			<Ghost>○</Ghost>
 			<Grass>-</Grass>
 			<Ground>+</Ground>
-			<Ice/>
-			<Normal/>
-			<Poison/>
-			<Psychic/>
+			<Ice>○</Ice>
+			<Normal>○</Normal>
+			<Poison>○</Poison>
+			<Psychic>○</Psychic>
 			<Rock>+</Rock>
-			<Steel/>
+			<Steel>○</Steel>
 			<Water>-</Water>
 		</PokemonType>
 	</MoveEffectiveness>
