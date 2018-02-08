@@ -213,6 +213,7 @@
     <div id="NEWS" class="NEWS">
       <xsl:apply-templates select="Article" />
     </div>
+    <!-- Need to do </div> by hand since it is opened via the script above. -->
     <xsl:value-of select="concat($lt, '/div', $gt)" disable-output-escaping="yes" />
 
     <br class="FLOAT_END" />
@@ -220,17 +221,12 @@
   </xsl:template>
 
   <xsl:template match="Article">
-    <xsl:if test="position() != 1">
-      <hr />
-    </xsl:if>
-    <h2 class="NEWS_HEADLINE">
+    <div class="NEWS_ARTICLE_HEADER">
+      <xsl:value-of select="pokeref:Replace(@date, ' ', $nbsp)" disable-output-escaping="yes" />
+    </div>
+    <div class="NEWS_HEADLINE">
       <xsl:copy-of select="Title/node()" />
-      <span class="NOTE">
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="pokeref:Replace(@date, ' ', $nbsp)" disable-output-escaping="yes" />
-        <xsl:text>)</xsl:text>
-      </span>
-    </h2>
+    </div>
     <p>
       <xsl:copy-of select="Text/node()" />
     </p>

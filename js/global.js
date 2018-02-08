@@ -319,7 +319,7 @@ function WriteFooter() {
     if (location.pathname === '/') {
         document.write('<br />');
     } else {
-        document.write(GetNavigation('/'));
+        document.write(GetFooterNavigation('/'));
         document.write('<br /><hr align="left" width="650em" />');
     }
 
@@ -328,7 +328,7 @@ function WriteFooter() {
     document.write('<br /><br /><br />');
 }
 
-function GetNavigation(href) {
+function GetFooterNavigation(href) {
     if (location.pathname === '/') {
         // We are on the home page, so do nothing.
         return '';
@@ -352,7 +352,7 @@ function GetNavigation(href) {
 
         var subhref = location.pathname.substring(0, location.pathname.indexOf('/', href.length) + 1);
         if (subhref.length !== 0) {
-            navigation = navigation + GetNavigation(subhref);
+            navigation = navigation + GetFooterNavigation(subhref);
         } else {
             // We are at the bottom. Add sibling links here.
             navigation = navigation + GetLinksList(subhref + '_linkslist.html' + CacheDate, 'font-size:smaller;');
