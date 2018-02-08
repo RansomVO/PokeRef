@@ -16,6 +16,19 @@ PokeChart:
 =========================================================================================================
 ----- Overall -----
 
+in .proj files, don't specify output unless necessary.
+
+fix dependencies for all .html (or xsl that turns into html) so that it has proper dependencies for index.css
+ - charts\raidboss\raidboss.*.page.xml">
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        \js\global.js;
+        _datafiles\raidboss.absol.xml;
+        charts\raidboss\index.css;
+        raidboss\index.css;
+        index.css;
+      </Dependencies>
+
 Look into getting favicon to show up when I add shortcut to home on Android.
 
 Add something to sprites to indicate regional.
