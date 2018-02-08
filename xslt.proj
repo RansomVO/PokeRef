@@ -8,10 +8,6 @@
     <FixIntermediateFile Include="index.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <FixIntermediateFile Include="news.xml">
-      <Visible>true</Visible>
-      <DependentUpon>index.xsl</DependentUpon>
-    </FixIntermediateFile>
     <XslTransform Include="index.page.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
@@ -26,6 +22,10 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
+    <FixIntermediateFile Include="news.xml">
+      <Visible>true</Visible>
+      <DependentUpon>index.xsl</DependentUpon>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="Web.sitemap.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
@@ -124,7 +124,6 @@
       <DependentUpon>namingtechnique.xsl</DependentUpon>
       <Dependencies>
         js\global.js;
-        charts\index.js;
         charts\index.css;
         index.css;
         css\unicode.css;
@@ -190,7 +189,7 @@
       <Visible>true</Visible>
       <DependentUpon>_linkslist.xsl</DependentUpon>
       <Dependencies>
-        __datafiles.manual\raidbosses.current.xml;
+        _datafiles.manual\raidbosses.current.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -854,7 +853,6 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
-        tech\index.js;
         js\global.js;
         tech\index.css;
         index.css;
@@ -869,7 +867,6 @@
       <Visible>true</Visible>
       <DependentUpon>movesetformulas.xsl</DependentUpon>
       <Dependencies>
-        tech\index.js;
         js\global.js;
         tech\index.css;
         index.css;

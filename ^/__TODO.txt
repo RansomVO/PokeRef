@@ -1,6 +1,4 @@
-﻿Add Extension at home so that "<!-- Region" works.
-
-=========================================================================================================
+﻿=========================================================================================================
 ----- Work in Progress -----
 
 SEAPokeMap Filter
@@ -18,6 +16,8 @@ PokeChart:
 =========================================================================================================
 ----- Overall -----
 
+Look into getting favicon to show up when I add shortcut to home on Android.
+
 Add something to sprites to indicate regional.
 
 Make an animated Loading GIF and use it in appropriate locations.
@@ -32,7 +32,7 @@ Search for TODO to find work that needs done.
 
 Add ability to specify "?Key=^" or "?Key=" to force collapsers to be up or down.
 
-Check out 
+Check out OSM:
 	http://overpass-turbo.eu/s/ulp
 	https://wiki.openstreetmap.org/wiki/Query-to-map
 
@@ -70,15 +70,9 @@ Evolutions:
 		B) Only Released
 		C) Only Unreleased.
 
-MoveSets:
-	- Put a line through the move that is Legacy.
-
 PokeChart:
-	- Add family to gens 4-7 in PokeStat.xsl.
 	- Add to Popup:
 		- If a Raid Boss, it would be nice to have a link to the Raid Boss page for it.
-		- Weak against (Effectiveness)
-		- Strong against (Effectiveness)
 	- Long-term Add to Popup:
 		- MoveSets
 		- Evolutions

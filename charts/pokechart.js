@@ -127,10 +127,16 @@ function GetFields() {
         var Selected_Pokemon_GenderRatio = document.getElementById('Selected_Pokemon_GenderRatio');
         var Selected_Pokemon_Shiny = document.getElementById('Selected_Pokemon_Shiny');
         var Selected_Pokemon_Availability = document.getElementById('Selected_Pokemon_Availability');
-        var Selected_Pokemon_Max_CP_HP = document.getElementById('Selected_Pokemon_Max_CP_HP');
+        var Selected_Pokemon_Max_CP = document.getElementById('Selected_Pokemon_Max_CP');
+        var Selected_Pokemon_Max_HP = document.getElementById('Selected_Pokemon_Max_HP');
         var Selected_Pokemon_BuddyKM = document.getElementById('Selected_Pokemon_BuddyKM');
-        var Selected_Pokemon_BaseIV = document.getElementById('Selected_Pokemon_BaseIV');
-        var Selected_Pokemon_Rates = document.getElementById('Selected_Pokemon_Rates');
+        var Selected_Pokemon_BaseIV_Attack = document.getElementById('Selected_Pokemon_BaseIV_Attack');
+        var Selected_Pokemon_BaseIV_Defense = document.getElementById('Selected_Pokemon_BaseIV_Defense');
+        var Selected_Pokemon_BaseIV_Stamina = document.getElementById('Selected_Pokemon_BaseIV_Stamina');
+        var Selected_Pokemon_CaptureRate = document.getElementById('Selected_Pokemon_CaptureRate');
+        var Selected_Pokemon_FleeRate = document.getElementById('Selected_Pokemon_FleeRate');
+
+
         var Selected_Pokemon_Strengths = document.getElementById('Selected_Pokemon_Strengths');
         var Selected_Pokemon_Weaknesses = document.getElementById('Selected_Pokemon_Weaknesses');
     }
@@ -347,10 +353,14 @@ function OnSelectPokemon(pokemon) {
     Selected_Pokemon_GenderRatio.innerHTML = GetPokemonGenderRatio(pokemon);
     Selected_Pokemon_Shiny.innerHTML = GetPokemonShiny(pokemon, true);
     Selected_Pokemon_Availability.innerHTML = GetPokemonAvailability(pokemon);
-    Selected_Pokemon_Max_CP_HP.innerHTML = GetPokemonMax_CP(pokemon) + '&nbsp;/&nbsp;' + GetPokemonMax_HP(pokemon);
+    Selected_Pokemon_Max_CP.innerHTML = GetPokemonMax_CP(pokemon);
+    Selected_Pokemon_Max_HP.innerHTML = GetPokemonMax_HP(pokemon);
     Selected_Pokemon_BuddyKM.innerHTML = GetPokemonBuddyKM(pokemon);
-    Selected_Pokemon_BaseIV.innerHTML = GetPokemonBaseAttack(pokemon) + '&nbsp;/&nbsp;' + GetPokemonBaseDefense(pokemon) + '&nbsp;/&nbsp;' + GetPokemonBaseStamina(pokemon);
-    Selected_Pokemon_Rates.innerHTML = GetPokemonCaptureRate(pokemon) + '&nbsp;/&nbsp' + GetPokemonFleeRate(pokemon);
+    Selected_Pokemon_BaseIV_Attack.innerHTML = GetPokemonBaseAttack(pokemon);
+    Selected_Pokemon_BaseIV_Defense.innerHTML = GetPokemonBaseDefense(pokemon);
+    Selected_Pokemon_BaseIV_Stamina.innerHTML = GetPokemonBaseStamina(pokemon);
+    Selected_Pokemon_CaptureRate.innerHTML = GetPokemonCaptureRate(pokemon);
+    Selected_Pokemon_FleeRate.innerHTML = GetPokemonFleeRate(pokemon);
 
     var weaknesses = GetPokemonWeakAgainst(pokemon);
     var strengths = GetPokemonStrongAgainst(pokemon);

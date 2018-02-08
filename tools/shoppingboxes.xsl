@@ -12,6 +12,12 @@
 
         <script>
           <xsl:attribute name="src">
+            <xsl:text>shoppingboxes.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <script>
+          <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
@@ -155,7 +161,7 @@
                 <tr>
                   <th>
                     <div style="float:left; text-align:left;">
-                      <input id="AllItems_Check" type="checkbox" onchange="OnAllItemsCheckChanged();" />
+                      <input id="AllItems_Check" class="NUMERIC" type="checkbox" onchange="OnAllItemsCheckChanged();" />
                     </div>Items
                   </th>
                   <th>Qty</th>

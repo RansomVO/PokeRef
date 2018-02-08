@@ -39,10 +39,6 @@
         <title>Pokemon Chart</title>
 
         <style>
-          th {
-          font-size: medium;
-          }
-
           .POPUP_CELL {
           padding-left: .25em;
           padding-right: .25em;
@@ -54,6 +50,7 @@
 
           .LABEL_BOX {
           text-align: left;
+          font-size: medium;
           }
         </style>
       </head>
@@ -98,7 +95,7 @@
                 <td colspan="2" class="POPUP_CELL LABEL_BOX">
                   <xsl:value-of select="concat($Gender_Male, $nbsp, ':', $nbsp, $Gender_Female)" disable-output-escaping="yes" />
                 </td>
-                <td id="Selected_Pokemon_GenderRatio" class="POPUP_CELL DATA_BOX" />
+                <td id="Selected_Pokemon_GenderRatio" class="POPUP_CELL DATA_BOX" align="center" />
               </tr>
               <tr>
                 <th colspan="2" class="POPUP_CELL LABEL_BOX">Shiny Available:</th>
@@ -124,16 +121,42 @@
               </tr>
               <tr>
                 <th colspan="2" class="POPUP_CELL LABEL_BOX">Max CP/HP:</th>
-                <td colspan="2" id="Selected_Pokemon_Max_CP_HP" class="POPUP_CELL DATA_BOX NUMERIC" />
+                <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+                  <table width="100%">
+                    <tr>
+                      <td id="Selected_Pokemon_Max_CP" width="49%" align="center" />
+                      <td width="2%" align="center">/</td>
+                      <td id="Selected_Pokemon_Max_HP" align="center" />
+                    </tr>
+                  </table>
+                </td>
               </tr>
               <tr />
               <tr>
                 <th colspan="2" class="POPUP_CELL LABEL_BOX">Base ATK/DEF/STA:</th>
-                <td colspan="2" id="Selected_Pokemon_BaseIV" class="POPUP_CELL DATA_BOX NUMERIC" />
+                <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+                  <table width="100%">
+                    <tr>
+                      <td id="Selected_Pokemon_BaseIV_Attack" width="32%" align="center" />
+                      <td width="2%" align="center">/</td>
+                      <td id="Selected_Pokemon_BaseIV_Defense" width="32%" align="center" />
+                      <td width="2%" align="center">/</td>
+                      <td id="Selected_Pokemon_BaseIV_Stamina"  width="32%" align="center" />
+                    </tr>
+                  </table>
+                </td>
               </tr>
               <tr>
                 <th colspan="2" class="POPUP_CELL LABEL_BOX">Base Capture/Flee Rate:</th>
-                <td colspan="2" id="Selected_Pokemon_Rates" class="POPUP_CELL DATA_BOX NUMERIC" />
+                <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+                  <table width="100%">
+                    <tr>
+                      <td id="Selected_Pokemon_CaptureRate" width="49%" align="center" />
+                      <td width="2%" align="center">/</td>
+                      <td id="Selected_Pokemon_FleeRate" align="center" />
+                    </tr>
+                  </table>
+                </td>
               </tr>
             </table>
             

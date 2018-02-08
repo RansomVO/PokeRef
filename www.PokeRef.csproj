@@ -39,8 +39,6 @@
   </PropertyGroup>
   <!-- / -->
   <ItemGroup>
-    <FixOutputFile Include="tech\GAME_MASTER\archive\index.css" />
-    <Content Include="__Debugging\index.html" />
     <FixOutputFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />
     <WebContent Include="feedbacknote.html" />
@@ -75,7 +73,6 @@
   </ItemGroup>
   <!-- /_ -->
   <ItemGroup>
-    <FixOutputFile Include="_\index.css" />
     <FixOutputFile Include="_\index.js" />
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
@@ -183,7 +180,8 @@
   <!-- /__Debugging -->
   <ItemGroup>
     <Content Include="__Debugging\debug.page.xml" />
-    <Content Include="__Debugging\debug.xsl" />
+    <FixIntermediateFile Include="__Debugging\debug.xsl" />
+    <FixOutputFile Include="__Debugging\index.html" />
     <FixOutputFile Include="__Debugging\index.css" />
   </ItemGroup>
   <!-- /css -->
@@ -277,20 +275,17 @@
   <!-- /charts -->
   <ItemGroup>
     <FixOutputFile Include="charts\_sectionname.txt" />
-    <FixOutputFile Include="charts\index.css" />
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
   <!-- /charts/movesets -->
   <ItemGroup>
-    <FixOutputFile Include="charts\movesets\index.css" />
     <FixOutputFile Include="charts\movesets\_linkslist.html" />
     <FixOutputFile Include="charts\movesets\_sectionname.txt" />
   </ItemGroup>
   <!-- /charts/raidboss -->
   <ItemGroup>
     <FixOutputFile Include="charts\raidboss\_sectionname.txt" />
-    <FixOutputFile Include="charts\raidboss\index.css" />
     <WebContent Include="charts\raidboss\images\appraise.png" />
     <WebContent Include="charts\raidboss\images\bestattribute-1.png" />
     <WebContent Include="charts\raidboss\images\bestattribute-2.png" />
@@ -324,44 +319,38 @@
   </ItemGroup>
   <!-- /resources -->
   <ItemGroup>
-    <FixOutputFile Include="resources\index.css" />
     <FixOutputFile Include="resources\_sectionname.txt" />
   </ItemGroup>
   <!-- /tech -->
   <ItemGroup>
-    <FixOutputFile Include="tech\index.css" />
     <FixOutputFile Include="tech\_sectionname.txt" />
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER -->
   <ItemGroup>
-    <FixOutputFile Include="tech\GAME_MASTER\index.css" />
     <FixOutputFile Include="tech\GAME_MASTER\_sectionname.txt" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER/moves -->
   <ItemGroup>
-    <FixOutputFile Include="tech\GAME_MASTER\moves\index.css" />
     <FixOutputFile Include="tech\GAME_MASTER\moves\_linkslist.html" />
     <FixOutputFile Include="tech\GAME_MASTER\moves\_sectionname.txt" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER/pokestats -->
   <ItemGroup>
-    <FixOutputFile Include="tech\GAME_MASTER\pokestats\index.css" />
     <FixOutputFile Include="tech\GAME_MASTER\pokestats\_linkslist.html" />
     <FixOutputFile Include="tech\GAME_MASTER\pokestats\_sectionname.txt" />
   </ItemGroup>
   <!-- /tools -->
   <ItemGroup>
-    <FixOutputFile Include="tools\index.css" />
     <FixOutputFile Include="tools\_sectionname.txt" />
   </ItemGroup>
   <!-- /xsl -->
   <ItemGroup>
-    <StyleSheet Include="xsl\global.xsl">
+    <FixIntermediateFile Include="xsl\global.xsl">
       <SubType>Designer</SubType>
-    </StyleSheet>
-    <StyleSheet Include="xsl\settings.xsl" />
+    </FixIntermediateFile>
+    <FixIntermediateFile Include="xsl\settings.xsl" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

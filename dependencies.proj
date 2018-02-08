@@ -3,153 +3,315 @@
   <!-- These are the files that have manually added Dependencies. -->
   <!-- ==================================================================================================================================================== -->
 
+  <!-- \_ -->
+  <ItemGroup>
+    <FixOutputFile Include="_\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \charts -->
+  <ItemGroup>
+    <FixOutputFile Include="charts\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \charts\movesets -->
+  <ItemGroup>
+    <FixOutputFile Include="charts\movesets\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        charts\index.css;
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \charts\raidboss -->
+  <ItemGroup>
+    <FixOutputFile Include="charts\raidboss\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        charts\index.css;
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \resources -->
+  <ItemGroup>
+    <FixOutputFile Include="resources\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \tech -->
+  <ItemGroup>
+    <FixOutputFile Include="tech\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \tech\GAME_MASTER -->
+  <ItemGroup>
+    <FixOutputFile Include="tech\GAME_MASTER\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        tech\index.css;
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
   <!-- \tech\GAME_MASTER\archive\ -->
   <ItemGroup>
-    <WebContent Include="tech\GAME_MASTER\archive\index.css" />
+    <FixOutputFile Include="tech\GAME_MASTER\archive\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
     <WebContent Include="tech\GAME_MASTER\archive\0000015638B96885_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\00000156A5379E92_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\00000156B50BE126_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\00000157153CDA4A_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015840804D3D_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\000001585572A2E1_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015888C74FCD_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\00000158F4CAF439_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\000001597FF747A8_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\000001597FF747A8_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015A4929C982_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015A959194C1_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015A959194C1_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015AA56F3405_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015AF8B44322_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015AFCED535C_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015AFCED535C_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015B1BBB017A_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015B686F6C5A_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015B686F6C5A_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015BDA516F3B_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015CC436FE0B_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015CC436FE0B_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015CEC096F1D_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015CEC096F1D_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015CF6E7776C_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015D8C7A22BC_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015D8C7A22BC_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015DDC138A59_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015DDC138A59_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015E35489938_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015E35489938_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015E7817537F_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015E7817537F_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015E9622D4A5_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015E9622D4A5_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015EE92EAAD1_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015EE92EAAD1_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015F319D5A38_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015F319D5A38_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015F3728C9B1_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000015F3728C9B1_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000016037A497F9_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\0000016037A497F9_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\000001607B20D037_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\000001607B20D037_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\00000160EC3209ED_GAME_MASTER">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
     <WebContent Include="tech\GAME_MASTER\archive\00000160EC3209ED_GAME_MASTER.json">
+      <Visible>true</Visible>
       <DependentUpon>index.page.xml</DependentUpon>
     </WebContent>
+  </ItemGroup>
+  
+  <!-- \tech\GAME_MASTER\moves -->
+  <ItemGroup>
+    <FixOutputFile Include="tech\GAME_MASTER\moves\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \tech\GAME_MASTER\pokestats -->
+  <ItemGroup>
+    <FixOutputFile Include="tech\GAME_MASTER\pokestats\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
+        index.css;
+      </Dependencies>
+  </FixOutputFile>
+  </ItemGroup>
+  
+  <!-- \tools -->
+  <ItemGroup>
+    <FixOutputFile Include="tools\index.css">
+      <Visible>true</Visible>
+      <Dependencies>
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
   </ItemGroup>
 
 </Project>

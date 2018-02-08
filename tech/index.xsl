@@ -51,10 +51,13 @@
             <a href="GAME_MASTER/pokestats/">Pokemon Stats</a>
           </h3>
           <div class="INDENT">
-            <p>
+            <p class="PARENT">
               Each Pokemon has a bunch of statistics associated with them. Candies, Types, Gender Ratios, and a whole lot more.
               <br />I have created a chart for each generation of Pokemon.
             </p>
+            <div class="INDENT CHILD">
+              <script>InsertURL('GAME_MASTER/pokestats/_linkslist.html')</script>
+            </div>
           </div>
 
           <h3>
@@ -67,10 +70,14 @@
             </p>
             <ul class="CHILD">
               <li>
-                <b>"Fast"</b>: The Moves performed by tapping on the screen during battle.
+                "<a href="moves/moves.fast.html">
+                  <b>Fast</b>
+                </a>": The Moves performed by tapping on the screen during battle.
               </li>
               <li>
-                <b>"Charged""</b>: The Moves performed by tap-and-holding on the screen during battle.
+                "<a href="moves/moves.charged.html">
+                  <b>Charged</b>
+                </a>": The Moves performed by tapping the button at the bottom of the screen during battle.
               </li>
             </ul>
             <p class="NOTE">

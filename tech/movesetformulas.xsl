@@ -250,7 +250,7 @@
                 The BaseAttack and BaseDefense for a Pokemon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokemon Stats</a> pages.
               </li>
               <li>
-                Whether a Move in a Move Set gets a STAB bonus for a specific Pokemon can be looked up on the <a href="GAME_MASTER/movesets/">Pokemon Move Sets</a> page.
+                Whether a Move in a Move Set gets a STAB bonus for a specific Pokemon can be looked up on the <a href="/charts/movesets/">Pokemon Move Sets</a> page.
               </li>
               <li>
                 CPM is a value based on the Pokemon's Level. See <a href="cpm.html">CPM</a> page.
@@ -707,7 +707,7 @@
             <br />
           </div>
           <p>
-            I refer to this as the "True DPS" on the charts in <a href="/tech/GAME_MASTER/movesets/">Pokemon Move Sets</a>.
+            I refer to this as the "True DPS" on the charts in <a href="/charts/movesets/">Pokemon Move Sets</a>.
           </p>
         </div>
 
@@ -852,7 +852,7 @@
           </div>
 
           <p>
-            I refer to this as the "MoveSet DPS" on the charts in <a href="/tech/GAME_MASTER/movesets/">Pokemon Move Sets</a>.
+            I refer to this as the "MoveSet DPS" on the charts in <a href="/charts/movesets/">Pokemon Move Sets</a>.
           </p>
         </div>
 
@@ -860,7 +860,7 @@
         <hr />
         <h2 id="anchor_sumup">Sum-Up</h2>
         <p>
-          I have included both True DPS and Move Set DPS in the <a href="GAME_MASTER/movesets/">Pokemon Move Sets</a> page.
+          I have included both True DPS and Move Set DPS in the <a href="/charts/movesets/">Pokemon Move Sets</a> page.
           However, in my humble opinion, the True DPS formula is the most useful, and the one I pay attention to the most.
         </p>
         <p>

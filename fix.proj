@@ -47,7 +47,6 @@
       <Visible>true</Visible>
       <Dependencies>
         js\global.js;
-        charts\index.js;
         charts\index.css;
         index.css;
       </Dependencies>
@@ -74,7 +73,6 @@
     <FixOutputFile Include="tech\cpm.html">
       <Visible>true</Visible>
       <Dependencies>
-        tech\index.js;
         js\global.js;
         tech\index.css;
         index.css;

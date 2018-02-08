@@ -25,6 +25,13 @@
           </xsl:attribute>
         </link>
 
+        <style>
+          td, th {
+          padding-left: 1em;
+          padding-right: 1em;
+          }
+        </style>
+
         <title>Move Effectiveness</title>
       </head>
       <body>

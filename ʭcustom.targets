@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <!-- ==================================================================================================================================================== -->
-  <!-- Region -This is the MSBuild Task that does the transformation with special work for us. (E.G. resolving paths to included files, etc. -->
+  <!-- #region -These are the custom MSBuild Tasks that do the special transformation work for us. (E.G. resolving paths to included files, etc.) -->
   <!-- For Debugging VSBuildTasks: -->
   <UsingTask AssemblyFile="D:\rvanorman\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="XslTransformation" Condition="'$(Configuration)' == 'DebugWork'" />
   <UsingTask AssemblyFile="D:\rvanorman\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="SearchAndReplace" Condition="'$(Configuration)' == 'DebugWork'" />
@@ -38,34 +38,39 @@
   <UsingTask AssemblyFile="packages\VSBuildTasks.dll" TaskName="XslTransformation" />
   <UsingTask AssemblyFile="packages\VSBuildTasks.dll" TaskName="SearchAndReplace" />
 
-  <!-- EndRegion -->
-  
+  <!-- #endregion -->
+
   <!-- ==================================================================================================================================================== -->
-  <!-- Region -Copy files to the web folder without any modification. -->
+  <!-- #region NOTES -->
+  <!-- ==================================================================================================================================================== -->
+  <!-- 
+    %(XXX.Dependencies);
+      This makes it so the values in the work item are considered Inputs so when one changes, the item is rebuilt.
+      E.G.
+  -->
+  <!-- #endregion -->
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- #region -Copy files to the web folder without any modification. -->
   <!--
         NOTE: All source that should be on website, without modification, should use this Build Action instead of plain "Content".
           This puts the items in the bin\www\ so we have a complete, filtered view of the web site.
    -->
   <Target Name="WebContent" AfterTargets="BeforeBuild"
-          Inputs="%(WebContent.Identity)"
+          Inputs="%(WebContent.Identity);%(WebContent.Dependencies);"
           Outputs="$(RootOutputFolder)%(WebContent.Identity)">
 
     <Copy SourceFiles="%(WebContent.Identity)" DestinationFolder="$(RootOutputFolder)%(RelativeDir)" SkipUnchangedFiles="true" />
   </Target>
 
-  <!-- EndRegion -->
+  <!-- #endregion -->
 
   <!-- ==================================================================================================================================================== -->
-  <!-- Region -Fix issues in source files. -->
-  <!--
-        NOTEs:
-          - The dependencies for these items are unnecessary since we are just updating text.
-          - Some of these files are used by other Targets. Those will be output to the OBJ folder.
-  -->
+  <!-- #region -Fix issues in source files. -->
 
   <!-- Update FixOutputFiles: Perform Search and replace on files. (E.G. "Pokemon" to "Pokémon", etc.) -->
   <Target Name="FixOutputFiles" AfterTargets="BeforeBuild"
-          Inputs="%(FixOutputFile.Identity)"
+          Inputs="%(FixOutputFile.Identity);%(FixOutputFile.Dependencies);"
           Outputs="$(RootOutputFolder)%(FixOutputFile.Identity)">
 
     <SearchAndReplace InputFilePath="%(FixOutputFile.Identity)" SearchStrings="@(SearchStrings)" OutputFilePath="$(RootOutputFolder)%(FixOutputFile.Identity)"/>
@@ -73,17 +78,17 @@
 
   <!-- Update FixIntermediateFile: Perform changes in FixOutputFiles, but output to intermediate (OBJ) dir. -->
   <Target Name="FixIntermediateFiles" AfterTargets="BeforeBuild"
-          Inputs="%(FixIntermediateFile.Identity)"
+          Inputs="%(FixIntermediateFile.Identity);%(FixIntermediateFile.Dependencies);"
           Outputs="$(IntDir)%(FixIntermediateFile.Identity)">
 
     <SearchAndReplace InputFilePath="%(FixIntermediateFile.Identity)" SearchStrings="@(SearchStrings)" OutputFilePath="$(IntDir)%(FixIntermediateFile.Identity)" />
   </Target>
 
-  <!-- EndRegion -->
+  <!-- #endregion -->
 
   <!-- ==================================================================================================================================================== -->
-  <!-- Region -Perform XSL Transforms. (Use *.page.xml) -->
-  <Target Name="XslTransforms" AfterTargets="BeforeBuild" DependsOnTargets="FixIntermediateFiles;FixOutputFiles"
+  <!-- #region -Perform XSL Transforms. (Use *.page.xml) -->
+  <Target Name="XslTransforms" AfterTargets="BeforeBuild" DependsOnTargets="FixIntermediateFiles;FixOutputFiles;"
           Inputs="%(XslTransform.Identity);%(RelativeDir)%(XslTransform.DependentUpon);%(XslTransform.Dependencies);xsl\global.xsl;_datafiles\settings.xml"
           Outputs="$(RootOutputFolder)%(RelativeDir)%(XslTransform.OutputFileName)">
 
@@ -94,7 +99,7 @@
                        OutputFilePath="$(RootOutputFolder)%(RelativeDir)%(XslTransform.OutputFileName)" />
   </Target>
 
-  <!-- EndRegion -->
+  <!-- #endregion -->
 
   <!-- ==================================================================================================================================================== -->
   <!-- These are to make it so items can be changed in VS UI -->

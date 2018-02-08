@@ -9,11 +9,6 @@ ul, ol, blockquote {
     margin-bottom: 0;
 }
 
-td, th {
-    padding-left: .25em;
-    padding-right: .25em;
-}
-
 th {
     font-size: larger;
 }
@@ -40,7 +35,7 @@ h1, h2, h3, h4 {
 .DISABLED {
     pointer-events: none;
     cursor: default;
-    color: grey;
+    color: gray;
     opacity: 0.2;
 }
 
@@ -72,8 +67,7 @@ h1, h2, h3, h4 {
 }
 
 .UNAVAILABLE {
-    color: silver;
-    color: grey;
+    color: gray;
 }
 
 .BUTTON {
@@ -130,7 +124,7 @@ h1, h2, h3, h4 {
     z-index: 1; /* Stay in front */
     padding: 0;
     background-color: white;
-    border: 4px outset grey;
+    border: 4px outset gray;
     margin: auto;
     left: -1px;
 }
@@ -172,8 +166,8 @@ h1, h2, h3, h4 {
 }
 
 .UNAVAILABLE_ROW {
-    color: lightgrey;
-    background-color: darkgrey;
+    color: lightgray;
+    background-color: darkgray;
 }
 
 .ROTATED_CONTAINER {
@@ -277,7 +271,7 @@ h1, h2, h3, h4 {
 /*#region Classes that are leveraged for outputting content general to all pages. (E.G. Footer) */
 .BOTTOM_BORDER {
     border-width: 2px;
-    border-color: darkgrey;
+    border-color: darkgray;
     clear: both;
 }
 
@@ -310,7 +304,15 @@ h1, h2, h3, h4 {
 }
 
 .UNUSED {
-    background-color: darkgrey;
+    background-color: darkgray;
+}
+
+.LEGACY_MOVESET {
+    color: gray;
+}
+
+.LEGACY_MOVE {
+    text-decoration:line-through;
 }
 
 .SHADED {

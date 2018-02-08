@@ -838,40 +838,47 @@
 
         <br />
         <hr />
-        <h2 id="anchor_examples">Examples:</h2>
-        <table>
-          <tr>
-            <td class="CHARS" style="text-align:left;">&#x277F;&#x24FF;</td>
-            <td>-</td>
-            <td>Pokemon with Perfect IV (100%)</td>
-          </tr>
-          <tr>
-            <td class="CHARS" style="text-align:left;">82&#x246C;&#x246A;&#x246D;</td>
-            <td>-</td>
-            <td>Pokemon with Attack=13 / Defense=11 / HP=14</td>
-          </tr>
-          <tr>
-            <td class="CHARS" style="text-align:left;">86-91</td>
-            <td>-</td>
-            <td>Pokemon with IV in Range of 86% to 91%</td>
-          </tr>
-        </table>
-        <br />
-        <div class="NOTE_BLOCK INDENT">
-          <p>
-            <b>NOTE</b>:
-            I use GoIV to calculate the IV scores for my Pokemon.
-            (More info <a href="/resources/index.html#GOIV">here</a>.)
-            I have set it to create the basic pattern and copy it to the clipboard:
-          </p>
-          <div class="INDENT">
-            <img class="IMAGE_HALF_WIDTH" src="/images/GoIV-Clipboard_Multiple.png" />
-            <img class="IMAGE_HALF_WIDTH" src="/images/GoIV-Clipboard_Single.png" />
+        <h2 id="anchor_examples">
+          Examples:
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="'NAMING_EXAMPLES'" />
+          </xsl:call-template>
+        </h2>
+        <div id="NAMING_EXAMPLES">
+          <table>
+            <tr>
+              <td class="CHARS" style="text-align:left;">&#x277F;&#x24FF;</td>
+              <td>-</td>
+              <td>Pokemon with Perfect IV (100%)</td>
+            </tr>
+            <tr>
+              <td class="CHARS" style="text-align:left;">82&#x246C;&#x246A;&#x246D;</td>
+              <td>-</td>
+              <td>Pokemon with Attack=13 / Defense=11 / HP=14</td>
+            </tr>
+            <tr>
+              <td class="CHARS" style="text-align:left;">86-91</td>
+              <td>-</td>
+              <td>Pokemon with IV in Range of 86% to 91%</td>
+            </tr>
+          </table>
+          <br />
+          <div class="NOTE_BLOCK INDENT">
+            <p>
+              <b>NOTE</b>:
+              I use GoIV to calculate the IV scores for my Pokemon.
+              (More info <a href="/resources/index.html#GOIV">here</a>.)
+              I have set it to create the basic pattern and copy it to the clipboard:
+            </p>
+            <div class="INDENT">
+              <img class="IMAGE_HALF_WIDTH" src="/images/GoIV-Clipboard_Multiple.png" />
+              <img class="IMAGE_HALF_WIDTH" src="/images/GoIV-Clipboard_Single.png" />
+            </div>
+            <p>
+              I then paste it on the front of the Pokemon's name.
+              <br />For example, if I caught a Snorlax, its name would end up something like "98&#x246E;&#x246D;&#x246E;Snorlax".
+            </p>
           </div>
-          <p>
-            I then paste it on the front of the Pokemon's name.
-            <br />For example, if I caught a Snorlax, its name would end up something like "98&#x246E;&#x246D;&#x246E;Snorlax".
-          </p>
         </div>
 
         <!-- This script is defined in /js/global.js -->

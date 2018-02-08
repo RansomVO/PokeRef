@@ -9,13 +9,14 @@
     - Make it so table scrolls, leaving the headers at the top.
 -->
 
-  <!-- Global Variables -->
+  <!-- #region Global Variables -->
   <xsl:variable name="MaxDPS" select="format-number(Root/Stats/MoveSets/Overall/DPS/Max, '##.0')" />
   <xsl:variable name="AverageDPS" select="format-number(Root/Stats/MoveSets/Overall/DPS/Average, '##.0')" />
   <xsl:variable name="MaxTrueDPS" select="format-number(Root/Stats/MoveSets/Overall/TrueDPS/Max, '##.0')" />
   <xsl:variable name="AverageTrueDPS" select="format-number(Root/Stats/MoveSets/Overall/TrueDPS/Average, '##.0')" />
 
   <xsl:variable name="DPSOkay" select="number($AverageDPS)" />
+  <!-- #endregion-->
 
   <!-- Main Template -->
   <xsl:template match="/Root">
@@ -154,11 +155,18 @@
         <div id="Loading">
           <h1>Loading...</h1>
         </div>
-        <!-- Leave this hidden until we have loaded everything and applied it. -->
+        <!-- Leave this hidden until everything is loaded and .js has applied it. -->
         <div id="Loaded" class="DIV_HIDDEN">
           <div id="anchor_movesets">
             <table border="1" id="MoveSets">
               <xsl:call-template name="CreateTableHeaders" />
+              <tr class="Header">
+                <td colspan="11" height="2px" style="background-color:black" />
+              </tr>
+              <xsl:call-template name="CreateKey" />
+              <tr class="Header">
+                <td colspan="11" height="1px" style="background-color:grey" />
+              </tr>
             </table>
           </div>
 
@@ -178,9 +186,6 @@
     <tr class="Header" style="font-size:xx-large;">
       <th colspan="3" valign="bottom">Pokemon</th>
       <th colspan="2" valign="bottom">Move Set</th>
-      <th class="ROTATED_CONTAINER" rowspan="2">
-        <div class="ROTATED" style="font-size:x-large;">Legacy</div>
-      </th>
       <th colspan="2" valign="bottom">STAB</th>
       <th colspan="3" valign="bottom">Damage</th>
     </tr>
@@ -199,14 +204,25 @@
       </th>
       <th valign="bottom" style="font-size:x-large;">%</th>
     </tr>
+  </xsl:template>
 
-    <!-- Write the Key for the table. -->
-    <tr class="Header">
-      <td colspan="11" height="2px" style="background-color:black" />
+  <!-- Template to write the Key for the table. -->
+  <xsl:template name="CreateKey">
+    <tr class="Header" comment="Legacy Moveset">
+      <th colspan="3" rowspan="6" style="font-size:x-large; text-align:right;">Key:</th>
+      <td class="LEGACY_MOVESET" colspan="7">
+        <spanMove class="NOTE">(Grey Text)</spanMove><xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />Move Set with a Move that is no longer available to the Pokemon. ("Legacy Move")
+      </td>
     </tr>
+    <tr class="Header" comment="Legacy Move">
+      <td colspan="2" class="LEGACY_MOVESET LEGACY_MOVE">
+        Legacy Move
+      </td>
+      <td class="UNUSED" colspan="5" />
+    </tr>
+
     <tr class="Header" comment="GREAT">
-      <th colspan="3" rowspan="4" style="font-size:x-large; text-align:right;">Key:</th>
-      <td class="GREAT" colspan="5">
+      <td class="GREAT" colspan="4">
         True DPS is &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible.
       </td>
       <td colspan="2" class="GREAT" align="center">
@@ -217,7 +233,7 @@
       </td>
     </tr>
     <tr class="Header" comment="GOOD">
-      <td class="GOOD" colspan="5">
+      <td class="GOOD" colspan="4">
         True DPS is &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible.
       </td>
       <td colspan="2" class="GOOD" align="center">
@@ -228,7 +244,7 @@
       </td>
     </tr>
     <tr class="Header" comment="POOR">
-      <td class="POOR" colspan="5">
+      <td class="POOR" colspan="4">
         True DPS is Above Average.
       </td>
       <td colspan="2" class="POOR" align="center">
@@ -239,7 +255,7 @@
       </td>
     </tr>
     <tr class="Header" comment="BAD">
-      <td class="BAD" colspan="5">
+      <td class="BAD" colspan="4">
         True DPS is Below Average.
       </td>
       <td colspan="2" class="BAD" align="center">
@@ -248,9 +264,6 @@
       <td class="BAD" align="right">
         &lt; <xsl:value-of select="100*$DPSPercentOkay" />
       </td>
-    </tr>
-    <tr class="Header">
-      <td colspan="11" height="1px" style="background-color:grey" />
     </tr>
   </xsl:template>
 
@@ -273,12 +286,12 @@
         </xsl:attribute>
         <xsl:attribute name="fastMoves">
           <xsl:call-template name="MovesAttribute">
-            <xsl:with-param name="Moves" select="../MoveSet[Pokemon/ID=$PokemonID]/Attack/Fast" />
+            <xsl:with-param name="Moves" select="../MoveSet[Pokemon/ID=$PokemonID]/FastAttack/Move" />
           </xsl:call-template>
         </xsl:attribute>
         <xsl:attribute name="chargedMoves">
           <xsl:call-template name="MovesAttribute">
-            <xsl:with-param name="Moves" select="../MoveSet[Pokemon/ID=$PokemonID]/Attack/Charged" />
+            <xsl:with-param name="Moves" select="../MoveSet[Pokemon/ID=$PokemonID]/ChargedAttack/Move" />
           </xsl:call-template>
         </xsl:attribute>
 
@@ -322,30 +335,28 @@
 
   <!-- Template to create rows for a Pokemon's Move Sets -->
   <xsl:template match="MoveSet">
-    <xsl:variable name="legacy" select="Legacy != ''" />
+    <xsl:variable name="legacyFast" select="FastAttack/Legacy != ''" />
+    <xsl:variable name="legacyCharged" select="ChargedAttack/Legacy != ''" />
+    <xsl:variable name="legacy" select="$legacyFast or $legacyCharged" />
     <xsl:variable name="valueDamageDPS" select="format-number(Damage/DPS, '#0.00')" />
     <xsl:variable name="valueDamageTrueDPS" select="format-number(Damage/TrueDPS, '#0.00')" />
     <xsl:variable name="valueDamagePercentOfMax" select="format-number((Damage/PercentOfMax) * 100, '##0')" />
 
-    <xsl:variable name="FastMoveName" select="Attack/Fast" />
+    <xsl:variable name="FastMoveName" select="FastAttack/Move" />
     <xsl:call-template name="MoveSetCell">
       <xsl:with-param name="Content" select="$FastMoveName" />
       <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[Name=$FastMoveName]/Type" />
       <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
+      <xsl:with-param name="LegacyMove" select="$legacyFast" />
       <xsl:with-param name="Legacy" select="$legacy" />
     </xsl:call-template>
-    <xsl:variable name="ChargedMoveName" select="Attack/Charged" />
+    <xsl:variable name="ChargedMoveName" select="ChargedAttack/Move" />
     <xsl:call-template name="MoveSetCell">
       <xsl:with-param name="Content" select="$ChargedMoveName" />
       <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[Name=$ChargedMoveName]/Type" />
       <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
+      <xsl:with-param name="LegacyMove" select="$legacyCharged" />
       <xsl:with-param name="Legacy" select="$legacy" />
-    </xsl:call-template>
-    <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="Legacy" />
-      <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
-      <xsl:with-param name="Legacy" select="$legacy" />
-      <xsl:with-param name="Align" select="center" />
     </xsl:call-template>
     <xsl:call-template name="MoveSetCell">
       <xsl:with-param name="Content">
@@ -385,6 +396,7 @@
     <xsl:param name="TrueDPS" />
     <xsl:param name="Percent" />
     <xsl:param name="Legacy" />
+    <xsl:param name="LegacyMove" />
     <xsl:param name="Align" />
     <xsl:param name="TypeIcon" />
 
@@ -398,15 +410,19 @@
         <xsl:when test="number($Content) = $Content">
           <xsl:attribute name="align">right</xsl:attribute>
         </xsl:when>
-        <xsl:when test="$Content = 'X' or $Content = 'TRUE' or $Content = 'FALSE'">
+        <xsl:when test="$Content = 'TRUE' or $Content = 'FALSE'">
           <xsl:attribute name="align">center</xsl:attribute>
         </xsl:when>
       </xsl:choose>
 
+
       <xsl:if test="$DPS != '' or $TrueDPS != '' or $Percent != '' or $Legacy != ''">
         <xsl:attribute name="class">
           <xsl:if test="$Legacy != ''">
-            <xsl:text>UNAVAILABLE </xsl:text>
+            <xsl:text>LEGACY_MOVESET </xsl:text>
+          </xsl:if>
+          <xsl:if test="$LegacyMove != ''">
+            <xsl:text>LEGACY_MOVE </xsl:text>
           </xsl:if>
           <xsl:choose>
             <xsl:when test="$DPS != ''">
