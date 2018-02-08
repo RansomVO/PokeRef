@@ -83,7 +83,7 @@
             <p class="PARENT">
               <b>NOTE</b>: These are the values necessary to calculate the DPS of Move Sets:
             </p>
-            <script>InsertURL("/charts/movesets/_linkslist.html")</script>
+            <script>InsertURL("/charts/movesets/_linkslist.html?cacherefresh={$CurrentDate}")</script>
           </div>
         </div>
 

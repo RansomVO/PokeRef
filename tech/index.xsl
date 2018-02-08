@@ -56,7 +56,7 @@
               <br />I have created a chart for each generation of Pokemon.
             </p>
             <div class="INDENT CHILD">
-              <script>InsertURL('GAME_MASTER/pokestats/_linkslist.html')</script>
+              <script>InsertURL('GAME_MASTER/pokestats/_linkslist.html?cacherefresh={$CurrentDate}')</script>
             </div>
           </div>
 
@@ -87,7 +87,7 @@
               Here are charts with the important values regarding each type:
             </p>
             <div class="CHILD">
-              <script>InsertURL('moves/_linkslist.html')</script>
+              <script>InsertURL('moves/_linkslist.html?cacherefresh={$CurrentDate}')</script>
             </div>
           </div>
 

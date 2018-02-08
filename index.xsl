@@ -131,7 +131,7 @@
                   <br />Click on any of the Raid Bosses below to see a chart of the possibilities.
                 </p>
                 <div class="CHILD">
-                  <script>InsertURL('charts/raidboss/_linkslist.html')</script>
+                  <script>InsertURL('charts/raidboss/_linkslist.html?cacherefresh={$CurrentDate}')</script>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@
                 <br />These pages shows a list of each possible combination for each type of Pokemon, which then tells how much damage it will do.
               </p>
               <div class="CHILD">
-                <script>InsertURL('charts/movesets/_linkslist.html')</script>
+                <script>InsertURL('charts/movesets/_linkslist.html?cacherefresh={$CurrentDate}')</script>
               </div>
             </div>
 
@@ -180,7 +180,7 @@
                     <br />I have created charts containing what I consider to be the important info for each generation of Pokemon:
                   </p>
                   <div class="CHILD">
-                    <script>InsertURL('tech/GAME_MASTER/pokestats/_linkslist.html')</script>
+                    <script>InsertURL('tech/GAME_MASTER/pokestats/_linkslist.html?cacherefresh={$CurrentDate}')</script>
                   </div>
                 </div>
               </div>

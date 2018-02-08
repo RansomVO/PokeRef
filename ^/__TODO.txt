@@ -16,18 +16,9 @@ PokeChart:
 =========================================================================================================
 ----- Overall -----
 
-in .proj files, don't specify output unless necessary.
-
-fix dependencies for all .html (or xsl that turns into html) so that it has proper dependencies for index.css
- - charts\raidboss\raidboss.*.page.xml">
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        \js\global.js;
-        _datafiles\raidboss.absol.xml;
-        charts\raidboss\index.css;
-        raidboss\index.css;
-        index.css;
-      </Dependencies>
+It would be nice if the .proj files could be updated to include the Dependencies of the Dependencies. (and DependentUpon?)
+	E.G. We could say that raidboss\_linkslist.page.xml was one of Dependencies. Then the Item would also include the Dependencies of raidboss\_linkslist.page.xml
+		NOTE: Use the .xml because that is the file that is transformed and it depends upon the .xsl.
 
 Look into getting favicon to show up when I add shortcut to home on Android.
 

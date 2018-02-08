@@ -1,12 +1,16 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- ==================================================================================================================================================== -->
-  <!-- These are the files that we will Transform. -->
+  <!-- These are the files that we will use to peform XSL Transform . -->
   <!-- ==================================================================================================================================================== -->
 
   <!-- Root Folder -->
   <ItemGroup>
     <FixIntermediateFile Include="index.xsl">
       <Visible>true</Visible>
+      <Dependencies>
+        charts\raidboss\_linkslist.page.xml;
+        tech\GAME_MASTER\pokestats\_linkslist.html;
+      </Dependencies>
     </FixIntermediateFile>
     <XslTransform Include="index.page.xml">
       <Visible>true</Visible>
@@ -26,6 +30,7 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
     </FixIntermediateFile>
+    
     <FixIntermediateFile Include="Web.sitemap.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
@@ -218,7 +223,7 @@
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
         charts\raidboss\index.css;
-        raidboss\index.css;
+        charts\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
@@ -231,22 +236,16 @@
     <FixIntermediateFile Include="charts\raidboss\raidboss.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <FixOutputFile Include="charts\raidboss\raidboss.js">
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Visible>true</Visible>
-      <Dependencies>
-        js/global.js;
-      </Dependencies>
-    </FixOutputFile>
+    <!-- #region RaidBoss pages -->
     <XslTransform Include="charts\raidboss\raidboss.absol.page.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
-        \js\global.js;
+        js\global.js;
         _datafiles\raidboss.absol.xml;
         charts\raidboss\index.css;
-        raidboss\index.css;
+        charts\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>raidboss.absol.html</OutputFileName>
@@ -256,7 +255,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.aggron.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.aggron.html</OutputFileName>
     </XslTransform>
@@ -265,7 +268,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.alakazam.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.alakazam.html</OutputFileName>
     </XslTransform>
@@ -274,7 +281,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.arcanine.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.arcanine.html</OutputFileName>
     </XslTransform>
@@ -283,7 +294,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.articuno.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.articuno.html</OutputFileName>
     </XslTransform>
@@ -292,7 +307,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.bayleef.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.bayleef.html</OutputFileName>
     </XslTransform>
@@ -301,7 +320,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.blastoise.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.blastoise.html</OutputFileName>
     </XslTransform>
@@ -310,7 +333,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.celebi.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.celebi.html</OutputFileName>
     </XslTransform>
@@ -319,7 +346,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.charizard.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.charizard.html</OutputFileName>
     </XslTransform>
@@ -328,7 +359,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.charmeleon.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.charmeleon.html</OutputFileName>
     </XslTransform>
@@ -337,7 +372,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.cloyster.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.cloyster.html</OutputFileName>
     </XslTransform>
@@ -346,7 +385,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.croconaw.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.croconaw.html</OutputFileName>
     </XslTransform>
@@ -355,7 +398,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.electabuzz.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.electabuzz.html</OutputFileName>
     </XslTransform>
@@ -364,7 +411,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.entei.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.entei.html</OutputFileName>
     </XslTransform>
@@ -373,7 +424,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.exeggutor.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.exeggutor.html</OutputFileName>
     </XslTransform>
@@ -382,7 +437,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.flareon.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.flareon.html</OutputFileName>
     </XslTransform>
@@ -391,7 +450,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.gengar.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.gengar.html</OutputFileName>
     </XslTransform>
@@ -400,7 +463,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.golem.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.golem.html</OutputFileName>
     </XslTransform>
@@ -409,7 +476,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.groudon.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.groudon.html</OutputFileName>
     </XslTransform>
@@ -418,7 +489,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.ho-oh.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.ho-oh.html</OutputFileName>
     </XslTransform>
@@ -427,7 +502,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.ivysaur.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.ivysaur.html</OutputFileName>
     </XslTransform>
@@ -436,7 +515,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.jirachi.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.jirachi.html</OutputFileName>
     </XslTransform>
@@ -445,7 +528,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.jolteon.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.jolteon.html</OutputFileName>
     </XslTransform>
@@ -454,7 +541,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.kyogre.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.kyogre.html</OutputFileName>
     </XslTransform>
@@ -463,7 +554,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.lapras.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.lapras.html</OutputFileName>
     </XslTransform>
@@ -472,7 +567,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.latias.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.latias.html</OutputFileName>
     </XslTransform>
@@ -481,7 +580,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.latios.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.latios.html</OutputFileName>
     </XslTransform>
@@ -490,7 +593,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.lugia.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.lugia.html</OutputFileName>
     </XslTransform>
@@ -499,7 +606,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.machamp.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.machamp.html</OutputFileName>
     </XslTransform>
@@ -508,7 +619,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.magikarp.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.magikarp.html</OutputFileName>
     </XslTransform>
@@ -517,7 +632,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.magmar.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.magmar.html</OutputFileName>
     </XslTransform>
@@ -526,7 +645,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.magneton.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.magneton.html</OutputFileName>
     </XslTransform>
@@ -535,7 +658,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.marowak.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.marowak.html</OutputFileName>
     </XslTransform>
@@ -544,7 +671,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.mawile.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.mawile.html</OutputFileName>
     </XslTransform>
@@ -553,7 +684,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.metapod.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.metapod.html</OutputFileName>
     </XslTransform>
@@ -562,7 +697,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.mew.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.mew.html</OutputFileName>
     </XslTransform>
@@ -571,7 +710,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.mewtwo.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.mewtwo.html</OutputFileName>
     </XslTransform>
@@ -580,7 +723,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.moltres.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.moltres.html</OutputFileName>
     </XslTransform>
@@ -589,7 +736,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.muk.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.muk.html</OutputFileName>
     </XslTransform>
@@ -598,7 +749,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.nidoking.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.nidoking.html</OutputFileName>
     </XslTransform>
@@ -607,7 +762,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.nidoqueen.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.nidoqueen.html</OutputFileName>
     </XslTransform>
@@ -616,7 +775,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.ninetales.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.ninetales.html</OutputFileName>
     </XslTransform>
@@ -625,7 +788,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.omastar.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.omastar.html</OutputFileName>
     </XslTransform>
@@ -634,7 +801,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.poliwrath.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.poliwrath.html</OutputFileName>
     </XslTransform>
@@ -643,7 +814,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.porygon.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.porygon.html</OutputFileName>
     </XslTransform>
@@ -652,7 +827,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.quilava.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.quilava.html</OutputFileName>
     </XslTransform>
@@ -661,7 +840,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.raikou.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.raikou.html</OutputFileName>
     </XslTransform>
@@ -670,7 +853,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.rayquaza.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.rayquaza.html</OutputFileName>
     </XslTransform>
@@ -679,7 +866,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.regice.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.regice.html</OutputFileName>
     </XslTransform>
@@ -688,7 +879,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.regirock.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.regirock.html</OutputFileName>
     </XslTransform>
@@ -697,7 +892,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.registeel.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.registeel.html</OutputFileName>
     </XslTransform>
@@ -706,7 +905,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.rhydon.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.rhydon.html</OutputFileName>
     </XslTransform>
@@ -715,7 +918,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.sableye.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.sableye.html</OutputFileName>
     </XslTransform>
@@ -724,7 +931,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.sandslash.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.sandslash.html</OutputFileName>
     </XslTransform>
@@ -733,7 +944,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.scyther.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.scyther.html</OutputFileName>
     </XslTransform>
@@ -742,7 +957,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.snorlax.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.snorlax.html</OutputFileName>
     </XslTransform>
@@ -751,7 +970,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.suicune.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.suicune.html</OutputFileName>
     </XslTransform>
@@ -760,7 +983,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.tentacruel.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.tentacruel.html</OutputFileName>
     </XslTransform>
@@ -769,7 +996,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.tyranitar.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.tyranitar.html</OutputFileName>
     </XslTransform>
@@ -778,7 +1009,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.vaporeon.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.vaporeon.html</OutputFileName>
     </XslTransform>
@@ -787,7 +1022,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.venusaur.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.venusaur.html</OutputFileName>
     </XslTransform>
@@ -796,7 +1035,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.victreebel.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.victreebel.html</OutputFileName>
     </XslTransform>
@@ -805,7 +1048,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.wailmer.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.wailmer.html</OutputFileName>
     </XslTransform>
@@ -814,7 +1061,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.wartortle.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.wartortle.html</OutputFileName>
     </XslTransform>
@@ -823,7 +1074,11 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.weezing.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.weezing.html</OutputFileName>
     </XslTransform>
@@ -832,10 +1087,22 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
         charts\raidboss\raidboss.js;
+        js\global.js;
         _datafiles\raidboss.zapdos.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>raidboss.zapdos.html</OutputFileName>
     </XslTransform>
+    <!-- #endregion -->
+    <FixOutputFile Include="charts\raidboss\raidboss.js">
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
+    </FixOutputFile>
   </ItemGroup>
 
   <!-- Charts/Effectiveness -->
@@ -861,6 +1128,8 @@
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
         js\global.js;
+        tech\GAME_MASTER\moves\_linkslist.html;
+        tech\GAME_MASTER\pokestats\_linkslist.html;
         tech\index.css;
         index.css;
       </Dependencies>
@@ -893,14 +1162,18 @@
       <Dependencies>
         _datafiles\GAME_MASTER.xml;
         tech\GAME_MASTER\archive\index.css;
-        GAME_MASTER\archive\index.css;
-        archive\index.css;
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
+    
     <FixIntermediateFile Include="tech\GAME_MASTER\moves\moves.xsl">
       <Visible>true</Visible>
+      <Dependencies>
+        charts\movesets\_linkslist.html;
+      </Dependencies>
     </FixIntermediateFile>
     <XslTransform Include="tech\GAME_MASTER\moves\moves.charged.page.xml">
       <Visible>true</Visible>
@@ -908,8 +1181,8 @@
       <Dependencies>
         _datafiles\moves.charged.xml;
         tech\GAME_MASTER\moves\index.css;
-        GAME_MASTER\moves\index.css;
-        moves\index.css;
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>moves.charged.html</OutputFileName>
@@ -920,12 +1193,13 @@
       <Dependencies>
         _datafiles\moves.fast.xml;
         tech\GAME_MASTER\moves\index.css;
-        GAME_MASTER\moves\index.css;
-        moves\index.css;
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>moves.fast.html</OutputFileName>
     </XslTransform>
+    
     <FixIntermediateFile Include="tech\GAME_MASTER\pokestats\pokestats.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
@@ -935,8 +1209,8 @@
       <Dependencies>
         _datafiles\pokestats.gen1.xml;
         tech\GAME_MASTER\pokestats\index.css;
-        GAME_MASTER\pokestats\index.css;
-        moves\pokestats.css;
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>pokestats.gen1.html</OutputFileName>
@@ -947,8 +1221,8 @@
       <Dependencies>
         _datafiles\pokestats.gen2.xml;
         tech\GAME_MASTER\pokestats\index.css;
-        GAME_MASTER\pokestats\index.css;
-        moves\pokestats.css;
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>pokestats.gen2.html</OutputFileName>
@@ -959,8 +1233,8 @@
       <Dependencies>
         _datafiles\pokestats.gen3.xml;
         tech\GAME_MASTER\pokestats\index.css;
-        GAME_MASTER\pokestats\index.css;
-        moves\pokestats.css;
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>pokestats.gen3.html</OutputFileName>
@@ -971,8 +1245,8 @@
       <Dependencies>
         _datafiles\pokestats.gen4.xml;
         tech\GAME_MASTER\pokestats\index.css;
-        GAME_MASTER\pokestats\index.css;
-        moves\pokestats.css;
+        tech\GAME_MASTER\index.css;
+        tech\index.css;
         index.css;
       </Dependencies>
       <OutputFileName>pokestats.gen4.html</OutputFileName>
