@@ -14,21 +14,19 @@ var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
 // ==============================================================================================
 // Called when page is loaded to perform up-front work.
 // ==============================================================================================
+var globalOldOnLoad = window.onload;
 window.onload = function () {
     try {
-        SetCollapsers();
-
-        // This allows individual page to define scripts that are local to them.
-        //  Any non-value modifications should be done here.
-        //  (E.G. javascript initial values/calculations, etc.)
-        if (typeof LocalScript === "function") {
-            LocalScript();
+        if (globalOldOnLoad != null) {
+            globalOldOnLoad();
         }
+
+        SetCollapsers();
     }
     catch (err) {
         ShowError(err);
     }
-}
+};
 
 // ==============================================================================================
 // #region Add Functions that are missing from some browsers (usually IE)

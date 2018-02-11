@@ -100,6 +100,11 @@
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
       <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen1.xml;

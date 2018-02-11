@@ -15,6 +15,12 @@
 
   <!-- \js\ -->
   <ItemGroup>
+    <FixOutputFile Include="js\controls.js">
+      <Visible>true</Visible>
+      <Dependencies>
+      </Dependencies>
+    </FixOutputFile>
+
     <FixOutputFile Include="js\global.js">
       <Visible>true</Visible>
       <Dependencies>

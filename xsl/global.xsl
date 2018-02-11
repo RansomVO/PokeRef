@@ -8,7 +8,7 @@
   <xsl:include href="settings.xsl"/>
 
   <!-- ************************************************************************************************************************ -->
-  <!-- #region -Global variables -->
+  <!-- #region Global variables -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Variable that tells how many generations of Pokemon have been released. -->
@@ -16,7 +16,7 @@
 
   <!-- Constants (Needed because XSL doesn't like them raw in select statements, etc.)-->
   <!-- NOTE:  -->
-  
+
   <!-- Need these because they may intefere with quotes in strings. -->
   <xsl:variable name="quot">"</xsl:variable>
   <xsl:variable name="apos">'</xsl:variable>
@@ -36,7 +36,7 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- #region -Templates to output Pokemon image -->
+  <!-- #region Templates to output Pokemon image -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Template to Output a Pokemon. -->
@@ -187,7 +187,7 @@
       <xsl:attribute name="fleeRate">
         <xsl:value-of select="Stats/Rates/Flee" />
       </xsl:attribute>
-      
+
       <!-- Not using these at this time.
       <xsl:attribute name="heightStandard">
         <xsl:value-of select="Stats/Height/Standard" />
@@ -208,7 +208,7 @@
         <xsl:value-of select="Stats/Probability/Dodge" />
       </xsl:attribute>
 -->
-      
+
       <xsl:if test="count(exslt:node-set($CustomAttributes)) != 0">
         <xsl:for-each select="exslt:node-set($CustomAttributes)/*/@*">
           <xsl:attribute name="{name()}">
@@ -408,13 +408,13 @@
     <xsl:param name="Type" />
 
     <xsl:if test="$Type != ''">
-      <xsl:call-template name="OutputBoostIconByWeather">
+      <xsl:call-template name="OutputWeatherIcon">
         <xsl:with-param name="Weather" select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
       </xsl:call-template>
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="OutputBoostIconByWeather">
+  <xsl:template name="OutputWeatherIcon">
     <xsl:param name="Weather" />
 
     <img class="TAG_ICON">
@@ -479,7 +479,7 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- #region -Collapser template -->
+  <!-- #region Collapser template -->
   <!-- ************************************************************************************************************************ -->
 
   <xsl:template name="Collapser">
@@ -498,7 +498,7 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- #region -Support Templates -->
+  <!-- #region Support Templates -->
   <!-- ************************************************************************************************************************ -->
 
   <xsl:template match="*" mode="AddSetting">
@@ -523,7 +523,7 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- #region -pokeref methods  (C#) -->
+  <!-- #region pokeref methods  (C#) -->
   <!-- ************************************************************************************************************************ -->
 
   <msxsl:script language="C#" implements-prefix="pokeref">
@@ -548,8 +548,8 @@
 
   <!-- #endregion -->
 
-  <!-- ************************************************************************************************************************ -->
-  <!-- #region -DEBUGGING TEMPLATES -->
+    <!-- ************************************************************************************************************************ -->
+  <!-- #region DEBUGGING TEMPLATES -->
   <!-- ************************************************************************************************************************ -->
 
   <!-- Templates to output the contents of Node(s). -->

@@ -170,10 +170,12 @@ function ApplyCookie() {
 
 // #endregion Cookies
 
-// ============================================================================
-// ===== LocalScript (Called when page is loaded to perform any initial work.)
-// ============================================================================
-function LocalScript() {
+// ==============================================================================================
+// Called when page is loaded to perform up-front work.
+// ==============================================================================================
+// NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
+//          the window.onnload() from the other scripts have the opportunity to overload this.
+window.onload = function () {
     GetFields();
     DoSeaPokeMapDisable();
     ApplyCookie();

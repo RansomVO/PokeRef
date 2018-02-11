@@ -1,7 +1,6 @@
 ﻿// ============================================================================
-// ===== Global Variables
-// ============================================================================
 // #region Global Variables
+// ============================================================================
 
 // Constants: Prices in Shop
 var PremiumRaidPass_Value_Qty = 1; var PremiumRaidPass_Value_Price = 100;
@@ -26,13 +25,33 @@ var GoldenBerries_AssumedValue = 10;
 // #endregion Global Variables
 
 // ****************************************************************************
-// ***** Values that should be updated each time new boxes come out. **********
+// #region Values that should be updated each time new boxes come out. **********
 // ****************************************************************************
-var ShoppingBox_Update_Date = '12 Jan 2018';
-var ShoppingBox_Update_Note = '(I have no idea what the occasion is.)';
+var ShoppingBox_Update_Date = '9 Feb 2018';
+var ShoppingBox_Update_Note = 'More Pokemon Originally from the Hoenn region';
 
 var SpecialBox = {
     'Price': 480,
+    'PremiumRaidPass': 0,
+    'MaxRevives': 0,
+    'MaxPotions': 0,
+    'PokeBalls': 0,
+    'GreatBalls': 0,
+    'UltraBalls': 0,
+    'Lures': 0,
+    'Incubator': 2,
+    'LuckyEggs': 0,
+    'Incense': 3,
+    'StarPiece': 6,
+    'SuperIncubator': 0,
+    'RazzBerries': 0,
+    'NanabBerries': 0,
+    'PinappBerries': 0,
+    'GoldenBerries': 0,
+};
+
+var GreatBox = {
+    'Price': 780,
     'PremiumRaidPass': 6,
     'MaxRevives': 0,
     'MaxPotions': 0,
@@ -40,47 +59,27 @@ var SpecialBox = {
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
-    'Incubator': 0,
-    'LuckyEggs': 0,
-    'Incense': 3,
-    'StarPiece': 0,
+    'Incubator': 4,
+    'LuckyEggs': 3,
+    'Incense': 0,
+    'StarPiece': 8,
     'SuperIncubator': 0,
     'RazzBerries': 0,
     'NanabBerries': 0,
-    'PinappBerries': 10,
+    'PinappBerries': 0,
     'GoldenBerries': 0,
 };
 
-var GreatBox = {
-    'Price': 780,
-    'PremiumRaidPass': 9,
+var UltraBox = {
+    'Price': 1480,
+    'PremiumRaidPass': 12,
     'MaxRevives': 0,
     'MaxPotions': 0,
     'PokeBalls': 0,
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
-    'Incubator': 0,
-    'LuckyEggs': 0,
-    'Incense': 0,
-    'StarPiece': 10,
-    'SuperIncubator': 0,
-    'RazzBerries': 0,
-    'NanabBerries': 0,
-    'PinappBerries': 10,
-    'GoldenBerries': 0,
-};
-
-var UltraBox = {
-    'Price': 1480,
-    'PremiumRaidPass': 15,
-    'MaxRevives': 6,
-    'MaxPotions': 0,
-    'PokeBalls': 0,
-    'GreatBalls': 0,
-    'UltraBalls': 0,
-    'Lures': 0,
-    'Incubator': 0,
+    'Incubator': 8,
     'LuckyEggs': 6,
     'Incense': 0,
     'StarPiece': 20,
@@ -94,9 +93,8 @@ var UltraBox = {
 // #region Common
 
 // ============================================================================
-// ===== Cookies
+//#region Cookies
 // ============================================================================
-// #region Cookies
 
 // Fields that should be saved in cookies.
 var CookieSettings = {
@@ -165,10 +163,12 @@ function ApplyCookie() {
 
 // #endregion Cookies
 
-// ============================================================================
-// ===== LocalScript (Called when page is loaded to perform any initial work.)
-// ============================================================================
-function LocalScript() {
+// ==============================================================================================
+// Called when page is loaded to perform up-front work.
+// ==============================================================================================
+// NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
+//          the window.onnload() from the other scripts have the opportunity to overload this.
+window.onload = function () {
     GetFields();
 
     var updateDate = GetCookieSetting('ShoppingBox_Update_Date');

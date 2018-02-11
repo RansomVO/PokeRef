@@ -1,5 +1,14 @@
 ﻿// #region Common
 
+// ==============================================================================================
+// #region Global Variables
+// ==============================================================================================
+
+var boostsSelections = null;
+var typeSelections = null;
+
+// #endregion
+
 // ============================================================================
 // #region Cookies
 // ============================================================================
@@ -12,39 +21,14 @@ var CookieSettings = {
     'RegionalOnly_Check': 'false',
     'RaidBossOnly_Check': 'false',
     'LegendaryOnly_Check': 'false',
-    'Type_Bug_Check': 'true',
-    'Type_Dark_Check': 'true',
-    'Type_Dragon_Check': 'true',
-    'Type_Electric_Check': 'true',
-    'Type_Fairy_Check': 'true',
-    'Type_Fighting_Check': 'true',
-    'Type_Fire_Check': 'true',
-    'Type_Flying_Check': 'true',
-    'Type_Ghost_Check': 'true',
-    'Type_Grass_Check': 'true',
-    'Type_Ground_Check': 'true',
-    'Type_Ice_Check': 'true',
-    'Type_Normal_Check': 'true',
-    'Type_Poison_Check': 'true',
-    'Type_Psychic_Check': 'true',
-    'Type_Rock_Check': 'true',
-    'Type_Steel_Check': 'true',
-    'Type_Water_Check': 'true',
-    'Boost_Sunny_Check': 'true',
-    'Boost_Windy_Check': 'true',
-    'Boost_Cloudy_Check': 'true',
-    'Boost_PartlyCloudy_Check': 'true',
-    'Boost_Fog_Check': 'true',
-    'Boost_Rainy_Check': 'true',
-    'Boost_Snow_Check': 'true',
 };
 
 // Read the Cookie and apply it to the fields.
 function ApplyCookies() {
     try {
         ApplyCookieSettings(CookieSettings);
-        OnToggleType();
-        OnToggleBoost();
+        //OnToggleType();
+        //OnToggleBoost();
         OnFilterCriteriaChanged();
     }
     catch (err) {
@@ -54,22 +38,17 @@ function ApplyCookies() {
 
 // #endregion Cookies
 
-// ============================================================================
-// ===== LocalScript (Called when page is loaded to perform any initial work.)
-// ============================================================================
-function LocalScript() {
+// ==============================================================================================
+// Called when page is loaded to perform up-front work.
+// ==============================================================================================
+// NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
+//          the window.onnload() from the other scripts have the opportunity to overload this.
+window.onload = function () {
     ApplyCookies();
     GetFields();
 }
 
-// #endregion Common
-
-// ============================================================================
-// ===== Functions specific to this page.
-// ============================================================================
-
 // Get the fields we will be using multiple times.
-//  (I think the vars need to be named with a capital letter first to be considered global.)
 function GetFields() {
     try {
         var Filter_Text = document.getElementById('Filter_Text');
@@ -79,35 +58,6 @@ function GetFields() {
         var LegendaryOnly_Check = document.getElementById('LegendaryOnly_Check');
         var HatchOnly_Check = document.getElementById('HatchOnly_Check');
         var ShinyOnly_Check = document.getElementById('ShinyOnly_Check');
-
-        var Type_All_Check = document.getElementById('Type_All_Check');
-        var Type_Bug_Check = document.getElementById('Type_Bug_Check');
-        var Type_Dark_Check = document.getElementById('Type_Dark_Check');
-        var Type_Dragon_Check = document.getElementById('Type_Dragon_Check');
-        var Type_Electric_Check = document.getElementById('Type_Electric_Check');
-        var Type_Fairy_Check = document.getElementById('Type_Fairy_Check');
-        var Type_Fighting_Check = document.getElementById('Type_Fighting_Check');
-        var Type_Fire_Check = document.getElementById('Type_Fire_Check');
-        var Type_Flying_Check = document.getElementById('Type_Flying_Check');
-        var Type_Ghost_Check = document.getElementById('Type_Ghost_Check');
-        var Type_Grass_Check = document.getElementById('Type_Grass_Check');
-        var Type_Ground_Check = document.getElementById('Type_Ground_Check');
-        var Type_Ice_Check = document.getElementById('Type_Ice_Check');
-        var Type_Normal_Check = document.getElementById('Type_Normal_Check');
-        var Type_Poison_Check = document.getElementById('Type_Poison_Check');
-        var Type_Psychic_Check = document.getElementById('Type_Psychic_Check');
-        var Type_Rock_Check = document.getElementById('Type_Rock_Check');
-        var Type_Steel_Check = document.getElementById('Type_Steel_Check');
-        var Type_Water_Check = document.getElementById('Type_Water_Check');
-
-        var Boost_All_Check = document.getElementById('Boost_All_Check');
-        var Boost_Sunny_Check = document.getElementById('Boost_Sunny_Check');
-        var Boost_Windy_Check = document.getElementById('Boost_Windy_Check');
-        var Boost_Cloudy_Check = document.getElementById('Boost_Cloudy_Check');
-        var Boost_PartlyCloudy_Check = document.getElementById('Boost_PartlyCloudy_Check');
-        var Boost_Fog_Check = document.getElementById('Boost_Fog_Check');
-        var Boost_Rainy_Check = document.getElementById('Boost_Rainy_Check');
-        var Boost_Snow_Check = document.getElementById('Boost_Snow_Check');
 
         var GEN1_Collection = document.getElementById('GEN1_Collection');
         var GEN2_Collection = document.getElementById('GEN2_Collection');
@@ -136,7 +86,6 @@ function GetFields() {
         var Selected_Pokemon_CaptureRate = document.getElementById('Selected_Pokemon_CaptureRate');
         var Selected_Pokemon_FleeRate = document.getElementById('Selected_Pokemon_FleeRate');
 
-
         var Selected_Pokemon_Strengths = document.getElementById('Selected_Pokemon_Strengths');
         var Selected_Pokemon_Weaknesses = document.getElementById('Selected_Pokemon_Weaknesses');
     }
@@ -144,6 +93,12 @@ function GetFields() {
         ShowError(err);
     }
 }
+
+// #endregion Common
+
+// ============================================================================
+// ===== Functions specific to this page.
+// ============================================================================
 
 // Filter criteria changed, so refilter everything.
 function OnFilterCriteriaChanged(field) {
@@ -201,128 +156,54 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    var types = pokemon.attributes['type1'].value + ' ' + pokemon.attributes['type2'].value;
-    if (!((Type_Bug_Check.checked && types.indexOf('Bug') >= 0) ||
-        (Type_Dark_Check.checked && types.indexOf('Dark') >= 0) ||
-        (Type_Dragon_Check.checked && types.indexOf('Dragon') >= 0) ||
-        (Type_Electric_Check.checked && types.indexOf('Electric') >= 0) ||
-        (Type_Fairy_Check.checked && types.indexOf('Fairy') >= 0) ||
-        (Type_Fighting_Check.checked && types.indexOf('Fighting') >= 0) ||
-        (Type_Fire_Check.checked && types.indexOf('Fire') >= 0) ||
-        (Type_Flying_Check.checked && types.indexOf('Flying') >= 0) ||
-        (Type_Ghost_Check.checked && types.indexOf('Ghost') >= 0) ||
-        (Type_Grass_Check.checked && types.indexOf('Grass') >= 0) ||
-        (Type_Ground_Check.checked && types.indexOf('Ground') >= 0) ||
-        (Type_Ice_Check.checked && types.indexOf('Ice') >= 0) ||
-        (Type_Normal_Check.checked && types.indexOf('Normal') >= 0) ||
-        (Type_Poison_Check.checked && types.indexOf('Poison') >= 0) ||
-        (Type_Psychic_Check.checked && types.indexOf('Psychic') >= 0) ||
-        (Type_Rock_Check.checked && types.indexOf('Rock') >= 0) ||
-        (Type_Steel_Check.checked && types.indexOf('Steel') >= 0) ||
-        (Type_Water_Check.checked && types.indexOf('Water') >= 0))) {
-        return false;
+    if (typeSelections !== null) {
+        var types = pokemon.attributes['type1'].value + ' ' + pokemon.attributes['type2'].value;
+        if (!((typeSelections['Bug'] && types.indexOf('Bug') >= 0) ||
+            (typeSelections['Dark'] && types.indexOf('Dark') >= 0) ||
+            (typeSelections['Dragon'] && types.indexOf('Dragon') >= 0) ||
+            (typeSelections['Electric'] && types.indexOf('Electric') >= 0) ||
+            (typeSelections['Fairy'] && types.indexOf('Fairy') >= 0) ||
+            (typeSelections['Fighting'] && types.indexOf('Fighting') >= 0) ||
+            (typeSelections['Fire'] && types.indexOf('Fire') >= 0) ||
+            (typeSelections['Flying'] && types.indexOf('Flying') >= 0) ||
+            (typeSelections['Ghost'] && types.indexOf('Ghost') >= 0) ||
+            (typeSelections['Grass'] && types.indexOf('Grass') >= 0) ||
+            (typeSelections['Ground'] && types.indexOf('Ground') >= 0) ||
+            (typeSelections['Ice'] && types.indexOf('Ice') >= 0) ||
+            (typeSelections['Normal'] && types.indexOf('Normal') >= 0) ||
+            (typeSelections['Poison'] && types.indexOf('Poison') >= 0) ||
+            (typeSelections['Psychic'] && types.indexOf('Psychic') >= 0) ||
+            (typeSelections['Rock'] && types.indexOf('Rock') >= 0) ||
+            (typeSelections['Steel'] && types.indexOf('Steel') >= 0) ||
+            (typeSelections['Water'] && types.indexOf('Water') >= 0))) {
+            return false;
+        }
     }
 
-    // Using the '~' so we don't get Partly Cloudy when Cloudy is true.
-    var boosts = '~' + pokemon.attributes['boost1'].value + '~' + pokemon.attributes['boost2'].value;
-    if (!((Boost_Sunny_Check.checked && boosts.indexOf('~Sunny') >= 0) ||
-        (Boost_Windy_Check.checked && boosts.indexOf('~Windy') >= 0) ||
-        (Boost_PartlyCloudy_Check.checked && boosts.indexOf('~Partly Cloudy') >= 0) ||
-        (Boost_Cloudy_Check.checked && boosts.indexOf('~Cloudy') >= 0) ||
-        (Boost_Fog_Check.checked && boosts.indexOf('~Fog') >= 0) ||
-        (Boost_Rainy_Check.checked && boosts.indexOf('~Rainy') >= 0) ||
-        (Boost_Snow_Check.checked && boosts.indexOf('~Snow') >= 0))) {
-        return false;
+    if (boostsSelections !== null) {
+        // Using the '~' so we don't get Partly Cloudy when Cloudy is true.
+        var boosts = '~' + pokemon.attributes['boost1'].value + '~' + pokemon.attributes['boost2'].value;
+        if (!((boostsSelections['Sunny'] && boosts.indexOf('~Sunny') >= 0) ||
+            (boostsSelections['Windy'] && boosts.indexOf('~Windy') >= 0) ||
+            (boostsSelections['PartlyCloudy'] && boosts.indexOf('~Partly Cloudy') >= 0) ||
+            (boostsSelections['Cloudy'] && boosts.indexOf('~Cloudy') >= 0) ||
+            (boostsSelections['Fog'] && boosts.indexOf('~Fog') >= 0) ||
+            (boostsSelections['Rainy'] && boosts.indexOf('~Rainy') >= 0) ||
+            (boostsSelections['Snow'] && boosts.indexOf('~Snow') >= 0))) {
+            return false;
+        }
     }
 
     return true;
 }
 
-// If one of the type checkboxes changes, need to update the All checkbox then refilter.
-function OnToggleType(field) {
-    if (Type_Bug_Check.checked == Type_Dark_Check.checked &&
-        Type_Dark_Check.checked == Type_Dragon_Check.checked &&
-        Type_Dragon_Check.checked == Type_Electric_Check.checked &&
-        Type_Electric_Check.checked == Type_Fairy_Check.checked &&
-        Type_Fairy_Check.checked == Type_Fighting_Check.checked &&
-        Type_Fighting_Check.checked == Type_Fire_Check.checked &&
-        Type_Fire_Check.checked == Type_Flying_Check.checked &&
-        Type_Flying_Check.checked == Type_Ghost_Check.checked &&
-        Type_Ghost_Check.checked == Type_Grass_Check.checked &&
-        Type_Grass_Check.checked == Type_Ground_Check.checked &&
-        Type_Ground_Check.checked == Type_Ice_Check.checked &&
-        Type_Ice_Check.checked == Type_Normal_Check.checked &&
-        Type_Normal_Check.checked == Type_Poison_Check.checked &&
-        Type_Poison_Check.checked == Type_Psychic_Check.checked &&
-        Type_Psychic_Check.checked == Type_Rock_Check.checked &&
-        Type_Rock_Check.checked == Type_Steel_Check.checked &&
-        Type_Steel_Check.checked == Type_Water_Check.checked) {
-        Type_All_Check.indeterminate = false;
-        Type_All_Check.checked = Type_Bug_Check.checked;
-    } else {
-        Type_All_Check.indeterminate = true;
-    }
-
-    if (field !== undefined && field !== null) {
-        OnFilterCriteriaChanged(field);
-    }
-}
-
-// If the All checkbox is toggled, update all of the Type checkboxes.
-function OnToggleAllTypes() {
-    Type_Bug_Check.checked = Type_All_Check.checked;
-    Type_Dark_Check.checked = Type_All_Check.checked;
-    Type_Dragon_Check.checked = Type_All_Check.checked;
-    Type_Electric_Check.checked = Type_All_Check.checked;
-    Type_Fairy_Check.checked = Type_All_Check.checked;
-    Type_Fighting_Check.checked = Type_All_Check.checked;
-    Type_Fire_Check.checked = Type_All_Check.checked;
-    Type_Flying_Check.checked = Type_All_Check.checked;
-    Type_Ghost_Check.checked = Type_All_Check.checked;
-    Type_Grass_Check.checked = Type_All_Check.checked;
-    Type_Ground_Check.checked = Type_All_Check.checked;
-    Type_Ice_Check.checked = Type_All_Check.checked;
-    Type_Normal_Check.checked = Type_All_Check.checked;
-    Type_Poison_Check.checked = Type_All_Check.checked;
-    Type_Psychic_Check.checked = Type_All_Check.checked;
-    Type_Rock_Check.checked = Type_All_Check.checked;
-    Type_Steel_Check.checked = Type_All_Check.checked;
-    Type_Water_Check.checked = Type_All_Check.checked;
-
-    UpdateCookieSettings(CookieSettings);
+function OnTypesChanged(weather) {
+    typeSelections = weather;
     OnFilterCriteriaChanged();
 }
 
-// If one of the type checkboxes changes, need to update the All checkbox then refilter.
-function OnToggleBoost(field) {
-    if (Boost_Sunny_Check.checked == Boost_Windy_Check.checked &&
-        Boost_Windy_Check.checked == Boost_Cloudy_Check.checked &&
-        Boost_Cloudy_Check.checked == Boost_PartlyCloudy_Check.checked &&
-        Boost_PartlyCloudy_Check.checked == Boost_Fog_Check.checked &&
-        Boost_Fog_Check.checked == Boost_Rainy_Check.checked &&
-        Boost_Rainy_Check.checked == Boost_Snow_Check.checked) {
-        Boost_All_Check.indeterminate = false;
-        Boost_All_Check.checked = Boost_Sunny_Check.checked;
-    } else {
-        Boost_All_Check.indeterminate = true;
-    }
-
-    if (field !== undefined && field !== null) {
-        OnFilterCriteriaChanged(field);
-    }
-}
-
-// If the All checkbox is toggled, update all of the Type checkboxes.
-function OnToggleAllBoosts() {
-    Boost_Sunny_Check.checked = Boost_All_Check.checked;
-    Boost_Windy_Check.checked = Boost_All_Check.checked;
-    Boost_Cloudy_Check.checked = Boost_All_Check.checked;
-    Boost_PartlyCloudy_Check.checked = Boost_All_Check.checked;
-    Boost_Fog_Check.checked = Boost_All_Check.checked;
-    Boost_Rainy_Check.checked = Boost_All_Check.checked;
-    Boost_Snow_Check.checked = Boost_All_Check.checked;
-
-    UpdateCookieSettings(CookieSettings);
+function OnWeatherChanged(weather) {
+    boostsSelections = weather;
     OnFilterCriteriaChanged();
 }
 

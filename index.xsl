@@ -48,10 +48,10 @@
         <h2 id="anchor_sections">
           <u>Sections</u>
           <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'SECTIONS'" />
+            <xsl:with-param name="CollapseeID" select="'HOME_SECTIONS'" />
           </xsl:call-template>
         </h2>
-        <div>
+        <div id="HOME_SECTIONS">
           <p>
             I have tried to organize this site into sections to help you be able to find what you want a little quicker.
           </p>
@@ -105,10 +105,10 @@
         <h2 id="anchor_quick">
           <u>Quick Access</u>
           <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'QUICK_ACCESS'" />
+            <xsl:with-param name="CollapseeID" select="'HOME_QUICK_ACCESS'" />
           </xsl:call-template>
         </h2>
-        <div id="QUICK_ACCESS">
+        <div id="HOME_QUICK_ACCESS">
           <p>
             Several pages are accessed more frequently than others.
             <br />I have collected links to those pages here so you don't have to go searching.
@@ -121,7 +121,7 @@
                   <xsl:with-param name="CollapseeID" select="'RAID_BOSSES'" />
                 </xsl:call-template>
               </h2>
-              <div>
+              <div id="HOME_RAID_BOSSES">
                 <p>
                   After you defeat a Raid Boss in a Raid, it is time to try to catch him.
                   But how good is he?
@@ -207,10 +207,10 @@
     <h2 id="anchor_news" class="NEWS_TITLE">
       <xsl:text>Latest News!</xsl:text>
       <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="'NEWS'" />
+        <xsl:with-param name="CollapseeID" select="'HOME_NEWS'" />
       </xsl:call-template>
     </h2>
-    <div id="NEWS" class="NEWS">
+    <div id="HOME_NEWS" class="NEWS">
       <xsl:apply-templates select="Article" />
     </div>
     <!-- Need to do </div> by hand since it is opened via the script above. -->

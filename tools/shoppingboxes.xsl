@@ -10,6 +10,7 @@
         <!-- This is to make the font size consistent on mobile. -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <!-- Local Script must always come first. (Shared ones need to be able to override it.) -->
         <script>
           <xsl:attribute name="src">
             <xsl:text>shoppingboxes.js?cacherefresh=</xsl:text>
@@ -39,6 +40,7 @@
 
           td {
           text-align: right;
+          padding-right: .5em;
           }
 
           input {
@@ -67,15 +69,11 @@
           content: counter(item) ')';
           }
 
-          .HIDE_SPINNERS {
-          -moz-appearance: textfield;
-          }
-
-          .no-spinners::-webkit-outer-spin-button,
-          .no-spinners::-webkit-inner-spin-button {
+          input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
           -webkit-appearance: none;
           margin: 0;
           }
+
         </style>
       </head>
       <body>
@@ -555,7 +553,7 @@
                 </tr>
                 <tr>
                   <th colspan="2" align="right">Discount</th>
-                  <td>
+                  <td style="padding-right:1em;">
                     <input id="SpecialBox_Discount" type="number" class="HIDE_SPINNERS" readonly="" />%
                   </td>
                 </tr>
@@ -732,7 +730,7 @@
                 </tr>
                 <tr>
                   <th colspan="2" align="right">Discount</th>
-                  <td>
+                  <td style="padding-right:1em;">
                     <input id="GreatBox_Discount" type="number" class="HIDE_SPINNERS" readonly="" />%
                   </td>
                 </tr>
@@ -909,7 +907,7 @@
                 </tr>
                 <tr>
                   <th colspan="2" align="right">Discount</th>
-                  <td>
+                  <td style="padding-right:1em;">
                     <input id="UltraBox_Discount" type="number" class="HIDE_SPINNERS" readonly="" />%
                   </td>
                 </tr>

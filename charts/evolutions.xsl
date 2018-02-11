@@ -12,6 +12,7 @@
         <!-- This is to make the font size consistent on mobile. -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <!-- Local Script must always come first. (Shared ones need to be able to override it.) -->
         <script>
           <xsl:attribute name="src">
             <xsl:text>evolutions.js?cacherefresh=</xsl:text>

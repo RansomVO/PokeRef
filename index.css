@@ -9,6 +9,11 @@ ul, ol, blockquote {
     margin-bottom: 0;
 }
 
+td, th {
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
 th {
     font-size: larger;
 }

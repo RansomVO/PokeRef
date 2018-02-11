@@ -3,7 +3,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:pokeref="urn:pokeref"
 >
-  <xsl:include href="/xsl/global.xsl"/>
+  <xsl:include href="/xsl/controls.xsl"/>
 
   <xsl:template match="Root">
     <html lang="en-us">
@@ -11,6 +11,7 @@
         <!-- This is to make the font size consistent on mobile. -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <!-- Local Script must always come first. (Shared ones need to be able to override it.) -->
         <script>
           <xsl:attribute name="src">
             <xsl:text>pokechart.js?cacherefresh=</xsl:text>
@@ -26,6 +27,12 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <script>
+          <xsl:attribute name="src">
+            <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
         </script>
@@ -159,7 +166,7 @@
                 </td>
               </tr>
             </table>
-            
+
             <table width="100%" style="margin-top:.25em; white-space:nowrap;">
               <tr>
                 <th style="border-bottom:2px solid black;">Strong Against</th>
@@ -174,7 +181,7 @@
             </table>
           </div>
         </div>
-        
+
         <!-- #endregion  -->
         <!-- ======================================================================================== -->
 
@@ -204,129 +211,18 @@
             </tr>
           </table>
           <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-          <table border="1" class="KEY_TABLE">
-            <tr>
-              <th colspan="2">
-                Types<br /><input id="Type_All_Check" type="checkbox" onchange="OnToggleAllTypes();" />
-              </th>
-            </tr>
-            <tr>
-              <td valign="top">
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Bug'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Dark'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Dragon'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Electric'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Fairy'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Fighting'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Fire'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Flying'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Ghost'" />
-                </xsl:call-template>
-              </td>
-              <td valign="top">
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Grass'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Ground'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Ice'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Normal'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Poison'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Psychic'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Rock'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Steel'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputTypeCheckbox">
-                  <xsl:with-param name="Type" select="'Water'" />
-                </xsl:call-template>
-              </td>
-            </tr>
-          </table>
+          <div class="KEY_TABLE">
+            <xsl:call-template name="OutputTypeSelection">
+              <xsl:with-param name="Callback" select="'OnTypesChanged'" />
+            </xsl:call-template>
+          </div>
           <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-          <table border="1" class="KEY_TABLE">
-            <tr>
-              <th>
-                Weather Boosted<br /><input id="Boost_All_Check" type="checkbox" onchange="OnToggleAllBoosts();" />
-              </th>
-            </tr>
-            <tr>
-              <td valign="top">
-                <xsl:call-template name="OutputWeatherCheckbox">
-                  <xsl:with-param name="Weather" select="'Sunny'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputWeatherCheckbox">
-                  <xsl:with-param name="Weather" select="'Windy'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputWeatherCheckbox">
-                  <xsl:with-param name="Weather" select="'Cloudy'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputWeatherCheckbox">
-                  <xsl:with-param name="Weather" select="'Partly Cloudy'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputWeatherCheckbox">
-                  <xsl:with-param name="Weather" select="'Fog'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputWeatherCheckbox">
-                  <xsl:with-param name="Weather" select="'Rainy'" />
-                </xsl:call-template>
-                <br />
-                <xsl:call-template name="OutputWeatherCheckbox">
-                  <xsl:with-param name="Weather" select="'Snow'" />
-                </xsl:call-template>
-              </td>
-            </tr>
-          </table>
-
+          <div class="KEY_TABLE">
+            <xsl:call-template name="OutputWeatherSelection">
+              <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
+              <xsl:with-param name="Title" select="'Weather Boosts'" />
+            </xsl:call-template>
+          </div>
           <br />
           <hr />
           <xsl:call-template name="PokemonImageKey" />
@@ -384,39 +280,6 @@
         </xsl:for-each>
       </div>
     </div>
-  </xsl:template>
-
-  <xsl:template name="OutputTypeCheckbox">
-    <xsl:param name="Type" />
-    <input type="checkbox" onchange="OnToggleType(this);">
-      <xsl:attribute name="id">
-        <xsl:text>Type_</xsl:text>
-        <xsl:value-of select="pokeref:Replace($Type, ' ', '')" />
-        <xsl:text>_Check</xsl:text>
-      </xsl:attribute>
-    </input>
-    <xsl:call-template name="OutputTypeIcon">
-      <xsl:with-param name="Type" select="$Type" />
-    </xsl:call-template>
-    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-    <xsl:value-of select="$Type" />
-  </xsl:template>
-
-  <xsl:template name="OutputWeatherCheckbox">
-    <xsl:param name="Weather" />
-    <input type="checkbox" onchange="OnToggleBoost(this);">
-      <xsl:attribute name="id">
-        <xsl:text>Boost_</xsl:text>
-        <xsl:value-of select="pokeref:Replace($Weather, ' ', '')" />
-        <xsl:text>_Check</xsl:text>
-      </xsl:attribute>
-    </input>
-    <xsl:call-template name="OutputBoostIconByWeather">
-      <xsl:with-param name="Weather" select="$Weather" />
-    </xsl:call-template>
-    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-    <xsl:value-of select="$Weather" />
-    <xsl:if test="$Weather = 'Sunny'">/Clear</xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>

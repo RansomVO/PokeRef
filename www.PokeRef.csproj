@@ -179,6 +179,9 @@
   </ItemGroup>
   <!-- /__Debugging -->
   <ItemGroup>
+    <FixIntermediateFile Include="xsl\controls.xsl">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <Content Include="__Debugging\debug.page.xml" />
     <FixIntermediateFile Include="__Debugging\debug.xsl" />
     <FixOutputFile Include="__Debugging\index.html" />
