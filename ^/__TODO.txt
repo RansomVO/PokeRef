@@ -1,13 +1,13 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
+
 SEAPokeMap Filter
 
 RaidBoss Counters
 
 MoveSet Sort and Filter
 	- Add ability to specify a range of numbers.
-	- Need to add sort.
 
 PokeChart:
 	- Add to Popup:
@@ -18,6 +18,8 @@ Shopping Box
 
 =========================================================================================================
 ----- Overall -----
+
+Change to use GetFieldValue(field) and GetFieldValueById(id) (search for ".value" and ".checked")
 
 It would be nice if the .proj files could be updated to include the Dependencies of the Dependencies. (and DependentUpon?)
 	E.G. We could say that raidboss\_linkslist.page.xml was one of Dependencies. Then the Item would also include the Dependencies of raidboss\_linkslist.page.xml

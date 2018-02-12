@@ -92,6 +92,37 @@
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
     </FixOutputFile>
+
+    <FixIntermediateFile Include="charts\movesets.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\movesets.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        _datafiles\stats.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\movesets.gen1.xml;
+        _datafiles\movesets.gen2.xml;
+        _datafiles\movesets.gen3.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.xsl;
+        charts\movesets.js;
+      </Dependencies>
+      <OutputFileName>movesets.html</OutputFileName>
+    </XslTransform>
+    <FixOutputFile Include="charts\movesets.js">
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js\global.js;
+      </Dependencies>
+    </FixOutputFile>
     
     <FixIntermediateFile Include="charts\pokechart.xsl">
       <Visible>true</Visible>
@@ -122,7 +153,7 @@
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
       <Dependencies>
-        js/global.js;
+        js\global.js;
       </Dependencies>
     </FixOutputFile>
 
@@ -139,54 +170,6 @@
         css\unicode.css;
       </Dependencies>
       <OutputFileName>namingtechnique.html</OutputFileName>
-    </XslTransform>
-
-  </ItemGroup>
-
-  <!-- Charts/MoveSets -->
-  <ItemGroup>
-    <FixIntermediateFile Include="charts\movesets\movesets.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <FixOutputFile Include="charts\movesets\movesets.js">
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Visible>true</Visible>
-      <Dependencies>
-        js/global.js;
-      </Dependencies>
-    </FixOutputFile>
-    <XslTransform Include="charts\movesets\movesets.gen1.page.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        charts\movesets\movesets.js;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen1.xml;
-        _datafiles\movesets.gen1.xml;
-      </Dependencies>
-      <OutputFileName>movesets.gen1.html</OutputFileName>
-    </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.gen2.page.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        charts\movesets\movesets.js;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen2.xml;
-        _datafiles\movesets.gen2.xml;
-      </Dependencies>
-      <OutputFileName>movesets.gen2.html</OutputFileName>
-    </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.gen3.page.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        charts\movesets\movesets.js;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen3.xml;
-        _datafiles\movesets.gen3.xml;
-      </Dependencies>
-      <OutputFileName>movesets.gen3.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
 
@@ -1105,7 +1088,7 @@
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Visible>true</Visible>
       <Dependencies>
-        js/global.js;
+        js\global.js;
       </Dependencies>
     </FixOutputFile>
   </ItemGroup>
@@ -1288,7 +1271,7 @@
       <DependentUpon>counters.xsl</DependentUpon>
       <Visible>true</Visible>
       <Dependencies>
-        js/global.js;
+        js\global.js;
       </Dependencies>
     </FixOutputFile>
 
@@ -1310,7 +1293,7 @@
       <Visible>true</Visible>
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
       <Dependencies>
-        js/global.js;
+        js\global.js;
       </Dependencies>
     </FixOutputFile>
   </ItemGroup>

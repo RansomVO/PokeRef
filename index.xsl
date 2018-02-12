@@ -118,7 +118,7 @@
               <h2 id="anchor_raidbosses">
                 <a href="charts/raidboss">Possible IVs for Raid Bosses</a>
                 <xsl:call-template name="Collapser">
-                  <xsl:with-param name="CollapseeID" select="'RAID_BOSSES'" />
+                  <xsl:with-param name="CollapseeID" select="'HOME_RAID_BOSSES'" />
                 </xsl:call-template>
               </h2>
               <div id="HOME_RAID_BOSSES">
@@ -148,18 +148,15 @@
             </div>
 
             <h2 id="anchor_movesets">
-              <a href="charts/movesets/">Pokemon Move Sets</a>
+              <a href="charts/movesets.html">Pokemon Move Sets</a>
             </h2>
             <div>
               <p class="PARENT">
                 Each type of Pokemon has a set of "Fast" Moves and "Charged" moves that they may have.
                 Then each individual Pokemon has only one combination.
                 Of course, some moves are more effective than others.
-                <br />These pages shows a list of each possible combination for each type of Pokemon, which then tells how much damage it will do.
+                <br />This page shows a list of each possible combination for each type of Pokemon, which then tells how much damage it will do.
               </p>
-              <div class="CHILD">
-                <script>InsertURL('charts/movesets/_linkslist.html?cacherefresh={$CurrentDate}')</script>
-              </div>
             </div>
 
             <h2 id="anchor_gamemaster">
@@ -170,20 +167,6 @@
                 There is a file called the GAME_MASTER that contains statistics regarding just about everything in the game.
                 <br />I use the data in them to generate various tables, etc.
               </p>
-              <div class="INDENT">
-                <h2 id="anchor_pokestats">
-                  <a href="tech/GAME_MASTER/pokestats/">Pokemon Stats</a>
-                </h2>
-                <div>
-                  <p class="PARENT">
-                    Each Pokemon has a bunch of statistics associated with them. Candies, Types, Gender Ratios, and a whole lot more.
-                    <br />I have created charts containing what I consider to be the important info for each generation of Pokemon:
-                  </p>
-                  <div class="CHILD">
-                    <script>InsertURL('tech/GAME_MASTER/pokestats/_linkslist.html?cacherefresh={$CurrentDate}')</script>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

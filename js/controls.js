@@ -26,24 +26,24 @@ window.onload = function () {
 // ---------------------------------------------------------------------------
 // #region Pokemon Type Cookies
 var PokeTypeCookieSettings = {
-    'PokeType_Bug_Check': 'true',
-    'PokeType_Dark_Check': 'true',
-    'PokeType_Dragon_Check': 'true',
-    'PokeType_Electric_Check': 'true',
-    'PokeType_Fairy_Check': 'true',
-    'PokeType_Fighting_Check': 'true',
-    'PokeType_Fire_Check': 'true',
-    'PokeType_Flying_Check': 'true',
-    'PokeType_Ghost_Check': 'true',
-    'PokeType_Grass_Check': 'true',
-    'PokeType_Ground_Check': 'true',
-    'PokeType_Ice_Check': 'true',
-    'PokeType_Normal_Check': 'true',
-    'PokeType_Poison_Check': 'true',
-    'PokeType_Psychic_Check': 'true',
-    'PokeType_Rock_Check': 'true',
-    'PokeType_Steel_Check': 'true',
-    'PokeType_Water_Check': 'true',
+    'CONTROLS_PokeType_Bug_Check': 'true',
+    'CONTROLS_PokeType_Dark_Check': 'true',
+    'CONTROLS_PokeType_Dragon_Check': 'true',
+    'CONTROLS_PokeType_Electric_Check': 'true',
+    'CONTROLS_PokeType_Fairy_Check': 'true',
+    'CONTROLS_PokeType_Fighting_Check': 'true',
+    'CONTROLS_PokeType_Fire_Check': 'true',
+    'CONTROLS_PokeType_Flying_Check': 'true',
+    'CONTROLS_PokeType_Ghost_Check': 'true',
+    'CONTROLS_PokeType_Grass_Check': 'true',
+    'CONTROLS_PokeType_Ground_Check': 'true',
+    'CONTROLS_PokeType_Ice_Check': 'true',
+    'CONTROLS_PokeType_Normal_Check': 'true',
+    'CONTROLS_PokeType_Poison_Check': 'true',
+    'CONTROLS_PokeType_Psychic_Check': 'true',
+    'CONTROLS_PokeType_Rock_Check': 'true',
+    'CONTROLS_PokeType_Steel_Check': 'true',
+    'CONTROLS_PokeType_Water_Check': 'true',
 };
 
 // Read the Cookie and apply it to the fields.
@@ -55,40 +55,50 @@ function ApplyPokeTypeCookies() {
         ShowError(err);
     }
 }
+
 // #endregion
 
 // Initialize the Pokemon Type Selection Control
 function InitPokeTypeSelector() {
-    if (document.getElementById('PokeType_Selector') !== null) {
+    if (document.getElementById('CONTROLS_PokeType_Selector') !== null) {
         GetPokeTypeFields();
+
+        if (PokeType_Selector.attributes['callbackName'].value === null) {
+            alert('Must specify "Callback" when using template "OutputTypeSelection".');
+            return;
+        }
+
         ApplyPokeTypeCookies();
         OnTogglePokeType();
+
+        RegisterTristateCheckbox(PokeType_All_Check);   // This is to resolve an issue with IE.
     }
 }
 
 // Get the fields we will be using multiple times.
+//  NOTE: Do not use keyword "var" and the value will be global.
 function GetPokeTypeFields() {
     try {
-        var PokeType_Selector = document.getElementById('PokeType_Selector');
-        var PokeType_All_Check = document.getElementById('PokeType_All_Check');
-        var PokeType_Bug_Check = document.getElementById('PokeType_Bug_Check');
-        var PokeType_Dark_Check = document.getElementById('PokeType_Dark_Check');
-        var PokeType_Dragon_Check = document.getElementById('PokeType_Dragon_Check');
-        var PokeType_Electric_Check = document.getElementById('PokeType_Electric_Check');
-        var PokeType_Fairy_Check = document.getElementById('PokeType_Fairy_Check');
-        var PokeType_Fighting_Check = document.getElementById('PokeType_Fighting_Check');
-        var PokeType_Fire_Check = document.getElementById('PokeType_Fire_Check');
-        var PokeType_Flying_Check = document.getElementById('PokeType_Flying_Check');
-        var PokeType_Ghost_Check = document.getElementById('PokeType_Ghost_Check');
-        var PokeType_Grass_Check = document.getElementById('PokeType_Grass_Check');
-        var PokeType_Ground_Check = document.getElementById('PokeType_Ground_Check');
-        var PokeType_Ice_Check = document.getElementById('PokeType_Ice_Check');
-        var PokeType_Normal_Check = document.getElementById('PokeType_Normal_Check');
-        var PokeType_Poison_Check = document.getElementById('PokeType_Poison_Check');
-        var PokeType_Psychic_Check = document.getElementById('PokeType_Psychic_Check');
-        var PokeType_Rock_Check = document.getElementById('PokeType_Rock_Check');
-        var PokeType_Steel_Check = document.getElementById('PokeType_Steel_Check');
-        var PokeType_Water_Check = document.getElementById('PokeType_Water_Check');
+        PokeType_Selector = document.getElementById('CONTROLS_PokeType_Selector');
+        PokeType_All_Check = document.getElementById('CONTROLS_PokeType_All_Check');
+        PokeType_Bug_Check = document.getElementById('CONTROLS_PokeType_Bug_Check');
+        PokeType_Dark_Check = document.getElementById('CONTROLS_PokeType_Dark_Check');
+        PokeType_Dragon_Check = document.getElementById('CONTROLS_PokeType_Dragon_Check');
+        PokeType_Electric_Check = document.getElementById('CONTROLS_PokeType_Electric_Check');
+        PokeType_Fairy_Check = document.getElementById('CONTROLS_PokeType_Fairy_Check');
+        PokeType_Fighting_Check = document.getElementById('CONTROLS_PokeType_Fighting_Check');
+        PokeType_Fire_Check = document.getElementById('CONTROLS_PokeType_Fire_Check');
+        PokeType_Flying_Check = document.getElementById('CONTROLS_PokeType_Flying_Check');
+        PokeType_Ghost_Check = document.getElementById('CONTROLS_PokeType_Ghost_Check');
+        PokeType_Grass_Check = document.getElementById('CONTROLS_PokeType_Grass_Check');
+        PokeType_Ground_Check = document.getElementById('CONTROLS_PokeType_Ground_Check');
+        PokeType_Ice_Check = document.getElementById('CONTROLS_PokeType_Ice_Check');
+        PokeType_Normal_Check = document.getElementById('CONTROLS_PokeType_Normal_Check');
+        PokeType_Poison_Check = document.getElementById('CONTROLS_PokeType_Poison_Check');
+        PokeType_Psychic_Check = document.getElementById('CONTROLS_PokeType_Psychic_Check');
+        PokeType_Rock_Check = document.getElementById('CONTROLS_PokeType_Rock_Check');
+        PokeType_Steel_Check = document.getElementById('CONTROLS_PokeType_Steel_Check');
+        PokeType_Water_Check = document.getElementById('CONTROLS_PokeType_Water_Check');
     }
     catch (err) {
         ShowError(err);
@@ -99,22 +109,22 @@ function GetPokeTypeFields() {
 function OnTogglePokeType(field) {
     try {
         if (PokeType_Bug_Check.checked == PokeType_Dark_Check.checked &&
-        PokeType_Dark_Check.checked == PokeType_Dragon_Check.checked &&
-        PokeType_Dragon_Check.checked == PokeType_Electric_Check.checked &&
-        PokeType_Electric_Check.checked == PokeType_Fairy_Check.checked &&
-        PokeType_Fairy_Check.checked == PokeType_Fighting_Check.checked &&
-        PokeType_Fighting_Check.checked == PokeType_Fire_Check.checked &&
-        PokeType_Fire_Check.checked == PokeType_Flying_Check.checked &&
-        PokeType_Flying_Check.checked == PokeType_Ghost_Check.checked &&
-        PokeType_Ghost_Check.checked == PokeType_Grass_Check.checked &&
-        PokeType_Grass_Check.checked == PokeType_Ground_Check.checked &&
-        PokeType_Ground_Check.checked == PokeType_Ice_Check.checked &&
-        PokeType_Ice_Check.checked == PokeType_Normal_Check.checked &&
-        PokeType_Normal_Check.checked == PokeType_Poison_Check.checked &&
-        PokeType_Poison_Check.checked == PokeType_Psychic_Check.checked &&
-        PokeType_Psychic_Check.checked == PokeType_Rock_Check.checked &&
-        PokeType_Rock_Check.checked == PokeType_Steel_Check.checked &&
-        PokeType_Steel_Check.checked == PokeType_Water_Check.checked) {
+            PokeType_Dark_Check.checked == PokeType_Dragon_Check.checked &&
+            PokeType_Dragon_Check.checked == PokeType_Electric_Check.checked &&
+            PokeType_Electric_Check.checked == PokeType_Fairy_Check.checked &&
+            PokeType_Fairy_Check.checked == PokeType_Fighting_Check.checked &&
+            PokeType_Fighting_Check.checked == PokeType_Fire_Check.checked &&
+            PokeType_Fire_Check.checked == PokeType_Flying_Check.checked &&
+            PokeType_Flying_Check.checked == PokeType_Ghost_Check.checked &&
+            PokeType_Ghost_Check.checked == PokeType_Grass_Check.checked &&
+            PokeType_Grass_Check.checked == PokeType_Ground_Check.checked &&
+            PokeType_Ground_Check.checked == PokeType_Ice_Check.checked &&
+            PokeType_Ice_Check.checked == PokeType_Normal_Check.checked &&
+            PokeType_Normal_Check.checked == PokeType_Poison_Check.checked &&
+            PokeType_Poison_Check.checked == PokeType_Psychic_Check.checked &&
+            PokeType_Psychic_Check.checked == PokeType_Rock_Check.checked &&
+            PokeType_Rock_Check.checked == PokeType_Steel_Check.checked &&
+            PokeType_Steel_Check.checked == PokeType_Water_Check.checked) {
             PokeType_All_Check.indeterminate = false;
             PokeType_All_Check.checked = PokeType_Bug_Check.checked;
         } else {
@@ -195,13 +205,13 @@ function OnPokeTypeSelectionChanged() {
 // ---------------------------------------------------------------------------
 // #region Weather Cookies
 var WeatherCookieSettings = {
-    'Weather_Sunny_Check': 'true',
-    'Weather_Windy_Check': 'true',
-    'Weather_Cloudy_Check': 'true',
-    'Weather_PartlyCloudy_Check': 'true',
-    'Weather_Fog_Check': 'true',
-    'Weather_Rainy_Check': 'true',
-    'Weather_Snow_Check': 'true',
+    'CONTROLS_Weather_Sunny_Check': 'true',
+    'CONTROLS_Weather_Windy_Check': 'true',
+    'CONTROLS_Weather_Cloudy_Check': 'true',
+    'CONTROLS_Weather_PartlyCloudy_Check': 'true',
+    'CONTROLS_Weather_Fog_Check': 'true',
+    'CONTROLS_Weather_Rainy_Check': 'true',
+    'CONTROLS_Weather_Snow_Check': 'true',
 };
 
 // Read the Cookie and apply it to the fields.
@@ -217,25 +227,28 @@ function ApplyWeatherCookies() {
 
 // Initialize the Weather Selection Control
 function InitWeatherSelector() {
-    if (document.getElementById('Weather_Selector') !== null) {
+    if (document.getElementById('CONTROLS_Weather_Selector') !== null) {
         GetWeatherFields();
         ApplyWeatherCookies();
         OnToggleWeather();
+
+        RegisterTristateCheckbox(Weather_All_Check);   // This is to resolve an issue with IE.
     }
 }
 
 // Get the fields we will be using multiple times.
+//  NOTE: Do not use keyword "var" and the value will be global.
 function GetWeatherFields() {
     try {
-        var Weather_Selector = document.getElementById('Weather_Selector');
-        var Weather_All_Check = document.getElementById('Weather_All_Check');
-        var Weather_Sunny_Check = document.getElementById('Weather_Sunny_Check');
-        var Weather_Windy_Check = document.getElementById('Weather_Windy_Check');
-        var Weather_Cloudy_Check = document.getElementById('Weather_Cloudy_Check');
-        var Weather_PartlyCloudy_Check = document.getElementById('Weather_PartlyCloudy_Check');
-        var Weather_Fog_Check = document.getElementById('Weather_Fog_Check');
-        var Weather_Rainy_Check = document.getElementById('Weather_Rainy_Check');
-        var Weather_Snow_Check = document.getElementById('Weather_Snow_Check');
+        Weather_Selector = document.getElementById('CONTROLS_Weather_Selector');
+        Weather_All_Check = document.getElementById('CONTROLS_Weather_All_Check');
+        Weather_Sunny_Check = document.getElementById('CONTROLS_Weather_Sunny_Check');
+        Weather_Windy_Check = document.getElementById('CONTROLS_Weather_Windy_Check');
+        Weather_Cloudy_Check = document.getElementById('CONTROLS_Weather_Cloudy_Check');
+        Weather_PartlyCloudy_Check = document.getElementById('CONTROLS_Weather_PartlyCloudy_Check');
+        Weather_Fog_Check = document.getElementById('CONTROLS_Weather_Fog_Check');
+        Weather_Rainy_Check = document.getElementById('CONTROLS_Weather_Rainy_Check');
+        Weather_Snow_Check = document.getElementById('CONTROLS_Weather_Snow_Check');
     }
     catch (err) {
         ShowError(err);

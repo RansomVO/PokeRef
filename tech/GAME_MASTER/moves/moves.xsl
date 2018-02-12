@@ -81,9 +81,8 @@
           </p>
           <div class="INDENT CHILD NOTE">
             <p class="PARENT">
-              <b>NOTE</b>: These are the values necessary to calculate the DPS of Move Sets:
+              <b>NOTE</b>: These are the values necessary to calculate the DPS of <a href="/charts/movesets.html">Move Sets</a>.
             </p>
-            <script>InsertURL("/charts/movesets/_linkslist.html?cacherefresh={$CurrentDate}")</script>
           </div>
         </div>
 

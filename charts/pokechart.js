@@ -49,45 +49,46 @@ window.onload = function () {
 }
 
 // Get the fields we will be using multiple times.
+//  NOTE: Do not use keyword "var" and the value will be global.
 function GetFields() {
     try {
-        var Filter_Text = document.getElementById('Filter_Text');
-        var ReleasedOnly_Check = document.getElementById('ReleasedOnly_Check');
-        var RegionalOnly_Check = document.getElementById('RegionalOnly_Check');
-        var RaidBossOnly_Check = document.getElementById('RaidBossOnly_Check');
-        var LegendaryOnly_Check = document.getElementById('LegendaryOnly_Check');
-        var HatchOnly_Check = document.getElementById('HatchOnly_Check');
-        var ShinyOnly_Check = document.getElementById('ShinyOnly_Check');
+        Filter_Text = document.getElementById('Filter_Text');
+        ReleasedOnly_Check = document.getElementById('ReleasedOnly_Check');
+        RegionalOnly_Check = document.getElementById('RegionalOnly_Check');
+        RaidBossOnly_Check = document.getElementById('RaidBossOnly_Check');
+        LegendaryOnly_Check = document.getElementById('LegendaryOnly_Check');
+        HatchOnly_Check = document.getElementById('HatchOnly_Check');
+        ShinyOnly_Check = document.getElementById('ShinyOnly_Check');
 
-        var GEN1_Collection = document.getElementById('GEN1_Collection');
-        var GEN2_Collection = document.getElementById('GEN2_Collection');
-        var GEN3_Collection = document.getElementById('GEN3_Collection');
-        var GEN4_Collection = document.getElementById('GEN4_Collection');
-        var GEN5_Collection = document.getElementById('GEN5_Collection');
-        var GEN6_Collection = document.getElementById('GEN6_Collection');
-        var GEN7_Collection = document.getElementById('GEN7_Collection');
+        GEN1_Collection = document.getElementById('GEN1_Collection');
+        GEN2_Collection = document.getElementById('GEN2_Collection');
+        GEN3_Collection = document.getElementById('GEN3_Collection');
+        GEN4_Collection = document.getElementById('GEN4_Collection');
+        GEN5_Collection = document.getElementById('GEN5_Collection');
+        GEN6_Collection = document.getElementById('GEN6_Collection');
+        GEN7_Collection = document.getElementById('GEN7_Collection');
 
-        var Selected_Pokemon_Dialog = document.getElementById('Selected_Pokemon_Dialog');
-        var Selected_Pokemon_Title = document.getElementById('Selected_Pokemon_Title');
-        var Selected_Pokemon = document.getElementById('Selected_Pokemon');
-        var Selected_Pokemon_Generation = document.getElementById('Selected_Pokemon_Generation');
-        var Selected_Pokemon_Family = document.getElementById('Selected_Pokemon_Family');
-        var Selected_Pokemon_Types = document.getElementById('Selected_Pokemon_Types');
-        var Selected_Pokemon_Boosts = document.getElementById('Selected_Pokemon_Boosts');
-        var Selected_Pokemon_GenderRatio = document.getElementById('Selected_Pokemon_GenderRatio');
-        var Selected_Pokemon_Shiny = document.getElementById('Selected_Pokemon_Shiny');
-        var Selected_Pokemon_Availability = document.getElementById('Selected_Pokemon_Availability');
-        var Selected_Pokemon_Max_CP = document.getElementById('Selected_Pokemon_Max_CP');
-        var Selected_Pokemon_Max_HP = document.getElementById('Selected_Pokemon_Max_HP');
-        var Selected_Pokemon_BuddyKM = document.getElementById('Selected_Pokemon_BuddyKM');
-        var Selected_Pokemon_BaseIV_Attack = document.getElementById('Selected_Pokemon_BaseIV_Attack');
-        var Selected_Pokemon_BaseIV_Defense = document.getElementById('Selected_Pokemon_BaseIV_Defense');
-        var Selected_Pokemon_BaseIV_Stamina = document.getElementById('Selected_Pokemon_BaseIV_Stamina');
-        var Selected_Pokemon_CaptureRate = document.getElementById('Selected_Pokemon_CaptureRate');
-        var Selected_Pokemon_FleeRate = document.getElementById('Selected_Pokemon_FleeRate');
+        Selected_Pokemon_Dialog = document.getElementById('Selected_Pokemon_Dialog');
+        Selected_Pokemon_Title = document.getElementById('Selected_Pokemon_Title');
+        Selected_Pokemon = document.getElementById('Selected_Pokemon');
+        Selected_Pokemon_Generation = document.getElementById('Selected_Pokemon_Generation');
+        Selected_Pokemon_Family = document.getElementById('Selected_Pokemon_Family');
+        Selected_Pokemon_Types = document.getElementById('Selected_Pokemon_Types');
+        Selected_Pokemon_Boosts = document.getElementById('Selected_Pokemon_Boosts');
+        Selected_Pokemon_GenderRatio = document.getElementById('Selected_Pokemon_GenderRatio');
+        Selected_Pokemon_Shiny = document.getElementById('Selected_Pokemon_Shiny');
+        Selected_Pokemon_Availability = document.getElementById('Selected_Pokemon_Availability');
+        Selected_Pokemon_Max_CP = document.getElementById('Selected_Pokemon_Max_CP');
+        Selected_Pokemon_Max_HP = document.getElementById('Selected_Pokemon_Max_HP');
+        Selected_Pokemon_BuddyKM = document.getElementById('Selected_Pokemon_BuddyKM');
+        Selected_Pokemon_BaseIV_Attack = document.getElementById('Selected_Pokemon_BaseIV_Attack');
+        Selected_Pokemon_BaseIV_Defense = document.getElementById('Selected_Pokemon_BaseIV_Defense');
+        Selected_Pokemon_BaseIV_Stamina = document.getElementById('Selected_Pokemon_BaseIV_Stamina');
+        Selected_Pokemon_CaptureRate = document.getElementById('Selected_Pokemon_CaptureRate');
+        Selected_Pokemon_FleeRate = document.getElementById('Selected_Pokemon_FleeRate');
 
-        var Selected_Pokemon_Strengths = document.getElementById('Selected_Pokemon_Strengths');
-        var Selected_Pokemon_Weaknesses = document.getElementById('Selected_Pokemon_Weaknesses');
+        Selected_Pokemon_Strengths = document.getElementById('Selected_Pokemon_Strengths');
+        Selected_Pokemon_Weaknesses = document.getElementById('Selected_Pokemon_Weaknesses');
     }
     catch (err) {
         ShowError(err);
@@ -197,8 +198,8 @@ function MatchesFilter(pokemon) {
     return true;
 }
 
-function OnTypesChanged(weather) {
-    typeSelections = weather;
+function OnTypesChanged(types) {
+    typeSelections = types;
     OnFilterCriteriaChanged();
 }
 

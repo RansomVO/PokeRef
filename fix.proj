@@ -28,8 +28,6 @@
         contactinfo.html;
         footernote.html;
         charts\_sectionname.txt;
-        charts\movesets\_sectionname.txt;
-        charts\movesets\_linkslist.html;
         charts\raidboss\_sectionname.txt;
         charts\raidboss\_linkslist.page.xml;
         resources\_sectionname.txt;
@@ -52,15 +50,6 @@
       <Dependencies>
         js\global.js;
         charts\raidboss\_linkslist.page.xml;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-    </FixOutputFile>
-    <FixOutputFile Include="charts\movesets\index.html">
-      <Visible>true</Visible>
-      <Dependencies>
-        js\global.js;
-        charts\movesets\index.css;
         charts\index.css;
         index.css;
       </Dependencies>

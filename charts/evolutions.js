@@ -55,7 +55,6 @@ window.onload = function () {
 
     document.getElementById('Loading').classList.add('DIV_HIDDEN');
     document.getElementById('Loaded').classList.remove('DIV_HIDDEN');
-    document.getElementById('Loaded').classList.add('DIV_SHOWN');
 }
 
 // #endregion Common

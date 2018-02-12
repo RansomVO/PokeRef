@@ -23,17 +23,6 @@
     </FixOutputFile>
   </ItemGroup>
   
-  <!-- \charts\movesets -->
-  <ItemGroup>
-    <FixOutputFile Include="charts\movesets\index.css">
-      <Visible>true</Visible>
-      <Dependencies>
-        charts\index.css;
-        index.css;
-      </Dependencies>
-    </FixOutputFile>
-  </ItemGroup>
-  
   <!-- \charts\raidboss -->
   <ItemGroup>
     <FixOutputFile Include="charts\raidboss\index.css">

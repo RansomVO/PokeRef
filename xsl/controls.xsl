@@ -18,7 +18,7 @@
     <xsl:param name="Callback" />
     <xsl:param name="Title" select="'Types'" />
 
-    <table id="Controls_PokeType_Selector" border="1" style="white-space:nowrap;">
+    <table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
         <xsl:value-of select="$Callback" />
       </xsl:attribute>
@@ -26,7 +26,7 @@
         <th colspan="2">
           <xsl:value-of select="$Title" />
           <br />
-          <input id="PokeType_All_Check" type="checkbox" onchange="OnToggleAllPokeTypes();" />
+          <input id="CONTROLS_PokeType_All_Check" type="checkbox" onchange="OnToggleAllPokeTypes();" />
         </th>
       </tr>
       <tr>
@@ -112,9 +112,7 @@
     <xsl:param name="Type" />
     <input type="checkbox" onchange="OnTogglePokeType(this);">
       <xsl:attribute name="id">
-        <xsl:text>PokeType_</xsl:text>
-        <xsl:value-of select="pokeref:Replace($Type, ' ', '')" />
-        <xsl:text>_Check</xsl:text>
+        <xsl:value-of select="concat('CONTROLS_PokeType_', pokeref:Replace($Type, ' ', ''), '_Check')"/>
       </xsl:attribute>
     </input>
     <xsl:call-template name="OutputTypeIcon">
@@ -133,7 +131,7 @@
     <xsl:param name="Callback" />
     <xsl:param name="Title" select="'Weather'" />
 
-    <table id="Weather_Selector" border="1" style="white-space:nowrap;">
+    <table id="CONTROLS_Weather_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
         <xsl:value-of select="$Callback" />
       </xsl:attribute>
@@ -141,7 +139,7 @@
         <th>
           <xsl:value-of select="$Title" />
           <br />
-          <input id="Weather_All_Check" type="checkbox" onchange="OnToggleAllWeather();" />
+          <input id="CONTROLS_Weather_All_Check" type="checkbox" onchange="OnToggleAllWeather();" />
         </th>
       </tr>
       <tr>
@@ -183,9 +181,7 @@
 
     <input type="checkbox" onchange="OnToggleWeather(this);">
       <xsl:attribute name="id">
-        <xsl:text>Weather_</xsl:text>
-        <xsl:value-of select="pokeref:Replace($Weather, ' ', '')" />
-        <xsl:text>_Check</xsl:text>
+        <xsl:value-of select="concat('CONTROLS_Weather_', pokeref:Replace($Weather, ' ', ''), '_Check')"/>
       </xsl:attribute>
     </input>
     <xsl:call-template name="OutputWeatherIcon">

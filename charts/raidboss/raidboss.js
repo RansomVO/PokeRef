@@ -48,11 +48,11 @@ window.onload = function () {
 // ============================================================================
 
 // Get the fields we will be using multiple times.
-//  (I think the vars need to be named with a capital letter first to be considered global.)
+//  NOTE: Do not use keyword "var" and the value will be global.
 function GetFields() {
     try {
-        var Regular = document.getElementById('Regular');
-        var Boosted = document.getElementById('Boosted');
+        Regular = document.getElementById('Regular');
+        Boosted = document.getElementById('Boosted');
     }
     catch (err) {
         ShowError(err);
