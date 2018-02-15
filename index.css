@@ -231,8 +231,22 @@ h1, h2, h3, h4 {
     width: .5em;
 }
 
-.TAG_ICON {
+.TAG_ICON_LARGE {
+    width: 2em;
+}
+
+.TAG_ICON_REGULAR {
     width: 1em;
+}
+
+.TAG_ICON_SMALL {
+    width: .5em;
+}
+
+.TAG_ICON_OVERLAP {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .SHINY_ICON {
@@ -314,6 +328,18 @@ h1, h2, h3, h4 {
 
 .LEGACY_MOVE {
     text-decoration:line-through;
+}
+
+.STAB_MOVE {
+    color: gold;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.LEGACY_STAB_MOVE {
+    color: gray;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 }
 
 .SHADED {

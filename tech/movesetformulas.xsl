@@ -722,8 +722,9 @@
         <div id="FORMULA_MOVESET_DPS" class="INDENT">
           <p>
             Obviously, True DPS is still quite a complex formula.
-            <br />To simplify it further, many people will assume the BaseIV + IV scores for the Attacking Pokemon exactly cancel out the scores for the Defending Pokemon.
-            <span class="NOTE">(Which is almost never the case.)</span>
+            <br />To simplify it further, many people will use only the values from the Move Set itself, removing the values from Pokemon.
+            This will give a <i>generic</i> DPS for the moveset.
+            <br /><span class="NOTE">(In other words, it will be the same value regardless the Pokemon.)</span>
           </p>
 
           <p class="PARENT">
@@ -744,9 +745,7 @@
                       <td rowspan="8" style="font-size:4em">(</td>
                       <td rowspan="8" style="padding-top:.5em;">FLOOR</td>
                       <td rowspan="6" style="font-size:3em">(</td>
-                      <td rowspan="8" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('FastPower', $nbsp, $times, $nbsp, 'FastSTAB')" disable-output-escaping="yes" />
-                      </td>
+                      <td rowspan="8" style="padding-top:.5em;">FastPower</td>
                       <td rowspan="6" width="1" style="font-size:3em">)</td>
                       <td rowspan="8" style="padding-top:.5em;">
                         <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
@@ -762,9 +761,7 @@
                       <td rowspan="8" style="font-size:5em">)</td>
                       <td rowspan="8" style="padding-top:.5em;">+</td>
                       <td rowspan="6" style="font-size:3em">(</td>
-                      <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('ChargedPower', $nbsp, $times, $nbsp, 'ChargedSTAB')" disable-output-escaping="yes" />
-                      </td>
+                      <td rowspan="7" style="padding-top:.5em;">ChargedPower</td>
                       <td rowspan="6" style="font-size:3em">)</td>
                       <td rowspan="8" style="padding-top:.5em;">
                         <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
@@ -852,7 +849,7 @@
           </div>
 
           <p>
-            I refer to this as the "MoveSet DPS" on the charts in <a href="/charts/movesets.html">Pokemon Move Sets</a>.
+            I personally don't pay attention to this, but I include it as the "Move Set DPS" on the charts in <a href="/charts/movesets.html">Pokemon Move Sets</a> in case you are interested.
           </p>
         </div>
 

@@ -379,19 +379,27 @@
 
     <img class="SPACER_ICON" src="/images/blank.png" />
 
-    <xsl:call-template name="OutputBoostIcon">
+    <xsl:call-template name="OutputWeatherBoostIcon">
       <xsl:with-param name="Type" select="Primary" />
     </xsl:call-template>
-    <xsl:call-template name="OutputBoostIcon">
+    <xsl:call-template name="OutputWeatherBoostIcon">
       <xsl:with-param name="Type" select="Secondary" />
     </xsl:call-template>
   </xsl:template>
 
   <xsl:template name="OutputTypeIcon">
     <xsl:param name="Type" />
+    <xsl:param name="Settings" />
 
     <xsl:if test="$Type != ''">
-      <img class="TAG_ICON">
+      <img>
+        <xsl:attribute name="class">
+          <xsl:choose>
+            <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
+            <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
+            <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
         <xsl:attribute name="src">
           <xsl:text>/images/type_</xsl:text>
           <xsl:value-of select="pokeref:ToLower($Type)" />
@@ -404,20 +412,31 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template name="OutputBoostIcon">
+  <xsl:template name="OutputWeatherBoostIcon">
     <xsl:param name="Type" />
+    <xsl:param name="Settings" />
 
     <xsl:if test="$Type != ''">
       <xsl:call-template name="OutputWeatherIcon">
         <xsl:with-param name="Weather" select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
+        <xsl:with-param name="Settings" select="$Settings" />
       </xsl:call-template>
     </xsl:if>
   </xsl:template>
 
   <xsl:template name="OutputWeatherIcon">
     <xsl:param name="Weather" />
+    <xsl:param name="Settings" />
 
-    <img class="TAG_ICON">
+    <img>
+      <xsl:attribute name="class">
+        <xsl:choose>
+          <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
+          <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
+          <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
+        </xsl:choose>
+        <xsl:if test="exslt:node-set($Settings)/*/@overlap = 'true'"> TAG_ICON_OVERLAP</xsl:if>
+      </xsl:attribute>
       <xsl:attribute name="src">
         <xsl:text>/images/weather_</xsl:text>
         <xsl:value-of select="pokeref:ToLower(pokeref:Replace($Weather, ' ', ''))" />
@@ -427,6 +446,32 @@
         <xsl:value-of select="$Weather" />
       </xsl:attribute>
     </img>
+  </xsl:template>
+
+  <xsl:template name="OutputTypeIconWithBoost">
+    <xsl:param name="Type" />
+    <xsl:param name="Settings" />
+
+    <div style="position:relative; display:inline-block">
+      <xsl:call-template name="OutputTypeIcon">
+        <xsl:with-param name="Type" select="$Type" />
+        <xsl:with-param name="Settings">
+          <xsl:if test="exslt:node-set($Settings)/*/@size = 'large'">
+            <Show size="large" />
+          </xsl:if>
+        </xsl:with-param>
+      </xsl:call-template>
+      <xsl:call-template name="OutputWeatherBoostIcon">
+        <xsl:with-param name="Type" select="$Type" />
+        <xsl:with-param name="Settings">
+          <Show overlap="true">
+            <xsl:if test="exslt:node-set($Settings)/*/@size != 'large'">
+              <xsl:attribute name="size">small</xsl:attribute>
+            </xsl:if>
+          </Show>
+        </xsl:with-param>
+      </xsl:call-template>
+    </div>
   </xsl:template>
 
   <xsl:template name="PokemonImageKey">

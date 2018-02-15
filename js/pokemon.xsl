@@ -166,7 +166,7 @@ function GetPokemonType(type, icon) {
     } else {
         return (icon === undefined || !icon ? '' : '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>img class="TAG_ICON" src="/images/type_' + type.toLowerCase() + '.png" title="' + type + '" /</xsl:text>
+    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/type_' + type.toLowerCase() + '.png" title="' + type + '" /</xsl:text>
     <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>') + type;
     }
@@ -192,7 +192,7 @@ function GetPokemonBoost(boost, icon) {
     } else {
         return (icon === undefined || !icon ? '' : '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>img class="TAG_ICON" src="/images/weather_' + boost.toLowerCase().replace(/ /g,'') + '.png" title="' + boost.replace(/ /g, '</xsl:text>
+    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/weather_' + boost.toLowerCase().replace(/ /g,'') + '.png" title="' + boost.replace(/ /g, '</xsl:text>
     <xsl:value-of select="$nbsp" disable-output-escaping="yes" /><xsl:text>') + '" /</xsl:text>
     <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>') + boost.replace(/ /g, '</xsl:text>
@@ -210,7 +210,7 @@ function GetPokemonGenderRatio(pokemon) {
 function GetPokemonShiny(pokemon, icon) {
     return pokemon.attributes['shiny'].value === '' ? 'No' : (icon === undefined || !icon ? '' : '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>img class="TAG_ICON" src="/images/shiny.png" alt="Shiny" /</xsl:text>
+    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /</xsl:text>
     <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>') + 'Yes';
 }

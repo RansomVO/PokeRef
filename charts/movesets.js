@@ -5,6 +5,7 @@
 // ============================================================================
 
 var typeSelections = null;
+var weatherSelections = null;
 
 // #endregion
 
@@ -57,7 +58,7 @@ function GetFields() {
 // #endregion
 
 // ============================================================================
-// ===== Functions specific to this page.
+// #region Functions specific to this page.
 // ============================================================================
 
 // Called when any of the Filter criteria changes.
@@ -123,6 +124,7 @@ function FilterPokemon(pokemonRows) {
     return movesetsFound;
 }
 
+// Determine whether the Pokemon in this row should be shown or not.
 function PokemonMatchesFilter(primaryRow) {
     // If Show Only Released is on, filter out any that are not released.
     if (GetFieldValue(ShowOnlyReleased_Checkbox) && primaryRow.classList.contains("UNAVAILABLE_ROW")) {
@@ -155,39 +157,61 @@ function PokemonMatchesFilter(primaryRow) {
     return true;
 }
 
-// Determine whether the Pokemon in this row should be shown or not.
+// Determine whether the MoveSet in this row should be shown or not.
 function MoveSetMatchesFilter(movesetRow) {
-    // If types are selected, only include MoveSets containing a move with one of those types.
-    if (typeSelections !== null) {
-        var fastMove = movesetRow.getAttribute('FastMove');
-        var chargedMove = movesetRow.getAttribute('ChargedMove');
+    var fastMove = movesetRow.getAttribute('FastMove');
+    var chargedMove = movesetRow.getAttribute('ChargedMove');
 
-        if (!((typeSelections['Bug'] && (fastMove.indexOf('`Bug') >= 0 || chargedMove.indexOf('`Bug') >= 0)) ||
-              (typeSelections['Dark'] && (fastMove.indexOf('`Dark') >= 0 || chargedMove.indexOf('`Dark') >= 0)) ||
-              (typeSelections['Dragon'] && (fastMove.indexOf('`Dragon') >= 0 || chargedMove.indexOf('`Dragon') >= 0)) ||
-              (typeSelections['Electric'] && (fastMove.indexOf('`Electric') >= 0 || chargedMove.indexOf('`Electric') >= 0)) ||
-              (typeSelections['Fairy'] && (fastMove.indexOf('`Fairy') >= 0 || chargedMove.indexOf('`Fairy') >= 0)) ||
-              (typeSelections['Fighting'] && (fastMove.indexOf('`Fighting') >= 0 || chargedMove.indexOf('`Fighting') >= 0)) ||
-              (typeSelections['Fire'] && (fastMove.indexOf('`Fire') >= 0 || chargedMove.indexOf('`Fire') >= 0)) ||
-              (typeSelections['Flying'] && (fastMove.indexOf('`Flying') >= 0 || chargedMove.indexOf('`Flying') >= 0)) ||
-              (typeSelections['Ghost'] && (fastMove.indexOf('`Ghost') >= 0 || chargedMove.indexOf('`Ghost') >= 0)) ||
-              (typeSelections['Grass'] && (fastMove.indexOf('`Grass') >= 0 || chargedMove.indexOf('`Grass') >= 0)) ||
-              (typeSelections['Ground'] && (fastMove.indexOf('`Ground') >= 0 || chargedMove.indexOf('`Ground') >= 0)) ||
-              (typeSelections['Ice'] && (fastMove.indexOf('`Ice') >= 0 || chargedMove.indexOf('`Ice') >= 0)) ||
-              (typeSelections['Normal'] && (fastMove.indexOf('`Normal') >= 0 || chargedMove.indexOf('`Normal') >= 0)) ||
-              (typeSelections['Poison'] && (fastMove.indexOf('`Poison') >= 0 || chargedMove.indexOf('`Poison') >= 0)) ||
-              (typeSelections['Psychic'] && (fastMove.indexOf('`Psychic') >= 0 || chargedMove.indexOf('`Psychic') >= 0)) ||
-              (typeSelections['Rock'] && (fastMove.indexOf('`Rock') >= 0 || chargedMove.indexOf('`Rock') >= 0)) ||
-              (typeSelections['Steel'] && (fastMove.indexOf('`Steel') >= 0 || chargedMove.indexOf('`Steel') >= 0)) ||
-              (typeSelections['Water'] && (fastMove.indexOf('`Water') >= 0 || chargedMove.indexOf('`Water') >= 0)))) {
-            return false;
-        }
+    // Include only MoveSets containing a Move of the selected types.
+    if (typeSelections !== null &&
+        !((typeSelections['Bug'] && (fastMove.indexOf('`Bug') >= 0 || chargedMove.indexOf('`Bug') >= 0)) ||
+        (typeSelections['Dark'] && (fastMove.indexOf('`Dark') >= 0 || chargedMove.indexOf('`Dark') >= 0)) ||
+        (typeSelections['Dragon'] && (fastMove.indexOf('`Dragon') >= 0 || chargedMove.indexOf('`Dragon') >= 0)) ||
+        (typeSelections['Electric'] && (fastMove.indexOf('`Electric') >= 0 || chargedMove.indexOf('`Electric') >= 0)) ||
+        (typeSelections['Fairy'] && (fastMove.indexOf('`Fairy') >= 0 || chargedMove.indexOf('`Fairy') >= 0)) ||
+        (typeSelections['Fighting'] && (fastMove.indexOf('`Fighting') >= 0 || chargedMove.indexOf('`Fighting') >= 0)) ||
+        (typeSelections['Fire'] && (fastMove.indexOf('`Fire') >= 0 || chargedMove.indexOf('`Fire') >= 0)) ||
+        (typeSelections['Flying'] && (fastMove.indexOf('`Flying') >= 0 || chargedMove.indexOf('`Flying') >= 0)) ||
+        (typeSelections['Ghost'] && (fastMove.indexOf('`Ghost') >= 0 || chargedMove.indexOf('`Ghost') >= 0)) ||
+        (typeSelections['Grass'] && (fastMove.indexOf('`Grass') >= 0 || chargedMove.indexOf('`Grass') >= 0)) ||
+        (typeSelections['Ground'] && (fastMove.indexOf('`Ground') >= 0 || chargedMove.indexOf('`Ground') >= 0)) ||
+        (typeSelections['Ice'] && (fastMove.indexOf('`Ice') >= 0 || chargedMove.indexOf('`Ice') >= 0)) ||
+        (typeSelections['Normal'] && (fastMove.indexOf('`Normal') >= 0 || chargedMove.indexOf('`Normal') >= 0)) ||
+        (typeSelections['Poison'] && (fastMove.indexOf('`Poison') >= 0 || chargedMove.indexOf('`Poison') >= 0)) ||
+        (typeSelections['Psychic'] && (fastMove.indexOf('`Psychic') >= 0 || chargedMove.indexOf('`Psychic') >= 0)) ||
+        (typeSelections['Rock'] && (fastMove.indexOf('`Rock') >= 0 || chargedMove.indexOf('`Rock') >= 0)) ||
+        (typeSelections['Steel'] && (fastMove.indexOf('`Steel') >= 0 || chargedMove.indexOf('`Steel') >= 0)) ||
+        (typeSelections['Water'] && (fastMove.indexOf('`Water') >= 0 || chargedMove.indexOf('`Water') >= 0)))) {
+        return false;
+    }
+
+    // Include only MoveSets containing a Move boosted by the selected weather.
+    if (weatherSelections !== null &&
+        !((weatherSelections['Sunny'] && (fastMove.indexOf('^Sunny') >= 0 || chargedMove.indexOf('^Sunny') >= 0)) ||
+        (weatherSelections['Windy'] && (fastMove.indexOf('^Windy') >= 0 || chargedMove.indexOf('^Windy') >= 0)) ||
+        (weatherSelections['Cloudy'] && (fastMove.indexOf('^Cloudy') >= 0 || chargedMove.indexOf('^Cloudy') >= 0)) ||
+        (weatherSelections['PartlyCloudy'] && (fastMove.indexOf('^Partly Cloudy') >= 0 || chargedMove.indexOf('^Partly Cloudy') >= 0)) ||
+        (weatherSelections['Fog'] && (fastMove.indexOf('^Fog') >= 0 || chargedMove.indexOf('^Fog') >= 0)) ||
+        (weatherSelections['Rainy'] && (fastMove.indexOf('^Rainy') >= 0 || chargedMove.indexOf('^Rainy') >= 0)) ||
+        (weatherSelections['Snow'] && (fastMove.indexOf('^Snow') >= 0 || chargedMove.indexOf('^Snow') >= 0)))) {
+        return false;
     }
 
     return true;
 }
 
+// #endregion
+
+// ============================================================================
+// #region Callbacks
 function OnTypesChanged(types) {
     typeSelections = types;
     OnFilterCriteriaChanged();
 }
+
+function OnWeatherChanged(weather) {
+    weatherSelections = weather;
+    OnFilterCriteriaChanged();
+}
+
+// #endregion
