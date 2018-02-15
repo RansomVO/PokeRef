@@ -141,7 +141,18 @@ function PokemonMatchesFilter(primaryRow) {
         //      "5-10": 5 through 10
         //       "-10": beginning through 10
         //       "10-": 10 through end
-        if (!isNaN(filterPokeStat)) {
+        var segments = filterPokeStat.split('-');
+        if (segments.length === 2 &&
+           (segments[0].trim().length === 0 || !isNaN(segments[0])) &&
+           (segments[1].trim().length === 0 || !isNaN(segments[1]))) {
+            // This is a range.
+            var min = segments[0].trim().length === 0 ? 0 : segments[0];
+            var max = segments[1].trim().length === 0 ? 9999 : segments[1];
+            var id = parseInt(primaryRow.getAttribute('id'));
+            if (id < min || id > max) {
+                return false;
+            }
+        } else if (!isNaN(filterPokeStat)) {
             if (!primaryRow.getAttribute('id').startsWith(filterPokeStat)) {
                 return false;
             }
