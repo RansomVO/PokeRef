@@ -93,37 +93,6 @@
       <DependentUpon>evolutions.xsl</DependentUpon>
     </FixOutputFile>
 
-    <FixIntermediateFile Include="charts\movesets.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform Include="charts\movesets.page.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        xsl\global.xsl;
-        xsl\controls.xsl;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen1.xml;
-        _datafiles\pokestats.gen2.xml;
-        _datafiles\pokestats.gen3.xml;
-        _datafiles\movesets.gen1.xml;
-        _datafiles\movesets.gen2.xml;
-        _datafiles\movesets.gen3.xml;
-        js\global.js;
-        js\controls.js;
-        js\pokemon.xsl;
-        charts\movesets.js;
-      </Dependencies>
-      <OutputFileName>movesets.html</OutputFileName>
-    </XslTransform>
-    <FixOutputFile Include="charts\movesets.js">
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Visible>true</Visible>
-      <Dependencies>
-        js\global.js;
-      </Dependencies>
-    </FixOutputFile>
-    
     <FixIntermediateFile Include="charts\pokechart.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
@@ -171,6 +140,89 @@
       </Dependencies>
       <OutputFileName>namingtechnique.html</OutputFileName>
     </XslTransform>
+
+  </ItemGroup>
+
+  <!-- Charts/MoveSets -->
+  <ItemGroup>
+    <FixIntermediateFile Include="charts\movesets\movesets.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\movesets\movesets.gen1.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        _datafiles\stats.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\movesets.gen1.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.xsl;
+        charts\movesets.js;
+      </Dependencies>
+      <OutputFileName>movesets.gen1.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\movesets\movesets.gen2.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        _datafiles\stats.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\movesets.gen2.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.xsl;
+        charts\movesets.js;
+      </Dependencies>
+      <OutputFileName>movesets.gen2.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\movesets\movesets.gen3.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        _datafiles\stats.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\movesets.gen3.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.xsl;
+        charts\movesets.js;
+      </Dependencies>
+      <OutputFileName>movesets.gen3.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\movesets\movesets.all.page.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        _datafiles\stats.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\movesets.gen1.xml;
+        _datafiles\movesets.gen2.xml;
+        _datafiles\movesets.gen3.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.xsl;
+        charts\movesets.js;
+      </Dependencies>
+      <OutputFileName>movesets.all.html</OutputFileName>
+    </XslTransform>
+    <FixOutputFile Include="charts\movesets\movesets.js">
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
+    </FixOutputFile>
   </ItemGroup>
 
   <!-- Charts/RaidBoss -->

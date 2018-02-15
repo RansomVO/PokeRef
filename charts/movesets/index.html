@@ -2,10 +2,8 @@
 <head>
     <!-- This is to make the font size consistent on mobile. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <script src="/js/global.js?cacherefresh={$CurrentDate}"></script>
     <link type="text/css" rel="stylesheet" href="index.css?cacherefresh={$CurrentDate}" />
-
     <title>Pokemon Move Sets</title>
 </head>
 <body>
@@ -32,13 +30,19 @@
     <p class="PARENT">
         <br />I have created a chart for each generation of Pokemon:
     </p>
-    <div class="CHILD">
+    <div class="CHILD" style="font-size:large;">
         <script>InsertLinksList('_linkslist.html')</script>
     </div>
     <p class="NOTE">
         <b>NOTE</b>: If you find you want to change the Move Set one of your Pokemon has, you can make use of "TMs" that may be one of the rewards you get from defeating a Raid Boss.
     </p>
-
+    <br />
+    <hr />
+    <h2><a href="movesets.all.html">All Generations</a></h2>
+    <p>
+        I have also created a master version which contains <b><i>ALL</i></b> of the generations together on a single page.
+        <br />This may be convenient, but it may take a while to load.
+    </p>
     <!-- This script is defined in /js/global.js -->
     <script>WriteFooter();</script>
 </body>

@@ -283,6 +283,11 @@
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
   <!-- /charts/movesets -->
+  <ItemGroup>
+    <WebContent Include="charts\movesets\index.css" />
+    <FixOutputFile Include="charts\movesets\_linkslist.html" />
+    <FixOutputFile Include="charts\movesets\_sectionname.txt" />
+  </ItemGroup>
   <!-- /charts/raidboss -->
   <ItemGroup>
     <FixOutputFile Include="charts\raidboss\_sectionname.txt" />

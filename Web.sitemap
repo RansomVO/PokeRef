@@ -110,10 +110,26 @@
         <siteMapNode title="RaidBoss Possible IVs: Zapdos" description="Chart for determining IV from CP/HP for a Zapdos" url="/charts/raidboss/raidboss.zapdos.html" />
         <!-- #endregion -->
       </siteMapNode>
-      <siteMapNode title="Pokemon Move Sets" description="Page with possible Move Sets for every available Pokemon." url="/charts/movesets.html">
+      <siteMapNode title="Pokemon Move Sets" description="Pages with possible Move Sets for every available Pokemon." url="/charts/movesets/">
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="Pokemon Move Sets - Gen 1" description="Possible Move Sets for every available Pokemon in Gen 1." url="/charts/movesets/movesets.gen1.html">
         <!-- #region Links to anchors on the page. -->
-        <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/movesets/movesets.html#criteria" />
-        <siteMapNode title="MoveSets" description="Table of MoveSets for each Pokemon" url="/charts/movesets/movesets.html#movesets" />
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/movesets/movesets.gen1.html#criteria" />
+          <siteMapNode title="MoveSets" description="Table of MoveSets for each Pokemon in Gen 1." url="/charts/movesets/movesets.gen1.html#movesets" />
+        <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Move Sets - Gen 2" description="Possible Move Sets for every available Pokemon in Gen 2." url="/charts/movesets/movesets.gen2.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Link to section where filtering criteria may be set." url="/charts/movesets/movesets.gen2.html#criteria" />
+          <siteMapNode title="MoveSets" description="A table of MoveSets for each Pokemon in Gen 2." url="/charts/movesets/movesets.gen2.html#movesets" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Move Sets - Gen 3" description="Possible Move Sets for every available Pokemon in Gen 3." url="/charts/movesets/movesets.gen3.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Link to section where filtering criteria may be set." url="/charts/movesets/movesets.gen3.html#criteria" />
+          <siteMapNode title="MoveSets" description="A table of MoveSets for each Pokemon in Gen 3." url="/charts/movesets/movesets.gen3.html#movesets" />
+          <!-- #endregion -->
+        </siteMapNode>
         <!-- #endregion -->
       </siteMapNode>
       <siteMapNode title="Move Effectiveness" description="Chart showing how effective types of moves are against types of Pokemon." url="/charts/effectiveness.html">

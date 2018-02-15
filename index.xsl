@@ -148,15 +148,21 @@
             </div>
 
             <h2 id="anchor_movesets">
-              <a href="charts/movesets.html">Pokemon Move Sets</a>
+              <a href="charts/movesets/">Pokemon Move Sets</a>
             </h2>
             <div>
-              <p class="PARENT">
+              <p>
                 Each type of Pokemon has a set of "Fast" Moves and "Charged" moves that they may have.
                 Then each individual Pokemon has only one combination.
                 Of course, some moves are more effective than others.
-                <br />This page shows a list of each possible combination for each type of Pokemon, which then tells how much damage it will do.
+                <br />These pages show a list of each possible combination for each Pokemon, which then tells how much damage it will do.
               </p>
+              <p class="PARENT">
+                I have created a chart for each generation of Pokemon:
+              </p>
+              <div class="CHILD">
+                <script>InsertLinksList('charts/movesets/_linkslist.html')</script>
+              </div>
             </div>
 
             <h2 id="anchor_gamemaster">

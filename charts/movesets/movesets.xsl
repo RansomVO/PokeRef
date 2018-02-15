@@ -56,10 +56,32 @@
           }
         </style>
 
-        <title>Pokemon Move Sets</title>
+        <title>
+          Pokemon Move Sets
+          <xsl:choose>
+            <xsl:when test="count(MoveSets/Generation) > 1">
+              <xsl:text> - All Gens </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text> - Gen </xsl:text>
+              <xsl:value-of select="MoveSets/Generation"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </title>
       </head>
       <body>
-        <h1>Pokemon Move Sets</h1>
+        <h1>
+          Pokemon Move Sets
+          <xsl:choose>
+            <xsl:when test="count(MoveSets/Generation) > 1">
+              <xsl:text> - All Gens </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text> - Gen </xsl:text>
+              <xsl:value-of select="MoveSets/Generation"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </h1>
 
         <p class="NOTE">
           <b>NOTE</b>: Last Updated <xsl:value-of select="$GameMaster_TimeStamp" />
@@ -175,13 +197,7 @@
           <br />
           <hr />
           <div id="anchor_movesets">
-            <xsl:apply-templates select="MoveSets[Generation = 1]" />
-            <xsl:apply-templates select="MoveSets[Generation = 2]" />
-            <xsl:apply-templates select="MoveSets[Generation = 3]" />
-            <!--<xsl:apply-templates select="MoveSets[Generation = 4]" />-->
-            <!--<xsl:apply-templates select="MoveSets[Generation = 5]" />-->
-            <!--<xsl:apply-templates select="MoveSets[Generation = 6]" />-->
-            <!--<xsl:apply-templates select="MoveSets[Generation = 7]" />-->
+            <xsl:apply-templates select="MoveSets" />
           </div>
         </div>
 
@@ -320,7 +336,6 @@
       <xsl:attribute name="id">
         <xsl:value-of select="concat('MOVESET_DIV_GEN_', Generation)" />
       </xsl:attribute>
-
       <table border="1">
         <xsl:attribute name="id">
           <xsl:value-of select="concat('MOVESET_GEN_', Generation)" />
@@ -370,7 +385,7 @@
               </xsl:attribute>
               <xsl:value-of select="Pokemon/Name" />
             </th>
-            <!-- Add a blank line as a separater. (It also make adding the movesets easier.) -->
+            <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
             <td colspan="8" class="HIDDEN_CONVENIENCE_ROW" />
           </tr>
           <xsl:for-each select="../MoveSet[Pokemon/ID=$PokemonID]">

@@ -81,7 +81,7 @@
           </p>
           <div class="INDENT CHILD NOTE">
             <p class="PARENT">
-              <b>NOTE</b>: These are the values necessary to calculate the DPS of <a href="/charts/movesets.html">Move Sets</a>.
+              <b>NOTE</b>: These are the values necessary to calculate the DPS of <a href="/charts/movesets/">Move Sets</a>.
             </p>
           </div>
         </div>

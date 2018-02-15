@@ -49,7 +49,19 @@
       <Visible>true</Visible>
       <Dependencies>
         js\global.js;
+        charts\index.js;
+        charts\index.css;
+        index.css;
         charts\raidboss\_linkslist.page.xml;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+    </FixOutputFile>
+    <FixOutputFile Include="charts\movesets\index.html">
+      <Visible>true</Visible>
+      <Dependencies>
+        js\global.js;
+        charts\movesets\index.css;
         charts\index.css;
         index.css;
       </Dependencies>
