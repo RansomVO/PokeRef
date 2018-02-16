@@ -1,9 +1,6 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
-MoveSet Sort and Filter
-	- Add ability to specify a range of numbers.
-	- Add ability to make name searches have many of the features of the Pokemon GO search ("+pidg", etc.)
 
 PokeChart:
 	- Add to Popup:
@@ -85,6 +82,8 @@ PokeChart:
 		- Evolutions
 		- What egg it might hatch from. (eventually.)
 
+MoveSet Sort and Filter
+	- Add ability to specify parens (E.G. "1-5&(B,C)")
 ---------------------------------------------------------------------------------------------------------
 ----- RaidBoss -----
 Add weaknesses based on moveset.
