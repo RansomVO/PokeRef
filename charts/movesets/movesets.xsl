@@ -359,6 +359,9 @@
             <xsl:attribute name="name">
               <xsl:value-of select="$PokemonStats/Name" />
             </xsl:attribute>
+            <xsl:attribute name="family">
+              <xsl:value-of select="$PokemonStats/CandyType" />
+            </xsl:attribute>
             <xsl:attribute name="movesetCount">
               <xsl:value-of select="$PokemonMoveSetCount" />
             </xsl:attribute>

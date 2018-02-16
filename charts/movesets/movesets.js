@@ -134,38 +134,72 @@ function PokemonMatchesFilter(primaryRow) {
     // If there is a Filter by Pokemon Name or ID, filter out any that don't have that name or ID.
     var filterPokeStat = GetFieldValue(Filter_Text_NameId);
     if (filterPokeStat !== '') {
-        // TODO QZX: Split the filter up by '&' and ',', then check the filter on each section and use && or || to determine overall results.
 
-        // TODO QZX: handle ranges of ID
-        //      "5-10": 5 through 10
-        //      "5-10": 5 through 10
-        //       "-10": beginning through 10
-        //       "10-": 10 through end
-        var segments = filterPokeStat.split('-');
-        if (segments.length === 2 &&
-           (segments[0].trim().length === 0 || !isNaN(segments[0])) &&
-           (segments[1].trim().length === 0 || !isNaN(segments[1]))) {
-            // This is a range.
-            var min = segments[0].trim().length === 0 ? 0 : segments[0];
-            var max = segments[1].trim().length === 0 ? 9999 : segments[1];
-            var id = parseInt(primaryRow.getAttribute('id'));
-            if (id < min || id > max) {
-                return false;
+        return segmentMatches(filterPokeStat, primaryRow);
+    }
+
+    return false;
+}
+
+function segmentMatches(segment, primaryRow) {
+    filterSegment = segment.trim();
+    // TODO QZX: Deal with parens.
+
+    // Split the filter into sub-filters separated by ',' and treat it like ||
+    var segments = filterSegment.split(',');
+    if (segments.length > 1) {
+        for (var i = segments.length - 1; i >= 0; i--) {
+            if (segmentMatches(segments[i], primaryRow)) {
+                return true;
             }
-        } else if (!isNaN(filterPokeStat)) {
-            if (!primaryRow.getAttribute('id').startsWith(filterPokeStat)) {
-                return false;
-            }
-        } else {
-            // TODO QZX: Enhance these checks to be similar to Pokemon GO.
-            //      "+pidg" All members of the family that contains pidgeys.
-            if (!primaryRow.getAttribute('name').toUpperCase().startsWith(filterPokeStat.toUpperCase())) {
+        }
+
+        return false;
+    }
+
+    // Split the filter into sub-filters separated by '&' and treat it like &&
+    segments = filterSegment.split('&');
+    if (segments.length > 1) {
+        for (var i = segments.length - 1; i >= 0; i--) {
+            if (!segmentMatches(segments[i], primaryRow)) {
                 return false;
             }
         }
+
+        return true;
     }
 
-    return true;
+    // If we made it here there are no sub-sections.
+    var id = parseInt(primaryRow.getAttribute('id'));
+
+    // Check for a range of IDs (E.G. "5-10", "5-10", "-10", "10-")
+    var rangeSegments = filterSegment.split('-');
+    if (rangeSegments.length === 2 &&
+       (rangeSegments[0].trim().length === 0 || !isNaN(rangeSegments[0])) &&
+       (rangeSegments[1].trim().length === 0 || !isNaN(rangeSegments[1]))) {
+        var min = rangeSegments[0].trim().length === 0 ? 0 : rangeSegments[0];
+        var max = rangeSegments[1].trim().length === 0 ? 9999 : rangeSegments[1];
+        if (id >= min && id <= max) {
+            return true;
+        }
+    }
+
+    // Check to see if it is just a single ID;
+    if (id == filterSegment) {
+        return true;
+    }
+
+    // Check to see if it is a name.
+    // TODO QZX: Enhance these checks to be similar to Pokemon GO.
+    if (filterSegment.startsWith('+')) {
+        if (primaryRow.getAttribute('family').toUpperCase().startsWith(filterSegment.substring(1).toUpperCase())) {
+            return true;
+        }
+    } else if (primaryRow.getAttribute('name').toUpperCase().startsWith(filterSegment.toUpperCase())) {
+        return true;
+    }
+
+    return false;
 }
 
 // Determine whether the MoveSet in this row should be shown or not.
