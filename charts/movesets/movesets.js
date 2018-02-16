@@ -132,17 +132,15 @@ function PokemonMatchesFilter(primaryRow) {
     }
 
     // If there is a Filter by Pokemon Name or ID, filter out any that don't have that name or ID.
-    var filterPokeStat = GetFieldValue(Filter_Text_NameId);
-    if (filterPokeStat !== '') {
-
-        return segmentMatches(filterPokeStat, primaryRow);
-    }
-
-    return false;
+    return segmentMatches(GetFieldValue(Filter_Text_NameId), primaryRow);
 }
 
 function segmentMatches(segment, primaryRow) {
     filterSegment = segment.trim();
+    if (filterSegment.length === 0) {
+        return true;
+    }
+
     // TODO QZX: Deal with parens.
 
     // Split the filter into sub-filters separated by ',' and treat it like ||
