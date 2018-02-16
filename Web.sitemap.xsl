@@ -5,7 +5,7 @@
                 xmlns:sitemap="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"
                 xmlns:pokeref="urn:pokeref"
 >
-  <xsl:include href="/xsl/global.xsl"/>
+  <xsl:include href="/xsl/global.xsl" />
 
   <xsl:template match="Root">
     <html lang="en-us" manifest="/pokeref.appcache">

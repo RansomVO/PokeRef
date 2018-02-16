@@ -8,7 +8,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:exslt="http://exslt.org/common"
 >
-  <xsl:include href="/xsl/global.xsl"/>
+  <xsl:include href="/xsl/global.xsl" />
 
   <xsl:variable name="PokemonCount">
     <Count Gen="1">
@@ -35,7 +35,7 @@
   </xsl:variable>
 
   <xsl:variable name="MaxRows">
-    <xsl:for-each select="exslt:node-set($PokemonCount)/Count[$Gens >= @Gen]">
+    <xsl:for-each select="exslt:node-set($PokemonCount)/Count[$ReleasedGens >= @Gen]">
       <xsl:sort select="." data-type="number" order="descending"/>
       <xsl:if test="position()=1">
         <xsl:value-of select="."/>
@@ -214,7 +214,7 @@
   <xsl:template name="OutputTableHeaders">
     <xsl:param name="Gen" select="1" />
 
-    <xsl:if test="$Gens >= $Gen">
+    <xsl:if test="$ReleasedGens >= $Gen">
       <th>
         Gen <xsl:value-of select="$Gen"/>
         <br />
@@ -255,7 +255,7 @@
     <xsl:param name="Row" />
     <xsl:param name="Gen" select="1" />
 
-    <xsl:if test="$Gens >= $Gen">
+    <xsl:if test="$ReleasedGens >= $Gen">
       <td align="center" style="margin:0; padding:0;">
         <xsl:attribute name="id">
           <xsl:value-of select="concat('Cell_', /Root/PokemonStats[$Gen]/Pokemon[$Row]/ID)" />

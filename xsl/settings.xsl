@@ -5,17 +5,6 @@
                 xmlns:pokeref="urn:pokeref"
 >
 
-  <msxsl:script language="C#" implements-prefix="pokeref">
-    <![CDATA[  
-       public string CurrentDate() 
-       {  
-         return DateTime.Now.ToString("yyyy-MM-dd_HH:mm:ss");;
-       }  
-    ]]>
-  </msxsl:script>
-  <xsl:variable name="CurrentDate" select="pokeref:CurrentDate()"/>
-
-
   <!-- **************************************************************************************************** -->
   <!-- ******************** Settings - Global Variables *************************************************** -->
   <!-- **************************************************************************************************** -->

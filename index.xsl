@@ -5,7 +5,7 @@
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
                 xmlns:pokeref="urn:pokeref"
 >
-  <xsl:include href="/xsl/global.xsl"/>
+  <xsl:include href="/xsl/global.xsl" />
 
   <xsl:template match="Root">
     <html lang="en-us" manifest="/pokeref.appcache">

@@ -182,7 +182,10 @@
     <FixIntermediateFile Include="xsl\controls.xsl">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
-    <Content Include="__Debugging\debug.page.xml" />
+    <FixIntermediateFile Include="xsl\pokemon.xsl">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
+    <Content Include="__Debugging\debug.html.xml" />
     <FixIntermediateFile Include="__Debugging\debug.xsl" />
     <FixOutputFile Include="__Debugging\index.html" />
     <FixOutputFile Include="__Debugging\index.css" />

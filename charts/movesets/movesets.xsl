@@ -3,7 +3,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:pokeref="urn:pokeref"
 >
-  <xsl:include href="/xsl/controls.xsl"/>
+  <xsl:include href="/xsl/global.xsl" />
 
   <!-- #region Global Variables -->
   <xsl:variable name="MaxDPS" select="format-number(Root/Stats/MoveSets/Overall/DPS/Max, '##.0')" />

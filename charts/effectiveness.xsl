@@ -3,7 +3,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:pokeref="urn:pokeref"
 >
-  <xsl:include href="/xsl/global.xsl"/>
+  <xsl:include href="/xsl/global.xsl" />
 
   <!-- Main Template -->
   <xsl:template match="/Root">

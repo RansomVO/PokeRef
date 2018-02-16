@@ -8,11 +8,11 @@
     <FixIntermediateFile Include="index.xsl">
       <Visible>true</Visible>
       <Dependencies>
-        charts\raidboss\_linkslist.page.xml;
+        charts\raidboss\_linkslist.html.xml;
         tech\GAME_MASTER\pokestats\_linkslist.html;
       </Dependencies>
     </FixIntermediateFile>
-    <XslTransform Include="index.page.xml">
+    <XslTransform Include="index.html.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
@@ -34,7 +34,7 @@
     <FixIntermediateFile Include="Web.sitemap.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="Web.sitemap.page.xml">
+    <XslTransform Include="Web.sitemap.html.xml">
       <Visible>true</Visible>
       <DependentUpon>Web.sitemap.xsl</DependentUpon>
       <Dependencies>
@@ -46,12 +46,12 @@
 
   <!-- JS -->
   <ItemGroup>
-    <FixIntermediateFile Include="js\pokemon.xsl">
+    <FixIntermediateFile Include="js\pokemon.js.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="js\pokemon.page.xml">
+    <XslTransform Include="js\pokemon.js.xml">
       <Visible>true</Visible>
-      <DependentUpon>pokemon.xsl</DependentUpon>
+      <DependentUpon>pokemon.js.xsl</DependentUpon>
       <Dependencies>
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
@@ -70,7 +70,7 @@
     <FixIntermediateFile Include="charts\evolutions.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\evolutions.page.xml">
+    <XslTransform Include="charts\evolutions.html.xml">
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
       <Dependencies>
@@ -96,7 +96,7 @@
     <FixIntermediateFile Include="charts\pokechart.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\pokechart.page.xml">
+    <XslTransform Include="charts\pokechart.html.xml">
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
       <Dependencies>
@@ -129,7 +129,7 @@
     <FixIntermediateFile Include="charts\namingtechnique.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\namingtechnique.page.xml">
+    <XslTransform Include="charts\namingtechnique.html.xml">
       <Visible>true</Visible>
       <DependentUpon>namingtechnique.xsl</DependentUpon>
       <Dependencies>
@@ -148,7 +148,7 @@
     <FixIntermediateFile Include="charts\movesets\movesets.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\movesets\movesets.gen1.page.xml">
+    <XslTransform Include="charts\movesets\movesets.gen1.html.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
@@ -164,7 +164,7 @@
       </Dependencies>
       <OutputFileName>movesets.gen1.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.gen2.page.xml">
+    <XslTransform Include="charts\movesets\movesets.gen2.html.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
@@ -180,7 +180,7 @@
       </Dependencies>
       <OutputFileName>movesets.gen2.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.gen3.page.xml">
+    <XslTransform Include="charts\movesets\movesets.gen3.html.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
@@ -196,7 +196,7 @@
       </Dependencies>
       <OutputFileName>movesets.gen3.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.all.page.xml">
+    <XslTransform Include="charts\movesets\movesets.all.html.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
@@ -230,7 +230,7 @@
     <FixIntermediateFile Include="charts\raidboss\_linkslist.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\raidboss\_linkslist.page.xml">
+    <XslTransform Include="charts\raidboss\_linkslist.html.xml">
       <Visible>true</Visible>
       <DependentUpon>_linkslist.xsl</DependentUpon>
       <Dependencies>
@@ -249,7 +249,7 @@
     <FixIntermediateFile Include="charts\raidboss\index.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\raidboss\index.page.xml">
+    <XslTransform Include="charts\raidboss\index.html.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
@@ -277,7 +277,7 @@
       <Visible>true</Visible>
     </FixIntermediateFile>
     <!-- #region RaidBoss pages -->
-    <XslTransform Include="charts\raidboss\raidboss.absol.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.absol.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -290,7 +290,7 @@
       </Dependencies>
       <OutputFileName>raidboss.absol.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.aggron.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.aggron.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -303,7 +303,7 @@
       </Dependencies>
       <OutputFileName>raidboss.aggron.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.alakazam.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.alakazam.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -316,7 +316,7 @@
       </Dependencies>
       <OutputFileName>raidboss.alakazam.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.arcanine.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.arcanine.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -329,7 +329,7 @@
       </Dependencies>
       <OutputFileName>raidboss.arcanine.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.articuno.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.articuno.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -342,7 +342,7 @@
       </Dependencies>
       <OutputFileName>raidboss.articuno.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.bayleef.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.bayleef.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -355,7 +355,7 @@
       </Dependencies>
       <OutputFileName>raidboss.bayleef.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.blastoise.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.blastoise.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -368,7 +368,7 @@
       </Dependencies>
       <OutputFileName>raidboss.blastoise.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.celebi.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.celebi.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -381,7 +381,7 @@
       </Dependencies>
       <OutputFileName>raidboss.celebi.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.charizard.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.charizard.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -394,7 +394,7 @@
       </Dependencies>
       <OutputFileName>raidboss.charizard.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.charmeleon.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.charmeleon.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -407,7 +407,7 @@
       </Dependencies>
       <OutputFileName>raidboss.charmeleon.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.cloyster.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.cloyster.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -420,7 +420,7 @@
       </Dependencies>
       <OutputFileName>raidboss.cloyster.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.croconaw.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.croconaw.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -433,7 +433,7 @@
       </Dependencies>
       <OutputFileName>raidboss.croconaw.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.electabuzz.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.electabuzz.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -446,7 +446,7 @@
       </Dependencies>
       <OutputFileName>raidboss.electabuzz.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.entei.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.entei.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -459,7 +459,7 @@
       </Dependencies>
       <OutputFileName>raidboss.entei.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.exeggutor.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.exeggutor.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -472,7 +472,7 @@
       </Dependencies>
       <OutputFileName>raidboss.exeggutor.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.flareon.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.flareon.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -485,7 +485,7 @@
       </Dependencies>
       <OutputFileName>raidboss.flareon.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.gengar.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.gengar.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -498,7 +498,7 @@
       </Dependencies>
       <OutputFileName>raidboss.gengar.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.golem.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.golem.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -511,7 +511,7 @@
       </Dependencies>
       <OutputFileName>raidboss.golem.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.groudon.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.groudon.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -524,7 +524,7 @@
       </Dependencies>
       <OutputFileName>raidboss.groudon.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.ho-oh.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.ho-oh.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -537,7 +537,7 @@
       </Dependencies>
       <OutputFileName>raidboss.ho-oh.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.ivysaur.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.ivysaur.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -550,7 +550,7 @@
       </Dependencies>
       <OutputFileName>raidboss.ivysaur.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.jirachi.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.jirachi.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -563,7 +563,7 @@
       </Dependencies>
       <OutputFileName>raidboss.jirachi.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.jolteon.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.jolteon.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -576,7 +576,7 @@
       </Dependencies>
       <OutputFileName>raidboss.jolteon.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.kyogre.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.kyogre.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -589,7 +589,7 @@
       </Dependencies>
       <OutputFileName>raidboss.kyogre.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.lapras.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.lapras.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -602,7 +602,7 @@
       </Dependencies>
       <OutputFileName>raidboss.lapras.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.latias.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.latias.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -615,7 +615,7 @@
       </Dependencies>
       <OutputFileName>raidboss.latias.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.latios.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.latios.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -628,7 +628,7 @@
       </Dependencies>
       <OutputFileName>raidboss.latios.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.lugia.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.lugia.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -641,7 +641,7 @@
       </Dependencies>
       <OutputFileName>raidboss.lugia.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.machamp.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.machamp.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -654,7 +654,7 @@
       </Dependencies>
       <OutputFileName>raidboss.machamp.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.magikarp.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.magikarp.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -667,7 +667,7 @@
       </Dependencies>
       <OutputFileName>raidboss.magikarp.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.magmar.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.magmar.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -680,7 +680,7 @@
       </Dependencies>
       <OutputFileName>raidboss.magmar.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.magneton.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.magneton.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -693,7 +693,7 @@
       </Dependencies>
       <OutputFileName>raidboss.magneton.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.marowak.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.marowak.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -706,7 +706,7 @@
       </Dependencies>
       <OutputFileName>raidboss.marowak.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.mawile.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.mawile.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -719,7 +719,7 @@
       </Dependencies>
       <OutputFileName>raidboss.mawile.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.metapod.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.metapod.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -732,7 +732,7 @@
       </Dependencies>
       <OutputFileName>raidboss.metapod.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.mew.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.mew.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -745,7 +745,7 @@
       </Dependencies>
       <OutputFileName>raidboss.mew.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.mewtwo.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.mewtwo.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -758,7 +758,7 @@
       </Dependencies>
       <OutputFileName>raidboss.mewtwo.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.moltres.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.moltres.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -771,7 +771,7 @@
       </Dependencies>
       <OutputFileName>raidboss.moltres.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.muk.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.muk.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -784,7 +784,7 @@
       </Dependencies>
       <OutputFileName>raidboss.muk.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.nidoking.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.nidoking.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -797,7 +797,7 @@
       </Dependencies>
       <OutputFileName>raidboss.nidoking.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.nidoqueen.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.nidoqueen.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -810,7 +810,7 @@
       </Dependencies>
       <OutputFileName>raidboss.nidoqueen.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.ninetales.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.ninetales.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -823,7 +823,7 @@
       </Dependencies>
       <OutputFileName>raidboss.ninetales.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.omastar.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.omastar.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -836,7 +836,7 @@
       </Dependencies>
       <OutputFileName>raidboss.omastar.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.poliwrath.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.poliwrath.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -849,7 +849,7 @@
       </Dependencies>
       <OutputFileName>raidboss.poliwrath.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.porygon.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.porygon.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -862,7 +862,7 @@
       </Dependencies>
       <OutputFileName>raidboss.porygon.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.quilava.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.quilava.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -875,7 +875,7 @@
       </Dependencies>
       <OutputFileName>raidboss.quilava.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.raikou.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.raikou.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -888,7 +888,7 @@
       </Dependencies>
       <OutputFileName>raidboss.raikou.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.rayquaza.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.rayquaza.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -901,7 +901,7 @@
       </Dependencies>
       <OutputFileName>raidboss.rayquaza.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.regice.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.regice.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -914,7 +914,7 @@
       </Dependencies>
       <OutputFileName>raidboss.regice.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.regirock.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.regirock.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -927,7 +927,7 @@
       </Dependencies>
       <OutputFileName>raidboss.regirock.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.registeel.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.registeel.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -940,7 +940,7 @@
       </Dependencies>
       <OutputFileName>raidboss.registeel.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.rhydon.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.rhydon.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -953,7 +953,7 @@
       </Dependencies>
       <OutputFileName>raidboss.rhydon.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.sableye.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.sableye.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -966,7 +966,7 @@
       </Dependencies>
       <OutputFileName>raidboss.sableye.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.sandslash.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.sandslash.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -979,7 +979,7 @@
       </Dependencies>
       <OutputFileName>raidboss.sandslash.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.scyther.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.scyther.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -992,7 +992,7 @@
       </Dependencies>
       <OutputFileName>raidboss.scyther.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.snorlax.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.snorlax.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1005,7 +1005,7 @@
       </Dependencies>
       <OutputFileName>raidboss.snorlax.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.suicune.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.suicune.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1018,7 +1018,7 @@
       </Dependencies>
       <OutputFileName>raidboss.suicune.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.tentacruel.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.tentacruel.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1031,7 +1031,7 @@
       </Dependencies>
       <OutputFileName>raidboss.tentacruel.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.tyranitar.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.tyranitar.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1044,7 +1044,7 @@
       </Dependencies>
       <OutputFileName>raidboss.tyranitar.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.vaporeon.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.vaporeon.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1057,7 +1057,7 @@
       </Dependencies>
       <OutputFileName>raidboss.vaporeon.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.venusaur.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.venusaur.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1070,7 +1070,7 @@
       </Dependencies>
       <OutputFileName>raidboss.venusaur.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.victreebel.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.victreebel.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1083,7 +1083,7 @@
       </Dependencies>
       <OutputFileName>raidboss.victreebel.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.wailmer.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.wailmer.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1096,7 +1096,7 @@
       </Dependencies>
       <OutputFileName>raidboss.wailmer.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.wartortle.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.wartortle.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1109,7 +1109,7 @@
       </Dependencies>
       <OutputFileName>raidboss.wartortle.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.weezing.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.weezing.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1122,7 +1122,7 @@
       </Dependencies>
       <OutputFileName>raidboss.weezing.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\raidboss\raidboss.zapdos.page.xml">
+    <XslTransform Include="charts\raidboss\raidboss.zapdos.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
       <Dependencies>
@@ -1150,7 +1150,7 @@
     <FixIntermediateFile Include="charts\effectiveness.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\effectiveness.page.xml">
+    <XslTransform Include="charts\effectiveness.html.xml">
       <Visible>true</Visible>
       <DependentUpon>effectiveness.xsl</DependentUpon>
       <Dependencies>_datafiles\effectiveness.xml</Dependencies>
@@ -1163,7 +1163,7 @@
     <FixIntermediateFile Include="tech\index.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="tech\index.page.xml">
+    <XslTransform Include="tech\index.html.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
@@ -1179,7 +1179,7 @@
     <FixIntermediateFile Include="tech\movesetformulas.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="tech\movesetformulas.page.xml">
+    <XslTransform Include="tech\movesetformulas.html.xml">
       <Visible>true</Visible>
       <DependentUpon>movesetformulas.xsl</DependentUpon>
       <Dependencies>
@@ -1196,7 +1196,7 @@
     <FixIntermediateFile Include="tech\GAME_MASTER\archive\index.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="tech\GAME_MASTER\archive\index.page.xml">
+    <XslTransform Include="tech\GAME_MASTER\archive\index.html.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
@@ -1215,7 +1215,7 @@
         charts\movesets\_linkslist.html;
       </Dependencies>
     </FixIntermediateFile>
-    <XslTransform Include="tech\GAME_MASTER\moves\moves.charged.page.xml">
+    <XslTransform Include="tech\GAME_MASTER\moves\moves.charged.html.xml">
       <Visible>true</Visible>
       <DependentUpon>moves.xsl</DependentUpon>
       <Dependencies>
@@ -1227,7 +1227,7 @@
       </Dependencies>
       <OutputFileName>moves.charged.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="tech\GAME_MASTER\moves\moves.fast.page.xml">
+    <XslTransform Include="tech\GAME_MASTER\moves\moves.fast.html.xml">
       <Visible>true</Visible>
       <DependentUpon>moves.xsl</DependentUpon>
       <Dependencies>
@@ -1243,7 +1243,7 @@
     <FixIntermediateFile Include="tech\GAME_MASTER\pokestats\pokestats.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen1.page.xml">
+    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen1.html.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
@@ -1255,7 +1255,7 @@
       </Dependencies>
       <OutputFileName>pokestats.gen1.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen2.page.xml">
+    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen2.html.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
@@ -1267,7 +1267,7 @@
       </Dependencies>
       <OutputFileName>pokestats.gen2.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen3.page.xml">
+    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen3.html.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
@@ -1279,7 +1279,7 @@
       </Dependencies>
       <OutputFileName>pokestats.gen3.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen4.page.xml">
+    <XslTransform Include="tech\GAME_MASTER\pokestats\pokestats.gen4.html.xml">
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
@@ -1298,7 +1298,7 @@
     <FixIntermediateFile Include="tools\counters.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="tools\counters.page.xml">
+    <XslTransform Include="tools\counters.html.xml">
       <Visible>true</Visible>
       <DependentUpon>counters.xsl</DependentUpon>
       <Dependencies>
@@ -1330,7 +1330,7 @@
     <FixIntermediateFile Include="tools\shoppingboxes.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="tools\shoppingboxes.page.xml">
+    <XslTransform Include="tools\shoppingboxes.html.xml">
       <Visible>true</Visible>
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
       <Dependencies>
@@ -1355,7 +1355,7 @@
     <FixIntermediateFile Include="resources\seapokemapfilter.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="resources\seapokemapfilter.page.xml">
+    <XslTransform Include="resources\seapokemapfilter.html.xml">
       <Visible>true</Visible>
       <DependentUpon>seapokemapfilter.xsl</DependentUpon>
       <Dependencies>
@@ -1378,7 +1378,7 @@
     <FixIntermediateFile Include="resources\index.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="resources\index.page.xml">
+    <XslTransform Include="resources\index.html.xml">
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <OutputFileName>index.html</OutputFileName>
@@ -1387,7 +1387,7 @@
     <FixIntermediateFile Include="resources\seattlearea.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="resources\seattlearea.page.xml">
+    <XslTransform Include="resources\seattlearea.html.xml">
       <Visible>true</Visible>
       <DependentUpon>seattlearea.xsl</DependentUpon>
       <OutputFileName>seattlearea.html</OutputFileName>
@@ -1396,7 +1396,7 @@
     <FixIntermediateFile Include="resources\tips.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="resources\tips.page.xml">
+    <XslTransform Include="resources\tips.html.xml">
       <Visible>true</Visible>
       <DependentUpon>tips.xsl</DependentUpon>
       <OutputFileName>tips.html</OutputFileName>

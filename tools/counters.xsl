@@ -3,7 +3,7 @@
                 xmlns:exslt="http://exslt.org/common"
 >
 
-  <xsl:include href="/charts/movesets.xsl" />
+  <xsl:include href="/charts/movesets/movesets.xsl" />
 
   <!-- Global Variables -->
   <xsl:variable name="DPSFilter" select="$MaxTrueDPS * $DPSGood" />

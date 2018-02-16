@@ -5,7 +5,6 @@
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
                 xmlns:pokeref="urn:pokeref"
 >
-  <xsl:include href="global.xsl"/>
 
   <!-- ************************************************************************************************************************ -->
   <!-- #region Templates to output Common Selection Criteria -->
@@ -193,6 +192,44 @@
   </xsl:template>
 
   <!-- #endregion -->
+
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
+  <!-- #region Collapser template -->
+  <!-- ************************************************************************************************************************ -->
+
+  <xsl:template name="Collapser">
+    <xsl:param name="CollapseeID" />
+
+    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+    <div style="display:inline-block; cursor:pointer;">
+      <span class="COLLAPSER BUTTON" style="transform:rotate(-90deg);">
+        <xsl:attribute name="id">
+          <xsl:value-of select="concat($CollapseeID, '_COLLAPSER')" />
+        </xsl:attribute>
+        <xsl:text>&#9001;</xsl:text>
+      </span>
+    </div>
+  </xsl:template>
+
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
+  <!-- #region Template for having a Loading screen. -->
+  <!-- ************************************************************************************************************************ -->
+
+  <xsl:template name="LoadingNotice">
+    <xsl:param name="LoadedContent" />
+
+    <!-- TODO QZX: It would be nice to have this be an animation. -->
+    <div id="GLOBAL_LoadingNotice">
+      <xsl:attribute name="formTarget">
+        <xsl:value-of select="$LoadedContent" />
+      </xsl:attribute>
+      <h1>Loading...</h1>
+    </div>
+  </xsl:template>
 
   <!-- #endregion -->
 

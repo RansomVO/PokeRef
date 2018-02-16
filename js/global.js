@@ -2,10 +2,6 @@
 // #region Global Variables
 // ==============================================================================================
 
-// Variables that tells how many generations of Pokemon there are.
-var TotalGens = 7;
-var ReleasedGens = 3;
-
 // ==============================================================================================
 // Variables to help make it so cached files will be updated appropriately.
 // ==============================================================================================
@@ -13,25 +9,6 @@ var CacheDate = '?cacherefresh={$CurrentDate}'; // This line will be updated wit
 var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
 
 // #endregion
-
-// ==============================================================================================
-// Called when page is loaded to perform up-front work.
-// ==============================================================================================
-var globalOldOnLoad = window.onload;
-window.onload = function () {
-    try {
-        SetCollapsers();
-
-        if (globalOldOnLoad != null) {
-            globalOldOnLoad();
-        }
-
-        ExposeLoaded();
-    }
-    catch (err) {
-        ShowError(err);
-    }
-};
 
 // ==============================================================================================
 // #region Add Functions that are missing from some browsers (usually IE)
@@ -75,14 +52,6 @@ function IsMobile() {
 function IsIE() {
     return window.navigator.userAgent.indexOf('Trident') >= 0;
 }
-// Function to expose content after it has been loaded and initialized.
-function ExposeLoaded() {
-    var loading = document.getElementById('GLOBAL_LoadingNotice');
-    if (loading != null) {
-        loading.classList.add('DIV_HIDDEN');
-        document.getElementById(loading.attributes['formTarget'].value).classList.remove('DIV_HIDDEN');
-    }
-}
 
 // #endregion
 
@@ -117,77 +86,6 @@ function SetFieldValue(field, value) {
 
 function SetFieldValueById(fieldId, value) {
     SetFieldValue(document.getElementById(fieldId), value);
-}
-
-// #endregion
-
-// ==============================================================================================
-// #region Code for Pop-ups
-// ==============================================================================================
-
-var Popup = null;
-var OriginalPos = {};
-
-// Applies a single cookie setting to the field with the specified fieldId.
-//  (If there is no cookie setting, the set the field to the defaultValue.)
-function ShowPopup(popup) {
-    try {
-        // If they are just refreshing the current popup, just proceed.
-        if (popup !== Popup) {
-            // If there is a Popup already open, close it
-            if (Popup !== null) {
-                OnClosePopup(Popup);
-            }
-            Popup = popup;
-
-            // Hook up the header (or whole pop-up if there isn't one) to allow moving.
-            var header = document.getElementById(Popup.id + '_Header');
-            header = header ? header : Popup;
-            header.onmousedown = PopupMouseDown;
-        }
-
-        // If the pop-up hasn't been shown before, set it to be in the middle of the screen.
-        if (window.getComputedStyle(Popup).left.startsWith('-1')) {
-            // Set it to be off the screen, then "display" it so we get the real dimensions.
-            Popup.style.left = -100000;
-            Popup.style.display = 'table';
-
-            // No move it into view at the center.
-            Popup.style.left = (window.innerWidth - Popup.offsetWidth) / 2;
-            Popup.style.top = (window.innerHeight - Popup.offsetHeight) / 2;
-        }
-        else {
-            Popup.style.display = 'table';
-        }
-    }
-    catch (err) {
-        ShowError(err);
-    }
-}
-
-function PopupMouseDown(e) {
-    OriginalPos['PopupLeft'] = Popup.offsetLeft;
-    OriginalPos['PopupTop'] = Popup.offsetTop;
-    OriginalPos['MouseX'] = e.clientX;
-    OriginalPos['MouseY'] = e.clientY;
-
-    document.onmousemove = PopupDrag;
-    document.onmouseup = PopupMouseUp;
-}
-
-function PopupDrag(e) {
-    Popup.style.left = OriginalPos['PopupLeft'] - (OriginalPos['MouseX'] - e.clientX);
-    Popup.style.top = OriginalPos['PopupTop'] - (OriginalPos['MouseY'] - e.clientY);
-}
-
-function PopupMouseUp(e) {
-    document.onmouseup = null;
-    document.onmousemove = null;
-}
-
-function OnClosePopup() {
-    Popup.style.display = 'none';
-    Popup = null;
 }
 
 // #endregion
@@ -406,65 +304,6 @@ function GetFooterNavigation(href) {
     }
 
     return navigation;
-}
-
-// #endregion
-
-// ==============================================================================================
-// #region Methods for hooking up a Collapser for a field.
-// ==============================================================================================
-
-var CollapserMarker = '_COLLAPSER';
-var StatusUp = 'UP';
-var StatusDown = 'DOWN';
-
-function SetCollapsers() {
-    var collapsers = document.getElementsByClassName('COLLAPSER');
-    for (var i = 0; i < collapsers.length; i++) {
-        SetCollapser(collapsers[i]);
-    }
-}
-
-function SetCollapser(collapser) {
-    var collapsee = document.getElementById(collapser.id.slice(0, -CollapserMarker.length));
-
-    if (collapsee !== null) {
-        collapser.formTarget = collapsee.id;
-        collapser.setAttribute('onclick', 'ToggleCollapser(event)');
-
-        var state = GetCookieSetting(collapser.formTarget + CollapserMarker);
-        SetCollapseState(state !== null ? state : StatusDown, collapser, collapsee);
-    }
-}
-
-function ToggleCollapser(event) {
-    var collapser = event.currentTarget;
-    var collapseeFieldId = collapser.formTarget;
-    var collapsee = document.getElementById(collapseeFieldId);
-
-    // Find what new state should be.
-    var state = collapser.value === StatusDown ? StatusUp : StatusDown;
-    SetCollapseState(state, collapser, collapsee);
-
-    SetCookieSetting(collapser.formTarget + '_COLLAPSER', state);
-}
-
-function SetCollapseState(state, collapser, collapsee) {
-    if (state === StatusUp) {
-        // Hide collapsee
-        collapsee.style.display = 'none';
-
-        // Update state.
-        collapser.style.cssText = 'transform: rotate(90deg);';
-        collapser.value = StatusUp;
-    } else {
-        // Show collapsee
-        collapsee.style.display = 'block';
-
-        // Update state.
-        collapser.style.cssText = 'transform: rotate(-90deg);';
-        collapser.value = StatusDown;
-    }
 }
 
 // #endregion

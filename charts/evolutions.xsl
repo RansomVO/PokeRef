@@ -186,7 +186,7 @@
         <xsl:value-of select="$Names" />
       </xsl:attribute>
       <xsl:attribute name="gens">
-        <xsl:value-of select="$Gens" />
+        <xsl:value-of select="$ReleasedGens" />
       </xsl:attribute>
       <xsl:call-template name="OutputFamilyBranch">
         <xsl:with-param name="FamilyBranch" select="$Family" />
