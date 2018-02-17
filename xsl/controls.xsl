@@ -23,7 +23,7 @@
       </xsl:attribute>
       <tr>
         <th colspan="2">
-          <xsl:value-of select="$Title" />
+          <xsl:value-of select="$Title" disable-output-escaping="yes" />
           <br />
           <input id="CONTROLS_PokeType_All_Check" type="checkbox" onchange="OnToggleAllPokeTypes();" />
         </th>
@@ -136,7 +136,7 @@
       </xsl:attribute>
       <tr>
         <th>
-          <xsl:value-of select="$Title" />
+          <xsl:value-of select="$Title" disable-output-escaping="yes" />
           <br />
           <input id="CONTROLS_Weather_All_Check" type="checkbox" onchange="OnToggleAllWeather();" />
         </th>
@@ -193,6 +193,21 @@
 
   <!-- #endregion -->
 
+  <!-- ************************************************************************************************************************ -->
+  <!-- #region Filter by Name/ID Control -->
+
+  <xsl:template name="OutputFilterPokemonNameID">
+    <xsl:param name="Callback" />
+
+    <input id="CONTROLS_Filter_NameID" type="text" onkeyup="OnFilterNameIDChanged()">
+      <xsl:attribute name="callbackName">
+        <xsl:value-of select="$Callback" />
+      </xsl:attribute>
+    </input>
+  </xsl:template>
+
+  <!-- #endregion -->
+  
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->

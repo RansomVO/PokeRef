@@ -17,6 +17,7 @@
   <!-- Constants (Needed because XSL doesn't like them raw in select statements, etc.)-->
   <xsl:variable name="quot">"</xsl:variable>
   <xsl:variable name="apos">'</xsl:variable>
+  <xsl:variable name="amp">&amp;</xsl:variable>
 
   <!-- ===================================================== -->
   <!-- Must use disable-output-escaping="yes" with the rest. -->

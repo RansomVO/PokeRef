@@ -108,8 +108,7 @@ function ApplyCookieSetting(fieldId, defaultValue) {
 
             SetFieldValue(field, value);
         }
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -120,8 +119,7 @@ function ApplyCookieSettings(cookieSettings) {
         Object.keys(cookieSettings).forEach(function (key) {
             ApplyCookieSetting(key, cookieSettings[key]);
         });
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -144,8 +142,7 @@ function UpdateCookieSetting(fieldId, defaultValue) {
             RemoveCookieSetting(fieldId);
         else
             SetCookieSetting(fieldId, value);
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -156,8 +153,7 @@ function UpdateCookieSettings(cookieSettings) {
         Object.keys(cookieSettings).forEach(function (key) {
             UpdateCookieSetting(key, cookieSettings[key]);
         });
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -168,8 +164,7 @@ function ClearCookieSettings(cookieSettings) {
         Object.keys(cookieSettings).forEach(function (key) {
             RemoveCookieSetting(key);
         });
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -178,23 +173,34 @@ function ClearCookieSettings(cookieSettings) {
 function ClearCookie() {
     try {
         localStorage.clear()
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
 
 function GetCookieSetting(id) {
-    return localStorage.getItem(id);
+    try {
+        return localStorage.getItem(id);
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 function SetCookieSetting(id, value) {
-    localStorage.setItem(id, value);
+    try {
+        localStorage.setItem(id, value);
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // Removes a single cookie setting with the specified id from the Cookie.
 function RemoveCookieSetting(id) {
-    localStorage.removeItem(id);
+    try {
+        localStorage.removeItem(id);
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // #endregion

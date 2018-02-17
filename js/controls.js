@@ -13,9 +13,11 @@ window.onload = function () {
 
         // Call the initializer method for each control so that they can set themselves up if they are on the page.
         InitPokeTypeSelector();
-        InitWeatherSelector()
-    }
-    catch (err) {
+        InitWeatherSelector();
+        InitFilterNameIDSelector();
+
+        ExposeLoaded();
+    } catch (err) {
         ShowError(err);
     }
 };
@@ -50,15 +52,19 @@ function SetCollapser(collapser) {
 }
 
 function ToggleCollapser(event) {
-    var collapser = event.currentTarget;
-    var collapseeFieldId = collapser.formTarget;
-    var collapsee = document.getElementById(collapseeFieldId);
+    try {
+        var collapser = event.currentTarget;
+        var collapseeFieldId = collapser.formTarget;
+        var collapsee = document.getElementById(collapseeFieldId);
 
-    // Find what new state should be.
-    var state = collapser.value === StatusDown ? StatusUp : StatusDown;
-    SetCollapseState(state, collapser, collapsee);
+        // Find what new state should be.
+        var state = collapser.value === StatusDown ? StatusUp : StatusDown;
+        SetCollapseState(state, collapser, collapsee);
 
-    SetCookieSetting(collapser.formTarget + '_COLLAPSER', state);
+        SetCookieSetting(collapser.formTarget + '_COLLAPSER', state);
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 function SetCollapseState(state, collapser, collapsee) {
@@ -109,12 +115,7 @@ var PokeTypeCookieSettings = {
 
 // Read the Cookie and apply it to the fields.
 function ApplyPokeTypeCookies() {
-    try {
-        ApplyCookieSettings(PokeTypeCookieSettings);
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(PokeTypeCookieSettings);
 }
 
 // #endregion
@@ -139,31 +140,26 @@ function InitPokeTypeSelector() {
 // Get the fields we will be using multiple times.
 //  NOTE: Do not use keyword "var" and the value will be global.
 function GetPokeTypeFields() {
-    try {
-        PokeType_Selector = document.getElementById('CONTROLS_PokeType_Selector');
-        PokeType_All_Check = document.getElementById('CONTROLS_PokeType_All_Check');
-        PokeType_Bug_Check = document.getElementById('CONTROLS_PokeType_Bug_Check');
-        PokeType_Dark_Check = document.getElementById('CONTROLS_PokeType_Dark_Check');
-        PokeType_Dragon_Check = document.getElementById('CONTROLS_PokeType_Dragon_Check');
-        PokeType_Electric_Check = document.getElementById('CONTROLS_PokeType_Electric_Check');
-        PokeType_Fairy_Check = document.getElementById('CONTROLS_PokeType_Fairy_Check');
-        PokeType_Fighting_Check = document.getElementById('CONTROLS_PokeType_Fighting_Check');
-        PokeType_Fire_Check = document.getElementById('CONTROLS_PokeType_Fire_Check');
-        PokeType_Flying_Check = document.getElementById('CONTROLS_PokeType_Flying_Check');
-        PokeType_Ghost_Check = document.getElementById('CONTROLS_PokeType_Ghost_Check');
-        PokeType_Grass_Check = document.getElementById('CONTROLS_PokeType_Grass_Check');
-        PokeType_Ground_Check = document.getElementById('CONTROLS_PokeType_Ground_Check');
-        PokeType_Ice_Check = document.getElementById('CONTROLS_PokeType_Ice_Check');
-        PokeType_Normal_Check = document.getElementById('CONTROLS_PokeType_Normal_Check');
-        PokeType_Poison_Check = document.getElementById('CONTROLS_PokeType_Poison_Check');
-        PokeType_Psychic_Check = document.getElementById('CONTROLS_PokeType_Psychic_Check');
-        PokeType_Rock_Check = document.getElementById('CONTROLS_PokeType_Rock_Check');
-        PokeType_Steel_Check = document.getElementById('CONTROLS_PokeType_Steel_Check');
-        PokeType_Water_Check = document.getElementById('CONTROLS_PokeType_Water_Check');
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    PokeType_Selector = document.getElementById('CONTROLS_PokeType_Selector');
+    PokeType_All_Check = document.getElementById('CONTROLS_PokeType_All_Check');
+    PokeType_Bug_Check = document.getElementById('CONTROLS_PokeType_Bug_Check');
+    PokeType_Dark_Check = document.getElementById('CONTROLS_PokeType_Dark_Check');
+    PokeType_Dragon_Check = document.getElementById('CONTROLS_PokeType_Dragon_Check');
+    PokeType_Electric_Check = document.getElementById('CONTROLS_PokeType_Electric_Check');
+    PokeType_Fairy_Check = document.getElementById('CONTROLS_PokeType_Fairy_Check');
+    PokeType_Fighting_Check = document.getElementById('CONTROLS_PokeType_Fighting_Check');
+    PokeType_Fire_Check = document.getElementById('CONTROLS_PokeType_Fire_Check');
+    PokeType_Flying_Check = document.getElementById('CONTROLS_PokeType_Flying_Check');
+    PokeType_Ghost_Check = document.getElementById('CONTROLS_PokeType_Ghost_Check');
+    PokeType_Grass_Check = document.getElementById('CONTROLS_PokeType_Grass_Check');
+    PokeType_Ground_Check = document.getElementById('CONTROLS_PokeType_Ground_Check');
+    PokeType_Ice_Check = document.getElementById('CONTROLS_PokeType_Ice_Check');
+    PokeType_Normal_Check = document.getElementById('CONTROLS_PokeType_Normal_Check');
+    PokeType_Poison_Check = document.getElementById('CONTROLS_PokeType_Poison_Check');
+    PokeType_Psychic_Check = document.getElementById('CONTROLS_PokeType_Psychic_Check');
+    PokeType_Rock_Check = document.getElementById('CONTROLS_PokeType_Rock_Check');
+    PokeType_Steel_Check = document.getElementById('CONTROLS_PokeType_Steel_Check');
+    PokeType_Water_Check = document.getElementById('CONTROLS_PokeType_Water_Check');
 }
 
 // If one of the type checkboxes changes, need to update the All checkbox then refilter.
@@ -193,8 +189,7 @@ function OnTogglePokeType(field) {
         }
 
         OnPokeTypeSelectionChanged();
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -222,8 +217,7 @@ function OnToggleAllPokeTypes() {
         PokeType_Water_Check.checked = PokeType_All_Check.checked;
 
         OnPokeTypeSelectionChanged();
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -277,12 +271,7 @@ var WeatherCookieSettings = {
 
 // Read the Cookie and apply it to the fields.
 function ApplyWeatherCookies() {
-    try {
-        ApplyCookieSettings(WeatherCookieSettings);
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(WeatherCookieSettings);
 }
 // #endregion
 
@@ -300,20 +289,15 @@ function InitWeatherSelector() {
 // Get the fields we will be using multiple times.
 //  NOTE: Do not use keyword "var" and the value will be global.
 function GetWeatherFields() {
-    try {
-        Weather_Selector = document.getElementById('CONTROLS_Weather_Selector');
-        Weather_All_Check = document.getElementById('CONTROLS_Weather_All_Check');
-        Weather_Sunny_Check = document.getElementById('CONTROLS_Weather_Sunny_Check');
-        Weather_Windy_Check = document.getElementById('CONTROLS_Weather_Windy_Check');
-        Weather_Cloudy_Check = document.getElementById('CONTROLS_Weather_Cloudy_Check');
-        Weather_PartlyCloudy_Check = document.getElementById('CONTROLS_Weather_PartlyCloudy_Check');
-        Weather_Fog_Check = document.getElementById('CONTROLS_Weather_Fog_Check');
-        Weather_Rainy_Check = document.getElementById('CONTROLS_Weather_Rainy_Check');
-        Weather_Snow_Check = document.getElementById('CONTROLS_Weather_Snow_Check');
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    Weather_Selector = document.getElementById('CONTROLS_Weather_Selector');
+    Weather_All_Check = document.getElementById('CONTROLS_Weather_All_Check');
+    Weather_Sunny_Check = document.getElementById('CONTROLS_Weather_Sunny_Check');
+    Weather_Windy_Check = document.getElementById('CONTROLS_Weather_Windy_Check');
+    Weather_Cloudy_Check = document.getElementById('CONTROLS_Weather_Cloudy_Check');
+    Weather_PartlyCloudy_Check = document.getElementById('CONTROLS_Weather_PartlyCloudy_Check');
+    Weather_Fog_Check = document.getElementById('CONTROLS_Weather_Fog_Check');
+    Weather_Rainy_Check = document.getElementById('CONTROLS_Weather_Rainy_Check');
+    Weather_Snow_Check = document.getElementById('CONTROLS_Weather_Snow_Check');
 }
 
 // If one of the type checkboxes changes, need to update the All checkbox then refilter.
@@ -332,8 +316,7 @@ function OnToggleWeather() {
         }
 
         OnWeatherSelectionChanged();
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -350,8 +333,7 @@ function OnToggleAllWeather() {
         Weather_Snow_Check.checked = Weather_All_Check.checked;
 
         OnWeatherSelectionChanged();
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -373,6 +355,116 @@ function OnWeatherSelectionChanged() {
 
         window[callbackName](weather);
     }
+}
+
+// #endregion
+
+// ============================================================================
+// #region methods for Name/ID Filter Control
+
+// ---------------------------------------------------------------------------
+// #region Name/ID Filter Cookies
+var FilterNameIDCookieSettings = {
+    'CONTROLS_Filter_NameID': '',
+};
+
+// Read the Cookie and apply it to the fields.
+function ApplyFilterNameIDCookies() {
+    ApplyCookieSettings(FilterNameIDCookieSettings);
+}
+// #endregion
+
+function InitFilterNameIDSelector() {
+    if (document.getElementById('CONTROLS_Filter_NameID') !== null) {
+        GetFilterNameIDFields();
+        ApplyFilterNameIDCookies();
+        OnFilterNameIDChanged();
+    }
+}
+
+// Get the fields we will be using multiple times.
+//  NOTE: Do not use keyword "var" and the value will be global.
+function GetFilterNameIDFields() {
+    CONTROLS_Filter_NameID = document.getElementById('CONTROLS_Filter_NameID');
+}
+
+// Update the cookie with the new filter, then call the specified callback.
+function OnFilterNameIDChanged() {
+    try {
+        UpdateCookieSettings(FilterNameIDCookieSettings);
+
+        var callbackName = CONTROLS_Filter_NameID.attributes['callbackName'].value;
+        if (callbackName != null) {
+            window[callbackName](GetFieldValue(CONTROLS_Filter_NameID));
+        }
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+function MatchFilterPokemonNameID(pokemon, filter) {
+    filterSegment = filter.trim();
+    if (filterSegment.length === 0) {
+        return true;
+    }
+
+    // TODO QZX: Deal with parens.
+
+    // Split the filter into sub-filters separated by ',' and treat it like ||
+    var filterSegments = filterSegment.split(',');
+    if (filterSegments.length > 1) {
+        for (var i = filterSegments.length - 1; i >= 0; i--) {
+            if (MatchFilterPokemonNameID(pokemon, filterSegments[i])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // Split the filter into sub-filters separated by '&' and treat it like &&
+    filterSegments = filterSegment.split('&');
+    if (filterSegments.length > 1) {
+        for (var i = filterSegments.length - 1; i >= 0; i--) {
+            if (!MatchFilterPokemonNameID(pokemon, filterSegments[i])) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    // If we made it here there are no sub-sections.
+    var id = parseInt(GetPokemonID(pokemon));
+
+    // Check for a range of IDs (E.G. "5-10", "5-10", "-10", "10-")
+    var rangeSegments = filterSegment.split('-');
+    if (rangeSegments.length === 2 &&
+       (rangeSegments[0].trim().length === 0 || !isNaN(rangeSegments[0])) &&
+       (rangeSegments[1].trim().length === 0 || !isNaN(rangeSegments[1]))) {
+        var min = rangeSegments[0].trim().length === 0 ? 0 : rangeSegments[0];
+        var max = rangeSegments[1].trim().length === 0 ? 9999 : rangeSegments[1];
+        if (id >= min && id <= max) {
+            return true;
+        }
+    }
+
+    // Check to see if it is just a single ID;
+    if (id == filterSegment) {
+        return true;
+    }
+
+    // Check to see if it is a family name or name.
+    // TODO QZX: "Shiny"
+    if (filterSegment.startsWith('+')) {
+        if (GetPokemonFamily(pokemon).toUpperCase().startsWith(filterSegment.substring(1).toUpperCase())) {
+            return true;
+        }
+    } else if (GetPokemonName(pokemon).toUpperCase().startsWith(filterSegment.toUpperCase())) {
+        return true;
+    }
+
+    return false;
 }
 
 // #endregion
@@ -415,8 +507,7 @@ function ShowPopup(popup) {
         else {
             Popup.style.display = 'table';
         }
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }

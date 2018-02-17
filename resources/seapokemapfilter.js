@@ -159,13 +159,8 @@ var CookieSettings = {
 
 // Read the Cookie and apply it to the fields.
 function ApplyCookie() {
-    try {
-        ApplyCookieSettings(CookieSettings);
-        GenerateFilter(null);
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(CookieSettings);
+    GenerateFilter(null);
 }
 
 // #endregion Cookies
@@ -176,9 +171,13 @@ function ApplyCookie() {
 // NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
 //          the window.onnload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
-    GetFields();
-    DoSeaPokeMapDisable();
-    ApplyCookie();
+    try {
+        GetFields();
+        DoSeaPokeMapDisable();
+        ApplyCookie();
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // #endregion Common
@@ -204,8 +203,7 @@ function Reset() {
     try {
         ClearCookieSettings(CookieSettings);
         ApplyCookie();
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -267,8 +265,7 @@ function OnPokemonCheckChanged(checkbox) {
         //  - If all of the checkboxes in the column (that are not disabled) are checked, set Column's checkbox to undetermined
 
         GenerateFilter(checkbox);
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -286,8 +283,7 @@ function OnColumnCheckChanged(checkbox) {
         });
 
         GenerateFilter(null);
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }

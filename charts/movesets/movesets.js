@@ -4,8 +4,9 @@
 // #region Global Variables
 // ============================================================================
 
-var typeSelections = null;
-var weatherSelections = null;
+var selectionsTypes = null;
+var selectionsWeather = null;
+var filterNameID = null;
 
 // #endregion
 
@@ -14,19 +15,13 @@ var weatherSelections = null;
 // ============================================================================
 
 var CookieSettings = {
-    'Filter_Text_NameId': '',
     'Filter_Text_Move': '',
     'ShowOnlyReleased_Checkbox': 'false',
 };
 
 // Read the Cookie and apply it to the fields.
 function ApplyCookie() {
-    try {
-        ApplyCookieSettings(CookieSettings);
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(CookieSettings);
 }
 
 // #endregion Cookies
@@ -37,9 +32,13 @@ function ApplyCookie() {
 // NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
 //          the window.onnload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
-    GetFields();
-    ApplyCookie();
-    OnFilterCriteriaChanged();
+    try {
+        GetFields();
+        ApplyCookie();
+        OnFilterCriteriaChanged();
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // Get the fields we will be using multiple times.
@@ -49,9 +48,9 @@ function GetFields() {
     Filter_Text_Move = document.getElementById('Filter_Text_Move');
     ShowOnlyReleased_Checkbox = document.getElementById('ShowOnlyReleased_Checkbox');
 
-    MOVESET_TABLES = [null]
-    for (var i = 1; i <= TotalGens; i++) {
-        MOVESET_TABLES.push(document.getElementById('MOVESET_GEN_' + i));
+    MoveSets = [null]
+    for (var i = 1; i <= 7; i++) {
+        MoveSets.push(document.getElementById('MOVESET_GEN_' + i));
     }
 }
 
@@ -67,9 +66,9 @@ function OnFilterCriteriaChanged(field) {
         UpdateCookieSetting(field.id);
     }
 
-    for (var i = 1; i < MOVESET_TABLES.length; i++) {
-        if (MOVESET_TABLES[i] !== null) {
-            FilterTable(MOVESET_TABLES[i]);
+    for (var i = 1; i < MoveSets.length; i++) {
+        if (MoveSets[i] !== null) {
+            FilterTable(MoveSets[i]);
         }
     }
 }
@@ -132,72 +131,11 @@ function PokemonMatchesFilter(primaryRow) {
     }
 
     // If there is a Filter by Pokemon Name or ID, filter out any that don't have that name or ID.
-    return segmentMatches(GetFieldValue(Filter_Text_NameId), primaryRow);
-}
-
-function segmentMatches(segment, primaryRow) {
-    filterSegment = segment.trim();
-    if (filterSegment.length === 0) {
+    if (filterNameID === null) {
         return true;
     }
 
-    // TODO QZX: Deal with parens.
-
-    // Split the filter into sub-filters separated by ',' and treat it like ||
-    var segments = filterSegment.split(',');
-    if (segments.length > 1) {
-        for (var i = segments.length - 1; i >= 0; i--) {
-            if (segmentMatches(segments[i], primaryRow)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    // Split the filter into sub-filters separated by '&' and treat it like &&
-    segments = filterSegment.split('&');
-    if (segments.length > 1) {
-        for (var i = segments.length - 1; i >= 0; i--) {
-            if (!segmentMatches(segments[i], primaryRow)) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    // If we made it here there are no sub-sections.
-    var id = parseInt(primaryRow.getAttribute('id'));
-
-    // Check for a range of IDs (E.G. "5-10", "5-10", "-10", "10-")
-    var rangeSegments = filterSegment.split('-');
-    if (rangeSegments.length === 2 &&
-       (rangeSegments[0].trim().length === 0 || !isNaN(rangeSegments[0])) &&
-       (rangeSegments[1].trim().length === 0 || !isNaN(rangeSegments[1]))) {
-        var min = rangeSegments[0].trim().length === 0 ? 0 : rangeSegments[0];
-        var max = rangeSegments[1].trim().length === 0 ? 9999 : rangeSegments[1];
-        if (id >= min && id <= max) {
-            return true;
-        }
-    }
-
-    // Check to see if it is just a single ID;
-    if (id == filterSegment) {
-        return true;
-    }
-
-    // Check to see if it is a name.
-    // TODO QZX: Enhance these checks to be similar to Pokemon GO.
-    if (filterSegment.startsWith('+')) {
-        if (primaryRow.getAttribute('family').toUpperCase().startsWith(filterSegment.substring(1).toUpperCase())) {
-            return true;
-        }
-    } else if (primaryRow.getAttribute('name').toUpperCase().startsWith(filterSegment.toUpperCase())) {
-        return true;
-    }
-
-    return false;
+    return MatchFilterPokemonNameID(primaryRow.cells[0], filterNameID);
 }
 
 // Determine whether the MoveSet in this row should be shown or not.
@@ -206,37 +144,37 @@ function MoveSetMatchesFilter(movesetRow) {
     var chargedMove = movesetRow.getAttribute('ChargedMove');
 
     // Include only MoveSets containing a Move of the selected types.
-    if (typeSelections !== null &&
-        !((typeSelections['Bug'] && (fastMove.indexOf('`Bug') >= 0 || chargedMove.indexOf('`Bug') >= 0)) ||
-        (typeSelections['Dark'] && (fastMove.indexOf('`Dark') >= 0 || chargedMove.indexOf('`Dark') >= 0)) ||
-        (typeSelections['Dragon'] && (fastMove.indexOf('`Dragon') >= 0 || chargedMove.indexOf('`Dragon') >= 0)) ||
-        (typeSelections['Electric'] && (fastMove.indexOf('`Electric') >= 0 || chargedMove.indexOf('`Electric') >= 0)) ||
-        (typeSelections['Fairy'] && (fastMove.indexOf('`Fairy') >= 0 || chargedMove.indexOf('`Fairy') >= 0)) ||
-        (typeSelections['Fighting'] && (fastMove.indexOf('`Fighting') >= 0 || chargedMove.indexOf('`Fighting') >= 0)) ||
-        (typeSelections['Fire'] && (fastMove.indexOf('`Fire') >= 0 || chargedMove.indexOf('`Fire') >= 0)) ||
-        (typeSelections['Flying'] && (fastMove.indexOf('`Flying') >= 0 || chargedMove.indexOf('`Flying') >= 0)) ||
-        (typeSelections['Ghost'] && (fastMove.indexOf('`Ghost') >= 0 || chargedMove.indexOf('`Ghost') >= 0)) ||
-        (typeSelections['Grass'] && (fastMove.indexOf('`Grass') >= 0 || chargedMove.indexOf('`Grass') >= 0)) ||
-        (typeSelections['Ground'] && (fastMove.indexOf('`Ground') >= 0 || chargedMove.indexOf('`Ground') >= 0)) ||
-        (typeSelections['Ice'] && (fastMove.indexOf('`Ice') >= 0 || chargedMove.indexOf('`Ice') >= 0)) ||
-        (typeSelections['Normal'] && (fastMove.indexOf('`Normal') >= 0 || chargedMove.indexOf('`Normal') >= 0)) ||
-        (typeSelections['Poison'] && (fastMove.indexOf('`Poison') >= 0 || chargedMove.indexOf('`Poison') >= 0)) ||
-        (typeSelections['Psychic'] && (fastMove.indexOf('`Psychic') >= 0 || chargedMove.indexOf('`Psychic') >= 0)) ||
-        (typeSelections['Rock'] && (fastMove.indexOf('`Rock') >= 0 || chargedMove.indexOf('`Rock') >= 0)) ||
-        (typeSelections['Steel'] && (fastMove.indexOf('`Steel') >= 0 || chargedMove.indexOf('`Steel') >= 0)) ||
-        (typeSelections['Water'] && (fastMove.indexOf('`Water') >= 0 || chargedMove.indexOf('`Water') >= 0)))) {
+    if (selectionsTypes !== null &&
+        !((selectionsTypes['Bug'] && (fastMove.indexOf('`Bug') >= 0 || chargedMove.indexOf('`Bug') >= 0)) ||
+        (selectionsTypes['Dark'] && (fastMove.indexOf('`Dark') >= 0 || chargedMove.indexOf('`Dark') >= 0)) ||
+        (selectionsTypes['Dragon'] && (fastMove.indexOf('`Dragon') >= 0 || chargedMove.indexOf('`Dragon') >= 0)) ||
+        (selectionsTypes['Electric'] && (fastMove.indexOf('`Electric') >= 0 || chargedMove.indexOf('`Electric') >= 0)) ||
+        (selectionsTypes['Fairy'] && (fastMove.indexOf('`Fairy') >= 0 || chargedMove.indexOf('`Fairy') >= 0)) ||
+        (selectionsTypes['Fighting'] && (fastMove.indexOf('`Fighting') >= 0 || chargedMove.indexOf('`Fighting') >= 0)) ||
+        (selectionsTypes['Fire'] && (fastMove.indexOf('`Fire') >= 0 || chargedMove.indexOf('`Fire') >= 0)) ||
+        (selectionsTypes['Flying'] && (fastMove.indexOf('`Flying') >= 0 || chargedMove.indexOf('`Flying') >= 0)) ||
+        (selectionsTypes['Ghost'] && (fastMove.indexOf('`Ghost') >= 0 || chargedMove.indexOf('`Ghost') >= 0)) ||
+        (selectionsTypes['Grass'] && (fastMove.indexOf('`Grass') >= 0 || chargedMove.indexOf('`Grass') >= 0)) ||
+        (selectionsTypes['Ground'] && (fastMove.indexOf('`Ground') >= 0 || chargedMove.indexOf('`Ground') >= 0)) ||
+        (selectionsTypes['Ice'] && (fastMove.indexOf('`Ice') >= 0 || chargedMove.indexOf('`Ice') >= 0)) ||
+        (selectionsTypes['Normal'] && (fastMove.indexOf('`Normal') >= 0 || chargedMove.indexOf('`Normal') >= 0)) ||
+        (selectionsTypes['Poison'] && (fastMove.indexOf('`Poison') >= 0 || chargedMove.indexOf('`Poison') >= 0)) ||
+        (selectionsTypes['Psychic'] && (fastMove.indexOf('`Psychic') >= 0 || chargedMove.indexOf('`Psychic') >= 0)) ||
+        (selectionsTypes['Rock'] && (fastMove.indexOf('`Rock') >= 0 || chargedMove.indexOf('`Rock') >= 0)) ||
+        (selectionsTypes['Steel'] && (fastMove.indexOf('`Steel') >= 0 || chargedMove.indexOf('`Steel') >= 0)) ||
+        (selectionsTypes['Water'] && (fastMove.indexOf('`Water') >= 0 || chargedMove.indexOf('`Water') >= 0)))) {
         return false;
     }
 
     // Include only MoveSets containing a Move boosted by the selected weather.
-    if (weatherSelections !== null &&
-        !((weatherSelections['Sunny'] && (fastMove.indexOf('^Sunny') >= 0 || chargedMove.indexOf('^Sunny') >= 0)) ||
-        (weatherSelections['Windy'] && (fastMove.indexOf('^Windy') >= 0 || chargedMove.indexOf('^Windy') >= 0)) ||
-        (weatherSelections['Cloudy'] && (fastMove.indexOf('^Cloudy') >= 0 || chargedMove.indexOf('^Cloudy') >= 0)) ||
-        (weatherSelections['PartlyCloudy'] && (fastMove.indexOf('^Partly Cloudy') >= 0 || chargedMove.indexOf('^Partly Cloudy') >= 0)) ||
-        (weatherSelections['Fog'] && (fastMove.indexOf('^Fog') >= 0 || chargedMove.indexOf('^Fog') >= 0)) ||
-        (weatherSelections['Rainy'] && (fastMove.indexOf('^Rainy') >= 0 || chargedMove.indexOf('^Rainy') >= 0)) ||
-        (weatherSelections['Snow'] && (fastMove.indexOf('^Snow') >= 0 || chargedMove.indexOf('^Snow') >= 0)))) {
+    if (selectionsWeather !== null &&
+        !((selectionsWeather['Sunny'] && (fastMove.indexOf('^Sunny') >= 0 || chargedMove.indexOf('^Sunny') >= 0)) ||
+        (selectionsWeather['Windy'] && (fastMove.indexOf('^Windy') >= 0 || chargedMove.indexOf('^Windy') >= 0)) ||
+        (selectionsWeather['Cloudy'] && (fastMove.indexOf('^Cloudy') >= 0 || chargedMove.indexOf('^Cloudy') >= 0)) ||
+        (selectionsWeather['PartlyCloudy'] && (fastMove.indexOf('^Partly Cloudy') >= 0 || chargedMove.indexOf('^Partly Cloudy') >= 0)) ||
+        (selectionsWeather['Fog'] && (fastMove.indexOf('^Fog') >= 0 || chargedMove.indexOf('^Fog') >= 0)) ||
+        (selectionsWeather['Rainy'] && (fastMove.indexOf('^Rainy') >= 0 || chargedMove.indexOf('^Rainy') >= 0)) ||
+        (selectionsWeather['Snow'] && (fastMove.indexOf('^Snow') >= 0 || chargedMove.indexOf('^Snow') >= 0)))) {
         return false;
     }
 
@@ -247,13 +185,23 @@ function MoveSetMatchesFilter(movesetRow) {
 
 // ============================================================================
 // #region Callbacks
+// ============================================================================
+
+// Called the selection changes in the Types Selector.
 function OnTypesChanged(types) {
-    typeSelections = types;
+    selectionsTypes = types;
     OnFilterCriteriaChanged();
 }
 
+// Called the selection changes in the Weather Selector.
 function OnWeatherChanged(weather) {
-    weatherSelections = weather;
+    selectionsWeather = weather;
+    OnFilterCriteriaChanged();
+}
+
+// Called the Pokemon Name/ID filter changes.
+function OnPokemonNameIDChanged(filter) {
+    filterNameID = filter;
     OnFilterCriteriaChanged();
 }
 

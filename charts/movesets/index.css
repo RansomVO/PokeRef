@@ -5,3 +5,12 @@
 td, th {
     white-space: nowrap;
 }
+
+/* ------------------------------------------------------------------------------------------ */
+
+.HIDDEN_CONVENIENCE_ROW {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}

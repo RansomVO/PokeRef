@@ -20,13 +20,8 @@ var CookieSettings = {
 
 // Read the Cookie and apply it to the fields.
 function ApplyCookie() {
-    try {
-        ApplyCookieSettings(CookieSettings);
-        ToggleChart();
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(CookieSettings);
+    ToggleChart();
 }
 
 // #endregion Cookies
@@ -37,8 +32,12 @@ function ApplyCookie() {
 // NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
 //          the window.onnload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
-    GetFields();
-    ApplyCookie();
+    try {
+        GetFields();
+        ApplyCookie();
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // #endregion Common
@@ -50,13 +49,8 @@ window.onload = function () {
 // Get the fields we will be using multiple times.
 //  NOTE: Do not use keyword "var" and the value will be global.
 function GetFields() {
-    try {
-        Regular = document.getElementById('Regular');
-        Boosted = document.getElementById('Boosted');
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    Regular = document.getElementById('Regular');
+    Boosted = document.getElementById('Boosted');
 }
 
 // Called when the checkbox for Boosted is toggled.

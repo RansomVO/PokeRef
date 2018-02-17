@@ -36,6 +36,12 @@
         </script>
         <script>
           <xsl:attribute name="src">
+            <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <script>
+          <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
@@ -46,15 +52,6 @@
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
         </link>
-
-        <style>
-          .HIDDEN_CONVENIENCE_ROW {
-          height: 0;
-          margin: 0;
-          padding: 0;
-          border: none;
-          }
-        </style>
 
         <title>
           Pokemon Move Sets
@@ -140,55 +137,7 @@
 
         <!-- Leave this hidden until everything is loaded and .js has applied it. -->
         <div id="MOVESET_Content" class="DIV_HIDDEN">
-          <h2 id="anchor_criteria">
-            <xsl:text>Selection Criteria</xsl:text>
-            <xsl:call-template name="Collapser">
-              <xsl:with-param name="CollapseeID" select="'MOVESET_CRITERIA'" />
-            </xsl:call-template>
-          </h2>
-          <br />
-          <div id="MOVESET_CRITERIA">
-            <table border="1" class="KEY_TABLE">
-              <tr>
-                <th>Filter By...</th>
-              </tr>
-              <tr>
-                <td valign="top">
-                  <table style="white-space:nowrap;">
-                    <tr>
-                      <td>Pokemon Name or ID:</td>
-                      <td style="padding:0">
-                        <input id="Filter_Text_NameId" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Move Name:</td>
-                      <td style="padding:0">
-                        <input id="Filter_Text_Move" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
-                      </td>
-                    </tr>
-                    <tr style="height:1em;" />
-                    <tr>
-                      <td colspan="2">
-                        <input id="ShowOnlyReleased_Checkbox" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
-                        <xsl:text>Show Only Released</xsl:text>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <div class="KEY_TABLE">
-              <xsl:call-template name="OutputTypeSelection">
-                <xsl:with-param name="Callback" select="'OnTypesChanged'" />
-              </xsl:call-template>
-            </div>
-            <div class="KEY_TABLE">
-              <xsl:call-template name="OutputWeatherSelection">
-                <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
-              </xsl:call-template>
-            </div>
-          </div>
+          <xsl:call-template name="CreateCriteria" />
 
           <br />
           <hr />
@@ -207,26 +156,61 @@
     </html>
   </xsl:template>
 
-  <!-- Template to create the headers for the table -->
-  <xsl:template name="CreateTableHeaders">
-    <tr class="HEADER_ROW" style="font-size:xx-large;">
-      <th colspan="3" valign="bottom">Pokemon</th>
-      <th colspan="2" valign="bottom">Move Set</th>
-      <th colspan="3" valign="bottom">Damage</th>
-    </tr>
-    <tr class="HEADER_ROW" style="font-size:large;">
-      <th colspan="2" valign="bottom">ID</th>
-      <th valign="bottom" align="left">Name</th>
-      <th valign="bottom">Fast</th>
-      <th valign="bottom">Charged</th>
-      <th valign="bottom">
-        Move Set<br />DPS
-      </th>
-      <th valign="bottom">
-        True<br />DPS
-      </th>
-      <th valign="bottom" style="font-size:x-large;">%</th>
-    </tr>
+  <!-- Template to write the Selection Criteria. -->
+  <xsl:template name="CreateCriteria">
+    <h2 id="anchor_criteria">
+      <xsl:text>Selection Criteria</xsl:text>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'MOVESET_CRITERIA'" />
+      </xsl:call-template>
+    </h2>
+    <br />
+    <div id="MOVESET_CRITERIA">
+      <table border="1" class="KEY_TABLE">
+        <tr>
+          <th>Filter By...</th>
+        </tr>
+        <tr>
+          <td valign="top">
+            <table style="white-space:nowrap;">
+              <tr>
+                <td>Pokemon Name or ID:</td>
+                <td style="padding:0">
+                  <xsl:call-template name="OutputFilterPokemonNameID">
+                    <xsl:with-param name="Callback" select="'OnPokemonNameIDChanged'" />
+                  </xsl:call-template>
+                </td>
+              </tr>
+              <tr>
+                <td>Move Name:</td>
+                <td style="padding:0">
+                  <input id="Filter_Text_Move" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
+                </td>
+              </tr>
+              <tr style="height:1em;" />
+              <tr>
+                <td colspan="2">
+                  <input id="ShowOnlyReleased_Checkbox" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
+                  <xsl:text>Show Only Released</xsl:text>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <div class="KEY_TABLE">
+        <xsl:call-template name="OutputTypeSelection">
+          <xsl:with-param name="Callback" select="'OnTypesChanged'" />
+          <xsl:with-param name="Title" select="'Move Types'" />
+        </xsl:call-template>
+      </div>
+      <div class="KEY_TABLE">
+        <xsl:call-template name="OutputWeatherSelection">
+          <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
+          <xsl:with-param name="Title" select="concat('Move', $lt, 'br /', $gt, 'Weather Boosts')" />
+        </xsl:call-template>
+      </div>
+    </div>
   </xsl:template>
 
   <!-- Template to write the Key for the table. -->
@@ -353,15 +337,6 @@
               <xsl:text>PRIMARY_ROW</xsl:text>
               <xsl:if test="contains($PokemonStats/Availability,'Unavailable')"> UNAVAILABLE_ROW </xsl:if>
             </xsl:attribute>
-            <xsl:attribute name="id">
-              <xsl:value-of select="$PokemonStats/ID" />
-            </xsl:attribute>
-            <xsl:attribute name="name">
-              <xsl:value-of select="$PokemonStats/Name" />
-            </xsl:attribute>
-            <xsl:attribute name="family">
-              <xsl:value-of select="$PokemonStats/CandyType" />
-            </xsl:attribute>
             <xsl:attribute name="movesetCount">
               <xsl:value-of select="$PokemonMoveSetCount" />
             </xsl:attribute>
@@ -415,6 +390,28 @@
     </div>
   </xsl:template>
 
+  <!-- Template to create the headers for the table -->
+  <xsl:template name="CreateTableHeaders">
+    <tr class="HEADER_ROW" style="font-size:xx-large;">
+      <th colspan="3" valign="bottom">Pokemon</th>
+      <th colspan="2" valign="bottom">Move Set</th>
+      <th colspan="3" valign="bottom">Damage</th>
+    </tr>
+    <tr class="HEADER_ROW" style="font-size:large;">
+      <th colspan="2" valign="bottom">ID</th>
+      <th valign="bottom" align="left">Name</th>
+      <th valign="bottom">Fast</th>
+      <th valign="bottom">Charged</th>
+      <th valign="bottom">
+        Move Set<br />DPS
+      </th>
+      <th valign="bottom">
+        True<br />DPS
+      </th>
+      <th valign="bottom" style="font-size:x-large;">%</th>
+    </tr>
+  </xsl:template>
+ 
   <!-- Template to create rows for a Pokemon's Move Sets -->
   <xsl:template match="MoveSet">
     <xsl:variable name="legacyFast" select="FastAttack/Legacy != ''" />

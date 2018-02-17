@@ -153,12 +153,7 @@ var CookieSettings = {
 
 // Read the Cookie and apply it to the fields.
 function ApplyCookie() {
-    try {
-        ApplyCookieSettings(CookieSettings);
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(CookieSettings);
 }
 
 // #endregion Cookies
@@ -169,11 +164,15 @@ function ApplyCookie() {
 // NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
 //          the window.onnload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
-    GetFields();
+    try {
+        GetFields();
 
-    var updateDate = GetCookieSetting('ShoppingBox_Update_Date');
-    Reset(updateDate !== ShoppingBox_Update_Date);
-    SetCookieSetting('ShoppingBox_Update_Date', ShoppingBox_Update_Date);
+        var updateDate = GetCookieSetting('ShoppingBox_Update_Date');
+        Reset(updateDate !== ShoppingBox_Update_Date);
+        SetCookieSetting('ShoppingBox_Update_Date', ShoppingBox_Update_Date);
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // #endregion Common
@@ -184,147 +183,132 @@ window.onload = function () {
 
 // Get the fields we will be using multiple times.
 function GetFields() {
-    try {
-        var AllItems_Check = document.getElementById('AllItems_Check');
+    AllItems_Check = document.getElementById('AllItems_Check');
 
-        var PremiumRaidPass_Check = document.getElementById('PremiumRaidPass_Check');
-        var PremiumRaidPass_Value = document.getElementById('PremiumRaidPass_Value');
-        var MaxRevives_Check = document.getElementById('MaxRevives_Check');
-        var MaxRevives_Value = document.getElementById('MaxRevives_Value');
-        var MaxPotions_Check = document.getElementById('MaxPotions_Check');
-        var MaxPotions_Value = document.getElementById('MaxPotions_Value');
-        var PokeBalls_Check = document.getElementById('PokeBalls_Check');
-        var PokeBalls_Value = document.getElementById('PokeBalls_Value');
-        var Lures_Check = document.getElementById('Lures_Check');
-        var Lures_Value = document.getElementById('Lures_Value');
-        var Incubator_Check = document.getElementById('Incubator_Check');
-        var Incubator_Value = document.getElementById('Incubator_Value');
-        var LuckyEggs_Check = document.getElementById('LuckyEggs_Check');
-        var LuckyEggs_Value = document.getElementById('LuckyEggs_Value');
-        var Incense_Check = document.getElementById('Incense_Check');
-        var Incense_Value = document.getElementById('Incense_Value');
+    PremiumRaidPass_Check = document.getElementById('PremiumRaidPass_Check');
+    PremiumRaidPass_Value = document.getElementById('PremiumRaidPass_Value');
+    MaxRevives_Check = document.getElementById('MaxRevives_Check');
+    MaxRevives_Value = document.getElementById('MaxRevives_Value');
+    MaxPotions_Check = document.getElementById('MaxPotions_Check');
+    MaxPotions_Value = document.getElementById('MaxPotions_Value');
+    PokeBalls_Check = document.getElementById('PokeBalls_Check');
+    PokeBalls_Value = document.getElementById('PokeBalls_Value');
+    Lures_Check = document.getElementById('Lures_Check');
+    Lures_Value = document.getElementById('Lures_Value');
+    Incubator_Check = document.getElementById('Incubator_Check');
+    Incubator_Value = document.getElementById('Incubator_Value');
+    LuckyEggs_Check = document.getElementById('LuckyEggs_Check');
+    LuckyEggs_Value = document.getElementById('LuckyEggs_Value');
+    Incense_Check = document.getElementById('Incense_Check');
+    Incense_Value = document.getElementById('Incense_Value');
 
-        var StarPiece_Check = document.getElementById('StarPiece_Check');
-        var StarPiece_Value = document.getElementById('StarPiece_Value');
-        var SuperIncubator_Check = document.getElementById('SuperIncubator_Check');
-        var SuperIncubator_Value = document.getElementById('SuperIncubator_Value');
-        var GreatBalls_Check = document.getElementById('GreatBalls_Check');
-        var GreatBalls_Value = document.getElementById('GreatBalls_Value');
-        var UltraBalls_Check = document.getElementById('UltraBalls_Check');
-        var UltraBalls_Value = document.getElementById('UltraBalls_Value');
-        var RazzBerries_Check = document.getElementById('RazzBerries_Check');
-        var RazzBerries_Value = document.getElementById('RazzBerries_Value');
-        var NanabBerries_Check = document.getElementById('NanabBerries_Check');
-        var NanabBerries_Value = document.getElementById('NanabBerries_Value');
-        var PinappBerries_Check = document.getElementById('PinappBerries_Check');
-        var PinappBerries_Value = document.getElementById('PinappBerries_Value');
-        var GoldenBerries_Check = document.getElementById('GoldenBerries_Check');
-        var GoldenBerries_Value = document.getElementById('GoldenBerries_Value');
+    StarPiece_Check = document.getElementById('StarPiece_Check');
+    StarPiece_Value = document.getElementById('StarPiece_Value');
+    SuperIncubator_Check = document.getElementById('SuperIncubator_Check');
+    SuperIncubator_Value = document.getElementById('SuperIncubator_Value');
+    GreatBalls_Check = document.getElementById('GreatBalls_Check');
+    GreatBalls_Value = document.getElementById('GreatBalls_Value');
+    UltraBalls_Check = document.getElementById('UltraBalls_Check');
+    UltraBalls_Value = document.getElementById('UltraBalls_Value');
+    RazzBerries_Check = document.getElementById('RazzBerries_Check');
+    RazzBerries_Value = document.getElementById('RazzBerries_Value');
+    NanabBerries_Check = document.getElementById('NanabBerries_Check');
+    NanabBerries_Value = document.getElementById('NanabBerries_Value');
+    PinappBerries_Check = document.getElementById('PinappBerries_Check');
+    PinappBerries_Value = document.getElementById('PinappBerries_Value');
+    GoldenBerries_Check = document.getElementById('GoldenBerries_Check');
+    GoldenBerries_Value = document.getElementById('GoldenBerries_Value');
 
-        var SpecialBox_Price = document.getElementById('SpecialBox_Price');
-        var SpecialBox_Total = document.getElementById('SpecialBox_Total');
-        var SpecialBox_Discount = document.getElementById('SpecialBox_Discount');
-        var SpecialBox_PremiumRaidPass_Qty = document.getElementById('SpecialBox_PremiumRaidPass_Qty');
-        var SpecialBox_MaxRevives_Qty = document.getElementById('SpecialBox_MaxRevives_Qty');
-        var SpecialBox_MaxPotions_Qty = document.getElementById('SpecialBox_MaxPotions_Qty');
-        var SpecialBox_PokeBalls_Qty = document.getElementById('SpecialBox_PokeBalls_Qty');
-        var SpecialBox_Lures_Qty = document.getElementById('SpecialBox_Lures_Qty');
-        var SpecialBox_Incubator_Qty = document.getElementById('SpecialBox_Incubator_Qty');
-        var SpecialBox_LuckyEggs_Qty = document.getElementById('SpecialBox_LuckyEggs_Qty');
-        var SpecialBox_Incense_Qty = document.getElementById('SpecialBox_Incense_Qty');
-        var SpecialBox_StarPiece_Qty = document.getElementById('SpecialBox_StarPiece_Qty');
-        var SpecialBox_SuperIncubator_Qty = document.getElementById('SpecialBox_SuperIncubator_Qty');
-        var SpecialBox_RazzBerries_Qty = document.getElementById('SpecialBox_RazzBerries_Qty');
-        var SpecialBox_NanabBerries_Qty = document.getElementById('SpecialBox_NanabBerries_Qty');
-        var SpecialBox_PinappBerries_Qty = document.getElementById('SpecialBox_PinappBerries_Qty');
-        var SpecialBox_GoldenBerries_Qty = document.getElementById('SpecialBox_GoldenBerries_Qty');
+    SpecialBox_Price = document.getElementById('SpecialBox_Price');
+    SpecialBox_Total = document.getElementById('SpecialBox_Total');
+    SpecialBox_Discount = document.getElementById('SpecialBox_Discount');
+    SpecialBox_PremiumRaidPass_Qty = document.getElementById('SpecialBox_PremiumRaidPass_Qty');
+    SpecialBox_MaxRevives_Qty = document.getElementById('SpecialBox_MaxRevives_Qty');
+    SpecialBox_MaxPotions_Qty = document.getElementById('SpecialBox_MaxPotions_Qty');
+    SpecialBox_PokeBalls_Qty = document.getElementById('SpecialBox_PokeBalls_Qty');
+    SpecialBox_Lures_Qty = document.getElementById('SpecialBox_Lures_Qty');
+    SpecialBox_Incubator_Qty = document.getElementById('SpecialBox_Incubator_Qty');
+    SpecialBox_LuckyEggs_Qty = document.getElementById('SpecialBox_LuckyEggs_Qty');
+    SpecialBox_Incense_Qty = document.getElementById('SpecialBox_Incense_Qty');
+    SpecialBox_StarPiece_Qty = document.getElementById('SpecialBox_StarPiece_Qty');
+    SpecialBox_SuperIncubator_Qty = document.getElementById('SpecialBox_SuperIncubator_Qty');
+    SpecialBox_RazzBerries_Qty = document.getElementById('SpecialBox_RazzBerries_Qty');
+    SpecialBox_NanabBerries_Qty = document.getElementById('SpecialBox_NanabBerries_Qty');
+    SpecialBox_PinappBerries_Qty = document.getElementById('SpecialBox_PinappBerries_Qty');
+    SpecialBox_GoldenBerries_Qty = document.getElementById('SpecialBox_GoldenBerries_Qty');
 
-        var GreatBox_Price = document.getElementById('Great_Price');
-        var GreatBox_Total = document.getElementById('GreatBox_Total');
-        var GreatBox_Discount = document.getElementById('GreatBox_Discount');
-        var GreatBox_PremiumRaidPass_Qty = document.getElementById('GreatBox_PremiumRaidPass_Qty');
-        var GreatBox_MaxRevives_Qty = document.getElementById('GreatBox_MaxRevives_Qty');
-        var GreatBox_MaxPotions_Qty = document.getElementById('GreatBox_MaxPotions_Qty');
-        var GreatBox_PokeBalls_Qty = document.getElementById('GreatBox_PokeBalls_Qty');
-        var GreatBox_Lures_Qty = document.getElementById('GreatBox_Lures_Qty');
-        var GreatBox_Incubator_Qty = document.getElementById('GreatBox_Incubator_Qty');
-        var GreatBox_LuckyEggs_Qty = document.getElementById('GreatBox_LuckyEggs_Qty');
-        var GreatBox_Incense_Qty = document.getElementById('GreatBox_Incense_Qty');
-        var GreatBox_StarPiece_Qty = document.getElementById('GreatBox_StarPiece_Qty');
-        var GreatBox_SuperIncubator_Qty = document.getElementById('GreatBox_SuperIncubator_Qty');
-        var GreatBox_RazzBerries_Qty = document.getElementById('GreatBox_RazzBerries_Qty');
-        var GreatBox_NanabBerries_Qty = document.getElementById('GreatBox_NanabBerries_Qty');
-        var GreatBox_PinappBerries_Qty = document.getElementById('GreatBox_PinappBerries_Qty');
-        var GreatBox_GoldenBerries_Qty = document.getElementById('GreatBox_GoldenBerries_Qty');
+    GreatBox_Price = document.getElementById('Great_Price');
+    GreatBox_Total = document.getElementById('GreatBox_Total');
+    GreatBox_Discount = document.getElementById('GreatBox_Discount');
+    GreatBox_PremiumRaidPass_Qty = document.getElementById('GreatBox_PremiumRaidPass_Qty');
+    GreatBox_MaxRevives_Qty = document.getElementById('GreatBox_MaxRevives_Qty');
+    GreatBox_MaxPotions_Qty = document.getElementById('GreatBox_MaxPotions_Qty');
+    GreatBox_PokeBalls_Qty = document.getElementById('GreatBox_PokeBalls_Qty');
+    GreatBox_Lures_Qty = document.getElementById('GreatBox_Lures_Qty');
+    GreatBox_Incubator_Qty = document.getElementById('GreatBox_Incubator_Qty');
+    GreatBox_LuckyEggs_Qty = document.getElementById('GreatBox_LuckyEggs_Qty');
+    GreatBox_Incense_Qty = document.getElementById('GreatBox_Incense_Qty');
+    GreatBox_StarPiece_Qty = document.getElementById('GreatBox_StarPiece_Qty');
+    GreatBox_SuperIncubator_Qty = document.getElementById('GreatBox_SuperIncubator_Qty');
+    GreatBox_RazzBerries_Qty = document.getElementById('GreatBox_RazzBerries_Qty');
+    GreatBox_NanabBerries_Qty = document.getElementById('GreatBox_NanabBerries_Qty');
+    GreatBox_PinappBerries_Qty = document.getElementById('GreatBox_PinappBerries_Qty');
+    GreatBox_GoldenBerries_Qty = document.getElementById('GreatBox_GoldenBerries_Qty');
 
-        var UltraBox_Price = document.getElementById('UltraBox_Price');
-        var UltraBox_Total = document.getElementById('UltraBox_Total');
-        var UltraBox_Discount = document.getElementById('UltraBox_Discount');
-        var UltraBox_PremiumRaidPass_Qty = document.getElementById('UltraBox_PremiumRaidPass_Qty');
-        var UltraBox_MaxRevives_Qty = document.getElementById('UltraBox_MaxRevives_Qty');
-        var UltraBox_MaxPotions_Qty = document.getElementById('UltraBox_MaxPotions_Qty');
-        var UltraBox_PokeBalls_Qty = document.getElementById('UltraBox_PokeBalls_Qty');
-        var UltraBox_Lures_Qty = document.getElementById('UltraBox_Lures_Qty');
-        var UltraBox_Incubator_Qty = document.getElementById('UltraBox_Incubator_Qty');
-        var UltraBox_LuckyEggs_Qty = document.getElementById('UltraBox_LuckyEggs_Qty');
-        var UltraBox_Incense_Qty = document.getElementById('UltraBox_Incense_Qty');
-        var UltraBox_StarPiece_Qty = document.getElementById('UltraBox_StarPiece_Qty');
-        var UltraBox_SuperIncubator_Qty = document.getElementById('UltraBox_SuperIncubator_Qty');
-        var UltraBox_RazzBerries_Qty = document.getElementById('UltraBox_RazzBerries_Qty');
-        var UltraBox_NanabBerries_Qty = document.getElementById('UltraBox_NanabBerries_Qty');
-        var UltraBox_PinappBerries_Qty = document.getElementById('UltraBox_PinappBerries_Qty');
-        var UltraBox_GoldenBerries_Qty = document.getElementById('UltraBox_GoldenBerries_Qty');
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    UltraBox_Price = document.getElementById('UltraBox_Price');
+    UltraBox_Total = document.getElementById('UltraBox_Total');
+    UltraBox_Discount = document.getElementById('UltraBox_Discount');
+    UltraBox_PremiumRaidPass_Qty = document.getElementById('UltraBox_PremiumRaidPass_Qty');
+    UltraBox_MaxRevives_Qty = document.getElementById('UltraBox_MaxRevives_Qty');
+    UltraBox_MaxPotions_Qty = document.getElementById('UltraBox_MaxPotions_Qty');
+    UltraBox_PokeBalls_Qty = document.getElementById('UltraBox_PokeBalls_Qty');
+    UltraBox_Lures_Qty = document.getElementById('UltraBox_Lures_Qty');
+    UltraBox_Incubator_Qty = document.getElementById('UltraBox_Incubator_Qty');
+    UltraBox_LuckyEggs_Qty = document.getElementById('UltraBox_LuckyEggs_Qty');
+    UltraBox_Incense_Qty = document.getElementById('UltraBox_Incense_Qty');
+    UltraBox_StarPiece_Qty = document.getElementById('UltraBox_StarPiece_Qty');
+    UltraBox_SuperIncubator_Qty = document.getElementById('UltraBox_SuperIncubator_Qty');
+    UltraBox_RazzBerries_Qty = document.getElementById('UltraBox_RazzBerries_Qty');
+    UltraBox_NanabBerries_Qty = document.getElementById('UltraBox_NanabBerries_Qty');
+    UltraBox_PinappBerries_Qty = document.getElementById('UltraBox_PinappBerries_Qty');
+    UltraBox_GoldenBerries_Qty = document.getElementById('UltraBox_GoldenBerries_Qty');
 }
 
 // Reset all of the fields.
 //  (If clearCache, also reset the cookies.)
 function Reset(clearCache) {
-    try {
-        if (clearCache) {
-            ClearCookieSettings(CookieSettings);
-        }
-
-        InitializeChecks();
-        InitializeBoxes();
-
-        ApplyCookie();
-
-        OnCheckChanged(null);
+    if (clearCache) {
+        ClearCookieSettings(CookieSettings);
     }
-    catch (err) {
-        ShowError(err);
-    }
+
+    InitializeChecks();
+    InitializeBoxes();
+
+    ApplyCookie();
+
+    OnCheckChanged(null);
 }
 
 // Set default state of which Items should be included in calculations. 
 function InitializeChecks() {
-    try {
-        InitialCheck(PremiumRaidPass_Check, 'PremiumRaidPass', true);
-        InitialCheck(MaxRevives_Check, 'MaxRevives', true);
-        InitialCheck(MaxPotions_Check, 'MaxPotions', true);
-        InitialCheck(PokeBalls_Check, 'PokeBalls', true);
-        InitialCheck(Lures_Check, 'Lures', true);
-        InitialCheck(Incubator_Check, 'Incubator', true);
-        InitialCheck(LuckyEggs_Check, 'LuckyEggs', true);
-        InitialCheck(Incense_Check, 'Incense', true);
-        InitialCheck(StarPiece_Check, 'StarPiece', true);
-        InitialCheck(SuperIncubator_Check, 'SuperIncubator', true);
-        InitialCheck(GreatBalls_Check, 'GreatBalls', true);
-        InitialCheck(UltraBalls_Check, 'UltraBalls', true);
-        InitialCheck(RazzBerries_Check, 'RazzBerries', false);
-        InitialCheck(NanabBerries_Check, 'NanabBerries', false);
-        InitialCheck(PinappBerries_Check, 'PinappBerries', false);
-        InitialCheck(GoldenBerries_Check, 'GoldenBerries', false);
+    InitialCheck(PremiumRaidPass_Check, 'PremiumRaidPass', true);
+    InitialCheck(MaxRevives_Check, 'MaxRevives', true);
+    InitialCheck(MaxPotions_Check, 'MaxPotions', true);
+    InitialCheck(PokeBalls_Check, 'PokeBalls', true);
+    InitialCheck(Lures_Check, 'Lures', true);
+    InitialCheck(Incubator_Check, 'Incubator', true);
+    InitialCheck(LuckyEggs_Check, 'LuckyEggs', true);
+    InitialCheck(Incense_Check, 'Incense', true);
+    InitialCheck(StarPiece_Check, 'StarPiece', true);
+    InitialCheck(SuperIncubator_Check, 'SuperIncubator', true);
+    InitialCheck(GreatBalls_Check, 'GreatBalls', true);
+    InitialCheck(UltraBalls_Check, 'UltraBalls', true);
+    InitialCheck(RazzBerries_Check, 'RazzBerries', false);
+    InitialCheck(NanabBerries_Check, 'NanabBerries', false);
+    InitialCheck(PinappBerries_Check, 'PinappBerries', false);
+    InitialCheck(GoldenBerries_Check, 'GoldenBerries', false);
 
-        UpdateAllItemsCheck();
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    UpdateAllItemsCheck();
 }
 
 // Set the default state of a single checkbox, disabling rows that aren't used.
@@ -339,75 +323,70 @@ function InitialCheck(checkbox, index, checkDefault) {
 
 // Set the default values for each of the boxes.
 function InitializeBoxes() {
-    try {
-        if (SpecialBox['Price'] > 0) {
-            SpecialBox_Price.value = SpecialBox['Price'];
-            UpdateBoxRow(SpecialBox, 'PremiumRaidPass', SpecialBox_PremiumRaidPass_Qty);
-            UpdateBoxRow(SpecialBox, 'MaxRevives', SpecialBox_MaxRevives_Qty);
-            UpdateBoxRow(SpecialBox, 'MaxPotions', SpecialBox_MaxPotions_Qty);
-            UpdateBoxRow(SpecialBox, 'PokeBalls', SpecialBox_PokeBalls_Qty);
-            UpdateBoxRow(SpecialBox, 'Lures', SpecialBox_Lures_Qty);
-            UpdateBoxRow(SpecialBox, 'Incubator', SpecialBox_Incubator_Qty);
-            UpdateBoxRow(SpecialBox, 'LuckyEggs', SpecialBox_LuckyEggs_Qty);
-            UpdateBoxRow(SpecialBox, 'Incense', SpecialBox_Incense_Qty);
-            UpdateBoxRow(SpecialBox, 'StarPiece', SpecialBox_StarPiece_Qty);
-            UpdateBoxRow(SpecialBox, 'SuperIncubator', SpecialBox_SuperIncubator_Qty);
-            UpdateBoxRow(SpecialBox, 'GreatBalls', SpecialBox_GreatBalls_Qty);
-            UpdateBoxRow(SpecialBox, 'UltraBalls', SpecialBox_UltraBalls_Qty);
-            UpdateBoxRow(SpecialBox, 'RazzBerries', SpecialBox_RazzBerries_Qty);
-            UpdateBoxRow(SpecialBox, 'NanabBerries', SpecialBox_NanabBerries_Qty);
-            UpdateBoxRow(SpecialBox, 'PinappBerries', SpecialBox_PinappBerries_Qty);
-            UpdateBoxRow(SpecialBox, 'GoldenBerries', SpecialBox_GoldenBerries_Qty);
-        } else {
-            document.getElementById('SpecialBox').style.display = 'none';
-        }
-
-        if (GreatBox['Price'] > 0) {
-            GreatBox_Price.value = GreatBox['Price'];
-            UpdateBoxRow(GreatBox, 'PremiumRaidPass', GreatBox_PremiumRaidPass_Qty);
-            UpdateBoxRow(GreatBox, 'MaxRevives', GreatBox_MaxRevives_Qty);
-            UpdateBoxRow(GreatBox, 'MaxPotions', GreatBox_MaxPotions_Qty);
-            UpdateBoxRow(GreatBox, 'PokeBalls', GreatBox_PokeBalls_Qty);
-            UpdateBoxRow(GreatBox, 'Lures', GreatBox_Lures_Qty);
-            UpdateBoxRow(GreatBox, 'Incubator', GreatBox_Incubator_Qty);
-            UpdateBoxRow(GreatBox, 'LuckyEggs', GreatBox_LuckyEggs_Qty);
-            UpdateBoxRow(GreatBox, 'Incense', GreatBox_Incense_Qty);
-            UpdateBoxRow(GreatBox, 'StarPiece', GreatBox_StarPiece_Qty);
-            UpdateBoxRow(GreatBox, 'SuperIncubator', GreatBox_SuperIncubator_Qty);
-            UpdateBoxRow(GreatBox, 'GreatBalls', GreatBox_GreatBalls_Qty);
-            UpdateBoxRow(GreatBox, 'UltraBalls', GreatBox_UltraBalls_Qty);
-            UpdateBoxRow(GreatBox, 'RazzBerries', GreatBox_RazzBerries_Qty);
-            UpdateBoxRow(GreatBox, 'NanabBerries', GreatBox_NanabBerries_Qty);
-            UpdateBoxRow(GreatBox, 'PinappBerries', GreatBox_PinappBerries_Qty);
-            UpdateBoxRow(GreatBox, 'GoldenBerries', GreatBox_GoldenBerries_Qty);
-        } else {
-            document.getElementById('GreatBox').style.display = 'none';
-        }
-
-        if (UltraBox['Price'] > 0) {
-            UltraBox_Price.value = UltraBox['Price'];
-            UpdateBoxRow(UltraBox, 'PremiumRaidPass', UltraBox_PremiumRaidPass_Qty);
-            UpdateBoxRow(UltraBox, 'MaxRevives', UltraBox_MaxRevives_Qty);
-            UpdateBoxRow(UltraBox, 'MaxPotions', UltraBox_MaxPotions_Qty);
-            UpdateBoxRow(UltraBox, 'PokeBalls', UltraBox_PokeBalls_Qty);
-            UpdateBoxRow(UltraBox, 'Lures', UltraBox_Lures_Qty);
-            UpdateBoxRow(UltraBox, 'Incubator', UltraBox_Incubator_Qty);
-            UpdateBoxRow(UltraBox, 'LuckyEggs', UltraBox_LuckyEggs_Qty);
-            UpdateBoxRow(UltraBox, 'Incense', UltraBox_Incense_Qty);
-            UpdateBoxRow(UltraBox, 'StarPiece', UltraBox_StarPiece_Qty);
-            UpdateBoxRow(UltraBox, 'SuperIncubator', UltraBox_SuperIncubator_Qty);
-            UpdateBoxRow(UltraBox, 'GreatBalls', UltraBox_GreatBalls_Qty);
-            UpdateBoxRow(UltraBox, 'UltraBalls', UltraBox_UltraBalls_Qty);
-            UpdateBoxRow(UltraBox, 'RazzBerries', UltraBox_RazzBerries_Qty);
-            UpdateBoxRow(UltraBox, 'NanabBerries', UltraBox_NanabBerries_Qty);
-            UpdateBoxRow(UltraBox, 'PinappBerries', UltraBox_PinappBerries_Qty);
-            UpdateBoxRow(UltraBox, 'GoldenBerries', UltraBox_GoldenBerries_Qty);
-        } else {
-            document.getElementById('UltraBox').style.display = 'none';
-        }
+    if (SpecialBox['Price'] > 0) {
+        SpecialBox_Price.value = SpecialBox['Price'];
+        UpdateBoxRow(SpecialBox, 'PremiumRaidPass', SpecialBox_PremiumRaidPass_Qty);
+        UpdateBoxRow(SpecialBox, 'MaxRevives', SpecialBox_MaxRevives_Qty);
+        UpdateBoxRow(SpecialBox, 'MaxPotions', SpecialBox_MaxPotions_Qty);
+        UpdateBoxRow(SpecialBox, 'PokeBalls', SpecialBox_PokeBalls_Qty);
+        UpdateBoxRow(SpecialBox, 'Lures', SpecialBox_Lures_Qty);
+        UpdateBoxRow(SpecialBox, 'Incubator', SpecialBox_Incubator_Qty);
+        UpdateBoxRow(SpecialBox, 'LuckyEggs', SpecialBox_LuckyEggs_Qty);
+        UpdateBoxRow(SpecialBox, 'Incense', SpecialBox_Incense_Qty);
+        UpdateBoxRow(SpecialBox, 'StarPiece', SpecialBox_StarPiece_Qty);
+        UpdateBoxRow(SpecialBox, 'SuperIncubator', SpecialBox_SuperIncubator_Qty);
+        UpdateBoxRow(SpecialBox, 'GreatBalls', SpecialBox_GreatBalls_Qty);
+        UpdateBoxRow(SpecialBox, 'UltraBalls', SpecialBox_UltraBalls_Qty);
+        UpdateBoxRow(SpecialBox, 'RazzBerries', SpecialBox_RazzBerries_Qty);
+        UpdateBoxRow(SpecialBox, 'NanabBerries', SpecialBox_NanabBerries_Qty);
+        UpdateBoxRow(SpecialBox, 'PinappBerries', SpecialBox_PinappBerries_Qty);
+        UpdateBoxRow(SpecialBox, 'GoldenBerries', SpecialBox_GoldenBerries_Qty);
+    } else {
+        document.getElementById('SpecialBox').style.display = 'none';
     }
-    catch (err) {
-        ShowError(err);
+
+    if (GreatBox['Price'] > 0) {
+        GreatBox_Price.value = GreatBox['Price'];
+        UpdateBoxRow(GreatBox, 'PremiumRaidPass', GreatBox_PremiumRaidPass_Qty);
+        UpdateBoxRow(GreatBox, 'MaxRevives', GreatBox_MaxRevives_Qty);
+        UpdateBoxRow(GreatBox, 'MaxPotions', GreatBox_MaxPotions_Qty);
+        UpdateBoxRow(GreatBox, 'PokeBalls', GreatBox_PokeBalls_Qty);
+        UpdateBoxRow(GreatBox, 'Lures', GreatBox_Lures_Qty);
+        UpdateBoxRow(GreatBox, 'Incubator', GreatBox_Incubator_Qty);
+        UpdateBoxRow(GreatBox, 'LuckyEggs', GreatBox_LuckyEggs_Qty);
+        UpdateBoxRow(GreatBox, 'Incense', GreatBox_Incense_Qty);
+        UpdateBoxRow(GreatBox, 'StarPiece', GreatBox_StarPiece_Qty);
+        UpdateBoxRow(GreatBox, 'SuperIncubator', GreatBox_SuperIncubator_Qty);
+        UpdateBoxRow(GreatBox, 'GreatBalls', GreatBox_GreatBalls_Qty);
+        UpdateBoxRow(GreatBox, 'UltraBalls', GreatBox_UltraBalls_Qty);
+        UpdateBoxRow(GreatBox, 'RazzBerries', GreatBox_RazzBerries_Qty);
+        UpdateBoxRow(GreatBox, 'NanabBerries', GreatBox_NanabBerries_Qty);
+        UpdateBoxRow(GreatBox, 'PinappBerries', GreatBox_PinappBerries_Qty);
+        UpdateBoxRow(GreatBox, 'GoldenBerries', GreatBox_GoldenBerries_Qty);
+    } else {
+        document.getElementById('GreatBox').style.display = 'none';
+    }
+
+    if (UltraBox['Price'] > 0) {
+        UltraBox_Price.value = UltraBox['Price'];
+        UpdateBoxRow(UltraBox, 'PremiumRaidPass', UltraBox_PremiumRaidPass_Qty);
+        UpdateBoxRow(UltraBox, 'MaxRevives', UltraBox_MaxRevives_Qty);
+        UpdateBoxRow(UltraBox, 'MaxPotions', UltraBox_MaxPotions_Qty);
+        UpdateBoxRow(UltraBox, 'PokeBalls', UltraBox_PokeBalls_Qty);
+        UpdateBoxRow(UltraBox, 'Lures', UltraBox_Lures_Qty);
+        UpdateBoxRow(UltraBox, 'Incubator', UltraBox_Incubator_Qty);
+        UpdateBoxRow(UltraBox, 'LuckyEggs', UltraBox_LuckyEggs_Qty);
+        UpdateBoxRow(UltraBox, 'Incense', UltraBox_Incense_Qty);
+        UpdateBoxRow(UltraBox, 'StarPiece', UltraBox_StarPiece_Qty);
+        UpdateBoxRow(UltraBox, 'SuperIncubator', UltraBox_SuperIncubator_Qty);
+        UpdateBoxRow(UltraBox, 'GreatBalls', UltraBox_GreatBalls_Qty);
+        UpdateBoxRow(UltraBox, 'UltraBalls', UltraBox_UltraBalls_Qty);
+        UpdateBoxRow(UltraBox, 'RazzBerries', UltraBox_RazzBerries_Qty);
+        UpdateBoxRow(UltraBox, 'NanabBerries', UltraBox_NanabBerries_Qty);
+        UpdateBoxRow(UltraBox, 'PinappBerries', UltraBox_PinappBerries_Qty);
+        UpdateBoxRow(UltraBox, 'GoldenBerries', UltraBox_GoldenBerries_Qty);
+    } else {
+        document.getElementById('UltraBox').style.display = 'none';
     }
 }
 
@@ -468,13 +447,8 @@ function UpdateAllItemsCheck() {
 
 // Write out the date it was updated.
 function WriteUpdated() {
-    try {
-        document.write('<b>Last Updated</b>: '
-            + ShoppingBox_Update_Date + ' <span class="NOTE">' + ShoppingBox_Update_Note + '</span>');
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    document.write('<b>Last Updated</b>: '
+        + ShoppingBox_Update_Date + ' <span class="NOTE">' + ShoppingBox_Update_Note + '</span>');
 }
 
 // Called when any of the value fields are updated.
@@ -686,8 +660,7 @@ function OnValueChanged(field) {
             UltraBox_Discount.parentElement.classList.remove('BAD');
             UltraBox_Discount.parentElement.classList.add('GOOD');
         }
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -939,8 +912,7 @@ function OnCheckChanged(checkbox) {
         UpdateAllItemsCheck();
 
         OnValueChanged(checkbox);
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }
@@ -967,8 +939,7 @@ function OnAllItemsCheckChanged() {
             = AllItems_Check.checked;
 
         OnCheckChanged();
-    }
-    catch (err) {
+    } catch (err) {
         ShowError(err);
     }
 }

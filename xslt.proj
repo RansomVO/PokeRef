@@ -93,15 +93,135 @@
       <DependentUpon>evolutions.xsl</DependentUpon>
     </FixOutputFile>
 
-    <FixIntermediateFile Include="charts\pokechart.xsl">
+    <FixIntermediateFile Include="charts\pokechart\pokechart.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\pokechart.html.xml">
+    <XslTransform Include="charts\pokechart\pokechart.gen1.html.xml">
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
       <Dependencies>
         xsl\global.xsl;
         xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen1.xml;
+        charts\pokechart\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.gen1.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.gen2.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen2.xml;
+        charts\pokechart\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.gen2.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.gen3.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen3.xml;
+        charts\pokechart\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.gen3.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.gen4.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen4.xml;
+        charts\pokechart\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.gen4.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.gen5.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen5.xml;
+        charts\pokechart\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.gen5.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.gen6.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen6.xml;
+        charts\pokechart\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.gen6.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.gen7.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
+        _datafiles\settings.xml;
+        _datafiles\mappings.xml;
+        _datafiles\pokestats.gen7.xml;
+        charts\pokechart\pokechart.js;
+      </Dependencies>
+      <OutputFileName>pokechart.gen7.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.all.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
         js\global.js;
         js\pokemon.js;
         js\controls.js;
@@ -114,11 +234,11 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
-        charts\pokechart.js;
+        charts\pokechart\pokechart.js;
       </Dependencies>
-      <OutputFileName>pokechart.html</OutputFileName>
+      <OutputFileName>pokechart.all.html</OutputFileName>
     </XslTransform>
-    <FixOutputFile Include="charts\pokechart.js">
+    <FixOutputFile Include="charts\pokechart\pokechart.js">
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
       <Dependencies>
@@ -1017,6 +1137,19 @@
         index.css;
       </Dependencies>
       <OutputFileName>raidboss.suicune.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\raidboss\raidboss.swablu.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        js\global.js;
+        _datafiles\raidboss.swablu.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>raidboss.swablu.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.tentacruel.html.xml">
       <Visible>true</Visible>

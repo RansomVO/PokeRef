@@ -456,50 +456,58 @@
   </xsl:template>
 
   <xsl:template name="PokemonImageKey">
-    <table border="1">
-      <comment commment="Limited Availablility">
-        <tr>
-          <th rowspan="2">Limited Availability</th>
-          <td class="REGIONAL">Regional Availability</td>
-        </tr>
-        <tr>
-          <td class="UNAVAILABLE">Unavailable</td>
-        </tr>
-      </comment>
+    <h2>
+      <xsl:text>Key</xsl:text>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
+      </xsl:call-template>
+    </h2>
+    <br />
+    <div id="POKEMON_IMAGE_KEY">
+      <table border="1">
+        <comment commment="Limited Availablility">
+          <tr>
+            <th rowspan="2">Limited Availability</th>
+            <td class="REGIONAL">Regional Availability</td>
+          </tr>
+          <tr>
+            <td class="UNAVAILABLE">Unavailable</td>
+          </tr>
+        </comment>
 
-      <comment commment="Limited Origin">
-        <tr>
-          <th rowspan="5">Limited Origin</th>
-          <td class="HATCH_ONLY_2K">Available From 2K Egg Only</td>
-        </tr>
-        <tr>
-          <td class="HATCH_ONLY_5K">Available From 5K Egg Only</td>
-        </tr>
-        <tr>
-          <td class="HATCH_ONLY_10K">Available From 10K Egg Only</td>
-        </tr>
-        <tr>
-          <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
-        </tr>
-        <tr>
-          <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
-        </tr>
-      </comment>
+        <comment commment="Limited Origin">
+          <tr>
+            <th rowspan="5">Limited Origin</th>
+            <td class="HATCH_ONLY_2K">Available From 2K Egg Only</td>
+          </tr>
+          <tr>
+            <td class="HATCH_ONLY_5K">Available From 5K Egg Only</td>
+          </tr>
+          <tr>
+            <td class="HATCH_ONLY_10K">Available From 10K Egg Only</td>
+          </tr>
+          <tr>
+            <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
+          </tr>
+          <tr>
+            <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
+          </tr>
+        </comment>
 
-      <comment commment="Special">
+        <comment commment="Special">
+          <tr>
+            <th>Special</th>
+            <td class="LEGENDARY">Legendary</td>
+          </tr>
+        </comment>
+
         <tr>
-          <th>Special</th>
-          <td class="LEGENDARY">Legendary</td>
+          <td colspan="2" class="NOTE">
+            May combine one from each section.
+          </td>
         </tr>
-      </comment>
-
-      <tr>
-        <td colspan="2" class="NOTE">
-          May combine one from each section.
-        </td>
-      </tr>
-
-    </table>
+      </table>
+    </div>
   </xsl:template>
 
   <!-- #endregion -->

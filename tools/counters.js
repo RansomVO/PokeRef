@@ -17,12 +17,7 @@ var CookieSettings = {
 
 // Read the Cookie and apply it to the fields.
 function ApplyCookie() {
-    try {
-        ApplyCookieSettings(CookieSettings);
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(CookieSettings);
 }
 
 // #endregion Cookies
@@ -33,7 +28,11 @@ function ApplyCookie() {
 // NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
 //          the window.onnload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
-    ApplyCookies();
+    try {
+        ApplyCookies();
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // #endregion Common

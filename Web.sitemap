@@ -22,16 +22,62 @@
       <siteMapNode title="Pokemon Naming Technique Section" description="Link to page describing a technique for naming Pokemon so you can more easily find the ones you access most." url="/charts/#naming" />
       <!-- #endregion -->
       <!-- #region Links to Sub-Sections/Child Pages. -->
-      <siteMapNode title="Pokemon Chart" description="Tool to get information about Pokemon." url="/charts/pokechart.html">
-        <!-- #region Links to anchors on the page. -->
-        <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart.html#criteria" />
-        <siteMapNode title="Generation 1" description="Pokemon from Generation 1" url="/charts/pokechart.html#GEN1" />
-        <siteMapNode title="Generation 2" description="Pokemon from Generation 2" url="/charts/pokechart.html#GEN2" />
-        <siteMapNode title="Generation 3" description="Pokemon from Generation 3" url="/charts/pokechart.html#GEN3" />
-        <siteMapNode title="Generation 4" description="Pokemon from Generation 4" url="/charts/pokechart.html#GEN4" />
-        <siteMapNode title="Generation 5" description="Pokemon from Generation 5" url="/charts/pokechart.html#GEN5" />
-        <siteMapNode title="Generation 6" description="Pokemon from Generation 6" url="/charts/pokechart.html#GEN6" />
-        <siteMapNode title="Generation 7" description="Pokemon from Generation 7" url="/charts/pokechart.html#GEN7" />
+      <siteMapNode title="Pokemon Chart" description="Tool to get information about Pokemon." url="/charts/pokechart/index.html">
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="Pokemon Chart - Gen 1" description="Chart of Gen 1 Pokemon with data about them." url="/charts/pokechart/pokechart.gen1.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen1.html#criteria" />
+          <siteMapNode title="Generation 1" description="Pokemon from Generation 1" url="/charts/pokechart/pokechart.gen1.html#GEN1" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Chart - Gen 2" description="Chart of Gen 2 Pokemon with data about them." url="/charts/pokechart/pokechart.gen2.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen2.html#criteria" />
+          <siteMapNode title="Generation 2" description="Pokemon from Generation 2" url="/charts/pokechart/pokechart.gen2.html#GEN2" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Chart - Gen 3" description="Chart of Gen 3 Pokemon with data about them." url="/charts/pokechart/pokechart.gen3.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen3.html#criteria" />
+          <siteMapNode title="Generation 3" description="Pokemon from Generation 3" url="/charts/pokechart/pokechart.gen3.html#GEN3" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Chart - Gen 4" description="Chart of Gen 4 Pokemon with data about them." url="/charts/pokechart/pokechart.gen4.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen4.html#criteria" />
+          <siteMapNode title="Generation 4" description="Pokemon from Generation 4" url="/charts/pokechart/pokechart.gen4.html#GEN4" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Chart - Gen 5" description="Chart of Gen 5 Pokemon with data about them." url="/charts/pokechart/pokechart.gen5.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen5.html#criteria" />
+          <siteMapNode title="Generation 5" description="Pokemon from Generation 5" url="/charts/pokechart/pokechart.gen5.html#GEN5" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Chart - Gen 6" description="Chart of Gen 6 Pokemon with data about them." url="/charts/pokechart/pokechart.gen6.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen6.html#criteria" />
+          <siteMapNode title="Generation 6" description="Pokemon from Generation 6" url="/charts/pokechart/pokechart.gen6.html#GEN6" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Chart - Gen 7" description="Chart of Gen 7 Pokemon with data about them." url="/charts/pokechart/pokechart.gen7.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen7.html#criteria" />
+          <siteMapNode title="Generation 7" description="Pokemon from Generation 7" url="/charts/pokechart/pokechart.gen7.html#GEN7" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokemon Chart - All Gens" description="Chart of all generations of Pokemon with data about them." url="/charts/pokechart/pokechart.all.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.all.html#criteria" />
+          <siteMapNode title="Generation 1" description="Pokemon from Generation 1" url="/charts/pokechart/pokechart.all.html#GEN1" />
+          <siteMapNode title="Generation 2" description="Pokemon from Generation 2" url="/charts/pokechart/pokechart.all.html#GEN2" />
+          <siteMapNode title="Generation 3" description="Pokemon from Generation 3" url="/charts/pokechart/pokechart.all.html#GEN3" />
+          <siteMapNode title="Generation 4" description="Pokemon from Generation 4" url="/charts/pokechart/pokechart.all.html#GEN4" />
+          <siteMapNode title="Generation 5" description="Pokemon from Generation 5" url="/charts/pokechart/pokechart.all.html#GEN5" />
+          <siteMapNode title="Generation 6" description="Pokemon from Generation 6" url="/charts/pokechart/pokechart.all.html#GEN6" />
+          <siteMapNode title="Generation 7" description="Pokemon from Generation 7" url="/charts/pokechart/pokechart.all.html#GEN7" />
+          <!-- #endregion -->
+        </siteMapNode>
         <!-- #endregion -->
       </siteMapNode>
       <siteMapNode title="Possible IVs for Raid Bosses" description="Tool for getting possible IV scores for Pokemon Raid Bosses." url="/charts/raidboss/">
@@ -113,10 +159,10 @@
       <siteMapNode title="Pokemon Move Sets" description="Pages with possible Move Sets for every available Pokemon." url="/charts/movesets/">
         <!-- #region Links to Sub-Sections/Child Pages. -->
         <siteMapNode title="Pokemon Move Sets - Gen 1" description="Possible Move Sets for every available Pokemon in Gen 1." url="/charts/movesets/movesets.gen1.html">
-        <!-- #region Links to anchors on the page. -->
+          <!-- #region Links to anchors on the page. -->
           <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/movesets/movesets.gen1.html#criteria" />
           <siteMapNode title="MoveSets" description="Table of MoveSets for each Pokemon in Gen 1." url="/charts/movesets/movesets.gen1.html#movesets" />
-        <!-- #endregion -->
+          <!-- #endregion -->
         </siteMapNode>
         <siteMapNode title="Pokemon Move Sets - Gen 2" description="Possible Move Sets for every available Pokemon in Gen 2." url="/charts/movesets/movesets.gen2.html">
           <!-- #region Links to anchors on the page. -->

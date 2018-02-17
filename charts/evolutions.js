@@ -32,13 +32,8 @@ var CookieSettings = {
 
 // Read the Cookie and apply it to the fields.
 function ApplyCookies() {
-    try {
-        ApplyCookieSettings(CookieSettings);
-        OnFilterCriteriaChanged();
-    }
-    catch (err) {
-        ShowError(err);
-    }
+    ApplyCookieSettings(CookieSettings);
+    OnFilterCriteriaChanged();
 }
 
 // #endregion Cookies
@@ -51,10 +46,14 @@ function ApplyCookies() {
 // NOTE: This .js MUST be specified BEFORE any other <script> nodes in the <html> <head> so that 
 //          the window.onnload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
-    ApplyCookies();
+    try {
+        ApplyCookies();
 
-    document.getElementById('Loading').classList.add('DIV_HIDDEN');
-    document.getElementById('Loaded').classList.remove('DIV_HIDDEN');
+        document.getElementById('Loading').classList.add('DIV_HIDDEN');
+        document.getElementById('Loaded').classList.remove('DIV_HIDDEN');
+    } catch (err) {
+        ShowError(err);
+    }
 }
 
 // #endregion Common
@@ -109,7 +108,7 @@ function OnFilterCriteriaChanged(field) {
                 ) && (
                     filter.length === 0
                     || (isNumber && row.attributes['ids'].value.indexOf(' ' + filter + ' ') >= 0)
-                    || (!isNumber &&  row.attributes['names'].value.toUpperCase().indexOf(filter.toUpperCase()) >= 0)
+                    || (!isNumber && row.attributes['names'].value.toUpperCase().indexOf(filter.toUpperCase()) >= 0)
                 )
             ) {
                 display = '';

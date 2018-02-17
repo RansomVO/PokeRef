@@ -45,6 +45,10 @@
     <WebContent Include="favicon.ico" />
     <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
+    <FixOutputFile Include="charts\pokechart\index.html" />
+    <WebContent Include="charts\pokechart\index.css" />
+    <FixOutputFile Include="charts\pokechart\_sectionname.txt" />
+    <FixOutputFile Include="charts\pokechart\_linkslist.html" />
     <Content Include="Web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -159,6 +163,7 @@
     <FixIntermediateFile Include="_datafiles\raidboss.scyther.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.snorlax.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.suicune.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.swablu.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.tentacruel.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.tyranitar.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.vaporeon.xml" />

@@ -5,8 +5,6 @@
 PokeChart:
 	- Add to Popup:
 		- If a Raid Boss, it would be nice to have a link to the Raid Boss page for it.
-	- Move Name/ID control/js to Pokemon.xsl/.js and use it in criteria
-	- Split into generations and All (like MoveSets)
 
 SEAPokeMap Filter
 
@@ -16,13 +14,15 @@ RaidBoss Counters
 =========================================================================================================
 ----- Overall -----
 
+In controls.xsl/.js create a help control that when clicked will pop up a help dialog.
+
 Change to use GetFieldValue(field) and GetFieldValueById(id) (search for ".value" and ".checked")
 
 It would be nice if the .proj files could be updated to include the Dependencies of the Dependencies. (and DependentUpon?)
 	E.G. We could say that raidboss\_linkslist.page.xml was one of Dependencies. Then the Item would also include the Dependencies of raidboss\_linkslist.page.xml
 		NOTE: Use the .xml because that is the file that is transformed and it depends upon the .xsl.
 
-Look into getting favicon to show up when I add shortcut to home on Android.
+Look into getting favicon to show up when I add shortcut to home on Android phone.
 
 Add something to sprites to indicate regional.
 

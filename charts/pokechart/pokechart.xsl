@@ -43,27 +43,32 @@
           </xsl:attribute>
         </link>
 
-        <title>Pokemon Chart</title>
-
-        <style>
-          .POPUP_CELL {
-          padding-left: .25em;
-          padding-right: .25em;
-          }
-
-          .DATA_BOX {
-          border: 1px solid black;
-          }
-
-          .LABEL_BOX {
-          text-align: left;
-          font-size: medium;
-          }
-        </style>
+        <title>
+          Pokemon Chart
+          <xsl:choose>
+            <xsl:when test="count(PokemonStats/Generation/ID) > 1">
+              <xsl:text> - All Gens </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text> - Gen </xsl:text>
+              <xsl:value-of select="PokemonStats/Generation/ID"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </title>
       </head>
       <body>
         <h1>
-          Pokemon Chart <span class="NOTE TODO">(Beta)</span>
+          Pokemon Chart
+          <xsl:choose>
+            <xsl:when test="count(PokemonStats/Generation/ID) > 1">
+              <xsl:text> - All Gens </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text> - Gen </xsl:text>
+              <xsl:value-of select="PokemonStats/Generation/ID"/>
+            </xsl:otherwise>
+          </xsl:choose>
+          <span class="NOTE TODO">(Beta)</span>
         </h1>
         <p>
           These are charts of basic info about Pokemon.
@@ -186,47 +191,11 @@
         <!-- ======================================================================================== -->
 
         <br />
-        <h2 id="anchor_criteria">
-          <xsl:text>Selection Criteria</xsl:text>
-          <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'POKEMON_CRITERIA'" />
-          </xsl:call-template>
-        </h2>
+        <xsl:call-template name="CreateCriteria" />
+
         <br />
-        <div id="POKEMON_CRITERIA">
-          <table border="1" class="KEY_TABLE">
-            <tr>
-              <th>Show Only</th>
-            </tr>
-            <tr>
-              <td valign="top">
-                <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
-                <br /><input id="RegionalOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
-                <br /><input id="RaidBossOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
-                <br /><input id="LegendaryOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
-                <br /><input id="HatchOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Hatch Only
-                <br /><input id="ShinyOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
-                <br />Name: <input id="Filter_Text" type="text" onkeyup="OnFilterCriteriaChanged(this)" style="margin-top:.5em; margin-bottom:.5em;"/>
-              </td>
-            </tr>
-          </table>
-          <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-          <div class="KEY_TABLE">
-            <xsl:call-template name="OutputTypeSelection">
-              <xsl:with-param name="Callback" select="'OnTypesChanged'" />
-            </xsl:call-template>
-          </div>
-          <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-          <div class="KEY_TABLE">
-            <xsl:call-template name="OutputWeatherSelection">
-              <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
-              <xsl:with-param name="Title" select="'Weather Boosts'" />
-            </xsl:call-template>
-          </div>
-          <br />
-          <hr />
-          <xsl:call-template name="PokemonImageKey" />
-        </div>
+        <hr />
+        <xsl:call-template name="CreateKey" />
 
         <xsl:apply-templates select="PokemonStats[Generation/ID = 1]" />
         <xsl:apply-templates select="PokemonStats[Generation/ID = 2]" />
@@ -241,6 +210,64 @@
       </body>
     </html>
   </xsl:template>
+
+  <!-- Template to write the Selection Criteria. -->
+  <xsl:template name="CreateCriteria">
+    <h2 id="anchor_criteria">
+      <xsl:text>Selection Criteria</xsl:text>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'POKEMON_CRITERIA'" />
+      </xsl:call-template>
+    </h2>
+    <br />
+    <div id="POKEMON_CRITERIA">
+      <table border="1" class="KEY_TABLE">
+        <tr>
+          <th>Show Only</th>
+        </tr>
+        <tr>
+          <td valign="top">
+            <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
+            <br /><input id="RegionalOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
+            <br /><input id="RaidBossOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
+            <br /><input id="LegendaryOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
+            <br /><input id="HatchOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Hatch Only
+            <br /><input id="ShinyOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+            <br />Pokemon Name or ID:
+            <xsl:call-template name="OutputFilterPokemonNameID">
+              <xsl:with-param name="Callback" select="'OnPokemonNameIDChanged'" />
+            </xsl:call-template>
+          </td>
+        </tr>
+      </table>
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+      <div class="KEY_TABLE">
+        <xsl:call-template name="OutputTypeSelection">
+          <xsl:with-param name="Callback" select="'OnTypesChanged'" />
+          <xsl:with-param name="Title" select="'Pokemon Types'" />
+        </xsl:call-template>
+      </div>
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+      <div class="KEY_TABLE">
+        <xsl:call-template name="OutputWeatherSelection">
+          <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
+          <xsl:with-param name="Title" select="concat('Pokemon', $lt, 'br /', $gt, 'Weather Boosts')" />
+        </xsl:call-template>
+      </div>
+    </div>
+  </xsl:template>
+
+
+  <!-- Template to write the Key for the table. -->
+  <xsl:template name="CreateKey">
+    <xsl:call-template name="PokemonImageKey" />
+  </xsl:template>
+
+  <!-- Template to create the headers for the table -->
+  <xsl:template name="CreateTableHeaders">
+  </xsl:template>
+
+
 
   <xsl:template match="PokemonStats">
     <br />
