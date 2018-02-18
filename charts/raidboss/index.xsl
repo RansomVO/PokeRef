@@ -11,8 +11,24 @@
         <!-- This is to make the font size consistent on mobile. -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script src="/js/global.js?cacherefresh={$CurrentDate}"></script>
-        <link type="text/css" rel="stylesheet" href="index.css?cacherefresh={$CurrentDate}" />
+        <script>
+          <xsl:attribute name="src">
+            <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <script>
+          <xsl:attribute name="src">
+            <xsl:text>/js/global.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <link type="text/css" rel="stylesheet" >
+          <xsl:attribute name="href">
+            <xsl:text>index.css?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </link>
 
         <title>Possible IVs for Raid Bosses</title>
 

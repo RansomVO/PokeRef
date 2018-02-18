@@ -12,6 +12,12 @@
 
         <script>
           <xsl:attribute name="src">
+            <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <script>
+          <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
@@ -70,12 +76,12 @@
             </p>
             <ul class="CHILD">
               <li>
-                "<a href="moves/moves.fast.html">
+                "<a href="GAME_MASTER/moves/moves.fast.html">
                   <b>Fast</b>
                 </a>": The Moves performed by tapping on the screen during battle.
               </li>
               <li>
-                "<a href="moves/moves.charged.html">
+                "<a href="GAME_MASTER/moves/moves.charged.html">
                   <b>Charged</b>
                 </a>": The Moves performed by tapping the button at the bottom of the screen during battle.
               </li>

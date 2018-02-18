@@ -250,13 +250,13 @@ function OnSelectPokemon(pokemon) {
         Selected_Pokemon_Weaknesses.innerHTML = '';
         for (var key in counts) {
             if (counts[key] < 0) {
-                Selected_Pokemon_Weaknesses.innerHTML += GetPokemonType(key, true);
+                Selected_Pokemon_Weaknesses.innerHTML += GetPokemonTypeIcon(key);
                 if (counts[key] !== -1) {
                     Selected_Pokemon_Weaknesses.innerHTML += '&nbsp;&times;&nbsp;' + -counts[key];
                 }
                 Selected_Pokemon_Weaknesses.innerHTML += '<br />';
             } else if (counts[key] > 0) {
-                Selected_Pokemon_Strengths.innerHTML += GetPokemonType(key, true);
+                Selected_Pokemon_Strengths.innerHTML += GetPokemonTypeIcon(key);
                 if (counts[key] !== 1) {
                     Selected_Pokemon_Strengths.innerHTML += '&nbsp;&times;&nbsp;' + counts[key];
                 }
