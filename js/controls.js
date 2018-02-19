@@ -93,6 +93,7 @@ function SetCollapseState(state, collapser, collapsee) {
 // ---------------------------------------------------------------------------
 // #region Pokemon Type Cookies
 var PokeTypeCookieSettings = {
+    'CONTROLS_PokeType_AnyOrAll_Slider': 'false',
     'CONTROLS_PokeType_Bug_Check': 'true',
     'CONTROLS_PokeType_Dark_Check': 'true',
     'CONTROLS_PokeType_Dragon_Check': 'true',
@@ -141,6 +142,7 @@ function InitPokeTypeSelector() {
 //  NOTE: Do not use keyword "var" and the value will be global.
 function GetPokeTypeFields() {
     PokeType_Selector = document.getElementById('CONTROLS_PokeType_Selector');
+    PokeType_AnyOrAll_Slider = document.getElementById('CONTROLS_PokeType_AnyOrAll_Slider');
     PokeType_All_Check = document.getElementById('CONTROLS_PokeType_All_Check');
     PokeType_Bug_Check = document.getElementById('CONTROLS_PokeType_Bug_Check');
     PokeType_Dark_Check = document.getElementById('CONTROLS_PokeType_Dark_Check');
@@ -222,6 +224,15 @@ function OnToggleAllPokeTypes() {
     }
 }
 
+// If the One or All slider is toggled, notify the client.
+function OnAnyOrAllTypeSliderChanged() {
+    try {
+        OnPokeTypeSelectionChanged();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
 // Update the cookie with the new selection, then call the specified callback with the latest settings.
 function OnPokeTypeSelectionChanged() {
     UpdateCookieSettings(PokeTypeCookieSettings);
@@ -229,6 +240,7 @@ function OnPokeTypeSelectionChanged() {
     var callbackName = PokeType_Selector.attributes['callbackName'].value;
     if (callbackName != null) {
         var pokeTypes = {};
+        pokeTypes['PokeTypesAll'] = PokeType_AnyOrAll_Slider.checked;
         pokeTypes['Bug'] = PokeType_Bug_Check.checked;
         pokeTypes['Dark'] = PokeType_Dark_Check.checked;
         pokeTypes['Dragon'] = PokeType_Dragon_Check.checked;
@@ -252,6 +264,36 @@ function OnPokeTypeSelectionChanged() {
     }
 }
 
+// Determine whether the moveset matches the specified Types selection.
+function PokeTypeMatchesFilter(poketypeCriteria, poketypeCollection) {
+    // If no selection has been made, assume it is a match.
+    if (poketypeCriteria === undefined || poketypeCriteria === null) {
+        return true;
+    }
+
+    // If no Weather collection is specified assume it is not a match.
+    if (poketypeCollection === undefined || poketypeCollection === null) {
+        return false;
+    }
+
+    var all = poketypeCriteria['PokeTypesAll'];
+    for (var i = poketypeCollection.length - 1; i >= 0; i--) {
+        if (poketypeCollection[i] === '') {
+            continue;
+        }
+
+        if (all) {
+            if (!poketypeCriteria[poketypeCollection[i]]) {
+                return false;
+            }
+        } else if (poketypeCriteria[poketypeCollection[i]]) {
+            return true;
+        }
+    }
+
+    return all;
+}
+
 // #endregion
 
 // ============================================================================
@@ -260,6 +302,7 @@ function OnPokeTypeSelectionChanged() {
 // ---------------------------------------------------------------------------
 // #region Weather Cookies
 var WeatherCookieSettings = {
+    'CONTROLS_Weather_AnyOrAll_Slider': 'false',
     'CONTROLS_Weather_Sunny_Check': 'true',
     'CONTROLS_Weather_Windy_Check': 'true',
     'CONTROLS_Weather_Cloudy_Check': 'true',
@@ -298,6 +341,7 @@ function GetWeatherFields() {
     Weather_Fog_Check = document.getElementById('CONTROLS_Weather_Fog_Check');
     Weather_Rainy_Check = document.getElementById('CONTROLS_Weather_Rainy_Check');
     Weather_Snow_Check = document.getElementById('CONTROLS_Weather_Snow_Check');
+    Weather_AnyOrAll_Slider = document.getElementById('CONTROLS_Weather_AnyOrAll_Slider');
 }
 
 // If one of the type checkboxes changes, need to update the All checkbox then refilter.
@@ -338,23 +382,63 @@ function OnToggleAllWeather() {
     }
 }
 
+// If the One or All slider is toggled, notify the client.
+function OnAnyOrAllWeatherSliderChanged() {
+    try {
+        OnWeatherSelectionChanged();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
 // Update the cookie with the new selection, then call the specified callback with the latest settings.
 function OnWeatherSelectionChanged() {
     UpdateCookieSettings(WeatherCookieSettings);
 
     var callbackName = Weather_Selector.attributes['callbackName'].value;
     if (callbackName != null) {
-        var weather = {};
-        weather['Sunny'] = Weather_Sunny_Check.checked;
-        weather['Windy'] = Weather_Windy_Check.checked;
-        weather['Cloudy'] = Weather_Cloudy_Check.checked;
-        weather['PartlyCloudy'] = Weather_PartlyCloudy_Check.checked;
-        weather['Fog'] = Weather_Fog_Check.checked;
-        weather['Rainy'] = Weather_Rainy_Check.checked;
-        weather['Snow'] = Weather_Snow_Check.checked;
+        var weatherCriteria = {};
+        weatherCriteria['WeatherAll'] = Weather_AnyOrAll_Slider.checked;
+        weatherCriteria['Sunny'] = Weather_Sunny_Check.checked;
+        weatherCriteria['Windy'] = Weather_Windy_Check.checked;
+        weatherCriteria['Cloudy'] = Weather_Cloudy_Check.checked;
+        weatherCriteria['PartlyCloudy'] = Weather_PartlyCloudy_Check.checked;
+        weatherCriteria['Fog'] = Weather_Fog_Check.checked;
+        weatherCriteria['Rainy'] = Weather_Rainy_Check.checked;
+        weatherCriteria['Snow'] = Weather_Snow_Check.checked;
 
-        window[callbackName](weather);
+        window[callbackName](weatherCriteria);
     }
+}
+
+// Determine whether the moveset matches the specified Weather selection.
+function WeatherMatchesFilter(weatherCriteria, weatherCollection) {
+    // If no selection has been made, assume it is a match.
+    if (weatherCriteria === undefined || weatherCriteria === null) {
+        return true;
+    }
+
+    // If no Weather collection is specified assume it is not a match.
+    if (weatherCollection === undefined || weatherCollection === null) {
+        return true;
+    }
+
+    var all = weatherCriteria['WeatherAll'];
+    for (var i = weatherCollection.length - 1; i >= 0; i--) {
+        if (weatherCollection[i] === '') {
+            continue;
+        }
+
+        if (all) {
+            if (!weatherCriteria[weatherCollection[i]]) {
+                return false;
+            }
+        } else if (weatherCriteria[weatherCollection[i]]) {
+            return true;
+        }
+    }
+
+    return all;
 }
 
 // #endregion

@@ -143,42 +143,12 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (selectionsTypes !== null) {
-        var types = pokemon.attributes['type1'].value + ' ' + pokemon.attributes['type2'].value;
-        if (!((selectionsTypes['Bug'] && types.indexOf('Bug') >= 0) ||
-            (selectionsTypes['Dark'] && types.indexOf('Dark') >= 0) ||
-            (selectionsTypes['Dragon'] && types.indexOf('Dragon') >= 0) ||
-            (selectionsTypes['Electric'] && types.indexOf('Electric') >= 0) ||
-            (selectionsTypes['Fairy'] && types.indexOf('Fairy') >= 0) ||
-            (selectionsTypes['Fighting'] && types.indexOf('Fighting') >= 0) ||
-            (selectionsTypes['Fire'] && types.indexOf('Fire') >= 0) ||
-            (selectionsTypes['Flying'] && types.indexOf('Flying') >= 0) ||
-            (selectionsTypes['Ghost'] && types.indexOf('Ghost') >= 0) ||
-            (selectionsTypes['Grass'] && types.indexOf('Grass') >= 0) ||
-            (selectionsTypes['Ground'] && types.indexOf('Ground') >= 0) ||
-            (selectionsTypes['Ice'] && types.indexOf('Ice') >= 0) ||
-            (selectionsTypes['Normal'] && types.indexOf('Normal') >= 0) ||
-            (selectionsTypes['Poison'] && types.indexOf('Poison') >= 0) ||
-            (selectionsTypes['Psychic'] && types.indexOf('Psychic') >= 0) ||
-            (selectionsTypes['Rock'] && types.indexOf('Rock') >= 0) ||
-            (selectionsTypes['Steel'] && types.indexOf('Steel') >= 0) ||
-            (selectionsTypes['Water'] && types.indexOf('Water') >= 0))) {
-            return false;
-        }
+    if (!PokeTypeMatchesFilter(selectionsTypes, [pokemon.getAttribute('type1'), pokemon.getAttribute('type2')])) {
+        return false;
     }
 
-    if (selectionsBoosts !== null) {
-        // Using the '~' so we don't get Partly Cloudy when Cloudy is true.
-        var boosts = '~' + pokemon.attributes['boost1'].value + '~' + pokemon.attributes['boost2'].value;
-        if (!((selectionsBoosts['Sunny'] && boosts.indexOf('~Sunny') >= 0) ||
-            (selectionsBoosts['Windy'] && boosts.indexOf('~Windy') >= 0) ||
-            (selectionsBoosts['PartlyCloudy'] && boosts.indexOf('~Partly Cloudy') >= 0) ||
-            (selectionsBoosts['Cloudy'] && boosts.indexOf('~Cloudy') >= 0) ||
-            (selectionsBoosts['Fog'] && boosts.indexOf('~Fog') >= 0) ||
-            (selectionsBoosts['Rainy'] && boosts.indexOf('~Rainy') >= 0) ||
-            (selectionsBoosts['Snow'] && boosts.indexOf('~Snow') >= 0))) {
-            return false;
-        }
+    if (!WeatherMatchesFilter(selectionsBoosts, [pokemon.getAttribute('boost1'), pokemon.getAttribute('boost2')])) {
+        return false;
     }
 
     return true;

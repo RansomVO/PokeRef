@@ -57,7 +57,7 @@
           Pokemon Move Sets
           <xsl:choose>
             <xsl:when test="count(MoveSets/Generation) > 1">
-              <xsl:text> - All Gens </xsl:text>
+              <xsl:text> - All Gens</xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
@@ -202,12 +202,14 @@
         <xsl:call-template name="OutputTypeSelection">
           <xsl:with-param name="Callback" select="'OnTypesChanged'" />
           <xsl:with-param name="Title" select="'Move Types'" />
+          <xsl:with-param name="SliderLabel" select="concat($lt,'b', $gt, 'Moves:', $lt, '/b', $gt)" />
         </xsl:call-template>
       </div>
       <div class="KEY_TABLE">
         <xsl:call-template name="OutputWeatherSelection">
           <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
           <xsl:with-param name="Title" select="concat('Move', $lt, 'br /', $gt, 'Weather Boosts')" />
+          <xsl:with-param name="SliderLabel" select="concat($lt,'b', $gt, 'Moves:', $lt, '/b', $gt)" />
         </xsl:call-template>
       </div>
     </div>
@@ -374,13 +376,25 @@
               </xsl:if>
               <xsl:variable name="FastMoveName" select="FastAttack/Move" />
               <xsl:variable name="FastMoveType" select="/Root/Moves/Move[Name=$FastMoveName]/Type" />
-              <xsl:attribute name="fastMove">
-                <xsl:value-of select="concat('~', $FastMoveName, '`', $FastMoveType, '^', /Root/Mappings/WeatherBoosts[Type=$FastMoveType]/Weather)"/>
+              <xsl:attribute name="fastMoveName">
+                <xsl:value-of select="$FastMoveName"/>
+              </xsl:attribute>
+              <xsl:attribute name="fastMoveType">
+                <xsl:value-of select="$FastMoveType"/>
+              </xsl:attribute>
+              <xsl:attribute name="fastMoveBoost">
+                <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$FastMoveType]/Weather"/>
               </xsl:attribute>
               <xsl:variable name="ChargedMoveName" select="ChargedAttack/Move" />
               <xsl:variable name="ChargedMoveType" select="/Root/Moves/Move[Name=$ChargedMoveName]/Type" />
-              <xsl:attribute name="chargedMove">
-                <xsl:value-of select="concat('~', $ChargedMoveName, '`', $ChargedMoveType, '^', /Root/Mappings/WeatherBoosts[Type=$ChargedMoveType]/Weather)"/>
+              <xsl:attribute name="chargedMoveName">
+                <xsl:value-of select="$ChargedMoveName"/>
+              </xsl:attribute>
+              <xsl:attribute name="chargedMoveType">
+                <xsl:value-of select="$ChargedMoveType"/>
+              </xsl:attribute>
+              <xsl:attribute name="chargedMoveBoost">
+                <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$ChargedMoveType]/Weather"/>
               </xsl:attribute>
               <xsl:apply-templates select="." />
             </tr>

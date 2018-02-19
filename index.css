@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
     padding-right: .25em;
     cursor: context-menu;
 }
+
     .BUTTON:hover {
         color: white;
         background-color: silver;
@@ -327,7 +328,7 @@ h1, h2, h3, h4 {
 }
 
 .LEGACY_MOVE {
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 .STAB_MOVE {
@@ -412,6 +413,45 @@ h1, h2, h3, h4 {
     /* This color is a total guess. Update when it comes out. */
     background-color: #DFFF80;
 }
+
+/*#endregion*/
+
+/*#region Classes for items managed in controls.js */
+.CONTROLS_SLIDER_BUTTON {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgray;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 1em;
+}
+
+    .CONTROLS_SLIDER_BUTTON:before {
+        position: absolute;
+        content: "";
+        height: .8em;
+        width: .8em;
+        left: .2em;
+        bottom: .1em;
+        background-color: white;
+        -webkit-transition: .2s;
+        transition: .2s;
+        border-radius: 50%;
+    }
+
+input:checked + .CONTROLS_SLIDER_BUTTON {
+    background-color: deepskyblue;
+}
+
+    input:checked + .CONTROLS_SLIDER_BUTTON:before {
+        -webkit-transform: translateX(.8em);
+        -ms-transform: translateX(.8em);
+        transform: translateX(.8em);
+    }
 
 /*#endregion*/
 

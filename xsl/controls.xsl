@@ -16,13 +16,14 @@
   <xsl:template name="OutputTypeSelection">
     <xsl:param name="Callback" />
     <xsl:param name="Title" select="'Types'" />
+    <xsl:param name="SliderLabel" />
 
     <table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
         <xsl:value-of select="$Callback" />
       </xsl:attribute>
       <tr>
-        <th colspan="2">
+        <th colspan="2" width="0">
           <xsl:value-of select="$Title" disable-output-escaping="yes" />
           <br />
           <input id="CONTROLS_PokeType_All_Check" type="checkbox" onchange="OnToggleAllPokeTypes();" />
@@ -104,6 +105,20 @@
           </xsl:call-template>
         </td>
       </tr>
+      <tr>
+        <td colspan="2" align="center" style="font-size:small; font-weight:normal; ">
+          <xsl:if test="$SliderLabel != ''">
+            <xsl:value-of select="concat($SliderLabel, $nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
+          </xsl:if>
+          <xsl:text>Any</xsl:text>
+          <xsl:call-template name="OutputSliderButtonControl">
+            <xsl:with-param name="Id" select="'CONTROLS_PokeType_AnyOrAll_Slider'" />
+            <xsl:with-param name="Callback" select="'OnAnyOrAllTypeSliderChanged'" />
+          </xsl:call-template>
+          <xsl:text>All</xsl:text>
+        </td>
+      </tr>
+
     </table>
   </xsl:template>
 
@@ -129,6 +144,7 @@
   <xsl:template name="OutputWeatherSelection">
     <xsl:param name="Callback" />
     <xsl:param name="Title" select="'Weather'" />
+    <xsl:param name="SliderLabel" />
 
     <table id="CONTROLS_Weather_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
@@ -172,6 +188,19 @@
           </xsl:call-template>
         </td>
       </tr>
+      <tr>
+        <td align="center" style="font-size:small; font-weight:normal; ">
+          <xsl:if test="$SliderLabel != ''">
+            <xsl:value-of select="concat($SliderLabel, $nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
+          </xsl:if>
+          <xsl:text>Any</xsl:text>
+          <xsl:call-template name="OutputSliderButtonControl">
+            <xsl:with-param name="Id" select="'CONTROLS_Weather_AnyOrAll_Slider'" />
+            <xsl:with-param name="Callback" select="'OnAnyOrAllWeatherSliderChanged'" />
+          </xsl:call-template>
+          <xsl:text>All</xsl:text>
+        </td>
+      </tr>
     </table>
   </xsl:template>
 
@@ -207,7 +236,31 @@
   </xsl:template>
 
   <!-- #endregion -->
-  
+
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
+  <!-- #region Slider Button Control -->
+
+  <xsl:template name="OutputSliderButtonControl">
+    <xsl:param name="Callback" />
+    <xsl:param name="Id" />
+
+    <label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;">
+      <input type="checkbox" style="display:none;">
+      <xsl:attribute name="id">
+        <xsl:value-of select="$Id" />
+      </xsl:attribute>
+        <xsl:attribute name="onchange">
+          <xsl:value-of select="concat($Callback, '();')" />
+        </xsl:attribute>
+      </input>
+      <span class="CONTROLS_SLIDER_BUTTON" />
+    </label>
+  </xsl:template>
+
+  <!-- #endregion -->
+
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->

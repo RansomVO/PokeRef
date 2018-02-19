@@ -140,41 +140,16 @@ function PokemonMatchesFilter(primaryRow) {
 
 // Determine whether the MoveSet in this row should be shown or not.
 function MoveSetMatchesFilter(movesetRow) {
-    var fastMove = movesetRow.getAttribute('FastMove');
-    var chargedMove = movesetRow.getAttribute('ChargedMove');
-
-    // Include only MoveSets containing a Move of the selected types.
-    if (selectionsTypes !== null &&
-        !((selectionsTypes['Bug'] && (fastMove.indexOf('`Bug') >= 0 || chargedMove.indexOf('`Bug') >= 0)) ||
-        (selectionsTypes['Dark'] && (fastMove.indexOf('`Dark') >= 0 || chargedMove.indexOf('`Dark') >= 0)) ||
-        (selectionsTypes['Dragon'] && (fastMove.indexOf('`Dragon') >= 0 || chargedMove.indexOf('`Dragon') >= 0)) ||
-        (selectionsTypes['Electric'] && (fastMove.indexOf('`Electric') >= 0 || chargedMove.indexOf('`Electric') >= 0)) ||
-        (selectionsTypes['Fairy'] && (fastMove.indexOf('`Fairy') >= 0 || chargedMove.indexOf('`Fairy') >= 0)) ||
-        (selectionsTypes['Fighting'] && (fastMove.indexOf('`Fighting') >= 0 || chargedMove.indexOf('`Fighting') >= 0)) ||
-        (selectionsTypes['Fire'] && (fastMove.indexOf('`Fire') >= 0 || chargedMove.indexOf('`Fire') >= 0)) ||
-        (selectionsTypes['Flying'] && (fastMove.indexOf('`Flying') >= 0 || chargedMove.indexOf('`Flying') >= 0)) ||
-        (selectionsTypes['Ghost'] && (fastMove.indexOf('`Ghost') >= 0 || chargedMove.indexOf('`Ghost') >= 0)) ||
-        (selectionsTypes['Grass'] && (fastMove.indexOf('`Grass') >= 0 || chargedMove.indexOf('`Grass') >= 0)) ||
-        (selectionsTypes['Ground'] && (fastMove.indexOf('`Ground') >= 0 || chargedMove.indexOf('`Ground') >= 0)) ||
-        (selectionsTypes['Ice'] && (fastMove.indexOf('`Ice') >= 0 || chargedMove.indexOf('`Ice') >= 0)) ||
-        (selectionsTypes['Normal'] && (fastMove.indexOf('`Normal') >= 0 || chargedMove.indexOf('`Normal') >= 0)) ||
-        (selectionsTypes['Poison'] && (fastMove.indexOf('`Poison') >= 0 || chargedMove.indexOf('`Poison') >= 0)) ||
-        (selectionsTypes['Psychic'] && (fastMove.indexOf('`Psychic') >= 0 || chargedMove.indexOf('`Psychic') >= 0)) ||
-        (selectionsTypes['Rock'] && (fastMove.indexOf('`Rock') >= 0 || chargedMove.indexOf('`Rock') >= 0)) ||
-        (selectionsTypes['Steel'] && (fastMove.indexOf('`Steel') >= 0 || chargedMove.indexOf('`Steel') >= 0)) ||
-        (selectionsTypes['Water'] && (fastMove.indexOf('`Water') >= 0 || chargedMove.indexOf('`Water') >= 0)))) {
+    var moveNameFilter = GetFieldValue(Filter_Text_Move);
+    if (!GetFieldValue(Filter_Text_Move).startsWith(moveNameFilter) && !GetFieldValue(Filter_Text_Move).startsWith(moveNameFilter)) {
         return false;
     }
 
-    // Include only MoveSets containing a Move boosted by the selected weather.
-    if (selectionsWeather !== null &&
-        !((selectionsWeather['Sunny'] && (fastMove.indexOf('^Sunny') >= 0 || chargedMove.indexOf('^Sunny') >= 0)) ||
-        (selectionsWeather['Windy'] && (fastMove.indexOf('^Windy') >= 0 || chargedMove.indexOf('^Windy') >= 0)) ||
-        (selectionsWeather['Cloudy'] && (fastMove.indexOf('^Cloudy') >= 0 || chargedMove.indexOf('^Cloudy') >= 0)) ||
-        (selectionsWeather['PartlyCloudy'] && (fastMove.indexOf('^Partly Cloudy') >= 0 || chargedMove.indexOf('^Partly Cloudy') >= 0)) ||
-        (selectionsWeather['Fog'] && (fastMove.indexOf('^Fog') >= 0 || chargedMove.indexOf('^Fog') >= 0)) ||
-        (selectionsWeather['Rainy'] && (fastMove.indexOf('^Rainy') >= 0 || chargedMove.indexOf('^Rainy') >= 0)) ||
-        (selectionsWeather['Snow'] && (fastMove.indexOf('^Snow') >= 0 || chargedMove.indexOf('^Snow') >= 0)))) {
+    if (!PokeTypeMatchesFilter(selectionsTypes, [movesetRow.getAttribute('fastMoveType'), movesetRow.getAttribute('chargedMoveType')])) {
+        return false;
+    }
+
+    if (!WeatherMatchesFilter(selectionsWeather, [movesetRow.getAttribute('fastMoveBoost'), movesetRow.getAttribute('chargedMoveBoost')])) {
         return false;
     }
 
