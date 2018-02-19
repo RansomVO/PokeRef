@@ -366,7 +366,7 @@
               <xsl:value-of select="Pokemon/Name" />
             </th>
             <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
-            <td colspan="8" class="HIDDEN_CONVENIENCE_ROW" />
+            <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
           </tr>
           <xsl:for-each select="../MoveSet[Pokemon/ID=$PokemonID]">
             <xsl:sort select="Damage/PercentOfMax" data-type="number" order="descending"/>

@@ -54,6 +54,24 @@ function GetFields() {
     }
 }
 
+// Process any paramters passed in on the URL.
+function ProcessParameter(name, value) {
+    switch (name) {
+        case 'name':
+            SetFilterNameID(value);
+            // This automatically triggers the changed event, so just return now.
+            return;
+        case 'move':
+            SetFieldValue(Filter_Text_Move, value);
+            break;
+        case 'released':
+            SetFieldValue(ShowOnlyReleased_Checkbox, value);
+            break;
+    }
+
+    OnFilterCriteriaChanged();
+}
+
 // #endregion
 
 // ============================================================================

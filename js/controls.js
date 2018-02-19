@@ -486,6 +486,11 @@ function OnFilterNameIDChanged() {
     }
 }
 
+function SetFilterNameID(value) {
+    SetFieldValue(CONTROLS_Filter_NameID, value);
+    OnFilterNameIDChanged();
+}
+
 function MatchFilterPokemonNameID(pokemon, filter) {
     filterSegment = filter.trim();
     if (filterSegment.length === 0) {

@@ -1,4 +1,34 @@
 ﻿// ==============================================================================================
+// #region window.onload()  Called when page is loaded to perform up-front work.
+// ==============================================================================================
+// If there was already an window.onload specified, hold on to it and call it before we do our work.
+var globalOldOnLoad = window.onload;
+window.onload = function () {
+    try {
+        if (globalOldOnLoad != null) {
+            globalOldOnLoad();
+        }
+
+        if (typeof ProcessParameter === "function") {
+            // TODO QZX: Take into account quote marks to allow "&" to be part of the value.
+            var parameters = window.location.search.substring(1).split('&');
+            for (var i = parameters.length; i >= 0; i++) {
+                if (parameters[i] !== null && parameters[i] !== '') {
+                    var parameter = parameters[i].split('=');
+                    if (parameter.length === 2) {
+                        ProcessParameter(parameter[0], parameter[1]);
+                    }
+                }
+            }
+        }
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// #endregion
+
+// ==============================================================================================
 // #region Global Variables
 // ==============================================================================================
 
