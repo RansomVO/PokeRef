@@ -17,6 +17,7 @@
     <xsl:param name="Callback" />
     <xsl:param name="Title" select="'Types'" />
     <xsl:param name="SliderLabel" />
+    <xsl:param name="SliderHelp" />
 
     <table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
@@ -108,7 +109,8 @@
       <tr>
         <td colspan="2" align="center" style="font-size:small; font-weight:normal; ">
           <xsl:if test="$SliderLabel != ''">
-            <xsl:value-of select="concat($SliderLabel, $nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
+            <xsl:copy-of select="$SliderLabel" />
+            <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
           </xsl:if>
           <xsl:text>Any</xsl:text>
           <xsl:call-template name="OutputSliderButtonControl">
@@ -116,6 +118,14 @@
             <xsl:with-param name="Callback" select="'OnAnyOrAllTypeSliderChanged'" />
           </xsl:call-template>
           <xsl:text>All</xsl:text>
+          <xsl:if test="$SliderHelp != ''">
+            <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+            <xsl:call-template name="OutputHelpButton">
+              <xsl:with-param name="Help">
+                <xsl:copy-of select="$SliderHelp" />
+              </xsl:with-param>
+            </xsl:call-template>
+          </xsl:if>
         </td>
       </tr>
 
@@ -145,6 +155,7 @@
     <xsl:param name="Callback" />
     <xsl:param name="Title" select="'Weather'" />
     <xsl:param name="SliderLabel" />
+    <xsl:param name="SliderHelp" />
 
     <table id="CONTROLS_Weather_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
@@ -191,7 +202,8 @@
       <tr>
         <td align="center" style="font-size:small; font-weight:normal; ">
           <xsl:if test="$SliderLabel != ''">
-            <xsl:value-of select="concat($SliderLabel, $nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
+            <xsl:copy-of select="$SliderLabel" />
+            <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
           </xsl:if>
           <xsl:text>Any</xsl:text>
           <xsl:call-template name="OutputSliderButtonControl">
@@ -199,6 +211,14 @@
             <xsl:with-param name="Callback" select="'OnAnyOrAllWeatherSliderChanged'" />
           </xsl:call-template>
           <xsl:text>All</xsl:text>
+          <xsl:if test="$SliderHelp != ''">
+            <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+            <xsl:call-template name="OutputHelpButton">
+              <xsl:with-param name="Help">
+                <xsl:copy-of select="$SliderHelp" />
+              </xsl:with-param>
+            </xsl:call-template>
+          </xsl:if>
         </td>
       </tr>
     </table>
@@ -233,6 +253,67 @@
         <xsl:value-of select="$Callback" />
       </xsl:attribute>
     </input>
+    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+    <xsl:call-template name="OutputHelpButton">
+      <xsl:with-param name="Help">
+        <div class="CONTROLS_HELP_ENTRY">
+          <div class="CONTROLS_HELP_ENTRY_TITLE">-</div>
+          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies a range.
+            <br />Examples:
+            <ul>
+              <li>
+                <b>1-10</b>: All Pokémon with IDs between 1 and 10.
+              </li>
+              <li>
+                <b>-3</b>: All Pokémon with IDs 3 or lower.
+              </li>
+              <li>
+                <b>100-</b>: All Pokémon with IDs 100 or higher.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="CONTROLS_HELP_ENTRY">
+          <div class="CONTROLS_HELP_ENTRY_TITLE">+</div>
+          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Specifies a family.
+          <br />Example:
+          <ul>
+            <li>
+              <b>+pidgey</b>: All Pokémon in the Pidgey family.
+              <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span>
+            </li>
+          </ul></div>
+        </div>
+        <div class="CONTROLS_HELP_ENTRY">
+          <div class="CONTROLS_HELP_ENTRY_TITLE">,</div>
+          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Specifies to match one criteria OR another.
+          <br />Example:
+          <ul>
+            <li>
+              <b>1-10,B</b>: All Pokemon with:
+              <br />IDs between 1 and 10
+              <br /><b>- OR -</b>
+              <br />a name that begins with B.
+            </li>
+          </ul></div>
+        </div>
+        <div class="CONTROLS_HELP_ENTRY">
+          <div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div>
+          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Specifies one criteria AND another.
+          <br />Example:
+          <ul>
+            <li>
+              <b>1-10&amp;B</b>: All Pokemon with:
+              <br />IDs between 1 and 10
+              <br /><b>- AND -</b>
+              <br />a name that begins with B.
+            </li>
+          </ul></div>
+        </div>
+      </xsl:with-param>
+    </xsl:call-template>
+
   </xsl:template>
 
   <!-- #endregion -->
@@ -248,9 +329,9 @@
 
     <label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;">
       <input type="checkbox" style="display:none;">
-      <xsl:attribute name="id">
-        <xsl:value-of select="$Id" />
-      </xsl:attribute>
+        <xsl:attribute name="id">
+          <xsl:value-of select="$Id" />
+        </xsl:attribute>
         <xsl:attribute name="onchange">
           <xsl:value-of select="concat($Callback, '();')" />
         </xsl:attribute>
@@ -261,6 +342,18 @@
 
   <!-- #endregion -->
 
+  <!-- ************************************************************************************************************************ -->
+  <!-- #region Help Button Control -->
+  <xsl:template name="OutputHelpButton">
+    <xsl:param name="Help" />
+
+    <div class="CONTROLS_HELP">
+      ?
+      <span class="CONTROLS_HELP_CONTENT">
+        <xsl:copy-of select="$Help" />
+      </span>
+    </div>
+  </xsl:template>
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
@@ -300,6 +393,5 @@
   </xsl:template>
 
   <!-- #endregion -->
-
 
 </xsl:stylesheet>

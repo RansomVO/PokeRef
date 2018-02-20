@@ -1,8 +1,6 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
-MoveSets and PokeChart
-	Figure out a way to make functionality of slider controls in Type/Weather criteria selection boxes.
 
 PokeChart:
 	- Add to Popup:
@@ -16,7 +14,7 @@ RaidBoss Counters
 =========================================================================================================
 ----- Overall -----
 
-In controls.xsl/.js create a help control that when clicked will pop up a help dialog.
+Add ability to specify "?Key=^" or "?Key=v" to force collapsers to be up or down.
 
 Change to use GetFieldValue(field) and GetFieldValueById(id) (search for ".value" and ".checked")
 
@@ -36,9 +34,6 @@ Double check appearance with IE. (Sections on home page is bad.)
 Find places to add more pics. (Funny ones if nothing else.)
 
 Search for TODO to find work that needs done.
-
-
-Add ability to specify "?Key=^" or "?Key=" to force collapsers to be up or down.
 
 Check out OSM:
 	http://overpass-turbo.eu/s/ulp
@@ -62,7 +57,7 @@ Create tool to dynamically create Web.sitemap
 Add twitter groups to Seattle area (if there are any.)
 Review Social section with Josh to see if there is anything missing.
 
-Finish a Tips page.
+Add to Tips page.
 	- Evolving Eevees:
 		- One-time names
 		- buddy km + evolve time
@@ -115,7 +110,6 @@ Create a tool to figure out best counters for a RaidBoss.
 |			|Waterfall	|	Thunder			|	28.00	|	(icon)	90.12	|
 ---------------------------------------------------------------------------
 
-			 
 
 Create tool to determine effectiveness of a Move against a Pokemon.
 

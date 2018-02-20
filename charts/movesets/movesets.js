@@ -58,13 +58,27 @@ function GetFields() {
 function ProcessParameter(name, value) {
     switch (name) {
         case 'name':
-            SetFilterNameID(value);
-            // This automatically triggers the changed event, so just return now.
-            return;
-        case 'move':
-            SetFieldValue(Filter_Text_Move, value);
+            if (value === undefined) {
+                alert('Parameter "name" requires a value');
+            } else {
+                SetFilterNameID(value);
+                // This automatically triggers the changed event, so just return now.
+                return;
+            }
             break;
+
+        case 'move':
+            if (value === undefined) {
+                alert('Parameter "move" requires a value');
+            } else {
+                SetFieldValue(Filter_Text_Move, value);
+            }
+            break;
+
         case 'released':
+            if (value === undefined) {
+                value = 'true';
+            }
             SetFieldValue(ShowOnlyReleased_Checkbox, value);
             break;
     }

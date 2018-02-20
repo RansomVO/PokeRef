@@ -202,14 +202,38 @@
         <xsl:call-template name="OutputTypeSelection">
           <xsl:with-param name="Callback" select="'OnTypesChanged'" />
           <xsl:with-param name="Title" select="'Move Types'" />
-          <xsl:with-param name="SliderLabel" select="concat($lt,'b', $gt, 'Moves:', $lt, '/b', $gt)" />
+          <xsl:with-param name="SliderLabel">
+            <b>Moves:</b>
+          </xsl:with-param>
+          <xsl:with-param name="SliderHelp">
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where any Move is one of the selected Move Types.</div>
+            </div>
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where all Moves are one of the selected Move Types.</div>
+            </div>
+          </xsl:with-param>
         </xsl:call-template>
       </div>
       <div class="KEY_TABLE">
         <xsl:call-template name="OutputWeatherSelection">
           <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
           <xsl:with-param name="Title" select="concat('Move', $lt, 'br /', $gt, 'Weather Boosts')" />
-          <xsl:with-param name="SliderLabel" select="concat($lt,'b', $gt, 'Moves:', $lt, '/b', $gt)" />
+          <xsl:with-param name="SliderLabel">
+            <b>Moves:</b>
+          </xsl:with-param>
+          <xsl:with-param name="SliderHelp">
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where any Move is boosted by the selected Move Weather Boosts.</div>
+            </div>
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where all Moves are boosted by the selected Move Weather Boosts.</div>
+            </div>
+          </xsl:with-param>
         </xsl:call-template>
       </div>
     </div>
@@ -425,7 +449,7 @@
       <th valign="bottom" style="font-size:x-large;">%</th>
     </tr>
   </xsl:template>
- 
+
   <!-- Template to create rows for a Pokemon's Move Sets -->
   <xsl:template match="MoveSet">
     <xsl:variable name="legacyFast" select="FastAttack/Legacy != ''" />

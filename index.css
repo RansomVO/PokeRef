@@ -32,7 +32,6 @@ h1, h2, h3, h4 {
 
 /*#endregion*/
 
-
 /* ------------------------------------------------------------------------------------------ */
 /*#region Classes that contain styles */
 
@@ -416,6 +415,9 @@ h1, h2, h3, h4 {
 
 /*#endregion*/
 
+/*#endregion*/
+
+/* ------------------------------------------------------------------------------------------ */
 /*#region Classes for items managed in controls.js */
 .CONTROLS_SLIDER_BUTTON {
     position: absolute;
@@ -453,6 +455,69 @@ input:checked + .CONTROLS_SLIDER_BUTTON {
         transform: translateX(.8em);
     }
 
-/*#endregion*/
+.CONTROLS_HELP {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    border-radius: 1em;
+    border: 2px solid blue;
+    color: blue;
+    background: white;
+    text-align: center;
+    cursor:help;
+}
+
+    .CONTROLS_HELP:hover {
+        color: white;
+        background: blue;
+    }
+
+    .CONTROLS_HELP .CONTROLS_HELP_CONTENT {
+        visibility: hidden;
+        position: absolute;
+        display: table;
+        font-weight: normal;
+        top: 50%;
+        left: 50%;
+        width: 20em;
+        color: black;
+        background-color: lightblue;
+        border: 1px solid blue;
+        border-radius: 6px;
+        padding: .25em;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .CONTROLS_HELP:hover .CONTROLS_HELP_CONTENT {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.CONTROLS_HELP_ENTRY {
+    white-space: nowrap;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.CONTROLS_HELP_ENTRY_TITLE {
+    font-size: 2em;
+    font-weight: bold;
+    vertical-align: top;
+    display: table-cell;
+}
+
+.CONTROLS_HELP_ENTRY_DESCRIPTION {
+    display: table-cell;
+    white-space: normal;
+    padding: .25em 0 0 1em;
+}
 
 /*#endregion*/

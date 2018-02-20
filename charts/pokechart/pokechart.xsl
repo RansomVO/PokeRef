@@ -226,7 +226,7 @@
           <th>Show Only</th>
         </tr>
         <tr>
-          <td valign="top">
+          <td valign="top" style="padding-bottom:.25em;">
             <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
             <br /><input id="RegionalOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
             <br /><input id="RaidBossOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
@@ -245,6 +245,16 @@
         <xsl:call-template name="OutputTypeSelection">
           <xsl:with-param name="Callback" select="'OnTypesChanged'" />
           <xsl:with-param name="Title" select="'Pokemon Types'" />
+          <xsl:with-param name="SliderHelp">
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have any of their Types matching the selected Pokemon Types.</div>
+            </div>
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have all of their Types matching the selected Pokemon Types.</div>
+            </div>
+          </xsl:with-param>
         </xsl:call-template>
       </div>
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
@@ -252,6 +262,16 @@
         <xsl:call-template name="OutputWeatherSelection">
           <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
           <xsl:with-param name="Title" select="concat('Pokemon', $lt, 'br /', $gt, 'Weather Boosts')" />
+          <xsl:with-param name="SliderHelp">
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have any of their Types boosted by the selected Pokemon Weather Boosts.</div>
+            </div>
+            <div class="CONTROLS_HELP_ENTRY">
+              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
+              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have all of their Types boosted by the selected Pokemon Weather Boosts.</div>
+            </div>
+          </xsl:with-param>
         </xsl:call-template>
       </div>
     </div>

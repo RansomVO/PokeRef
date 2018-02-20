@@ -12,12 +12,13 @@ window.onload = function () {
         if (typeof ProcessParameter === "function") {
             // TODO QZX: Take into account quote marks to allow "&" to be part of the value.
             var parameters = window.location.search.substring(1).split('&');
-            for (var i = parameters.length; i >= 0; i++) {
+            for (var i = parameters.length - 1; i >= 0; i--) {
                 if (parameters[i] !== null && parameters[i] !== '') {
                     var parameter = parameters[i].split('=');
-                    if (parameter.length === 2) {
-                        ProcessParameter(parameter[0], parameter[1]);
+                    if (parameter[1] !== undefined && parameter[1] !== null) {
+                        parameter[1] = parameter[1].Trim(true, '"', '%22');
                     }
+                    ProcessParameter(parameter[0], parameter[1]);
                 }
             }
         }
@@ -41,7 +42,7 @@ var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
 // #endregion
 
 // ==============================================================================================
-// #region Add Functions that are missing from some browsers (usually IE)
+// #region Add functionality that is missing from some browsers (usually IE)
 // ==============================================================================================
 
 if (!String.prototype.startsWith) {
@@ -64,6 +65,45 @@ function RegisterTristateCheckbox(checkbox) {
             }
         });
     }
+}
+
+// #endregion
+
+// ==============================================================================================
+// #region Add functionality to String class.
+// ==============================================================================================
+
+if (!String.prototype.endsWith) {
+    String.prototype.endsWith = function (searchString) {
+        return substring(length - searchString.length) === searchString;
+    };
+}
+
+if (!String.prototype.Trim) {
+    // If first param is boolean then it says whether to trim white-space or not.
+    String.prototype.Trim = function (trimWhiteSpace, ...toTrim) {
+        var result = this;
+        if (trimWhiteSpace) {
+            result = result.trim();
+        }
+
+        var done = false;
+        while (!done) {
+            done = true;
+            for (var i = toTrim.length - 1; i >= 0; i--) {
+                if (result.startsWith(toTrim[i])) {
+                    result = result.substring(toTrim[i].length);
+                    done = false;
+                }
+                if (result.endsWith(toTrim[i])) {
+                    result = result.substring(0, result.length - toTrim[i].length);
+                    done = false;
+                }
+            }
+        }
+
+        return result;
+    };
 }
 
 // #endregion
