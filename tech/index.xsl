@@ -117,8 +117,8 @@
         <br />
         <hr />
         <h2 id="anchor_movesetformulas">
-          <a href="movesetformulas.html">
-            <b>Move Set Formulas</b>
+          <a href="formulas/movesetdamage.html">
+            <b>Move Set Damage Formulas</b>
           </a>
         </h2>
         <p>

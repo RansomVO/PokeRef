@@ -49,7 +49,7 @@
           <br />This page will help you to determine what Attack Moves will be most effective against a Pokemon in battle.
         </p>
         <p class="NOTE">
-          See <a href="/tech/movesetformulas.html">Move Set Formulas</a> In the Technical Reference section for more details of where it used.
+          See <a href="/tech/formulas/movesetdamage.html">Move Set Damage Formulas</a> In the Technical Reference section for more details of where it used.
         </p>
 
         <xsl:call-template name="CreateKey" />

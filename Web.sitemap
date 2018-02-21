@@ -261,7 +261,7 @@
     <siteMapNode title="Technical Reference" description="Section with Technical Details about Pokemon GO." url="/tech/">
       <!-- #region Links to anchors on the page. -->
       <siteMapNode title="GAME_MASTER" description="Section describing technical statistics found in the GAME_MASTER file." url="/tech/#gamemaster" />
-      <siteMapNode title="Move Set Formulas" description="Section describing technical description of formulas for determining how much damage is done by a Move Set." url="/tech/#movesetformulas" />
+      <siteMapNode title="Move Set Damage Formulas" description="Section describing technical description of formulas for determining how much damage is done by a Move Set." url="/tech/#movesetformulas" />
       <siteMapNode title="CP Modifiers" description="Section describing table of CP Modifiers." url="/tech/#cpm" />
       <!-- #endregion -->
       <!-- #region Links to Sub-Sections/Child Pages. -->
@@ -283,13 +283,13 @@
         <siteMapNode title="GAME_MASTER Archive" description="Archive of GAME_MASTER files and the associated JSON." url="/tech/GAME_MASTER/archive/" />
         <!-- #endregion -->
       </siteMapNode>
-      <siteMapNode title="Move Set Formulas" description="Technical description of formulas for determining how much damage is done by a Move Set." url="/tech/movesetformulas.html">
+      <siteMapNode title="Move Set Damage Formulas" description="Technical description of formulas for determining how much damage is done by a Move Set." url="/tech/formulas/movesetdamage.html">
         <!-- #region Links to anchors on the page. -->
-        <siteMapNode title="Damage Formula" description="Basic formula for the Damage inflicted by a Single attack Move" url="/tech/movesetformulas.html#damage" />
-        <siteMapNode title="Damage Per Second (DPS) Formula" description="Formula for the Damage over time for a Move Set" url="/tech/movesetformulas.html#dps" />
-        <siteMapNode title="Simplifying (True DPS)" description="Formula that merges simplified versions the Damage and DPS formulas" url="/tech/movesetformulas.html#truedps" />
-        <siteMapNode title="Even Simpler (MoveSet DPS)" description="Simplified version of True DPS formula." url="/tech/movesetformulas.html#movesetdps" />
-        <siteMapNode title="Sum-Up" description="Sum up." url="/tech/movesetformulas.html#sumup" />
+        <siteMapNode title="Damage Formula" description="Basic formula for the Damage inflicted by a Single attack Move" url="/tech/formulas/movesetdamage.html#damage" />
+        <siteMapNode title="Damage Per Second (DPS) Formula" description="Formula for the Damage over time for a Move Set" url="/tech/formulas/movesetdamage.html#dps" />
+        <siteMapNode title="Simplifying (True DPS)" description="Formula that merges simplified versions the Damage and DPS formulas" url="/tech/formulas/movesetdamage.html#truedps" />
+        <siteMapNode title="Even Simpler (MoveSet DPS)" description="Simplified version of True DPS formula." url="/tech/formulas/movesetdamage.html#movesetdps" />
+        <siteMapNode title="Sum-Up" description="Sum up." url="/tech/formulas/movesetdamage.html#sumup" />
         <!-- #endregion -->
       </siteMapNode>
       <siteMapNode title="CP Modifiers (CPM)" description="Table of CP Modifiers." url="/tech/cpm.html" />

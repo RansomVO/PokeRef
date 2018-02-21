@@ -43,10 +43,10 @@
         <h2 id="anchor_damage">
           Damage Formula
           <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'FORMULA_DAMAGE'" />
+            <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DAMAGE'" />
           </xsl:call-template>
         </h2>
-        <div id="FORMULA_DAMAGE" class="INDENT">
+        <div id="FORMULA_MOVESET_DAMAGE" class="INDENT">
           <p class="PARENT">
             This is the "basic" formula for the Damage inflicted by a <i>Single</i> attack Move:
           </p>
@@ -279,10 +279,10 @@
             <u>S</u>
           </b>econd <span class="NOTE">(DPS)</span> Formula
           <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'FORMULA_DPS'" />
+            <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DPS'" />
           </xsl:call-template>
         </h2>
-        <div id="FORMULA_DPS" class="INDENT">
+        <div id="FORMULA_MOVESET_DPS" class="INDENT">
           <p class="PARENT">
             To make things worse, as mentioned above, this is the formula for the <i>Damage</i> from a <b>
               <u>
@@ -473,10 +473,10 @@
         <h2 id="anchor_truedps">
           Simplifying <span class="NOTE">(True DPS)</span>
           <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'FORMULA_TRUE_DPS'" />
+            <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_TRUE_DPS'" />
           </xsl:call-template>
         </h2>
-        <div id="FORMULA_TRUE_DPS" class="INDENT">
+        <div id="FORMULA_MOVESET_TRUE_DPS" class="INDENT">
           <p>
             Unfortunately, there are some things that will change for each situation.
             <br />For example, some parts of the formulas really require us to know what Pokemon is being attacked.
@@ -722,10 +722,10 @@
         <h2 id="anchor_movesetdps">
           Even Simpler <span class="NOTE">(Move Set DPS)</span>
           <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DPS'" />
+            <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_MOVESET_DPS'" />
           </xsl:call-template>
         </h2>
-        <div id="FORMULA_MOVESET_DPS" class="INDENT">
+        <div id="FORMULA_MOVESET_MOVESET_DPS" class="INDENT">
           <p>
             Obviously, True DPS is still quite a complex formula.
             <br />To simplify it further, many people will use only the values from the Move Set itself, removing the values from Pokemon.

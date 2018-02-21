@@ -79,7 +79,7 @@
         xsl\pokemon.xsl;
         charts\evolutions.js;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -110,7 +110,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -127,7 +127,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -144,7 +144,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -161,7 +161,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -178,7 +178,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -195,7 +195,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -212,7 +212,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -229,7 +229,7 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         js\global.js;
-        js\pokemon.js;
+        js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
@@ -285,8 +285,8 @@
         _datafiles\movesets.gen1.xml;
         js\global.js;
         js\controls.js;
-        js\pokemon.xsl;
-        charts\movesets.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
       </Dependencies>
       <OutputFileName>movesets.gen1.html</OutputFileName>
     </XslTransform>
@@ -301,8 +301,8 @@
         _datafiles\movesets.gen2.xml;
         js\global.js;
         js\controls.js;
-        js\pokemon.xsl;
-        charts\movesets.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
       </Dependencies>
       <OutputFileName>movesets.gen2.html</OutputFileName>
     </XslTransform>
@@ -317,8 +317,8 @@
         _datafiles\movesets.gen3.xml;
         js\global.js;
         js\controls.js;
-        js\pokemon.xsl;
-        charts\movesets.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
       </Dependencies>
       <OutputFileName>movesets.gen3.html</OutputFileName>
     </XslTransform>
@@ -337,8 +337,8 @@
         _datafiles\movesets.gen3.xml;
         js\global.js;
         js\controls.js;
-        js\pokemon.xsl;
-        charts\movesets.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
       </Dependencies>
       <OutputFileName>movesets.all.html</OutputFileName>
     </XslTransform>
@@ -1315,18 +1315,22 @@
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
 
-    <FixIntermediateFile Include="tech\movesetformulas.xsl">
+  </ItemGroup>
+
+  <!-- Tech/formulas -->
+  <ItemGroup>
+    <FixIntermediateFile Include="tech\formulas\movesetdamage.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="tech\movesetformulas.html.xml">
+    <XslTransform Include="tech\formulas\movesetdamage.html.xml">
       <Visible>true</Visible>
-      <DependentUpon>movesetformulas.xsl</DependentUpon>
+      <DependentUpon>movesetdamage.xsl</DependentUpon>
       <Dependencies>
         js\global.js;
         tech\index.css;
         index.css;
       </Dependencies>
-      <OutputFileName>movesetformulas.html</OutputFileName>
+      <OutputFileName>movesetdamage.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
 
@@ -1347,7 +1351,7 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
-    
+
     <FixIntermediateFile Include="tech\GAME_MASTER\moves\moves.xsl">
       <Visible>true</Visible>
       <Dependencies>
@@ -1378,7 +1382,7 @@
       </Dependencies>
       <OutputFileName>moves.fast.html</OutputFileName>
     </XslTransform>
-    
+
     <FixIntermediateFile Include="tech\GAME_MASTER\pokestats\pokestats.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>

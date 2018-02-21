@@ -49,6 +49,9 @@
     <WebContent Include="charts\pokechart\index.css" />
     <FixOutputFile Include="charts\pokechart\_sectionname.txt" />
     <FixOutputFile Include="charts\pokechart\_linkslist.html" />
+    <FixOutputFile Include="error404.html" />
+    <Content Include="tech\formulas\cphp.html" />
+    <FixOutputFile Include="tech\formulas\index.css" />
     <Content Include="Web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

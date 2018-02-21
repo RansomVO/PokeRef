@@ -126,7 +126,7 @@
           </li>
         </ul>
         <p>
-          For a technical description of the formulas used, check out the <a href="/tech/movesetformulas.html">Move Set Formulas</a>.
+          For a technical description of the formulas used, check out the <a href="/tech/formulas/movesetdamage.html">Move Set Damage Formulas</a>.
         </p>
 
         <br />
