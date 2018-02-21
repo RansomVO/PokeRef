@@ -14,14 +14,14 @@
   <!-- #region Type Selection Control -->
 
   <xsl:template name="OutputTypeSelection">
-    <xsl:param name="Callback" />
+    <xsl:param name="CallbackName" />
     <xsl:param name="Title" select="'Types'" />
     <xsl:param name="SliderLabel" />
     <xsl:param name="SliderHelp" />
 
     <table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
-        <xsl:value-of select="$Callback" />
+        <xsl:value-of select="$CallbackName" />
       </xsl:attribute>
       <tr>
         <th colspan="2" width="0">
@@ -108,24 +108,14 @@
       </tr>
       <tr>
         <td colspan="2" align="center" style="font-size:small; font-weight:normal; ">
-          <xsl:if test="$SliderLabel != ''">
-            <xsl:copy-of select="$SliderLabel" />
-            <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
-          </xsl:if>
-          <xsl:text>Any</xsl:text>
           <xsl:call-template name="OutputSliderButtonControl">
             <xsl:with-param name="Id" select="'CONTROLS_PokeType_AnyOrAll_Slider'" />
-            <xsl:with-param name="Callback" select="'OnAnyOrAllTypeSliderChanged'" />
+            <xsl:with-param name="Callback" select="'OnAnyOrAllTypeSliderChanged(this)'" />
+            <xsl:with-param name="Title" select="$SliderLabel" />
+            <xsl:with-param name="OffLabel" select="Any" />
+            <xsl:with-param name="OnLabel" select="All" />
+            <xsl:with-param name="Help" select="$SliderHelp" />
           </xsl:call-template>
-          <xsl:text>All</xsl:text>
-          <xsl:if test="$SliderHelp != ''">
-            <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-            <xsl:call-template name="OutputHelpButton">
-              <xsl:with-param name="Help">
-                <xsl:copy-of select="$SliderHelp" />
-              </xsl:with-param>
-            </xsl:call-template>
-          </xsl:if>
         </td>
       </tr>
 
@@ -152,14 +142,14 @@
   <!-- #region Weather Selection Control -->
 
   <xsl:template name="OutputWeatherSelection">
-    <xsl:param name="Callback" />
+    <xsl:param name="CallbackName" />
     <xsl:param name="Title" select="'Weather'" />
     <xsl:param name="SliderLabel" />
     <xsl:param name="SliderHelp" />
 
     <table id="CONTROLS_Weather_Selector" border="1" style="white-space:nowrap;">
       <xsl:attribute name="callbackName">
-        <xsl:value-of select="$Callback" />
+        <xsl:value-of select="$CallbackName" />
       </xsl:attribute>
       <tr>
         <th>
@@ -201,24 +191,14 @@
       </tr>
       <tr>
         <td align="center" style="font-size:small; font-weight:normal; ">
-          <xsl:if test="$SliderLabel != ''">
-            <xsl:copy-of select="$SliderLabel" />
-            <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
-          </xsl:if>
-          <xsl:text>Any</xsl:text>
           <xsl:call-template name="OutputSliderButtonControl">
             <xsl:with-param name="Id" select="'CONTROLS_Weather_AnyOrAll_Slider'" />
-            <xsl:with-param name="Callback" select="'OnAnyOrAllWeatherSliderChanged'" />
+            <xsl:with-param name="Callback" select="'OnAnyOrAllWeatherSliderChanged(this)'" />
+            <xsl:with-param name="Title" select="$SliderLabel" />
+            <xsl:with-param name="OffLabel" select="'Any'" />
+            <xsl:with-param name="OnLabel" select="'All'" />
+            <xsl:with-param name="Help" select="$SliderHelp" />
           </xsl:call-template>
-          <xsl:text>All</xsl:text>
-          <xsl:if test="$SliderHelp != ''">
-            <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-            <xsl:call-template name="OutputHelpButton">
-              <xsl:with-param name="Help">
-                <xsl:copy-of select="$SliderHelp" />
-              </xsl:with-param>
-            </xsl:call-template>
-          </xsl:if>
         </td>
       </tr>
     </table>
@@ -246,11 +226,11 @@
   <!-- #region Filter by Name/ID Control -->
 
   <xsl:template name="OutputFilterPokemonNameID">
-    <xsl:param name="Callback" />
+    <xsl:param name="CallbackName" />
 
     <input id="CONTROLS_Filter_NameID" type="text" onkeyup="OnFilterNameIDChanged()">
       <xsl:attribute name="callbackName">
-        <xsl:value-of select="$Callback" />
+        <xsl:value-of select="$CallbackName" />
       </xsl:attribute>
     </input>
     <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
@@ -276,40 +256,46 @@
         </div>
         <div class="CONTROLS_HELP_ENTRY">
           <div class="CONTROLS_HELP_ENTRY_TITLE">+</div>
-          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Specifies a family.
-          <br />Example:
-          <ul>
-            <li>
-              <b>+pidgey</b>: All Pokémon in the Pidgey family.
-              <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span>
-            </li>
-          </ul></div>
+          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies a family.
+            <br />Example:
+            <ul>
+              <li>
+                <b>+pidgey</b>: All Pokémon in the Pidgey family.
+                <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="CONTROLS_HELP_ENTRY">
           <div class="CONTROLS_HELP_ENTRY_TITLE">,</div>
-          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Specifies to match one criteria OR another.
-          <br />Example:
-          <ul>
-            <li>
-              <b>1-10,B</b>: All Pokemon with:
-              <br />IDs between 1 and 10
-              <br /><b>- OR -</b>
-              <br />a name that begins with B.
-            </li>
-          </ul></div>
+          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies to match one criteria OR another.
+            <br />Example:
+            <ul>
+              <li>
+                <b>1-10,B</b>: All Pokemon with:
+                <br />IDs between 1 and 10
+                <br /><b>- OR -</b>
+                <br />a name that begins with B.
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="CONTROLS_HELP_ENTRY">
           <div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div>
-          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Specifies one criteria AND another.
-          <br />Example:
-          <ul>
-            <li>
-              <b>1-10&amp;B</b>: All Pokemon with:
-              <br />IDs between 1 and 10
-              <br /><b>- AND -</b>
-              <br />a name that begins with B.
-            </li>
-          </ul></div>
+          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies one criteria AND another.
+            <br />Example:
+            <ul>
+              <li>
+                <b>1-10&amp;B</b>: All Pokemon with:
+                <br />IDs between 1 and 10
+                <br /><b>- AND -</b>
+                <br />a name that begins with B.
+              </li>
+            </ul>
+          </div>
         </div>
       </xsl:with-param>
     </xsl:call-template>
@@ -326,18 +312,38 @@
   <xsl:template name="OutputSliderButtonControl">
     <xsl:param name="Callback" />
     <xsl:param name="Id" />
+    <xsl:param name="Title" />
+    <xsl:param name="OffLabel" select="Off" />
+    <xsl:param name="OnLabel" select="On" />
+    <xsl:param name="Help" />
 
+    <xsl:if test="$Title != ''">
+      <span style="margin-right:2em;">
+        <xsl:copy-of select="$Title" />
+      </span>
+    </xsl:if>
+    <xsl:value-of select="$OffLabel" />
     <label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;">
       <input type="checkbox" style="display:none;">
         <xsl:attribute name="id">
           <xsl:value-of select="$Id" />
         </xsl:attribute>
         <xsl:attribute name="onchange">
-          <xsl:value-of select="concat($Callback, '();')" />
+          <xsl:value-of select="$Callback" />
         </xsl:attribute>
       </input>
       <span class="CONTROLS_SLIDER_BUTTON" />
     </label>
+    <xsl:value-of select="$OnLabel" />
+    <xsl:if test="$Help != ''">
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+      <xsl:call-template name="OutputHelpButton">
+        <xsl:with-param name="Help">
+          <xsl:copy-of select="$Help" />
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:if>
+
   </xsl:template>
 
   <!-- #endregion -->

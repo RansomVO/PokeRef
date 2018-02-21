@@ -7,7 +7,7 @@ window.onload = function () {
     try {
         SetCollapsers();
 
-        if (controlsOldOnLoad != null) {
+        if (controlsOldOnLoad !== null) {
             controlsOldOnLoad();
         }
 
@@ -127,7 +127,7 @@ function InitPokeTypeSelector() {
         GetPokeTypeFields();
 
         if (PokeType_Selector.attributes['callbackName'].value === null) {
-            alert('Must specify "Callback" when using template "OutputTypeSelection".');
+            alert('Must specify "CallbackName" when using template "OutputTypeSelection".');
             return;
         }
 
@@ -167,23 +167,23 @@ function GetPokeTypeFields() {
 // If one of the type checkboxes changes, need to update the All checkbox then refilter.
 function OnTogglePokeType(field) {
     try {
-        if (PokeType_Bug_Check.checked == PokeType_Dark_Check.checked &&
-            PokeType_Dark_Check.checked == PokeType_Dragon_Check.checked &&
-            PokeType_Dragon_Check.checked == PokeType_Electric_Check.checked &&
-            PokeType_Electric_Check.checked == PokeType_Fairy_Check.checked &&
-            PokeType_Fairy_Check.checked == PokeType_Fighting_Check.checked &&
-            PokeType_Fighting_Check.checked == PokeType_Fire_Check.checked &&
-            PokeType_Fire_Check.checked == PokeType_Flying_Check.checked &&
-            PokeType_Flying_Check.checked == PokeType_Ghost_Check.checked &&
-            PokeType_Ghost_Check.checked == PokeType_Grass_Check.checked &&
-            PokeType_Grass_Check.checked == PokeType_Ground_Check.checked &&
-            PokeType_Ground_Check.checked == PokeType_Ice_Check.checked &&
-            PokeType_Ice_Check.checked == PokeType_Normal_Check.checked &&
-            PokeType_Normal_Check.checked == PokeType_Poison_Check.checked &&
-            PokeType_Poison_Check.checked == PokeType_Psychic_Check.checked &&
-            PokeType_Psychic_Check.checked == PokeType_Rock_Check.checked &&
-            PokeType_Rock_Check.checked == PokeType_Steel_Check.checked &&
-            PokeType_Steel_Check.checked == PokeType_Water_Check.checked) {
+        if (PokeType_Bug_Check.checked === PokeType_Dark_Check.checked &&
+            PokeType_Dark_Check.checked === PokeType_Dragon_Check.checked &&
+            PokeType_Dragon_Check.checked === PokeType_Electric_Check.checked &&
+            PokeType_Electric_Check.checked === PokeType_Fairy_Check.checked &&
+            PokeType_Fairy_Check.checked === PokeType_Fighting_Check.checked &&
+            PokeType_Fighting_Check.checked === PokeType_Fire_Check.checked &&
+            PokeType_Fire_Check.checked === PokeType_Flying_Check.checked &&
+            PokeType_Flying_Check.checked === PokeType_Ghost_Check.checked &&
+            PokeType_Ghost_Check.checked === PokeType_Grass_Check.checked &&
+            PokeType_Grass_Check.checked === PokeType_Ground_Check.checked &&
+            PokeType_Ground_Check.checked === PokeType_Ice_Check.checked &&
+            PokeType_Ice_Check.checked === PokeType_Normal_Check.checked &&
+            PokeType_Normal_Check.checked === PokeType_Poison_Check.checked &&
+            PokeType_Poison_Check.checked === PokeType_Psychic_Check.checked &&
+            PokeType_Psychic_Check.checked === PokeType_Rock_Check.checked &&
+            PokeType_Rock_Check.checked === PokeType_Steel_Check.checked &&
+            PokeType_Steel_Check.checked === PokeType_Water_Check.checked) {
             PokeType_All_Check.indeterminate = false;
             PokeType_All_Check.checked = PokeType_Bug_Check.checked;
         } else {
@@ -238,7 +238,7 @@ function OnPokeTypeSelectionChanged() {
     UpdateCookieSettings(PokeTypeCookieSettings);
 
     var callbackName = PokeType_Selector.attributes['callbackName'].value;
-    if (callbackName != null) {
+    if (callbackName !== null) {
         var pokeTypes = {};
         pokeTypes['PokeTypesAll'] = PokeType_AnyOrAll_Slider.checked;
         pokeTypes['Bug'] = PokeType_Bug_Check.checked;
@@ -347,12 +347,12 @@ function GetWeatherFields() {
 // If one of the type checkboxes changes, need to update the All checkbox then refilter.
 function OnToggleWeather() {
     try {
-        if (Weather_Sunny_Check.checked == Weather_Windy_Check.checked &&
-            Weather_Windy_Check.checked == Weather_Cloudy_Check.checked &&
-            Weather_Cloudy_Check.checked == Weather_PartlyCloudy_Check.checked &&
-            Weather_PartlyCloudy_Check.checked == Weather_Fog_Check.checked &&
-            Weather_Fog_Check.checked == Weather_Rainy_Check.checked &&
-            Weather_Rainy_Check.checked == Weather_Snow_Check.checked) {
+        if (Weather_Sunny_Check.checked === Weather_Windy_Check.checked &&
+            Weather_Windy_Check.checked === Weather_Cloudy_Check.checked &&
+            Weather_Cloudy_Check.checked === Weather_PartlyCloudy_Check.checked &&
+            Weather_PartlyCloudy_Check.checked === Weather_Fog_Check.checked &&
+            Weather_Fog_Check.checked === Weather_Rainy_Check.checked &&
+            Weather_Rainy_Check.checked === Weather_Snow_Check.checked) {
             Weather_All_Check.indeterminate = false;
             Weather_All_Check.checked = Weather_Sunny_Check.checked;
         } else {
@@ -396,7 +396,7 @@ function OnWeatherSelectionChanged() {
     UpdateCookieSettings(WeatherCookieSettings);
 
     var callbackName = Weather_Selector.attributes['callbackName'].value;
-    if (callbackName != null) {
+    if (callbackName !== null) {
         var weatherCriteria = {};
         weatherCriteria['WeatherAll'] = Weather_AnyOrAll_Slider.checked;
         weatherCriteria['Sunny'] = Weather_Sunny_Check.checked;
@@ -478,7 +478,7 @@ function OnFilterNameIDChanged() {
         UpdateCookieSettings(FilterNameIDCookieSettings);
 
         var callbackName = CONTROLS_Filter_NameID.attributes['callbackName'].value;
-        if (callbackName != null) {
+        if (callbackName !== null) {
             window[callbackName](GetFieldValue(CONTROLS_Filter_NameID));
         }
     } catch (err) {
@@ -514,8 +514,8 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     // Split the filter into sub-filters separated by '&' and treat it like &&
     filterSegments = filterSegment.split('&');
     if (filterSegments.length > 1) {
-        for (var i = filterSegments.length - 1; i >= 0; i--) {
-            if (!MatchFilterPokemonNameID(pokemon, filterSegments[i])) {
+        for (var j = filterSegments.length - 1; j >= 0; j--) {
+            if (!MatchFilterPokemonNameID(pokemon, filterSegments[j])) {
                 return false;
             }
         }
@@ -539,7 +539,7 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     }
 
     // Check to see if it is just a single ID;
-    if (id == filterSegment) {
+    if (id === filterSegment) {
         return true;
     }
 
@@ -635,7 +635,7 @@ function OnClosePopup() {
 // Function to expose content after it has been loaded and initialized.
 function ExposeLoaded() {
     var loading = document.getElementById('GLOBAL_LoadingNotice');
-    if (loading != null) {
+    if (loading !== null) {
         loading.classList.add('DIV_HIDDEN');
         document.getElementById(loading.attributes['formTarget'].value).classList.remove('DIV_HIDDEN');
     }

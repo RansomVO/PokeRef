@@ -79,6 +79,8 @@ if (!String.prototype.endsWith) {
     };
 }
 
+// TODO QZX: This is not supported in IE 11.
+//  Do we change it, or do we require IE 12?
 if (!String.prototype.Trim) {
     // If first param is boolean then it says whether to trim white-space or not.
     String.prototype.Trim = function (trimWhiteSpace, ...toTrim) {

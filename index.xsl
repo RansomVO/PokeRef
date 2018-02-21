@@ -143,7 +143,7 @@
             </div>
 
             <h2 id="anchor_evolutions">
-              <a href="tools/evolutions.html">Evolutions Chart</a>
+              <a href="charts/evolutions.html">Evolutions Chart</a>
             </h2>
             <div>
               <p>

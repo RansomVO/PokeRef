@@ -235,7 +235,7 @@
             <br /><input id="ShinyOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
             <br />Pokemon Name or ID:
             <xsl:call-template name="OutputFilterPokemonNameID">
-              <xsl:with-param name="Callback" select="'OnPokemonNameIDChanged'" />
+              <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
             </xsl:call-template>
           </td>
         </tr>
@@ -243,7 +243,7 @@
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <div class="KEY_TABLE">
         <xsl:call-template name="OutputTypeSelection">
-          <xsl:with-param name="Callback" select="'OnTypesChanged'" />
+          <xsl:with-param name="CallbackName" select="'OnTypesChanged'" />
           <xsl:with-param name="Title" select="'Pokemon Types'" />
           <xsl:with-param name="SliderHelp">
             <div class="CONTROLS_HELP_ENTRY">
@@ -260,7 +260,7 @@
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <div class="KEY_TABLE">
         <xsl:call-template name="OutputWeatherSelection">
-          <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
+          <xsl:with-param name="CallbackName" select="'OnWeatherChanged'" />
           <xsl:with-param name="Title" select="concat('Pokemon', $lt, 'br /', $gt, 'Weather Boosts')" />
           <xsl:with-param name="SliderHelp">
             <div class="CONTROLS_HELP_ENTRY">

@@ -74,6 +74,13 @@
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
       <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        charts\evolutions.js;
+        js\global.js;
+        js\pokemon.js;
+        js\controls.js;
         _datafiles\settings.xml;
         _datafiles\mappings.xml;
         _datafiles\stats.xml;
@@ -84,7 +91,6 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
-        charts\evolutions.js;
       </Dependencies>
       <OutputFileName>evolutions.html</OutputFileName>
     </XslTransform>

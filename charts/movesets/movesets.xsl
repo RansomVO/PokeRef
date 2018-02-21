@@ -177,7 +177,7 @@
                 <td>Pokemon Name or ID:</td>
                 <td style="padding:0">
                   <xsl:call-template name="OutputFilterPokemonNameID">
-                    <xsl:with-param name="Callback" select="'OnPokemonNameIDChanged'" />
+                    <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
                   </xsl:call-template>
                 </td>
               </tr>
@@ -200,7 +200,7 @@
       </table>
       <div class="KEY_TABLE">
         <xsl:call-template name="OutputTypeSelection">
-          <xsl:with-param name="Callback" select="'OnTypesChanged'" />
+          <xsl:with-param name="CallbackName" select="'OnTypesChanged'" />
           <xsl:with-param name="Title" select="'Move Types'" />
           <xsl:with-param name="SliderLabel">
             <b>Moves:</b>
@@ -219,7 +219,7 @@
       </div>
       <div class="KEY_TABLE">
         <xsl:call-template name="OutputWeatherSelection">
-          <xsl:with-param name="Callback" select="'OnWeatherChanged'" />
+          <xsl:with-param name="CallbackName" select="'OnWeatherChanged'" />
           <xsl:with-param name="Title" select="concat('Move', $lt, 'br /', $gt, 'Weather Boosts')" />
           <xsl:with-param name="SliderLabel">
             <b>Moves:</b>

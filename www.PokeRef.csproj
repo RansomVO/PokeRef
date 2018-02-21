@@ -190,10 +190,10 @@
     <FixIntermediateFile Include="xsl\pokemon.xsl">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
-    <Content Include="__Debugging\debug.html.xml" />
-    <FixIntermediateFile Include="__Debugging\debug.xsl" />
-    <FixOutputFile Include="__Debugging\index.html" />
-    <FixOutputFile Include="__Debugging\index.css" />
+    <None Include="__Debugging\debug.html.xml" />
+    <None Include="__Debugging\debug.xsl" />
+    <None Include="__Debugging\index.html" />
+    <None Include="__Debugging\index.css" />
   </ItemGroup>
   <!-- /css -->
   <ItemGroup>
