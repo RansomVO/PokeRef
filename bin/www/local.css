@@ -1,0 +1,57 @@
+﻿@import url('index.css?cacherefresh=2018-02-22_13:00:27');
+
+/* ========================================================================================== */
+
+td a  {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.NEWS_BOX {
+    border: 4px outset darkgrey;
+    margin: 1em;
+    float: left;
+}
+
+.NEWS {
+    margin: 1em;
+}
+
+.NEWS_TITLE {
+    margin-top: 0px;
+    padding-bottom: .25em;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+.NEWS_HEADLINE {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.NEWS_ARTICLE_HEADER {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    border-top:1px solid black;
+    background-color: aliceblue;
+}
+
+.SECTION {
+    display: table;
+    margin-top: 1em;
+}
+
+.SECTION_TITLE {
+    font-size: 1.75em; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.SITE_MAP_SECTION {
+    font-weight: bold;
+    text-decoration: underline;
+}

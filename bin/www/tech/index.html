@@ -1,0 +1,73 @@
+<html xmlns:exslt="http://exslt.org/common">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><script src="/js/controls.js?cacherefresh=2018-02-22_13:38:23"></script><script src="/js/global.js?cacherefresh=2018-02-22_13:38:23"></script><link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-02-22_13:38:23">
+    <title>Technical Reference</title>
+  </head>
+  <body>
+    <h1>Technical Reference</h1><img class="FLOAT_RIGHT" style="width:25%; margin:1em;" src="/images/EeveeDi.png"><p>
+          Sometimes you want to really understand how things work.
+          There are a lot of technical things under the covers of Pokémon GO.
+          <br>This section contains gory details about how things work.
+        </p><br><hr>
+    <h2 id="gamemaster"><a href="GAME_MASTER/">GAME_MASTER</a>&nbsp;<div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref">
+        <div class="COLLAPSER" id="TECH_GAME_MASTER_COLLAPSER">˅</div>
+      </div>
+    </h2>
+    <div id="TECH_GAME_MASTER" class="INDENT">
+      <p>
+            Pokémon GO has a file called the GAME_MASTER that contains statistics regarding just about everything in the game.
+            <br>This file is updated on a semi-regular basis.
+          </p>
+      <h3 class="PARENT"><a href="GAME_MASTER/pokestats/">Pokémon Stats</a></h3>
+      <div class="INDENT">
+        <p class="PARENT">
+              Each Pokémon has a bunch of statistics associated with them. Candies, Types, Gender Ratios, and a whole lot more.
+              <br>I have created a chart for each generation of Pokémon.
+            </p>
+        <div class="INDENT CHILD"><script>InsertURL('GAME_MASTER/pokestats/_linkslist.html?cacherefresh=2018-02-21_15:15:03')</script></div>
+      </div>
+      <h3><a href="GAME_MASTER/moves/">Pokémon Moves</a></h3>
+      <div class="INDENT">
+        <p class="PARENT">
+              To do battling, Pokémon use Moves (or "Attacks").
+              These moves come in two types:
+            </p>
+        <ul class="CHILD">
+          <li>
+                "<a href="GAME_MASTER/moves/moves.fast.html"><b>Fast</b></a>": The Moves performed by tapping on the screen during battle.
+              </li>
+          <li>
+                "<a href="GAME_MASTER/moves/moves.charged.html"><b>Charged</b></a>": The Moves performed by tapping the button at the bottom of the screen during battle.
+              </li>
+        </ul>
+        <p class="NOTE"><b>NOTE</b>: If you find you want to change the Move Set one of your Pokemons have, you can make use of "TMs" that can be one of the rewards you get from defeating a Raid Boss.
+            </p>
+        <p class="PARENT">
+              Here are charts with the important values regarding each type:
+            </p>
+        <div class="CHILD"><script>InsertURL('moves/_linkslist.html?cacherefresh=2018-02-21_15:15:03')</script></div>
+      </div>
+      <h3 class="PARENT"><a href="GAME_MASTER/archive/">GAME_MASTER Archive</a></h3>
+      <div class="CHILD INDENT">
+        <p class="CHILD">
+              I have collected as many GAME_MASTER files as I could find.
+              What I have is available for download.
+            </p>
+        <p class="NOTE PARENT"><b>NOTE</b>: If you have a GAME_MASTER file I am missing, or know where I can get it, please let me know.
+            </p>
+        <div class="INDENT"><script>WriteContactInfo();</script></div>
+      </div>
+    </div><br><hr>
+    <h2 id="movesetformulas"><a href="formulas/movesetdamage.html"><b>Move Set Damage Formulas</b></a></h2>
+    <p>
+          Want to know how to figure out the DPS for a Pokémon's Move Set?
+          <br>This page goes into detail of describing the formulas used to figure that out.
+        </p><br><hr>
+    <h2 id="cpm"><a href="cpm.html"><b>CP Modifiers</b></a></h2>
+    <p>
+          When calculating how much damage a Pokémon will do, Pokémon GO takes into account the Level of the Pokémon.
+          It does this by multiplying the Pokémon's BaseAttack and Attack IV by a constant corresponding to the Pokémon's level.
+          <br>This page lists the CPM values.
+        </p><script>WriteFooter();</script></body>
+</html>

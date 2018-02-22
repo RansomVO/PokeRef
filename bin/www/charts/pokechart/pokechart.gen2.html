@@ -1,0 +1,784 @@
+<html lang="en-us" xmlns:pokeref="urn:pokeref">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><script src="pokechart.js?cacherefresh=2018-02-22_14:49:48"></script><script src="/js/pokemon.js?cacherefresh=2018-02-22_14:49:48"></script><script src="/js/controls.js?cacherefresh=2018-02-22_14:49:48"></script><script src="/js/global.js?cacherefresh=2018-02-22_14:49:48"></script><link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-02-22_14:49:48">
+    <title>
+          Pokémon Chart
+           - Gen 2</title>
+  </head>
+  <body>
+    <h1>
+          Pokémon Chart
+           - Gen 2<span class="NOTE TODO">(Beta)</span></h1>
+    <p>
+          These are charts of basic info about Pokémon.
+          <br><span class="NOTE">(Pokémon that are not yet released are greyed out.)</span></p><br><hr>
+    <div id="GLOBAL_LoadingNotice" formTarget="POKECHART_Content" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <h1>Loading...</h1>
+    </div>
+    <div id="POKECHART_Content" class="DIV_HIDDEN">
+      <h2 id="criteria">Selection Criteria&nbsp;<div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div class="COLLAPSER" id="POKEMON_CRITERIA_COLLAPSER">˅</div>
+        </div>
+        <div style="display:inline-block; vertical-align:middle;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><button type="button" style="font-weight:bold; margin-bottom:.2em; margin-top:.2em;" title="Reset" onclick="OnResetCriteriaClicked();">↺</button></div>
+      </h2>
+      <div id="POKEMON_CRITERIA">
+        <table border="1" class="KEY_TABLE">
+          <tr>
+            <th>Show Only</th>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-bottom:.25em;"><input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);">Released
+            <br><input id="RegionalOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);">Regional
+            <br><input id="RaidBossOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);">Raid Bosses
+            <br><input id="LegendaryOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);">Legendary
+            <br><input id="HatchOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);">Hatch Only
+            <br><input id="ShinyOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);"><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny"> Shiny
+            <br>Pokémon Name or ID:
+            <input id="CONTROLS_Filter_NameID" type="text" onkeyup="OnFilterNameIDChanged()" callbackName="OnPokemonNameIDChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">&nbsp;<div class="CONTROLS_HELP" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      ?
+      <span class="CONTROLS_HELP_CONTENT"><div class="CONTROLS_HELP_ENTRY">
+                    <div class="CONTROLS_HELP_ENTRY_TITLE">-</div>
+                    <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies a range.
+            <br>Examples:
+            <ul>
+                        <li><b>1-10</b>: All Pokémon with IDs between 1 and 10.
+              </li>
+                        <li><b>-3</b>: All Pokémon with IDs 3 or lower.
+              </li>
+                        <li><b>100-</b>: All Pokémon with IDs 100 or higher.
+              </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_HELP_ENTRY">
+                    <div class="CONTROLS_HELP_ENTRY_TITLE">+</div>
+                    <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies a family.
+            <br>Example:
+            <ul>
+                        <li><b>+pidgey</b>: All Pokémon in the Pidgey family.
+                <br><span class="NOTE">(I.E. Those that use Pidgey candies.)</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_HELP_ENTRY">
+                    <div class="CONTROLS_HELP_ENTRY_TITLE">,</div>
+                    <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies to match one criteria OR another.
+            <br>Example:
+            <ul>
+                        <li><b>1-10,B</b>: All Pokémon with:
+                <br>IDs between 1 and 10
+                <br><b>- OR -</b><br>a name that begins with B.
+              </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_HELP_ENTRY">
+                    <div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div>
+                    <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+            Specifies one criteria AND another.
+            <br>Example:
+            <ul>
+                        <li><b>1-10&amp;B</b>: All Pokémon with:
+                <br>IDs between 1 and 10
+                <br><b>- AND -</b><br>a name that begins with B.
+              </li>
+                      </ul>
+                    </div>
+                  </div></span></div>
+            </td>
+          </tr>
+        </table>&nbsp;<div class="KEY_TABLE">
+          <table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;" callbackName="OnTypesChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <tr>
+              <th colspan="2" width="0">Pokémon Types<br><input id="CONTROLS_PokeType_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllPokeTypes();"></th>
+            </tr>
+            <tr>
+              <td valign="top"><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Bug_Check"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug">&nbsp;Bug<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Dark_Check"><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark">&nbsp;Dark<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Dragon_Check"><img class="TAG_ICON_REGULAR" src="/images/type_dragon.png" title="Dragon">&nbsp;Dragon<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Electric_Check"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric">&nbsp;Electric<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fairy_Check"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy">&nbsp;Fairy<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fighting_Check"><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting">&nbsp;Fighting<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fire_Check"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire">&nbsp;Fire<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Flying_Check"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying">&nbsp;Flying<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ghost_Check"><img class="TAG_ICON_REGULAR" src="/images/type_ghost.png" title="Ghost">&nbsp;Ghost</td>
+              <td valign="top"><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Grass_Check"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass">&nbsp;Grass<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ground_Check"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground">&nbsp;Ground<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ice_Check"><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice">&nbsp;Ice<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Normal_Check"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal">&nbsp;Normal<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Poison_Check"><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison">&nbsp;Poison<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Psychic_Check"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic">&nbsp;Psychic<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Rock_Check"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock">&nbsp;Rock<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Steel_Check"><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel">&nbsp;Steel<br><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Water_Check"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water">&nbsp;Water</td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center" style="font-size:small; font-weight:normal; ">Any<label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;"><input type="checkbox" style="display:none;" id="CONTROLS_PokeType_AnyOrAll_Slider" onchange="OnAnyOrAllTypeSliderChanged(this)"><span class="CONTROLS_SLIDER_BUTTON"></span></label>All&nbsp;<div class="CONTROLS_HELP">
+      ?
+      <span class="CONTROLS_HELP_CONTENT"><div class="CONTROLS_HELP_ENTRY">
+                      <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
+                      <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have any of their Types matching the selected Pokémon Types.</div>
+                    </div>
+                    <div class="CONTROLS_HELP_ENTRY">
+                      <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
+                      <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have all of their Types matching the selected Pokémon Types.</div>
+                    </div></span></div>
+              </td>
+            </tr>
+          </table>
+        </div>&nbsp;<div class="KEY_TABLE">
+          <table id="CONTROLS_Weather_Selector" border="1" style="white-space:nowrap;" callbackName="OnWeatherChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <tr>
+              <th>Pokémon<br />Weather Boosts<br><input id="CONTROLS_Weather_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllWeather();"></th>
+            </tr>
+            <tr>
+              <td valign="top"><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Sunny_Check"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny">&nbsp;Sunny/Clear<br><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Windy_Check"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy">&nbsp;Windy<br><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Cloudy_Check"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy">&nbsp;Cloudy<br><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_PartlyCloudy_Check"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy">&nbsp;Partly Cloudy<br><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Fog_Check"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog">&nbsp;Fog<br><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Rainy_Check"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy">&nbsp;Rainy<br><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Snow_Check"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow">&nbsp;Snow</td>
+            </tr>
+            <tr>
+              <td align="center" style="font-size:small; font-weight:normal; ">Any<label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;"><input type="checkbox" style="display:none;" id="CONTROLS_Weather_AnyOrAll_Slider" onchange="OnAnyOrAllWeatherSliderChanged(this)"><span class="CONTROLS_SLIDER_BUTTON"></span></label>All&nbsp;<div class="CONTROLS_HELP">
+      ?
+      <span class="CONTROLS_HELP_CONTENT"><div class="CONTROLS_HELP_ENTRY">
+                      <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
+                      <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have any of their Types boosted by the selected Pokémon Weather Boosts.</div>
+                    </div>
+                    <div class="CONTROLS_HELP_ENTRY">
+                      <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
+                      <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have all of their Types boosted by the selected Pokémon Weather Boosts.</div>
+                    </div></span></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div><br><hr>
+      <h2 xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Key&nbsp;<div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+          <div class="COLLAPSER" id="POKEMON_IMAGE_KEY_COLLAPSER">˅</div>
+        </div>
+      </h2><br xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><div id="POKEMON_IMAGE_KEY" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+        <table border="1"><comment commment="Limited Availablility"><tr>
+              <th rowspan="2">Limited Availability</th>
+              <td class="REGIONAL">Regional Availability</td>
+            </tr>
+            <tr>
+              <td class="UNAVAILABLE">Unavailable</td>
+            </tr></comment><comment commment="Limited Origin"><tr>
+              <th rowspan="5">Limited Origin</th>
+              <td class="HATCH_ONLY_2K">Available From 2K Egg Only</td>
+            </tr>
+            <tr>
+              <td class="HATCH_ONLY_5K">Available From 5K Egg Only</td>
+            </tr>
+            <tr>
+              <td class="HATCH_ONLY_10K">Available From 10K Egg Only</td>
+            </tr>
+            <tr>
+              <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
+            </tr>
+            <tr>
+              <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
+            </tr></comment><comment commment="Special"><tr>
+              <th>Special</th>
+              <td class="LEGENDARY">Legendary</td>
+            </tr></comment><tr>
+            <td colspan="2" class="NOTE">
+            May combine one from each section.
+          </td>
+          </tr>
+        </table>
+      </div><br><hr>
+      <h2 id="GEN2">Generation 2&nbsp;<div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div class="COLLAPSER" id="GENERATION_2_COLLAPSER">˅</div>
+        </div>
+      </h2>
+      <div id="GENERATION_2">
+        <div id="GEN2_Collection">
+          <div title="Chikorita" class="SPRITE_BOXED GEN2 " name="Chikorita" gen="2" id="152" type1="Grass" type2="" family="Chikorita" evolvesFrom="" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="7 : 1" maxCP="801" maxHP="82" buddyKM="3" baseAttack="92" baseDefense="122" baseStamina="90" captureRate="0.2" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/152.png" alt="(Chikorita)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">152&nbsp;-&nbsp;Chikorita</div>
+            </div>
+          </div>
+          <div title="Bayleef" class="SPRITE_BOXED GEN2 " name="Bayleef" gen="2" id="153" type1="Grass" type2="" family="Chikorita" evolvesFrom="152" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="7 : 1" maxCP="1296" maxHP="106" buddyKM="3" baseAttack="122" baseDefense="155" baseStamina="120" captureRate="0.125" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/153.png" alt="(Bayleef)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">153&nbsp;-&nbsp;Bayleef</div>
+            </div>
+          </div>
+          <div title="Meganium" class="SPRITE_BOXED GEN2 " name="Meganium" gen="2" id="154" type1="Grass" type2="" family="Chikorita" evolvesFrom="153" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="7 : 1" maxCP="2227" maxHP="138" buddyKM="3" baseAttack="168" baseDefense="202" baseStamina="160" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/154.png" alt="(Meganium)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">154&nbsp;-&nbsp;Meganium</div>
+            </div>
+          </div>
+          <div title="Cyndaquil" class="SPRITE_BOXED GEN2 " name="Cyndaquil" gen="2" id="155" type1="Fire" type2="" family="Cyndaquil" evolvesFrom="" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="7 : 1" maxCP="831" maxHP="73" buddyKM="3" baseAttack="116" baseDefense="96" baseStamina="78" captureRate="0.2" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/155.png" alt="(Cyndaquil)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">155&nbsp;-&nbsp;Cyndaquil</div>
+            </div>
+          </div>
+          <div title="Quilava" class="SPRITE_BOXED GEN2 " name="Quilava" gen="2" id="156" type1="Fire" type2="" family="Cyndaquil" evolvesFrom="155" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="7 : 1" maxCP="1484" maxHP="103" buddyKM="3" baseAttack="158" baseDefense="129" baseStamina="116" captureRate="0.125" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/156.png" alt="(Quilava)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">156&nbsp;-&nbsp;Quilava</div>
+            </div>
+          </div>
+          <div title="Typhlosion" class="SPRITE_BOXED GEN2 " name="Typhlosion" gen="2" id="157" type1="Fire" type2="" family="Cyndaquil" evolvesFrom="156" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="7 : 1" maxCP="2686" maxHP="135" buddyKM="3" baseAttack="223" baseDefense="176" baseStamina="156" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/157.png" alt="(Typhlosion)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">157&nbsp;-&nbsp;Typhlosion</div>
+            </div>
+          </div>
+          <div title="Totodile" class="SPRITE_BOXED GEN2 " name="Totodile" gen="2" id="158" type1="Water" type2="" family="Totodile" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="7 : 1" maxCP="1011" maxHP="90" buddyKM="3" baseAttack="117" baseDefense="116" baseStamina="100" captureRate="0.2" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/158.png" alt="(Totodile)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">158&nbsp;-&nbsp;Totodile</div>
+            </div>
+          </div>
+          <div title="Croconaw" class="SPRITE_BOXED GEN2 " name="Croconaw" gen="2" id="159" type1="Water" type2="" family="Totodile" evolvesFrom="158" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="7 : 1" maxCP="1598" maxHP="114" buddyKM="3" baseAttack="150" baseDefense="151" baseStamina="130" captureRate="0.125" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/159.png" alt="(Croconaw)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">159&nbsp;-&nbsp;Croconaw</div>
+            </div>
+          </div>
+          <div title="Feraligatr" class="SPRITE_BOXED GEN2 " name="Feraligatr" gen="2" id="160" type1="Water" type2="" family="Totodile" evolvesFrom="159" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="7 : 1" maxCP="2721" maxHP="146" buddyKM="3" baseAttack="205" baseDefense="197" baseStamina="170" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/160.png" alt="(Feraligatr)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">160&nbsp;-&nbsp;Feraligatr</div>
+            </div>
+          </div>
+          <div title="Sentret" class="SPRITE_BOXED GEN2 " name="Sentret" gen="2" id="161" type1="Normal" type2="" family="Sentret" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="519" maxHP="67" buddyKM="1" baseAttack="79" baseDefense="77" baseStamina="70" captureRate="0.5" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/161.png" alt="(Sentret)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">161&nbsp;-&nbsp;Sentret</div>
+            </div>
+          </div>
+          <div title="Furret" class="SPRITE_BOXED GEN2 " name="Furret" gen="2" id="162" type1="Normal" type2="" family="Sentret" evolvesFrom="161" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="1667" maxHP="146" buddyKM="1" baseAttack="148" baseDefense="130" baseStamina="170" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/162.png" alt="(Furret)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">162&nbsp;-&nbsp;Furret</div>
+            </div>
+          </div>
+          <div title="Hoothoot" class="SPRITE_BOXED GEN2 " name="Hoothoot" gen="2" id="163" type1="Normal" type2="Flying" family="Hoothoot" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="Windy" genderRatio="1 : 1" maxCP="640" maxHP="106" buddyKM="1" baseAttack="67" baseDefense="101" baseStamina="120" captureRate="0.5" fleeRate="0.15" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/163.png" alt="(Hoothoot)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">163&nbsp;-&nbsp;Hoothoot</div>
+            </div>
+          </div>
+          <div title="Noctowl" class="SPRITE_BOXED GEN2 " name="Noctowl" gen="2" id="164" type1="Normal" type2="Flying" family="Hoothoot" evolvesFrom="163" shiny="" availability="General" boost1="Partly Cloudy" boost2="Windy" genderRatio="1 : 1" maxCP="2040" maxHP="169" buddyKM="1" baseAttack="145" baseDefense="179" baseStamina="200" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/164.png" alt="(Noctowl)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">164&nbsp;-&nbsp;Noctowl</div>
+            </div>
+          </div>
+          <div title="Ledyba" class="SPRITE_BOXED GEN2 " name="Ledyba" gen="2" id="165" type1="Bug" type2="Flying" family="Ledyba" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Windy" genderRatio="1 : 1" maxCP="663" maxHP="75" buddyKM="1" baseAttack="72" baseDefense="142" baseStamina="80" captureRate="0.5" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/165.png" alt="(Ledyba)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">165&nbsp;-&nbsp;Ledyba</div>
+            </div>
+          </div>
+          <div title="Ledian" class="SPRITE_BOXED GEN2 " name="Ledian" gen="2" id="166" type1="Bug" type2="Flying" family="Ledyba" evolvesFrom="165" shiny="" availability="General" boost1="Rainy" boost2="Windy" genderRatio="1 : 1" maxCP="1275" maxHP="98" buddyKM="1" baseAttack="107" baseDefense="209" baseStamina="110" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/166.png" alt="(Ledian)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">166&nbsp;-&nbsp;Ledian</div>
+            </div>
+          </div>
+          <div title="Spinarak" class="SPRITE_BOXED GEN2 " name="Spinarak" gen="2" id="167" type1="Bug" type2="Poison" family="Spinarak" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Cloudy" genderRatio="1 : 1" maxCP="685" maxHP="75" buddyKM="1" baseAttack="105" baseDefense="73" baseStamina="80" captureRate="0.5" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/167.png" alt="(Spinarak)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">167&nbsp;-&nbsp;Spinarak</div>
+            </div>
+          </div>
+          <div title="Ariados" class="SPRITE_BOXED GEN2 " name="Ariados" gen="2" id="168" type1="Bug" type2="Poison" family="Spinarak" evolvesFrom="167" shiny="" availability="General" boost1="Rainy" boost2="Cloudy" genderRatio="1 : 1" maxCP="1636" maxHP="122" buddyKM="1" baseAttack="161" baseDefense="128" baseStamina="140" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/168.png" alt="(Ariados)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">168&nbsp;-&nbsp;Ariados</div>
+            </div>
+          </div>
+          <div title="Crobat" class="SPRITE_BOXED GEN2 " name="Crobat" gen="2" id="169" type1="Poison" type2="Flying" family="Zubat" evolvesFrom="42" shiny="" availability="General" boost1="Cloudy" boost2="Windy" genderRatio="1 : 1" maxCP="2466" maxHP="146" buddyKM="1" baseAttack="194" baseDefense="178" baseStamina="170" captureRate="0.1" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/169.png" alt="(Crobat)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">169&nbsp;-&nbsp;Crobat</div>
+            </div>
+          </div>
+          <div title="Chinchou" class="SPRITE_BOXED GEN2 " name="Chinchou" gen="2" id="170" type1="Water" type2="Electric" family="Chinchou" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Rainy" genderRatio="1 : 1" maxCP="1067" maxHP="130" buddyKM="3" baseAttack="106" baseDefense="106" baseStamina="150" captureRate="0.4" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/170.png" alt="(Chinchou)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">170&nbsp;-&nbsp;Chinchou</div>
+            </div>
+          </div>
+          <div title="Lanturn" class="SPRITE_BOXED GEN2 " name="Lanturn" gen="2" id="171" type1="Water" type2="Electric" family="Chinchou" evolvesFrom="170" shiny="" availability="General" boost1="Rainy" boost2="Rainy" genderRatio="1 : 1" maxCP="2077" maxHP="209" buddyKM="3" baseAttack="146" baseDefense="146" baseStamina="250" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/171.png" alt="(Lanturn)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">171&nbsp;-&nbsp;Lanturn</div>
+            </div>
+          </div>
+          <div title="Pichu" class="SPRITE_BOXED HATCH_ONLY_2K " name="Pichu" gen="2" id="172" type1="Electric" type2="" family="Pikachu" evolvesFrom="" shiny="X" availability="Hatch Only: 2K" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="376" maxHP="43" buddyKM="1" baseAttack="77" baseDefense="63" baseStamina="40" captureRate="0" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img class="SHINY_ICON" src="/images/shiny.png" alt="Shiny"><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/172.png" alt="(Pichu)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">172&nbsp;-&nbsp;Pichu</div>
+            </div>
+          </div>
+          <div title="Cleffa" class="SPRITE_BOXED HATCH_ONLY_2K " name="Cleffa" gen="2" id="173" type1="Fairy" type2="" family="Clefairy" evolvesFrom="" shiny="" availability="Hatch Only: 2K" boost1="Cloudy" boost2="" genderRatio="1 : 3" maxCP="620" maxHP="90" buddyKM="1" baseAttack="75" baseDefense="91" baseStamina="100" captureRate="0" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/173.png" alt="(Cleffa)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">173&nbsp;-&nbsp;Cleffa</div>
+            </div>
+          </div>
+          <div title="Igglybuff" class="SPRITE_BOXED HATCH_ONLY_2K " name="Igglybuff" gen="2" id="174" type1="Normal" type2="Fairy" family="Jigglypuff" evolvesFrom="" shiny="" availability="Hatch Only: 2K" boost1="Partly Cloudy" boost2="Cloudy" genderRatio="1 : 3" maxCP="512" maxHP="154" buddyKM="1" baseAttack="69" baseDefense="34" baseStamina="180" captureRate="0" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/174.png" alt="(Igglybuff)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">174&nbsp;-&nbsp;Igglybuff</div>
+            </div>
+          </div>
+          <div title="Togepi" class="SPRITE_BOXED HATCH_ONLY_2K " name="Togepi" gen="2" id="175" type1="Fairy" type2="" family="Togepi" evolvesFrom="" shiny="" availability="Hatch Only: 2K" boost1="Cloudy" boost2="" genderRatio="7 : 1" maxCP="540" maxHP="67" buddyKM="3" baseAttack="67" baseDefense="116" baseStamina="70" captureRate="0" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/175.png" alt="(Togepi)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">175&nbsp;-&nbsp;Togepi</div>
+            </div>
+          </div>
+          <div title="Togetic" class="SPRITE_BOXED GEN2 " name="Togetic" gen="2" id="176" type1="Fairy" type2="Flying" family="Togepi" evolvesFrom="175" shiny="" availability="General" boost1="Cloudy" boost2="Windy" genderRatio="7 : 1" maxCP="1543" maxHP="98" buddyKM="3" baseAttack="139" baseDefense="191" baseStamina="110" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/176.png" alt="(Togetic)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">176&nbsp;-&nbsp;Togetic</div>
+            </div>
+          </div>
+          <div title="Natu" class="SPRITE_BOXED GEN2 " name="Natu" gen="2" id="177" type1="Psychic" type2="Flying" family="Natu" evolvesFrom="" shiny="" availability="General" boost1="Windy" boost2="Windy" genderRatio="1 : 1" maxCP="925" maxHP="75" buddyKM="3" baseAttack="134" baseDefense="89" baseStamina="80" captureRate="0.4" fleeRate="0.15" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/177.png" alt="(Natu)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">177&nbsp;-&nbsp;Natu</div>
+            </div>
+          </div>
+          <div title="Xatu" class="SPRITE_BOXED GEN2 " name="Xatu" gen="2" id="178" type1="Psychic" type2="Flying" family="Natu" evolvesFrom="177" shiny="" availability="General" boost1="Windy" boost2="Windy" genderRatio="1 : 1" maxCP="1975" maxHP="114" buddyKM="3" baseAttack="192" baseDefense="146" baseStamina="130" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/178.png" alt="(Xatu)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">178&nbsp;-&nbsp;Xatu</div>
+            </div>
+          </div>
+          <div title="Mareep" class="SPRITE_BOXED GEN2 " name="Mareep" gen="2" id="179" type1="Electric" type2="" family="Mareep" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="887" maxHP="98" buddyKM="5" baseAttack="114" baseDefense="82" baseStamina="110" captureRate="0.5" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/179.png" alt="(Mareep)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">179&nbsp;-&nbsp;Mareep</div>
+            </div>
+          </div>
+          <div title="Flaaffy" class="SPRITE_BOXED GEN2 " name="Flaaffy" gen="2" id="180" type1="Electric" type2="" family="Mareep" evolvesFrom="179" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="1402" maxHP="122" buddyKM="5" baseAttack="145" baseDefense="112" baseStamina="140" captureRate="0.25" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/180.png" alt="(Flaaffy)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">180&nbsp;-&nbsp;Flaaffy</div>
+            </div>
+          </div>
+          <div title="Ampharos" class="SPRITE_BOXED GEN2 " name="Ampharos" gen="2" id="181" type1="Electric" type2="" family="Mareep" evolvesFrom="180" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="2695" maxHP="154" buddyKM="5" baseAttack="211" baseDefense="172" baseStamina="180" captureRate="0.125" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/181.png" alt="(Ampharos)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">181&nbsp;-&nbsp;Ampharos</div>
+            </div>
+          </div>
+          <div title="Bellossom" class="SPRITE_BOXED GEN2 " name="Bellossom" gen="2" id="182" type1="Grass" type2="" family="Oddish" evolvesFrom="44" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="1 : 1" maxCP="2108" maxHP="130" buddyKM="3" baseAttack="169" baseDefense="189" baseStamina="150" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/182.png" alt="(Bellossom)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">182&nbsp;-&nbsp;Bellossom</div>
+            </div>
+          </div>
+          <div title="Marill" class="SPRITE_BOXED GEN2 " name="Marill" gen="2" id="183" type1="Water" type2="Fairy" family="Marill" evolvesFrom="298" shiny="" availability="General" boost1="Rainy" boost2="Cloudy" genderRatio="1 : 1" maxCP="420" maxHP="122" buddyKM="3" baseAttack="37" baseDefense="93" baseStamina="140" captureRate="0.5" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/183.png" alt="(Marill)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">183&nbsp;-&nbsp;Marill</div>
+            </div>
+          </div>
+          <div title="Azumarill" class="SPRITE_BOXED GEN2 " name="Azumarill" gen="2" id="184" type1="Water" type2="Fairy" family="Marill" evolvesFrom="183" shiny="" availability="General" boost1="Rainy" boost2="Cloudy" genderRatio="1 : 1" maxCP="1503" maxHP="169" buddyKM="3" baseAttack="112" baseDefense="152" baseStamina="200" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/184.png" alt="(Azumarill)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">184&nbsp;-&nbsp;Azumarill</div>
+            </div>
+          </div>
+          <div title="Sudowoodo" class="SPRITE_BOXED GEN2 " name="Sudowoodo" gen="2" id="185" type1="Rock" type2="" family="Sudowoodo" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="2065" maxHP="122" buddyKM="5" baseAttack="167" baseDefense="198" baseStamina="140" captureRate="0.125" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/185.png" alt="(Sudowoodo)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">185&nbsp;-&nbsp;Sudowoodo</div>
+            </div>
+          </div>
+          <div title="Politoed" class="SPRITE_BOXED GEN2 " name="Politoed" gen="2" id="186" type1="Water" type2="" family="Poliwag" evolvesFrom="61" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="2371" maxHP="154" buddyKM="3" baseAttack="174" baseDefense="192" baseStamina="180" captureRate="0.1" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/186.png" alt="(Politoed)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">186&nbsp;-&nbsp;Politoed</div>
+            </div>
+          </div>
+          <div title="Hoppip" class="SPRITE_BOXED GEN2 " name="Hoppip" gen="2" id="187" type1="Grass" type2="Flying" family="Hoppip" evolvesFrom="" shiny="" availability="General" boost1="Sunny" boost2="Windy" genderRatio="1 : 1" maxCP="508" maxHP="67" buddyKM="3" baseAttack="67" baseDefense="101" baseStamina="70" captureRate="0.5" fleeRate="0.12" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/187.png" alt="(Hoppip)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">187&nbsp;-&nbsp;Hoppip</div>
+            </div>
+          </div>
+          <div title="Skiploom" class="SPRITE_BOXED GEN2 " name="Skiploom" gen="2" id="188" type1="Grass" type2="Flying" family="Hoppip" evolvesFrom="187" shiny="" availability="General" boost1="Sunny" boost2="Windy" genderRatio="1 : 1" maxCP="882" maxHP="98" buddyKM="3" baseAttack="91" baseDefense="127" baseStamina="110" captureRate="0.25" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/188.png" alt="(Skiploom)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">188&nbsp;-&nbsp;Skiploom</div>
+            </div>
+          </div>
+          <div title="Jumpluff" class="SPRITE_BOXED GEN2 " name="Jumpluff" gen="2" id="189" type1="Grass" type2="Flying" family="Hoppip" evolvesFrom="188" shiny="" availability="General" boost1="Sunny" boost2="Windy" genderRatio="1 : 1" maxCP="1553" maxHP="130" buddyKM="3" baseAttack="118" baseDefense="197" baseStamina="150" captureRate="0.125" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/189.png" alt="(Jumpluff)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">189&nbsp;-&nbsp;Jumpluff</div>
+            </div>
+          </div>
+          <div title="Aipom" class="SPRITE_BOXED GEN2 " name="Aipom" gen="2" id="190" type1="Normal" type2="" family="Aipom" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="1188" maxHP="98" buddyKM="3" baseAttack="136" baseDefense="112" baseStamina="110" captureRate="0.2" fleeRate="0.09" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/190.png" alt="(Aipom)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">190&nbsp;-&nbsp;Aipom</div>
+            </div>
+          </div>
+          <div title="Sunkern" class="SPRITE_BOXED GEN2 " name="Sunkern" gen="2" id="191" type1="Grass" type2="" family="Sunkern" evolvesFrom="" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="1 : 1" maxCP="316" maxHP="59" buddyKM="3" baseAttack="55" baseDefense="55" baseStamina="60" captureRate="0.5" fleeRate="0.09" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/191.png" alt="(Sunkern)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">191&nbsp;-&nbsp;Sunkern</div>
+            </div>
+          </div>
+          <div title="Sunflora" class="SPRITE_BOXED GEN2 " name="Sunflora" gen="2" id="192" type1="Grass" type2="" family="Sunkern" evolvesFrom="191" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="1 : 1" maxCP="2048" maxHP="130" buddyKM="3" baseAttack="185" baseDefense="148" baseStamina="150" captureRate="0.1" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/192.png" alt="(Sunflora)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">192&nbsp;-&nbsp;Sunflora</div>
+            </div>
+          </div>
+          <div title="Yanma" class="SPRITE_BOXED GEN2 " name="Yanma" gen="2" id="193" type1="Bug" type2="Flying" family="Yanma" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Windy" genderRatio="1 : 1" maxCP="1326" maxHP="114" buddyKM="3" baseAttack="154" baseDefense="94" baseStamina="130" captureRate="0.3" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/193.png" alt="(Yanma)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">193&nbsp;-&nbsp;Yanma</div>
+            </div>
+          </div>
+          <div title="Wooper" class="SPRITE_BOXED GEN2 " name="Wooper" gen="2" id="194" type1="Water" type2="Ground" family="Wooper" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Sunny" genderRatio="1 : 1" maxCP="596" maxHP="98" buddyKM="3" baseAttack="75" baseDefense="75" baseStamina="110" captureRate="0.4" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/194.png" alt="(Wooper)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">194&nbsp;-&nbsp;Wooper</div>
+            </div>
+          </div>
+          <div title="Quagsire" class="SPRITE_BOXED GEN2 " name="Quagsire" gen="2" id="195" type1="Water" type2="Ground" family="Wooper" evolvesFrom="194" shiny="" availability="General" boost1="Rainy" boost2="Sunny" genderRatio="1 : 1" maxCP="1929" maxHP="162" buddyKM="3" baseAttack="152" baseDefense="152" baseStamina="190" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/195.png" alt="(Quagsire)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">195&nbsp;-&nbsp;Quagsire</div>
+            </div>
+          </div>
+          <div title="Espeon" class="SPRITE_BOXED GEN2 " name="Espeon" gen="2" id="196" type1="Psychic" type2="" family="Eevee" evolvesFrom="133" shiny="" availability="General" boost1="Windy" boost2="" genderRatio="7 : 1" maxCP="3000" maxHP="114" buddyKM="5" baseAttack="261" baseDefense="194" baseStamina="130" captureRate="0" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/196.png" alt="(Espeon)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">196&nbsp;-&nbsp;Espeon</div>
+            </div>
+          </div>
+          <div title="Umbreon" class="SPRITE_BOXED GEN2 " name="Umbreon" gen="2" id="197" type1="Dark" type2="" family="Eevee" evolvesFrom="133" shiny="" availability="General" boost1="Fog" boost2="" genderRatio="7 : 1" maxCP="2052" maxHP="162" buddyKM="5" baseAttack="126" baseDefense="250" baseStamina="190" captureRate="0" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/197.png" alt="(Umbreon)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog"></div>
+              <div id="Pokemon_Name_Field">197&nbsp;-&nbsp;Umbreon</div>
+            </div>
+          </div>
+          <div title="Murkrow" class="SPRITE_BOXED GEN2 " name="Murkrow" gen="2" id="198" type1="Dark" type2="Flying" family="Murkrow" evolvesFrom="" shiny="" availability="General" boost1="Fog" boost2="Windy" genderRatio="1 : 1" maxCP="1392" maxHP="106" buddyKM="3" baseAttack="175" baseDefense="87" baseStamina="120" captureRate="0.2" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/198.png" alt="(Murkrow)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">198&nbsp;-&nbsp;Murkrow</div>
+            </div>
+          </div>
+          <div title="Slowking" class="SPRITE_BOXED GEN2 " name="Slowking" gen="2" id="199" type1="Water" type2="Psychic" family="Slowpoke" evolvesFrom="79" shiny="" availability="General" boost1="Rainy" boost2="Windy" genderRatio="1 : 1" maxCP="2482" maxHP="162" buddyKM="3" baseAttack="177" baseDefense="194" baseStamina="190" captureRate="0.1" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/199.png" alt="(Slowking)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">199&nbsp;-&nbsp;Slowking</div>
+            </div>
+          </div>
+          <div title="Misdreavus" class="SPRITE_BOXED GEN2 " name="Misdreavus" gen="2" id="200" type1="Ghost" type2="" family="Misdreavus" evolvesFrom="" shiny="" availability="General" boost1="Fog" boost2="" genderRatio="1 : 1" maxCP="1781" maxHP="106" buddyKM="3" baseAttack="167" baseDefense="167" baseStamina="120" captureRate="0.3" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/200.png" alt="(Misdreavus)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ghost.png" title="Ghost"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog"></div>
+              <div id="Pokemon_Name_Field">200&nbsp;-&nbsp;Misdreavus</div>
+            </div>
+          </div>
+          <div title="Unown" class="SPRITE_BOXED GEN2 " name="Unown" gen="2" id="201" type1="Psychic" type2="" family="Unown" evolvesFrom="" shiny="" availability="General" boost1="Windy" boost2="" genderRatio="⚲" maxCP="1022" maxHP="87" buddyKM="5" baseAttack="136" baseDefense="91" baseStamina="96" captureRate="0.3" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/201.png" alt="(Unown)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">201&nbsp;-&nbsp;Unown</div>
+            </div>
+          </div>
+          <div title="Wobbuffet" class="SPRITE_BOXED GEN2 " name="Wobbuffet" gen="2" id="202" type1="Psychic" type2="" family="Wobbuffet" evolvesFrom="360" shiny="" availability="General" boost1="Windy" boost2="" genderRatio="1 : 1" maxCP="1024" maxHP="312" buddyKM="3" baseAttack="60" baseDefense="106" baseStamina="380" captureRate="0.25" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/202.png" alt="(Wobbuffet)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">202&nbsp;-&nbsp;Wobbuffet</div>
+            </div>
+          </div>
+          <div title="Girafarig" class="SPRITE_BOXED GEN2 " name="Girafarig" gen="2" id="203" type1="Normal" type2="Psychic" family="Girafarig" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="Windy" genderRatio="1 : 1" maxCP="1863" maxHP="122" buddyKM="3" baseAttack="182" baseDefense="133" baseStamina="140" captureRate="0.3" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/203.png" alt="(Girafarig)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">203&nbsp;-&nbsp;Girafarig</div>
+            </div>
+          </div>
+          <div title="Pineco" class="SPRITE_BOXED GEN2 " name="Pineco" gen="2" id="204" type1="Bug" type2="" family="Pineco" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="1045" maxHP="90" buddyKM="5" baseAttack="108" baseDefense="146" baseStamina="100" captureRate="0.4" fleeRate="0.12" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/204.png" alt="(Pineco)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">204&nbsp;-&nbsp;Pineco</div>
+            </div>
+          </div>
+          <div title="Forretress" class="SPRITE_BOXED GEN2 " name="Forretress" gen="2" id="205" type1="Bug" type2="Steel" family="Pineco" evolvesFrom="204" shiny="" availability="General" boost1="Rainy" boost2="Snow" genderRatio="1 : 1" maxCP="2263" maxHP="130" buddyKM="5" baseAttack="161" baseDefense="242" baseStamina="150" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/205.png" alt="(Forretress)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"></div>
+              <div id="Pokemon_Name_Field">205&nbsp;-&nbsp;Forretress</div>
+            </div>
+          </div>
+          <div title="Dunsparce" class="SPRITE_BOXED GEN2 " name="Dunsparce" gen="2" id="206" type1="Normal" type2="" family="Dunsparce" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="1615" maxHP="169" buddyKM="3" baseAttack="131" baseDefense="131" baseStamina="200" captureRate="0.3" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/206.png" alt="(Dunsparce)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">206&nbsp;-&nbsp;Dunsparce</div>
+            </div>
+          </div>
+          <div title="Gligar" class="SPRITE_BOXED GEN2 " name="Gligar" gen="2" id="207" type1="Ground" type2="Flying" family="Gligar" evolvesFrom="" shiny="" availability="General" boost1="Sunny" boost2="Windy" genderRatio="1 : 1" maxCP="1758" maxHP="114" buddyKM="5" baseAttack="143" baseDefense="204" baseStamina="130" captureRate="0.2" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/207.png" alt="(Gligar)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">207&nbsp;-&nbsp;Gligar</div>
+            </div>
+          </div>
+          <div title="Steelix" class="SPRITE_BOXED GEN2 " name="Steelix" gen="2" id="208" type1="Steel" type2="Ground" family="Onix" evolvesFrom="95" shiny="" availability="General" boost1="Snow" boost2="Sunny" genderRatio="1 : 1" maxCP="2439" maxHP="130" buddyKM="5" baseAttack="148" baseDefense="333" baseStamina="150" captureRate="0.1" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/208.png" alt="(Steelix)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">208&nbsp;-&nbsp;Steelix</div>
+            </div>
+          </div>
+          <div title="Snubbull" class="SPRITE_BOXED GEN2 " name="Snubbull" gen="2" id="209" type1="Fairy" type2="" family="Snubbull" evolvesFrom="" shiny="" availability="General" boost1="Cloudy" boost2="" genderRatio="1 : 3" maxCP="1124" maxHP="106" buddyKM="3" baseAttack="137" baseDefense="89" baseStamina="120" captureRate="0.4" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/209.png" alt="(Snubbull)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">209&nbsp;-&nbsp;Snubbull</div>
+            </div>
+          </div>
+          <div title="Granbull" class="SPRITE_BOXED GEN2 " name="Granbull" gen="2" id="210" type1="Fairy" type2="" family="Snubbull" evolvesFrom="209" shiny="" availability="General" boost1="Cloudy" boost2="" genderRatio="1 : 3" maxCP="2440" maxHP="154" buddyKM="3" baseAttack="212" baseDefense="137" baseStamina="180" captureRate="0.15" fleeRate="0.08" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/210.png" alt="(Granbull)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">210&nbsp;-&nbsp;Granbull</div>
+            </div>
+          </div>
+          <div title="Qwilfish" class="SPRITE_BOXED GEN2 " name="Qwilfish" gen="2" id="211" type1="Water" type2="Poison" family="Qwilfish" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Cloudy" genderRatio="1 : 1" maxCP="1910" maxHP="114" buddyKM="3" baseAttack="184" baseDefense="148" baseStamina="130" captureRate="0.3" fleeRate="0.08" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/211.png" alt="(Qwilfish)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">211&nbsp;-&nbsp;Qwilfish</div>
+            </div>
+          </div>
+          <div title="Scizor" class="SPRITE_BOXED GEN2 " name="Scizor" gen="2" id="212" type1="Bug" type2="Steel" family="Scyther" evolvesFrom="123" shiny="" availability="General" boost1="Rainy" boost2="Snow" genderRatio="1 : 1" maxCP="2801" maxHP="122" buddyKM="5" baseAttack="236" baseDefense="191" baseStamina="140" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/212.png" alt="(Scizor)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"></div>
+              <div id="Pokemon_Name_Field">212&nbsp;-&nbsp;Scizor</div>
+            </div>
+          </div>
+          <div title="Shuckle" class="SPRITE_BOXED GEN2 " name="Shuckle" gen="2" id="213" type1="Bug" type2="Rock" family="Shuckle" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Partly Cloudy" genderRatio="1 : 1" maxCP="300" maxHP="43" buddyKM="3" baseAttack="17" baseDefense="396" baseStamina="40" captureRate="0.3" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/213.png" alt="(Shuckle)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">213&nbsp;-&nbsp;Shuckle</div>
+            </div>
+          </div>
+          <div title="Heracross" class="SPRITE_BOXED GEN2 " name="Heracross" gen="2" id="214" type1="Bug" type2="Fighting" family="Heracross" evolvesFrom="" shiny="" availability="Regional: Equatorial" boost1="Rainy" boost2="Cloudy" genderRatio="1 : 1" maxCP="2938" maxHP="138" buddyKM="3" baseAttack="234" baseDefense="189" baseStamina="160" captureRate="0.3" fleeRate="0.09" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/214.png" alt="(Heracross)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug"><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">214&nbsp;-&nbsp;Heracross</div>
+            </div>
+          </div>
+          <div title="Sneasel" class="SPRITE_BOXED GEN2 " name="Sneasel" gen="2" id="215" type1="Dark" type2="Ice" family="Sneasel" evolvesFrom="" shiny="" availability="General" boost1="Fog" boost2="Snow" genderRatio="1 : 1" maxCP="1868" maxHP="98" buddyKM="3" baseAttack="189" baseDefense="157" baseStamina="110" captureRate="0.2" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/215.png" alt="(Sneasel)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark"><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"></div>
+              <div id="Pokemon_Name_Field">215&nbsp;-&nbsp;Sneasel</div>
+            </div>
+          </div>
+          <div title="Teddiursa" class="SPRITE_BOXED GEN2 " name="Teddiursa" gen="2" id="216" type1="Normal" type2="" family="Teddiursa" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="1184" maxHP="106" buddyKM="3" baseAttack="142" baseDefense="93" baseStamina="120" captureRate="0.5" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/216.png" alt="(Teddiursa)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">216&nbsp;-&nbsp;Teddiursa</div>
+            </div>
+          </div>
+          <div title="Ursaring" class="SPRITE_BOXED GEN2 " name="Ursaring" gen="2" id="217" type1="Normal" type2="" family="Teddiursa" evolvesFrom="216" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="2760" maxHP="154" buddyKM="3" baseAttack="236" baseDefense="144" baseStamina="180" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/217.png" alt="(Ursaring)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">217&nbsp;-&nbsp;Ursaring</div>
+            </div>
+          </div>
+          <div title="Slugma" class="SPRITE_BOXED GEN2 " name="Slugma" gen="2" id="218" type1="Fire" type2="" family="Slugma" evolvesFrom="" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="1 : 1" maxCP="750" maxHP="75" buddyKM="1" baseAttack="118" baseDefense="71" baseStamina="80" captureRate="0.3" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/218.png" alt="(Slugma)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">218&nbsp;-&nbsp;Slugma</div>
+            </div>
+          </div>
+          <div title="Magcargo" class="SPRITE_BOXED GEN2 " name="Magcargo" gen="2" id="219" type1="Fire" type2="Rock" family="Slugma" evolvesFrom="218" shiny="" availability="General" boost1="Sunny" boost2="Partly Cloudy" genderRatio="1 : 1" maxCP="1543" maxHP="90" buddyKM="1" baseAttack="139" baseDefense="209" baseStamina="100" captureRate="0.125" fleeRate="0.06" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/219.png" alt="(Magcargo)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">219&nbsp;-&nbsp;Magcargo</div>
+            </div>
+          </div>
+          <div title="Swinub" class="SPRITE_BOXED GEN2 " name="Swinub" gen="2" id="220" type1="Ice" type2="Ground" family="Swinub" evolvesFrom="" shiny="" availability="General" boost1="Snow" boost2="Sunny" genderRatio="1 : 1" maxCP="663" maxHP="90" buddyKM="3" baseAttack="90" baseDefense="74" baseStamina="100" captureRate="0.3" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/220.png" alt="(Swinub)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">220&nbsp;-&nbsp;Swinub</div>
+            </div>
+          </div>
+          <div title="Piloswine" class="SPRITE_BOXED GEN2 " name="Piloswine" gen="2" id="221" type1="Ice" type2="Ground" family="Swinub" evolvesFrom="220" shiny="" availability="General" boost1="Snow" boost2="Sunny" genderRatio="1 : 1" maxCP="2284" maxHP="169" buddyKM="3" baseAttack="181" baseDefense="147" baseStamina="200" captureRate="0.125" fleeRate="0.06" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/221.png" alt="(Piloswine)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">221&nbsp;-&nbsp;Piloswine</div>
+            </div>
+          </div>
+          <div title="Corsola" class="SPRITE_BOXED GEN2 " name="Corsola" gen="2" id="222" type1="Water" type2="Rock" family="Corsola" evolvesFrom="" shiny="" availability="Regional: Southern Hemisphere + Mexico" boost1="Rainy" boost2="Partly Cloudy" genderRatio="1 : 3" maxCP="1214" maxHP="98" buddyKM="3" baseAttack="118" baseDefense="156" baseStamina="110" captureRate="0.3" fleeRate="0.12" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/222.png" alt="(Corsola)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">222&nbsp;-&nbsp;Corsola</div>
+            </div>
+          </div>
+          <div title="Remoraid" class="SPRITE_BOXED GEN2 " name="Remoraid" gen="2" id="223" type1="Water" type2="" family="Remoraid" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="749" maxHP="67" buddyKM="1" baseAttack="127" baseDefense="69" baseStamina="70" captureRate="0.5" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/223.png" alt="(Remoraid)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">223&nbsp;-&nbsp;Remoraid</div>
+            </div>
+          </div>
+          <div title="Octillery" class="SPRITE_BOXED GEN2 " name="Octillery" gen="2" id="224" type1="Water" type2="" family="Remoraid" evolvesFrom="223" shiny="" availability="General" boost1="Rainy" boost2="" genderRatio="1 : 1" maxCP="2124" maxHP="130" buddyKM="1" baseAttack="197" baseDefense="141" baseStamina="150" captureRate="0.15" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/224.png" alt="(Octillery)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">224&nbsp;-&nbsp;Octillery</div>
+            </div>
+          </div>
+          <div title="Delibird" class="SPRITE_BOXED GEN2 " name="Delibird" gen="2" id="225" type1="Ice" type2="Flying" family="Delibird" evolvesFrom="" shiny="" availability="General" boost1="Snow" boost2="Windy" genderRatio="1 : 1" maxCP="937" maxHP="82" buddyKM="5" baseAttack="128" baseDefense="90" baseStamina="90" captureRate="0.2" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/225.png" alt="(Delibird)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">225&nbsp;-&nbsp;Delibird</div>
+            </div>
+          </div>
+          <div title="Mantine" class="SPRITE_BOXED GEN2 " name="Mantine" gen="2" id="226" type1="Water" type2="Flying" family="Mantine" evolvesFrom="" shiny="" availability="General" boost1="Rainy" boost2="Windy" genderRatio="1 : 1" maxCP="2032" maxHP="114" buddyKM="5" baseAttack="148" baseDefense="260" baseStamina="130" captureRate="0.3" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/226.png" alt="(Mantine)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">226&nbsp;-&nbsp;Mantine</div>
+            </div>
+          </div>
+          <div title="Skarmory" class="SPRITE_BOXED GEN2 " name="Skarmory" gen="2" id="227" type1="Steel" type2="Flying" family="Skarmory" evolvesFrom="" shiny="" availability="General" boost1="Snow" boost2="Windy" genderRatio="1 : 1" maxCP="2032" maxHP="114" buddyKM="5" baseAttack="148" baseDefense="260" baseStamina="130" captureRate="0.2" fleeRate="0.09" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/227.png" alt="(Skarmory)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">227&nbsp;-&nbsp;Skarmory</div>
+            </div>
+          </div>
+          <div title="Houndour" class="SPRITE_BOXED GEN2 " name="Houndour" gen="2" id="228" type1="Dark" type2="Fire" family="Houndour" evolvesFrom="" shiny="" availability="General" boost1="Fog" boost2="Sunny" genderRatio="1 : 1" maxCP="1110" maxHP="82" buddyKM="3" baseAttack="152" baseDefense="93" baseStamina="90" captureRate="0.4" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/228.png" alt="(Houndour)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">228&nbsp;-&nbsp;Houndour</div>
+            </div>
+          </div>
+          <div title="Houndoom" class="SPRITE_BOXED GEN2 " name="Houndoom" gen="2" id="229" type1="Dark" type2="Fire" family="Houndour" evolvesFrom="228" shiny="" availability="General" boost1="Fog" boost2="Sunny" genderRatio="1 : 1" maxCP="2529" maxHP="130" buddyKM="3" baseAttack="224" baseDefense="159" baseStamina="150" captureRate="0.15" fleeRate="0.06" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/229.png" alt="(Houndoom)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">229&nbsp;-&nbsp;Houndoom</div>
+            </div>
+          </div>
+          <div title="Kingdra" class="SPRITE_BOXED GEN2 " name="Kingdra" gen="2" id="230" type1="Water" type2="Dragon" family="Horsea" evolvesFrom="117" shiny="" availability="General" boost1="Rainy" boost2="Windy" genderRatio="1 : 1" maxCP="2424" maxHP="130" buddyKM="3" baseAttack="194" baseDefense="194" baseStamina="150" captureRate="0.1" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/230.png" alt="(Kingdra)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="TAG_ICON_REGULAR" src="/images/type_dragon.png" title="Dragon"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">230&nbsp;-&nbsp;Kingdra</div>
+            </div>
+          </div>
+          <div title="Phanpy" class="SPRITE_BOXED GEN2 " name="Phanpy" gen="2" id="231" type1="Ground" type2="" family="Phanpy" evolvesFrom="" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="1 : 1" maxCP="1175" maxHP="154" buddyKM="3" baseAttack="107" baseDefense="107" baseStamina="180" captureRate="0.5" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/231.png" alt="(Phanpy)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">231&nbsp;-&nbsp;Phanpy</div>
+            </div>
+          </div>
+          <div title="Donphan" class="SPRITE_BOXED GEN2 " name="Donphan" gen="2" id="232" type1="Ground" type2="" family="Phanpy" evolvesFrom="231" shiny="" availability="General" boost1="Sunny" boost2="" genderRatio="1 : 1" maxCP="3022" maxHP="154" buddyKM="3" baseAttack="214" baseDefense="214" baseStamina="180" captureRate="0.125" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/232.png" alt="(Donphan)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">232&nbsp;-&nbsp;Donphan</div>
+            </div>
+          </div>
+          <div title="Porygon2" class="SPRITE_BOXED GEN2 " name="Porygon2" gen="2" id="233" type1="Normal" type2="" family="Porygon" evolvesFrom="137" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="⚲" maxCP="2546" maxHP="146" buddyKM="3" baseAttack="198" baseDefense="183" baseStamina="170" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/233.png" alt="(Porygon2)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">233&nbsp;-&nbsp;Porygon2</div>
+            </div>
+          </div>
+          <div title="Stantler" class="SPRITE_BOXED GEN2 " name="Stantler" gen="2" id="234" type1="Normal" type2="" family="Stantler" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="1988" maxHP="127" buddyKM="3" baseAttack="192" baseDefense="132" baseStamina="146" captureRate="0.3" fleeRate="0.08" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/234.png" alt="(Stantler)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">234&nbsp;-&nbsp;Stantler</div>
+            </div>
+          </div>
+          <div title="Smeargle" class="SPRITE_BOXED GEN2 " name="Smeargle" gen="2" id="235" type1="Normal" type2="" family="Smeargle" evolvesFrom="" shiny="" availability="Unavailable" boost1="Partly Cloudy" boost2="" genderRatio="1 : 1" maxCP="389" maxHP="98" buddyKM="3" baseAttack="40" baseDefense="88" baseStamina="110" captureRate="0.25" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE DISABLED " src="https://pkmref.com/images/set_1/235.png" alt="(Smeargle)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">235&nbsp;-&nbsp;Smeargle</div>
+            </div>
+          </div>
+          <div title="Tyrogue" class="SPRITE_BOXED HATCH_ONLY_5K " name="Tyrogue" gen="2" id="236" type1="Fighting" type2="" family="Tyrogue" evolvesFrom="" shiny="" availability="Hatch Only: 5K" boost1="Cloudy" boost2="" genderRatio="♂" maxCP="404" maxHP="67" buddyKM="5" baseAttack="64" baseDefense="64" baseStamina="70" captureRate="0" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/236.png" alt="(Tyrogue)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">236&nbsp;-&nbsp;Tyrogue</div>
+            </div>
+          </div>
+          <div title="Hitmontop" class="SPRITE_BOXED GEN2 " name="Hitmontop" gen="2" id="237" type1="Fighting" type2="" family="Tyrogue" evolvesFrom="236" shiny="" availability="General" boost1="Cloudy" boost2="" genderRatio="♂" maxCP="1905" maxHP="90" buddyKM="5" baseAttack="173" baseDefense="214" baseStamina="100" captureRate="0.1" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/237.png" alt="(Hitmontop)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy"></div>
+              <div id="Pokemon_Name_Field">237&nbsp;-&nbsp;Hitmontop</div>
+            </div>
+          </div>
+          <div title="Smoochum" class="SPRITE_BOXED HATCH_ONLY_5K " name="Smoochum" gen="2" id="238" type1="Ice" type2="Psychic" family="Jynx" evolvesFrom="" shiny="" availability="Hatch Only: 5K" boost1="Snow" boost2="Windy" genderRatio="♀" maxCP="1230" maxHP="82" buddyKM="5" baseAttack="153" baseDefense="116" baseStamina="90" captureRate="0" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/238.png" alt="(Smoochum)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">238&nbsp;-&nbsp;Smoochum</div>
+            </div>
+          </div>
+          <div title="Elekid" class="SPRITE_BOXED HATCH_ONLY_5K " name="Elekid" gen="2" id="239" type1="Electric" type2="" family="Electabuzz" evolvesFrom="" shiny="" availability="Hatch Only: 5K" boost1="Rainy" boost2="" genderRatio="3 : 1" maxCP="1073" maxHP="82" buddyKM="5" baseAttack="135" baseDefense="110" baseStamina="90" captureRate="0" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/239.png" alt="(Elekid)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">239&nbsp;-&nbsp;Elekid</div>
+            </div>
+          </div>
+          <div title="Magby" class="SPRITE_BOXED HATCH_ONLY_5K " name="Magby" gen="2" id="240" type1="Fire" type2="" family="Magmar" evolvesFrom="" shiny="" availability="Hatch Only: 5K" boost1="Sunny" boost2="" genderRatio="3 : 1" maxCP="1178" maxHP="82" buddyKM="5" baseAttack="151" baseDefense="108" baseStamina="90" captureRate="0" fleeRate="0.2" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/240.png" alt="(Magby)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">240&nbsp;-&nbsp;Magby</div>
+            </div>
+          </div>
+          <div title="Miltank" class="SPRITE_BOXED GEN2 " name="Miltank" gen="2" id="241" type1="Normal" type2="" family="Miltank" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="♀" maxCP="2312" maxHP="162" buddyKM="5" baseAttack="157" baseDefense="211" baseStamina="190" captureRate="0.2" fleeRate="0.08" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/241.png" alt="(Miltank)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">241&nbsp;-&nbsp;Miltank</div>
+            </div>
+          </div>
+          <div title="Blissey" class="SPRITE_BOXED GEN2 " name="Blissey" gen="2" id="242" type1="Normal" type2="" family="Chansey" evolvesFrom="113" shiny="" availability="General" boost1="Partly Cloudy" boost2="" genderRatio="♀" maxCP="3219" maxHP="414" buddyKM="5" baseAttack="129" baseDefense="229" baseStamina="510" captureRate="0.05" fleeRate="0.05" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/242.png" alt="(Blissey)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"></div>
+              <div id="Pokemon_Name_Field">242&nbsp;-&nbsp;Blissey</div>
+            </div>
+          </div>
+          <div title="Raikou" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Raikou" gen="2" id="243" type1="Electric" type2="" family="Raikou" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Rainy" boost2="" genderRatio="⚲" maxCP="3349" maxHP="154" buddyKM="20" baseAttack="241" baseDefense="210" baseStamina="180" captureRate="0.02" fleeRate="0.04" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/243.png" alt="(Raikou)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">243&nbsp;-&nbsp;Raikou</div>
+            </div>
+          </div>
+          <div title="Entei" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Entei" gen="2" id="244" type1="Fire" type2="" family="Entei" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Sunny" boost2="" genderRatio="⚲" maxCP="3377" maxHP="193" buddyKM="20" baseAttack="235" baseDefense="176" baseStamina="230" captureRate="0.02" fleeRate="0.04" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/244.png" alt="(Entei)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">244&nbsp;-&nbsp;Entei</div>
+            </div>
+          </div>
+          <div title="Suicune" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Suicune" gen="2" id="245" type1="Water" type2="" family="Suicune" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Rainy" boost2="" genderRatio="⚲" maxCP="2823" maxHP="169" buddyKM="20" baseAttack="180" baseDefense="235" baseStamina="200" captureRate="0.02" fleeRate="0.04" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/245.png" alt="(Suicune)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy"></div>
+              <div id="Pokemon_Name_Field">245&nbsp;-&nbsp;Suicune</div>
+            </div>
+          </div>
+          <div title="Larvitar" class="SPRITE_BOXED GEN2 " name="Larvitar" gen="2" id="246" type1="Rock" type2="Ground" family="Larvitar" evolvesFrom="" shiny="" availability="General" boost1="Partly Cloudy" boost2="Sunny" genderRatio="1 : 1" maxCP="904" maxHP="90" buddyKM="5" baseAttack="115" baseDefense="93" baseStamina="100" captureRate="0.4" fleeRate="0.1" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/246.png" alt="(Larvitar)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">246&nbsp;-&nbsp;Larvitar</div>
+            </div>
+          </div>
+          <div title="Pupitar" class="SPRITE_BOXED GEN2 " name="Pupitar" gen="2" id="247" type1="Rock" type2="Ground" family="Larvitar" evolvesFrom="246" shiny="" availability="General" boost1="Partly Cloudy" boost2="Sunny" genderRatio="1 : 1" maxCP="1608" maxHP="122" buddyKM="5" baseAttack="155" baseDefense="133" baseStamina="140" captureRate="0.1" fleeRate="0.07" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/247.png" alt="(Pupitar)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock"><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">247&nbsp;-&nbsp;Pupitar</div>
+            </div>
+          </div>
+          <div title="Tyranitar" class="SPRITE_BOXED GEN2 " name="Tyranitar" gen="2" id="248" type1="Rock" type2="Dark" family="Larvitar" evolvesFrom="247" shiny="" availability="General" boost1="Partly Cloudy" boost2="Fog" genderRatio="1 : 1" maxCP="3670" maxHP="169" buddyKM="5" baseAttack="251" baseDefense="212" baseStamina="200" captureRate="0.05" fleeRate="0.04" onclick="OnSelectPokemon(this)" style="cursor:pointer;" raidboss="true" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/248.png" alt="(Tyranitar)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock"><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy"><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog"></div>
+              <div id="Pokemon_Name_Field">248&nbsp;-&nbsp;Tyranitar</div>
+            </div>
+          </div>
+          <div title="Lugia" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Lugia" gen="2" id="249" type1="Psychic" type2="Flying" family="Lugia" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Windy" boost2="Windy" genderRatio="⚲" maxCP="3598" maxHP="179" buddyKM="20" baseAttack="193" baseDefense="323" baseStamina="212" captureRate="0.02" fleeRate="0.04" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/249.png" alt="(Lugia)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">249&nbsp;-&nbsp;Lugia</div>
+            </div>
+          </div>
+          <div title="Ho-Oh" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Ho-Oh" gen="2" id="250" type1="Fire" type2="Flying" family="Ho-Oh" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Sunny" boost2="Windy" genderRatio="⚲" maxCP="3889" maxHP="164" buddyKM="20" baseAttack="239" baseDefense="274" baseStamina="193" captureRate="0.02" fleeRate="0.04" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY "><img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/250.png" alt="(Ho-Oh)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire"><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"></div>
+              <div id="Pokemon_Name_Field">250&nbsp;-&nbsp;Ho-Oh</div>
+            </div>
+          </div>
+          <div title="Celebi" class="SPRITE_BOXED GEN2 " name="Celebi" gen="2" id="251" type1="Psychic" type2="Grass" family="Celebi" evolvesFrom="" shiny="" availability="Unavailable Legendary" boost1="Windy" boost2="Sunny" genderRatio="⚲" maxCP="3090" maxHP="169" buddyKM="5" baseAttack="210" baseDefense="210" baseStamina="200" captureRate="0" fleeRate="0.04" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY "><img style="vertical-align:middle;" class="SPRITE DISABLED " src="https://pkmref.com/images/set_1/251.png" alt="(Celebi)"><div id="Pokemon_Icons_Field"><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic"><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass"><img class="SPACER_ICON" src="/images/blank.png"><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy"><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny"></div>
+              <div id="Pokemon_Name_Field">251&nbsp;-&nbsp;Celebi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
+      <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER"><span class="BUTTON" style="float: right;" onclick="OnClosePopup();">&times;</span><span id="Selected_Pokemon_Title" class="POPUP_DIALOG_HEADER_TITLE"></span></div>
+      <div style="padding:.25em;">
+        <table width="100%" style="white-space:nowrap;">
+          <tr>
+            <th style="width:1px;"></th>
+            <th style="width:1px;"></th>
+            <th style="width:1px;"></th>
+            <th style="width:1px;"></th>
+          </tr>
+          <tr>
+            <td rowspan="4" id="Selected_Pokemon" class="POPUP_CELL"></td>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Generation:</th>
+            <td id="Selected_Pokemon_Generation" class="POPUP_CELL DATA_BOX NUMERIC"></td>
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Candies:</th>
+            <td id="Selected_Pokemon_Family" class="POPUP_CELL DATA_BOX"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="POPUP_CELL LABEL_BOX">♂&nbsp;:&nbsp;♀</td>
+            <td id="Selected_Pokemon_GenderRatio" class="POPUP_CELL DATA_BOX" align="center"></td>
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Shiny Available:</th>
+            <td id="Selected_Pokemon_Shiny" class="POPUP_CELL DATA_BOX"></td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Availability:</th>
+            <td colspan="2" id="Selected_Pokemon_Availability" class="POPUP_CELL DATA_BOX"></td>
+          </tr>
+          <tr>
+            <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Type(s):</th>
+            <td colspan="2" id="Selected_Pokemon_Types" class="POPUP_CELL DATA_BOX"></td>
+          </tr>
+          <tr>
+            <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Boost(s):</th>
+            <td colspan="2" id="Selected_Pokemon_Boosts" class="POPUP_CELL DATA_BOX"></td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Buddy Km for Candy:</th>
+            <td colspan="2" id="Selected_Pokemon_BuddyKM" class="POPUP_CELL DATA_BOX NUMERIC"></td>
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Max CP/HP:</th>
+            <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+              <table width="100%">
+                <tr>
+                  <td id="Selected_Pokemon_Max_CP" width="49%" align="center"></td>
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_Max_HP" align="center"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Base ATK/DEF/STA:</th>
+            <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+              <table width="100%">
+                <tr>
+                  <td id="Selected_Pokemon_BaseIV_Attack" width="32%" align="center"></td>
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_BaseIV_Defense" width="32%" align="center"></td>
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_BaseIV_Stamina" width="32%" align="center"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Base Capture/Flee Rate:</th>
+            <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+              <table width="100%">
+                <tr>
+                  <td id="Selected_Pokemon_CaptureRate" width="49%" align="center"></td>
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_FleeRate" align="center"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" style="margin-top:.25em; white-space:nowrap;">
+          <tr>
+            <th style="border-bottom:2px solid black;">Strong Against</th>
+            <td width="1em"></td>
+            <th style="border-bottom:2px solid black;">Weak Against</th>
+          </tr>
+          <tr>
+            <td id="Selected_Pokemon_Strengths" valign="top"></td>
+            <td></td>
+            <td id="Selected_Pokemon_Weaknesses" valign="top"></td>
+          </tr>
+        </table>
+      </div>
+    </div><script>WriteFooter();</script></body>
+</html>
