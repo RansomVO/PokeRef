@@ -237,7 +237,7 @@ function GetFields() {
     SpecialBox_PinappBerries_Qty = document.getElementById('SpecialBox_PinappBerries_Qty');
     SpecialBox_GoldenBerries_Qty = document.getElementById('SpecialBox_GoldenBerries_Qty');
 
-    GreatBox_Price = document.getElementById('Great_Price');
+    GreatBox_Price = document.getElementById('GreatBox_Price');
     GreatBox_Total = document.getElementById('GreatBox_Total');
     GreatBox_Discount = document.getElementById('GreatBox_Discount');
     GreatBox_PremiumRaidPass_Qty = document.getElementById('GreatBox_PremiumRaidPass_Qty');

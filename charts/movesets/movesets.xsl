@@ -79,7 +79,6 @@
             </xsl:otherwise>
           </xsl:choose>
         </h1>
-
         <p class="NOTE">
           <b>NOTE</b>: Last Updated <xsl:value-of select="$GameMaster_TimeStamp" />
         </p>
@@ -162,6 +161,9 @@
       <xsl:text>Selection Criteria</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'MOVESET_CRITERIA'" />
+      </xsl:call-template>
+      <xsl:call-template name="OutputResetButton">
+        <xsl:with-param name="Callback" select="'OnResetCriteriaClicked();'" />
       </xsl:call-template>
     </h2>
     <br />

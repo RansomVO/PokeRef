@@ -73,15 +73,17 @@ function SetCollapseState(state, collapser, collapsee) {
         collapsee.style.display = 'none';
 
         // Update state.
-        collapser.style.cssText = 'transform: rotate(90deg);';
+        collapser.style.transform = 'rotateX(180deg)';
         collapser.value = StatusUp;
+        collapser.title = 'Show';
     } else {
         // Show collapsee
         collapsee.style.display = 'block';
 
         // Update state.
-        collapser.style.cssText = 'transform: rotate(-90deg);';
+        collapser.style.transform = 'none';
         collapser.value = StatusDown;
+        collapser.title = 'Hide';
     }
 }
 
@@ -294,6 +296,12 @@ function PokeTypeMatchesFilter(poketypeCriteria, poketypeCollection) {
     return all;
 }
 
+// Clears the selection and reverts to the default.
+function ClearPokeTypeSelector() {
+    ClearCookieSettings(PokeTypeCookieSettings);
+    ApplyPokeTypeCookies();
+}
+
 // #endregion
 
 // ============================================================================
@@ -402,7 +410,7 @@ function OnWeatherSelectionChanged() {
         weatherCriteria['Sunny'] = Weather_Sunny_Check.checked;
         weatherCriteria['Windy'] = Weather_Windy_Check.checked;
         weatherCriteria['Cloudy'] = Weather_Cloudy_Check.checked;
-        weatherCriteria['PartlyCloudy'] = Weather_PartlyCloudy_Check.checked;
+        weatherCriteria['Partly Cloudy'] = Weather_PartlyCloudy_Check.checked;
         weatherCriteria['Fog'] = Weather_Fog_Check.checked;
         weatherCriteria['Rainy'] = Weather_Rainy_Check.checked;
         weatherCriteria['Snow'] = Weather_Snow_Check.checked;
@@ -441,6 +449,12 @@ function WeatherMatchesFilter(weatherCriteria, weatherCollection) {
     return all;
 }
 
+// Clears the selection and reverts to the default.
+function ClearWeatherSelector() {
+    ClearCookieSettings(WeatherCookieSettings);
+    ApplyWeatherCookies();
+}
+
 // #endregion
 
 // ============================================================================
@@ -456,6 +470,13 @@ var FilterNameIDCookieSettings = {
 function ApplyFilterNameIDCookies() {
     ApplyCookieSettings(FilterNameIDCookieSettings);
 }
+
+// Clears the selection and reverts to the default.
+function ClearFilterNameID() {
+    ClearCookieSettings(FilterNameIDCookieSettings);
+    ApplyFilterNameIDCookies();
+}
+
 // #endregion
 
 function InitFilterNameIDSelector() {

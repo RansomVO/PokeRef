@@ -24,7 +24,7 @@ var CookieSettings = {
 };
 
 // Read the Cookie and apply it to the fields.
-function ApplyCookies() {
+function ApplyCookie() {
     ApplyCookieSettings(CookieSettings);
     OnFilterCriteriaChanged();
 }
@@ -40,10 +40,7 @@ function ApplyCookies() {
 window.onload = function () {
     try {
         GetFields();
-        ApplyCookies();
-
-        document.getElementById('Loading').classList.add('DIV_HIDDEN');
-        document.getElementById('Loaded').classList.remove('DIV_HIDDEN');
+        ApplyCookie();
     } catch (err) {
         ShowError(err);
     }
@@ -144,3 +141,15 @@ function OnPokemonNameIDChanged(filter) {
     filterNameID = filter;
     OnFilterCriteriaChanged();
 }
+
+// Called when Criteria's Reset button is selected.
+function OnResetCriteriaClicked() {
+    try {
+        ClearCookieSettings(CookieSettings);
+        ApplyCookie();
+        ClearFilterNameID();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+

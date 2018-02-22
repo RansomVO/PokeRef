@@ -156,10 +156,11 @@
             <td>
               <table id="shopprices" comment="Shop Prices and Values" border="1">
                 <tr>
-                  <th colspan="4">
-                    Shop Prices and Values <div style="float:right; text-align:right;">
-                      <button type="button" onclick="Reset(true);">Reset</button>
-                    </div>
+                  <th colspan="4" style="font-size:2em;">
+                    Shop Prices and Values
+                    <xsl:call-template name="OutputResetButton">
+                      <xsl:with-param name="Callback" select="'Reset(true);'" />
+                    </xsl:call-template>
                   </th>
                 </tr>
                 <tr>

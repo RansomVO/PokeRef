@@ -75,140 +75,150 @@
           <br /><span class="NOTE">(Pokemon that are not yet released are greyed out.)</span>
         </p>
 
-        <!-- ======================================================================================== -->
-        <!-- #region The box to contain data from selected pokemon -->
-        <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
-          <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER">
-            <span class="BUTTON" style="float: right;" onclick="OnClosePopup();">
-              <xsl:value-of select="$times" disable-output-escaping="yes" />
-            </span>
-            <span id="Selected_Pokemon_Title" class="POPUP_DIALOG_HEADER_TITLE" />
-          </div>
-
-          <div style="padding:.25em;">
-            <table  width="100%" style="white-space:nowrap;">
-              <!-- This stupid row is so the stupid columns will be as narrow as possible. -->
-              <tr>
-                <th style="width:1px;"/>
-                <th style="width:1px;"/>
-                <th style="width:1px;"/>
-                <th style="width:1px;"/>
-              </tr>
-              <tr>
-                <td rowspan="4" id="Selected_Pokemon" class="POPUP_CELL" />
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Generation:</th>
-                <td id="Selected_Pokemon_Generation" class="POPUP_CELL DATA_BOX NUMERIC" />
-              </tr>
-              <tr>
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Candies:</th>
-                <td id="Selected_Pokemon_Family" class="POPUP_CELL DATA_BOX" />
-              </tr>
-              <tr>
-                <td colspan="2" class="POPUP_CELL LABEL_BOX">
-                  <xsl:value-of select="concat($Gender_Male, $nbsp, ':', $nbsp, $Gender_Female)" disable-output-escaping="yes" />
-                </td>
-                <td id="Selected_Pokemon_GenderRatio" class="POPUP_CELL DATA_BOX" align="center" />
-              </tr>
-              <tr>
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Shiny Available:</th>
-                <td id="Selected_Pokemon_Shiny" class="POPUP_CELL DATA_BOX" />
-              </tr>
-              <tr />
-              <tr>
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Availability:</th>
-                <td colspan="2" id="Selected_Pokemon_Availability" class="POPUP_CELL DATA_BOX" />
-              </tr>
-              <tr>
-                <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Type(s):</th>
-                <td colspan="2" id="Selected_Pokemon_Types" class="POPUP_CELL DATA_BOX" />
-              </tr>
-              <tr>
-                <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Boost(s):</th>
-                <td colspan="2" id="Selected_Pokemon_Boosts" class="POPUP_CELL DATA_BOX" />
-              </tr>
-              <tr />
-              <tr>
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Buddy Km for Candy:</th>
-                <td colspan="2" id="Selected_Pokemon_BuddyKM" class="POPUP_CELL DATA_BOX NUMERIC" />
-              </tr>
-              <tr>
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Max CP/HP:</th>
-                <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
-                  <table width="100%">
-                    <tr>
-                      <td id="Selected_Pokemon_Max_CP" width="49%" align="center" />
-                      <td width="2%" align="center">/</td>
-                      <td id="Selected_Pokemon_Max_HP" align="center" />
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr />
-              <tr>
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Base ATK/DEF/STA:</th>
-                <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
-                  <table width="100%">
-                    <tr>
-                      <td id="Selected_Pokemon_BaseIV_Attack" width="32%" align="center" />
-                      <td width="2%" align="center">/</td>
-                      <td id="Selected_Pokemon_BaseIV_Defense" width="32%" align="center" />
-                      <td width="2%" align="center">/</td>
-                      <td id="Selected_Pokemon_BaseIV_Stamina"  width="32%" align="center" />
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <th colspan="2" class="POPUP_CELL LABEL_BOX">Base Capture/Flee Rate:</th>
-                <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
-                  <table width="100%">
-                    <tr>
-                      <td id="Selected_Pokemon_CaptureRate" width="49%" align="center" />
-                      <td width="2%" align="center">/</td>
-                      <td id="Selected_Pokemon_FleeRate" align="center" />
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-
-            <table width="100%" style="margin-top:.25em; white-space:nowrap;">
-              <tr>
-                <th style="border-bottom:2px solid black;">Strong Against</th>
-                <td width="1em" />
-                <th style="border-bottom:2px solid black;">Weak Against</th>
-              </tr>
-              <tr>
-                <td id="Selected_Pokemon_Strengths" valign="top" />
-                <td />
-                <td id="Selected_Pokemon_Weaknesses" valign="top" />
-              </tr>
-            </table>
-          </div>
-        </div>
-
-        <!-- #endregion  -->
-        <!-- ======================================================================================== -->
-
-        <br />
-        <xsl:call-template name="CreateCriteria" />
 
         <br />
         <hr />
-        <xsl:call-template name="CreateKey" />
+        <xsl:call-template name="LoadingNotice">
+          <xsl:with-param name="LoadedContent" select="'POKECHART_Content'" />
+        </xsl:call-template>
 
-        <xsl:apply-templates select="PokemonStats[Generation/ID = 1]" />
-        <xsl:apply-templates select="PokemonStats[Generation/ID = 2]" />
-        <xsl:apply-templates select="PokemonStats[Generation/ID = 3]" />
-        <xsl:apply-templates select="PokemonStats[Generation/ID = 4]" />
-        <xsl:apply-templates select="PokemonStats[Generation/ID = 5]" />
-        <xsl:apply-templates select="PokemonStats[Generation/ID = 6]" />
-        <xsl:apply-templates select="PokemonStats[Generation/ID = 7]" />
+        <!-- Leave this hidden until everything is loaded and .js has applied it. -->
+        <div id="POKECHART_Content" class="DIV_HIDDEN">
+          <xsl:call-template name="CreateCriteria" />
+
+          <br />
+          <hr />
+          <xsl:call-template name="CreateKey" />
+
+          <xsl:apply-templates select="PokemonStats[Generation/ID = 1]" />
+          <xsl:apply-templates select="PokemonStats[Generation/ID = 2]" />
+          <xsl:apply-templates select="PokemonStats[Generation/ID = 3]" />
+          <xsl:apply-templates select="PokemonStats[Generation/ID = 4]" />
+          <xsl:apply-templates select="PokemonStats[Generation/ID = 5]" />
+          <xsl:apply-templates select="PokemonStats[Generation/ID = 6]" />
+          <xsl:apply-templates select="PokemonStats[Generation/ID = 7]" />
+        </div>
+        
+        <xsl:call-template name="PokemonDialog" />
 
         <!-- This script is defined in /js/global.js -->
         <script>WriteFooter();</script>
       </body>
     </html>
+  </xsl:template>
+
+  <!-- The box to contain data from selected pokemon -->
+  <xsl:template name="PokemonDialog">
+    <!-- #region The box to contain data from selected pokemon -->
+    <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
+      <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER">
+        <span class="BUTTON" style="float: right;" onclick="OnClosePopup();">
+          <xsl:value-of select="$times" disable-output-escaping="yes" />
+        </span>
+        <span id="Selected_Pokemon_Title" class="POPUP_DIALOG_HEADER_TITLE" />
+      </div>
+
+      <div style="padding:.25em;">
+        <table  width="100%" style="white-space:nowrap;">
+          <!-- This stupid row is so the stupid columns will be as narrow as possible. -->
+          <tr>
+            <th style="width:1px;"/>
+            <th style="width:1px;"/>
+            <th style="width:1px;"/>
+            <th style="width:1px;"/>
+          </tr>
+          <tr>
+            <td rowspan="4" id="Selected_Pokemon" class="POPUP_CELL" />
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Generation:</th>
+            <td id="Selected_Pokemon_Generation" class="POPUP_CELL DATA_BOX NUMERIC" />
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Candies:</th>
+            <td id="Selected_Pokemon_Family" class="POPUP_CELL DATA_BOX" />
+          </tr>
+          <tr>
+            <td colspan="2" class="POPUP_CELL LABEL_BOX">
+              <xsl:value-of select="concat($Gender_Male, $nbsp, ':', $nbsp, $Gender_Female)" disable-output-escaping="yes" />
+            </td>
+            <td id="Selected_Pokemon_GenderRatio" class="POPUP_CELL DATA_BOX" align="center" />
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Shiny Available:</th>
+            <td id="Selected_Pokemon_Shiny" class="POPUP_CELL DATA_BOX" />
+          </tr>
+          <tr />
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Availability:</th>
+            <td colspan="2" id="Selected_Pokemon_Availability" class="POPUP_CELL DATA_BOX" />
+          </tr>
+          <tr>
+            <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Type(s):</th>
+            <td colspan="2" id="Selected_Pokemon_Types" class="POPUP_CELL DATA_BOX" />
+          </tr>
+          <tr>
+            <th colspan="2" valign="top" class="POPUP_CELL LABEL_BOX">Boost(s):</th>
+            <td colspan="2" id="Selected_Pokemon_Boosts" class="POPUP_CELL DATA_BOX" />
+          </tr>
+          <tr />
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Buddy Km for Candy:</th>
+            <td colspan="2" id="Selected_Pokemon_BuddyKM" class="POPUP_CELL DATA_BOX NUMERIC" />
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Max CP/HP:</th>
+            <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+              <table width="100%">
+                <tr>
+                  <td id="Selected_Pokemon_Max_CP" width="49%" align="center" />
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_Max_HP" align="center" />
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr />
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Base ATK/DEF/STA:</th>
+            <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+              <table width="100%">
+                <tr>
+                  <td id="Selected_Pokemon_BaseIV_Attack" width="32%" align="center" />
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_BaseIV_Defense" width="32%" align="center" />
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_BaseIV_Stamina"  width="32%" align="center" />
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2" class="POPUP_CELL LABEL_BOX">Base Capture/Flee Rate:</th>
+            <td colspan="2" class="POPUP_CELL DATA_BOX NUMERIC">
+              <table width="100%">
+                <tr>
+                  <td id="Selected_Pokemon_CaptureRate" width="49%" align="center" />
+                  <td width="2%" align="center">/</td>
+                  <td id="Selected_Pokemon_FleeRate" align="center" />
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" style="margin-top:.25em; white-space:nowrap;">
+          <tr>
+            <th style="border-bottom:2px solid black;">Strong Against</th>
+            <td width="1em" />
+            <th style="border-bottom:2px solid black;">Weak Against</th>
+          </tr>
+          <tr>
+            <td id="Selected_Pokemon_Strengths" valign="top" />
+            <td />
+            <td id="Selected_Pokemon_Weaknesses" valign="top" />
+          </tr>
+        </table>
+      </div>
+    </div>
   </xsl:template>
 
   <!-- Template to write the Selection Criteria. -->
@@ -218,8 +228,10 @@
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'POKEMON_CRITERIA'" />
       </xsl:call-template>
+      <xsl:call-template name="OutputResetButton">
+        <xsl:with-param name="Callback" select="'OnResetCriteriaClicked();'" />
+      </xsl:call-template>
     </h2>
-    <br />
     <div id="POKEMON_CRITERIA">
       <table border="1" class="KEY_TABLE">
         <tr>
@@ -277,17 +289,10 @@
     </div>
   </xsl:template>
 
-
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
     <xsl:call-template name="PokemonImageKey" />
   </xsl:template>
-
-  <!-- Template to create the headers for the table -->
-  <xsl:template name="CreateTableHeaders">
-  </xsl:template>
-
-
 
   <xsl:template match="PokemonStats">
     <br />

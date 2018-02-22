@@ -11,7 +11,7 @@
   <!-- ************************************************************************************************************************ -->
 
   <!-- ************************************************************************************************************************ -->
-  <!-- #region Type Selection Control -->
+  <!-- #region PokeType Selection Control -->
 
   <xsl:template name="OutputTypeSelection">
     <xsl:param name="CallbackName" />
@@ -27,7 +27,7 @@
         <th colspan="2" width="0">
           <xsl:value-of select="$Title" disable-output-escaping="yes" />
           <br />
-          <input id="CONTROLS_PokeType_All_Check" type="checkbox" onchange="OnToggleAllPokeTypes();" />
+          <input id="CONTROLS_PokeType_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllPokeTypes();" />
         </th>
       </tr>
       <tr>
@@ -112,13 +112,12 @@
             <xsl:with-param name="Id" select="'CONTROLS_PokeType_AnyOrAll_Slider'" />
             <xsl:with-param name="Callback" select="'OnAnyOrAllTypeSliderChanged(this)'" />
             <xsl:with-param name="Title" select="$SliderLabel" />
-            <xsl:with-param name="OffLabel" select="Any" />
-            <xsl:with-param name="OnLabel" select="All" />
+            <xsl:with-param name="OffLabel" select="'Any'" />
+            <xsl:with-param name="OnLabel" select="'All'" />
             <xsl:with-param name="Help" select="$SliderHelp" />
           </xsl:call-template>
         </td>
       </tr>
-
     </table>
   </xsl:template>
 
@@ -155,7 +154,7 @@
         <th>
           <xsl:value-of select="$Title" disable-output-escaping="yes" />
           <br />
-          <input id="CONTROLS_Weather_All_Check" type="checkbox" onchange="OnToggleAllWeather();" />
+          <input id="CONTROLS_Weather_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllWeather();" />
         </th>
       </tr>
       <tr>
@@ -363,20 +362,36 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
+  <!-- #region Reset Button Control -->
+  <xsl:template name="OutputResetButton">
+    <xsl:param name="Callback" />
+
+    <div style="display:inline-block; vertical-align:middle;">
+      <button type="button" style="font-weight:bold; margin-bottom:.2em; margin-top:.2em;" title="Reset">
+        <xsl:attribute name="onclick">
+          <xsl:value-of select="$Callback" />
+        </xsl:attribute>
+        <xsl:text>&#x21ba;</xsl:text>
+      </button>
+    </div>
+  </xsl:template>
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
   <!-- #region Collapser template -->
   <!-- ************************************************************************************************************************ -->
 
   <xsl:template name="Collapser">
     <xsl:param name="CollapseeID" />
-
     <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-    <div style="display:inline-block; cursor:pointer;">
-      <span class="COLLAPSER BUTTON" style="transform:rotate(-90deg);">
+    <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+      <div class="COLLAPSER">
         <xsl:attribute name="id">
           <xsl:value-of select="concat($CollapseeID, '_COLLAPSER')" />
         </xsl:attribute>
-        <xsl:text>&#9001;</xsl:text>
-      </span>
+        <xsl:text>&#709;</xsl:text>
+        <!--<xsl:text>&#x2335;</xsl:text>-->
+      </div>
     </div>
   </xsl:template>
 

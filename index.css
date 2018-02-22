@@ -83,10 +83,6 @@ h1, h2, h3, h4 {
         background-color: silver;
     }
 
-.COLLAPSER {
-    /* Currently just used for look-up. */
-}
-
 .NUMERIC {
     text-align: right;
 }
@@ -419,6 +415,23 @@ h1, h2, h3, h4 {
 
 /* ------------------------------------------------------------------------------------------ */
 /*#region Classes for items managed in controls.js */
+.COLLAPSER {
+    /* This class is also used to find the collapsers and initialize them. */
+    display: inline-block;
+    padding-left: .25em;
+    padding-right: .25em;
+    margin-top: .2em;
+    cursor: context-menu;
+    /* The strokes on this char are extremely thin, so this is to make it more visible. */
+    font-weight: 900;
+    text-shadow: 0px 2px 2px black;
+}
+
+    .COLLAPSER:hover {
+        color: white;
+        background-color: silver;
+    }
+
 .CONTROLS_SLIDER_BUTTON {
     position: absolute;
     cursor: pointer;
@@ -468,7 +481,7 @@ input:checked + .CONTROLS_SLIDER_BUTTON {
     color: blue;
     background: white;
     text-align: center;
-    cursor:help;
+    cursor: help;
 }
 
     .CONTROLS_HELP:hover {

@@ -45,13 +45,7 @@
     <WebContent Include="favicon.ico" />
     <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
-    <FixOutputFile Include="charts\pokechart\index.html" />
-    <WebContent Include="charts\pokechart\index.css" />
-    <FixOutputFile Include="charts\pokechart\_sectionname.txt" />
-    <FixOutputFile Include="charts\pokechart\_linkslist.html" />
     <FixOutputFile Include="error404.html" />
-    <Content Include="tech\formulas\cphp.html" />
-    <FixOutputFile Include="tech\formulas\index.css" />
     <Content Include="Web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -83,13 +77,13 @@
     <FixOutputFile Include="_\index.js" />
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
-  <!-- /_data.latest -->
+  <!-- /_datafiles.manual -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles.manual\eggs.xml" />
     <FixIntermediateFile Include="_datafiles.manual\raidbosses.current.xml" />
     <FixIntermediateFile Include="_datafiles.manual\raidbosses.legacy.xml" />
   </ItemGroup>
-  <!-- /_datafiles (moves/movesets) -->
+  <!-- /_datafiles (moves and charts/movesets) -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles\moves.charged.xml" />
     <FixIntermediateFile Include="_datafiles\moves.fast.xml" />
@@ -299,6 +293,13 @@
     <FixOutputFile Include="charts\movesets\_linkslist.html" />
     <FixOutputFile Include="charts\movesets\_sectionname.txt" />
   </ItemGroup>
+  <!-- /charts/pokechart -->
+  <ItemGroup>
+    <FixOutputFile Include="charts\pokechart\index.html" />
+    <WebContent Include="charts\pokechart\index.css" />
+    <FixOutputFile Include="charts\pokechart\_sectionname.txt" />
+    <FixOutputFile Include="charts\pokechart\_linkslist.html" />
+  </ItemGroup>
   <!-- /charts/raidboss -->
   <ItemGroup>
     <FixOutputFile Include="charts\raidboss\_sectionname.txt" />
@@ -340,8 +341,8 @@
   <!-- /tech -->
   <ItemGroup>
     <FixOutputFile Include="tech\_sectionname.txt" />
-    <WebContent Include="charts\images\notveryeffective.png" />
-    <WebContent Include="charts\images\supereffective.png" />
+    <FixOutputFile Include="tech\formulas\cphp.html" />
+    <FixOutputFile Include="tech\formulas\index.css" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER -->
   <ItemGroup>

@@ -99,6 +99,27 @@
       <DependentUpon>evolutions.xsl</DependentUpon>
     </FixOutputFile>
 
+    <FixIntermediateFile Include="charts\effectiveness.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\effectiveness.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>effectiveness.xsl</DependentUpon>
+      <Dependencies>
+        js\global.js;
+        js\controls.js;
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        _datafiles\effectiveness.xml
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>effectiveness.html</OutputFileName>
+    </XslTransform>
+  </ItemGroup>
+
+  <!-- Charts/PokeChart -->
+  <ItemGroup>
     <FixIntermediateFile Include="charts\pokechart\pokechart.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
@@ -116,6 +137,9 @@
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen1.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.gen1.html</OutputFileName>
     </XslTransform>
@@ -133,6 +157,9 @@
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen2.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.gen2.html</OutputFileName>
     </XslTransform>
@@ -150,6 +177,9 @@
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen3.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.gen3.html</OutputFileName>
     </XslTransform>
@@ -167,6 +197,9 @@
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen4.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.gen4.html</OutputFileName>
     </XslTransform>
@@ -184,6 +217,9 @@
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen5.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.gen5.html</OutputFileName>
     </XslTransform>
@@ -201,6 +237,9 @@
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen6.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.gen6.html</OutputFileName>
     </XslTransform>
@@ -218,6 +257,9 @@
         _datafiles\mappings.xml;
         _datafiles\pokestats.gen7.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.gen7.html</OutputFileName>
     </XslTransform>
@@ -241,6 +283,9 @@
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
         charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
       </Dependencies>
       <OutputFileName>pokechart.all.html</OutputFileName>
     </XslTransform>
@@ -1284,19 +1329,6 @@
     </FixOutputFile>
   </ItemGroup>
 
-  <!-- Charts/Effectiveness -->
-  <ItemGroup>
-    <FixIntermediateFile Include="charts\effectiveness.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform Include="charts\effectiveness.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>effectiveness.xsl</DependentUpon>
-      <Dependencies>_datafiles\effectiveness.xml</Dependencies>
-      <OutputFileName>effectiveness.html</OutputFileName>
-    </XslTransform>
-  </ItemGroup>
-
   <!-- Tech -->
   <ItemGroup>
     <FixIntermediateFile Include="tech\index.xsl">
@@ -1479,6 +1511,9 @@
       <Dependencies>
         tools\shoppingboxes.js;
         js\global.js;
+        js\controls.js;
+        xsl\global.xsl;
+        xsl\controls.xsl;
         tools\index.css;
         index.css;
       </Dependencies>

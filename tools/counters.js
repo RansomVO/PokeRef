@@ -29,7 +29,7 @@ function ApplyCookie() {
 //          the window.onnload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
     try {
-        ApplyCookies();
+        ApplyCookie();
     } catch (err) {
         ShowError(err);
     }

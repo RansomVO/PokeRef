@@ -79,11 +79,43 @@ if (!String.prototype.endsWith) {
     };
 }
 
-// TODO QZX: This is not supported in IE 11.
-//  Do we change it, or do we require IE 12?
+// Method to trim specified strings from the beginning and end of the string.
 if (!String.prototype.Trim) {
-    // If first param is boolean then it says whether to trim white-space or not.
-    String.prototype.Trim = function (trimWhiteSpace, ...toTrim) {
+    // NOTE: Don't be fooled because there is only one parameter specified. You still pass in the strings you want trimmed.
+    //  E.G. myString.Trim(yes, '-', '&nbsp;', '"');
+    String.prototype.Trim = function (trimWhiteSpace) {
+        var trimWhiteSpace = false;
+        var result = this;
+
+        // If first param is boolean then it says whether to trim white-space or not.
+        var start = 0;
+        if (typeof arguments[0] === 'boolean') {
+            result = result.trim();
+            start++;
+        }
+
+        var done = false;
+        while (!done) {
+            done = true;
+            for (var i = arguments.length - 1; i >= start; i--) {
+                if (result.startsWith(arguments[i])) {
+                    result = result.substring(arguments[i].length);
+                    done = false;
+                }
+                if (result.endsWith(arguments[i])) {
+                    result = result.substring(0, result.length - arguments[i].length);
+                    done = false;
+                }
+            }
+        }
+
+        return result;
+    };
+
+
+    /*
+        // TODO QZX: "..." is not supported in IE 11. When we decide IE 11 is no longer supported, replace existing code with this.
+        String.prototype.Trim = function (trimWhiteSpace, ...toTrim) {
         var result = this;
         if (trimWhiteSpace) {
             result = result.trim();
@@ -106,6 +138,7 @@ if (!String.prototype.Trim) {
 
         return result;
     };
+    */
 }
 
 // #endregion

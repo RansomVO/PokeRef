@@ -212,4 +212,17 @@ function OnPokemonNameIDChanged(filter) {
     OnFilterCriteriaChanged();
 }
 
+// Called when Criteria's Reset button is selected.
+function OnResetCriteriaClicked() {
+    try {
+        ClearCookieSettings(CookieSettings);
+        ApplyCookie();
+        ClearPokeTypeSelector();
+        ClearWeatherSelector();
+        ClearFilterNameID();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
 // #endregion
