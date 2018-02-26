@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:exslt="http://exslt.org/common"
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"
                 xmlns:pokeref="urn:pokeref"
 >
+  <xsl:output method="html" encoding="utf-8" omit-xml-declaration="yes" standalone="no" indent="yes" />
   <xsl:include href="/xsl/global.xsl" />
 
   <xsl:template match="Root">
     <html lang="en-us" manifest="/pokeref.appcache">
       <head>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- This is to make the font size consistent on mobile. -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -209,8 +212,12 @@
       <xsl:apply-templates select="Article" />
     </div>
     <!-- Need to do </div> by hand since it is opened via the script above. -->
-    <xsl:value-of select="concat($lt, '/div', $gt)" disable-output-escaping="yes" />
-
+    <script type="text/javascript">
+      <![CDATA[
+          document.write('</div>');
+      ]]>
+    </script>
+    
     <br class="FLOAT_END" />
     <hr />
   </xsl:template>
@@ -222,9 +229,9 @@
     <div class="NEWS_HEADLINE">
       <xsl:copy-of select="Title/node()" />
     </div>
-    <p>
+    <div>
       <xsl:copy-of select="Text/node()" />
-    </p>
+    </div>
     <xsl:if test="Note != ''">
       <p class="NOTE">
         <xsl:copy-of select="Note/node()" />

@@ -3,7 +3,7 @@
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml"><!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
   <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss.zapdos.xml">
 ]>
-<?xml-stylesheet type="text/xsl" href="raidboss.xsl"?>
+<?xml-stylesheet type="text/xsl" href="raidboss.xsl" output="raidboss.zapdos.html"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Settings; 
   &Mappings;

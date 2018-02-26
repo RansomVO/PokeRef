@@ -37,19 +37,26 @@
     <xsl:param name="Settings" />
 
     <xsl:variable name="Name" select="." />
-    <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name = $Name]" mode="Cell">
-      <!-- Add @href to the Settings. -->
-      <xsl:with-param name="Settings">
-        <xsl:apply-templates select="exslt:node-set($Settings)/*" mode="AddSetting">
-          <xsl:with-param name="Setting" select="'href'" />
-          <xsl:with-param name="Value">
-            <xsl:text>/charts/raidboss/raidboss.</xsl:text>
-            <xsl:value-of select="pokeref:ToLower(.)" />
-            <xsl:text>.html</xsl:text>
+    <xsl:choose>
+      <xsl:when test="$Name = ''">
+        <td style="border:none;"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name = $Name]" mode="Cell">
+          <!-- Add @href to the Settings. -->
+          <xsl:with-param name="Settings">
+            <xsl:apply-templates select="exslt:node-set($Settings)/*" mode="AddSetting">
+              <xsl:with-param name="Setting" select="'href'" />
+              <xsl:with-param name="Value">
+                <xsl:text>/charts/raidboss/raidboss.</xsl:text>
+                <xsl:value-of select="pokeref:ToLower(.)" />
+                <xsl:text>.html</xsl:text>
+              </xsl:with-param>
+            </xsl:apply-templates>
           </xsl:with-param>
         </xsl:apply-templates>
-      </xsl:with-param>
-    </xsl:apply-templates>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>

@@ -26013,7 +26013,7 @@
 		<Damage>
 			<DPS>18.2389937106918</DPS>
 			<TrueDPS>32.46</TrueDPS>
-			<PercentOfMax>0.93</PercentOfMax>
+			<PercentOfMax>0.96</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26034,7 +26034,7 @@
 		<Damage>
 			<DPS>19.4117647058824</DPS>
 			<TrueDPS>31.36</TrueDPS>
-			<PercentOfMax>0.9</PercentOfMax>
+			<PercentOfMax>0.93</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26055,27 +26055,6 @@
 		<Damage>
 			<DPS>19.047619047619</DPS>
 			<TrueDPS>33.72</TrueDPS>
-			<PercentOfMax>0.96</PercentOfMax>
-		</Damage>
-	</MoveSet>
-	<MoveSet>
-		<Pokemon>
-			<ID>149</ID>
-			<Name>Dragonite</Name>
-		</Pokemon>
-		<FastAttack>
-			<Move>Dragon Tail</Move>
-		</FastAttack>
-		<ChargedAttack>
-			<Move>Draco Meteor</Move>
-		</ChargedAttack>
-		<STAB>
-			<Fast>true</Fast>
-			<Charged>true</Charged>
-		</STAB>
-		<Damage>
-			<DPS>19.6428571428571</DPS>
-			<TrueDPS>34.83</TrueDPS>
 			<PercentOfMax>1</PercentOfMax>
 		</Damage>
 	</MoveSet>
@@ -26097,7 +26076,7 @@
 		<Damage>
 			<DPS>18.2208588957055</DPS>
 			<TrueDPS>28.47</TrueDPS>
-			<PercentOfMax>0.81</PercentOfMax>
+			<PercentOfMax>0.84</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26118,7 +26097,7 @@
 		<Damage>
 			<DPS>19.367816091954</DPS>
 			<TrueDPS>27.65</TrueDPS>
-			<PercentOfMax>0.79</PercentOfMax>
+			<PercentOfMax>0.81</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26139,28 +26118,7 @@
 		<Damage>
 			<DPS>18.8288288288288</DPS>
 			<TrueDPS>30.28</TrueDPS>
-			<PercentOfMax>0.86</PercentOfMax>
-		</Damage>
-	</MoveSet>
-	<MoveSet>
-		<Pokemon>
-			<ID>149</ID>
-			<Name>Dragonite</Name>
-		</Pokemon>
-		<FastAttack>
-			<Move>Steel Wing</Move>
-		</FastAttack>
-		<ChargedAttack>
-			<Move>Draco Meteor</Move>
-		</ChargedAttack>
-		<STAB>
-			<Fast>false</Fast>
-			<Charged>true</Charged>
-		</STAB>
-		<Damage>
-			<DPS>19.593023255814</DPS>
-			<TrueDPS>30.99</TrueDPS>
-			<PercentOfMax>0.88</PercentOfMax>
+			<PercentOfMax>0.89</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26182,7 +26140,7 @@
 		<Damage>
 			<DPS>17.1052631578947</DPS>
 			<TrueDPS>30.73</TrueDPS>
-			<PercentOfMax>0.88</PercentOfMax>
+			<PercentOfMax>0.91</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26204,7 +26162,7 @@
 		<Damage>
 			<DPS>18.4049079754601</DPS>
 			<TrueDPS>29.7</TrueDPS>
-			<PercentOfMax>0.85</PercentOfMax>
+			<PercentOfMax>0.88</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26226,7 +26184,7 @@
 		<Damage>
 			<DPS>18.0769230769231</DPS>
 			<TrueDPS>32.22</TrueDPS>
-			<PercentOfMax>0.92</PercentOfMax>
+			<PercentOfMax>0.95</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26235,20 +26193,20 @@
 			<Name>Dragonite</Name>
 		</Pokemon>
 		<FastAttack>
-			<Move>Dragon Breath</Move>
-			<Legacy>true</Legacy>
+			<Move>Dragon Tail</Move>
 		</FastAttack>
 		<ChargedAttack>
 			<Move>Draco Meteor</Move>
+			<Legacy>true</Legacy>
 		</ChargedAttack>
 		<STAB>
 			<Fast>true</Fast>
 			<Charged>true</Charged>
 		</STAB>
 		<Damage>
-			<DPS>18.6335403726708</DPS>
-			<TrueDPS>33.3</TrueDPS>
-			<PercentOfMax>0.95</PercentOfMax>
+			<DPS>19.6428571428571</DPS>
+			<TrueDPS>34.83</TrueDPS>
+			<PercentOfMax>1.03</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26270,7 +26228,7 @@
 		<Damage>
 			<DPS>17.6470588235294</DPS>
 			<TrueDPS>31.28</TrueDPS>
-			<PercentOfMax>0.89</PercentOfMax>
+			<PercentOfMax>0.92</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26292,6 +26250,28 @@
 		<Damage>
 			<DPS>18.0327868852459</DPS>
 			<TrueDPS>31.97</TrueDPS>
+			<PercentOfMax>0.94</PercentOfMax>
+		</Damage>
+	</MoveSet>
+	<MoveSet>
+		<Pokemon>
+			<ID>149</ID>
+			<Name>Dragonite</Name>
+		</Pokemon>
+		<FastAttack>
+			<Move>Steel Wing</Move>
+		</FastAttack>
+		<ChargedAttack>
+			<Move>Draco Meteor</Move>
+			<Legacy>true</Legacy>
+		</ChargedAttack>
+		<STAB>
+			<Fast>false</Fast>
+			<Charged>true</Charged>
+		</STAB>
+		<Damage>
+			<DPS>19.593023255814</DPS>
+			<TrueDPS>30.99</TrueDPS>
 			<PercentOfMax>0.91</PercentOfMax>
 		</Damage>
 	</MoveSet>
@@ -26314,7 +26294,7 @@
 		<Damage>
 			<DPS>17.5</DPS>
 			<TrueDPS>27.88</TrueDPS>
-			<PercentOfMax>0.8</PercentOfMax>
+			<PercentOfMax>0.82</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26336,7 +26316,30 @@
 		<Damage>
 			<DPS>17.8461538461538</DPS>
 			<TrueDPS>28.16</TrueDPS>
-			<PercentOfMax>0.8</PercentOfMax>
+			<PercentOfMax>0.83</PercentOfMax>
+		</Damage>
+	</MoveSet>
+	<MoveSet>
+		<Pokemon>
+			<ID>149</ID>
+			<Name>Dragonite</Name>
+		</Pokemon>
+		<FastAttack>
+			<Move>Dragon Breath</Move>
+			<Legacy>true</Legacy>
+		</FastAttack>
+		<ChargedAttack>
+			<Move>Draco Meteor</Move>
+			<Legacy>true</Legacy>
+		</ChargedAttack>
+		<STAB>
+			<Fast>true</Fast>
+			<Charged>true</Charged>
+		</STAB>
+		<Damage>
+			<DPS>18.6335403726708</DPS>
+			<TrueDPS>33.3</TrueDPS>
+			<PercentOfMax>0.98</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26359,7 +26362,7 @@
 		<Damage>
 			<DPS>16.6336633663366</DPS>
 			<TrueDPS>29.71</TrueDPS>
-			<PercentOfMax>0.85</PercentOfMax>
+			<PercentOfMax>0.88</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>
@@ -26382,7 +26385,7 @@
 		<Damage>
 			<DPS>16.7741935483871</DPS>
 			<TrueDPS>30</TrueDPS>
-			<PercentOfMax>0.86</PercentOfMax>
+			<PercentOfMax>0.88</PercentOfMax>
 		</Damage>
 	</MoveSet>
 	<MoveSet>

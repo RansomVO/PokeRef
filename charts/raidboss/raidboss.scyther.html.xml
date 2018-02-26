@@ -4,7 +4,7 @@
   <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
   <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss.scyther.xml">
 ]>
-<?xml-stylesheet type="text/xsl" href="raidboss.xsl"?>
+<?xml-stylesheet type="text/xsl" href="raidboss.xsl" output="raidboss.scyther.html"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Settings; 
   &Mappings;
