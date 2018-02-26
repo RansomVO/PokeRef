@@ -1,0 +1,19 @@
+@import url('../index.css?cacherefresh={$CurrentDate}');
+
+/* ========================================================================================== */
+
+/* ------------------------------------------------------------------------------------------ */
+
+.POPUP_CELL {
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+.DATA_BOX {
+    border: 1px solid black;
+}
+
+.LABEL_BOX {
+    text-align: left;
+    font-size: medium;
+}

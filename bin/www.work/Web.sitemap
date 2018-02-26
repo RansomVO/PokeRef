@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Pokémon Reference Home Page" description="Home Page" url="/">
+    <!-- #region Links to anchors on the page. -->
+    <siteMapNode title="News Section" description="News about the latest changes to the site." url="/#news" />
+    <siteMapNode title="Sections Section" description="List of sections on the site." url="/#sections" />
+    <siteMapNode title="Quick Access Section" description="Links to pages that are accessed more frequently than others." url="/#quick" />
+    <siteMapNode title="RaidBosses Section" description="Links Possible IVs for Raid Bosses" url="/#raidbosses" />
+    <siteMapNode title="Evolutions Section" description="Link to tool showing Evolutions" url="/#evolutions" />
+    <siteMapNode title="Movesets Section" description="Links to pages that show information about each possible combination of Moves for each type of Pokemon" url="/#movesets" />
+    <siteMapNode title="Game Master Section" description="Links to section containing information in GAME_MASTER file." url="/#gamemaster" />
+    <siteMapNode title="Pokémon Stats Section" description="Links to pages containing data from the GAME_MASTER file regarding each Pokémon." url="/#pokestats" />
+    <!-- #endregion -->
+    <!-- #region Links to Sub-Sections/Child Pages. -->
+    <siteMapNode title="Charts" description="Section containing Charts" url="/charts/">
+      <!-- #region Links to anchors on the page. -->
+      <siteMapNode title="Pokémon Chart Section" description="Link to tool to get information about Pokémon." url="/charts/#pokemon" />
+      <siteMapNode title="Possible IVs for Raid Bosses Section" description="Link to tool for getting possible IV scores for Pokémon Raid Bosses." url="/charts/#raidbosses" />
+      <siteMapNode title="Pokémon MoveSets Section" description="Link to page regarding Move Sets." url="/charts/#movesets" />
+      <siteMapNode title="Move Effectiveness Section" description="Link to chart showing how effective types of moves are against types of Pokémon." url="/charts/#effectiveness" />
+      <siteMapNode title="Evolutions Chart Section" description="Link to tool to determine what Pokémon can evolve into." url="/charts/#evolutions" />
+      <siteMapNode title="Pokémon Naming Technique Section" description="Link to page describing a technique for naming Pokémon so you can more easily find the ones you access most." url="/charts/#naming" />
+      <!-- #endregion -->
+      <!-- #region Links to Sub-Sections/Child Pages. -->
+      <siteMapNode title="Pokémon Chart" description="Tool to get information about Pokémon." url="/charts/pokechart/index.html">
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="Pokémon Chart - Gen 1" description="Chart of Gen 1 Pokémon with data about them." url="/charts/pokechart/pokechart.gen1.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen1.html#criteria" />
+          <siteMapNode title="Generation 1" description="Pokémon from Generation 1" url="/charts/pokechart/pokechart.gen1.html#GEN1" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Chart - Gen 2" description="Chart of Gen 2 Pokémon with data about them." url="/charts/pokechart/pokechart.gen2.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen2.html#criteria" />
+          <siteMapNode title="Generation 2" description="Pokémon from Generation 2" url="/charts/pokechart/pokechart.gen2.html#GEN2" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Chart - Gen 3" description="Chart of Gen 3 Pokémon with data about them." url="/charts/pokechart/pokechart.gen3.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen3.html#criteria" />
+          <siteMapNode title="Generation 3" description="Pokémon from Generation 3" url="/charts/pokechart/pokechart.gen3.html#GEN3" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Chart - Gen 4" description="Chart of Gen 4 Pokémon with data about them." url="/charts/pokechart/pokechart.gen4.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen4.html#criteria" />
+          <siteMapNode title="Generation 4" description="Pokémon from Generation 4" url="/charts/pokechart/pokechart.gen4.html#GEN4" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Chart - Gen 5" description="Chart of Gen 5 Pokémon with data about them." url="/charts/pokechart/pokechart.gen5.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen5.html#criteria" />
+          <siteMapNode title="Generation 5" description="Pokémon from Generation 5" url="/charts/pokechart/pokechart.gen5.html#GEN5" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Chart - Gen 6" description="Chart of Gen 6 Pokémon with data about them." url="/charts/pokechart/pokechart.gen6.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen6.html#criteria" />
+          <siteMapNode title="Generation 6" description="Pokémon from Generation 6" url="/charts/pokechart/pokechart.gen6.html#GEN6" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Chart - Gen 7" description="Chart of Gen 7 Pokémon with data about them." url="/charts/pokechart/pokechart.gen7.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen7.html#criteria" />
+          <siteMapNode title="Generation 7" description="Pokémon from Generation 7" url="/charts/pokechart/pokechart.gen7.html#GEN7" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Chart - All Gens" description="Chart of all generations of Pokémon with data about them." url="/charts/pokechart/pokechart.all.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.all.html#criteria" />
+          <siteMapNode title="Generation 1" description="Pokémon from Generation 1" url="/charts/pokechart/pokechart.all.html#GEN1" />
+          <siteMapNode title="Generation 2" description="Pokémon from Generation 2" url="/charts/pokechart/pokechart.all.html#GEN2" />
+          <siteMapNode title="Generation 3" description="Pokémon from Generation 3" url="/charts/pokechart/pokechart.all.html#GEN3" />
+          <siteMapNode title="Generation 4" description="Pokémon from Generation 4" url="/charts/pokechart/pokechart.all.html#GEN4" />
+          <siteMapNode title="Generation 5" description="Pokémon from Generation 5" url="/charts/pokechart/pokechart.all.html#GEN5" />
+          <siteMapNode title="Generation 6" description="Pokémon from Generation 6" url="/charts/pokechart/pokechart.all.html#GEN6" />
+          <siteMapNode title="Generation 7" description="Pokémon from Generation 7" url="/charts/pokechart/pokechart.all.html#GEN7" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="Possible IVs for Raid Bosses" description="Tool for getting possible IV scores for Pokémon Raid Bosses." url="/charts/raidboss/">
+        <!-- #region Links to anchors on the page. -->
+        <siteMapNode title="Before you throw any balls..." description="How to use the charts BEFORE catching the Raid Boss to find what the range of IV scores may be." url="/charts/raidboss/#before" />
+        <siteMapNode title="After you catch the Pokémon..." description="How to use the charts AFTER catching the Raid Boss to pinpoint (or at least narrow down) what the IV scores are." url="/charts/raidboss/#after" />
+        <siteMapNode title="Raid Bosses" description="Chart of current Pokémon Raid Bosses" url="/charts/raidboss/#bossescurrent" />
+        <siteMapNode title="Legacy Raid Bosses" description="Chart of Pokémon that were Raid Bosses but no longer are." url="/charts/raidboss/#bosseslegacy" />
+        <!-- #endregion -->
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="RaidBoss Possible IVs: Absol" description="Chart for determining IV from CP/HP for a Absol" url="/charts/raidboss/raidboss.absol.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Aggron" description="Chart for determining IV from CP/HP for a Aggron" url="/charts/raidboss/raidboss.aggron.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Alakazam" description="Chart for determining IV from CP/HP for a Alakazam" url="/charts/raidboss/raidboss.alakazam.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Arcanine" description="Chart for determining IV from CP/HP for a Arcanine" url="/charts/raidboss/raidboss.arcanine.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Articuno" description="Chart for determining IV from CP/HP for a Articuno" url="/charts/raidboss/raidboss.articuno.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Bayleef" description="Chart for determining IV from CP/HP for a Bayleef" url="/charts/raidboss/raidboss.bayleef.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Blastoise" description="Chart for determining IV from CP/HP for a Blastoise" url="/charts/raidboss/raidboss.blastoise.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Celebi" description="Chart for determining IV from CP/HP for a Celebi" url="/charts/raidboss/raidboss.celebi.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Charizard" description="Chart for determining IV from CP/HP for a Charizard" url="/charts/raidboss/raidboss.charizard.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Charmeleon" description="Chart for determining IV from CP/HP for a Charmeleon" url="/charts/raidboss/raidboss.charmeleon.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Cloyster" description="Chart for determining IV from CP/HP for a Cloyster" url="/charts/raidboss/raidboss.cloyster.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Croconaw" description="Chart for determining IV from CP/HP for a Croconaw" url="/charts/raidboss/raidboss.croconaw.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Electabuzz" description="Chart for determining IV from CP/HP for a Electabuzz" url="/charts/raidboss/raidboss.electabuzz.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Entei" description="Chart for determining IV from CP/HP for a Entei" url="/charts/raidboss/raidboss.entei.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Exeggutor" description="Chart for determining IV from CP/HP for a Exeggutor" url="/charts/raidboss/raidboss.exeggutor.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Flareon" description="Chart for determining IV from CP/HP for a Flareon" url="/charts/raidboss/raidboss.flareon.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Gengar" description="Chart for determining IV from CP/HP for a Gengar" url="/charts/raidboss/raidboss.gengar.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Golem" description="Chart for determining IV from CP/HP for a Golem" url="/charts/raidboss/raidboss.golem.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Groudon" description="Chart for determining IV from CP/HP for a Groudon" url="/charts/raidboss/raidboss.groudon.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Ho-oh" description="Chart for determining IV from CP/HP for a Ho-oh" url="/charts/raidboss/raidboss.ho-oh.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Ivysaur" description="Chart for determining IV from CP/HP for a Ivysaur" url="/charts/raidboss/raidboss.ivysaur.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Jirachi" description="Chart for determining IV from CP/HP for a Jirachi" url="/charts/raidboss/raidboss.jirachi.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Jolteon" description="Chart for determining IV from CP/HP for a Jolteon" url="/charts/raidboss/raidboss.jolteon.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Kyogre" description="Chart for determining IV from CP/HP for a Kyogre" url="/charts/raidboss/raidboss.kyogre.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Lapras" description="Chart for determining IV from CP/HP for a Lapras" url="/charts/raidboss/raidboss.lapras.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Latias" description="Chart for determining IV from CP/HP for a Latias" url="/charts/raidboss/raidboss.latias.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Latios" description="Chart for determining IV from CP/HP for a Latios" url="/charts/raidboss/raidboss.latios.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Lugia" description="Chart for determining IV from CP/HP for a Lugia" url="/charts/raidboss/raidboss.lugia.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Machamp" description="Chart for determining IV from CP/HP for a Machamp" url="/charts/raidboss/raidboss.machamp.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Magikarp" description="Chart for determining IV from CP/HP for a Magikarp" url="/charts/raidboss/raidboss.magikarp.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Magmar" description="Chart for determining IV from CP/HP for a Magmar" url="/charts/raidboss/raidboss.magmar.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Magneton" description="Chart for determining IV from CP/HP for a Magneton" url="/charts/raidboss/raidboss.magneton.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Marowak" description="Chart for determining IV from CP/HP for a Marowak" url="/charts/raidboss/raidboss.marowak.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Mawile" description="Chart for determining IV from CP/HP for a Mawile" url="/charts/raidboss/raidboss.mawile.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Metapod" description="Chart for determining IV from CP/HP for a Metapod" url="/charts/raidboss/raidboss.metapod.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Mew" description="Chart for determining IV from CP/HP for a Mew" url="/charts/raidboss/raidboss.mew.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Mewtwo" description="Chart for determining IV from CP/HP for a Mewtwo" url="/charts/raidboss/raidboss.mewtwo.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Moltres" description="Chart for determining IV from CP/HP for a Moltres" url="/charts/raidboss/raidboss.moltres.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Muk" description="Chart for determining IV from CP/HP for a Muk" url="/charts/raidboss/raidboss.muk.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Nidoking" description="Chart for determining IV from CP/HP for a Nidoking" url="/charts/raidboss/raidboss.nidoking.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Nidoqueen" description="Chart for determining IV from CP/HP for a Nidoqueen" url="/charts/raidboss/raidboss.nidoqueen.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Ninetales" description="Chart for determining IV from CP/HP for a Ninetales" url="/charts/raidboss/raidboss.ninetales.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Omastar" description="Chart for determining IV from CP/HP for a Omastar" url="/charts/raidboss/raidboss.omastar.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Poliwrath" description="Chart for determining IV from CP/HP for a Poliwrath" url="/charts/raidboss/raidboss.poliwrath.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Porygon" description="Chart for determining IV from CP/HP for a Porygon" url="/charts/raidboss/raidboss.porygon.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Quilava" description="Chart for determining IV from CP/HP for a Quilava" url="/charts/raidboss/raidboss.quilava.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Raikou" description="Chart for determining IV from CP/HP for a Raikou" url="/charts/raidboss/raidboss.raikou.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Rayquaza" description="Chart for determining IV from CP/HP for a Rayquaza" url="/charts/raidboss/raidboss.rayquaza.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Regice" description="Chart for determining IV from CP/HP for a Regice" url="/charts/raidboss/raidboss.regice.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Regirock" description="Chart for determining IV from CP/HP for a Regirock" url="/charts/raidboss/raidboss.regirock.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Registeel" description="Chart for determining IV from CP/HP for a Registeel" url="/charts/raidboss/raidboss.registeel.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Rhydon" description="Chart for determining IV from CP/HP for a Rhydon" url="/charts/raidboss/raidboss.rhydon.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Sableye" description="Chart for determining IV from CP/HP for a Sableye" url="/charts/raidboss/raidboss.sableye.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Sandslash" description="Chart for determining IV from CP/HP for a Sandslash" url="/charts/raidboss/raidboss.sandslash.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Scyther" description="Chart for determining IV from CP/HP for a Scyther" url="/charts/raidboss/raidboss.scyther.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Snorlax" description="Chart for determining IV from CP/HP for a Snorlax" url="/charts/raidboss/raidboss.snorlax.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Suicune" description="Chart for determining IV from CP/HP for a Suicune" url="/charts/raidboss/raidboss.suicune.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Tentacruel" description="Chart for determining IV from CP/HP for a Tentacruel" url="/charts/raidboss/raidboss.tentacruel.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Tyranitar" description="Chart for determining IV from CP/HP for a Tyranitar" url="/charts/raidboss/raidboss.tyranitar.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Vaporeon" description="Chart for determining IV from CP/HP for a Vaporeon" url="/charts/raidboss/raidboss.vaporeon.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Venusaur" description="Chart for determining IV from CP/HP for a Venusaur" url="/charts/raidboss/raidboss.venusaur.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Victreebel" description="Chart for determining IV from CP/HP for a Victreebel" url="/charts/raidboss/raidboss.victreebel.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Wailmer" description="Chart for determining IV from CP/HP for a Wailmer" url="/charts/raidboss/raidboss.wailmer.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Wartortle" description="Chart for determining IV from CP/HP for a Wartortle" url="/charts/raidboss/raidboss.wartortle.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Weezing" description="Chart for determining IV from CP/HP for a Weezing" url="/charts/raidboss/raidboss.weezing.html" />
+        <siteMapNode title="RaidBoss Possible IVs: Zapdos" description="Chart for determining IV from CP/HP for a Zapdos" url="/charts/raidboss/raidboss.zapdos.html" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="Pokémon Move Sets" description="Pages with possible Move Sets for every available Pokémon." url="/charts/movesets/">
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="Pokémon Move Sets - Gen 1" description="Possible Move Sets for every available Pokémon in Gen 1." url="/charts/movesets/movesets.gen1.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/movesets/movesets.gen1.html#criteria" />
+          <siteMapNode title="MoveSets" description="Table of MoveSets for each Pokémon in Gen 1." url="/charts/movesets/movesets.gen1.html#movesets" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Move Sets - Gen 2" description="Possible Move Sets for every available Pokémon in Gen 2." url="/charts/movesets/movesets.gen2.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Link to section where filtering criteria may be set." url="/charts/movesets/movesets.gen2.html#criteria" />
+          <siteMapNode title="MoveSets" description="A table of MoveSets for each Pokémon in Gen 2." url="/charts/movesets/movesets.gen2.html#movesets" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Move Sets - Gen 3" description="Possible Move Sets for every available Pokémon in Gen 3." url="/charts/movesets/movesets.gen3.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Link to section where filtering criteria may be set." url="/charts/movesets/movesets.gen3.html#criteria" />
+          <siteMapNode title="MoveSets" description="A table of MoveSets for each Pokémon in Gen 3." url="/charts/movesets/movesets.gen3.html#movesets" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="Move Effectiveness" description="Chart showing how effective types of moves are against types of Pokémon." url="/charts/effectiveness.html">
+        <!-- #region Links to anchors on the page. -->
+        <siteMapNode title="Key" description="Key for Effectiveness chart." url="/charts/effectiveness.html#key" />
+        <siteMapNode title="Effectiveness" description="Effectiveness chart." url="/charts/effectiveness.html#table" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="Evolutions Chart" description="Tool to determine what Pokémon can evolve into." url="/charts/evolutions.html">
+        <!-- #region Links to anchors on the page. -->
+        <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/evolutions.html#evolution_criteria" />
+        <siteMapNode title="Evolutions" description="Table showing evolutions of the selected Pokémon." url="/charts/evolutions.html#evolutions" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="Pokémon Naming Technique" description="Page describing a technique for naming Pokémon so you can more easily find the ones you access most." url="/charts/namingtechnique.html">
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="Sort Order for Names in Pokémon Go on Android" description="Section outlining the sort order of chars in Pokémon names in Pokémon GO." url="/charts/namingtechnique.html#sortorderandroid" />
+        <siteMapNode title="#1 Special Chars on Standard Android Keyboard" description="Table of order of special chars" url="/charts/namingtechnique.html#sortorderandroidspecialchars" />
+        <siteMapNode title="#2 Numerical Chars" description="Table of order of numerical chars" url="/charts/namingtechnique.html#sortorderandroidnumerics" />
+        <siteMapNode title="#3 Alphabetical Chars" description="Table of order of alphabetical chars" url="/charts/namingtechnique.html#sortorderandroidalphabetics" />
+        <siteMapNode title="Special Cases" description="Table of chars that that are not dealt with normally" url="/charts/namingtechnique.html#sortorderandroidspecialcases" />
+        <siteMapNode title="Notes" description="Table of various notes about chars" url="/charts/namingtechnique.html#sortorderandroidnotes" />
+        <siteMapNode title="Numerics" description="Table of different types of numerical chars in Unicode." url="/charts/namingtechnique.html#numerics" />
+        <siteMapNode title="Note" description="Just a note that some chars won't show up." url="/charts/namingtechnique.html#noshow" />
+        <siteMapNode title="Examples" description="A few examples of leveraging sort order" url="/charts/namingtechnique.html#examples" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <!-- #endregion -->
+    </siteMapNode>
+
+    <siteMapNode title="Tools" description="Section containing Tools" url="/tools/">
+      <!-- #region Links to anchors on the page. -->
+      <siteMapNode title="Shopping Box Values Section" description="Link to tool to determine what Shopping Boxes are worth, customized to only what you are interested in." url="/tools/#shoppingboxes" />
+      <!-- #endregion -->
+      <!-- #region Links to Sub-Sections/Child Pages. -->
+      <siteMapNode title="Shopping Box Values" description="Tool to determine what Shopping Boxes are worth, customized to only what you are interested in." url="/tools/shoppingboxes.html">
+        <!-- #region Links to anchors on the page. -->
+        <siteMapNode title="Instructions" description="Instructions on how to use the Shopping Boxes tool." url="/tools/shoppingboxes.html#instructions" />
+        <siteMapNode title="Shop Prices and Values" description="Table with values for items that may appear in Shopping Boxes." url="/tools/shoppingboxes.html#values" />
+        <siteMapNode title="Boxes" description="Tables with values for Special Boxes, Great Boxes and Ultra Boxes" url="/tools/shoppingboxes.html#boxes" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <!-- #endregion -->
+    </siteMapNode>
+
+    <siteMapNode title="Pokémon Resources" description="Section with links to resources." url="/resources/">
+      <!-- #region Links to anchors on the page. -->
+      <siteMapNode title="Pokémon GO Tips" description="Link to page with tips for making the most out of playing Pokémon Go." url="/resources/#tips" />
+      <siteMapNode title="Web Sites Section" description="List of Web Sites that may have useful information." url="/resources/#websites" />
+      <siteMapNode title="Tools for Android Section" description="List of tools for use on Android." url="/resources/#tools_android" />
+      <siteMapNode title="GoIV" description="Information links for the GoIV tool for Android." url="/resources/#goiv" />
+      <siteMapNode title="IV &amp; ToolKit for Pokémon Go" description="Information and links for the IV &amp; ToolKit for Pokémon Go tool for Android." url="/resources/#toolkit" />
+      <siteMapNode title="Greater Seattle Area Section" description="Link to Greater Seattle Area Resources page." url="/resources/#seattlearea" />
+      <!-- #endregion -->
+      <!-- #region Links to Sub-Sections/Child Pages. -->
+      <siteMapNode title="Pokémon GO Tips" description="Page with tips for making the most out of playing Pokémon Go." url="/resources/tips.html">
+        <!-- #region Links to anchors on the page. -->
+        <siteMapNode title="Advanced Search Terms" description="A description of the terms that can be used for searching for Pokémon in Pokémon Storage." url="/resources/tips.html#searchterms" />
+        <siteMapNode title="Eevee Evolving" description="A description of tricks for evolving Eevees." url="/resources/tips.html#eeveelutions" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="Greater Seattle Area" description="Resources available for Pokémon GO in the Greater Seattle Area." url="/resources/seattlearea.html">
+        <!-- #region Links to anchors on the page. -->
+        <siteMapNode title="Discord" description="List of Discord Groups that discuss Pokémon GO and activities such as Raids." url="/resources/seattlearea.html#discord" />
+        <siteMapNode title="Maps" description="List of Maps that will help coordinate Pokémon GO activities." url="/resources/seattlearea.html#maps" />
+        <siteMapNode title="Social Groups" description="Groups that discuss Pokémon GO in the Greater Seattle area." url="/resources/seattlearea.html#social" />
+        <!-- #endregion -->
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <!-- Not yet available
+          <siteMapNode title="SEAPokeMap Filter Generator" description="Tool to generate filters for use on SEAPokeMap.com" url="/resources/seapokemapfilter.html">
+            <!- Region -Links to anchors on the page. ->
+            <siteMapNode title="" description="TODO QZX" url="/resources/seapokemapfilter.html#instructions" />
+            <siteMapNode title="" description="TODO QZX" url="/resources/seapokemapfilter.html#results" />
+            <siteMapNode title="" description="TODO QZX" url="/resources/seapokemapfilter.html#criteria" />
+            <!- EndRegion ->
+          </siteMapNode>
+ -->
+        <!-- #endregion -->
+      </siteMapNode>
+      <!-- #endregion -->
+    </siteMapNode>
+
+    <siteMapNode title="Technical Reference" description="Section with Technical Details about Pokémon GO." url="/tech/">
+      <!-- #region Links to anchors on the page. -->
+      <siteMapNode title="GAME_MASTER" description="Section describing technical statistics found in the GAME_MASTER file." url="/tech/#gamemaster" />
+      <siteMapNode title="Move Set Damage Formulas" description="Section describing technical description of formulas for determining how much damage is done by a Move Set." url="/tech/#movesetformulas" />
+      <siteMapNode title="CP Modifiers" description="Section describing table of CP Modifiers." url="/tech/#cpm" />
+      <!-- #endregion -->
+      <!-- #region Links to Sub-Sections/Child Pages. -->
+      <siteMapNode title="GAME_MASTER" description="Technical statistics found in the GAME_MASTER file." url="/tech/GAME_MASTER/">
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="Pokémon Stats" description="Technical statistics found in the GAME_MASTER file for Pokémon." url="/tech/GAME_MASTER/pokestats/">
+          <!-- #region Links to Sub-Sections/Child Pages. -->
+          <siteMapNode title="Pokémon Stats - Gen 1 (First Found In The Kanto Region)" description="Technical statistics found in the GAME_MASTER file for Pokémon in Generation 1" url="/tech/GAME_MASTER/pokestats/pokestats.gen1.html" />
+          <siteMapNode title="Pokémon Stats - Gen 2 (First Found In The Johto Region)" description="Technical statistics found in the GAME_MASTER file for Pokémon in Generation 2" url="/tech/GAME_MASTER/pokestats/pokestats.gen2.html" />
+          <siteMapNode title="Pokémon Stats - Gen 3 (First Found In The Hoenn Region)" description="Technical statistics found in the GAME_MASTER file for Pokémon in Generation 3" url="/tech/GAME_MASTER/pokestats/pokestats.gen3.html" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="Pokémon Moves" description="Moves that can be performed by Pokémon." url="/tech/GAME_MASTER/moves/">
+          <!-- #region Links to Sub-Sections/Child Pages. -->
+          <siteMapNode title="Fast Moves" description="Fast moves that can be performed by Pokémon." url="/tech/GAME_MASTER/moves/moves.fast.html" />
+          <siteMapNode title="Charged Moves" description="Charged moves that can be performed by Pokémon." url="/tech/GAME_MASTER/moves/moves.charged.html" />
+          <!-- #endregion -->
+        </siteMapNode>
+        <siteMapNode title="GAME_MASTER Archive" description="Archive of GAME_MASTER files and the associated JSON." url="/tech/GAME_MASTER/archive/" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="Move Set Damage Formulas" description="Technical description of formulas for determining how much damage is done by a Move Set." url="/tech/formulas/movesetdamage.html">
+        <!-- #region Links to anchors on the page. -->
+        <siteMapNode title="Damage Formula" description="Basic formula for the Damage inflicted by a Single attack Move" url="/tech/formulas/movesetdamage.html#damage" />
+        <siteMapNode title="Damage Per Second (DPS) Formula" description="Formula for the Damage over time for a Move Set" url="/tech/formulas/movesetdamage.html#dps" />
+        <siteMapNode title="Simplifying (True DPS)" description="Formula that merges simplified versions the Damage and DPS formulas" url="/tech/formulas/movesetdamage.html#truedps" />
+        <siteMapNode title="Even Simpler (MoveSet DPS)" description="Simplified version of True DPS formula." url="/tech/formulas/movesetdamage.html#movesetdps" />
+        <siteMapNode title="Sum-Up" description="Sum up." url="/tech/formulas/movesetdamage.html#sumup" />
+        <!-- #endregion -->
+      </siteMapNode>
+      <siteMapNode title="CP Modifiers (CPM)" description="Table of CP Modifiers." url="/tech/cpm.html" />
+      <!-- #endregion -->
+    </siteMapNode>
+    <!-- #endregion -->
+  </siteMapNode>
+</siteMap>
+
+<!-- BLANK SECTION FOR EASY COPY AND PASTE. (Fix up the comment nodes.)
+<siteMapNode title="" description="TODO QZX" url="">
+  <!- Region -Links to anchors on the page. ->
+  <siteMapNode title="" description="TODO QZX" url="/#" />
+  <!- EndRegion ->
+  <!- Region -Links to Sub-Sections/Child Pages. ->
+  <siteMapNode title="" description="TODO QZX" url="" />
+  <!- EndRegion ->
+</siteMapNode>
+-->

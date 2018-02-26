@@ -1,0 +1,13 @@
+﻿@import url('../index.css?cacherefresh=2018-02-26_12:19:56');
+
+/* ========================================================================================== */
+
+/* These classes create diagonal lines through cells */
+.STRIKETHROUGH_TL_BR {
+    background: linear-gradient(to right top, transparent 49%, currentColor 50%, currentColor 50%, transparent 51%);
+}
+
+.STRIKETHROUGH_BL_TR {
+    background: linear-gradient(to left top, transparent 49%, currentColor 50%, currentColor 50%, transparent 51%);
+}
+
