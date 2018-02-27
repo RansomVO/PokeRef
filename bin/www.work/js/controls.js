@@ -567,10 +567,10 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     // Check to see if it is a family name or name.
     // TODO QZX: "Shiny"
     if (filterSegment.startsWith('+')) {
-        if (GetPokemonFamily(pokemon).toUpperCase().startsWith(filterSegment.substring(1).toUpperCase())) {
+        if (GetPokemonFamily(pokemon).toUpperCase().contains(filterSegment.substring(1).toUpperCase())) {
             return true;
         }
-    } else if (GetPokemonName(pokemon).toUpperCase().startsWith(filterSegment.toUpperCase())) {
+    } else if (GetPokemonName(pokemon).toUpperCase().contains(filterSegment.toUpperCase())) {
         return true;
     }
 

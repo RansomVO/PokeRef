@@ -172,8 +172,8 @@ function PokemonMatchesFilter(primaryRow) {
 
 // Determine whether the MoveSet in this row should be shown or not.
 function MoveSetMatchesFilter(movesetRow) {
-    var moveNameFilter = GetFieldValue(Filter_Text_Move);
-    if (!GetFieldValue(Filter_Text_Move).startsWith(moveNameFilter) && !GetFieldValue(Filter_Text_Move).startsWith(moveNameFilter)) {
+    var moveNameFilter = GetFieldValue(Filter_Text_Move).toUpperCase();
+    if (!movesetRow.getAttribute('fastMoveName').toUpperCase().contains(moveNameFilter) && !movesetRow.getAttribute('chargedMoveName').toUpperCase().contains(moveNameFilter)) {
         return false;
     }
 
@@ -215,11 +215,12 @@ function OnPokemonNameIDChanged(filter) {
 // Called when Criteria's Reset button is selected.
 function OnResetCriteriaClicked() {
     try {
-        ClearCookieSettings(CookieSettings);
-        ApplyCookie();
         ClearPokeTypeSelector();
         ClearWeatherSelector();
         ClearFilterNameID();
+        ClearCookieSettings(CookieSettings);
+        ApplyCookie();
+        OnFilterCriteriaChanged();
     } catch (err) {
         ShowError(err);
     }

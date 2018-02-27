@@ -36,7 +36,7 @@ window.onload = function () {
 // ==============================================================================================
 // Variables to help make it so cached files will be updated appropriately.
 // ==============================================================================================
-var CacheDate = '?cacherefresh=2018-02-26_12:19:56'; // This line will be updated with the build
+var CacheDate = '?cacherefresh=2018-02-26_20:14:10'; // This line will be updated with the build
 var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
 
 // #endregion
@@ -76,6 +76,12 @@ function RegisterTristateCheckbox(checkbox) {
 if (!String.prototype.endsWith) {
     String.prototype.endsWith = function (searchString) {
         return substring(length - searchString.length) === searchString;
+    };
+}
+
+if (!String.prototype.contains) {
+    String.prototype.contains = function (searchString) {
+        return this.indexOf(searchString) !== -1;
     };
 }
 
@@ -155,7 +161,7 @@ function IsMobile() {
 
 // Function to determine whether we are running on IE, because in some cases IE works differently than the other browers.
 function IsIE() {
-    return window.navigator.userAgent.indexOf('Trident') >= 0;
+    return window.navigator.userAgent.contains('Trident');
 }
 
 // #endregion

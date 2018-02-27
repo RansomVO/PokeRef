@@ -1759,7 +1759,7 @@ function GetPokemonGenderRatio(pokemon) {
 
 
 function GetPokemonShiny(pokemon) {
-    return GetPokemon(pokemon).attributes['shiny'].value === '';
+    return GetPokemon(pokemon).attributes['shiny'].value !== '';
 }
 
 

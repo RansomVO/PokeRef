@@ -27,31 +27,11 @@ var GoldenBerries_AssumedValue = 10;
 // ****************************************************************************
 // #region Values that should be updated each time new boxes come out. **********
 // ****************************************************************************
-var ShoppingBox_Update_Date = '9 Feb 2018';
-var ShoppingBox_Update_Note = 'More Pokémon Originally from the Hoenn region';
+var ShoppingBox_Update_Date = '25 Feb 2018';
+var ShoppingBox_Update_Note = 'For Legendary Week';
 
 var SpecialBox = {
     'Price': 480,
-    'PremiumRaidPass': 0,
-    'MaxRevives': 0,
-    'MaxPotions': 0,
-    'PokeBalls': 0,
-    'GreatBalls': 0,
-    'UltraBalls': 0,
-    'Lures': 0,
-    'Incubator': 2,
-    'LuckyEggs': 0,
-    'Incense': 3,
-    'StarPiece': 6,
-    'SuperIncubator': 0,
-    'RazzBerries': 0,
-    'NanabBerries': 0,
-    'PinappBerries': 0,
-    'GoldenBerries': 0,
-};
-
-var GreatBox = {
-    'Price': 780,
     'PremiumRaidPass': 6,
     'MaxRevives': 0,
     'MaxPotions': 0,
@@ -59,30 +39,50 @@ var GreatBox = {
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
-    'Incubator': 4,
+    'Incubator': 0,
     'LuckyEggs': 3,
     'Incense': 0,
-    'StarPiece': 8,
+    'StarPiece': 0,
     'SuperIncubator': 0,
-    'RazzBerries': 0,
+    'RazzBerries': 6,
     'NanabBerries': 0,
     'PinappBerries': 0,
     'GoldenBerries': 0,
 };
 
-var UltraBox = {
-    'Price': 1480,
-    'PremiumRaidPass': 12,
+var GreatBox = {
+    'Price': 780,
+    'PremiumRaidPass': 10,
     'MaxRevives': 0,
-    'MaxPotions': 0,
+    'MaxPotions': 6,
     'PokeBalls': 0,
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
-    'Incubator': 8,
-    'LuckyEggs': 6,
+    'Incubator': 0,
+    'LuckyEggs': 8,
     'Incense': 0,
-    'StarPiece': 20,
+    'StarPiece': 0,
+    'SuperIncubator': 0,
+    'RazzBerries': 0,
+    'NanabBerries': 0,
+    'PinappBerries': 6,
+    'GoldenBerries': 0,
+};
+
+var UltraBox = {
+    'Price': 1480,
+    'PremiumRaidPass': 20,
+    'MaxRevives': 10,
+    'MaxPotions': 10,
+    'PokeBalls': 0,
+    'GreatBalls': 0,
+    'UltraBalls': 0,
+    'Lures': 0,
+    'Incubator': 0,
+    'LuckyEggs': 25,
+    'Incense': 0,
+    'StarPiece': 0,
     'SuperIncubator': 0,
     'RazzBerries': 0,
     'NanabBerries': 0,

@@ -90,22 +90,22 @@ function OnFilterCriteriaChanged(field) {
                 // Check the criteria
                 var display = true;
                 if (genAll) {
-                    if ((gen1 && gens.indexOf('1 ') < 0)
-                        || (gen2 && gens.indexOf('2 ') < 0)
-                        || (gen3 && gens.indexOf('3 ') < 0)
-                        || (gen4 && gens.indexOf('4 ') < 0)
-                        || (gen5 && gens.indexOf('5 ') < 0)
-                        || (gen6 && gens.indexOf('6 ') < 0)
-                        || (gen7 && gens.indexOf('7 ') < 0)) {
+                    if ((gen1 && !gens.contains('1 '))
+                        || (gen2 && !gens.contains('2 '))
+                        || (gen3 && !gens.contains('3 '))
+                        || (gen4 && !gens.contains('4 '))
+                        || (gen5 && !gens.contains('5 '))
+                        || (gen6 && !gens.contains('6 '))
+                        || (gen7 && !gens.contains('7 '))) {
                         display = false;
                     }
-                } else if ((!gen1 || gens.indexOf('1 ') < 0)
-                    && (!gen2 || gens.indexOf('2 ') < 0)
-                    && (!gen3 || gens.indexOf('3 ') < 0)
-                    && (!gen4 || gens.indexOf('4 ') < 0)
-                    && (!gen5 || gens.indexOf('5 ') < 0)
-                    && (!gen6 || gens.indexOf('6 ') < 0)
-                    && (!gen7 || gens.indexOf('7 ') < 0)) {
+                } else if ((!gen1 || !gens.contains('1 '))
+                    && (!gen2 || !gens.contains('2 '))
+                    && (!gen3 || !gens.contains('3 '))
+                    && (!gen4 || !gens.contains('4 '))
+                    && (!gen5 || !gens.contains('5 '))
+                    && (!gen6 || !gens.contains('6 '))
+                    && (!gen7 || !gens.contains('7 '))) {
                     display = false;
                 }
 
