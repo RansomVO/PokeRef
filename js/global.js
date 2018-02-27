@@ -79,6 +79,12 @@ if (!String.prototype.endsWith) {
     };
 }
 
+if (!String.prototype.contains) {
+    String.prototype.contains = function (searchString) {
+        return this.indexOf(searchString) !== -1;
+    };
+}
+
 // Method to trim specified strings from the beginning and end of the string.
 if (!String.prototype.Trim) {
     // NOTE: Don't be fooled because there is only one parameter specified. You still pass in the strings you want trimmed.
@@ -155,7 +161,7 @@ function IsMobile() {
 
 // Function to determine whether we are running on IE, because in some cases IE works differently than the other browers.
 function IsIE() {
-    return window.navigator.userAgent.indexOf('Trident') >= 0;
+    return window.navigator.userAgent.contains('Trident');
 }
 
 // #endregion

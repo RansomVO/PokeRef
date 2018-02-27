@@ -193,7 +193,7 @@ function GetPokemonGenderRatio(pokemon) {
 <!-- #endregion -->
 <!-- #region GetPokemonShiny() -->
 function GetPokemonShiny(pokemon) {
-    return GetPokemon(pokemon).attributes['shiny'].value === '';
+    return GetPokemon(pokemon).attributes['shiny'].value !== '';
 }
 <!-- #endregion -->
 <!-- #region GetPokemonAvailability() -->

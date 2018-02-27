@@ -147,6 +147,13 @@
 
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
+    <h2>
+      <xsl:text>Key</xsl:text>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
+      </xsl:call-template>
+    </h2>
+    <br />
     <xsl:call-template name="PokemonImageKey" />
   </xsl:template>
 

@@ -291,7 +291,7 @@ function OnColumnCheckChanged(checkbox) {
 function OnIVOnlyCheckChanged(checkbox) {
     for (var i = 1; i < 1000; i++) {
         // See if this ID is NOT one of those for which SEAPokeMap may show IV.
-        if (SeaPokeMap_HaveIV.indexOf(PokemonIdToName(i)) === -1) {
+        if (!SeaPokeMap_HaveIV.contains(PokemonIdToName(i))) {
             var field = document.getElementById(CellIdPrefix + i);
             if (field !== null) {
                 if (checkbox.checked) {

@@ -456,13 +456,6 @@
   </xsl:template>
 
   <xsl:template name="PokemonImageKey">
-    <h2>
-      <xsl:text>Key</xsl:text>
-      <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
-      </xsl:call-template>
-    </h2>
-    <br />
     <div id="POKEMON_IMAGE_KEY">
       <table border="1">
         <comment commment="Limited Availablility">

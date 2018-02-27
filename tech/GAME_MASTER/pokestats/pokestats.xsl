@@ -17,6 +17,12 @@
 
         <script>
           <xsl:attribute name="src">
+            <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
+            <xsl:value-of select="$CurrentDate"/>
+          </xsl:attribute>
+        </script>
+        <script>
+          <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
@@ -60,12 +66,17 @@
       <tr>
         <th colspan="2">
           <h2>
-            <u>Key</u>
+            <u>
+              <xsl:text>Key</xsl:text>
+            </u>
+            <xsl:call-template name="Collapser">
+              <xsl:with-param name="CollapseeID" select="'POKESTATS_KEY'" />
+            </xsl:call-template>
           </h2>
           <br />
         </th>
       </tr>
-      <tr>
+      <tr id="POKESTATS_KEY">
         <td valign="top">
           <xsl:call-template name="PokemonImageKey" />
         </td>
@@ -73,7 +84,7 @@
           <table border="1">
             <tr>
               <th rowspan="4">
-                Rates and Probabliities<br /><span class="NOTE">(From trainer's point of view)</span>
+                Rates and Probabilities<br /><span class="NOTE">(From trainer's point of view)</span>
               </th>
               <td class="GREAT">Great</td>
             </tr>

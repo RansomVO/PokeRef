@@ -273,10 +273,11 @@
             <br />Example:
             <ul>
               <li>
-                <b>1-10,B</b>: All Pokemon with:
+                <b>1-10,BB</b>: All Pokemon with:
                 <br />IDs between 1 and 10
                 <br /><b>- OR -</b>
-                <br />a name that begins with B.
+                <br />a name that contains BB.
+                <span class="NOTE">(E.G. Krabby, Wobbeffet and Snubbull)</span>
               </li>
             </ul>
           </div>
@@ -291,7 +292,7 @@
                 <b>1-10&amp;B</b>: All Pokemon with:
                 <br />IDs between 1 and 10
                 <br /><b>- AND -</b>
-                <br />a name that begins with B.
+                <br />a name that contains BB.
               </li>
             </ul>
           </div>

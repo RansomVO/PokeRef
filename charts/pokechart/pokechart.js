@@ -119,11 +119,11 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (ReleasedOnly_Check.checked && GetPokemonAvailability(pokemon).indexOf('Unavailable') >= 0) {
+    if (ReleasedOnly_Check.checked && GetPokemonAvailability(pokemon).contains('Unavailable')) {
         return false;
     }
 
-    if (RegionalOnly_Check.checked && GetPokemonAvailability(pokemon).indexOf('Regional') < 0) {
+    if (RegionalOnly_Check.checked && !GetPokemonAvailability(pokemon).contains('Regional')) {
         return false;
     }
 
@@ -131,11 +131,11 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (LegendaryOnly_Check.checked && GetPokemonAvailability(pokemon).indexOf('Legendary') < 0) {
+    if (LegendaryOnly_Check.checked && !GetPokemonAvailability(pokemon).contains('Legendary')) {
         return false;
     }
 
-    if (HatchOnly_Check.checked && GetPokemonAvailability(pokemon).indexOf('Hatch Only') < 0) {
+    if (HatchOnly_Check.checked && !GetPokemonAvailability(pokemon).contains('Hatch Only')) {
         return false;
     }
 
@@ -268,11 +268,12 @@ function OnPokemonNameIDChanged(filter) {
 // Called when Criteria's Reset button is selected.
 function OnResetCriteriaClicked() {
     try {
-        ClearCookieSettings(CookieSettings);
-        ApplyCookie();
         ClearPokeTypeSelector();
         ClearWeatherSelector();
         ClearFilterNameID();
+        ClearCookieSettings(CookieSettings);
+        ApplyCookie();
+        OnFilterCriteriaChanged();
     } catch (err) {
         ShowError(err);
     }
