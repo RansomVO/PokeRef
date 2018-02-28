@@ -93,7 +93,7 @@ function SetCollapseState(state, collapser, collapsee) {
 // #region methods for Type Selection Control
 
 // ---------------------------------------------------------------------------
-// #region Pokemon Type Cookies
+// #region PokeType Cookies
 var PokeTypeCookieSettings = {
     'CONTROLS_PokeType_AnyOrAll_Slider': 'false',
     'CONTROLS_PokeType_Bug_Check': 'true',
@@ -167,7 +167,7 @@ function GetPokeTypeFields() {
 }
 
 // If one of the type checkboxes changes, need to update the All checkbox then refilter.
-function OnTogglePokeType(field) {
+function OnTogglePokeType() {
     try {
         if (PokeType_Bug_Check.checked === PokeType_Dark_Check.checked &&
             PokeType_Dark_Check.checked === PokeType_Dragon_Check.checked &&
@@ -300,6 +300,7 @@ function PokeTypeMatchesFilter(poketypeCriteria, poketypeCollection) {
 function ClearPokeTypeSelector() {
     ClearCookieSettings(PokeTypeCookieSettings);
     ApplyPokeTypeCookies();
+    OnTogglePokeType();
 }
 
 // #endregion
@@ -453,6 +454,7 @@ function WeatherMatchesFilter(weatherCriteria, weatherCollection) {
 function ClearWeatherSelector() {
     ClearCookieSettings(WeatherCookieSettings);
     ApplyWeatherCookies();
+    OnToggleWeather();
 }
 
 // #endregion
@@ -469,12 +471,6 @@ var FilterNameIDCookieSettings = {
 // Read the Cookie and apply it to the fields.
 function ApplyFilterNameIDCookies() {
     ApplyCookieSettings(FilterNameIDCookieSettings);
-}
-
-// Clears the selection and reverts to the default.
-function ClearFilterNameID() {
-    ClearCookieSettings(FilterNameIDCookieSettings);
-    ApplyFilterNameIDCookies();
 }
 
 // #endregion
@@ -509,6 +505,13 @@ function OnFilterNameIDChanged() {
 
 function SetFilterNameID(value) {
     SetFieldValue(CONTROLS_Filter_NameID, value);
+    OnFilterNameIDChanged();
+}
+
+// Clears the selection and reverts to the default.
+function ClearFilterNameID() {
+    ClearCookieSettings(FilterNameIDCookieSettings);
+    ApplyFilterNameIDCookies();
     OnFilterNameIDChanged();
 }
 

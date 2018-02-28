@@ -123,7 +123,7 @@
 
   <xsl:template name="OutputTypeCheckbox">
     <xsl:param name="Type" />
-    <input type="checkbox" onchange="OnTogglePokeType(this);">
+    <input type="checkbox" onchange="OnTogglePokeType();">
       <xsl:attribute name="id">
         <xsl:value-of select="concat('CONTROLS_PokeType_', pokeref:Replace($Type, ' ', ''), '_Check')"/>
       </xsl:attribute>
