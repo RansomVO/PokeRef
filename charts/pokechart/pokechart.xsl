@@ -8,8 +8,8 @@
   <xsl:template match="Root">
     <html lang="en-us">
       <head>
-        <!-- This is to make the font size consistent on mobile. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Adds the general META and LINK statements. -->
+        <xsl:call-template name="AddHtmlHeader" />
 
         <!-- Local Script must always come first. (Shared ones need to be able to override it.) -->
         <script>
@@ -82,7 +82,7 @@
           <xsl:with-param name="LoadedContent" select="'POKECHART_Content'" />
         </xsl:call-template>
 
-        <!-- Leave this hidden until everything is loaded and .js has applied it. -->
+        <xsl:value-of select="$lt" disable-output-escaping="yes" />!-- Leave this hidden until everything is loaded and .js has applied it. -->
         <div id="POKECHART_Content" class="DIV_HIDDEN">
           <xsl:call-template name="CreateCriteria" />
 
@@ -101,7 +101,7 @@
         
         <xsl:call-template name="PokemonDialog" />
 
-        <!-- This script is defined in /js/global.js -->
+        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>
       </body>
     </html>
@@ -109,7 +109,7 @@
 
   <!-- The box to contain data from selected pokemon -->
   <xsl:template name="PokemonDialog">
-    <!-- #region The box to contain data from selected pokemon -->
+    <xsl:value-of select="$lt" disable-output-escaping="yes" />!-- #region The box to contain data from selected pokemon -->
     <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
       <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER">
         <span class="BUTTON" style="float: right;" onclick="OnClosePopup();">
@@ -120,7 +120,7 @@
 
       <div style="padding:.25em;">
         <table  width="100%" style="white-space:nowrap;">
-          <!-- This stupid row is so the stupid columns will be as narrow as possible. -->
+          <xsl:value-of select="concat($lt, '!-- This stupid row is so the stupid columns will be as narrow as possible. --', $gt)" disable-output-escaping="yes" />
           <tr>
             <th style="width:1px;"/>
             <th style="width:1px;"/>

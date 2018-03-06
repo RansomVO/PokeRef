@@ -34,6 +34,23 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
+  <!-- #region Global templates -->
+  <!-- ************************************************************************************************************************ -->
+
+  <xsl:template name="AddHtmlHeader">
+    <META http-equiv="Content-Type" http-content="text/html; charset=utf-8" />
+
+    <!-- This is to make the font size consistent on mobile. -->
+    <META name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- These tell the android to use the image for shortcut icons. (It's automatic for Apple.) -->
+    <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
+  </xsl:template>
+
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
   <!-- #region pokeref methods  (C#) -->
   <!-- ************************************************************************************************************************ -->
 

@@ -9,8 +9,8 @@
   <xsl:template match="Root">
     <html lang="en-us">
       <head>
-        <!-- This is to make the font size consistent on mobile. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Adds the general META and LINK statements. -->
+        <xsl:call-template name="AddHtmlHeader" />
 
         <!-- Local Script must always come first. (Shared ones need to be able to override it.) -->
         <script>
@@ -66,7 +66,7 @@
           <xsl:with-param name="LoadedContent" select="'EVOLUTIONS_Content'" />
         </xsl:call-template>
 
-        <!-- Leave this hidden until we have loaded everything and applied it. -->
+        <xsl:value-of select="concat($lt, '!-- Leave this hidden until we have loaded everything and applied it. --', $gt)" disable-output-escaping="yes" />
         <div id="EVOLUTIONS_Content" class="DIV_HIDDEN">
           <xsl:call-template name="CreateCriteria" />
 
@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <!-- This script is defined in /js/global.js -->
+        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>
       </body>
     </html>
@@ -174,7 +174,7 @@
   <!-- Template to output a Family of Pokemon -->
   <xsl:template name="OutputFamily">
     <xsl:param name="Family" />
-    <!-- 
+    <xsl:value-of select="$lt" disable-output-escaping="yes" /><xsl:text>!-- 
     Here are samples of the weird cases:
       ┌───────────┬───────────┐   
       │ Eevee     │ Vaporeon  │
@@ -210,9 +210,9 @@
       ┌───────────┬───────────────────────┐
       │ Nincada   │ Ninjask               │
       │    (2)    ├───────────────────────┤
-      │           │ Ninjask & Shedinja    │
+      │           │ Ninjask </xsl:text><xsl:value-of select="$amp" disable-output-escaping="yes" /><xsl:text> Shedinja    │
       └───────────┴───────────────────────┘
-  -->
+  --</xsl:text><xsl:value-of select="$gt" disable-output-escaping="yes" />
 
     <!-- Output first row. -->
     <xsl:variable name="IDs">

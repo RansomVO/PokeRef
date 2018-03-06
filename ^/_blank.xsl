@@ -25,8 +25,8 @@
       </head>
       <body>
         <h1>QZX Title</h1>
-        
-        <!-- This script is defined in /js/global.js -->
+
+        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>
       </body>
     </html>

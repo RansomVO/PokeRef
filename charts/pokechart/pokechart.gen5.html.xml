@@ -6,7 +6,7 @@
   <!ENTITY Pokestats SYSTEM "/_datafiles/pokestats.gen5.xml">
   <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.current.xml">
 ]>
-<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<?xml-stylesheet type="text/xsl" href="pokechart.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Settings;
   &Mappings;

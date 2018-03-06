@@ -12,8 +12,8 @@
   <xsl:template match="Root">
     <html lang="en-us">
       <head>
-        <!-- This is to make the font size consistent on mobile. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Adds the general META and LINK statements. -->
+        <xsl:call-template name="AddHtmlHeader" />
 
         <script>
           <xsl:attribute name="src">
@@ -55,7 +55,7 @@
           <xsl:apply-templates select="PokemonStats/Pokemon"  mode="Local" />
         </table>
 
-        <!-- This script is defined in /js/global.js -->
+        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>
       </body>
     </html>

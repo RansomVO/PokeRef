@@ -18,8 +18,8 @@
   <xsl:template match="/Root">
     <html lang="en-us">
       <head>
-        <!-- This is to make the font size consistent on mobile. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Adds the general META and LINK statements. -->
+        <xsl:call-template name="AddHtmlHeader" />
 
         <!-- Local Script must always come first. (Shared ones need to be able to override it.) -->
         <script>
@@ -134,7 +134,7 @@
           <xsl:with-param name="LoadedContent" select="'MOVESET_Content'" />
         </xsl:call-template>
 
-        <!-- Leave this hidden until everything is loaded and .js has applied it. -->
+        <xsl:value-of select="$lt" disable-output-escaping="yes" />!-- Leave this hidden until everything is loaded and .js has applied it. -->
         <div id="MOVESET_Content" class="DIV_HIDDEN">
           <xsl:call-template name="CreateCriteria" />
 
@@ -149,7 +149,7 @@
           </div>
         </div>
 
-        <!-- This script is defined in /js/global.js -->
+        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>
       </body>
     </html>
@@ -391,7 +391,7 @@
               </xsl:attribute>
               <xsl:value-of select="Pokemon/Name" />
             </th>
-            <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
+            <xsl:value-of select="concat($lt, '!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) --', $gt)" disable-output-escaping="yes" />
             <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
           </tr>
           <xsl:for-each select="../MoveSet[Pokemon/ID=$PokemonID]">

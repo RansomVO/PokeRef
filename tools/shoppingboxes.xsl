@@ -7,8 +7,8 @@
   <xsl:template match="Root">
     <html>
       <head>
-        <!-- This is to make the font size consistent on mobile. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Adds the general META and LINK statements. -->
+        <xsl:call-template name="AddHtmlHeader" />
 
         <!-- Local Script must always come first. (Shared ones need to be able to override it.) -->
         <script>
@@ -38,7 +38,7 @@
 
         <title>Shopping Box Values</title>
 
-        <!-- Styles for just this page -->
+        <xsl:value-of select="concat($lt, '!-- Styles for just this page --', $gt)" disable-output-escaping="yes" />
         <style>
           td, th {
           white-space: nowrap;
@@ -923,7 +923,7 @@
           </tr>
         </table>
 
-        <!-- This script is defined in /js/global.js -->
+        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>
       </body>
     </html>

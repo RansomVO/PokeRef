@@ -45,7 +45,7 @@
     <WebContent Include="favicon.ico" />
     <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
-    <FixOutputFile Include="error404.html" />
+    <WebContent Include="apple-touch-icon.png" />
     <Content Include="Web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -59,7 +59,12 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="^\__TODO.txt" />
-    <None Include="^\_blank.html" />
+    <None Include="^\_blank.xsl">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="^\_blank.html.xml">
+      <DependentUpon>_blank.xsl</DependentUpon>
+    </None>
     <None Include="^\index.html" />
     <None Include="^\XSLT\Effectiveness.XSD" />
     <None Include="^\XSLT\GAME_MASTER.XSD" />
@@ -196,6 +201,7 @@
     <None Include="__Debugging\debug.html.xml" />
     <None Include="__Debugging\debug.xsl" />
     <None Include="__Debugging\index.html" />
+    <None Include="__Debugging\index.js" />
     <None Include="__Debugging\index.css" />
   </ItemGroup>
   <!-- /css -->
@@ -301,7 +307,6 @@
   </ItemGroup>
   <!-- /charts/pokechart -->
   <ItemGroup>
-    <FixOutputFile Include="charts\pokechart\index.html" />
     <WebContent Include="charts\pokechart\index.css" />
     <FixOutputFile Include="charts\pokechart\_sectionname.txt" />
     <FixOutputFile Include="charts\pokechart\_linkslist.html" />
@@ -347,7 +352,6 @@
   <!-- /tech -->
   <ItemGroup>
     <FixOutputFile Include="tech\_sectionname.txt" />
-    <FixOutputFile Include="tech\formulas\cphp.html" />
     <FixOutputFile Include="tech\formulas\index.css" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER -->

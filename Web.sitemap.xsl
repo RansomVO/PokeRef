@@ -10,8 +10,8 @@
   <xsl:template match="Root">
     <html lang="en-us" manifest="/pokeref.appcache">
       <head>
-        <!-- This is to make the font size consistent on mobile. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Adds the general META and LINK statements. -->
+        <xsl:call-template name="AddHtmlHeader" />
 
         <script>
           <xsl:attribute name="src">

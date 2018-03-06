@@ -12,9 +12,8 @@
   <xsl:template match="Root">
     <html lang="en-us" manifest="/pokeref.appcache">
       <head>
-        <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <!-- This is to make the font size consistent on mobile. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Adds the general META and LINK statements. -->
+        <xsl:call-template name="AddHtmlHeader" />
 
         <script>
           <xsl:attribute name="src">
@@ -188,7 +187,7 @@
           </div>
         </div>
 
-        <!-- This script is defined in /js/global.js -->
+        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>
       </body>
     </html>
