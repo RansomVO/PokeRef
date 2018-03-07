@@ -30,12 +30,6 @@
 
         <br />
         <hr />
-        <p class="NOTE TODO QZX">
-          The <a href="/charts/evolutions.html">Evolutions Chart</a> has been moved to the Charts section. (Because, DUH, it's a CHART.)
-        </p>
-
-        <br />
-        <hr />
         <h2 id="anchor_shoppingboxes">
           <a href="shoppingboxes.html">Shopping Box Values</a>
         </h2>

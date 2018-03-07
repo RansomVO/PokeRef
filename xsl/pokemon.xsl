@@ -56,7 +56,7 @@
 
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
     <xsl:if test="exslt:node-set($Settings)/*/@href">
-      <xsl:value-of select="concat($lt, 'a href=', $quot, exslt:node-set($Settings)/*/@href, $quot,' class=', $quot, 'CELL_FILLER')" disable-output-escaping="yes" />
+      <xsl:value-of select="concat($lt, 'a href=', $quot, exslt:node-set($Settings)/*/@href, $quot,' style=',$quot, 'text-decoration:none;', $quot, ' class=', $quot, 'CELL_FILLER')" disable-output-escaping="yes" />
       <xsl:if test="Stats/Base/Attack = 1 and Stats/Base/Defense = 1 and Stats/Base/Stamina = 1">
         <xsl:text> DISABLED</xsl:text>
       </xsl:if>

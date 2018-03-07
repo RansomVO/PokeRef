@@ -39,9 +39,9 @@
       <body>
         <h1>
           <img src="images/logo.png" />
-          <div style="font-family:Arial;">
+          <span style="font-family:Arial;">
             <xsl:text> Pokemon Reference</xsl:text>
-          </div>
+          </span>
         </h1>
         <img class="FLOAT_RIGHT" style="width:45%; min-width:200px; margin-top:1em;" src="/images/NotJustAGame.png" />
         <p>

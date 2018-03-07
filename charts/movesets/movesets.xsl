@@ -134,7 +134,7 @@
           <xsl:with-param name="LoadedContent" select="'MOVESET_Content'" />
         </xsl:call-template>
 
-        <xsl:value-of select="$lt" disable-output-escaping="yes" />!-- Leave this hidden until everything is loaded and .js has applied it. -->
+        <xsl:value-of select="concat($lt, '!-- Leave this hidden until everything is loaded and .js has applied it. --', $gt)" disable-output-escaping="yes" />
         <div id="MOVESET_Content" class="DIV_HIDDEN">
           <xsl:call-template name="CreateCriteria" />
 

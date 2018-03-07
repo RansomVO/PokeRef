@@ -200,9 +200,10 @@
             </li>
           </ol>
         </div>
-        <br />
 
+        <br />
         <hr />
+        <h2>Current Raid Bosses</h2>
         <p id="anchor_bossescurrent">
           Click on any of the Raid Bosses below to see a chart of the possibilities.
         </p>
@@ -214,8 +215,9 @@
         
         <br />
         <hr />
+        <h2>Legacy Raid Bosses</h2>
         <p id="anchor_bosseslegacy">
-          Here is a list of "Legacy" Raid Bosses.
+          Here is a list of Raid Bosses that were available in the past, but no longer are.
           <span class="NOTE">(In case you are interested.)</span>
         </p>
         <xsl:apply-templates select="RaidBosses[@category='Legacy']">

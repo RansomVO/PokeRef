@@ -82,7 +82,7 @@
           <xsl:with-param name="LoadedContent" select="'POKECHART_Content'" />
         </xsl:call-template>
 
-        <xsl:value-of select="$lt" disable-output-escaping="yes" />!-- Leave this hidden until everything is loaded and .js has applied it. -->
+        <xsl:value-of select="concat($lt, '!-- Leave this hidden until everything is loaded and .js has applied it. --', $gt)" disable-output-escaping="yes" />
         <div id="POKECHART_Content" class="DIV_HIDDEN">
           <xsl:call-template name="CreateCriteria" />
 
@@ -109,7 +109,7 @@
 
   <!-- The box to contain data from selected pokemon -->
   <xsl:template name="PokemonDialog">
-    <xsl:value-of select="$lt" disable-output-escaping="yes" />!-- #region The box to contain data from selected pokemon -->
+    <xsl:value-of select="concat($lt, '!-- #region The box to contain data from selected pokemon --', $gt)" disable-output-escaping="yes" />
     <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
       <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER">
         <span class="BUTTON" style="float: right;" onclick="OnClosePopup();">

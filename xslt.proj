@@ -512,7 +512,6 @@
     <FixIntermediateFile Include="charts\raidboss\raidboss.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-
     <!-- #region RaidBoss pages -->
     <XslTransform Include="charts\raidboss\raidboss.absol.html.xml">
       <Visible>true</Visible>
@@ -526,6 +525,19 @@
         index.css;
       </Dependencies>
       <OutputFileName>raidboss.absol.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\raidboss\raidboss.aerodactyl.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        js\global.js;
+        _datafiles\raidboss.aerodactyl.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>raidboss.aerodactyl.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.aggron.html.xml">
       <Visible>true</Visible>
@@ -659,6 +671,19 @@
         index.css;
       </Dependencies>
       <OutputFileName>raidboss.charmeleon.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\raidboss\raidboss.claydol.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        js\global.js;
+        _datafiles\raidboss.claydol.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>raidboss.claydol.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.cloyster.html.xml">
       <Visible>true</Visible>
@@ -1297,6 +1322,19 @@
       </Dependencies>
       <OutputFileName>raidboss.scyther.html</OutputFileName>
     </XslTransform>
+    <XslTransform Include="charts\raidboss\raidboss.slowbro.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        js\global.js;
+        _datafiles\raidboss.slowbro.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>raidboss.slowbro.html</OutputFileName>
+    </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.snorlax.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>
@@ -1322,6 +1360,19 @@
         index.css;
       </Dependencies>
       <OutputFileName>raidboss.snorunt.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\raidboss\raidboss.starmie.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        js\global.js;
+        _datafiles\raidboss.starmie.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>raidboss.starmie.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.suicune.html.xml">
       <Visible>true</Visible>
