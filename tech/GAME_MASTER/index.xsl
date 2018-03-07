@@ -31,7 +31,10 @@
         <title>GAME_MASTER</title>
       </head>
       <body>
-        <h1>GAME_MASTER</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          GAME_MASTER
+        </h1>
         <p>
           There is a file called the GAME_MASTER that contains statistics regarding just about everything in the game.
           <br />

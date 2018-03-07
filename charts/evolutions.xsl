@@ -47,7 +47,10 @@
         <title>Evolutions Chart</title>
       </head>
       <body>
-        <h1>Evolutions Chart</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Evolutions Chart
+        </h1>
         <div class="INDENT">
           <p class="NOTE PARENT">
             Please let me know if you find any issues!
@@ -174,7 +177,8 @@
   <!-- Template to output a Family of Pokemon -->
   <xsl:template name="OutputFamily">
     <xsl:param name="Family" />
-    <xsl:value-of select="$lt" disable-output-escaping="yes" /><xsl:text>!-- 
+    <xsl:value-of select="$lt" disable-output-escaping="yes" />
+    <xsl:text>!-- 
     Here are samples of the weird cases:
       ┌───────────┬───────────┐   
       │ Eevee     │ Vaporeon  │
@@ -210,9 +214,12 @@
       ┌───────────┬───────────────────────┐
       │ Nincada   │ Ninjask               │
       │    (2)    ├───────────────────────┤
-      │           │ Ninjask </xsl:text><xsl:value-of select="$amp" disable-output-escaping="yes" /><xsl:text> Shedinja    │
+      │           │ Ninjask </xsl:text>
+    <xsl:value-of select="$amp" disable-output-escaping="yes" />
+    <xsl:text> Shedinja    │
       └───────────┴───────────────────────┘
-  --</xsl:text><xsl:value-of select="$gt" disable-output-escaping="yes" />
+  --</xsl:text>
+    <xsl:value-of select="$gt" disable-output-escaping="yes" />
 
     <!-- Output first row. -->
     <xsl:variable name="IDs">

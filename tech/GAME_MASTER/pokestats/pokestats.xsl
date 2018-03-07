@@ -40,7 +40,9 @@
       </head>
       <body>
         <h1>
-          Pokemon Stats - Gen <xsl:value-of select="PokemonStats/Generation/ID" /> <span class="NOTE">
+          <xsl:call-template name="HomePageLink" />
+          Pokemon Stats - Gen <xsl:value-of select="PokemonStats/Generation/ID" />
+          <span class="NOTE">
             (First Found In The <xsl:value-of select="PokemonStats/Generation/Region" /> Region)
           </span>
         </h1>
@@ -107,7 +109,9 @@
   <xsl:template name="CreateTableHeaders">
     <tr>
       <th rowspan="2" colspan="5" valign="bottom">Pokemon</th>
-      <th rowspan="3" colspan="1" valign="bottom">Type<br/>of<br/>Candies</th>
+      <th rowspan="3" colspan="1" valign="bottom">
+        Type<br/>of<br/>Candies
+      </th>
       <th rowspan="2" colspan="4" valign="bottom">Evolves From</th>
       <th rowspan="3" colspan="1" valign="bottom">
         Buddy<br/>Km<br/>for<br/>Candy

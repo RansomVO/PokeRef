@@ -41,7 +41,10 @@
         <title>Raidboss Counters</title>
       </head>
       <body>
-        <h1>Raidboss Counters</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Raidboss Counters
+        </h1>
         <p>
           When it comes to Raids, you want the best chance of defeating the Boss.
           But which of <i>your</i> Pokemon will do best against the boss?

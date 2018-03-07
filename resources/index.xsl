@@ -3,7 +3,7 @@
                 xmlns:exslt="http://exslt.org/common"
 >
   <xsl:include href="/xsl/global.xsl" />
-  
+
   <xsl:template match="Root">
     <html>
       <head>
@@ -32,7 +32,10 @@
         <title>Pokemon Resources</title>
       </head>
       <body>
-        <h1>Pokemon Resources</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Pokemon Resources
+        </h1>
         <p>
           There are a lot of web sites, chat groups, reference data, etc. that provide a lot of resources.
           Here are a bunch of places that you might find useful.

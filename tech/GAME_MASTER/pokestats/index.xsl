@@ -31,7 +31,10 @@
         <title>Pokemon Stats</title>
       </head>
       <body>
-        <h1>Pokemon Stats</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Pokemon Stats
+        </h1>
         <p class="PARENT">
           Each Pokemon has a bunch of statistics associated with them. Candies, Types, Gender Ratios, and a whole lot more.
           <br />I have created a chart containing what I consider to be the important info for each generation of Pokemon:

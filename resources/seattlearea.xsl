@@ -3,7 +3,7 @@
                 xmlns:exslt="http://exslt.org/common"
 >
   <xsl:include href="/xsl/global.xsl" />
-  
+
   <xsl:template match="Root">
     <html>
       <head>
@@ -46,7 +46,10 @@
         </style>
       </head>
       <body>
-        <h1>Seattle Area Resources</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Seattle Area Resources
+        </h1>
         <p>
           I live on the Eastside of the Greater Seattle area and here are some of the resources that are available specifically for this area.
         </p>

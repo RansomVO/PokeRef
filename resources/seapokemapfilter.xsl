@@ -78,7 +78,10 @@
         <title>SEAPokeMap Filter Generator</title>
       </head>
       <body>
-        <h1>SEAPokeMap Filter Generator</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          SEAPokeMap Filter Generator
+        </h1>
         <p class="PARENT">
           When using <a href="https://seapokemap.com/">SEAPokeMap</a> there is the ability to specify a filter.
           However, in my case I may want to see different filters at different times.

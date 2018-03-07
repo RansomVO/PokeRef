@@ -68,6 +68,7 @@
       </head>
       <body>
         <h1>
+          <xsl:call-template name="HomePageLink" />
           Pokemon Move Sets
           <xsl:choose>
             <xsl:when test="count(MoveSets/Generation) > 1">

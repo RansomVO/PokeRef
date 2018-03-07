@@ -31,7 +31,10 @@
         <title>Pokemon Chart</title>
       </head>
       <body>
-        <h1>Pokemon Chart</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Pokemon Chart
+        </h1>
         <p>
           Interested in seeing what Pokemon there are?
           How about ones that aren't even released in Pokemon GO yet?

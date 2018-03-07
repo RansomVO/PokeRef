@@ -31,7 +31,9 @@
         <title>CP and HP Formulas</title>
       </head>
       <body>
-        <h1>CP and HP Formulas</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          CP and HP Formulas</h1>
         <p>
           <span class="TODO">TODO QZX</span>
         </p>

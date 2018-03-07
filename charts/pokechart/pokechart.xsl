@@ -58,6 +58,7 @@
       </head>
       <body>
         <h1>
+          <xsl:call-template name="HomePageLink" />
           Pokemon Chart
           <xsl:choose>
             <xsl:when test="count(PokemonStats/Generation/ID) > 1">
@@ -98,7 +99,7 @@
           <xsl:apply-templates select="PokemonStats[Generation/ID = 6]" />
           <xsl:apply-templates select="PokemonStats[Generation/ID = 7]" />
         </div>
-        
+
         <xsl:call-template name="PokemonDialog" />
 
         <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />

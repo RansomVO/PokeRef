@@ -32,7 +32,10 @@
         <title>Move Set Formulas</title>
       </head>
       <body>
-        <h1>Move Set Formulas</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Move Set Formulas
+        </h1>
         <p>
           The formulas for determining how much damage a Pokemon can do to another is very complex.
           <br />This page does the best I can do to explain what is going on.

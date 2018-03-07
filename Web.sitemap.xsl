@@ -42,7 +42,7 @@
       </head>
       <body>
         <h1>
-          <img src="images/logo.png" />
+          <xsl:call-template name="HomePageLink" />
           <xsl:text> Pokemon Reference Site Map</xsl:text>
         </h1>
         <p>

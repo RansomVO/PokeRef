@@ -44,7 +44,10 @@
         </style>
       </head>
       <body>
-        <h1>Pokemon Naming Technique</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Pokemon Naming Technique
+        </h1>
         <p>
           Many people have seen the advantage of setting their Pokemon names so that sorting alphabetically will put certain ones before others.
           For example, if you have a team you want to be able to quickly select for a raid, you might want to make it so that sorting alphabetically moves the team members to the top.

@@ -38,10 +38,8 @@
       </head>
       <body>
         <h1>
-          <img src="images/logo.png" />
-          <span style="font-family:Arial;">
-            <xsl:text> Pokemon Reference</xsl:text>
-          </span>
+          <xsl:call-template name="Logo" />
+          <xsl:text> Pokemon Reference</xsl:text>
         </h1>
         <img class="FLOAT_RIGHT" style="width:45%; min-width:200px; margin-top:1em;" src="/images/NotJustAGame.png" />
         <p>
@@ -218,7 +216,7 @@
           document.write('</div>');
       ]]>
     </script>
-    
+
     <br class="FLOAT_END" />
     <hr />
   </xsl:template>

@@ -48,7 +48,15 @@
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
   </xsl:template>
 
-  <!-- #endregion -->
+  <xsl:template name="HomePageLink">
+    <a href="/" title="Go To Pokemon Reference Home Page" style="text-decoration:none;"><xsl:call-template name="Logo" /></a>
+  </xsl:template>
+
+  <xsl:template name="Logo">
+    <img src="/apple-touch-icon.png" width="64" />
+  </xsl:template>
+
+    <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
   <!-- #region pokeref methods  (C#) -->

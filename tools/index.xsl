@@ -22,7 +22,10 @@
       </head>
       <body>
         <img class="FLOAT_RIGHT" style="margin:1em; max-height:100%; max-width:45%;" src="/images/TrappedWeedle.png" />
-        <h1>Tools</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Tools
+        </h1>
         <p>
           Sometimes I want to figure out something that is specific to me.
           As such, I have created some tools where you can specify you own input and get what you want.

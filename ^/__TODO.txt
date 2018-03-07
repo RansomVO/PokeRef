@@ -1,9 +1,7 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
-Issues with Raid Boss table on Mozilla. (See email to Jay.)
-
-PokemonNameID: add ability to filter by gen ("+1", "+1-3" ?)
+PokemonNameID: add ability to filter by gen ("1", "+1-3" ?)
 
 PokeChart:
 	- Add to Popup:
@@ -17,14 +15,16 @@ RaidBoss Counters
 =========================================================================================================
 ----- Overall -----
 
-FilterNameID: Add ability to specify parens (E.G. "1-5&(B,C)")
+Look into ability to quit using IsMobile() to cause document.write(...)
+	@media only screen and (width : 1024px) and (orientation : landscape) {    
+		.selector1 { width:960px; }
+	}
 
-Add the icon as a link to the home page at the top (right?) of all pages.
-	Maybe change it into a navigation menu at some point?
+FilterNameID: Add ability to specify parens (E.G. "1-5&(B,C)")
 
 Look for places that could use a help button.
 
-Add ability to specify "?Key=^" or "?Key=v" to force collapsers to be up or down.
+Add ability to specify "?Key=^" or "?Key=v" on URL to force collapsers to be up or down.
 
 Change to use GetFieldValue(field) and GetFieldValueById(id) (search for ".value" and ".checked")
 
@@ -32,14 +32,14 @@ It would be nice if the .proj files could be updated to include the Dependencies
 	E.G. We could say that raidboss\_linkslist.page.xml was one of Dependencies. Then the Item would also include the Dependencies of raidboss\_linkslist.page.xml
 		NOTE: Use the .xml because that is the file that is transformed and it depends upon the .xsl.
 
-Look into getting favicon to show up when I add shortcut to home on Android phone.
-
 Add something to sprites to indicate regional.
 
 Make an animated Loading GIF and use it in appropriate locations.
 
 Double check appearance with IE. (Sections on home page is bad.)
 	Issue is that CELL_FILLER works differently on IE.
+Issues with Raid Boss table on Mozilla. (See email to Jay.)
+
 
 Find places to add more pics. (Funny ones if nothing else.)
 

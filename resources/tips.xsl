@@ -3,7 +3,7 @@
                 xmlns:exslt="http://exslt.org/common"
 >
   <xsl:include href="/xsl/global.xsl" />
-  
+
   <xsl:template match="Root">
     <html>
       <head>
@@ -37,7 +37,10 @@
         </style>
       </head>
       <body>
-        <h1>Pokemon GO Tips</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Pokemon GO Tips
+        </h1>
         <p>
           There are a lot of secrets that Niantic doesn't document, but have been found and shared by other trainers.
           <br />This page outlines a selection of those secrets.

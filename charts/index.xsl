@@ -32,7 +32,10 @@
         <title>Charts</title>
       </head>
       <body>
-        <h1>Charts</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          <xsl:text> Charts</xsl:text>
+        </h1>
         <p>
           Everybody loves charts for quickly looking things up.
         </p>

@@ -31,7 +31,10 @@
         <title>Pokemon Move Sets</title>
       </head>
       <body>
-        <h1>Pokemon Move Sets</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Pokemon Move Sets
+        </h1>
         <p>
           Each type of Pokemon has a set of "Fast" Moves and "Charged" Moves that they may have.
           Then each individual Pokemon has only one combination.

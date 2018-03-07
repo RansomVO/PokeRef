@@ -32,7 +32,10 @@
         <title>Technical Reference</title>
       </head>
       <body>
-        <h1>Technical Reference</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Technical Reference
+        </h1>
         <img class="FLOAT_RIGHT" style="width:25%; margin:1em;" src="/images/EeveeDi.png" />
         <p>
           Sometimes you want to really understand how things work.

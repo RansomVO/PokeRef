@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:pokeref="urn:pokeref"
 >
@@ -42,7 +42,10 @@
       </head>
       <body>
 
-        <h1>Move Effectiveness</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Move Effectiveness
+        </h1>
         <p>
           When an Attack Move is used against a Pokemon, it may either be <img src="images/supereffective.png" style="height:1em;" alt="Super Effective" /> or <img src="images/notveryeffective.png" style="height:1em;" alt="Super Effective" />.
           This is based on the Type of the Attack Move being used vs. the Type of the Pokemon being attacked.

@@ -83,7 +83,10 @@
         </style>
       </head>
       <body>
-        <h1>Shopping Box Values</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Shopping Box Values
+        </h1>
         <p>
           When there are Events in
           Pokemon GO, they usually have some sort of special package deals in the Shop.

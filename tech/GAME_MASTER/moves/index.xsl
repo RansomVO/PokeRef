@@ -31,7 +31,10 @@
         <title>Pokemon Moves</title>
       </head>
       <body>
-        <h1>Pokemon Moves</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Pokemon Moves
+        </h1>
         <p class="PARENT">
           To do battling, Pokemon use Moves (or "Attacks").
           <br />These Moves come in two types:

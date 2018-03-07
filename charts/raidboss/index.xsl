@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
   <xsl:include href="/xsl/global.xsl" />
@@ -39,7 +39,10 @@
         </style>
       </head>
       <body>
-        <h1>Possible IVs for Raid Bosses</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          Possible IVs for Raid Bosses
+        </h1>
         <div class="INDENT">
           <p>
             After you defeat a Raid Boss in a Raid, it is time to try to catch him.
@@ -212,7 +215,7 @@
             <Show show_disabled="true" valign="bottom" />
           </xsl:with-param>
         </xsl:apply-templates>
-        
+
         <br />
         <hr />
         <h2>Legacy Raid Bosses</h2>

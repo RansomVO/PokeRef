@@ -31,7 +31,10 @@
         <title>CP Modifiers (CPM)</title>
       </head>
       <body>
-        <h1>CP Modifiers (CPM)</h1>
+        <h1>
+          <xsl:call-template name="HomePageLink" />
+          CP Modifiers (CPM)
+        </h1>
         <p>
           When calculating how much damage a Pokemon will do, Pokemon GO takes into account the Level of the Pokemon.
           It does this by multiplying the Pokemon's BaseAttack and Attack IV by a constant corresponding to the Pokemon's level.
@@ -266,8 +269,9 @@
                     <table class="FORMULA">
                       <tr>
                         <td rowspan="5" style="font-size:1.5em; padding-top:.5em;">
-                          <b>Half-Level CPM<xsl:value-of select="concat($nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
-                        </b>
+                          <b>
+                            Half-Level CPM<xsl:value-of select="concat($nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
+                          </b>
                         </td>
                         <td rowspan="5" style="font-size:5em">&#x221A;</td>
                         <td class="FORMULA_DIVIDE_BY" colspan="3" />
@@ -286,7 +290,9 @@
                         <td colspan="3">2</td>
                       </tr>
                       <tr>
-                        <td colspan="3"><xsl:value-of select="$nbsp" disable-output-escaping="yes" /></td>
+                        <td colspan="3">
+                          <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+                        </td>
                       </tr>
                     </table>
                   </div>
@@ -295,7 +301,9 @@
                     <table class="FORMULA">
                       <tr>
                         <td rowspan="5" style="font-size:1.5em; padding-top:.5em;">
-                          <b>Half-Level CPM<xsl:value-of select="concat($nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" /></b>
+                          <b>
+                            Half-Level CPM<xsl:value-of select="concat($nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
+                          </b>
                         </td>
                         <td rowspan="5" style="font-size:5em;">&#x221A;</td>
                         <td class="FORMULA_DIVIDE_BY" colspan="3" />

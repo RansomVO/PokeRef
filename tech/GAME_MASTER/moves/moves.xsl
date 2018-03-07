@@ -28,6 +28,7 @@
       </head>
       <body>
         <h1>
+          <xsl:call-template name="HomePageLink" />
           <xsl:value-of select="Moves/Category"/> Moves
         </h1>
 
