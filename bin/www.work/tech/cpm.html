@@ -4,12 +4,17 @@
     <META name="viewport" content="width=device-width, initial-scale=1" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
-    <script src="/js/global.js?cacherefresh=2018-03-06_09:41:25" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-06_09:41:25" />
+    <script src="/js/global.js?cacherefresh=2018-03-07_15:42:09" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-07_15:42:09" />
     <title>CP Modifiers (CPM)</title>
   </head>
   <body>
-    <h1>CP Modifiers (CPM)</h1>
+    <h1>
+      <a href="/" title="Go To Pokémon Reference Home Page" style="text-decoration:none;">
+        <img src="/apple-touch-icon.png" width="64" />
+      </a>
+        CP Modifiers (CPM)
+        </h1>
     <p>
       When calculating how much damage a Pokémon will do, Pokémon GO takes into account the Level of the Pokémon.
       It does this by multiplying the Pokémon's BaseAttack and Attack IV by a constant corresponding to the Pokémon's level.
@@ -238,11 +243,13 @@
               Values in the <b>CPM</b> column are the CPM constants for each level. <span class="NOTE">(E.G. 1, 2, 3, etc.)</span></li>
             <li>
               Values in the <b>Half Level CPM</b> column are calculated for half-levels <span class="NOTE">(E.G. 1.5, 2.5, 3.5, etc.)</span> using this formula:
-              <div class="INDENT"><table class="FORMULA"><tr><td rowspan="5" style="font-size:1.5em; padding-top:.5em;"><b>Half-Level CPM  = </b></td><td rowspan="5" style="font-size:5em">√</td><td class="FORMULA_DIVIDE_BY" colspan="3" /></tr><tr><td valign="top" style="font-size:2em">(</td><td>
-                LevelBelow<sup>2</sup> + LevelAbove<sup>2</sup></td><td valign="top" style="font-size:2em">)</td></tr><tr><td class="FORMULA_DIVIDE_BY" colspan="3" /></tr><tr><td colspan="3">2</td></tr><tr><td colspan="3"> </td></tr></table></div>
-                  For example, for level 1.5 it would be:
-                  <div class="INDENT"><table class="FORMULA"><tr><td rowspan="5" style="font-size:1.5em; padding-top:.5em;"><b>Half-Level CPM  = </b></td><td rowspan="5" style="font-size:5em;">√</td><td class="FORMULA_DIVIDE_BY" colspan="3" /><td rowspan="5" style="font-size:1.5em; padding-top:.5em;"><b>  = </b></td><td rowspan="5" style="padding-top:.5em;">0.135137432</td></tr><tr><td valign="top" style="font-size:2em">(</td><td>
-                    0.09400000<sup>2</sup> + 0.16639787<sup>2</sup></td><td valign="top" style="font-size:2em">)</td></tr><tr><td class="FORMULA_DIVIDE_BY" colspan="3" /></tr><tr><td colspan="3">2</td></tr><tr><td colspan="3"> </td></tr></table></div></li>
+              <div class="INDENT"><table class="FORMULA"><tr><td rowspan="5" style="font-size:1.5em; padding-top:.5em;"><b>
+                Half-Level CPM  = </b></td><td rowspan="5" style="font-size:5em">√</td><td class="FORMULA_DIVIDE_BY" colspan="3" /></tr><tr><td valign="top" style="font-size:2em">(</td><td>
+                  LevelBelow<sup>2</sup> + LevelAbove<sup>2</sup></td><td valign="top" style="font-size:2em">)</td></tr><tr><td class="FORMULA_DIVIDE_BY" colspan="3" /></tr><tr><td colspan="3">2</td></tr><tr><td colspan="3"> </td></tr></table></div>
+                    For example, for level 1.5 it would be:
+                    <div class="INDENT"><table class="FORMULA"><tr><td rowspan="5" style="font-size:1.5em; padding-top:.5em;"><b>
+                      Half-Level CPM  = </b></td><td rowspan="5" style="font-size:5em;">√</td><td class="FORMULA_DIVIDE_BY" colspan="3" /><td rowspan="5" style="font-size:1.5em; padding-top:.5em;"><b>  = </b></td><td rowspan="5" style="padding-top:.5em;">0.135137432</td></tr><tr><td valign="top" style="font-size:2em">(</td><td>
+                        0.09400000<sup>2</sup> + 0.16639787<sup>2</sup></td><td valign="top" style="font-size:2em">)</td></tr><tr><td class="FORMULA_DIVIDE_BY" colspan="3" /></tr><tr><td colspan="3">2</td></tr><tr><td colspan="3"> </td></tr></table></div></li>
           </ul>
         </td>
       </tr>
