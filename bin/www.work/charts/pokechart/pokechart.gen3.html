@@ -1,11 +1,14 @@
 ﻿<html lang="en-us" xmlns:pokeref="urn:pokeref">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="pokechart.js?cacherefresh=2018-02-26_12:20:25" ></script>
-    <script src="/js/pokemon.js?cacherefresh=2018-02-26_12:20:25" ></script>
-    <script src="/js/controls.js?cacherefresh=2018-02-26_12:20:25" ></script>
-    <script src="/js/global.js?cacherefresh=2018-02-26_12:20:25" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-02-26_12:20:25" />
+    <META http-equiv="Content-Type" http-content="text/html; charset=utf-8" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <META name="viewport" content="width=device-width, initial-scale=1" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <script src="pokechart.js?cacherefresh=2018-03-07_13:07:01" ></script>
+    <script src="/js/pokemon.js?cacherefresh=2018-03-07_13:07:01" ></script>
+    <script src="/js/controls.js?cacherefresh=2018-03-07_13:07:01" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-07_13:07:01" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-07_13:07:01" />
     <title>
       Pokémon Chart
       - Gen 3</title>
@@ -22,6 +25,7 @@
     <div id="GLOBAL_LoadingNotice" formTarget="POKECHART_Content" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
       <h1>Loading...</h1>
     </div>
+    <!-- Leave this hidden until everything is loaded and .js has applied it. -->
     <div id="POKECHART_Content" class="DIV_HIDDEN">
       <h2 id="criteria">Selection Criteria <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><div class="COLLAPSER" id="POKEMON_CRITERIA_COLLAPSER">˅</div></div><div style="display:inline-block; vertical-align:middle;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><button type="button" style="font-weight:bold; margin-bottom:.2em; margin-top:.2em;" title="Reset" onclick="OnResetCriteriaClicked();">↺</button></div></h2>
       <div id="POKEMON_CRITERIA">
@@ -53,26 +57,26 @@
                     <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span></li></ul></div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">,</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
                       Specifies to match one criteria OR another.
                       <br />Example:
-                      <ul><li><b>1-10,B</b>: All Pokémon with:
+                      <ul><li><b>1-10,BB</b>: All Pokémon with:
                       <br />IDs between 1 and 10
-                      <br /><b>- OR -</b><br />a name that begins with B.
-                      </li></ul></div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+                      <br /><b>- OR -</b><br />a name that contains BB.
+                      <span class="NOTE">(E.G. Krabby, Wobbeffet and Snubbull)</span></li></ul></div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
                         Specifies one criteria AND another.
                         <br />Example:
                         <ul><li><b>1-10&amp;B</b>: All Pokémon with:
                         <br />IDs between 1 and 10
-                        <br /><b>- AND -</b><br />a name that begins with B.
+                        <br /><b>- AND -</b><br />a name that contains BB.
                         </li></ul></div></div></span></div></td>
           </tr>
-        </table> <div class="KEY_TABLE"><table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;" callbackName="OnTypesChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><th colspan="2" width="0">Pokémon Types<br /><input id="CONTROLS_PokeType_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllPokeTypes();" /></th></tr><tr><td valign="top"><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Bug_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug" /> Bug<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Dark_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark" /> Dark<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Dragon_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dragon.png" title="Dragon" /> Dragon<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Electric_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric" /> Electric<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fairy_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy" /> Fairy<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fighting_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting" /> Fighting<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fire_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire" /> Fire<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Flying_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying" /> Flying<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ghost_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ghost.png" title="Ghost" /> Ghost</td><td valign="top"><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Grass_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass" /> Grass<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ground_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground" /> Ground<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ice_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice" /> Ice<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Normal_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal" /> Normal<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Poison_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison" /> Poison<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Psychic_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic" /> Psychic<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Rock_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock" /> Rock<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Steel_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel" /> Steel<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Water_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water" /> Water</td></tr><tr><td colspan="2" align="center" style="font-size:small; font-weight:normal; ">Any<label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;"><input type="checkbox" style="display:none;" id="CONTROLS_PokeType_AnyOrAll_Slider" onchange="OnAnyOrAllTypeSliderChanged(this)" /><span class="CONTROLS_SLIDER_BUTTON" /></label>All <div class="CONTROLS_HELP">
+        </table> <div class="KEY_TABLE"><table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;" callbackName="OnTypesChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><th colspan="2" width="0">Pokémon Types<br /><input id="CONTROLS_PokeType_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllPokeTypes();" /></th></tr><tr><td valign="top"><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Bug_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug" /> Bug<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Dark_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark" /> Dark<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Dragon_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dragon.png" title="Dragon" /> Dragon<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Electric_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric" /> Electric<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Fairy_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy" /> Fairy<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Fighting_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting" /> Fighting<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Fire_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire" /> Fire<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Flying_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying" /> Flying<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Ghost_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ghost.png" title="Ghost" /> Ghost</td><td valign="top"><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Grass_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass" /> Grass<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Ground_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground" /> Ground<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Ice_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice" /> Ice<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Normal_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal" /> Normal<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Poison_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison" /> Poison<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Psychic_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic" /> Psychic<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Rock_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock" /> Rock<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Steel_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel" /> Steel<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Water_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water" /> Water</td></tr><tr><td colspan="2" align="center" style="font-size:small; font-weight:normal; ">Any<label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;"><input type="checkbox" style="display:none;" id="CONTROLS_PokeType_AnyOrAll_Slider" onchange="OnAnyOrAllTypeSliderChanged(this)" /><span class="CONTROLS_SLIDER_BUTTON" /></label>All <div class="CONTROLS_HELP">
           ?
           <span class="CONTROLS_HELP_CONTENT"><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">Any</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have any of their Types matching the selected Pokémon Types.</div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">All</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have all of their Types matching the selected Pokémon Types.</div></div></span></div></td></tr></table></div> <div class="KEY_TABLE"><table id="CONTROLS_Weather_Selector" border="1" style="white-space:nowrap;" callbackName="OnWeatherChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><tr><th>Pokémon<br />Weather Boosts<br /><input id="CONTROLS_Weather_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllWeather();" /></th></tr><tr><td valign="top"><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Sunny_Check" /><img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" title="Sunny" /> Sunny/Clear<br /><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Windy_Check" /><img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" title="Windy" /> Windy<br /><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Cloudy_Check" /><img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" title="Cloudy" /> Cloudy<br /><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_PartlyCloudy_Check" /><img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" title="Partly Cloudy" /> Partly Cloudy<br /><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Fog_Check" /><img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" title="Fog" /> Fog<br /><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Rainy_Check" /><img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" title="Rainy" /> Rainy<br /><input type="checkbox" onchange="OnToggleWeather(this);" id="CONTROLS_Weather_Snow_Check" /><img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" title="Snow" /> Snow</td></tr><tr><td align="center" style="font-size:small; font-weight:normal; ">Any<label style="font-size:smaller; position:relative; display:inline-block; width:2em; height:1em; margin-left:.25em; margin-right:.25em;"><input type="checkbox" style="display:none;" id="CONTROLS_Weather_AnyOrAll_Slider" onchange="OnAnyOrAllWeatherSliderChanged(this)" /><span class="CONTROLS_SLIDER_BUTTON" /></label>All <div class="CONTROLS_HELP">
             ?
             <span class="CONTROLS_HELP_CONTENT"><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">Any</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have any of their Types boosted by the selected Pokémon Weather Boosts.</div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">All</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokémon that have all of their Types boosted by the selected Pokémon Weather Boosts.</div></div></span></div></td></tr></table></div></div>
       <br />
       <hr />
-      <h2 xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Key <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);"><div class="COLLAPSER" id="POKEMON_IMAGE_KEY_COLLAPSER">˅</div></div></h2>
-      <br xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+      <h2>Key <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><div class="COLLAPSER" id="POKEMON_IMAGE_KEY_COLLAPSER">˅</div></div></h2>
+      <br />
       <div id="POKEMON_IMAGE_KEY" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
         <table border="1">
           <comment commment="Limited Availablility">
@@ -1237,7 +1241,7 @@
               <div id="Pokemon_Name_Field">343 - Baltoy</div>
             </div>
           </div>
-          <div title="Claydol" class="SPRITE_BOXED GEN3 " name="Claydol" gen="3" id="344" type1="Ground" type2="Psychic" family="Baltoy" evolvesFrom="343" shiny="" availability="General" boost1="Sunny" boost2="Windy" genderRatio="⚲" maxCP="1782" maxHP="106" buddyKM="3" baseAttack="140" baseDefense="236" baseStamina="120" captureRate="0.2" fleeRate="0.06" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div title="Claydol" class="SPRITE_BOXED GEN3 " name="Claydol" gen="3" id="344" type1="Ground" type2="Psychic" family="Baltoy" evolvesFrom="343" shiny="" availability="General" boost1="Sunny" boost2="Windy" genderRatio="⚲" maxCP="1782" maxHP="106" buddyKM="3" baseAttack="140" baseDefense="236" baseStamina="120" captureRate="0.2" fleeRate="0.06" onclick="OnSelectPokemon(this)" style="cursor:pointer;" raidboss="true" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
             <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER ">
               <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/344.png" alt="(Claydol)" />
               <div id="Pokemon_Icons_Field">
@@ -1695,7 +1699,7 @@
               <div id="Pokemon_Name_Field">381 - Latios</div>
             </div>
           </div>
-          <div title="Kyogre" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Kyogre" gen="3" id="382" type1="Water" type2="" family="Kyogre" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Rainy" boost2="" genderRatio="⚲" maxCP="4074" maxHP="155" buddyKM="20" baseAttack="270" baseDefense="251" baseStamina="182" captureRate="0.02" fleeRate="0.01" onclick="OnSelectPokemon(this)" style="cursor:pointer;" raidboss="true" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div title="Kyogre" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Kyogre" gen="3" id="382" type1="Water" type2="" family="Kyogre" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Rainy" boost2="" genderRatio="⚲" maxCP="4074" maxHP="155" buddyKM="20" baseAttack="270" baseDefense="251" baseStamina="182" captureRate="0.02" fleeRate="0.01" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
             <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
               <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/382.png" alt="(Kyogre)" />
               <div id="Pokemon_Icons_Field">
@@ -1706,7 +1710,7 @@
               <div id="Pokemon_Name_Field">382 - Kyogre</div>
             </div>
           </div>
-          <div title="Groudon" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Groudon" gen="3" id="383" type1="Ground" type2="" family="Groudon" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Sunny" boost2="" genderRatio="⚲" maxCP="4074" maxHP="155" buddyKM="20" baseAttack="270" baseDefense="251" baseStamina="182" captureRate="0.02" fleeRate="0.01" onclick="OnSelectPokemon(this)" style="cursor:pointer;" raidboss="true" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div title="Groudon" class="SPRITE_BOXED RAIDBOSS_ONLY " name="Groudon" gen="3" id="383" type1="Ground" type2="" family="Groudon" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Sunny" boost2="" genderRatio="⚲" maxCP="4074" maxHP="155" buddyKM="20" baseAttack="270" baseDefense="251" baseStamina="182" captureRate="0.02" fleeRate="0.01" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
             <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
               <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/383.png" alt="(Groudon)" />
               <div id="Pokemon_Icons_Field">
@@ -1757,6 +1761,7 @@
         </div>
       </div>
     </div>
+    <!-- #region The box to contain data from selected pokemon -->
     <div id="Selected_Pokemon_Dialog" class="POPUP_DIALOG">
       <div id="Selected_Pokemon_Dialog_Header" class="POPUP_DIALOG_HEADER">
         <span class="BUTTON" style="float: right;" onclick="OnClosePopup();">×</span>
@@ -1764,6 +1769,7 @@
       </div>
       <div style="padding:.25em;">
         <table width="100%" style="white-space:nowrap;">
+          <!-- This stupid row is so the stupid columns will be as narrow as possible. -->
           <tr>
             <th style="width:1px;" />
             <th style="width:1px;" />
@@ -1859,6 +1865,7 @@
         </table>
       </div>
     </div>
+    <!-- This script is defined in /js/global.js -->
     <script>WriteFooter();</script>
   </body>
     </html>

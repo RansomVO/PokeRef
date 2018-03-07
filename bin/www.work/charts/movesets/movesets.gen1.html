@@ -1,11 +1,14 @@
 ﻿<html lang="en-us" xmlns:pokeref="urn:pokeref">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="movesets.js?cacherefresh=2018-02-26_12:20:29" ></script>
-    <script src="/js/controls.js?cacherefresh=2018-02-26_12:20:29" ></script>
-    <script src="/js/pokemon.js?cacherefresh=2018-02-26_12:20:29" ></script>
-    <script src="/js/global.js?cacherefresh=2018-02-26_12:20:29" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-02-26_12:20:29" />
+    <META http-equiv="Content-Type" http-content="text/html; charset=utf-8" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <META name="viewport" content="width=device-width, initial-scale=1" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <script src="movesets.js?cacherefresh=2018-03-07_13:15:24" ></script>
+    <script src="/js/controls.js?cacherefresh=2018-03-07_13:15:24" ></script>
+    <script src="/js/pokemon.js?cacherefresh=2018-03-07_13:15:24" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-07_13:15:24" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-07_13:15:24" />
     <title>
       Pokémon Move Sets
       - Gen 1</title>
@@ -52,6 +55,7 @@
     <div id="GLOBAL_LoadingNotice" formTarget="MOVESET_Content" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
       <h1>Loading...</h1>
     </div>
+    <!-- Leave this hidden until everything is loaded and .js has applied it. -->
     <div id="MOVESET_Content" class="DIV_HIDDEN">
       <h2 id="criteria">Selection Criteria <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><div class="COLLAPSER" id="MOVESET_CRITERIA_COLLAPSER">˅</div></div><div style="display:inline-block; vertical-align:middle;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><button type="button" style="font-weight:bold; margin-bottom:.2em; margin-top:.2em;" title="Reset" onclick="OnResetCriteriaClicked();">↺</button></div></h2>
       <br />
@@ -81,15 +85,15 @@
                           <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span></li></ul></div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">,</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
                             Specifies to match one criteria OR another.
                             <br />Example:
-                            <ul><li><b>1-10,B</b>: All Pokémon with:
+                            <ul><li><b>1-10,BB</b>: All Pokémon with:
                             <br />IDs between 1 and 10
-                            <br /><b>- OR -</b><br />a name that begins with B.
-                            </li></ul></div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+                            <br /><b>- OR -</b><br />a name that contains BB.
+                            <span class="NOTE">(E.G. Krabby, Wobbeffet and Snubbull)</span></li></ul></div></div><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
                               Specifies one criteria AND another.
                               <br />Example:
                               <ul><li><b>1-10&amp;B</b>: All Pokémon with:
                               <br />IDs between 1 and 10
-                              <br /><b>- AND -</b><br />a name that begins with B.
+                              <br /><b>- AND -</b><br />a name that contains BB.
                               </li></ul></div></div></span></div></td>
                 </tr>
                 <tr>
@@ -114,11 +118,11 @@
             </tr>
             <tr>
               <td valign="top">
-                <input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Bug_Check" />
-                <img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug" /> Bug<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Dark_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark" /> Dark<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Dragon_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dragon.png" title="Dragon" /> Dragon<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Electric_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric" /> Electric<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fairy_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy" /> Fairy<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fighting_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting" /> Fighting<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Fire_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire" /> Fire<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Flying_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying" /> Flying<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ghost_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ghost.png" title="Ghost" /> Ghost</td>
+                <input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Bug_Check" />
+                <img class="TAG_ICON_REGULAR" src="/images/type_bug.png" title="Bug" /> Bug<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Dark_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dark.png" title="Dark" /> Dark<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Dragon_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_dragon.png" title="Dragon" /> Dragon<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Electric_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_electric.png" title="Electric" /> Electric<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Fairy_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fairy.png" title="Fairy" /> Fairy<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Fighting_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fighting.png" title="Fighting" /> Fighting<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Fire_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_fire.png" title="Fire" /> Fire<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Flying_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_flying.png" title="Flying" /> Flying<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Ghost_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ghost.png" title="Ghost" /> Ghost</td>
               <td valign="top">
-                <input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Grass_Check" />
-                <img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass" /> Grass<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ground_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground" /> Ground<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Ice_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice" /> Ice<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Normal_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal" /> Normal<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Poison_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison" /> Poison<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Psychic_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic" /> Psychic<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Rock_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock" /> Rock<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Steel_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel" /> Steel<br /><input type="checkbox" onchange="OnTogglePokeType(this);" id="CONTROLS_PokeType_Water_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water" /> Water</td>
+                <input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Grass_Check" />
+                <img class="TAG_ICON_REGULAR" src="/images/type_grass.png" title="Grass" /> Grass<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Ground_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ground.png" title="Ground" /> Ground<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Ice_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_ice.png" title="Ice" /> Ice<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Normal_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_normal.png" title="Normal" /> Normal<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Poison_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_poison.png" title="Poison" /> Poison<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Psychic_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_psychic.png" title="Psychic" /> Psychic<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Rock_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_rock.png" title="Rock" /> Rock<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Steel_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_steel.png" title="Steel" /> Steel<br /><input type="checkbox" onchange="OnTogglePokeType();" id="CONTROLS_PokeType_Water_Check" /><img class="TAG_ICON_REGULAR" src="/images/type_water.png" title="Water" /> Water</td>
             </tr>
             <tr>
               <td colspan="2" align="center" style="font-size:small; font-weight:normal; ">
@@ -275,6 +279,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">1</th>
               <th style="font-size:large;" rowspan="7">Bulbasaur</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Vine Whip" fastMoveType="Grass" fastMoveBoost="Sunny" chargedMoveName="Power Whip" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -384,6 +389,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">2</th>
               <th style="font-size:large;" rowspan="7">Ivysaur</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Vine Whip" fastMoveType="Grass" fastMoveBoost="Sunny" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -493,6 +499,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">3</th>
               <th style="font-size:large;" rowspan="7">Venusaur</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Vine Whip" fastMoveType="Grass" fastMoveBoost="Sunny" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -600,6 +607,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">4</th>
               <th style="font-size:large;" rowspan="7">Charmander</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Ember" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Flamethrower" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -707,6 +715,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">5</th>
               <th style="font-size:large;" rowspan="10">Charmeleon</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fire Fang" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Flamethrower" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -861,6 +870,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="17">6</th>
               <th style="font-size:large;" rowspan="17">Charizard</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fire Spin" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Overheat" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -1118,6 +1128,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">7</th>
               <th style="font-size:large;" rowspan="7">Squirtle</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bubble" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Aqua Tail" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -1225,6 +1236,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">8</th>
               <th style="font-size:large;" rowspan="7">Wartortle</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -1332,6 +1344,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">9</th>
               <th style="font-size:large;" rowspan="7">Blastoise</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -1439,6 +1452,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="3">10</th>
               <th style="font-size:large;" rowspan="3">Caterpie</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Struggle" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -1486,6 +1500,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="3">11</th>
               <th style="font-size:large;" rowspan="3">Metapod</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Struggle" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -1535,6 +1550,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">12</th>
               <th style="font-size:large;" rowspan="10">Butterfree</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Bug Buzz" chargedMoveType="Bug" chargedMoveBoost="Rainy">
@@ -1689,6 +1705,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="3">13</th>
               <th style="font-size:large;" rowspan="3">Weedle</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Struggle" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -1738,6 +1755,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="3">14</th>
               <th style="font-size:large;" rowspan="3">Kakuna</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Struggle" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -1787,6 +1805,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">15</th>
               <th style="font-size:large;" rowspan="10">Beedrill</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Jab" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -1941,6 +1960,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">16</th>
               <th style="font-size:large;" rowspan="7">Pidgey</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Tackle" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Aerial Ace" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -2050,6 +2070,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">17</th>
               <th style="font-size:large;" rowspan="7">Pidgeotto</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Wing Attack" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Aerial Ace" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -2159,6 +2180,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">18</th>
               <th style="font-size:large;" rowspan="13">Pidgeot</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Wing Attack" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Hurricane" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -2356,6 +2378,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">19</th>
               <th style="font-size:large;" rowspan="7">Rattata</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Hyper Fang" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -2463,6 +2486,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">20</th>
               <th style="font-size:large;" rowspan="7">Raticate</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -2572,6 +2596,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">21</th>
               <th style="font-size:large;" rowspan="9">Spearow</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Sky Attack" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -2711,6 +2736,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">22</th>
               <th style="font-size:large;" rowspan="9">Fearow</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Sky Attack" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -2848,6 +2874,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">23</th>
               <th style="font-size:large;" rowspan="9">Ekans</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Gunk Shot" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -2985,6 +3012,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">24</th>
               <th style="font-size:large;" rowspan="7">Arbok</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Gunk Shot" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -3093,6 +3121,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">25</th>
               <th style="font-size:large;" rowspan="11">Pikachu</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Wild Charge" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -3261,6 +3290,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">26</th>
               <th style="font-size:large;" rowspan="13">Raichu</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Spark" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Wild Charge" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -3458,6 +3488,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">27</th>
               <th style="font-size:large;" rowspan="9">Sandshrew</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Scratch" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Dig" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -3595,6 +3626,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">28</th>
               <th style="font-size:large;" rowspan="7">Sandslash</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Shot" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -3702,6 +3734,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">29</th>
               <th style="font-size:large;" rowspan="7">Nidoran♀</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bite" fastMoveType="Dark" fastMoveBoost="Fog" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -3809,6 +3842,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">30</th>
               <th style="font-size:large;" rowspan="7">Nidorina</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Sting" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -3918,6 +3952,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">31</th>
               <th style="font-size:large;" rowspan="7">Nidoqueen</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Jab" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -4025,6 +4060,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">32</th>
               <th style="font-size:large;" rowspan="7">Nidoran♂</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -4132,6 +4168,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">33</th>
               <th style="font-size:large;" rowspan="7">Nidorino</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Jab" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -4241,6 +4278,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">34</th>
               <th style="font-size:large;" rowspan="10">Nidoking</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Jab" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -4393,6 +4431,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">35</th>
               <th style="font-size:large;" rowspan="7">Clefairy</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Moonblast" chargedMoveType="Fairy" chargedMoveBoost="Cloudy">
@@ -4500,6 +4539,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">36</th>
               <th style="font-size:large;" rowspan="10">Clefable</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Dazzling Gleam" chargedMoveType="Fairy" chargedMoveBoost="Cloudy">
@@ -4652,6 +4692,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">37</th>
               <th style="font-size:large;" rowspan="7">Vulpix</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Flamethrower" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -4759,6 +4800,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="16">38</th>
               <th style="font-size:large;" rowspan="16">Ninetales</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fire Spin" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Overheat" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -5003,6 +5045,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">39</th>
               <th style="font-size:large;" rowspan="11">Jigglypuff</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Play Rough" chargedMoveType="Fairy" chargedMoveBoost="Cloudy">
@@ -5172,6 +5215,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">40</th>
               <th style="font-size:large;" rowspan="7">Wigglytuff</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -5281,6 +5325,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">41</th>
               <th style="font-size:large;" rowspan="9">Zubat</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -5420,6 +5465,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">42</th>
               <th style="font-size:large;" rowspan="9">Golbat</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Wing Attack" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Shadow Ball" chargedMoveType="Ghost" chargedMoveBoost="Fog">
@@ -5559,6 +5605,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">43</th>
               <th style="font-size:large;" rowspan="7">Oddish</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -5668,6 +5715,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">44</th>
               <th style="font-size:large;" rowspan="7">Gloom</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -5777,6 +5825,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">45</th>
               <th style="font-size:large;" rowspan="7">Vileplume</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -5886,6 +5935,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">46</th>
               <th style="font-size:large;" rowspan="7">Paras</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Seed Bomb" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -5995,6 +6045,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">47</th>
               <th style="font-size:large;" rowspan="10">Parasect</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fury Cutter" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -6149,6 +6200,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">48</th>
               <th style="font-size:large;" rowspan="7">Venonat</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Signal Beam" chargedMoveType="Bug" chargedMoveBoost="Rainy">
@@ -6258,6 +6310,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">49</th>
               <th style="font-size:large;" rowspan="13">Venomoth</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Bug Buzz" chargedMoveType="Bug" chargedMoveBoost="Rainy">
@@ -6455,6 +6508,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">50</th>
               <th style="font-size:large;" rowspan="10">Diglett</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Slap" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Mud Bomb" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -6607,6 +6661,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">51</th>
               <th style="font-size:large;" rowspan="10">Dugtrio</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Slap" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -6759,6 +6814,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">52</th>
               <th style="font-size:large;" rowspan="9">Meowth</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Scratch" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Body Slam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -6896,6 +6952,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">53</th>
               <th style="font-size:large;" rowspan="9">Persian</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Scratch" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Play Rough" chargedMoveType="Fairy" chargedMoveBoost="Cloudy">
@@ -7033,6 +7090,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">54</th>
               <th style="font-size:large;" rowspan="7">Psyduck</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Aqua Tail" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -7140,6 +7198,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">55</th>
               <th style="font-size:large;" rowspan="7">Golduck</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -7247,6 +7306,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">56</th>
               <th style="font-size:large;" rowspan="7">Mankey</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Karate Chop" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Cross Chop" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -7354,6 +7414,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">57</th>
               <th style="font-size:large;" rowspan="13">Primeape</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Counter" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Close Combat" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -7551,6 +7612,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">58</th>
               <th style="font-size:large;" rowspan="7">Growlithe</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Ember" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Flamethrower" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -7658,6 +7720,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="16">59</th>
               <th style="font-size:large;" rowspan="16">Arcanine</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fire Fang" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Fire Blast" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -7900,6 +7963,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">60</th>
               <th style="font-size:large;" rowspan="7">Poliwag</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bubble" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Bubble Beam" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -8007,6 +8071,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">61</th>
               <th style="font-size:large;" rowspan="9">Poliwhirl</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bubble" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Scald" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -8146,6 +8211,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">62</th>
               <th style="font-size:large;" rowspan="13">Poliwrath</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bubble" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Dynamic Punch" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -8343,6 +8409,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">63</th>
               <th style="font-size:large;" rowspan="7">Abra</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Zen Headbutt" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Shadow Ball" chargedMoveType="Ghost" chargedMoveBoost="Fog">
@@ -8450,6 +8517,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">64</th>
               <th style="font-size:large;" rowspan="7">Kadabra</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Shadow Ball" chargedMoveType="Ghost" chargedMoveBoost="Fog">
@@ -8557,6 +8625,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">65</th>
               <th style="font-size:large;" rowspan="11">Alakazam</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Futuresight" chargedMoveType="Psychic" chargedMoveBoost="Windy">
@@ -8724,6 +8793,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">66</th>
               <th style="font-size:large;" rowspan="10">Machop</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Karate Chop" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Cross Chop" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -8876,6 +8946,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">67</th>
               <th style="font-size:large;" rowspan="9">Machoke</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Karate Chop" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Dynamic Punch" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -9013,6 +9084,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="19">68</th>
               <th style="font-size:large;" rowspan="19">Machamp</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Counter" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Dynamic Punch" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -9302,6 +9374,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">69</th>
               <th style="font-size:large;" rowspan="7">Bellsprout</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Vine Whip" fastMoveType="Grass" fastMoveBoost="Sunny" chargedMoveName="Power Whip" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -9411,6 +9484,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">70</th>
               <th style="font-size:large;" rowspan="10">Weepinbell</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Power Whip" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -9565,6 +9639,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">71</th>
               <th style="font-size:large;" rowspan="7">Victreebel</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -9674,6 +9749,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">72</th>
               <th style="font-size:large;" rowspan="7">Tentacool</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bubble" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Water Pulse" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -9783,6 +9859,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">73</th>
               <th style="font-size:large;" rowspan="7">Tentacruel</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Jab" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -9892,6 +9969,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">74</th>
               <th style="font-size:large;" rowspan="7">Geodude</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Rock Throw" fastMoveType="Rock" fastMoveBoost="Partly Cloudy" chargedMoveName="Rock Slide" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -10001,6 +10079,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">75</th>
               <th style="font-size:large;" rowspan="13">Graveler</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Rock Throw" fastMoveType="Rock" fastMoveBoost="Partly Cloudy" chargedMoveName="Stone Edge" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -10200,6 +10279,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">76</th>
               <th style="font-size:large;" rowspan="13">Golem</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Rock Throw" fastMoveType="Rock" fastMoveBoost="Partly Cloudy" chargedMoveName="Stone Edge" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -10397,6 +10477,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">77</th>
               <th style="font-size:large;" rowspan="9">Ponyta</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Ember" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Fire Blast" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -10534,6 +10615,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">78</th>
               <th style="font-size:large;" rowspan="10">Rapidash</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fire Spin" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Fire Blast" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -10688,6 +10770,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">79</th>
               <th style="font-size:large;" rowspan="7">Slowpoke</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Psychic" chargedMoveType="Psychic" chargedMoveBoost="Windy">
@@ -10797,6 +10880,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">80</th>
               <th style="font-size:large;" rowspan="7">Slowbro</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Psychic" chargedMoveType="Psychic" chargedMoveBoost="Windy">
@@ -10906,6 +10990,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">81</th>
               <th style="font-size:large;" rowspan="7">Magnemite</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Spark" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Thunderbolt" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -11015,6 +11100,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">82</th>
               <th style="font-size:large;" rowspan="13">Magneton</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Thunder Shock" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Zap Cannon" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -11214,6 +11300,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">83</th>
               <th style="font-size:large;" rowspan="10">Farfetch'd</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Cut" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Leaf Blade" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -11368,6 +11455,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">84</th>
               <th style="font-size:large;" rowspan="9">Doduo</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Brave Bird" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -11507,6 +11595,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">85</th>
               <th style="font-size:large;" rowspan="9">Dodrio</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Drill Peck" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -11644,6 +11733,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">86</th>
               <th style="font-size:large;" rowspan="13">Seel</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Aqua Tail" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -11843,6 +11933,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="16">87</th>
               <th style="font-size:large;" rowspan="16">Dewgong</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Frost Breath" fastMoveType="Ice" fastMoveBoost="Snow" chargedMoveName="Blizzard" chargedMoveType="Ice" chargedMoveBoost="Snow">
@@ -12085,6 +12176,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">88</th>
               <th style="font-size:large;" rowspan="10">Grimer</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Jab" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -12237,6 +12329,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">89</th>
               <th style="font-size:large;" rowspan="13">Muk</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Poison Jab" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Gunk Shot" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -12434,6 +12527,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">90</th>
               <th style="font-size:large;" rowspan="7">Shellder</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Tackle" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Bubble Beam" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -12543,6 +12637,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">91</th>
               <th style="font-size:large;" rowspan="11">Cloyster</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Frost Breath" fastMoveType="Ice" fastMoveBoost="Snow" chargedMoveName="Avalanche" chargedMoveType="Ice" chargedMoveBoost="Snow">
@@ -12712,6 +12807,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">92</th>
               <th style="font-size:large;" rowspan="13">Gastly</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Lick" fastMoveType="Ghost" fastMoveBoost="Fog" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -12911,6 +13007,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">93</th>
               <th style="font-size:large;" rowspan="13">Haunter</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Shadow Claw" fastMoveType="Ghost" fastMoveBoost="Fog" chargedMoveName="Shadow Ball" chargedMoveType="Ghost" chargedMoveBoost="Fog">
@@ -13110,6 +13207,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="16">94</th>
               <th style="font-size:large;" rowspan="16">Gengar</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Shadow Claw" fastMoveType="Ghost" fastMoveBoost="Fog" chargedMoveName="Shadow Ball" chargedMoveType="Ghost" chargedMoveBoost="Fog">
@@ -13354,6 +13452,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">95</th>
               <th style="font-size:large;" rowspan="11">Onix</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Rock Throw" fastMoveType="Rock" fastMoveBoost="Partly Cloudy" chargedMoveName="Stone Edge" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -13521,6 +13620,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">96</th>
               <th style="font-size:large;" rowspan="7">Drowzee</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Psychic" chargedMoveType="Psychic" chargedMoveBoost="Windy">
@@ -13628,6 +13728,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">97</th>
               <th style="font-size:large;" rowspan="11">Hypno</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Futuresight" chargedMoveType="Psychic" chargedMoveBoost="Windy">
@@ -13795,6 +13896,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">98</th>
               <th style="font-size:large;" rowspan="7">Krabby</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bubble" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Bubble Beam" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -13902,6 +14004,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">99</th>
               <th style="font-size:large;" rowspan="10">Kingler</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bubble" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Water Pulse" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -14054,6 +14157,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">100</th>
               <th style="font-size:large;" rowspan="9">Voltorb</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Spark" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Thunderbolt" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -14191,6 +14295,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">101</th>
               <th style="font-size:large;" rowspan="10">Electrode</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Spark" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Thunderbolt" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -14345,6 +14450,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">102</th>
               <th style="font-size:large;" rowspan="7">Exeggcute</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Psychic" chargedMoveType="Psychic" chargedMoveBoost="Windy">
@@ -14454,6 +14560,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">103</th>
               <th style="font-size:large;" rowspan="13">Exeggutor</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -14651,6 +14758,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">104</th>
               <th style="font-size:large;" rowspan="7">Cubone</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Slap" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Dig" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -14758,6 +14866,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">105</th>
               <th style="font-size:large;" rowspan="7">Marowak</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Slap" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -14865,6 +14974,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">106</th>
               <th style="font-size:large;" rowspan="11">Hitmonlee</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Rock Smash" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Close Combat" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -15032,6 +15142,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="16">107</th>
               <th style="font-size:large;" rowspan="16">Hitmonchan</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Counter" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Close Combat" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
@@ -15274,6 +15385,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">108</th>
               <th style="font-size:large;" rowspan="7">Lickitung</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Lick" fastMoveType="Ghost" fastMoveBoost="Fog" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -15381,6 +15493,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">109</th>
               <th style="font-size:large;" rowspan="10">Koffing</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -15533,6 +15646,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">110</th>
               <th style="font-size:large;" rowspan="10">Weezing</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Acid" fastMoveType="Poison" fastMoveBoost="Cloudy" chargedMoveName="Sludge Bomb" chargedMoveType="Poison" chargedMoveBoost="Cloudy">
@@ -15687,6 +15801,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">111</th>
               <th style="font-size:large;" rowspan="7">Rhyhorn</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Slap" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Bulldoze" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -15796,6 +15911,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">112</th>
               <th style="font-size:large;" rowspan="9">Rhydon</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Slap" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Stone Edge" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -15933,6 +16049,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">113</th>
               <th style="font-size:large;" rowspan="9">Chansey</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -16070,6 +16187,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">114</th>
               <th style="font-size:large;" rowspan="9">Tangela</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Vine Whip" fastMoveType="Grass" fastMoveBoost="Sunny" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -16207,6 +16325,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">115</th>
               <th style="font-size:large;" rowspan="11">Kangaskhan</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Low Kick" fastMoveType="Fighting" fastMoveBoost="Cloudy" chargedMoveName="Outrage" chargedMoveType="Dragon" chargedMoveBoost="Windy">
@@ -16374,6 +16493,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">116</th>
               <th style="font-size:large;" rowspan="7">Horsea</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Bubble Beam" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -16481,6 +16601,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">117</th>
               <th style="font-size:large;" rowspan="9">Seadra</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -16618,6 +16739,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">118</th>
               <th style="font-size:large;" rowspan="7">Goldeen</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Shot" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Aqua Tail" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -16725,6 +16847,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="16">119</th>
               <th style="font-size:large;" rowspan="16">Seaking</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Waterfall" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Megahorn" chargedMoveType="Bug" chargedMoveBoost="Rainy">
@@ -16967,6 +17090,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">120</th>
               <th style="font-size:large;" rowspan="10">Staryu</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Bubble Beam" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -17121,6 +17245,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="17">121</th>
               <th style="font-size:large;" rowspan="17">Starmie</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -17380,6 +17505,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">122</th>
               <th style="font-size:large;" rowspan="7">Mr. Mime</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Psychic" chargedMoveType="Psychic" chargedMoveBoost="Windy">
@@ -17489,6 +17615,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">123</th>
               <th style="font-size:large;" rowspan="13">Scyther</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fury Cutter" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Bug Buzz" chargedMoveType="Bug" chargedMoveBoost="Rainy">
@@ -17688,6 +17815,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">124</th>
               <th style="font-size:large;" rowspan="13">Jynx</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Avalanche" chargedMoveType="Ice" chargedMoveBoost="Snow">
@@ -17885,6 +18013,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">125</th>
               <th style="font-size:large;" rowspan="7">Electabuzz</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Thunder Shock" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Thunderbolt" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -17992,6 +18121,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">126</th>
               <th style="font-size:large;" rowspan="7">Magmar</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Ember" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Fire Blast" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -18099,6 +18229,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">127</th>
               <th style="font-size:large;" rowspan="13">Pinsir</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bug Bite" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="X Scissor" chargedMoveType="Bug" chargedMoveBoost="Rainy">
@@ -18296,6 +18427,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">128</th>
               <th style="font-size:large;" rowspan="7">Tauros</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Tackle" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
@@ -18404,6 +18536,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="2">129</th>
               <th style="font-size:large;" rowspan="2">Magikarp</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Splash" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Struggle" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -18439,6 +18572,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="21">130</th>
               <th style="font-size:large;" rowspan="21">Gyarados</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Waterfall" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -18758,6 +18892,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="16">131</th>
               <th style="font-size:large;" rowspan="16">Lapras</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Frost Breath" fastMoveType="Ice" fastMoveBoost="Snow" chargedMoveName="Blizzard" chargedMoveType="Ice" chargedMoveBoost="Snow">
@@ -19000,6 +19135,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="2">132</th>
               <th style="font-size:large;" rowspan="2">Ditto</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Transform" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Struggle" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -19032,6 +19168,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">133</th>
               <th style="font-size:large;" rowspan="7">Eevee</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Body Slam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -19139,6 +19276,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="4">134</th>
               <th style="font-size:large;" rowspan="4">Vaporeon</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -19201,6 +19339,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">135</th>
               <th style="font-size:large;" rowspan="7">Jolteon</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Thunder Shock" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Thunderbolt" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -19308,6 +19447,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">136</th>
               <th style="font-size:large;" rowspan="9">Flareon</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fire Spin" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Overheat" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -19445,6 +19585,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="31">137</th>
               <th style="font-size:large;" rowspan="31">Porygon</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -19914,6 +20055,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="11">138</th>
               <th style="font-size:large;" rowspan="11">Omanyte</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Water Gun" fastMoveType="Water" fastMoveBoost="Rainy" chargedMoveName="Rock Blast" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -20083,6 +20225,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="13">139</th>
               <th style="font-size:large;" rowspan="13">Omastar</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Rock Throw" fastMoveType="Rock" fastMoveBoost="Partly Cloudy" chargedMoveName="Hydro Pump" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -20282,6 +20425,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">140</th>
               <th style="font-size:large;" rowspan="7">Kabuto</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Mud Shot" fastMoveType="Ground" fastMoveBoost="Sunny" chargedMoveName="Ancient Power" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -20391,6 +20535,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="10">141</th>
               <th style="font-size:large;" rowspan="10">Kabutops</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fury Cutter" fastMoveType="Bug" fastMoveBoost="Rainy" chargedMoveName="Stone Edge" chargedMoveType="Rock" chargedMoveBoost="Partly Cloudy">
@@ -20545,6 +20690,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">142</th>
               <th style="font-size:large;" rowspan="7">Aerodactyl</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Bite" fastMoveType="Dark" fastMoveBoost="Fog" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -20652,6 +20798,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">143</th>
               <th style="font-size:large;" rowspan="9">Snorlax</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Lick" fastMoveType="Ghost" fastMoveBoost="Fog" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -20791,6 +20938,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="4">144</th>
               <th style="font-size:large;" rowspan="4">Articuno</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Frost Breath" fastMoveType="Ice" fastMoveBoost="Snow" chargedMoveName="Blizzard" chargedMoveType="Ice" chargedMoveBoost="Snow">
@@ -20855,6 +21003,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="4">145</th>
               <th style="font-size:large;" rowspan="4">Zapdos</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Charge Beam" fastMoveType="Electric" fastMoveBoost="Rainy" chargedMoveName="Zap Cannon" chargedMoveType="Electric" chargedMoveBoost="Rainy">
@@ -20919,6 +21068,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="4">146</th>
               <th style="font-size:large;" rowspan="4">Moltres</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Fire Spin" fastMoveType="Fire" fastMoveBoost="Sunny" chargedMoveName="Overheat" chargedMoveType="Fire" chargedMoveBoost="Sunny">
@@ -20982,6 +21132,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">147</th>
               <th style="font-size:large;" rowspan="7">Dratini</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Aqua Tail" chargedMoveType="Water" chargedMoveBoost="Rainy">
@@ -21090,6 +21241,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="7">148</th>
               <th style="font-size:large;" rowspan="7">Dragonair</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Dragon Pulse" chargedMoveType="Dragon" chargedMoveBoost="Windy">
@@ -21200,6 +21352,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="19">149</th>
               <th style="font-size:large;" rowspan="19">Dragonite</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Dragon Tail" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Draco Meteor" chargedMoveType="Dragon" chargedMoveBoost="Windy">
@@ -21487,6 +21640,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">150</th>
               <th style="font-size:large;" rowspan="9">Mewtwo</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Confusion" fastMoveType="Psychic" fastMoveBoost="Windy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
@@ -21624,6 +21778,7 @@
               </td>
               <th style="font-size:large;" align="right" rowspan="9">151</th>
               <th style="font-size:large;" rowspan="9">Mew</th>
+              <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
@@ -21750,6 +21905,7 @@
         </div>
       </div>
     </div>
+    <!-- This script is defined in /js/global.js -->
     <script>WriteFooter();</script>
   </body>
     </html>
