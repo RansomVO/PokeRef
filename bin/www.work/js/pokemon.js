@@ -1879,8 +1879,13 @@ function GetAllTypes() {
 
 
 function GetPokemonRaidBossLink(pokemon) {
-    // TODO QZX
-    return '';
+    try {
+        if (pokemon.attributes['raidboss'].value === 'true') {
+            return '/charts/raidboss/raidboss.' + GetPokemonName(pokemon).toLowerCase() + '.html';
+        }
+    } catch (err) { }
+
+    return null;
 }
 
 // #endregion
