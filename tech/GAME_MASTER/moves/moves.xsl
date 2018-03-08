@@ -106,6 +106,7 @@
     <tr style="font-size:x-large;">
       <th>Move Name</th>
       <th>Type</th>
+      <th>Boost</th>
       <th>Energy</th>
       <th>Power</th>
       <th>Time</th>
@@ -113,16 +114,24 @@
   </xsl:template>
 
   <xsl:template match="Move">
+    <xsl:variable name="Type" select="Type" />
     <tr>
       <th align="left">
         <xsl:value-of select="Name"/>
       </th>
       <td align="left">
         <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="Type" />
+          <xsl:with-param name="Type" select="$Type" />
         </xsl:call-template>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="Type"/>
+        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+        <xsl:value-of select="$Type"/>
+      </td>
+      <td>
+        <xsl:call-template name="OutputWeatherBoostIcon">
+          <xsl:with-param name="Type" select="$Type" />
+        </xsl:call-template>
+        <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+        <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
       </td>
       <td align="right">
         <xsl:value-of select="Energy"/>

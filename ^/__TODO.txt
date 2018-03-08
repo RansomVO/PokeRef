@@ -1,6 +1,13 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
+Add pages for formulas for CP and HP
+
+PokeIcon:
+	Distinguish between Current RaidBoss and Legacy (faded gold?)
+	Distinguish regional.
+	Distinguish RaidBoss Only.
+
 PokemonNameID: add ability to filter by gen ("1", "+1-3" ?)
 
 SEAPokeMap Filter
@@ -86,8 +93,6 @@ Evolutions:
 
 PokeChart:
 	- Add to Popup:
-		- If a Raid Boss, it would be nice to have a link to the Raid Boss page for it.
-	- Long-term Add to Popup:
 		- MoveSets
 		- Evolutions
 		- What egg it might hatch from. (eventually.)
@@ -99,7 +104,7 @@ Effectiveness:
 ---------------------------------------------------------------------------------------------------------
 ----- RaidBoss -----
 Add weaknesses based on moveset.
-	(E.G. with Ho Oh, you would want different attackers for hyperbeam vs. the other one.)
+	(E.G. with Ho-Oh, you would want different attackers for hyperbeam vs. the other one.)
 
 =========================================================================================================
 ----- Tools -----
@@ -112,16 +117,16 @@ Create a tool to figure out best counters for a RaidBoss.
 		Figure out how much damage the Attacker will do before it is killed.
 			Take into account level, IV
 
----------------------------------------------------------------------------
-|Raid Boss	|		Move Sets				|		True DPS				|
-|			|Fast Move	|	Charged Move	|	Regular	|	Boosted			|
----------------------------------------------------------------------------
-|Kyogre		|Waterfall	|	Hydro Pump		|	22.35	|	(icon)	12.34	|
-|			---------------------------------------------------------------
-|			|Waterfall	|	Blizzard		|	30.11	|	(icon)	56.78	|
-|			---------------------------------------------------------------
-|			|Waterfall	|	Thunder			|	28.00	|	(icon)	90.12	|
----------------------------------------------------------------------------
+	-----------------------------------------------------------------------------
+	|Raid Boss	|		Move Sets				|		True DPS				|
+	|			|Fast Move	|	Charged Move	|	Regular	|	Boosted			|
+	-----------------------------------------------------------------------------
+	|Kyogre		|Waterfall	|	Hydro Pump		|	22.35	|	(icon)	12.34	|
+	|			-----------------------------------------------------------------
+	|			|Waterfall	|	Blizzard		|	30.11	|	(icon)	56.78	|
+	|			-----------------------------------------------------------------
+	|			|Waterfall	|	Thunder			|	28.00	|	(icon)	90.12	|
+	-----------------------------------------------------------------------------
 
 
 Create tool to determine effectiveness of a Move against a Pokemon.
@@ -138,15 +143,11 @@ Evolutions:
 =========================================================================================================
 ----- Technical Reference -----
 
-Add pages for formulas for CP and HP
 
 Add pictures to moves/index.html
 	- Energy bar from Pokemon battle
 
 Do Example on moves/index page. (Include link to Move Sets.)
-
-Fast Moves and Charged Moves
-	- Add column for Boost
 
 Probabilty of catch
 	Probability=1−(1−BCR/[2∗CPM])Multipliers
