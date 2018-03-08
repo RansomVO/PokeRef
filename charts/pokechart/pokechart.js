@@ -167,7 +167,14 @@ function OnSelectPokemon(pokemon) {
 
         var remove = {};
         remove.name = true;
-        Selected_Pokemon.innerHTML = GetPokemonIcon(pokemon, remove).replace('onclick="OnSelectPokemon(this)"', '').replace('style="cursor:pointer;"', '');
+        Selected_Pokemon.innerHTML = GetPokemonIcon(pokemon, remove);
+
+        // If Raidboss, link to Possible IVs.
+        var raidBossLink = GetPokemonRaidBossLink(pokemon);
+        Selected_Pokemon.innerHTML = raidBossLink !== null 
+            ? Selected_Pokemon.innerHTML.replace('onclick="OnSelectPokemon(this)"', 'onclick="OnSelectRaidBoss(\'' + raidBossLink + '\')"')
+            : Selected_Pokemon.innerHTML.replace('onclick="OnSelectPokemon(this)"', '').replace('style="cursor:pointer;"', '');
+
         Selected_Pokemon_Generation.innerHTML = GetPokemonGeneration(pokemon);
         Selected_Pokemon_Family.innerHTML = GetPokemonFamily(pokemon);
 
@@ -234,10 +241,8 @@ function OnSelectPokemon(pokemon) {
             }
         }
 
-        // TODO QZX: If Raidboss, link to Possible IVs.
 
-        // TODO QZX: Evolutions (Row from Evolutions Chart) +
-        // TODO QZX:    # Name Candies Special
+        // TODO QZX: Evolutions (Row from Evolutions Chart)
 
         // TODO QZX: MoveSets (Rows from MoveSets chart)
 
@@ -245,6 +250,11 @@ function OnSelectPokemon(pokemon) {
     } catch (err) {
         ShowError(err);
     }
+}
+
+// Called when a Raidboss Pokemon is selected on the pop-up.
+function OnSelectRaidBoss(url) {
+    window.location.href = url;
 }
 
 // Called the selection changes in the Types Selector.

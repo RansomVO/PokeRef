@@ -64,6 +64,7 @@
     </xsl:if>
 
     <div>
+      <!-- #region Attributes -->
       <xsl:attribute name="title">
         <xsl:value-of select="Name" />
       </xsl:attribute>
@@ -197,6 +198,8 @@
           </xsl:attribute>
         </xsl:for-each>
       </xsl:if>
+      
+      <!-- #endregion Attributes -->
 
       <div>
         <xsl:attribute name="style">
