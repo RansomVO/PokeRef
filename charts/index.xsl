@@ -32,12 +32,22 @@
         <title>Charts</title>
       </head>
       <body>
+        <img class="FLOAT_RIGHT" style="margin:1em; max-height:100%; max-width:45%;" src="/images/404pokemon.png" />
         <h1>
           <xsl:call-template name="HomePageLink" />
           <xsl:text> Charts</xsl:text>
         </h1>
         <p>
           Everybody loves charts for quickly looking things up.
+        </p>
+        <p>
+          Originally, I made spreadsheets and tried to open them on my phone while playing.
+          But the tables became more and more complex, and took longer and longer to load.
+          Eventually, while loading the spreadsheet the phone would shut down Pokemon GO to give memory to the spreadsheet app.
+        </p>
+        <p>
+          In the end, I started converting my spreadsheets to content on this site.
+          Then, I started having more and more ideas, and started sharing the link with other Trainers, until you have what is here now.
         </p>
 
         <br />
@@ -73,6 +83,8 @@
           </div>
         </div>
 
+        <br />
+        <hr />
         <h2 id="anchor_movesets">
           <a href="movesets/">Pokemon Move Sets</a>
         </h2>
