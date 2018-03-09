@@ -1758,6 +1758,11 @@ function GetPokemonGenderRatio(pokemon) {
 }
 
 
+function GetPokemonEgg(pokemon) {
+    return GetPokemon(pokemon).attributes['egg'].value;
+}
+
+
 function GetPokemonShiny(pokemon) {
     return GetPokemon(pokemon).attributes['shiny'].value !== '';
 }
