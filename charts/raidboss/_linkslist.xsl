@@ -5,7 +5,7 @@
   <xsl:include href="/xsl/global.xsl"/>
   <xsl:include href="raidbosses.xsl"/>
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <!-- Trick to allow non-list to be displayed in navigation bar. -->
     <xsl:value-of select="concat($lt, '/ul', $gt)" disable-output-escaping="yes" />
     

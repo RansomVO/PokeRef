@@ -4,7 +4,7 @@
 >
   <xsl:include href="/xsl/global.xsl"/>
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us">
       <head>
         <script>

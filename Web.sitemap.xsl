@@ -7,7 +7,7 @@
 >
   <xsl:include href="/xsl/global.xsl" />
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us" manifest="/pokeref.appcache">
       <head>
         <!-- Adds the general META and LINK statements. -->

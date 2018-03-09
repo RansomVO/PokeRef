@@ -1,11 +1,13 @@
 <!DOCTYPE Root [
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
   <!ENTITY PokemonStats SYSTEM "/_datafiles/pokestats.gen1.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="pokestats.xsl"?>
 <Root>
   &Settings; 
   &Mappings;
+  &Eggs;
   &PokemonStats;
 </Root>

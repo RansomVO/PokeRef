@@ -2,6 +2,7 @@
 <!DOCTYPE Root [
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
   <!ENTITY PokestatsGen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY PokestatsGen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
   <!ENTITY PokestatsGen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
@@ -15,6 +16,7 @@
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Settings;
   &Mappings;
+  &Eggs;
   &PokestatsGen1;
   &PokestatsGen2;
   &PokestatsGen3;

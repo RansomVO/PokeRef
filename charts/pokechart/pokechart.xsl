@@ -5,7 +5,7 @@
 >
   <xsl:include href="/xsl/global.xsl" />
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us">
       <head>
         <!-- Adds the general META and LINK statements. -->
@@ -241,12 +241,13 @@
         <tr>
           <td valign="top" style="padding-bottom:.25em;">
             <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
-            <br /><input id="RegionalOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
-            <br /><input id="RaidBossOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
-            <br /><input id="LegendaryOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
+            <br /><input id="Regional_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
+            <br /><input id="RaidBoss_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
+            <br /><input id="Legendary_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
             <br /><input id="HatchOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Hatch Only
-            <br /><input id="ShinyOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
-            <br />Pokemon Name or ID:
+            <br /><input id="Egg_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />May Hatch From Egg
+            <br /><input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+            <br /><xsl:text>Pokemon Name or ID:</xsl:text>
             <xsl:call-template name="OutputFilterPokemonNameID">
               <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
             </xsl:call-template>

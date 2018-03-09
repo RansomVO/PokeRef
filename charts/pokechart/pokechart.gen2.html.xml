@@ -3,6 +3,7 @@
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
   <!ENTITY Stats SYSTEM "/_datafiles/stats.xml">
+  <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
   <!ENTITY Pokestats SYSTEM "/_datafiles/pokestats.gen2.xml">
   <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.current.xml">
 ]>
@@ -11,6 +12,7 @@
   &Settings; 
   &Mappings;
   &Stats;
+  &Eggs;
   &Pokestats;
   &RaidBosses;
 </Root>

@@ -3,7 +3,7 @@
                 xmlns:exslt="http://exslt.org/common">
   <xsl:include href="/xsl/global.xsl" />
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html xmlns:exslt="http://exslt.org/common">
       <head>
         <!-- Adds the general META and LINK statements. -->

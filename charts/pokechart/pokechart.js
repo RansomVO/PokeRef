@@ -16,11 +16,12 @@ var filterNameID = null;
 
 var CookieSettings = {
     'ReleasedOnly_Check': 'false',
-    'ShinyOnly_Check': 'false',
+    'Shiny_Check': 'false',
     'HatchOnly_Check': 'false',
-    'RegionalOnly_Check': 'false',
-    'RaidBossOnly_Check': 'false',
-    'LegendaryOnly_Check': 'false',
+    'Egg_Check': 'false',
+    'Regional_Check': 'false',
+    'RaidBoss_Check': 'false',
+    'Legendary_Check': 'false',
 };
 
 // Read the Cookie and apply it to the fields.
@@ -50,11 +51,12 @@ window.onload = function () {
 //  NOTE: Do not use keyword "var" and the value will be global.
 function GetFields() {
     ReleasedOnly_Check = document.getElementById('ReleasedOnly_Check');
-    RegionalOnly_Check = document.getElementById('RegionalOnly_Check');
-    RaidBossOnly_Check = document.getElementById('RaidBossOnly_Check');
-    LegendaryOnly_Check = document.getElementById('LegendaryOnly_Check');
+    Regional_Check = document.getElementById('Regional_Check');
+    RaidBoss_Check = document.getElementById('RaidBoss_Check');
+    Legendary_Check = document.getElementById('Legendary_Check');
     HatchOnly_Check = document.getElementById('HatchOnly_Check');
-    ShinyOnly_Check = document.getElementById('ShinyOnly_Check');
+    Egg_Check = document.getElementById('Egg_Check');
+    Shiny_Check = document.getElementById('Shiny_Check');
 
     Collections = [null]
     for (var i = 1; i <= 7; i++) {
@@ -115,6 +117,8 @@ function FilterGeneration(collection) {
 
 //Determine if a specific Pokemon matches the filters.
 function MatchesFilter(pokemon) {
+    if (pokemon.attributes['name'] === 'Bulbasaur') alert('Egg: ' + pokemon.attributes['egg']);
+
     if (filterNameID !== null && !MatchFilterPokemonNameID(pokemon, filterNameID)) {
         return false;
     }
@@ -123,15 +127,15 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (RegionalOnly_Check.checked && !GetPokemonAvailability(pokemon).contains('Regional')) {
+    if (Regional_Check.checked && !GetPokemonAvailability(pokemon).contains('Regional')) {
         return false;
     }
 
-    if (RaidBossOnly_Check.checked && (pokemon.attributes['raidboss'] === undefined || pokemon.attributes['raidboss'].value !== 'true')) {
+    if (RaidBoss_Check.checked && (pokemon.attributes['raidboss'] === undefined || pokemon.attributes['raidboss'].value !== 'true')) {
         return false;
     }
 
-    if (LegendaryOnly_Check.checked && !GetPokemonAvailability(pokemon).contains('Legendary')) {
+    if (Legendary_Check.checked && !GetPokemonAvailability(pokemon).contains('Legendary')) {
         return false;
     }
 
@@ -139,7 +143,11 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (ShinyOnly_Check.checked && !GetPokemonShiny(pokemon)) {
+    if (Shiny_Check.checked && !GetPokemonShiny(pokemon)) {
+        return false;
+    }
+
+    if (Egg_Check.checked && GetPokemonEgg(pokemon) === '') {
         return false;
     }
 

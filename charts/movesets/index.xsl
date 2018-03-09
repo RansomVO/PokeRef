@@ -9,7 +9,7 @@
   <xsl:output method="html" encoding="utf-8" omit-xml-declaration="yes" standalone="no" indent="yes" />
   <xsl:include href="/xsl/global.xsl" />
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us">
       <head>
         <!-- Adds the general META and LINK statements. -->

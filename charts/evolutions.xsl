@@ -6,7 +6,7 @@
 
   <xsl:variable name="Pokemon" select="/Root/PokemonStats/Pokemon" />
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us">
       <head>
         <!-- Adds the general META and LINK statements. -->
@@ -103,8 +103,8 @@
 
   <!-- Template to write the Selection Criteria. -->
   <xsl:template name="CreateCriteria">
-    <h2 id="anchor_evolution_criteria">
-      Selection Criteria
+    <h2 id="anchor_criteria">
+      <xsl:text>Selection Criteria</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'EVOLUTIONS_CRITERIA'" />
       </xsl:call-template>
@@ -112,41 +112,57 @@
         <xsl:with-param name="Callback" select="'OnResetCriteriaClicked();'" />
       </xsl:call-template>
     </h2>
-    <div id="EVOLUTIONS_CRITERIA" class="INDENT">
-      <xsl:call-template name="OutputSliderButtonControl">
-        <xsl:with-param name="Id" select="'Evolution_AnyOrAll_Gens_Slider'" />
-        <xsl:with-param name="Callback" select="'OnFilterCriteriaChanged(this);'" />
-        <xsl:with-param name="OffLabel" select="'Any'" />
-        <xsl:with-param name="OnLabel" select="'All'" />
-        <xsl:with-param name="Help">
-          <div class="CONTROLS_HELP_ENTRY">
-            <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
-            <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
-          </div>
-          <div class="CONTROLS_HELP_ENTRY">
-            <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
-            <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
-          </div>
-        </xsl:with-param>
-      </xsl:call-template>
-      <div class="CHILD" style="margin-left:1em;">
-        <input id="Gen1_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" checked="true" />Gen1
-        <br /><input id="Gen2_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" checked="true" />Gen2
-        <br /><input id="Gen3_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" checked="true" />Gen3
-        <br /><input id="Gen4_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" checked="true" />Gen4
-        <br /><input id="Gen5_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" checked="true" />Gen5
-        <br /><input id="Gen6_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" checked="true" />Gen6
-        <br /><input id="Gen7_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" checked="true" />Gen7
-      </div>
-      <br />
-      <td>Pokemon Name or ID:</td>
-      <td style="padding:0">
-        <xsl:call-template name="OutputFilterPokemonNameID">
-          <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
-        </xsl:call-template>
-      </td>
+    <div id="EVOLUTIONS_CRITERIA">
+      <table border="1" class="KEY_TABLE">
+        <tr>
+          <th>Show Only Families Containing</th>
+        </tr>
+        <tr>
+          <td valign="top" style="padding-bottom:.25em;">
+            <input id="Egg_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />May Hatch From Egg
+            <br /><input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+            <br /><xsl:text>Pokemon Name or ID:</xsl:text>
+            <xsl:call-template name="OutputFilterPokemonNameID">
+              <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
+            </xsl:call-template>
+          </td>
+        </tr>
+      </table>
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+      <table border="1" class="KEY_TABLE">
+        <tr>
+          <th>Generations</th>
+        </tr>
+        <tr>
+          <td valign="top" style="padding-bottom:.25em;">
+            <xsl:call-template name="OutputSliderButtonControl">
+              <xsl:with-param name="Id" select="'Evolution_AnyOrAll_Gens_Slider'" />
+              <xsl:with-param name="Callback" select="'OnFilterCriteriaChanged(this);'" />
+              <xsl:with-param name="OffLabel" select="'Any'" />
+              <xsl:with-param name="OnLabel" select="'All'" />
+              <xsl:with-param name="Help">
+                <div class="CONTROLS_HELP_ENTRY">
+                  <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
+                  <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
+                </div>
+                <div class="CONTROLS_HELP_ENTRY">
+                  <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
+                  <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
+                </div>
+              </xsl:with-param>
+            </xsl:call-template>
+            <br /><input id="Gen1_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen1
+            <br /><input id="Gen2_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen2
+            <br /><input id="Gen3_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen3
+            <br /><input id="Gen4_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen4
+            <br /><input id="Gen5_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen5
+            <br /><input id="Gen6_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen6
+            <br /><input id="Gen7_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen7
+          </td>
+        </tr>
+      </table>
     </div>
-  </xsl:template>
+    </xsl:template>
 
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
@@ -177,49 +193,45 @@
   <!-- Template to output a Family of Pokemon -->
   <xsl:template name="OutputFamily">
     <xsl:param name="Family" />
-    <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>!-- 
-    Here are samples of the weird cases:
-      ┌───────────┬───────────┐   
-      │ Eevee     │ Vaporeon  │
-      │   (8)     ├───────────┤
-      │           │ Jolteon   │
-      │           ├───────────┤
-      │           │ Flareon   │
-      │           ├───────────┤
-      │           │ Espeon    │
-      │           ├───────────┤
-      │           │ Umbreon   │
-      │           ├───────────┤
-      │           │ Leafeon   │
-      │           ├───────────┤
-      │           │ Glaceon   │
-      │           ├───────────┤
-      │           │ Sylveon   │
-      └───────────┴───────────┘
+    <!-- 
+      Here are samples of the weird cases:
+        ┌───────────┬───────────┐   
+        │ Eevee     │ Vaporeon  │
+        │   (8)     ├───────────┤
+        │           │ Jolteon   │
+        │           ├───────────┤
+        │           │ Flareon   │
+        │           ├───────────┤
+        │           │ Espeon    │
+        │           ├───────────┤
+        │           │ Umbreon   │
+        │           ├───────────┤
+        │           │ Leafeon   │
+        │           ├───────────┤
+        │           │ Glaceon   │
+        │           ├───────────┤
+        │           │ Sylveon   │
+        └───────────┴───────────┘
 
-      ┌───────────┬───────────┬───────────┐   
-      │ Poliwag   │ Poliwhirl │ Poliwrath │
-      │    (2)    │    (2)    ├───────────┤
-      │           │           │ Politoed  │
-      └───────────┴───────────┴───────────┘
+        ┌───────────┬───────────┬───────────┐   
+        │ Poliwag   │ Poliwhirl │ Poliwrath │
+        │    (2)    │    (2)    ├───────────┤
+        │           │           │ Politoed  │
+        └───────────┴───────────┴───────────┘
 
-      ┌───────────┬───────────┬───────────┐   
-      │ Wurmple   │ Silcoon   │ Beautifly │
-      │    (2)    ├───────────├───────────┤
-      │           │ Cascoon   │ Dustox    │
-      └───────────┴───────────┴───────────┘
+        ┌───────────┬───────────┬───────────┐   
+        │ Wurmple   │ Silcoon   │ Beautifly │
+        │    (2)    ├───────────├───────────┤
+        │           │ Cascoon   │ Dustox    │
+        └───────────┴───────────┴───────────┘
 
-      ( TODO QZX: I haven't handled this yet. We'll see what happens when Pokemon GO gets there.)
-      ┌───────────┬───────────────────────┐
-      │ Nincada   │ Ninjask               │
-      │    (2)    ├───────────────────────┤
-      │           │ Ninjask </xsl:text>
-    <xsl:value-of select="$amp" disable-output-escaping="yes" />
-    <xsl:text> Shedinja    │
-      └───────────┴───────────────────────┘
-  --</xsl:text>
-    <xsl:value-of select="$gt" disable-output-escaping="yes" />
+        (TODO QZX: I haven't handled this yet. We'll see what happens when Pokemon GO gets there.)
+        ┌───────────┬───────────────────────┐
+        │ Nincada   │ Ninjask               │
+        │    (2)    ├───────────────────────┤
+        │           │ Ninjask ; Shedinja    │
+        └───────────┴───────────────────────┘
+    -->
 
     <!-- Output first row. -->
     <xsl:variable name="IDs">

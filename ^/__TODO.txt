@@ -7,8 +7,12 @@ PokeIcon:
 	Distinguish between Current RaidBoss and Legacy (faded gold?)
 	Distinguish regional.
 	Distinguish RaidBoss Only.
+	Put Highlight around egg if HatchOnly
 
-PokemonNameID: add ability to filter by gen ("1", "+1-3" ?)
+PokemonNameID: 
+	- Add ability to filter by gen ("1", "+1-3" ?)
+	- Add ability to specify whether to match StartsWith or Contains.
+
 
 SEAPokeMap Filter
 
@@ -17,6 +21,8 @@ RaidBoss Counters
 
 =========================================================================================================
 ----- Overall -----
+
+
 
 Look into ability to quit using IsMobile() to cause document.write(...)
 	@media only screen and (width : 1024px) and (orientation : landscape) {    
@@ -83,11 +89,7 @@ Add to Tips page.
 =========================================================================================================
 ----- Charts -----
 Evolutions: 
-	- Add ability to show (combobox? 3 radios? 2 checkboxes?):
-		A) All
-		B) Only Released
-		C) Only Unreleased.
-        
+	- Add checkbox for Only Released
 	- Add: Show what is needed to evolve (Candies Special)
 
 
@@ -95,7 +97,6 @@ PokeChart:
 	- Add to Popup:
 		- MoveSets
 		- Evolutions
-		- What egg it might hatch from. (eventually.)
 
 Effectiveness:
 	- Add ability to select a cell, or a row header and/or a column header

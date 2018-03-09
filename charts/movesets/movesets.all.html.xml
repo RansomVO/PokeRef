@@ -3,6 +3,7 @@
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
   <!ENTITY Stats SYSTEM "/_datafiles/stats.xml">
+  <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
   <!ENTITY PokestatsGen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY MoveSetsGen1 SYSTEM "/_datafiles/movesets.gen1.xml">
   <!ENTITY PokestatsGen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
@@ -17,6 +18,7 @@
   &Settings; 
   &Mappings;
   &Stats;
+  &Eggs;
   &PokestatsGen1;
   &MoveSetsGen1;
   &PokestatsGen2;

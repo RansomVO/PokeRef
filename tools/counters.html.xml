@@ -4,6 +4,7 @@
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
   <!ENTITY Stats SYSTEM "/_datafiles/stats.xml">
+  <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
   <!ENTITY PokeStats_Gen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY PokeStats_Gen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
   <!ENTITY PokeStats_Gen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
@@ -16,6 +17,7 @@
   &Settings; 
   &Mappings;
   &Stats;
+  &Eggs;
   &PokeStats_Gen1;
   &PokeStats_Gen2;
   &PokeStats_Gen3;

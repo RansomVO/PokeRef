@@ -5,7 +5,7 @@
   <xsl:include href="/xsl/global.xsl" />
   <xsl:include href="raidbosses.xsl"/>
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us">
       <head>
         <!-- Adds the general META and LINK statements. -->

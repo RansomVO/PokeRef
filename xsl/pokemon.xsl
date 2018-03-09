@@ -51,8 +51,9 @@
     <xsl:param name="Header" />
     <xsl:param name="Footer" />
 
-    <xsl:variable name="Name" select="." />
+    <xsl:variable name="Name" select="Name" />
     <xsl:variable name="Pokemon" select="/Root/PokemonStats/Pokemon[Name = $Name]" />
+    <xsl:variable name="egg" select="/Root/Eggs/Egg[.=$Name]/@type" />
 
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
     <xsl:if test="exslt:node-set($Settings)/*/@href">
@@ -65,9 +66,6 @@
 
     <div>
       <!-- #region Attributes -->
-      <xsl:attribute name="title">
-        <xsl:value-of select="Name" />
-      </xsl:attribute>
       <xsl:attribute name="class">
         <xsl:choose>
           <xsl:when test="exslt:node-set($Settings)/*/@boxed">
@@ -106,6 +104,9 @@
             </xsl:choose>
           </xsl:otherwise>
         </xsl:choose>
+      </xsl:attribute>
+      <xsl:attribute name="title">
+        <xsl:value-of select="Name" />
       </xsl:attribute>
       <xsl:attribute name="name">
         <xsl:value-of select="Name" />
@@ -169,6 +170,9 @@
       <xsl:attribute name="fleeRate">
         <xsl:value-of select="Stats/Rates/Flee" />
       </xsl:attribute>
+      <xsl:attribute name="egg">
+        <xsl:value-of select="$egg" />
+      </xsl:attribute>
 
       <!-- Not using these at this time.
       <xsl:attribute name="heightStandard">
@@ -198,7 +202,7 @@
           </xsl:attribute>
         </xsl:for-each>
       </xsl:if>
-      
+
       <!-- #endregion Attributes -->
 
       <div>
@@ -223,9 +227,29 @@
           </div>
         </xsl:if>
 
-        <!-- Add Shiny Icon here. -->
-        <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0 and ShinyAvailable">
-          <img class="SHINY_ICON" src="/images/shiny.png" alt="Shiny" />
+        <!-- Add Icon here. -->
+        <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
+
+          <!-- Add Shiny Icon here. -->
+          <xsl:if test="ShinyAvailable">
+            <img class="SHINY_ICON" src="/images/shiny.png" alt="Shiny" />
+          </xsl:if>
+
+          <!-- Add Egg Icon here. -->
+          <xsl:if test="$egg != ''">
+            <img class="EGG_ICON">
+              <xsl:attribute name="src">
+                <xsl:text>/images/egg_</xsl:text>
+                <xsl:value-of select="$egg"/>
+                <xsl:text>.png</xsl:text>
+              </xsl:attribute>
+              <xsl:attribute name="title">
+                <xsl:text>Hatches from </xsl:text>
+                <xsl:value-of select="$egg"/>
+                <xsl:text> Egg</xsl:text>
+              </xsl:attribute>
+            </img>
+          </xsl:if>
         </xsl:if>
 
         <xsl:apply-templates select="." mode="Sprite">

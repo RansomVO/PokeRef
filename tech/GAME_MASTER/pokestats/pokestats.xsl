@@ -9,7 +9,7 @@
 -->
 
   <!-- Main Template -->
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us">
       <head>
         <!-- Adds the general META and LINK statements. -->

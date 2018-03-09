@@ -9,7 +9,7 @@
     - Make it so table scrolls, leaving the headers at the top.
 -->
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <html lang="en-us">
       <head>
         <!-- Adds the general META and LINK statements. -->

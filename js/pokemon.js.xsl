@@ -6,7 +6,7 @@
   <xsl:output omit-xml-declaration="yes" />
   <xsl:include href="/xsl/global.xsl" />
 
-  <xsl:template match="Root">
+  <xsl:template match="/Root">
     <!-- #region Global Variables -->
     <xsl:text>// ==============================================================================================
 // #region Global Variables
@@ -189,6 +189,11 @@ function GetPokemonBoost2(pokemon, icon) {
 function GetPokemonGenderRatio(pokemon) {
     var genderRatio = GetPokemon(pokemon).attributes['genderRatio'].value;
     return genderRatio === '' ? '???' : genderRatio;
+}
+<!-- #endregion -->
+<!-- #region GetPokemonEgg() -->
+function GetPokemonEgg(pokemon) {
+    return GetPokemon(pokemon).attributes['egg'].value;
 }
 <!-- #endregion -->
 <!-- #region GetPokemonShiny() -->
