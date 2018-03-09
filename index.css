@@ -246,12 +246,25 @@ h1, h2, h3, h4 {
     top: 0;
 }
 
-.SHINY_ICON {
+.LEFT_ICON {
     float: left;
     width: 1.5em;
 }
 
-.EGG_ICON{
+/* May wish to specify "background-image: url(...)" as a style on the container with this class. */
+.RIGHT_ICON_WRAPPER {
+    float: right;
+    width: 3em;
+    height: 3em;
+    background-size: cover;
+}
+
+.WRAPPED_ICON {
+    width: 1.5em;
+    margin: .75em;
+}
+
+.RIGHT_ICON {
     float: right;
     width: 1.5em;
 }

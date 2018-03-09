@@ -76,16 +76,6 @@
           </xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
-          <xsl:when test="contains(Availability,$Availability_HatchOnly_2K)">
-            <xsl:text>HATCH_ONLY_2K </xsl:text>
-          </xsl:when>
-          <xsl:when test="contains(Availability,$Availability_HatchOnly_5K)">
-            <xsl:text>HATCH_ONLY_5K </xsl:text>
-          </xsl:when>
-          <xsl:when test="contains(Availability,$Availability_HatchOnly_10K)">
-            <xsl:text>HATCH_ONLY_10K </xsl:text>
-          </xsl:when>
-          <!-- $Availability_RaidBossOnly_EX test MUST come before $Availability_RaidBossOnly test! -->
           <xsl:when test="contains(Availability,$Availability_RaidBossOnly_EX)">
             <xsl:text>RAIDBOSS_ONLY_EX </xsl:text>
           </xsl:when>
@@ -232,23 +222,57 @@
 
           <!-- Add Shiny Icon here. -->
           <xsl:if test="ShinyAvailable">
-            <img class="SHINY_ICON" src="/images/shiny.png" alt="Shiny" />
+            <img class="LEFT_ICON" src="/images/shiny.png" alt="Shiny" />
           </xsl:if>
 
           <!-- Add Egg Icon here. -->
           <xsl:if test="$egg != ''">
-            <img class="EGG_ICON">
+            <xsl:if test="contains(Availability,'Hatch Only')">
+              <!-- If this a HatchOnly, use this trick to surround the egg icon with a highlighting wrapper. -->
+              <xsl:value-of select="concat($lt, 'div ')" disable-output-escaping="yes" />
+              <xsl:text>class="RIGHT_ICON_WRAPPER" style="background-image:url('/images/hatchonly.png');"</xsl:text>
+              <xsl:value-of select="$gt" disable-output-escaping="yes" />
+            </xsl:if>
+            <img class="RIGHT_ICON">
+              <xsl:attribute name="class">
+                <xsl:choose>
+                  <xsl:when test="contains(Availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
+                  <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
+                </xsl:choose>
+              </xsl:attribute>
               <xsl:attribute name="src">
                 <xsl:text>/images/egg_</xsl:text>
                 <xsl:value-of select="$egg"/>
                 <xsl:text>.png</xsl:text>
               </xsl:attribute>
               <xsl:attribute name="title">
-                <xsl:text>Hatches from </xsl:text>
+                <xsl:choose>
+                  <xsl:when test="contains(Availability,'Hatch Only')">
+                    <xsl:text>Only hatches from </xsl:text>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:text>Hatches from </xsl:text>
+                  </xsl:otherwise>
+                </xsl:choose>
                 <xsl:value-of select="$egg"/>
                 <xsl:text> Egg</xsl:text>
               </xsl:attribute>
             </img>
+            <xsl:if test="contains(Availability,'Hatch Only')">
+              <!-- If this a HatchOnly, close the trick started above. -->
+              <xsl:value-of select="concat($lt, '/div', $gt)" disable-output-escaping="yes" />
+            </xsl:if>
+
+            <!--
+            <div class="EGG_ICON_CONTAINER">
+              <xsl:if test="contains(Availability,'Hatch Only')">
+                <xsl:attribute name="style">background-image:url("/images/hatchonly.png"); background-size:cover;</xsl:attribute>
+              </xsl:if>
+              <xsl:if test="contains(Availability,'Hatch Only')">
+                  <xsl:attribute name="style">background-image:url("/images/hatchonly.png"); background-size:cover;</xsl:attribute>
+                </xsl:if>
+            </div>
+            -->
           </xsl:if>
         </xsl:if>
 
@@ -497,16 +521,7 @@
 
         <comment commment="Limited Origin">
           <tr>
-            <th rowspan="5">Limited Origin</th>
-            <td class="HATCH_ONLY_2K">Available From 2K Egg Only</td>
-          </tr>
-          <tr>
-            <td class="HATCH_ONLY_5K">Available From 5K Egg Only</td>
-          </tr>
-          <tr>
-            <td class="HATCH_ONLY_10K">Available From 10K Egg Only</td>
-          </tr>
-          <tr>
+            <th rowspan="2">Limited Origin</th>
             <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
           </tr>
           <tr>
