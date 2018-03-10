@@ -6,6 +6,7 @@
 
 var selectionsTypes = null;
 var selectionsBoosts = null;
+var selectionsEgg = null;
 var filterNameID = null;
 
 // #endregion
@@ -17,8 +18,6 @@ var filterNameID = null;
 var CookieSettings = {
     'ReleasedOnly_Check': 'false',
     'Shiny_Check': 'false',
-    'HatchOnly_Check': 'false',
-    'Egg_Check': 'false',
     'Regional_Check': 'false',
     'RaidBoss_Check': 'false',
     'Legendary_Check': 'false',
@@ -54,8 +53,6 @@ function GetFields() {
     Regional_Check = document.getElementById('Regional_Check');
     RaidBoss_Check = document.getElementById('RaidBoss_Check');
     Legendary_Check = document.getElementById('Legendary_Check');
-    HatchOnly_Check = document.getElementById('HatchOnly_Check');
-    Egg_Check = document.getElementById('Egg_Check');
     Shiny_Check = document.getElementById('Shiny_Check');
 
     Collections = [null]
@@ -117,8 +114,6 @@ function FilterGeneration(collection) {
 
 //Determine if a specific Pokémon matches the filters.
 function MatchesFilter(pokemon) {
-    if (pokemon.attributes['name'] === 'Bulbasaur') alert('Egg: ' + pokemon.attributes['egg']);
-
     if (filterNameID !== null && !MatchFilterPokemonNameID(pokemon, filterNameID)) {
         return false;
     }
@@ -139,15 +134,11 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (HatchOnly_Check.checked && !GetPokemonAvailability(pokemon).contains('Hatch Only')) {
-        return false;
-    }
-
     if (Shiny_Check.checked && !GetPokemonShiny(pokemon)) {
         return false;
     }
 
-    if (Egg_Check.checked && GetPokemonEgg(pokemon) === '') {
+    if (!EggMatchesFilter(selectionsEgg, pokemon)) {
         return false;
     }
 
@@ -265,6 +256,18 @@ function OnSelectRaidBoss(url) {
     window.location.href = url;
 }
 
+// Called when any of the Egg checkboxes change.
+function OnEggChanged(egg) {
+    selectionsEgg = egg;
+    OnFilterCriteriaChanged();
+}
+
+// Called the Pokémon Name/ID filter changes.
+function OnPokemonNameIDChanged(filter) {
+    filterNameID = filter;
+    OnFilterCriteriaChanged();
+}
+
 // Called the selection changes in the Types Selector.
 function OnTypesChanged(types) {
     selectionsTypes = types;
@@ -277,18 +280,13 @@ function OnWeatherChanged(weather) {
     OnFilterCriteriaChanged();
 }
 
-// Called the Pokémon Name/ID filter changes.
-function OnPokemonNameIDChanged(filter) {
-    filterNameID = filter;
-    OnFilterCriteriaChanged();
-}
-
 // Called when Criteria's Reset button is selected.
 function OnResetCriteriaClicked() {
     try {
+        ClearEggSelector();
+        ClearFilterNameID();
         ClearPokeTypeSelector();
         ClearWeatherSelector();
-        ClearFilterNameID();
         ClearCookieSettings(CookieSettings);
         ApplyCookie();
         OnFilterCriteriaChanged();

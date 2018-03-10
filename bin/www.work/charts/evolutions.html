@@ -4,11 +4,11 @@
     <META name="viewport" content="width=device-width, initial-scale=1" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
-    <script src="evolutions.js?cacherefresh=2018-03-09_14:45:30" ></script>
-    <script src="/js/pokemon.js?cacherefresh=2018-03-09_14:45:30" ></script>
-    <script src="/js/controls.js?cacherefresh=2018-03-09_14:45:30" ></script>
-    <script src="/js/global.js?cacherefresh=2018-03-09_14:45:30" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-09_14:45:30" />
+    <script src="evolutions.js?cacherefresh=2018-03-09_21:53:47" ></script>
+    <script src="/js/pokemon.js?cacherefresh=2018-03-09_21:53:47" ></script>
+    <script src="/js/controls.js?cacherefresh=2018-03-09_21:53:47" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-09_21:53:47" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-09_21:53:47" />
     <title>Evolutions Chart</title>
   </head>
   <body>
@@ -43,8 +43,17 @@
           </tr>
           <tr>
             <td valign="top" style="padding-bottom:.25em;">
-              <input id="Egg_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />May Hatch From Egg
-              <br /><input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+              <div id="CONTROLS_Egg_Selector" class="PARENT" callbackName="OnEggChanged" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref">
+                <input id="CONTROLS_Egg" type="checkbox" onchange="OnToggleEgg(this);" /> Eggs
+                </div>
+              <div id="CONTROLS_Egg_Options" class="INDENT CHILD" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref">
+                <input id="CONTROLS_Egg_2K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 2K
+                <br /><input id="CONTROLS_Egg_5K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 5K
+                <br /><input id="CONTROLS_Egg_10K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 10K
+                <br /><input id="CONTROLS_Egg_HatchOnly" type="checkbox" onchange="OnToggleEgg(this);" /> Hatch Only
+                </div>
+              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
+              <img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
               <br />Pokémon Name or ID:<input id="CONTROLS_Filter_NameID" type="text" onkeyup="OnFilterNameIDChanged()" callbackName="OnPokemonNameIDChanged" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" /> <div class="CONTROLS_HELP" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref">
                 ?
                 <span class="CONTROLS_HELP_CONTENT"><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">-</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">

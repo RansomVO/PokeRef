@@ -4,11 +4,11 @@
     <META name="viewport" content="width=device-width, initial-scale=1" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
-    <script src="pokechart.js?cacherefresh=2018-03-09_14:41:13" ></script>
-    <script src="/js/pokemon.js?cacherefresh=2018-03-09_14:41:13" ></script>
-    <script src="/js/controls.js?cacherefresh=2018-03-09_14:41:13" ></script>
-    <script src="/js/global.js?cacherefresh=2018-03-09_14:41:13" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-09_14:41:13" />
+    <script src="pokechart.js?cacherefresh=2018-03-09_21:53:50" ></script>
+    <script src="/js/pokemon.js?cacherefresh=2018-03-09_21:53:50" ></script>
+    <script src="/js/controls.js?cacherefresh=2018-03-09_21:53:50" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-09_21:53:50" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-09_21:53:50" />
     <title>
       Pokémon Chart
       - Gen 6</title>
@@ -42,9 +42,12 @@
               <br /><input id="Regional_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
               <br /><input id="RaidBoss_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
               <br /><input id="Legendary_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
-              <br /><input id="HatchOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Hatch Only
-              <br /><input id="Egg_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />May Hatch From Egg
-              <br /><input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+              <div id="CONTROLS_Egg_Selector" class="PARENT" callbackName="OnEggChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><input id="CONTROLS_Egg" type="checkbox" onchange="OnToggleEgg(this);" /> Eggs
+              </div><div id="CONTROLS_Egg_Options" class="INDENT CHILD" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><input id="CONTROLS_Egg_2K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 2K
+              <br /><input id="CONTROLS_Egg_5K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 5K
+              <br /><input id="CONTROLS_Egg_10K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 10K
+              <br /><input id="CONTROLS_Egg_HatchOnly" type="checkbox" onchange="OnToggleEgg(this);" /> Hatch Only
+              </div><input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
               <br />Pokémon Name or ID:<input id="CONTROLS_Filter_NameID" type="text" onkeyup="OnFilterNameIDChanged()" callbackName="OnPokemonNameIDChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" /> <div class="CONTROLS_HELP" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                 ?
                 <span class="CONTROLS_HELP_CONTENT"><div class="CONTROLS_HELP_ENTRY"><div class="CONTROLS_HELP_ENTRY_TITLE">-</div><div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
