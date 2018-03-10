@@ -4,19 +4,19 @@
 PokeChart and Evolutions:
 	- Add ability to select which eggs E.g.:
 		...
-		□ May Hatch From Egg
-			□ 2K
-			□ 5K
-			□ 10K
+		□ Eggs
+			□ Hatches from 2K
+			□ Hatches from 5K
+			□ Hatches from 10K
+			□ Hatch Only
 		...
 
 Add pages for formulas for CP and HP
 
 PokeIcon:
-	Distinguish between Current RaidBoss and Legacy (faded gold?)
+	Distinguish between Current RaidBoss and Legacy (faded?)
 	Distinguish regional.
 	Distinguish RaidBoss Only.
-	Put Highlight around egg if HatchOnly
 
 PokemonNameID: 
 	- Add ability to filter by gen ("1", "+1-3" ?)
@@ -29,8 +29,6 @@ RaidBoss Counters
 
 =========================================================================================================
 ----- Overall -----
-
-
 
 Look into ability to quit using IsMobile() to cause document.write(...)
 	@media only screen and (width : 1024px) and (orientation : landscape) {    

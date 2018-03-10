@@ -4,6 +4,7 @@
 // #region Global Variables
 // ============================================================================
 
+var selectionsEgg = null;
 var filterNameID = null;
 
 // #endregion
@@ -22,7 +23,6 @@ var CookieSettings = {
     'Gen6_Check': 'false',
     'Gen7_Check': 'false',
     'Shiny_Check': 'false',
-    'Egg_Check': 'false',
 };
 
 // Read the Cookie and apply it to the fields.
@@ -59,7 +59,6 @@ function GetFields() {
     Gen5_Check = document.getElementById('Gen5_Check');
     Gen6_Check = document.getElementById('Gen6_Check');
     Gen7_Check = document.getElementById('Gen7_Check');
-    Egg_Check = document.getElementById('Egg_Check');
     Shiny_Check = document.getElementById('Shiny_Check');
 }
 
@@ -117,13 +116,13 @@ function OnFilterCriteriaChanged(field) {
                 if (display) {
                     var matchName = filterNameID === null;
                     var matchShiny = !Shiny_Check.checked;
-                    var matchEgg = !Egg_Check.checked;
+                    var matchEgg = false;
 
                     for (var r = i + table.rows[i].cells[0].rowSpan - 1;
-                        r >= i && (!matchName || !matchShiny || !matchEgg);
+                        r >= i && (!matchName || !matchShiny || !matchEgg) ;
                         r--) {
                         for (var c = table.rows[r].cells.length - 1;
-                            c >= 0 && (!matchName || !matchShiny || !matchEgg);
+                            c >= 0 && (!matchName || !matchShiny || !matchEgg) ;
                             c--) {
                             var pokemon = table.rows[r].cells[c];
                             if (!matchName && MatchFilterPokemonNameID(pokemon, filterNameID)) {
@@ -132,7 +131,7 @@ function OnFilterCriteriaChanged(field) {
                             if (!matchShiny && GetPokemonShiny(pokemon)) {
                                 matchShiny = true;
                             }
-                            if (!matchEgg && GetPokemonEgg(pokemon) !== '') {
+                            if (!matchEgg && EggMatchesFilter(selectionsEgg, pokemon)) {
                                 matchEgg = true;
                             }
                         }
@@ -160,7 +159,17 @@ function OnFilterCriteriaChanged(field) {
     }
 }
 
-// Called the Pokemon Name/ID filter changes.
+// ============================================================================
+// #region Callbacks
+// ============================================================================
+
+// Called when any of the Egg checkboxes change.
+function OnEggChanged(egg) {
+    selectionsEgg = egg;
+    OnFilterCriteriaChanged();
+}
+
+// Called when the Pokemon Name/ID filter changes.
 function OnPokemonNameIDChanged(filter) {
     filterNameID = filter;
     OnFilterCriteriaChanged();
@@ -172,8 +181,10 @@ function OnResetCriteriaClicked() {
         ClearCookieSettings(CookieSettings);
         ApplyCookie();
         ClearFilterNameID();
+        ClearEggSelector();
     } catch (err) {
         ShowError(err);
     }
 }
 
+// #endregion Callbacks

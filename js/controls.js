@@ -14,6 +14,7 @@ window.onload = function () {
         // Call the initializer method for each control so that they can set themselves up if they are on the page.
         InitPokeTypeSelector();
         InitWeatherSelector();
+        InitEggSelector();
         InitFilterNameIDSelector();
 
         ExposeLoaded();
@@ -455,6 +456,102 @@ function ClearWeatherSelector() {
     ClearCookieSettings(WeatherCookieSettings);
     ApplyWeatherCookies();
     OnToggleWeather();
+}
+
+// #endregion
+
+// ============================================================================
+// #region methods for Egg Selection Control
+
+// ---------------------------------------------------------------------------
+// #region Egg Cookies
+var EggCookieSettings = {
+    'CONTROLS_Egg': 'false',
+    'CONTROLS_Egg_2K': 'true',
+    'CONTROLS_Egg_5K': 'true',
+    'CONTROLS_Egg_10K': 'true',
+    'CONTROLS_Egg_HatchOnly': 'false',
+};
+
+// Read the Cookie and apply it to the fields.
+function ApplyEggCookies() {
+    ApplyCookieSettings(EggCookieSettings);
+}
+// #endregion
+
+// Initialize the Weather Selection Control
+function InitEggSelector() {
+    if (document.getElementById('CONTROLS_Egg_Selector') !== null) {
+        GetEggFields();
+        ApplyEggCookies();
+        OnToggleEgg();
+    }
+}
+
+// Get the fields we will be using multiple times.
+//  NOTE: Do not use keyword "var" and the value will be global.
+function GetEggFields() {
+    CONTROLS_Egg_Selector = document.getElementById('CONTROLS_Egg_Selector');
+    CONTROLS_Egg = document.getElementById('CONTROLS_Egg');
+    CONTROLS_Egg_Options = document.getElementById('CONTROLS_Egg_Options');
+    CONTROLS_Egg_2K = document.getElementById('CONTROLS_Egg_2K');
+    CONTROLS_Egg_5K = document.getElementById('CONTROLS_Egg_5K');
+    CONTROLS_Egg_10K = document.getElementById('CONTROLS_Egg_10K');
+    CONTROLS_Egg_HatchOnly = document.getElementById('CONTROLS_Egg_HatchOnly');
+}
+
+// If one of the type checkboxes changes, need to update the All checkbox then refilter.
+function OnToggleEgg(field) {
+    try {
+        if (field === undefined || field === null || field.id === 'CONTROLS_Egg') {
+            if (GetFieldValue(CONTROLS_Egg)) {
+                CONTROLS_Egg_Options.classList.remove('DISABLED');
+            } else {
+                CONTROLS_Egg_Options.classList.add('DISABLED');
+            }
+        }
+
+        OnEggSelectionChanged();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// Update the cookie with the new selection, then call the specified callback with the latest settings.
+function OnEggSelectionChanged() {
+    UpdateCookieSettings(EggCookieSettings);
+
+    var callbackName = CONTROLS_Egg_Selector.attributes['callbackName'].value;
+    if (callbackName !== null) {
+        var eggCriteria = {};
+        eggCriteria['Enabled'] = CONTROLS_Egg.checked;
+        eggCriteria['2K'] = CONTROLS_Egg_2K.checked;
+        eggCriteria['5K'] = CONTROLS_Egg_5K.checked;
+        eggCriteria['10K'] = CONTROLS_Egg_10K.checked;
+        eggCriteria['HatchOnly'] = CONTROLS_Egg_HatchOnly.checked;
+
+        window[callbackName](eggCriteria);
+    }
+}
+
+// Determine whether Pokemon matches the selected criteria.
+function EggMatchesFilter(eggCriteria, pokemon) {
+    if (eggCriteria === undefined || eggCriteria === null || !eggCriteria['Enabled']) {
+        return true;
+    }
+
+    var egg = GetPokemonEgg(pokemon);
+    return egg !== '' &&
+        eggCriteria[egg] &&
+        (!eggCriteria['HatchOnly'] || GetPokemonAvailability(pokemon).contains('Hatch Only'));
+}
+
+
+// Clears the selection and reverts to the default.
+function ClearEggSelector() {
+    ClearCookieSettings(EggCookieSettings);
+    ApplyEggCookies();
+    OnToggleEgg();
 }
 
 // #endregion

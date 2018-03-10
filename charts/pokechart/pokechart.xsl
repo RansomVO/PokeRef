@@ -244,9 +244,10 @@
             <br /><input id="Regional_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
             <br /><input id="RaidBoss_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
             <br /><input id="Legendary_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
-            <br /><input id="HatchOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Hatch Only
-            <br /><input id="Egg_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />May Hatch From Egg
-            <br /><input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+            <xsl:call-template name="OutputEggSelectionControl" >
+              <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
+            </xsl:call-template>
+            <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
             <br /><xsl:text>Pokemon Name or ID:</xsl:text>
             <xsl:call-template name="OutputFilterPokemonNameID">
               <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />

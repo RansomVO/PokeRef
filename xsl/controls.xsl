@@ -222,6 +222,28 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
+  <!-- #region Egg Selection Control-->
+
+  <xsl:template name="OutputEggSelectionControl">
+    <xsl:param name="CallbackName" />
+
+    <div id="CONTROLS_Egg_Selector" class="PARENT">
+      <xsl:attribute name="callbackName">
+        <xsl:value-of select="$CallbackName" />
+      </xsl:attribute>
+      <input id="CONTROLS_Egg" type="checkbox" onchange="OnToggleEgg(this);" /> Eggs
+    </div>
+    <div id="CONTROLS_Egg_Options" class="INDENT CHILD">
+      <input id="CONTROLS_Egg_2K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 2K
+      <br /><input id="CONTROLS_Egg_5K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 5K
+      <br /><input id="CONTROLS_Egg_10K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 10K
+      <br /><input id="CONTROLS_Egg_HatchOnly" type="checkbox" onchange="OnToggleEgg(this);" /> Hatch Only
+    </div>
+  </xsl:template>
+
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
   <!-- #region Filter by Name/ID Control -->
 
   <xsl:template name="OutputFilterPokemonNameID">
