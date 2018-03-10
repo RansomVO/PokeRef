@@ -178,10 +178,11 @@ function OnPokemonNameIDChanged(filter) {
 // Called when Criteria's Reset button is selected.
 function OnResetCriteriaClicked() {
     try {
+        ClearEggSelector();
+        ClearFilterNameID();
         ClearCookieSettings(CookieSettings);
         ApplyCookie();
-        ClearFilterNameID();
-        ClearEggSelector();
+        OnFilterCriteriaChanged();
     } catch (err) {
         ShowError(err);
     }

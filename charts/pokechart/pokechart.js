@@ -283,9 +283,10 @@ function OnWeatherChanged(weather) {
 // Called when Criteria's Reset button is selected.
 function OnResetCriteriaClicked() {
     try {
+        ClearEggSelector();
+        ClearFilterNameID();
         ClearPokeTypeSelector();
         ClearWeatherSelector();
-        ClearFilterNameID();
         ClearCookieSettings(CookieSettings);
         ApplyCookie();
         OnFilterCriteriaChanged();
