@@ -209,14 +209,16 @@
             <b>Moves:</b>
           </xsl:with-param>
           <xsl:with-param name="SliderHelp">
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where any Move is one of the selected Move Types.</div>
-            </div>
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where all Moves are one of the selected Move Types.</div>
-            </div>
+            <table style="width:25em">
+              <tr>
+                <th width="1px">Any</th>
+                <td>Move Sets where any Move is one of the selected Move Types.</td>
+              </tr>
+              <tr>
+                <th>All</th>
+                <td>Move Sets where all Moves are one of the selected Move Types.</td>
+              </tr>
+            </table>
           </xsl:with-param>
         </xsl:call-template>
       </div>
@@ -228,14 +230,16 @@
             <b>Moves:</b>
           </xsl:with-param>
           <xsl:with-param name="SliderHelp">
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where any Move is boosted by the selected Move Weather Boosts.</div>
-            </div>
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Move Sets where all Moves are boosted by the selected Move Weather Boosts.</div>
-            </div>
+            <table style="width:25em">
+            <tr>
+              <th width="1px">Any</th>
+              <td>Move Sets where any Move is boosted by the selected Move Weather Boosts.</td>
+            </tr>
+            <tr>
+              <th>All</th>
+              <td>Move Sets where all Moves are boosted by the selected Move Weather Boosts.</td>
+            </tr>
+          </table>
           </xsl:with-param>
         </xsl:call-template>
       </div>

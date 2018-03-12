@@ -227,52 +227,54 @@
 
           <!-- Add Egg Icon here. -->
           <xsl:if test="$egg != ''">
-            <xsl:if test="contains(Availability,'Hatch Only')">
-              <!-- If this a HatchOnly, use this trick to surround the egg icon with a highlighting wrapper. -->
-              <xsl:value-of select="concat($lt, 'div ')" disable-output-escaping="yes" />
-              <xsl:text>class="RIGHT_ICON_WRAPPER" style="background-image:url('/images/hatchonly.png');"</xsl:text>
-              <xsl:value-of select="$gt" disable-output-escaping="yes" />
-            </xsl:if>
-            <img class="RIGHT_ICON">
-              <xsl:attribute name="class">
-                <xsl:choose>
-                  <xsl:when test="contains(Availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
-                  <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
-                </xsl:choose>
-              </xsl:attribute>
-              <xsl:attribute name="src">
-                <xsl:text>/images/egg_</xsl:text>
-                <xsl:value-of select="$egg"/>
-                <xsl:text>.png</xsl:text>
-              </xsl:attribute>
-              <xsl:attribute name="title">
-                <xsl:choose>
-                  <xsl:when test="contains(Availability,'Hatch Only')">
-                    <xsl:text>Only hatches from </xsl:text>
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:text>Hatches from </xsl:text>
-                  </xsl:otherwise>
-                </xsl:choose>
-                <xsl:value-of select="$egg"/>
-                <xsl:text> Egg</xsl:text>
-              </xsl:attribute>
-            </img>
-            <xsl:if test="contains(Availability,'Hatch Only')">
-              <!-- If this a HatchOnly, close the trick started above. -->
-              <xsl:value-of select="concat($lt, '/div', $gt)" disable-output-escaping="yes" />
-            </xsl:if>
+            <div>
+              <xsl:choose>
+                <xsl:when test="contains(Availability,'Hatch Only')">
+                  <xsl:attribute name="class">RIGHT_ICON_WRAPPER</xsl:attribute>
+                  <xsl:attribute name="style">background-image:url('/images/hatchonly.png');</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="class">RIGHT_ICON</xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
 
-            <!--
-            <div class="EGG_ICON_CONTAINER">
-              <xsl:if test="contains(Availability,'Hatch Only')">
-                <xsl:attribute name="style">background-image:url("/images/hatchonly.png"); background-size:cover;</xsl:attribute>
-              </xsl:if>
-              <xsl:if test="contains(Availability,'Hatch Only')">
-                  <xsl:attribute name="style">background-image:url("/images/hatchonly.png"); background-size:cover;</xsl:attribute>
-                </xsl:if>
+              <xsl:call-template name="OutputInfoWrapper">
+                <xsl:with-param name="Wrapped">
+                  <img>
+                    <xsl:attribute name="class">
+                      <xsl:choose>
+                        <xsl:when test="contains(Availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
+                        <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:attribute>
+                    <xsl:attribute name="src">
+                      <xsl:text>/images/egg_</xsl:text>
+                      <xsl:value-of select="$egg"/>
+                      <xsl:text>.png</xsl:text>
+                    </xsl:attribute>
+                  </img>
+                </xsl:with-param>
+                <xsl:with-param name="Info">
+                  <table style="width:15em;">
+                    <tr>
+                      <th style="width:1px; white-space:nowrap;">Egg:</th>
+                      <td >
+                        <xsl:choose>
+                          <xsl:when test="contains(Availability,'Hatch Only')">
+                            <xsl:text>Only Hatches From </xsl:text>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:text>May Hatch From </xsl:text>
+                          </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:value-of select="$egg"/>
+                        <xsl:text> Egg</xsl:text>
+                      </td>
+                    </tr>
+                  </table>
+                </xsl:with-param>
+              </xsl:call-template>
             </div>
-            -->
           </xsl:if>
         </xsl:if>
 
@@ -424,23 +426,34 @@
     <xsl:param name="Settings" />
 
     <xsl:if test="$Type != ''">
-      <img>
-        <xsl:attribute name="class">
-          <xsl:choose>
-            <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
-            <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
-            <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
-          </xsl:choose>
-        </xsl:attribute>
-        <xsl:attribute name="src">
-          <xsl:text>/images/type_</xsl:text>
-          <xsl:value-of select="pokeref:ToLower($Type)" />
-          <xsl:text>.png</xsl:text>
-        </xsl:attribute>
-        <xsl:attribute name="title">
-          <xsl:value-of select="$Type" />
-        </xsl:attribute>
-      </img>
+      <xsl:call-template name="OutputInfoWrapper">
+        <xsl:with-param name="Wrapped">
+          <img>
+            <xsl:attribute name="class">
+              <xsl:choose>
+                <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
+                <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
+                <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
+              </xsl:choose>
+            </xsl:attribute>
+            <xsl:attribute name="src">
+              <xsl:text>/images/type_</xsl:text>
+              <xsl:value-of select="pokeref:ToLower($Type)" />
+              <xsl:text>.png</xsl:text>
+            </xsl:attribute>
+          </img>
+        </xsl:with-param>
+        <xsl:with-param name="Info">
+          <table style="width:5em;">
+            <tr>
+              <th style="width:1px; white-space:nowrap;">Type:</th>
+              <td>
+                <xsl:value-of select="$Type" />
+              </td>
+            </tr>
+          </table>
+        </xsl:with-param>
+      </xsl:call-template>
     </xsl:if>
   </xsl:template>
 
@@ -459,7 +472,8 @@
   <xsl:template name="OutputWeatherIcon">
     <xsl:param name="Weather" />
     <xsl:param name="Settings" />
-
+    <xsl:call-template name="OutputInfoWrapper">
+      <xsl:with-param name="Wrapped">
     <img>
       <xsl:attribute name="class">
         <xsl:choose>
@@ -474,10 +488,20 @@
         <xsl:value-of select="pokeref:ToLower(pokeref:Replace($Weather, ' ', ''))" />
         <xsl:text>.png</xsl:text>
       </xsl:attribute>
-      <xsl:attribute name="title">
-        <xsl:value-of select="$Weather" />
-      </xsl:attribute>
     </img>
+      </xsl:with-param>
+      <xsl:with-param name="Info">
+        <table style="width:12em;">
+          <tr>
+            <th style="width:1px; white-space:nowrap;">Weather:</th>
+            <td>
+              <xsl:value-of select="$Weather" />
+            </td>
+          </tr>
+        </table>
+      </xsl:with-param>
+    </xsl:call-template>
+
   </xsl:template>
 
   <xsl:template name="OutputTypeIconWithBoost">

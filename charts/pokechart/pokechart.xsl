@@ -261,14 +261,16 @@
           <xsl:with-param name="CallbackName" select="'OnTypesChanged'" />
           <xsl:with-param name="Title" select="'Pokemon Types'" />
           <xsl:with-param name="SliderHelp">
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have any of their Types matching the selected Pokemon Types.</div>
-            </div>
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have all of their Types matching the selected Pokemon Types.</div>
-            </div>
+            <table style="width:20em;">
+              <tr>
+                <th width="1px;">Any</th>
+                <td>Pokemon that have any of their Types matching the selected Pokemon Types.</td>
+              </tr>
+              <tr>
+                <th>All</th>
+                <td>Pokemon that have all of their Types matching the selected Pokemon Types.</td>
+              </tr>
+            </table>
           </xsl:with-param>
         </xsl:call-template>
       </div>
@@ -278,14 +280,16 @@
           <xsl:with-param name="CallbackName" select="'OnWeatherChanged'" />
           <xsl:with-param name="Title" select="concat('Pokemon', $lt, 'br /', $gt, 'Weather Boosts')" />
           <xsl:with-param name="SliderHelp">
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have any of their Types boosted by the selected Pokemon Weather Boosts.</div>
-            </div>
-            <div class="CONTROLS_HELP_ENTRY">
-              <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
-              <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Pokemon that have all of their Types boosted by the selected Pokemon Weather Boosts.</div>
-            </div>
+            <table style="width:25em">
+              <tr>
+                <th width="1px">Any</th>
+                <td>Pokemon that have any of their Types boosted by the selected Pokemon Weather Boosts.</td>
+              </tr>
+              <tr>
+                <th>All</th>
+                <td>Pokemon that have all of their Types boosted by the selected Pokemon Weather Boosts.</td>
+              </tr>
+            </table>
           </xsl:with-param>
         </xsl:call-template>
       </div>

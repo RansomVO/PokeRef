@@ -143,13 +143,13 @@
               <xsl:with-param name="OffLabel" select="'Any'" />
               <xsl:with-param name="OnLabel" select="'All'" />
               <xsl:with-param name="Help">
-                <div class="CONTROLS_HELP_ENTRY">
-                  <div class="CONTROLS_HELP_ENTRY_TITLE">Any</div>
-                  <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
+                <div class="CONTROLS_INFO_ENTRY">
+                  <div class="CONTROLS_INFO_ENTRY_TITLE">Any</div>
+                  <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
                 </div>
-                <div class="CONTROLS_HELP_ENTRY">
-                  <div class="CONTROLS_HELP_ENTRY_TITLE">All</div>
-                  <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
+                <div class="CONTROLS_INFO_ENTRY">
+                  <div class="CONTROLS_INFO_ENTRY_TITLE">All</div>
+                  <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
                 </div>
               </xsl:with-param>
             </xsl:call-template>

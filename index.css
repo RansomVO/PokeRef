@@ -251,12 +251,9 @@ h1, h2, h3, h4 {
     width: 1.5em;
 }
 
-/* May wish to specify "background-image: url(...)" as a style on the container with this class. */
-.RIGHT_ICON_WRAPPER {
+.RIGHT_ICON {
     float: right;
-    width: 3em;
-    height: 3em;
-    background-size: cover;
+    width: 1.5em;
 }
 
 .WRAPPED_ICON {
@@ -264,9 +261,19 @@ h1, h2, h3, h4 {
     margin: .75em;
 }
 
-.RIGHT_ICON {
+/* ICON_WRAPPER classes are to allow "wrapping" an icon with another icon (in the background). It relies on "background-image: url(...)" in the style on the container with these classes. */
+.LEFT_ICON_WRAPPER {
+    float: left;
+    width: 3em;
+    height: 3em;
+    background-size: cover;
+}
+
+.RIGHT_ICON_WRAPPER {
     float: right;
-    width: 1.5em;
+    width: 3em;
+    height: 3em;
+    background-size: cover;
 }
 
 /*#endregion*/
@@ -508,48 +515,35 @@ input:checked + .CONTROLS_SLIDER_BUTTON {
         background: blue;
     }
 
-    .CONTROLS_HELP .CONTROLS_HELP_CONTENT {
-        visibility: hidden;
-        position: absolute;
-        display: table;
-        font-weight: normal;
-        top: 50%;
-        left: 50%;
-        width: 20em;
-        color: black;
-        background-color: lightblue;
-        border: 1px solid blue;
-        border-radius: 6px;
-        padding: .25em;
-        z-index: 1;
-        opacity: 0;
-        transition: opacity 0.3s;
-        white-space: normal;
-        text-align: left;
-    }
+        .CONTROLS_HELP:hover .CONTROLS_INFO_CONTENT {
+            visibility: visible;
+            opacity: 1;
+        }
 
-    .CONTROLS_HELP:hover .CONTROLS_HELP_CONTENT {
+.CONTROLS_INFO {
+    position: relative;
+    display: inline-block;
+}
+
+    .CONTROLS_INFO:hover .CONTROLS_INFO_CONTENT {
         visibility: visible;
         opacity: 1;
     }
 
-.CONTROLS_HELP_ENTRY {
-    white-space: nowrap;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-.CONTROLS_HELP_ENTRY_TITLE {
-    font-size: 2em;
-    font-weight: bold;
-    vertical-align: top;
-    display: table-cell;
-}
-
-.CONTROLS_HELP_ENTRY_DESCRIPTION {
-    display: table-cell;
-    white-space: normal;
-    padding: .25em 0 0 1em;
+.CONTROLS_INFO_CONTENT {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display:inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    color: black;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 6px;
+    padding: .25em;
 }
 
 /*#endregion*/

@@ -257,9 +257,10 @@
     <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
     <xsl:call-template name="OutputHelpButton">
       <xsl:with-param name="Help">
-        <div class="CONTROLS_HELP_ENTRY">
-          <div class="CONTROLS_HELP_ENTRY_TITLE">-</div>
-          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+        <table style="width:20em;">
+          <tr>
+          <th valign="top">-</th>
+          <td>
             Specifies a range.
             <br />Examples:
             <ul>
@@ -273,11 +274,11 @@
                 <b>100-</b>: All Pokémon with IDs 100 or higher.
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="CONTROLS_HELP_ENTRY">
-          <div class="CONTROLS_HELP_ENTRY_TITLE">+</div>
-          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+          </td>
+          </tr>
+        <tr>
+          <th valign="top">+</th>
+          <td>
             Specifies a family.
             <br />Example:
             <ul>
@@ -286,11 +287,12 @@
                 <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="CONTROLS_HELP_ENTRY">
-          <div class="CONTROLS_HELP_ENTRY_TITLE">,</div>
-          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+          </td>
+        
+      </tr>
+        <tr class="CONTROLS_INFO_ENTRY">
+          <th valign="top">,</th>
+          <td>
             Specifies to match one criteria OR another.
             <br />Example:
             <ul>
@@ -302,11 +304,12 @@
                 <span class="NOTE">(E.G. Krabby, Wobbeffet and Snubbull)</span>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="CONTROLS_HELP_ENTRY">
-          <div class="CONTROLS_HELP_ENTRY_TITLE">&amp;</div>
-          <div class="CONTROLS_HELP_ENTRY_DESCRIPTION">
+          </td>
+        
+      </tr>
+          <tr class="CONTROLS_INFO_ENTRY">
+            <th valign="top">&amp;</th>
+          <td>
             Specifies one criteria AND another.
             <br />Example:
             <ul>
@@ -317,8 +320,9 @@
                 <br />a name that contains BB.
               </li>
             </ul>
-          </div>
-        </div>
+          </td>
+        </tr>
+        </table>
       </xsl:with-param>
     </xsl:call-template>
 
@@ -377,9 +381,24 @@
 
     <div class="CONTROLS_HELP">
       ?
-      <span class="CONTROLS_HELP_CONTENT">
+      <span class="CONTROLS_INFO_CONTENT">
         <xsl:copy-of select="$Help" />
       </span>
+    </div>
+  </xsl:template>
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
+  <!-- #region Info Wrapper to display info about a field. -->
+  <xsl:template name="OutputInfoWrapper">
+    <xsl:param name="Wrapped" />
+    <xsl:param name="Info" />
+
+    <div class="CONTROLS_INFO">
+      <xsl:copy-of select="$Wrapped" />
+      <div class="CONTROLS_INFO_CONTENT">
+        <xsl:copy-of select="$Info" />
+      </div>
     </div>
   </xsl:template>
   <!-- #endregion -->
