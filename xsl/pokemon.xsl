@@ -57,7 +57,8 @@
 
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
     <xsl:if test="exslt:node-set($Settings)/*/@href">
-      <xsl:value-of select="concat($lt, 'a href=', $quot, exslt:node-set($Settings)/*/@href, $quot,' style=',$quot, 'text-decoration:none;', $quot, ' class=', $quot, 'CELL_FILLER')" disable-output-escaping="yes" />
+      <xsl:value-of select="concat($lt, 'a ')" disable-output-escaping="yes" />
+      <xsl:text>href="exslt:node-set($Settings)/*/@href" style="text-decoration:none;" class="CELL_FILLER</xsl:text>
       <xsl:if test="Stats/Base/Attack = 1 and Stats/Base/Defense = 1 and Stats/Base/Stamina = 1">
         <xsl:text> DISABLED</xsl:text>
       </xsl:if>
@@ -94,9 +95,6 @@
             </xsl:choose>
           </xsl:otherwise>
         </xsl:choose>
-      </xsl:attribute>
-      <xsl:attribute name="title">
-        <xsl:value-of select="Name" />
       </xsl:attribute>
       <xsl:attribute name="name">
         <xsl:value-of select="Name" />
@@ -474,21 +472,21 @@
     <xsl:param name="Settings" />
     <xsl:call-template name="OutputInfoWrapper">
       <xsl:with-param name="Wrapped">
-    <img>
-      <xsl:attribute name="class">
-        <xsl:choose>
-          <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
-          <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
-          <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
-        </xsl:choose>
-        <xsl:if test="exslt:node-set($Settings)/*/@overlap = 'true'"> TAG_ICON_OVERLAP</xsl:if>
-      </xsl:attribute>
-      <xsl:attribute name="src">
-        <xsl:text>/images/weather_</xsl:text>
-        <xsl:value-of select="pokeref:ToLower(pokeref:Replace($Weather, ' ', ''))" />
-        <xsl:text>.png</xsl:text>
-      </xsl:attribute>
-    </img>
+        <img>
+          <xsl:attribute name="class">
+            <xsl:choose>
+              <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
+              <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
+              <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
+            </xsl:choose>
+            <xsl:if test="exslt:node-set($Settings)/*/@overlap = 'true'"> TAG_ICON_OVERLAP</xsl:if>
+          </xsl:attribute>
+          <xsl:attribute name="src">
+            <xsl:text>/images/weather_</xsl:text>
+            <xsl:value-of select="pokeref:ToLower(pokeref:Replace($Weather, ' ', ''))" />
+            <xsl:text>.png</xsl:text>
+          </xsl:attribute>
+        </img>
       </xsl:with-param>
       <xsl:with-param name="Info">
         <table style="width:12em;">
