@@ -58,7 +58,10 @@
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
     <xsl:if test="exslt:node-set($Settings)/*/@href">
       <xsl:value-of select="concat($lt, 'a ')" disable-output-escaping="yes" />
-      <xsl:text>href="exslt:node-set($Settings)/*/@href" style="text-decoration:none;" class="CELL_FILLER</xsl:text>
+      <xsl:text>href="</xsl:text>
+      <xsl:value-of select="exslt:node-set($Settings)/*/@href" disable-output-escaping="yes" />
+      <xsl:text>" style="text-decoration:none;"</xsl:text>
+      <xsl:text> class="CELL_FILLER</xsl:text>
       <xsl:if test="Stats/Base/Attack = 1 and Stats/Base/Defense = 1 and Stats/Base/Stamina = 1">
         <xsl:text> DISABLED</xsl:text>
       </xsl:if>
@@ -95,6 +98,9 @@
             </xsl:choose>
           </xsl:otherwise>
         </xsl:choose>
+      </xsl:attribute>
+      <xsl:attribute name="title">
+        <xsl:value-of select="Name" />
       </xsl:attribute>
       <xsl:attribute name="name">
         <xsl:value-of select="Name" />
