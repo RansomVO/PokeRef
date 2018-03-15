@@ -36,7 +36,7 @@ window.onload = function () {
 // ==============================================================================================
 // Variables to help make it so cached files will be updated appropriately.
 // ==============================================================================================
-var CacheDate = '?cacherefresh=2018-03-08_12:22:57'; // This line will be updated with the build
+var CacheDate = '?cacherefresh=2018-03-13_12:55:36'; // This line will be updated with the build
 var NeverCache = '?nevercache=' + Math.random();    // (Currently unused.)
 
 // #endregion
