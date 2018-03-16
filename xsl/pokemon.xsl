@@ -24,21 +24,21 @@
   <!--
     Settings parameter:
       @small
-          0: DEFAULT Use standard sized icon.
-          1: Use reduced size icon.
+          false: DEFAULT Use standard sized icon.
+          true: Use reduced size icon.
       @boxed
-          0: DEFAULT Have Pokmeon expand to fill parent container.
-          1: Put the Pokemon in a box that can be displayed inline.
+          false: DEFAULT Have Pokmeon expand to fill parent container.
+          true: Put the Pokemon in a box that can be displayed inline.
           
-      @hide_icons (Default: 0)
-          0: DEFAULT Display Type, Boost and shiny icons.
-          1: Do not display Type, Boost and shiny icons.
+      @hide_icons
+          false: DEFAULT Display Type, Boost and shiny icons.
+          true: Do not display Type, Boost and shiny icons.
       @hide_name
-          0: DEFAULT Display the Name of the Pokemon.
-          1: Do not display the Name of the Pokemon.
+          false: DEFAULT Display the Name of the Pokemon.
+          true: Do not display the Name of the Pokemon.
       @show_disabled
-          0: DEFAULT Display unreleased Pokemon as disabled.
-          1: Display unreleased Pokemon as enabled. (Will still draw disabled if base stats are 1-1-1)
+          false: DEFAULT Display unreleased Pokemon as disabled.
+          true: Display unreleased Pokemon as enabled. (Will still draw disabled if base stats are 1-1-1)
           
       @href
           Make the Image a link to the specified href
@@ -215,7 +215,6 @@
           <xsl:choose>
             <xsl:when test="Rarity = $Availability_Legendary">LEGENDARY </xsl:when>
             <xsl:when test="Rarity = $Availability_Mythic">MYTHIC </xsl:when>
-            <xsl:otherwise>QZX</xsl:otherwise>
           </xsl:choose>
         </xsl:attribute>
 

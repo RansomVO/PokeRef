@@ -47,7 +47,7 @@
         </h1>
         <p>
           When it comes to Raids, you want the best chance of defeating the Boss.
-          But which of <i>your</i> Pokemon will do best against the boss?
+          But which of <span class="EMPHASIZE">your</span> Pokemon will do best against the boss?
           <br />Use this tool to find out.
         </p>
 

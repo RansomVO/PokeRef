@@ -45,7 +45,7 @@
         </h2>
         <p>
           In battle, Fast Moves are the Moves performed when you just tap the screen.
-          Every time a Pokemon does a Fast move it causes the opponent a little damage <i>AND</i> it generates some Energy, which, for your Pokemon, is indicated by a bar at the top of the screen under the Pokemon's name.
+          Every time a Pokemon does a Fast move it causes the opponent a little damage <span class="EMPHASIZE">AND</span> it generates some Energy, which, for your Pokemon, is indicated by a bar at the top of the screen under the Pokemon's name.
         </p>
 
         <h2>
@@ -53,7 +53,7 @@
         </h2>
         <p>
           In battle, Charged Moves are performed when you tap-and-hold on the screen until a charge-up bar indicates it is ready, then letting go.
-          Every time a Pokemon does a Charged move it causes the opponent a lot of damage <i>BUT</i> the Pokemon can only perform the Charged Move if it has generated enough Energy by performing Fast moves, which is indicated by the bar at the top of the screen being full.
+          Every time a Pokemon does a Charged move it causes the opponent a lot of damage <span class="EMPHASIZE">BUT</span> the Pokemon can only perform the Charged Move if it has generated enough Energy by performing Fast moves, which is indicated by the bar at the top of the screen being full.
         </p>
 
         <h2>Example</h2>

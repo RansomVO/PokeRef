@@ -95,7 +95,7 @@
           </li>
           <li>
             When I am on a break, I may want to see the above, <b>
-              <i>PLUS</i>
+              <span class="EMPHASIZE">PLUS</span>
             </b> all of the Pokemon that I need candies for powering up.
           </li>
           <li>Sometimes, I want to see all Pokemon with an IV score above 82.</li>

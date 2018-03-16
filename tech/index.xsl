@@ -119,28 +119,53 @@
 
         <br />
         <hr />
-        <h2 id="anchor_movesetformulas">
-          <a href="formulas/movesetdamage.html">
-            <b>Move Set Damage Formulas</b>
+        <h2 id="anchor_formulas">
+          <a href="formulas">
+            <b>Technical Formulas</b>
           </a>
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="'TECH_FORMULAS'" />
+          </xsl:call-template>
         </h2>
-        <p>
-          Want to know how to figure out the DPS for a Pokemon's Move Set?
-          <br />This page goes into detail of describing the formulas used to figure that out.
-        </p>
+        <div id="TECH_FORMULAS" class="INDENT">
+          <h3 id="anchor_cphpformulas">
+            <a href="formulas/cphp.html">
+              <b>CP and HP Formulas</b>
+            </a>
+          </h3>
+          <div class="INDENT">
+            <p>
+              Pokemon have scores called "CP" and "HP".
+              But what do they mean?
+              <br />This page tells you about them and shows the formulas used to calculate them.
+            </p>
+          </div>
 
-        <br />
-        <hr />
-        <h2 id="anchor_cpm">
-          <a href="cpm.html">
-            <b>CP Modifiers</b>
-          </a>
-        </h2>
-        <p>
-          When calculating how much damage a Pokemon will do, Pokemon GO takes into account the Level of the Pokemon.
-          It does this by multiplying the Pokemon's BaseAttack and Attack IV by a constant corresponding to the Pokemon's level.
-          <br />This page lists the CPM values.
-        </p>
+          <h3 id="anchor_movesetformulas">
+            <a href="formulas/movesetdamage.html">
+              <b>Move Set Damage Formulas</b>
+            </a>
+          </h3>
+          <div class="INDENT">
+            <p>
+              Want to know how to figure out the DPS for a Pokemon's Move Set?
+              <br />This page goes into detail of describing the formulas used to figure that out.
+            </p>
+          </div>
+
+          <h3 id="anchor_cpm">
+            <a href="formulas/cpm.html">
+              <b>CP Modifiers</b>
+            </a>
+          </h3>
+          <div class="INDENT">
+            <p>
+              When calculating how much damage a Pokemon will do, Pokemon GO takes into account the Level of the Pokemon.
+              It does this by multiplying the Pokemon's BaseAttack and Attack IV by a constant corresponding to the Pokemon's level.
+              <br />This page lists the CPM values.
+            </p>
+          </div>
+        </div>
 
         <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
         <script>WriteFooter();</script>

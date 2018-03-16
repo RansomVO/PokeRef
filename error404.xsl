@@ -26,7 +26,7 @@
       </head>
 
       <body style="color:white; background-color:dimgray; font-size:1.5em;">
-        <h1 style="color:darkred">HTTP 404 - File Not Found</h1>
+        <h1 style="color:red">HTTP 404 - File Not Found</h1>
         <br />
         <h2>The requested page cannot be found!</h2>
         <br />

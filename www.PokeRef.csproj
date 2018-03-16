@@ -39,6 +39,8 @@
   </PropertyGroup>
   <!-- / -->
   <ItemGroup>
+    <WebContent Include="images\cphp.png" />
+    <FixOutputFile Include="tech\formulas\_sectionname.txt" />
     <Content Include="__Debugging\Tools\border.html" />
     <FixOutputFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />

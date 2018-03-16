@@ -2,38 +2,29 @@
   <Article date="16 Mar 2018">
     <Title> A Bunch Of Stuff</Title>
     <Text>
-      <ul>
-        <li>
-          <b>The Raid Bosses were updated</b>
-          <bron />First on  13 March 2018.
-          Then again on 16 March 2018
-          <br />It mostly affects the <a href="charts/movesets/">Move Sets</a> pages.
-        </li>
-        <li>
-          <b>On Move Sets, Pokemon Chart, Raid Boss, etc.:</b>
-          <br />Mystical Pokemon now show the gold highlight.
-          <br />Legendary are now highlighted with purple.
-        </li>
-      </ul>
-    </Text>
-  </Article>
-
-  <Article date="6 Mar 2018">
-    <Title>
-      <a href="charts\raidboss">Raid Bosses</a> Updated (Again)
-    </Title>
-    <Text>
-      The Raid Bosses were updated again on 5 March 2018.
-      I have updated the the Raid Bosses charts to add the new ones and to move old ones to Legacy.
-    </Text>
-  </Article>
-  <Article date="26 Feb 2018">
-    <Title>
-      New <a href="tools/shoppingboxes.html">Shopping Boxes</a>
-    </Title>
-    <Text>
-      There are some new Shopping Boxes.
-      Check them out to see what they are worth <i>to you</i>!
+      <div>
+        <b>The GAME_MASTER file was updated</b>
+        <br />First on  13 March 2018...
+        Then again on 16 March 2018
+        <br />It mostly affects the <a href="charts/movesets/">Move Sets</a> pages.
+      </div>
+      <div>
+        <b>Lugia came back as a Raid Boss to replace Rayquaza.</b>
+        <br />
+        <span class="NOTE">(With its move "" enhanced by the most recent GAME_MASTER.)</span>
+      </div>
+      <div>
+        <b>
+          <a href="tech/formulas/cphp.html">CP and HP Formulas</a> have been added in the Technical Reference Section.
+        </b>
+        <br />
+        <span class="NOTE">(For the geeky people.)</span>
+      </div>
+      <div>
+        <b>On Move Sets, Pokemon Chart, Raid Boss, etc.:</b>
+        <br />Mystical Pokemon now show the gold highlight.
+        <br />Legendary are now highlighted with purple.
+      </div>
     </Text>
   </Article>
   <Article date="15 Feb 2018">

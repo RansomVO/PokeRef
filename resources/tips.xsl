@@ -58,9 +58,7 @@
           <p>
             When looking at the Pokemon in your box, there is the ability to search.
             This allows you to easily find Pokemon by species, or by the nickname you have given them.
-            <br /><b>
-              <i>But wait! There's more!!!</i>
-            </b>
+            <br /><span class="EMPHASIZE">But wait! There's more!!!</span>
           </p>
           <p>
             There are some secret terms and modifiers that can be used:
@@ -230,8 +228,154 @@
           </xsl:call-template>
         </h2>
         <div id="EEVEELUTIONS" class="INDENT">
-          <p class="TODO">TODO</p>
-          <!-- TODO QZX -->
+          <p>
+            There are "Easter Egg" tricks in Pokemon GO that will allow you to control what an Eevee will evolve into.
+          </p>
+
+          <hr class="SEPARATOR_BORDER" />
+          <h3>Naming Trick</h3>
+          <div class="INDENT">
+            <p>
+              The Naming trick allows you to specify what the Eevee will evolve into by renaming it before evolving.
+              <br /><span class="EMPHASIZE_SUPER INDENT" style="font-size:larger; background-color:yellow;">THIS WILL ONLY WORK ONCE PER NAME!!!</span>
+              <span class="NOTE">
+                (Make sure you use it on a <span class="EMPHASIZE">good</span> Eevee!)
+              </span>
+            </p>
+
+            <h4>Process:</h4>
+            <div class="INDENT">
+              <ol class="PADDED_LIST PARENT">
+                <li>Set the Nickname for the Eevee to the one desired from the table below.</li>
+                <li>Evolve the Eevee.</li>
+              </ol>
+              <p class="EMPHASIZE CHILD">
+                That's it!
+              </p>
+
+              <table class="INDENT" border="1">
+                <tr>
+                  <th>Evolution</th>
+                  <th>Name</th>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Vaporeon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>Rainer</td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Jolteon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>Sparky</td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Flareon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>Pyro</td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Espeon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>Sakura</td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Umbreon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>Tamao</td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Leafeon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>
+                    <span class="TODO">?</span>
+                  </td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Glaceon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>
+                    <span class="TODO">?</span>
+                  </td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Sylveon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>
+                    <span class="TODO">?</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br />
+          <hr class="SEPARATOR_BORDER" />
+          <h3>Gen 2 Timing Trick</h3>
+          <div class="INDENT">
+            <p class="PARENT">
+              The Timing trick can be used to evolve the Eevee into the Gen 2 evolution you want.
+              <br /><b>BONUS</b>: It can be used multiple times!
+            </p>
+
+            <h4>Process:</h4>
+            <div class="INDENT">
+              <ol class="PADDED_LIST">
+                <li>Make the Eevee your buddy.</li>
+                <li>
+                  Walk at least 10 Km with him as your buddy
+                  <br /><span class="INDENT EMPHASIZE_SUPER">AND</span>
+                  <br /><span class="EMPHASIZE"> make sure he has found 2 Eevee Candies.</span>
+                </li>
+                <li>While the Eevee is still your buddy, evolve it a the time desired from the table below.</li>
+              </ol>
+
+              <table class="INDENT" border="1">
+                <tr>
+                  <th>Evolution</th>
+                  <th>Timing</th>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Espeon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>Daytime</td>
+                </tr>
+                <tr>
+                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Umbreon']" mode="Cell">
+                    <xsl:with-param name="Settings">
+                      <Show small="true" hide_icons="true" />
+                    </xsl:with-param>
+                  </xsl:apply-templates>
+                  <td>Nightime</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
 
         <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />

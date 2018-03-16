@@ -33,18 +33,40 @@
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          CP and HP Formulas</h1>
-        <p>
-          <span class="TODO">TODO QZX</span>
-        </p>
+          CP and HP Formulas
+        </h1>
+        <div class="INDENT">
+          <p class="PARENT">
+            Every Pokemon has "CP" and "HP" scores associated with it.
+          </p>
+          <ul class="CHILD">
+            <li>
+              <b>
+                CP <span class="NOTE">(Combat Power)</span>:
+              </b>
+              <br />An indicator of how strong a Pokemon will be in combat.
+            </li>
+            <li>
+              <b>
+                HP <span class="NOTE">(Hit Points)</span>:
+              </b>
+              <br />An indicator of how much damage a Pokemon can take before it faints.
+            </li>
+          </ul>
+          <p>
+            On the Pokemon's screen, the CP is listed at the top and the HP is listed under their name:
+            <br /><img class="INDENT" src="/images/cphp.png" />
+          </p>
+          <p>
+            These values are based on the Pokemon's IV score.
+            Below are formulas used to calculate the values.
+          </p>
+        </div>
 
         <br />
         <hr />
-        <h2 id="CP">CP Formula</h2>
+        <h2 id="CP">CP Formula:</h2>
         <div class="INDENT">
-          <p class="PARENT">
-            <span class="TODO">TODO QZX</span>
-          </p>
           <div class="INDENT">
             <table class="FORMULA">
               <tr>
@@ -86,7 +108,37 @@
               </tr>
             </table>
           </div>
+        </div>
 
+        <br />
+        <h2 id="CP">HP Formula:</h2>
+        <div class="INDENT">
+          <div class="INDENT">
+            <table class="FORMULA">
+              <tr>
+                <td rowspan="4" style="padding-top:.5em;">
+                  <b style="font-size:x-large">
+                    HP<xsl:value-of select="concat($nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
+                  </b>
+                </td>
+                <td rowspan="4" style="padding-top:.5em;">FLOOR</td>
+                <td rowspan="4" style="font-size:3em;">(</td>
+                <td rowspan="2" style="padding-top:.5em;">
+                  <b>(</b>BaseStamina<xsl:value-of select="concat($nbsp, '+', $nbsp)" disable-output-escaping="yes" />StaminaIV<b>)</b>
+                </td>
+                <td rowspan="2" style="padding-top:.5em;">
+                  <xsl:value-of select="concat($times, $nbsp)" disable-output-escaping="yes" />CPM
+                </td>
+                <td rowspan="4" style="font-size:3em;">)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <br />
+        <hr />
+        <h2>Details</h2>
+        <div class="INDENT">
           <p class="PARENT">
             Here is what everything means:
           </p>
@@ -135,38 +187,25 @@
               <tr>
                 <th valign="top">CPM</th>
                 <td>
-                  The CPM for the Pokémon.
+                  The CPM for the Pokemon.
                 </td>
               </tr>
             </table>
           </div>
-          <br />
-          <div class="NOTE">
-            <b>NOTES</b>:
-            <ul>
-              <li>
-                <span class="TODO">TODO QZX</span>
-              </li>
-              <!--
-                        <li>
-                            The Power for a Move can be looked up on the <a href="GAME_MASTER/moves/moves.fast.html">Fast Moves</a> and <a href="GAME_MASTER/moves/moves.charged.html">Charged Moves</a> pages.
-                        </li>
-                        <li>
-                            The BaseAttack and BaseDefense for a Pokémon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokémon Stats</a> pages.
-                        </li>
-                        <li>
-                            Whether a Move in a Move Set gets a STAB bonus for a specific Pokémon can be looked up on the <a href="/charts/movesets/">Pokémon Move Sets</a> page.
-                        </li>
-                        <li>
-                            CPM is a value based on the Pokémon's Level. See <a href="cpm.html">CPM</a> page.
-                        </li>
-                        <li>
-                            Effectiveness is determined by comparing the Move's Type to the Defending Pokémon's Type. See <a href="/charts/effectiveness.html">Move Effectiveness</a> page.
-                        </li>
-                        -->
-            </ul>
 
-          </div>
+          <br />
+          <h3>NOTES</h3>
+          <ul>
+            <li>
+              The BaseAttack, BaseDefense and BaseStamina for a Pokemon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokemon Stats</a> pages.
+            </li>
+            <li>
+              CPM is a value based on the Pokemon's Level. See <a href="cpm.html">CPM</a> page.
+            </li>
+            <li>
+              In order to determine the Pokemon's IV scores, you generally need a tool that leverages these formulas to find the possibilities. Check out the Tools on the <a href="/resources/#tools_android">Resources</a> page.
+            </li>
+          </ul>
         </div>
 
         <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />

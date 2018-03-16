@@ -265,13 +265,13 @@
             <br />Examples:
             <ul>
               <li>
-                <b>1-10</b>: All Pokémon with IDs between 1 and 10.
+                <b>1-10</b>: All Pokemon with IDs between 1 and 10.
               </li>
               <li>
-                <b>-3</b>: All Pokémon with IDs 3 or lower.
+                <b>-3</b>: All Pokemon with IDs 3 or lower.
               </li>
               <li>
-                <b>100-</b>: All Pokémon with IDs 100 or higher.
+                <b>100-</b>: All Pokemon with IDs 100 or higher.
               </li>
             </ul>
           </td>
@@ -283,7 +283,7 @@
             <br />Example:
             <ul>
               <li>
-                <b>+pidgey</b>: All Pokémon in the Pidgey family.
+                <b>+pidgey</b>: All Pokemon in the Pidgey family.
                 <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span>
               </li>
             </ul>

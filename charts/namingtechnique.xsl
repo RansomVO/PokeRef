@@ -308,7 +308,7 @@
                   </tr>
                   <tr>
                     <td>
-                      Some special chars come <i>BEFORE</i> their similar base.
+                      Some special chars come <span class="EMPHASIZE">BEFORE</span> their similar base.
                     </td>
                     <td>
                       "r" &lt; "ß" &lt; "s"
@@ -361,9 +361,9 @@
                     <td align="center">ß</td>
                     <td>
                       Accessed by pressing and holding S key<br />
-                      <i>
+                      <span class="NOTE">
                         <b>Note</b>: More or less, the ß is a capital "sz" in German.
-                      </i>
+                      </span>
                     </td>
                   </tr>
                   <tr>

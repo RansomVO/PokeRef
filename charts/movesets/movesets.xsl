@@ -122,7 +122,7 @@
             <b>True DPS</b>: Tells the DPS for Move Set, for the specified Pokemon.
           </li>
           <li>
-            <b>%</b>: A comparison of the Move Set's True DPS, to the True DPS of the Pokemon's best possible Move Set <i>that doesn't include a Legacy Move</i>.
+            <b>%</b>: A comparison of the Move Set's True DPS, to the True DPS of the Pokemon's best possible Move Set <span class="EMPHASIZE">that doesn't include a Legacy Move</span>.
           </li>
         </ul>
         <p>

@@ -125,7 +125,7 @@
               </table>
               <ul>
                 <li style="margin:unset">
-                  Sometimes there is only 1 possibility so you <i>know</i> what it will be if you catch it.
+                  Sometimes there is only 1 possibility so you <span class="EMPHASIZE">know</span> what it will be if you catch it.
                 </li>
                 <li style="margin:unset">Other times there are multiple possibilities, but you still will have a good idea of what you face.</li>
               </ul>
@@ -164,7 +164,7 @@
                   </td>
                 </tr>
               </table>
-              Sometimes there is only 1 possibility so you <i>know</i> what you have, so you can stop here.
+              Sometimes there is only 1 possibility so you <span class="EMPHASIZE">know</span> what you have, so you can stop here.
             </li>
             <li>
               If you haven't determined the IV yet, then open the menu and select APPRAISE.

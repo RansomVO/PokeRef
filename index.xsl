@@ -81,7 +81,7 @@
                 <HRef>tools/</HRef>
                 <Text>
                   There are a lot of places to get generic information about all sorts of stuff in Pokemon GO.
-                  But what if you want to focus on stuff that is specific to <i>you</i>?
+                  But what if you want to focus on stuff that is specific to <span class="EMPHASIZE">you</span>?
                   <br />This sections has some tools that could be helpful.
                 </Text>
               </Section>
@@ -228,7 +228,7 @@
     <div class="NEWS_HEADLINE">
       <xsl:copy-of select="Title/node()" />
     </div>
-    <div>
+    <div class="NEWS_CONTENT">
       <xsl:copy-of select="Text/node()" />
     </div>
     <xsl:if test="Note != ''">
@@ -236,6 +236,7 @@
         <xsl:copy-of select="Note/node()" />
       </p>
     </xsl:if>
+    <br />
   </xsl:template>
 
   <xsl:template match="Section">

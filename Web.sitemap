@@ -83,7 +83,7 @@
       <siteMapNode title="Possible IVs for Raid Bosses" description="Tool for getting possible IV scores for Pokemon Raid Bosses." url="/charts/raidboss/">
         <!-- #region Links to anchors on the page. -->
         <siteMapNode title="Before you throw any balls..." description="How to use the charts BEFORE catching the Raid Boss to find what the range of IV scores may be." url="/charts/raidboss/#before" />
-        <siteMapNode title="After you catch the Pokémon..." description="How to use the charts AFTER catching the Raid Boss to pinpoint (or at least narrow down) what the IV scores are." url="/charts/raidboss/#after" />
+        <siteMapNode title="After you catch the Pokemon..." description="How to use the charts AFTER catching the Raid Boss to pinpoint (or at least narrow down) what the IV scores are." url="/charts/raidboss/#after" />
         <siteMapNode title="Raid Bosses" description="Chart of current Pokemon Raid Bosses" url="/charts/raidboss/#bossescurrent" />
         <siteMapNode title="Legacy Raid Bosses" description="Chart of Pokemon that were Raid Bosses but no longer are." url="/charts/raidboss/#bosseslegacy" />
         <!-- #endregion -->
@@ -231,7 +231,7 @@
       <siteMapNode title="Greater Seattle Area Section" description="Link to Greater Seattle Area Resources page." url="/resources/#seattlearea" />
       <!-- #endregion -->
       <!-- #region Links to Sub-Sections/Child Pages. -->
-      <siteMapNode title="Pokémon GO Tips" description="Page with tips for making the most out of playing Pokemon Go." url="/resources/tips.html">
+      <siteMapNode title="Pokemon GO Tips" description="Page with tips for making the most out of playing Pokemon Go." url="/resources/tips.html">
         <!-- #region Links to anchors on the page. -->
         <siteMapNode title="Advanced Search Terms" description="A description of the terms that can be used for searching for Pokemon in Pokemon Storage." url="/resources/tips.html#searchterms" />
         <siteMapNode title="Eevee Evolving" description="A description of tricks for evolving Eevees." url="/resources/tips.html#eeveelutions" />
@@ -274,7 +274,7 @@
           <siteMapNode title="Pokemon Stats - Gen 3 (First Found In The Hoenn Region)" description="Technical statistics found in the GAME_MASTER file for Pokemon in Generation 3" url="/tech/GAME_MASTER/pokestats/pokestats.gen3.html" />
           <!-- #endregion -->
         </siteMapNode>
-        <siteMapNode title="Pokémon Moves" description="Moves that can be performed by Pokemon." url="/tech/GAME_MASTER/moves/">
+        <siteMapNode title="Pokemon Moves" description="Moves that can be performed by Pokemon." url="/tech/GAME_MASTER/moves/">
           <!-- #region Links to Sub-Sections/Child Pages. -->
           <siteMapNode title="Fast Moves" description="Fast moves that can be performed by Pokemon." url="/tech/GAME_MASTER/moves/moves.fast.html" />
           <siteMapNode title="Charged Moves" description="Charged moves that can be performed by Pokemon." url="/tech/GAME_MASTER/moves/moves.charged.html" />
@@ -283,16 +283,23 @@
         <siteMapNode title="GAME_MASTER Archive" description="Archive of GAME_MASTER files and the associated JSON." url="/tech/GAME_MASTER/archive/" />
         <!-- #endregion -->
       </siteMapNode>
-      <siteMapNode title="Move Set Damage Formulas" description="Technical description of formulas for determining how much damage is done by a Move Set." url="/tech/formulas/movesetdamage.html">
+      <siteMapNode title="Technical Formulas" description="Technical formulas used behind the scenes in Pokemon GO." url="/tech/formulas/">
         <!-- #region Links to anchors on the page. -->
-        <siteMapNode title="Damage Formula" description="Basic formula for the Damage inflicted by a Single attack Move" url="/tech/formulas/movesetdamage.html#damage" />
-        <siteMapNode title="Damage Per Second (DPS) Formula" description="Formula for the Damage over time for a Move Set" url="/tech/formulas/movesetdamage.html#dps" />
-        <siteMapNode title="Simplifying (True DPS)" description="Formula that merges simplified versions the Damage and DPS formulas" url="/tech/formulas/movesetdamage.html#truedps" />
-        <siteMapNode title="Even Simpler (MoveSet DPS)" description="Simplified version of True DPS formula." url="/tech/formulas/movesetdamage.html#movesetdps" />
-        <siteMapNode title="Sum-Up" description="Sum up." url="/tech/formulas/movesetdamage.html#sumup" />
+        <!-- #endregion -->
+        <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="CP and HP Formulas" description="Technical description of formulas used to calculate CP and HP of a Pokemon." url="/tech/formulas/cphp.html" />
+        <siteMapNode title="Move Set Damage Formulas" description="Technical description of formulas for determining how much damage is done by a Move Set." url="/tech/formulas/movesetdamage.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Damage Formula" description="Basic formula for the Damage inflicted by a Single attack Move" url="/tech/formulas/movesetdamage.html#damage" />
+          <siteMapNode title="Damage Per Second (DPS) Formula" description="Formula for the Damage over time for a Move Set" url="/tech/formulas/movesetdamage.html#dps" />
+          <siteMapNode title="Simplifying (True DPS)" description="Formula that merges simplified versions the Damage and DPS formulas" url="/tech/formulas/movesetdamage.html#truedps" />
+          <siteMapNode title="Even Simpler (MoveSet DPS)" description="Simplified version of True DPS formula." url="/tech/formulas/movesetdamage.html#movesetdps" />
+          <siteMapNode title="Sum-Up" description="Sum up." url="/tech/formulas/movesetdamage.html#sumup" />
+          <!-- #endregion -->
+          <siteMapNode title="CP Modifiers (CPM)" description="Table of CP Modifiers." url="/tech/formulas/cpm.html" />
+        </siteMapNode>
         <!-- #endregion -->
       </siteMapNode>
-      <siteMapNode title="CP Modifiers (CPM)" description="Table of CP Modifiers." url="/tech/cpm.html" />
       <!-- #endregion -->
     </siteMapNode>
     <!-- #endregion -->

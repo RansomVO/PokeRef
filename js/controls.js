@@ -619,6 +619,7 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     }
 
     // TODO QZX: Deal with parens.
+    // TODO QZX: Do we want to add keywords like "Shiny", "Legendary", etc.
 
     // Split the filter into sub-filters separated by ',' and treat it like ||
     var filterSegments = filterSegment.split(',');
@@ -665,7 +666,6 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     }
 
     // Check to see if it is a family name or name.
-    // TODO QZX: "Shiny"
     if (filterSegment.startsWith('+')) {
         if (GetPokemonFamily(pokemon).toUpperCase().contains(filterSegment.substring(1).toUpperCase())) {
             return true;
