@@ -4,11 +4,11 @@
     <META name="viewport" content="width=device-width, initial-scale=1" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
-    <script src="movesets.js?cacherefresh=2018-03-13_12:56:07" ></script>
-    <script src="/js/controls.js?cacherefresh=2018-03-13_12:56:07" ></script>
-    <script src="/js/pokemon.js?cacherefresh=2018-03-13_12:56:07" ></script>
-    <script src="/js/global.js?cacherefresh=2018-03-13_12:56:07" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-13_12:56:07" />
+    <script src="movesets.js?cacherefresh=2018-03-16_13:56:06" ></script>
+    <script src="/js/controls.js?cacherefresh=2018-03-16_13:56:06" ></script>
+    <script src="/js/pokemon.js?cacherefresh=2018-03-16_13:56:06" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-16_13:56:06" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-16_13:56:06" />
     <title>
       Pokémon Move Sets
       - Gen 1</title>
@@ -21,7 +21,7 @@
         Pokémon Move Sets
         - Gen 1</h1>
     <p class="NOTE">
-      <b>NOTE</b>: Last Updated 15-Feb-2018</p>
+      <b>NOTE</b>: Last Updated 13-Mar-2018</p>
     <p>
       This chart lists the Move Sets for Pokémon.
       <br />Just look up the Pokémon you are interested in, find the entry for the Move Set for your Pokémon, and compare it to the other possible Move Sets.
@@ -47,7 +47,7 @@
         <b>True DPS</b>: Tells the DPS for Move Set, for the specified Pokémon.
         </li>
       <li>
-        <b>%</b>: A comparison of the Move Set's True DPS, to the True DPS of the Pokémon's best possible Move Set <i>that doesn't include a Legacy Move</i>.
+        <b>%</b>: A comparison of the Move Set's True DPS, to the True DPS of the Pokémon's best possible Move Set <span class="EMPHASIZE">that doesn't include a Legacy Move</span>.
         </li>
     </ul>
     <p>
@@ -193,83 +193,124 @@
       <h2>Key <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><div class="COLLAPSER" id="MOVESET_KEY_COLLAPSER">˅</div></div></h2>
       <br />
       <div id="MOVESET_KEY">
-        <table border="1" class="KEY_TABLE" style="white-space:nowrap;">
-          <tr comment="General">
-            <th rowspan="3">
-              General
-              </th>
-            <td class="LEGACY_MOVESET">
-              <span class="LEGACY_MOVESET LEGACY_MOVE">Legacy Move</span>
-              <br />
-              <spanMove class="NOTE">(Move no longer obtainable for that Pokemon)</spanMove>
-            </td>
-          </tr>
-          <tr>
-            <td class="LEGACY_MOVESET">
-              Move Set with a "Legacy Move"
-              <br /><spanMove class="NOTE">(Grey Text)</spanMove></td>
-          </tr>
-          <tr>
-            <td class="STAB_MOVE">Move with STAB bonus</td>
-          </tr>
-          <tr comment="MoveSet and True DPS">
-            <th rowspan="4">
-              Move Set<br />&amp;<br />True DPS
-              </th>
-            <td class="GREAT">
-              True DPS &gt;= 90% of Max Possible
+        <div style="vertical-align:top; display:inline-block">
+          <table border="1" class="KEY_TABLE" style="white-space:nowrap;">
+            <tr comment="General">
+              <th rowspan="3">
+                General
+                </th>
+              <td class="LEGACY_MOVESET">
+                <span class="LEGACY_MOVESET LEGACY_MOVE">Legacy Move</span>
+                <br />
+                <spanMove class="NOTE">(Move no longer obtainable for that Pokemon)</spanMove>
               </td>
-          </tr>
-          <tr>
-            <td class="GOOD">
-              True DPS &gt;= 75% of Max Possible
-              </td>
-          </tr>
-          <tr>
-            <td class="POOR">True DPS Above Average</td>
-          </tr>
-          <tr>
-            <td class="BAD">True DPS Below Average</td>
-          </tr>
-          <tr comment="Move Set DPS">
-            <th rowspan="4">Damage: Move Set DPS</th>
-            <td class="GREAT">
-              &gt;= 90% of Max Possible
-              </td>
-          </tr>
-          <tr>
-            <td class="GOOD">
-              &gt;= 75% of Max Possible
-              </td>
-          </tr>
-          <tr>
-            <td class="POOR">Above Average</td>
-          </tr>
-          <tr>
-            <td class="BAD">Below Average</td>
-          </tr>
-          <tr comment="Damage %">
-            <th rowspan="4">Damage: %</th>
-            <td class="GREAT">
-              &gt;= 100% of best current Move Set
-              </td>
-          </tr>
-          <tr>
-            <td class="GOOD">
-              &gt;= 90% of best current Move Set
-              </td>
-          </tr>
-          <tr>
-            <td class="POOR">
-              &gt;= 80% of best current Move Set
-              </td>
-          </tr>
-          <tr>
-            <td class="BAD">
-              &lt; 80% of best current Move Set
-              </td>
-          </tr>
-        </table>
+            </tr>
+            <tr>
+              <td class="LEGACY_MOVESET">
+                Move Set with a "Legacy Move"
+                <br /><spanMove class="NOTE">(Grey Text)</spanMove></td>
+            </tr>
+            <tr>
+              <td class="STAB_MOVE">Move with STAB bonus</td>
+            </tr>
+            <tr comment="MoveSet and True DPS">
+              <th rowspan="4">
+                Move Set<br />&amp;<br />True DPS
+                </th>
+              <td class="GREAT">
+                True DPS &gt;= 90% of Max Possible
+                </td>
+            </tr>
+            <tr>
+              <td class="GOOD">
+                True DPS &gt;= 75% of Max Possible
+                </td>
+            </tr>
+            <tr>
+              <td class="POOR">True DPS Above Average</td>
+            </tr>
+            <tr>
+              <td class="BAD">True DPS Below Average</td>
+            </tr>
+            <tr comment="Move Set DPS">
+              <th rowspan="4">Damage: Move Set DPS</th>
+              <td class="GREAT">
+                &gt;= 90% of Max Possible
+                </td>
+            </tr>
+            <tr>
+              <td class="GOOD">
+                &gt;= 75% of Max Possible
+                </td>
+            </tr>
+            <tr>
+              <td class="POOR">Above Average</td>
+            </tr>
+            <tr>
+              <td class="BAD">Below Average</td>
+            </tr>
+            <tr comment="Damage %">
+              <th rowspan="4">Damage: %</th>
+              <td class="GREAT">
+                &gt;= 100% of best current Move Set
+                </td>
+            </tr>
+            <tr>
+              <td class="GOOD">
+                &gt;= 90% of best current Move Set
+                </td>
+            </tr>
+            <tr>
+              <td class="POOR">
+                &gt;= 80% of best current Move Set
+                </td>
+            </tr>
+            <tr>
+              <td class="BAD">
+                &lt; 80% of best current Move Set
+                </td>
+            </tr>
+          </table>
+        </div>
+        <div style="vertical-align:top; display:inline-block">
+          <h3>Pokémon Image</h3>
+          <div id="POKEMON_IMAGE_KEY" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <table border="1" class="KEY_TABLE">
+              <comment commment="Limited Availablility">
+                <tr>
+                  <th rowspan="2">Limited Availability</th>
+                  <td class="REGIONAL">Regional Availability</td>
+                </tr>
+                <tr>
+                  <td class="UNAVAILABLE">Unavailable</td>
+                </tr>
+              </comment>
+              <comment commment="Limited Origin">
+                <tr>
+                  <th rowspan="2">Limited Origin</th>
+                  <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
+                </tr>
+                <tr>
+                  <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
+                </tr>
+              </comment>
+              <comment commment="Special">
+                <tr>
+                  <th rowspan="2">Special</th>
+                  <td class="LEGENDARY">Legendary</td>
+                </tr>
+                <tr>
+                  <td class="MYTHIC">Mythic</td>
+                </tr>
+              </comment>
+              <tr>
+                <td colspan="2" class="NOTE">
+                  May combine one from each section.
+                  </td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
       <br />
       <hr />
@@ -336,7 +377,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -726,7 +767,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -1116,7 +1157,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -1508,7 +1549,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -1876,7 +1917,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -2420,7 +2461,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -3362,7 +3403,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -3730,7 +3771,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -4098,7 +4139,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -4466,7 +4507,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -4614,7 +4655,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -4773,7 +4814,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -5328,7 +5369,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -5498,7 +5539,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -5668,7 +5709,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -6223,7 +6264,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -6613,7 +6654,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -7003,7 +7044,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -7712,7 +7753,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -8080,7 +8121,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -8459,7 +8500,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -8492,7 +8533,7 @@
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Sky Attack" chargedMoveType="Flying" chargedMoveBoost="Windy">
-              <td class="STAB_MOVE BAD ">
+              <td class="STAB_MOVE POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
                     <img class="TAG_ICON_LARGE" src="/images/type_normal.png" />
@@ -8517,6 +8558,61 @@
                     </div>
                   </div>
                 </div>Quick Attack</td>
+              <td class="STAB_MOVE POOR ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_flying.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Flying</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Windy</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Sky Attack</td>
+              <td align="right" class="GOOD ">20.00</td>
+              <td align="right" class="POOR ">16.50</td>
+              <td align="right" class="GREAT ">100%</td>
+            </tr>
+            <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Sky Attack" chargedMoveType="Flying" chargedMoveBoost="Windy">
+              <td class="STAB_MOVE BAD ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_flying.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Flying</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Windy</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Peck</td>
               <td class="STAB_MOVE BAD ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -8542,9 +8638,9 @@
                     </div>
                   </div>
                 </div>Sky Attack</td>
-              <td align="right" class="BAD ">18.33</td>
-              <td align="right" class="BAD ">15.17</td>
-              <td align="right" class="GREAT ">100%</td>
+              <td align="right" class="BAD ">18.57</td>
+              <td align="right" class="BAD ">14.86</td>
+              <td align="right" class="GOOD ">90%</td>
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Drill Peck" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="STAB_MOVE BAD ">
@@ -8599,62 +8695,7 @@
                 </div>Drill Peck</td>
               <td align="right" class="BAD ">16.73</td>
               <td align="right" class="BAD ">13.82</td>
-              <td align="right" class="GOOD ">91%</td>
-            </tr>
-            <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Sky Attack" chargedMoveType="Flying" chargedMoveBoost="Windy">
-              <td class="STAB_MOVE BAD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_flying.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Flying</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Windy</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Peck</td>
-              <td class="STAB_MOVE BAD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_flying.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Flying</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Windy</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Sky Attack</td>
-              <td align="right" class="BAD ">17.14</td>
-              <td align="right" class="BAD ">13.72</td>
-              <td align="right" class="GOOD ">90%</td>
+              <td align="right" class="POOR ">83%</td>
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Aerial Ace" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="STAB_MOVE BAD ">
@@ -8709,7 +8750,7 @@
                 </div>Aerial Ace</td>
               <td align="right" class="BAD ">15.54</td>
               <td align="right" class="BAD ">12.86</td>
-              <td align="right" class="POOR ">84%</td>
+              <td align="right" class="BAD ">77%</td>
             </tr>
             <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Drill Peck" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="STAB_MOVE BAD ">
@@ -8764,7 +8805,7 @@
                 </div>Drill Peck</td>
               <td align="right" class="BAD ">15.87</td>
               <td align="right" class="BAD ">12.70</td>
-              <td align="right" class="POOR ">83%</td>
+              <td align="right" class="BAD ">76%</td>
             </tr>
             <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Aerial Ace" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="STAB_MOVE BAD ">
@@ -8819,7 +8860,7 @@
                 </div>Aerial Ace</td>
               <td align="right" class="BAD ">14.84</td>
               <td align="right" class="BAD ">11.88</td>
-              <td align="right" class="BAD ">78%</td>
+              <td align="right" class="BAD ">72%</td>
             </tr>
             <tr fastMoveName="Quick Attack" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Twister" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_STAB_MOVE BAD ">
@@ -8874,7 +8915,7 @@
                 </div>Twister</td>
               <td align="right" class="LEGACY_MOVESET BAD ">12.83</td>
               <td align="right" class="LEGACY_MOVESET BAD ">9.50</td>
-              <td align="right" class="LEGACY_MOVESET BAD ">62%</td>
+              <td align="right" class="LEGACY_MOVESET BAD ">57%</td>
             </tr>
             <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Twister" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_STAB_MOVE BAD ">
@@ -8929,7 +8970,7 @@
                 </div>Twister</td>
               <td align="right" class="LEGACY_MOVESET BAD ">12.50</td>
               <td align="right" class="LEGACY_MOVESET BAD ">8.98</td>
-              <td align="right" class="LEGACY_MOVESET BAD ">59%</td>
+              <td align="right" class="LEGACY_MOVESET BAD ">54%</td>
             </tr>
             <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW" movesetCount="8">
               <td class="CELL_FILLED" rowspan="9">
@@ -8959,7 +9000,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -9042,8 +9083,8 @@
                     </div>
                   </div>
                 </div>Sky Attack</td>
-              <td align="right" class="BAD ">17.14</td>
-              <td align="right" class="POOR ">21.72</td>
+              <td align="right" class="BAD ">18.57</td>
+              <td align="right" class="POOR ">23.43</td>
               <td align="right" class="GREAT ">100%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Sky Attack" chargedMoveType="Flying" chargedMoveBoost="Windy">
@@ -9097,9 +9138,9 @@
                     </div>
                   </div>
                 </div>Sky Attack</td>
-              <td align="right" class="BAD ">18.37</td>
-              <td align="right" class="POOR ">20.22</td>
-              <td align="right" class="GOOD ">93%</td>
+              <td align="right" class="GOOD ">19.46</td>
+              <td align="right" class="POOR ">21.53</td>
+              <td align="right" class="GOOD ">91%</td>
             </tr>
             <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Aerial Ace" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="STAB_MOVE POOR ">
@@ -9154,62 +9195,7 @@
                 </div>Aerial Ace</td>
               <td align="right" class="BAD ">14.84</td>
               <td align="right" class="POOR ">18.75</td>
-              <td align="right" class="POOR ">86%</td>
-            </tr>
-            <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Drill Run" chargedMoveType="Ground" chargedMoveBoost="Sunny">
-              <td class="STAB_MOVE POOR ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_flying.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Flying</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Windy</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Peck</td>
-              <td class="POOR ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_ground.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Ground</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_sunny.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Sunny</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Drill Run</td>
-              <td align="right" class="BAD ">16.67</td>
-              <td align="right" class="POOR ">18.47</td>
-              <td align="right" class="POOR ">85%</td>
+              <td align="right" class="POOR ">80%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Aerial Ace" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="POOR ">
@@ -9264,7 +9250,62 @@
                 </div>Aerial Ace</td>
               <td align="right" class="BAD ">16.81</td>
               <td align="right" class="POOR ">18.62</td>
-              <td align="right" class="POOR ">85%</td>
+              <td align="right" class="BAD ">79%</td>
+            </tr>
+            <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Drill Run" chargedMoveType="Ground" chargedMoveBoost="Sunny">
+              <td class="STAB_MOVE POOR ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_flying.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Flying</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Windy</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Peck</td>
+              <td class="POOR ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_ground.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Ground</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_sunny.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Sunny</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Drill Run</td>
+              <td align="right" class="BAD ">16.67</td>
+              <td align="right" class="POOR ">18.47</td>
+              <td align="right" class="BAD ">78%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Drill Run" chargedMoveType="Ground" chargedMoveBoost="Sunny">
               <td class="POOR ">
@@ -9319,7 +9360,7 @@
                 </div>Drill Run</td>
               <td align="right" class="BAD ">17.90</td>
               <td align="right" class="POOR ">17.80</td>
-              <td align="right" class="POOR ">81%</td>
+              <td align="right" class="BAD ">75%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Twister" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET BAD ">
@@ -9374,7 +9415,7 @@
                 </div>Twister</td>
               <td align="right" class="LEGACY_MOVESET BAD ">14.61</td>
               <td align="right" class="LEGACY_MOVESET BAD ">14.61</td>
-              <td align="right" class="LEGACY_MOVESET BAD ">67%</td>
+              <td align="right" class="LEGACY_MOVESET BAD ">62%</td>
             </tr>
             <tr fastMoveName="Peck" fastMoveType="Flying" fastMoveBoost="Windy" chargedMoveName="Twister" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_STAB_MOVE BAD ">
@@ -9429,7 +9470,7 @@
                 </div>Twister</td>
               <td align="right" class="LEGACY_MOVESET BAD ">12.50</td>
               <td align="right" class="LEGACY_MOVESET BAD ">14.27</td>
-              <td align="right" class="LEGACY_MOVESET BAD ">65%</td>
+              <td align="right" class="LEGACY_MOVESET BAD ">60%</td>
             </tr>
             <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW" movesetCount="8">
               <td class="CELL_FILLED" rowspan="9">
@@ -9448,7 +9489,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -9926,7 +9967,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -10295,7 +10336,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -10884,7 +10925,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -11582,7 +11623,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -12060,7 +12101,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -12428,7 +12469,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -12796,7 +12837,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -13175,7 +13216,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -13554,7 +13595,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -13922,7 +13963,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -14301,7 +14342,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -14845,7 +14886,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -15213,7 +15254,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -15746,7 +15787,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -16114,7 +16155,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -16988,7 +17029,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -17598,7 +17639,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -17988,7 +18029,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -18488,7 +18529,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -19001,7 +19042,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -19391,7 +19432,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -19781,7 +19822,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -20171,7 +20212,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -20561,7 +20602,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -21116,7 +21157,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -21506,7 +21547,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -22215,7 +22256,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -22748,7 +22789,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -23281,7 +23322,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -23759,7 +23800,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -24237,7 +24278,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -24605,7 +24646,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -24973,7 +25014,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -25341,7 +25382,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -26052,7 +26093,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -26420,7 +26461,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -27283,7 +27324,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -27651,7 +27692,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -28140,7 +28181,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -28862,7 +28903,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -29230,7 +29271,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -29598,7 +29639,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -30199,7 +30240,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -30732,7 +30773,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -31210,7 +31251,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -32249,7 +32290,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -32639,7 +32680,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -33194,7 +33235,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -33584,7 +33625,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -33974,7 +34015,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -34364,7 +34405,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -34754,7 +34795,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -35474,7 +35515,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -36196,7 +36237,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -36674,7 +36715,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -37231,7 +37272,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -37621,7 +37662,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -38011,7 +38052,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -38401,7 +38442,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -39121,7 +39162,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -39676,7 +39717,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -40176,7 +40217,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -40678,7 +40719,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -41387,7 +41428,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -42274,7 +42315,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -42807,7 +42848,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -43518,7 +43559,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -43897,7 +43938,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -44520,7 +44561,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -45240,7 +45281,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -45960,7 +46001,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -46858,7 +46899,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -47457,7 +47498,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -47825,7 +47866,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -48413,7 +48454,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -48781,7 +48822,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -49314,7 +49355,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -49792,7 +49833,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -50349,7 +50390,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -50739,7 +50780,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -51448,7 +51489,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -51816,7 +51857,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -52184,7 +52225,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -52772,7 +52813,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -53648,7 +53689,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -54029,7 +54070,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -54562,7 +54603,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -55119,7 +55160,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -55509,7 +55550,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -56011,7 +56052,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -56502,7 +56543,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -56980,7 +57021,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -57568,7 +57609,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -57936,7 +57977,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -58414,7 +58455,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -58782,7 +58823,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -59645,7 +59686,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -60189,7 +60230,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -61129,7 +61170,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -61532,7 +61573,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -62252,7 +62293,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -62961,7 +63002,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -63329,7 +63370,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -63710,7 +63751,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -64408,7 +64449,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -64777,7 +64818,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -64882,7 +64923,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -66055,7 +66096,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -66929,7 +66970,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -67035,7 +67076,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -67403,7 +67444,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -67606,7 +67647,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -67974,7 +68015,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -68465,7 +68506,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -70177,7 +70218,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -70787,7 +70828,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -71520,7 +71561,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -71910,7 +71951,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -72478,7 +72519,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -72870,7 +72911,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -73333,7 +73374,7 @@
             </tr>
             <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW" movesetCount="3">
               <td class="CELL_FILLED" rowspan="4">
-                <div class="SPRITE_FILLER RAIDBOSS_ONLY " title="Articuno" name="Articuno" gen="1" id="144" type1="Ice" type2="Flying" family="Articuno" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Snow" boost2="Windy" genderRatio="⚲" maxCP="2933" maxHP="154" buddyKM="20" baseAttack="192" baseDefense="249" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                <div class="SPRITE_FILLER RAIDBOSS_ONLY " title="Articuno" name="Articuno" gen="1" id="144" type1="Ice" type2="Flying" family="Articuno" evolvesFrom="" shiny="" availability="Raid Boss Only" boost1="Snow" boost2="Windy" genderRatio="⚲" maxCP="2933" maxHP="154" buddyKM="20" baseAttack="192" baseDefense="249" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
                     <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/144.png" alt="(Articuno)" />
                     <div id="Pokemon_Icons_Field">
@@ -73359,7 +73400,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -73558,7 +73599,7 @@
             </tr>
             <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW" movesetCount="3">
               <td class="CELL_FILLED" rowspan="4">
-                <div class="SPRITE_FILLER RAIDBOSS_ONLY " title="Zapdos" name="Zapdos" gen="1" id="145" type1="Electric" type2="Flying" family="Zapdos" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Rainy" boost2="Windy" genderRatio="⚲" maxCP="3330" maxHP="154" buddyKM="20" baseAttack="253" baseDefense="188" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                <div class="SPRITE_FILLER RAIDBOSS_ONLY " title="Zapdos" name="Zapdos" gen="1" id="145" type1="Electric" type2="Flying" family="Zapdos" evolvesFrom="" shiny="" availability="Raid Boss Only" boost1="Rainy" boost2="Windy" genderRatio="⚲" maxCP="3330" maxHP="154" buddyKM="20" baseAttack="253" baseDefense="188" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
                     <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/145.png" alt="(Zapdos)" />
                     <div id="Pokemon_Icons_Field">
@@ -73584,7 +73625,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -73783,7 +73824,7 @@
             </tr>
             <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW" movesetCount="3">
               <td class="CELL_FILLED" rowspan="4">
-                <div class="SPRITE_FILLER RAIDBOSS_ONLY " title="Moltres" name="Moltres" gen="1" id="146" type1="Fire" type2="Flying" family="Moltres" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Sunny" boost2="Windy" genderRatio="⚲" maxCP="3272" maxHP="154" buddyKM="20" baseAttack="251" baseDefense="184" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                <div class="SPRITE_FILLER RAIDBOSS_ONLY " title="Moltres" name="Moltres" gen="1" id="146" type1="Fire" type2="Flying" family="Moltres" evolvesFrom="" shiny="" availability="Raid Boss Only" boost1="Sunny" boost2="Windy" genderRatio="⚲" maxCP="3272" maxHP="154" buddyKM="20" baseAttack="251" baseDefense="184" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
                     <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/146.png" alt="(Moltres)" />
                     <div id="Pokemon_Icons_Field">
@@ -73809,7 +73850,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -74037,7 +74078,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -74406,7 +74447,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -74786,7 +74827,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -74819,7 +74860,7 @@
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
             <tr fastMoveName="Dragon Tail" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Draco Meteor" chargedMoveType="Dragon" chargedMoveBoost="Windy">
-              <td class="STAB_MOVE GREAT ">
+              <td class="LEGACY_MOVESET LEGACY_STAB_MOVE GREAT ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
                     <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
@@ -74844,7 +74885,7 @@
                     </div>
                   </div>
                 </div>Dragon Tail</td>
-              <td class="STAB_MOVE GREAT ">
+              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GREAT ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
                     <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
@@ -74869,9 +74910,9 @@
                     </div>
                   </div>
                 </div>Draco Meteor</td>
-              <td align="right" class="GOOD ">19.64</td>
-              <td align="right" class="GREAT ">34.83</td>
-              <td align="right" class="GREAT ">100%</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">19.64</td>
+              <td align="right" class="LEGACY_MOVESET GREAT ">34.83</td>
+              <td align="right" class="LEGACY_MOVESET GREAT ">103%</td>
             </tr>
             <tr fastMoveName="Dragon Tail" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Outrage" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="STAB_MOVE GREAT ">
@@ -74926,7 +74967,7 @@
                 </div>Outrage</td>
               <td align="right" class="GOOD ">19.05</td>
               <td align="right" class="GREAT ">33.72</td>
-              <td align="right" class="GOOD ">96%</td>
+              <td align="right" class="GREAT ">100%</td>
             </tr>
             <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Draco Meteor" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GREAT ">
@@ -74954,7 +74995,7 @@
                     </div>
                   </div>
                 </div>Dragon Breath</td>
-              <td class="LEGACY_MOVESET LEGACY_STAB_MOVE GREAT ">
+              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GREAT ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
                     <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
@@ -74981,7 +75022,7 @@
                 </div>Draco Meteor</td>
               <td align="right" class="LEGACY_MOVESET BAD ">18.63</td>
               <td align="right" class="LEGACY_MOVESET GREAT ">33.30</td>
-              <td align="right" class="LEGACY_MOVESET GOOD ">95%</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">98%</td>
             </tr>
             <tr fastMoveName="Dragon Tail" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Hurricane" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="STAB_MOVE GOOD ">
@@ -75036,7 +75077,7 @@
                 </div>Hurricane</td>
               <td align="right" class="BAD ">18.24</td>
               <td align="right" class="GOOD ">32.46</td>
-              <td align="right" class="GOOD ">93%</td>
+              <td align="right" class="GOOD ">96%</td>
             </tr>
             <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Outrage" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
@@ -75091,7 +75132,7 @@
                 </div>Outrage</td>
               <td align="right" class="LEGACY_MOVESET BAD ">18.08</td>
               <td align="right" class="LEGACY_MOVESET GOOD ">32.22</td>
-              <td align="right" class="LEGACY_MOVESET GOOD ">92%</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">95%</td>
             </tr>
             <tr fastMoveName="Dragon Tail" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Dragon Claw" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_STAB_MOVE GOOD ">
@@ -75146,7 +75187,7 @@
                 </div>Dragon Claw</td>
               <td align="right" class="LEGACY_MOVESET BAD ">18.03</td>
               <td align="right" class="LEGACY_MOVESET GOOD ">31.97</td>
-              <td align="right" class="LEGACY_MOVESET GOOD ">91%</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">94%</td>
             </tr>
             <tr fastMoveName="Dragon Tail" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
               <td class="STAB_MOVE GOOD ">
@@ -75201,7 +75242,7 @@
                 </div>Hyper Beam</td>
               <td align="right" class="GOOD ">19.41</td>
               <td align="right" class="GOOD ">31.36</td>
-              <td align="right" class="GOOD ">90%</td>
+              <td align="right" class="GOOD ">93%</td>
             </tr>
             <tr fastMoveName="Dragon Tail" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Dragon Pulse" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_STAB_MOVE GOOD ">
@@ -75256,62 +75297,7 @@
                 </div>Dragon Pulse</td>
               <td align="right" class="LEGACY_MOVESET BAD ">17.65</td>
               <td align="right" class="LEGACY_MOVESET GOOD ">31.28</td>
-              <td align="right" class="LEGACY_MOVESET POOR ">89%</td>
-            </tr>
-            <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Draco Meteor" chargedMoveType="Dragon" chargedMoveBoost="Windy">
-              <td class="GOOD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_steel.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Steel</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_snow.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Snow</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Steel Wing</td>
-              <td class="STAB_MOVE GOOD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Dragon</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Windy</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Draco Meteor</td>
-              <td align="right" class="GOOD ">19.59</td>
-              <td align="right" class="GOOD ">30.99</td>
-              <td align="right" class="POOR ">88%</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">92%</td>
             </tr>
             <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Hurricane" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
@@ -75366,7 +75352,62 @@
                 </div>Hurricane</td>
               <td align="right" class="LEGACY_MOVESET BAD ">17.11</td>
               <td align="right" class="LEGACY_MOVESET GOOD ">30.73</td>
-              <td align="right" class="LEGACY_MOVESET POOR ">88%</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">91%</td>
+            </tr>
+            <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Draco Meteor" chargedMoveType="Dragon" chargedMoveBoost="Windy">
+              <td class="LEGACY_MOVESET GOOD ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_steel.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Steel</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_snow.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Snow</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Steel Wing</td>
+              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Dragon</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Windy</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Draco Meteor</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">19.59</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">30.99</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">91%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Outrage" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="GOOD ">
@@ -75421,62 +75462,7 @@
                 </div>Outrage</td>
               <td align="right" class="POOR ">18.83</td>
               <td align="right" class="GOOD ">30.28</td>
-              <td align="right" class="POOR ">86%</td>
-            </tr>
-            <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Dragon Claw" chargedMoveType="Dragon" chargedMoveBoost="Windy">
-              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Dragon</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Windy</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Dragon Breath</td>
-              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Dragon</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Windy</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Dragon Claw</td>
-              <td align="right" class="LEGACY_MOVESET BAD ">16.77</td>
-              <td align="right" class="LEGACY_MOVESET GOOD ">30.00</td>
-              <td align="right" class="LEGACY_MOVESET POOR ">86%</td>
+              <td align="right" class="POOR ">89%</td>
             </tr>
             <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
               <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
@@ -75531,7 +75517,7 @@
                 </div>Hyper Beam</td>
               <td align="right" class="LEGACY_MOVESET BAD ">18.40</td>
               <td align="right" class="LEGACY_MOVESET GOOD ">29.70</td>
-              <td align="right" class="LEGACY_MOVESET POOR ">85%</td>
+              <td align="right" class="LEGACY_MOVESET POOR ">88%</td>
             </tr>
             <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Dragon Pulse" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
@@ -75586,7 +75572,62 @@
                 </div>Dragon Pulse</td>
               <td align="right" class="LEGACY_MOVESET BAD ">16.63</td>
               <td align="right" class="LEGACY_MOVESET GOOD ">29.71</td>
-              <td align="right" class="LEGACY_MOVESET POOR ">85%</td>
+              <td align="right" class="LEGACY_MOVESET POOR ">88%</td>
+            </tr>
+            <tr fastMoveName="Dragon Breath" fastMoveType="Dragon" fastMoveBoost="Windy" chargedMoveName="Dragon Claw" chargedMoveType="Dragon" chargedMoveBoost="Windy">
+              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Dragon</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Windy</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Dragon Breath</td>
+              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Dragon</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Windy</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Dragon Claw</td>
+              <td align="right" class="LEGACY_MOVESET BAD ">16.77</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">30.00</td>
+              <td align="right" class="LEGACY_MOVESET POOR ">88%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Hurricane" chargedMoveType="Flying" chargedMoveBoost="Windy">
               <td class="GOOD ">
@@ -75641,62 +75682,7 @@
                 </div>Hurricane</td>
               <td align="right" class="BAD ">18.22</td>
               <td align="right" class="GOOD ">28.47</td>
-              <td align="right" class="POOR ">81%</td>
-            </tr>
-            <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Dragon Pulse" chargedMoveType="Dragon" chargedMoveBoost="Windy">
-              <td class="LEGACY_MOVESET GOOD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_steel.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Steel</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_snow.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Snow</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Steel Wing</td>
-              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
-                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:5em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Type:</th>
-                          <td>Dragon</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="CONTROLS_INFO">
-                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
-                    <div class="CONTROLS_INFO_CONTENT">
-                      <table style="width:12em;">
-                        <tr>
-                          <th style="width:1px; white-space:nowrap;">Weather:</th>
-                          <td>Windy</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>Dragon Pulse</td>
-              <td align="right" class="LEGACY_MOVESET BAD ">17.50</td>
-              <td align="right" class="LEGACY_MOVESET GOOD ">27.88</td>
-              <td align="right" class="LEGACY_MOVESET POOR ">80%</td>
+              <td align="right" class="POOR ">84%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Dragon Claw" chargedMoveType="Dragon" chargedMoveBoost="Windy">
               <td class="LEGACY_MOVESET GOOD ">
@@ -75751,7 +75737,62 @@
                 </div>Dragon Claw</td>
               <td align="right" class="LEGACY_MOVESET BAD ">17.85</td>
               <td align="right" class="LEGACY_MOVESET GOOD ">28.16</td>
-              <td align="right" class="LEGACY_MOVESET POOR ">80%</td>
+              <td align="right" class="LEGACY_MOVESET POOR ">83%</td>
+            </tr>
+            <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Dragon Pulse" chargedMoveType="Dragon" chargedMoveBoost="Windy">
+              <td class="LEGACY_MOVESET GOOD ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_steel.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Steel</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_snow.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Snow</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Steel Wing</td>
+              <td class="LEGACY_MOVESET LEGACY_MOVE LEGACY_STAB_MOVE GOOD ">
+                <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_LARGE" src="/images/type_dragon.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:5em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Type:</th>
+                          <td>Dragon</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="CONTROLS_INFO">
+                    <img class="TAG_ICON_REGULAR TAG_ICON_OVERLAP" src="/images/weather_windy.png" />
+                    <div class="CONTROLS_INFO_CONTENT">
+                      <table style="width:12em;">
+                        <tr>
+                          <th style="width:1px; white-space:nowrap;">Weather:</th>
+                          <td>Windy</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>Dragon Pulse</td>
+              <td align="right" class="LEGACY_MOVESET BAD ">17.50</td>
+              <td align="right" class="LEGACY_MOVESET GOOD ">27.88</td>
+              <td align="right" class="LEGACY_MOVESET POOR ">82%</td>
             </tr>
             <tr fastMoveName="Steel Wing" fastMoveType="Steel" fastMoveBoost="Snow" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
               <td class="GOOD ">
@@ -75806,11 +75847,11 @@
                 </div>Hyper Beam</td>
               <td align="right" class="GOOD ">19.37</td>
               <td align="right" class="GOOD ">27.65</td>
-              <td align="right" class="BAD ">79%</td>
+              <td align="right" class="POOR ">81%</td>
             </tr>
             <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW" movesetCount="8">
               <td class="CELL_FILLED" rowspan="9">
-                <div class="SPRITE_FILLER RAIDBOSS_ONLY_EX " title="Mewtwo" name="Mewtwo" gen="1" id="150" type1="Psychic" type2="" family="Mewtwo" evolvesFrom="" shiny="" availability="Legendary EX Raid Boss Only" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3982" maxHP="164" buddyKM="20" baseAttack="300" baseDefense="182" baseStamina="193" captureRate="0.06" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                <div class="SPRITE_FILLER RAIDBOSS_ONLY_EX " title="Mewtwo" name="Mewtwo" gen="1" id="150" type1="Psychic" type2="" family="Mewtwo" evolvesFrom="" shiny="" availability="EX Raid Boss Only" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3982" maxHP="164" buddyKM="20" baseAttack="300" baseDefense="182" baseStamina="193" captureRate="0.06" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
                     <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/150.png" alt="(Mewtwo)" />
                     <div id="Pokemon_Icons_Field">
@@ -75825,7 +75866,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -76286,10 +76327,10 @@
               <td align="right" class="GOOD ">30.85</td>
               <td align="right" class="POOR ">89%</td>
             </tr>
-            <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW UNAVAILABLE_ROW " movesetCount="8">
+            <tr align="left" style="border-top-width:5px" class="PRIMARY_ROW" movesetCount="8">
               <td class="CELL_FILLED" rowspan="9">
-                <div class="SPRITE_FILLER GEN1 " title="Mew" name="Mew" gen="1" id="151" type1="Psychic" type2="" family="Mew" evolvesFrom="" shiny="" availability="Unavailable Legendary" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3090" maxHP="169" buddyKM="20" baseAttack="210" baseDefense="210" baseStamina="200" captureRate="0" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-                  <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
+                <div class="SPRITE_FILLER GEN1 " title="Mew" name="Mew" gen="1" id="151" type1="Psychic" type2="" family="Mew" evolvesFrom="" shiny="" availability="Unreleased" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3090" maxHP="169" buddyKM="20" baseAttack="210" baseDefense="210" baseStamina="200" captureRate="0" fleeRate="0.1" egg="" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+                  <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER MYTHIC ">
                     <img style="vertical-align:middle;" class="SPRITE DISABLED " src="https://pkmref.com/images/set_1/151.png" alt="(Mew)" />
                     <div id="Pokemon_Icons_Field">
                       <div class="CONTROLS_INFO">
@@ -76303,7 +76344,7 @@
                           </table>
                         </div>
                       </div>
-                      <img class="SPACER_ICON" src="/images/blank.png" />
+                      <img class="SPACER_ICON" />
                       <div class="CONTROLS_INFO">
                         <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                         <div class="CONTROLS_INFO_CONTENT">
@@ -76324,7 +76365,7 @@
               <!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) -->
               <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Solar Beam" chargedMoveType="Grass" chargedMoveBoost="Sunny">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -76379,7 +76420,7 @@
               <td align="right" class="POOR ">22.46</td>
               <td align="right" class="GREAT ">100%</td>
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Hyper Beam" chargedMoveType="Normal" chargedMoveBoost="Partly Cloudy">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -76434,7 +76475,7 @@
               <td align="right" class="POOR ">21.79</td>
               <td align="right" class="GOOD ">97%</td>
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Focus Blast" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Focus Blast" chargedMoveType="Fighting" chargedMoveBoost="Cloudy">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -76489,7 +76530,7 @@
               <td align="right" class="POOR ">21.46</td>
               <td align="right" class="GOOD ">95%</td>
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Blizzard" chargedMoveType="Ice" chargedMoveBoost="Snow">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Blizzard" chargedMoveType="Ice" chargedMoveBoost="Snow">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -76544,7 +76585,7 @@
               <td align="right" class="POOR ">21.28</td>
               <td align="right" class="GOOD ">94%</td>
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Psychic" chargedMoveType="Psychic" chargedMoveBoost="Windy">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Psychic" chargedMoveType="Psychic" chargedMoveBoost="Windy">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -76599,7 +76640,7 @@
               <td align="right" class="POOR ">21.31</td>
               <td align="right" class="GOOD ">94%</td>
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Fire Blast" chargedMoveType="Fire" chargedMoveBoost="Sunny">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Fire Blast" chargedMoveType="Fire" chargedMoveBoost="Sunny">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -76654,7 +76695,7 @@
               <td align="right" class="POOR ">20.42</td>
               <td align="right" class="GOOD ">90%</td>
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Thunder" chargedMoveType="Electric" chargedMoveBoost="Rainy">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Thunder" chargedMoveType="Electric" chargedMoveBoost="Rainy">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">
@@ -76709,7 +76750,7 @@
               <td align="right" class="POOR ">19.77</td>
               <td align="right" class="POOR ">88%</td>
             </tr>
-            <tr class="UNAVAILABLE_ROW" fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
+            <tr fastMoveName="Pound" fastMoveType="Normal" fastMoveBoost="Partly Cloudy" chargedMoveName="Earthquake" chargedMoveType="Ground" chargedMoveBoost="Sunny">
               <td class="POOR ">
                 <div style="position:relative; display:inline-block" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
                   <div class="CONTROLS_INFO">

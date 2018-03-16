@@ -4,9 +4,9 @@
     <META name="viewport" content="width=device-width, initial-scale=1" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
-    <script src="/js/controls.js?cacherefresh=2018-03-13_12:56:34" ></script>
-    <script src="/js/global.js?cacherefresh=2018-03-13_12:56:34" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-13_12:56:34" />
+    <script src="/js/controls.js?cacherefresh=2018-03-16_12:57:02" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-16_12:57:02" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-16_12:57:02" />
     <title>CP and HP Formulas</title>
   </head>
   <body>
@@ -14,17 +14,38 @@
       <a href="/" title="Go To Pokémon Reference Home Page" style="text-decoration:none;" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref">
         <img src="/apple-touch-icon.png" width="64" />
       </a>
-        CP and HP Formulas</h1>
-    <p>
-      <span class="TODO">TODO QZX</span>
-    </p>
-    <br />
-    <hr />
-    <h2 id="CP">CP Formula</h2>
+        CP and HP Formulas
+        </h1>
     <div class="INDENT">
       <p class="PARENT">
-        <span class="TODO">TODO QZX</span>
-      </p>
+        Every Pokémon has "CP" and "HP" scores associated with it.
+        </p>
+      <ul class="CHILD">
+        <li>
+          <b>
+            CP <span class="NOTE">(Combat Power)</span>:
+            </b>
+          <br />An indicator of how strong a Pokémon will be in combat.
+          </li>
+        <li>
+          <b>
+            HP <span class="NOTE">(Hit Points)</span>:
+            </b>
+          <br />An indicator of how much damage a Pokémon can take before it faints.
+          </li>
+      </ul>
+      <p>
+        On the Pokémon's screen, the CP is listed at the top and the HP is listed under their name:
+        <br /><img class="INDENT" src="/images/cphp.png" /></p>
+      <p>
+        These values are based on the Pokémon's IV score.
+        Below are formulas used to calculate the values.
+        </p>
+    </div>
+    <br />
+    <hr />
+    <h2 id="CP">CP Formula:</h2>
+    <div class="INDENT">
       <div class="INDENT">
         <table class="FORMULA">
           <tr>
@@ -60,6 +81,32 @@
           </tr>
         </table>
       </div>
+    </div>
+    <br />
+    <h2 id="CP">HP Formula:</h2>
+    <div class="INDENT">
+      <div class="INDENT">
+        <table class="FORMULA">
+          <tr>
+            <td rowspan="4" style="padding-top:.5em;">
+              <b style="font-size:x-large">
+                HP  = </b>
+            </td>
+            <td rowspan="4" style="padding-top:.5em;">FLOOR</td>
+            <td rowspan="4" style="font-size:3em;">(</td>
+            <td rowspan="2" style="padding-top:.5em;">
+              <b>(</b>BaseStamina + StaminaIV<b>)</b></td>
+            <td rowspan="2" style="padding-top:.5em;">× CPM
+            </td>
+            <td rowspan="4" style="font-size:3em;">)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <h2>Details</h2>
+    <div class="INDENT">
       <p class="PARENT">
         Here is what everything means:
         </p>
@@ -114,9 +161,18 @@
         </table>
       </div>
       <br />
-      <div class="NOTE">
-        <b>NOTES</b>:
-        <ul><li><span class="TODO">TODO QZX</span></li></ul></div>
+      <h3>NOTES</h3>
+      <ul>
+        <li>
+          The BaseAttack, BaseDefense and BaseStamina for a Pokémon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokémon Stats</a> pages.
+          </li>
+        <li>
+          CPM is a value based on the Pokémon's Level. See <a href="cpm.html">CPM</a> page.
+          </li>
+        <li>
+          In order to determine the Pokémon's IV scores, you generally need a tool that leverages these formulas to find the possibilities. Check out the Tools on the <a href="/resources/#tools_android">Resources</a> page.
+          </li>
+      </ul>
     </div>
     <!-- This script is defined in /js/global.js -->
     <script>WriteFooter();</script>

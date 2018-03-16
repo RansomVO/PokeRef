@@ -4,11 +4,11 @@
     <META name="viewport" content="width=device-width, initial-scale=1" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
-    <script src="pokechart.js?cacherefresh=2018-03-13_12:56:04" ></script>
-    <script src="/js/pokemon.js?cacherefresh=2018-03-13_12:56:04" ></script>
-    <script src="/js/controls.js?cacherefresh=2018-03-13_12:56:04" ></script>
-    <script src="/js/global.js?cacherefresh=2018-03-13_12:56:04" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-13_12:56:04" />
+    <script src="pokechart.js?cacherefresh=2018-03-16_12:56:41" ></script>
+    <script src="/js/pokemon.js?cacherefresh=2018-03-16_12:56:41" ></script>
+    <script src="/js/controls.js?cacherefresh=2018-03-16_12:56:41" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-16_12:56:41" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-16_12:56:41" />
     <title>
       Pokémon Chart
       - Gen 1</title>
@@ -41,7 +41,7 @@
               <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
               <br /><input id="Regional_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
               <br /><input id="RaidBoss_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
-              <br /><input id="Legendary_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
+              <br /><input id="Legendary_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary/Mythic
               <div id="CONTROLS_Egg_Selector" class="PARENT" callbackName="OnEggChanged" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><input id="CONTROLS_Egg" type="checkbox" onchange="OnToggleEgg(this);" /> Eggs
               </div><div id="CONTROLS_Egg_Options" class="INDENT CHILD" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><input id="CONTROLS_Egg_2K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 2K
               <br /><input id="CONTROLS_Egg_5K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 5K
@@ -84,7 +84,7 @@
       <h2>Key <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><div class="COLLAPSER" id="POKEMON_IMAGE_KEY_COLLAPSER">˅</div></div></h2>
       <br />
       <div id="POKEMON_IMAGE_KEY" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-        <table border="1">
+        <table border="1" class="KEY_TABLE">
           <comment commment="Limited Availablility">
             <tr>
               <th rowspan="2">Limited Availability</th>
@@ -105,8 +105,11 @@
           </comment>
           <comment commment="Special">
             <tr>
-              <th>Special</th>
+              <th rowspan="2">Special</th>
               <td class="LEGENDARY">Legendary</td>
+            </tr>
+            <tr>
+              <td class="MYTHIC">Mythic</td>
             </tr>
           </comment>
           <tr>
@@ -160,7 +163,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -213,7 +216,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -266,7 +269,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -321,7 +324,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -352,7 +355,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -394,7 +397,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -449,7 +452,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -480,7 +483,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -511,7 +514,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -542,7 +545,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -573,7 +576,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -615,7 +618,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -668,7 +671,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -721,7 +724,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -774,7 +777,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -827,7 +830,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -880,7 +883,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -933,7 +936,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -975,7 +978,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1006,7 +1009,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1048,7 +1051,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1101,7 +1104,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1143,7 +1146,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1174,7 +1177,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1206,7 +1209,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1238,7 +1241,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1269,7 +1272,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1300,7 +1303,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1331,7 +1334,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1362,7 +1365,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1404,7 +1407,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1446,7 +1449,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1477,7 +1480,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1519,7 +1522,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1561,7 +1564,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1592,7 +1595,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1623,7 +1626,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1654,7 +1657,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1696,7 +1699,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1749,7 +1752,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1802,7 +1805,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1855,7 +1858,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1921,7 +1924,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -1974,7 +1977,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2027,7 +2030,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2080,7 +2083,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2133,7 +2136,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2186,7 +2189,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2239,7 +2242,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2281,7 +2284,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2312,7 +2315,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2343,7 +2346,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2374,7 +2377,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2405,7 +2408,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2436,7 +2439,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2467,7 +2470,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2498,7 +2501,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2542,7 +2545,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2573,7 +2576,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2604,7 +2607,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2635,7 +2638,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2677,7 +2680,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2732,7 +2735,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2763,7 +2766,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2794,7 +2797,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2838,7 +2841,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2869,7 +2872,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2900,7 +2903,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2942,7 +2945,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -2995,7 +2998,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3048,7 +3051,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3101,7 +3104,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3154,7 +3157,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3207,7 +3210,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3260,7 +3263,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3313,7 +3316,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3368,7 +3371,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3399,7 +3402,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3454,7 +3457,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3507,7 +3510,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3560,7 +3563,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3613,7 +3616,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3666,7 +3669,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3719,7 +3722,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3772,7 +3775,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3827,7 +3830,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3869,7 +3872,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3924,7 +3927,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3955,7 +3958,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -3999,7 +4002,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4041,7 +4044,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4107,7 +4110,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4160,7 +4163,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4213,7 +4216,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_fog.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4279,7 +4282,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4321,7 +4324,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4352,7 +4355,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4383,7 +4386,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4414,7 +4417,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4445,7 +4448,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4476,7 +4479,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4531,7 +4534,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4584,7 +4587,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4626,7 +4629,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4657,7 +4660,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4688,7 +4691,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4719,7 +4722,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4763,7 +4766,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4807,7 +4810,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4838,7 +4841,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_cloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4893,7 +4896,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -4946,7 +4949,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5001,7 +5004,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5045,7 +5048,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5076,7 +5079,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5107,7 +5110,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5138,7 +5141,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5169,7 +5172,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5200,7 +5203,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5231,7 +5234,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5273,7 +5276,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5326,7 +5329,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5392,7 +5395,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5445,7 +5448,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5487,7 +5490,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5518,7 +5521,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5562,7 +5565,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5593,7 +5596,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5625,7 +5628,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5668,7 +5671,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5734,7 +5737,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5776,7 +5779,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5820,7 +5823,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5851,7 +5854,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5882,7 +5885,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5913,7 +5916,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -5957,7 +5960,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6012,7 +6015,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6065,7 +6068,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6131,7 +6134,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6184,7 +6187,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6250,7 +6253,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6305,7 +6308,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_partlycloudy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6321,7 +6324,7 @@
               <div id="Pokemon_Name_Field">143 - Snorlax</div>
             </div>
           </div>
-          <div class="SPRITE_BOXED RAIDBOSS_ONLY " title="Articuno" name="Articuno" gen="1" id="144" type1="Ice" type2="Flying" family="Articuno" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Snow" boost2="Windy" genderRatio="⚲" maxCP="2933" maxHP="154" buddyKM="20" baseAttack="192" baseDefense="249" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div class="SPRITE_BOXED RAIDBOSS_ONLY " title="Articuno" name="Articuno" gen="1" id="144" type1="Ice" type2="Flying" family="Articuno" evolvesFrom="" shiny="" availability="Raid Boss Only" boost1="Snow" boost2="Windy" genderRatio="⚲" maxCP="2933" maxHP="154" buddyKM="20" baseAttack="192" baseDefense="249" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
             <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
               <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/144.png" alt="(Articuno)" />
               <div id="Pokemon_Icons_Field">
@@ -6347,7 +6350,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_snow.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6374,7 +6377,7 @@
               <div id="Pokemon_Name_Field">144 - Articuno</div>
             </div>
           </div>
-          <div class="SPRITE_BOXED RAIDBOSS_ONLY " title="Zapdos" name="Zapdos" gen="1" id="145" type1="Electric" type2="Flying" family="Zapdos" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Rainy" boost2="Windy" genderRatio="⚲" maxCP="3330" maxHP="154" buddyKM="20" baseAttack="253" baseDefense="188" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div class="SPRITE_BOXED RAIDBOSS_ONLY " title="Zapdos" name="Zapdos" gen="1" id="145" type1="Electric" type2="Flying" family="Zapdos" evolvesFrom="" shiny="" availability="Raid Boss Only" boost1="Rainy" boost2="Windy" genderRatio="⚲" maxCP="3330" maxHP="154" buddyKM="20" baseAttack="253" baseDefense="188" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
             <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
               <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/145.png" alt="(Zapdos)" />
               <div id="Pokemon_Icons_Field">
@@ -6400,7 +6403,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_rainy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6427,7 +6430,7 @@
               <div id="Pokemon_Name_Field">145 - Zapdos</div>
             </div>
           </div>
-          <div class="SPRITE_BOXED RAIDBOSS_ONLY " title="Moltres" name="Moltres" gen="1" id="146" type1="Fire" type2="Flying" family="Moltres" evolvesFrom="" shiny="" availability="Legendary Raid Boss Only" boost1="Sunny" boost2="Windy" genderRatio="⚲" maxCP="3272" maxHP="154" buddyKM="20" baseAttack="251" baseDefense="184" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div class="SPRITE_BOXED RAIDBOSS_ONLY " title="Moltres" name="Moltres" gen="1" id="146" type1="Fire" type2="Flying" family="Moltres" evolvesFrom="" shiny="" availability="Raid Boss Only" boost1="Sunny" boost2="Windy" genderRatio="⚲" maxCP="3272" maxHP="154" buddyKM="20" baseAttack="251" baseDefense="184" baseStamina="180" captureRate="0.03" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
             <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
               <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/146.png" alt="(Moltres)" />
               <div id="Pokemon_Icons_Field">
@@ -6453,7 +6456,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_sunny.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6509,7 +6512,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6541,7 +6544,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6584,7 +6587,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6611,7 +6614,7 @@
               <div id="Pokemon_Name_Field">149 - Dragonite</div>
             </div>
           </div>
-          <div class="SPRITE_BOXED RAIDBOSS_ONLY_EX " title="Mewtwo" name="Mewtwo" gen="1" id="150" type1="Psychic" type2="" family="Mewtwo" evolvesFrom="" shiny="" availability="Legendary EX Raid Boss Only" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3982" maxHP="164" buddyKM="20" baseAttack="300" baseDefense="182" baseStamina="193" captureRate="0.06" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" raidboss="true" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+          <div class="SPRITE_BOXED RAIDBOSS_ONLY_EX " title="Mewtwo" name="Mewtwo" gen="1" id="150" type1="Psychic" type2="" family="Mewtwo" evolvesFrom="" shiny="" availability="EX Raid Boss Only" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3982" maxHP="164" buddyKM="20" baseAttack="300" baseDefense="182" baseStamina="193" captureRate="0.06" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" raidboss="true" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
             <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
               <img style="vertical-align:middle;" class="SPRITE " src="https://pkmref.com/images/set_1/150.png" alt="(Mewtwo)" />
               <div id="Pokemon_Icons_Field">
@@ -6626,7 +6629,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">
@@ -6642,8 +6645,8 @@
               <div id="Pokemon_Name_Field">150 - Mewtwo</div>
             </div>
           </div>
-          <div class="SPRITE_BOXED GEN1 " title="Mew" name="Mew" gen="1" id="151" type1="Psychic" type2="" family="Mew" evolvesFrom="" shiny="" availability="Unavailable Legendary" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3090" maxHP="169" buddyKM="20" baseAttack="210" baseDefense="210" baseStamina="200" captureRate="0" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER LEGENDARY ">
+          <div class="SPRITE_BOXED GEN1 " title="Mew" name="Mew" gen="1" id="151" type1="Psychic" type2="" family="Mew" evolvesFrom="" shiny="" availability="Unreleased" boost1="Windy" boost2="" genderRatio="⚲" maxCP="3090" maxHP="169" buddyKM="20" baseAttack="210" baseDefense="210" baseStamina="200" captureRate="0" fleeRate="0.1" egg="" onclick="OnSelectPokemon(this)" style="cursor:pointer;" xmlns:exslt="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+            <div style="vertical-align:middle; " class="SPRITE_DIV_FILLER MYTHIC ">
               <img style="vertical-align:middle;" class="SPRITE DISABLED " src="https://pkmref.com/images/set_1/151.png" alt="(Mew)" />
               <div id="Pokemon_Icons_Field">
                 <div class="CONTROLS_INFO">
@@ -6657,7 +6660,7 @@
                     </table>
                   </div>
                 </div>
-                <img class="SPACER_ICON" src="/images/blank.png" />
+                <img class="SPACER_ICON" />
                 <div class="CONTROLS_INFO">
                   <img class="TAG_ICON_REGULAR" src="/images/weather_windy.png" />
                   <div class="CONTROLS_INFO_CONTENT">

@@ -4,9 +4,9 @@
     <META name="viewport" content="width=device-width, initial-scale=1" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
-    <script src="/js/controls.js?cacherefresh=2018-03-13_12:56:34" ></script>
-    <script src="/js/global.js?cacherefresh=2018-03-13_12:56:34" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-13_12:56:34" />
+    <script src="/js/controls.js?cacherefresh=2018-03-16_12:57:02" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-16_12:57:02" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-16_12:57:02" />
     <title>Move Set Formulas</title>
   </head>
   <body>
@@ -27,7 +27,7 @@
        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref"><div class="COLLAPSER" id="FORMULA_MOVESET_DAMAGE_COLLAPSER">˅</div></div></h2>
     <div id="FORMULA_MOVESET_DAMAGE" class="INDENT">
       <p class="PARENT">
-        This is the "basic" formula for the Damage inflicted by a <i>Single</i> attack Move:
+        This is the "basic" formula for the Damage inflicted by a <span class="EMPHASIZE">Single</span> attack Move:
         </p>
       <div class="INDENT">
         <table class="FORMULA">
@@ -87,37 +87,37 @@
           <tr>
             <th valign="top">BaseAttack</th>
             <td>
-              The <b><i>Attacking</i></b> Pokémon's Base Attack score.
+              The <span class="EMPHASIZE">Attacking</span> Pokémon's Base Attack score.
               </td>
           </tr>
           <tr>
             <th valign="top">BaseDefense</th>
             <td>
-              The <b><i>Defending</i></b> Pokémon's Base Defense score.
+              The <span class="EMPHASIZE">Defending</span> Pokémon's Base Defense score.
               </td>
           </tr>
           <tr>
             <th valign="top">AttackIV</th>
             <td>
-              The <b><i>Attacking</i></b> Pokémon's Attack IV score.
+              The <span class="EMPHASIZE">Attacking</span> Pokémon's Attack IV score.
               </td>
           </tr>
           <tr>
             <th valign="top">DefenseIV</th>
             <td>
-              The <b><i>Defending</i></b> Pokémon's Defense IV score.
+              The <span class="EMPHASIZE">Defending</span> Pokémon's Defense IV score.
               </td>
           </tr>
           <tr>
             <th valign="top">AttackerCPM</th>
             <td>
-              The CPM for the <b><i>Attacking</i></b> Pokémon.
+              The CPM for the <span class="EMPHASIZE">Attacking</span> Pokémon.
               </td>
           </tr>
           <tr>
             <th valign="top">DefenderCPM</th>
             <td>
-              The CPM for the <b><i>Defending</i></b> Pokémon.
+              The CPM for the <span class="EMPHASIZE">Defending</span> Pokémon.
               </td>
           </tr>
           <tr>
@@ -159,19 +159,27 @@
         </table>
       </div>
       <br />
-      <div class="NOTE">
-        <b>NOTES</b>:
-        <ul><li>
+      <h3>NOTES:</h3>
+      <ul>
+        <li>
           The Power for a Move can be looked up on the <a href="GAME_MASTER/moves/moves.fast.html">Fast Moves</a> and <a href="GAME_MASTER/moves/moves.charged.html">Charged Moves</a> pages.
-          </li><li>
-            The BaseAttack and BaseDefense for a Pokémon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokémon Stats</a> pages.
-            </li><li>
-              Whether a Move in a Move Set gets a STAB bonus for a specific Pokémon can be looked up on the <a href="/charts/movesets/">Pokémon Move Sets</a> page.
-              </li><li>
-                CPM is a value based on the Pokémon's Level. See <a href="cpm.html">CPM</a> page.
-                </li><li>
-                  Effectiveness is determined by comparing the Move's Type to the Defending Pokémon's Type. See <a href="/charts/effectiveness.html">Move Effectiveness</a> page.
-                  </li></ul></div>
+          </li>
+        <li>
+          The BaseAttack and BaseDefense for a Pokémon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokémon Stats</a> pages.
+          </li>
+        <li>
+          In order to determine the Pokémon's IV score, you generally need a tool that leverages these formulas to find the possibilities. Check out the Tools on the <a href="/resources/#tools_android">Resources</a> page.
+          </li>
+        <li>
+          Whether a Move in a Move Set gets a STAB bonus for a specific Pokémon can be looked up on the <a href="/charts/movesets/">Pokémon Move Sets</a> page.
+          </li>
+        <li>
+          CPM is a value based on the Pokémon's Level. See <a href="cpm.html">CPM</a> page.
+          </li>
+        <li>
+          Effectiveness is determined by comparing the Move's Type to the Defending Pokémon's Type. See <a href="/charts/effectiveness.html">Move Effectiveness</a> page.
+          </li>
+      </ul>
     </div>
     <br />
     <hr />
@@ -182,7 +190,7 @@
        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref"><div class="COLLAPSER" id="FORMULA_MOVESET_DPS_COLLAPSER">˅</div></div></h2>
     <div id="FORMULA_MOVESET_DPS" class="INDENT">
       <p class="PARENT">
-        To make things worse, as mentioned above, this is the formula for the <i>Damage</i> from a <b><u><i>Single</i></u></b> Move!
+        To make things worse, as mentioned above, this is the formula for the <i>Damage</i> from a <span class="EMPHASIZE_SUPER">Single</span> Move!
         To get the DPS for that one Move you would only need to do:
         </p>
       <div class="INDENT">
@@ -202,11 +210,11 @@
         </table>
       </div>
       <p style="margin-top:2em; margin-bottom:2em;">
-        <b style="font-size:xx-large;">   <i>... BUT ...</i></b>
+        <b style="font-size:xx-large;">   <span class="EMPHASIZE">... BUT ...</span></b>
         <br />
       </p>
       <p class="PARENT">
-        To get the DPS for a <b><i><u>Move Set</u></i></b> you need to figure out:
+        To get the DPS for a <span class="EMPHASIZE_SUPER">Move Set</span> you need to figure out:
         </p>
       <ol class="CHILD">
         <li>How many Fast Moves have to be performed to generate the Energy for the Charged Move.</li>
@@ -518,7 +526,7 @@
       <p>
         Obviously, True DPS is still quite a complex formula.
         <br />To simplify it further, many people will use only the values from the Move Set itself, removing the values from Pokémon.
-        This will give a <i>generic</i> DPS for the moveset.
+        This will give a <span class="EMPHASIZE">generic</span> DPS for the moveset.
         <br /><span class="NOTE">(In other words, it will be the same value regardless the Pokémon.)</span></p>
       <p class="PARENT">
         With that, we end up with:

@@ -4,9 +4,9 @@
     <META name="viewport" content="width=device-width, initial-scale=1" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
     <LINK rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref" />
-    <script src="/js/controls.js?cacherefresh=2018-03-13_12:56:33" ></script>
-    <script src="/js/global.js?cacherefresh=2018-03-13_12:56:33" ></script>
-    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-13_12:56:33" />
+    <script src="/js/controls.js?cacherefresh=2018-03-16_12:57:02" ></script>
+    <script src="/js/global.js?cacherefresh=2018-03-16_12:57:02" ></script>
+    <link type="text/css" rel="stylesheet" href="index.css?cacherefresh=2018-03-16_12:57:02" />
     <title>Technical Reference</title>
   </head>
   <body>
@@ -40,7 +40,7 @@
           <br />I have created a chart for each generation of Pokémon.
           </p>
         <div class="INDENT CHILD">
-          <script>InsertURL('GAME_MASTER/pokestats/_linkslist.html?cacherefresh=2018-03-13_12:55:36')</script>
+          <script>InsertURL('GAME_MASTER/pokestats/_linkslist.html?cacherefresh=2018-03-16_11:22:23')</script>
         </div>
       </div>
       <h3>
@@ -66,7 +66,7 @@
           Here are charts with the important values regarding each type:
           </p>
         <div class="CHILD">
-          <script>InsertURL('moves/_linkslist.html?cacherefresh=2018-03-13_12:55:36')</script>
+          <script>InsertURL('moves/_linkslist.html?cacherefresh=2018-03-16_11:22:23')</script>
         </div>
       </div>
       <h3 class="PARENT">
@@ -87,27 +87,47 @@
     </div>
     <br />
     <hr />
-    <h2 id="movesetformulas">
-      <a href="formulas/movesetdamage.html">
-        <b>Move Set Damage Formulas</b>
-      </a>
-    </h2>
-    <p>
-      Want to know how to figure out the DPS for a Pokémon's Move Set?
-      <br />This page goes into detail of describing the formulas used to figure that out.
-      </p>
-    <br />
-    <hr />
-    <h2 id="cpm">
-      <a href="cpm.html">
-        <b>CP Modifiers</b>
-      </a>
-    </h2>
-    <p>
-      When calculating how much damage a Pokémon will do, Pokémon GO takes into account the Level of the Pokémon.
-      It does this by multiplying the Pokémon's BaseAttack and Attack IV by a constant corresponding to the Pokémon's level.
-      <br />This page lists the CPM values.
-      </p>
+    <h2 id="formulas">
+      <a href="formulas">
+        <b>Technical Formulas</b>
+      </a> <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:pokeref="urn:pokeref"><div class="COLLAPSER" id="TECH_FORMULAS_COLLAPSER">˅</div></div></h2>
+    <div id="TECH_FORMULAS" class="INDENT">
+      <h3 id="cphpformulas">
+        <a href="formulas/cphp.html">
+          <b>CP and HP Formulas</b>
+        </a>
+      </h3>
+      <div class="INDENT">
+        <p>
+          Pokémon have scores called "CP" and "HP".
+          But what do they mean?
+          <br />This page tells you about them and shows the formulas used to calculate them.
+          </p>
+      </div>
+      <h3 id="movesetformulas">
+        <a href="formulas/movesetdamage.html">
+          <b>Move Set Damage Formulas</b>
+        </a>
+      </h3>
+      <div class="INDENT">
+        <p>
+          Want to know how to figure out the DPS for a Pokémon's Move Set?
+          <br />This page goes into detail of describing the formulas used to figure that out.
+          </p>
+      </div>
+      <h3 id="cpm">
+        <a href="formulas/cpm.html">
+          <b>CP Modifiers</b>
+        </a>
+      </h3>
+      <div class="INDENT">
+        <p>
+          When calculating how much damage a Pokémon will do, Pokémon GO takes into account the Level of the Pokémon.
+          It does this by multiplying the Pokémon's BaseAttack and Attack IV by a constant corresponding to the Pokémon's level.
+          <br />This page lists the CPM values.
+          </p>
+      </div>
+    </div>
     <!-- This script is defined in /js/global.js -->
     <script>WriteFooter();</script>
   </body>
