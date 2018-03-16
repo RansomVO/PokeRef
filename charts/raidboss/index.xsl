@@ -206,6 +206,10 @@
 
         <br />
         <hr />
+        <xsl:call-template name="CreateKey" />
+
+        <br />
+        <hr />
         <h2>Current Raid Bosses</h2>
         <p id="anchor_bossescurrent">
           Click on any of the Raid Bosses below to see a chart of the possibilities.
@@ -233,6 +237,18 @@
         <script>WriteFooter();</script>
       </body>
     </html>
+  </xsl:template>
+
+  <!-- Template to write the Key for the table. -->
+  <xsl:template name="CreateKey">
+    <h2>
+      <xsl:text>Key</xsl:text>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
+      </xsl:call-template>
+    </h2>
+    <br />
+    <xsl:call-template name="PokemonImageKey" />
   </xsl:template>
 
 </xsl:stylesheet>

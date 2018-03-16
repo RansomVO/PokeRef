@@ -212,7 +212,11 @@
         </xsl:attribute>
         <xsl:attribute name="class">
           <xsl:text>SPRITE_DIV_FILLER </xsl:text>
-          <xsl:if test="contains(Availability,$Availability_Legendary)">LEGENDARY </xsl:if>
+          <xsl:choose>
+            <xsl:when test="Rarity = $Availability_Legendary">LEGENDARY </xsl:when>
+            <xsl:when test="Rarity = $Availability_Mythic">MYTHIC </xsl:when>
+            <xsl:otherwise>QZX</xsl:otherwise>
+          </xsl:choose>
         </xsl:attribute>
 
         <xsl:if test="$Header != ''">
@@ -415,7 +419,7 @@
       <xsl:with-param name="Type" select="Secondary" />
     </xsl:call-template>
 
-    <img class="SPACER_ICON" src="/images/blank.png" />
+    <img class="SPACER_ICON" />
 
     <xsl:call-template name="OutputWeatherBoostIcon">
       <xsl:with-param name="Type" select="Primary" />
@@ -536,7 +540,7 @@
 
   <xsl:template name="PokemonImageKey">
     <div id="POKEMON_IMAGE_KEY">
-      <table border="1">
+      <table border="1" class="KEY_TABLE">
         <comment commment="Limited Availablility">
           <tr>
             <th rowspan="2">Limited Availability</th>
@@ -559,8 +563,11 @@
 
         <comment commment="Special">
           <tr>
-            <th>Special</th>
+            <th rowspan="2">Special</th>
             <td class="LEGENDARY">Legendary</td>
+          </tr>
+          <tr>
+            <td class="MYTHIC">Mythic</td>
           </tr>
         </comment>
 

@@ -130,7 +130,7 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (Legendary_Check.checked && !GetPokemonAvailability(pokemon).contains('Legendary')) {
+    if (Legendary_Check.checked && !GetPokemonAvailability(pokemon).contains('Legendary') && !GetPokemonAvailability(pokemon).contains('Mythic')) {
         return false;
     }
 

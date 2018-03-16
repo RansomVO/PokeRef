@@ -243,7 +243,7 @@
             <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
             <br /><input id="Regional_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
             <br /><input id="RaidBoss_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
-            <br /><input id="Legendary_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary
+            <br /><input id="Legendary_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary/Mythic
             <xsl:call-template name="OutputEggSelectionControl" >
               <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
             </xsl:call-template>

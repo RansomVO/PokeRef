@@ -1,7 +1,8 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
-Change "title" to the pop-up like the help controls so they can be seen on devices.
+Need to change from using :hover to using javascript so that we can display the INFO box AND not let the event fall through to the parent.
+	(While doing this, it might be nice to have it act similar to the pop-up)
 
 Add pages for formulas for CP and HP
 
@@ -17,6 +18,8 @@ PokemonNameID:
 SEAPokeMap Filter
 
 RaidBoss Counters
+
+Add "rarity" field to PokeStats and leverage it in web site.
 
 
 =========================================================================================================

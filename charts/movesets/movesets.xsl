@@ -231,15 +231,15 @@
           </xsl:with-param>
           <xsl:with-param name="SliderHelp">
             <table style="width:25em">
-            <tr>
-              <th width="1px">Any</th>
-              <td>Move Sets where any Move is boosted by the selected Move Weather Boosts.</td>
-            </tr>
-            <tr>
-              <th>All</th>
-              <td>Move Sets where all Moves are boosted by the selected Move Weather Boosts.</td>
-            </tr>
-          </table>
+              <tr>
+                <th width="1px">Any</th>
+                <td>Move Sets where any Move is boosted by the selected Move Weather Boosts.</td>
+              </tr>
+              <tr>
+                <th>All</th>
+                <td>Move Sets where all Moves are boosted by the selected Move Weather Boosts.</td>
+              </tr>
+            </table>
           </xsl:with-param>
         </xsl:call-template>
       </div>
@@ -255,88 +255,94 @@
       </xsl:call-template>
     </h2>
     <br />
-    <div id="MOVESET_KEY">
-      <table border="1" class="KEY_TABLE" style="white-space:nowrap;">
-        <tr comment="General">
-          <th rowspan="3">
-            General
-          </th>
-          <td class="LEGACY_MOVESET">
-            <span class="LEGACY_MOVESET LEGACY_MOVE">Legacy Move</span>
-            <br />
-            <spanMove class="NOTE">(Move no longer obtainable for that Pokemon)</spanMove>
-          </td>
-        </tr>
-        <tr>
-          <td class="LEGACY_MOVESET">
-            Move Set with a "Legacy Move"
-            <br /><spanMove class="NOTE">(Grey Text)</spanMove>
-          </td>
-        </tr>
-        <tr>
-          <td class="STAB_MOVE">Move with STAB bonus</td>
-        </tr>
+    <div id="MOVESET_KEY" >
+      <div style="vertical-align:top; display:inline-block">
+        <table border="1" class="KEY_TABLE" style="white-space:nowrap;">
+          <tr comment="General">
+            <th rowspan="3">
+              General
+            </th>
+            <td class="LEGACY_MOVESET">
+              <span class="LEGACY_MOVESET LEGACY_MOVE">Legacy Move</span>
+              <br />
+              <spanMove class="NOTE">(Move no longer obtainable for that Pokemon)</spanMove>
+            </td>
+          </tr>
+          <tr>
+            <td class="LEGACY_MOVESET">
+              Move Set with a "Legacy Move"
+              <br /><spanMove class="NOTE">(Grey Text)</spanMove>
+            </td>
+          </tr>
+          <tr>
+            <td class="STAB_MOVE">Move with STAB bonus</td>
+          </tr>
 
-        <tr comment="MoveSet and True DPS">
-          <th rowspan="4">
-            Move Set<br />&amp;<br />True DPS
-          </th>
-          <td class="GREAT">
-            True DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
-          </td>
-        </tr>
-        <tr>
-          <td class="GOOD">
-            True DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
-          </td>
-        </tr>
-        <tr>
-          <td class="POOR">True DPS Above Average</td>
-        </tr>
-        <tr>
-          <td class="BAD">True DPS Below Average</td>
-        </tr>
+          <tr comment="MoveSet and True DPS">
+            <th rowspan="4">
+              Move Set<br />&amp;<br />True DPS
+            </th>
+            <td class="GREAT">
+              True DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
+            </td>
+          </tr>
+          <tr>
+            <td class="GOOD">
+              True DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
+            </td>
+          </tr>
+          <tr>
+            <td class="POOR">True DPS Above Average</td>
+          </tr>
+          <tr>
+            <td class="BAD">True DPS Below Average</td>
+          </tr>
 
-        <tr comment="Move Set DPS">
-          <th rowspan="4">Damage: Move Set DPS</th>
-          <td class="GREAT">
-            &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
-          </td>
-        </tr>
-        <tr>
-          <td class="GOOD">
-            &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
-          </td>
-        </tr>
-        <tr>
-          <td class="POOR">Above Average</td>
-        </tr>
-        <tr>
-          <td class="BAD">Below Average</td>
-        </tr>
+          <tr comment="Move Set DPS">
+            <th rowspan="4">Damage: Move Set DPS</th>
+            <td class="GREAT">
+              &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
+            </td>
+          </tr>
+          <tr>
+            <td class="GOOD">
+              &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
+            </td>
+          </tr>
+          <tr>
+            <td class="POOR">Above Average</td>
+          </tr>
+          <tr>
+            <td class="BAD">Below Average</td>
+          </tr>
 
-        <tr comment="Damage %">
-          <th rowspan="4">Damage: %</th>
-          <td class="GREAT">
-            &gt;= <xsl:value-of select="100*$DPSPercentGreat" />% of best current Move Set
-          </td>
-        </tr>
-        <tr>
-          <td class="GOOD">
-            &gt;= <xsl:value-of select="100*$DPSPercentGood" />% of best current Move Set
-          </td>
-        </tr>
-        <tr>
-          <td class="POOR">
-            &gt;= <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
-          </td>
-        </tr>
-        <tr>
-          <td class="BAD">
-            &lt; <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
-          </td>
-        </tr>
-      </table>
+          <tr comment="Damage %">
+            <th rowspan="4">Damage: %</th>
+            <td class="GREAT">
+              &gt;= <xsl:value-of select="100*$DPSPercentGreat" />% of best current Move Set
+            </td>
+          </tr>
+          <tr>
+            <td class="GOOD">
+              &gt;= <xsl:value-of select="100*$DPSPercentGood" />% of best current Move Set
+            </td>
+          </tr>
+          <tr>
+            <td class="POOR">
+              &gt;= <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
+            </td>
+          </tr>
+          <tr>
+            <td class="BAD">
+              &lt; <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="vertical-align:top; display:inline-block">
+        <h3>Pokemon Image</h3>
+        <xsl:call-template name="PokemonImageKey" />
+      </div>
     </div>
   </xsl:template>
 
