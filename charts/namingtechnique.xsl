@@ -308,7 +308,7 @@
                   </tr>
                   <tr>
                     <td>
-                      Some special chars come <span class="EMPHASIZE">BEFORE</span> their similar base.
+                      Some special chars come <span class="EMPHASIS">BEFORE</span> their similar base.
                     </td>
                     <td>
                       "r" &lt; "ß" &lt; "s"

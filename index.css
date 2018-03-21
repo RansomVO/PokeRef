@@ -67,15 +67,14 @@ h1, h2, h3, h4 {
     font-style: italic;
 }
 
-.EMPHASIZE {
+.SIGNIFICANT {
     font-weight: bold;
-    font-style: italic;
+    text-decoration: underline;
 }
 
-.EMPHASIZE_SUPER {
+.EMPHASIS {
     font-weight: bold;
     font-style: italic;
-    text-decoration: underline;
 }
 
 .UNAVAILABLE {
@@ -175,8 +174,9 @@ h1, h2, h3, h4 {
 }
 
 .CELL_FILLER {
-    text-align: center;
     display: flex;
+    align-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -222,11 +222,11 @@ h1, h2, h3, h4 {
 }
 
 .SPRITE_FILLER {
-    text-align: center;
     display: table;
     border-collapse: collapse;
     height: 100%;
     width: 100%;
+    text-align: center;
 }
 
 .SPRITE_DIV_FILLER {
@@ -236,9 +236,14 @@ h1, h2, h3, h4 {
     padding: .5em;
 }
 
-.SPRITE_BOXED {
+.SPRITE_FRAME {
+    position: relative;
     display: inline-block;
     text-align: center;
+}
+
+.SPRITE_BOXED {
+    width: 100px;
     border: 1px solid black;
 }
 
@@ -265,12 +270,16 @@ h1, h2, h3, h4 {
 }
 
 .LEFT_ICON {
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 1.5em;
 }
 
 .RIGHT_ICON {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 1.5em;
 }
 
@@ -280,18 +289,11 @@ h1, h2, h3, h4 {
 }
 
 /* ICON_WRAPPER classes are to allow "wrapping" an icon with another icon (in the background). It relies on "background-image: url(...)" in the style on the container with these classes. */
-.LEFT_ICON_WRAPPER {
-    float: left;
+.ICON_WRAPPER {
     width: 3em;
     height: 3em;
     background-size: cover;
-}
-
-.RIGHT_ICON_WRAPPER {
-    float: right;
-    width: 3em;
-    height: 3em;
-    background-size: cover;
+    border: 1px solid yellow;
 }
 
 /*#endregion*/
@@ -462,6 +464,11 @@ h1, h2, h3, h4 {
     background-color: #DFFF80;
 }
 
+.GEN_OVERALL {
+    /* This color is a total guess. Update when it comes out. */
+    background-color: turquoise;
+}
+
 /*#endregion*/
 
 /*#endregion*/
@@ -548,7 +555,6 @@ input:checked + .CONTROLS_SLIDER_BUTTON {
         }
 
 .CONTROLS_INFO {
-    position: relative;
     display: inline-block;
 }
 
@@ -564,8 +570,6 @@ input:checked + .CONTROLS_SLIDER_BUTTON {
     display: inline-block;
     position: absolute;
     z-index: 1;
-    top: 50%;
-    left: 50%;
     color: black;
     background-color: lightblue;
     border: 1px solid blue;

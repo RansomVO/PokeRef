@@ -81,7 +81,7 @@
                 <HRef>tools/</HRef>
                 <Text>
                   There are a lot of places to get generic information about all sorts of stuff in Pokemon GO.
-                  But what if you want to focus on stuff that is specific to <span class="EMPHASIZE">you</span>?
+                  But what if you want to focus on stuff that is specific to <span class="EMPHASIS">you</span>?
                   <br />This sections has some tools that could be helpful.
                 </Text>
               </Section>

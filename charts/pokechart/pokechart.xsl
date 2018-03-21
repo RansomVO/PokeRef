@@ -233,7 +233,7 @@
         <xsl:with-param name="Callback" select="'OnResetCriteriaClicked();'" />
       </xsl:call-template>
     </h2>
-    <div id="POKEMON_CRITERIA">
+    <div id="POKEMON_CRITERIA" style="margin-top:.5em;">
       <table border="1" class="KEY_TABLE">
         <tr>
           <th>Show Only</th>
@@ -255,44 +255,42 @@
           </td>
         </tr>
       </table>
+
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-      <div class="KEY_TABLE">
-        <xsl:call-template name="OutputTypeSelection">
-          <xsl:with-param name="CallbackName" select="'OnTypesChanged'" />
-          <xsl:with-param name="Title" select="'Pokemon Types'" />
-          <xsl:with-param name="SliderHelp">
-            <table style="width:20em;">
-              <tr>
-                <th width="1px;">Any</th>
-                <td>Pokemon that have any of their Types matching the selected Pokemon Types.</td>
-              </tr>
-              <tr>
-                <th>All</th>
-                <td>Pokemon that have all of their Types matching the selected Pokemon Types.</td>
-              </tr>
-            </table>
-          </xsl:with-param>
-        </xsl:call-template>
-      </div>
+      <xsl:call-template name="OutputTypeSelection">
+        <xsl:with-param name="CallbackName" select="'OnTypesChanged'" />
+        <xsl:with-param name="Title" select="'Pokemon Types'" />
+        <xsl:with-param name="SliderHelp">
+          <table style="width:20em;">
+            <tr>
+              <th width="1px;">Any</th>
+              <td>Pokemon that have any of their Types matching the selected Pokemon Types.</td>
+            </tr>
+            <tr>
+              <th>All</th>
+              <td>Pokemon that have all of their Types matching the selected Pokemon Types.</td>
+            </tr>
+          </table>
+        </xsl:with-param>
+      </xsl:call-template>
+
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-      <div class="KEY_TABLE">
-        <xsl:call-template name="OutputWeatherSelection">
-          <xsl:with-param name="CallbackName" select="'OnWeatherChanged'" />
-          <xsl:with-param name="Title" select="concat('Pokemon', $lt, 'br /', $gt, 'Weather Boosts')" />
-          <xsl:with-param name="SliderHelp">
-            <table style="width:25em">
-              <tr>
-                <th width="1px">Any</th>
-                <td>Pokemon that have any of their Types boosted by the selected Pokemon Weather Boosts.</td>
-              </tr>
-              <tr>
-                <th>All</th>
-                <td>Pokemon that have all of their Types boosted by the selected Pokemon Weather Boosts.</td>
-              </tr>
-            </table>
-          </xsl:with-param>
-        </xsl:call-template>
-      </div>
+      <xsl:call-template name="OutputWeatherSelection">
+        <xsl:with-param name="CallbackName" select="'OnWeatherChanged'" />
+        <xsl:with-param name="Title" select="concat('Pokemon', $lt, 'br /', $gt, 'Weather Boosts')" />
+        <xsl:with-param name="SliderHelp">
+          <table style="width:25em">
+            <tr>
+              <th width="1px">Any</th>
+              <td>Pokemon that have any of their Types boosted by the selected Pokemon Weather Boosts.</td>
+            </tr>
+            <tr>
+              <th>All</th>
+              <td>Pokemon that have all of their Types boosted by the selected Pokemon Weather Boosts.</td>
+            </tr>
+          </table>
+        </xsl:with-param>
+      </xsl:call-template>
     </div>
   </xsl:template>
 
@@ -301,11 +299,12 @@
     <h2>
       <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
+        <xsl:with-param name="CollapseeID" select="'POKESTAT_KEY'" />
       </xsl:call-template>
     </h2>
-    <br />
-    <xsl:call-template name="PokemonImageKey" />
+    <div id="POKESTAT_KEY" style="margin-top:.5em;">
+      <xsl:call-template name="PokemonImageKey" />
+    </div>
   </xsl:template>
 
   <xsl:template match="PokemonStats">

@@ -19,7 +19,7 @@
     <xsl:param name="SliderLabel" />
     <xsl:param name="SliderHelp" />
 
-    <table id="CONTROLS_PokeType_Selector" border="1" style="white-space:nowrap;">
+    <table id="CONTROLS_PokeType_Selector" border="1" class="KEY_TABLE">
       <xsl:attribute name="callbackName">
         <xsl:value-of select="$CallbackName" />
       </xsl:attribute>
@@ -146,7 +146,7 @@
     <xsl:param name="SliderLabel" />
     <xsl:param name="SliderHelp" />
 
-    <table id="CONTROLS_Weather_Selector" border="1" style="white-space:nowrap;">
+    <table id="CONTROLS_Weather_Selector" border="1" class="KEY_TABLE">
       <xsl:attribute name="callbackName">
         <xsl:value-of select="$CallbackName" />
       </xsl:attribute>

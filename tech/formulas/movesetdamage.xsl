@@ -51,7 +51,7 @@
         </h2>
         <div id="FORMULA_MOVESET_DAMAGE" class="INDENT">
           <p class="PARENT">
-            This is the "basic" formula for the Damage inflicted by a <span class="EMPHASIZE">Single</span> attack Move:
+            This is the "basic" formula for the Damage inflicted by a <span class="EMPHASIS">Single</span> attack Move:
           </p>
           <div class="INDENT">
             <table class="FORMULA">
@@ -135,37 +135,37 @@
               <tr>
                 <th valign="top">BaseAttack</th>
                 <td>
-                  The <span class="EMPHASIZE">Attacking</span> Pokemon's Base Attack score.
+                  The <span class="EMPHASIS">Attacking</span> Pokemon's Base Attack score.
                 </td>
               </tr>
               <tr>
                 <th valign="top">BaseDefense</th>
                 <td>
-                  The <span class="EMPHASIZE">Defending</span> Pokemon's Base Defense score.
+                  The <span class="EMPHASIS">Defending</span> Pokemon's Base Defense score.
                 </td>
               </tr>
               <tr>
                 <th valign="top">AttackIV</th>
                 <td>
-                  The <span class="EMPHASIZE">Attacking</span> Pokemon's Attack IV score.
+                  The <span class="EMPHASIS">Attacking</span> Pokemon's Attack IV score.
                 </td>
               </tr>
               <tr>
                 <th valign="top">DefenseIV</th>
                 <td>
-                  The <span class="EMPHASIZE">Defending</span> Pokemon's Defense IV score.
+                  The <span class="EMPHASIS">Defending</span> Pokemon's Defense IV score.
                 </td>
               </tr>
               <tr>
                 <th valign="top">AttackerCPM</th>
                 <td>
-                  The CPM for the <span class="EMPHASIZE">Attacking</span> Pokemon.
+                  The CPM for the <span class="EMPHASIS">Attacking</span> Pokemon.
                 </td>
               </tr>
               <tr>
                 <th valign="top">DefenderCPM</th>
                 <td>
-                  The CPM for the <span class="EMPHASIZE">Defending</span> Pokemon.
+                  The CPM for the <span class="EMPHASIS">Defending</span> Pokemon.
                 </td>
               </tr>
               <tr>
@@ -277,7 +277,7 @@
         </h2>
         <div id="FORMULA_MOVESET_DPS" class="INDENT">
           <p class="PARENT">
-            To make things worse, as mentioned above, this is the formula for the <i>Damage</i> from a <span class="EMPHASIZE_SUPER">Single</span> Move!
+            To make things worse, as mentioned above, this is the formula for the <i>Damage</i> from a <span class="SIGNIFICANT EMPHASIS">Single</span> Move!
             To get the DPS for that one Move you would only need to do:
           </p>
           <div class="INDENT">
@@ -301,14 +301,14 @@
           <p style="margin-top:2em; margin-bottom:2em;">
             <b style="font-size:xx-large;">
               <xsl:value-of select="concat($nbsp, $nbsp, $nbsp)" disable-output-escaping="yes" />
-              <span class="EMPHASIZE">
+              <span class="EMPHASIS">
                 <xsl:value-of select="concat('...', $nbsp, 'BUT', $nbsp, '...')" disable-output-escaping="yes" />
               </span>
             </b>
             <br />
           </p>
           <p class="PARENT">
-            To get the DPS for a <span class="EMPHASIZE_SUPER">Move Set</span> you need to figure out:
+            To get the DPS for a <span class="SIGNIFICANT EMPHASIS">Move Set</span> you need to figure out:
           </p>
           <ol class="CHILD">
             <li>How many Fast Moves have to be performed to generate the Energy for the Charged Move.</li>
@@ -714,7 +714,7 @@
           <p>
             Obviously, True DPS is still quite a complex formula.
             <br />To simplify it further, many people will use only the values from the Move Set itself, removing the values from Pokemon.
-            This will give a <span class="EMPHASIZE">generic</span> DPS for the moveset.
+            This will give a <span class="EMPHASIS">generic</span> DPS for the moveset.
             <br /><span class="NOTE">(In other words, it will be the same value regardless the Pokemon.)</span>
           </p>
 

@@ -168,7 +168,7 @@
                 </p>
                 <p>
                     You can also use javascript to manipulate the cookies to quickly set the other search criteria, such as Minimum IV and which Pokemon to show.
-                    <br />For example, if I am sitting at home I may want to see a lot of Pokemon, but if I am at work I may only want to see a few <span class="EMPHASIZE">really</span> desirable ones.
+                    <br />For example, if I am sitting at home I may want to see a lot of Pokemon, but if I am at work I may only want to see a few <span class="EMPHASIS">really</span> desirable ones.
                 </p>
                 <p>
                     As such, I have created this tool so you can create multiple javascript filters that you can easily apply instead of having to check and uncheck each Pokemon 1 at a time, etc.
@@ -199,7 +199,7 @@
                   <th align="right" rowspan="2">Set Icons</th>
                   <td style="min-width:50em;">
                     <code>
-                      javascript:var url='<span class="EMPHASIZE">https://pkmref.com/images/set_1/</span>';for(i=1;i&lt;1000;i++){localStorage.setItem('icon'+i,url+i+'.png');};location.reload();
+                      javascript:var url='<span class="EMPHASIS">https://pkmref.com/images/set_1/</span>';for(i=1;i&lt;1000;i++){localStorage.setItem('icon'+i,url+i+'.png');};location.reload();
                     </code>
                   </td>
                 </tr>
@@ -211,7 +211,7 @@
                 </tr>
                 <tr>
                   <th align="right" rowspan="2">
-                    Show only Pokemon<br />that <span class="EMPHASIZE">may</span> have<br />IV available.
+                    Show only Pokemon<br />that <span class="EMPHASIS">may</span> have<br />IV available.
                   </th>
                   <td>
                     <code>javascript:var show=[3,6,9,31,34,36,38,40,45,57,59,62,63,64,65,66,67,68,71,74,75,76,78,87,89,91,93,94,103,106,107,108,111,112,113,117,123,130,131,134,135,136,137,139,141,142,143,147,148,149,154,157,160,176,179,180,181,201,217,221,228,229,232,237,242,246,247,248];for(i=1;i&lt;1000;i++){localStorage.setItem(i,'0');};for(i =0;i&lt;show.length;i++){localStorage.setItem(show[i],'1');};localStorage.setItem('min_iv2',1);location.reload();</code>
@@ -228,7 +228,7 @@
                   </th>
                   <td>
                     <code>
-                      javascript:var iv=<span class="EMPHASIZE">90</span>;if(localStorage.getItem('min_iv2')!=iv){localStorage.setItem('min_iv2',iv);}else{localStorage.setItem('min_iv2','0');};location.reload();
+                      javascript:var iv=<span class="EMPHASIS">90</span>;if(localStorage.getItem('min_iv2')!=iv){localStorage.setItem('min_iv2',iv);}else{localStorage.setItem('min_iv2','0');};location.reload();
                     </code>
                   </td>
                 </tr>

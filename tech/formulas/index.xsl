@@ -38,7 +38,7 @@
         </h1>
         <div class="INDENT">
           <p>
-            Behind the scenes, Pokemon GO does a <span class="EMPHASIZE_SUPER">LOT</span> of math.
+            Behind the scenes, Pokemon GO does a <span class="SIGNIFICANT EMPHASIS">LOT</span> of math.
             Being very geeky, I decided to get into what the formulas were for a lot of stuff.
             A large amount of the data on this site is calculated using these formulas.
           </p>

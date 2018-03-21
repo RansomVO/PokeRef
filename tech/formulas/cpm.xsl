@@ -49,7 +49,7 @@
             <td>
               <table border="1">
                 <tr>
-                  <th>Lvl</th>
+                  <th>Level</th>
                   <th>CPM</th>
                   <th>
                     Half-Level<br />CPM

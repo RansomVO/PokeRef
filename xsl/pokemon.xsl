@@ -69,14 +69,13 @@
     </xsl:if>
 
     <div>
-      <!-- #region Attributes -->
       <xsl:attribute name="class">
         <xsl:choose>
           <xsl:when test="exslt:node-set($Settings)/*/@boxed">
-            <xsl:text>SPRITE_BOXED </xsl:text>
+            <xsl:text>SPRITE_FRAME SPRITE_BOXED </xsl:text>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:text>SPRITE_FILLER </xsl:text>
+            <xsl:text>CELL_FILLER </xsl:text>
           </xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
@@ -99,6 +98,8 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:attribute>
+      
+      <!-- #region Attributes for PokeStats -->
       <xsl:attribute name="title">
         <xsl:value-of select="Name" />
       </xsl:attribute>
@@ -199,7 +200,15 @@
 
       <!-- #endregion Attributes -->
 
+      <!-- TODO QZX: This is where I need to continue matching with what is in Debugging. -->
       <div>
+        <xsl:attribute name="class">
+          <xsl:text>SPRITE_FRAME </xsl:text>
+          <xsl:choose>
+            <xsl:when test="Rarity = $Availability_Legendary">LEGENDARY </xsl:when>
+            <xsl:when test="Rarity = $Availability_Mythic">MYTHIC </xsl:when>
+          </xsl:choose>
+        </xsl:attribute>
         <xsl:attribute name="style">
           <xsl:text>vertical-align:</xsl:text>
           <xsl:choose>
@@ -208,14 +217,7 @@
             </xsl:when>
             <xsl:otherwise>middle</xsl:otherwise>
           </xsl:choose>
-          <xsl:text>; </xsl:text>
-        </xsl:attribute>
-        <xsl:attribute name="class">
-          <xsl:text>SPRITE_DIV_FILLER </xsl:text>
-          <xsl:choose>
-            <xsl:when test="Rarity = $Availability_Legendary">LEGENDARY </xsl:when>
-            <xsl:when test="Rarity = $Availability_Mythic">MYTHIC </xsl:when>
-          </xsl:choose>
+          <xsl:text>; position:relative;</xsl:text>
         </xsl:attribute>
 
         <xsl:if test="$Header != ''">
@@ -224,7 +226,7 @@
           </div>
         </xsl:if>
 
-        <!-- Add Icon here. -->
+        <!-- Add Shiny/Egg Icons here. -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
 
           <!-- Add Shiny Icon here. -->
@@ -240,9 +242,6 @@
                   <xsl:attribute name="class">RIGHT_ICON_WRAPPER</xsl:attribute>
                   <xsl:attribute name="style">background-image:url('/images/hatchonly.png');</xsl:attribute>
                 </xsl:when>
-                <xsl:otherwise>
-                  <xsl:attribute name="class">RIGHT_ICON</xsl:attribute>
-                </xsl:otherwise>
               </xsl:choose>
 
               <xsl:call-template name="OutputInfoWrapper">
@@ -285,9 +284,11 @@
           </xsl:if>
         </xsl:if>
 
-        <xsl:apply-templates select="." mode="Sprite">
-          <xsl:with-param name="Settings" select="$Settings" />
-        </xsl:apply-templates>
+        <div style="text-align:center;">
+          <xsl:apply-templates select="." mode="Sprite">
+            <xsl:with-param name="Settings" select="$Settings" />
+          </xsl:apply-templates>
+        </div>
 
         <!-- Add Type/Boost Icons here. -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
@@ -324,12 +325,14 @@
     <xsl:param name="Footer" />
 
     <td height="1px" align="center" class="CELL_FILLED">
-      <xsl:apply-templates select=".">
-        <xsl:with-param name="Settings" select="$Settings" />
-        <xsl:with-param name="CustomAttributes" select="$CustomAttributes" />
-        <xsl:with-param name="Header" select="$Header" />
-        <xsl:with-param name="Footer" select="$Footer" />
-      </xsl:apply-templates>
+      <div class="CELL_FILLER">
+        <xsl:apply-templates select=".">
+          <xsl:with-param name="Settings" select="$Settings" />
+          <xsl:with-param name="CustomAttributes" select="$CustomAttributes" />
+          <xsl:with-param name="Header" select="$Header" />
+          <xsl:with-param name="Footer" select="$Footer" />
+        </xsl:apply-templates>
+      </div>
     </td>
   </xsl:template>
 
@@ -402,9 +405,7 @@
       </xsl:attribute>
 
       <xsl:attribute name="alt">
-        <xsl:text>(</xsl:text>
-        <xsl:value-of select="Name" />
-        <xsl:text>)</xsl:text>
+        <xsl:value-of select="concat('(', Name, ')')" />
       </xsl:attribute>
     </img>
   </xsl:template>
@@ -515,7 +516,7 @@
     <xsl:param name="Type" />
     <xsl:param name="Settings" />
 
-    <div style="position:relative; display:inline-block">
+    <div style="position:relative; display:inline-block;">
       <xsl:call-template name="OutputTypeIcon">
         <xsl:with-param name="Type" select="$Type" />
         <xsl:with-param name="Settings">
@@ -538,45 +539,54 @@
   </xsl:template>
 
   <xsl:template name="PokemonImageKey">
-    <div id="POKEMON_IMAGE_KEY">
-      <table border="1" class="KEY_TABLE">
-        <comment commment="Limited Availablility">
-          <tr>
-            <th rowspan="2">Limited Availability</th>
-            <td class="REGIONAL">Regional Availability</td>
-          </tr>
-          <tr>
-            <td class="UNAVAILABLE">Unavailable</td>
-          </tr>
-        </comment>
-
-        <comment commment="Limited Origin">
-          <tr>
-            <th rowspan="2">Limited Origin</th>
-            <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
-          </tr>
-          <tr>
-            <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
-          </tr>
-        </comment>
-
-        <comment commment="Special">
-          <tr>
-            <th rowspan="2">Special</th>
-            <td class="LEGENDARY">Legendary</td>
-          </tr>
-          <tr>
-            <td class="MYTHIC">Mythic</td>
-          </tr>
-        </comment>
-
+    <xsl:param name="Title" />
+    <table id="POKEMON_IMAGE_KEY" border="1" class="KEY_TABLE">
+      <xsl:if test="$Title != ''">
         <tr>
-          <td colspan="2" class="NOTE">
-            May combine one from each section.
-          </td>
+          <th colspan="2">
+            <span style="font-size:larger;">
+              <xsl:value-of select="$Title"/>
+            </span>
+          </th>
         </tr>
-      </table>
-    </div>
+      </xsl:if>
+
+      <comment commment="Limited Availablility">
+        <tr>
+          <th rowspan="2">Limited Availability</th>
+          <td class="REGIONAL">Regional Availability</td>
+        </tr>
+        <tr>
+          <td class="UNAVAILABLE">Unavailable</td>
+        </tr>
+      </comment>
+
+      <comment commment="Limited Origin">
+        <tr>
+          <th rowspan="2">Limited Origin</th>
+          <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
+        </tr>
+        <tr>
+          <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
+        </tr>
+      </comment>
+
+      <comment commment="Special">
+        <tr>
+          <th rowspan="2">Special</th>
+          <td class="LEGENDARY">Legendary</td>
+        </tr>
+        <tr>
+          <td class="MYTHIC">Mythic</td>
+        </tr>
+      </comment>
+
+      <tr>
+        <td colspan="2" class="NOTE">
+          May combine one from each section.
+        </td>
+      </tr>
+    </table>
   </xsl:template>
 
   <!-- #endregion -->

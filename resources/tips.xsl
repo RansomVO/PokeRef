@@ -58,7 +58,7 @@
           <p>
             When looking at the Pokemon in your box, there is the ability to search.
             This allows you to easily find Pokemon by species, or by the nickname you have given them.
-            <br /><span class="EMPHASIZE">But wait! There's more!!!</span>
+            <br /><span class="EMPHASIS">But wait! There's more!!!</span>
           </p>
           <p>
             There are some secret terms and modifiers that can be used:
@@ -237,9 +237,9 @@
           <div class="INDENT">
             <p>
               The Naming trick allows you to specify what the Eevee will evolve into by renaming it before evolving.
-              <br /><span class="EMPHASIZE_SUPER INDENT" style="font-size:larger; background-color:yellow;">THIS WILL ONLY WORK ONCE PER NAME!!!</span>
+              <br /><span class="SIGNIFICANT EMPHASIS INDENT" style="font-size:larger; background-color:yellow;">THIS WILL ONLY WORK ONCE PER NAME!!!</span>
               <span class="NOTE">
-                (Make sure you use it on a <span class="EMPHASIZE">good</span> Eevee!)
+                (Make sure you use it on a <span class="EMPHASIS">good</span> Eevee!)
               </span>
             </p>
 
@@ -249,7 +249,7 @@
                 <li>Set the Nickname for the Eevee to the one desired from the table below.</li>
                 <li>Evolve the Eevee.</li>
               </ol>
-              <p class="EMPHASIZE CHILD">
+              <p class="EMPHASIS CHILD">
                 That's it!
               </p>
 
@@ -346,8 +346,8 @@
                 <li>Make the Eevee your buddy.</li>
                 <li>
                   Walk at least 10 Km with him as your buddy
-                  <br /><span class="INDENT EMPHASIZE_SUPER">AND</span>
-                  <br /><span class="EMPHASIZE"> make sure he has found 2 Eevee Candies.</span>
+                  <br /><span class="INDENT SIGNIFICANT EMPHASIS">AND</span>
+                  <br /><span class="EMPHASIS"> make sure he has found 2 Eevee Candies.</span>
                 </li>
                 <li>While the Eevee is still your buddy, evolve it a the time desired from the table below.</li>
               </ol>

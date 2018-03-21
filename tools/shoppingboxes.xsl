@@ -148,7 +148,7 @@
               <tr>
                 <th style="border:1px solid;" class="BAD">Bad</th>
               </tr>
-            </table> and which box (if any) is the best deal for <span class="EMPHASIZE">you</span>.
+            </table> and which box (if any) is the best deal for <span class="EMPHASIS">you</span>.
           </li>
         </ol>
 

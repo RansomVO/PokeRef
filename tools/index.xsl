@@ -40,7 +40,7 @@
           <p>
             When there are Events in
             Pokemon GO, they usually have some sort of special package deals in the Shop.
-            Ever wonder how much one of those boxes is worth <span class="EMPHASIZE">to you</span>?
+            Ever wonder how much one of those boxes is worth <span class="EMPHASIS">to you</span>?
             <br />
             Use this tool to find out.
           </p>
