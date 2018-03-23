@@ -27,24 +27,24 @@ var GoldenBerries_AssumedValue = 10;
 // ****************************************************************************
 // #region Values that should be updated each time new boxes come out. **********
 // ****************************************************************************
-var ShoppingBox_Update_Date = '25 Feb 2018';
-var ShoppingBox_Update_Note = 'For Legendary Week';
+var ShoppingBox_Update_Date = '22 March 2018';
+var ShoppingBox_Update_Note = 'Eggstravaganza';
 
 var SpecialBox = {
     'Price': 480,
-    'PremiumRaidPass': 6,
+    'PremiumRaidPass': 0,
     'MaxRevives': 0,
     'MaxPotions': 0,
     'PokeBalls': 0,
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
-    'Incubator': 0,
-    'LuckyEggs': 3,
-    'Incense': 0,
-    'StarPiece': 0,
+    'Incubator': 3,
+    'LuckyEggs': 0,
+    'Incense': 2,
+    'StarPiece': 5,
     'SuperIncubator': 0,
-    'RazzBerries': 6,
+    'RazzBerries': 0,
     'NanabBerries': 0,
     'PinappBerries': 0,
     'GoldenBerries': 0,
@@ -52,38 +52,38 @@ var SpecialBox = {
 
 var GreatBox = {
     'Price': 780,
-    'PremiumRaidPass': 10,
+    'PremiumRaidPass': 0,
     'MaxRevives': 0,
-    'MaxPotions': 6,
+    'MaxPotions': 0,
     'PokeBalls': 0,
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
     'Incubator': 0,
-    'LuckyEggs': 8,
-    'Incense': 0,
-    'StarPiece': 0,
-    'SuperIncubator': 0,
+    'LuckyEggs': 0,
+    'Incense': 5,
+    'StarPiece': 10,
+    'SuperIncubator': 5,
     'RazzBerries': 0,
     'NanabBerries': 0,
-    'PinappBerries': 6,
+    'PinappBerries': 0,
     'GoldenBerries': 0,
 };
 
 var UltraBox = {
     'Price': 1480,
-    'PremiumRaidPass': 20,
-    'MaxRevives': 10,
-    'MaxPotions': 10,
+    'PremiumRaidPass': 5,
+    'MaxRevives': 0,
+    'MaxPotions': 0,
     'PokeBalls': 0,
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
     'Incubator': 0,
-    'LuckyEggs': 25,
+    'LuckyEggs': 10,
     'Incense': 0,
-    'StarPiece': 0,
-    'SuperIncubator': 0,
+    'StarPiece': 25,
+    'SuperIncubator': 8,
     'RazzBerries': 0,
     'NanabBerries': 0,
     'PinappBerries': 0,
@@ -456,7 +456,7 @@ function WriteUpdated() {
 function OnValueChanged(field) {
     try {
         // This field changed, so update the cookie.
-        if (field !== null) {
+        if (field !== undefined && field !== null) {
             UpdateCookieSetting(field.id);
         }
 
