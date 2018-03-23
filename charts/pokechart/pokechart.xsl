@@ -324,7 +324,7 @@
       <xsl:attribute name="id">
         <xsl:value-of select="concat('GENERATION_', Generation/ID)" />
       </xsl:attribute>
-      <div>
+      <div style="display:flex; flex-wrap:wrap;">
         <xsl:attribute name="id">
           <xsl:value-of select="concat('GEN', Generation/ID, '_Collection')" />
         </xsl:attribute>
@@ -332,7 +332,7 @@
           <xsl:variable name="Name" select="Name" />
           <xsl:apply-templates select=".">
             <xsl:with-param name="Settings">
-              <Show boxed="true" />
+              <Show boxed="true" valign="bottom" />
             </xsl:with-param>
             <xsl:with-param name="CustomAttributes">
               <Attributes onclick="OnSelectPokemon(this)" style="cursor:pointer;">

@@ -499,7 +499,7 @@
               </xsl:attribute>
               <xsl:apply-templates select="/Root/PokemonStats/Pokemon[ID = $PokemonID]">
                 <xsl:with-param name="Settings">
-                  <Show hide_name="true" />
+                  <Show hide_name="true" valign="middle"/>
                 </xsl:with-param>
               </xsl:apply-templates>
             </td>

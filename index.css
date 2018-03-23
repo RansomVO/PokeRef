@@ -174,9 +174,6 @@ h1, h2, h3, h4 {
 }
 
 .CELL_FILLER {
-    display: flex;
-    align-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -222,29 +219,43 @@ h1, h2, h3, h4 {
 }
 
 .SPRITE_FILLER {
-    display: table;
-    border-collapse: collapse;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-.SPRITE_DIV_FILLER {
-    display: table-cell;
-    height: 100%;
-    width: 100%;
-    padding: .5em;
-}
-
-.SPRITE_FRAME {
-    position: relative;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .SPRITE_BOXED {
-    width: 100px;
+    flex-basis: 8em;
     border: 1px solid black;
+    margin: .1em;
+}
+
+.SPRITE_FRAME {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: .25em;
+    margin: .25em;
+}
+
+.SPRITE_ALIGN_TOP {
+    align-self: flex-start;
+}
+
+.SPRITE_ALIGN_MIDDLE {
+    align-self: center;
+}
+
+.SPRITE_ALIGN_BOTTOM {
+    align-self: flex-end;
+}
+
+.SPRITE_LINK {
+    text-decoration: none;
+    display: block;
+}
+
+.SPRITE_WITH_WRAPPED_ICON {
+    margin-top: 1em;
 }
 
 .SPACER_ICON {
@@ -293,7 +304,6 @@ h1, h2, h3, h4 {
     width: 3em;
     height: 3em;
     background-size: cover;
-    border: 1px solid yellow;
 }
 
 /*#endregion*/
@@ -574,6 +584,7 @@ input:checked + .CONTROLS_SLIDER_BUTTON {
     background-color: lightblue;
     border: 1px solid blue;
     border-radius: 6px;
+    text-shadow: none;
     padding: .25em;
 }
 

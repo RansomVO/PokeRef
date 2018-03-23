@@ -229,7 +229,7 @@
         </p>
         <xsl:apply-templates select="RaidBosses[@category='Legacy']">
           <xsl:with-param name="Settings">
-            <Show show_disabled="true" />
+            <Show show_disabled="true" valign="bottom" />
           </xsl:with-param>
         </xsl:apply-templates>
 

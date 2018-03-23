@@ -58,10 +58,8 @@
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
     <xsl:if test="exslt:node-set($Settings)/*/@href">
       <xsl:value-of select="concat($lt, 'a ')" disable-output-escaping="yes" />
-      <xsl:text>href="</xsl:text>
-      <xsl:value-of select="exslt:node-set($Settings)/*/@href" disable-output-escaping="yes" />
-      <xsl:text>" style="text-decoration:none;"</xsl:text>
-      <xsl:text> class="CELL_FILLER</xsl:text>
+      <xsl:value-of select="concat('href=', $quot, exslt:node-set($Settings)/*/@href, $quot)" disable-output-escaping="yes" />
+      <xsl:text> class="CELL_FILLER SPRITE_LINK</xsl:text>
       <xsl:if test="Stats/Base/Attack = 1 and Stats/Base/Defense = 1 and Stats/Base/Stamina = 1">
         <xsl:text> DISABLED</xsl:text>
       </xsl:if>
@@ -70,13 +68,14 @@
 
     <div>
       <xsl:attribute name="class">
+        <xsl:text>SPRITE_FILLER </xsl:text>
         <xsl:choose>
-          <xsl:when test="exslt:node-set($Settings)/*/@boxed">
-            <xsl:text>SPRITE_FRAME SPRITE_BOXED </xsl:text>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:text>CELL_FILLER </xsl:text>
-          </xsl:otherwise>
+          <xsl:when test="exslt:node-set($Settings)/*/@boxed">SPRITE_BOXED </xsl:when>
+          <xsl:otherwise>CELL_FILLER </xsl:otherwise>
+        </xsl:choose>
+        <xsl:choose>
+          <xsl:when test="Rarity = $Availability_Legendary">LEGENDARY </xsl:when>
+          <xsl:when test="Rarity = $Availability_Mythic">MYTHIC </xsl:when>
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="contains(Availability,$Availability_RaidBossOnly_EX)">
@@ -98,7 +97,7 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:attribute>
-      
+
       <!-- #region Attributes for PokeStats -->
       <xsl:attribute name="title">
         <xsl:value-of select="Name" />
@@ -200,26 +199,21 @@
 
       <!-- #endregion Attributes -->
 
-      <!-- TODO QZX: This is where I need to continue matching with what is in Debugging. -->
       <div>
         <xsl:attribute name="class">
           <xsl:text>SPRITE_FRAME </xsl:text>
           <xsl:choose>
-            <xsl:when test="Rarity = $Availability_Legendary">LEGENDARY </xsl:when>
-            <xsl:when test="Rarity = $Availability_Mythic">MYTHIC </xsl:when>
-          </xsl:choose>
-        </xsl:attribute>
-        <xsl:attribute name="style">
-          <xsl:text>vertical-align:</xsl:text>
-          <xsl:choose>
-            <xsl:when test="count(exslt:node-set($Settings)/*/@valign) != 0">
-              <xsl:value-of select="exslt:node-set($Settings)/*/@valign" />
+            <xsl:when test="exslt:node-set($Settings)/*/@valign = 'top'">
+              <xsl:text>SPRITE_ALIGN_TOP</xsl:text>
             </xsl:when>
-            <xsl:otherwise>middle</xsl:otherwise>
+            <xsl:when test="exslt:node-set($Settings)/*/@valign = 'bottom'">
+              <xsl:text>SPRITE_ALIGN_BOTTOM</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:text>SPRITE_ALIGN_MIDDLE</xsl:text>
+            </xsl:otherwise>
           </xsl:choose>
-          <xsl:text>; position:relative;</xsl:text>
         </xsl:attribute>
-
         <xsl:if test="$Header != ''">
           <div id="Pokemon_Header_Field">
             <xsl:copy-of select="$Header"/>
@@ -239,7 +233,7 @@
             <div>
               <xsl:choose>
                 <xsl:when test="contains(Availability,'Hatch Only')">
-                  <xsl:attribute name="class">RIGHT_ICON_WRAPPER</xsl:attribute>
+                  <xsl:attribute name="class">RIGHT_ICON ICON_WRAPPER</xsl:attribute>
                   <xsl:attribute name="style">background-image:url('/images/hatchonly.png');</xsl:attribute>
                 </xsl:when>
               </xsl:choose>
@@ -284,11 +278,9 @@
           </xsl:if>
         </xsl:if>
 
-        <div style="text-align:center;">
-          <xsl:apply-templates select="." mode="Sprite">
-            <xsl:with-param name="Settings" select="$Settings" />
-          </xsl:apply-templates>
-        </div>
+        <xsl:apply-templates select="." mode="Sprite">
+          <xsl:with-param name="Settings" select="$Settings" />
+        </xsl:apply-templates>
 
         <!-- Add Type/Boost Icons here. -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
@@ -324,15 +316,13 @@
     <xsl:param name="Header" />
     <xsl:param name="Footer" />
 
-    <td height="1px" align="center" class="CELL_FILLED">
-      <div class="CELL_FILLER">
-        <xsl:apply-templates select=".">
-          <xsl:with-param name="Settings" select="$Settings" />
-          <xsl:with-param name="CustomAttributes" select="$CustomAttributes" />
-          <xsl:with-param name="Header" select="$Header" />
-          <xsl:with-param name="Footer" select="$Footer" />
-        </xsl:apply-templates>
-      </div>
+    <td class="CELL_FILLED">
+      <xsl:apply-templates select=".">
+        <xsl:with-param name="Settings" select="$Settings" />
+        <xsl:with-param name="CustomAttributes" select="$CustomAttributes" />
+        <xsl:with-param name="Header" select="$Header" />
+        <xsl:with-param name="Footer" select="$Footer" />
+      </xsl:apply-templates>
     </td>
   </xsl:template>
 
@@ -340,7 +330,7 @@
   <xsl:template match="Pokemon" mode="Sprite">
     <xsl:param name="Settings" />
 
-    <img style="vertical-align:middle;">
+    <img>
       <xsl:attribute name="class">
         <xsl:choose>
           <xsl:when test="count(exslt:node-set($Settings)/*/@small) > 0">
@@ -350,6 +340,9 @@
             <xsl:text>SPRITE </xsl:text>
           </xsl:otherwise>
         </xsl:choose>
+        <xsl:if test="contains(Availability,'Hatch Only')">
+          <xsl:text>SPRITE_WITH_WRAPPED_ICON </xsl:text>
+        </xsl:if>
         <xsl:if test="(count(exslt:node-set($Settings)/*/@show_disabled) = 0 and contains(Availability,$Availability_Unavailable)) or (Stats/Base/Attack = 1 and Stats/Base/Defense = 1 and Stats/Base/Stamina = 1)">
           <xsl:text>DISABLED </xsl:text>
         </xsl:if>
