@@ -41,12 +41,18 @@ td a {
 }
 
 .NEWS_CONTENT {
-    padding:1em;
+    padding: 1em;
 }
 
 .SECTION {
     display: table;
     margin-top: 1em;
+}
+
+.SECTION_CELL_FILLER {
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 
 .SECTION_TITLE {

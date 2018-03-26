@@ -250,7 +250,7 @@
         <xsl:value-of select="Color" />
         <xsl:text>; </xsl:text>
       </xsl:attribute>
-      <a class="CELL_FILLER">
+      <a class="SECTION_CELL_FILLER">
         <xsl:attribute name="href">
           <xsl:value-of select="HRef" />
         </xsl:attribute>
