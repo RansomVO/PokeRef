@@ -442,6 +442,14 @@ h1, h2, h3, h4 {
     box-shadow: inset 0 0 10px 3px gold, inset 0 0 10px 3px gold, inset 0 0 10px 3px gold, inset 0 0 10px 3px gold;
 }
 
+.ULTRA_BEAST {
+    /* 
+        Not using this because the border spills outside of the cell:
+        border: 5px ridge silver;
+    */
+    box-shadow: inset 0 0 10px 3px steelblue, inset 0 0 10px 3px steelblue, inset 0 0 10px 3px steelblue, inset 0 0 10px 3px steelblue;
+}
+
 .GEN1 {
     background-color: #CBC8FD;
 }

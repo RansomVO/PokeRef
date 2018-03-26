@@ -1026,6 +1026,19 @@
       </Dependencies>
       <OutputFileName>raidboss.magneton.html</OutputFileName>
     </XslTransform>
+    <XslTransform Include="charts\raidboss\raidboss.manectric.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>raidboss.xsl</DependentUpon>
+      <Dependencies>
+        charts\raidboss\raidboss.js;
+        js\global.js;
+        _datafiles\raidboss.manectric.xml;
+        charts\raidboss\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>raidboss.manectric.html</OutputFileName>
+    </XslTransform>
     <XslTransform Include="charts\raidboss\raidboss.marowak.html.xml">
       <Visible>true</Visible>
       <DependentUpon>raidboss.xsl</DependentUpon>

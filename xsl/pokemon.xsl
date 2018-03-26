@@ -76,6 +76,7 @@
         <xsl:choose>
           <xsl:when test="Rarity = $Availability_Legendary">LEGENDARY </xsl:when>
           <xsl:when test="Rarity = $Availability_Mythic">MYTHIC </xsl:when>
+          <xsl:when test="Rarity = $Availability_UltraBeast">ULTRA_BEAST </xsl:when>
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="contains(Availability,$Availability_RaidBossOnly_EX)">
@@ -128,6 +129,9 @@
       </xsl:attribute>
       <xsl:attribute name="availability">
         <xsl:value-of select="Availability" />
+      </xsl:attribute>
+      <xsl:attribute name="rarity">
+        <xsl:value-of select="Rarity" />
       </xsl:attribute>
       <xsl:attribute name="boost1">
         <xsl:variable name="Type" select="Type/Primary" />
@@ -564,13 +568,16 @@
         </tr>
       </comment>
 
-      <comment commment="Special">
+      <comment commment="Rarity">
         <tr>
-          <th rowspan="2">Special</th>
+          <th rowspan="3">Rarity</th>
           <td class="LEGENDARY">Legendary</td>
         </tr>
         <tr>
           <td class="MYTHIC">Mythic</td>
+        </tr>
+        <tr>
+          <td class="ULTRA_BEAST">Ultra Beast</td>
         </tr>
       </comment>
 

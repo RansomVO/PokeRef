@@ -37,12 +37,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <!-- Items that show up here need to be moved to the appropriate ItemGroup. -->
+  <ItemGroup>
+  </ItemGroup>
   <!-- / -->
   <ItemGroup>
-    <WebContent Include="images\cphp.png" />
-    <FixOutputFile Include="tech\formulas\_sectionname.txt" />
-    <Content Include="__Debugging\Tools\display.html" />
-    <Content Include="__Debugging\Tools\border.html" />
     <FixOutputFile Include="_sectionname.txt" />
     <WebContent Include="contactinfo.html" />
     <WebContent Include="feedbacknote.html" />
@@ -50,15 +49,6 @@
     <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
     <WebContent Include="apple-touch-icon.png" />
-    <WebContent Include="images\egg_10K.png" />
-    <WebContent Include="images\egg_2K.png" />
-    <WebContent Include="images\egg_5K.png" />
-    <WebContent Include="images\404pokemon.png" />
-    <Resource Include="images\originals\404swablu.jpg" />
-    <WebContent Include="images\hatchonly.png" />
-    <Content Include="images\originals\egg_10K.png" />
-    <Content Include="images\originals\egg_2K.png" />
-    <Content Include="images\originals\egg_5K.png" />
     <Content Include="Web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -159,6 +149,7 @@
     <FixIntermediateFile Include="_datafiles\raidboss.magikarp.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.magmar.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.magneton.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.manectric.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.marowak.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.mawile.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.metapod.xml" />
@@ -220,6 +211,8 @@
     <None Include="__Debugging\index.html" />
     <None Include="__Debugging\index.js" />
     <None Include="__Debugging\index.css" />
+    <None Include="__Debugging\Tools\display.html" />
+    <None Include="__Debugging\Tools\border.html" />
   </ItemGroup>
   <!-- /css -->
   <ItemGroup>
@@ -227,8 +220,12 @@
   </ItemGroup>
   <!-- /images -->
   <ItemGroup>
-    <Resource Include="images\originals\logo.png" />
+    <WebContent Include="images\404pokemon.png" />
+    <WebContent Include="images\cphp.png" />
     <WebContent Include="images\EeveeDi.png" />
+    <WebContent Include="images\egg_10K.png" />
+    <WebContent Include="images\egg_2K.png" />
+    <WebContent Include="images\egg_5K.png" />
     <WebContent Include="images\GoIV-Clipboard_Multiple.png" />
     <WebContent Include="images\GoIV-Clipboard_Single.png" />
     <WebContent Include="images\GoIV-FinalResult.png" />
@@ -236,6 +233,7 @@
     <WebContent Include="images\GoIV-Refining.png" />
     <WebContent Include="images\GoIV-Renamed.png" />
     <WebContent Include="images\GoIV-Start.png" />
+    <WebContent Include="images\hatchonly.png" />
     <WebContent Include="images\NotJustAGame.png" />
     <WebContent Include="images\TrappedWeedle.png" />
     <WebContent Include="images\shiny.png" />
@@ -265,9 +263,13 @@
     <WebContent Include="images\weather_snow.png" />
     <WebContent Include="images\weather_sunny.png" />
     <WebContent Include="images\weather_windy.png" />
+    <Resource Include="images\originals\404swablu.jpg" />
     <Resource Include="images\originals\EeveeDi.pub" />
     <Resource Include="images\originals\EeveeDi.2.png" />
     <Resource Include="images\originals\EeveeDi.png" />
+    <Resource Include="images\originals\egg_10K.png" />
+    <Resource Include="images\originals\egg_2K.png" />
+    <Resource Include="images\originals\egg_5K.png" />
     <Resource Include="images\originals\GoIV-FinalResult.png" />
     <Resource Include="images\originals\GoIV-PrelimResult.png" />
     <Resource Include="images\originals\GoIV-Refining.png" />
@@ -280,6 +282,7 @@
     <Resource Include="images\originals\icon.48.book.png" />
     <Resource Include="images\originals\icon.64.ball.png" />
     <Resource Include="images\originals\icon.64.book.png" />
+    <Resource Include="images\originals\logo.png" />
     <Resource Include="images\originals\Screenshot_20171031-160459.png" />
     <Resource Include="images\originals\type_bug.png" />
     <Resource Include="images\originals\type_dark.png" />
@@ -369,7 +372,11 @@
   <!-- /tech -->
   <ItemGroup>
     <FixOutputFile Include="tech\_sectionname.txt" />
+  </ItemGroup>
+  <!-- /tech -->
+  <ItemGroup>
     <FixOutputFile Include="tech\formulas\index.css" />
+    <FixOutputFile Include="tech\formulas\_sectionname.txt" />
   </ItemGroup>
   <!-- /tech/GAME_MASTER -->
   <ItemGroup>

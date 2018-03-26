@@ -20,7 +20,7 @@ var CookieSettings = {
     'Shiny_Check': 'false',
     'Regional_Check': 'false',
     'RaidBoss_Check': 'false',
-    'Legendary_Check': 'false',
+    'Rarity_Check': 'false',
 };
 
 // Read the Cookie and apply it to the fields.
@@ -52,7 +52,7 @@ function GetFields() {
     ReleasedOnly_Check = document.getElementById('ReleasedOnly_Check');
     Regional_Check = document.getElementById('Regional_Check');
     RaidBoss_Check = document.getElementById('RaidBoss_Check');
-    Legendary_Check = document.getElementById('Legendary_Check');
+    Rarity_Check = document.getElementById('Rarity_Check');
     Shiny_Check = document.getElementById('Shiny_Check');
 
     Collections = [null]
@@ -130,7 +130,7 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (Legendary_Check.checked && !GetPokemonAvailability(pokemon).contains('Legendary') && !GetPokemonAvailability(pokemon).contains('Mythic')) {
+    if (Rarity_Check.checked && !GetPokemonRarity(pokemon).contains('Legendary') && !GetPokemonRarity(pokemon).contains('Mythic') && !GetPokemonRarity(pokemon).contains('Ultra Beast')) {
         return false;
     }
 

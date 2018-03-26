@@ -206,6 +206,11 @@ function GetPokemonAvailability(pokemon) {
     return GetPokemon(pokemon).attributes['availability'].value;
 }
 <!-- #endregion -->
+<!-- #region GetPokemonRarity() -->
+function GetPokemonRarity(pokemon) {
+    return GetPokemon(pokemon).attributes['rarity'].value;
+}
+<!-- #endregion -->
 <!-- #region GetPokemonMax_CP() -->
 function GetPokemonMax_CP(pokemon) {
     return GetPokemon(pokemon).attributes['maxCP'].value;

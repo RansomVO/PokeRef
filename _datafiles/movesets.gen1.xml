@@ -381,6 +381,50 @@
 	</MoveSet>
 	<MoveSet>
 		<Pokemon>
+			<ID>3</ID>
+			<Name>Venusaur</Name>
+		</Pokemon>
+		<FastAttack>
+			<Move>Razor Leaf</Move>
+		</FastAttack>
+		<ChargedAttack>
+			<Move>Frenzy Plant</Move>
+			<Legacy>true</Legacy>
+		</ChargedAttack>
+		<STAB>
+			<Fast>true</Fast>
+			<Charged>true</Charged>
+		</STAB>
+		<Damage>
+			<DPS>19.2452830188679</DPS>
+			<TrueDPS>26.23</TrueDPS>
+			<PercentOfMax>0.96</PercentOfMax>
+		</Damage>
+	</MoveSet>
+	<MoveSet>
+		<Pokemon>
+			<ID>3</ID>
+			<Name>Venusaur</Name>
+		</Pokemon>
+		<FastAttack>
+			<Move>Vine Whip</Move>
+		</FastAttack>
+		<ChargedAttack>
+			<Move>Frenzy Plant</Move>
+			<Legacy>true</Legacy>
+		</ChargedAttack>
+		<STAB>
+			<Fast>true</Fast>
+			<Charged>true</Charged>
+		</STAB>
+		<Damage>
+			<DPS>20.375</DPS>
+			<TrueDPS>28</TrueDPS>
+			<PercentOfMax>1.03</PercentOfMax>
+		</Damage>
+	</MoveSet>
+	<MoveSet>
+		<Pokemon>
 			<ID>4</ID>
 			<Name>Charmander</Name>
 		</Pokemon>

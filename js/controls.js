@@ -619,7 +619,7 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     }
 
     // TODO QZX: Deal with parens.
-    // TODO QZX: Do we want to add keywords like "Shiny", "Legendary", etc.
+    // TODO QZX: Do we want to add keywords like "Shiny", "Legendary", etc.?
 
     // Split the filter into sub-filters separated by ',' and treat it like ||
     var filterSegments = filterSegment.split(',');

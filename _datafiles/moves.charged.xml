@@ -1117,4 +1117,49 @@
 		<DamageWindowStart>1400</DamageWindowStart>
 		<DamageWindowEnd>1600</DamageWindowEnd>
 	</Move>
+	<Move>
+		<Name>Weather Ball Fire</Name>
+		<Type>Fire</Type>
+		<Energy>-33</Energy>
+		<Power>60</Power>
+		<Time>1.6</Time>
+		<DamageWindowStart>1350</DamageWindowStart>
+		<DamageWindowEnd>1600</DamageWindowEnd>
+	</Move>
+	<Move>
+		<Name>Weather Ball Ice</Name>
+		<Type>Ice</Type>
+		<Energy>-33</Energy>
+		<Power>60</Power>
+		<Time>1.6</Time>
+		<DamageWindowStart>1350</DamageWindowStart>
+		<DamageWindowEnd>1600</DamageWindowEnd>
+	</Move>
+	<Move>
+		<Name>Weather Ball Rock</Name>
+		<Type>Rock</Type>
+		<Energy>-33</Energy>
+		<Power>60</Power>
+		<Time>1.6</Time>
+		<DamageWindowStart>1350</DamageWindowStart>
+		<DamageWindowEnd>1600</DamageWindowEnd>
+	</Move>
+	<Move>
+		<Name>Weather Ball Water</Name>
+		<Type>Water</Type>
+		<Energy>-33</Energy>
+		<Power>60</Power>
+		<Time>1.6</Time>
+		<DamageWindowStart>1350</DamageWindowStart>
+		<DamageWindowEnd>1600</DamageWindowEnd>
+	</Move>
+	<Move>
+		<Name>Frenzy Plant</Name>
+		<Type>Grass</Type>
+		<Energy>-50</Energy>
+		<Power>100</Power>
+		<Time>2.6</Time>
+		<DamageWindowStart>2145</DamageWindowStart>
+		<DamageWindowEnd>2550</DamageWindowEnd>
+	</Move>
 </Moves>

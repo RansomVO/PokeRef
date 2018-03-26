@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RaidBosses category="Current">
   <Tier name="EX and 5">
-    <RaidBoss>Mewtwo</RaidBoss>
-    <RaidBoss></RaidBoss> <!-- Separator between EX and Tier 5 -->
-    <RaidBoss>Lugia</RaidBoss>
+    <RaidBoss id="150">Mewtwo</RaidBoss>
+    <RaidBoss id="-1"></RaidBoss> <!-- Separator between EX and Tier 5 -->
+    <RaidBoss id="249">Lugia</RaidBoss>
   </Tier>
   <Tier name="Tier 4">
-    <RaidBoss>Charizard</RaidBoss>
-    <RaidBoss>Tyranitar</RaidBoss>
-    <RaidBoss>Aggron</RaidBoss>
-    <RaidBoss>Absol</RaidBoss>
+    <RaidBoss id="76">Golem</RaidBoss>
+    <RaidBoss id="248">Tyranitar</RaidBoss>
+    <RaidBoss id="306">Aggron</RaidBoss>
+    <RaidBoss id="359">Absol</RaidBoss>
   </Tier>
   <Tier name="Tier 3">
-    <RaidBoss>Alakazam</RaidBoss>
-    <RaidBoss>Machamp</RaidBoss>
-    <RaidBoss>Starmie</RaidBoss>
-    <RaidBoss>Scyther</RaidBoss>
-    <RaidBoss>Aerodactyl</RaidBoss>
-    <RaidBoss>Claydol</RaidBoss>
+    <RaidBoss id="68">Machamp</RaidBoss>
+    <RaidBoss id="94">Gengar</RaidBoss>
+    <RaidBoss id="124">Jynx</RaidBoss>
+    <RaidBoss id="135">Jolteon</RaidBoss>
+    <RaidBoss id="221">Piloswine</RaidBoss>
   </Tier>
   <Tier name="Tier 2">
-    <RaidBoss>Slowbro</RaidBoss>
-    <RaidBoss>Exeggutor</RaidBoss>
-    <RaidBoss>Sableye</RaidBoss>
-    <RaidBoss>Mawile</RaidBoss>
+    <RaidBoss id="103">Exeggutor</RaidBoss>
+    <RaidBoss id="125">Electabuzz</RaidBoss>
+    <RaidBoss id="302">Sableye</RaidBoss>
+    <RaidBoss id="303">Mawile</RaidBoss>
+    <RaidBoss id="310">Manectric</RaidBoss>
   </Tier>
   <Tier name="Tier 1">
-    <RaidBoss>Magikarp</RaidBoss>
-    <RaidBoss>Wailmer</RaidBoss>
-    <RaidBoss>Swablu</RaidBoss>
-    <RaidBoss>Snorunt</RaidBoss>
+    <RaidBoss id="129">Magikarp</RaidBoss>
+    <RaidBoss id="320">Wailmer</RaidBoss>
+    <RaidBoss id="333">Swablu</RaidBoss>
+    <RaidBoss id="361">Snorunt</RaidBoss>
   </Tier>
   <Tier name="? Future ?">
-    <RaidBoss>Mew</RaidBoss>
-    <RaidBoss>Celebi</RaidBoss>
-    <RaidBoss>Regirock</RaidBoss>
-    <RaidBoss>Regice</RaidBoss>
-    <RaidBoss>Registeel</RaidBoss>
-    <RaidBoss>Latias</RaidBoss>
-    <RaidBoss>Latios</RaidBoss>
-    <RaidBoss>Jirachi</RaidBoss>
-    <RaidBoss>Deoxys</RaidBoss>
+    <RaidBoss id="151">Mew</RaidBoss>
+    <RaidBoss id="251">Celebi</RaidBoss>
+    <RaidBoss id="377">Regirock</RaidBoss>
+    <RaidBoss id="378">Regice</RaidBoss>
+    <RaidBoss id="379">Registeel</RaidBoss>
+    <RaidBoss id="380">Latias</RaidBoss>
+    <RaidBoss id="381">Latios</RaidBoss>
+    <RaidBoss id="385">Jirachi</RaidBoss>
+    <RaidBoss id="386">Deoxys</RaidBoss>
   </Tier>
 </RaidBosses>

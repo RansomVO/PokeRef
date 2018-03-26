@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Settings>
-	<GAME_MASTER_TimeStamp>2018-03-16</GAME_MASTER_TimeStamp>
+	<GAME_MASTER_TimeStamp>2018-03-25</GAME_MASTER_TimeStamp>
 	<CPM>
 		<Standard>
 			<Level01>0.094</Level01>
@@ -109,8 +109,6 @@
 	<Availability>
 		<Unavailable>Unreleased</Unavailable>
 		<General>General</General>
-		<Legendary>Legendary</Legendary>
-		<Mythic>Mythic</Mythic>
 		<Regional>Regional</Regional>
 		<RaidBossOnly>Raid Boss Only</RaidBossOnly>
 		<RaidBossOnly_EX>EX Raid Boss Only</RaidBossOnly_EX>
@@ -118,6 +116,11 @@
 		<HatchOnly_5K>Hatch Only: 5K</HatchOnly_5K>
 		<HatchOnly_10K>Hatch Only: 10K</HatchOnly_10K>
 	</Availability>
+	<Rarity>
+		<Legendary>Legendary</Legendary>
+		<Mythic>Mythic</Mythic>
+		<UltraBeast>Ultra Beast</UltraBeast>
+	</Rarity>
 	<Ranges>
 		<Desirable>
 			<IV>0.9</IV>

@@ -10,15 +10,15 @@
   <!-- **************************************************************************************************** -->
   <xsl:variable name="Availability_Unavailable" select="/Root/Settings/Availability/Unavailable" />
   <xsl:variable name="Availability_General" select="/Root/Settings/Availability/General" />
-  <xsl:variable name="Availability_Legendary" select="/Root/Settings/Availability/Legendary" />
-  <xsl:variable name="Availability_Mythic" select="/Root/Settings/Availability/Mythic" />
   <xsl:variable name="Availability_Regional" select="/Root/Settings/Availability/Regional" />
   <xsl:variable name="Availability_RaidBossOnly" select="/Root/Settings/Availability/RaidBossOnly" />
   <xsl:variable name="Availability_RaidBossOnly_EX" select="/Root/Settings/Availability/RaidBossOnly_EX" />
   <xsl:variable name="Availability_HatchOnly_2K" select="/Root/Settings/Availability/HatchOnly_2K" />
   <xsl:variable name="Availability_HatchOnly_5K" select="/Root/Settings/Availability/HatchOnly_5K" />
   <xsl:variable name="Availability_HatchOnly_10K" select="/Root/Settings/Availability/HatchOnly_10K" />
-
+  <xsl:variable name="Availability_Legendary" select="/Root/Settings/Rarity/Legendary" />
+  <xsl:variable name="Availability_Mythic" select="/Root/Settings/Rarity/Mythic" />
+  <xsl:variable name="Availability_UltraBeast" select="/Root/Settings/Rarity/UltraBeast" />
 
   <!-- **************************************************************************************************** -->
   <!-- ******************** Settings - Hard-Coded ********************************************************* -->
