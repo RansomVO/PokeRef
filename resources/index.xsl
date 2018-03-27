@@ -317,7 +317,7 @@
                 <b>Project Page</b>: <a href="https://github.com/farkam135/GoIV">https://github.com/farkam135/GoIV"</a>
               </li>
               <li>
-                <b>APK Mirror</b>: <a href="https://www.apkmirror.com/apk/farkam135/goiv">https://www.apkmirror.com/apk/farkam135/goiv</a>
+                <b>APK Mirror</b>: <a href="https://www.apkmirror.com/apk/johan-swanberg/goiv-pokemon-iv-calculator/">https://www.apkmirror.com/apk/johan-swanberg/goiv-pokemon-iv-calculator/</a>
               </li>
             </ul>
           </div>

@@ -567,19 +567,9 @@ input:checked + .CONTROLS_SLIDER_BUTTON {
         background: blue;
     }
 
-        .CONTROLS_HELP:hover .CONTROLS_INFO_CONTENT {
-            visibility: visible;
-            opacity: 1;
-        }
-
 .CONTROLS_INFO {
     display: inline-block;
 }
-
-    .CONTROLS_INFO:hover .CONTROLS_INFO_CONTENT {
-        visibility: visible;
-        opacity: 1;
-    }
 
 .CONTROLS_INFO_CONTENT {
     visibility: hidden;

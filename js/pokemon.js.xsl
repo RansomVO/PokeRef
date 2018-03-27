@@ -426,7 +426,8 @@ var MarkerSectionEnd = '</xsl:text>
 
 <!-- #region GetPokemonIcon() -->
 function GetPokemonIcon(pokemon, remove) {
-    var pokemonHtml = GetPokemon(pokemon).outerHTML;
+    // Make any info boxes start off closed.
+    var pokemonHtml = GetPokemon(pokemon).outerHTML.replace('style="visibility: visible; opacity: 1;"', '');
 
     if (remove.header) {
         pokemonHtml = RemovePokemonSection(pokemonHtml, 'Pokemon_Header_Field');

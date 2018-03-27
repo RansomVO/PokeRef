@@ -750,6 +750,56 @@ function OnClosePopup() {
 // #endregion
 
 // ==============================================================================================
+// #region Code for Mouse-over display.
+// ==============================================================================================
+
+Controls_InfoShowing = false;
+
+// onmouseover="Controls_ShowInfo(this)"
+function Controls_ShowInfo(field) {
+    try {
+        if (field !== undefined && field !== null) {
+
+            var info = field.getElementsByClassName("CONTROLS_INFO_CONTENT")[0];
+            if (info !== null) {
+                Controls_InfoShowing = true;
+                info.style.visibility = 'visible';
+                info.style.opacity = 1;
+            }
+        }
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// onmouseleave="Controls_HideInfo(this)"
+function Controls_HideInfo(field) {
+    try {
+        if (field !== undefined && field !== null) {
+            var info = field.getElementsByClassName("CONTROLS_INFO_CONTENT")[0];
+            if (info !== null) {
+                Controls_CloseInfo(info);
+            }
+        }
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// onmouseleave="Controls_CloseInfo(this)"
+function Controls_CloseInfo(field) {
+    try {
+        Controls_InfoShowing = false;
+        field.style.visibility = 'hidden';
+        field.style.opacity = 0;
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// #endregion
+
+// ==============================================================================================
 // #region Functions for Loading screen. -->
 // ==============================================================================================
 

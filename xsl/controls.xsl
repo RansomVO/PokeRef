@@ -379,9 +379,9 @@
   <xsl:template name="OutputHelpButton">
     <xsl:param name="Help" />
 
-    <div class="CONTROLS_HELP">
+    <div class="CONTROLS_HELP" onmouseover="Controls_ShowInfo(this)" onmouseleave="Controls_HideInfo(this)">
       ?
-      <span class="CONTROLS_INFO_CONTENT">
+      <span class="CONTROLS_INFO_CONTENT" onmouseleave="Controls_CloseInfo(this)">
         <xsl:copy-of select="$Help" />
       </span>
     </div>
@@ -394,9 +394,9 @@
     <xsl:param name="Wrapped" />
     <xsl:param name="Info" />
 
-    <div class="CONTROLS_INFO">
+    <div class="CONTROLS_INFO" onmouseover="Controls_ShowInfo(this)" onmouseleave = "Controls_HideInfo(this)">
       <xsl:copy-of select="$Wrapped" />
-      <div class="CONTROLS_INFO_CONTENT">
+      <div class="CONTROLS_INFO_CONTENT" onmouseleave = "Controls_CloseInfo(this)">
         <xsl:copy-of select="$Info" />
       </div>
     </div>
