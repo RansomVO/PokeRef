@@ -224,15 +224,15 @@
           </div>
         </xsl:if>
 
-        <!-- Add Shiny/Egg Icons here. -->
+        <!-- Add Special Icons here. -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
 
-          <!-- Add Shiny Icon here. -->
+          <!-- Shiny Icon -->
           <xsl:if test="ShinyAvailable">
             <img class="LEFT_ICON" src="/images/shiny.png" alt="Shiny" />
           </xsl:if>
 
-          <!-- Add Egg Icon here. -->
+          <!-- Egg Icon -->
           <xsl:if test="$egg != ''">
             <div>
               <xsl:choose>
@@ -288,7 +288,7 @@
 
         <!-- Add Type/Boost Icons here. -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_icons) = 0">
-          <div id="Pokemon_Icons_Field">
+          <div id="Pokemon_Type_Icons_Field">
             <xsl:apply-templates select="Type" mode="icons" />
           </div>
         </xsl:if>
@@ -346,6 +346,9 @@
         </xsl:choose>
         <xsl:if test="contains(Availability,'Hatch Only')">
           <xsl:text>SPRITE_WITH_WRAPPED_ICON </xsl:text>
+        </xsl:if>
+        <xsl:if test="contains(Availability,$Availability_Regional)">
+          <xsl:text>REGIONAL </xsl:text>
         </xsl:if>
         <xsl:if test="(count(exslt:node-set($Settings)/*/@show_disabled) = 0 and contains(Availability,$Availability_Unavailable)) or (Stats/Base/Attack = 1 and Stats/Base/Defense = 1 and Stats/Base/Stamina = 1)">
           <xsl:text>DISABLED </xsl:text>
@@ -537,56 +540,61 @@
 
   <xsl:template name="PokemonImageKey">
     <xsl:param name="Title" />
-    <table id="POKEMON_IMAGE_KEY" border="1" class="KEY_TABLE">
-      <xsl:if test="$Title != ''">
-        <tr>
-          <th colspan="2">
-            <span style="font-size:larger;">
-              <xsl:value-of select="$Title"/>
-            </span>
-          </th>
-        </tr>
-      </xsl:if>
 
-      <comment commment="Limited Availablility">
-        <tr>
-          <th rowspan="2">Limited Availability</th>
-          <td class="REGIONAL">Regional Availability</td>
-        </tr>
-        <tr>
-          <td class="UNAVAILABLE">Unavailable</td>
-        </tr>
-      </comment>
+    <div class="FLOWING_TABLE_WRAPPER">
+      <table id="POKEMON_IMAGE_KEY" class="KEY_TABLE" border="1">
+        <xsl:if test="$Title != ''">
+          <tr>
+            <th colspan="2">
+              <span style="font-size:larger;">
+                <xsl:value-of select="$Title"/>
+              </span>
+            </th>
+          </tr>
+        </xsl:if>
 
-      <comment commment="Limited Origin">
-        <tr>
-          <th rowspan="2">Limited Origin</th>
-          <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
-        </tr>
-        <tr>
-          <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
-        </tr>
-      </comment>
+        <comment commment="Limited Availablility">
+          <tr>
+            <th rowspan="2">Limited Availability</th>
+            <td>
+              <div class="REGIONAL">Regional Availability</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="UNAVAILABLE">Unavailable</td>
+          </tr>
+        </comment>
 
-      <comment commment="Rarity">
-        <tr>
-          <th rowspan="3">Rarity</th>
-          <td class="LEGENDARY">Legendary</td>
-        </tr>
-        <tr>
-          <td class="MYTHIC">Mythic</td>
-        </tr>
-        <tr>
-          <td class="ULTRA_BEAST">Ultra Beast</td>
-        </tr>
-      </comment>
+        <comment commment="Limited Origin">
+          <tr>
+            <th rowspan="2">Limited Origin</th>
+            <td class="RAIDBOSS_ONLY">Available As Raid Boss Only</td>
+          </tr>
+          <tr>
+            <td class="RAIDBOSS_ONLY_EX">Available As EX Raid Boss Only</td>
+          </tr>
+        </comment>
 
-      <tr>
-        <td colspan="2" class="NOTE">
-          May combine one from each section.
-        </td>
-      </tr>
-    </table>
+        <comment commment="Rarity">
+          <tr>
+            <th rowspan="3">Rarity</th>
+            <td class="LEGENDARY">Legendary</td>
+          </tr>
+          <tr>
+            <td class="MYTHIC">Mythic</td>
+          </tr>
+          <tr>
+            <td class="ULTRA_BEAST">Ultra Beast</td>
+          </tr>
+        </comment>
+
+        <tr>
+          <td colspan="2" class="NOTE">
+            May combine one from each section.
+          </td>
+        </tr>
+      </table>
+    </div>
   </xsl:template>
 
   <!-- #endregion -->

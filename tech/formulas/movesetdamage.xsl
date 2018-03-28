@@ -191,7 +191,7 @@
                   </span>
                 </th>
                 <td>
-                  If the type of the attack is the same as the attacking Pokemon's type then it is <b>1.25</b>, otherwise it is <b>1</b>.
+                  If the type of the attack is the same as the Attacking Pokemon's type then it is <b>1.25</b>, otherwise it is <b>1</b>.
                   <div class="NOTE" style="margin-top:.5em;">
                     <b>For example</b>:
                     <div class="INDENT">
@@ -232,7 +232,7 @@
               </tr>
               <tr>
                 <th valign="top">AttackTime</th>
-                <td>The amount of time it takes the Pokemon to perform the move.</td>
+                <td>The amount of time it takes the Attacking Pokemon to perform the move.</td>
               </tr>
             </table>
           </div>
@@ -277,7 +277,7 @@
         </h2>
         <div id="FORMULA_MOVESET_DPS" class="INDENT">
           <p class="PARENT">
-            To make things worse, as mentioned above, this is the formula for the <i>Damage</i> from a <span class="SIGNIFICANT EMPHASIS">Single</span> Move!
+            To make things worse, as mentioned above, that formula is for the <i>Damage</i> from a <span class="SIGNIFICANT EMPHASIS">Single</span> Move!
             To get the DPS for that one Move you would only need to do:
           </p>
           <div class="INDENT">
@@ -324,7 +324,7 @@
               <tr>
                 <td rowspan="15" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
+                    <xsl:value-of select="concat('Base DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td rowspan="7" style="font-size:4em">(</td>
@@ -472,7 +472,7 @@
           </p>
           <ul class="CHILD">
             <li>
-              The Moves have no + or - Effectiveness against the defending Pokemon.
+              The Moves have no + or - Effectiveness against the Defending Pokemon.
               <div class="INDENT">
                 <span class="NOTE">Doing that, we can just remove Effectiveness from the formula.</span>
               </div>
@@ -484,19 +484,19 @@
               </div>
             </li>
             <li>
-              The defending Pokemon is the same level as the attacking Pokemon.
+              The Defending Pokemon is the same level as the Attacking Pokemon.
               <div class="INDENT">
                 <span class="NOTE">Doing that, the CPMs cancel each other out.</span>
               </div>
             </li>
             <li>
-              A generic value for BaseDefense + DefenseIV.
+              A generic value for BaseDefense + DefenseIV of the Defending Pokemon.
               <div class="INDENT">
                 <span class="NOTE">For example, 100.</span>
               </div>
             </li>
             <li>
-              The AttackIV for the attacking Pokemon is perfect.
+              The AttackIV for the Attacking Pokemon is perfect.
               <div class="INDENT">
                 <span class="NOTE">That is 15.</span>
               </div>
@@ -552,7 +552,7 @@
             </table>
           </div>
           <p class="PARENT">
-            Then, merging that into the DPS formula <span class="NOTE">(which is now a little easier than it would have been with the full Damage formula)</span>, we end up with:
+            Then, merging that into the Base DPS formula <span class="NOTE">(which is now a little easier than it would have been with the full Damage formula)</span>, we end up with:
           </p>
           <div class="INDENT CHILD">
             <table class="FORMULA">
@@ -705,7 +705,7 @@
         <br />
         <hr />
         <h2 id="anchor_movesetdps">
-          Even Simpler <span class="NOTE">(Move Set DPS)</span>
+          Even Simpler <span class="NOTE">(Base DPS)</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_MOVESET_DPS'" />
           </xsl:call-template>
@@ -713,7 +713,7 @@
         <div id="FORMULA_MOVESET_MOVESET_DPS" class="INDENT">
           <p>
             Obviously, True DPS is still quite a complex formula.
-            <br />To simplify it further, many people will use only the values from the Move Set itself, removing the values from Pokemon.
+            <br />To simplify it further, many people will use only the values from the Move Set itself, removing the values from the Pokemon.
             This will give a <span class="EMPHASIS">generic</span> DPS for the moveset.
             <br /><span class="NOTE">(In other words, it will be the same value regardless the Pokemon.)</span>
           </p>
@@ -726,7 +726,7 @@
               <tr>
                 <td rowspan="3" style="padding-top:.5em;">
                   <b style="font-size:x-large">
-                    <xsl:value-of select="concat('Move Set DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
+                    <xsl:value-of select="concat('Base DPS', $nbsp, $nbsp, '=', $nbsp)" disable-output-escaping="yes" />
                   </b>
                 </td>
                 <td>
@@ -840,7 +840,7 @@
           </div>
 
           <p>
-            I personally don't pay attention to this, but I include it as the "Move Set DPS" on the charts in <a href="/charts/movesets/">Pokemon Move Sets</a> in case you are interested.
+            I personally don't pay attention to this, but I include it as the "Base DPS" on the charts in <a href="/charts/movesets/">Pokemon Move Sets</a> in case you are interested.
           </p>
         </div>
 
@@ -848,7 +848,7 @@
         <hr />
         <h2 id="anchor_sumup">Sum-Up</h2>
         <p>
-          I have included both True DPS and Move Set DPS in the <a href="/charts/movesets/">Pokemon Move Sets</a> page.
+          I have included both Base DPS and True DPS in the <a href="/charts/movesets/">Pokemon Move Sets</a> page.
           However, in my humble opinion, the True DPS formula is the most useful, and the one I pay attention to the most.
         </p>
         <p>

@@ -6,12 +6,12 @@
   <xsl:include href="/xsl/global.xsl" />
 
   <!-- #region Global Variables -->
-  <xsl:variable name="MaxDPS" select="format-number(Root/Stats/MoveSets/Overall/DPS/Max, '#0.00')" />
-  <xsl:variable name="AverageDPS" select="format-number(Root/Stats/MoveSets/Overall/DPS/Average, '#0.00')" />
+  <xsl:variable name="MaxBaseDPS" select="format-number(Root/Stats/MoveSets/Overall/BaseDPS/Max, '#0.00')" />
+  <xsl:variable name="AverageBaseDPS" select="format-number(Root/Stats/MoveSets/Overall/BaseDPS/Average, '#0.00')" />
   <xsl:variable name="MaxTrueDPS" select="format-number(Root/Stats/MoveSets/Overall/TrueDPS/Max, '#0.00')" />
   <xsl:variable name="AverageTrueDPS" select="format-number(Root/Stats/MoveSets/Overall/TrueDPS/Average, '#0.00')" />
 
-  <xsl:variable name="DPSOkay" select="number($AverageDPS)" />
+  <xsl:variable name="DPSOkay" select="number($AverageBaseDPS)" />
   <!-- #endregion-->
 
   <!-- Main Template -->
@@ -30,13 +30,13 @@
         </script>
         <script>
           <xsl:attribute name="src">
-            <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
+            <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
-            <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
+            <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
             <xsl:value-of select="$CurrentDate"/>
           </xsl:attribute>
         </script>
@@ -131,38 +131,40 @@
     </h2>
 
     <div id="MOVESET_CRITERIA" style="margin-top:.5em;">
-      <table border="1" class="KEY_TABLE">
-        <tr>
-          <th>Filter By...</th>
-        </tr>
-        <tr>
-          <td valign="top">
-            <table style="white-space:nowrap;">
-              <tr>
-                <td>Pokemon Name or ID:</td>
-                <td style="padding:0">
-                  <xsl:call-template name="OutputFilterPokemonNameID">
-                    <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
-                  </xsl:call-template>
-                </td>
-              </tr>
-              <tr>
-                <td>Move Name:</td>
-                <td style="padding:0">
-                  <input id="Filter_Text_Move" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
-                </td>
-              </tr>
-              <tr style="height:1em;" />
-              <tr>
-                <td colspan="2">
-                  <input id="ShowOnlyReleased_Checkbox" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
-                  <xsl:text>Show Only Released</xsl:text>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+      <div class="FLOWING_TABLE_WRAPPER">
+        <table border="1" class="CRITERIA_TABLE">
+          <tr>
+            <th>Filter By...</th>
+          </tr>
+          <tr>
+            <td valign="top">
+              <table style="white-space:nowrap;">
+                <tr>
+                  <td>Pokemon Name or ID:</td>
+                  <td style="padding:0">
+                    <xsl:call-template name="OutputFilterPokemonNameID">
+                      <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
+                    </xsl:call-template>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Move Name:</td>
+                  <td style="padding:0">
+                    <input id="Filter_Text_Move" type="text" onkeyup="OnFilterCriteriaChanged(this)" />
+                  </td>
+                </tr>
+                <tr style="height:1em;" />
+                <tr>
+                  <td colspan="2">
+                    <input id="ShowOnlyReleased_Checkbox" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
+                    <xsl:text>Show Only Released</xsl:text>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
 
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <xsl:call-template name="OutputTypeSelection">
@@ -218,178 +220,183 @@
     </h2>
 
     <div id="MOVESET_KEY" style="margin-top:.5em;">
-      <table border="1" class="KEY_TABLE" style="white-space:nowrap; margin-bottom:1em;">
-        <tr>
-          <th colspan="2">
-            <span style="font-size:larger;">Terms</span>
-          </th>
-        </tr>
-        <tr>
-          <th>Term</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <th align="left">Move Set</th>
-          <td>This is a possible combination of a Fast Attack and a Charged Attack.</td>
-        </tr>
-        <tr>
-          <th align="left">
-            STAB
-            <span class="NOTE">
-              (<span class="SIGNIFICANT">S</span>ame <span class="SIGNIFICANT">T</span>ype <span class="SIGNIFICANT">A</span>ttack <span class="SIGNIFICANT">B</span>onus)
-            </span>
-          </th>
-          <td>Tells whether the Pokemon get a 25% bonus because the Move's Type is the same as the Pokemon's type.</td>
-        </tr>
-        <tr>
-          <th align="left">
-            Move Set DPS
-            <span class="NOTE">
-              (<span class="SIGNIFICANT">D</span>amage <span class="SIGNIFICANT">P</span>er <span class="SIGNIFICANT">S</span>econd)
-            </span>
-          </th>
-          <td>Tells the raw DPS for Move Set itself, without taking into account the Pokemon's Stats.</td>
-        </tr>
-        <tr>
-          <th align="left">True DPS</th>
-          <td>Tells the DPS for Move Set, for the specified Pokemon.</td>
-        </tr>
-        <tr>
-          <th align="left">%</th>
-          <td>
-            A comparison of the Move Set's True DPS, to the True DPS of the Pokemon's best possible Move Set <span class="EMPHASIS">that doesn't include a Legacy Move</span>.
-          </td>
-        </tr>
-      </table>
+      <div class="FLOWING_TABLE_WRAPPER">
+        <table class="KEY_TABLE" border="1">
+          <tr>
+            <th colspan="2">
+              <span style="font-size:larger;">Terms</span>
+            </th>
+          </tr>
+          <tr>
+            <th>Term</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <th align="left">Move Set</th>
+            <td>This is a possible combination of a Fast Attack and a Charged Attack.</td>
+          </tr>
+          <tr>
+            <th align="left">
+              STAB
+              <span class="NOTE">
+                (<span class="SIGNIFICANT">S</span>ame <span class="SIGNIFICANT">T</span>ype <span class="SIGNIFICANT">A</span>ttack <span class="SIGNIFICANT">B</span>onus)
+              </span>
+            </th>
+            <td>Tells whether the Pokemon get a 25% bonus because the Move's Type is the same as the Pokemon's type.</td>
+          </tr>
+          <tr>
+            <th align="left">
+              Base DPS
+              <span class="NOTE">
+                (<span class="SIGNIFICANT">D</span>amage <span class="SIGNIFICANT">P</span>er <span class="SIGNIFICANT">S</span>econd)
+              </span>
+            </th>
+            <td>Tells the raw DPS for Move Set itself, without taking into account the Pokemon's Stats.</td>
+          </tr>
+          <tr>
+            <th align="left">True DPS</th>
+            <td>Tells the DPS for Move Set, for the specified Pokemon.</td>
+          </tr>
+          <tr>
+            <th align="left">%</th>
+            <td>
+              A comparison of the Move Set's True DPS, to the True DPS of the Pokemon's best possible Move Set <span class="EMPHASIS">that doesn't include a Legacy Move</span>.
+            </td>
+          </tr>
+        </table>
+      </div>
       <br />
 
-      <table border="1" class="KEY_TABLE" style="white-space:nowrap; vertical-align:top;">
-        <tr>
-          <th colspan="2">
-            <span style="font-size:larger;">Table Cells</span>
-          </th>
-        </tr>
-
-        <comment comment="General">
+      <div class="FLOWING_TABLE_WRAPPER">
+        <table border="1" class="KEY_TABLE">
           <tr>
-            <th rowspan="3">
-              General
+            <th colspan="2">
+              <span style="font-size:larger;">Table Cells</span>
             </th>
-            <td class="LEGACY_MOVESET">
-              <span class="LEGACY_MOVESET LEGACY_MOVE">Legacy Move</span>
-              <br />
-              <spanMove class="NOTE">(Move no longer obtainable for that Pokemon)</spanMove>
-            </td>
           </tr>
-          <tr>
-            <td class="LEGACY_MOVESET">
-              Move Set with a "Legacy Move"
-              <br /><spanMove class="NOTE">(Grey Text)</spanMove>
-            </td>
-          </tr>
-          <tr>
-            <td class="STAB_MOVE">Move with STAB bonus</td>
-          </tr>
-        </comment>
 
-        <comment comment="MoveSet and True DPS">
-          <tr>
-            <th rowspan="4">
-              Move Set<br />&amp;<br />True DPS
-            </th>
-            <td class="GREAT">
-              True DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
-              <span class="NOTE" style="float:right;">
-                (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS, '#0.00')" />)
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="GOOD">
-              True DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
-              <span class="NOTE" style="float:right;">
-                (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGood, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" />)
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="POOR">
-              True DPS Above Average
-              <span class="NOTE" style="float:right;">
-                (<xsl:value-of select="$AverageTrueDPS" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGood, '#0.00')" />)
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="BAD">
-              True DPS Below Average
-              <span class="NOTE" style="float:right;">
-                (0 - <xsl:value-of select="$AverageTrueDPS" />)
-              </span>
-            </td>
-          </tr>
-        </comment>
+          <comment comment="General">
+            <tr>
+              <th rowspan="3">
+                General
+              </th>
+              <td class="LEGACY_MOVESET">
+                <span class="LEGACY_MOVESET LEGACY_MOVE">Legacy Move</span>
+                <br />
+                <spanMove class="NOTE">(Move no longer obtainable for that Pokemon)</spanMove>
+              </td>
+            </tr>
+            <tr>
+              <td class="LEGACY_MOVESET">
+                Move Set with a "Legacy Move"
+                <br /><spanMove class="NOTE">(Grey Text)</spanMove>
+              </td>
+            </tr>
+            <tr>
+              <td class="STAB_MOVE">Move with STAB bonus</td>
+            </tr>
+          </comment>
 
-        <comment comment="Move Set DPS">
-          <tr>
-            <th rowspan="4">Damage: Move Set DPS</th>
-            <td class="GREAT">
-              DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
-              <span class="NOTE" style="float:right;">
-                (<xsl:value-of select="format-number($MaxDPS * $DPSGreat, '#0.00')" /> - <xsl:value-of select="$MaxDPS" />)
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="GOOD">
-              DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
-              <span class="NOTE" style="float:right;">
-                (<xsl:value-of select="format-number($MaxDPS * $DPSGood, '#0.00')" /> - <xsl:value-of select="format-number($MaxDPS * $DPSGreat, '#0.00')" />)
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="POOR">
-              DPS Above Average
-              <span class="NOTE" style="float:right;">
-                (<xsl:value-of select="$AverageDPS" /> - <xsl:value-of select="format-number($MaxDPS * $DPSGood, '#0.00')" />)
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td class="BAD">
-              DPS Below Average
-              <span class="NOTE" style="float:right;">
-                (0 - <xsl:value-of select="$AverageDPS" />)
-              </span>
-            </td>
-          </tr>
-        </comment>
+          <comment comment="Base and True DPS">
+            <tr>
+              <th rowspan="4">
+                Base<br />&amp;<br />True DPS
+              </th>
+              <td class="GREAT">
+                True DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
+                <span class="NOTE" style="float:right;">
+                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS, '#0.00')" />)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="GOOD">
+                True DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
+                <span class="NOTE" style="float:right;">
+                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGood, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" />)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="POOR">
+                True DPS Above Average
+                <span class="NOTE" style="float:right;">
+                  (<xsl:value-of select="$AverageTrueDPS" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGood, '#0.00')" />)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="BAD">
+                True DPS Below Average
+                <span class="NOTE" style="float:right;">
+                  (0 - <xsl:value-of select="$AverageTrueDPS" />)
+                </span>
+              </td>
+            </tr>
+          </comment>
 
-        <comment comment="Damage %">
-          <tr>
-            <th rowspan="4">Damage: %</th>
-            <td class="GREAT">
-              &gt;= <xsl:value-of select="100*$DPSPercentGreat" />% of best current Move Set
-            </td>
-          </tr>
-          <tr>
-            <td class="GOOD">
-              &gt;= <xsl:value-of select="100*$DPSPercentGood" />% of best current Move Set
-            </td>
-          </tr>
-          <tr>
-            <td class="POOR">
-              &gt;= <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
-            </td>
-          </tr>
-          <tr>
-            <td class="BAD">
-              &lt; <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
-            </td>
-          </tr>
-        </comment>
-      </table>
+          <comment comment="Base DPS">
+            <tr>
+              <th rowspan="4">Damage: Base DPS</th>
+              <td class="GREAT">
+                Base DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
+                <span class="NOTE" style="float:right;">
+                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat, '#0.00')" /> - <xsl:value-of select="$MaxBaseDPS" />)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="GOOD">
+                Base DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
+                <span class="NOTE" style="float:right;">
+                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGood, '#0.00')" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat, '#0.00')" />)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="POOR">
+                Base DPS Above Average
+                <span class="NOTE" style="float:right;">
+                  (<xsl:value-of select="$AverageBaseDPS" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGood, '#0.00')" />)
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td class="BAD">
+                Base DPS Below Average
+                <span class="NOTE" style="float:right;">
+                  (0 - <xsl:value-of select="$AverageBaseDPS" />)
+                </span>
+              </td>
+            </tr>
+          </comment>
+
+          <comment comment="Damage %">
+            <tr>
+              <th rowspan="4">Damage: %</th>
+              <td class="GREAT">
+                &gt;= <xsl:value-of select="100*$DPSPercentGreat" />% of best current Move Set
+              </td>
+            </tr>
+            <tr>
+              <td class="GOOD">
+                &gt;= <xsl:value-of select="100*$DPSPercentGood" />% of best current Move Set
+              </td>
+            </tr>
+            <tr>
+              <td class="POOR">
+                &gt;= <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
+              </td>
+            </tr>
+            <tr>
+              <td class="BAD">
+                &lt; <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
+              </td>
+            </tr>
+          </comment>
+        </table>
+      </div>
+
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <xsl:call-template name="PokemonImageKey">
         <xsl:with-param name="Title">Pokemon Image</xsl:with-param>
@@ -428,7 +435,7 @@
             <xsl:attribute name="class">
               <xsl:value-of select="concat('GEN', $gen)"/>
             </xsl:attribute>
-            DPS
+            Base DPS
           </th>
           <th>
             <xsl:attribute name="class">
@@ -436,19 +443,19 @@
             </xsl:attribute>
             True DPS
           </th>
-          <th class="GEN_OVERALL">DPS</th>
+          <th class="GEN_OVERALL">Base DPS</th>
           <th class="GEN_OVERALL">True DPS</th>
         </tr>
         <tr class="GREAT" style="font-weight:normal;">
           <th align="left">Maximum</th>
           <td align="right" style="margin-left:.5em;">
-            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/DPS/Max, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/BaseDPS/Max, '#0.00')"/>
           </td>
           <td align="right">
             <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/TrueDPS/Max, '#0.00')"/>
           </td>
           <td align="right">
-            <xsl:value-of select="$MaxDPS"/>
+            <xsl:value-of select="$MaxBaseDPS"/>
           </td>
           <td align="right">
             <xsl:value-of select="$MaxTrueDPS"/>
@@ -457,13 +464,13 @@
         <tr class="POOR">
           <th align="left">Average</th>
           <td align="right">
-            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/DPS/Average, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/BaseDPS/Average, '#0.00')"/>
           </td>
           <td align="right">
             <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/TrueDPS/Average, '#0.00')"/>
           </td>
           <td align="right">
-            <xsl:value-of select="$AverageDPS"/>
+            <xsl:value-of select="$AverageBaseDPS"/>
           </td>
           <td align="right">
             <xsl:value-of select="$AverageTrueDPS"/>
@@ -472,7 +479,7 @@
       </table>
 
       <br />
-      <table border="1">
+      <table border="1" style="white-space:nowrap;">
         <xsl:attribute name="id">
           <xsl:value-of select="concat('MOVESET_GEN_', Generation)" />
         </xsl:attribute>
@@ -567,7 +574,7 @@
       <th valign="bottom">Fast</th>
       <th valign="bottom">Charged</th>
       <th valign="bottom">
-        Move Set<br />DPS
+        Base<br />DPS
       </th>
       <th valign="bottom">
         True<br />DPS
@@ -583,7 +590,7 @@
     <xsl:variable name="legacy" select="$legacyFast or $legacyCharged" />
     <xsl:variable name="fastSTAB" select="pokeref:ToUpper(STAB/Fast) = 'TRUE'" />
     <xsl:variable name="chargedSTAB" select="pokeref:ToUpper(STAB/Charged) = 'TRUE'" />
-    <xsl:variable name="valueDamageDPS" select="format-number(Damage/DPS, '#0.00')" />
+    <xsl:variable name="valueDamageDPS" select="format-number(Damage/BaseDPS, '#0.00')" />
     <xsl:variable name="valueDamageTrueDPS" select="format-number(Damage/TrueDPS, '#0.00')" />
     <xsl:variable name="valueDamagePercentOfMax" select="format-number((Damage/PercentOfMax) * 100, '##0')" />
 
@@ -607,7 +614,7 @@
     </xsl:call-template>
     <xsl:call-template name="MoveSetCell">
       <xsl:with-param name="Content" select="$valueDamageDPS" />
-      <xsl:with-param name="DPS" select="$valueDamageDPS" />
+      <xsl:with-param name="BaseDPS" select="$valueDamageDPS" />
       <xsl:with-param name="Legacy" select="$legacy" />
     </xsl:call-template>
     <xsl:call-template name="MoveSetCell">
@@ -625,7 +632,7 @@
   <!-- Template to create a formatted cell in the Pokemon's Move Set -->
   <xsl:template name="MoveSetCell">
     <xsl:param name="Content" />
-    <xsl:param name="DPS" />
+    <xsl:param name="BaseDPS" />
     <xsl:param name="TrueDPS" />
     <xsl:param name="Percent" />
     <xsl:param name="Legacy" />
@@ -646,18 +653,18 @@
         </xsl:when>
       </xsl:choose>
 
-      <xsl:if test="$DPS != '' or $TrueDPS != '' or $Percent != '' or $Legacy != ''">
+      <xsl:if test="$BaseDPS != '' or $TrueDPS != '' or $Percent != '' or $Legacy != ''">
         <xsl:attribute name="class">
           <xsl:choose>
-            <xsl:when test="$DPS != ''">
+            <xsl:when test="$BaseDPS != ''">
               <xsl:choose>
-                <xsl:when test="$DPS &gt;= $MaxDPS * $DPSGreat">
+                <xsl:when test="$BaseDPS &gt;= $MaxBaseDPS * $DPSGreat">
                   <xsl:text>GREAT </xsl:text>
                 </xsl:when>
-                <xsl:when test="$DPS &gt;= $MaxDPS * $DPSGood">
+                <xsl:when test="$BaseDPS &gt;= $MaxBaseDPS * $DPSGood">
                   <xsl:text>GOOD </xsl:text>
                 </xsl:when>
-                <xsl:when test="$DPS &gt;= $DPSOkay">
+                <xsl:when test="$BaseDPS &gt;= $DPSOkay">
                   <xsl:text>POOR </xsl:text>
                 </xsl:when>
                 <xsl:otherwise>

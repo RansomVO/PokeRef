@@ -1,10 +1,15 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
+Take a look at Key for Pokemon. (Overflows on mobile.)
+
+fix no-wrap on some charts.
+
 PokeIcon:
-	Distinguish between Current RaidBoss and Legacy (faded?)
-	Distinguish regional.
-	Distinguish RaidBoss Only.
+	Distinguish regional. (icon?)
+	filter: drop-shadow(h-shadow v-shadow blur spread color) .REGIONAL
+	Distinguish current RaidBoss (different than RaidBoss Only.).
+	Distinguish between Raidboss Only that are current vs. legacy (faded?)
 
 PokemonNameID: 
 	- Add ability to filter by gen ("1", "+1-3" ?)

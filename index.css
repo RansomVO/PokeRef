@@ -197,12 +197,23 @@ h1, h2, h3, h4 {
     width: 1em;
 }
 
-.KEY_TABLE {
-    white-space: nowrap;
+.FLOWING_TABLE_WRAPPER {
     display: inline-block;
     vertical-align: top;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+.KEY_TABLE {
+    vertical-align: top;
+    white-space: nowrap;
+    background-color: lightsteelblue;
+}
+
+.CRITERIA_TABLE {
+    vertical-align: top;
+    white-space: nowrap;
+    background-color: lightsteelblue;
 }
 
 /*#endregion*/
@@ -423,6 +434,8 @@ h1, h2, h3, h4 {
 
 .REGIONAL {
     font-style: italic;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 50%;
 }
 
 .LEGENDARY {
@@ -490,6 +503,25 @@ h1, h2, h3, h4 {
 /*#endregion*/
 
 /*#endregion*/
+
+/* ------------------------------------------------------------------------------------------ */
+/*#region Classes specific fields */
+
+#POKEMON_IMAGE_KEY {
+}
+
+    #POKEMON_IMAGE_KEY th {
+        text-align: left;
+        vertical-align: top;
+    }
+
+    #POKEMON_IMAGE_KEY td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+/*#endregion*/
+
 
 /* ------------------------------------------------------------------------------------------ */
 /*#region Classes for items managed in controls.js */

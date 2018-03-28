@@ -113,58 +113,63 @@
       </xsl:call-template>
     </h2>
     <div id="EVOLUTIONS_CRITERIA">
-      <table border="1" class="KEY_TABLE">
-        <tr>
-          <th>Show Only Families Containing</th>
-        </tr>
-        <tr>
-          <td valign="top" style="padding-bottom:.25em;">
-            <xsl:call-template name="OutputEggSelectionControl" >
-              <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
-            </xsl:call-template>
-            <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
-            <br /><xsl:text>Pokemon Name or ID:</xsl:text>
-            <xsl:call-template name="OutputFilterPokemonNameID">
-              <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
-            </xsl:call-template>
-          </td>
-        </tr>
-      </table>
+      <div class="FLOWING_TABLE_WRAPPER">
+        <table border="1" class="CRITERIA_TABLE">
+          <tr>
+            <th>Show Only Families Containing</th>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-bottom:.25em;">
+              <xsl:call-template name="OutputEggSelectionControl" >
+                <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
+              </xsl:call-template>
+              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+              <br /><xsl:text>Pokemon Name or ID:</xsl:text>
+              <xsl:call-template name="OutputFilterPokemonNameID">
+                <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
+              </xsl:call-template>
+            </td>
+          </tr>
+        </table>
+      </div>
+
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-      <table border="1" class="KEY_TABLE">
-        <tr>
-          <th>Generations</th>
-        </tr>
-        <tr>
-          <td valign="top" style="padding-bottom:.25em;">
-            <xsl:call-template name="OutputSliderButtonControl">
-              <xsl:with-param name="Id" select="'Evolution_AnyOrAll_Gens_Slider'" />
-              <xsl:with-param name="Callback" select="'OnFilterCriteriaChanged(this);'" />
-              <xsl:with-param name="OffLabel" select="'Any'" />
-              <xsl:with-param name="OnLabel" select="'All'" />
-              <xsl:with-param name="Help">
-                <div class="CONTROLS_INFO_ENTRY">
-                  <div class="CONTROLS_INFO_ENTRY_TITLE">Any</div>
-                  <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
-                </div>
-                <div class="CONTROLS_INFO_ENTRY">
-                  <div class="CONTROLS_INFO_ENTRY_TITLE">All</div>
-                  <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
-                </div>
-              </xsl:with-param>
-            </xsl:call-template>
-            <br /><input id="Gen1_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen1
-            <br /><input id="Gen2_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen2
-            <br /><input id="Gen3_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen3
-            <br /><input id="Gen4_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen4
-            <br /><input id="Gen5_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen5
-            <br /><input id="Gen6_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen6
-            <br /><input id="Gen7_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen7
-          </td>
-        </tr>
-      </table>
+      <div class="FLOWING_TABLE_WRAPPER">
+        <table class="CRITERIA_TABLE" border="1">
+          <tr>
+            <th>Generations</th>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-bottom:.25em;">
+              <xsl:call-template name="OutputSliderButtonControl">
+                <xsl:with-param name="Id" select="'Evolution_AnyOrAll_Gens_Slider'" />
+                <xsl:with-param name="Callback" select="'OnFilterCriteriaChanged(this);'" />
+                <xsl:with-param name="OffLabel" select="'Any'" />
+                <xsl:with-param name="OnLabel" select="'All'" />
+                <xsl:with-param name="Help">
+                  <div class="CONTROLS_INFO_ENTRY">
+                    <div class="CONTROLS_INFO_ENTRY_TITLE">Any</div>
+                    <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
+                  </div>
+                  <div class="CONTROLS_INFO_ENTRY">
+                    <div class="CONTROLS_INFO_ENTRY_TITLE">All</div>
+                    <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
+                  </div>
+                </xsl:with-param>
+              </xsl:call-template>
+              <br /><input id="Gen1_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen1
+              <br /><input id="Gen2_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen2
+              <br /><input id="Gen3_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen3
+              <br /><input id="Gen4_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen4
+              <br /><input id="Gen5_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen5
+              <br /><input id="Gen6_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen6
+              <br /><input id="Gen7_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen7
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
-    </xsl:template>
+  </xsl:template>
 
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
@@ -231,7 +236,7 @@
         ┌───────────┬───────────────────────┐
         │ Nincada   │ Ninjask               │
         │    (2)    ├───────────────────────┤
-        │           │ Ninjask ; Shedinja    │
+        │           │ Ninjask & Shedinja    │
         └───────────┴───────────────────────┘
     -->
 
@@ -335,6 +340,9 @@
 
       <!-- This template (from /xsl/global.xsl) outputs the Visual image of the Pokemon with various decorations. -->
       <xsl:apply-templates select="$Pokemon[ID = $ID]">
+        <xsl:with-param name="Settings">
+          <Show valign="bottom" />
+        </xsl:with-param>
         <xsl:with-param name="Footer">
           <i>
             <xsl:text>(Gen </xsl:text>

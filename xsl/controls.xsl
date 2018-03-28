@@ -19,7 +19,8 @@
     <xsl:param name="SliderLabel" />
     <xsl:param name="SliderHelp" />
 
-    <table id="CONTROLS_PokeType_Selector" border="1" class="KEY_TABLE">
+    <div class="FLOWING_TABLE_WRAPPER">
+    <table id="CONTROLS_PokeType_Selector" class="CRITERIA_TABLE" border="1">
       <xsl:attribute name="callbackName">
         <xsl:value-of select="$CallbackName" />
       </xsl:attribute>
@@ -119,6 +120,7 @@
         </td>
       </tr>
     </table>
+    </div>
   </xsl:template>
 
   <xsl:template name="OutputTypeCheckbox">
@@ -146,7 +148,8 @@
     <xsl:param name="SliderLabel" />
     <xsl:param name="SliderHelp" />
 
-    <table id="CONTROLS_Weather_Selector" border="1" class="KEY_TABLE">
+    <div class="FLOWING_TABLE_WRAPPER">
+      <table id="CONTROLS_Weather_Selector" class="CRITERIA_TABLE" border="1">
       <xsl:attribute name="callbackName">
         <xsl:value-of select="$CallbackName" />
       </xsl:attribute>
@@ -201,6 +204,7 @@
         </td>
       </tr>
     </table>
+    </div>
   </xsl:template>
 
   <xsl:template name="OutputWeatherCheckbox">

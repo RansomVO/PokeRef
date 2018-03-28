@@ -234,28 +234,30 @@
       </xsl:call-template>
     </h2>
     <div id="POKEMON_CRITERIA" style="margin-top:.5em;">
-      <table border="1" class="KEY_TABLE">
-        <tr>
-          <th>Show Only</th>
-        </tr>
-        <tr>
-          <td valign="top" style="padding-bottom:.25em;">
-            <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
-            <br /><input id="Regional_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
-            <br /><input id="RaidBoss_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
-            <br /><input id="Rarity_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary/Mythic/Ultra Beast
-            <xsl:call-template name="OutputEggSelectionControl" >
-              <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
-            </xsl:call-template>
-            <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
-            <br /><xsl:text>Pokemon Name or ID:</xsl:text>
-            <xsl:call-template name="OutputFilterPokemonNameID">
-              <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
-            </xsl:call-template>
-          </td>
-        </tr>
-      </table>
-
+      <div class="FLOWING_TABLE_WRAPPER" >
+        <table border="1" class="CRITERIA_TABLE">
+          <tr>
+            <th>Show Only</th>
+          </tr>
+          <tr>
+            <td valign="top" style="padding-bottom:.25em;">
+              <input id="ReleasedOnly_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Released
+              <br /><input id="Regional_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Regional
+              <br /><input id="RaidBoss_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Raid Bosses
+              <br /><input id="Rarity_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Legendary/Mythic/Ultra Beast
+              <xsl:call-template name="OutputEggSelectionControl" >
+                <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
+              </xsl:call-template>
+              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
+              <br /><xsl:text>Pokemon Name or ID:</xsl:text>
+              <xsl:call-template name="OutputFilterPokemonNameID">
+                <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
+              </xsl:call-template>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <xsl:call-template name="OutputTypeSelection">
         <xsl:with-param name="CallbackName" select="'OnTypesChanged'" />
