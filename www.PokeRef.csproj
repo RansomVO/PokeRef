@@ -37,9 +37,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <!-- Items that show up here need to be moved to the appropriate ItemGroup. -->
-  <ItemGroup>
-  </ItemGroup>
   <!-- / -->
   <ItemGroup>
     <FixOutputFile Include="_sectionname.txt" />
@@ -127,6 +124,7 @@
     <FixIntermediateFile Include="_datafiles\raidboss.cloyster.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.croconaw.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.dewgong.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.duskull.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.electabuzz.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.entei.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.exeggutor.xml" />
@@ -134,8 +132,10 @@
     <FixIntermediateFile Include="_datafiles\raidboss.flareon.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.gengar.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.golem.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.granbull.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.groudon.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.ho-oh.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.houndoom.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.ivysaur.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.jirachi.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.jolteon.xml" />
@@ -155,6 +155,7 @@
     <FixIntermediateFile Include="_datafiles\raidboss.metapod.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.mew.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.mewtwo.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.misdreavus.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.moltres.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.muk.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.nidoking.xml" />
@@ -162,6 +163,7 @@
     <FixIntermediateFile Include="_datafiles\raidboss.ninetales.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.omastar.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.piloswine.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.pinsir.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.poliwrath.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.porygon.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.quilava.xml" />
@@ -175,6 +177,8 @@
     <FixIntermediateFile Include="_datafiles\raidboss.sandslash.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.slowbro.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.scyther.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.shuppet.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.sneasel.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.snorlax.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.snorunt.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.starmie.xml" />
@@ -187,6 +191,7 @@
     <FixIntermediateFile Include="_datafiles\raidboss.victreebel.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.wartortle.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.wailmer.xml" />
+    <FixIntermediateFile Include="_datafiles\raidboss.walrein.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.weezing.xml" />
     <FixIntermediateFile Include="_datafiles\raidboss.zapdos.xml" />
   </ItemGroup>

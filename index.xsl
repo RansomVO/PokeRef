@@ -34,12 +34,12 @@
           </xsl:attribute>
         </link>
 
-        <title>Pokemon Reference</title>
+        <title>PokeRef - The Pokemon Reference</title>
       </head>
       <body>
         <h1>
           <xsl:call-template name="Logo" />
-          <xsl:text> Pokemon Reference</xsl:text>
+          <xsl:text> PokeRef - The Pokemon Reference</xsl:text>
         </h1>
         <img class="FLOAT_RIGHT" style="width:45%; min-width:200px; margin-top:1em;" src="/images/NotJustAGame.png" />
         <p>
@@ -185,8 +185,7 @@
           </div>
         </div>
 
-        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteFooter();</script>
+        <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>

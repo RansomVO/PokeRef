@@ -1,15 +1,20 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
+Add Charizard (28485) to Legacy
+
+Figure out how to handle Availability of Mew. (keyword in pokestats ("Special"?, image colors?)
+
 Take a look at Key for Pokemon. (Overflows on mobile.)
 
-fix no-wrap on some charts.
+Turn off nowrap on some page-specific key tables. E.G. Terms on MoveSets.
+
+Create global template for headers and Title.
 
 PokeIcon:
-	Distinguish regional. (icon?)
-	filter: drop-shadow(h-shadow v-shadow blur spread color) .REGIONAL
 	Distinguish current RaidBoss (different than RaidBoss Only.).
 	Distinguish between Raidboss Only that are current vs. legacy (faded?)
+	Distingush between Pokemon that can become a ditto.
 
 PokemonNameID: 
 	- Add ability to filter by gen ("1", "+1-3" ?)
@@ -22,6 +27,8 @@ RaidBoss Counters
 
 =========================================================================================================
 ----- Overall -----
+
+Create tool/script/whatever that will update the web site with the latest work.
 
 Look into ability to quit using IsMobile() to cause document.write(...)
 	@media only screen and (width : 1024px) and (orientation : landscape) {    
@@ -139,6 +146,8 @@ Finish SEAPokeMap Filter Generator.
 
 Evolutions:
 	- Add Filter for types.
+
+Create tool to get IV for Pokemon.
 
 =========================================================================================================
 ----- Technical Reference -----

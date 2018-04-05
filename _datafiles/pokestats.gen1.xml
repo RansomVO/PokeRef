@@ -7244,12 +7244,12 @@
 				<Deviation>0.5</Deviation>
 			</Weight>
 			<Rates>
-				<Capture>0</Capture>
-				<Flee>0.1</Flee>
+				<Capture>100</Capture>
+				<Flee>0</Flee>
 			</Rates>
 			<Probability>
-				<Attack>0.1</Attack>
-				<Dodge>0.15</Dodge>
+				<Attack>0</Attack>
+				<Dodge>1</Dodge>
 			</Probability>
 		</Stats>
 		<Rarity>Mythic</Rarity>
@@ -7258,6 +7258,6 @@
 			<CP>3090</CP>
 			<HP>169</HP>
 		</Max>
-		<Availability>Unreleased</Availability>
+		<Availability>General</Availability>
 	</Pokemon>
 </PokemonStats>

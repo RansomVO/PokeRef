@@ -67,8 +67,7 @@
           <b>NOTE</b>: If you find you want to change the Move Set one of your Pokemon has, you can make use of "TMs" that may be one of the rewards you get from defeating a Raid Boss.
         </p>
 
-        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteFooter();</script>
+        <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>

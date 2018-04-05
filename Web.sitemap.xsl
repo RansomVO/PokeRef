@@ -38,12 +38,12 @@
           }
         </style>
 
-        <title>Pokemon Reference Site Map</title>
+        <title>PokeRef Site Map</title>
       </head>
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          <xsl:text> Pokemon Reference Site Map</xsl:text>
+          <xsl:text> PokeRef Site Map</xsl:text>
         </h1>
         <p>
           Sometimes you just can't figure out where the page you need is.

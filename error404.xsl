@@ -33,7 +33,7 @@
         <p>
           <a href="/">
             <img src="/favicon.ico" />
-          </a>Go to the <a href="/">Pokemon Reference</a> home page.
+          </a>Go to the <a href="/">PokeRef</a> home page.
         </p>
 
         <br /><br /><hr class="BOTTOM_BORDER" />

@@ -16,6 +16,9 @@
       <Replacement>$1Pokémon$2</Replacement>
       <RegEx>true</RegEx>
     </SearchStrings>
+    <SearchStrings Include="PokeRef">
+      <Replacement>PokéRef</Replacement>
+    </SearchStrings>
     <SearchStrings Include="{$CurrentDate}">
       <Replacement>$([System.DateTime]::Now.ToString("yyyy-MM-dd_HH:mm:ss"))</Replacement>
     </SearchStrings>

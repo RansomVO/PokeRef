@@ -1,53 +1,77 @@
 ﻿<News>
-  <Article date="26 Mar 2018">
+  <Article date="5 April 2018">
     <Title>
-      <a href="charts/raidboss">Raid Bosses</a> Updated
+      <a href="charts/raidboss/">Raid Boss</a> Shuffle!
+    </Title>
+    <Text>
+      <p class="parent">
+        On 3 April 2018, the Raid Bosses changed again.
+        Several from legacy came back in, but a bunch more were introduced!
+      </p>
+      <ul class="CHILD">
+        <li>
+          <a href="charts/raidboss/raidboss.walrein.html">Walrein</a>
+          <span class="NOTE">(Tier 4)</span>
+        </li>
+        <li>
+          <a href="charts/raidboss/raidboss.pinsir.html">Pinsir</a>
+          <span class="NOTE">(Tier 3)</span>
+        </li>
+        <li>
+          <a href="charts/raidboss/raidboss.granbull.html">Granbull</a>
+          <span class="NOTE">(Tier 3)</span>
+        </li>
+        <li>
+          <a href="charts/raidboss/raidboss.misdreavus.html">Misdreavus</a>
+          <span class="NOTE">(Tier 2)</span>
+        </li>
+        <li>
+          <a href="charts/raidboss/raidboss.sneasel.html">Sneasel</a>
+          <span class="NOTE">(Tier 2)</span>
+        </li>
+        <li>
+          <a href="charts/raidboss/raidboss.shuppet.html">Shuppet</a>
+          <span class="NOTE">(Tier 1)</span>
+        </li>
+        <li>
+          <a href="charts/raidboss/raidboss.duskull.html">Duskull</a>
+          <span class="NOTE">(Tier 1)</span>
+        </li>
+      </ul>
+    </Text>
+  </Article>
+  <Article date="2 April 2018">
+    <Title>
+      Several Things Again!
     </Title>
     <Text>
       <p>
-        It appears that a little over a week ago the Raid Bosses changed, including the addition of Manectric as a Tier 2 Raid Boss.
-        <br />The charts are now updated.
-      </p>
-    </Text>
-  </Article>
-  <Article date="16 Mar 2018">
-    <Title>A Bunch Of Stuff</Title>
-    <Text>
-      <div>
-        <b>The GAME_MASTER file was updated</b>
-        <br />First on  13 March 2018...
-        Then again on 16 March 2018
-        <br />It mostly affects the <a href="charts/movesets/">Move Sets</a> pages.
-      </div>
-      <div>
-        <b>Lugia came back as a Raid Boss to replace Rayquaza.</b>
+        <b>Mew!</b>
         <br />
-        <span class="NOTE">(With its move "Sky Attack" enhanced by the most recent GAME_MASTER.)</span>
-      </div>
-      <div>
+        First of all, with the new Research features, there is the ability to catch Mew!
+        Not only that, TONS of Move Sets for Mew were added to the GAME_MASTER file.
+        <br />The charts have been updated to show this.
+      </p>
+      <br />
+      <p>
         <b>
-          <a href="tech/formulas/cphp.html">CP and HP Formulas</a> have been added in the Technical Reference Section.
+          <a href="/charts/pokequick.html">
+            Pokemon Quick List<span class="NOTE TODO"> (Beta)</span>
+          </a>
         </b>
         <br />
-        <span class="NOTE">(For the geeky people.)</span>
-      </div>
-      <div>
-        <b>On Move Sets, Pokemon Chart, Raid Boss, etc.:</b>
-        <br />Mystical Pokemon now show the gold highlight.
-        <br />Legendary are now highlighted with purple.
-      </div>
-    </Text>
-  </Article>
-  <Article date="26 Jan 2018">
-    <Title>
-      New <a href="/charts/pokechart">
-        Pokemon Chart <span class="NOTE TODO"> (Beta)</span>
-      </a>  In The Charts Section!
-    </Title>
-    <Text>
-      Interested in seeing what Pokemon there are?
-      How about ones that aren't released in Pokemon GO yet?
-      <br />Check this out!
+        Also, with the Research features, you may get tasks that require you to catch a number of Pokemon of a certain type, etc.
+        As such, I have created a Pokemon Quick List in the Charts section that is similar to the Pokemon Chart pages, but has been greatly simplified so it will be smaller and faster on mobile devices.
+      </p>
+      <br />
+      <p>
+        <b>
+          <a href="charts/raidboss/raidboss.latias.html">Latias</a> and <a href="charts/raidboss/raidboss.latios.html">Latios</a>
+        </b>
+        <br />
+        And Latias and have been relased as Raid Bosses.
+        <br />The <a href="charts/raidboss">Raid Bosses</a> chart has been updated appropriately.
+      </p>
     </Text>
   </Article>
 </News>

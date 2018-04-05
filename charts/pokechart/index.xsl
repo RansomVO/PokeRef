@@ -47,15 +47,14 @@
         <p class="PARENT">
           I have created a chart for each generation of Pokemon, and one that has all of the generations together.
           <br /><span class="NOTE">
-            (<b>NOTE</b>: The one with all of the generations is convenient, but it may take a while to load.)
+            (<b>NOTE</b>: The "Released" and the "All Gens" may be convenient, but they may take a while to load and run slow on a mobile device.)
           </span>
         </p>
         <div class="CHILD" style="font-size:large;">
           <script>InsertLinksList('_linkslist.html')</script>
         </div>
 
-        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteFooter();</script>
+        <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>

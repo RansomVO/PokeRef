@@ -54,7 +54,6 @@
         <hr />
         <h2 id="anchor_pokemon" class="PARENT">
           <a href="pokechart/">Pokemon Chart</a>
-          <span class="NOTE TODO">(Beta)</span>
         </h2>
         <div class="CHILD INDENT">
           <p class="PARENT CHILD">
@@ -64,6 +63,20 @@
             <br />Check these out!
           </p>
           <script>InsertURL('pokechart/_linkslist.html?cacherefresh={$CurrentDate}')</script>
+        </div>
+
+        <br />
+        <hr />
+        <h2 id="anchor_pokequick" class="PARENT">
+          <a href="pokequick.html">Pokemon Quick List</a>
+          <span class="NOTE TODO">(Beta)</span>
+        </h2>
+        <div class="CHILD INDENT">
+          <p class="PARENT CHILD">
+            Sometimes you just want to see a list of the Pokemon that fit your criteria.
+            For example, maybe you want to perform a Field Research task that involves catching Poison type Pokemon.
+            <br />This list should help you out.
+          </p>
         </div>
 
         <br />
@@ -146,8 +159,7 @@
           </p>
         </div>
 
-        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteFooter();</script>
+        <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>

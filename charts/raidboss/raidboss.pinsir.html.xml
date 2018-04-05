@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Root [
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss.pinsir.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="raidboss.xsl" output="raidboss.pinsir.html"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Settings; 
+  &Mappings;
+  &RaidBoss;
+</Root> 

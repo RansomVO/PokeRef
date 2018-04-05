@@ -68,8 +68,7 @@
           There are Fast TMs and Charged TMs so make sure you use the right one.
         </p>
 
-        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteFooter();</script>
+        <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>

@@ -49,14 +49,20 @@
   </xsl:template>
 
   <xsl:template name="HomePageLink">
-    <a href="/" title="Go To Pokemon Reference Home Page" style="text-decoration:none;"><xsl:call-template name="Logo" /></a>
+    <a href="/" title="Go To PokeRef Home Page" style="text-decoration:none;">
+      <xsl:call-template name="Logo" />
+    </a>
   </xsl:template>
 
   <xsl:template name="Logo">
     <img src="/apple-touch-icon.png" width="64" />
   </xsl:template>
 
-    <!-- #endregion -->
+  <xsl:template name="WriteFooter">
+    <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
+    <script>WriteFooter();</script>
+  </xsl:template>
+  <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
   <!-- #region pokeref methods  (C#) -->

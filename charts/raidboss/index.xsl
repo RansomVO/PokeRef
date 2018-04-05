@@ -216,7 +216,12 @@
 
         <br />
         <hr />
-        <h2>Current Raid Bosses</h2>
+        <h2>
+          Current Raid Bosses
+          <span class="NOTE">
+            <xsl:value-of select="concat('(Updated: ', /Root/RaidBosses/@updated, ')')"/>
+          </span>
+        </h2>
         <p id="anchor_bossescurrent">
           Click on any of the Raid Bosses below to see a chart of the possibilities.
         </p>
@@ -235,12 +240,11 @@
         </p>
         <xsl:apply-templates select="RaidBosses[@category='Legacy']">
           <xsl:with-param name="Settings">
-            <Show show_disabled="true" valign="bottom" />
+            <Show small="true" valign="bottom" />
           </xsl:with-param>
         </xsl:apply-templates>
 
-        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteFooter();</script>
+        <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>

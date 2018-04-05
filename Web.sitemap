@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode title="Pokemon Reference Home Page" description="Home Page" url="/">
+  <siteMapNode title="PokeRef Home Page" description="Home Page" url="/">
     <!-- #region Links to anchors on the page. -->
     <siteMapNode title="News Section" description="News about the latest changes to the site." url="/#news" />
     <siteMapNode title="Sections Section" description="List of sections on the site." url="/#sections" />
@@ -24,6 +24,14 @@
       <!-- #region Links to Sub-Sections/Child Pages. -->
       <siteMapNode title="Pokemon Chart" description="Tool to get information about Pokemon." url="/charts/pokechart/index.html">
         <!-- #region Links to Sub-Sections/Child Pages. -->
+        <siteMapNode title="Pokemon Chart - Released" description="Chart of all released Pokemon with data about them." url="/charts/pokechart/pokechart.released.html">
+          <!-- #region Links to anchors on the page. -->
+          <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.released.html#criteria" />
+          <siteMapNode title="Generation 1" description="Pokemon from Generation 1" url="/charts/pokechart/pokechart.released.html#GEN1" />
+          <siteMapNode title="Generation 2" description="Pokemon from Generation 2" url="/charts/pokechart/pokechart.released.html#GEN2" />
+          <siteMapNode title="Generation 3" description="Pokemon from Generation 3" url="/charts/pokechart/pokechart.released.html#GEN3" />
+          <!-- #endregion -->
+        </siteMapNode>
         <siteMapNode title="Pokemon Chart - Gen 1" description="Chart of Gen 1 Pokemon with data about them." url="/charts/pokechart/pokechart.gen1.html">
           <!-- #region Links to anchors on the page. -->
           <siteMapNode title="Selection Criteria" description="Section where filtering criteria may be set." url="/charts/pokechart/pokechart.gen1.html#criteria" />

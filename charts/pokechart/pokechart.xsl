@@ -69,7 +69,6 @@
               <xsl:value-of select="PokemonStats/Generation/ID"/>
             </xsl:otherwise>
           </xsl:choose>
-          <span class="NOTE TODO">(Beta)</span>
         </h1>
         <p>
           These are charts of basic info about Pokemon.
@@ -102,8 +101,7 @@
 
         <xsl:call-template name="PokemonDialog" />
 
-        <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteFooter();</script>
+        <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>
@@ -257,7 +255,7 @@
           </tr>
         </table>
       </div>
-      
+
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <xsl:call-template name="OutputTypeSelection">
         <xsl:with-param name="CallbackName" select="'OnTypesChanged'" />
@@ -331,19 +329,21 @@
           <xsl:value-of select="concat('GEN', Generation/ID, '_Collection')" />
         </xsl:attribute>
         <xsl:for-each select="Pokemon">
-          <xsl:variable name="Name" select="Name" />
-          <xsl:apply-templates select=".">
-            <xsl:with-param name="Settings">
-              <Show boxed="true" valign="bottom" />
-            </xsl:with-param>
-            <xsl:with-param name="CustomAttributes">
-              <Attributes onclick="OnSelectPokemon(this)" style="cursor:pointer;">
-                <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
-                  <xsl:attribute name="raidboss">true</xsl:attribute>
-                </xsl:if>
-              </Attributes>
-            </xsl:with-param>
-          </xsl:apply-templates>
+          <xsl:if test="not(/Root/params/@released-only) or not(contains(Availability, /Root/Settings/Availability/Unavailable))">
+            <xsl:variable name="Name" select="Name" />
+            <xsl:apply-templates select=".">
+              <xsl:with-param name="Settings">
+                <Show boxed="true" valign="bottom" />
+              </xsl:with-param>
+              <xsl:with-param name="CustomAttributes">
+                <Attributes onclick="OnSelectPokemon(this)" style="cursor:pointer;">
+                  <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
+                    <xsl:attribute name="raidboss">true</xsl:attribute>
+                  </xsl:if>
+                </Attributes>
+              </xsl:with-param>
+            </xsl:apply-templates>
+          </xsl:if>
         </xsl:for-each>
       </div>
     </div>

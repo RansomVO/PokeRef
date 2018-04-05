@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RaidBosses category="Current">
+<RaidBosses category="Current" updated="03 April 2018">
   <Tier name="EX and 5">
     <RaidBoss id="150">Mewtwo</RaidBoss>
     <RaidBoss id="-1"></RaidBoss> <!-- Separator between EX and Tier 5 -->
-    <RaidBoss id="249">Lugia</RaidBoss>
+    <RaidBoss id="380">Latias</RaidBoss>
+    <RaidBoss id="381">Latios</RaidBoss>
   </Tier>
   <Tier name="Tier 4">
-    <RaidBoss id="76">Golem</RaidBoss>
+    <RaidBoss id="229">Houndoom</RaidBoss>
     <RaidBoss id="248">Tyranitar</RaidBoss>
     <RaidBoss id="306">Aggron</RaidBoss>
     <RaidBoss id="359">Absol</RaidBoss>
+    <RaidBoss id="356">Walrein</RaidBoss>
   </Tier>
   <Tier name="Tier 3">
     <RaidBoss id="68">Machamp</RaidBoss>
     <RaidBoss id="94">Gengar</RaidBoss>
     <RaidBoss id="124">Jynx</RaidBoss>
-    <RaidBoss id="135">Jolteon</RaidBoss>
+    <RaidBoss id="127">Pinsir</RaidBoss>
+    <RaidBoss id="210">Granbull</RaidBoss>
     <RaidBoss id="221">Piloswine</RaidBoss>
   </Tier>
   <Tier name="Tier 2">
     <RaidBoss id="103">Exeggutor</RaidBoss>
-    <RaidBoss id="125">Electabuzz</RaidBoss>
+    <RaidBoss id="200">Misdreavus</RaidBoss>
+    <RaidBoss id="215">Sneasel</RaidBoss>
     <RaidBoss id="302">Sableye</RaidBoss>
     <RaidBoss id="303">Mawile</RaidBoss>
-    <RaidBoss id="310">Manectric</RaidBoss>
   </Tier>
   <Tier name="Tier 1">
     <RaidBoss id="129">Magikarp</RaidBoss>
-    <RaidBoss id="320">Wailmer</RaidBoss>
     <RaidBoss id="333">Swablu</RaidBoss>
+    <RaidBoss id="353">Shuppet</RaidBoss>
+    <RaidBoss id="355">Duskull</RaidBoss>
     <RaidBoss id="361">Snorunt</RaidBoss>
   </Tier>
   <Tier name="? Future ?">
-    <RaidBoss id="151">Mew</RaidBoss>
     <RaidBoss id="251">Celebi</RaidBoss>
     <RaidBoss id="377">Regirock</RaidBoss>
     <RaidBoss id="378">Regice</RaidBoss>
     <RaidBoss id="379">Registeel</RaidBoss>
-    <RaidBoss id="380">Latias</RaidBoss>
-    <RaidBoss id="381">Latios</RaidBoss>
     <RaidBoss id="385">Jirachi</RaidBoss>
     <RaidBoss id="386">Deoxys</RaidBoss>
   </Tier>

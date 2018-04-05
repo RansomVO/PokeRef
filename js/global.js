@@ -435,6 +435,6 @@ function ShowError(err) {
         + '\n' + err.message
         + '\n'
         + '\n----------------------'
-        + '\n' + err.stack);
-    + '\n'
+        + '\n' + err.stack
+        + '\n');
 }
