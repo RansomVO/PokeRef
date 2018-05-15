@@ -6,10 +6,10 @@
   <xsl:include href="/xsl/global.xsl" />
 
   <!-- #region Global Variables -->
-  <xsl:variable name="MaxBaseDPS" select="format-number(Root/Stats/MoveSets/Overall/BaseDPS/Max, '#0.00')" />
-  <xsl:variable name="AverageBaseDPS" select="format-number(Root/Stats/MoveSets/Overall/BaseDPS/Average, '#0.00')" />
-  <xsl:variable name="MaxTrueDPS" select="format-number(Root/Stats/MoveSets/Overall/TrueDPS/Max, '#0.00')" />
-  <xsl:variable name="AverageTrueDPS" select="format-number(Root/Stats/MoveSets/Overall/TrueDPS/Average, '#0.00')" />
+  <xsl:variable name="MaxBaseDPS" select="format-number($MoveSetStats_Overall/@dps_max, '#0.00')" />
+  <xsl:variable name="AverageBaseDPS" select="format-number($MoveSetStats_Overall/@dps_avg, '#0.00')" />
+  <xsl:variable name="MaxTrueDPS" select="format-number($MoveSetStats_Overall/@true_dps_max, '#0.00')" />
+  <xsl:variable name="AverageTrueDPS" select="format-number($MoveSetStats_Overall/@true_dps_avg, '#0.00')" />
 
   <xsl:variable name="DPSOkay" select="number($AverageBaseDPS)" />
   <!-- #endregion-->
@@ -56,12 +56,12 @@
         <title>
           Pokemon Move Sets
           <xsl:choose>
-            <xsl:when test="count(MoveSets/Generation) > 1">
+            <xsl:when test="count(MoveSets/@gen) > 1">
               <xsl:text> - All Gens</xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="MoveSets/Generation"/>
+              <xsl:value-of select="MoveSets/@gen"/>
             </xsl:otherwise>
           </xsl:choose>
         </title>
@@ -71,17 +71,17 @@
           <xsl:call-template name="HomePageLink" />
           Pokemon Move Sets
           <xsl:choose>
-            <xsl:when test="count(MoveSets/Generation) > 1">
+            <xsl:when test="count(MoveSets/@gen) > 1">
               <xsl:text> - All Gens </xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="MoveSets/Generation"/>
+              <xsl:value-of select="MoveSets/@gen"/>
             </xsl:otherwise>
           </xsl:choose>
         </h1>
         <p class="NOTE">
-          <b>NOTE</b>: Last Updated <xsl:value-of select="$GameMaster_TimeStamp" />
+          <b>NOTE</b>: Last Updated <xsl:value-of select="$GAME_MASTER_Timestamp" />
         </p>
         <p>
           This chart lists the Move Sets for Pokemon.
@@ -139,7 +139,9 @@
             <td valign="top">
               <table style="white-space:nowrap;">
                 <tr>
-                  <td>Pokemon Name or ID:</td>
+                  <td>
+                    <xsl:call-template name="OutputFilterPokemonNameIDLabel" />
+                  </td>
                   <td style="padding:0">
                     <xsl:call-template name="OutputFilterPokemonNameID">
                       <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
@@ -232,7 +234,7 @@
           </tr>
           <tr>
             <th align="left">Move Set</th>
-            <td>This is a possible combination of a Fast Attack and a Charged Attack.</td>
+            <td style="white-space:normal;">This is a possible combination of a Fast Attack and a Charged Attack.</td>
           </tr>
           <tr>
             <th align="left">
@@ -241,7 +243,7 @@
                 (<span class="SIGNIFICANT">S</span>ame <span class="SIGNIFICANT">T</span>ype <span class="SIGNIFICANT">A</span>ttack <span class="SIGNIFICANT">B</span>onus)
               </span>
             </th>
-            <td>Tells whether the Pokemon get a 25% bonus because the Move's Type is the same as the Pokemon's type.</td>
+            <td style="white-space:normal;">Tells whether the Pokemon get a 25% bonus because the Move's Type is the same as the Pokemon's type.</td>
           </tr>
           <tr>
             <th align="left">
@@ -250,7 +252,7 @@
                 (<span class="SIGNIFICANT">D</span>amage <span class="SIGNIFICANT">P</span>er <span class="SIGNIFICANT">S</span>econd)
               </span>
             </th>
-            <td>Tells the raw DPS for Move Set itself, without taking into account the Pokemon's Stats.</td>
+            <td style="white-space:normal;">Tells the raw DPS for Move Set itself, without taking into account the Pokemon's Stats.</td>
           </tr>
           <tr>
             <th align="left">True DPS</th>
@@ -258,7 +260,7 @@
           </tr>
           <tr>
             <th align="left">%</th>
-            <td>
+            <td style="white-space:normal;">
               A comparison of the Move Set's True DPS, to the True DPS of the Pokemon's best possible Move Set <span class="EMPHASIS">that doesn't include a Legacy Move</span>.
             </td>
           </tr>
@@ -302,17 +304,17 @@
                 Base<br />&amp;<br />True DPS
               </th>
               <td class="GREAT">
-                True DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
+                True DPS &gt;= <xsl:value-of select="$DPSGreat" />% of Max Possible
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS, '#0.00')" />)
+                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS, '#0.00')" />)
                 </span>
               </td>
             </tr>
             <tr>
               <td class="GOOD">
-                True DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
+                True DPS &gt;= <xsl:value-of select="$DPSGood" />% of Max Possible
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGood, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" />)
+                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGood div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" />)
                 </span>
               </td>
             </tr>
@@ -320,7 +322,7 @@
               <td class="POOR">
                 True DPS Above Average
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="$AverageTrueDPS" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGood, '#0.00')" />)
+                  (<xsl:value-of select="$AverageTrueDPS" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGood div 100, '#0.00')" />)
                 </span>
               </td>
             </tr>
@@ -338,17 +340,17 @@
             <tr>
               <th rowspan="4">Damage: Base DPS</th>
               <td class="GREAT">
-                Base DPS &gt;= <xsl:value-of select="100*$DPSGreat" />% of Max Possible
+                Base DPS &gt;= <xsl:value-of select="$DPSGreat" />% of Max Possible
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat, '#0.00')" /> - <xsl:value-of select="$MaxBaseDPS" />)
+                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat div 100, '#0.00')" /> - <xsl:value-of select="$MaxBaseDPS" />)
                 </span>
               </td>
             </tr>
             <tr>
               <td class="GOOD">
-                Base DPS &gt;= <xsl:value-of select="100*$DPSGood" />% of Max Possible
+                Base DPS &gt;= <xsl:value-of select="$DPSGood" />% of Max Possible
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGood, '#0.00')" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat, '#0.00')" />)
+                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGood div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat, '#0.00')" />)
                 </span>
               </td>
             </tr>
@@ -356,7 +358,7 @@
               <td class="POOR">
                 Base DPS Above Average
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="$AverageBaseDPS" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGood, '#0.00')" />)
+                  (<xsl:value-of select="$AverageBaseDPS" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGood div 100, '#0.00')" />)
                 </span>
               </td>
             </tr>
@@ -374,22 +376,22 @@
             <tr>
               <th rowspan="4">Damage: %</th>
               <td class="GREAT">
-                &gt;= <xsl:value-of select="100*$DPSPercentGreat" />% of best current Move Set
+                &gt;= <xsl:value-of select="$DPSPercentGreat" />% of best current Move Set
               </td>
             </tr>
             <tr>
               <td class="GOOD">
-                &gt;= <xsl:value-of select="100*$DPSPercentGood" />% of best current Move Set
+                &gt;= <xsl:value-of select="$DPSPercentGood" />% of best current Move Set
               </td>
             </tr>
             <tr>
               <td class="POOR">
-                &gt;= <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
+                &gt;= <xsl:value-of select="$DPSPercentOkay" />% of best current Move Set
               </td>
             </tr>
             <tr>
               <td class="BAD">
-                &lt; <xsl:value-of select="100*$DPSPercentOkay" />% of best current Move Set
+                &lt; <xsl:value-of select="$DPSPercentOkay" />% of best current Move Set
               </td>
             </tr>
           </comment>
@@ -405,11 +407,11 @@
 
   <!-- Template to create merged cells for each Pokemon #/Name, then call template to create the Move Set rows for that Pokemon -->
   <xsl:template match="MoveSets">
-    <xsl:variable name="gen" select="Generation" />
+    <xsl:variable name="gen" select="@gen" />
 
     <h2>
       <xsl:text>Generation </xsl:text>
-      <xsl:value-of select="Generation" />
+      <xsl:value-of select="$gen" />
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="concat('MOVESET_DIV_GEN_', $gen)" />
       </xsl:call-template>
@@ -448,31 +450,31 @@
         <tr class="GREAT" style="font-weight:normal;">
           <th align="left">Maximum</th>
           <td align="right" style="margin-left:.5em;">
-            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/BaseDPS/Max, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@dps_max, '#0.00')"/>
           </td>
           <td align="right">
-            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/TrueDPS/Max, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@true_dps_max, '#0.00')"/>
           </td>
           <td align="right">
-            <xsl:value-of select="$MaxBaseDPS"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = 0]/@dps_max, '#0.00')" />
           </td>
           <td align="right">
-            <xsl:value-of select="$MaxTrueDPS"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = 0]/@true_dps_max, '#0.00')" />
           </td>
         </tr>
         <tr class="POOR">
           <th align="left">Average</th>
           <td align="right">
-            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/BaseDPS/Average, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@dps_avg, '#0.00')"/>
           </td>
           <td align="right">
-            <xsl:value-of select="format-number(/Root/Stats/MoveSets/*[local-name()=concat('Gen', $gen)]/TrueDPS/Average, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@true_dps_avg, '#0.00')"/>
           </td>
           <td align="right">
-            <xsl:value-of select="$AverageBaseDPS"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = 0]/@dps_avg, '#0.00')" />
           </td>
           <td align="right">
-            <xsl:value-of select="$AverageTrueDPS"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = 0]/@true_dps_avg, '#0.00')" />
           </td>
         </tr>
       </table>
@@ -480,20 +482,22 @@
       <br />
       <table border="1" style="white-space:nowrap;">
         <xsl:attribute name="id">
-          <xsl:value-of select="concat('MOVESET_GEN_', Generation)" />
+          <xsl:value-of select="concat('MOVESET_GEN_', $gen)" />
         </xsl:attribute>
 
         <xsl:call-template name="CreateTableHeaders" />
 
-        <xsl:for-each select="MoveSet[not(Pokemon/ID=preceding-sibling::MoveSet/Pokemon/ID)]">
-          <xsl:variable name="PokemonID" select="Pokemon/ID" />
-          <xsl:variable name="PokemonStats" select="/Root/PokemonStats/Pokemon[ID=$PokemonID]" />
-          <xsl:variable name="PokemonMoveSetCount" select="count(../MoveSet[Pokemon/ID=$PokemonID])" />
+        <xsl:for-each select="MoveSet[not(Pokemon/@name=preceding-sibling::MoveSet/Pokemon/@name)]">
+          <xsl:sort order="ascending" data-type="number" select="Pokemon/@id" />
+
+          <xsl:variable name="PokemonName" select="Pokemon/@name" />
+          <xsl:variable name="PokemonStats" select="/Root/PokeStats/Pokemon[@name=$PokemonName]" />
+          <xsl:variable name="PokemonMoveSetCount" select="count(../MoveSet[Pokemon/@name=$PokemonName])" />
 
           <tr align="left" style="border-top-width:5px">
             <xsl:attribute name="class">
               <xsl:text>PRIMARY_ROW</xsl:text>
-              <xsl:if test="contains($PokemonStats/Availability,'Unavailable')"> UNAVAILABLE_ROW </xsl:if>
+              <xsl:if test="contains($PokemonStats/@availability, $Availability_Unreleased)"> UNAVAILABLE_ROW</xsl:if>
             </xsl:attribute>
             <xsl:attribute name="movesetCount">
               <xsl:value-of select="$PokemonMoveSetCount" />
@@ -503,7 +507,7 @@
               <xsl:attribute name="rowspan">
                 <xsl:value-of select="$PokemonMoveSetCount + 1" />
               </xsl:attribute>
-              <xsl:apply-templates select="/Root/PokemonStats/Pokemon[ID = $PokemonID]">
+              <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name=$PokemonName]">
                 <xsl:with-param name="Settings">
                   <Show hide_name="true" valign="middle"/>
                 </xsl:with-param>
@@ -513,25 +517,27 @@
               <xsl:attribute name="rowspan">
                 <xsl:value-of select="$PokemonMoveSetCount + 1" />
               </xsl:attribute>
-              <xsl:value-of select="$PokemonID" />
+              <xsl:value-of select="Pokemon/@id" />
             </th>
             <th style="font-size:large;">
               <xsl:attribute name="rowspan">
                 <xsl:value-of select="$PokemonMoveSetCount + 1" />
               </xsl:attribute>
-              <xsl:value-of select="Pokemon/Name" />
+              <xsl:value-of select="Pokemon/@name" />
             </th>
             <xsl:value-of select="concat($lt, '!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) --', $gt)" disable-output-escaping="yes" />
             <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
           </tr>
-          <xsl:for-each select="../MoveSet[Pokemon/ID=$PokemonID]">
-            <xsl:sort select="Damage/PercentOfMax" data-type="number" order="descending"/>
+          <xsl:for-each select="../MoveSet[Pokemon/@name=$PokemonName]">
+            <xsl:sort order="descending" data-type="number" select="@comparison" />
+            <!-- TODO QZX: Why is this not sorting!!! -->
+            
             <tr>
-              <xsl:if test="contains(/Root/PokemonStats/Pokemon[ID=$PokemonID]/Availability,'Unavailable')">
+              <xsl:if test="contains(/Root/PokeStats/Pokemon[@name=$PokemonName]/@availability,$Availability_Unreleased)">
                 <xsl:attribute name="class">UNAVAILABLE_ROW</xsl:attribute>
               </xsl:if>
-              <xsl:variable name="FastMoveName" select="FastAttack/Move" />
-              <xsl:variable name="FastMoveType" select="/Root/Moves/Move[Name=$FastMoveName]/Type" />
+              <xsl:variable name="FastMoveName" select="FastAttack/@name" />
+              <xsl:variable name="FastMoveType" select="/Root/Moves/Move[@name=$FastMoveName]/@type" />
               <xsl:attribute name="fastMoveName">
                 <xsl:value-of select="$FastMoveName"/>
               </xsl:attribute>
@@ -539,10 +545,10 @@
                 <xsl:value-of select="$FastMoveType"/>
               </xsl:attribute>
               <xsl:attribute name="fastMoveBoost">
-                <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$FastMoveType]/Weather"/>
+                <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$FastMoveType]/@boost"/>
               </xsl:attribute>
-              <xsl:variable name="ChargedMoveName" select="ChargedAttack/Move" />
-              <xsl:variable name="ChargedMoveType" select="/Root/Moves/Move[Name=$ChargedMoveName]/Type" />
+              <xsl:variable name="ChargedMoveName" select="ChargedAttack/@name" />
+              <xsl:variable name="ChargedMoveType" select="/Root/Moves/Move[@ame=$ChargedMoveName]/@type" />
               <xsl:attribute name="chargedMoveName">
                 <xsl:value-of select="$ChargedMoveName"/>
               </xsl:attribute>
@@ -550,7 +556,7 @@
                 <xsl:value-of select="$ChargedMoveType"/>
               </xsl:attribute>
               <xsl:attribute name="chargedMoveBoost">
-                <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$ChargedMoveType]/Weather"/>
+                <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$ChargedMoveType]/@boost"/>
               </xsl:attribute>
               <xsl:apply-templates select="." />
             </tr>
@@ -584,28 +590,28 @@
 
   <!-- Template to create rows for a Pokemon's Move Sets -->
   <xsl:template match="MoveSet">
-    <xsl:variable name="legacyFast" select="FastAttack/Legacy != ''" />
-    <xsl:variable name="legacyCharged" select="ChargedAttack/Legacy != ''" />
+    <xsl:variable name="legacyFast" select="pokeref:ToUpper(FastAttack/@legacy) = 'TRUE'" />
+    <xsl:variable name="legacyCharged" select="pokeref:ToUpper(ChargedAttack/@legacy) = 'TRUE'" />
     <xsl:variable name="legacy" select="$legacyFast or $legacyCharged" />
-    <xsl:variable name="fastSTAB" select="pokeref:ToUpper(STAB/Fast) = 'TRUE'" />
-    <xsl:variable name="chargedSTAB" select="pokeref:ToUpper(STAB/Charged) = 'TRUE'" />
-    <xsl:variable name="valueDamageDPS" select="format-number(Damage/BaseDPS, '#0.00')" />
-    <xsl:variable name="valueDamageTrueDPS" select="format-number(Damage/TrueDPS, '#0.00')" />
-    <xsl:variable name="valueDamagePercentOfMax" select="format-number((Damage/PercentOfMax) * 100, '##0')" />
+    <xsl:variable name="fastSTAB" select="pokeref:ToUpper(FastAttack/@stab) = 'TRUE'" />
+    <xsl:variable name="chargedSTAB" select="pokeref:ToUpper(ChargedAttack/@stab) = 'TRUE'" />
+    <xsl:variable name="valueDamageDPS" select="format-number(@base_dps, '#0.00')" />
+    <xsl:variable name="valueDamageTrueDPS" select="format-number(@true_dps, '#0.00')" />
+    <xsl:variable name="valueDamagePercentOfMax" select="format-number(@comparison, '##0')" />
 
-    <xsl:variable name="FastMoveName" select="FastAttack/Move" />
+    <xsl:variable name="FastMoveName" select="FastAttack/@name" />
     <xsl:call-template name="MoveSetCell">
       <xsl:with-param name="Content" select="$FastMoveName" />
-      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[Name=$FastMoveName]/Type" />
+      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[@name=$FastMoveName]/@type" />
       <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
       <xsl:with-param name="LegacyMove" select="$legacyFast" />
       <xsl:with-param name="Legacy" select="$legacy" />
       <xsl:with-param name="STAB" select="$fastSTAB" />
     </xsl:call-template>
-    <xsl:variable name="ChargedMoveName" select="ChargedAttack/Move" />
+    <xsl:variable name="ChargedMoveName" select="ChargedAttack/@name" />
     <xsl:call-template name="MoveSetCell">
       <xsl:with-param name="Content" select="$ChargedMoveName" />
-      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[Name=$ChargedMoveName]/Type" />
+      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[@name=$ChargedMoveName]/@type" />
       <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
       <xsl:with-param name="LegacyMove" select="$legacyCharged" />
       <xsl:with-param name="Legacy" select="$legacy" />
@@ -689,13 +695,13 @@
             </xsl:when>
             <xsl:when test="$Percent != ''">
               <xsl:choose>
-                <xsl:when test="$Percent &gt;= 100*$DPSPercentGreat">
+                <xsl:when test="$Percent &gt;= $DPSPercentGreat">
                   <xsl:text>GREAT </xsl:text>
                 </xsl:when>
-                <xsl:when test="$Percent &gt;= 100*$DPSPercentGood">
+                <xsl:when test="$Percent &gt;= $DPSPercentGood">
                   <xsl:text>GOOD </xsl:text>
                 </xsl:when>
-                <xsl:when test="$Percent &gt;= 100*$DPSPercentOkay">
+                <xsl:when test="$Percent &gt;= $DPSPercentOkay">
                   <xsl:text>POOR </xsl:text>
                 </xsl:when>
                 <xsl:otherwise>

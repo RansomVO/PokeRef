@@ -219,13 +219,13 @@
         <h2>
           Current Raid Bosses
           <span class="NOTE">
-            <xsl:value-of select="concat('(Updated: ', /Root/RaidBosses/@updated, ')')"/>
+            <xsl:value-of select="concat('(Updated: ', /Root/RaidBosses/@last_updated, ')')"/>
           </span>
         </h2>
         <p id="anchor_bossescurrent">
           Click on any of the Raid Bosses below to see a chart of the possibilities.
         </p>
-        <xsl:apply-templates select="RaidBosses[@category='Current']">
+        <xsl:apply-templates select="RaidBosses">
           <xsl:with-param name="Settings">
             <Show show_disabled="true" valign="bottom" />
           </xsl:with-param>
@@ -238,10 +238,11 @@
           Here is a list of Raid Bosses that were available in the past, but no longer are.
           <span class="NOTE">(In case you are interested.)</span>
         </p>
-        <xsl:apply-templates select="RaidBosses[@category='Legacy']">
+        <xsl:apply-templates select="RaidBosses">
           <xsl:with-param name="Settings">
             <Show small="true" valign="bottom" />
           </xsl:with-param>
+          <xsl:with-param name="legacy" select="true()" />
         </xsl:apply-templates>
 
         <xsl:call-template name="WriteFooter" />

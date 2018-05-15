@@ -21,7 +21,7 @@
         <title>Tools</title>
       </head>
       <body>
-        <img class="FLOAT_RIGHT" style="margin:1em; max-height:100%; max-width:45%;" src="/images/TrappedWeedle.png" />
+        <img class="FLOAT_RIGHT" style="margin:1em; max-height:100%; max-width:45%;" src="/images/humor/TrappedWeedle.png" />
         <h1>
           <xsl:call-template name="HomePageLink" />
           Tools

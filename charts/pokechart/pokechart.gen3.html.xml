@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Root [
+  <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
-  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
-  <!ENTITY Stats SYSTEM "/_datafiles/stats.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/images.xml">
   <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
+  <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.xml">
   <!ENTITY Pokestats SYSTEM "/_datafiles/pokestats.gen3.xml">
-  <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.current.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="pokechart.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Constants;
   &Settings;
-  &Mappings;
-  &Stats;
+  &Images;
   &Eggs;
-  &Pokestats;
   &RaidBosses;
+  &Pokestats;
 </Root>

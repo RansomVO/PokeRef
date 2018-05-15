@@ -66,9 +66,9 @@
           <xsl:apply-templates select="MoveSets/MoveSet[Damage/TrueDPS >= $DPSFilter]" />
 
           <!--
-          <xsl:for-each select="MoveSets/MoveSet[Damage/TrueDPS >= $DPSFilter and not(preceding-sibling::MoveSet/Pokemon/ID = Pokemon/ID)]">
+          <xsl:for-each select="MoveSets/MoveSet[Damage/TrueDPS >= $DPSFilter and not(preceding-sibling::MoveSet/Pokemon/@id = Pokemon/@id)]">
             <xsl:call-template name="PokemonMoveSets">
-              <xsl:with-param name="PokemonID" select="Pokemon/ID" />
+              <xsl:with-param name="PokemonID" select="Pokemon/@id" />
             </xsl:call-template>
           </xsl:for-each>
 -->
@@ -100,31 +100,31 @@
   <xsl:template name="PokemonMoveSets">
     <xsl:param name="PokemonID" />
 
-    <xsl:variable name="Rows" select="count(/Root/MoveSets/MoveSet[Pokemon/ID=$PokemonID]) + 1" />
+    <xsl:variable name="Rows" select="count(/Root/MoveSets/MoveSet[Pokemon/@id=$PokemonID]) + 1" />
 
     <tr>
       <td class="CELL_FILLED">
         <xsl:attribute name="rowspan">
           <xsl:value-of select="$Rows" />
         </xsl:attribute>
-        <xsl:apply-templates select="/Root/PokemonStats/Pokemon[ID = $PokemonID]" />
+        <xsl:apply-templates select="/Root/PokeStats/Pokemon[@id = $PokemonID]" />
       </td>
       <td>
         <xsl:attribute name="rowspan">
           <xsl:value-of select="$Rows"/>
         </xsl:attribute>
-        <xsl:value-of select="Pokemon/ID" />
+        <xsl:value-of select="Pokemon/@id" />
       </td>
       <td>
         <xsl:attribute name="rowspan">
           <xsl:value-of select="$Rows"/>
         </xsl:attribute>
-        <xsl:value-of select="Pokemon/Name" />
+        <xsl:value-of select="Pokemon/@name" />
       </td>
       <td colspan="8" style="height:0px; margin:0px; padding:0px; border:none;" />
     </tr>
 
-    <xsl:for-each select="/Root/MoveSets/MoveSet[Pokemon/ID=$PokemonID]">
+    <xsl:for-each select="/Root/MoveSets/MoveSet[Pokemon/@id=$PokemonID]">
       <tr>
         <td>
           <xsl:value-of select="Attack/Fast"/>

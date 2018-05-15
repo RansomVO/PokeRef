@@ -1,76 +1,64 @@
 ﻿<News>
-  <Article date="5 April 2018">
+  <Article date="14 May 2018">
     <Title>
-      <a href="charts/raidboss/">Raid Boss</a> Shuffle!
+      Fighting Event is Over
     </Title>
     <Text>
-      <p class="parent">
-        On 3 April 2018, the Raid Bosses changed again.
-        Several from legacy came back in, but a bunch more were introduced!
+      <p>
+        The fighting event is now over and the <a href="charts/raidboss/">Raid Boss</a> charts have been updated.
       </p>
-      <ul class="CHILD">
-        <li>
-          <a href="charts/raidboss/raidboss.walrein.html">Walrein</a>
-          <span class="NOTE">(Tier 4)</span>
-        </li>
-        <li>
-          <a href="charts/raidboss/raidboss.pinsir.html">Pinsir</a>
-          <span class="NOTE">(Tier 3)</span>
-        </li>
-        <li>
-          <a href="charts/raidboss/raidboss.granbull.html">Granbull</a>
-          <span class="NOTE">(Tier 3)</span>
-        </li>
-        <li>
-          <a href="charts/raidboss/raidboss.misdreavus.html">Misdreavus</a>
-          <span class="NOTE">(Tier 2)</span>
-        </li>
-        <li>
-          <a href="charts/raidboss/raidboss.sneasel.html">Sneasel</a>
-          <span class="NOTE">(Tier 2)</span>
-        </li>
-        <li>
-          <a href="charts/raidboss/raidboss.shuppet.html">Shuppet</a>
-          <span class="NOTE">(Tier 1)</span>
-        </li>
-        <li>
-          <a href="charts/raidboss/raidboss.duskull.html">Duskull</a>
-          <span class="NOTE">(Tier 1)</span>
-        </li>
-      </ul>
     </Text>
   </Article>
-  <Article date="2 April 2018">
+  <Article date="6 May 2018">
     <Title>
-      Several Things Again!
+      Sorry For the Long Delay.
     </Title>
     <Text>
       <p>
-        <b>Mew!</b>
-        <br />
-        First of all, with the new Research features, there is the ability to catch Mew!
-        Not only that, TONS of Move Sets for Mew were added to the GAME_MASTER file.
-        <br />The charts have been updated to show this.
+        Over the last month, I have been pretty hammered at work.
+        Additionally, I have been working on code that will make updates (especially new Raid Bosses) be much faster and less effort.
       </p>
-      <br />
-      <p>
-        <b>
-          <a href="/charts/pokequick.html">
-            Pokemon Quick List<span class="NOTE TODO"> (Beta)</span>
-          </a>
-        </b>
-        <br />
-        Also, with the Research features, you may get tasks that require you to catch a number of Pokemon of a certain type, etc.
-        As such, I have created a Pokemon Quick List in the Charts section that is similar to the Pokemon Chart pages, but has been greatly simplified so it will be smaller and faster on mobile devices.
+      <p class="parent">
+        That being said, there are a lot of changes I have included with the latest release, including:
       </p>
-      <br />
+      <ol class="INDENT CHILD">
+        <li>
+          New <a href="charts/raidboss/">Raid Boss</a> charts for the latest round of Raid Bosses.
+        </li>
+        <li>
+          Updated <a href="tools/shoppingboxes.html">Shopping Boxes</a> for the Fighting-Type Pokémon Event.
+        </li>
+        <li>
+          A new look in the <a href="tech/GAME_MASTER/pokestats/">Pokemon Stats</a> pages.
+        </li>
+        <li>
+          Ability to see different "forms".
+          <br /><span class="NOTE">
+            (<b>For Example:</b> Normal, Rainy, Snowy and Sunny forms of Castform)
+          </span>
+        </li>
+        <li>
+          And a whole lot more!
+          <br /><span class="NOTE">(And I am working a bunch of stuff you'll see soon!)</span>
+        </li>
+      </ol>
+
       <p>
-        <b>
-          <a href="charts/raidboss/raidboss.latias.html">Latias</a> and <a href="charts/raidboss/raidboss.latios.html">Latios</a>
-        </b>
-        <br />
-        And Latias and have been relased as Raid Bosses.
-        <br />The <a href="charts/raidboss">Raid Bosses</a> chart has been updated appropriately.
+        I'm not completely done yet, but I wanted to get the latest to you as soon as possible, so please be patient if you find issues, but let me know.
+        <div class="NOTE">
+          I would <span class="EMPHASIS">
+            <u>LOVE</u>
+          </span> to get your feedback!
+          <br />
+          <div class="INDENT">
+            Let me know about typos, broken links, hard-to-understand (or badly worded) information, etc.
+            <br />Also, let me know if there is something you would like for me to add or enhance.
+          </div>
+          <br />
+        </div>
+        <span class="NOTE CHILD">
+          Just send me an e-mail at <a href="mailto:pokeeref@gmail.com">pokeeref@gmail.com</a> (The extra 'e' is not a typo. pokeref@gmail.com was already taken. &#x1F601;)
+        </span>
       </p>
     </Text>
   </Article>

@@ -1,9 +1,36 @@
 ﻿=========================================================================================================
 ----- Work in Progress -----
 
-Add Charizard (28485) to Legacy
+Redo how images are selected.
+	- There is also an issue with "/images/types" ending up in pokemon.js. See what can be done there.
 
-Figure out how to handle Availability of Mew. (keyword in pokestats ("Special"?, image colors?)
+Field Research:
+	- Add code to perform filtering.
+
+Recheck entire site to make sure everything looks right.
+	- Criteria on Evolution page: 2K egg is indented slightly more than the others.
+		This is because the HTML generated puts return after the first input, but puts all of the rest on a single line.
+		Need to revisit HTML output.
+
+=========================================================================================================
+=========================================================================================================
+
+RaidBosses:
+	- split tiers into rows with 10 columns or less.
+
+- If there is shiny and hatch-only, put a top margin on the shiny so it looks better.
+- Consistency with indenting in Key/Criteria sections
+- Put GAME_MASTER projects in Github
+- Multiple types of Hidden Power
+- Double check availability dates in _debug.manual\pokemon.availability.xml
+- Evolutions: Get the pokemon to center vertically.
+- It would be nice if web.config got copied to www.debug on debug builds.
+
+
+=========================================================================================================
+=========================================================================================================
+
+Figure out how to get the make buddy special for Milotic.
 
 Take a look at Key for Pokemon. (Overflows on mobile.)
 
@@ -12,7 +39,7 @@ Turn off nowrap on some page-specific key tables. E.G. Terms on MoveSets.
 Create global template for headers and Title.
 
 PokeIcon:
-	Distinguish current RaidBoss (different than RaidBoss Only.).
+	Distinguish current RaidBoss (Make it different than RaidBoss Only.).
 	Distinguish between Raidboss Only that are current vs. legacy (faded?)
 	Distingush between Pokemon that can become a ditto.
 

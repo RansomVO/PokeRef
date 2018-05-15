@@ -118,7 +118,7 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (ReleasedOnly_Check.checked && GetPokemonAvailability(pokemon).contains('Unavailable')) {
+    if (ReleasedOnly_Check.checked && GetPokemonAvailability(pokemon).contains('Unreleased')) {
         return false;
     }
 
@@ -126,7 +126,7 @@ function MatchesFilter(pokemon) {
         return false;
     }
 
-    if (RaidBoss_Check.checked && (pokemon.attributes['raidboss'] === undefined || pokemon.attributes['raidboss'].value !== 'true')) {
+    if (RaidBoss_Check.checked && (pokemon.attributes['raidboss'].value !== 'true')) {
         return false;
     }
 

@@ -1,78 +1,52 @@
-﻿// ============================================================================
-// #region Global Variables
-// ============================================================================
-
-// Constants: Prices in Shop
-var PremiumRaidPass_Value_Qty = 1; var PremiumRaidPass_Value_Price = 100;
-var MaxRevives_Value_Qty = 6; var MaxRevives_Value_Price = 180;
-var MaxPotions_Value_Qty = 10; var MaxPotions_Value_Price = 200;
-var PokeBalls_Value_Qty = 200; var PokeBalls_Value_Price = 800;
-var Lures_Value_Qty = 8; var Lures_Value_Price = 680;
-var Incubator_Value_Qty = 1; var Incubator_Value_Price = 150;
-var LuckyEggs_Value_Qty = 25; var LuckyEggs_Value_Price = 1250;
-var Incense_Value_Qty = 25; var Incense_Value_Price = 1250;
-
-// Constants: Assumed Values for items that may be in boxes, but are not in Shop.
-var StarPiece_AssumedValue = Incense_Value_Price / Incense_Value_Qty;
-var SuperIncubator_AssumedValue = 200;
-var GreatBalls_AssumedValue = PokeBalls_Value_Price / PokeBalls_Value_Qty + 3;
-var UltraBalls_AssumedValue = GreatBalls_AssumedValue + 3;
-var RazzBerries_AssumedValue = 1;
-var NanabBerries_AssumedValue = 1;
-var PinappBerries_AssumedValue = 1;
-var GoldenBerries_AssumedValue = 10;
-
-// #endregion Global Variables
-
-// ****************************************************************************
+﻿// ****************************************************************************
 // #region Values that should be updated each time new boxes come out. **********
 // ****************************************************************************
-var ShoppingBox_Update_Date = '22 March 2018';
-var ShoppingBox_Update_Note = 'Eggstravaganza';
+var ShoppingBox_Update_Date = '2 May 2018';
+var ShoppingBox_Update_Note = 'Fighting-Type Pokémon Star in Our Special Battle Showdown!';
 
 var SpecialBox = {
     'Price': 480,
-    'PremiumRaidPass': 0,
+    'PremiumRaidPass': 6,
     'MaxRevives': 0,
     'MaxPotions': 0,
     'PokeBalls': 0,
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
-    'Incubator': 3,
-    'LuckyEggs': 0,
-    'Incense': 2,
-    'StarPiece': 5,
+    'Incubator': 0,
+    'LuckyEggs': 2,
+    'Incense': 0,
+    'StarPiece': 2,
     'SuperIncubator': 0,
     'RazzBerries': 0,
     'NanabBerries': 0,
-    'PinappBerries': 0,
+    'PinapBerries': 00,
     'GoldenBerries': 0,
 };
 
 var GreatBox = {
     'Price': 780,
-    'PremiumRaidPass': 0,
+    'PremiumRaidPass': 7,
     'MaxRevives': 0,
-    'MaxPotions': 0,
+    'MaxPotions': 5,
     'PokeBalls': 0,
     'GreatBalls': 0,
     'UltraBalls': 0,
     'Lures': 0,
     'Incubator': 0,
-    'LuckyEggs': 0,
-    'Incense': 5,
-    'StarPiece': 10,
-    'SuperIncubator': 5,
+    'LuckyEggs': 6,
+    'Incense': 0,
+    'StarPiece': 6,
+    'SuperIncubator': 0,
     'RazzBerries': 0,
     'NanabBerries': 0,
-    'PinappBerries': 0,
+    'PinapBerries': 0,
     'GoldenBerries': 0,
 };
 
 var UltraBox = {
     'Price': 1480,
-    'PremiumRaidPass': 5,
+    'PremiumRaidPass': 15,
     'MaxRevives': 0,
     'MaxPotions': 0,
     'PokeBalls': 0,
@@ -80,17 +54,49 @@ var UltraBox = {
     'UltraBalls': 0,
     'Lures': 0,
     'Incubator': 0,
-    'LuckyEggs': 10,
+    'LuckyEggs': 15,
     'Incense': 0,
-    'StarPiece': 25,
-    'SuperIncubator': 8,
+    'StarPiece': 15,
+    'SuperIncubator': 4,
     'RazzBerries': 0,
     'NanabBerries': 0,
-    'PinappBerries': 0,
+    'PinapBerries': 0,
     'GoldenBerries': 0,
 };
 
+// #endregion Values that should be updated each time new boxes come out.
+
 // #region Common
+// ============================================================================
+// #region Global Variables
+// ============================================================================
+
+// Constants: Prices in Shop
+PremiumRaidPass_Value_Qty = 1; PremiumRaidPass_Value_Price = 100;
+MaxRevives_Value_Qty = 6; MaxRevives_Value_Price = 180;
+MaxPotions_Value_Qty = 10; MaxPotions_Value_Price = 200;
+PokeBalls_Value_Qty = 200; PokeBalls_Value_Price = 800;
+Lures_Value_Qty = 8; Lures_Value_Price = 680;
+Incubator_Value_Qty = 1; Incubator_Value_Price = 150;
+LuckyEggs_Value_Qty = 25; LuckyEggs_Value_Price = 1250;
+Incense_Value_Qty = 25; Incense_Value_Price = 1250;
+
+// Constants: Prices seen when available
+StarPiece_Value_Qty = 8; StarPiece_Value_Price = 800;
+SuperIncubator_Value_Qty = 1; SuperIncubator_Value_Price = 200;
+
+// Constants: Assumed Values for items that may be in boxes, but are not in Shop.
+StarPiece_AssumedValue = StarPiece_Value_Price / StarPiece_Value_Qty;
+SuperIncubator_AssumedValue = SuperIncubator_Value_Price / SuperIncubator_Value_Qty;
+GreatBalls_AssumedValue = PokeBalls_Value_Price / PokeBalls_Value_Qty + 3;
+UltraBalls_AssumedValue = GreatBalls_AssumedValue + 3;
+RazzBerries_AssumedValue = 1;
+NanabBerries_AssumedValue = 1;
+PinapBerries_AssumedValue = 1;
+GoldenBerries_AssumedValue = 10;
+
+// #endregion Global Variables
+
 
 // ============================================================================
 //#region Cookies
@@ -113,7 +119,7 @@ var CookieSettings = {
     'UltraBalls_Check': 'false',
     'RazzBerries_Check': 'false',
     'NanabBerries_Check': 'false',
-    'PinappBerries_Check': 'false',
+    'PinapBerries_Check': 'false',
     'GoldenBerries_Check': 'false',
 
     'PremiumRaidPass_Qty': PremiumRaidPass_Value_Qty,
@@ -147,7 +153,7 @@ var CookieSettings = {
     'UltraBalls_Value': UltraBalls_AssumedValue,
     'RazzBerries_Value': RazzBerries_AssumedValue,
     'NanabBerries_Value': NanabBerries_AssumedValue,
-    'PinappBerries_Value': PinappBerries_AssumedValue,
+    'PinapBerries_Value': PinapBerries_AssumedValue,
     'GoldenBerries_Value': GoldenBerries_AssumedValue,
 };
 
@@ -166,6 +172,9 @@ function ApplyCookie() {
 window.onload = function () {
     try {
         GetFields();
+
+        document.getElementById('UpdateDate').innerText = ShoppingBox_Update_Date;
+        document.getElementById('UpdateNote').innerText = '(' + ShoppingBox_Update_Note + ')';
 
         var updateDate = GetCookieSetting('ShoppingBox_Update_Date');
         Reset(updateDate !== ShoppingBox_Update_Date);
@@ -214,8 +223,8 @@ function GetFields() {
     RazzBerries_Value = document.getElementById('RazzBerries_Value');
     NanabBerries_Check = document.getElementById('NanabBerries_Check');
     NanabBerries_Value = document.getElementById('NanabBerries_Value');
-    PinappBerries_Check = document.getElementById('PinappBerries_Check');
-    PinappBerries_Value = document.getElementById('PinappBerries_Value');
+    PinapBerries_Check = document.getElementById('PinapBerries_Check');
+    PinapBerries_Value = document.getElementById('PinapBerries_Value');
     GoldenBerries_Check = document.getElementById('GoldenBerries_Check');
     GoldenBerries_Value = document.getElementById('GoldenBerries_Value');
 
@@ -234,7 +243,7 @@ function GetFields() {
     SpecialBox_SuperIncubator_Qty = document.getElementById('SpecialBox_SuperIncubator_Qty');
     SpecialBox_RazzBerries_Qty = document.getElementById('SpecialBox_RazzBerries_Qty');
     SpecialBox_NanabBerries_Qty = document.getElementById('SpecialBox_NanabBerries_Qty');
-    SpecialBox_PinappBerries_Qty = document.getElementById('SpecialBox_PinappBerries_Qty');
+    SpecialBox_PinapBerries_Qty = document.getElementById('SpecialBox_PinapBerries_Qty');
     SpecialBox_GoldenBerries_Qty = document.getElementById('SpecialBox_GoldenBerries_Qty');
 
     GreatBox_Price = document.getElementById('GreatBox_Price');
@@ -252,7 +261,7 @@ function GetFields() {
     GreatBox_SuperIncubator_Qty = document.getElementById('GreatBox_SuperIncubator_Qty');
     GreatBox_RazzBerries_Qty = document.getElementById('GreatBox_RazzBerries_Qty');
     GreatBox_NanabBerries_Qty = document.getElementById('GreatBox_NanabBerries_Qty');
-    GreatBox_PinappBerries_Qty = document.getElementById('GreatBox_PinappBerries_Qty');
+    GreatBox_PinapBerries_Qty = document.getElementById('GreatBox_PinapBerries_Qty');
     GreatBox_GoldenBerries_Qty = document.getElementById('GreatBox_GoldenBerries_Qty');
 
     UltraBox_Price = document.getElementById('UltraBox_Price');
@@ -270,7 +279,7 @@ function GetFields() {
     UltraBox_SuperIncubator_Qty = document.getElementById('UltraBox_SuperIncubator_Qty');
     UltraBox_RazzBerries_Qty = document.getElementById('UltraBox_RazzBerries_Qty');
     UltraBox_NanabBerries_Qty = document.getElementById('UltraBox_NanabBerries_Qty');
-    UltraBox_PinappBerries_Qty = document.getElementById('UltraBox_PinappBerries_Qty');
+    UltraBox_PinapBerries_Qty = document.getElementById('UltraBox_PinapBerries_Qty');
     UltraBox_GoldenBerries_Qty = document.getElementById('UltraBox_GoldenBerries_Qty');
 }
 
@@ -305,7 +314,7 @@ function InitializeChecks() {
     InitialCheck(UltraBalls_Check, 'UltraBalls', true);
     InitialCheck(RazzBerries_Check, 'RazzBerries', false);
     InitialCheck(NanabBerries_Check, 'NanabBerries', false);
-    InitialCheck(PinappBerries_Check, 'PinappBerries', false);
+    InitialCheck(PinapBerries_Check, 'PinapBerries', false);
     InitialCheck(GoldenBerries_Check, 'GoldenBerries', false);
 
     UpdateAllItemsCheck();
@@ -339,7 +348,7 @@ function InitializeBoxes() {
         UpdateBoxRow(SpecialBox, 'UltraBalls', SpecialBox_UltraBalls_Qty);
         UpdateBoxRow(SpecialBox, 'RazzBerries', SpecialBox_RazzBerries_Qty);
         UpdateBoxRow(SpecialBox, 'NanabBerries', SpecialBox_NanabBerries_Qty);
-        UpdateBoxRow(SpecialBox, 'PinappBerries', SpecialBox_PinappBerries_Qty);
+        UpdateBoxRow(SpecialBox, 'PinapBerries', SpecialBox_PinapBerries_Qty);
         UpdateBoxRow(SpecialBox, 'GoldenBerries', SpecialBox_GoldenBerries_Qty);
     } else {
         document.getElementById('SpecialBox').style.display = 'none';
@@ -361,7 +370,7 @@ function InitializeBoxes() {
         UpdateBoxRow(GreatBox, 'UltraBalls', GreatBox_UltraBalls_Qty);
         UpdateBoxRow(GreatBox, 'RazzBerries', GreatBox_RazzBerries_Qty);
         UpdateBoxRow(GreatBox, 'NanabBerries', GreatBox_NanabBerries_Qty);
-        UpdateBoxRow(GreatBox, 'PinappBerries', GreatBox_PinappBerries_Qty);
+        UpdateBoxRow(GreatBox, 'PinapBerries', GreatBox_PinapBerries_Qty);
         UpdateBoxRow(GreatBox, 'GoldenBerries', GreatBox_GoldenBerries_Qty);
     } else {
         document.getElementById('GreatBox').style.display = 'none';
@@ -383,7 +392,7 @@ function InitializeBoxes() {
         UpdateBoxRow(UltraBox, 'UltraBalls', UltraBox_UltraBalls_Qty);
         UpdateBoxRow(UltraBox, 'RazzBerries', UltraBox_RazzBerries_Qty);
         UpdateBoxRow(UltraBox, 'NanabBerries', UltraBox_NanabBerries_Qty);
-        UpdateBoxRow(UltraBox, 'PinappBerries', UltraBox_PinappBerries_Qty);
+        UpdateBoxRow(UltraBox, 'PinapBerries', UltraBox_PinapBerries_Qty);
         UpdateBoxRow(UltraBox, 'GoldenBerries', UltraBox_GoldenBerries_Qty);
     } else {
         document.getElementById('UltraBox').style.display = 'none';
@@ -416,7 +425,7 @@ function UpdateAllItemsCheck() {
         && UltraBalls_Check.checked
         && RazzBerries_Check.checked
         && NanabBerries_Check.checked
-        && PinappBerries_Check.checked
+        && PinapBerries_Check.checked
         && GoldenBerries_Check.checked) {
         AllItems_Check.indeterminate = false;
         AllItems_Check.checked = true;
@@ -435,7 +444,7 @@ function UpdateAllItemsCheck() {
         && !UltraBalls_Check.checked
         && !RazzBerries_Check.checked
         && !NanabBerries_Check.checked
-        && !PinappBerries_Check.checked
+        && !PinapBerries_Check.checked
         && !GoldenBerries_Check.checked) {
         AllItems_Check.indeterminate = false;
         AllItems_Check.checked = false;
@@ -443,12 +452,6 @@ function UpdateAllItemsCheck() {
     else {
         AllItems_Check.indeterminate = true;
     }
-}
-
-// Write out the date it was updated.
-function WriteUpdated() {
-    document.write('<b>Last Updated</b>: '
-        + ShoppingBox_Update_Date + ' <span class="NOTE">' + ShoppingBox_Update_Note + '</span>');
 }
 
 // Called when any of the value fields are updated.
@@ -552,10 +555,10 @@ function OnValueChanged(field) {
             if (GreatBox_NanabBerries_Qty.value !== '') GreatBox_NanabBerries_Value.value = GreatBox_NanabBerries_Qty.value * NanabBerries_Value.value;
             if (UltraBox_NanabBerries_Qty.value !== '') UltraBox_NanabBerries_Value.value = UltraBox_NanabBerries_Qty.value * NanabBerries_Value.value;
         }
-        if (PinappBerries_Check.checked) {
-            if (SpecialBox_PinappBerries_Qty.value !== '') SpecialBox_PinappBerries_Value.value = SpecialBox_PinappBerries_Qty.value * PinappBerries_Value.value;
-            if (GreatBox_PinappBerries_Qty.value !== '') GreatBox_PinappBerries_Value.value = GreatBox_PinappBerries_Qty.value * PinappBerries_Value.value;
-            if (UltraBox_PinappBerries_Qty.value !== '') UltraBox_PinappBerries_Value.value = UltraBox_PinappBerries_Qty.value * PinappBerries_Value.value;
+        if (PinapBerries_Check.checked) {
+            if (SpecialBox_PinapBerries_Qty.value !== '') SpecialBox_PinapBerries_Value.value = SpecialBox_PinapBerries_Qty.value * PinapBerries_Value.value;
+            if (GreatBox_PinapBerries_Qty.value !== '') GreatBox_PinapBerries_Value.value = GreatBox_PinapBerries_Qty.value * PinapBerries_Value.value;
+            if (UltraBox_PinapBerries_Qty.value !== '') UltraBox_PinapBerries_Value.value = UltraBox_PinapBerries_Qty.value * PinapBerries_Value.value;
         }
         if (GoldenBerries_Check.checked) {
             if (SpecialBox_GoldenBerries_Qty.value !== '') SpecialBox_GoldenBerries_Value.value = SpecialBox_GoldenBerries_Qty.value * GoldenBerries_Value.value;
@@ -579,7 +582,7 @@ function OnValueChanged(field) {
             + (UltraBalls_Check.checked ? Number(SpecialBox_UltraBalls_Value.value) : 0)
             + (RazzBerries_Check.checked ? Number(SpecialBox_RazzBerries_Value.value) : 0)
             + (NanabBerries_Check.checked ? Number(SpecialBox_NanabBerries_Value.value) : 0)
-            + (PinappBerries_Check.checked ? Number(SpecialBox_PinappBerries_Value.value) : 0)
+            + (PinapBerries_Check.checked ? Number(SpecialBox_PinapBerries_Value.value) : 0)
             + (GoldenBerries_Check.checked ? Number(SpecialBox_GoldenBerries_Value.value) : 0);
 
         GreatBox_Total.value =
@@ -597,7 +600,7 @@ function OnValueChanged(field) {
             + (UltraBalls_Check.checked ? Number(GreatBox_UltraBalls_Value.value) : 0)
             + (RazzBerries_Check.checked ? Number(GreatBox_RazzBerries_Value.value) : 0)
             + (NanabBerries_Check.checked ? Number(GreatBox_NanabBerries_Value.value) : 0)
-            + (PinappBerries_Check.checked ? Number(GreatBox_PinappBerries_Value.value) : 0)
+            + (PinapBerries_Check.checked ? Number(GreatBox_PinapBerries_Value.value) : 0)
             + (GoldenBerries_Check.checked ? Number(GreatBox_GoldenBerries_Value.value) : 0);
 
         UltraBox_Total.value =
@@ -615,7 +618,7 @@ function OnValueChanged(field) {
             + (UltraBalls_Check.checked ? Number(UltraBox_UltraBalls_Value.value) : 0)
             + (RazzBerries_Check.checked ? Number(UltraBox_RazzBerries_Value.value) : 0)
             + (NanabBerries_Check.checked ? Number(UltraBox_NanabBerries_Value.value) : 0)
-            + (PinappBerries_Check.checked ? Number(UltraBox_PinappBerries_Value.value) : 0)
+            + (PinapBerries_Check.checked ? Number(UltraBox_PinapBerries_Value.value) : 0)
             + (GoldenBerries_Check.checked ? Number(UltraBox_GoldenBerries_Value.value) : 0);
 
         // Calculate the Discount.
@@ -883,17 +886,17 @@ function OnCheckChanged(checkbox) {
             UltraBox_NanabBerries_Value.parentNode.parentNode.classList.add('DISABLED');
         }
 
-        if (PinappBerries_Check.checked) {
-            PinappBerries_Value.parentNode.classList.remove('DISABLED');
-            SpecialBox_PinappBerries_Value.parentNode.parentNode.classList.remove('DISABLED');
-            GreatBox_PinappBerries_Value.parentNode.parentNode.classList.remove('DISABLED');
-            UltraBox_PinappBerries_Value.parentNode.parentNode.classList.remove('DISABLED');
+        if (PinapBerries_Check.checked) {
+            PinapBerries_Value.parentNode.classList.remove('DISABLED');
+            SpecialBox_PinapBerries_Value.parentNode.parentNode.classList.remove('DISABLED');
+            GreatBox_PinapBerries_Value.parentNode.parentNode.classList.remove('DISABLED');
+            UltraBox_PinapBerries_Value.parentNode.parentNode.classList.remove('DISABLED');
         }
         else {
-            PinappBerries_Value.parentNode.classList.add('DISABLED');
-            SpecialBox_PinappBerries_Value.parentNode.parentNode.classList.add('DISABLED');
-            GreatBox_PinappBerries_Value.parentNode.parentNode.classList.add('DISABLED');
-            UltraBox_PinappBerries_Value.parentNode.parentNode.classList.add('DISABLED');
+            PinapBerries_Value.parentNode.classList.add('DISABLED');
+            SpecialBox_PinapBerries_Value.parentNode.parentNode.classList.add('DISABLED');
+            GreatBox_PinapBerries_Value.parentNode.parentNode.classList.add('DISABLED');
+            UltraBox_PinapBerries_Value.parentNode.parentNode.classList.add('DISABLED');
         }
 
         if (GoldenBerries_Check.checked) {
@@ -934,7 +937,7 @@ function OnAllItemsCheckChanged() {
             = UltraBalls_Check.checked
             = RazzBerries_Check.checked
             = NanabBerries_Check.checked
-            = PinappBerries_Check.checked
+            = PinapBerries_Check.checked
             = GoldenBerries_Check.checked
             = AllItems_Check.checked;
 

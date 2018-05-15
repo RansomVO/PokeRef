@@ -11,11 +11,11 @@
     
     <xsl:apply-templates select="RaidBosses">
       <xsl:with-param name="Settings">
-        <Show small="true" show_disabled="true" hide_name="true" hide_icons="true" />
+        <Show small="true" show_disabled="true" hide_name="true" hide_type_icons="true" hide_special_icons="true" />
       </xsl:with-param>
     </xsl:apply-templates>
     
-    <!-- Trick to allow non-list to be displayed in nvaigation bar. -->
+    <!-- Trick to allow non-list to be displayed in navigation bar. -->
     <xsl:value-of select="concat($lt, 'ul', $gt)" disable-output-escaping="yes" />
   </xsl:template>
 

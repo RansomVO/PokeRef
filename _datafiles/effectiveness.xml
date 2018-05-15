@@ -1,435 +1,369 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Effectiveness>
-	<Key>
-		<SuperEffective>
-			<Symbol>+</Symbol>
-			<Multiplier>1.4</Multiplier>
-		</SuperEffective>
-		<Neutral>
-			<Symbol>○</Symbol>
-			<Multiplier>1</Multiplier>
-		</Neutral>
-		<NotVeryEffective>
-			<Symbol>-</Symbol>
-			<Multiplier>0.714</Multiplier>
-		</NotVeryEffective>
-		<Immune>
-			<Symbol>×</Symbol>
-			<Multiplier>0.51</Multiplier>
-		</Immune>
-	</Key>
-	<MoveEffectiveness>
-		<MoveType>Bug</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>+</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>-</Fairy>
-			<Fighting>-</Fighting>
-			<Fire>-</Fire>
-			<Flying>-</Flying>
-			<Ghost>-</Ghost>
-			<Grass>+</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>-</Poison>
-			<Psychic>+</Psychic>
-			<Rock>○</Rock>
-			<Steel>-</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Dark</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>-</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>-</Fairy>
-			<Fighting>-</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>+</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>+</Psychic>
-			<Rock>○</Rock>
-			<Steel>○</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Dragon</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>+</Dragon>
-			<Electric>○</Electric>
-			<Fairy>×</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>○</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>○</Rock>
-			<Steel>-</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Electric</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>-</Dragon>
-			<Electric>-</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>○</Fire>
-			<Flying>+</Flying>
-			<Ghost>○</Ghost>
-			<Grass>-</Grass>
-			<Ground>×</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>○</Rock>
-			<Steel>○</Steel>
-			<Water>+</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Fairy</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>+</Dark>
-			<Dragon>+</Dragon>
-			<Electric>○</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>+</Fighting>
-			<Fire>-</Fire>
-			<Flying>○</Flying>
-			<Ghost>○</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>-</Poison>
-			<Psychic>○</Psychic>
-			<Rock>○</Rock>
-			<Steel>-</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Fighting</MoveType>
-		<PokemonType>
-			<Bug>-</Bug>
-			<Dark>+</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>-</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>○</Fire>
-			<Flying>-</Flying>
-			<Ghost>×</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>+</Ice>
-			<Normal>+</Normal>
-			<Poison>-</Poison>
-			<Psychic>-</Psychic>
-			<Rock>+</Rock>
-			<Steel>+</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Fire</MoveType>
-		<PokemonType>
-			<Bug>+</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>-</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>○</Ghost>
-			<Grass>+</Grass>
-			<Ground>○</Ground>
-			<Ice>+</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>○</Rock>
-			<Steel>+</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Flying</MoveType>
-		<PokemonType>
-			<Bug>+</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>+</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>○</Ghost>
-			<Grass>+</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>-</Rock>
-			<Steel>-</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Ghost</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>-</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>+</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>-</Normal>
-			<Poison>○</Poison>
-			<Psychic>+</Psychic>
-			<Rock>○</Rock>
-			<Steel>○</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Grass</MoveType>
-		<PokemonType>
-			<Bug>-</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>-</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>-</Fire>
-			<Flying>-</Flying>
-			<Ghost>○</Ghost>
-			<Grass>-</Grass>
-			<Ground>+</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>-</Poison>
-			<Psychic>○</Psychic>
-			<Rock>+</Rock>
-			<Steel>-</Steel>
-			<Water>+</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Ground</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>+</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>+</Fire>
-			<Flying>×</Flying>
-			<Ghost>○</Ghost>
-			<Grass>○</Grass>
-			<Ground>-</Ground>
-			<Ice>-</Ice>
-			<Normal>○</Normal>
-			<Poison>+</Poison>
-			<Psychic>○</Psychic>
-			<Rock>+</Rock>
-			<Steel>+</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Ice</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>+</Dragon>
-			<Electric>○</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>-</Fire>
-			<Flying>+</Flying>
-			<Ghost>○</Ghost>
-			<Grass>+</Grass>
-			<Ground>+</Ground>
-			<Ice>-</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>○</Rock>
-			<Steel>-</Steel>
-			<Water>-</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Normal</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>×</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>-</Rock>
-			<Steel>-</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Poison</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>+</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>-</Ghost>
-			<Grass>+</Grass>
-			<Ground>-</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>-</Poison>
-			<Psychic>○</Psychic>
-			<Rock>-</Rock>
-			<Steel>×</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Psychic</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>×</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>+</Fighting>
-			<Fire>○</Fire>
-			<Flying>○</Flying>
-			<Ghost>○</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>+</Poison>
-			<Psychic>-</Psychic>
-			<Rock>○</Rock>
-			<Steel>-</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Rock</MoveType>
-		<PokemonType>
-			<Bug>+</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>○</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>-</Fighting>
-			<Fire>+</Fire>
-			<Flying>+</Flying>
-			<Ghost>○</Ghost>
-			<Grass>○</Grass>
-			<Ground>-</Ground>
-			<Ice>+</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>○</Rock>
-			<Steel>-</Steel>
-			<Water>○</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Steel</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>-</Electric>
-			<Fairy>+</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>-</Fire>
-			<Flying>○</Flying>
-			<Ghost>○</Ghost>
-			<Grass>○</Grass>
-			<Ground>○</Ground>
-			<Ice>+</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>+</Rock>
-			<Steel>-</Steel>
-			<Water>-</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-	<MoveEffectiveness>
-		<MoveType>Water</MoveType>
-		<PokemonType>
-			<Bug>○</Bug>
-			<Dark>○</Dark>
-			<Dragon>○</Dragon>
-			<Electric>-</Electric>
-			<Fairy>○</Fairy>
-			<Fighting>○</Fighting>
-			<Fire>+</Fire>
-			<Flying>○</Flying>
-			<Ghost>○</Ghost>
-			<Grass>-</Grass>
-			<Ground>+</Ground>
-			<Ice>○</Ice>
-			<Normal>○</Normal>
-			<Poison>○</Poison>
-			<Psychic>○</Psychic>
-			<Rock>+</Rock>
-			<Steel>○</Steel>
-			<Water>-</Water>
-		</PokemonType>
-	</MoveEffectiveness>
-</Effectiveness>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MoveEffectiveness xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-04-25">
+  <Key>
+    <SuperEffective symbol="+" multiplier="1.4" />
+    <Neutral symbol="○" multiplier="1" />
+    <NotVeryEffective symbol="-" multiplier="0.714" />
+    <Immune symbol="×" multiplier="0.51" />
+  </Key>
+  <Moves type="Bug">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="+" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="-" />
+    <Pokemon type="Fighting" value="-" />
+    <Pokemon type="Fire" value="-" />
+    <Pokemon type="Flying" value="-" />
+    <Pokemon type="Ghost" value="-" />
+    <Pokemon type="Grass" value="+" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="-" />
+    <Pokemon type="Psychic" value="+" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Dark">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="-" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="-" />
+    <Pokemon type="Fighting" value="-" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="+" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="+" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="○" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Dragon">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="+" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="×" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Electric">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="-" />
+    <Pokemon type="Electric" value="-" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="+" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="-" />
+    <Pokemon type="Ground" value="×" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="○" />
+    <Pokemon type="Water" value="+" />
+  </Moves>
+  <Moves type="Fairy">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="+" />
+    <Pokemon type="Dragon" value="+" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="+" />
+    <Pokemon type="Fire" value="-" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="-" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Fighting">
+    <Pokemon type="Bug" value="-" />
+    <Pokemon type="Dark" value="+" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="-" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="-" />
+    <Pokemon type="Ghost" value="×" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="+" />
+    <Pokemon type="Normal" value="+" />
+    <Pokemon type="Poison" value="-" />
+    <Pokemon type="Psychic" value="-" />
+    <Pokemon type="Rock" value="+" />
+    <Pokemon type="Steel" value="+" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Fire">
+    <Pokemon type="Bug" value="+" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="-" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="+" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="+" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="+" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Flying">
+    <Pokemon type="Bug" value="+" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="+" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="+" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="-" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Ghost">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="-" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="+" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="-" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="+" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="○" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Grass">
+    <Pokemon type="Bug" value="-" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="-" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="-" />
+    <Pokemon type="Flying" value="-" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="-" />
+    <Pokemon type="Ground" value="+" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="-" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="+" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="+" />
+  </Moves>
+  <Moves type="Ground">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="+" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="+" />
+    <Pokemon type="Flying" value="×" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="-" />
+    <Pokemon type="Ice" value="-" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="+" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="+" />
+    <Pokemon type="Steel" value="+" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Ice">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="+" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="-" />
+    <Pokemon type="Flying" value="+" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="+" />
+    <Pokemon type="Ground" value="+" />
+    <Pokemon type="Ice" value="-" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="-" />
+  </Moves>
+  <Moves type="Normal">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="×" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="-" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Poison">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="+" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="-" />
+    <Pokemon type="Grass" value="+" />
+    <Pokemon type="Ground" value="-" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="-" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="-" />
+    <Pokemon type="Steel" value="×" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Psychic">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="×" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="+" />
+    <Pokemon type="Fire" value="○" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="+" />
+    <Pokemon type="Psychic" value="-" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Rock">
+    <Pokemon type="Bug" value="+" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="○" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="-" />
+    <Pokemon type="Fire" value="+" />
+    <Pokemon type="Flying" value="+" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="-" />
+    <Pokemon type="Ice" value="+" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="○" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="○" />
+  </Moves>
+  <Moves type="Steel">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="-" />
+    <Pokemon type="Fairy" value="+" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="-" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="○" />
+    <Pokemon type="Ground" value="○" />
+    <Pokemon type="Ice" value="+" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="+" />
+    <Pokemon type="Steel" value="-" />
+    <Pokemon type="Water" value="-" />
+  </Moves>
+  <Moves type="Water">
+    <Pokemon type="Bug" value="○" />
+    <Pokemon type="Dark" value="○" />
+    <Pokemon type="Dragon" value="○" />
+    <Pokemon type="Electric" value="-" />
+    <Pokemon type="Fairy" value="○" />
+    <Pokemon type="Fighting" value="○" />
+    <Pokemon type="Fire" value="+" />
+    <Pokemon type="Flying" value="○" />
+    <Pokemon type="Ghost" value="○" />
+    <Pokemon type="Grass" value="-" />
+    <Pokemon type="Ground" value="+" />
+    <Pokemon type="Ice" value="○" />
+    <Pokemon type="Normal" value="○" />
+    <Pokemon type="Poison" value="○" />
+    <Pokemon type="Psychic" value="○" />
+    <Pokemon type="Rock" value="+" />
+    <Pokemon type="Steel" value="○" />
+    <Pokemon type="Water" value="-" />
+  </Moves>
+</MoveEffectiveness>

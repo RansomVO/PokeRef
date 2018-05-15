@@ -32,7 +32,7 @@
         <title>Charts</title>
       </head>
       <body>
-        <img class="FLOAT_RIGHT" style="margin:1em; max-height:100%; max-width:45%;" src="/images/404pokemon.png" />
+        <img class="FLOAT_RIGHT" style="margin:1em; max-height:100%; max-width:45%;" src="/images/humor/404pokemon.png" />
         <h1>
           <xsl:call-template name="HomePageLink" />
           <xsl:text> Charts</xsl:text>
@@ -59,7 +59,7 @@
           <p class="PARENT CHILD">
             Interested in seeing what Pokemon there are?
             How about ones that aren't even released in Pokemon GO yet?
-            <br />What about getting the basic information about each of the Pokemon?
+            <br />What about getting the basic information about each of the Pokemon that <span class="EMPHASIS">have</span> been released?
             <br />Check these out!
           </p>
           <script>InsertURL('pokechart/_linkslist.html?cacherefresh={$CurrentDate}')</script>
@@ -74,7 +74,7 @@
         <div class="CHILD INDENT">
           <p class="PARENT CHILD">
             Sometimes you just want to see a list of the Pokemon that fit your criteria.
-            For example, maybe you want to perform a Field Research task that involves catching Poison type Pokemon.
+            For example, maybe you want to complete a Field Research that involves catching Poison type Pokemon.
             <br />This list should help you out.
           </p>
         </div>
@@ -118,6 +118,26 @@
           <div class="INDENT CHILD">
             <script>InsertURL('movesets/_linkslist.html?cacherefresh={$CurrentDate}')</script>
           </div>
+        </div>
+
+        <br />
+        <hr />
+        <h2 id="anchor_fieldresearch">
+          <a href="fieldresearch/">Field Research</a>
+          <span class="NOTE TODO">(Beta)</span>
+        </h2>
+        <div class="INDENT">
+          <p>
+            For Field Research, you perform a Task to get a Reward.
+            But what Tasks match up with which Rewards?
+          </p>
+          <p>
+            And sometimes the Reward is an Encounter with a Pokemon.
+            But what Pokemon may be the reward for the Task?
+          </p>
+          <p>
+            These charts can help.
+          </p>
         </div>
 
         <br />

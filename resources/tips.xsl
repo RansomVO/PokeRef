@@ -103,8 +103,8 @@
               <td>Sunkerns, Sunfloras and Pokemon with nicknames like "Sunny"</td>
             </tr>
             <tr>
-              <th rowspan="3">Special Words</th>
-              <td rowspan="3">
+              <th rowspan="4">Special Words</th>
+              <td rowspan="4">
                 <b>Pokemon of a special category</b>
               </td>
               <td>"evolve"</td>
@@ -117,6 +117,10 @@
             <tr>
               <td>"legendary"</td>
               <td>Pokemon that are designated as Legendary</td>
+            </tr>
+            <tr>
+              <td>"mythical"</td>
+              <td>Pokemon that are designated as Mythic</td>
             </tr>
             <tr>
               <th rowspan="3">Number</th>
@@ -259,49 +263,49 @@
                   <th>Name</th>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Vaporeon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Vaporeon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>Rainer</td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Jolteon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Jolteon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>Sparky</td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Flareon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Flareon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>Pyro</td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Espeon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Espeon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>Sakura</td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Umbreon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Umbreon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>Tamao</td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Leafeon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Leafeon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>
@@ -309,9 +313,9 @@
                   </td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Glaceon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Glaceon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>
@@ -319,9 +323,9 @@
                   </td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Sylveon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Sylveon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>
@@ -358,17 +362,17 @@
                   <th>Timing</th>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Espeon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Espeon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>Daytime</td>
                 </tr>
                 <tr>
-                  <xsl:apply-templates select="/Root/PokemonStats/Pokemon[Name='Umbreon']" mode="Cell">
+                  <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name='Umbreon']" mode="Cell">
                     <xsl:with-param name="Settings">
-                      <Show small="true" hide_icons="true" />
+                      <Show small="true" hide_type_icons="true" hide_special_icons="true" />
                     </xsl:with-param>
                   </xsl:apply-templates>
                   <td>Nightime</td>

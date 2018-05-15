@@ -37,8 +37,8 @@ ReleasedGens = </xsl:text>
 // #region Array of Pokemon where index = ID.
 var PokemonListById = [ "",
 </xsl:text>
-    <xsl:apply-templates select="PokemonStats/Pokemon" mode="IdDictionary">
-      <xsl:sort select="ID" data-type="number" order="ascending"/>
+    <xsl:apply-templates select="PokeStats/Pokemon" mode="IdDictionary">
+      <xsl:sort select="@id" data-type="number" order="ascending"/>
     </xsl:apply-templates>
     <xsl:text>];
 // #endregion
@@ -46,8 +46,8 @@ var PokemonListById = [ "",
 // #region Associative Array (Dictionary) where Key is Pokemon Name and Value is the ID
 var PokemonNameToIdDictionary = { 
 </xsl:text>
-    <xsl:apply-templates select="PokemonStats/Pokemon" mode="NameDictionary">
-      <xsl:sort select="Name" data-type="text" order="ascending"/>
+    <xsl:apply-templates select="PokeStats/Pokemon" mode="NameDictionary">
+      <xsl:sort select="@name" data-type="text" order="ascending"/>
     </xsl:apply-templates>
     <xsl:text>};
 // #endregion
@@ -80,18 +80,18 @@ function PokemonIdToName(id) {
 //  NOTE: Array is accessed via EffectivenessDictionary[PokemonType][MoveType]
 var EffectivenessDictionary = {
 </xsl:text>
-    <xsl:for-each select="Effectiveness/MoveEffectiveness[1]/PokemonType/*">
-      <xsl:variable name="Type" select="name()" />
+    <xsl:for-each select="MoveEffectiveness/Moves/Pokemon">
+      <xsl:variable name="Type" select="@type" />
       <xsl:text>    '</xsl:text>
       <xsl:value-of select="$Type"/>
       <xsl:text>':</xsl:text>
-      <xsl:value-of select="substring('        ', string-length($Type))"/>
+      <xsl:value-of select="substring('        ', string-length($Type))" />
       <xsl:text>{</xsl:text>
-      <xsl:for-each select="/Root/Effectiveness/MoveEffectiveness/PokemonType/*[name()=$Type]">
+      <xsl:for-each select="/Root/MoveEffectiveness/Moves/Pokemon[@type=$Type]">
         <xsl:text> '</xsl:text>
-        <xsl:value-of select="../../MoveType" />
+        <xsl:value-of select="../@type" />
         <xsl:text>': '</xsl:text>
-        <xsl:value-of select="." />
+        <xsl:value-of select="@value" />
         <xsl:text>',</xsl:text>
       </xsl:for-each>
       <xsl:text> },
@@ -100,11 +100,11 @@ var EffectivenessDictionary = {
     <xsl:text>};
 var EffectivenessKey = {
 </xsl:text>
-    <xsl:for-each select="Effectiveness/Key/*">
+    <xsl:for-each select="MoveEffectiveness/Key/*">
       <xsl:text>    '</xsl:text>
       <xsl:value-of select="name()" />
       <xsl:text>': '</xsl:text>
-      <xsl:value-of select="Symbol" />
+      <xsl:value-of select="@symbol" />
       <xsl:text>',
 </xsl:text>
     </xsl:for-each>
@@ -134,7 +134,7 @@ function GetPokemon(pokemon) {
 <!-- #endregion -->
 <!-- #region GetPokemonID() -->
 function GetPokemonID(pokemon) {
-    return GetPokemon(pokemon).attributes['id'].value;
+    return Number(GetPokemon(pokemon).attributes['id'].value);
 }
 <!-- #endregion -->
 <!-- #region GetPokemonName() -->
@@ -151,7 +151,7 @@ function GetPokemonIDName(pokemon) {
 <!-- #endregion -->
 <!-- #region GetPokemonGeneration() -->
 function GetPokemonGeneration(pokemon) {
-    return GetPokemon(pokemon).attributes['gen'].value;
+    return Number(GetPokemon(pokemon).attributes['gen'].value);
 }
 <!-- #endregion -->
 <!-- #region GetPokemonFamily() -->
@@ -169,7 +169,7 @@ function GetPokemonType1(pokemon) {
 // Do Type1 and Type2 separately so caller can combine them any way they want.
 //  (E.G. If this returns empty, hide the field.)
 function GetPokemonType2(pokemon) {
-    return GetPokemon(pokemon).attributes['type1'].value;
+    return GetPokemon(pokemon).attributes['type2'].value;
 }
 <!-- #endregion -->
 <!-- #region GetPokemonBoost1() -->
@@ -213,12 +213,12 @@ function GetPokemonRarity(pokemon) {
 <!-- #endregion -->
 <!-- #region GetPokemonMax_CP() -->
 function GetPokemonMax_CP(pokemon) {
-    return GetPokemon(pokemon).attributes['maxCP'].value;
+    return Number(GetPokemon(pokemon).attributes['maxCP'].value);
 }
 <!-- #endregion -->
 <!-- #region GetPokemonMax_HP() -->
 function GetPokemonMax_HP(pokemon) {
-    return GetPokemon(pokemon).attributes['maxHP'].value;
+    return Number(GetPokemon(pokemon).attributes['maxHP'].value);
 }
 <!-- #endregion -->
 <!-- #regionGetPokemonBuddyKM () -->
@@ -333,6 +333,7 @@ function GetPokemonRaidBossLink(pokemon) {
 }
 <!-- #endregion -->
 // #endregion
+<!-- #endregion -->
 
     <!-- #region Functions to get descriptor icons. -->
 // ==============================================================================================
@@ -342,7 +343,7 @@ function GetPokemonRaidBossLink(pokemon) {
 function GetPokemonShinyIcon(pokemon) {
     return GetPokemonShiny(pokemon) ? 'No' : '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /</xsl:text>
+    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/game/shiny.png" alt="Shiny" /</xsl:text>
     <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>Yes';
 }
@@ -367,7 +368,7 @@ function GetPokemonTypeIcon(type) {
     } else {
         return '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/type_' + type.toLowerCase() + '.png" title="' + type + '" /</xsl:text>
+    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/types/type_' + type.toLowerCase() + '.png" title="' + type + '" /</xsl:text>
     <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
     <xsl:text>' + type;
     }
@@ -393,7 +394,7 @@ function GetPokemonBoostIcon(boost, icon) {
     } else {
         return '</xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
-    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/weather_' + boost.toLowerCase().replace(/ /g,'') + '.png" title="' + boost.replace(/ /g, '</xsl:text>
+    <xsl:text>img class="TAG_ICON_REGULAR" src="/images/types/weather_' + boost.toLowerCase().replace(/ /g,'') + '.png" title="' + boost.replace(/ /g, '</xsl:text>
     <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
     <xsl:text>') + '" /</xsl:text>
     <xsl:value-of select="concat($gt, $nbsp)" disable-output-escaping="yes" />
@@ -466,7 +467,7 @@ function RemovePokemonSection(pokemonHtml, id) {
 
   <xsl:template match="Pokemon" mode="IdDictionary">
     <xsl:text>    "</xsl:text>
-    <xsl:value-of select="Name"/>
+    <xsl:value-of select="@name"/>
     <xsl:text>",
 </xsl:text>
   </xsl:template>
@@ -474,9 +475,9 @@ function RemovePokemonSection(pokemonHtml, id) {
   <xsl:template match="Pokemon" mode="NameDictionary">
     <!-- Using quotes here so that we don't have issues with "Farfetch'd" -->
     <xsl:text>    "</xsl:text>
-    <xsl:value-of select="Name" />
+    <xsl:value-of select="@name" />
     <xsl:text>": </xsl:text>
-    <xsl:value-of select="ID"/>
+    <xsl:value-of select="@id"/>
     <xsl:text>,
 </xsl:text>
   </xsl:template>

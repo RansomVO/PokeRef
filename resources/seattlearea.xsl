@@ -53,7 +53,7 @@
         <p>
           I live on the Eastside of the Greater Seattle area and here are some of the resources that are available specifically for this area.
         </p>
-        <script>WriteFeedbackNote();</script>
+        <xsl:call-template name="WriteFeedbackNote" />
 
         <hr />
         <h2 id="anchor_discord">

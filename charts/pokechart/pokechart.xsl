@@ -46,12 +46,15 @@
         <title>
           Pokemon Chart
           <xsl:choose>
-            <xsl:when test="count(PokemonStats/Generation/ID) > 1">
+            <xsl:when test="/Root/params/@released-only">
+              <xsl:text> - All Released </xsl:text>
+            </xsl:when>
+            <xsl:when test="count(PokeStats/@gen) > 1">
               <xsl:text> - All Gens </xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="PokemonStats/Generation/ID"/>
+              <xsl:value-of select="PokeStats/@gen"/>
             </xsl:otherwise>
           </xsl:choose>
         </title>
@@ -61,12 +64,15 @@
           <xsl:call-template name="HomePageLink" />
           Pokemon Chart
           <xsl:choose>
-            <xsl:when test="count(PokemonStats/Generation/ID) > 1">
+            <xsl:when test="/Root/params/@released-only">
+              <xsl:text> - All Released </xsl:text>
+            </xsl:when>
+            <xsl:when test="count(PokeStats/@gen) > 1">
               <xsl:text> - All Gens </xsl:text>
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="PokemonStats/Generation/ID"/>
+              <xsl:value-of select="PokeStats/@gen"/>
             </xsl:otherwise>
           </xsl:choose>
         </h1>
@@ -74,7 +80,6 @@
           These are charts of basic info about Pokemon.
           <br /><span class="NOTE">(Pokemon that are not yet released are greyed out.)</span>
         </p>
-
 
         <br />
         <hr />
@@ -90,13 +95,13 @@
           <hr />
           <xsl:call-template name="CreateKey" />
 
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 1]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 2]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 3]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 4]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 5]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 6]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 7]" />
+          <xsl:apply-templates select="PokeStats[@gen = 1]" />
+          <xsl:apply-templates select="PokeStats[@gen = 2]" />
+          <xsl:apply-templates select="PokeStats[@gen = 3]" />
+          <xsl:apply-templates select="PokeStats[@gen = 4]" />
+          <xsl:apply-templates select="PokeStats[@gen = 5]" />
+          <xsl:apply-templates select="PokeStats[@gen = 6]" />
+          <xsl:apply-templates select="PokeStats[@gen = 7]" />
         </div>
 
         <xsl:call-template name="PokemonDialog" />
@@ -246,8 +251,13 @@
               <xsl:call-template name="OutputEggSelectionControl" >
                 <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
               </xsl:call-template>
-              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
-              <br /><xsl:text>Pokemon Name or ID:</xsl:text>
+              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
+              <xsl:call-template name="Sprite">
+                <xsl:with-param name="id" select="'Shiny'" />
+                <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+              </xsl:call-template>
+              <xsl:text>Shiny</xsl:text>
+              <br /><xsl:call-template name="OutputFilterPokemonNameIDLabel" />
               <xsl:call-template name="OutputFilterPokemonNameID">
                 <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
               </xsl:call-template>
@@ -307,40 +317,37 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="PokemonStats">
+  <xsl:template match="PokeStats">
     <br />
     <hr />
     <h2>
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('GEN', Generation/ID)" />
+        <xsl:value-of select="concat('GEN', @gen)" />
       </xsl:attribute>
       <xsl:text>Generation </xsl:text>
-      <xsl:value-of select="Generation/ID" />
+      <xsl:value-of select="@gen" />
       <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="concat('GENERATION_', Generation/ID)" />
+        <xsl:with-param name="CollapseeID" select="concat('GENERATION_', @gen)" />
       </xsl:call-template>
     </h2>
     <div>
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('GENERATION_', Generation/ID)" />
+        <xsl:value-of select="concat('GENERATION_', @gen)" />
       </xsl:attribute>
       <div style="display:flex; flex-wrap:wrap;">
         <xsl:attribute name="id">
-          <xsl:value-of select="concat('GEN', Generation/ID, '_Collection')" />
+          <xsl:value-of select="concat('GEN', @gen, '_Collection')" />
         </xsl:attribute>
         <xsl:for-each select="Pokemon">
-          <xsl:if test="not(/Root/params/@released-only) or not(contains(Availability, /Root/Settings/Availability/Unavailable))">
-            <xsl:variable name="Name" select="Name" />
+          <xsl:variable name="id" select="@id" />
+          <xsl:if test="(not(/Root/params/@released-only) or not(contains(@availability, $Availability_Unreleased))) and (@form or not(../Pokemon[@id = $id and @form]))">
+            <xsl:variable name="name" select="@name" />
             <xsl:apply-templates select=".">
               <xsl:with-param name="Settings">
                 <Show boxed="true" valign="bottom" />
               </xsl:with-param>
               <xsl:with-param name="CustomAttributes">
-                <Attributes onclick="OnSelectPokemon(this)" style="cursor:pointer;">
-                  <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
-                    <xsl:attribute name="raidboss">true</xsl:attribute>
-                  </xsl:if>
-                </Attributes>
+                <Attributes onclick="OnSelectPokemon(this)" style="cursor:pointer;" />
               </xsl:with-param>
             </xsl:apply-templates>
           </xsl:if>

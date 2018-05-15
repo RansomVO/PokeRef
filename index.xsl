@@ -41,7 +41,7 @@
           <xsl:call-template name="Logo" />
           <xsl:text> PokeRef - The Pokemon Reference</xsl:text>
         </h1>
-        <img class="FLOAT_RIGHT" style="width:45%; min-width:200px; margin-top:1em;" src="/images/NotJustAGame.png" />
+        <img class="FLOAT_RIGHT" style="width:45%; min-width:200px; margin-top:1em;" src="/images/humor/NotJustAGame.png" />
         <p>
           Since I began playing Pokemon GO, I have learned a lot.
           I began making charts and spreadsheets as reference materials to help me keep track of what I wanted to know about Pokemon.
@@ -142,6 +142,56 @@
                   <script>InsertURL('charts/raidboss/_linkslist.html?cacherefresh={$CurrentDate}')</script>
                 </div>
               </div>
+            </div>
+
+            <div class="SECTION">
+              <h2 id="anchor_pokecharts">
+                <a href="charts/pokechart">Pokemon Chart</a>
+                <xsl:call-template name="Collapser">
+                  <xsl:with-param name="CollapseeID" select="'HOME_POKECHART'" />
+                </xsl:call-template>
+              </h2>
+              <div id="HOME_POKECHART">
+                <p>
+                  Want to know basic information about Pokemon?
+                  Check out these charts and select the Pokemon you are interested in.
+                </p>
+                <div class="CHILD">
+                  <script>InsertLinksList('charts/pokechart/_linkslist.html')</script>
+                </div>
+              </div>
+            </div>
+
+            <div class="SECTION">
+              <h2 id="anchor_fieldresearch">
+                <a href="charts/fieldresearch">Field Research</a>
+                <span class="NOTE TODO">(Beta)</span>
+                <xsl:call-template name="Collapser">
+                  <xsl:with-param name="CollapseeID" select="'HOME_FIELD_RESEARCH'" />
+                </xsl:call-template>
+              </h2>
+              <div id="HOME_FIELD_RESEARCH">
+                <p>
+                  For Field Research, you perform a Task to get a Reward.
+                  But what Tasks match up with which Rewards?
+                </p>
+                <p>
+                  And sometimes the Reward is an Encounter with a Pokemon.
+                  But what Pokemon may be the reward for the Task?
+                </p>
+                <p>
+                  These charts can help.
+                </p>
+              </div>
+            </div>
+
+            <h2 id="anchor_quickchart">
+              <a href="charts/pokequick.html">Pokemon Quick List</a>
+            </h2>
+            <div>
+              <p>
+                <span class="TODO QZX">TODO</span>
+              </p>
             </div>
 
             <h2 id="anchor_evolutions">

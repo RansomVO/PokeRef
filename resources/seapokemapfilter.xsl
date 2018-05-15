@@ -12,25 +12,25 @@
 
   <xsl:variable name="PokemonCount">
     <Count Gen="1">
-      <xsl:value-of select="count(Root/PokemonStats[Generation/ID = 1]/Pokemon)" />
+      <xsl:value-of select="count(Root/PokeStats[@gen = 1]/Pokemon)" />
     </Count>
     <Count Gen="2">
-      <xsl:value-of select="count(Root/PokemonStats[Generation/ID = 2]/Pokemon)" />
+      <xsl:value-of select="count(Root/PokeStats[@gen = 2]/Pokemon)" />
     </Count>
     <Count Gen="3">
-      <xsl:value-of select="count(Root/PokemonStats[Generation/ID = 3]/Pokemon)" />
+      <xsl:value-of select="count(Root/PokeStats[@gen = 3]/Pokemon)" />
     </Count>
     <Count Gen="4">
-      <xsl:value-of select="count(Root/PokemonStats[Generation/ID = 4]/Pokemon)" />
+      <xsl:value-of select="count(Root/PokeStats[@gen = 4]/Pokemon)" />
     </Count>
     <Count Gen="5">
-      <xsl:value-of select="count(Root/PokemonStats[Generation/ID = 5]/Pokemon)" />
+      <xsl:value-of select="count(Root/PokeStats[@gen = 5]/Pokemon)" />
     </Count>
     <Count Gen="6">
-      <xsl:value-of select="count(Root/PokemonStats[Generation/ID = 6]/Pokemon)" />
+      <xsl:value-of select="count(Root/PokeStats[@gen = 6]/Pokemon)" />
     </Count>
     <Count Gen="7">
-      <xsl:value-of select="count(Root/PokemonStats[Generation/ID = 7]/Pokemon)" />
+      <xsl:value-of select="count(Root/PokeStats[@gen = 7]/Pokemon)" />
     </Count>
   </xsl:variable>
 
@@ -222,7 +222,7 @@
         <br />
         <input type="checkbox" onchange="OnColumnCheckChanged(this);">
           <xsl:attribute name="id">
-            <xsl:for-each select="/Root/PokemonStats[$Gen]/Pokemon/ID">
+            <xsl:for-each select="/Root/PokemonStats[$Gen]/Pokemon/@id">
               <xsl:value-of select="." />
               <xsl:text> </xsl:text>
             </xsl:for-each>

@@ -1,13 +1,17 @@
 <!DOCTYPE Root [
-  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
-  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
+  <!ENTITY Settings SYSTEM "/_datafiles/Settings.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/images.xml">
   <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
+  <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.xml">
   <!ENTITY PokemonStats SYSTEM "/_datafiles/pokestats.gen1.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="pokestats.xsl"?>
 <Root>
-  &Settings; 
-  &Mappings;
+  &Constants; 
+  &Settings;
+  &Images;
   &Eggs;
+  &RaidBosses;
   &PokemonStats;
 </Root>

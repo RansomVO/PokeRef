@@ -41,7 +41,7 @@
           Here are a bunch of places that you might find useful.
         </p>
 
-        <script>WriteFeedbackNote();</script>
+        <xsl:call-template name="WriteFeedbackNote" />
 
         <br />
         <hr />

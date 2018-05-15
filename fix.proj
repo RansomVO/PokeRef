@@ -25,7 +25,6 @@
       <Visible>true</Visible>
       <Dependencies>
         _sectionname.txt;
-        contactinfo.html;
         footernote.html;
         charts\_sectionname.txt;
         charts\raidboss\_sectionname.txt;
@@ -37,8 +36,7 @@
         tech\GAME_MASTER\pokestats\_sectionname.txt;
         tech\GAME_MASTER\pokestats\_linkslist.html;
         tools\_sectionname.txt;
-        _datafiles.manual\raidbosses.current.xml;
-        _datafiles.manual\raidbosses.legacy.xml;
+        _datafiles.manual\raidbosses.xml;
       </Dependencies>
     </FixOutputFile>
   </ItemGroup>

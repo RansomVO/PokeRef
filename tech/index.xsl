@@ -36,7 +36,7 @@
           <xsl:call-template name="HomePageLink" />
           Technical Reference
         </h1>
-        <img class="FLOAT_RIGHT" style="width:25%; margin:1em;" src="/images/EeveeDi.png" />
+        <img class="FLOAT_RIGHT" style="width:25%; margin:1em;" src="/images/humor/EeveeDi.png" />
         <p>
           Sometimes you want to really understand how things work.
           There are a lot of technical things under the covers of Pokemon GO.
@@ -112,7 +112,7 @@
               <b>NOTE</b>: If you have a GAME_MASTER file I am missing, or know where I can get it, please let me know.
             </p>
             <div class="INDENT">
-              <script>WriteContactInfo();</script>
+              <xsl:call-template name="WriteContactInfo" />
             </div>
           </div>
         </div>

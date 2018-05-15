@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Research Links
+  https://www.reddit.com/r/TheSilphRoad/comments/88d8yi/research_megathread_how_to_obtain_a_mew_along/ 
+  https://www.reddit.com/r/TheSilphRoad/comments/8gbmvd/report_new_field_research_task_pokemon_encounter/
+  https://www.reddit.com/r/TheSilphRoad/comments/88cwy8/spoilers_all_quests_texts/
+  https://pokemongohub.net/post/guide/field-research-missions-list/
+-->
+
+<!--
+Battle in a Gym {0} times.
+Battle in a Gym.
+Battle in {0} raids.
+Battle in a raid.
+Use a supereffective Charged Attack in {0} Gym battles.
+Use a supereffective Charged Attack in a Gym battle.
+Use {0} Berries to help catch Pokémon.
+Use a Berry to help catch a Pokémon.
+Catch {0} Pokémon.
+Catch a Pokémon.
+Catch {0} Ditto.
+Catch a Ditto.
+Catch {0} Oddish or Bellsprout.
+Catch an Oddish or Bellsprout.
+Catch {0} Swablu.
+Catch a Swablu.
+Catch {0} Pidgey or Murkrow.
+Catch a Pidgey or Murkrow.
+Catch {0} Treecko or Mudkip.
+Catch a Treecko or Mudkip.
+Catch {0} Meowth or Skitty.
+Catch a Meowth or Skitty.
+Catch {0} Bug-type Pokémon.
+Catch a Bug-type Pokémon.
+Catch {0} Dark-type Pokémon.
+Catch a Dark-type Pokémon.
+Catch {0} Dragon-type Pokémon.
+Catch a Dragon-type Pokémon.
+Catch {0} Electric-type Pokémon.
+Catch an Electric-type Pokémon.
+Catch {0} Fairy-type Pokémon.
+Catch a Fairy-type Pokémon.
+Catch {0} Fighting-type Pokémon.
+Catch a Fighting-type Pokémon.
+Catch {0} Fire-type Pokémon.
+Catch a Fire-type Pokémon.
+Catch {0} Flying-type Pokémon.
+Catch a Flying-type Pokémon.
+Catch {0} Ghost-type Pokémon.
+Catch a Ghost-type Pokémon.
+Catch {0} Grass-type Pokémon.
+Catch a Grass-type Pokémon.
+Catch {0} Ground-type Pokémon.
+Catch a Ground-type Pokémon.
+Catch {0} Ice-type Pokémon.
+Catch an Ice-type Pokémon.
+Catch {0} Normal-type Pokémon.
+Catch a Normal-type Pokémon.
+Catch {0} Poison-type Pokémon.
+Catch a Poison-type Pokémon.
+Catch {0} Psychic-type Pokémon.
+Catch a Psychic-type Pokémon.
+Catch {0} Rock-type Pokémon.
+Catch a Rock-type Pokémon.
+Catch {0} Steel-type Pokémon.
+Catch a Steel-type Pokémon.
+Catch {0} Water-type Pokémon.
+Catch a Water-type Pokémon.
+Catch {0} Grass-, Fire-, or Ground-type Pokémon.
+Catch a Grass-, Fire-, or Ground-type Pokémon.
+Catch {0} Pokémon with Weather Boost.
+Catch a Pokémon with Weather Boost.
+Evolve a Pokémon.
+Evolve {0} Pokémon.
+Evolve {0} Fire-type Pokémon.
+Evolve a Fire-type Pokémon.
+Hatch {0} Eggs.
+Hatch an Egg.
+Make {0} Excellent Throws.
+Make an Excellent Throw.
+Make {0} Great Curveball Throws.
+Make a Great Curveball Throw.
+Make {0} Great Throws.
+Make a Great Throw.
+Make {0} Curveball Throws in a row.
+Make {0} Excellent Curveball Throws in a row.
+Make {0} Great Curveball Throws in a row.
+Make {0} Great Throws in a row.
+Make {0} Nice Curveball Throws in a row.
+Make {0} Nice Throws in a row.
+Make {0} Nice Throws.
+Make a Nice Throw.
+Power up Pokémon {0} times.
+Power up a Pokémon.
+Spin {0} PokéStops you haven't visited before.
+Spin a PokéStop you haven't visited before.
+Spin {0} PokéStops.
+Spin a PokéStop.
+Win {0} Gym battles.
+Win a Gym battle.
+Win a level 3 or higher raid.
+Win {0} level 3 or higher raids.
+Win {0} raids.
+Win a raid.
+Reach level {0}.
+Earn a silver Kanto medal.
+Earn a gold Kanto medal.
+Earn {0} Candies walking with your buddy.
+Earn a Candy walking with your buddy.
+Evolve a Magikarp.
+Transfer {0} Pokémon.
+Make an Excellent Curveball Throw.
+Make {0} Excellent Curveball Throws.
+Land {0} Excellent Throws in a row.
+
+-->
+
+<FieldResearch category="Current" last_updated="2018-05-08">
+  <Category type="Hatch">
+    <Research task="Hatch an egg">
+      <Encounter id="102" name="Exeggcute" />
+      <Item id="Razz" amount="3" />
+      <Item id="Pinap" amount="1" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Hatch 3 eggs">
+      <Encounter id="126" name="Magmar" />
+      <Item id="Razz" amount="9" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="10" />
+      <Item id="UltraBall" amount="5" />
+      <Item id="Stardust" amount="1000" />
+      <Item id="RareCandy" amount="1" />
+      <Item id="RareCandy" amount="2" />
+      <Item id="XP" amount="1000" />
+    </Research>
+    <Research task="Hatch 5 eggs">
+      <Encounter id="113" name="Chansey" />
+    </Research>
+  </Category>
+
+  <Category type="Power-up">
+    <Research task="Power up a Pokemon">
+      <Encounter id="82" name="Magneton" />
+    </Research>
+    <Research task="Power up Pokemon 5 times">
+      <Encounter id="1" name="Bulbasaur" />
+      <Encounter id="4" name="Charmander" />
+      <Encounter id="7" name="Squirtle" />
+    </Research>
+    <Research task="Power up Pokemon 7 times">
+      <Encounter id="311" name="Plusle" />
+    </Research>
+  </Category>
+
+  <Category type="Evolve">
+    <Research task="Evolve a Pokemon">
+      <Encounter id="133" name="Eevee" />
+    </Research>
+    <Research task="Evolve 5 Pokemon">
+      <Encounter id="4" name="Charmander" />
+    </Research>
+    <Research task="Evolve 3 Electric-Type Pokemon">
+      <Encounter id="135" name="Jolteon" />
+    </Research>
+  </Category>
+
+  <Category type="Throws">
+    <Research task="Make 5 Curveball Throws in a row">
+      <Item id="Nanab" amount="6" />
+      <Item id="Pinap" amount="1" />
+      <Item id="Pinap" amount="2" />
+      <Item id="GreatBall" amount="5" />
+    </Research>
+
+    <!-- #region Nice-->
+    <Research task="Make 5 Nice Throws">
+      <Encounter id="100" name="Voltorb" />
+      <Encounter id="101" name="Electrode" />
+      <Item id="Razz" amount="3" />
+      <Item id="Pinap" amount="1" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Make 2 Nice Throws in a row">
+      <Item id="Nanab" amount="3" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Make 3 Nice Throws in a row">
+      <Item id="Pinap" amount="2" />
+      <Item id="UltraBall" amount="2" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Make 2 Nice Curveball Throws in a row">
+      <Item id="Razz" amount="3" />
+      <Item id="Pinap" amount="1" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Make 3 Nice Curveball Throws in a row">
+      <Encounter id="101" name="Electrode" />
+      <Item id="Razz" amount="3" />
+    </Research>
+    <!-- #endregion Nice-->
+
+    <!-- #region Great-->
+    <Research task="Make 3 Great Throws">
+      <Encounter id="92" name="Gastly" />
+      <Item id="Razz" amount="3" />
+      <Item id="Nanab" amount="1" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Make 5 Great Throws">
+      <Item id="Razz" amount="5" />
+    </Research>
+    <Research task="Make 10 Great Throws">
+      <Item id="XP" amount="500" />
+    </Research>
+    <Research task="Make 3 Great Throws in a row">
+      <Item id="Razz" amount="9" />
+      <Item id="Pinap" amount="3" />
+      <Item id="UltraBall" amount="5-10" />
+      <Item id="Stardust" amount="1000" />
+      <Item id="RareCandy" amount="1" />
+    </Research>
+    <Research task="Make 5 Great Throws in a row">
+      <Encounter id="95" name="Onix" />
+      <Encounter id="180" name="Flaaffy" />
+      <Item id="Pinap" amount="2" />
+    </Research>
+    <Research task="Make 3 Great Curveball Throws">
+      <Item id="Razz" amount="9" />
+      <Item id="Golden" amount="2" />
+      <Item id="UltraBall" amount="5" />
+      <Item id="Stardust" amount="1000" />
+    </Research>
+    <Research task="Make 2 Great Curveball Throws in a row">
+      <Item id="PokeBall" amount="5" />
+    </Research>
+    <Research task="Make 3 Great Curveball Throws in a row">
+      <Encounter id="95" name="Onix" />
+      <Item id="UltraBall" amount="1" />
+      <Item id="Stardust" amount="1500" />
+      <Item id="RareCandy" amount="3" />
+    </Research>
+    <!-- #endregion Great-->
+
+    <!-- #region Excellent-->
+    <Research task="Make an Excellent Throw">
+      <Item id="Pinap" amount="2" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="UltraBall" amount="2" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Make 3 Excellent Throws">
+    </Research>
+    <Research task="Make 3 Excellent Throws in a row">
+      <Encounter id="256" name="Larvitar" />
+    </Research>
+    <Research task="Make an Excellent Curveball Throw">
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <!-- #endregion Excellent-->
+  </Category>
+
+  <Category type="Catch">
+    <!-- #region Basic -->
+    <Research task="Catch 10 Pokemon">
+      <Encounter id="129" name="Magikarp" />
+      <Item id="Razz" amount="3" />
+      <Item id="Pinap" amount="1" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 5 Pokemon with Weather Boost">
+      <Encounter id="60" name="Poliwag" />
+      <Encounter id="37" name="Vulpix" />
+      <Item id="Razz" amount="3" />
+      <Item id="Pinap" amount="1" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 10 Pokemon with Weather Boost">
+      <Encounter id="4" name="Charmander" />
+      <Item id="Razz" amount="6" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Catch 20 Pokemon with Weather Boost">
+      <Encounter id="38" name="Ninetales" />
+    </Research>
+    <Research task="Use 5 Berries to help catch Pokemon">
+      <Item id="Razz" amount="6" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <!-- #endregion Basic -->
+
+    <!-- #region Specific -->
+    <Research task="Catch a Ditto">
+      <Item id="Golden" amount="2" />
+      <Item id="UltraBall" amount="10" />
+      <Item id="Stardust" amount="1500" />
+      <Item id="RareCandy" amount="3" />
+    </Research>
+    <Research task="Catch 3 Meowth or Skitty">
+      <Encounter id="58" name="Growlithe" />
+      <Item id="Razz" amount="4-6" />
+      <Item id="Pinap" amount="1-2" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200-500" />
+    </Research>
+    <Research task="Catch 3 Oddish or Bellsprout">
+      <Encounter id="114" name="Tangela" />
+      <Item id="Razz" amount="4-6" />
+      <Item id="Pinap" amount="1-2" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200-500" />
+    </Research>
+    <Research task="Catch 3 Pidgey or Murkrow">
+      <Encounter id="23" name="Ekans" />
+      <Item id="Razz" amount="4-6" />
+      <Item id="Pinap" amount="1-2" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200-500" />
+    </Research>
+    <Research task="Catch 3 Swablu">
+      <Item id="Stardust" amount="200" />
+      <Item id="Razz" amount="4-6" />
+      <Item id="Pinap" amount="1-2" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200-500" />
+    </Research>
+    <Research task="Catch 3 Treeko or Mudkip">
+      <Encounter id="255" name="Torchic" />
+      <Item id="Razz" amount="4-6" />
+      <Item id="Pinap" amount="1-2" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200-500" />
+    </Research>
+    <!-- #endregion Specific -->
+
+    <!-- #region Types -->
+    <Research task="Catch 3 Bug-Type Pokemon">
+      <Encounter id="127" name="Pinsir" />
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 10 Bug-Type Pokemon">
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Catch 3 Dark-Type Pokemon">
+      <Encounter id="228" name="Houndour" />
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 10 Dark-Type Pokemon">
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Catch a Dragon-Type Pokemon">
+      <Encounter id="147" name="Dratini" />
+    </Research>
+    <Research task="Catch 3 Dragon-Type Pokemon">
+      <Item id="RareCandy" amount="3" />
+    </Research>
+    <Research task="Catch 3 Electric-Type Pokemon">
+      <Encounter id="25" name="Pikachu" />
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 10 Electric-Type Pokemon">
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Catch 3 Fire-Type Pokemon">
+      <Encounter id="77" name="Ponyta" />
+      <Encounter id="219" name="Magcargo" />
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 5 Fire-Type Pokemon">
+      <Encounter id="136" name="Flareon" />
+    </Research>
+    <Research task="Catch 10 Fire-Type Pokemon">
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Catch 3 Flying-Type Pokemon">
+      <Encounter id="84" name="Doduo" />
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 5 Flying-Type Pokemon">
+      <Encounter id="207" name="Gligar" />
+    </Research>
+    <Research task="Catch 10 Flying-Type Pokemon">
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Catch 3 Poison-Type Pokemon">
+      <Encounter id="88" name="Grimer" />
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Catch 10 Poison-Type Pokemon">
+      <Item id="Razz" amount="6" />
+      <Item id="Pinap" amount="3" />
+      <Item id="PokeBall" amount="5" />
+      <Item id="GreatBall" amount="5" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Catch 3 Grass-, Ground- or Fire-Type Pokemon">
+      <Encounter id="322" name="Numel" />
+    </Research>
+    <Research task="Catch 3 Water-, Electric- or Bug-Type Pokemon">
+      <Encounter id="309" name="Electrike" />
+    </Research>
+    <!-- #endregion Types -->
+  </Category>
+
+  <Category type="Gym">
+    <Research task="Battle in a Gym">
+      <Encounter id="312" name="Minun" />
+      <Item id="Nanab" amount="5" />
+      <Item id="Pinap" amount="1" />
+      <Item id="Potion" amount="5" />
+      <Item id="Revive" amount="2" />
+      <Item id="Stardust" amount="200" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Battle in a Gym 3 times">
+      <Encounter id="124" name="Jynx" />
+    </Research>
+    <Research task="Battle in a Gym 5 times">
+      <Encounter id="66" name="Machop" />
+      <Encounter id="56" name="Mankey" />
+      <Item id="Nanab" amount="10" />
+      <Item id="Potion" amount="5" />
+      <Item id="SuperPotion" amount="3" />
+      <Item id="Revive" amount="2-4" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Win a Gym battle">
+      <Encounter id="7" name="Squirtle" />
+      <Item id="Nanab" amount="10" />
+      <Item id="Potion" amount="5" />
+      <Item id="Revive" amount="4" />
+    </Research>
+    <Research task="Win 3 Gym battles">
+      <Item id="HyperPotion" amount="3" />
+      <Item id="MaxRevive" amount="1" />
+      <Item id="RareCandy" amount="1" />
+    </Research>
+    <Research task="Win 5 Gym battles">
+    </Research>
+    <Research task="Use a supereffective Charged Attack in a Gym Battle">
+      <Item id="Nanab" amount="10" />
+      <Item id="SuperPotion" amount="3" />
+      <Item id="Revive" amount="4" />
+      <Item id="Stardust" amount="500" />
+    </Research>
+    <Research task="Use a supereffective Charged Attack in 5 Gym Battles">
+      <Encounter id="125" name="Electabuzz" />
+      <Item id="ChargedTM" amount="1" />
+    </Research>
+    <Research task="Use a supereffective Charged Attack in 7 Gym Battles">
+      <Encounter id="125" name="Electabuzz" />
+      <Item id="SuperPotion" amount="3" />
+      <Item id="Revive" amount="6" />
+      <Item id="MaxRevive" amount="1" />
+      <Item id="Stardust" amount="1000" />
+      <Item id="RareCandy" amount="1" />
+    </Research>
+  </Category>
+
+  <Category type="Raid">
+    <Research task="Battle in a Raid">
+      <Encounter id="312" name="Minun" />
+      <Item id="Potion" amount="5" />
+      <Item id="Revive" amount="2" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Battle in 3 Raids">
+    </Research>
+    <Research task="Battle in 5 Raids">
+    </Research>
+    <Research task="Win a raid">
+      <Item id="Nanab" amount="10" />
+      <Item id="SuperPotion" amount="3" />
+      <Item id="Revive" amount="4" />
+      <Item id="RareCandy" amount="500" />
+    </Research>
+    <Research task="Win 3 raids">
+      <Item id="MaxPotion" amount="3" />
+      <Item id="Revive" amount="8" />
+      <Item id="MaxRevive" amount="3" />
+      <Item id="Stardust" amount="1500" />
+      <Item id="ChargedTM" amount="1" />
+    </Research>
+    <Research task="Win 5 raids">
+      <Encounter id="185" name="Sudowoodo" />
+      <Encounter id="132" name="Ditto" />
+    </Research>
+    <Research task="Win a level 3 or higher raid">
+      <Item id="HyperPotion" amount="3" />
+      <Item id="MaxRevive" amount="1-3" />
+      <Item id="Stardust" amount="1000" />
+      <Item id="RareCandy" amount="1" />
+    </Research>
+  </Category>
+
+  <Category type="Misc">
+    <Research task="Earn 1 Candy for walking with a buddy">
+      <Encounter id="333" name="Swablu" />
+    </Research>
+    <Research task="Spin 10 PokeStops">
+      <Item id="Razz" amount="3" />
+      <Item id="Pinap" amount="1" />
+      <Item id="PokeBall" amount="5-10" />
+      <Item id="Stardust" amount="200" />
+    </Research>
+    <Research task="Spin 6 PokeStops you haven't visited before">
+      <Encounter id="142" name="Aerodactyl" />
+    </Research>
+  </Category>
+</FieldResearch>

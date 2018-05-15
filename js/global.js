@@ -171,6 +171,10 @@ function IsIE() {
 // ==============================================================================================
 
 function GetFieldValue(field) {
+    if (field === undefined || field === null) {
+        return null;
+    }
+
     // Special Cases.
     if (field.nodeName.toUpperCase() === 'INPUT' && field.type.toUpperCase() === 'CHECKBOX') {
         return Boolean(field.checked);
@@ -185,13 +189,15 @@ function GetFieldValueById(fieldId) {
 }
 
 function SetFieldValue(field, value) {
-    switch (field.type) {
-        case 'checkbox':
-            field.checked = (value === 'true');
-            break;
+    if (field !== undefined && field !== null) {
+        switch (field.type) {
+            case 'checkbox':
+                field.checked = (value === 'true');
+                break;
 
-        default:
-            field.value = value;
+            default:
+                field.value = value;
+        }
     }
 }
 
@@ -243,7 +249,6 @@ function UpdateCookieSetting(fieldId, defaultValue) {
 
         // Field with specified ID is not found, so skip it.
         if (field === null) {
-            alert('Field "' + fieldId + '" not found.');
             return;
         }
 
@@ -352,18 +357,8 @@ function GetLinksList(url, style) {
 // #endregion
 
 // ==============================================================================================
-// #region A bunch of methods that can be used to insert specific content.
-//  (So we can update it in one place.)
+// #region Method for outputting the footer of each page in a dynamic way.
 // ==============================================================================================
-
-function WriteContactInfo() {
-    document.write(ReadURL('/contactinfo.html' + CacheDate));
-}
-
-function WriteFeedbackNote() {
-    document.write(ReadURL('/feedbacknote.html' + CacheDate));
-    WriteContactInfo();
-}
 
 // Writes the bottom line separator, then if not the home page it starts the link section with a link to the home page.
 function WriteFooter() {
@@ -377,8 +372,6 @@ function WriteFooter() {
     }
 
     document.write(ReadURL('/footernote.html' + CacheDate));
-    WriteFeedbackNote();
-    document.write('<br /><br /><br />');
 }
 
 function GetFooterNavigation(href) {

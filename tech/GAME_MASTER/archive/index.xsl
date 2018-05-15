@@ -55,7 +55,7 @@
             <b>NOTE</b>: If you have a GAME_MASTER file I am missing, or know where I can get it, please let me know.
           </p>
           <div class="INDENT">
-            <script>WriteContactInfo();</script>
+            <xsl:call-template name="WriteContactInfo" />
           </div>
         </div>
 
@@ -64,7 +64,7 @@
         <table border="1">
           <xsl:call-template name="CreateTableHeaders" />
           <xsl:apply-templates select="GAME_MASTERS/GAME_MASTER">
-            <xsl:sort select="TimeStamp_DEC" order="descending" />
+            <xsl:sort select="TimeStamp_DEC" data-type="number" order="descending" />
           </xsl:apply-templates>
         </table>
 
@@ -76,15 +76,14 @@
   <!-- Template to create the headers for the table -->
   <xsl:template name="CreateTableHeaders">
     <tr style="font-size:x-large;">
-      <th>
-        Time Stamp<br />(UTC)
-      </th>
-      <th>
-        Protobuf<br />GAME_MASTER
-      </th>
-      <th>
-        JSON<br />GAME_MASTER
-      </th>
+      <th colspan="2">Time Stamp</th>
+      <th colspan="2">GAME_MASTER</th>
+    </tr>
+    <tr style="font-size:large;">
+      <th>timestampMs</th>
+      <th>UTC</th>
+      <th>Protobuf</th>
+      <th>JSON</th>
     </tr>
   </xsl:template>
 
@@ -93,19 +92,24 @@
     <tr align="left" style="border-top-width:5px">
       <td>
         <code>
-          <xsl:value-of select="TimeStamp" />
+          <xsl:value-of select="@timestamp_dec" />
+        </code>
+      </td>
+      <td>
+        <code>
+          <xsl:value-of select="@timestamp" />
         </code>
       </td>
       <td>
         <xsl:choose>
-          <xsl:when test="FileName != ''">
+          <xsl:when test="@have_original='true'">
             <a>
               <xsl:attribute name="download" />
               <xsl:attribute name="href">
-                <xsl:value-of select="FileName" />
+                <xsl:value-of select="@name" />
               </xsl:attribute>
               <code>
-                <xsl:value-of select="FileName" />
+                <xsl:value-of select="@name" />
               </code>
             </a>
           </xsl:when>
@@ -120,10 +124,10 @@
         <a>
           <xsl:attribute name="download" />
           <xsl:attribute name="href">
-            <xsl:value-of select="FileNameJSON" />
+            <xsl:value-of select="concat(@name, '.json')" />
           </xsl:attribute>
           <code>
-            <xsl:value-of select="FileNameJSON" />
+            <xsl:value-of select="concat(@name, '.json')" />
           </code>
         </a>
       </td>

@@ -14,6 +14,7 @@ window.onload = function () {
         // Call the initializer method for each control so that they can set themselves up if they are on the page.
         InitPokeTypeSelector();
         InitWeatherSelector();
+        InitGenerationsSelector();
         InitEggSelector();
         InitFilterNameIDSelector();
 
@@ -461,6 +462,171 @@ function ClearWeatherSelector() {
 // #endregion
 
 // ============================================================================
+// #region methods for Generation Selection Control
+
+// ---------------------------------------------------------------------------
+// #region Generation Cookies
+var GenerationsCookieSettings = {
+    'CONTROLS_Generations_AnyOrAll_Slider': 'false',
+};
+
+function InitializeGenerationsCookieSettings() {
+    for (var gen = 1; gen <= TotalGens; gen++)
+        GenerationsCookieSettings['CONTROLS_Generations_Gen' + gen + '_Check'] = gen <= ReleasedGens ? 'true' : 'false';
+}
+
+// Read the Cookie and apply it to the fields.
+function ApplyGenerationsCookies() {
+    ApplyCookieSettings(GenerationsCookieSettings);
+}
+// #endregion
+
+// Initialize the Generation Selection Control
+function InitGenerationsSelector() {
+    if (document.getElementById('CONTROLS_Generations_Selector') !== null) {
+        InitializeGenerationsCookieSettings();
+        GetGenerationsFields();
+        ApplyGenerationsCookies();
+        OnToggleGeneration();
+
+        RegisterTristateCheckbox(Generations_All_Check);   // This is to resolve an issue with IE.
+    }
+}
+
+// Get the fields we will be using multiple times.
+//  NOTE: Do not use keyword "var" and the value will be global.
+function GetGenerationsFields() {
+    Generations_Selector = document.getElementById('CONTROLS_Generations_Selector');
+    Generations_All_Check = document.getElementById('CONTROLS_Generations_All_Check');
+    Generations_Check = {}
+    for (var gen = 1; gen <= TotalGens; gen++) {
+        Generations_Check['Gen' + gen] = document.getElementById('CONTROLS_Generations_Gen' + gen + '_Check');
+    }
+    Generations_AnyOrAll_Slider = document.getElementById('CONTROLS_Generations_AnyOrAll_Slider');
+
+}
+
+// If one of the type checkboxes changes, need to update the All checkbox then refilter.
+function OnToggleGeneration() {
+    try {
+        var indeterminate = false;
+        for (var gen = 1; gen < TotalGens; gen++) {
+            if (getComputedStyle(Generations_Check['Gen' + (gen + 1)].parentNode).display === 'none') {
+                // Don't deal with hidden generations.
+                continue;
+            }
+            if (Generations_Check['Gen' + gen].checked !== Generations_Check['Gen' + (gen + 1)].checked) {
+                indeterminate = true;
+                break;
+            }
+        }
+
+        if (indeterminate) {
+            Generations_All_Check.indeterminate = true;
+        } else {
+            Generations_All_Check.indeterminate = false;
+            Generations_All_Check.checked = Generations_Check['Gen1'].checked;
+        }
+
+        OnGenerationsSelectionChanged();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// If the All checkbox is toggled, update all of the Type checkboxes.
+function OnToggleAllGenerations() {
+    try {
+        for (var gen = 1; gen <= TotalGens; gen++) {
+            if (getComputedStyle(Generations_Check['Gen' + gen].parentNode).display === 'none') {
+                // Don't deal with hidden generations.
+                continue;
+            }
+
+            Generations_Check['Gen' + gen].checked = Generations_All_Check.checked;
+        }
+
+        OnGenerationsSelectionChanged();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// If the One or All slider is toggled, notify the client.
+function OnAnyOrAllGenerationsSliderChanged() {
+    try {
+        OnGenerationsSelectionChanged();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// Update the cookie with the new selection, then call the specified callback with the latest settings.
+function OnGenerationsSelectionChanged() {
+    UpdateCookieSettings(GenerationsCookieSettings);
+
+    var callbackName = Generations_Selector.attributes['callbackName'].value;;
+    if (callbackName !== null) {
+        var generationCriteria = {};
+        generationCriteria['GenAll'] = Generations_AnyOrAll_Slider.checked;
+        for (var gen = 1; gen <= TotalGens; gen++) {
+            generationCriteria['Gen' + gen] = Generations_Check['Gen' + gen].checked;
+        }
+
+        window[callbackName](generationCriteria);
+    }
+}
+
+// Determine whether Family of Pokemon matches the specified Generation selection criteria.
+function GenerationsMatchesFilter(generationCriteria, family) {
+    // If criteria not supplied, assume a match.
+    if (generationCriteria === undefined || generationCriteria === null) {
+        return true;
+    }
+
+    // If there are no pokemon to evaluate, assume a match.
+    if (family === undefined || family === null || family.length === 0) {
+        return true;
+    }
+
+    for (var gen = 1; gen <= TotalGens; gen++) {
+        if (generationCriteria['Gen' + gen]) {
+            var found = false;
+            for (var i = 0, iEnd = family.length; i < iEnd; i++) {
+                if (gen === GetPokemonGeneration(family[i])) {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (generationCriteria['GenAll'] === !found) {
+                return found;
+            }
+
+            //if (generationCriteria['GenAll']) {
+            //    if (!found) {
+            //        return false;
+            //    }
+            //} else if (found)
+            //{
+            //    return true;
+            //}
+        }
+    }
+
+    return generationCriteria['GenAll'];
+}
+
+// Clears the selection and reverts to the default.
+function ClearGenerationsSelector() {
+    ClearCookieSettings(GenerationsCookieSettings);
+    ApplyGenerationsCookies();
+    OnToggleGeneration();
+}
+
+// #endregion
+
+// ============================================================================
 // #region methods for Egg Selection Control
 
 // ---------------------------------------------------------------------------
@@ -479,7 +645,7 @@ function ApplyEggCookies() {
 }
 // #endregion
 
-// Initialize the Weather Selection Control
+// Initialize the Egg Selection Control
 function InitEggSelector() {
     if (document.getElementById('CONTROLS_Egg_Selector') !== null) {
         GetEggFields();
@@ -536,6 +702,7 @@ function OnEggSelectionChanged() {
 
 // Determine whether Pokemon matches the selected criteria.
 function EggMatchesFilter(eggCriteria, pokemon) {
+    // If no criteria are supplied, (or the selector is turned off) assume a match.
     if (eggCriteria === undefined || eggCriteria === null || !eggCriteria['Enabled']) {
         return true;
     }
@@ -651,8 +818,8 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     // Check for a range of IDs (E.G. "5-10", "5-10", "-10", "10-")
     var rangeSegments = filterSegment.split('-');
     if (rangeSegments.length === 2 &&
-       (rangeSegments[0].trim().length === 0 || !isNaN(rangeSegments[0])) &&
-       (rangeSegments[1].trim().length === 0 || !isNaN(rangeSegments[1]))) {
+        (rangeSegments[0].trim().length === 0 || !isNaN(rangeSegments[0])) &&
+        (rangeSegments[1].trim().length === 0 || !isNaN(rangeSegments[1]))) {
         var min = rangeSegments[0].trim().length === 0 ? 0 : rangeSegments[0];
         var max = rangeSegments[1].trim().length === 0 ? 9999 : rangeSegments[1];
         if (id >= min && id <= max) {

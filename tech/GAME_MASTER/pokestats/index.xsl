@@ -48,7 +48,7 @@
           <b>NOTE</b>: If there is info you want to see, but it is not included in the charts, please let me know.
         </p>
         <div class="INDENT">
-          <script>WriteContactInfo();</script>
+          <xsl:call-template name="WriteContactInfo" />
         </div>
 
         <xsl:call-template name="WriteFooter" />

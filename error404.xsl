@@ -41,7 +41,7 @@
         <br />
 
         <xsl:value-of select="concat($lt, '!-- This script is defined in /js/global.js --', $gt)" disable-output-escaping="yes" />
-        <script>WriteContactInfo();</script>
+        <xsl:call-template name="WriteContactInfo" />
       </body>
     </html>
   </xsl:template>

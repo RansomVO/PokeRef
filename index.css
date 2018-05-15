@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
     pointer-events: none;
     cursor: default;
     color: gray;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 .SEPARATOR_BORDER {
@@ -77,7 +77,7 @@ h1, h2, h3, h4 {
     font-style: italic;
 }
 
-.UNAVAILABLE {
+.UNRELEASED {
     color: gray;
 }
 
@@ -96,7 +96,7 @@ h1, h2, h3, h4 {
 
 .NUMERIC {
     text-align: right;
-}
+       }
 
 /*#endregion*/
 
@@ -277,12 +277,16 @@ h1, h2, h3, h4 {
     width: 2em;
 }
 
+.TAG_ICON_MEDIUM {
+	width: 1.5em;
+}
+
 .TAG_ICON_REGULAR {
     width: 1em;
 }
 
 .TAG_ICON_SMALL {
-    width: .5em;
+    width: .75em;
 }
 
 .TAG_ICON_OVERLAP {
@@ -521,7 +525,6 @@ h1, h2, h3, h4 {
     }
 
 /*#endregion*/
-
 
 /* ------------------------------------------------------------------------------------------ */
 /*#region Classes for items managed in controls.js */

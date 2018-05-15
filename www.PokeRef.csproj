@@ -13,7 +13,13 @@
     <RootNamespace>PokeRef</RootNamespace>
     <AssemblyName>www.PokeRef</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -28,7 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' OR '$(Configuration)' == 'DebugHome' OR '$(Configuration)' == 'DebugWork'  ">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' OR '$(Configuration)' == 'DebugHome' OR '$(Configuration)' == 'DebugWork'">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -40,24 +46,16 @@
   <!-- / -->
   <ItemGroup>
     <FixOutputFile Include="_sectionname.txt" />
-    <WebContent Include="contactinfo.html" />
-    <WebContent Include="feedbacknote.html" />
     <WebContent Include="favicon.ico" />
     <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
     <WebContent Include="apple-touch-icon.png" />
-    <Content Include="Web.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <FixOutputFile Include="Web.sitemap">
       <SubType>Designer</SubType>
     </FixOutputFile>
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
-    <None Include="^\XSLT\Mappings.XSD">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="^\__TODO.txt" />
     <None Include="^\_blank.xsl">
       <SubType>Designer</SubType>
@@ -66,16 +64,6 @@
       <DependentUpon>_blank.xsl</DependentUpon>
     </None>
     <None Include="^\index.html" />
-    <None Include="^\XSLT\Effectiveness.XSD" />
-    <None Include="^\XSLT\GAME_MASTER.XSD" />
-    <None Include="^\XSLT\Moves.XSD" />
-    <None Include="^\XSLT\MoveSets.XSD" />
-    <None Include="^\XSLT\PokeStats.XSD">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="^\XSLT\RaidBoss.XSD" />
-    <None Include="^\XSLT\Settings.XSD" />
-    <None Include="^\XSLT\Stats.XSD" />
   </ItemGroup>
   <!-- /_ -->
   <ItemGroup>
@@ -85,10 +73,14 @@
   <!-- /_datafiles.manual -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles.manual\eggs.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\raidbosses.current.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\raidbosses.legacy.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\pokemon.availability.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\pokemon.unreleased.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\images.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\fieldresearch.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\ranges.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\special.moves.xml" />
   </ItemGroup>
-  <!-- /_datafiles (moves and charts/movesets) -->
+  <!-- /_datafiles (moves and movesets) -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles\moves.charged.xml" />
     <FixIntermediateFile Include="_datafiles\moves.fast.xml" />
@@ -106,102 +98,12 @@
     <FixIntermediateFile Include="_datafiles\pokestats.gen6.xml" />
     <FixIntermediateFile Include="_datafiles\pokestats.gen7.xml" />
   </ItemGroup>
-  <!-- /_datafiles (raidboss) -->
-  <ItemGroup>
-    <FixIntermediateFile Include="_datafiles\raidboss.absol.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.aerodactyl.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.aggron.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.alakazam.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.arcanine.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.articuno.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.azumarill.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.bayleef.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.blastoise.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.celebi.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.charizard.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.charmeleon.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.claydol.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.cloyster.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.croconaw.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.dewgong.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.duskull.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.electabuzz.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.entei.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.exeggutor.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.feraligatr.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.flareon.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.gengar.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.golem.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.granbull.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.groudon.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.ho-oh.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.houndoom.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.ivysaur.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.jirachi.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.jolteon.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.jynx.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.kyogre.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.lapras.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.latias.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.latios.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.lugia.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.machamp.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.magikarp.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.magmar.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.magneton.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.manectric.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.marowak.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.mawile.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.metapod.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.mew.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.mewtwo.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.misdreavus.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.moltres.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.muk.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.nidoking.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.nidoqueen.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.ninetales.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.omastar.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.piloswine.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.pinsir.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.poliwrath.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.porygon.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.quilava.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.raikou.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.rayquaza.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.regice.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.regirock.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.registeel.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.rhydon.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.sableye.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.sandslash.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.slowbro.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.scyther.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.shuppet.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.sneasel.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.snorlax.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.snorunt.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.starmie.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.suicune.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.swablu.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.tentacruel.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.tyranitar.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.vaporeon.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.venusaur.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.victreebel.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.wartortle.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.wailmer.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.walrein.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.weezing.xml" />
-    <FixIntermediateFile Include="_datafiles\raidboss.zapdos.xml" />
-  </ItemGroup>
   <!-- /_datafiles (various) -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles\effectiveness.xml" />
     <FixIntermediateFile Include="_datafiles\GAME_MASTER.xml" />
-    <FixIntermediateFile Include="_datafiles\mappings.xml" />
+    <FixIntermediateFile Include="_datafiles\constants.xml" />
     <FixIntermediateFile Include="_datafiles\settings.xml" />
-    <FixIntermediateFile Include="_datafiles\stats.xml" />
   </ItemGroup>
   <!-- /__Debugging -->
   <ItemGroup>
@@ -212,7 +114,9 @@
       <SubType>Designer</SubType>
     </FixIntermediateFile>
     <None Include="__Debugging\debug.html.xml" />
-    <None Include="__Debugging\debug.xsl" />
+    <None Include="__Debugging\debug.xsl">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="__Debugging\index.html" />
     <None Include="__Debugging\index.js" />
     <None Include="__Debugging\index.css" />
@@ -225,12 +129,7 @@
   </ItemGroup>
   <!-- /images -->
   <ItemGroup>
-    <WebContent Include="images\404pokemon.png" />
     <WebContent Include="images\cphp.png" />
-    <WebContent Include="images\EeveeDi.png" />
-    <WebContent Include="images\egg_10K.png" />
-    <WebContent Include="images\egg_2K.png" />
-    <WebContent Include="images\egg_5K.png" />
     <WebContent Include="images\GoIV-Clipboard_Multiple.png" />
     <WebContent Include="images\GoIV-Clipboard_Single.png" />
     <WebContent Include="images\GoIV-FinalResult.png" />
@@ -238,36 +137,105 @@
     <WebContent Include="images\GoIV-Refining.png" />
     <WebContent Include="images\GoIV-Renamed.png" />
     <WebContent Include="images\GoIV-Start.png" />
-    <WebContent Include="images\hatchonly.png" />
-    <WebContent Include="images\NotJustAGame.png" />
-    <WebContent Include="images\TrappedWeedle.png" />
-    <WebContent Include="images\shiny.png" />
-    <WebContent Include="images\type_bug.png" />
-    <WebContent Include="images\type_dark.png" />
-    <WebContent Include="images\type_dragon.png" />
-    <WebContent Include="images\type_electric.png" />
-    <WebContent Include="images\type_fairy.png" />
-    <WebContent Include="images\type_fighting.png" />
-    <WebContent Include="images\type_fire.png" />
-    <WebContent Include="images\type_flying.png" />
-    <WebContent Include="images\type_ghost.png" />
-    <WebContent Include="images\type_grass.png" />
-    <WebContent Include="images\type_ground.png" />
-    <WebContent Include="images\type_ice.png" />
-    <WebContent Include="images\type_normal.png" />
-    <WebContent Include="images\type_poison.png" />
-    <WebContent Include="images\type_psychic.png" />
-    <WebContent Include="images\type_rock.png" />
-    <WebContent Include="images\type_steel.png" />
-    <WebContent Include="images\type_water.png" />
-    <WebContent Include="images\weather_clear.png" />
-    <WebContent Include="images\weather_cloudy.png" />
-    <WebContent Include="images\weather_fog.png" />
-    <WebContent Include="images\weather_partlycloudy.png" />
-    <WebContent Include="images\weather_rainy.png" />
-    <WebContent Include="images\weather_snow.png" />
-    <WebContent Include="images\weather_sunny.png" />
-    <WebContent Include="images\weather_windy.png" />
+  </ItemGroup>
+  <!-- /images/humor -->
+  <ItemGroup>
+    <WebContent Include="images\humor\404pokemon.png" />
+    <WebContent Include="images\humor\EeveeDi.png" />
+    <WebContent Include="images\humor\NotJustAGame.png" />
+    <WebContent Include="images\humor\TrappedWeedle.png" />
+  </ItemGroup>
+  <!-- /images/types -->
+  <ItemGroup>
+    <WebContent Include="images\types\type_bug.png" />
+    <WebContent Include="images\types\type_dark.png" />
+    <WebContent Include="images\types\type_dragon.png" />
+    <WebContent Include="images\types\type_electric.png" />
+    <WebContent Include="images\types\type_fairy.png" />
+    <WebContent Include="images\types\type_fighting.png" />
+    <WebContent Include="images\types\type_fire.png" />
+    <WebContent Include="images\types\type_flying.png" />
+    <WebContent Include="images\types\type_ghost.png" />
+    <WebContent Include="images\types\type_grass.png" />
+    <WebContent Include="images\types\type_ground.png" />
+    <WebContent Include="images\types\type_ice.png" />
+    <WebContent Include="images\types\type_normal.png" />
+    <WebContent Include="images\types\type_poison.png" />
+    <WebContent Include="images\types\type_psychic.png" />
+    <WebContent Include="images\types\type_rock.png" />
+    <WebContent Include="images\types\type_steel.png" />
+    <WebContent Include="images\types\type_water.png" />
+    <WebContent Include="images\types\weather_clear.png" />
+    <WebContent Include="images\types\weather_cloudy.png" />
+    <WebContent Include="images\types\weather_fog.png" />
+    <WebContent Include="images\types\weather_partlycloudy.png" />
+    <WebContent Include="images\types\weather_rainy.png" />
+    <WebContent Include="images\types\weather_snow.png" />
+    <WebContent Include="images\types\weather_sunny.png" />
+    <WebContent Include="images\types\weather_windy.png" />
+  </ItemGroup>
+  <!-- /images/items -->
+  <ItemGroup>
+    <WebContent Include="images\items\berry_golden_razz.png" />
+    <WebContent Include="images\items\berry_nanab.png" />
+    <WebContent Include="images\items\berry_pinap.png" />
+    <WebContent Include="images\items\berry_razz.png" />
+    <WebContent Include="images\items\incense.png" />
+    <WebContent Include="images\items\incubator-2.png" />
+    <WebContent Include="images\items\incubator.png" />
+    <WebContent Include="images\items\incubator_infinite.png" />
+    <WebContent Include="images\items\incubator_super.png" />
+    <WebContent Include="images\items\lucky_egg.png" />
+    <WebContent Include="images\items\lure_module.png" />
+    <WebContent Include="images\items\potion.png" />
+    <WebContent Include="images\items\potion_super.png" />
+    <WebContent Include="images\items\potion_hyper.png" />
+    <WebContent Include="images\items\potion_max.png" />
+    <WebContent Include="images\items\pokeball.png" />
+    <WebContent Include="images\items\pokeball_great.png" />
+    <WebContent Include="images\items\pokeball_ultra.png" />
+    <WebContent Include="images\items\pokeball_master.png" />
+    <WebContent Include="images\items\raidpass.png" />
+    <WebContent Include="images\items\raidpass_ex.png" />
+    <WebContent Include="images\items\raidpass_premium.png" />
+    <WebContent Include="images\items\rare_candy.png" />
+    <WebContent Include="images\items\revive.png" />
+    <WebContent Include="images\items\revive_max.png" />
+    <WebContent Include="images\items\special_dragonscale.png" />
+    <WebContent Include="images\items\special_kings_rock.png" />
+    <WebContent Include="images\items\special_metal_coat.png" />
+    <WebContent Include="images\items\special_sunstone.png" />
+    <WebContent Include="images\items\special_upgrade.png" />
+    <WebContent Include="images\items\star_piece.png" />
+    <WebContent Include="images\items\tm_charged.png" />
+    <WebContent Include="images\items\tm_fast.png" />
+  </ItemGroup>
+  <!-- /images/game -->
+  <ItemGroup>
+    <WebContent Include="images\game\box_bronze.png" />
+    <WebContent Include="images\game\box_silver.png" />
+    <WebContent Include="images\game\box_gold.png" />
+    <WebContent Include="images\game\box_great_holiday-2016.png" />
+    <WebContent Include="images\game\box_great_holiday-2017.png" />
+    <WebContent Include="images\game\box_great_winter-2018.png" />
+    <WebContent Include="images\game\box_special_holiday-2016.png" />
+    <WebContent Include="images\game\box_special_holiday-2017.png" />
+    <WebContent Include="images\game\box_special_winter-2018.png" />
+    <WebContent Include="images\game\box_ultra_holiday-2016.png" />
+    <WebContent Include="images\game\box_ultra_holiday-2017.png" />
+    <WebContent Include="images\game\box_ultra_winter-2018.png" />
+    <WebContent Include="images\game\box_community_day.png" />
+    <WebContent Include="images\game\egg_10K.png" />
+    <WebContent Include="images\game\egg_2K.png" />
+    <WebContent Include="images\game\egg_5K.png" />
+    <WebContent Include="images\game\encounter.png" />
+    <WebContent Include="images\game\hatchonly.png" />
+    <WebContent Include="images\game\shiny.png" />
+    <WebContent Include="images\game\stardust.png" />
+    <WebContent Include="images\game\xp.png" />
+  </ItemGroup>
+  <!-- /images/originals -->
+  <ItemGroup>
     <Resource Include="images\originals\404swablu.jpg" />
     <Resource Include="images\originals\EeveeDi.pub" />
     <Resource Include="images\originals\EeveeDi.2.png" />
@@ -323,6 +291,11 @@
     <FixOutputFile Include="charts\_sectionname.txt" />
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
+  </ItemGroup>
+  <!-- /charts/fieldresearch -->
+  <ItemGroup>
+    <FixOutputFile Include="charts\fieldresearch\_sectionname.txt" />
+    <FixOutputFile Include="charts\fieldresearch\index.css" />
   </ItemGroup>
   <!-- /charts/movesets -->
   <ItemGroup>
@@ -403,17 +376,18 @@
   </ItemGroup>
   <!-- /xsl -->
   <ItemGroup>
-    <FixIntermediateFile Include="xsl\global.xsl">
-      <SubType>Designer</SubType>
-    </FixIntermediateFile>
+    <FixIntermediateFile Include="xsl\global.xsl" />
+    <FixIntermediateFile Include="xsl\constants.xsl" />
     <FixIntermediateFile Include="xsl\settings.xsl" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Condition="" Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v15.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
@@ -443,11 +417,13 @@
     <None Include="ʭcustom.targets">
       <SubType>Designer</SubType>
     </None>
-    <None Include="xslt.proj">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fix.proj">
       <DependentUpon>ʭcustom.targets</DependentUpon>
       <SubType>Designer</SubType>
     </None>
-    <None Include="fix.proj">
+    <None Include="xslt.proj">
       <DependentUpon>ʭcustom.targets</DependentUpon>
       <SubType>Designer</SubType>
     </None>
@@ -455,6 +431,27 @@
       <DependentUpon>ʭcustom.targets</DependentUpon>
       <SubType>Designer</SubType>
     </None>
+    <None Include="raidbosses.proj">
+      <DependentUpon>ʭcustom.targets</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="encounters.proj">
+      <DependentUpon>ʭcustom.targets</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GAME_MASTER.proj">
+      <DependentUpon>ʭcustom.targets</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
+  <ItemGroup>
+    <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml" />
+  </ItemGroup>
+  <Import Project="fix.proj" />
+  <Import Project="xslt.proj" />
+  <Import Project="dependencies.proj" />
+  <Import Project="raidbosses.proj" />
+  <Import Project="encounters.proj" />
+  <Import Project="GAME_MASTER.proj" />
   <Import Project="ʭcustom.targets" />
 </Project>

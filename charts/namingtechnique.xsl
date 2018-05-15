@@ -449,6 +449,7 @@
               <td class="CHARS">&#x325A;</td>
               <td class="CHARS">&#x325B;</td>
               <td class="CHARS">&#x325C;</td>
+              <td class="CHARS">&#x325D;</td>
               <td class="CHARS">&#x325E;</td>
               <td class="CHARS">&#x325F;</td>
               <td class="CHARS">&#x32B1;</td>

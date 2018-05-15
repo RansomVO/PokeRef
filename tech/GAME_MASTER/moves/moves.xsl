@@ -23,13 +23,13 @@
         </link>
 
         <title>
-          <xsl:value-of select="Moves/Category"/> Moves
+          <xsl:value-of select="Moves/@category"/> Moves
         </title>
       </head>
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          <xsl:value-of select="Moves/Category"/> Moves
+          <xsl:value-of select="Moves/@category"/> Moves
         </h1>
 
         <p>
@@ -91,7 +91,7 @@
         <table border="1">
           <xsl:call-template name="CreateTableHeaders" />
           <xsl:apply-templates select="Moves/Move">
-            <xsl:sort select="Name" order="ascending" />
+            <xsl:sort select="@name" data-type="text" order="ascending" />
           </xsl:apply-templates>
         </table>
 
@@ -113,10 +113,10 @@
   </xsl:template>
 
   <xsl:template match="Move">
-    <xsl:variable name="Type" select="Type" />
+    <xsl:variable name="Type" select="@type" />
     <tr>
       <th align="left">
-        <xsl:value-of select="Name"/>
+        <xsl:value-of select="@name"/>
       </th>
       <td align="left">
         <xsl:call-template name="OutputTypeIcon">
@@ -130,16 +130,16 @@
           <xsl:with-param name="Type" select="$Type" />
         </xsl:call-template>
         <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-        <xsl:value-of select="/Root/Mappings/WeatherBoosts[Type=$Type]/Weather" />
+        <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$Type]/@boost" />
       </td>
       <td align="right">
-        <xsl:value-of select="Energy"/>
+        <xsl:value-of select="@energy"/>
       </td>
       <td align="right">
-        <xsl:value-of select="Power"/>
+        <xsl:value-of select="@power"/>
       </td>
       <td align="right">
-        <xsl:value-of select="format-number(Time, '0.0')"/>
+        <xsl:value-of select="format-number(@duration, '0.0')"/>
       </td>
     </tr>
   </xsl:template>

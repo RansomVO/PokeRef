@@ -20,106 +20,51 @@
     <xsl:param name="SliderHelp" />
 
     <div class="FLOWING_TABLE_WRAPPER">
-    <table id="CONTROLS_PokeType_Selector" class="CRITERIA_TABLE" border="1">
-      <xsl:attribute name="callbackName">
-        <xsl:value-of select="$CallbackName" />
-      </xsl:attribute>
-      <tr>
-        <th colspan="2" width="0">
-          <xsl:value-of select="$Title" disable-output-escaping="yes" />
-          <br />
-          <input id="CONTROLS_PokeType_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllPokeTypes();" />
-        </th>
-      </tr>
-      <tr>
-        <td valign="top">
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Bug'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Dark'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Dragon'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Electric'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Fairy'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Fighting'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Fire'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Flying'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Ghost'" />
-          </xsl:call-template>
-        </td>
-        <td valign="top">
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Grass'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Ground'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Ice'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Normal'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Poison'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Psychic'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Rock'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Steel'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputTypeCheckbox">
-            <xsl:with-param name="Type" select="'Water'" />
-          </xsl:call-template>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" align="center" style="font-size:small; font-weight:normal; ">
-          <xsl:call-template name="OutputSliderButtonControl">
-            <xsl:with-param name="Id" select="'CONTROLS_PokeType_AnyOrAll_Slider'" />
-            <xsl:with-param name="Callback" select="'OnAnyOrAllTypeSliderChanged(this)'" />
-            <xsl:with-param name="Title" select="$SliderLabel" />
-            <xsl:with-param name="OffLabel" select="'Any'" />
-            <xsl:with-param name="OnLabel" select="'All'" />
-            <xsl:with-param name="Help" select="$SliderHelp" />
-          </xsl:call-template>
-        </td>
-      </tr>
-    </table>
+      <table id="CONTROLS_PokeType_Selector" class="CRITERIA_TABLE" border="1">
+        <xsl:attribute name="callbackName">
+          <xsl:value-of select="$CallbackName" />
+        </xsl:attribute>
+        <tr>
+          <th colspan="2" width="0">
+            <xsl:value-of select="$Title" disable-output-escaping="yes" />
+            <br />
+            <input id="CONTROLS_PokeType_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllPokeTypes();" />
+          </th>
+        </tr>
+        <tr>
+          <!-- Split entries into 2 columns. -->
+          <xsl:variable name="types" select="/Root/Constants/Types/*"/>
+          <xsl:variable name="mid" select="count($types) div 2"/>
+          <td valign="top">
+            <xsl:for-each select="$types[position() &lt;= $mid]">
+              <xsl:call-template name="OutputTypeCheckbox">
+                <xsl:with-param name="Type" select="." />
+              </xsl:call-template>
+              <br />
+            </xsl:for-each>
+          </td>
+          <td valign="top">
+            <xsl:for-each select="$types[$mid &lt; position()]">
+              <xsl:call-template name="OutputTypeCheckbox">
+                <xsl:with-param name="Type" select="." />
+              </xsl:call-template>
+              <br />
+            </xsl:for-each>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" style="font-size:small; font-weight:normal; ">
+            <xsl:call-template name="OutputSliderButtonControl">
+              <xsl:with-param name="Id" select="'CONTROLS_PokeType_AnyOrAll_Slider'" />
+              <xsl:with-param name="Callback" select="'OnAnyOrAllTypeSliderChanged(this)'" />
+              <xsl:with-param name="Title" select="$SliderLabel" />
+              <xsl:with-param name="OffLabel" select="'Any'" />
+              <xsl:with-param name="OnLabel" select="'All'" />
+              <xsl:with-param name="Help" select="$SliderHelp" />
+            </xsl:call-template>
+          </td>
+        </tr>
+      </table>
     </div>
   </xsl:template>
 
@@ -150,60 +95,40 @@
 
     <div class="FLOWING_TABLE_WRAPPER">
       <table id="CONTROLS_Weather_Selector" class="CRITERIA_TABLE" border="1">
-      <xsl:attribute name="callbackName">
-        <xsl:value-of select="$CallbackName" />
-      </xsl:attribute>
-      <tr>
-        <th>
-          <xsl:value-of select="$Title" disable-output-escaping="yes" />
-          <br />
-          <input id="CONTROLS_Weather_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllWeather();" />
-        </th>
-      </tr>
-      <tr>
-        <td valign="top">
-          <xsl:call-template name="OutputWeatherCheckbox">
-            <xsl:with-param name="Weather" select="'Sunny'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputWeatherCheckbox">
-            <xsl:with-param name="Weather" select="'Windy'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputWeatherCheckbox">
-            <xsl:with-param name="Weather" select="'Cloudy'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputWeatherCheckbox">
-            <xsl:with-param name="Weather" select="'Partly Cloudy'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputWeatherCheckbox">
-            <xsl:with-param name="Weather" select="'Fog'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputWeatherCheckbox">
-            <xsl:with-param name="Weather" select="'Rainy'" />
-          </xsl:call-template>
-          <br />
-          <xsl:call-template name="OutputWeatherCheckbox">
-            <xsl:with-param name="Weather" select="'Snow'" />
-          </xsl:call-template>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="font-size:small; font-weight:normal; ">
-          <xsl:call-template name="OutputSliderButtonControl">
-            <xsl:with-param name="Id" select="'CONTROLS_Weather_AnyOrAll_Slider'" />
-            <xsl:with-param name="Callback" select="'OnAnyOrAllWeatherSliderChanged(this)'" />
-            <xsl:with-param name="Title" select="$SliderLabel" />
-            <xsl:with-param name="OffLabel" select="'Any'" />
-            <xsl:with-param name="OnLabel" select="'All'" />
-            <xsl:with-param name="Help" select="$SliderHelp" />
-          </xsl:call-template>
-        </td>
-      </tr>
-    </table>
+        <xsl:attribute name="callbackName">
+          <xsl:value-of select="$CallbackName" />
+        </xsl:attribute>
+        <tr>
+          <th>
+            <xsl:value-of select="$Title" disable-output-escaping="yes" />
+            <br />
+            <input id="CONTROLS_Weather_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllWeather();" />
+          </th>
+        </tr>
+        <tr>
+          <td valign="top">
+            <xsl:for-each select="/Root/Constants/Weathers/*">
+              <xsl:sort order="ascending" data-type="text" select="."/>
+              <xsl:call-template name="OutputWeatherCheckbox">
+                <xsl:with-param name="Weather" select="." />
+              </xsl:call-template>
+              <br />
+            </xsl:for-each>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="font-size:small; font-weight:normal; ">
+            <xsl:call-template name="OutputSliderButtonControl">
+              <xsl:with-param name="Id" select="'CONTROLS_Weather_AnyOrAll_Slider'" />
+              <xsl:with-param name="Callback" select="'OnAnyOrAllWeatherSliderChanged(this)'" />
+              <xsl:with-param name="Title" select="$SliderLabel" />
+              <xsl:with-param name="OffLabel" select="'Any'" />
+              <xsl:with-param name="OnLabel" select="'All'" />
+              <xsl:with-param name="Help" select="$SliderHelp" />
+            </xsl:call-template>
+          </td>
+        </tr>
+      </table>
     </div>
   </xsl:template>
 
@@ -226,6 +151,119 @@
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->
+  <!-- #region Generation Selection Control -->
+
+  <xsl:template name="OutputGenerationSelection">
+    <xsl:param name="Settings" />
+    <xsl:param name="CallbackName" />
+    <xsl:param name="Title" select="'Generations'" />
+    <xsl:param name="SliderLabel" />
+    <xsl:param name="SliderHelp" />
+
+    <div class="FLOWING_TABLE_WRAPPER">
+      <table id="CONTROLS_Generations_Selector" class="CRITERIA_TABLE" border="1">
+        <xsl:attribute name="callbackName">
+          <xsl:value-of select="$CallbackName" />
+        </xsl:attribute>
+        <tr>
+          <th>
+            <xsl:value-of select="$Title" disable-output-escaping="yes" />
+            <br />
+            <input id="CONTROLS_Generations_All_Check" title="Toggle All" type="checkbox" onchange="OnToggleAllGenerations();" />
+          </th>
+        </tr>
+        <tr>
+          <td valign="top" style="padding-bottom:.25em; padding-left:.5em">
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 1 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="1" />
+              </xsl:call-template>
+            </div>
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 2 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="2" />
+              </xsl:call-template>
+            </div>
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 3 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="3" />
+              </xsl:call-template>
+            </div>
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 4 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="4" />
+              </xsl:call-template>
+            </div>
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 5 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="5" />
+              </xsl:call-template>
+            </div>
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 6 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="6" />
+              </xsl:call-template>
+            </div>
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 7 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="7" />
+              </xsl:call-template>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <xsl:if test="exslt:node-set($Settings)/*/@hide_slider">
+            <xsl:attribute name="class">DIV_HIDDEN</xsl:attribute>
+          </xsl:if>
+          <td align="center" style="font-size:small; font-weight:normal; ">
+            <xsl:call-template name="OutputSliderButtonControl">
+              <xsl:with-param name="Id" select="'CONTROLS_Generations_AnyOrAll_Slider'" />
+              <xsl:with-param name="Callback" select="'OnToggleGenType();'" />
+              <xsl:with-param name="Title" select="$SliderLabel" />
+              <xsl:with-param name="OffLabel" select="'Any'" />
+              <xsl:with-param name="OnLabel" select="'All'" />
+              <xsl:with-param name="Help" select="$SliderHelp" />
+            </xsl:call-template>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </xsl:template>
+
+  <xsl:template name="OutputGenCheckbox">
+    <xsl:param name="Gen" />
+    <input type="checkbox" onchange="OnToggleGeneration();">
+      <xsl:attribute name="id">
+        <xsl:value-of select="concat('CONTROLS_Generations_Gen', $Gen, '_Check')"/>
+      </xsl:attribute>
+    </input>
+    <xsl:text>Gen</xsl:text>
+    <xsl:value-of select="concat($nbsp, $Gen)" disable-output-escaping="yes" />
+  </xsl:template>
+  <!-- #endregion -->
+
+  <!-- ************************************************************************************************************************ -->
   <!-- #region Egg Selection Control-->
 
   <xsl:template name="OutputEggSelectionControl">
@@ -238,10 +276,29 @@
       <input id="CONTROLS_Egg" type="checkbox" onchange="OnToggleEgg(this);" /> Eggs
     </div>
     <div id="CONTROLS_Egg_Options" class="INDENT CHILD">
-      <input id="CONTROLS_Egg_2K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 2K
-      <br /><input id="CONTROLS_Egg_5K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 5K
-      <br /><input id="CONTROLS_Egg_10K" type="checkbox" onchange="OnToggleEgg(this);" /> Hatches from 10K
-      <br /><input id="CONTROLS_Egg_HatchOnly" type="checkbox" onchange="OnToggleEgg(this);" /> Hatch Only
+      <input id="CONTROLS_Egg_2K" type="checkbox" onchange="OnToggleEgg(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'Egg2K'" />
+        <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+      </xsl:call-template>
+      Hatches from 2K
+      <br />
+      <input id="CONTROLS_Egg_5K" type="checkbox" onchange="OnToggleEgg(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'Egg5K'" />
+        <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+      </xsl:call-template>
+      Hatches from 5K
+      <br />
+      <input id="CONTROLS_Egg_10K" type="checkbox" onchange="OnToggleEgg(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'Egg10K'" />
+        <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+      </xsl:call-template
+      >Hatches from 10K
+      <br />
+      <input id="CONTROLS_Egg_HatchOnly" type="checkbox" onchange="OnToggleEgg(this);" />
+      Hatch Only
     </div>
   </xsl:template>
 
@@ -263,73 +320,76 @@
       <xsl:with-param name="Help">
         <table style="width:20em;">
           <tr>
-          <th valign="top">-</th>
-          <td>
-            Specifies a range.
-            <br />Examples:
-            <ul>
-              <li>
-                <b>1-10</b>: All Pokemon with IDs between 1 and 10.
-              </li>
-              <li>
-                <b>-3</b>: All Pokemon with IDs 3 or lower.
-              </li>
-              <li>
-                <b>100-</b>: All Pokemon with IDs 100 or higher.
-              </li>
-            </ul>
-          </td>
+            <th valign="top">-</th>
+            <td>
+              Specifies a range.
+              <br />Examples:
+              <ul>
+                <li>
+                  <b>1-10</b>: All Pokemon with IDs between 1 and 10.
+                </li>
+                <li>
+                  <b>-3</b>: All Pokemon with IDs 3 or lower.
+                </li>
+                <li>
+                  <b>100-</b>: All Pokemon with IDs 100 or higher.
+                </li>
+              </ul>
+            </td>
           </tr>
-        <tr>
-          <th valign="top">+</th>
-          <td>
-            Specifies a family.
-            <br />Example:
-            <ul>
-              <li>
-                <b>+pidgey</b>: All Pokemon in the Pidgey family.
-                <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span>
-              </li>
-            </ul>
-          </td>
-        
-      </tr>
-        <tr class="CONTROLS_INFO_ENTRY">
-          <th valign="top">,</th>
-          <td>
-            Specifies to match one criteria OR another.
-            <br />Example:
-            <ul>
-              <li>
-                <b>1-10,BB</b>: All Pokemon with:
-                <br />IDs between 1 and 10
-                <br /><b>- OR -</b>
-                <br />a name that contains BB.
-                <span class="NOTE">(E.G. Krabby, Wobbeffet and Snubbull)</span>
-              </li>
-            </ul>
-          </td>
-        
-      </tr>
+          <tr>
+            <th valign="top">+</th>
+            <td>
+              Specifies a family.
+              <br />Example:
+              <ul>
+                <li>
+                  <b>+pidgey</b>: All Pokemon in the Pidgey family.
+                  <br /><span class="NOTE">(I.E. Those that use Pidgey candies.)</span>
+                </li>
+              </ul>
+            </td>
+
+          </tr>
+          <tr class="CONTROLS_INFO_ENTRY">
+            <th valign="top">,</th>
+            <td>
+              Specifies to match one criteria OR another.
+              <br />Example:
+              <ul>
+                <li>
+                  <b>1-10,BB</b>: All Pokemon with:
+                  <br />IDs between 1 and 10
+                  <br /><b>- OR -</b>
+                  <br />a name that contains BB.
+                  <span class="NOTE">(E.G. Krabby, Wobbeffet and Snubbull)</span>
+                </li>
+              </ul>
+            </td>
+
+          </tr>
           <tr class="CONTROLS_INFO_ENTRY">
             <th valign="top">&amp;</th>
-          <td>
-            Specifies one criteria AND another.
-            <br />Example:
-            <ul>
-              <li>
-                <b>1-10&amp;B</b>: All Pokemon with:
-                <br />IDs between 1 and 10
-                <br /><b>- AND -</b>
-                <br />a name that contains BB.
-              </li>
-            </ul>
-          </td>
-        </tr>
+            <td>
+              Specifies one criteria AND another.
+              <br />Example:
+              <ul>
+                <li>
+                  <b>1-10&amp;B</b>: All Pokemon with:
+                  <br />IDs between 1 and 10
+                  <br /><b>- AND -</b>
+                  <br />a name that contains BB.
+                </li>
+              </ul>
+            </td>
+          </tr>
         </table>
       </xsl:with-param>
     </xsl:call-template>
+  </xsl:template>
 
+  <xsl:template name="OutputFilterPokemonNameIDLabel">
+    <xsl:value-of select="concat('Pokemon Name or ID:', $nbsp)" disable-output-escaping="yes" />
   </xsl:template>
 
   <!-- #endregion -->
@@ -348,7 +408,7 @@
     <xsl:param name="Help" />
 
     <xsl:if test="$Title != ''">
-      <span style="margin-right:2em;">
+      <span style="margin-right:2em; font-weight:bold;">
         <xsl:copy-of select="$Title" />
       </span>
     </xsl:if>

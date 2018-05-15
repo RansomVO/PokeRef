@@ -20,8 +20,6 @@
         local.css;
         index.css;
         news.xml;
-        contactinfo.html;
-        feedbacknote.html;
         footernote.html;
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
@@ -109,9 +107,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
-        _datafiles\stats.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -119,12 +116,16 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles.manual\pokemon.unreleased.xml;
       </Dependencies>
       <OutputFileName>evolutions.html</OutputFileName>
     </XslTransform>
     <FixOutputFile Include="charts\evolutions.js">
       <Visible>true</Visible>
       <DependentUpon>evolutions.xsl</DependentUpon>
+      <Dependencies>
+        js\global.js;
+      </Dependencies>
     </FixOutputFile>
 
     <FixIntermediateFile Include="charts\pokequick.xsl">
@@ -142,8 +143,7 @@
         js\pokemon.js.xsl;
         js\controls.js;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
-        _datafiles\stats.xml;
+        _datafiles\constants.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -157,6 +157,9 @@
     <FixOutputFile Include="charts\pokequick.js">
       <Visible>true</Visible>
       <DependentUpon>pokequick.xsl</DependentUpon>
+      <Dependencies>
+        js\global.js;
+      </Dependencies>
     </FixOutputFile>
 
     <FixIntermediateFile Include="charts\effectiveness.xsl">
@@ -176,6 +179,159 @@
       </Dependencies>
       <OutputFileName>effectiveness.html</OutputFileName>
     </XslTransform>
+  </ItemGroup>
+
+  <!-- Charts/FieldResearch -->
+  <ItemGroup>
+    <FixIntermediateFile Include="charts\fieldresearch\index.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\fieldresearch\index.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>index.xsl</DependentUpon>
+      <Dependencies>
+        _datafiles.manual\fieldresearch.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        xsl\global.xsl;
+        charts\fieldresearch\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>index.html</OutputFileName>
+    </XslTransform>
+    <FixOutputFile Include="charts\fieldresearch\fieldresearch.js">
+      <DependentUpon>index.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js\global.js;
+      </Dependencies>
+    </FixOutputFile>
+
+    <FixIntermediateFile Include="charts\fieldresearch\encounter.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+
+  </ItemGroup>
+
+  <!-- Charts/MoveSets -->
+  <ItemGroup>
+    <FixIntermediateFile Include="charts\movesets\index.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\movesets\index.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>index.xsl</DependentUpon>
+      <Dependencies>
+        js\global.js;
+        charts\movesets\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>index.html</OutputFileName>
+    </XslTransform>
+
+    <FixIntermediateFile Include="charts\movesets\movesets.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\movesets\movesets.gen1.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\movesets.gen1.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
+        charts\movesets\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>movesets.gen1.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\movesets\movesets.gen2.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\movesets.gen2.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
+        charts\movesets\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>movesets.gen2.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\movesets\movesets.gen3.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\movesets.gen3.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
+        charts\movesets\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>movesets.gen3.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\movesets\movesets.all.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\movesets.gen1.xml;
+        _datafiles\movesets.gen2.xml;
+        _datafiles\movesets.gen3.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
+        charts\movesets\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>movesets.all.html</OutputFileName>
+    </XslTransform>
+    <FixOutputFile Include="charts\movesets\movesets.js">
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js/global.js;
+      </Dependencies>
+    </FixOutputFile>
   </ItemGroup>
 
   <!-- Charts/PokeChart -->
@@ -209,8 +365,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen1.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
@@ -229,8 +385,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen2.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
@@ -249,8 +405,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen3.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
@@ -269,8 +425,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen4.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
@@ -289,8 +445,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen5.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
@@ -309,8 +465,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen6.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
@@ -329,8 +485,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen7.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
@@ -349,8 +505,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -375,8 +531,8 @@
         js\global.js;
         js\pokemon.js.xsl;
         js\controls.js;
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -413,122 +569,8 @@
       </Dependencies>
       <OutputFileName>namingtechnique.html</OutputFileName>
     </XslTransform>
-
   </ItemGroup>
-
-  <!-- Charts/MoveSets -->
-  <ItemGroup>
-    <FixIntermediateFile Include="charts\movesets\index.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform Include="charts\movesets\index.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>index.xsl</DependentUpon>
-      <Dependencies>
-        js\global.js;
-        charts\movesets\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>index.html</OutputFileName>
-    </XslTransform>
-
-    <FixIntermediateFile Include="charts\movesets\movesets.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform Include="charts\movesets\movesets.gen1.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        xsl\global.xsl;
-        xsl\controls.xsl;
-        xsl\pokemon.xsl;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen1.xml;
-        _datafiles\movesets.gen1.xml;
-        js\global.js;
-        js\controls.js;
-        js\pokemon.js.xsl;
-        charts\movesets\movesets.js;
-        charts\movesets\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>movesets.gen1.html</OutputFileName>
-    </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.gen2.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        xsl\global.xsl;
-        xsl\controls.xsl;
-        xsl\pokemon.xsl;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen2.xml;
-        _datafiles\movesets.gen2.xml;
-        js\global.js;
-        js\controls.js;
-        js\pokemon.js.xsl;
-        charts\movesets\movesets.js;
-        charts\movesets\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>movesets.gen2.html</OutputFileName>
-    </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.gen3.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        xsl\global.xsl;
-        xsl\controls.xsl;
-        xsl\pokemon.xsl;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen3.xml;
-        _datafiles\movesets.gen3.xml;
-        js\global.js;
-        js\controls.js;
-        js\pokemon.js.xsl;
-        charts\movesets\movesets.js;
-        charts\movesets\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>movesets.gen3.html</OutputFileName>
-    </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.all.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Dependencies>
-        xsl\global.xsl;
-        xsl\controls.xsl;
-        xsl\pokemon.xsl;
-        _datafiles\stats.xml;
-        _datafiles\pokestats.gen1.xml;
-        _datafiles\pokestats.gen2.xml;
-        _datafiles\pokestats.gen3.xml;
-        _datafiles\movesets.gen1.xml;
-        _datafiles\movesets.gen2.xml;
-        _datafiles\movesets.gen3.xml;
-        js\global.js;
-        js\controls.js;
-        js\pokemon.js.xsl;
-        charts\movesets\movesets.js;
-        charts\movesets\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>movesets.all.html</OutputFileName>
-    </XslTransform>
-    <FixOutputFile Include="charts\movesets\movesets.js">
-      <DependentUpon>movesets.xsl</DependentUpon>
-      <Visible>true</Visible>
-      <Dependencies>
-        js/global.js;
-      </Dependencies>
-    </FixOutputFile>
-  </ItemGroup>
-
+  
   <!-- Charts/RaidBoss -->
   <ItemGroup>
     <FixIntermediateFile Include="charts\raidboss\_linkslist.xsl">
@@ -538,7 +580,7 @@
       <Visible>true</Visible>
       <DependentUpon>_linkslist.xsl</DependentUpon>
       <Dependencies>
-        _datafiles.manual\raidbosses.current.xml;
+        _datafiles.manual\raidbosses.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -560,8 +602,8 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
-        _datafiles.manual\raidbosses.current.xml;
-        _datafiles.manual\raidbosses.legacy.xml;
+        _datafiles.manual\raidbosses.xml;
+        _datafiles.manual\images.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -586,1301 +628,6 @@
     <FixIntermediateFile Include="charts\raidboss\raidboss.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <!-- #region RaidBoss pages -->
-    <!-- #region Absol -->
-    <XslTransform  Include="charts\raidboss\raidboss.absol.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.absol.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.absol.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Aerodactyl -->
-    <XslTransform Include="charts\raidboss\raidboss.aerodactyl.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.aerodactyl.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.aerodactyl.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Aggron -->
-    <XslTransform Include="charts\raidboss\raidboss.aggron.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.aggron.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.aggron.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Alakazam -->
-    <XslTransform Include="charts\raidboss\raidboss.alakazam.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.alakazam.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.alakazam.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Arcanine -->
-    <XslTransform Include="charts\raidboss\raidboss.arcanine.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.arcanine.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.arcanine.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Articuno -->
-    <XslTransform Include="charts\raidboss\raidboss.articuno.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.articuno.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.articuno.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Azumarill -->
-    <XslTransform Include="charts\raidboss\raidboss.azumarill.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.azumarill.xml;
-        xsl\pokemon.xsl;
-        xsl\global.xsl;
-        xsl\settings.xsl;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.azumarill.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Bayleef -->
-    <XslTransform Include="charts\raidboss\raidboss.bayleef.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.bayleef.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.bayleef.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Blastoise -->
-    <XslTransform Include="charts\raidboss\raidboss.blastoise.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.blastoise.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.blastoise.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Celebi -->
-    <XslTransform Include="charts\raidboss\raidboss.celebi.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.celebi.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.celebi.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Charizard -->
-    <XslTransform Include="charts\raidboss\raidboss.charizard.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.charizard.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.charizard.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Charmeleon -->
-    <XslTransform Include="charts\raidboss\raidboss.charmeleon.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.charmeleon.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.charmeleon.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Claydol -->
-    <XslTransform Include="charts\raidboss\raidboss.claydol.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.claydol.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.claydol.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Cloyster -->
-    <XslTransform Include="charts\raidboss\raidboss.cloyster.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.cloyster.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.cloyster.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Croconaw -->
-    <XslTransform Include="charts\raidboss\raidboss.croconaw.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.croconaw.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.croconaw.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Dewgong -->
-    <XslTransform Include="charts\raidboss\raidboss.dewgong.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.dewgong.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.dewgong.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Duskull -->
-    <XslTransform Include="charts\raidboss\raidboss.duskull.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.duskull.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.duskull.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Electabuzz -->
-    <XslTransform Include="charts\raidboss\raidboss.electabuzz.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.electabuzz.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.electabuzz.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Entei -->
-    <XslTransform Include="charts\raidboss\raidboss.entei.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.entei.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.entei.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Exeggutor -->
-    <XslTransform Include="charts\raidboss\raidboss.exeggutor.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.exeggutor.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.exeggutor.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Flareon -->
-    <XslTransform Include="charts\raidboss\raidboss.flareon.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.flareon.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.flareon.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Feraligatr -->
-    <XslTransform Include="charts\raidboss\raidboss.feraligatr.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.feraligatr.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.feraligatr.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Gengar -->
-    <XslTransform Include="charts\raidboss\raidboss.gengar.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.gengar.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.gengar.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Golem -->
-    <XslTransform Include="charts\raidboss\raidboss.golem.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.golem.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.golem.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Granbull -->
-    <XslTransform Include="charts\raidboss\raidboss.granbull.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.granbull.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.granbull.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Groudon -->
-    <XslTransform Include="charts\raidboss\raidboss.groudon.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.groudon.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.groudon.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Ho-oh -->
-    <XslTransform Include="charts\raidboss\raidboss.ho-oh.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.ho-oh.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.ho-oh.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Houndoom -->
-    <XslTransform Include="charts\raidboss\raidboss.houndoom.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.houndoom.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.houndoom.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Ivysaur -->
-    <XslTransform Include="charts\raidboss\raidboss.ivysaur.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.ivysaur.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.ivysaur.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Jirachi -->
-    <XslTransform Include="charts\raidboss\raidboss.jirachi.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.jirachi.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.jirachi.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Jolteon -->
-    <XslTransform Include="charts\raidboss\raidboss.jolteon.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.jolteon.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.jolteon.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Jynx -->
-    <XslTransform Include="charts\raidboss\raidboss.jynx.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.jynx.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.jynx.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Kyogre -->
-    <XslTransform Include="charts\raidboss\raidboss.kyogre.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.kyogre.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.kyogre.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Lapras -->
-    <XslTransform Include="charts\raidboss\raidboss.lapras.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.lapras.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.lapras.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Latias -->
-    <XslTransform Include="charts\raidboss\raidboss.latias.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.latias.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.latias.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Latios -->
-    <XslTransform Include="charts\raidboss\raidboss.latios.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.latios.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.latios.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Lugia -->
-    <XslTransform Include="charts\raidboss\raidboss.lugia.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.lugia.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.lugia.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Machamp -->
-    <XslTransform Include="charts\raidboss\raidboss.machamp.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.machamp.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.machamp.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Magikarp -->
-    <XslTransform Include="charts\raidboss\raidboss.magikarp.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.magikarp.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.magikarp.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Magmar -->
-    <XslTransform Include="charts\raidboss\raidboss.magmar.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.magmar.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.magmar.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Magneton -->
-    <XslTransform Include="charts\raidboss\raidboss.magneton.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.magneton.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.magneton.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Manectric -->
-    <XslTransform Include="charts\raidboss\raidboss.manectric.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.manectric.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.manectric.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Marowak -->
-    <XslTransform Include="charts\raidboss\raidboss.marowak.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.marowak.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.marowak.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Mawile -->
-    <XslTransform Include="charts\raidboss\raidboss.mawile.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.mawile.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.mawile.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Metapod -->
-    <XslTransform Include="charts\raidboss\raidboss.metapod.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.metapod.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.metapod.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Mew -->
-    <XslTransform Include="charts\raidboss\raidboss.mew.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.mew.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.mew.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Mewtwo -->
-    <XslTransform Include="charts\raidboss\raidboss.mewtwo.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.mewtwo.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.mewtwo.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Misdreavus -->
-    <XslTransform Include="charts\raidboss\raidboss.misdreavus.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.misdreavus.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.misdreavus.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Moltres -->
-    <XslTransform Include="charts\raidboss\raidboss.moltres.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.moltres.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.moltres.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Muk -->
-    <XslTransform Include="charts\raidboss\raidboss.muk.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.muk.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.muk.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Nidoking -->
-    <XslTransform Include="charts\raidboss\raidboss.nidoking.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.nidoking.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.nidoking.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Nidoqueen -->
-    <XslTransform Include="charts\raidboss\raidboss.nidoqueen.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.nidoqueen.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.nidoqueen.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Ninetales -->
-    <XslTransform Include="charts\raidboss\raidboss.ninetales.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.ninetales.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.ninetales.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Omastar -->
-    <XslTransform Include="charts\raidboss\raidboss.omastar.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.omastar.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.omastar.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Piloswine -->
-    <XslTransform Include="charts\raidboss\raidboss.piloswine.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.piloswine.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.piloswine.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Pinsir -->
-    <XslTransform Include="charts\raidboss\raidboss.pinsir.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.pinsir.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.pinsir.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Poliwrath -->
-    <XslTransform Include="charts\raidboss\raidboss.poliwrath.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.poliwrath.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.poliwrath.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Porygon -->
-    <XslTransform Include="charts\raidboss\raidboss.porygon.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.porygon.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.porygon.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Quilava -->
-    <XslTransform Include="charts\raidboss\raidboss.quilava.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.quilava.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.quilava.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Raikou -->
-    <XslTransform Include="charts\raidboss\raidboss.raikou.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.raikou.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.raikou.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Rayquaza -->
-    <XslTransform Include="charts\raidboss\raidboss.rayquaza.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.rayquaza.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.rayquaza.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Rayquaza -->
-    <XslTransform Include="charts\raidboss\raidboss.regice.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.regice.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.regice.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Regirock -->
-    <XslTransform Include="charts\raidboss\raidboss.regirock.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.regirock.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.regirock.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Registeel -->
-    <XslTransform Include="charts\raidboss\raidboss.registeel.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.registeel.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.registeel.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Rhydon -->
-    <XslTransform Include="charts\raidboss\raidboss.rhydon.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.rhydon.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.rhydon.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Sableye -->
-    <XslTransform Include="charts\raidboss\raidboss.sableye.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.sableye.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.sableye.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Sandslash -->
-    <XslTransform Include="charts\raidboss\raidboss.sandslash.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.sandslash.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.sandslash.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Scyther -->
-    <XslTransform Include="charts\raidboss\raidboss.scyther.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.scyther.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.scyther.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Shuppet -->
-    <XslTransform Include="charts\raidboss\raidboss.shuppet.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.shuppet.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.shuppet.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Slowbro -->
-    <XslTransform Include="charts\raidboss\raidboss.slowbro.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.slowbro.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.slowbro.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Sneasel -->
-    <XslTransform Include="charts\raidboss\raidboss.sneasel.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.sneasel.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.sneasel.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Snorlax -->
-    <XslTransform Include="charts\raidboss\raidboss.snorlax.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.snorlax.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.snorlax.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Snorunt -->
-    <XslTransform Include="charts\raidboss\raidboss.snorunt.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.snorunt.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.snorunt.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Starmie -->
-    <XslTransform Include="charts\raidboss\raidboss.starmie.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.starmie.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.starmie.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Suicune -->
-    <XslTransform Include="charts\raidboss\raidboss.suicune.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.suicune.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.suicune.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Swablu -->
-    <XslTransform Include="charts\raidboss\raidboss.swablu.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.swablu.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.swablu.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Tentacruel -->
-    <XslTransform Include="charts\raidboss\raidboss.tentacruel.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.tentacruel.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.tentacruel.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Tyranitar -->
-    <XslTransform Include="charts\raidboss\raidboss.tyranitar.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.tyranitar.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.tyranitar.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Vaporeon -->
-    <XslTransform Include="charts\raidboss\raidboss.vaporeon.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.vaporeon.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.vaporeon.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Venusaur -->
-    <XslTransform Include="charts\raidboss\raidboss.venusaur.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.venusaur.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.venusaur.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Victreebel -->
-    <XslTransform Include="charts\raidboss\raidboss.victreebel.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.victreebel.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.victreebel.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Wailmer -->
-    <XslTransform Include="charts\raidboss\raidboss.wailmer.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.wailmer.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.wailmer.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Walrein -->
-    <XslTransform Include="charts\raidboss\raidboss.walrein.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.walrein.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.walrein.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Wartortle -->
-    <XslTransform Include="charts\raidboss\raidboss.wartortle.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.wartortle.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.wartortle.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Weezing -->
-    <XslTransform Include="charts\raidboss\raidboss.weezing.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.weezing.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.weezing.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #region Zapdos -->
-    <XslTransform Include="charts\raidboss\raidboss.zapdos.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>raidboss.xsl</DependentUpon>
-      <Dependencies>
-        charts\raidboss\raidboss.js;
-        js\global.js;
-        _datafiles\raidboss.zapdos.xml;
-        charts\raidboss\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>raidboss.zapdos.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion -->
-    <!-- #endregion -->
 
     <FixOutputFile Include="charts\raidboss\raidboss.js">
       <DependentUpon>raidboss.xsl</DependentUpon>
@@ -2087,11 +834,14 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
+        _datafiles.manual\images.xml;
         _datafiles\pokestats.gen1.xml;
+        tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
         tech\GAME_MASTER\index.css;
         tech\index.css;
         index.css;
+        xsl\pokemon.xsl;
       </Dependencies>
       <OutputFileName>pokestats.gen1.html</OutputFileName>
     </XslTransform>
@@ -2099,11 +849,14 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
+        _datafiles.manual\images.xml;
         _datafiles\pokestats.gen2.xml;
+        tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
         tech\GAME_MASTER\index.css;
         tech\index.css;
         index.css;
+        xsl\pokemon.xsl;
       </Dependencies>
       <OutputFileName>pokestats.gen2.html</OutputFileName>
     </XslTransform>
@@ -2111,11 +864,14 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
+        _datafiles.manual\images.xml;
         _datafiles\pokestats.gen3.xml;
+        tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
         tech\GAME_MASTER\index.css;
         tech\index.css;
         index.css;
+        xsl\pokemon.xsl;
       </Dependencies>
       <OutputFileName>pokestats.gen3.html</OutputFileName>
     </XslTransform>
@@ -2123,11 +879,14 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
+        _datafiles.manual\images.xml;
         _datafiles\pokestats.gen4.xml;
+        tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
         tech\GAME_MASTER\index.css;
         tech\index.css;
         index.css;
+        xsl\pokemon.xsl;
       </Dependencies>
       <OutputFileName>pokestats.gen4.html</OutputFileName>
     </XslTransform>
@@ -2156,8 +915,8 @@
       <Visible>true</Visible>
       <DependentUpon>counters.xsl</DependentUpon>
       <Dependencies>
+        _datafiles\constants.xml;
         _datafiles\settings.xml;
-        _datafiles\mappings.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -2227,9 +986,11 @@
       <OutputFileName>seapokemapfilter.html</OutputFileName>
     </XslTransform>
     <FixOutputFile Include="resources\seapokemapfilter.js">
-      <DependentUpon>seapokemapfilter.xsl</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>true</Visible>
+      <DependentUpon>seapokemapfilter.xsl</DependentUpon>
+      <Dependencies>
+        js\global.js;
+      </Dependencies>
     </FixOutputFile>
 
     <FixIntermediateFile Include="resources\index.xsl">

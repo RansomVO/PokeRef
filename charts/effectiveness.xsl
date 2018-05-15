@@ -60,7 +60,12 @@
 
         <table border="1" style="white-space:nowrap">
           <xsl:call-template name="CreateTableHeaders" />
-          <xsl:apply-templates select="Effectiveness/MoveEffectiveness" />
+          <xsl:for-each select="/Root/Constants/Types/Type">
+            <xsl:sort order="ascending" data-type="text" select="." />
+            <xsl:variable name="type" select="." />
+
+            <xsl:apply-templates select="/Root/MoveEffectiveness/Moves[@type = $type]" />
+          </xsl:for-each>
         </table>
 
         <xsl:call-template name="WriteFooter" />
@@ -86,41 +91,41 @@
         </tr>
         <tr>
           <th class="GOOD">
-            <xsl:value-of select="Effectiveness/Key/SuperEffective/Symbol" />
+            <xsl:value-of select="MoveEffectiveness/Key/SuperEffective/@symbol" />
           </th>
           <td>Super Effective</td>
           <td align="right">
-            <xsl:value-of select="format-number(Effectiveness/Key/SuperEffective/Multiplier, '0.000')" />
+            <xsl:value-of select="format-number(MoveEffectiveness/Key/SuperEffective/@multiplier, '0.000')" />
           </td>
           <td>The Move receives a bonus when used against Pokemon of the Type.</td>
         </tr>
         <tr>
           <th>
-            <xsl:value-of select="Effectiveness/Key/Neutral/Symbol" />
+            <xsl:value-of select="MoveEffectiveness/Key/Neutral/@symbol" />
           </th>
           <td>Neutral</td>
           <td align="right">
-            <xsl:value-of select="format-number(Effectiveness/Key/Neutral/Multiplier, '0.000')" />
+            <xsl:value-of select="format-number(MoveEffectiveness/Key/Neutral/@multiplier, '0.000')" />
           </td>
           <td>The Move receives no bonus or penalty when used against Pokemon of the Type.</td>
         </tr>
         <tr>
           <th class="BAD">
-            <xsl:value-of select="Effectiveness/Key/NotVeryEffective/Symbol" />
+            <xsl:value-of select="MoveEffectiveness/Key/NotVeryEffective/@symbol" />
           </th>
           <td>Not Very Effective</td>
           <td align="right">
-            <xsl:value-of select="format-number(Effectiveness/Key/NotVeryEffective/Multiplier, '0.000')" />
+            <xsl:value-of select="format-number(MoveEffectiveness/Key/NotVeryEffective/@multiplier, '0.000')" />
           </td>
           <td>The Move receives a penalty when used against Pokemon of the Type.</td>
         </tr>
         <tr>
           <th class="HORRENDOUS">
-            <xsl:value-of select="Effectiveness/Key/Immune/Symbol" />
+            <xsl:value-of select="MoveEffectiveness/Key/Immune/@symbol" />
           </th>
           <td>Immune</td>
           <td align="right">
-            <xsl:value-of select="format-number(Effectiveness/Key/Immune/Multiplier, '0.000')" />
+            <xsl:value-of select="format-number(MoveEffectiveness/Key/Immune/@multiplier, '0.000')" />
           </td>
           <td>The Move receives an extreme penalty when used against Pokemon of the Type.</td>
         </tr>
@@ -145,202 +150,68 @@
           </tr>
         </table>
       </td>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Bug</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Bug'" />
+      <xsl:for-each select="/Root/Constants/Types/Type">
+        <xsl:sort order="ascending" data-type="text" select="." />
+        <xsl:call-template name="ColumnHeaderCell">
+          <xsl:with-param name="Type" select="." />
         </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Dark</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Dark'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Dragon</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Dragon'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Electric</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Electric'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Fairy</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Fairy'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Fighting</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Fighting'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Fire</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Fire'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Flying</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Flying'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Ghost</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Ghost'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Grass</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Grass'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Ground</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Ground'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Ice</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Ice'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Normal</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Normal'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Poison</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Poison'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Psychic</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Psychic'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Rock</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Rock'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Steel</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Steel'" />
-        </xsl:call-template>
-      </th>
-      <th class="ROTATED_CONTAINER">
-        <div class="ROTATED">Water</div>
-        <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="'Water'" />
-        </xsl:call-template>
-      </th>
+      </xsl:for-each>
     </tr>
+  </xsl:template>
+
+  <xsl:template name="ColumnHeaderCell">
+    <xsl:param name="Type" />
+    <th style="padding:0;">
+      <table>
+        <tr>
+          <th class="ROTATED_CONTAINER">
+            <div class="ROTATED">
+              <xsl:value-of select="$Type"/>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th style="padding-left:0; padding-right:0;">
+            <xsl:call-template name="OutputTypeIcon">
+              <xsl:with-param name="Type" select="$Type" />
+            </xsl:call-template>
+          </th>
+        </tr>
+      </table>
+    </th>
   </xsl:template>
 
   <!-- Template to create a table row for a Move Type -->
-  <xsl:template match="MoveEffectiveness">
+  <xsl:template match="Moves">
     <tr>
       <th align="right" valign="bottom" style="padding-right:0;">
-        <xsl:value-of select="concat(MoveType, $nbsp)" disable-output-escaping="yes" />
+        <xsl:value-of select="concat(@type, $nbsp)" disable-output-escaping="yes" />
         <xsl:call-template name="OutputTypeIcon">
-          <xsl:with-param name="Type" select="MoveType" />
+          <xsl:with-param name="Type" select="@type" />
         </xsl:call-template>
       </th>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Bug" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Dark" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Dragon" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Electric" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Fairy" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Fighting" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Fire" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Flying" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Ghost" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Grass" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Ground" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Ice" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Normal" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Poison" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Psychic" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Rock" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Steel" />
-      </xsl:call-template>
-      <xsl:call-template name="EffectivenessCell">
-        <xsl:with-param name="symbol" select="PokemonType/Water" />
-      </xsl:call-template>
+
+      <xsl:variable name="Moves" select="." />
+      <xsl:for-each select="/Root/Constants/Types/Type">
+        <xsl:sort order="ascending" data-type="text" select="." />
+        <xsl:variable name="type" select="." />
+
+        <xsl:apply-templates select="$Moves/Pokemon[@type = $type]"  mode="EffectivenessCell" />
+      </xsl:for-each>
     </tr>
   </xsl:template>
 
-  <xsl:template name="EffectivenessCell">
-    <xsl:param name="symbol"/>
-
+  <xsl:template match="Pokemon" mode="EffectivenessCell">
     <td align="center">
       <xsl:attribute name="class">
         <xsl:choose>
-          <xsl:when test="$symbol = /Root/Effectiveness/Key/SuperEffective/Symbol">GOOD</xsl:when>
-          <xsl:when test="$symbol = /Root/Effectiveness/Key/NotVeryEffective/Symbol">BAD</xsl:when>
-          <xsl:when test="$symbol = /Root/Effectiveness/Key/Immune/Symbol">HORRENDOUS</xsl:when>
+          <xsl:when test="@value = /Root/MoveEffectiveness/Key/SuperEffective/@symbol">GOOD</xsl:when>
+          <xsl:when test="@value = /Root/MoveEffectiveness/Key/NotVeryEffective/@symbol">BAD</xsl:when>
+          <xsl:when test="@value = /Root/MoveEffectiveness/Key/Immune/@symbol">HORRENDOUS</xsl:when>
         </xsl:choose>
       </xsl:attribute>
 
-      <xsl:choose>
-        <xsl:when test="$symbol = ''">&#x25CB;</xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="$symbol"/>
-        </xsl:otherwise>
-      </xsl:choose>
-
+      <xsl:value-of select="@value"/>
     </td>
   </xsl:template>
 

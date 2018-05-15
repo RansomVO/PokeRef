@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Root [
+  <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
-  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
-  <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss.vaporeon.xml">
+  <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss/raidboss.vaporeon.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="raidboss.xsl" output="raidboss.vaporeon.html"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Constants;
   &Settings;
-  &Mappings;
   &RaidBoss;
 </Root> 

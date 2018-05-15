@@ -1,1165 +1,132 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Moves>
-	<Category>Charged</Category>
-	<Move>
-		<Name>Wrap</Name>
-		<Type>Normal</Type>
-		<Energy>-33</Energy>
-		<Power>60</Power>
-		<Time>2.9</Time>
-		<DamageWindowStart>2050</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Hyper Beam</Name>
-		<Type>Normal</Type>
-		<Energy>-100</Energy>
-		<Power>150</Power>
-		<Time>3.8</Time>
-		<DamageWindowStart>3300</DamageWindowStart>
-		<DamageWindowEnd>3600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Dark Pulse</Name>
-		<Type>Dark</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>3</Time>
-		<DamageWindowStart>1400</DamageWindowStart>
-		<DamageWindowEnd>2300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Sludge</Name>
-		<Type>Poison</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>2.1</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>1550</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Vice Grip</Name>
-		<Type>Normal</Type>
-		<Energy>-33</Energy>
-		<Power>35</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1100</DamageWindowStart>
-		<DamageWindowEnd>1500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Flame Wheel</Name>
-		<Type>Fire</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>2100</DamageWindowStart>
-		<DamageWindowEnd>2400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Megahorn</Name>
-		<Type>Bug</Type>
-		<Energy>-100</Energy>
-		<Power>90</Power>
-		<Time>2.2</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>1900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Flamethrower</Name>
-		<Type>Fire</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>2.2</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>1700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Dig</Name>
-		<Type>Ground</Type>
-		<Energy>-50</Energy>
-		<Power>100</Power>
-		<Time>4.7</Time>
-		<DamageWindowStart>2800</DamageWindowStart>
-		<DamageWindowEnd>4500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Cross Chop</Name>
-		<Type>Fighting</Type>
-		<Energy>-50</Energy>
-		<Power>50</Power>
-		<Time>1.5</Time>
-		<DamageWindowStart>800</DamageWindowStart>
-		<DamageWindowEnd>1200</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Psybeam</Name>
-		<Type>Psychic</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>3.2</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Earthquake</Name>
-		<Type>Ground</Type>
-		<Energy>-100</Energy>
-		<Power>120</Power>
-		<Time>3.6</Time>
-		<DamageWindowStart>2700</DamageWindowStart>
-		<DamageWindowEnd>3500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Stone Edge</Name>
-		<Type>Rock</Type>
-		<Energy>-100</Energy>
-		<Power>100</Power>
-		<Time>2.3</Time>
-		<DamageWindowStart>700</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Ice Punch</Name>
-		<Type>Ice</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Heart Stamp</Name>
-		<Type>Psychic</Type>
-		<Energy>-33</Energy>
-		<Power>40</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1100</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Discharge</Name>
-		<Type>Electric</Type>
-		<Energy>-33</Energy>
-		<Power>65</Power>
-		<Time>2.5</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Flash Cannon</Name>
-		<Type>Steel</Type>
-		<Energy>-100</Energy>
-		<Power>100</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>1600</DamageWindowStart>
-		<DamageWindowEnd>2500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Drill Peck</Name>
-		<Type>Flying</Type>
-		<Energy>-33</Energy>
-		<Power>60</Power>
-		<Time>2.3</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Ice Beam</Name>
-		<Type>Ice</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>3.3</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>2800</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Blizzard</Name>
-		<Type>Ice</Type>
-		<Energy>-100</Energy>
-		<Power>130</Power>
-		<Time>3.1</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>2900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Heat Wave</Name>
-		<Type>Fire</Type>
-		<Energy>-100</Energy>
-		<Power>95</Power>
-		<Time>3</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2800</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Aerial Ace</Name>
-		<Type>Flying</Type>
-		<Energy>-33</Energy>
-		<Power>55</Power>
-		<Time>2.4</Time>
-		<DamageWindowStart>1900</DamageWindowStart>
-		<DamageWindowEnd>2200</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Drill Run</Name>
-		<Type>Ground</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>2.8</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Petal Blizzard</Name>
-		<Type>Grass</Type>
-		<Energy>-100</Energy>
-		<Power>110</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Mega Drain</Name>
-		<Type>Grass</Type>
-		<Energy>-50</Energy>
-		<Power>25</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>950</DamageWindowStart>
-		<DamageWindowEnd>2000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Bug Buzz</Name>
-		<Type>Bug</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>3.7</Time>
-		<DamageWindowStart>2000</DamageWindowStart>
-		<DamageWindowEnd>3100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Poison Fang</Name>
-		<Type>Poison</Type>
-		<Energy>-33</Energy>
-		<Power>35</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>900</DamageWindowStart>
-		<DamageWindowEnd>1400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Night Slash</Name>
-		<Type>Dark</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>2.2</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>2000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Bubble Beam</Name>
-		<Type>Water</Type>
-		<Energy>-33</Energy>
-		<Power>45</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1450</DamageWindowStart>
-		<DamageWindowEnd>1700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Submission</Name>
-		<Type>Fighting</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.2</Time>
-		<DamageWindowStart>1800</DamageWindowStart>
-		<DamageWindowEnd>2000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Low Sweep</Name>
-		<Type>Fighting</Type>
-		<Energy>-33</Energy>
-		<Power>40</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>1650</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Aqua Jet</Name>
-		<Type>Water</Type>
-		<Energy>-33</Energy>
-		<Power>45</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Aqua Tail</Name>
-		<Type>Water</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>1650</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Seed Bomb</Name>
-		<Type>Grass</Type>
-		<Energy>-33</Energy>
-		<Power>55</Power>
-		<Time>2.1</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>1900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Psyshock</Name>
-		<Type>Psychic</Type>
-		<Energy>-33</Energy>
-		<Power>65</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>2000</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Ancient Power</Name>
-		<Type>Rock</Type>
-		<Energy>-33</Energy>
-		<Power>70</Power>
-		<Time>3.5</Time>
-		<DamageWindowStart>2850</DamageWindowStart>
-		<DamageWindowEnd>3100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Rock Tomb</Name>
-		<Type>Rock</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>3.2</Time>
-		<DamageWindowStart>2250</DamageWindowStart>
-		<DamageWindowEnd>3000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Rock Slide</Name>
-		<Type>Rock</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Power Gem</Name>
-		<Type>Rock</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>2.9</Time>
-		<DamageWindowStart>1950</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Shadow Sneak</Name>
-		<Type>Ghost</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>2.9</Time>
-		<DamageWindowStart>2200</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Shadow Punch</Name>
-		<Type>Ghost</Type>
-		<Energy>-33</Energy>
-		<Power>40</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>1500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Ominous Wind</Name>
-		<Type>Ghost</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>2.3</Time>
-		<DamageWindowStart>1850</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Shadow Ball</Name>
-		<Type>Ghost</Type>
-		<Energy>-50</Energy>
-		<Power>100</Power>
-		<Time>3</Time>
-		<DamageWindowStart>2400</DamageWindowStart>
-		<DamageWindowEnd>2800</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Magnet Bomb</Name>
-		<Type>Steel</Type>
-		<Energy>-33</Energy>
-		<Power>70</Power>
-		<Time>2.8</Time>
-		<DamageWindowStart>2200</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Iron Head</Name>
-		<Type>Steel</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>1700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Parabolic Charge</Name>
-		<Type>Electric</Type>
-		<Energy>-50</Energy>
-		<Power>25</Power>
-		<Time>2.8</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>2400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Thunder Punch</Name>
-		<Type>Electric</Type>
-		<Energy>-33</Energy>
-		<Power>45</Power>
-		<Time>1.8</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>1550</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Thunder</Name>
-		<Type>Electric</Type>
-		<Energy>-100</Energy>
-		<Power>100</Power>
-		<Time>2.4</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>2200</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Thunderbolt</Name>
-		<Type>Electric</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>2.5</Time>
-		<DamageWindowStart>1800</DamageWindowStart>
-		<DamageWindowEnd>2300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Twister</Name>
-		<Type>Dragon</Type>
-		<Energy>-33</Energy>
-		<Power>45</Power>
-		<Time>2.8</Time>
-		<DamageWindowStart>950</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Dragon Pulse</Name>
-		<Type>Dragon</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>3.6</Time>
-		<DamageWindowStart>2150</DamageWindowStart>
-		<DamageWindowEnd>3300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Dragon Claw</Name>
-		<Type>Dragon</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>1100</DamageWindowStart>
-		<DamageWindowEnd>1300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Disarming Voice</Name>
-		<Type>Fairy</Type>
-		<Energy>-33</Energy>
-		<Power>70</Power>
-		<Time>3.9</Time>
-		<DamageWindowStart>3200</DamageWindowStart>
-		<DamageWindowEnd>3500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Draining Kiss</Name>
-		<Type>Fairy</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>1000</DamageWindowStart>
-		<DamageWindowEnd>1300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Dazzling Gleam</Name>
-		<Type>Fairy</Type>
-		<Energy>-50</Energy>
-		<Power>100</Power>
-		<Time>3.5</Time>
-		<DamageWindowStart>2100</DamageWindowStart>
-		<DamageWindowEnd>3300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Moonblast</Name>
-		<Type>Fairy</Type>
-		<Energy>-100</Energy>
-		<Power>130</Power>
-		<Time>3.9</Time>
-		<DamageWindowStart>2200</DamageWindowStart>
-		<DamageWindowEnd>3700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Play Rough</Name>
-		<Type>Fairy</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>2.9</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Cross Poison</Name>
-		<Type>Poison</Type>
-		<Energy>-33</Energy>
-		<Power>40</Power>
-		<Time>1.5</Time>
-		<DamageWindowStart>900</DamageWindowStart>
-		<DamageWindowEnd>1300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Sludge Bomb</Name>
-		<Type>Poison</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>2.3</Time>
-		<DamageWindowStart>1100</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Sludge Wave</Name>
-		<Type>Poison</Type>
-		<Energy>-100</Energy>
-		<Power>110</Power>
-		<Time>3.2</Time>
-		<DamageWindowStart>2000</DamageWindowStart>
-		<DamageWindowEnd>3000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Gunk Shot</Name>
-		<Type>Poison</Type>
-		<Energy>-100</Energy>
-		<Power>130</Power>
-		<Time>3.1</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Bone Club</Name>
-		<Type>Ground</Type>
-		<Energy>-33</Energy>
-		<Power>40</Power>
-		<Time>1.6</Time>
-		<DamageWindowStart>1000</DamageWindowStart>
-		<DamageWindowEnd>1400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Bulldoze</Name>
-		<Type>Ground</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>3.5</Time>
-		<DamageWindowStart>2600</DamageWindowStart>
-		<DamageWindowEnd>3100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Mud Bomb</Name>
-		<Type>Ground</Type>
-		<Energy>-33</Energy>
-		<Power>55</Power>
-		<Time>2.3</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Signal Beam</Name>
-		<Type>Bug</Type>
-		<Energy>-50</Energy>
-		<Power>75</Power>
-		<Time>2.9</Time>
-		<DamageWindowStart>1800</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>X Scissor</Name>
-		<Type>Bug</Type>
-		<Energy>-33</Energy>
-		<Power>45</Power>
-		<Time>1.6</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>1400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Flame Charge</Name>
-		<Type>Fire</Type>
-		<Energy>-33</Energy>
-		<Power>70</Power>
-		<Time>3.8</Time>
-		<DamageWindowStart>2900</DamageWindowStart>
-		<DamageWindowEnd>3450</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Flame Burst</Name>
-		<Type>Fire</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>1000</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Fire Blast</Name>
-		<Type>Fire</Type>
-		<Energy>-100</Energy>
-		<Power>140</Power>
-		<Time>4.2</Time>
-		<DamageWindowStart>3100</DamageWindowStart>
-		<DamageWindowEnd>3900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Brine</Name>
-		<Type>Water</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.3</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Water Pulse</Name>
-		<Type>Water</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>3.2</Time>
-		<DamageWindowStart>2200</DamageWindowStart>
-		<DamageWindowEnd>2900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Scald</Name>
-		<Type>Water</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>3.7</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>3400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Hydro Pump</Name>
-		<Type>Water</Type>
-		<Energy>-100</Energy>
-		<Power>130</Power>
-		<Time>3.3</Time>
-		<DamageWindowStart>900</DamageWindowStart>
-		<DamageWindowEnd>3000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Psychic</Name>
-		<Type>Psychic</Type>
-		<Energy>-100</Energy>
-		<Power>100</Power>
-		<Time>2.8</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Psystrike</Name>
-		<Type>Psychic</Type>
-		<Energy>-50</Energy>
-		<Power>100</Power>
-		<Time>4.4</Time>
-		<DamageWindowStart>3000</DamageWindowStart>
-		<DamageWindowEnd>4200</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Icy Wind</Name>
-		<Type>Ice</Type>
-		<Energy>-33</Energy>
-		<Power>60</Power>
-		<Time>3.3</Time>
-		<DamageWindowStart>2000</DamageWindowStart>
-		<DamageWindowEnd>2800</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Giga Drain</Name>
-		<Type>Grass</Type>
-		<Energy>-100</Energy>
-		<Power>50</Power>
-		<Time>3.9</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>2200</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Fire Punch</Name>
-		<Type>Fire</Type>
-		<Energy>-33</Energy>
-		<Power>55</Power>
-		<Time>2.2</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>1900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Solar Beam</Name>
-		<Type>Grass</Type>
-		<Energy>-100</Energy>
-		<Power>180</Power>
-		<Time>4.9</Time>
-		<DamageWindowStart>2700</DamageWindowStart>
-		<DamageWindowEnd>4700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Leaf Blade</Name>
-		<Type>Grass</Type>
-		<Energy>-33</Energy>
-		<Power>70</Power>
-		<Time>2.4</Time>
-		<DamageWindowStart>1250</DamageWindowStart>
-		<DamageWindowEnd>2200</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Power Whip</Name>
-		<Type>Grass</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>1250</DamageWindowStart>
-		<DamageWindowEnd>2350</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Air Cutter</Name>
-		<Type>Flying</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>1800</DamageWindowStart>
-		<DamageWindowEnd>2500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Hurricane</Name>
-		<Type>Flying</Type>
-		<Energy>-100</Energy>
-		<Power>110</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>2400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Brick Break</Name>
-		<Type>Fighting</Type>
-		<Energy>-33</Energy>
-		<Power>40</Power>
-		<Time>1.6</Time>
-		<DamageWindowStart>800</DamageWindowStart>
-		<DamageWindowEnd>1400</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Swift</Name>
-		<Type>Normal</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.8</Time>
-		<DamageWindowStart>2000</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Horn Attack</Name>
-		<Type>Normal</Type>
-		<Energy>-33</Energy>
-		<Power>40</Power>
-		<Time>1.85</Time>
-		<DamageWindowStart>800</DamageWindowStart>
-		<DamageWindowEnd>1650</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Stomp</Name>
-		<Type>Normal</Type>
-		<Energy>-50</Energy>
-		<Power>55</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>1100</DamageWindowStart>
-		<DamageWindowEnd>1500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Hyper Fang</Name>
-		<Type>Normal</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>2.5</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>2000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Body Slam</Name>
-		<Type>Normal</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>1700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Rest</Name>
-		<Type>Normal</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>1.9</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>1700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Struggle</Name>
-		<Type>Normal</Type>
-		<Energy>0</Energy>
-		<Power>35</Power>
-		<Time>2.2</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>2000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Scald Blastoise</Name>
-		<Type>Water</Type>
-		<Energy>-100</Energy>
-		<Power>50</Power>
-		<Time>4.7</Time>
-		<DamageWindowStart>2500</DamageWindowStart>
-		<DamageWindowEnd>4600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Hydro Pump Blastoise</Name>
-		<Type>Water</Type>
-		<Energy>-100</Energy>
-		<Power>90</Power>
-		<Time>4.5</Time>
-		<DamageWindowStart>2200</DamageWindowStart>
-		<DamageWindowEnd>4300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Wrap Green</Name>
-		<Type>Normal</Type>
-		<Energy>-33</Energy>
-		<Power>25</Power>
-		<Time>2.9</Time>
-		<DamageWindowStart>2050</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Wrap Pink</Name>
-		<Type>Normal</Type>
-		<Energy>-33</Energy>
-		<Power>25</Power>
-		<Time>2.9</Time>
-		<DamageWindowStart>2050</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Close Combat</Name>
-		<Type>Fighting</Type>
-		<Energy>-100</Energy>
-		<Power>100</Power>
-		<Time>2.3</Time>
-		<DamageWindowStart>1000</DamageWindowStart>
-		<DamageWindowEnd>2300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Dynamic Punch</Name>
-		<Type>Fighting</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>1200</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Focus Blast</Name>
-		<Type>Fighting</Type>
-		<Energy>-100</Energy>
-		<Power>140</Power>
-		<Time>3.5</Time>
-		<DamageWindowStart>3000</DamageWindowStart>
-		<DamageWindowEnd>3500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Aurora Beam</Name>
-		<Type>Ice</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>3.55</Time>
-		<DamageWindowStart>3350</DamageWindowStart>
-		<DamageWindowEnd>3550</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Wild Charge</Name>
-		<Type>Electric</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Zap Cannon</Name>
-		<Type>Electric</Type>
-		<Energy>-100</Energy>
-		<Power>140</Power>
-		<Time>3.7</Time>
-		<DamageWindowStart>3000</DamageWindowStart>
-		<DamageWindowEnd>3500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Avalanche</Name>
-		<Type>Ice</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2100</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Brave Bird</Name>
-		<Type>Flying</Type>
-		<Energy>-100</Energy>
-		<Power>90</Power>
-		<Time>2</Time>
-		<DamageWindowStart>1000</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Sky Attack</Name>
-		<Type>Flying</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>2</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>1700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Sand Tomb</Name>
-		<Type>Ground</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>4</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>4000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Rock Blast</Name>
-		<Type>Rock</Type>
-		<Energy>-33</Energy>
-		<Power>50</Power>
-		<Time>2.1</Time>
-		<DamageWindowStart>1600</DamageWindowStart>
-		<DamageWindowEnd>2000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Silver Wind</Name>
-		<Type>Bug</Type>
-		<Energy>-33</Energy>
-		<Power>70</Power>
-		<Time>3.7</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>3500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Night Shade</Name>
-		<Type>Ghost</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>2100</DamageWindowStart>
-		<DamageWindowEnd>2500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Gyro Ball</Name>
-		<Type>Steel</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>3.3</Time>
-		<DamageWindowStart>3000</DamageWindowStart>
-		<DamageWindowEnd>3300</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Heavy Slam</Name>
-		<Type>Steel</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>2.1</Time>
-		<DamageWindowStart>1500</DamageWindowStart>
-		<DamageWindowEnd>1900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Overheat</Name>
-		<Type>Fire</Type>
-		<Energy>-100</Energy>
-		<Power>160</Power>
-		<Time>4</Time>
-		<DamageWindowStart>2600</DamageWindowStart>
-		<DamageWindowEnd>3800</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Grass Knot</Name>
-		<Type>Grass</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>2600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Energy Ball</Name>
-		<Type>Grass</Type>
-		<Energy>-50</Energy>
-		<Power>90</Power>
-		<Time>3.9</Time>
-		<DamageWindowStart>3000</DamageWindowStart>
-		<DamageWindowEnd>3800</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Futuresight</Name>
-		<Type>Psychic</Type>
-		<Energy>-100</Energy>
-		<Power>120</Power>
-		<Time>2.7</Time>
-		<DamageWindowStart>1400</DamageWindowStart>
-		<DamageWindowEnd>2700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Mirror Coat</Name>
-		<Type>Psychic</Type>
-		<Energy>-50</Energy>
-		<Power>60</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>2300</DamageWindowStart>
-		<DamageWindowEnd>2500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Outrage</Name>
-		<Type>Dragon</Type>
-		<Energy>-50</Energy>
-		<Power>110</Power>
-		<Time>3.9</Time>
-		<DamageWindowStart>2500</DamageWindowStart>
-		<DamageWindowEnd>3700</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Crunch</Name>
-		<Type>Dark</Type>
-		<Energy>-33</Energy>
-		<Power>70</Power>
-		<Time>3.2</Time>
-		<DamageWindowStart>1300</DamageWindowStart>
-		<DamageWindowEnd>3000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Foul Play</Name>
-		<Type>Dark</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>2</Time>
-		<DamageWindowStart>1700</DamageWindowStart>
-		<DamageWindowEnd>1900</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Surf</Name>
-		<Type>Water</Type>
-		<Energy>-50</Energy>
-		<Power>65</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>1400</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Draco Meteor</Name>
-		<Type>Dragon</Type>
-		<Energy>-100</Energy>
-		<Power>150</Power>
-		<Time>3.6</Time>
-		<DamageWindowStart>3000</DamageWindowStart>
-		<DamageWindowEnd>3500</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Doom Desire</Name>
-		<Type>Steel</Type>
-		<Energy>-50</Energy>
-		<Power>80</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>1400</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Psycho Boost</Name>
-		<Type>Psychic</Type>
-		<Energy>-50</Energy>
-		<Power>70</Power>
-		<Time>4</Time>
-		<DamageWindowStart>3500</DamageWindowStart>
-		<DamageWindowEnd>4000</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Origin Pulse</Name>
-		<Type>Water</Type>
-		<Energy>-100</Energy>
-		<Power>130</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>1400</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Precipice Blades</Name>
-		<Type>Ground</Type>
-		<Energy>-100</Energy>
-		<Power>130</Power>
-		<Time>1.7</Time>
-		<DamageWindowStart>1400</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Weather Ball Fire</Name>
-		<Type>Fire</Type>
-		<Energy>-33</Energy>
-		<Power>60</Power>
-		<Time>1.6</Time>
-		<DamageWindowStart>1350</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Weather Ball Ice</Name>
-		<Type>Ice</Type>
-		<Energy>-33</Energy>
-		<Power>60</Power>
-		<Time>1.6</Time>
-		<DamageWindowStart>1350</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Weather Ball Rock</Name>
-		<Type>Rock</Type>
-		<Energy>-33</Energy>
-		<Power>60</Power>
-		<Time>1.6</Time>
-		<DamageWindowStart>1350</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Weather Ball Water</Name>
-		<Type>Water</Type>
-		<Energy>-33</Energy>
-		<Power>60</Power>
-		<Time>1.6</Time>
-		<DamageWindowStart>1350</DamageWindowStart>
-		<DamageWindowEnd>1600</DamageWindowEnd>
-	</Move>
-	<Move>
-		<Name>Frenzy Plant</Name>
-		<Type>Grass</Type>
-		<Energy>-50</Energy>
-		<Power>100</Power>
-		<Time>2.6</Time>
-		<DamageWindowStart>2145</DamageWindowStart>
-		<DamageWindowEnd>2550</DamageWindowEnd>
-	</Move>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Moves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-05-11" category="Charged">
+  <Move name="Wrap" type="Normal" energy="-33" power="60" duration="2.9" damage_window_start="2050" damage_window_end="2700" />
+  <Move name="Hyper Beam" type="Normal" energy="-100" power="150" duration="3.8" damage_window_start="3300" damage_window_end="3600" />
+  <Move name="Dark Pulse" type="Dark" energy="-50" power="80" duration="3" damage_window_start="1400" damage_window_end="2300" />
+  <Move name="Sludge" type="Poison" energy="-33" power="50" duration="2.1" damage_window_start="1200" damage_window_end="1550" />
+  <Move name="Vice Grip" type="Normal" energy="-33" power="35" duration="1.9" damage_window_start="1100" damage_window_end="1500" />
+  <Move name="Flame Wheel" type="Fire" energy="-50" power="60" duration="2.7" damage_window_start="2100" damage_window_end="2400" />
+  <Move name="Megahorn" type="Bug" energy="-100" power="90" duration="2.2" damage_window_start="1700" damage_window_end="1900" />
+  <Move name="Flamethrower" type="Fire" energy="-50" power="70" duration="2.2" damage_window_start="1500" damage_window_end="1700" />
+  <Move name="Dig" type="Ground" energy="-50" power="100" duration="4.7" damage_window_start="2800" damage_window_end="4500" />
+  <Move name="Cross Chop" type="Fighting" energy="-50" power="50" duration="1.5" damage_window_start="800" damage_window_end="1200" />
+  <Move name="Psybeam" type="Psychic" energy="-50" power="70" duration="3.2" damage_window_start="1300" damage_window_end="2700" />
+  <Move name="Earthquake" type="Ground" energy="-100" power="120" duration="3.6" damage_window_start="2700" damage_window_end="3500" />
+  <Move name="Stone Edge" type="Rock" energy="-100" power="100" duration="2.3" damage_window_start="700" damage_window_end="2100" />
+  <Move name="Ice Punch" type="Ice" energy="-33" power="50" duration="1.9" damage_window_start="1300" damage_window_end="1600" />
+  <Move name="Heart Stamp" type="Psychic" energy="-33" power="40" duration="1.9" damage_window_start="1100" damage_window_end="1600" />
+  <Move name="Discharge" type="Electric" energy="-33" power="65" duration="2.5" damage_window_start="1700" damage_window_end="2100" />
+  <Move name="Flash Cannon" type="Steel" energy="-100" power="100" duration="2.7" damage_window_start="1600" damage_window_end="2500" />
+  <Move name="Drill Peck" type="Flying" energy="-33" power="60" duration="2.3" damage_window_start="1700" damage_window_end="2100" />
+  <Move name="Ice Beam" type="Ice" energy="-50" power="90" duration="3.3" damage_window_start="1300" damage_window_end="2800" />
+  <Move name="Blizzard" type="Ice" energy="-100" power="130" duration="3.1" damage_window_start="1500" damage_window_end="2900" />
+  <Move name="Heat Wave" type="Fire" energy="-100" power="95" duration="3" damage_window_start="1700" damage_window_end="2800" />
+  <Move name="Aerial Ace" type="Flying" energy="-33" power="55" duration="2.4" damage_window_start="1900" damage_window_end="2200" />
+  <Move name="Drill Run" type="Ground" energy="-50" power="80" duration="2.8" damage_window_start="1700" damage_window_end="2600" />
+  <Move name="Petal Blizzard" type="Grass" energy="-100" power="110" duration="2.6" damage_window_start="1700" damage_window_end="2300" />
+  <Move name="Mega Drain" type="Grass" energy="-50" power="25" duration="2.6" damage_window_start="950" damage_window_end="2000" />
+  <Move name="Bug Buzz" type="Bug" energy="-50" power="90" duration="3.7" damage_window_start="2000" damage_window_end="3100" />
+  <Move name="Poison Fang" type="Poison" energy="-33" power="35" duration="1.7" damage_window_start="900" damage_window_end="1400" />
+  <Move name="Night Slash" type="Dark" energy="-33" power="50" duration="2.2" damage_window_start="1300" damage_window_end="2000" />
+  <Move name="Bubble Beam" type="Water" energy="-33" power="45" duration="1.9" damage_window_start="1450" damage_window_end="1700" />
+  <Move name="Submission" type="Fighting" energy="-50" power="60" duration="2.2" damage_window_start="1800" damage_window_end="2000" />
+  <Move name="Low Sweep" type="Fighting" energy="-33" power="40" duration="1.9" damage_window_start="1300" damage_window_end="1650" />
+  <Move name="Aqua Jet" type="Water" energy="-33" power="45" duration="2.6" damage_window_start="1700" damage_window_end="2100" />
+  <Move name="Aqua Tail" type="Water" energy="-33" power="50" duration="1.9" damage_window_start="1200" damage_window_end="1650" />
+  <Move name="Seed Bomb" type="Grass" energy="-33" power="55" duration="2.1" damage_window_start="1200" damage_window_end="1900" />
+  <Move name="Psyshock" type="Psychic" energy="-33" power="65" duration="2.7" damage_window_start="2000" damage_window_end="2600" />
+  <Move name="Ancient Power" type="Rock" energy="-33" power="70" duration="3.5" damage_window_start="2850" damage_window_end="3100" />
+  <Move name="Rock Tomb" type="Rock" energy="-50" power="70" duration="3.2" damage_window_start="2250" damage_window_end="3000" />
+  <Move name="Rock Slide" type="Rock" energy="-50" power="80" duration="2.7" damage_window_start="1500" damage_window_end="2600" />
+  <Move name="Power Gem" type="Rock" energy="-50" power="80" duration="2.9" damage_window_start="1950" damage_window_end="2700" />
+  <Move name="Shadow Sneak" type="Ghost" energy="-33" power="50" duration="2.9" damage_window_start="2200" damage_window_end="2700" />
+  <Move name="Shadow Punch" type="Ghost" energy="-33" power="40" duration="1.7" damage_window_start="1300" damage_window_end="1500" />
+  <Move name="Ominous Wind" type="Ghost" energy="-33" power="50" duration="2.3" damage_window_start="1850" damage_window_end="2100" />
+  <Move name="Shadow Ball" type="Ghost" energy="-50" power="100" duration="3" damage_window_start="2400" damage_window_end="2800" />
+  <Move name="Magnet Bomb" type="Steel" energy="-33" power="70" duration="2.8" damage_window_start="2200" damage_window_end="2600" />
+  <Move name="Iron Head" type="Steel" energy="-50" power="60" duration="1.9" damage_window_start="1300" damage_window_end="1700" />
+  <Move name="Parabolic Charge" type="Electric" energy="-50" power="25" duration="2.8" damage_window_start="1200" damage_window_end="2400" />
+  <Move name="Thunder Punch" type="Electric" energy="-33" power="45" duration="1.8" damage_window_start="1700" damage_window_end="1550" />
+  <Move name="Thunder" type="Electric" energy="-100" power="100" duration="2.4" damage_window_start="1200" damage_window_end="2200" />
+  <Move name="Thunderbolt" type="Electric" energy="-50" power="80" duration="2.5" damage_window_start="1800" damage_window_end="2300" />
+  <Move name="Twister" type="Dragon" energy="-33" power="45" duration="2.8" damage_window_start="950" damage_window_end="2600" />
+  <Move name="Dragon Pulse" type="Dragon" energy="-50" power="90" duration="3.6" damage_window_start="2150" damage_window_end="3300" />
+  <Move name="Dragon Claw" type="Dragon" energy="-33" power="50" duration="1.7" damage_window_start="1100" damage_window_end="1300" />
+  <Move name="Disarming Voice" type="Fairy" energy="-33" power="70" duration="3.9" damage_window_start="3200" damage_window_end="3500" />
+  <Move name="Draining Kiss" type="Fairy" energy="-50" power="60" duration="2.6" damage_window_start="1000" damage_window_end="1300" />
+  <Move name="Dazzling Gleam" type="Fairy" energy="-50" power="100" duration="3.5" damage_window_start="2100" damage_window_end="3300" />
+  <Move name="Moonblast" type="Fairy" energy="-100" power="130" duration="3.9" damage_window_start="2200" damage_window_end="3700" />
+  <Move name="Play Rough" type="Fairy" energy="-50" power="90" duration="2.9" damage_window_start="1300" damage_window_end="2700" />
+  <Move name="Cross Poison" type="Poison" energy="-33" power="40" duration="1.5" damage_window_start="900" damage_window_end="1300" />
+  <Move name="Sludge Bomb" type="Poison" energy="-50" power="80" duration="2.3" damage_window_start="1100" damage_window_end="2100" />
+  <Move name="Sludge Wave" type="Poison" energy="-100" power="110" duration="3.2" damage_window_start="2000" damage_window_end="3000" />
+  <Move name="Gunk Shot" type="Poison" energy="-100" power="130" duration="3.1" damage_window_start="1700" damage_window_end="2700" />
+  <Move name="Bone Club" type="Ground" energy="-33" power="40" duration="1.6" damage_window_start="1000" damage_window_end="1400" />
+  <Move name="Bulldoze" type="Ground" energy="-50" power="80" duration="3.5" damage_window_start="2600" damage_window_end="3100" />
+  <Move name="Mud Bomb" type="Ground" energy="-33" power="55" duration="2.3" damage_window_start="1700" damage_window_end="2100" />
+  <Move name="Signal Beam" type="Bug" energy="-50" power="75" duration="2.9" damage_window_start="1800" damage_window_end="2600" />
+  <Move name="X Scissor" type="Bug" energy="-33" power="45" duration="1.6" damage_window_start="1200" damage_window_end="1400" />
+  <Move name="Flame Charge" type="Fire" energy="-33" power="70" duration="3.8" damage_window_start="2900" damage_window_end="3450" />
+  <Move name="Flame Burst" type="Fire" energy="-50" power="70" duration="2.6" damage_window_start="1000" damage_window_end="2100" />
+  <Move name="Fire Blast" type="Fire" energy="-100" power="140" duration="4.2" damage_window_start="3100" damage_window_end="3900" />
+  <Move name="Brine" type="Water" energy="-50" power="60" duration="2.3" damage_window_start="1500" damage_window_end="2100" />
+  <Move name="Water Pulse" type="Water" energy="-50" power="70" duration="3.2" damage_window_start="2200" damage_window_end="2900" />
+  <Move name="Scald" type="Water" energy="-50" power="80" duration="3.7" damage_window_start="1300" damage_window_end="3400" />
+  <Move name="Hydro Pump" type="Water" energy="-100" power="130" duration="3.3" damage_window_start="900" damage_window_end="3000" />
+  <Move name="Psychic" type="Psychic" energy="-100" power="100" duration="2.8" damage_window_start="1300" damage_window_end="2600" />
+  <Move name="Psystrike" type="Psychic" energy="-50" power="100" duration="4.4" damage_window_start="3000" damage_window_end="4200" />
+  <Move name="Icy Wind" type="Ice" energy="-33" power="60" duration="3.3" damage_window_start="2000" damage_window_end="2800" />
+  <Move name="Giga Drain" type="Grass" energy="-100" power="50" duration="3.9" damage_window_start="1200" damage_window_end="2200" />
+  <Move name="Fire Punch" type="Fire" energy="-33" power="55" duration="2.2" damage_window_start="1500" damage_window_end="1900" />
+  <Move name="Solar Beam" type="Grass" energy="-100" power="180" duration="4.9" damage_window_start="2700" damage_window_end="4700" />
+  <Move name="Leaf Blade" type="Grass" energy="-33" power="70" duration="2.4" damage_window_start="1250" damage_window_end="2200" />
+  <Move name="Power Whip" type="Grass" energy="-50" power="90" duration="2.6" damage_window_start="1250" damage_window_end="2350" />
+  <Move name="Air Cutter" type="Flying" energy="-50" power="60" duration="2.7" damage_window_start="1800" damage_window_end="2500" />
+  <Move name="Hurricane" type="Flying" energy="-100" power="110" duration="2.7" damage_window_start="1200" damage_window_end="2400" />
+  <Move name="Brick Break" type="Fighting" energy="-33" power="40" duration="1.6" damage_window_start="800" damage_window_end="1400" />
+  <Move name="Swift" type="Normal" energy="-50" power="60" duration="2.8" damage_window_start="2000" damage_window_end="2600" />
+  <Move name="Horn Attack" type="Normal" energy="-33" power="40" duration="1.85" damage_window_start="800" damage_window_end="1650" />
+  <Move name="Stomp" type="Normal" energy="-50" power="55" duration="1.7" damage_window_start="1100" damage_window_end="1500" />
+  <Move name="Hyper Fang" type="Normal" energy="-50" power="80" duration="2.5" damage_window_start="1500" damage_window_end="2000" />
+  <Move name="Body Slam" type="Normal" energy="-33" power="50" duration="1.9" damage_window_start="1200" damage_window_end="1700" />
+  <Move name="Rest" type="Normal" energy="-33" power="50" duration="1.9" damage_window_start="1500" damage_window_end="1700" />
+  <Move name="Struggle" type="Normal" energy="0" power="35" duration="2.2" damage_window_start="1200" damage_window_end="2000" />
+  <Move name="Scald Blastoise" type="Water" energy="-100" power="50" duration="4.7" damage_window_start="2500" damage_window_end="4600" />
+  <Move name="Hydro Pump Blastoise" type="Water" energy="-100" power="90" duration="4.5" damage_window_start="2200" damage_window_end="4300" />
+  <Move name="Wrap Green" type="Normal" energy="-33" power="25" duration="2.9" damage_window_start="2050" damage_window_end="2700" />
+  <Move name="Wrap Pink" type="Normal" energy="-33" power="25" duration="2.9" damage_window_start="2050" damage_window_end="2700" />
+  <Move name="Close Combat" type="Fighting" energy="-100" power="100" duration="2.3" damage_window_start="1000" damage_window_end="2300" />
+  <Move name="Dynamic Punch" type="Fighting" energy="-50" power="90" duration="2.7" damage_window_start="1200" damage_window_end="2700" />
+  <Move name="Focus Blast" type="Fighting" energy="-100" power="140" duration="3.5" damage_window_start="3000" damage_window_end="3500" />
+  <Move name="Aurora Beam" type="Ice" energy="-50" power="80" duration="3.55" damage_window_start="3350" damage_window_end="3550" />
+  <Move name="Wild Charge" type="Electric" energy="-50" power="90" duration="2.6" damage_window_start="1700" damage_window_end="2100" />
+  <Move name="Zap Cannon" type="Electric" energy="-100" power="140" duration="3.7" damage_window_start="3000" damage_window_end="3500" />
+  <Move name="Avalanche" type="Ice" energy="-50" power="90" duration="2.7" damage_window_start="1700" damage_window_end="2100" />
+  <Move name="Brave Bird" type="Flying" energy="-100" power="90" duration="2" damage_window_start="1000" damage_window_end="1600" />
+  <Move name="Sky Attack" type="Flying" energy="-50" power="80" duration="2" damage_window_start="1500" damage_window_end="1700" />
+  <Move name="Sand Tomb" type="Ground" energy="-50" power="80" duration="4" damage_window_start="1700" damage_window_end="4000" />
+  <Move name="Rock Blast" type="Rock" energy="-33" power="50" duration="2.1" damage_window_start="1600" damage_window_end="2000" />
+  <Move name="Silver Wind" type="Bug" energy="-33" power="70" duration="3.7" damage_window_start="1700" damage_window_end="3500" />
+  <Move name="Night Shade" type="Ghost" energy="-50" power="60" duration="2.6" damage_window_start="2100" damage_window_end="2500" />
+  <Move name="Gyro Ball" type="Steel" energy="-50" power="80" duration="3.3" damage_window_start="3000" damage_window_end="3300" />
+  <Move name="Heavy Slam" type="Steel" energy="-50" power="70" duration="2.1" damage_window_start="1500" damage_window_end="1900" />
+  <Move name="Overheat" type="Fire" energy="-100" power="160" duration="4" damage_window_start="2600" damage_window_end="3800" />
+  <Move name="Grass Knot" type="Grass" energy="-50" power="90" duration="2.6" damage_window_start="1700" damage_window_end="2600" />
+  <Move name="Energy Ball" type="Grass" energy="-50" power="90" duration="3.9" damage_window_start="3000" damage_window_end="3800" />
+  <Move name="Futuresight" type="Psychic" energy="-100" power="120" duration="2.7" damage_window_start="1400" damage_window_end="2700" />
+  <Move name="Mirror Coat" type="Psychic" energy="-50" power="60" duration="2.6" damage_window_start="2300" damage_window_end="2500" />
+  <Move name="Outrage" type="Dragon" energy="-50" power="110" duration="3.9" damage_window_start="2500" damage_window_end="3700" />
+  <Move name="Crunch" type="Dark" energy="-33" power="70" duration="3.2" damage_window_start="1300" damage_window_end="3000" />
+  <Move name="Foul Play" type="Dark" energy="-50" power="70" duration="2" damage_window_start="1700" damage_window_end="1900" />
+  <Move name="Surf" type="Water" energy="-50" power="65" duration="1.7" damage_window_start="1400" damage_window_end="1600" />
+  <Move name="Draco Meteor" type="Dragon" energy="-100" power="150" duration="3.6" damage_window_start="3000" damage_window_end="3500" />
+  <Move name="Doom Desire" type="Steel" energy="-50" power="80" duration="1.7" damage_window_start="1400" damage_window_end="1600" />
+  <Move name="Psycho Boost" type="Psychic" energy="-50" power="70" duration="4" damage_window_start="3500" damage_window_end="4000" />
+  <Move name="Origin Pulse" type="Water" energy="-100" power="130" duration="1.7" damage_window_start="1400" damage_window_end="1600" />
+  <Move name="Precipice Blades" type="Ground" energy="-100" power="130" duration="1.7" damage_window_start="1400" damage_window_end="1600" />
+  <Move name="Weather Ball Fire" type="Fire" energy="-33" power="60" duration="1.6" damage_window_start="1350" damage_window_end="1600" />
+  <Move name="Weather Ball Ice" type="Ice" energy="-33" power="60" duration="1.6" damage_window_start="1350" damage_window_end="1600" />
+  <Move name="Weather Ball Rock" type="Rock" energy="-33" power="60" duration="1.6" damage_window_start="1350" damage_window_end="1600" />
+  <Move name="Weather Ball Water" type="Water" energy="-33" power="60" duration="1.6" damage_window_start="1350" damage_window_end="1600" />
+  <Move name="Frenzy Plant" type="Grass" energy="-50" power="100" duration="2.6" damage_window_start="2145" damage_window_end="2550" />
 </Moves>

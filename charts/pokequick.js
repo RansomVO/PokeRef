@@ -6,7 +6,6 @@
 
 var selectionsTypes = null;
 var selectionsBoosts = null;
-var filterNameID = null;
 
 // #endregion
 
@@ -64,10 +63,6 @@ function FilterGeneration(collection) {
 
 //Determine if a specific Pokemon matches the filters.
 function MatchesFilter(pokemon) {
-    if (filterNameID !== undefined && filterNameID !== null && !MatchFilterPokemonNameID(pokemon, filterNameID)) {
-        return false;
-    }
-
     if (!PokeTypeMatchesFilter(selectionsTypes, [pokemon.getAttribute('type1'), pokemon.getAttribute('type2')])) {
         return false;
     }
@@ -84,12 +79,6 @@ function MatchesFilter(pokemon) {
 // ============================================================================
 // #region Callbacks
 // ============================================================================
-
-// Called the Pokemon Name/ID filter changes.
-function OnPokemonNameIDChanged(filter) {
-    filterNameID = filter;
-    OnFilterCriteriaChanged();
-}
 
 // Called the selection changes in the Types Selector.
 function OnTypesChanged(types) {

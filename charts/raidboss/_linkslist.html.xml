@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Root [
+  <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
-  <!ENTITY Mappings SYSTEM "/_datafiles/mappings.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/images.xml">
   <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
-  <!ENTITY PokestatsGen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
-  <!ENTITY PokestatsGen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
-  <!ENTITY PokestatsGen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
-  <!ENTITY PokestatsGen4 SYSTEM "/_datafiles/pokestats.gen4.xml">
-  <!ENTITY PokestatsGen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
-  <!ENTITY PokestatsGen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
-  <!ENTITY PokestatsGen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
-  <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.current.xml">
+  <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.xml">
+  <!ENTITY Pokestats_Gen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
+  <!ENTITY Pokestats_Gen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
+  <!ENTITY Pokestats_Gen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
+  <!ENTITY Pokestats_Gen4 SYSTEM "/_datafiles/pokestats.gen4.xml">
+  <!ENTITY Pokestats_Gen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
+  <!ENTITY Pokestats_Gen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
+  <!ENTITY Pokestats_Gen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="_linkslist.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Constants;
   &Settings;
-  &Mappings;
+  &Images;
   &Eggs;
-  &PokestatsGen1;
-  &PokestatsGen2;
-  &PokestatsGen3;
-  &PokestatsGen4;
-  &PokestatsGen5;
-  &PokestatsGen6;
-  &PokestatsGen7;
   &RaidBosses;
+  &Pokestats_Gen1;
+  &Pokestats_Gen2;
+  &Pokestats_Gen3;
+  &Pokestats_Gen4;
+  &Pokestats_Gen5;
+  &Pokestats_Gen6;
+  &Pokestats_Gen7;
 </Root>
 

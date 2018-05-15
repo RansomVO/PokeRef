@@ -49,7 +49,7 @@
           You can find my list at <a href="GAME_MASTER/archive/">GAME_MASTER Archive</a>
         </p>
         <div class="INDENT">
-          <script>WriteContactInfo();</script>
+          <xsl:call-template name="WriteContactInfo" />
         </div>
 
         <br />
@@ -106,7 +106,7 @@
             (Pretty please with sugar on top.)
           </p>
           <div class="INDENT">
-            <script>WriteContactInfo();</script>
+            <xsl:call-template name="WriteContactInfo" />
           </div>
         </div>
 

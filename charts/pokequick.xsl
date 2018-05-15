@@ -43,12 +43,12 @@
           </xsl:attribute>
         </link>
 
-        <title>Quick Pokemon List</title>
+        <title>Pokemon Quick List</title>
       </head>
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          Quick Pokemon List
+          Pokemon Quick List
         </h1>
         <p>
           Sometimes you just want to see a list of the Pokemon that fit your criteria.
@@ -71,13 +71,27 @@
           <hr />
           <xsl:call-template name="CreateKey" />
 
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 1]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 2]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 3]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 4]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 5]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 6]" />
-          <xsl:apply-templates select="PokemonStats[Generation/ID = 7]" />
+          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 1">
+            <xsl:apply-templates select="PokeStats[@gen = 1]" />
+          </xsl:if>
+          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 2">
+            <xsl:apply-templates select="PokeStats[@gen = 2]" />
+          </xsl:if>
+          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 3">
+            <xsl:apply-templates select="PokeStats[@gen = 3]" />
+          </xsl:if>
+          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 4">
+            <xsl:apply-templates select="PokeStats[@gen = 4]" />
+          </xsl:if>
+          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 5">
+            <xsl:apply-templates select="PokeStats[@gen = 5]" />
+          </xsl:if>
+          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 6">
+            <xsl:apply-templates select="PokeStats[@gen = 6]" />
+          </xsl:if>
+          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 7">
+            <xsl:apply-templates select="PokeStats[@gen = 7]" />
+          </xsl:if>
         </div>
 
         <xsl:call-template name="WriteFooter" />
@@ -148,37 +162,38 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="PokemonStats">
+  <xsl:template match="PokeStats">
     <br />
     <hr />
     <h2>
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('GEN', Generation/ID)" />
+        <xsl:value-of select="concat('GEN', @gen)" />
       </xsl:attribute>
       <xsl:text>Generation </xsl:text>
-      <xsl:value-of select="Generation/ID" />
+      <xsl:value-of select="@gen" />
       <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="concat('GENERATION_', Generation/ID)" />
+        <xsl:with-param name="CollapseeID" select="concat('GENERATION_', @gen)" />
       </xsl:call-template>
     </h2>
     <div>
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('GENERATION_', Generation/ID)" />
+        <xsl:value-of select="concat('GENERATION_', @gen)" />
       </xsl:attribute>
       <div style="display:flex; flex-wrap:wrap;">
         <xsl:attribute name="id">
-          <xsl:value-of select="concat('GEN', Generation/ID, '_Collection')" />
+          <xsl:value-of select="concat('GEN', @gen, '_Collection')" />
         </xsl:attribute>
         <xsl:for-each select="Pokemon">
-          <xsl:if test="not(contains(Availability, /Root/Settings/Availability/Unavailable))">
-            <xsl:variable name="Name" select="Name" />
+          <xsl:variable name="id" select="@id" />
+          <xsl:if test="not(contains(@availability, $Availability_Unreleased)) and (@form or not(../Pokemon[@id = $id and @form]))">
+            <xsl:variable name="name" select="@name" />
             <xsl:apply-templates select=".">
               <xsl:with-param name="Settings">
                 <Show boxed="true" small="true" valign="bottom" />
               </xsl:with-param>
               <xsl:with-param name="CustomAttributes">
                 <Attributes>
-                  <xsl:if test="count(/Root/RaidBosses/Tier[@name != '? Future ?' and RaidBoss = $Name]) != 0">
+                  <xsl:if test="count(/Root/RaidBosses/Tier[not(@name = '? Future ?') and RaidBoss = $name]) != 0">
                     <xsl:attribute name="raidboss">true</xsl:attribute>
                   </xsl:if>
                 </Attributes>

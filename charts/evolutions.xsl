@@ -4,7 +4,7 @@
 >
   <xsl:include href="/xsl/global.xsl" />
 
-  <xsl:variable name="Pokemon" select="/Root/PokemonStats/Pokemon" />
+  <xsl:variable name="Pokemon" select="/Root/PokeStats/Pokemon" />
 
   <xsl:template match="/Root">
     <html lang="en-us">
@@ -54,7 +54,7 @@
         <div class="INDENT">
           <p class="NOTE PARENT">
             Please let me know if you find any issues!
-            <script>WriteFeedbackNote();</script>
+            <xsl:call-template name="WriteFeedbackNote" />
           </p>
         </div>
         <p>
@@ -83,14 +83,14 @@
           <div id="anchor_evolutions">
             <br />
             <table id="Evolutions" border="1" style="height:1em;">
-              <xsl:apply-templates select="PokemonStats/Pokemon[contains(Availability,'Hatch') and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '1' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '2' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '3' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '4' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '5' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '6' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
-              <xsl:apply-templates select="PokemonStats/Pokemon[not(contains(Availability,'Hatch')) and ../Generation/ID = '7' and EvolvesFrom/Pokemon/ID='']" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[contains(@availability,'Hatch') and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[not(contains(@availability,'Hatch')) and ../@gen = '1' and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[not(contains(@availability,'Hatch')) and ../@gen = '2' and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[not(contains(@availability,'Hatch')) and ../@gen = '3' and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[not(contains(@availability,'Hatch')) and ../@gen = '4' and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[not(contains(@availability,'Hatch')) and ../@gen = '5' and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[not(contains(@availability,'Hatch')) and ../@gen = '6' and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
+              <xsl:apply-templates select="PokeStats/Pokemon[not(contains(@availability,'Hatch')) and ../@gen = '7' and not(EvolvesFrom) and not(@form)]" mode="Evolver" />
             </table>
           </div>
         </div>
@@ -122,8 +122,14 @@
               <xsl:call-template name="OutputEggSelectionControl" >
                 <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
               </xsl:call-template>
-              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" /><img class="TAG_ICON_REGULAR" src="/images/shiny.png" alt="Shiny" /> Shiny
-              <br /><xsl:text>Pokemon Name or ID:</xsl:text>
+              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
+              <xsl:call-template name="Sprite">
+                <xsl:with-param name="id" select="'Shiny'" />
+                <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+              </xsl:call-template>
+              <xsl:text>Shiny</xsl:text>
+              <br />
+              <xsl:call-template name="OutputFilterPokemonNameIDLabel" />
               <xsl:call-template name="OutputFilterPokemonNameID">
                 <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
               </xsl:call-template>
@@ -133,40 +139,21 @@
       </div>
 
       <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-      <div class="FLOWING_TABLE_WRAPPER">
-        <table class="CRITERIA_TABLE" border="1">
-          <tr>
-            <th>Generations</th>
-          </tr>
-          <tr>
-            <td valign="top" style="padding-bottom:.25em;">
-              <xsl:call-template name="OutputSliderButtonControl">
-                <xsl:with-param name="Id" select="'Evolution_AnyOrAll_Gens_Slider'" />
-                <xsl:with-param name="Callback" select="'OnFilterCriteriaChanged(this);'" />
-                <xsl:with-param name="OffLabel" select="'Any'" />
-                <xsl:with-param name="OnLabel" select="'All'" />
-                <xsl:with-param name="Help">
-                  <div class="CONTROLS_INFO_ENTRY">
-                    <div class="CONTROLS_INFO_ENTRY_TITLE">Any</div>
-                    <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
-                  </div>
-                  <div class="CONTROLS_INFO_ENTRY">
-                    <div class="CONTROLS_INFO_ENTRY_TITLE">All</div>
-                    <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
-                  </div>
-                </xsl:with-param>
-              </xsl:call-template>
-              <br /><input id="Gen1_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen1
-              <br /><input id="Gen2_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen2
-              <br /><input id="Gen3_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen3
-              <br /><input id="Gen4_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen4
-              <br /><input id="Gen5_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen5
-              <br /><input id="Gen6_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen6
-              <br /><input id="Gen7_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />Gen7
-            </td>
-          </tr>
-        </table>
-      </div>
+
+      <xsl:call-template name="OutputGenerationSelection">
+        <xsl:with-param name="CallbackName" select="'OnGenChanged'" />
+        <xsl:with-param name="SliderHelp">
+          <div class="CONTROLS_INFO_ENTRY">
+            <div class="CONTROLS_INFO_ENTRY_TITLE">Any</div>
+            <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show evolutions that contain Any of the selected Gens.</div>
+          </div>
+          <div class="CONTROLS_INFO_ENTRY">
+            <div class="CONTROLS_INFO_ENTRY_TITLE">All</div>
+            <div class="CONTROLS_INFO_ENTRY_DESCRIPTION">Show only evolutions that contain All of the selected Gens.</div>
+          </div>
+        </xsl:with-param>
+
+      </xsl:call-template>
     </div>
   </xsl:template>
 
@@ -184,7 +171,7 @@
 
   <!-- Template to get a Family of Pokemon and start the process to write them out. -->
   <xsl:template match="Pokemon" mode="Evolver">
-    <!-- Get a Family of Evolutions and comvert it to a Node Set. -->
+    <!-- Get a Family of Evolutions and convert it to a Node Set. -->
     <xsl:variable name="FamilyRaw">
       <xsl:apply-templates select="." mode="GetFamily" />
     </xsl:variable>
@@ -338,14 +325,14 @@
       </xsl:attribute>
 
       <!-- This template (from /xsl/global.xsl) outputs the Visual image of the Pokemon with various decorations. -->
-      <xsl:apply-templates select="$Pokemon[ID = $ID]">
+      <xsl:apply-templates select="$Pokemon[@id = $ID and not(@form)]">
         <xsl:with-param name="Settings">
           <Show valign="bottom" />
         </xsl:with-param>
         <xsl:with-param name="Footer">
           <i>
             <xsl:text>(Gen </xsl:text>
-            <xsl:value-of select="$Pokemon[ID = $ID]/../Generation/ID" />
+            <xsl:value-of select="$Pokemon[@id = $ID]/../@gen" />
             <xsl:text>)</xsl:text>
           </i>
         </xsl:with-param>
@@ -356,9 +343,9 @@
 
   <!-- Creates a structure of evolutions for a single Family of Pokemon. -->
   <xsl:template match="Pokemon" mode="GetFamily">
-    <xsl:variable name="ID" select="ID" />
+    <xsl:variable name="ID" select="@id" />
     <xsl:variable name="FamilyBranch">
-      <xsl:apply-templates mode="GetFamily" select="$Pokemon[EvolvesFrom/Pokemon/ID = $ID]" />
+      <xsl:apply-templates mode="GetFamily" select="$Pokemon[EvolvesFrom/@id = $ID and not(@form)]" />
     </xsl:variable>
     <xsl:variable name="rowspan" select="sum(exslt:node-set($FamilyBranch)/FamilyBranch/@rowspan)" />
     <FamilyBranch>
@@ -366,10 +353,10 @@
         <xsl:value-of select="$ID" />
       </xsl:attribute>
       <xsl:attribute name="Name">
-        <xsl:value-of select="Name" />
+        <xsl:value-of select="@name" />
       </xsl:attribute>
       <xsl:attribute name="Gen">
-        <xsl:value-of select="../Generation/ID" />
+        <xsl:value-of select="../@gen" />
       </xsl:attribute>
       <xsl:attribute name="rowspan">
         <xsl:choose>

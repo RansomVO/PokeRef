@@ -1,23 +1,28 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <Import Project="fix.proj" />
-  <Import Project="xslt.proj" />
-  <Import Project="dependencies.proj" />
-
   <!-- Definition of standard folders -->
   <PropertyGroup>
     <RootOutputFolder>$(OutDir)www\</RootOutputFolder>
     <IntDir>obj\www\</IntDir>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' OR '$(Configuration)' == 'DebugHome' OR '$(Configuration)' == 'DebugWork' ">
+    <RootOutputFolder>$(OutDir)www.debug\</RootOutputFolder>
+  </PropertyGroup>
 
   <!-- Search and Replace values. -->
   <ItemGroup>
-    <SearchStrings Include="([^_])Pokemon([ \,\:\.\'\&lt;])">
+    <SearchStrings Include="([^_\&lt;])Pokemon([ \,\:\.\'\&lt;])">
       <Replacement>$1Pokémon$2</Replacement>
       <RegEx>true</RegEx>
     </SearchStrings>
     <SearchStrings Include="PokeRef">
       <Replacement>PokéRef</Replacement>
+    </SearchStrings>
+    <SearchStrings Include="PokeStop">
+      <Replacement>PokéStop</Replacement>
+    </SearchStrings>
+    <SearchStrings Include="PokeBall">
+      <Replacement>PokéBall</Replacement>
     </SearchStrings>
     <SearchStrings Include="{$CurrentDate}">
       <Replacement>$([System.DateTime]::Now.ToString("yyyy-MM-dd_HH:mm:ss"))</Replacement>
@@ -31,7 +36,7 @@
   </ItemGroup>
 
   <!-- ==================================================================================================================================================== -->
-  <!-- #region -These are the custom MSBuild Tasks that do the special transformation work for us. (E.G. resolving paths to included files, etc.) -->
+  <!-- #region These are the custom MSBuild Tasks that do the special transformation work for us. (E.G. resolving paths to included files, etc.) -->
   <!-- For Debugging VSBuildTasks: -->
   <UsingTask AssemblyFile="D:\rvanorman\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="XslTransformation" Condition="'$(Configuration)' == 'DebugWork'" />
   <UsingTask AssemblyFile="D:\rvanorman\OneDrive\Projects\VSBuildTasks\bin\Debug\VSBuildTasks.dll" TaskName="SearchAndReplace" Condition="'$(Configuration)' == 'DebugWork'" />
@@ -54,7 +59,15 @@
   <!-- #endregion -->
 
   <!-- ==================================================================================================================================================== -->
-  <!-- #region -Copy files to the web folder without any modification. -->
+  <!-- #region Update the _datafiles with the latest data. -->
+  <Target Name="BeforeBuild">
+    <Exec Command="packages\GM_DataGenerator.exe ." />
+  </Target>
+
+  <!-- #endregion -->
+
+  <!-- ==================================================================================================================================================== -->
+  <!-- #region Copy files to the web folder without any modification. -->
   <!--
         NOTE: All source that should be on website, without modification, should use this Build Action instead of plain "Content".
           This puts the items in the bin\www\ so we have a complete, filtered view of the web site.
@@ -69,7 +82,7 @@
   <!-- #endregion -->
 
   <!-- ==================================================================================================================================================== -->
-  <!-- #region -Fix issues in source files. -->
+  <!-- #region Fix issues in source files. -->
 
   <!-- Update FixOutputFiles: Perform Search and replace on files. (E.G. "Pokemon" to "Pokémon", etc.) -->
   <Target Name="FixOutputFiles" AfterTargets="BeforeBuild"
@@ -90,7 +103,7 @@
   <!-- #endregion -->
 
   <!-- ==================================================================================================================================================== -->
-  <!-- #region -Perform XSL Transforms. (Use *.page.xml) -->
+  <!-- #region Perform XSL Transforms. (Use *.page.xml) -->
   <Target Name="XslTransforms" AfterTargets="BeforeBuild" DependsOnTargets="FixIntermediateFiles;FixOutputFiles;"
           Inputs="%(XslTransform.Identity);%(RelativeDir)%(XslTransform.DependentUpon);%(XslTransform.Dependencies);xsl\global.xsl;_datafiles\settings.xml"
           Outputs="$(RootOutputFolder)%(RelativeDir)%(XslTransform.OutputFileName)">
