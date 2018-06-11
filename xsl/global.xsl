@@ -125,7 +125,7 @@
 
   <xsl:template name="WriteContactInfo">
     <span class="NOTE CHILD">
-      Just send me an e-mail at <a href="mailto:pokeeref@gmail.com">pokeeref@gmail.com</a> (The extra 'e' is not a typo. pokeref@gmail.com was already taken. &#x1F601;)
+      Just send me an e-mail at <a href="mailto:pokeeref@gmail.com">pokeeref@gmail.com</a> (The extra 'e' is not a typo. pokeref@gmail.com was already taken. <xsl:value-of select="smiley" disable-output-escaping="yes"/>)
     </span>
   </xsl:template>
 

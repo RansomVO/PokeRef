@@ -25,6 +25,9 @@
   <xsl:variable name="times">&amp;times;</xsl:variable>
   <xsl:variable name="dagger">&amp;dagger;</xsl:variable>
 
+  <!-- There are just for convenience. -->
+  <xsl:variable name="smiley">&#x1F601;</xsl:variable>
+  
   <!-- #endregion -->
 
   <!-- #region  ========== Gender ========== -->

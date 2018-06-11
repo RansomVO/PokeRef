@@ -16,17 +16,13 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
+        _datafiles.manual\news.xml;
         js\global.js;
         local.css;
         index.css;
-        news.xml;
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
-    <FixIntermediateFile Include="news.xml">
-      <Visible>true</Visible>
-      <DependentUpon>index.xsl</DependentUpon>
-    </FixIntermediateFile>
 
     <FixIntermediateFile Include="error404.xsl">
       <Visible>true</Visible>

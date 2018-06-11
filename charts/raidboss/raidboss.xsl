@@ -38,7 +38,7 @@
         </link>
 
         <title>
-          <xsl:value-of select="RaidBoss/Pokemon/@name" /> - RaidBoss Possible IVs
+          <xsl:value-of select="RaidBoss/Pokemon/@name" /> - Raid Boss Possible IVs
         </title>
       </head>
       <body>
@@ -49,7 +49,7 @@
           <xsl:value-of select="RaidBoss/Pokemon/@name" />
           <xsl:text> (CP: </xsl:text>
           <xsl:choose>
-            <xsl:when test="RaidBoss/@raid_cp = 0">
+            <xsl:when test="not(RaidBoss/@raid_cp)">
               <xsl:text>???</xsl:text>
             </xsl:when>
             <xsl:otherwise>
