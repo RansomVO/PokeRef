@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Root [
+  <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/images.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Constants;
+  &Images;
+</Root>

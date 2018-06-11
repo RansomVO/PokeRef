@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Root [
+  <!ENTITY ShoppingBoxes SYSTEM "/_datafiles.manual/shoppingboxes.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="shoppingboxes.js.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &ShoppingBoxes;
+</Root>

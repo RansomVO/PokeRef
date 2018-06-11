@@ -279,23 +279,26 @@
       <input id="CONTROLS_Egg_2K" type="checkbox" onchange="OnToggleEgg(this);" />
       <xsl:call-template name="Sprite">
         <xsl:with-param name="id" select="'Egg2K'" />
-        <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
       </xsl:call-template>
-      Hatches from 2K
       <br />
       <input id="CONTROLS_Egg_5K" type="checkbox" onchange="OnToggleEgg(this);" />
       <xsl:call-template name="Sprite">
         <xsl:with-param name="id" select="'Egg5K'" />
-        <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
       </xsl:call-template>
-      Hatches from 5K
       <br />
       <input id="CONTROLS_Egg_10K" type="checkbox" onchange="OnToggleEgg(this);" />
       <xsl:call-template name="Sprite">
         <xsl:with-param name="id" select="'Egg10K'" />
-        <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
-      </xsl:call-template
-      >Hatches from 10K
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
       <br />
       <input id="CONTROLS_Egg_HatchOnly" type="checkbox" onchange="OnToggleEgg(this);" />
       Hatch Only

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-05-14" gen="5" region="Unova">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="5" region="Unova">
   <Pokemon id="494" name="Victini" family="Victini" availability="Unreleased">
     <Type primary="Psychic" secondary="Fire" />
   </Pokemon>
@@ -78,11 +78,11 @@
   <Pokemon id="515" name="Panpour" family="Panpour" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="516" name="Simipour" family="Panpour" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="516" name="Simipour" family="Panpour" availability="Unreleased">
     <Type primary="Water" />
     <EvolvesFrom id="515" name="Panpour" />
   </Pokemon>
-  <Pokemon id="517" name="Munna" family="Munna" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="517" name="Munna" family="Munna" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
   <Pokemon id="518" name="Musharna" family="Munna" rarity="Legendary" availability="Unreleased">
@@ -110,11 +110,11 @@
   <Pokemon id="524" name="Roggenrola" family="Roggenrola" rarity="Legendary" availability="Unreleased">
     <Type primary="Rock" />
   </Pokemon>
-  <Pokemon id="525" name="Boldore" family="Roggenrola" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="525" name="Boldore" family="Roggenrola" rarity="Legendary" availability="Unreleased">
     <Type primary="Rock" />
     <EvolvesFrom id="524" name="Roggenrola" />
   </Pokemon>
-  <Pokemon id="526" name="Gigalith" family="Roggenrola" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="526" name="Gigalith" family="Roggenrola" rarity="Legendary" availability="Unreleased">
     <Type primary="Rock" />
     <EvolvesFrom id="525" name="Boldore" />
   </Pokemon>
@@ -132,10 +132,10 @@
     <Type primary="Ground" secondary="Steel" />
     <EvolvesFrom id="529" name="Drilbur" />
   </Pokemon>
-  <Pokemon id="531" name="Audino" family="Audino" availability="Unreleased">
+  <Pokemon id="531" name="Audino" family="Audino" rarity="Mythic" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="532" name="Timburr" family="Timburr" availability="Unreleased">
+  <Pokemon id="532" name="Timburr" family="Timburr" rarity="Mythic" availability="Unreleased">
     <Type primary="Fighting" />
   </Pokemon>
   <Pokemon id="533" name="Gurdurr" family="Timburr" availability="Unreleased">

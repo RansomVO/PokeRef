@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-05-14" gen="6" region="Kalos">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="6" region="Kalos">
   <Pokemon id="650" name="Chespin" family="Chespin" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
@@ -102,10 +102,10 @@
     <Type primary="Grass" />
     <EvolvesFrom id="672" name="Skiddo" />
   </Pokemon>
-  <Pokemon id="674" name="Pancham" family="Pancham" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="674" name="Pancham" family="Pancham" availability="Unreleased">
     <Type primary="Fighting" />
   </Pokemon>
-  <Pokemon id="675" name="Pangoro" family="Pancham" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="675" name="Pangoro" family="Pancham" availability="Unreleased">
     <Type primary="Fighting" secondary="Dark" />
     <EvolvesFrom id="674" name="Pancham" />
   </Pokemon>
@@ -133,21 +133,21 @@
   <Pokemon id="682" name="Spritzee" family="Spritzee" rarity="Legendary" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="683" name="Aromatisse" family="Spritzee" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="683" name="Aromatisse" family="Spritzee" rarity="Legendary" availability="Unreleased">
     <Type primary="Fairy" />
     <EvolvesFrom id="682" name="Spritzee" />
   </Pokemon>
-  <Pokemon id="684" name="Swirlix" family="Swirlix" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="684" name="Swirlix" family="Swirlix" rarity="Legendary" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
   <Pokemon id="685" name="Slurpuff" family="Swirlix" rarity="Mythic" availability="Unreleased">
     <Type primary="Fairy" />
     <EvolvesFrom id="684" name="Swirlix" />
   </Pokemon>
-  <Pokemon id="686" name="Inkay" family="Inkay" availability="Unreleased">
+  <Pokemon id="686" name="Inkay" family="Inkay" rarity="Mythic" availability="Unreleased">
     <Type primary="Dark" secondary="Psychic" />
   </Pokemon>
-  <Pokemon id="687" name="Malamar" family="Inkay" availability="Unreleased">
+  <Pokemon id="687" name="Malamar" family="Inkay" rarity="Mythic" availability="Unreleased">
     <Type primary="Dark" secondary="Psychic" />
     <EvolvesFrom id="686" name="Inkay" />
   </Pokemon>

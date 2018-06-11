@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Root [
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
-  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Images SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Settings SYSTEM "/_datafiles.manual/images.xml">
   <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss/raidboss.ho-oh.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="raidboss.xsl" output="raidboss.ho-oh.html"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  &Constants;
+  &Constants; 
   &Settings;
+  &Images;
   &RaidBoss;
-</Root>
-
+</Root> 

@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PokemonAvailability last_updated="2018-06-11">
+  <Pokemon id="0" name="Dummy to make index line up." />
+  <!-- #region Gen1 -->
+  <Pokemon id="1" name="Bulbasaur" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="2" name="Ivysaur" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="3" name="Venusaur" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="4" name="Charmander" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="5" name="Charmeleon" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="6" name="Charizard" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="7" name="Squirtle" date="2016-07-30" availability="General" />
+  <Pokemon id="8" name="Wartortle" date="2016-07-30" availability="General" />
+  <Pokemon id="9" name="Blastoise" date="2016-07-30" availability="General" />
+  <Pokemon id="10" name="Caterpie" date="2016-07-30" availability="General" />
+  <Pokemon id="11" name="Metapod" date="2016-07-30" availability="General" />
+  <Pokemon id="12" name="Butterfree" date="2016-07-30" availability="General" />
+  <Pokemon id="13" name="Weedle" date="2016-07-30" availability="General" />
+  <Pokemon id="14" name="Kakuna" date="2016-07-30" availability="General" />
+  <Pokemon id="15" name="Beedrill" date="2016-07-30" availability="General" />
+  <Pokemon id="16" name="Pidgey" date="2016-07-30" availability="General" ditto="true" />
+  <Pokemon id="17" name="Pidgeotto" date="2016-07-30" availability="General" />
+  <Pokemon id="18" name="Pidgeot" date="2016-07-30" availability="General" />
+  <Pokemon id="19" name="Rattata" date="2016-07-30" availability="General" ditto="true" />
+  <Pokemon id="20" name="Raticate" date="2016-07-30" availability="General" />
+  <Pokemon id="21" name="Spearow" date="2016-07-30" availability="General" />
+  <Pokemon id="22" name="Fearow" date="2016-07-30" availability="General" />
+  <Pokemon id="23" name="Ekans" date="2016-07-30" availability="General" />
+  <Pokemon id="24" name="Arbok" date="2016-07-30" availability="General" />
+  <Pokemon id="25" name="Pikachu" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="26" name="Raichu" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="27" name="Sandshrew" date="2016-07-30" availability="General" />
+  <Pokemon id="28" name="Sandslash" date="2016-07-30" availability="General" />
+  <Pokemon id="29" name="Nidoran♀" date="2016-07-30" availability="General" />
+  <Pokemon id="30" name="Nidorina" date="2016-07-30" availability="General" />
+  <Pokemon id="31" name="Nidoqueen" date="2016-07-30" availability="General" />
+  <Pokemon id="32" name="Nidoran♂" date="2016-07-30" availability="General" />
+  <Pokemon id="33" name="Nidorino" date="2016-07-30" availability="General" />
+  <Pokemon id="34" name="Nidoking" date="2016-07-30" availability="General" />
+  <Pokemon id="35" name="Clefairy" date="2016-07-30" availability="General" />
+  <Pokemon id="36" name="Clefable" date="2016-07-30" availability="General" />
+  <Pokemon id="37" name="Vulpix" date="2016-07-30" availability="General" />
+  <Pokemon id="38" name="Ninetales" date="2016-07-30" availability="General" />
+  <Pokemon id="39" name="Jigglypuff" date="2016-07-30" availability="General" />
+  <Pokemon id="40" name="Wigglytuff" date="2016-07-30" availability="General" />
+  <Pokemon id="41" name="Zubat" date="2016-07-30" availability="General" ditto="true" />
+  <Pokemon id="42" name="Golbat" date="2016-07-30" availability="General" />
+  <Pokemon id="43" name="Oddish" date="2016-07-30" availability="General" />
+  <Pokemon id="44" name="Gloom" date="2016-07-30" availability="General" />
+  <Pokemon id="45" name="Vileplume" date="2016-07-30" availability="General" />
+  <Pokemon id="46" name="Paras" date="2016-07-30" availability="General" />
+  <Pokemon id="47" name="Parasect" date="2016-07-30" availability="General" />
+  <Pokemon id="48" name="Venonat" date="2016-07-30" availability="General" />
+  <Pokemon id="49" name="Venomoth" date="2016-07-30" availability="General" />
+  <Pokemon id="50" name="Diglett" date="2016-07-30" availability="General" />
+  <Pokemon id="51" name="Dugtrio" date="2016-07-30" availability="General" />
+  <Pokemon id="52" name="Meowth" date="2016-07-30" availability="General" />
+  <Pokemon id="53" name="Persian" date="2016-07-30" availability="General" />
+  <Pokemon id="54" name="Psyduck" date="2016-07-30" availability="General" />
+  <Pokemon id="55" name="Golduck" date="2016-07-30" availability="General" />
+  <Pokemon id="56" name="Mankey" date="2016-07-30" availability="General" ditto="true" />
+  <Pokemon id="57" name="Primeape" date="2016-07-30" availability="General" />
+  <Pokemon id="58" name="Growlithe" date="2016-07-30" availability="General" />
+  <Pokemon id="59" name="Arcanine" date="2016-07-30" availability="General" />
+  <Pokemon id="60" name="Poliwag" date="2016-07-30" availability="General" />
+  <Pokemon id="61" name="Poliwhirl" date="2016-07-30" availability="General" />
+  <Pokemon id="62" name="Poliwrath" date="2016-07-30" availability="General" />
+  <Pokemon id="63" name="Abra" date="2016-07-30" availability="General" />
+  <Pokemon id="64" name="Kadabra" date="2016-07-30" availability="General" />
+  <Pokemon id="65" name="Alakazam" date="2016-07-30" availability="General" />
+  <Pokemon id="66" name="Machop" date="2016-07-30" availability="General" />
+  <Pokemon id="67" name="Machoke" date="2016-07-30" availability="General" />
+  <Pokemon id="68" name="Machamp" date="2016-07-30" availability="General" />
+  <Pokemon id="69" name="Bellsprout" date="2016-07-30" availability="General" />
+  <Pokemon id="70" name="Weepinbell" date="2016-07-30" availability="General" />
+  <Pokemon id="71" name="Victreebel" date="2016-07-30" availability="General" />
+  <Pokemon id="72" name="Tentacool" date="2016-07-30" availability="General" />
+  <Pokemon id="73" name="Tentacruel" date="2016-07-30" availability="General" />
+  <Pokemon id="74" name="Geodude" date="2016-07-30" availability="General" />
+  <Pokemon id="75" name="Graveler" date="2016-07-30" availability="General" />
+  <Pokemon id="76" name="Golem" date="2016-07-30" availability="General" />
+  <Pokemon id="77" name="Ponyta" date="2016-07-30" availability="General" />
+  <Pokemon id="78" name="Rapidash" date="2016-07-30" availability="General" />
+  <Pokemon id="79" name="Slowpoke" date="2016-07-30" availability="General" />
+  <Pokemon id="80" name="Slowbro" date="2016-07-30" availability="General" />
+  <Pokemon id="81" name="Magnemite" date="2016-07-30" availability="General" />
+  <Pokemon id="82" name="Magneton" date="2016-07-30" availability="General" />
+  <Pokemon id="83" name="Farfetch'd" date="2016-07-30" availability="Regional: Asia" />
+  <Pokemon id="84" name="Doduo" date="2016-07-30" availability="General" />
+  <Pokemon id="85" name="Dodrio" date="2016-07-30" availability="General" />
+  <Pokemon id="86" name="Seel" date="2016-07-30" availability="General" />
+  <Pokemon id="87" name="Dewgong" date="2016-07-30" availability="General" />
+  <Pokemon id="88" name="Grimer" date="2016-07-30" availability="General" />
+  <Pokemon id="89" name="Muk" date="2016-07-30" availability="General" />
+  <Pokemon id="90" name="Shellder" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="91" name="Cloyster" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="92" name="Gastly" date="2016-07-30" availability="General" ditto="true" />
+  <Pokemon id="93" name="Haunter" date="2016-07-30" availability="General" />
+  <Pokemon id="94" name="Gengar" date="2016-07-30" availability="General" />
+  <Pokemon id="95" name="Onix" date="2016-07-30" availability="General" />
+  <Pokemon id="96" name="Drowzee" date="2016-07-30" availability="General" />
+  <Pokemon id="97" name="Hypno" date="2016-07-30" availability="General" />
+  <Pokemon id="98" name="Krabby" date="2016-07-30" availability="General" />
+  <Pokemon id="99" name="Kingler" date="2016-07-30" availability="General" />
+  <Pokemon id="100" name="Voltorb" date="2016-07-30" availability="General" />
+  <Pokemon id="101" name="Electrode" date="2016-07-30" availability="General" />
+  <Pokemon id="102" name="Exeggcute" date="2016-07-30" availability="General" />
+  <Pokemon id="103" name="Exeggutor" date="2016-07-30" availability="General" />
+  <Pokemon id="103" name="Exeggutor" date="2016-07-30" form="Normal" availability="General" />
+  <Pokemon id="103" name="Exeggutor" date="2018-05-29" form="Alola" availability="General" />
+  <Pokemon id="104" name="Cubone" date="2016-07-30" availability="General" />
+  <Pokemon id="105" name="Marowak" date="2016-07-30" availability="General" />
+  <Pokemon id="106" name="Hitmonlee" date="2016-07-30" availability="General" />
+  <Pokemon id="107" name="Hitmonchan" date="2016-07-30" availability="General" />
+  <Pokemon id="108" name="Lickitung" date="2016-07-30" availability="General" />
+  <Pokemon id="109" name="Koffing" date="2016-07-30" availability="General" />
+  <Pokemon id="110" name="Weezing" date="2016-07-30" availability="General" />
+  <Pokemon id="111" name="Rhyhorn" date="2016-07-30" availability="General" />
+  <Pokemon id="112" name="Rhydon" date="2016-07-30" availability="General" />
+  <Pokemon id="113" name="Chansey" date="2016-07-30" availability="General" />
+  <Pokemon id="114" name="Tangela" date="2016-07-30" availability="General" />
+  <Pokemon id="115" name="Kangaskhan" date="2016-07-30" availability="Regional: Australia" />
+  <Pokemon id="116" name="Horsea" date="2016-07-30" availability="General" />
+  <Pokemon id="117" name="Seadra" date="2016-07-30" availability="General" />
+  <Pokemon id="118" name="Goldeen" date="2016-07-30" availability="General" />
+  <Pokemon id="119" name="Seaking" date="2016-07-30" availability="General" />
+  <Pokemon id="120" name="Staryu" date="2016-07-30" availability="General" />
+  <Pokemon id="121" name="Starmie" date="2016-07-30" availability="General" />
+  <Pokemon id="122" name="Mr. Mime" date="2016-07-30" availability="Regional: Europe" />
+  <Pokemon id="123" name="Scyther" date="2016-07-30" availability="General" />
+  <Pokemon id="124" name="Jynx" date="2016-07-30" availability="General" />
+  <Pokemon id="125" name="Electabuzz" date="2016-07-30" availability="General" />
+  <Pokemon id="126" name="Magmar" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="127" name="Pinsir" date="2016-07-30" availability="General" />
+  <Pokemon id="128" name="Tauros" date="2016-07-30" availability="Regional: United States" />
+  <Pokemon id="129" name="Magikarp" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="130" name="Gyarados" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="131" name="Lapras" date="2016-07-30" availability="General" />
+  <Pokemon id="132" name="Ditto" date="2016-11-21" availability="General" />
+  <Pokemon id="133" name="Eevee" date="2016-07-30" availability="General" />
+  <Pokemon id="134" name="Vaporeon" date="2016-07-30" availability="General" />
+  <Pokemon id="135" name="Jolteon" date="2016-07-30" availability="General" />
+  <Pokemon id="136" name="Flareon" date="2016-07-30" availability="General" />
+  <Pokemon id="137" name="Porygon" date="2016-07-30" availability="General" />
+  <Pokemon id="138" name="Omanyte" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="139" name="Omastar" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="140" name="Kabuto" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="141" name="Kabutops" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="142" name="Aerodactyl" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="143" name="Snorlax" date="2016-07-30" availability="General" />
+  <Pokemon id="144" name="Articuno" date="2017-08-13" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="145" name="Zapdos" date="2017-08-13" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="146" name="Moltres" date="2017-08-13" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="147" name="Dratini" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="148" name="Dragonair" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="149" name="Dragonite" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="150" name="Mewtwo" date="2017-08-13" availability="EX Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="151" name="Mew" date="2018-03-30" availability="General" rarity="Mythic" />
+  <!-- #endregion Gen1 -->
+  <!-- #region Gen2 -->
+  <Pokemon id="152" name="Chikorita" date="2017-02-16" availability="General" />
+  <Pokemon id="153" name="Bayleef" date="2017-02-16" availability="General" />
+  <Pokemon id="154" name="Meganium" date="2017-02-16" availability="General" />
+  <Pokemon id="155" name="Cyndaquil" date="2017-02-16" availability="General" />
+  <Pokemon id="156" name="Quilava" date="2017-02-16" availability="General" />
+  <Pokemon id="157" name="Typhlosion" date="2017-02-16" availability="General" />
+  <Pokemon id="158" name="Totodile" date="2017-02-16" availability="General" />
+  <Pokemon id="159" name="Croconaw" date="2017-02-16" availability="General" />
+  <Pokemon id="160" name="Feraligatr" date="2017-02-16" availability="General" />
+  <Pokemon id="161" name="Sentret" date="2017-02-16" availability="General" ditto="true" />
+  <Pokemon id="162" name="Furret" date="2017-02-16" availability="General" />
+  <Pokemon id="163" name="Hoothoot" date="2017-02-16" availability="General" ditto="true" />
+  <Pokemon id="164" name="Noctowl" date="2017-02-16" availability="General" />
+  <Pokemon id="165" name="Ledyba" date="2017-02-16" availability="General" />
+  <Pokemon id="166" name="Ledian" date="2017-02-16" availability="General" />
+  <Pokemon id="167" name="Spinarak" date="2017-02-16" availability="General" />
+  <Pokemon id="168" name="Ariados" date="2017-02-16" availability="General" />
+  <Pokemon id="169" name="Crobat" date="2017-02-16" availability="General" />
+  <Pokemon id="170" name="Chinchou" date="2017-02-16" availability="General" />
+  <Pokemon id="171" name="Lanturn" date="2017-02-16" availability="General" />
+  <Pokemon id="172" name="Pichu" date="2017-02-16" availability="Hatch Only: 2K" shiny="true" />
+  <Pokemon id="173" name="Cleffa" date="2017-02-16" availability="Hatch Only: 2K" />
+  <Pokemon id="174" name="Igglybuff" date="2017-02-16" availability="Hatch Only: 2K" />
+  <Pokemon id="175" name="Togepi" date="2017-02-16" availability="Hatch Only: 2K" shiny="true" />
+  <Pokemon id="176" name="Togetic" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="177" name="Natu" date="2017-02-16" availability="General" />
+  <Pokemon id="178" name="Xatu" date="2017-02-16" availability="General" />
+  <Pokemon id="179" name="Mareep" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="180" name="Flaaffy" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="181" name="Ampharos" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="182" name="Bellossom" date="2017-02-16" availability="General" />
+  <Pokemon id="183" name="Marill" date="2017-02-16" availability="General" />
+  <Pokemon id="184" name="Azumarill" date="2017-02-16" availability="General" />
+  <Pokemon id="185" name="Sudowoodo" date="2017-02-16" availability="General" />
+  <Pokemon id="186" name="Politoed" date="2017-02-16" availability="General" />
+  <Pokemon id="187" name="Hoppip" date="2017-02-16" availability="General" />
+  <Pokemon id="188" name="Skiploom" date="2017-02-16" availability="General" />
+  <Pokemon id="189" name="Jumpluff" date="2017-02-16" availability="General" />
+  <Pokemon id="190" name="Aipom" date="2017-02-16" availability="General" />
+  <Pokemon id="191" name="Sunkern" date="2017-02-16" availability="General" />
+  <Pokemon id="192" name="Sunflora" date="2017-02-16" availability="General" />
+  <Pokemon id="193" name="Yanma" date="2017-02-16" availability="General" ditto="true" />
+  <Pokemon id="194" name="Wooper" date="2017-02-16" availability="General" />
+  <Pokemon id="195" name="Quagsire" date="2017-02-16" availability="General" />
+  <Pokemon id="196" name="Espeon" date="2017-02-16" availability="General" />
+  <Pokemon id="197" name="Umbreon" date="2017-02-16" availability="General" />
+  <Pokemon id="198" name="Murkrow" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="199" name="Slowking" date="2017-02-16" availability="General" />
+  <Pokemon id="200" name="Misdreavus" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="A" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="B" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="C" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="D" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="E" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="F" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="G" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="H" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="I" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="J" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="K" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="L" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="M" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="N" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="O" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="P" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="Q" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="R" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="S" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="T" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="U" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="V" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="W" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="X" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="Y" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="Z" date="2017-02-16" availability="General" />
+  <Pokemon id="201" name="Unown" form="EXCLAMATION_POINT" availability="Unreleased" />
+  <Pokemon id="201" name="Unown" form="QUESTION_MARK" availability="Unreleased" />
+  <Pokemon id="202" name="Wobbuffet" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="203" name="Girafarig" date="2017-02-16" availability="General" />
+  <Pokemon id="204" name="Pineco" date="2017-02-16" availability="General" />
+  <Pokemon id="205" name="Forretress" date="2017-02-16" availability="General" />
+  <Pokemon id="206" name="Dunsparce" date="2017-02-16" availability="General" />
+  <Pokemon id="207" name="Gligar" date="2017-02-16" availability="General" />
+  <Pokemon id="208" name="Steelix" date="2017-02-16" availability="General" />
+  <Pokemon id="209" name="Snubbull" date="2017-02-16" availability="General" />
+  <Pokemon id="210" name="Granbull" date="2017-02-16" availability="General" />
+  <Pokemon id="211" name="Qwilfish" date="2017-02-16" availability="General" />
+  <Pokemon id="212" name="Scizor" date="2017-02-16" availability="General" />
+  <Pokemon id="213" name="Shuckle" date="2017-02-16" availability="General" />
+  <Pokemon id="214" name="Heracross" date="2017-02-16" availability="Regional: Equatorial" />
+  <Pokemon id="215" name="Sneasel" date="2017-02-16" availability="General" />
+  <Pokemon id="216" name="Teddiursa" date="2017-02-16" availability="General" />
+  <Pokemon id="217" name="Ursaring" date="2017-02-16" availability="General" />
+  <Pokemon id="218" name="Slugma" date="2017-02-16" availability="General" />
+  <Pokemon id="219" name="Magcargo" date="2017-02-16" availability="General" />
+  <Pokemon id="220" name="Swinub" date="2017-02-16" availability="General" />
+  <Pokemon id="221" name="Piloswine" date="2017-02-16" availability="General" />
+  <Pokemon id="222" name="Corsola" date="2017-02-16" availability="Regional: Southern Hemisphere + Mexico" />
+  <Pokemon id="223" name="Remoraid" date="2017-02-16" availability="General" ditto="true" />
+  <Pokemon id="224" name="Octillery" date="2017-02-16" availability="General" />
+  <Pokemon id="225" name="Delibird" date="2017-12-21" availability="General" />
+  <Pokemon id="226" name="Mantine" date="2017-02-16" availability="General" />
+  <Pokemon id="227" name="Skarmory" date="2017-02-16" availability="General" />
+  <Pokemon id="228" name="Houndour" date="2017-02-16" availability="General" />
+  <Pokemon id="229" name="Houndoom" date="2017-02-16" availability="General" />
+  <Pokemon id="230" name="Kingdra" date="2017-02-16" availability="General" />
+  <Pokemon id="231" name="Phanpy" date="2017-02-16" availability="General" />
+  <Pokemon id="232" name="Donphan" date="2017-02-16" availability="General" />
+  <Pokemon id="233" name="Porygon2" date="2017-02-16" availability="General" />
+  <Pokemon id="234" name="Stantler" date="2017-02-16" availability="General" />
+  <Pokemon id="235" name="Smeargle" availability="Unreleased" />
+  <Pokemon id="236" name="Tyrogue" date="2017-02-16" availability="Hatch Only: 5K" />
+  <Pokemon id="237" name="Hitmontop" date="2017-02-16" availability="General" />
+  <Pokemon id="238" name="Smoochum" date="2017-02-16" availability="Hatch Only: 5K" />
+  <Pokemon id="239" name="Elekid" date="2017-02-16" availability="Hatch Only: 5K" />
+  <Pokemon id="240" name="Magby" date="2017-02-16" availability="Hatch Only: 5K" shiny="true" />
+  <Pokemon id="241" name="Miltank" date="2017-02-16" availability="General" />
+  <Pokemon id="242" name="Blissey" date="2017-02-16" availability="General" />
+  <Pokemon id="243" name="Raikou" date="2017-08-30" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="244" name="Entei" date="2017-08-30" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="245" name="Suicune" date="2017-08-30" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="246" name="Larvitar" date="2017-02-16" availability="General" />
+  <Pokemon id="247" name="Pupitar" date="2017-02-16" availability="General" />
+  <Pokemon id="248" name="Tyranitar" date="2017-02-16" availability="General" />
+<!--  
+  <Pokemon id="246" name="Larvitar" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="247" name="Pupitar" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="248" name="Tyranitar" date="2017-02-16" availability="General" shiny="true" />
+-->  
+  <Pokemon id="249" name="Lugia" date="2017-08-13" availability="Raid Boss Only" rarity="Legendary" shiny="true" />
+  <Pokemon id="250" name="Ho-Oh" date="2017-10-25" availability="Raid Boss Only" rarity="Legendary" shiny="true" />
+  <Pokemon id="251" name="Celebi" date="2017-12-08" availability="Unreleased" rarity="Mythic" />
+  <!-- #endregion Gen2 -->
+  <!-- #region Gen3 -->
+  <Pokemon id="252" name="Treecko" date="2017-12-08" availability="General" />
+  <Pokemon id="253" name="Grovyle" date="2017-12-08" availability="General" />
+  <Pokemon id="254" name="Sceptile" date="2017-12-08" availability="General" />
+  <Pokemon id="255" name="Torchic" date="2017-12-08" availability="General" />
+  <Pokemon id="256" name="Combusken" date="2017-12-08" availability="General" />
+  <Pokemon id="257" name="Blaziken" date="2017-12-08" availability="General" />
+  <Pokemon id="258" name="Mudkip" date="2017-12-08" availability="General" />
+  <Pokemon id="259" name="Marshtomp" date="2017-12-08" availability="General" />
+  <Pokemon id="260" name="Swampert" date="2017-12-08" availability="General" />
+  <Pokemon id="261" name="Poochyena" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="262" name="Mightyena" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="263" name="Zigzagoon" date="2017-12-08" availability="General" ditto="true" />
+  <Pokemon id="264" name="Linoone" date="2017-12-08" availability="General" />
+  <Pokemon id="265" name="Wurmple" date="2017-12-08" availability="General" />
+  <Pokemon id="266" name="Silcoon" date="2017-12-08" availability="General" />
+  <Pokemon id="267" name="Beautifly" date="2017-12-08" availability="General" />
+  <Pokemon id="268" name="Cascoon" date="2017-12-08" availability="General" />
+  <Pokemon id="269" name="Dustox" date="2017-12-08" availability="General" />
+  <Pokemon id="270" name="Lotad" date="2017-12-08" availability="General" />
+  <Pokemon id="271" name="Lombre" date="2017-12-08" availability="General" />
+  <Pokemon id="272" name="Ludicolo" date="2017-12-08" availability="General" />
+  <Pokemon id="273" name="Seedot" date="2017-12-08" availability="General" />
+  <Pokemon id="274" name="Nuzleaf" date="2017-12-08" availability="General" />
+  <Pokemon id="275" name="Shiftry" date="2018-01-23" availability="General" />
+  <Pokemon id="276" name="Taillow" date="2018-01-23" availability="General" />
+  <Pokemon id="277" name="Swellow" date="2018-01-23" availability="General" />
+  <Pokemon id="278" name="Wingull" date="2018-01-23" availability="General" />
+  <Pokemon id="279" name="Pelipper" date="2017-12-08" availability="General" />
+  <Pokemon id="280" name="Ralts" date="2017-12-08" availability="General" />
+  <Pokemon id="281" name="Kirlia" date="2017-12-08" availability="General" />
+  <Pokemon id="282" name="Gardevoir" date="2017-12-08" availability="General" />
+  <Pokemon id="283" name="Surskit" date="2018-01-23" availability="General" />
+  <Pokemon id="284" name="Masquerain" date="2017-12-08" availability="General" />
+  <Pokemon id="285" name="Shroomish" date="2017-12-08" availability="General" />
+  <Pokemon id="286" name="Breloom" date="2017-12-08" availability="General" />
+  <Pokemon id="287" name="Slakoth" date="2017-12-08" availability="General" />
+  <Pokemon id="288" name="Vigoroth" date="2017-12-08" availability="General" />
+  <Pokemon id="289" name="Slaking" date="2018-01-23" availability="General" />
+  <Pokemon id="290" name="Nincada" availability="Unreleased" />
+  <Pokemon id="291" name="Ninjask" availability="Unreleased" />
+  <Pokemon id="292" name="Shedinja" availability="Unreleased" />
+  <Pokemon id="293" name="Whismur" date="2018-01-23" availability="General" ditto="true" />
+  <Pokemon id="294" name="Loudred" date="2018-01-23" availability="General" />
+  <Pokemon id="295" name="Exploud" date="2017-12-08" availability="General" />
+  <Pokemon id="296" name="Makuhita" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="297" name="Hariyama" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="298" name="Azurill" date="2018-01-23" availability="Hatch Only: 5K" />
+  <Pokemon id="299" name="Nosepass" date="2017-12-08" availability="General" />
+  <Pokemon id="300" name="Skitty" date="2017-12-08" availability="General" />
+  <Pokemon id="301" name="Delcatty" date="2017-10-20" availability="General" />
+  <Pokemon id="302" name="Sableye" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="303" name="Mawile" date="2018-01-23" availability="Raid Boss Only" shiny="true" />
+  <Pokemon id="304" name="Aron" date="2018-01-23" availability="General" shiny="true" />
+  <Pokemon id="305" name="Lairon" date="2018-01-23" availability="General" shiny="true" />
+  <Pokemon id="306" name="Aggron" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="307" name="Meditite" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="308" name="Medicham" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="309" name="Electrike" date="2017-12-08" availability="General" />
+  <Pokemon id="310" name="Manectric" date="2017-12-08" availability="General" />
+  <Pokemon id="311" name="Plusle" date="2017-12-08" availability="General" />
+  <Pokemon id="312" name="Minun" date="2018-01-23" availability="General" />
+  <Pokemon id="313" name="Volbeat" date="2018-01-23" availability="Regional: Europe + Asia + Australia" />
+  <Pokemon id="314" name="Illumise" date="2017-12-08" availability="Regional: Americas + Africa" />
+  <Pokemon id="315" name="Roselia" date="2017-12-08" availability="General" />
+  <Pokemon id="316" name="Gulpin" date="2017-12-08" availability="General" ditto="true" />
+  <Pokemon id="317" name="Swalot" date="2017-12-08" availability="General" />
+  <Pokemon id="318" name="Carvanha" date="2017-12-08" availability="General" />
+  <Pokemon id="319" name="Sharpedo" date="2017-12-08" availability="General" />
+  <Pokemon id="320" name="Wailmer" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="321" name="Wailord" date="2018-01-23" availability="General" shiny="true" />
+  <Pokemon id="322" name="Numel" date="2018-01-23" availability="General" />
+  <Pokemon id="323" name="Camerupt" date="2018-01-23" availability="General" />
+  <Pokemon id="324" name="Torkoal" date="2017-12-08" availability="Regional: India + Thailand + Surrounding Area" />
+  <Pokemon id="325" name="Spoink" date="2017-12-08" availability="General" />
+  <Pokemon id="326" name="Grumpig" date="2018-01-23" availability="General" />
+  <Pokemon id="327" name="Spinda" availability="Unreleased" />
+  <Pokemon id="328" name="Trapinch" date="2018-01-23" availability="General" />
+  <Pokemon id="329" name="Vibrava" date="2018-01-23" availability="General" />
+  <Pokemon id="330" name="Flygon" date="2018-01-23" availability="General" />
+  <Pokemon id="331" name="Cacnea" date="2018-01-23" availability="General" />
+  <Pokemon id="332" name="Cacturne" date="2018-01-23" availability="General" />
+  <Pokemon id="333" name="Swablu" date="2018-01-23" availability="General" shiny="true" />
+  <Pokemon id="334" name="Altaria" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="335" name="Zangoose" date="2017-12-08" availability="Regional: Europe + Asia + Australia" />
+  <Pokemon id="336" name="Seviper" date="2018-01-23" availability="Regional: Americas + Africa" />
+  <Pokemon id="337" name="Lunatone" date="2018-01-23" availability="Regional: Rotating" />
+  <Pokemon id="338" name="Solrock" date="2017-12-08" availability="Regional: Rotating" />
+  <Pokemon id="339" name="Barboach" date="2017-12-08" availability="General" />
+  <Pokemon id="340" name="Whiscash" date="2017-12-08" availability="General" />
+  <Pokemon id="341" name="Corphish" date="2017-12-08" availability="General" />
+  <Pokemon id="342" name="Crawdaunt" date="2018-01-23" availability="General" />
+  <Pokemon id="343" name="Baltoy" date="2018-01-23" availability="General" />
+  <Pokemon id="344" name="Claydol" date="2018-01-23" availability="General" />
+  <Pokemon id="345" name="Lileep" date="2018-01-23" availability="General" />
+  <Pokemon id="346" name="Cradily" date="2018-01-23" availability="General" />
+  <Pokemon id="347" name="Anorith" date="2018-01-23" availability="General" />
+  <Pokemon id="348" name="Armaldo" date="2017-12-08" availability="General" />
+  <Pokemon id="349" name="Feebas" date="2017-12-08" availability="General" />
+  <Pokemon id="350" name="Milotic" date="2017-12-08" availability="General" />
+  <Pokemon id="351" name="Castform" date="2018-01-23" availability="General" />
+  <Pokemon id="351" name="Castform" date="2018-01-23" form="Normal" availability="General" />
+  <Pokemon id="351" name="Castform" date="2018-01-23" form="Rainy" availability="General" />
+  <Pokemon id="351" name="Castform" date="2018-01-23" form="Snowy" availability="General" />
+  <Pokemon id="351" name="Castform" date="2018-01-23" form="Sunny" availability="General" />
+  <Pokemon id="352" name="Kecleon" date="2017-10-20" availability="Unreleased" />
+  <Pokemon id="353" name="Shuppet" date="2017-10-20" availability="General" shiny="true" />
+  <Pokemon id="354" name="Banette" date="2017-10-20" availability="General" shiny="true" />
+  <Pokemon id="355" name="Duskull" date="2017-10-20" availability="General" shiny="true" />
+  <Pokemon id="356" name="Dusclops" date="2018-01-23" availability="General" shiny="true" />
+  <Pokemon id="357" name="Tropius" date="2017-12-08" availability="Regional: Africa + South Spain + Crete" />
+  <Pokemon id="358" name="Chimecho" date="2017-12-08" availability="General" />
+  <Pokemon id="359" name="Absol" date="2017-12-08" availability="Raid Boss Only" shiny="true" />
+  <Pokemon id="360" name="Wynaut" date="2017-12-08" availability="Hatch Only: 5K" shiny="true" />
+  <Pokemon id="361" name="Snorunt" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="362" name="Glalie" date="2017-12-08" availability="General" shiny="true" />
+  <Pokemon id="363" name="Spheal" date="2017-12-08" availability="General" />
+  <Pokemon id="364" name="Sealeo" date="2017-12-08" availability="General" />
+  <Pokemon id="365" name="Walrein" date="2018-01-23" availability="General" />
+  <Pokemon id="366" name="Clamperl" availability="Unreleased" />
+  <Pokemon id="367" name="Huntail" availability="Unreleased" />
+  <Pokemon id="368" name="Gorebyss" date="2017-12-08" availability="Unreleased" />
+  <Pokemon id="369" name="Relicanth" date="2017-12-08" availability="Regional: New Zealand + Fiji" />
+  <Pokemon id="370" name="Luvdisc" date="2018-01-23" availability="General" shiny="true" />
+  <Pokemon id="371" name="Bagon" date="2018-01-23" availability="General" />
+  <Pokemon id="372" name="Shelgon" date="2018-01-23" availability="General" />
+  <Pokemon id="373" name="Salamence" date="2018-01-23" availability="General" />
+  <Pokemon id="374" name="Beldum" date="2018-01-23" availability="General" />
+  <Pokemon id="375" name="Metang" date="2018-01-23" availability="General" />
+  <Pokemon id="376" name="Metagross" date="2018-01-23" availability="General" />
+  <Pokemon id="377" name="Regirock" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="378" name="Regice" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="379" name="Registeel" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="380" name="Latias" date="2018-01-23" availability="Raid Boss Only Regional: Rotating: Americas + Africa / Europe + Asia + Pacific" rarity="Legendary" />
+  <Pokemon id="381" name="Latios" date="2018-01-12" availability="Raid Boss Only Regional: Rotating: Europe + Asia + Pacific / Americas + Africa" rarity="Legendary" />
+  <Pokemon id="382" name="Kyogre" date="2016-11-21" availability="Raid Boss Only" rarity="Legendary" shiny="true" />
+  <Pokemon id="383" name="Groudon" date="2018-01-23" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="384" name="Rayquaza" date="2018-01-23" availability="Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="385" name="Jirachi" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="386" name="Deoxys" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="386" name="Deoxys" form="Attack" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="386" name="Deoxys" form="Defense" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="386" name="Deoxys" form="Normal" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="386" name="Deoxys" form="Speed" availability="Unreleased" rarity="Mythic" />
+  <!-- #endregion Gen3 -->
+  <!-- #region Gen4 -->
+  <Pokemon id="387" name="Turtwig" availability="Unreleased" />
+  <Pokemon id="388" name="Grotle" availability="Unreleased" />
+  <Pokemon id="389" name="Torterra" availability="Unreleased" />
+  <Pokemon id="390" name="Chimchar" availability="Unreleased" />
+  <Pokemon id="391" name="Monferno" availability="Unreleased" />
+  <Pokemon id="392" name="Infernape" availability="Unreleased" />
+  <Pokemon id="393" name="Piplup" availability="Unreleased" />
+  <Pokemon id="394" name="Prinplup" availability="Unreleased" />
+  <Pokemon id="395" name="Empoleon" availability="Unreleased" />
+  <Pokemon id="396" name="Starly" availability="Unreleased" />
+  <Pokemon id="397" name="Staravia" availability="Unreleased" />
+  <Pokemon id="398" name="Staraptor" availability="Unreleased" />
+  <Pokemon id="399" name="Bidoof" availability="Unreleased" />
+  <Pokemon id="400" name="Bibarel" availability="Unreleased" />
+  <Pokemon id="401" name="Kricketot" availability="Unreleased" />
+  <Pokemon id="402" name="Kricketune" availability="Unreleased" />
+  <Pokemon id="403" name="Shinx" availability="Unreleased" />
+  <Pokemon id="404" name="Luxio" availability="Unreleased" />
+  <Pokemon id="405" name="Luxray" availability="Unreleased" />
+  <Pokemon id="406" name="Budew" availability="Unreleased" />
+  <Pokemon id="407" name="Roserade" availability="Unreleased" />
+  <Pokemon id="408" name="Cranidos" availability="Unreleased" />
+  <Pokemon id="409" name="Rampardos" availability="Unreleased" />
+  <Pokemon id="410" name="Shieldon" availability="Unreleased" />
+  <Pokemon id="411" name="Bastiodon" availability="Unreleased" />
+  <Pokemon id="412" name="Burmy" availability="Unreleased" />
+  <Pokemon id="413" name="Wormadam" availability="Unreleased" />
+  <Pokemon id="414" name="Mothim" availability="Unreleased" />
+  <Pokemon id="415" name="Combee" availability="Unreleased" />
+  <Pokemon id="416" name="Vespiquen" availability="Unreleased" />
+  <Pokemon id="417" name="Pachirisu" availability="Unreleased" />
+  <Pokemon id="418" name="Buizel" availability="Unreleased" />
+  <Pokemon id="419" name="Floatzel" availability="Unreleased" />
+  <Pokemon id="420" name="Cherubi" availability="Unreleased" />
+  <Pokemon id="421" name="Cherrim" availability="Unreleased" />
+  <Pokemon id="422" name="Shellos" availability="Unreleased" />
+  <Pokemon id="423" name="Gastrodon" availability="Unreleased" />
+  <Pokemon id="424" name="Ambipom" availability="Unreleased" />
+  <Pokemon id="425" name="Drifloon" availability="Unreleased" />
+  <Pokemon id="426" name="Drifblim" availability="Unreleased" />
+  <Pokemon id="427" name="Buneary" availability="Unreleased" />
+  <Pokemon id="428" name="Lopunny" availability="Unreleased" />
+  <Pokemon id="429" name="Mismagius" availability="Unreleased" />
+  <Pokemon id="430" name="Honchkrow" availability="Unreleased" />
+  <Pokemon id="431" name="Glameow" availability="Unreleased" />
+  <Pokemon id="432" name="Purugly" availability="Unreleased" />
+  <Pokemon id="433" name="Chingling" availability="Unreleased" />
+  <Pokemon id="434" name="Stunky" availability="Unreleased" />
+  <Pokemon id="435" name="Skuntank" availability="Unreleased" />
+  <Pokemon id="436" name="Bronzor" availability="Unreleased" />
+  <Pokemon id="437" name="Bronzong" availability="Unreleased" />
+  <Pokemon id="438" name="Bonsly" availability="Unreleased" />
+  <Pokemon id="439" name="Mime Jr." availability="Unreleased" />
+  <Pokemon id="440" name="Happiny" availability="Unreleased" />
+  <Pokemon id="441" name="Chatot" availability="Unreleased" />
+  <Pokemon id="442" name="Spiritomb" availability="Unreleased" />
+  <Pokemon id="443" name="Gible" availability="Unreleased" />
+  <Pokemon id="444" name="Gabite" availability="Unreleased" />
+  <Pokemon id="445" name="Garchomp" availability="Unreleased" />
+  <Pokemon id="446" name="Munchlax" availability="Unreleased" />
+  <Pokemon id="447" name="Riolu" availability="Unreleased" />
+  <Pokemon id="448" name="Lucario" availability="Unreleased" />
+  <Pokemon id="449" name="Hippopotas" availability="Unreleased" />
+  <Pokemon id="450" name="Hippowdon" availability="Unreleased" />
+  <Pokemon id="451" name="Skorupi" availability="Unreleased" />
+  <Pokemon id="452" name="Drapion" availability="Unreleased" />
+  <Pokemon id="453" name="Croagunk" availability="Unreleased" />
+  <Pokemon id="454" name="Toxicroak" availability="Unreleased" />
+  <Pokemon id="455" name="Carnivine" availability="Unreleased" />
+  <Pokemon id="456" name="Finneon" availability="Unreleased" />
+  <Pokemon id="457" name="Lumineon" availability="Unreleased" />
+  <Pokemon id="458" name="Mantyke" availability="Unreleased" />
+  <Pokemon id="459" name="Snover" availability="Unreleased" />
+  <Pokemon id="460" name="Abomasnow" availability="Unreleased" />
+  <Pokemon id="461" name="Weavile" availability="Unreleased" />
+  <Pokemon id="462" name="Magnezone" availability="Unreleased" />
+  <Pokemon id="463" name="Lickilicky" availability="Unreleased" />
+  <Pokemon id="464" name="Rhyperior" availability="Unreleased" />
+  <Pokemon id="465" name="Tangrowth" availability="Unreleased" />
+  <Pokemon id="466" name="Electivire" availability="Unreleased" />
+  <Pokemon id="467" name="Magmortar" availability="Unreleased" />
+  <Pokemon id="468" name="Togekiss" availability="Unreleased" />
+  <Pokemon id="469" name="Yanmega" availability="Unreleased" />
+  <Pokemon id="470" name="Leafeon" availability="Unreleased" />
+  <Pokemon id="471" name="Glaceon" availability="Unreleased" />
+  <Pokemon id="472" name="Gliscor" availability="Unreleased" />
+  <Pokemon id="473" name="Mamoswine" availability="Unreleased" />
+  <Pokemon id="474" name="Porygon-Z" availability="Unreleased" />
+  <Pokemon id="475" name="Gallade" availability="Unreleased" />
+  <Pokemon id="476" name="Probopass" availability="Unreleased" />
+  <Pokemon id="477" name="Dusknoir" availability="Unreleased" />
+  <Pokemon id="478" name="Froslass" availability="Unreleased" />
+  <Pokemon id="479" name="Rotom" availability="Unreleased" />
+  <Pokemon id="480" name="Uxie" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="481" name="Mesprit" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="482" name="Azelf" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="483" name="Dialga" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="484" name="Palkia" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="485" name="Heatran" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="486" name="Regigigas" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="487" name="Giratina" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="488" name="Cresselia" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="489" name="Phione" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="490" name="Manaphy" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="491" name="Darkrai" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="492" name="Shaymin" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="493" name="Arceus" availability="Unreleased" rarity="Mythic" />
+  <!-- #endregion Gen4 -->
+  <!-- #region Gen5 -->
+  <Pokemon id="494" name="Victini" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="495" name="Snivy" availability="Unreleased" />
+  <Pokemon id="496" name="Servine" availability="Unreleased" />
+  <Pokemon id="497" name="Serperior" availability="Unreleased" />
+  <Pokemon id="498" name="Tepig" availability="Unreleased" />
+  <Pokemon id="499" name="Pignite" availability="Unreleased" />
+  <Pokemon id="500" name="Emboar" availability="Unreleased" />
+  <Pokemon id="501" name="Oshawott" availability="Unreleased" />
+  <Pokemon id="502" name="Dewott" availability="Unreleased" />
+  <Pokemon id="503" name="Samurott" availability="Unreleased" />
+  <Pokemon id="504" name="Patrat" availability="Unreleased" />
+  <Pokemon id="505" name="Watchog" availability="Unreleased" />
+  <Pokemon id="506" name="Lillipup" availability="Unreleased" />
+  <Pokemon id="507" name="Herdier" availability="Unreleased" />
+  <Pokemon id="508" name="Stoutland" availability="Unreleased" />
+  <Pokemon id="509" name="Purrloin" availability="Unreleased" />
+  <Pokemon id="510" name="Liepard" availability="Unreleased" />
+  <Pokemon id="511" name="Pansage" availability="Unreleased" />
+  <Pokemon id="512" name="Simisage" availability="Unreleased" />
+  <Pokemon id="513" name="Pansear" availability="Unreleased" />
+  <Pokemon id="514" name="Simisear" availability="Unreleased" />
+  <Pokemon id="515" name="Panpour" availability="Unreleased" />
+  <Pokemon id="516" name="Simipour" availability="Unreleased" />
+  <Pokemon id="517" name="Munna" availability="Unreleased" />
+  <Pokemon id="518" name="Musharna" availability="Unreleased" />
+  <Pokemon id="519" name="Pidove" availability="Unreleased" />
+  <Pokemon id="520" name="Tranquill" availability="Unreleased" />
+  <Pokemon id="521" name="Unfezant" availability="Unreleased" />
+  <Pokemon id="522" name="Blitzle" availability="Unreleased" />
+  <Pokemon id="523" name="Zebstrika" availability="Unreleased" />
+  <Pokemon id="524" name="Roggenrola" availability="Unreleased" />
+  <Pokemon id="525" name="Boldore" availability="Unreleased" />
+  <Pokemon id="526" name="Gigalith" availability="Unreleased" />
+  <Pokemon id="527" name="Woobat" availability="Unreleased" />
+  <Pokemon id="528" name="Swoobat" availability="Unreleased" />
+  <Pokemon id="529" name="Drilbur" availability="Unreleased" />
+  <Pokemon id="530" name="Excadrill" availability="Unreleased" />
+  <Pokemon id="531" name="Audino" availability="Unreleased" />
+  <Pokemon id="532" name="Timburr" availability="Unreleased" />
+  <Pokemon id="533" name="Gurdurr" availability="Unreleased" />
+  <Pokemon id="534" name="Conkeldurr" availability="Unreleased" />
+  <Pokemon id="535" name="Tympole" availability="Unreleased" />
+  <Pokemon id="536" name="Palpitoad" availability="Unreleased" />
+  <Pokemon id="537" name="Seismitoad" availability="Unreleased" />
+  <Pokemon id="538" name="Throh" availability="Unreleased" />
+  <Pokemon id="539" name="Sawk" availability="Unreleased" />
+  <Pokemon id="540" name="Sewaddle" availability="Unreleased" />
+  <Pokemon id="541" name="Swadloon" availability="Unreleased" />
+  <Pokemon id="542" name="Leavanny" availability="Unreleased" />
+  <Pokemon id="543" name="Venipede" availability="Unreleased" />
+  <Pokemon id="544" name="Whirlipede" availability="Unreleased" />
+  <Pokemon id="545" name="Scolipede" availability="Unreleased" />
+  <Pokemon id="546" name="Cottonee" availability="Unreleased" />
+  <Pokemon id="547" name="Whimsicott" availability="Unreleased" />
+  <Pokemon id="548" name="Petilil" availability="Unreleased" />
+  <Pokemon id="549" name="Lilligant" availability="Unreleased" />
+  <Pokemon id="550" name="Basculin" availability="Unreleased" />
+  <Pokemon id="551" name="Sandile" availability="Unreleased" />
+  <Pokemon id="552" name="Krokorok" availability="Unreleased" />
+  <Pokemon id="553" name="Krookodile" availability="Unreleased" />
+  <Pokemon id="554" name="Darumaka" availability="Unreleased" />
+  <Pokemon id="555" name="Darmanitan" availability="Unreleased" />
+  <Pokemon id="556" name="Maractus" availability="Unreleased" />
+  <Pokemon id="557" name="Dwebble" availability="Unreleased" />
+  <Pokemon id="558" name="Crustle" availability="Unreleased" />
+  <Pokemon id="559" name="Scraggy" availability="Unreleased" />
+  <Pokemon id="560" name="Scrafty" availability="Unreleased" />
+  <Pokemon id="561" name="Sigilyph" availability="Unreleased" />
+  <Pokemon id="562" name="Yamask" availability="Unreleased" />
+  <Pokemon id="563" name="Cofagrigus" availability="Unreleased" />
+  <Pokemon id="564" name="Tirtouga" availability="Unreleased" />
+  <Pokemon id="565" name="Carracosta" availability="Unreleased" />
+  <Pokemon id="566" name="Archen" availability="Unreleased" />
+  <Pokemon id="567" name="Archeops" availability="Unreleased" />
+  <Pokemon id="568" name="Trubbish" availability="Unreleased" />
+  <Pokemon id="569" name="Garbodor" availability="Unreleased" />
+  <Pokemon id="570" name="Zorua" availability="Unreleased" />
+  <Pokemon id="571" name="Zoroark" availability="Unreleased" />
+  <Pokemon id="572" name="Minccino" availability="Unreleased" />
+  <Pokemon id="573" name="Cinccino" availability="Unreleased" />
+  <Pokemon id="574" name="Gothita" availability="Unreleased" />
+  <Pokemon id="575" name="Gothorita" availability="Unreleased" />
+  <Pokemon id="576" name="Gothitelle" availability="Unreleased" />
+  <Pokemon id="577" name="Solosis" availability="Unreleased" />
+  <Pokemon id="578" name="Duosion" availability="Unreleased" />
+  <Pokemon id="579" name="Reuniclus" availability="Unreleased" />
+  <Pokemon id="580" name="Ducklett" availability="Unreleased" />
+  <Pokemon id="581" name="Swanna" availability="Unreleased" />
+  <Pokemon id="582" name="Vanillite" availability="Unreleased" />
+  <Pokemon id="583" name="Vanillish" availability="Unreleased" />
+  <Pokemon id="584" name="Vanilluxe" availability="Unreleased" />
+  <Pokemon id="585" name="Deerling" availability="Unreleased" />
+  <Pokemon id="586" name="Sawsbuck" availability="Unreleased" />
+  <Pokemon id="587" name="Emolga" availability="Unreleased" />
+  <Pokemon id="588" name="Karrablast" availability="Unreleased" />
+  <Pokemon id="589" name="Escavalier" availability="Unreleased" />
+  <Pokemon id="590" name="Foongus" availability="Unreleased" />
+  <Pokemon id="591" name="Amoonguss" availability="Unreleased" />
+  <Pokemon id="592" name="Frillish" availability="Unreleased" />
+  <Pokemon id="593" name="Jellicent" availability="Unreleased" />
+  <Pokemon id="594" name="Alomomola" availability="Unreleased" />
+  <Pokemon id="595" name="Joltik" availability="Unreleased" />
+  <Pokemon id="596" name="Galvantula" availability="Unreleased" />
+  <Pokemon id="597" name="Ferroseed" availability="Unreleased" />
+  <Pokemon id="598" name="Ferrothorn" availability="Unreleased" />
+  <Pokemon id="599" name="Klink" availability="Unreleased" />
+  <Pokemon id="600" name="Klang" availability="Unreleased" />
+  <Pokemon id="601" name="Klinklang" availability="Unreleased" />
+  <Pokemon id="602" name="Tynamo" availability="Unreleased" />
+  <Pokemon id="603" name="Eelektrik" availability="Unreleased" />
+  <Pokemon id="604" name="Eelektross" availability="Unreleased" />
+  <Pokemon id="605" name="Elgyem" availability="Unreleased" />
+  <Pokemon id="606" name="Beheeyem" availability="Unreleased" />
+  <Pokemon id="607" name="Litwick" availability="Unreleased" />
+  <Pokemon id="608" name="Lampent" availability="Unreleased" />
+  <Pokemon id="609" name="Chandelure" availability="Unreleased" />
+  <Pokemon id="610" name="Axew" availability="Unreleased" />
+  <Pokemon id="611" name="Fraxure" availability="Unreleased" />
+  <Pokemon id="612" name="Haxorus" availability="Unreleased" />
+  <Pokemon id="613" name="Cubchoo" availability="Unreleased" />
+  <Pokemon id="614" name="Beartic" availability="Unreleased" />
+  <Pokemon id="615" name="Cryogonal" availability="Unreleased" />
+  <Pokemon id="616" name="Shelmet" availability="Unreleased" />
+  <Pokemon id="617" name="Accelgor" availability="Unreleased" />
+  <Pokemon id="618" name="Stunfisk" availability="Unreleased" />
+  <Pokemon id="619" name="Mienfoo" availability="Unreleased" />
+  <Pokemon id="620" name="Mienshao" availability="Unreleased" />
+  <Pokemon id="621" name="Druddigon" availability="Unreleased" />
+  <Pokemon id="622" name="Golett" availability="Unreleased" />
+  <Pokemon id="623" name="Golurk" availability="Unreleased" />
+  <Pokemon id="624" name="Pawniard" availability="Unreleased" />
+  <Pokemon id="625" name="Bisharp" availability="Unreleased" />
+  <Pokemon id="626" name="Bouffalant" availability="Unreleased" />
+  <Pokemon id="627" name="Rufflet" availability="Unreleased" />
+  <Pokemon id="628" name="Braviary" availability="Unreleased" />
+  <Pokemon id="629" name="Vullaby" availability="Unreleased" />
+  <Pokemon id="630" name="Mandibuzz" availability="Unreleased" />
+  <Pokemon id="631" name="Heatmor" availability="Unreleased" />
+  <Pokemon id="632" name="Durant" availability="Unreleased" />
+  <Pokemon id="633" name="Deino" availability="Unreleased" />
+  <Pokemon id="634" name="Zweilous" availability="Unreleased" />
+  <Pokemon id="635" name="Hydreigon" availability="Unreleased" />
+  <Pokemon id="636" name="Larvesta" availability="Unreleased" />
+  <Pokemon id="637" name="Volcarona" availability="Unreleased" />
+  <Pokemon id="638" name="Cobalion" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="639" name="Terrakion" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="640" name="Virizion" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="641" name="Tornadus" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="642" name="Thundurus" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="643" name="Reshiram" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="644" name="Zekrom" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="645" name="Landorus" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="646" name="Kyurem" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="647" name="Keldeo" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="648" name="Meloetta" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="649" name="Genesect" availability="Unreleased" rarity="Mythic" />
+  <!-- #endregion Gen5 -->
+  <!-- #region Gen6 -->
+  <Pokemon id="650" name="Chespin" availability="Unreleased" />
+  <Pokemon id="651" name="Quilladin" availability="Unreleased" />
+  <Pokemon id="652" name="Chesnaught" availability="Unreleased" />
+  <Pokemon id="653" name="Fennekin" availability="Unreleased" />
+  <Pokemon id="654" name="Braixen" availability="Unreleased" />
+  <Pokemon id="655" name="Delphox" availability="Unreleased" />
+  <Pokemon id="656" name="Froakie" availability="Unreleased" />
+  <Pokemon id="657" name="Frogadier" availability="Unreleased" />
+  <Pokemon id="658" name="Greninja" availability="Unreleased" />
+  <Pokemon id="659" name="Bunnelby" availability="Unreleased" />
+  <Pokemon id="660" name="Diggersby" availability="Unreleased" />
+  <Pokemon id="661" name="Fletchling" availability="Unreleased" />
+  <Pokemon id="662" name="Fletchinder" availability="Unreleased" />
+  <Pokemon id="663" name="Talonflame" availability="Unreleased" />
+  <Pokemon id="664" name="Scatterbug" availability="Unreleased" />
+  <Pokemon id="665" name="Spewpa" availability="Unreleased" />
+  <Pokemon id="666" name="Vivillon" availability="Unreleased" />
+  <Pokemon id="667" name="Litleo" availability="Unreleased" />
+  <Pokemon id="668" name="Pyroar" availability="Unreleased" />
+  <Pokemon id="669" name="Flabébé" availability="Unreleased" />
+  <Pokemon id="670" name="Floette" availability="Unreleased" />
+  <Pokemon id="671" name="Florges" availability="Unreleased" />
+  <Pokemon id="672" name="Skiddo" availability="Unreleased" />
+  <Pokemon id="673" name="Gogoat" availability="Unreleased" />
+  <Pokemon id="674" name="Pancham" availability="Unreleased" />
+  <Pokemon id="675" name="Pangoro" availability="Unreleased" />
+  <Pokemon id="676" name="Furfrou" availability="Unreleased" />
+  <Pokemon id="677" name="Espurr" availability="Unreleased" />
+  <Pokemon id="678" name="Meowstic" availability="Unreleased" />
+  <Pokemon id="679" name="Honedge" availability="Unreleased" />
+  <Pokemon id="680" name="Doublade" availability="Unreleased" />
+  <Pokemon id="681" name="Aegislash" availability="Unreleased" />
+  <Pokemon id="682" name="Spritzee" availability="Unreleased" />
+  <Pokemon id="683" name="Aromatisse" availability="Unreleased" />
+  <Pokemon id="684" name="Swirlix" availability="Unreleased" />
+  <Pokemon id="685" name="Slurpuff" availability="Unreleased" />
+  <Pokemon id="686" name="Inkay" availability="Unreleased" />
+  <Pokemon id="687" name="Malamar" availability="Unreleased" />
+  <Pokemon id="688" name="Binacle" availability="Unreleased" />
+  <Pokemon id="689" name="Barbaracle" availability="Unreleased" />
+  <Pokemon id="690" name="Skrelp" availability="Unreleased" />
+  <Pokemon id="691" name="Dragalge" availability="Unreleased" />
+  <Pokemon id="692" name="Clauncher" availability="Unreleased" />
+  <Pokemon id="693" name="Clawitzer" availability="Unreleased" />
+  <Pokemon id="694" name="Helioptile" availability="Unreleased" />
+  <Pokemon id="695" name="Heliolisk" availability="Unreleased" />
+  <Pokemon id="696" name="Tyrunt" availability="Unreleased" />
+  <Pokemon id="697" name="Tyrantrum" availability="Unreleased" />
+  <Pokemon id="698" name="Amaura" availability="Unreleased" />
+  <Pokemon id="699" name="Aurorus" availability="Unreleased" />
+  <Pokemon id="700" name="Sylveon" availability="Unreleased" />
+  <Pokemon id="701" name="Hawlucha" availability="Unreleased" />
+  <Pokemon id="702" name="Dedenne" availability="Unreleased" />
+  <Pokemon id="703" name="Carbink" availability="Unreleased" />
+  <Pokemon id="704" name="Goomy" availability="Unreleased" />
+  <Pokemon id="705" name="Sliggoo" availability="Unreleased" />
+  <Pokemon id="706" name="Goodra" availability="Unreleased" />
+  <Pokemon id="707" name="Klefki" availability="Unreleased" />
+  <Pokemon id="708" name="Phantump" availability="Unreleased" />
+  <Pokemon id="709" name="Trevenant" availability="Unreleased" />
+  <Pokemon id="710" name="Pumpkaboo" availability="Unreleased" />
+  <Pokemon id="711" name="Gourgeist" availability="Unreleased" />
+  <Pokemon id="712" name="Bergmite" availability="Unreleased" />
+  <Pokemon id="713" name="Avalugg" availability="Unreleased" />
+  <Pokemon id="714" name="Noibat" availability="Unreleased" />
+  <Pokemon id="715" name="Noivern" availability="Unreleased" />
+  <Pokemon id="716" name="Xerneas" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="717" name="Yveltal" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="718" name="Zygarde" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="719" name="Diancie" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="720" name="Hoopa" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="721" name="Volcanion" availability="Unreleased" rarity="Mythic" />
+  <!-- #endregion Gen6 -->
+  <!-- #region Gen7 -->
+  <Pokemon id="722" name="Rowlet" availability="Unreleased" />
+  <Pokemon id="723" name="Dartrix" availability="Unreleased" />
+  <Pokemon id="724" name="Decidueye" availability="Unreleased" />
+  <Pokemon id="725" name="Litten" availability="Unreleased" />
+  <Pokemon id="726" name="Torracat" availability="Unreleased" />
+  <Pokemon id="727" name="Incineroar" availability="Unreleased" />
+  <Pokemon id="728" name="Popplio" availability="Unreleased" />
+  <Pokemon id="729" name="Brionne" availability="Unreleased" />
+  <Pokemon id="730" name="Primarina" availability="Unreleased" />
+  <Pokemon id="731" name="Pikipek" availability="Unreleased" />
+  <Pokemon id="732" name="Trumbeak" availability="Unreleased" />
+  <Pokemon id="733" name="Toucannon" availability="Unreleased" />
+  <Pokemon id="734" name="Yungoos" availability="Unreleased" />
+  <Pokemon id="735" name="Gumshoos" availability="Unreleased" />
+  <Pokemon id="736" name="Grubbin" availability="Unreleased" />
+  <Pokemon id="737" name="Charjabug" availability="Unreleased" />
+  <Pokemon id="738" name="Vikavolt" availability="Unreleased" />
+  <Pokemon id="739" name="Crabrawler" availability="Unreleased" />
+  <Pokemon id="740" name="Crabominable" availability="Unreleased" />
+  <Pokemon id="741" name="Oricorio" availability="Unreleased" />
+  <Pokemon id="742" name="Cutiefly" availability="Unreleased" />
+  <Pokemon id="743" name="Ribombee" availability="Unreleased" />
+  <Pokemon id="744" name="Rockruff" availability="Unreleased" />
+  <Pokemon id="745" name="Lycanroc" availability="Unreleased" />
+  <Pokemon id="746" name="Wishiwashi" availability="Unreleased" />
+  <Pokemon id="747" name="Mareanie" availability="Unreleased" />
+  <Pokemon id="748" name="Toxapex" availability="Unreleased" />
+  <Pokemon id="749" name="Mudbray" availability="Unreleased" />
+  <Pokemon id="750" name="Mudsdale" availability="Unreleased" />
+  <Pokemon id="751" name="Dewpider" availability="Unreleased" />
+  <Pokemon id="752" name="Araquanid" availability="Unreleased" />
+  <Pokemon id="753" name="Fomantis" availability="Unreleased" />
+  <Pokemon id="754" name="Lurantis" availability="Unreleased" />
+  <Pokemon id="755" name="Morelull" availability="Unreleased" />
+  <Pokemon id="756" name="Shiinotic" availability="Unreleased" />
+  <Pokemon id="757" name="Salandit" availability="Unreleased" />
+  <Pokemon id="758" name="Salazzle" availability="Unreleased" />
+  <Pokemon id="759" name="Stufful" availability="Unreleased" />
+  <Pokemon id="760" name="Bewear" availability="Unreleased" />
+  <Pokemon id="761" name="Bounsweet" availability="Unreleased" />
+  <Pokemon id="762" name="Steenee" availability="Unreleased" />
+  <Pokemon id="763" name="Tsareena" availability="Unreleased" />
+  <Pokemon id="764" name="Comfey" availability="Unreleased" />
+  <Pokemon id="765" name="Oranguru" availability="Unreleased" />
+  <Pokemon id="766" name="Passimian" availability="Unreleased" />
+  <Pokemon id="767" name="Wimpod" availability="Unreleased" />
+  <Pokemon id="768" name="Golisopod" availability="Unreleased" />
+  <Pokemon id="769" name="Sandygast" availability="Unreleased" />
+  <Pokemon id="770" name="Palossand" availability="Unreleased" />
+  <Pokemon id="771" name="Pyukumuku" availability="Unreleased" />
+  <Pokemon id="772" name="Type: Null" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="773" name="Silvally" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="774" name="Minior" availability="Unreleased" />
+  <Pokemon id="775" name="Komala" availability="Unreleased" />
+  <Pokemon id="776" name="Turtonator" availability="Unreleased" />
+  <Pokemon id="777" name="Togedemaru" availability="Unreleased" />
+  <Pokemon id="778" name="Mimikyu" availability="Unreleased" />
+  <Pokemon id="779" name="Bruxish" availability="Unreleased" />
+  <Pokemon id="780" name="Drampa" availability="Unreleased" />
+  <Pokemon id="781" name="Dhelmise" availability="Unreleased" />
+  <Pokemon id="782" name="Jangmo-o" availability="Unreleased" />
+  <Pokemon id="783" name="Hakamo-o" availability="Unreleased" />
+  <Pokemon id="784" name="Kommo-o" availability="Unreleased" />
+  <Pokemon id="785" name="Tapu Koko" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="786" name="Tapu Lele" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="787" name="Tapu Bulu" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="788" name="Tapu Fini" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="789" name="Cosmog" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="790" name="Cosmoem" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="791" name="Solgaleo" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="792" name="Lunala" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="793" name="Nihilego" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="794" name="Buzzwole" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="795" name="Pheromosa" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="796" name="Xurkitree" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="797" name="Celesteela" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="798" name="Kartana" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="799" name="Guzzlord" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="800" name="Necrozma" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="801" name="Magearna" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="802" name="Marshadow" availability="Unreleased" rarity="Mythic" />
+  <Pokemon id="803" name="Poipole" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="804" name="Naganadel" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="805" name="Stakataka" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="806" name="Blacephalon" availability="Unreleased" rarity="Ultra Beast" />
+  <Pokemon id="807" name="Zeraora" availability="Unreleased" rarity="Mythic" />
+  <!-- #endregion Gen7 -->
+</PokemonAvailability>

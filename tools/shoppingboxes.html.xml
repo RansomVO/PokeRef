@@ -3,9 +3,11 @@
 <!DOCTYPE Root [
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Images SYSTEM "/_datafiles.manual/images.xml">
+  <!ENTITY ShoppingBoxes SYSTEM "/_datafiles.manual/shoppingboxes.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="shoppingboxes.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Constants;
   &Images;
+  &ShoppingBoxes;
 </Root>

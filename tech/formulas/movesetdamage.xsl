@@ -44,10 +44,10 @@
         <br />
         <hr />
         <h2 id="anchor_damage">
-          Damage Formula
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DAMAGE'" />
           </xsl:call-template>
+          <xsl:text>Damage Formula</xsl:text>
         </h2>
         <div id="FORMULA_MOVESET_DAMAGE" class="INDENT">
           <p class="PARENT">
@@ -264,6 +264,9 @@
         <br />
         <hr />
         <h2 id="anchor_dps">
+          <xsl:call-template name="Collapser">
+            <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DPS'" />
+          </xsl:call-template>
           <b>
             <u>D</u>
           </b>amage <b>
@@ -271,9 +274,6 @@
           </b>er <b>
             <u>S</u>
           </b>econd <span class="NOTE">(DPS)</span> Formula
-          <xsl:call-template name="Collapser">
-            <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_DPS'" />
-          </xsl:call-template>
         </h2>
         <div id="FORMULA_MOVESET_DPS" class="INDENT">
           <p class="PARENT">
@@ -456,10 +456,10 @@
         <br />
         <hr />
         <h2 id="anchor_truedps">
-          Simplifying <span class="NOTE">(True DPS)</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_TRUE_DPS'" />
           </xsl:call-template>
+          <xsl:text>Simplifying </xsl:text><span class="NOTE">(True DPS)</span>
         </h2>
         <div id="FORMULA_MOVESET_TRUE_DPS" class="INDENT">
           <p>
@@ -705,10 +705,10 @@
         <br />
         <hr />
         <h2 id="anchor_movesetdps">
-          Even Simpler <span class="NOTE">(Base DPS)</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'FORMULA_MOVESET_MOVESET_DPS'" />
           </xsl:call-template>
+          <xsl:text>Even Simpler </xsl:text><span class="NOTE">(Base DPS)</span>
         </h2>
         <div id="FORMULA_MOVESET_MOVESET_DPS" class="INDENT">
           <p>

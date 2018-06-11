@@ -102,10 +102,11 @@
   <!-- Template to write the Selection Criteria. -->
   <xsl:template name="CreateCriteria">
     <h2 id="anchor_criteria">
-      <xsl:text>Selection Criteria</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'POKEMON_CRITERIA'" />
       </xsl:call-template>
+      <xsl:text>Selection Criteria</xsl:text>
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <xsl:call-template name="OutputResetButton">
         <xsl:with-param name="Callback" select="'OnResetCriteriaClicked();'" />
       </xsl:call-template>
@@ -152,10 +153,10 @@
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
     <h2>
-      <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'POKESTAT_KEY'" />
       </xsl:call-template>
+      <xsl:text>Key</xsl:text>
     </h2>
     <div id="POKESTAT_KEY" style="margin-top:.5em;">
       <xsl:call-template name="PokemonImageKey" />
@@ -169,11 +170,11 @@
       <xsl:attribute name="id">
         <xsl:value-of select="concat('GEN', @gen)" />
       </xsl:attribute>
-      <xsl:text>Generation </xsl:text>
-      <xsl:value-of select="@gen" />
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="concat('GENERATION_', @gen)" />
       </xsl:call-template>
+      <xsl:text>Generation </xsl:text>
+      <xsl:value-of select="@gen" />
     </h2>
     <div>
       <xsl:attribute name="id">

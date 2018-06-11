@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-05-14" gen="7" region="Alola">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="7" region="Alola">
   <Pokemon id="722" name="Rowlet" family="Rowlet" availability="Unreleased">
     <Type primary="Grass" secondary="Flying" />
   </Pokemon>
@@ -139,32 +139,32 @@
   <Pokemon id="751" name="Dewpider" family="Dewpider" availability="Unreleased">
     <Type primary="Water" secondary="Bug" />
   </Pokemon>
-  <Pokemon id="752" name="Araquanid" family="Dewpider" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="752" name="Araquanid" family="Dewpider" availability="Unreleased">
     <Type primary="Water" secondary="Bug" />
     <EvolvesFrom id="751" name="Dewpider" />
   </Pokemon>
-  <Pokemon id="753" name="Fomantis" family="Fomantis" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="753" name="Fomantis" family="Fomantis" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
   <Pokemon id="754" name="Lurantis" family="Fomantis" rarity="Legendary" availability="Unreleased">
     <Type primary="Grass" />
     <EvolvesFrom id="753" name="Fomantis" />
   </Pokemon>
-  <Pokemon id="755" name="Morelull" family="Morelull" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="755" name="Morelull" family="Morelull" rarity="Legendary" availability="Unreleased">
     <Type primary="Grass" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="756" name="Shiinotic" family="Morelull" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="756" name="Shiinotic" family="Morelull" rarity="Legendary" availability="Unreleased">
     <Type primary="Grass" secondary="Fairy" />
     <EvolvesFrom id="755" name="Morelull" />
   </Pokemon>
   <Pokemon id="757" name="Salandit" family="Salandit" rarity="Mythic" availability="Unreleased">
     <Type primary="Poison" secondary="Fire" />
   </Pokemon>
-  <Pokemon id="758" name="Salazzle" family="Salandit" availability="Unreleased">
+  <Pokemon id="758" name="Salazzle" family="Salandit" rarity="Mythic" availability="Unreleased">
     <Type primary="Poison" secondary="Fire" />
     <EvolvesFrom id="757" name="Salandit" />
   </Pokemon>
-  <Pokemon id="759" name="Stufful" family="Stufful" availability="Unreleased">
+  <Pokemon id="759" name="Stufful" family="Stufful" rarity="Mythic" availability="Unreleased">
     <Type primary="Normal" secondary="Fighting" />
   </Pokemon>
   <Pokemon id="760" name="Bewear" family="Stufful" availability="Unreleased">

@@ -69,7 +69,6 @@
         <hr />
         <h2 id="anchor_pokequick" class="PARENT">
           <a href="pokequick.html">Pokemon Quick List</a>
-          <span class="NOTE TODO">(Beta)</span>
         </h2>
         <div class="CHILD INDENT">
           <p class="PARENT CHILD">

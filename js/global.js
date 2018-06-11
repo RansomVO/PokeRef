@@ -371,7 +371,7 @@ function WriteFooter() {
         document.write('<br /><hr align="left" width="650em" />');
     }
 
-    document.write(ReadURL('/footernote.html' + CacheDate));
+    document.write('<span class="NOTE">This site is maintained in my spare time.</span>');
 }
 
 function GetFooterNavigation(href) {

@@ -1,1492 +1,1492 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-05-14" gen="3" region="Hoenn">
-  <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="3" region="Hoenn">
+  <Pokemon id="252" name="Treecko" family="Treecko" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="124" defense="104" stamina="80" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="5" deviation="0.625" />
-      <Rates capture="0.2" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="5" deviation="5" />
+      <Rates capture="0.20000000298023224" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="923" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="253" name="Grovyle" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="253" name="Grovyle" family="Treecko" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <EvolvesFrom id="252" name="Treecko" candies="25" />
     <Stats>
       <BaseIV attack="172" defense="130" stamina="100" />
-      <Height standard="0.89" deviation="0.11125" />
-      <Weight standard="21.6" deviation="2.7" />
-      <Rates capture="0.1" flee="0.07" attack="0.1" dodge="0.15" />
+      <Height standard="0.88999998569488525" deviation="0.88999998569488525" />
+      <Weight standard="21.600000381469727" deviation="21.600000381469727" />
+      <Rates capture="0.10000000149011612" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1508" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="254" name="Sceptile" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="254" name="Sceptile" family="Treecko" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <EvolvesFrom id="253" name="Grovyle" candies="100" />
     <Stats>
       <BaseIV attack="223" defense="180" stamina="140" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="52.2" deviation="6.525" />
-      <Rates capture="0.05" flee="0.05" attack="0.2" dodge="0.15" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="52.200000762939453" deviation="52.200000762939453" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2584" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="255" name="Torchic" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="255" name="Torchic" family="Torchic" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="130" defense="92" stamina="90" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="2.5" deviation="0.3125" />
-      <Rates capture="0.2" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="2.5" deviation="2.5" />
+      <Rates capture="0.20000000298023224" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="959" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="256" name="Combusken" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="256" name="Combusken" family="Torchic" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" secondary="Fighting" />
     <EvolvesFrom id="255" name="Torchic" candies="25" />
     <Stats>
       <BaseIV attack="163" defense="115" stamina="120" />
-      <Height standard="0.89" deviation="0.11125" />
-      <Weight standard="19.5" deviation="2.4375" />
-      <Rates capture="0.1" flee="0.07" attack="0.1" dodge="0.15" />
+      <Height standard="0.88999998569488525" deviation="0.88999998569488525" />
+      <Weight standard="19.5" deviation="19.5" />
+      <Rates capture="0.10000000149011612" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1472" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="257" name="Blaziken" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="257" name="Blaziken" family="Torchic" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" secondary="Fighting" />
     <EvolvesFrom id="256" name="Combusken" candies="100" />
     <Stats>
       <BaseIV attack="240" defense="141" stamina="160" />
-      <Height standard="1.91" deviation="0.23875" />
-      <Weight standard="52" deviation="6.5" />
-      <Rates capture="0.05" flee="0.05" attack="0.2" dodge="0.15" />
+      <Height standard="1.9099999666213989" deviation="1.9099999666213989" />
+      <Weight standard="52" deviation="52" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2631" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="258" name="Mudkip" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="258" name="Mudkip" family="Mudkip" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="126" defense="93" stamina="100" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="7.6" deviation="0.95" />
-      <Rates capture="0.2" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="7.5999999046325684" deviation="7.5999999046325684" />
+      <Rates capture="0.20000000298023224" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="981" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="259" name="Marshtomp" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="259" name="Marshtomp" family="Mudkip" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="258" name="Mudkip" candies="25" />
     <Stats>
       <BaseIV attack="156" defense="133" stamina="140" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="28" deviation="3.5" />
-      <Rates capture="0.1" flee="0.07" attack="0.1" dodge="0.15" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="28" deviation="28" />
+      <Rates capture="0.10000000149011612" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1617" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="260" name="Swampert" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="260" name="Swampert" family="Mudkip" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="259" name="Marshtomp" candies="100" />
     <Stats>
       <BaseIV attack="208" defense="175" stamina="200" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="81.9" deviation="10.2375" />
-      <Rates capture="0.05" flee="0.05" attack="0.2" dodge="0.15" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="81.9000015258789" deviation="81.9000015258789" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2815" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="261" name="Poochyena" family="Poochyena" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="261" name="Poochyena" family="Poochyena" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Dark" />
     <Stats>
       <BaseIV attack="96" defense="63" stamina="70" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="13.6" deviation="1.7" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="13.600000381469727" deviation="13.600000381469727" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="564" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="262" name="Mightyena" family="Poochyena" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="262" name="Mightyena" family="Poochyena" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Dark" />
     <EvolvesFrom id="261" name="Poochyena" candies="50" />
     <Stats>
       <BaseIV attack="171" defense="137" stamina="140" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="37" deviation="4.625" />
-      <Rates capture="0.2" flee="0.07" attack="0.2" dodge="0.15" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="37" deviation="37" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="1783" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="263" name="Zigzagoon" family="Zigzagoon" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="263" name="Zigzagoon" family="Zigzagoon" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="58" defense="80" stamina="76" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="17.5" deviation="2.1875" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="17.5" deviation="17.5" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="423" hp="71" />
     </Stats>
   </Pokemon>
-  <Pokemon id="264" name="Linoone" family="Zigzagoon" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="264" name="Linoone" family="Zigzagoon" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="263" name="Zigzagoon" candies="50" />
     <Stats>
       <BaseIV attack="142" defense="128" stamina="156" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="32.5" deviation="4.0625" />
-      <Rates capture="0.2" flee="0.07" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="32.5" deviation="32.5" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1533" hp="135" />
     </Stats>
   </Pokemon>
-  <Pokemon id="265" name="Wurmple" family="Wurmple" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="265" name="Wurmple" family="Wurmple" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="75" defense="61" stamina="90" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="3.6" deviation="0.45" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="3.5999999046325684" deviation="3.5999999046325684" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="502" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="266" name="Silcoon" family="Wurmple" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="266" name="Silcoon" family="Wurmple" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" />
     <EvolvesFrom id="265" name="Wurmple" candies="12" />
     <Stats>
       <BaseIV attack="60" defense="91" stamina="100" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="10" deviation="1.25" />
-      <Rates capture="0.25" flee="0.09" attack="0.05" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="10" deviation="10" />
+      <Rates capture="0.25" flee="0.090000003576278687" attack="0.05000000074505806" dodge="0.15000000596046448" />
       <Max cp="517" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="267" name="Beautifly" family="Wurmple" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="267" name="Beautifly" family="Wurmple" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="266" name="Silcoon" candies="50" />
     <Stats>
       <BaseIV attack="189" defense="98" stamina="120" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="28.4" deviation="3.55" />
-      <Rates capture="0.125" flee="0.06" attack="0.1" dodge="0.3" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="28.399999618530273" deviation="28.399999618530273" />
+      <Rates capture="0.125" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.30000001192092896" />
       <Max cp="1573" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="268" name="Cascoon" family="Wurmple" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="268" name="Cascoon" family="Wurmple" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" />
     <EvolvesFrom id="265" name="Wurmple" candies="12" />
     <Stats>
       <BaseIV attack="60" defense="91" stamina="100" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="11.5" deviation="1.4375" />
-      <Rates capture="0.25" flee="0.09" attack="0.05" dodge="0.15" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="11.5" deviation="11.5" />
+      <Rates capture="0.25" flee="0.090000003576278687" attack="0.05000000074505806" dodge="0.15000000596046448" />
       <Max cp="517" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="269" name="Dustox" family="Wurmple" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="269" name="Dustox" family="Wurmple" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Poison" />
     <EvolvesFrom id="268" name="Cascoon" candies="50" />
     <Stats>
       <BaseIV attack="98" defense="172" stamina="120" />
-      <Height standard="1.19" deviation="0.14875" />
-      <Weight standard="31.6" deviation="3.95" />
-      <Rates capture="0.125" flee="0.06" attack="0.1" dodge="0.3" />
+      <Height standard="1.190000057220459" deviation="1.190000057220459" />
+      <Weight standard="31.600000381469727" deviation="31.600000381469727" />
+      <Rates capture="0.125" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.30000001192092896" />
       <Max cp="1121" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="270" name="Lotad" family="Lotad" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="270" name="Lotad" family="Lotad" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Grass" />
     <Stats>
       <BaseIV attack="71" defense="86" stamina="80" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="2.6" deviation="0.325" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="2.5999999046325684" deviation="2.5999999046325684" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="526" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="271" name="Lombre" family="Lotad" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="271" name="Lombre" family="Lotad" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Grass" />
     <EvolvesFrom id="270" name="Lotad" candies="25" />
     <Stats>
       <BaseIV attack="112" defense="128" stamina="120" />
-      <Height standard="1.19" deviation="0.14875" />
-      <Weight standard="32.5" deviation="4.0625" />
-      <Rates capture="0.25" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="1.190000057220459" deviation="1.190000057220459" />
+      <Weight standard="32.5" deviation="32.5" />
+      <Rates capture="0.25" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1102" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="272" name="Ludicolo" family="Lotad" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="272" name="Ludicolo" family="Lotad" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Grass" />
     <EvolvesFrom id="271" name="Lombre" candies="100" />
     <Stats>
       <BaseIV attack="173" defense="191" stamina="160" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="55" deviation="6.875" />
-      <Rates capture="0.125" flee="0.06" attack="0.2" dodge="0.15" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="55" deviation="55" />
+      <Rates capture="0.125" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2229" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="273" name="Seedot" family="Seedot" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="273" name="Seedot" family="Seedot" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="71" defense="86" stamina="80" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="4" deviation="0.5" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="4" deviation="4" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="526" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="274" name="Nuzleaf" family="Seedot" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="274" name="Nuzleaf" family="Seedot" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Dark" />
     <EvolvesFrom id="273" name="Seedot" candies="25" />
     <Stats>
       <BaseIV attack="134" defense="78" stamina="140" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="28" deviation="3.5" />
-      <Rates capture="0.25" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="28" deviation="28" />
+      <Rates capture="0.25" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1117" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="275" name="Shiftry" family="Seedot" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="275" name="Shiftry" family="Seedot" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Dark" />
     <EvolvesFrom id="274" name="Nuzleaf" candies="100" />
     <Stats>
       <BaseIV attack="200" defense="121" stamina="180" />
-      <Height standard="1.3" deviation="0.1625" />
-      <Weight standard="59.6" deviation="7.45" />
-      <Rates capture="0.125" flee="0.06" attack="0.2" dodge="0.15" />
+      <Height standard="1.2999999523162842" deviation="1.2999999523162842" />
+      <Weight standard="59.599998474121094" deviation="59.599998474121094" />
+      <Rates capture="0.125" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2186" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="276" name="Taillow" family="Taillow" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="276" name="Taillow" family="Taillow" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="106" defense="61" stamina="80" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="2.3" deviation="0.2875" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="2.2999999523162842" deviation="2.2999999523162842" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="642" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="277" name="Swellow" family="Taillow" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="277" name="Swellow" family="Taillow" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="276" name="Taillow" candies="50" />
     <Stats>
       <BaseIV attack="185" defense="130" stamina="120" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="19.8" deviation="2.475" />
-      <Rates capture="0.2" flee="0.07" attack="0.1" dodge="0.2" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="19.799999237060547" deviation="19.799999237060547" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.20000000298023224" />
       <Max cp="1747" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="278" name="Wingull" family="Wingull" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="278" name="Wingull" family="Wingull" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Flying" />
     <Stats>
       <BaseIV attack="106" defense="61" stamina="80" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="9.5" deviation="1.1875" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="9.5" deviation="9.5" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="642" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="279" name="Pelipper" family="Wingull" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="279" name="Pelipper" family="Wingull" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Flying" />
     <EvolvesFrom id="278" name="Wingull" candies="50" />
     <Stats>
       <BaseIV attack="175" defense="189" stamina="120" />
-      <Height standard="1.19" deviation="0.14875" />
-      <Weight standard="28" deviation="3.5" />
-      <Rates capture="0.2" flee="0.07" attack="0.1" dodge="0.2" />
+      <Height standard="1.190000057220459" deviation="1.190000057220459" />
+      <Weight standard="28" deviation="28" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.20000000298023224" />
       <Max cp="1969" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="280" name="Ralts" family="Ralts" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="280" name="Ralts" family="Ralts" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" secondary="Fairy" />
     <Stats>
       <BaseIV attack="79" defense="63" stamina="56" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="6.6" deviation="0.825" />
-      <Rates capture="0.4" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="6.5999999046325684" deviation="6.5999999046325684" />
+      <Rates capture="0.40000000596046448" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="436" hp="56" />
     </Stats>
   </Pokemon>
-  <Pokemon id="281" name="Kirlia" family="Ralts" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="281" name="Kirlia" family="Ralts" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" secondary="Fairy" />
     <EvolvesFrom id="280" name="Ralts" candies="25" />
     <Stats>
       <BaseIV attack="117" defense="100" stamina="76" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="20.2" deviation="2.525" />
-      <Rates capture="0.1" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="20.200000762939453" deviation="20.200000762939453" />
+      <Rates capture="0.10000000149011612" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="843" hp="71" />
     </Stats>
   </Pokemon>
-  <Pokemon id="282" name="Gardevoir" family="Ralts" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="282" name="Gardevoir" family="Ralts" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" secondary="Fairy" />
     <EvolvesFrom id="281" name="Kirlia" candies="100" />
     <Stats>
       <BaseIV attack="237" defense="220" stamina="136" />
-      <Height standard="1.6" deviation="0.2" />
-      <Weight standard="48.4" deviation="6.05" />
-      <Rates capture="0.05" flee="0.05" attack="0.2" dodge="0.15" />
+      <Height standard="1.6000000238418579" deviation="1.6000000238418579" />
+      <Weight standard="48.400001525878906" deviation="48.400001525878906" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2964" hp="119" />
     </Stats>
   </Pokemon>
-  <Pokemon id="283" name="Surskit" family="Surskit" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="283" name="Surskit" family="Surskit" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Water" />
     <Stats>
       <BaseIV attack="93" defense="97" stamina="80" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="1.7" deviation="0.2125" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="695" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="284" name="Masquerain" family="Surskit" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="284" name="Masquerain" family="Surskit" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="283" name="Surskit" candies="50" />
     <Stats>
       <BaseIV attack="192" defense="161" stamina="140" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="3.6" deviation="0.45" />
-      <Rates capture="0.2" flee="0.07" attack="0.1" dodge="0.2" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="3.5999999046325684" deviation="3.5999999046325684" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.20000000298023224" />
       <Max cp="2135" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="285" name="Shroomish" family="Shroomish" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="285" name="Shroomish" family="Shroomish" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="74" defense="110" stamina="120" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="4.5" deviation="0.5625" />
-      <Rates capture="0.5" flee="0.2" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="4.5" deviation="4.5" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="722" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="286" name="Breloom" family="Shroomish" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="286" name="Breloom" family="Shroomish" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Fighting" />
     <EvolvesFrom id="285" name="Shroomish" candies="50" />
     <Stats>
       <BaseIV attack="241" defense="153" stamina="120" />
-      <Height standard="1.19" deviation="0.14875" />
-      <Weight standard="39.2" deviation="4.9" />
-      <Rates capture="0.2" flee="0.07" attack="0.3" dodge="0.15" />
+      <Height standard="1.190000057220459" deviation="1.190000057220459" />
+      <Weight standard="39.200000762939453" deviation="39.200000762939453" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="2407" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="287" name="Slakoth" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="287" name="Slakoth" family="Slakoth" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="104" defense="104" stamina="120" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="24" deviation="3" />
-      <Rates capture="0.4" flee="0.09" attack="0.01" dodge="0" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="24" deviation="24" />
+      <Rates capture="0.40000000596046448" flee="0.090000003576278687" attack="0.0099999997764825821" dodge="0" />
       <Max cp="942" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="288" name="Vigoroth" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="288" name="Vigoroth" family="Slakoth" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="287" name="Slakoth" candies="25" />
     <Stats>
       <BaseIV attack="159" defense="159" stamina="160" />
-      <Height standard="1.4" deviation="0.175" />
-      <Weight standard="46.5" deviation="5.8125" />
-      <Rates capture="0.1" flee="0.06" attack="0.7" dodge="0.2" />
+      <Height standard="1.3999999761581421" deviation="1.3999999761581421" />
+      <Weight standard="46.5" deviation="46.5" />
+      <Rates capture="0.10000000149011612" flee="0.059999998658895493" attack="0.699999988079071" dodge="0.20000000298023224" />
       <Max cp="1896" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="289" name="Slaking" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="289" name="Slaking" family="Slakoth" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="288" name="Vigoroth" candies="100" />
     <Stats>
       <BaseIV attack="290" defense="183" stamina="273" />
-      <Height standard="2.01" deviation="0.25125" />
-      <Weight standard="130.5" deviation="16.3125" />
-      <Rates capture="0.05" flee="0.05" attack="0.1" dodge="0.15" />
+      <Height standard="2.0099999904632568" deviation="2.0099999904632568" />
+      <Weight standard="130.5" deviation="130.5" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="4548" hp="227" />
     </Stats>
   </Pokemon>
-  <Pokemon id="290" name="Nincada" family="Nincada" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="290" name="Nincada" family="Nincada" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Bug" secondary="Ground" />
     <Stats>
       <BaseIV attack="80" defense="153" stamina="62" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="5.5" deviation="0.6875" />
-      <Rates capture="0.2" flee="0.1" attack="0.1" dodge="0.05" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="5.5" deviation="5.5" />
+      <Rates capture="0.20000000298023224" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.05000000074505806" />
       <Max cp="674" hp="60" />
     </Stats>
   </Pokemon>
-  <Pokemon id="291" name="Ninjask" family="Nincada" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="291" name="Ninjask" family="Nincada" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="290" name="Nincada" candies="50" />
     <Stats>
       <BaseIV attack="196" defense="114" stamina="122" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="12" deviation="1.5" />
-      <Rates capture="0.1" flee="0.07" attack="0.1" dodge="0.3" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="12" deviation="12" />
+      <Rates capture="0.10000000149011612" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.30000001192092896" />
       <Max cp="1751" hp="108" />
     </Stats>
   </Pokemon>
-  <Pokemon id="292" name="Shedinja" family="Nincada" buddy_km="5" gender_ratio="⚲" availability="Unreleased">
+  <Pokemon id="292" name="Shedinja" family="Nincada" buddy_km="1" gender_ratio="⚲" rarity="Normal" availability="Unreleased">
     <Type primary="Bug" secondary="Ghost" />
     <EvolvesFrom id="290" name="Nincada" candies="50" />
     <Stats>
       <BaseIV attack="153" defense="80" stamina="2" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="1.2" deviation="0.15" />
-      <Rates capture="0.05" flee="0.05" attack="0.1" dodge="0.15" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="1.2000000476837158" deviation="1.2000000476837158" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="421" hp="13" />
     </Stats>
   </Pokemon>
-  <Pokemon id="293" name="Whismur" family="Whismur" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="293" name="Whismur" family="Whismur" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="92" defense="42" stamina="128" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="16.3" deviation="2.0375" />
-      <Rates capture="0.5" flee="0.2" attack="0.3" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="16.299999237060547" deviation="16.299999237060547" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="603" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="294" name="Loudred" family="Whismur" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="294" name="Loudred" family="Whismur" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="293" name="Whismur" candies="12" />
     <Stats>
       <BaseIV attack="134" defense="81" stamina="168" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="40.5" deviation="5.0625" />
-      <Rates capture="0.25" flee="0.09" attack="0.3" dodge="0.15" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="40.5" deviation="40.5" />
+      <Rates capture="0.25" flee="0.090000003576278687" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="1233" hp="144" />
     </Stats>
   </Pokemon>
-  <Pokemon id="295" name="Exploud" family="Whismur" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="295" name="Exploud" family="Whismur" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="294" name="Loudred" candies="50" />
     <Stats>
       <BaseIV attack="179" defense="142" stamina="208" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="84" deviation="10.5" />
-      <Rates capture="0.125" flee="0.06" attack="0.4" dodge="0.15" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="84" deviation="84" />
+      <Rates capture="0.125" flee="0.059999998658895493" attack="0.40000000596046448" dodge="0.15000000596046448" />
       <Max cp="2267" hp="176" />
     </Stats>
   </Pokemon>
-  <Pokemon id="296" name="Makuhita" family="Makuhita" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="true">
+  <Pokemon id="296" name="Makuhita" family="Makuhita" gender_ratio="3 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="99" defense="54" stamina="144" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="86.4" deviation="10.8" />
-      <Rates capture="0.5" flee="0.1" attack="0.2" dodge="0.05" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="86.4000015258789" deviation="86.4000015258789" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="745" hp="125" />
     </Stats>
   </Pokemon>
-  <Pokemon id="297" name="Hariyama" family="Makuhita" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="true">
+  <Pokemon id="297" name="Hariyama" family="Makuhita" gender_ratio="3 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Fighting" />
     <EvolvesFrom id="296" name="Makuhita" candies="50" />
     <Stats>
       <BaseIV attack="209" defense="114" stamina="288" />
-      <Height standard="2.31" deviation="0.28875" />
-      <Weight standard="253.8" deviation="31.725" />
-      <Rates capture="0.2" flee="0.06" attack="0.2" dodge="0.05" />
+      <Height standard="2.309999942779541" deviation="2.309999942779541" />
+      <Weight standard="253.80000305175781" deviation="253.80000305175781" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="2765" hp="239" />
     </Stats>
   </Pokemon>
-  <Pokemon id="298" name="Azurill" family="Marill" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 5K">
+  <Pokemon id="298" name="Azurill" family="Marill" gender_ratio="1 : 3" rarity="Normal" availability="Hatch Only: 5K">
     <Type primary="Normal" secondary="Fairy" />
     <Stats>
       <BaseIV attack="36" defense="71" stamina="100" />
-      <Height standard="0.2" deviation="0.025" />
-      <Weight standard="2" deviation="0.25" />
-      <Rates capture="0.1" flee="0.04" attack="0.1" dodge="0.15" />
+      <Height standard="0.20000000298023224" deviation="0.20000000298023224" />
+      <Weight standard="2" deviation="2" />
+      <Rates capture="0.10000000149011612" flee="0.039999999105930328" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="316" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="299" name="Nosepass" family="Nosepass" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="299" name="Nosepass" family="Nosepass" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" />
     <Stats>
       <BaseIV attack="82" defense="236" stamina="60" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="97" deviation="12.125" />
-      <Rates capture="0.2" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="97" deviation="97" />
+      <Rates capture="0.20000000298023224" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="831" hp="59" />
     </Stats>
   </Pokemon>
-  <Pokemon id="300" name="Skitty" family="Skitty" buddy_km="3" gender_ratio="1 : 3" availability="General">
+  <Pokemon id="300" name="Skitty" family="Skitty" gender_ratio="1 : 3" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="84" defense="84" stamina="100" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="11" deviation="1.375" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="11" deviation="11" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="659" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="301" name="Delcatty" family="Skitty" buddy_km="3" gender_ratio="1 : 3" availability="General">
+  <Pokemon id="301" name="Delcatty" family="Skitty" gender_ratio="1 : 3" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="300" name="Skitty" candies="50" />
     <Stats>
       <BaseIV attack="132" defense="132" stamina="140" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="32.6" deviation="4.075" />
-      <Rates capture="0.2" flee="0.06" attack="0.2" dodge="0.15" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="32.599998474121094" deviation="32.599998474121094" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="1385" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="302" name="Sableye" family="Sableye" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="302" name="Sableye" family="Sableye" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Dark" secondary="Ghost" />
     <Stats>
       <BaseIV attack="141" defense="141" stamina="100" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="11" deviation="1.375" />
-      <Rates capture="0.2" flee="0.07" attack="0.3" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="11" deviation="11" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="1305" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="303" name="Mawile" family="Mawile" buddy_km="5" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="true">
+  <Pokemon id="303" name="Mawile" family="Mawile" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="Raid Boss Only" shiny="true">
     <Type primary="Steel" secondary="Fairy" />
     <Stats>
       <BaseIV attack="155" defense="155" stamina="100" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="11.5" deviation="1.4375" />
-      <Rates capture="0.5" flee="0.09" attack="0.2" dodge="0.2" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="11.5" deviation="11.5" />
+      <Rates capture="0.5" flee="0.090000003576278687" attack="0.20000000298023224" dodge="0.20000000298023224" />
       <Max cp="1484" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="304" name="Aron" family="Aron" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="304" name="Aron" family="Aron" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Steel" secondary="Rock" />
     <Stats>
       <BaseIV attack="121" defense="168" stamina="100" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="60" deviation="7.5" />
-      <Rates capture="0.5" flee="0.2" attack="0.2" dodge="0.05" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="60" deviation="60" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="1232" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="305" name="Lairon" family="Aron" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="305" name="Lairon" family="Aron" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Steel" secondary="Rock" />
     <EvolvesFrom id="304" name="Aron" candies="25" />
     <Stats>
       <BaseIV attack="158" defense="240" stamina="120" />
-      <Height standard="0.89" deviation="0.11125" />
-      <Weight standard="120" deviation="15" />
-      <Rates capture="0.25" flee="0.09" attack="0.2" dodge="0.1" />
+      <Height standard="0.88999998569488525" deviation="0.88999998569488525" />
+      <Weight standard="120" deviation="120" />
+      <Rates capture="0.25" flee="0.090000003576278687" attack="0.20000000298023224" dodge="0.10000000149011612" />
       <Max cp="2004" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="306" name="Aggron" family="Aron" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="306" name="Aggron" family="Aron" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Steel" secondary="Rock" />
     <EvolvesFrom id="305" name="Lairon" candies="100" />
     <Stats>
       <BaseIV attack="198" defense="314" stamina="140" />
-      <Height standard="2.11" deviation="0.26375" />
-      <Weight standard="360" deviation="45" />
-      <Rates capture="0.125" flee="0.06" attack="0.3" dodge="0.15" />
+      <Height standard="2.1099998950958252" deviation="2.1099998950958252" />
+      <Weight standard="360" deviation="360" />
+      <Rates capture="0.125" flee="0.059999998658895493" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="3004" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="307" name="Meditite" family="Meditite" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="307" name="Meditite" family="Meditite" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Fighting" secondary="Psychic" />
     <Stats>
       <BaseIV attack="78" defense="107" stamina="60" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="11.2" deviation="1.4" />
-      <Rates capture="0.5" flee="0.1" attack="0.2" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="11.199999809265137" deviation="11.199999809265137" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="555" hp="59" />
     </Stats>
   </Pokemon>
-  <Pokemon id="308" name="Medicham" family="Meditite" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="308" name="Medicham" family="Meditite" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Fighting" secondary="Psychic" />
     <EvolvesFrom id="307" name="Meditite" candies="50" />
     <Stats>
       <BaseIV attack="121" defense="152" stamina="120" />
-      <Height standard="1.3" deviation="0.1625" />
-      <Weight standard="31.5" deviation="3.9375" />
-      <Rates capture="0.2" flee="0.06" attack="0.2" dodge="0.15" />
+      <Height standard="1.2999999523162842" deviation="1.2999999523162842" />
+      <Weight standard="31.5" deviation="31.5" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="1275" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="309" name="Electrike" family="Electrike" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="309" name="Electrike" family="Electrike" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="123" defense="78" stamina="80" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="15.2" deviation="1.9" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.25" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="15.199999809265137" deviation="15.199999809265137" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.25" />
       <Max cp="810" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="310" name="Manectric" family="Electrike" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="310" name="Manectric" family="Electrike" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Electric" />
     <EvolvesFrom id="309" name="Electrike" candies="50" />
     <Stats>
       <BaseIV attack="215" defense="127" stamina="140" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="40.2" deviation="5.025" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.25" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="40.200000762939453" deviation="40.200000762939453" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.25" />
       <Max cp="2131" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="311" name="Plusle" family="Plusle" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="311" name="Plusle" family="Plusle" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="167" defense="147" stamina="120" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="4.2" deviation="0.525" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="4.1999998092651367" deviation="4.1999998092651367" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1681" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="312" name="Minun" family="Minun" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="312" name="Minun" family="Minun" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="147" defense="167" stamina="120" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="4.2" deviation="0.525" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="4.1999998092651367" deviation="4.1999998092651367" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1585" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="313" name="Volbeat" family="Volbeat" buddy_km="3" gender_ratio="♂" availability="Regional: Europe + Asia + Australia">
+  <Pokemon id="313" name="Volbeat" family="Volbeat" gender_ratio="♂" rarity="Normal" availability="Regional: Europe + Asia + Australia">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="143" defense="171" stamina="130" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="17.7" deviation="2.2125" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="17.700000762939453" deviation="17.700000762939453" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1620" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="314" name="Illumise" family="Illumise" buddy_km="3" gender_ratio="♀" availability="Regional: Americas + Africa">
+  <Pokemon id="314" name="Illumise" family="Illumise" gender_ratio="♀" rarity="Normal" availability="Regional: Americas + Africa">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="143" defense="171" stamina="130" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="17.7" deviation="2.2125" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="17.700000762939453" deviation="17.700000762939453" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1620" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="315" name="Roselia" family="Roselia" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="315" name="Roselia" family="Roselia" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
       <BaseIV attack="186" defense="148" stamina="100" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="2" deviation="0.25" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="2" deviation="2" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1718" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="316" name="Gulpin" family="Gulpin" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="316" name="Gulpin" family="Gulpin" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="80" defense="99" stamina="140" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="10.3" deviation="1.2875" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.1" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="10.300000190734863" deviation="10.300000190734863" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.10000000149011612" />
       <Max cp="788" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="317" name="Swalot" family="Gulpin" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="317" name="Swalot" family="Gulpin" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Poison" />
     <EvolvesFrom id="316" name="Gulpin" candies="50" />
     <Stats>
       <BaseIV attack="140" defense="159" stamina="200" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="80" deviation="10" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.1" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="80" deviation="80" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.10000000149011612" />
       <Max cp="1872" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="318" name="Carvanha" family="Carvanha" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="318" name="Carvanha" family="Carvanha" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Dark" />
     <Stats>
       <BaseIV attack="171" defense="39" stamina="90" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="20.8" deviation="2.6" />
-      <Rates capture="0.5" flee="0.1" attack="0.3" dodge="0.15" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="20.799999237060547" deviation="20.799999237060547" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="874" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="319" name="Sharpedo" family="Carvanha" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="319" name="Sharpedo" family="Carvanha" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Dark" />
     <EvolvesFrom id="318" name="Carvanha" candies="50" />
     <Stats>
       <BaseIV attack="243" defense="83" stamina="140" />
-      <Height standard="1.8" deviation="0.225" />
-      <Weight standard="88.8" deviation="11.1" />
-      <Rates capture="0.2" flee="0.06" attack="0.5" dodge="0.15" />
+      <Height standard="1.7999999523162842" deviation="1.7999999523162842" />
+      <Weight standard="88.800003051757812" deviation="88.800003051757812" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.5" dodge="0.15000000596046448" />
       <Max cp="1986" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="320" name="Wailmer" family="Wailmer" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="320" name="Wailmer" family="Wailmer" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="136" defense="68" stamina="260" />
-      <Height standard="2.01" deviation="0.25125" />
-      <Weight standard="130" deviation="16.25" />
-      <Rates capture="0.5" flee="0.1" attack="0.05" dodge="0.05" />
+      <Height standard="2.0099999904632568" deviation="2.0099999904632568" />
+      <Weight standard="130" deviation="130" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.05000000074505806" dodge="0.05000000074505806" />
       <Max cp="1424" hp="217" />
     </Stats>
   </Pokemon>
-  <Pokemon id="321" name="Wailord" family="Wailmer" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="321" name="Wailord" family="Wailmer" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Water" />
     <EvolvesFrom id="320" name="Wailmer" candies="400" />
     <Stats>
       <BaseIV attack="175" defense="87" stamina="340" />
-      <Height standard="14.5" deviation="1.8125" />
-      <Weight standard="398" deviation="49.75" />
-      <Rates capture="0.2" flee="0.06" attack="0.05" dodge="0" />
+      <Height standard="14.5" deviation="14.5" />
+      <Weight standard="398" deviation="398" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.05000000074505806" dodge="0" />
       <Max cp="2258" hp="280" />
     </Stats>
   </Pokemon>
-  <Pokemon id="322" name="Numel" family="Numel" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="322" name="Numel" family="Numel" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" secondary="Ground" />
     <Stats>
       <BaseIV attack="119" defense="82" stamina="120" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="24" deviation="3" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="24" deviation="24" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="957" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="323" name="Camerupt" family="Numel" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="323" name="Camerupt" family="Numel" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" secondary="Ground" />
     <EvolvesFrom id="322" name="Numel" candies="50" />
     <Stats>
       <BaseIV attack="194" defense="139" stamina="140" />
-      <Height standard="1.91" deviation="0.23875" />
-      <Weight standard="220" deviation="27.5" />
-      <Rates capture="0.2" flee="0.06" attack="0.2" dodge="0.15" />
+      <Height standard="1.9099999666213989" deviation="1.9099999666213989" />
+      <Weight standard="220" deviation="220" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2016" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="324" name="Torkoal" family="Torkoal" buddy_km="3" gender_ratio="1 : 1" availability="Regional: India + Thailand + Surrounding Area">
+  <Pokemon id="324" name="Torkoal" family="Torkoal" gender_ratio="1 : 1" rarity="Normal" availability="Regional: India + Thailand + Surrounding Area">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="151" defense="234" stamina="140" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="80.4" deviation="10.05" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="80.4000015258789" deviation="80.4000015258789" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2036" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="325" name="Spoink" family="Spoink" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="325" name="Spoink" family="Spoink" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="125" defense="145" stamina="120" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="30.6" deviation="3.825" />
-      <Rates capture="0.5" flee="0.1" attack="0.2" dodge="0.15" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="30.600000381469727" deviation="30.600000381469727" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="1285" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="326" name="Grumpig" family="Spoink" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="326" name="Grumpig" family="Spoink" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" />
     <EvolvesFrom id="325" name="Spoink" candies="50" />
     <Stats>
       <BaseIV attack="171" defense="211" stamina="160" />
-      <Height standard="0.89" deviation="0.11125" />
-      <Weight standard="71.5" deviation="8.9375" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="0.88999998569488525" deviation="0.88999998569488525" />
+      <Weight standard="71.5" deviation="71.5" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2310" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="327" name="Spinda" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="327" name="Spinda" family="Spinda" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="116" defense="116" stamina="120" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="5" deviation="0.625" />
-      <Rates capture="0.3" flee="0.09" attack="0.01" dodge="0.4" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="5" deviation="5" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.0099999997764825821" dodge="0.40000000596046448" />
       <Max cp="1088" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="328" name="Trapinch" family="Trapinch" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="328" name="Trapinch" family="Trapinch" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="162" defense="78" stamina="90" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="15" deviation="1.875" />
-      <Rates capture="0.4" flee="0.09" attack="0.2" dodge="0.05" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="15" deviation="15" />
+      <Rates capture="0.40000000596046448" flee="0.090000003576278687" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="1092" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="329" name="Vibrava" family="Trapinch" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="329" name="Vibrava" family="Trapinch" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ground" secondary="Dragon" />
     <EvolvesFrom id="328" name="Trapinch" candies="25" />
     <Stats>
       <BaseIV attack="134" defense="99" stamina="100" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="15.3" deviation="1.9125" />
-      <Rates capture="0.1" flee="0.06" attack="0.2" dodge="0.3" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="15.300000190734863" deviation="15.300000190734863" />
+      <Rates capture="0.10000000149011612" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.30000001192092896" />
       <Max cp="1065" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="330" name="Flygon" family="Trapinch" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="330" name="Flygon" family="Trapinch" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ground" secondary="Dragon" />
     <EvolvesFrom id="329" name="Vibrava" candies="100" />
     <Stats>
       <BaseIV attack="205" defense="168" stamina="160" />
-      <Height standard="2.01" deviation="0.25125" />
-      <Weight standard="82" deviation="10.25" />
-      <Rates capture="0.05" flee="0.05" attack="0.1" dodge="0.15" />
+      <Height standard="2.0099999904632568" deviation="2.0099999904632568" />
+      <Weight standard="82" deviation="82" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2458" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="331" name="Cacnea" family="Cacnea" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="331" name="Cacnea" family="Cacnea" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="156" defense="74" stamina="100" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="51.3" deviation="6.4125" />
-      <Rates capture="0.5" flee="0.1" attack="0.2" dodge="0.1" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="51.299999237060547" deviation="51.299999237060547" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.20000000298023224" dodge="0.10000000149011612" />
       <Max cp="1080" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="332" name="Cacturne" family="Cacnea" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="332" name="Cacturne" family="Cacnea" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Dark" />
     <EvolvesFrom id="331" name="Cacnea" candies="50" />
     <Stats>
       <BaseIV attack="221" defense="115" stamina="140" />
-      <Height standard="1.3" deviation="0.1625" />
-      <Weight standard="77.4" deviation="9.675" />
-      <Rates capture="0.2" flee="0.06" attack="0.3" dodge="0.1" />
+      <Height standard="1.2999999523162842" deviation="1.2999999523162842" />
+      <Weight standard="77.4000015258789" deviation="77.4000015258789" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.30000001192092896" dodge="0.10000000149011612" />
       <Max cp="2092" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="333" name="Swablu" family="Swablu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="333" name="Swablu" family="Swablu" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="76" defense="139" stamina="90" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="1.2" deviation="0.15" />
-      <Rates capture="0.5" flee="0.1" attack="0.05" dodge="0.2" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="1.2000000476837158" deviation="1.2000000476837158" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.05000000074505806" dodge="0.20000000298023224" />
       <Max cp="722" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="334" name="Altaria" family="Swablu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="334" name="Altaria" family="Swablu" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Dragon" secondary="Flying" />
     <EvolvesFrom id="333" name="Swablu" candies="400" />
     <Stats>
       <BaseIV attack="141" defense="208" stamina="150" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="20.6" deviation="2.575" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="20.600000381469727" deviation="20.600000381469727" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1868" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="335" name="Zangoose" family="Zangoose" buddy_km="3" gender_ratio="1 : 1" availability="Regional: Europe + Asia + Australia">
+  <Pokemon id="335" name="Zangoose" family="Zangoose" gender_ratio="1 : 1" rarity="Normal" availability="Regional: Europe + Asia + Australia">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="222" defense="124" stamina="146" />
-      <Height standard="1.3" deviation="0.1625" />
-      <Weight standard="40.3" deviation="5.0375" />
-      <Rates capture="0.3" flee="0.09" attack="0.2" dodge="0.15" />
+      <Height standard="1.2999999523162842" deviation="1.2999999523162842" />
+      <Weight standard="40.299999237060547" deviation="40.299999237060547" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2214" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="336" name="Seviper" family="Seviper" buddy_km="3" gender_ratio="1 : 1" availability="Regional: Americas + Africa">
+  <Pokemon id="336" name="Seviper" family="Seviper" gender_ratio="1 : 1" rarity="Normal" availability="Regional: Americas + Africa">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="196" defense="118" stamina="146" />
-      <Height standard="2.69" deviation="0.33625" />
-      <Weight standard="52.5" deviation="6.5625" />
-      <Rates capture="0.3" flee="0.09" attack="0.2" dodge="0.15" />
+      <Height standard="2.690000057220459" deviation="2.690000057220459" />
+      <Weight standard="52.5" deviation="52.5" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="1928" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="337" name="Lunatone" family="Lunatone" buddy_km="3" gender_ratio="⚲" availability="Regional: Rotating">
+  <Pokemon id="337" name="Lunatone" family="Lunatone" gender_ratio="⚲" rarity="Normal" availability="Regional: Rotating">
     <Type primary="Rock" secondary="Psychic" />
     <Stats>
       <BaseIV attack="178" defense="163" stamina="180" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="168" deviation="21" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.1" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="168" deviation="168" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.10000000149011612" />
       <Max cp="2245" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="338" name="Solrock" family="Solrock" buddy_km="3" gender_ratio="⚲" availability="Regional: Rotating">
+  <Pokemon id="338" name="Solrock" family="Solrock" gender_ratio="⚲" rarity="Normal" availability="Regional: Rotating">
     <Type primary="Rock" secondary="Psychic" />
     <Stats>
       <BaseIV attack="178" defense="163" stamina="180" />
-      <Height standard="1.19" deviation="0.14875" />
-      <Weight standard="154" deviation="19.25" />
-      <Rates capture="0.3" flee="0.09" attack="0.1" dodge="0.1" />
+      <Height standard="1.190000057220459" deviation="1.190000057220459" />
+      <Weight standard="154" deviation="154" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.10000000149011612" dodge="0.10000000149011612" />
       <Max cp="2245" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="339" name="Barboach" family="Barboach" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="339" name="Barboach" family="Barboach" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Ground" />
     <Stats>
       <BaseIV attack="93" defense="83" stamina="100" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="1.9" deviation="0.2375" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="1.8999999761581421" deviation="1.8999999761581421" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="716" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="340" name="Whiscash" family="Barboach" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="340" name="Whiscash" family="Barboach" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="339" name="Barboach" candies="50" />
     <Stats>
       <BaseIV attack="151" defense="142" stamina="220" />
-      <Height standard="0.89" deviation="0.11125" />
-      <Weight standard="23.6" deviation="2.95" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="0.88999998569488525" deviation="0.88999998569488525" />
+      <Weight standard="23.600000381469727" deviation="23.600000381469727" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1991" hp="185" />
     </Stats>
   </Pokemon>
-  <Pokemon id="341" name="Corphish" family="Corphish" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="341" name="Corphish" family="Corphish" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="141" defense="113" stamina="86" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="11.5" deviation="1.4375" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="11.5" deviation="11.5" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1107" hp="79" />
     </Stats>
   </Pokemon>
-  <Pokemon id="342" name="Crawdaunt" family="Corphish" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="342" name="Crawdaunt" family="Corphish" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Dark" />
     <EvolvesFrom id="341" name="Corphish" candies="50" />
     <Stats>
       <BaseIV attack="224" defense="156" stamina="126" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="32.8" deviation="4.1" />
-      <Rates capture="0.2" flee="0.06" attack="0.2" dodge="0.15" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="32.799999237060547" deviation="32.799999237060547" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2317" hp="111" />
     </Stats>
   </Pokemon>
-  <Pokemon id="343" name="Baltoy" family="Baltoy" buddy_km="3" gender_ratio="⚲" availability="General">
+  <Pokemon id="343" name="Baltoy" family="Baltoy" gender_ratio="⚲" rarity="Normal" availability="General">
     <Type primary="Ground" secondary="Psychic" />
     <Stats>
       <BaseIV attack="77" defense="131" stamina="80" />
-      <Height standard="0.51" deviation="0.06375" />
-      <Weight standard="21.5" deviation="2.6875" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.50999999046325684" deviation="0.50999999046325684" />
+      <Weight standard="21.5" deviation="21.5" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="676" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="344" name="Claydol" family="Baltoy" buddy_km="3" gender_ratio="⚲" availability="General">
+  <Pokemon id="344" name="Claydol" family="Baltoy" gender_ratio="⚲" rarity="Normal" availability="General">
     <Type primary="Ground" secondary="Psychic" />
     <EvolvesFrom id="343" name="Baltoy" candies="50" />
     <Stats>
       <BaseIV attack="140" defense="236" stamina="120" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="108" deviation="13.5" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="108" deviation="108" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1782" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="345" name="Lileep" family="Lileep" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="345" name="Lileep" family="Lileep" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" secondary="Grass" />
     <Stats>
       <BaseIV attack="105" defense="154" stamina="132" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="23.8" deviation="2.975" />
-      <Rates capture="0.5" flee="0.1" attack="0.2" dodge="0.05" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="23.799999237060547" deviation="23.799999237060547" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="1181" hp="116" />
     </Stats>
   </Pokemon>
-  <Pokemon id="346" name="Cradily" family="Lileep" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="346" name="Cradily" family="Lileep" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" secondary="Grass" />
     <EvolvesFrom id="345" name="Lileep" candies="50" />
     <Stats>
       <BaseIV attack="152" defense="198" stamina="172" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="60.4" deviation="7.55" />
-      <Rates capture="0.2" flee="0.06" attack="0.2" dodge="0.05" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="60.400001525878906" deviation="60.400001525878906" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="2081" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="347" name="Anorith" family="Anorith" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="347" name="Anorith" family="Anorith" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" secondary="Bug" />
     <Stats>
       <BaseIV attack="176" defense="100" stamina="90" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="12.5" deviation="1.5625" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="12.5" deviation="12.5" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1310" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="348" name="Armaldo" family="Anorith" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="348" name="Armaldo" family="Anorith" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" secondary="Bug" />
     <EvolvesFrom id="347" name="Anorith" candies="50" />
     <Stats>
       <BaseIV attack="222" defense="183" stamina="150" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="68.2" deviation="8.525" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="68.199996948242188" deviation="68.199996948242188" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2675" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="349" name="Feebas" family="Feebas" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="349" name="Feebas" family="Feebas" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="29" defense="102" stamina="40" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="7.4" deviation="0.925" />
-      <Rates capture="0.7" flee="0.15" attack="0.1" dodge="0.1" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="7.4000000953674316" deviation="7.4000000953674316" />
+      <Rates capture="0.699999988079071" flee="0.15000000596046448" attack="0.10000000149011612" dodge="0.10000000149011612" />
       <Max cp="220" hp="43" />
     </Stats>
   </Pokemon>
-  <Pokemon id="350" name="Milotic" family="Feebas" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="350" name="Milotic" family="Feebas" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="349" name="Feebas" candies="100" />
     <Stats>
       <BaseIV attack="192" defense="242" stamina="190" />
-      <Height standard="6.2" deviation="0.775" />
-      <Weight standard="162" deviation="20.25" />
-      <Rates capture="0.1" flee="0.07" attack="0.1" dodge="0.15" />
+      <Height standard="6.1999998092651367" deviation="6.1999998092651367" />
+      <Weight standard="162" deviation="162" />
+      <Rates capture="0.10000000149011612" flee="0.070000000298023224" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2967" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform" family="Castform" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="351" name="Castform" family="Castform" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="0.8" deviation="0.1" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="0.800000011920929" deviation="0.800000011920929" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Normal)" form="Normal" family="Castform" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="351" name="Castform (Normal)" form="Normal" family="Castform" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="0.8" deviation="0.1" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="0.800000011920929" deviation="0.800000011920929" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Rainy)" form="Rainy" family="Castform" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="351" name="Castform (Rainy)" form="Rainy" family="Castform" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="0.8" deviation="0.1" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="0.800000011920929" deviation="0.800000011920929" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Snowy)" form="Snowy" family="Castform" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="351" name="Castform (Snowy)" form="Snowy" family="Castform" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="0.8" deviation="0.1" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="0.800000011920929" deviation="0.800000011920929" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Sunny)" form="Sunny" family="Castform" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="351" name="Castform (Sunny)" form="Sunny" family="Castform" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="0.8" deviation="0.1" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="0.800000011920929" deviation="0.800000011920929" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="352" name="Kecleon" family="Kecleon" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="352" name="Kecleon" family="Kecleon" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="161" defense="212" stamina="120" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="22" deviation="2.75" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="22" deviation="22" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1924" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="353" name="Shuppet" family="Shuppet" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="353" name="Shuppet" family="Shuppet" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Ghost" />
     <Stats>
       <BaseIV attack="138" defense="66" stamina="88" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="2.3" deviation="0.2875" />
-      <Rates capture="0.4" flee="0.1" attack="0.1" dodge="0.2" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="2.2999999523162842" deviation="2.2999999523162842" />
+      <Rates capture="0.40000000596046448" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.20000000298023224" />
       <Max cp="872" hp="81" />
     </Stats>
   </Pokemon>
-  <Pokemon id="354" name="Banette" family="Shuppet" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="354" name="Banette" family="Shuppet" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Ghost" />
     <EvolvesFrom id="353" name="Shuppet" candies="50" />
     <Stats>
       <BaseIV attack="218" defense="127" stamina="128" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="12.5" deviation="1.5625" />
-      <Rates capture="0.2" flee="0.07" attack="0.2" dodge="0.15" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="12.5" deviation="12.5" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2073" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="355" name="Duskull" family="Duskull" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="355" name="Duskull" family="Duskull" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Ghost" />
     <Stats>
       <BaseIV attack="70" defense="162" stamina="40" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="15" deviation="1.875" />
-      <Rates capture="0.4" flee="0.1" attack="0.1" dodge="0.2" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="15" deviation="15" />
+      <Rates capture="0.40000000596046448" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.20000000298023224" />
       <Max cp="523" hp="43" />
     </Stats>
   </Pokemon>
-  <Pokemon id="356" name="Dusclops" family="Duskull" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="356" name="Dusclops" family="Duskull" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Ghost" />
     <EvolvesFrom id="355" name="Duskull" candies="50" />
     <Stats>
       <BaseIV attack="124" defense="234" stamina="80" />
-      <Height standard="1.6" deviation="0.2" />
-      <Weight standard="30.6" deviation="3.825" />
-      <Rates capture="0.2" flee="0.07" attack="0.2" dodge="0.15" />
+      <Height standard="1.6000000238418579" deviation="1.6000000238418579" />
+      <Weight standard="30.600000381469727" deviation="30.600000381469727" />
+      <Rates capture="0.20000000298023224" flee="0.070000000298023224" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="1335" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="357" name="Tropius" family="Tropius" buddy_km="5" gender_ratio="1 : 1" availability="Regional: Africa + South Spain + Crete">
+  <Pokemon id="357" name="Tropius" family="Tropius" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="Regional: Africa + South Spain + Crete">
     <Type primary="Grass" secondary="Flying" />
     <Stats>
       <BaseIV attack="136" defense="165" stamina="198" />
-      <Height standard="2.01" deviation="0.25125" />
-      <Weight standard="100" deviation="12.5" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="2.0099999904632568" deviation="2.0099999904632568" />
+      <Weight standard="100" deviation="100" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1846" hp="168" />
     </Stats>
   </Pokemon>
-  <Pokemon id="358" name="Chimecho" family="Chimecho" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="358" name="Chimecho" family="Chimecho" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="175" defense="174" stamina="150" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="1" deviation="0.125" />
-      <Rates capture="0.3" flee="0.1" attack="0.05" dodge="0.3" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="1" deviation="1" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.05000000074505806" dodge="0.30000001192092896" />
       <Max cp="2095" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="359" name="Absol" family="Absol" buddy_km="5" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="true">
+  <Pokemon id="359" name="Absol" family="Absol" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="Raid Boss Only" shiny="true">
     <Type primary="Dark" />
     <Stats>
       <BaseIV attack="246" defense="120" stamina="130" />
-      <Height standard="1.19" deviation="0.14875" />
-      <Weight standard="47" deviation="5.875" />
-      <Rates capture="0.5" flee="0.1" attack="0.2" dodge="0.15" />
+      <Height standard="1.190000057220459" deviation="1.190000057220459" />
+      <Weight standard="47" deviation="47" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="2280" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="360" name="Wynaut" family="Wobbuffet" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 5K" shiny="true">
+  <Pokemon id="360" name="Wynaut" family="Wobbuffet" gender_ratio="1 : 1" rarity="Normal" availability="Hatch Only: 5K" shiny="true">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="41" defense="86" stamina="190" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="14" deviation="1.75" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="14" deviation="14" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="503" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="361" name="Snorunt" family="Snorunt" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="361" name="Snorunt" family="Snorunt" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="95" defense="95" stamina="100" />
-      <Height standard="0.71" deviation="0.08875" />
-      <Weight standard="16.8" deviation="2.1" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0.1" />
+      <Height standard="0.70999997854232788" deviation="0.70999997854232788" />
+      <Weight standard="16.799999237060547" deviation="16.799999237060547" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.10000000149011612" />
       <Max cp="772" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="362" name="Glalie" family="Snorunt" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
+  <Pokemon id="362" name="Glalie" family="Snorunt" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Ice" />
     <EvolvesFrom id="361" name="Snorunt" candies="50" />
     <Stats>
       <BaseIV attack="162" defense="162" stamina="160" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="256.5" deviation="32.0625" />
-      <Rates capture="0.2" flee="0.06" attack="0.2" dodge="0.15" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="256.5" deviation="256.5" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.15000000596046448" />
       <Max cp="1945" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="363" name="Spheal" family="Spheal" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="363" name="Spheal" family="Spheal" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" secondary="Water" />
     <Stats>
       <BaseIV attack="95" defense="90" stamina="140" />
-      <Height standard="0.79" deviation="0.09875" />
-      <Weight standard="39.5" deviation="4.9375" />
-      <Rates capture="0.5" flee="0.1" attack="0.2" dodge="0.05" />
+      <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
+      <Weight standard="39.5" deviation="39.5" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="876" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="364" name="Sealeo" family="Spheal" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="364" name="Sealeo" family="Spheal" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" secondary="Water" />
     <EvolvesFrom id="363" name="Spheal" candies="25" />
     <Stats>
       <BaseIV attack="137" defense="132" stamina="180" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="87.6" deviation="10.95" />
-      <Rates capture="0.25" flee="0.07" attack="0.3" dodge="0.05" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="87.5999984741211" deviation="87.5999984741211" />
+      <Rates capture="0.25" flee="0.070000000298023224" attack="0.30000001192092896" dodge="0.05000000074505806" />
       <Max cp="1607" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="365" name="Walrein" family="Spheal" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="365" name="Walrein" family="Spheal" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" secondary="Water" />
     <EvolvesFrom id="364" name="Sealeo" candies="100" />
     <Stats>
       <BaseIV attack="182" defense="176" stamina="220" />
-      <Height standard="1.4" deviation="0.175" />
-      <Weight standard="150.6" deviation="18.825" />
-      <Rates capture="0.125" flee="0.05" attack="0.3" dodge="0.05" />
+      <Height standard="1.3999999761581421" deviation="1.3999999761581421" />
+      <Weight standard="150.60000610351563" deviation="150.60000610351563" />
+      <Rates capture="0.125" flee="0.05000000074505806" attack="0.30000001192092896" dodge="0.05000000074505806" />
       <Max cp="2606" hp="185" />
     </Stats>
   </Pokemon>
-  <Pokemon id="366" name="Clamperl" family="Clamperl" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="366" name="Clamperl" family="Clamperl" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="133" defense="149" stamina="70" />
-      <Height standard="0.41" deviation="0.05125" />
-      <Weight standard="52.5" deviation="6.5625" />
-      <Rates capture="0.5" flee="0.1" attack="0.1" dodge="0" />
+      <Height standard="0.40999999642372131" deviation="0.40999999642372131" />
+      <Weight standard="52.5" deviation="52.5" />
+      <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0" />
       <Max cp="1091" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="367" name="Huntail" family="Clamperl" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="367" name="Huntail" family="Clamperl" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Water" />
     <EvolvesFrom id="366" name="Clamperl" candies="50" />
     <Stats>
       <BaseIV attack="197" defense="194" stamina="110" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="27" deviation="3.375" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="27" deviation="27" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2140" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="368" name="Gorebyss" family="Clamperl" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="368" name="Gorebyss" family="Clamperl" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Water" />
     <EvolvesFrom id="366" name="Clamperl" candies="50" />
     <Stats>
       <BaseIV attack="211" defense="194" stamina="110" />
-      <Height standard="1.8" deviation="0.225" />
-      <Weight standard="22.6" deviation="2.825" />
-      <Rates capture="0.2" flee="0.06" attack="0.1" dodge="0.15" />
+      <Height standard="1.7999999523162842" deviation="1.7999999523162842" />
+      <Weight standard="22.600000381469727" deviation="22.600000381469727" />
+      <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2281" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="369" name="Relicanth" family="Relicanth" buddy_km="5" gender_ratio="7 : 1" availability="Regional: New Zealand + Fiji">
+  <Pokemon id="369" name="Relicanth" family="Relicanth" buddy_km="1" gender_ratio="7 : 1" rarity="Normal" availability="Regional: New Zealand + Fiji">
     <Type primary="Water" secondary="Rock" />
     <Stats>
       <BaseIV attack="162" defense="234" stamina="200" />
-      <Height standard="0.99" deviation="0.12375" />
-      <Weight standard="23.4" deviation="2.925" />
-      <Rates capture="0.9" flee="0.01" attack="0.05" dodge="0.05" />
+      <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
+      <Weight standard="23.399999618530273" deviation="23.399999618530273" />
+      <Rates capture="0.89999997615814209" flee="0.0099999997764825821" attack="0.05000000074505806" dodge="0.05000000074505806" />
       <Max cp="2557" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="370" name="Luvdisc" family="Luvdisc" buddy_km="3" gender_ratio="1 : 3" availability="General" shiny="true">
+  <Pokemon id="370" name="Luvdisc" family="Luvdisc" gender_ratio="1 : 3" rarity="Normal" availability="General" shiny="true">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="81" defense="134" stamina="86" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="8.7" deviation="1.0875" />
-      <Rates capture="0.3" flee="0.1" attack="0.1" dodge="0.15" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="8.6999998092651367" deviation="8.6999998092651367" />
+      <Rates capture="0.30000001192092896" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="735" hp="79" />
     </Stats>
   </Pokemon>
-  <Pokemon id="371" name="Bagon" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="371" name="Bagon" family="Bagon" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Dragon" />
     <Stats>
       <BaseIV attack="134" defense="107" stamina="90" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="42.1" deviation="5.2625" />
-      <Rates capture="0.4" flee="0.09" attack="0.2" dodge="0.1" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="42.099998474121094" deviation="42.099998474121094" />
+      <Rates capture="0.40000000596046448" flee="0.090000003576278687" attack="0.20000000298023224" dodge="0.10000000149011612" />
       <Max cp="1053" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="372" name="Shelgon" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="372" name="Shelgon" family="Bagon" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Dragon" />
     <EvolvesFrom id="371" name="Bagon" candies="25" />
     <Stats>
       <BaseIV attack="172" defense="179" stamina="130" />
-      <Height standard="1.09" deviation="0.13625" />
-      <Weight standard="110.5" deviation="13.8125" />
-      <Rates capture="0.1" flee="0.06" attack="0.3" dodge="0.05" />
+      <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
+      <Weight standard="110.5" deviation="110.5" />
+      <Rates capture="0.10000000149011612" flee="0.059999998658895493" attack="0.30000001192092896" dodge="0.05000000074505806" />
       <Max cp="1958" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="373" name="Salamence" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="373" name="Salamence" family="Bagon" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Dragon" secondary="Flying" />
     <EvolvesFrom id="372" name="Shelgon" candies="100" />
     <Stats>
       <BaseIV attack="277" defense="168" stamina="190" />
-      <Height standard="1.5" deviation="0.1875" />
-      <Weight standard="102.6" deviation="12.825" />
-      <Rates capture="0.05" flee="0.05" attack="0.3" dodge="0.15" />
+      <Height standard="1.5" deviation="1.5" />
+      <Weight standard="102.59999847412109" deviation="102.59999847412109" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="3532" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="374" name="Beldum" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General">
+  <Pokemon id="374" name="Beldum" family="Beldum" buddy_km="1" gender_ratio="⚲" rarity="Normal" availability="General">
     <Type primary="Steel" secondary="Psychic" />
     <Stats>
       <BaseIV attack="96" defense="141" stamina="80" />
-      <Height standard="0.61" deviation="0.07625" />
-      <Weight standard="95.2" deviation="11.9" />
-      <Rates capture="0.4" flee="0.09" attack="0.2" dodge="0.1" />
+      <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
+      <Weight standard="95.199996948242188" deviation="95.199996948242188" />
+      <Rates capture="0.40000000596046448" flee="0.090000003576278687" attack="0.20000000298023224" dodge="0.10000000149011612" />
       <Max cp="843" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="375" name="Metang" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General">
+  <Pokemon id="375" name="Metang" family="Beldum" buddy_km="1" gender_ratio="⚲" rarity="Normal" availability="General">
     <Type primary="Steel" secondary="Psychic" />
     <EvolvesFrom id="374" name="Beldum" candies="25" />
     <Stats>
       <BaseIV attack="138" defense="185" stamina="120" />
-      <Height standard="1.19" deviation="0.14875" />
-      <Weight standard="202.5" deviation="25.3125" />
-      <Rates capture="0.1" flee="0.06" attack="0.2" dodge="0.1" />
+      <Height standard="1.190000057220459" deviation="1.190000057220459" />
+      <Weight standard="202.5" deviation="202.5" />
+      <Rates capture="0.10000000149011612" flee="0.059999998658895493" attack="0.20000000298023224" dodge="0.10000000149011612" />
       <Max cp="1570" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="376" name="Metagross" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General">
+  <Pokemon id="376" name="Metagross" family="Beldum" buddy_km="1" gender_ratio="⚲" rarity="Normal" availability="General">
     <Type primary="Steel" secondary="Psychic" />
     <EvolvesFrom id="375" name="Metang" candies="100" />
     <Stats>
       <BaseIV attack="257" defense="247" stamina="160" />
-      <Height standard="1.6" deviation="0.2" />
-      <Weight standard="550" deviation="68.75" />
-      <Rates capture="0.05" flee="0.05" attack="0.3" dodge="0.15" />
+      <Height standard="1.6000000238418579" deviation="1.6000000238418579" />
+      <Weight standard="550" deviation="550" />
+      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="3637" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="377" name="Regirock" family="Regirock" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="377" name="Regirock" family="Regirock" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
     <Type primary="Rock" />
     <Stats>
       <BaseIV attack="179" defense="356" stamina="160" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="230" deviation="28.75" />
-      <Rates capture="0.02" flee="0.01" attack="0.2" dodge="0.05" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="230" deviation="230" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="3087" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="378" name="Regice" family="Regice" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="378" name="Regice" family="Regice" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="179" defense="356" stamina="160" />
-      <Height standard="1.8" deviation="0.225" />
-      <Weight standard="175" deviation="21.875" />
-      <Rates capture="0.02" flee="0.01" attack="0.2" dodge="0.05" />
+      <Height standard="1.7999999523162842" deviation="1.7999999523162842" />
+      <Weight standard="175" deviation="175" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="3087" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="379" name="Registeel" family="Registeel" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="379" name="Registeel" family="Registeel" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
     <Type primary="Steel" />
     <Stats>
       <BaseIV attack="143" defense="285" stamina="160" />
-      <Height standard="1.91" deviation="0.23875" />
-      <Weight standard="205" deviation="25.625" />
-      <Rates capture="0.02" flee="0.01" attack="0.2" dodge="0.05" />
+      <Height standard="1.9099999666213989" deviation="1.9099999666213989" />
+      <Weight standard="205" deviation="205" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.20000000298023224" dodge="0.05000000074505806" />
       <Max cp="2261" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="380" name="Latias" family="Latias" buddy_km="20" gender_ratio="♀" rarity="Legendary" availability="Raid Boss Only Regional: Rotating: Americas + Africa / Europe + Asia + Pacific">
+  <Pokemon id="380" name="Latias" family="Latias" buddy_km="5" gender_ratio="♀" rarity="Legendary" availability="Raid Boss Only Regional: Rotating: Americas + Africa / Europe + Asia + Pacific">
     <Type primary="Dragon" secondary="Psychic" />
     <Stats>
       <BaseIV attack="228" defense="268" stamina="160" />
-      <Height standard="1.4" deviation="0.175" />
-      <Weight standard="40" deviation="5" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="1.3999999761581421" deviation="1.3999999761581421" />
+      <Weight standard="40" deviation="40" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="3377" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="381" name="Latios" family="Latios" buddy_km="20" gender_ratio="♂" rarity="Legendary" availability="Raid Boss Only Regional: Rotating: Europe + Asia + Pacific / Americas + Africa">
+  <Pokemon id="381" name="Latios" family="Latios" buddy_km="5" gender_ratio="♂" rarity="Legendary" availability="Raid Boss Only Regional: Rotating: Europe + Asia + Pacific / Americas + Africa">
     <Type primary="Dragon" secondary="Psychic" />
     <Stats>
       <BaseIV attack="268" defense="228" stamina="160" />
-      <Height standard="2.01" deviation="0.25125" />
-      <Weight standard="60" deviation="7.5" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="2.0099999904632568" deviation="2.0099999904632568" />
+      <Weight standard="60" deviation="60" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="3644" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="382" name="Kyogre" family="Kyogre" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="382" name="Kyogre" family="Kyogre" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="true">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="270" defense="251" stamina="182" />
-      <Height standard="4.5" deviation="0.5625" />
-      <Weight standard="352" deviation="44" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="4.5" deviation="4.5" />
+      <Weight standard="352" deviation="352" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="4074" hp="155" />
     </Stats>
   </Pokemon>
-  <Pokemon id="383" name="Groudon" family="Groudon" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="383" name="Groudon" family="Groudon" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="270" defense="251" stamina="182" />
-      <Height standard="3.51" deviation="0.43875" />
-      <Weight standard="950" deviation="118.75" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="3.5099999904632568" deviation="3.5099999904632568" />
+      <Weight standard="950" deviation="950" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="4074" hp="155" />
     </Stats>
   </Pokemon>
-  <Pokemon id="384" name="Rayquaza" family="Rayquaza" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="384" name="Rayquaza" family="Rayquaza" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
     <Type primary="Dragon" secondary="Flying" />
     <Stats>
       <BaseIV attack="284" defense="170" stamina="191" />
-      <Height standard="7.01" deviation="0.87625" />
-      <Weight standard="206.5" deviation="25.8125" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="7.0100002288818359" deviation="7.0100002288818359" />
+      <Weight standard="206.5" deviation="206.5" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="3645" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="385" name="Jirachi" family="Jirachi" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="385" name="Jirachi" family="Jirachi" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Steel" secondary="Psychic" />
     <Stats>
       <BaseIV attack="210" defense="210" stamina="200" />
-      <Height standard="0.3" deviation="0.0375" />
-      <Weight standard="1.1" deviation="0.1375" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
+      <Weight standard="1.1000000238418579" deviation="1.1000000238418579" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="3090" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys" family="Deoxys" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="60.8" deviation="7.6" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="60.799999237060547" deviation="60.799999237060547" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Attack)" form="Attack" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Attack)" form="Attack" family="Deoxys" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="60.8" deviation="7.6" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="60.799999237060547" deviation="60.799999237060547" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Defense)" form="Defense" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Defense)" form="Defense" family="Deoxys" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="60.8" deviation="7.6" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="60.799999237060547" deviation="60.799999237060547" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Normal)" form="Normal" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Normal)" form="Normal" family="Deoxys" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="60.8" deviation="7.6" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="60.799999237060547" deviation="60.799999237060547" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Speed)" form="Speed" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Speed)" form="Speed" family="Deoxys" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
-      <Height standard="1.7" deviation="0.2125" />
-      <Weight standard="60.8" deviation="7.6" />
-      <Rates capture="0.02" flee="0.01" attack="0.1" dodge="0.15" />
+      <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
+      <Weight standard="60.799999237060547" deviation="60.799999237060547" />
+      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>

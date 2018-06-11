@@ -63,10 +63,10 @@
         <br />
         <hr />
         <h2 id="anchor_sortorderandroid">
-          <xsl:text>Sort Order for Names in Pokemon Go on Android</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'NAMING_SORT_ORDER'" />
           </xsl:call-template>
+          <xsl:text>Sort Order for Names in Pokemon Go on Android</xsl:text>
         </h2>
         <div id="NAMING_SORT_ORDER" class="INDENT">
           <p>
@@ -379,10 +379,10 @@
         <br />
         <hr />
         <h2 id="anchor_numerics">
-          <xsl:text>Numerics</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'NAMING_NUMERICS'" />
           </xsl:call-template>
+          <xsl:text>Numerics</xsl:text>
         </h2>
         <div id="NAMING_NUMERICS" class="INDENT">
           <p>
@@ -849,10 +849,10 @@
         <br />
         <hr />
         <h2 id="anchor_examples">
-          Examples:
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'NAMING_EXAMPLES'" />
           </xsl:call-template>
+          <xsl:text>Examples:</xsl:text>
         </h2>
         <div id="NAMING_EXAMPLES">
           <table>

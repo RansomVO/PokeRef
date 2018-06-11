@@ -54,10 +54,10 @@
         <xsl:apply-templates select="News" />
 
         <h2 id="anchor_sections">
-          <u>Sections</u>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'HOME_SECTIONS'" />
           </xsl:call-template>
+          <u>Sections</u>
         </h2>
         <div id="HOME_SECTIONS">
           <p>
@@ -111,10 +111,10 @@
         <br />
         <hr />
         <h2 id="anchor_quick">
-          <u>Quick Access</u>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'HOME_QUICK_ACCESS'" />
           </xsl:call-template>
+          <u>Quick Access</u>
         </h2>
         <div id="HOME_QUICK_ACCESS">
           <p>
@@ -124,10 +124,10 @@
           <div class="INDENT">
             <div class="SECTION">
               <h2 id="anchor_raidbosses">
-                <a href="charts/raidboss">Possible IVs for Raid Bosses</a>
                 <xsl:call-template name="Collapser">
                   <xsl:with-param name="CollapseeID" select="'HOME_RAID_BOSSES'" />
                 </xsl:call-template>
+                <a href="charts/raidboss">Possible IVs for Raid Bosses</a>
               </h2>
               <div id="HOME_RAID_BOSSES">
                 <p>
@@ -146,10 +146,10 @@
 
             <div class="SECTION">
               <h2 id="anchor_pokecharts">
-                <a href="charts/pokechart">Pokemon Chart</a>
                 <xsl:call-template name="Collapser">
                   <xsl:with-param name="CollapseeID" select="'HOME_POKECHART'" />
                 </xsl:call-template>
+                <a href="charts/pokechart">Pokemon Chart</a>
               </h2>
               <div id="HOME_POKECHART">
                 <p>
@@ -164,11 +164,11 @@
 
             <div class="SECTION">
               <h2 id="anchor_fieldresearch">
-                <a href="charts/fieldresearch">Field Research</a>
-                <span class="NOTE TODO">(Beta)</span>
                 <xsl:call-template name="Collapser">
                   <xsl:with-param name="CollapseeID" select="'HOME_FIELD_RESEARCH'" />
                 </xsl:call-template>
+                <a href="charts/fieldresearch">Field Research</a>
+                <span class="NOTE TODO">(Beta)</span>
               </h2>
               <div id="HOME_FIELD_RESEARCH">
                 <p>
@@ -251,10 +251,10 @@
       ]]>
     </script>
     <h2 id="anchor_news" class="NEWS_TITLE">
-      <xsl:text>Latest News!</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'HOME_NEWS'" />
       </xsl:call-template>
+      <xsl:text>Latest News!</xsl:text>
     </h2>
     <div id="HOME_NEWS" class="NEWS">
       <xsl:apply-templates select="Article" />

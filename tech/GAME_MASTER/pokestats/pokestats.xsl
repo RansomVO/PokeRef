@@ -68,10 +68,10 @@
 
   <xsl:template name="CreateKey">
     <h2>
-      <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'POKESTAT_KEY'" />
       </xsl:call-template>
+      <xsl:text>Key</xsl:text>
     </h2>
     <div id="POKESTAT_KEY" style="margin-top:.5em;">
       <xsl:call-template name="PokemonImageKey" />
@@ -226,9 +226,10 @@
                     <td>
                       <xsl:call-template name="Sprite">
                         <xsl:with-param name="id" select="pokeref:Replace(EvolvesFrom/@special, ' ', '')" />
-                        <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
+                        <xsl:with-param name="Settings">
+                          <Show sprite_class="TAG_ICON_MEDIUM" title_pos="after" />
+                        </xsl:with-param>
                       </xsl:call-template>
-                      <xsl:value-of select="EvolvesFrom/@special" />
                     </td>
                   </tr>
                 </xsl:if>

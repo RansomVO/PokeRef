@@ -66,10 +66,10 @@
           </p>
 
           <h3 id="anchor_before">
-            <xsl:text>Before you throw any balls...</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'BEFORE_THROW'" />
             </xsl:call-template>
+            <xsl:text>Before you throw any balls...</xsl:text>
           </h3>
           <ol id="BEFORE_THROW">
             <li>
@@ -139,10 +139,10 @@
           </ol>
 
           <h3 id="anchor_after">
-            <xsl:text>After you catch the Pokemon...</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'AFTER_THROW'" />
             </xsl:call-template>
+            <xsl:text>After you catch the Pokemon...</xsl:text>
           </h3>
           <ol id="AFTER_THROW">
             <li>
@@ -253,10 +253,10 @@
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
     <h2>
-      <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
       </xsl:call-template>
+      <xsl:text>Key</xsl:text>
     </h2>
     <br />
     <xsl:call-template name="PokemonImageKey" />

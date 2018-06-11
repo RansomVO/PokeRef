@@ -48,7 +48,7 @@
           text-align: right;
           padding-right: .5em;
           }
-          
+
           input {
           border: none;
           text-align: right;
@@ -96,18 +96,22 @@
         </p>
         <p>
           <b>Last Updated</b>:
-          <span id="UpdateDate">.</span> <!-- For some reason, if the '.' isn't there, the span wraps around the rest of the contents of the <p> -->
+          <xsl:value-of select="ShoppingBoxes/Event/@date" />
           <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-          <span id="UpdateNote" class="NOTE"/>
+          <span class="NOTE">
+            <xsl:text>(</xsl:text>
+            <xsl:value-of select="ShoppingBoxes/Event/@note" />
+            <xsl:text>)</xsl:text>
+          </span>
         </p>
 
         <br />
         <hr />
         <h2 id="anchor_instructions">
-          Instructions
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SHOPPING_INSTRUCTIONS'" />
           </xsl:call-template>
+          <xsl:text>Instructions</xsl:text>
         </h2>
         <ol id="SHOPPING_INSTRUCTIONS">
           <li>
@@ -163,7 +167,8 @@
               <table id="shopprices" comment="Shop Prices and Values" border="1">
                 <tr>
                   <th colspan="4" style="font-size:2em;">
-                    Shop Prices and Values
+                    <xsl:text>Shop Prices and Values</xsl:text>
+                    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
                     <xsl:call-template name="OutputResetButton">
                       <xsl:with-param name="Callback" select="'Reset(true);'" />
                     </xsl:call-template>
@@ -178,271 +183,24 @@
                   <th>Qty</th>
                   <th>Price</th>
                   <th>
-                    Unit<br />Value
+                    <xsl:text>Unit</xsl:text>
+                    <br />
+                    <xsl:text>Value</xsl:text>
                   </th>
                 </tr>
+
+                <xsl:apply-templates select="ShoppingBoxes/ItemValue[not(@legacy) and not(@assumed)]" />
                 <tr>
-                  <th align="left" valign="middle">
-                    <input id="PremiumRaidPass_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'RaidPassPremium'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Premium Raid Pass</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="PremiumRaidPass_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="PremiumRaidPass_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="PremiumRaidPass_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="MaxRevives_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'ReviveMax'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Max Revives</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="MaxRevives_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="MaxRevives_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="MaxRevives_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="MaxPotions_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'PotionMax'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Max Potions</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="MaxPotions_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="MaxPotions_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="MaxPotions_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="PokeBalls_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallRegular'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Poke Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="PokeBalls_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="PokeBalls_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="PokeBalls_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="Lures_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lure'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lure Modules</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="Lures_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="Lures_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="Lures_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="Incubator_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incubator'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="Incubator_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="Incubator_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="Incubator_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="LuckyEggs_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lucky'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lucky Eggs</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="LuckyEggs_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="LuckyEggs_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="LuckyEggs_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="Incense_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incense'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Incense</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="Incense_Qty" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT">
-                    <input class="INPUT" id="Incense_Price" type="number" onChange="OnValueChanged();" />
-                  </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="Incense_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="StarPiece_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'StarPiece'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Star Piece</xsl:text>
-                  </th>
-                  <td class="SHADED" colspan="2" rowspan="8" width="1px;" style="white-space:normal; font-style:italic; text-align:center">
-                    These are not for sale in the shop.
-                    <br />Supply amount for how much gold they are worth to <b>
+                  <td colspan="4" style="text-align:center;" class="SHADED">
+                    Below are items that are not usually for sale in the shop.
+                    <br />Supply amount for how much gold they are worth to
+                    <b>
                       <u>you</u>
                     </b>.
                   </td>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="StarPiece_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
                 </tr>
-                <tr>
-                  <th align="left">
-                    <input id="SuperIncubator_Check" type="checkbox" checked="checked" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'IncubatorSuper'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Super Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="SuperIncubator_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="UltraBalls_Check" type="checkbox" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallUltra'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Ultra Balls</xsl:text>
-                  </th>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="UltraBalls_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="GreatBalls_Check" type="checkbox" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallGreat'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Great Balls</xsl:text>
-                  </th>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="GreatBalls_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="RazzBerries_Check" type="checkbox" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryRazz'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="RazzBerries_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="NanabBerries_Check" type="checkbox" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryNanab'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Nanab Berries</xsl:text>
-                  </th>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="NanabBerries_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="PinapBerries_Check" type="checkbox" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryPinap'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Pinap Berries</xsl:text>
-                  </th>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="PinapBerries_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <input id="GoldenBerries_Check" type="checkbox" onchange="OnCheckChanged(this);" />
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryGolden'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Golden Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT_OPTIONAL">
-                    <input class="INPUT_OPTIONAL" id="GoldenBerries_Value" type="number" onChange="OnValueChanged(this);" />
-                  </td>
-                </tr>
+                <xsl:apply-templates select="ShoppingBoxes/ItemValue[@legacy or @assumed]" />
+
               </table>
             </td>
             <td comment="spacer" />
@@ -473,824 +231,221 @@
         <br />
         <table id="anchor_boxes" comment="Boxes">
           <tr>
-            <td valign="top" id="SpecialBox">
-              <table comment="Special Box" border="1">
-                <tr>
-                  <th colspan="3">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BoxSpecial'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <span style="font-size:1em;">Special Box</span>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Item</th>
-                  <th>Qty</th>
-                  <th>Value</th>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'RaidPassPremium'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Premium Raid Pass</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_PremiumRaidPass_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_PremiumRaidPass_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th>Max Revives</th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_MaxRevives_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_MaxRevives_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'ReviveMax'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Max Revives</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_MaxPotions_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_MaxPotions_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallRegular'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Poke Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_PokeBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_PokeBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lure'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lure Modules</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_Lures_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_Lures_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incubator'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_Incubator_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_Incubator_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lucky'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lucky Eggs</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_LuckyEggs_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_LuckyEggs_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incense'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Incense</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_Incense_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_Incense_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'StarPiece'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Star Piece</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_StarPiece_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_StarPiece_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'IncubatorSuper'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Super Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_SuperIncubator_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_SuperIncubator_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallGreat'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Great Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_GreatBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_GreatBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallUltra'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Ultra Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_UltraBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_UltraBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryRazz'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_RazzBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_RazzBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryNanab'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Nanab Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_NanabBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_NanabBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryPinap'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Pinap Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_PinapBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_PinapBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryGolden'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Golden Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_GoldenBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_GoldenBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Total Value</th>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="SpecialBox_Total" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Price</th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="SpecialBox_Price" type="number" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Discount</th>
-                  <td style="padding-right:1em;">
-                    <input id="SpecialBox_Discount" type="number" class="HIDE_SPINNERS" readonly="" />%
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td comment="spacer" />
-            <td valign="top" id="GreatBox">
-              <table comment="Great Box" border="1">
-                <tr>
-                  <th colspan="3">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BoxGreat'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <span style="font-size:1.5em;">Great Box</span>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Item</th>
-                  <th>Qty</th>
-                  <th>Value</th>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'RaidPassPremium'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Premium Raid Pass</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_PremiumRaidPass_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_PremiumRaidPass_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th>Max Revives</th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_MaxRevives_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_MaxRevives_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'ReviveMax'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Max Revives</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_MaxPotions_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_MaxPotions_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallRegular'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Poke Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_PokeBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_PokeBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lure'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lure Modules</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_Lures_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_Lures_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incubator'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_Incubator_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_Incubator_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lucky'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lucky Eggs</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_LuckyEggs_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_LuckyEggs_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incense'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Incense</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_Incense_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_Incense_Value" type="number" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'StarPiece'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Star Piece</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_StarPiece_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_StarPiece_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'IncubatorSuper'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Super Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_SuperIncubator_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_SuperIncubator_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallGreat'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Great Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_GreatBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_GreatBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallUltra'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Ultra Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_UltraBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_UltraBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryRazz'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_RazzBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_RazzBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryNanab'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Nanab Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_NanabBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_NanabBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryPinap'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Pinap Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_PinapBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_PinapBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryGolden'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Golden Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_GoldenBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_GoldenBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Total Value</th>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="GreatBox_Total" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Price</th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="GreatBox_Price" type="number" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Discount</th>
-                  <td style="padding-right:1em;">
-                    <input id="GreatBox_Discount" type="number" class="HIDE_SPINNERS" readonly="" />%
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td comment="spacer" />
-            <td valign="top" id="UltraBox">
-              <table border="1">
-                <tr>
-                  <th colspan="3">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BoxUltra'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <span style="font-size:2em;">Ultra Box</span>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Item</th>
-                  <th>Qty</th>
-                  <th>Value</th>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'RaidPassPremium'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Premium Raid Pass</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_PremiumRaidPass_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_PremiumRaidPass_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th>Max Revives</th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_MaxRevives_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_MaxRevives_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'ReviveMax'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Max Revives</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_MaxPotions_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_MaxPotions_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallRegular'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Poke Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_PokeBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_PokeBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lure'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lure Modules</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_Lures_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_Lures_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incubator'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_Incubator_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_Incubator_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Lucky'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Lucky Eggs</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_LuckyEggs_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_LuckyEggs_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'Incense'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Incense</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_Incense_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_Incense_Value" type="number" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'StarPiece'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Star Piece</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_StarPiece_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_StarPiece_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'IncubatorSuper'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Super Egg Incubator</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_SuperIncubator_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_SuperIncubator_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallGreat'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Great Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_GreatBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_GreatBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BallUltra'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Ultra Balls</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_UltraBalls_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_UltraBalls_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryRazz'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_RazzBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_RazzBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryNanab'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Nanab Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_NanabBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_NanabBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th align="left">
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryPinap'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Pinap Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_PinapBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_PinapBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    <xsl:call-template name="Sprite">
-                      <xsl:with-param name="id" select="'BerryGolden'" />
-                      <xsl:with-param name="class" select="'TAG_ICON_MEDIUM'" />
-                    </xsl:call-template>
-                    <xsl:text>Golden Razz Berries</xsl:text>
-                  </th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_GoldenBerries_Qty" type="number" />
-                  </td>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_GoldenBerries_Value" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Total Value</th>
-                  <td class="INPUT_CALCULATED">
-                    <input class="INPUT_CALCULATED" id="UltraBox_Total" type="number" readonly="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Price</th>
-                  <td class="INPUT">
-                    <input class="INPUT" id="UltraBox_Price" type="number" />
-                  </td>
-                </tr>
-                <tr>
-                  <th colspan="2" align="right">Discount</th>
-                  <td style="padding-right:1em;">
-                    <input id="UltraBox_Discount" type="number" class="HIDE_SPINNERS" readonly="" />%
-                  </td>
-                </tr>
-              </table>
-            </td>
+            <xsl:apply-templates select="ShoppingBoxes/Box" />
           </tr>
         </table>
 
         <xsl:call-template name="WriteFooter" />
       </body>
     </html>
+  </xsl:template>
+
+  <xsl:template match="Box">
+    <xsl:variable name="type" select="@type"/>
+
+    <td valign="top">
+      <xsl:attribute name="id">
+        <xsl:value-of select="@type"/>
+        <xsl:text>Box</xsl:text>
+      </xsl:attribute>
+      <table border="1">
+        <tr>
+          <th colspan="3" style="font-size:1em;">
+            <xsl:attribute name="style">
+              <xsl:choose>
+                <xsl:when test="$type='Special'">font-size:1em;</xsl:when>
+                <xsl:when test="$type='Great'">font-size:2em;</xsl:when>
+                <xsl:when test="$type='Ultra'">font-size:3em;</xsl:when>
+              </xsl:choose>
+            </xsl:attribute>
+
+            <xsl:variable name="id" select="@box" />
+            <xsl:variable name="title_pos">
+              <xsl:choose>
+                <xsl:when test="@title = ''">after</xsl:when>
+                <xsl:otherwise>none</xsl:otherwise>
+              </xsl:choose>
+            </xsl:variable>
+            <xsl:call-template name="Sprite">
+              <xsl:with-param name="id" select="$id" />
+              <xsl:with-param name="Settings">
+                <Show sprite_class="TAG_ICON_MEDIUM">
+                  <xsl:attribute name="title_pos">
+                    <xsl:value-of select="$title_pos" />
+                  </xsl:attribute>
+                </Show>
+              </xsl:with-param>
+            </xsl:call-template>
+            <xsl:if test="not(@title = '')">
+              <xsl:value-of select="@title" />
+            </xsl:if>
+          </th>
+        </tr>
+        <tr>
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Value</th>
+        </tr>
+        <xsl:apply-templates select="Item">
+          <xsl:with-param name="type" select="$type" />
+        </xsl:apply-templates>
+        <tr>
+          <th colspan="2" align="right">Total Value</th>
+          <td class="INPUT_CALCULATED">
+            <input class="INPUT_CALCULATED" type="number" readonly="readonly">
+              <xsl:attribute name="id">
+                <xsl:value-of select="$type"/>
+                <xsl:text>Box_Total</xsl:text>
+              </xsl:attribute>
+            </input>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" align="right">Price</th>
+          <td class="INPUT">
+            <input class="INPUT" type="number" readonly="readonly">
+              <xsl:attribute name="id">
+                <xsl:value-of select="$type"/>
+                <xsl:text>Box_Price</xsl:text>
+              </xsl:attribute>
+              <xsl:attribute name="value">
+                <xsl:value-of select="@price"/>
+              </xsl:attribute>
+            </input>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" align="right">Discount</th>
+          <td align="center" style="font-weight:bold;">
+            <xsl:attribute name="id">
+              <xsl:value-of select="$type"/>
+              <xsl:text>Box_Discount</xsl:text>
+            </xsl:attribute>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td comment="spacer" />
+  </xsl:template>
+
+  <xsl:template match="Item">
+    <xsl:param name="type" />
+
+    <tr>
+      <xsl:if test="@quantity=0">
+        <xsl:attribute name="style">display:none;</xsl:attribute>
+      </xsl:if>
+      <th align="left">
+        <xsl:call-template name="Sprite">
+          <xsl:with-param name="id" select="@name" />
+          <xsl:with-param name="Settings">
+            <Show sprite_class="TAG_ICON_MEDIUM" title_pos="after" />
+          </xsl:with-param>
+        </xsl:call-template>
+      </th>
+      <td class="INPUT">
+        <input class="INPUT" type="number">
+          <xsl:attribute name="id">
+            <xsl:value-of select="$type" />
+            <xsl:text>Box_</xsl:text>
+            <xsl:value-of select="@name"/>
+            <xsl:text>_Qty</xsl:text>
+          </xsl:attribute>
+          <xsl:attribute name="value">
+            <xsl:value-of select="@quantity"/>
+          </xsl:attribute>
+        </input>
+      </td>
+      <td class="INPUT_CALCULATED">
+        <input class="INPUT_CALCULATED" type="number" readonly="">
+          <xsl:attribute name="id">
+            <xsl:value-of select="$type" />
+            <xsl:text>Box_</xsl:text>
+            <xsl:value-of select="@name"/>
+            <xsl:text>_Value</xsl:text>
+          </xsl:attribute>
+        </input>
+      </td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match="ItemValue" >
+    <xsl:variable name="item" select="@item" />
+    <tr>
+      <xsl:if test="not(/Root/ShoppingBoxes/Box/Item[@name=$item and not(@quantity=0)])">
+        <xsl:attribute name="class">DISABLED</xsl:attribute>
+      </xsl:if>
+      
+      <th align="left" valign="middle">
+        <input type="checkbox" checked="checked" onchange="OnCheckChanged(this);">
+          <xsl:attribute name="id">
+            <xsl:value-of select="$item"/>
+            <xsl:text>_Check</xsl:text>
+          </xsl:attribute>
+        </input>
+        <xsl:call-template name="Sprite">
+          <xsl:with-param name="id" select="$item" />
+          <xsl:with-param name="Settings">
+            <Show sprite_class="TAG_ICON_MEDIUM" title_pos="after" />
+          </xsl:with-param>
+        </xsl:call-template>
+      </th>
+      <xsl:choose>
+        <xsl:when test="@assumed">
+          <td colspan="2" class="SHADED"></td>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:variable name="class">
+            <xsl:choose>
+              <xsl:when test="@legacy">SHADED</xsl:when>
+              <xsl:otherwise>INPUT</xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+          <td>
+            <xsl:attribute name="class">
+              <xsl:value-of select="$class" />
+            </xsl:attribute>
+            <input type="number" readonly="readonly">
+              <xsl:attribute name="class">
+                <xsl:value-of select="$class" />
+              </xsl:attribute>
+              <xsl:attribute name="id">
+                <xsl:value-of select="$item"/>
+                <xsl:text>_Qty</xsl:text>
+              </xsl:attribute>
+              <xsl:attribute name="value">
+                <xsl:value-of select="@quantity"/>
+              </xsl:attribute>
+            </input>
+          </td>
+          <td>
+            <xsl:attribute name="class">
+              <xsl:value-of select="$class" />
+            </xsl:attribute>
+            <input type="number" readonly="readonly">
+              <xsl:attribute name="class">
+                <xsl:value-of select="$class" />
+              </xsl:attribute>
+              <xsl:attribute name="id">
+                <xsl:value-of select="$item"/>
+                <xsl:text>_Price</xsl:text>
+              </xsl:attribute>
+              <xsl:attribute name="value">
+                <xsl:value-of select="@price"/>
+              </xsl:attribute>
+            </input>
+          </td>
+        </xsl:otherwise>
+      </xsl:choose>
+      <td class="INPUT_OPTIONAL">
+        <input class="INPUT_OPTIONAL" type="number" onChange="OnValueChanged(this);">
+          <xsl:attribute name="id">
+            <xsl:value-of select="$item"/>
+            <xsl:text>_Value</xsl:text>
+          </xsl:attribute>
+        </input>
+      </td>
+    </tr>
   </xsl:template>
 
 </xsl:stylesheet>

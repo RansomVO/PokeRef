@@ -126,10 +126,10 @@
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
     <h2>
-      <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
       </xsl:call-template>
+      <xsl:text>Key</xsl:text>
     </h2>
     <br />
     <xsl:call-template name="PokemonImageKey" />
@@ -138,10 +138,10 @@
   <!-- #region Templates to write the Criteria. -->
   <xsl:template name="CreateCriteria">
     <h2>
-      <xsl:text>Criteria</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'FIELD_RESEARCH_CRITERIA'" />
       </xsl:call-template>
+      <xsl:text>Criteria</xsl:text>
     </h2>
     <br />
     <div id="FIELD_RESEARCH_CRITERIA">
@@ -281,9 +281,10 @@
     </input>
     <xsl:call-template name="Sprite">
       <xsl:with-param name="id" select="$id" />
-      <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+      <xsl:with-param name="Settings">
+        <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+      </xsl:with-param>
     </xsl:call-template>
-    <xsl:value-of select="$image/@title" />
   </xsl:template>
   <!-- #endregion Templates to write the Selection/ListBy Criteria. -->
 
@@ -291,10 +292,10 @@
   <xsl:template match="FieldResearch" mode="ByTask">
     <xsl:for-each select="Category[not(contains(@type, '?'))]">
       <h2>
-        <xsl:value-of select="@type"/>
         <xsl:call-template name="Collapser">
           <xsl:with-param name="CollapseeID" select="concat('CATEGORY_', @type)" />
         </xsl:call-template>
+        <xsl:value-of select="@type"/>
       </h2>
       <div style="margin-top:.5em;">
         <xsl:attribute name="id">
@@ -359,7 +360,9 @@
     <div style="display:inline-block; text-align:center; margin:4px;">
       <xsl:call-template name="Sprite">
         <xsl:with-param name="id" select="@id" />
-        <xsl:with-param name="width" select="'2.5em'" />
+        <xsl:with-param name="Settings">
+          <Show max_width="2.5em" />
+        </xsl:with-param>
       </xsl:call-template>
       <br />
       <xsl:value-of select="concat('x', @amount)" disable-output-escaping="yes" />
@@ -385,10 +388,10 @@
     <xsl:param name="rewardType" />
 
     <h2>
-      <xsl:value-of select="$rewardType"/>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="concat('SECTION_', $rewardType)" />
       </xsl:call-template>
+      <xsl:value-of select="$rewardType"/>
     </h2>
     <div style="margin-top:.5em;">
       <xsl:attribute name="id">
@@ -462,7 +465,9 @@
           <td>
             <xsl:call-template name="Sprite">
               <xsl:with-param name="id" select="$id" />
-              <xsl:with-param name="width" select="'5em'" />
+              <xsl:with-param name="Settings">
+                <Show max_width="5em" />
+              </xsl:with-param>
             </xsl:call-template>
           </td>
           <td>

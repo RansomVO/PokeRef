@@ -42,13 +42,28 @@
     <img src="/apple-touch-icon.png" width="64" />
   </xsl:template>
 
+  <!--
+    Settings parameter:
+      @title_pos
+          Where to position the title. (Default is to not show.)
+          before: 
+          after:
+          above:
+          below:
+      @sprite_class
+          Class(es) to apply to the Sprite.
+      @sprite_width
+          The width of the Sprite.
+      @sprite_height
+          The height of the Sprite.
+  -->
+
   <xsl:template name="Sprite">
     <xsl:param name="id" />
-    <xsl:param name="width" />
-    <xsl:param name="height" />
-    <xsl:param name="class" />
+    <xsl:param name="Settings" />
 
     <xsl:variable name="image" select="/Root/Images/Image[@id=$id]"/>
+
     <xsl:choose>
       <xsl:when test="count($image)=0">
         <span class="TODO">
@@ -57,33 +72,53 @@
           </span>
           <br />
           <xsl:value-of select="concat($quot, $id, $quot)" />
-          <script>
-            alert('Specified Image not found: ' + <xsl:value-of select="concat('*', $id, '*')" /> + '!!!')
-          </script>
+          <!--<xsl:value-of select="concat('alert(', $apos, 'Specified Image not found: ', $quot, $id, $quot, '!!!', $apos, ')')" />-->
         </span>
       </xsl:when>
       <xsl:otherwise>
-        <img class="SPRITE">
-          <xsl:attribute name="src">
-            <xsl:value-of select="$image/@src" />
-          </xsl:attribute>
-          <xsl:attribute name="title">
-            <xsl:value-of select="$image/@title" disable-output-escaping="yes" />
-          </xsl:attribute>
+        <div>
           <xsl:attribute name="style">
-            <xsl:if test="$width" >
-              <xsl:value-of select="concat('max-width:', $width, ';')" />
-            </xsl:if>
-            <xsl:if test="$height" >
-              <xsl:value-of select="concat('max-height:', $height, ';')" />
-            </xsl:if>
+            <xsl:text>display:inline-block;</xsl:text>
+            <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'above' or exslt:node-set($Settings)/*/@title_pos = 'below'"> text-align:center;</xsl:if>
+            <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'before' or exslt:node-set($Settings)/*/@title_pos = 'after'"> vertical-align:middle;</xsl:if>
+          
           </xsl:attribute>
-          <xsl:if test="$class" >
-            <xsl:attribute name="class">
-              <xsl:value-of select="$class" />
-            </xsl:attribute>
+          <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'before' or exslt:node-set($Settings)/*/@title_pos = 'above'">
+            <xsl:value-of select="$image/@title" />
+            <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'above'">
+              <br />
+            </xsl:if>
           </xsl:if>
-        </img>
+
+          <img class="SPRITE">
+            <xsl:attribute name="src">
+              <xsl:value-of select="$image/@src" />
+            </xsl:attribute>
+            <xsl:attribute name="title">
+              <xsl:value-of select="$image/@title" disable-output-escaping="yes" />
+            </xsl:attribute>
+            <xsl:attribute name="style">
+              <xsl:if test="exslt:node-set($Settings)/*/@max_width" >
+                <xsl:value-of select="concat('max-width:', exslt:node-set($Settings)/*/@max_width, ';')" />
+              </xsl:if>
+              <xsl:if test="exslt:node-set($Settings)/*/@max_height" >
+                <xsl:value-of select="concat('max-height:', exslt:node-set($Settings)/*/@max_height, ';')" />
+              </xsl:if>
+            </xsl:attribute>
+            <xsl:if test="exslt:node-set($Settings)/*/@sprite_class" >
+              <xsl:attribute name="class">
+                <xsl:value-of select="exslt:node-set($Settings)/*/@sprite_class" />
+              </xsl:attribute>
+            </xsl:if>
+          </img>
+
+          <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'below' or exslt:node-set($Settings)/*/@title_pos = 'after'">
+            <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'below'">
+              <br />
+            </xsl:if>
+            <xsl:value-of select="$image/@title" />
+          </xsl:if>
+        </div>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>

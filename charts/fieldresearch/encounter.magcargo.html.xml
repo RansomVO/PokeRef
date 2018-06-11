@@ -2,11 +2,13 @@
 <!DOCTYPE Root [
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/images.xml">
   <!ENTITY Encounter SYSTEM "/_datafiles/encounter/encounter.magcargo.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="encounter.xsl" output="encounter.magcargo.html"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Constants; 
   &Settings;
+  &Images;
   &Encounter;
 </Root> 

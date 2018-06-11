@@ -20,8 +20,8 @@
           false: DEFAULT Have Pokmeon expand to fill parent container.
           true: Put the Pokemon in a box that can be displayed inline.
       @hide_special_icons
-          false: DEFAULT Display Shiny and Egg Hatching icons.
-          true: Do not display Shiny and Egg Hatching icons.
+          false: DEFAULT Display Special Icons. (Shiny, Ditto, Ecounters, etc.)
+          true: Do not display Special Icons.
       @hide_type_icons
           false: DEFAULT Display Type and Boost icons.
           true: Do not display Type and Boost icons.
@@ -228,11 +228,15 @@
           <xsl:if test="@shiny='true'">
             <xsl:call-template name="Sprite">
               <xsl:with-param name="id" select="'Shiny'" />
-              <xsl:with-param name="class">
-                <xsl:text>LEFT_ICON</xsl:text>
-                <xsl:if test="contains(@availability,'Hatch Only')">
-                  <xsl:text> TODO_QZX_TOP_MARGIN</xsl:text>
-                </xsl:if>
+              <xsl:with-param name="Settings">
+                <Show>
+                  <xsl:attribute name="sprite_class">
+                    <xsl:text>LEFT_ICON</xsl:text>
+                    <xsl:if test="contains(@availability,'Hatch Only')">
+                      <xsl:text> TODO_QZX_TOP_MARGIN</xsl:text>
+                    </xsl:if>
+                  </xsl:attribute>
+                </Show>
               </xsl:with-param>
             </xsl:call-template>
           </xsl:if>
@@ -253,11 +257,15 @@
                     <xsl:with-param name="id">
                       <xsl:value-of select="concat('Egg',$egg)"/>
                     </xsl:with-param>
-                    <xsl:with-param name="class">
-                      <xsl:choose>
-                        <xsl:when test="contains(@availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
-                        <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
-                      </xsl:choose>
+                    <xsl:with-param name="Settings">
+                      <Show>
+                        <xsl:attribute name="sprite_class">
+                          <xsl:choose>
+                            <xsl:when test="contains(@availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
+                            <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
+                          </xsl:choose>
+                        </xsl:attribute>
+                      </Show>
                     </xsl:with-param>
                   </xsl:call-template>
                 </xsl:with-param>
@@ -369,9 +377,11 @@
           <xsl:when test="../@gen = 7">
             <xsl:text>https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/</xsl:text>
           </xsl:when>
+          <xsl:when test="@name = 'Exeggutor (Alola)'">
+            <xsl:text>https://img.pokemondb.net/sprites/sun-moon/dex/normal/</xsl:text>
+          </xsl:when>
           <xsl:otherwise>
             <xsl:text>https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/</xsl:text>
-
           </xsl:otherwise>
         </xsl:choose>
 
@@ -386,6 +396,12 @@
             </xsl:when>
             <xsl:when test="@name='Castform (Normal)'">
               <xsl:value-of select="'castform'" />
+            </xsl:when>
+            <xsl:when test="@name='Exeggutor (Alola)'">
+              <xsl:value-of select="'exeggutor-alolan'" />
+            </xsl:when>
+            <xsl:when test="@name='Exeggutor (Normal)'">
+              <xsl:value-of select="'exeggutor'" />
             </xsl:when>
             <xsl:otherwise>
               <xsl:value-of select="translate(pokeref:ToLower(@name), concat(' é:♀♂.()', $apos), '-e')" disable-output-escaping="yes" />
@@ -447,12 +463,16 @@
         <xsl:with-param name="Wrapped">
           <xsl:call-template name="Sprite">
             <xsl:with-param name="id" select="$Type" />
-            <xsl:with-param name="class">
-              <xsl:choose>
-                <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
-                <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
-                <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
-              </xsl:choose>
+            <xsl:with-param name="Settings">
+              <Show>
+                <xsl:attribute name="sprite_class">
+                  <xsl:choose>
+                    <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
+                    <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
+                    <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
+                  </xsl:choose>
+                </xsl:attribute>
+              </Show>
             </xsl:with-param>
           </xsl:call-template>
         </xsl:with-param>
@@ -485,18 +505,22 @@
   <xsl:template name="OutputWeatherIcon">
     <xsl:param name="Weather" />
     <xsl:param name="Settings" />
-    
+
     <xsl:call-template name="OutputInfoWrapper">
       <xsl:with-param name="Wrapped">
         <xsl:call-template name="Sprite">
           <xsl:with-param name="id" select="pokeref:Replace($Weather, ' ', '')" />
-          <xsl:with-param name="class">
-            <xsl:choose>
-              <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
-              <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
-              <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
-            </xsl:choose>
-            <xsl:if test="exslt:node-set($Settings)/*/@overlap = 'true'"> TAG_ICON_OVERLAP</xsl:if>
+          <xsl:with-param name="Settings">
+            <Show>
+              <xsl:attribute name="sprite_class">
+                <xsl:choose>
+                  <xsl:when test="exslt:node-set($Settings)/*/@size = 'small'">TAG_ICON_SMALL</xsl:when>
+                  <xsl:when test="exslt:node-set($Settings)/*/@size = 'large'">TAG_ICON_LARGE</xsl:when>
+                  <xsl:otherwise>TAG_ICON_REGULAR</xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="exslt:node-set($Settings)/*/@overlap = 'true'"> TAG_ICON_OVERLAP</xsl:if>
+              </xsl:attribute>
+            </Show>
           </xsl:with-param>
         </xsl:call-template>
       </xsl:with-param>

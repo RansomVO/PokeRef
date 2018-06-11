@@ -64,6 +64,12 @@
 
   <xsl:template match="sitemap:siteMapNode">
     <xsl:param name="level" select="1" />
+    
+    <xsl:if test="count(sitemap:siteMapNode[contains(@url, '#')]) != 0 or count(sitemap:siteMapNode[not(contains(@url, '#'))]) != 0">
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="@url" />
+      </xsl:call-template>
+    </xsl:if>
     <a>
       <xsl:attribute name="href">
         <xsl:value-of select="@url" />
@@ -72,12 +78,6 @@
         <xsl:value-of select="@title" />
       </b>
     </a>
-
-    <xsl:if test="count(sitemap:siteMapNode[contains(@url, '#')]) != 0 or count(sitemap:siteMapNode[not(contains(@url, '#'))]) != 0">
-      <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="@url" />
-      </xsl:call-template>
-    </xsl:if>
     <div class="CHILD">
       <xsl:attribute name="id">
         <xsl:value-of select="@url"/>
@@ -90,10 +90,10 @@
       <xsl:if test="count(sitemap:siteMapNode[contains(@url, '#')]) != 0">
         <br />
         <div class="INDENT" style="font-size:smaller;">
-          <span class="SITE_MAP_SECTION">Anchors On Page</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="concat(@url, '_ANCHORS')" />
           </xsl:call-template>
+          <span class="SITE_MAP_SECTION">Anchors On Page</span>
           <ul>
             <xsl:attribute name="id">
               <xsl:value-of select="concat(@url, '_ANCHORS')"/>
@@ -108,10 +108,10 @@
       <xsl:if test="count(sitemap:siteMapNode[not(contains(@url, '#'))]) != 0">
         <br />
         <div class="INDENT" style="font-size:smaller;">
-          <span class="SITE_MAP_SECTION">Sub Pages</span>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="concat(@url, '_SUBPAGE')" />
           </xsl:call-template>
+          <span class="SITE_MAP_SECTION">Sub Pages</span>
           <ul>
             <xsl:attribute name="id">
               <xsl:value-of select="concat(@url, '_SUBPAGE')" />

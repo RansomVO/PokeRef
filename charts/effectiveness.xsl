@@ -76,10 +76,10 @@
   <!-- Template to create the key for the table -->
   <xsl:template name="CreateKey">
     <h2 id="anchor_key">
-      <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'EFFECTIVENESS_KEY'" />
       </xsl:call-template>
+      <xsl:text>Key</xsl:text>
     </h2>
     <div id="EFFECTIVENESS_KEY" class="INDENT">
       <table id="anchor_table" border="1" style="white-space:nowrap">

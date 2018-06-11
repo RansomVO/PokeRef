@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ShoppingBoxes last_updated="2018-06-11">
+  <Event date="7 June 2018" note="Water Festival 2018" />
+  
+  <!-- #region Boxes -->
+  <!-- 
+    NOTES:
+      - Set price to 0 to hide the box.
+      - If you want a title different than the default (from images.xml) then specify the title attribute on the box.
+  -->
+  
+  <!-- TODO QZX: The top half sorts the items as they appear in the box. The bottom half are items I haven't see since I started sorting. -->
+  <Box type="Special" price="480" box="BoxSpecial" title="">
+    <Item name="Incense" quantity="6" />
+    <Item name="Incubator" quantity="20" />
+    <Item name="IncubatorSuper" quantity="0" />
+    <Item name="LuckyEgg" quantity="0" />
+    <Item name="RaidPassPremium" quantity="3" />
+    <Item name="Lure" quantity="0" />
+    <Item name="StarPiece" quantity="0" />
+
+    <Item name="ReviveMax" quantity="0" />
+    <Item name="PotionMax" quantity="0" />
+    <Item name="BallRegular" quantity="0" />
+    <Item name="BallGreat" quantity="0" />
+    <Item name="BallUltra" quantity="0" />
+    <Item name="BerryRazz" quantity="0" />
+    <Item name="BerryNanab" quantity="0" />
+    <Item name="BerryPinap" quantity="0" />
+    <Item name="BerryGolden" quantity="0" />
+  </Box>
+  <Box type="Great" price="780" box="BoxGreat" title="">
+    <Item name="Incense" quantity="0" />
+    <Item name="Incubator" quantity="4" />
+    <Item name="IncubatorSuper" quantity="0" />
+    <Item name="LuckyEgg" quantity="8" />
+    <Item name="RaidPassPremium" quantity="8" />
+    <Item name="Lure" quantity="6" />
+    <Item name="StarPiece" quantity="0" />
+
+    <Item name="ReviveMax" quantity="0" />
+    <Item name="PotionMax" quantity="0" />
+    <Item name="BallRegular" quantity="0" />
+    <Item name="BallGreat" quantity="0" />
+    <Item name="BallUltra" quantity="0" />
+    <Item name="BerryRazz" quantity="0" />
+    <Item name="BerryNanab" quantity="0" />
+    <Item name="BerryPinap" quantity="0" />
+    <Item name="BerryGolden" quantity="0" />
+  </Box>
+  <Box type="Ultra" price="1480" box="BoxUltra" title="">
+    <Item name="Incense" quantity="12" />
+    <Item name="Incubator" quantity="0" />
+    <Item name="IncubatorSuper" quantity="10" />
+    <Item name="LuckyEgg" quantity="0" />
+    <Item name="RaidPassPremium" quantity="12" />
+    <Item name="Lure" quantity="0" />
+    <Item name="StarPiece" quantity="18" />
+
+    <Item name="ReviveMax" quantity="0" />
+    <Item name="PotionMax" quantity="0" />
+    <Item name="BallRegular" quantity="0" />
+    <Item name="BallGreat" quantity="0" />
+    <Item name="BallUltra" quantity="0" />
+    <Item name="BerryRazz" quantity="0" />
+    <Item name="BerryNanab" quantity="0" />
+    <Item name="BerryPinap" quantity="0" />
+    <Item name="BerryGolden" quantity="0" />
+  </Box>
+  <!-- #endregion Boxes -->
+
+  <!-- #region Values -->
+
+  <!-- #region Prices in Shop -->
+  <ItemValue default_check="true" item="RaidPassPremium" quantity="1" price="100" />
+  <ItemValue default_check="true" item="ReviveMax" quantity="6" price="180" />
+  <ItemValue default_check="true" item="PotionMax" quantity="10" price="200" />
+  <ItemValue default_check="true" item="BallRegular" quantity="200" price="800" />
+  <ItemValue default_check="true" item="Lure" quantity="8" price="680" />
+  <ItemValue default_check="true" item="Incubator" quantity="1" price="150" />
+  <ItemValue default_check="true" item="LuckyEgg" quantity="25" price="1250" />
+  <ItemValue default_check="true" item="Incense" quantity="25" price="1250" />
+  <!-- #endregion Prices in Shop -->
+
+  <!-- #region Prices previously seen -->
+  <ItemValue default_check="true" legacy="true" item="StarPiece" quantity="8" price="800" />
+  <ItemValue default_check="true" legacy="true" item="IncubatorSuper" quantity="1" price="200" />
+  <!-- #endregion Prices seen when available -->
+
+  <!-- #region Assumed Values for items that may be in boxes, but are not in Shop -->
+  <ItemValue default_check="false" assumed="true" item="BallGreat" base="BallRegular" adjustment="3" />
+  <ItemValue default_check="false" assumed="true" item="BallUltra" base="BallGreat" adjustment="3" />
+  <ItemValue default_check="false" assumed="true" item="BerryRazz" price="1" />
+  <ItemValue default_check="false" assumed="true" item="BerryNanab" price="1" />
+  <ItemValue default_check="false" assumed="true" item="BerryPinap" price="1" />
+  <ItemValue default_check="false" assumed="true" item="BerryGolden" price="10" />
+  <!-- #endregion Assumed Values for items that may be in boxes, but are not in Shop -->
+
+  <!-- #endregion Values -->
+
+</ShoppingBoxes>

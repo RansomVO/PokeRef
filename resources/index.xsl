@@ -58,10 +58,10 @@
         <br />
         <hr />
         <h2 id="anchor_websites">
-          <xsl:text>Web Sites</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'WEB_SITES'" />
           </xsl:call-template>
+          <xsl:text>Web Sites</xsl:text>
         </h2>
         <div id="WEB_SITES" class="INDENT">
           <p>
@@ -242,10 +242,10 @@
         <br />
         <hr />
         <h2 id="anchor_tools_android">
-          <xsl:text>Tools for Android</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'ANDROID_TOOLS'" />
           </xsl:call-template>
+          <xsl:text>Tools for Android</xsl:text>
         </h2>
         <div id="ANDROID_TOOLS" class="INDENT">
           <p>
@@ -259,10 +259,10 @@
             <br />As far as I know, the ones listed here do not violate the terms.
           </p>
           <h3 id="anchor_goiv">
-            <xsl:text>GoIV</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'GOIV_TOOL'" />
             </xsl:call-template>
+            <xsl:text>GoIV</xsl:text>
           </h3>
           <div id="GOIV_TOOL" class="INDENT" style="max-width:600px;">
             <p>
@@ -324,10 +324,10 @@
 
           <hr class="SEPARATOR_BORDER" />
           <h3 id="anchor_toolkit">
-            <xsl:text>IV &amp; ToolKit for Pokemon Go</xsl:text>
             <xsl:call-template name="Collapser">
               <xsl:with-param name="CollapseeID" select="'IV_TOOLKIT'" />
             </xsl:call-template>
+            <xsl:text>IV &amp; ToolKit for Pokemon Go</xsl:text>
           </h3>
           <div id="IV_TOOLKIT" class="INDENT">
             <p class="PARENT">

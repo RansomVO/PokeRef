@@ -88,7 +88,7 @@
           <br />Just look up the Pokemon you are interested in, find the entry for the Move Set for your Pokemon, and compare it to the other possible Move Sets.
         </p>
         <p>
-          For a technical description of the formulas used, check out the <a href="/tech/formulas/movesetdamage.html">Move Set Damage Formulas</a>.
+          For a technical description of the formulas used, check out <a href="/tech/formulas/movesetdamage.html">Move Set Damage Formulas</a>.
         </p>
 
         <br />
@@ -120,10 +120,11 @@
   <!-- Template to write the Selection Criteria. -->
   <xsl:template name="CreateCriteria">
     <h2 id="anchor_criteria">
-      <xsl:text>Selection Criteria</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'MOVESET_CRITERIA'" />
       </xsl:call-template>
+      <xsl:text>Selection Criteria</xsl:text>
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <xsl:call-template name="OutputResetButton">
         <xsl:with-param name="Callback" select="'OnResetCriteriaClicked();'" />
       </xsl:call-template>
@@ -214,10 +215,10 @@
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
     <h2>
-      <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'MOVESET_KEY'" />
       </xsl:call-template>
+      <xsl:text>Key</xsl:text>
     </h2>
 
     <div id="MOVESET_KEY" style="margin-top:.5em;">
@@ -305,6 +306,7 @@
               </th>
               <td class="GREAT">
                 True DPS &gt;= <xsl:value-of select="$DPSGreat" />% of Max Possible
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
                   (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS, '#0.00')" />)
                 </span>
@@ -313,14 +315,16 @@
             <tr>
               <td class="GOOD">
                 True DPS &gt;= <xsl:value-of select="$DPSGood" />% of Max Possible
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGood div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat, '#0.00')" />)
+                  (<xsl:value-of select="format-number($MaxTrueDPS * $DPSGood div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGreat div 100, '#0.00')" />)
                 </span>
               </td>
             </tr>
             <tr>
               <td class="POOR">
                 True DPS Above Average
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
                   (<xsl:value-of select="$AverageTrueDPS" /> - <xsl:value-of select="format-number($MaxTrueDPS * $DPSGood div 100, '#0.00')" />)
                 </span>
@@ -329,6 +333,7 @@
             <tr>
               <td class="BAD">
                 True DPS Below Average
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
                   (0 - <xsl:value-of select="$AverageTrueDPS" />)
                 </span>
@@ -341,6 +346,7 @@
               <th rowspan="4">Damage: Base DPS</th>
               <td class="GREAT">
                 Base DPS &gt;= <xsl:value-of select="$DPSGreat" />% of Max Possible
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
                   (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat div 100, '#0.00')" /> - <xsl:value-of select="$MaxBaseDPS" />)
                 </span>
@@ -349,14 +355,16 @@
             <tr>
               <td class="GOOD">
                 Base DPS &gt;= <xsl:value-of select="$DPSGood" />% of Max Possible
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
-                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGood div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat, '#0.00')" />)
+                  (<xsl:value-of select="format-number($MaxBaseDPS * $DPSGood div 100, '#0.00')" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGreat div 100, '#0.00')" />)
                 </span>
               </td>
             </tr>
             <tr>
               <td class="POOR">
                 Base DPS Above Average
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
                   (<xsl:value-of select="$AverageBaseDPS" /> - <xsl:value-of select="format-number($MaxBaseDPS * $DPSGood div 100, '#0.00')" />)
                 </span>
@@ -365,6 +373,7 @@
             <tr>
               <td class="BAD">
                 Base DPS Below Average
+                <xsl:value-of select="concat($nbsp,$nbsp,$nbsp,$nbsp)" disable-output-escaping="yes" />
                 <span class="NOTE" style="float:right;">
                   (0 - <xsl:value-of select="$AverageBaseDPS" />)
                 </span>
@@ -410,11 +419,11 @@
     <xsl:variable name="gen" select="@gen" />
 
     <h2>
-      <xsl:text>Generation </xsl:text>
-      <xsl:value-of select="$gen" />
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="concat('MOVESET_DIV_GEN_', $gen)" />
       </xsl:call-template>
+      <xsl:text>Generation </xsl:text>
+      <xsl:value-of select="$gen" />
     </h2>
     <div>
       <xsl:attribute name="id">
@@ -531,7 +540,7 @@
           <xsl:for-each select="../MoveSet[Pokemon/@name=$PokemonName]">
             <xsl:sort order="descending" data-type="number" select="@comparison" />
             <!-- TODO QZX: Why is this not sorting!!! -->
-            
+
             <tr>
               <xsl:if test="contains(/Root/PokeStats/Pokemon[@name=$PokemonName]/@availability,$Availability_Unreleased)">
                 <xsl:attribute name="class">UNAVAILABLE_ROW</xsl:attribute>
@@ -663,10 +672,10 @@
           <xsl:choose>
             <xsl:when test="$BaseDPS != ''">
               <xsl:choose>
-                <xsl:when test="$BaseDPS &gt;= $MaxBaseDPS * $DPSGreat">
+                <xsl:when test="$BaseDPS &gt;= $MaxBaseDPS * $DPSGreat div 100">
                   <xsl:text>GREAT </xsl:text>
                 </xsl:when>
-                <xsl:when test="$BaseDPS &gt;= $MaxBaseDPS * $DPSGood">
+                <xsl:when test="$BaseDPS &gt;= $MaxBaseDPS * $DPSGood div 100">
                   <xsl:text>GOOD </xsl:text>
                 </xsl:when>
                 <xsl:when test="$BaseDPS &gt;= $DPSOkay">
@@ -679,10 +688,10 @@
             </xsl:when>
             <xsl:when test="$TrueDPS != ''">
               <xsl:choose>
-                <xsl:when test="$TrueDPS &gt;= $MaxTrueDPS * $DPSGreat">
+                <xsl:when test="$TrueDPS &gt;= $MaxTrueDPS * $DPSGreat div 100">
                   <xsl:text>GREAT </xsl:text>
                 </xsl:when>
-                <xsl:when test="$TrueDPS &gt;= $MaxTrueDPS * $DPSGood">
+                <xsl:when test="$TrueDPS &gt;= $MaxTrueDPS * $DPSGood div 100">
                   <xsl:text>GOOD </xsl:text>
                 </xsl:when>
                 <xsl:when test="$TrueDPS &gt;= $AverageTrueDPS">
@@ -740,10 +749,10 @@
           </xsl:choose>
         </xsl:attribute>
         <xsl:value-of select="$Content" />
+        <xsl:if test="$Percent != ''">
+          <xsl:text>%</xsl:text>
+        </xsl:if>
       </span>
-      <xsl:if test="$Percent != ''">
-        <xsl:text>%</xsl:text>
-      </xsl:if>
     </td>
   </xsl:template>
 

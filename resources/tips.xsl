@@ -49,10 +49,10 @@
         <br />
         <hr />
         <h2 id="anchor_searchterms">
-          <xsl:text>Advanced Search Terms</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'ADVANCED_SEARCH'" />
           </xsl:call-template>
+          <xsl:text>Advanced Search Terms</xsl:text>
         </h2>
         <div id="ADVANCED_SEARCH" class="INDENT">
           <p>
@@ -226,10 +226,10 @@
         <br />
         <hr />
         <h2 id="anchor_eeveelutions">
-          <xsl:text>Eevee Evolving</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'EEVEELUTIONS'" />
           </xsl:call-template>
+          <xsl:text>Eevee Evolving</xsl:text>
         </h2>
         <div id="EEVEELUTIONS" class="INDENT">
           <p>

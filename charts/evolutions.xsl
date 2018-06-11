@@ -103,10 +103,11 @@
   <!-- Template to write the Selection Criteria. -->
   <xsl:template name="CreateCriteria">
     <h2 id="anchor_criteria">
-      <xsl:text>Selection Criteria</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'EVOLUTIONS_CRITERIA'" />
       </xsl:call-template>
+      <xsl:text>Selection Criteria</xsl:text>
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
       <xsl:call-template name="OutputResetButton">
         <xsl:with-param name="Callback" select="'OnResetCriteriaClicked();'" />
       </xsl:call-template>
@@ -125,9 +126,10 @@
               <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
               <xsl:call-template name="Sprite">
                 <xsl:with-param name="id" select="'Shiny'" />
-                <xsl:with-param name="class" select="'TAG_ICON_REGULAR'" />
+                <xsl:with-param name="Settings">
+                  <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+                </xsl:with-param>
               </xsl:call-template>
-              <xsl:text>Shiny</xsl:text>
               <br />
               <xsl:call-template name="OutputFilterPokemonNameIDLabel" />
               <xsl:call-template name="OutputFilterPokemonNameID">
@@ -160,10 +162,10 @@
   <!-- Template to write the Key for the table. -->
   <xsl:template name="CreateKey">
     <h2>
-      <xsl:text>Key</xsl:text>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'POKEMON_IMAGE_KEY'" />
       </xsl:call-template>
+      <xsl:text>Key</xsl:text>
     </h2>
     <br />
     <xsl:call-template name="PokemonImageKey" />

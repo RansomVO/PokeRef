@@ -47,7 +47,6 @@
   <ItemGroup>
     <FixOutputFile Include="_sectionname.txt" />
     <WebContent Include="favicon.ico" />
-    <WebContent Include="footernote.html" />
     <WebContent Include="index.css" />
     <WebContent Include="apple-touch-icon.png" />
     <FixOutputFile Include="Web.sitemap">
@@ -56,29 +55,24 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
-    <None Include="^\__TODO.txt" />
-    <None Include="^\_blank.xsl">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="^\_blank.html.xml">
-      <DependentUpon>_blank.xsl</DependentUpon>
-    </None>
+    <Content Include="^\__TODO.html" />
     <None Include="^\index.html" />
   </ItemGroup>
   <!-- /_ -->
   <ItemGroup>
-    <FixOutputFile Include="_\index.js" />
     <WebContent Include="_\_sectionname.txt" />
   </ItemGroup>
   <!-- /_datafiles.manual -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles.manual\eggs.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\pokemon.availability.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\pokemon.unreleased.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\images.xml" />
     <FixIntermediateFile Include="_datafiles.manual\fieldresearch.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\ranges.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\special.moves.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\shoppingboxes.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.unreleased_gens.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\images.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\ranges.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.moves.xml" />
   </ItemGroup>
   <!-- /_datafiles (moves and movesets) -->
   <ItemGroup>
@@ -445,7 +439,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Import Project="fix.proj" />
   <Import Project="xslt.proj" />

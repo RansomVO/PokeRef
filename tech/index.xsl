@@ -46,10 +46,10 @@
         <br />
         <hr />
         <h2 id="anchor_gamemaster">
-          <a href="GAME_MASTER/">GAME_MASTER</a>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'TECH_GAME_MASTER'" />
           </xsl:call-template>
+          <a href="GAME_MASTER/">GAME_MASTER</a>
         </h2>
         <div id="TECH_GAME_MASTER" class="INDENT">
           <p>
@@ -120,12 +120,12 @@
         <br />
         <hr />
         <h2 id="anchor_formulas">
-          <a href="formulas">
-            <b>Technical Formulas</b>
-          </a>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'TECH_FORMULAS'" />
           </xsl:call-template>
+          <a href="formulas">
+            <b>Technical Formulas</b>
+          </a>
         </h2>
         <div id="TECH_FORMULAS" class="INDENT">
           <h3 id="anchor_cphpformulas">

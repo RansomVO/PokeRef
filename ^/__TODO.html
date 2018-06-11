@@ -1,0 +1,759 @@
+﻿<html lang="en-us">
+<head>
+    <title>TODO on PokeRef</title>
+
+    <script src="../js/controls.js"></script>
+    <script src="../js/global.js"></script>
+    <link type="text/css" rel="stylesheet" href="../index.css" />
+
+    <style>
+        ul {
+            list-style: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+            ul li {
+                padding-left: 1.5em;
+                text-indent: -1.5em;
+            }
+
+                ul li * {
+                    padding-left: initial;
+                    text-indent: initial;
+                }
+
+        li {
+            margin-bottom: 1em;
+        }
+
+            li ul, li ol {
+                padding-left: 1.5em;
+                text-indent: .1em;
+            }
+
+            li ul {
+                list-style: disc;
+            }
+
+            li * li {
+                margin-bottom: 0;
+            }
+    </style>
+    <style>
+        .PRIORITY_EXTREME {
+            color: red;
+            font-weight: bold;
+        }
+
+        .PRIORITY_HIGH {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .PRIORITY_LOW {
+            color: #808080;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>TODO on PokeRef</h1>
+
+    <!-- ========================================================================================================= -->
+    <!-- Keep Up-To-Date -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="KEEP_UP-TO-DATE_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Keep Up-To-Date
+    </h2>
+    <div id="KEEP_UP-TO-DATE" class="INDENT">
+        <p>
+            On a regular basis, check the following and update the appropriate files.
+        </p>
+
+        <h3>GAME_MASTER Decoder</h3>
+        <ul>
+            <li>
+                <input type="checkbox" /><b>Check for latest .proto.</b>
+                <br />Check <a href="https://github.com/Furtif/POGOProtos">https://github.com/Furtif/POGOProtos</a>.
+                If there are updates, download them to GAME_MASTER\GM_Decoder\_protos\POGOProtos\
+            </li>
+            <li>
+                <input type="checkbox" /><b>Update Decoder code.</b>
+                <br />
+                In GAME_MASTER solution:
+                <ol>
+                    <li>Run GM_protogen</li>
+                    <li>Rebuild <b>Release version</b> of solution</li>
+                    <li>Copy binaries from <code>GAME_MASTER\GM_DataGenerator\bin\Release\</code> to <code>www\packages\</code>. </li>
+                </ol>
+            </li>
+        </ul>
+
+        <h3>GAME_MASTER</h3>
+        <ul>
+            <li>
+                <input type="checkbox" /><b>Latest GAME_MASTER</b>
+                <br />
+            </li>
+        </ul>
+
+        <h3>Manual Datafiles</h3>
+        <ul>
+            <li>
+                <input type="checkbox" /><b>eggs.xml</b>
+                <br /><a href="https://thesilphroad.com/egg-distances">https://thesilphroad.com/egg-distances</a>
+            </li>
+            <li>
+                <input type="checkbox" /><b>fieldresearch.xml</b>
+                <br />
+            </li>
+            <li>
+                <input type="checkbox" /><b>raidbosses.xml</b>
+                <br /><a href="https://pokemongo.gamepress.gg/raid-boss-list">https://pokemongo.gamepress.gg/raid-boss-list</a>
+            </li>
+            <li>
+                <input type="checkbox" /><b>shoppingboxes.xml</b>
+                <br /><a href="https://pokemongolive.com/en/post/">https://pokemongolive.com/en/post/</a> <span class="NOTE">(For Date and Note)</span>
+            </li>
+        </ul>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Infrequent</u></b>
+        <ul>
+            <li>
+                <input type="checkbox" /><b>images.xml</b>
+                <br />
+            </li>
+            <li>
+                <input type="checkbox" /><b>pokemon.availability.xml</b>
+                <br />Ditto: <a href="https://p337.info/pokemongo/pokedex/?show=ditto&sort=id">https://p337.info/pokemongo/pokedex/?show=ditto&sort=id</a>
+                <br />Shiny: <a href="https://p337.info/pokemongo/pokedex/?show=shiny">https://p337.info/pokemongo/pokedex/?show=shiny</a>
+            </li>
+            <li>
+                <input type="checkbox" /><b>pokemon.unreleased.xml</b>
+                <br /><a href="https://bulbapedia.bulbagarden.net/wiki/Index_number">https://bulbapedia.bulbagarden.net/wiki/Index_number</a>
+            </li>
+            <li>
+                <input type="checkbox" /><b>ranges.xml</b>
+                <br /><span class="NOTE">(My opinions)</span>
+            </li>
+            <li>
+                <input type="checkbox" /><b>specialmoves.xml</b>
+                <br /><a href="https://pokemongolive.com/en/events/">https://pokemongolive.com/en/events/</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Work In Progress -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="WORK_IN_PROGRESS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Work In Progress
+    </h2>
+    <div id="WORK_IN_PROGRESS" class="INDENT">
+        <ul>
+            <li class="PRIORITY_EXTREME">
+                <input type="checkbox" />
+                Evolutions chart is broken!!!
+            </li>
+
+            <li class="PRIORITY_HIGH">
+                <input type="checkbox" />
+                Double check availability dates in _debug.manual\pokemon.availability.xml
+            </li>
+
+            <li class="PRIORITY_HIGH">
+                <input type="checkbox" />
+                Make it so "(Normal)" is not a duplicate of the plain form on:
+                <ul>
+                    <li>
+                        <input type="checkbox" />
+                        Charts\PokeChart
+                    </li>
+                    <li>
+                        <input type="checkbox" />
+                        Charts\MoveSets
+                    </li>
+                    <li>
+                        <input type="checkbox" />
+                        Charts\PokeQuick
+                    </li>
+                    <li>
+                        <input type="checkbox" />
+                        Tech\PokeStats
+                    </li>
+                </ul>
+            </li>
+
+            <li class="PRIORITY_HIGH">
+                <input type="checkbox" />
+                Make it so forms are sorted by Form id.(E.G. Exeggutor Normal=77, Alola=78)
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Field Research:
+                <ul>
+                    <li>Add code to perform filtering.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Build -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="BUILD_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Build
+    </h2>
+    <div id="BUILD" class="INDENT">
+        <ul>
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                It would be nice if web.config got copied to www.debug on debug builds.
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                Create tool to dynamically create Web.sitemap
+                <ol>
+                    <li>Read all .html files under bin</li>
+                    <li>Get their title, url and description. (Perhaps add a hidden paragraph at the top that has the description?)</li>
+                    <li>Get all anchors. (id="anchor_xxx")</li>
+                </ol>
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Create tool/script/whatever that will update the web site with the latest work.
+                <br />(FTP?)
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                It would be nice if the .proj files could be updated to include the Dependencies of the Dependencies. (and DependentUpon?)
+                E.G. We could say that raidboss\_linkslist.page.xml was one of Dependencies. Then the Item would also include the Dependencies of raidboss\_linkslist.page.xml
+                <br />NOTE: Use the .xml because that is the file that is transformed and it depends upon the .xsl.
+            </li>
+        </ul>
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Global XSL/JS -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="GLOBAL_XSL_JS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Global XSL/JS
+    </h2>
+    <div id="GLOBAL_XSL_JS" class="INDENT">
+        <ul>
+            <li>
+                <input type="checkbox" />
+                PokeIcon
+                <ul>
+                    <li>Make it so clicking on shiny icon swaps the image back and forth between shiny and regular.</li>
+                    <li>Distinguish current RaidBoss (Make it different than RaidBoss Only.)</li>
+                    <li>Distinguish between Raidboss Only that are current vs. legacy (faded?)</li>
+                    <li>Distingush between Pokemon that can become a ditto.</li>
+                    <li>Add special icon for Ditto. <span class="NOTE">(Put it in same place as Hatch-Only because there can't be conflicts.)</span></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" />
+                "Show Only" Criteria
+                <ul>
+                    <li>
+                        Make all charts use a standard Show Only Criteria box. <span class="NOTE">(Start with one from charts/pokechart/pokechart.xsl)</span>
+                        <ul>
+                            <li>
+                                <input type="checkbox" />Pokemon Chart
+                            </li>
+                            <li>
+                                <input type="checkbox" />Evolutions
+                            </li>
+                            <li>
+                                <input type="checkbox" />Quick List
+                            </li>
+                            <li>
+                                <input type="checkbox" />Field Research?
+                            </li>
+                            <li>
+                                <input type="checkbox" />Move Sets?
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Add .js code to check filtering. (Similar to Type and Weather)</li>
+                    <li>Add checkbox for Ditto</li>
+                </ul>
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                PokemonNameID Filter
+                <ul>
+                    <li>
+                        FilterNameID: Add ability to specify parens
+                        <br />E.G. "1-5&(B,C)"
+                    </li>
+                    <li>
+                        Add ability to filter by gen.
+                        <ul>
+                            <li>+<i>[gen#]{-[gen#]}</i> ?</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Add ability to specify whether to match StartsWith or Contains
+                    </li>
+                </ul>
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                Add ability to specify "?Key=^" or "?Key=v" on URL to force collapsers to be up or down.
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Make an animated Loading GIF and use it in appropriate locations.
+            </li>
+        </ul>
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Overall -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="OVERALL_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Overall
+    </h2>
+    <div id="OVERALL" class="INDENT">
+        <ul>
+            <li>
+                <input type="checkbox" />
+                Search for TODO to find work that needs done.
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Find places to add more pics. (Funny ones if nothing else.)
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Enhance visual:
+                <ul>
+                    <li class="PRIORITY_LOW">If there is shiny and hatch-only, put a top margin on the shiny so it looks better.</li>
+                    <li>Consistency with indenting in Key/Criteria sections</li>
+                    <li>Turn off nowrap on some page-specific key tables. E.G. Terms on MoveSets.</li>
+                    <li>Take a look at Key for Pokemon. (Overflows on mobile.)</li>
+                </ul>
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Look into ability to quit using IsMobile() to cause: <code>document.write(...)</code>
+                <br />Instead, look into something like:
+                <code>
+                    <pre style="margin-left:3em; margin-top:0; padding-left:0; text-indent:0;">
+@media only screen and (width : 1024px) and (orientation : landscape) {
+    .selector1 { width:960px; }
+}
+</pre>
+                </code>
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                Change to use GetFieldValue(field) and GetFieldValueById(id) (search for ".value" and ".checked")
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Double check appearance on other browsers:
+                <div style="margin-top:0; margin-left:2em; text-indent:0;">
+
+                    <span style="font-weight:bold; font-size:large;">IE</span>
+                    <ul>
+                        <li>
+                            Sections on home page is bad.
+                            <br />Appears to be that CELL_FILLER works differently on IE.
+                        </li>
+                    </ul>
+
+                    <br /><span style="font-weight:bold; font-size:large;">Mozilla</span>
+                    <ul>
+                        <li>
+                            Issues with Raid Boss table. <i>(See email to Jay.)</i>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                Look for places that could use a help button.
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                Find a PERFORMANT way to create scrolling tables.
+            </li>
+        </ul>
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Resources -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="RESOURCES_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Resources
+    </h2>
+    <div id="RESOURCES" class="INDENT">
+        <ul>
+            <li>
+                <input type="checkbox" />
+                Add twitter groups to Seattle area (if there are any.)
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Review Social INDENT with Josh to see if there is anything missing.
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Go Extender app?
+            </li>
+        </ul>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="TIPS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            Tips
+        </h3>
+        <div id="TIPS">
+            <ul>
+                <li class="PRIORITY_HIGH">
+                    <input type="checkbox" />
+                    Evolving Eevees:
+                    <ul>
+                        <li>
+                            <input type="checkbox" />
+                            - One-time names
+                        </li>
+                        <li>
+                            <input type="checkbox" />
+                            - buddy km + evolve time
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <input type="checkbox" />
+                    Check out:
+                    <br /><a href="https://www.reddit.com/r/TheSilphRoad/comments/7peg9a/my_pokemon_go_tips_to_my_earlier_self_guidelines/">https://www.reddit.com/r/TheSilphRoad/comments/7peg9a/my_pokemon_go_tips_to_my_earlier_self_guidelines/</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Charts -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="CHARTS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Charts
+    </h2>
+    <div id="CHARTS" class="INDENT">
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="EVOLUTIONS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            Evolutions
+        </h3>
+        <div id="EVOLUTIONS">
+            <ul>
+                <li class="PRIORITY_HIGH">
+                    <input type="checkbox" />
+                    Evolutions: Get the pokemon to center vertically.
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    Enhance Filtering:
+                    <ul>
+                        <li>Add checkbox for Only Released</li>
+                        <li>Add Filter for types.</li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    Add to Pop-up
+                    <ul>
+                        <li>Show what is needed to evolve (Candies, Special Item, etc.)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="POKECHART_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            PokeChart
+        </h3>
+        <div id="POKECHART">
+            <ul>
+                <li class="PRIORITY_LOW">
+                    <input type="checkbox" />
+                    Add to Popup:
+                    <ul>
+                        <li>MoveSets</li>
+                        <li>Evolutions</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="EFFECTIVENESS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            Effectiveness
+        </h3>
+        <div id="EFFECTIVENESS">
+            <ul>
+                <li>
+                    <input type="checkbox" />
+                    Add ability to select one of the following:
+                    <ul>
+                        <li>A cell</li>
+                        <li>A row and/or column Header</li>
+                    </ul>
+                    Highlight the appropriate row/column
+                </li>
+            </ul>
+        </div>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="RAIDBOSS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            RaidBoss
+        </h3>
+        <div id="RAIDBOSS">
+            <ul>
+                <li class="PRIORITY_HIGH">
+                    <input type="checkbox" />
+                    Add weaknesses based on moveset.
+                    <br />E.G. with Ho-Oh, you would want different attackers for hyperbeam vs. the other one.
+                    <br /><span class="NOTE">(See similar item in Tools section.)</span>
+                </li>
+            </ul>
+        </div>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="MOVE_SETS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            Move Sets
+        </h3>
+        <div id="MOVE_SETS">
+            <ul>
+                <li class="PRIORITY_EXTREME">
+                    <input type="checkbox" />
+                    Hidden Power can be of multiple Types!
+                    <br />Figure out how to deal this this.
+                    <ul>
+                        <li>Move Set DPS will differ when Hidden Power is boosted by Pokemon Type vs. not boosted.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Tools -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="TOOLS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Tools
+    </h2>
+    <div id="TOOLS" class="INDENT">
+        <ul>
+            <li>
+                <input type="checkbox" />
+                Create tool to determine effectiveness of a Move against a Pokemon.
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Create a tool to figure out best counters for a RaidBoss.
+                <i>(***** Try doing this as an app. *****)</i>
+                <br />For RaidBoss both Regular and Boosted:
+                <ul>
+                    <li>Get the DPS for each of the RaidBoss's possible MoveSets</li>
+                    <li>Figure out how long until it kills the Attacker</li>
+                    <li>For Attacker Moves both Regular and Boosted:</li>
+                    <li>Figure out how much damage the Attacker will do before it is killed.</li>
+                    <li>
+                        Take into account level, IV
+                        <table border="1">
+                            <tr><th rowspan="2">Raid Boss</th><th colspan="2">Move Sets</th><th colspan="2">True DPS</th></tr>
+                            <tr><th>Fast Move</th><th>Charged Move</th><th>Regular</th><th>Boosted</th></tr>
+                            <tr><td rowspan="3">Kyogre</td><td>Waterfall</td><td>Hydro Pump</td><td>22.35</td><td>(icon) 12.34</td></tr>
+                            <tr><td>Waterfall</td><td>Blizzardp</td><td>30.11</td><td>(icon) 56.78</td></tr>
+                            <tr><td>Waterfall</td><td>Thunder</td><td>28.00</td><td>(icon) 90.12</td></tr>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <input type="checkbox" />
+                Check out OSM (OpenStreetMap):
+                <ul>
+                    <li><a href="http://overpass-turbo.eu/s/ulp">http://overpass-turbo.eu/s/ulp</a></li>
+                    <li><a href="https://wiki.openstreetmap.org/wiki/Query-to-map">https://wiki.openstreetmap.org/wiki/Query-to-map</a></li>
+                </ul>
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" /> <b>Wait until Maps are back up before doing this.</b>
+                Finish SEAPokeMap Filter Generator.
+                <ul>
+                    <li>Add ability to specify Min IV</li>
+                </ul>
+            </li>
+
+            <li class="PRIORITY_LOW">
+                <input type="checkbox" />
+                Create tool to get IV for Pokemon.
+            </li>
+        </ul>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="SHOPPING_BOX_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            Shopping Box
+        </h3>
+        <div id="SHOPPING_BOX">
+            <ul>
+                <li>
+                    <input type="checkbox" />
+                    On ShoppingBoxTool Mark values that have been modified. (Bold? Background?)
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- ========================================================================================================= -->
+    <!-- Technical Reference -->
+    <!-- ========================================================================================================= -->
+    <br />
+    <hr />
+    <h2>
+        <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+            <div class="COLLAPSER" id="TECHNICAL_REFERENCE_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+        </div>
+        Technical Reference
+    </h2>
+    <div id="TECHNICAL_REFERENCE" class="INDENT">
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="GM_DATA_GENERATOR_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            GM_DataGenerator
+        </h3>
+        <div id="GM_DATA_GENERATOR">
+            <ul>
+                <li>
+                    <input type="checkbox" />Have GM_DataGenerator compare GAME_MASTER versions to see if there is any significant changes.
+                    <br />
+                </li>
+            </ul>
+        </div>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="FORMULAS_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            Formulas
+        </h3>
+        <div id="FORMULAS">
+            <ul>
+                <li>
+                    <input type="checkbox" />
+                    Add pictures to moves/index page
+                    <ul>
+                        <li>Energy bar from Pokemon battle</li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" />
+                    Do Example on moves/index page. (Include link to Move Sets.)
+                    <ul>
+                        <li>Probabilty of catch</li>
+                        <li>Probability=1−(1−BCR/[2∗CPM])Multipliers</li>
+                        <li>BCR = Base catch rate [Fixed % based on Pokemon species]</li>
+                        <li>CPM = CP Multiplier [A fixed number based on Pokemon level] --- lvl 1 CPM is 0.094</li>
+                        <li>Multipliers = Ball * Curve * Berry * Throw * Medal</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h3>
+            <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
+                <div class="COLLAPSER" id="GAME_MASTER_COLLAPSER" onclick="ToggleCollapser(event)">&#709;</div>
+            </div>
+            GAME_MASTER
+        </h3>
+        <div id="GAME_MASTER">
+            <ul>
+                <li>
+                    <input type="checkbox" />
+                    Figure out how to display special that you have to make a Feebus your buddy to Evolve Milotic.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

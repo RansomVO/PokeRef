@@ -20,7 +20,6 @@
         local.css;
         index.css;
         news.xml;
-        footernote.html;
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
@@ -116,7 +115,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
-        _datafiles.manual\pokemon.unreleased.xml;
+        _datafiles.manual\pokemon.unreleased_gens.xml;
       </Dependencies>
       <OutputFileName>evolutions.html</OutputFileName>
     </XslTransform>
@@ -251,6 +250,7 @@
         _datafiles\settings.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\movesets.gen1.xml;
+        _datafiles.manual\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -271,6 +271,7 @@
         _datafiles\settings.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\movesets.gen2.xml;
+        _datafiles.manual\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -291,6 +292,7 @@
         _datafiles\settings.xml;
         _datafiles\pokestats.gen3.xml;
         _datafiles\movesets.gen3.xml;
+        _datafiles.manual\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -315,6 +317,7 @@
         _datafiles\movesets.gen1.xml;
         _datafiles\movesets.gen2.xml;
         _datafiles\movesets.gen3.xml;
+        _datafiles.manual\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -947,7 +950,7 @@
       <Visible>true</Visible>
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
       <Dependencies>
-        tools\shoppingboxes.js;
+        tools\shoppingboxes.js.xsl;
         js\global.js;
         js\controls.js;
         xsl\global.xsl;
@@ -957,13 +960,19 @@
       </Dependencies>
       <OutputFileName>shoppingboxes.html</OutputFileName>
     </XslTransform>
-    <FixOutputFile Include="tools\shoppingboxes.js">
-      <Visible>true</Visible>
+    <FixIntermediateFile Include="tools\shoppingboxes.js.xsl">
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="tools\shoppingboxes.js.xml">
+      <Visible>true</Visible>
+      <DependentUpon>shoppingboxes.js.xsl</DependentUpon>
       <Dependencies>
         js\global.js;
+        _datafiles.manual\shoppingboxes.xml
       </Dependencies>
-    </FixOutputFile>
+      <OutputFileName>shoppingboxes.js</OutputFileName>
+    </XslTransform>
   </ItemGroup>
 
   <!-- Resources -->
@@ -1038,6 +1047,30 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
+    <FixOutputFile Include="_\index.js">
+      <DependentUpon>index.xsl</DependentUpon>
+      <Visible>true</Visible>
+    </FixOutputFile>
+
+    <FixIntermediateFile Include="_\calc.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="_\calc.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>calc.xsl</DependentUpon>
+      <Dependencies>
+        _\calc.js;
+        js\global.js;
+        _\index.css;
+        index.css;
+        css\unicode.css;
+      </Dependencies>
+      <OutputFileName>calc.html</OutputFileName>
+    </XslTransform>
+    <FixOutputFile Include="_\calc.js">
+      <DependentUpon>calc.xsl</DependentUpon>
+      <Visible>true</Visible>
+    </FixOutputFile>
   </ItemGroup>
 
 </Project>

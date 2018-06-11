@@ -57,10 +57,10 @@
 
         <hr />
         <h2 id="anchor_discord">
-          <xsl:text>Discord</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SEATTLE_DISCORD'" />
           </xsl:call-template>
+          <xsl:text>Discord</xsl:text>
         </h2>
         <div id="SEATTLE_DISCORD" class="INDENT">
           <p>
@@ -133,10 +133,10 @@
         <br />
         <hr />
         <h2 id="anchor_maps">
-          <xsl:text>Maps</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SEATTLE_MAPS'" />
           </xsl:call-template>
+          <xsl:text>Maps</xsl:text>
         </h2>
         <div id="SEATTLE_MAPS" class="INDENT">
           <p>Some websites have been created to show maps of where Pokemon can be found.</p>
@@ -351,10 +351,10 @@
         <br />
         <hr />
         <h2 id="anchor_social">
-          <xsl:text>Social Groups</xsl:text>
           <xsl:call-template name="Collapser">
             <xsl:with-param name="CollapseeID" select="'SEATTLE_SOCIAL'" />
           </xsl:call-template>
+          <xsl:text>Social Groups</xsl:text>
         </h2>
         <div id="SEATTLE_SOCIAL" class="INDENT">
           <p>

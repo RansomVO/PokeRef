@@ -72,7 +72,7 @@
             More info about the use of these values can be found in <a href="/charts/effectiveness.html">Move Effectiveness</a> or <a href="/tech/formulas/movesetdamage.html">Move Set Damage Formulas</a> pages.
             <br />Also see
             <xsl:choose>
-              <xsl:when test="Moves/Category = 'Charged'">
+              <xsl:when test="Moves/@category = 'Charged'">
                 <a href="moves.fast.html">Fast Moves</a>
               </xsl:when>
               <xsl:otherwise>

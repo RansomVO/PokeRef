@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-05-14" gen="4" region="Sinnoh">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="4" region="Sinnoh">
   <Pokemon id="387" name="Turtwig" family="Turtwig" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
@@ -79,11 +79,11 @@
   <Pokemon id="408" name="Cranidos" family="Cranidos" availability="Unreleased">
     <Type primary="Rock" />
   </Pokemon>
-  <Pokemon id="409" name="Rampardos" family="Cranidos" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="409" name="Rampardos" family="Cranidos" availability="Unreleased">
     <Type primary="Rock" />
     <EvolvesFrom id="408" name="Cranidos" />
   </Pokemon>
-  <Pokemon id="410" name="Shieldon" family="Shieldon" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="410" name="Shieldon" family="Shieldon" availability="Unreleased">
     <Type primary="Rock" secondary="Steel" />
   </Pokemon>
   <Pokemon id="411" name="Bastiodon" family="Shieldon" rarity="Legendary" availability="Unreleased">
@@ -120,10 +120,10 @@
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="415" name="Combee" />
   </Pokemon>
-  <Pokemon id="417" name="Pachirisu" family="Pachirisu" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="417" name="Pachirisu" family="Pachirisu" rarity="Legendary" availability="Unreleased">
     <Type primary="Electric" />
   </Pokemon>
-  <Pokemon id="418" name="Buizel" family="Buizel" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="418" name="Buizel" family="Buizel" rarity="Legendary" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
   <Pokemon id="419" name="Floatzel" family="Buizel" rarity="Mythic" availability="Unreleased">
@@ -140,11 +140,11 @@
   <Pokemon id="422" name="Shellos" family="Shellos" rarity="Mythic" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="423" name="Gastrodon" family="Shellos" availability="Unreleased">
+  <Pokemon id="423" name="Gastrodon" family="Shellos" rarity="Mythic" availability="Unreleased">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="422" name="Shellos" />
   </Pokemon>
-  <Pokemon id="424" name="Ambipom" family="Ambipom" availability="Unreleased">
+  <Pokemon id="424" name="Ambipom" family="Ambipom" rarity="Mythic" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
   <Pokemon id="425" name="Drifloon" family="Drifloon" availability="Unreleased">
