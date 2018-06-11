@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="2" region="Johto">
-  <Pokemon id="152" name="Chikorita" family="Chikorita" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="92" defense="122" stamina="90" />
@@ -10,7 +10,7 @@
       <Max cp="801" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="153" name="Bayleef" family="Chikorita" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="153" name="Bayleef" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <EvolvesFrom id="152" name="Chikorita" candies="25" />
     <Stats>
@@ -21,7 +21,7 @@
       <Max cp="1296" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="154" name="Meganium" family="Chikorita" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="154" name="Meganium" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <EvolvesFrom id="153" name="Bayleef" candies="100" />
     <Stats>
@@ -32,7 +32,7 @@
       <Max cp="2227" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="155" name="Cyndaquil" family="Cyndaquil" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="155" name="Cyndaquil" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="116" defense="96" stamina="78" />
@@ -42,7 +42,7 @@
       <Max cp="831" hp="73" />
     </Stats>
   </Pokemon>
-  <Pokemon id="156" name="Quilava" family="Cyndaquil" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="156" name="Quilava" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" />
     <EvolvesFrom id="155" name="Cyndaquil" candies="25" />
     <Stats>
@@ -53,7 +53,7 @@
       <Max cp="1484" hp="103" />
     </Stats>
   </Pokemon>
-  <Pokemon id="157" name="Typhlosion" family="Cyndaquil" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="157" name="Typhlosion" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" />
     <EvolvesFrom id="156" name="Quilava" candies="100" />
     <Stats>
@@ -64,7 +64,7 @@
       <Max cp="2686" hp="135" />
     </Stats>
   </Pokemon>
-  <Pokemon id="158" name="Totodile" family="Totodile" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="158" name="Totodile" family="Totodile" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="117" defense="116" stamina="100" />
@@ -74,7 +74,7 @@
       <Max cp="1011" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="159" name="Croconaw" family="Totodile" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="159" name="Croconaw" family="Totodile" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="158" name="Totodile" candies="25" />
     <Stats>
@@ -85,7 +85,7 @@
       <Max cp="1598" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="160" name="Feraligatr" family="Totodile" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="160" name="Feraligatr" family="Totodile" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="159" name="Croconaw" candies="100" />
     <Stats>
@@ -96,7 +96,7 @@
       <Max cp="2721" hp="146" />
     </Stats>
   </Pokemon>
-  <Pokemon id="161" name="Sentret" family="Sentret" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
+  <Pokemon id="161" name="Sentret" family="Sentret" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="79" defense="77" stamina="70" />
@@ -106,7 +106,7 @@
       <Max cp="519" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="162" name="Furret" family="Sentret" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="162" name="Furret" family="Sentret" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="161" name="Sentret" candies="25" />
     <Stats>
@@ -117,7 +117,7 @@
       <Max cp="1667" hp="146" />
     </Stats>
   </Pokemon>
-  <Pokemon id="163" name="Hoothoot" family="Hoothoot" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
+  <Pokemon id="163" name="Hoothoot" family="Hoothoot" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="67" defense="101" stamina="120" />
@@ -127,7 +127,7 @@
       <Max cp="640" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="164" name="Noctowl" family="Hoothoot" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="164" name="Noctowl" family="Hoothoot" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="163" name="Hoothoot" candies="50" />
     <Stats>
@@ -138,7 +138,7 @@
       <Max cp="2040" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="165" name="Ledyba" family="Ledyba" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="165" name="Ledyba" family="Ledyba" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Flying" />
     <Stats>
       <BaseIV attack="72" defense="142" stamina="80" />
@@ -148,7 +148,7 @@
       <Max cp="663" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="166" name="Ledian" family="Ledyba" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="166" name="Ledian" family="Ledyba" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="165" name="Ledyba" candies="25" />
     <Stats>
@@ -159,7 +159,7 @@
       <Max cp="1275" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="167" name="Spinarak" family="Spinarak" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="167" name="Spinarak" family="Spinarak" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Poison" />
     <Stats>
       <BaseIV attack="105" defense="73" stamina="80" />
@@ -169,7 +169,7 @@
       <Max cp="685" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="168" name="Ariados" family="Spinarak" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="168" name="Ariados" family="Spinarak" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Poison" />
     <EvolvesFrom id="167" name="Spinarak" candies="50" />
     <Stats>
@@ -180,7 +180,7 @@
       <Max cp="1636" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="169" name="Crobat" family="Zubat" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="169" name="Crobat" family="Zubat" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Poison" secondary="Flying" />
     <EvolvesFrom id="42" name="Golbat" candies="100" />
     <Stats>
@@ -191,7 +191,7 @@
       <Max cp="2466" hp="146" />
     </Stats>
   </Pokemon>
-  <Pokemon id="170" name="Chinchou" family="Chinchou" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="170" name="Chinchou" family="Chinchou" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Electric" />
     <Stats>
       <BaseIV attack="106" defense="106" stamina="150" />
@@ -201,7 +201,7 @@
       <Max cp="1067" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="171" name="Lanturn" family="Chinchou" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="171" name="Lanturn" family="Chinchou" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Electric" />
     <EvolvesFrom id="170" name="Chinchou" candies="50" />
     <Stats>
@@ -212,7 +212,7 @@
       <Max cp="2077" hp="209" />
     </Stats>
   </Pokemon>
-  <Pokemon id="172" name="Pichu" family="Pikachu" gender_ratio="1 : 1" rarity="Normal" availability="Hatch Only: 2K" shiny="true">
+  <Pokemon id="172" name="Pichu" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="Hatch Only: 2K" shiny="true">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="77" defense="63" stamina="40" />
@@ -222,7 +222,7 @@
       <Max cp="376" hp="43" />
     </Stats>
   </Pokemon>
-  <Pokemon id="173" name="Cleffa" family="Clefairy" gender_ratio="1 : 3" rarity="Normal" availability="Hatch Only: 2K">
+  <Pokemon id="173" name="Cleffa" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" rarity="Normal" availability="Hatch Only: 2K">
     <Type primary="Fairy" />
     <Stats>
       <BaseIV attack="75" defense="91" stamina="100" />
@@ -232,7 +232,7 @@
       <Max cp="620" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="174" name="Igglybuff" family="Jigglypuff" gender_ratio="1 : 3" rarity="Normal" availability="Hatch Only: 2K">
+  <Pokemon id="174" name="Igglybuff" family="Jigglypuff" buddy_km="1" gender_ratio="1 : 3" rarity="Normal" availability="Hatch Only: 2K">
     <Type primary="Normal" secondary="Fairy" />
     <Stats>
       <BaseIV attack="69" defense="34" stamina="180" />
@@ -242,7 +242,7 @@
       <Max cp="512" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="175" name="Togepi" family="Togepi" gender_ratio="7 : 1" rarity="Normal" availability="Hatch Only: 2K" shiny="true">
+  <Pokemon id="175" name="Togepi" family="Togepi" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="Hatch Only: 2K" shiny="true">
     <Type primary="Fairy" />
     <Stats>
       <BaseIV attack="67" defense="116" stamina="70" />
@@ -252,7 +252,7 @@
       <Max cp="540" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="176" name="Togetic" family="Togepi" gender_ratio="7 : 1" rarity="Normal" availability="General" shiny="true">
+  <Pokemon id="176" name="Togetic" family="Togepi" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Fairy" secondary="Flying" />
     <EvolvesFrom id="175" name="Togepi" candies="50" />
     <Stats>
@@ -263,7 +263,7 @@
       <Max cp="1543" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="177" name="Natu" family="Natu" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="177" name="Natu" family="Natu" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" secondary="Flying" />
     <Stats>
       <BaseIV attack="134" defense="89" stamina="80" />
@@ -273,7 +273,7 @@
       <Max cp="925" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="178" name="Xatu" family="Natu" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="178" name="Xatu" family="Natu" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" secondary="Flying" />
     <EvolvesFrom id="177" name="Natu" candies="50" />
     <Stats>
@@ -284,7 +284,7 @@
       <Max cp="1975" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="179" name="Mareep" family="Mareep" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
+  <Pokemon id="179" name="Mareep" family="Mareep" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="114" defense="82" stamina="110" />
@@ -294,7 +294,7 @@
       <Max cp="887" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="180" name="Flaaffy" family="Mareep" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
+  <Pokemon id="180" name="Flaaffy" family="Mareep" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Electric" />
     <EvolvesFrom id="179" name="Mareep" candies="25" />
     <Stats>
@@ -305,7 +305,7 @@
       <Max cp="1402" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="181" name="Ampharos" family="Mareep" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
+  <Pokemon id="181" name="Ampharos" family="Mareep" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Electric" />
     <EvolvesFrom id="180" name="Flaaffy" candies="100" />
     <Stats>
@@ -316,7 +316,7 @@
       <Max cp="2695" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="182" name="Bellossom" family="Oddish" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="182" name="Bellossom" family="Oddish" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <EvolvesFrom id="44" name="Gloom" candies="100" special="Sun Stone" />
     <Stats>
@@ -327,7 +327,7 @@
       <Max cp="2108" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="183" name="Marill" family="Marill" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="183" name="Marill" family="Marill" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Fairy" />
     <EvolvesFrom id="298" name="Azurill" candies="25" />
     <Stats>
@@ -338,7 +338,7 @@
       <Max cp="420" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="184" name="Azumarill" family="Marill" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="184" name="Azumarill" family="Marill" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Fairy" />
     <EvolvesFrom id="183" name="Marill" candies="25" />
     <Stats>
@@ -349,7 +349,7 @@
       <Max cp="1503" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="185" name="Sudowoodo" family="Sudowoodo" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="185" name="Sudowoodo" family="Sudowoodo" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" />
     <Stats>
       <BaseIV attack="167" defense="198" stamina="140" />
@@ -359,7 +359,7 @@
       <Max cp="2065" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="186" name="Politoed" family="Poliwag" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="186" name="Politoed" family="Poliwag" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="61" name="Poliwhirl" candies="100" special="Kings Rock" />
     <Stats>
@@ -370,7 +370,7 @@
       <Max cp="2371" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="187" name="Hoppip" family="Hoppip" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="187" name="Hoppip" family="Hoppip" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Flying" />
     <Stats>
       <BaseIV attack="67" defense="101" stamina="70" />
@@ -380,7 +380,7 @@
       <Max cp="508" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="188" name="Skiploom" family="Hoppip" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="188" name="Skiploom" family="Hoppip" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Flying" />
     <EvolvesFrom id="187" name="Hoppip" candies="25" />
     <Stats>
@@ -391,7 +391,7 @@
       <Max cp="882" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="189" name="Jumpluff" family="Hoppip" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="189" name="Jumpluff" family="Hoppip" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Flying" />
     <EvolvesFrom id="188" name="Skiploom" candies="100" />
     <Stats>
@@ -402,7 +402,7 @@
       <Max cp="1553" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="190" name="Aipom" family="Aipom" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="190" name="Aipom" family="Aipom" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="136" defense="112" stamina="110" />
@@ -412,7 +412,7 @@
       <Max cp="1188" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="191" name="Sunkern" family="Sunkern" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="191" name="Sunkern" family="Sunkern" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="55" defense="55" stamina="60" />
@@ -422,7 +422,7 @@
       <Max cp="316" hp="59" />
     </Stats>
   </Pokemon>
-  <Pokemon id="192" name="Sunflora" family="Sunkern" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="192" name="Sunflora" family="Sunkern" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <EvolvesFrom id="191" name="Sunkern" candies="50" special="Sun Stone" />
     <Stats>
@@ -433,7 +433,7 @@
       <Max cp="2048" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="193" name="Yanma" family="Yanma" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
+  <Pokemon id="193" name="Yanma" family="Yanma" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
     <Type primary="Bug" secondary="Flying" />
     <Stats>
       <BaseIV attack="154" defense="94" stamina="130" />
@@ -443,7 +443,7 @@
       <Max cp="1326" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="194" name="Wooper" family="Wooper" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="194" name="Wooper" family="Wooper" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Ground" />
     <Stats>
       <BaseIV attack="75" defense="75" stamina="110" />
@@ -453,7 +453,7 @@
       <Max cp="596" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="195" name="Quagsire" family="Wooper" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="195" name="Quagsire" family="Wooper" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="194" name="Wooper" candies="50" />
     <Stats>
@@ -464,7 +464,7 @@
       <Max cp="1929" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="196" name="Espeon" family="Eevee" buddy_km="1" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="196" name="Espeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Psychic" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -475,7 +475,7 @@
       <Max cp="3000" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="197" name="Umbreon" family="Eevee" buddy_km="1" gender_ratio="7 : 1" rarity="Normal" availability="General">
+  <Pokemon id="197" name="Umbreon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Dark" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -486,7 +486,7 @@
       <Max cp="2052" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="198" name="Murkrow" family="Murkrow" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
+  <Pokemon id="198" name="Murkrow" family="Murkrow" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Dark" secondary="Flying" />
     <Stats>
       <BaseIV attack="175" defense="87" stamina="120" />
@@ -496,7 +496,7 @@
       <Max cp="1392" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="199" name="Slowking" family="Slowpoke" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="199" name="Slowking" family="Slowpoke" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Psychic" />
     <EvolvesFrom id="79" name="Slowpoke" candies="50" special="Kings Rock" />
     <Stats>
@@ -507,7 +507,7 @@
       <Max cp="2482" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="200" name="Misdreavus" family="Misdreavus" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="200" name="Misdreavus" family="Misdreavus" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ghost" />
     <Stats>
       <BaseIV attack="167" defense="167" stamina="120" />
@@ -517,7 +517,7 @@
       <Max cp="1781" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="201" name="Unown" family="Unown" buddy_km="1" gender_ratio="⚲" rarity="Normal" availability="General">
+  <Pokemon id="201" name="Unown" family="Unown" buddy_km="5" gender_ratio="⚲" rarity="Normal" availability="General">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="136" defense="91" stamina="96" />
@@ -527,7 +527,7 @@
       <Max cp="1022" hp="87" />
     </Stats>
   </Pokemon>
-  <Pokemon id="202" name="Wobbuffet" family="Wobbuffet" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
+  <Pokemon id="202" name="Wobbuffet" family="Wobbuffet" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Psychic" />
     <EvolvesFrom id="360" name="Wynaut" candies="25" />
     <Stats>
@@ -538,7 +538,7 @@
       <Max cp="1024" hp="312" />
     </Stats>
   </Pokemon>
-  <Pokemon id="203" name="Girafarig" family="Girafarig" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="203" name="Girafarig" family="Girafarig" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" secondary="Psychic" />
     <Stats>
       <BaseIV attack="182" defense="133" stamina="140" />
@@ -548,7 +548,7 @@
       <Max cp="1863" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="204" name="Pineco" family="Pineco" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="204" name="Pineco" family="Pineco" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="108" defense="146" stamina="100" />
@@ -558,7 +558,7 @@
       <Max cp="1045" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="205" name="Forretress" family="Pineco" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="205" name="Forretress" family="Pineco" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Steel" />
     <EvolvesFrom id="204" name="Pineco" candies="50" />
     <Stats>
@@ -569,7 +569,7 @@
       <Max cp="2263" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="206" name="Dunsparce" family="Dunsparce" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="206" name="Dunsparce" family="Dunsparce" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="131" defense="131" stamina="200" />
@@ -579,7 +579,7 @@
       <Max cp="1615" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="207" name="Gligar" family="Gligar" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="207" name="Gligar" family="Gligar" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ground" secondary="Flying" />
     <Stats>
       <BaseIV attack="143" defense="204" stamina="130" />
@@ -589,7 +589,7 @@
       <Max cp="1758" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="208" name="Steelix" family="Onix" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="208" name="Steelix" family="Onix" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Steel" secondary="Ground" />
     <EvolvesFrom id="95" name="Onix" candies="50" special="Metal Coat" />
     <Stats>
@@ -600,7 +600,7 @@
       <Max cp="2439" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="209" name="Snubbull" family="Snubbull" gender_ratio="1 : 3" rarity="Normal" availability="General">
+  <Pokemon id="209" name="Snubbull" family="Snubbull" buddy_km="3" gender_ratio="1 : 3" rarity="Normal" availability="General">
     <Type primary="Fairy" />
     <Stats>
       <BaseIV attack="137" defense="89" stamina="120" />
@@ -610,7 +610,7 @@
       <Max cp="1124" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="210" name="Granbull" family="Snubbull" gender_ratio="1 : 3" rarity="Normal" availability="General">
+  <Pokemon id="210" name="Granbull" family="Snubbull" buddy_km="3" gender_ratio="1 : 3" rarity="Normal" availability="General">
     <Type primary="Fairy" />
     <EvolvesFrom id="209" name="Snubbull" candies="50" />
     <Stats>
@@ -621,7 +621,7 @@
       <Max cp="2440" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="211" name="Qwilfish" family="Qwilfish" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="211" name="Qwilfish" family="Qwilfish" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Poison" />
     <Stats>
       <BaseIV attack="184" defense="148" stamina="130" />
@@ -631,7 +631,7 @@
       <Max cp="1910" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="212" name="Scizor" family="Scyther" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="212" name="Scizor" family="Scyther" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Steel" />
     <EvolvesFrom id="123" name="Scyther" candies="50" special="Metal Coat" />
     <Stats>
@@ -642,7 +642,7 @@
       <Max cp="2801" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="213" name="Shuckle" family="Shuckle" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="213" name="Shuckle" family="Shuckle" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Bug" secondary="Rock" />
     <Stats>
       <BaseIV attack="17" defense="396" stamina="40" />
@@ -652,7 +652,7 @@
       <Max cp="300" hp="43" />
     </Stats>
   </Pokemon>
-  <Pokemon id="214" name="Heracross" family="Heracross" gender_ratio="1 : 1" rarity="Normal" availability="Regional: Equatorial">
+  <Pokemon id="214" name="Heracross" family="Heracross" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="Regional: Equatorial">
     <Type primary="Bug" secondary="Fighting" />
     <Stats>
       <BaseIV attack="234" defense="189" stamina="160" />
@@ -662,7 +662,7 @@
       <Max cp="2938" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="215" name="Sneasel" family="Sneasel" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="215" name="Sneasel" family="Sneasel" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Dark" secondary="Ice" />
     <Stats>
       <BaseIV attack="189" defense="157" stamina="110" />
@@ -672,7 +672,7 @@
       <Max cp="1868" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="216" name="Teddiursa" family="Teddiursa" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="216" name="Teddiursa" family="Teddiursa" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="142" defense="93" stamina="120" />
@@ -682,7 +682,7 @@
       <Max cp="1184" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="217" name="Ursaring" family="Teddiursa" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="217" name="Ursaring" family="Teddiursa" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="216" name="Teddiursa" candies="50" />
     <Stats>
@@ -693,7 +693,7 @@
       <Max cp="2760" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="218" name="Slugma" family="Slugma" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="218" name="Slugma" family="Slugma" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="118" defense="71" stamina="80" />
@@ -703,7 +703,7 @@
       <Max cp="750" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="219" name="Magcargo" family="Slugma" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="219" name="Magcargo" family="Slugma" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" secondary="Rock" />
     <EvolvesFrom id="218" name="Slugma" candies="50" />
     <Stats>
@@ -714,7 +714,7 @@
       <Max cp="1543" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="220" name="Swinub" family="Swinub" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="220" name="Swinub" family="Swinub" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" secondary="Ground" />
     <Stats>
       <BaseIV attack="90" defense="74" stamina="100" />
@@ -724,7 +724,7 @@
       <Max cp="663" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="221" name="Piloswine" family="Swinub" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="221" name="Piloswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" secondary="Ground" />
     <EvolvesFrom id="220" name="Swinub" candies="50" />
     <Stats>
@@ -735,7 +735,7 @@
       <Max cp="2284" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="222" name="Corsola" family="Corsola" gender_ratio="1 : 3" rarity="Normal" availability="Regional: Southern Hemisphere + Mexico">
+  <Pokemon id="222" name="Corsola" family="Corsola" buddy_km="3" gender_ratio="1 : 3" rarity="Normal" availability="Regional: Southern Hemisphere + Mexico">
     <Type primary="Water" secondary="Rock" />
     <Stats>
       <BaseIV attack="118" defense="156" stamina="110" />
@@ -745,7 +745,7 @@
       <Max cp="1214" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="223" name="Remoraid" family="Remoraid" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
+  <Pokemon id="223" name="Remoraid" family="Remoraid" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General" ditto="true">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="127" defense="69" stamina="70" />
@@ -755,7 +755,7 @@
       <Max cp="749" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="224" name="Octillery" family="Remoraid" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="224" name="Octillery" family="Remoraid" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="223" name="Remoraid" candies="50" />
     <Stats>
@@ -766,7 +766,7 @@
       <Max cp="2124" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="225" name="Delibird" family="Delibird" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="225" name="Delibird" family="Delibird" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" secondary="Flying" />
     <Stats>
       <BaseIV attack="128" defense="90" stamina="90" />
@@ -776,7 +776,7 @@
       <Max cp="937" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="226" name="Mantine" family="Mantine" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="226" name="Mantine" family="Mantine" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Flying" />
     <Stats>
       <BaseIV attack="148" defense="260" stamina="130" />
@@ -786,7 +786,7 @@
       <Max cp="2032" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="227" name="Skarmory" family="Skarmory" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="227" name="Skarmory" family="Skarmory" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Steel" secondary="Flying" />
     <Stats>
       <BaseIV attack="148" defense="260" stamina="130" />
@@ -796,7 +796,7 @@
       <Max cp="2032" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="228" name="Houndour" family="Houndour" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="228" name="Houndour" family="Houndour" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Dark" secondary="Fire" />
     <Stats>
       <BaseIV attack="152" defense="93" stamina="90" />
@@ -806,7 +806,7 @@
       <Max cp="1110" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="229" name="Houndoom" family="Houndour" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="229" name="Houndoom" family="Houndour" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Dark" secondary="Fire" />
     <EvolvesFrom id="228" name="Houndour" candies="50" />
     <Stats>
@@ -817,7 +817,7 @@
       <Max cp="2529" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="230" name="Kingdra" family="Horsea" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="230" name="Kingdra" family="Horsea" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" secondary="Dragon" />
     <EvolvesFrom id="117" name="Seadra" candies="100" special="Dragon Scale" />
     <Stats>
@@ -828,7 +828,7 @@
       <Max cp="2424" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="231" name="Phanpy" family="Phanpy" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="231" name="Phanpy" family="Phanpy" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="107" defense="107" stamina="180" />
@@ -838,7 +838,7 @@
       <Max cp="1175" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="232" name="Donphan" family="Phanpy" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="232" name="Donphan" family="Phanpy" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ground" />
     <EvolvesFrom id="231" name="Phanpy" candies="50" />
     <Stats>
@@ -849,7 +849,7 @@
       <Max cp="3022" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="233" name="Porygon2" family="Porygon" gender_ratio="⚲" rarity="Normal" availability="General">
+  <Pokemon id="233" name="Porygon2" family="Porygon" buddy_km="3" gender_ratio="⚲" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="137" name="Porygon" candies="50" special="Up Grade" />
     <Stats>
@@ -860,7 +860,7 @@
       <Max cp="2546" hp="146" />
     </Stats>
   </Pokemon>
-  <Pokemon id="234" name="Stantler" family="Stantler" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="234" name="Stantler" family="Stantler" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="192" defense="132" stamina="146" />
@@ -870,7 +870,7 @@
       <Max cp="1988" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="235" name="Smeargle" family="Smeargle" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
+  <Pokemon id="235" name="Smeargle" family="Smeargle" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="Unreleased">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="40" defense="88" stamina="110" />
@@ -880,7 +880,7 @@
       <Max cp="389" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="236" name="Tyrogue" family="Tyrogue" buddy_km="1" gender_ratio="♂" rarity="Normal" availability="Hatch Only: 5K">
+  <Pokemon id="236" name="Tyrogue" family="Tyrogue" buddy_km="5" gender_ratio="♂" rarity="Normal" availability="Hatch Only: 5K">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="64" defense="64" stamina="70" />
@@ -890,7 +890,7 @@
       <Max cp="404" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="237" name="Hitmontop" family="Tyrogue" buddy_km="1" gender_ratio="♂" rarity="Normal" availability="General">
+  <Pokemon id="237" name="Hitmontop" family="Tyrogue" buddy_km="5" gender_ratio="♂" rarity="Normal" availability="General">
     <Type primary="Fighting" />
     <EvolvesFrom id="236" name="Tyrogue" candies="25" />
     <Stats>
@@ -901,7 +901,7 @@
       <Max cp="1905" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="238" name="Smoochum" family="Jynx" buddy_km="1" gender_ratio="♀" rarity="Normal" availability="Hatch Only: 5K">
+  <Pokemon id="238" name="Smoochum" family="Jynx" buddy_km="5" gender_ratio="♀" rarity="Normal" availability="Hatch Only: 5K">
     <Type primary="Ice" secondary="Psychic" />
     <Stats>
       <BaseIV attack="153" defense="116" stamina="90" />
@@ -911,7 +911,7 @@
       <Max cp="1230" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="239" name="Elekid" family="Electabuzz" buddy_km="1" gender_ratio="3 : 1" rarity="Normal" availability="Hatch Only: 5K">
+  <Pokemon id="239" name="Elekid" family="Electabuzz" buddy_km="5" gender_ratio="3 : 1" rarity="Normal" availability="Hatch Only: 5K">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="135" defense="110" stamina="90" />
@@ -921,7 +921,7 @@
       <Max cp="1073" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="240" name="Magby" family="Magmar" buddy_km="1" gender_ratio="3 : 1" rarity="Normal" availability="Hatch Only: 5K" shiny="true">
+  <Pokemon id="240" name="Magby" family="Magmar" buddy_km="5" gender_ratio="3 : 1" rarity="Normal" availability="Hatch Only: 5K" shiny="true">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="151" defense="108" stamina="90" />
@@ -931,7 +931,7 @@
       <Max cp="1178" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="241" name="Miltank" family="Miltank" buddy_km="1" gender_ratio="♀" rarity="Normal" availability="General">
+  <Pokemon id="241" name="Miltank" family="Miltank" buddy_km="5" gender_ratio="♀" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="157" defense="211" stamina="190" />
@@ -941,7 +941,7 @@
       <Max cp="2312" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="242" name="Blissey" family="Chansey" buddy_km="1" gender_ratio="♀" rarity="Normal" availability="General">
+  <Pokemon id="242" name="Blissey" family="Chansey" buddy_km="5" gender_ratio="♀" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="113" name="Chansey" candies="50" />
     <Stats>
@@ -952,7 +952,7 @@
       <Max cp="3219" hp="414" />
     </Stats>
   </Pokemon>
-  <Pokemon id="243" name="Raikou" family="Raikou" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="243" name="Raikou" family="Raikou" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="241" defense="210" stamina="180" />
@@ -962,7 +962,7 @@
       <Max cp="3349" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="244" name="Entei" family="Entei" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="244" name="Entei" family="Entei" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="235" defense="176" stamina="230" />
@@ -972,7 +972,7 @@
       <Max cp="3377" hp="193" />
     </Stats>
   </Pokemon>
-  <Pokemon id="245" name="Suicune" family="Suicune" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="245" name="Suicune" family="Suicune" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="180" defense="235" stamina="200" />
@@ -982,7 +982,7 @@
       <Max cp="2823" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="246" name="Larvitar" family="Larvitar" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="246" name="Larvitar" family="Larvitar" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="115" defense="93" stamina="100" />
@@ -992,7 +992,7 @@
       <Max cp="904" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="247" name="Pupitar" family="Larvitar" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="247" name="Pupitar" family="Larvitar" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" secondary="Ground" />
     <EvolvesFrom id="246" name="Larvitar" candies="25" />
     <Stats>
@@ -1003,7 +1003,7 @@
       <Max cp="1608" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="248" name="Tyranitar" family="Larvitar" buddy_km="1" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="248" name="Tyranitar" family="Larvitar" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Rock" secondary="Dark" />
     <EvolvesFrom id="247" name="Pupitar" candies="100" />
     <Stats>
@@ -1014,7 +1014,7 @@
       <Max cp="3670" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="249" name="Lugia" family="Lugia" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="true">
+  <Pokemon id="249" name="Lugia" family="Lugia" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="true">
     <Type primary="Psychic" secondary="Flying" />
     <Stats>
       <BaseIV attack="193" defense="323" stamina="212" />
@@ -1024,7 +1024,7 @@
       <Max cp="3598" hp="179" />
     </Stats>
   </Pokemon>
-  <Pokemon id="250" name="Ho-Oh" family="Ho Oh" buddy_km="5" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="true">
+  <Pokemon id="250" name="Ho-Oh" family="Ho Oh" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="true">
     <Type primary="Fire" secondary="Flying" />
     <Stats>
       <BaseIV attack="239" defense="274" stamina="193" />
@@ -1034,7 +1034,7 @@
       <Max cp="3889" hp="164" />
     </Stats>
   </Pokemon>
-  <Pokemon id="251" name="Celebi" family="Celebi" buddy_km="1" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="251" name="Celebi" family="Celebi" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Grass" />
     <Stats>
       <BaseIV attack="210" defense="210" stamina="200" />
