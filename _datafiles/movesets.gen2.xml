@@ -2810,6 +2810,21 @@
     <FastAttack name="Iron Tail" stab="false" legacy="false" />
     <ChargedAttack name="Stone Edge" stab="true" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="18.07909604519774" true_dps="27.514124293785311" comparison="98">
+    <Pokemon id="248" name="Tyranitar" />
+    <FastAttack name="Smack Down" stab="true" legacy="true" />
+    <ChargedAttack name="Fire Blast" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="16.883116883116884" true_dps="28.18181818181818" comparison="101">
+    <Pokemon id="248" name="Tyranitar" />
+    <FastAttack name="Smack Down" stab="true" legacy="true" />
+    <ChargedAttack name="Crunch" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="17.721518987341771" true_dps="29.556962025316455" comparison="105">
+    <Pokemon id="248" name="Tyranitar" />
+    <FastAttack name="Smack Down" stab="true" legacy="true" />
+    <ChargedAttack name="Stone Edge" stab="true" legacy="false" />
+  </MoveSet>
   <MoveSet base_dps="18.666666666666668" true_dps="24.666666666666668" comparison="101">
     <Pokemon id="249" name="Lugia" />
     <FastAttack name="Extrasensory" stab="true" legacy="false" />

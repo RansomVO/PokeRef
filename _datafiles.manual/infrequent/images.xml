@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Images last_updated="2018-05-09">
   <!-- #region Items -->
+  <Image id="Backpack" title="Backpack" src="/images/items/backpack.png" />
+
   <Image id="Potion" title="Potion" src="/images/items/potion.png" />
   <Image id="PotionSuper" title="Super Potion" src="/images/items/potion_super.png" />
   <Image id="PotionHyper" title="Hyper Potion" src="/images/items/potion_hyper.png" />
@@ -71,9 +73,26 @@
   <Image id="BoxUltraWinter2018" title="Ultra Box" src="/images/game/box_ultra_winter-2018.png" />
   <!-- #endregion Box History -->
 
+  <Image id="Gen_1" title="Gen 1 (Kanto)" src="/images/game/gen_1.png" />
+  <Image id="Gen_2" title="Gen 2 (Johto)" src="/images/game/gen_2.png" />
+  <Image id="Gen_3" title="Gen 3 (Hoenn)" src="/images/game/gen_3.png" />
+  <Image id="Gen_4" title="Gen 4 (Sinnoh)" src="/images/game/gen_4.png" />
+  <Image id="Gen_5" title="Gen 5 (Unova)" src="/images/game/gen_5.png" />
+  <Image id="Gen_6" title="Gen 6 (Kalos)" src="/images/game/gen_6.png" />
+  <Image id="Gen_7" title="Gen 7 (Alola)" src="/images/game/gen_7.png" />
+
   <Image id="Egg2K" title="2K Egg" src="/images/game/egg_2K.png" />
   <Image id="Egg5K" title="5K Egg" src="/images/game/egg_5K.png" />
   <Image id="Egg10K" title="10K Egg" src="/images/game/egg_10K.png" />
+
+  <Image id="EggRaidTier5" title="Tier 5 Raid" src="/images/game/egg_raid_tier5.png" />
+  <Image id="EggRaidTier4" title="Tier 4 Raid" src="/images/game/egg_raid_tier3-4.png" />
+  <Image id="EggRaidTier3" title="Tier 3 Raid" src="/images/game/egg_raid_tier3-4.png" />
+  <Image id="EggRaidTier2" title="Tier 2 Raid" src="/images/game/egg_raid_tier1-2.png" />
+  <Image id="EggRaidTier1" title="Tier 1 Raid" src="/images/game/egg_raid_tier1-2.png" />
+
+  <Image id="LogoGym" title="Gym" src="/images/game/logo_gym.png" />
+  <Image id="LogoResearch" title="Research" src="/images/game/logo_research.png" />
 
   <Image id="Encounter" title="Encounter" src="/images/game/encounter.png" />
   <Image id="HatchOnly" title="Hatch Only" src="/images/game/hatchonly.png" />

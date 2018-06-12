@@ -3770,6 +3770,16 @@
     <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
     <ChargedAttack name="Thunder" stab="false" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="16.774193548387096" true_dps="26.774193548387096" comparison="94">
+    <Pokemon id="380" name="Latias" />
+    <FastAttack name="Dragon Breath" stab="true" legacy="false" />
+    <ChargedAttack name="Dragon Claw" stab="true" legacy="true" />
+  </MoveSet>
+  <MoveSet base_dps="16.065573770491802" true_dps="24.918032786885245" comparison="87">
+    <Pokemon id="380" name="Latias" />
+    <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+    <ChargedAttack name="Dragon Claw" stab="true" legacy="true" />
+  </MoveSet>
   <MoveSet base_dps="16.33986928104575" true_dps="29.542483660130717" comparison="97">
     <Pokemon id="381" name="Latios" />
     <FastAttack name="Dragon Breath" stab="true" legacy="false" />
