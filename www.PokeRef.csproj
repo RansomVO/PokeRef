@@ -55,17 +55,6 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
-    <Content Include="images\game\egg_raid_tier1-2.png" />
-    <Content Include="images\game\egg_raid_tier3-4.png" />
-    <Content Include="images\game\egg_raid_tier5.png" />
-    <Content Include="images\game\gen_1.png" />
-    <Content Include="images\game\gen_2.png" />
-    <Content Include="images\game\gen_3.png" />
-    <Content Include="images\game\logo_gym.png" />
-    <Content Include="images\game\logo_research.png" />
-    <Content Include="images\game\team_instinct.png" />
-    <Content Include="images\game\team_mystic.png" />
-    <Content Include="images\game\team_valor.png" />
     <Content Include="^\__TODO.html" />
     <None Include="^\index.html" />
   </ItemGroup>
@@ -143,6 +132,7 @@
     <WebContent Include="images\GoIV-Refining.png" />
     <WebContent Include="images\GoIV-Renamed.png" />
     <WebContent Include="images\GoIV-Start.png" />
+    <WebContent Include="images\loading.gif" />
   </ItemGroup>
   <!-- /images/humor -->
   <ItemGroup>
@@ -234,6 +224,17 @@
     <WebContent Include="images\game\egg_10K.png" />
     <WebContent Include="images\game\egg_2K.png" />
     <WebContent Include="images\game\egg_5K.png" />
+    <WebContent Include="images\game\egg_raid_tier1-2.png" />
+    <WebContent Include="images\game\egg_raid_tier3-4.png" />
+    <WebContent Include="images\game\egg_raid_tier5.png" />
+    <WebContent Include="images\game\gen_1.png" />
+    <WebContent Include="images\game\gen_2.png" />
+    <WebContent Include="images\game\gen_3.png" />
+    <WebContent Include="images\game\logo_gym.png" />
+    <WebContent Include="images\game\logo_research.png" />
+    <WebContent Include="images\game\team_instinct.png" />
+    <WebContent Include="images\game\team_mystic.png" />
+    <WebContent Include="images\game\team_valor.png" />
     <WebContent Include="images\game\encounter.png" />
     <WebContent Include="images\game\hatchonly.png" />
     <WebContent Include="images\game\shiny.png" />

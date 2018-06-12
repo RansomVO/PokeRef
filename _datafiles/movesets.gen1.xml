@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-12" gen="1">
   <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
     <Pokemon id="1" name="Bulbasaur" />
     <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -95,7 +95,7 @@
     <FastAttack name="Vine Whip" stab="true" legacy="false" />
     <ChargedAttack name="Petal Blizzard" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="19.80132450331126" true_dps="27.1523178807947" comparison="101">
+  <MoveSet base_dps="19.80132450331126" true_dps="27.1523178807947" comparison="100">
     <Pokemon id="3" name="Venusaur" />
     <FastAttack name="Vine Whip" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
@@ -290,12 +290,12 @@
     <FastAttack name="Bite" stab="false" legacy="false" />
     <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="15.909090909090908" true_dps="5.9090909090909083" comparison="101">
+  <MoveSet base_dps="15.909090909090908" true_dps="5.9090909090909083" comparison="100">
     <Pokemon id="10" name="Caterpie" />
     <FastAttack name="Bug Bite" stab="true" legacy="false" />
     <ChargedAttack name="Struggle" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="15.909090909090908" true_dps="5.9090909090909083" comparison="101">
+  <MoveSet base_dps="15.909090909090908" true_dps="5.9090909090909083" comparison="100">
     <Pokemon id="10" name="Caterpie" />
     <FastAttack name="Tackle" stab="false" legacy="false" />
     <ChargedAttack name="Struggle" stab="false" legacy="false" />
@@ -980,7 +980,7 @@
     <FastAttack name="Pound" stab="false" legacy="false" />
     <ChargedAttack name="Body Slam" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.659574468085108" true_dps="13.120567375886525" comparison="101">
+  <MoveSet base_dps="17.659574468085108" true_dps="13.120567375886525" comparison="100">
     <Pokemon id="35" name="Clefairy" />
     <FastAttack name="Pound" stab="false" legacy="false" />
     <ChargedAttack name="Moonblast" stab="true" legacy="false" />
@@ -1080,7 +1080,7 @@
     <FastAttack name="Fire Spin" stab="true" legacy="false" />
     <ChargedAttack name="Heat Wave" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="20" true_dps="23.666666666666668" comparison="101">
+  <MoveSet base_dps="20" true_dps="23.666666666666668" comparison="100">
     <Pokemon id="38" name="Ninetales" />
     <FastAttack name="Fire Spin" stab="true" legacy="false" />
     <ChargedAttack name="Overheat" stab="true" legacy="false" />
@@ -1355,7 +1355,7 @@
     <FastAttack name="Fury Cutter" stab="true" legacy="false" />
     <ChargedAttack name="X Scissor" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="19.743589743589741" true_dps="23.162393162393162" comparison="101">
+  <MoveSet base_dps="19.743589743589741" true_dps="23.162393162393162" comparison="100">
     <Pokemon id="47" name="Parasect" />
     <FastAttack name="Fury Cutter" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
@@ -1370,7 +1370,7 @@
     <FastAttack name="Bug Bite" stab="true" legacy="false" />
     <ChargedAttack name="Psybeam" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="16.216216216216214" true_dps="12.162162162162161" comparison="101">
+  <MoveSet base_dps="16.216216216216214" true_dps="12.162162162162161" comparison="100">
     <Pokemon id="48" name="Venonat" />
     <FastAttack name="Bug Bite" stab="true" legacy="false" />
     <ChargedAttack name="Signal Beam" stab="true" legacy="false" />
@@ -1820,7 +1820,7 @@
     <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
     <ChargedAttack name="Signal Beam" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="18.823529411764707" true_dps="21.882352941176471" comparison="101">
+  <MoveSet base_dps="18.823529411764707" true_dps="21.882352941176471" comparison="100">
     <Pokemon id="63" name="Abra" />
     <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
     <ChargedAttack name="Shadow Ball" stab="false" legacy="false" />
@@ -2485,7 +2485,7 @@
     <FastAttack name="Feint Attack" stab="false" legacy="false" />
     <ChargedAttack name="Brave Bird" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.746478873239436" true_dps="23.380281690140844" comparison="101">
+  <MoveSet base_dps="17.746478873239436" true_dps="23.380281690140844" comparison="100">
     <Pokemon id="85" name="Dodrio" />
     <FastAttack name="Steel Wing" stab="false" legacy="false" />
     <ChargedAttack name="Drill Peck" stab="true" legacy="false" />
@@ -2775,7 +2775,7 @@
     <FastAttack name="Rock Throw" stab="true" legacy="false" />
     <ChargedAttack name="Sand Tomb" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.721518987341771" true_dps="11.582278481012658" comparison="101">
+  <MoveSet base_dps="17.721518987341771" true_dps="11.582278481012658" comparison="100">
     <Pokemon id="95" name="Onix" />
     <FastAttack name="Rock Throw" stab="true" legacy="false" />
     <ChargedAttack name="Stone Edge" stab="true" legacy="false" />
@@ -3820,7 +3820,7 @@
     <FastAttack name="Bug Bite" stab="true" legacy="false" />
     <ChargedAttack name="Vice Grip" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="16.304347826086957" true_dps="26.086956521739133" comparison="101">
+  <MoveSet base_dps="16.304347826086957" true_dps="26.086956521739133" comparison="100">
     <Pokemon id="127" name="Pinsir" />
     <FastAttack name="Bug Bite" stab="true" legacy="false" />
     <ChargedAttack name="X Scissor" stab="true" legacy="false" />
@@ -3955,7 +3955,7 @@
     <FastAttack name="Water Gun" stab="true" legacy="false" />
     <ChargedAttack name="Water Pulse" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.293233082706767" true_dps="23.984962406015036" comparison="101">
+  <MoveSet base_dps="17.293233082706767" true_dps="23.984962406015036" comparison="100">
     <Pokemon id="134" name="Vaporeon" />
     <FastAttack name="Water Gun" stab="true" legacy="false" />
     <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />

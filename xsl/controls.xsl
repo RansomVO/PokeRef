@@ -518,7 +518,7 @@
       <xsl:attribute name="formTarget">
         <xsl:value-of select="$LoadedContent" />
       </xsl:attribute>
-      <h1>Loading...</h1>
+      <img src="/images/loading.gif" />
     </div>
   </xsl:template>
 
