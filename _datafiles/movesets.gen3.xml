@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-12" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-14" gen="3">
   <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
     <Pokemon id="252" name="Treecko" />
     <FastAttack name="Pound" stab="false" legacy="false" />
@@ -2831,26 +2831,6 @@
     <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.535433070866144" true_dps="14.566929133858269" comparison="100">
-    <Pokemon id="351" name="Castform" />
-    <FastAttack name="Tackle" stab="true" legacy="false" />
-    <ChargedAttack name="Hurricane" stab="false" legacy="false" />
-  </MoveSet>
-  <MoveSet base_dps="15.730337078651685" true_dps="13.48314606741573" comparison="93">
-    <Pokemon id="351" name="Castform" />
-    <FastAttack name="Tackle" stab="true" legacy="false" />
-    <ChargedAttack name="Energy Ball" stab="false" legacy="false" />
-  </MoveSet>
-  <MoveSet base_dps="16.216216216216214" true_dps="12.702702702702702" comparison="88">
-    <Pokemon id="351" name="Castform" />
-    <FastAttack name="Hex" stab="false" legacy="false" />
-    <ChargedAttack name="Hurricane" stab="false" legacy="false" />
-  </MoveSet>
-  <MoveSet base_dps="14.942528735632186" true_dps="11.724137931034484" comparison="81">
-    <Pokemon id="351" name="Castform" />
-    <FastAttack name="Hex" stab="false" legacy="false" />
-    <ChargedAttack name="Energy Ball" stab="false" legacy="false" />
-  </MoveSet>
-  <MoveSet base_dps="16.535433070866144" true_dps="14.566929133858269" comparison="100">
     <Pokemon id="351" name="Castform (Normal)" />
     <FastAttack name="Tackle" stab="true" legacy="false" />
     <ChargedAttack name="Hurricane" stab="false" legacy="false" />
@@ -3914,5 +3894,35 @@
     <Pokemon id="385" name="Jirachi" />
     <FastAttack name="Charge Beam" stab="false" legacy="false" />
     <ChargedAttack name="Doom Desire" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="13.684210526315789" true_dps="1.8947368421052631" comparison="88">
+    <Pokemon id="386" name="Deoxys" />
+    <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+    <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="17.687074829931973" true_dps="2.17687074829932" comparison="100">
+    <Pokemon id="386" name="Deoxys" />
+    <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+    <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="14.457831325301203" true_dps="1.8072289156626504" comparison="84">
+    <Pokemon id="386" name="Deoxys" />
+    <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+    <ChargedAttack name="Swift" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="14.95145631067961" true_dps="1.4563106796116503" comparison="67">
+    <Pokemon id="386" name="Deoxys" />
+    <FastAttack name="Counter" stab="false" legacy="false" />
+    <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="19.220779220779217" true_dps="1.6233766233766231" comparison="75">
+    <Pokemon id="386" name="Deoxys" />
+    <FastAttack name="Counter" stab="false" legacy="false" />
+    <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="15.824175824175825" true_dps="1.3186813186813187" comparison="61">
+    <Pokemon id="386" name="Deoxys" />
+    <FastAttack name="Counter" stab="false" legacy="false" />
+    <ChargedAttack name="Swift" stab="false" legacy="false" />
   </MoveSet>
 </MoveSets>

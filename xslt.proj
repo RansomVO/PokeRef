@@ -946,11 +946,12 @@
       <Visible>true</Visible>
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
       <Dependencies>
-        tools\shoppingboxes.js.xsl;
+        _datafiles.manual\shoppingboxes.xml
         js\global.js;
         js\controls.js;
         xsl\global.xsl;
         xsl\controls.xsl;
+        tools\shoppingboxes.js.xsl;
         tools\index.css;
         index.css;
       </Dependencies>
@@ -965,7 +966,6 @@
       <DependentUpon>shoppingboxes.js.xsl</DependentUpon>
       <Dependencies>
         js\global.js;
-        _datafiles.manual\shoppingboxes.xml
       </Dependencies>
       <OutputFileName>shoppingboxes.js</OutputFileName>
     </XslTransform>
