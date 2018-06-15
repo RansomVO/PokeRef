@@ -813,7 +813,7 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     }
 
     // If we made it here there are no sub-sections.
-    var id = parseInt(GetPokemonID(pokemon));
+    var id = GetPokemonID(pokemon);
 
     // Check for a range of IDs (E.G. "5-10", "5-10", "-10", "10-")
     var rangeSegments = filterSegment.split('-');
@@ -828,7 +828,7 @@ function MatchFilterPokemonNameID(pokemon, filter) {
     }
 
     // Check to see if it is just a single ID;
-    if (id === filterSegment) {
+    if (id === parseInt(filterSegment)) {
         return true;
     }
 
