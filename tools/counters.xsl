@@ -22,19 +22,19 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>counters.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -111,13 +111,13 @@
       </td>
       <td>
         <xsl:attribute name="rowspan">
-          <xsl:value-of select="$Rows"/>
+          <xsl:value-of select="$Rows" />
         </xsl:attribute>
         <xsl:value-of select="Pokemon/@id" />
       </td>
       <td>
         <xsl:attribute name="rowspan">
-          <xsl:value-of select="$Rows"/>
+          <xsl:value-of select="$Rows" />
         </xsl:attribute>
         <xsl:value-of select="Pokemon/@name" />
       </td>
@@ -127,13 +127,13 @@
     <xsl:for-each select="/Root/MoveSets/MoveSet[Pokemon/@id=$PokemonID]">
       <tr>
         <td>
-          <xsl:value-of select="Attack/Fast"/>
+          <xsl:value-of select="Attack/Fast" />
         </td>
         <td>
-          <xsl:value-of select="Attack/Charged"/>
+          <xsl:value-of select="Attack/Charged" />
         </td>
         <td>
-          <xsl:value-of select="Damage/TrueDPS"/>
+          <xsl:value-of select="Damage/TrueDPS" />
         </td>
       </tr>
     </xsl:for-each>

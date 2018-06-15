@@ -14,25 +14,25 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>shoppingboxes.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -241,11 +241,11 @@
   </xsl:template>
 
   <xsl:template match="Box">
-    <xsl:variable name="type" select="@type"/>
+    <xsl:variable name="type" select="@type" />
 
     <td valign="top">
       <xsl:attribute name="id">
-        <xsl:value-of select="@type"/>
+        <xsl:value-of select="@type" />
         <xsl:text>Box</xsl:text>
       </xsl:attribute>
       <table border="1">
@@ -294,7 +294,7 @@
           <td class="INPUT_CALCULATED">
             <input class="INPUT_CALCULATED" type="number" readonly="readonly">
               <xsl:attribute name="id">
-                <xsl:value-of select="$type"/>
+                <xsl:value-of select="$type" />
                 <xsl:text>Box_Total</xsl:text>
               </xsl:attribute>
             </input>
@@ -305,11 +305,11 @@
           <td class="INPUT">
             <input class="INPUT" type="number" readonly="readonly">
               <xsl:attribute name="id">
-                <xsl:value-of select="$type"/>
+                <xsl:value-of select="$type" />
                 <xsl:text>Box_Price</xsl:text>
               </xsl:attribute>
               <xsl:attribute name="value">
-                <xsl:value-of select="@price"/>
+                <xsl:value-of select="@price" />
               </xsl:attribute>
             </input>
           </td>
@@ -318,7 +318,7 @@
           <th colspan="2" align="right">Discount</th>
           <td align="center" style="font-weight:bold;">
             <xsl:attribute name="id">
-              <xsl:value-of select="$type"/>
+              <xsl:value-of select="$type" />
               <xsl:text>Box_Discount</xsl:text>
             </xsl:attribute>
           </td>
@@ -348,11 +348,11 @@
           <xsl:attribute name="id">
             <xsl:value-of select="$type" />
             <xsl:text>Box_</xsl:text>
-            <xsl:value-of select="@name"/>
+            <xsl:value-of select="@name" />
             <xsl:text>_Qty</xsl:text>
           </xsl:attribute>
           <xsl:attribute name="value">
-            <xsl:value-of select="@quantity"/>
+            <xsl:value-of select="@quantity" />
           </xsl:attribute>
         </input>
       </td>
@@ -361,7 +361,7 @@
           <xsl:attribute name="id">
             <xsl:value-of select="$type" />
             <xsl:text>Box_</xsl:text>
-            <xsl:value-of select="@name"/>
+            <xsl:value-of select="@name" />
             <xsl:text>_Value</xsl:text>
           </xsl:attribute>
         </input>
@@ -379,7 +379,7 @@
       <th align="left" valign="middle">
         <input type="checkbox" checked="checked" onchange="OnCheckChanged(this);">
           <xsl:attribute name="id">
-            <xsl:value-of select="$item"/>
+            <xsl:value-of select="$item" />
             <xsl:text>_Check</xsl:text>
           </xsl:attribute>
         </input>
@@ -410,11 +410,11 @@
                 <xsl:value-of select="$class" />
               </xsl:attribute>
               <xsl:attribute name="id">
-                <xsl:value-of select="$item"/>
+                <xsl:value-of select="$item" />
                 <xsl:text>_Qty</xsl:text>
               </xsl:attribute>
               <xsl:attribute name="value">
-                <xsl:value-of select="@quantity"/>
+                <xsl:value-of select="@quantity" />
               </xsl:attribute>
             </input>
           </td>
@@ -427,11 +427,11 @@
                 <xsl:value-of select="$class" />
               </xsl:attribute>
               <xsl:attribute name="id">
-                <xsl:value-of select="$item"/>
+                <xsl:value-of select="$item" />
                 <xsl:text>_Price</xsl:text>
               </xsl:attribute>
               <xsl:attribute name="value">
-                <xsl:value-of select="@price"/>
+                <xsl:value-of select="@price" />
               </xsl:attribute>
             </input>
           </td>
@@ -440,7 +440,7 @@
       <td class="INPUT_OPTIONAL">
         <input class="INPUT_OPTIONAL" type="number" onChange="OnValueChanged(this);">
           <xsl:attribute name="id">
-            <xsl:value-of select="$item"/>
+            <xsl:value-of select="$item" />
             <xsl:text>_Value</xsl:text>
           </xsl:attribute>
         </input>

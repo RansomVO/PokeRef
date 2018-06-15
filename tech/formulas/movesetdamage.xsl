@@ -13,19 +13,19 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -67,17 +67,17 @@
                 <td />
                 <td rowspan="6" style="font-size:3em">)</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="$times" disable-output-escaping="yes"/>
+                  <xsl:value-of select="$times" disable-output-escaping="yes" />
                 </td>
                 <td rowspan="6" style="font-size:3em">(</td>
                 <td />
                 <td rowspan="6" style="font-size:3em">)</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat($times, $nbsp, 'Effectiveness')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat($times, $nbsp, 'Effectiveness')" disable-output-escaping="yes" />
                 </td>
                 <td rowspan="7" style="font-size:4em">)</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -88,12 +88,12 @@
               <tr>
                 <td>
                   <b>(</b>
-                  <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, 'AttackIV')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat('BaseAttack', $nbsp, '+', $nbsp, 'AttackIV')" disable-output-escaping="yes" />
                   <b>)</b>
-                  <xsl:value-of select="concat($nbsp, $times, $nbsp, 'AttackerCPM')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat($nbsp, $times, $nbsp, 'AttackerCPM')" disable-output-escaping="yes" />
                 </td>
                 <td>
-                  <xsl:value-of select="concat('Power', $nbsp, $times, $nbsp, 'STAB', $nbsp, $times, $nbsp, 'WeatherBoost')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat('Power', $nbsp, $times, $nbsp, 'STAB', $nbsp, $times, $nbsp, 'WeatherBoost')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -103,9 +103,9 @@
               <tr>
                 <td>
                   <b>(</b>
-                  <xsl:value-of select="concat('BaseDefense', $nbsp, '+', $nbsp, 'DefenseIV')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat('BaseDefense', $nbsp, '+', $nbsp, 'DefenseIV')" disable-output-escaping="yes" />
                   <b>)</b>
-                  <xsl:value-of select="concat($nbsp, $times, $nbsp, 'DefenderCPM')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat($nbsp, $times, $nbsp, 'DefenderCPM')" disable-output-escaping="yes" />
                 </td>
                 <td>2</td>
               </tr>
@@ -241,10 +241,10 @@
           <h3>NOTES:</h3>
           <ul>
             <li>
-              The Power for a Move can be looked up on the <a href="GAME_MASTER/moves/moves.fast.html">Fast Moves</a> and <a href="GAME_MASTER/moves/moves.charged.html">Charged Moves</a> pages.
+              The Power for a Move can be looked up on the <a href="../GAME_MASTER/moves/moves.fast.html">Fast Moves</a> and <a href="../GAME_MASTER/moves/moves.charged.html">Charged Moves</a> pages.
             </li>
             <li>
-              The BaseAttack and BaseDefense for a Pokemon can be looked up in the <a href="GAME_MASTER/pokestats/">Pokemon Stats</a> pages.
+              The BaseAttack and BaseDefense for a Pokemon can be looked up in the <a href="../GAME_MASTER/pokestats/">Pokemon Stats</a> pages.
             </li>
             <li>
               In order to determine the Pokemon's IV score, you generally need a tool that leverages these formulas to find the possibilities. Check out the Tools on the <a href="/resources/#tools_android">Resources</a> page.
@@ -336,7 +336,7 @@
                 <td rowspan="6" style="font-size:3em">)</td>
                 <td rowspan="7" style="font-size:4em">)</td>
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('+', $nbsp, 'ChargedMoveDamage')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat('+', $nbsp, 'ChargedMoveDamage')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -519,7 +519,7 @@
                 <td rowspan="6" style="font-size:3em">)</td>
                 <td />
                 <td rowspan="7" style="padding-top:.5em;">
-                  <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes"/>
+                  <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
                 </td>
               </tr>
               <tr>
@@ -572,7 +572,7 @@
                       <td />
                       <td rowspan="6" width="1" style="font-size:3em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">
-                        <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes"/>
+                        <xsl:value-of select="concat('+', $nbsp, '1')" disable-output-escaping="yes" />
                       </td>
                       <td rowspan="7" style="font-size:4em">)</td>
                       <td rowspan="7" style="padding-top:.5em;">

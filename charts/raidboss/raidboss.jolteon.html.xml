@@ -2,7 +2,7 @@
 <!DOCTYPE Root [
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Images SYSTEM "/_datafiles/settings.xml">
-  <!ENTITY Settings SYSTEM "/_datafiles.manual/images.xml">
+  <!ENTITY Settings SYSTEM "/_datafiles.manual/infrequent/images.xml">
   <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss/raidboss.jolteon.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="raidboss.xsl" output="raidboss.jolteon.html"?>

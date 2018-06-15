@@ -15,19 +15,19 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -166,7 +166,7 @@
         <tr>
           <th class="ROTATED_CONTAINER">
             <div class="ROTATED">
-              <xsl:value-of select="$Type"/>
+              <xsl:value-of select="$Type" />
             </div>
           </th>
         </tr>
@@ -211,7 +211,7 @@
         </xsl:choose>
       </xsl:attribute>
 
-      <xsl:value-of select="@value"/>
+      <xsl:value-of select="@value" />
     </td>
   </xsl:template>
 

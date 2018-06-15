@@ -675,15 +675,30 @@
     <FastAttack name="Feint Attack" stab="false" legacy="false" />
     <ChargedAttack name="Psychic" stab="false" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="14.375" true_dps="6.625" comparison="74">
+    <Pokemon id="175" name="Togepi" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
+  </MoveSet>
   <MoveSet base_dps="14.375" true_dps="6.25" comparison="69">
     <Pokemon id="175" name="Togepi" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="15.277777777777777" true_dps="7.083333333333333" comparison="79">
+    <Pokemon id="175" name="Togepi" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Psyshock" stab="false" legacy="false" />
+  </MoveSet>
   <MoveSet base_dps="15.277777777777777" true_dps="6.6666666666666661" comparison="74">
     <Pokemon id="175" name="Togepi" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Psyshock" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="16.842105263157894" true_dps="8.8421052631578956" comparison="98">
+    <Pokemon id="175" name="Togepi" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.842105263157894" true_dps="8.4210526315789469" comparison="93">
     <Pokemon id="175" name="Togepi" />
@@ -705,30 +720,45 @@
     <FastAttack name="Peck" stab="false" legacy="false" />
     <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="15.588235294117645" true_dps="12.352941176470587" comparison="76">
+  <MoveSet base_dps="15.588235294117645" true_dps="12.352941176470587" comparison="75">
     <Pokemon id="176" name="Togetic" />
     <FastAttack name="Extrasensory" stab="false" legacy="false" />
     <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.777777777777779" true_dps="16.333333333333332" comparison="100">
+  <MoveSet base_dps="17.777777777777779" true_dps="16.333333333333332" comparison="99">
     <Pokemon id="176" name="Togetic" />
     <FastAttack name="Extrasensory" stab="false" legacy="false" />
     <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="15.964912280701753" true_dps="14.56140350877193" comparison="90">
+  <MoveSet base_dps="15.964912280701753" true_dps="14.56140350877193" comparison="89">
     <Pokemon id="176" name="Togetic" />
     <FastAttack name="Extrasensory" stab="false" legacy="false" />
     <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="14.375" true_dps="12.375" comparison="75">
+    <Pokemon id="176" name="Togetic" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="14.375" true_dps="11.25" comparison="69">
     <Pokemon id="176" name="Togetic" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="16.842105263157894" true_dps="15.263157894736843" comparison="94">
+  <MoveSet base_dps="16.842105263157894" true_dps="16.526315789473685" comparison="100">
+    <Pokemon id="176" name="Togetic" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="16.842105263157894" true_dps="15.263157894736843" comparison="93">
     <Pokemon id="176" name="Togetic" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="14.492753623188404" true_dps="14.202898550724637" comparison="86">
+    <Pokemon id="176" name="Togetic" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="14.492753623188404" true_dps="12.89855072463768" comparison="79">
     <Pokemon id="176" name="Togetic" />
@@ -1454,6 +1484,11 @@
     <Pokemon id="200" name="Misdreavus" />
     <FastAttack name="Hex" stab="true" legacy="false" />
     <ChargedAttack name="Ominous Wind" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="15.909090909090908" true_dps="12.272727272727272" comparison="100">
+    <Pokemon id="201" name="Unown" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Struggle" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="15.909090909090908" true_dps="12.272727272727272" comparison="100">
     <Pokemon id="201" name="Unown" />
@@ -2360,14 +2395,29 @@
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="18.506493506493506" true_dps="19.740259740259742" comparison="84">
+    <Pokemon id="233" name="Porygon2" />
+    <FastAttack name="Hidden Power" stab="false" legacy="false" />
+    <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
+  </MoveSet>
   <MoveSet base_dps="17.83216783216783" true_dps="23.776223776223777" comparison="100">
     <Pokemon id="233" name="Porygon2" />
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Hyper Beam" stab="true" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="17.83216783216783" true_dps="21.818181818181817" comparison="92">
+    <Pokemon id="233" name="Porygon2" />
+    <FastAttack name="Hidden Power" stab="false" legacy="false" />
+    <ChargedAttack name="Hyper Beam" stab="true" legacy="false" />
+  </MoveSet>
   <MoveSet base_dps="17.253521126760564" true_dps="20.422535211267608" comparison="86">
     <Pokemon id="233" name="Porygon2" />
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="17.253521126760564" true_dps="18.450704225352112" comparison="78">
+    <Pokemon id="233" name="Porygon2" />
+    <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="18.730158730158728" true_dps="20.238095238095237" comparison="86">

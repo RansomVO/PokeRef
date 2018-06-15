@@ -193,7 +193,7 @@
       <xsl:if test="count(exslt:node-set($CustomAttributes)) != 0">
         <xsl:for-each select="exslt:node-set($CustomAttributes)/*/@*">
           <xsl:attribute name="{name()}">
-            <xsl:value-of select="."/>
+            <xsl:value-of select="." />
           </xsl:attribute>
         </xsl:for-each>
       </xsl:if>
@@ -217,7 +217,7 @@
         </xsl:attribute>
         <xsl:if test="$Header != ''">
           <div id="Pokemon_Header_Field">
-            <xsl:copy-of select="$Header"/>
+            <xsl:copy-of select="$Header" />
           </div>
         </xsl:if>
 
@@ -255,7 +255,7 @@
                 <xsl:with-param name="Wrapped">
                   <xsl:call-template name="Sprite">
                     <xsl:with-param name="id">
-                      <xsl:value-of select="concat('Egg',$egg)"/>
+                      <xsl:value-of select="concat('Egg',$egg)" />
                     </xsl:with-param>
                     <xsl:with-param name="Settings">
                       <Show>
@@ -282,7 +282,7 @@
                             <xsl:text>May Hatch From </xsl:text>
                           </xsl:otherwise>
                         </xsl:choose>
-                        <xsl:value-of select="$egg"/>
+                        <xsl:value-of select="$egg" />
                         <xsl:text> Egg</xsl:text>
                       </td>
                     </tr>
@@ -314,7 +314,7 @@
 
         <xsl:if test="$Footer != ''">
           <div id="Pokemon_Footer_Field">
-            <xsl:copy-of select="$Footer"/>
+            <xsl:copy-of select="$Footer" />
           </div>
         </xsl:if>
       </div>
@@ -389,10 +389,10 @@
         <xsl:variable name="name">
           <xsl:choose>
             <xsl:when test="@id = 29">
-              <xsl:value-of select="'nidoran-f'"/>
+              <xsl:value-of select="'nidoran-f'" />
             </xsl:when>
             <xsl:when test="@id = 32">
-              <xsl:value-of select="'nidoran-m'"/>
+              <xsl:value-of select="'nidoran-m'" />
             </xsl:when>
             <xsl:when test="@name='Castform (Normal)'">
               <xsl:value-of select="'castform'" />
@@ -529,7 +529,7 @@
           <tr>
             <th style="width:1px; white-space:nowrap;">Weather:</th>
             <td>
-              <xsl:value-of select="$Weather" />
+              <xsl:value-of select="/Root/Images/Image[@id=$Weather]/@title" />
             </td>
           </tr>
         </table>
@@ -576,7 +576,7 @@
           <tr>
             <th colspan="2">
               <span style="font-size:larger;">
-                <xsl:value-of select="$Title"/>
+                <xsl:value-of select="$Title" />
               </span>
             </th>
           </tr>

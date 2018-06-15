@@ -36,9 +36,9 @@
 
   <xsl:variable name="MaxRows">
     <xsl:for-each select="exslt:node-set($PokemonCount)/Count[$ReleasedGens >= @Gen]">
-      <xsl:sort select="." data-type="number" order="descending"/>
+      <xsl:sort select="." data-type="number" order="descending" />
       <xsl:if test="position()=1">
-        <xsl:value-of select="."/>
+        <xsl:value-of select="." />
       </xsl:if>
     </xsl:for-each>
   </xsl:variable>
@@ -53,25 +53,25 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>seapokemapfilter.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -218,7 +218,7 @@
 
     <xsl:if test="$ReleasedGens >= $Gen">
       <th>
-        Gen <xsl:value-of select="$Gen"/>
+        Gen <xsl:value-of select="$Gen" />
         <br />
         <input type="checkbox" onchange="OnColumnCheckChanged(this);">
           <xsl:attribute name="id">
@@ -267,11 +267,11 @@
           <input type="checkbox" onchange="OnPokemonCheckChanged(this);">
             <xsl:attribute name="id">
               <xsl:text>Check_</xsl:text>
-              <xsl:value-of select="/Root/PokemonStats[$Gen]/Pokemon[$Row]/ID"/>
+              <xsl:value-of select="/Root/PokemonStats[$Gen]/Pokemon[$Row]/ID" />
             </xsl:attribute>
             <!-- TODO QZX: It would be nice to set some property to the Gen -->
             <xsl:attribute name="name">
-              <xsl:value-of select="$Gen"/>
+              <xsl:value-of select="$Gen" />
             </xsl:attribute>
           </input>
         </xsl:if>

@@ -14,10 +14,10 @@
     
 // Variables that tells how many generations of Pokemon there are.
 TotalGens = </xsl:text>
-    <xsl:value-of select="$TotalGens"/>
+    <xsl:value-of select="$TotalGens" />
     <xsl:text>;
 ReleasedGens = </xsl:text>
-    <xsl:value-of select="$ReleasedGens"/>
+    <xsl:value-of select="$ReleasedGens" />
     <xsl:text>;
 // #endregion
 </xsl:text>
@@ -38,7 +38,7 @@ ReleasedGens = </xsl:text>
 var PokemonListById = [ "",
 </xsl:text>
     <xsl:apply-templates select="PokeStats/Pokemon" mode="IdDictionary">
-      <xsl:sort select="@id" data-type="number" order="ascending"/>
+      <xsl:sort select="@id" data-type="number" order="ascending" />
     </xsl:apply-templates>
     <xsl:text>];
 // #endregion
@@ -47,7 +47,7 @@ var PokemonListById = [ "",
 var PokemonNameToIdDictionary = { 
 </xsl:text>
     <xsl:apply-templates select="PokeStats/Pokemon" mode="NameDictionary">
-      <xsl:sort select="@name" data-type="text" order="ascending"/>
+      <xsl:sort select="@name" data-type="text" order="ascending" />
     </xsl:apply-templates>
     <xsl:text>};
 // #endregion
@@ -83,7 +83,7 @@ var EffectivenessDictionary = {
     <xsl:for-each select="MoveEffectiveness/Moves/Pokemon">
       <xsl:variable name="Type" select="@type" />
       <xsl:text>    '</xsl:text>
-      <xsl:value-of select="$Type"/>
+      <xsl:value-of select="$Type" />
       <xsl:text>':</xsl:text>
       <xsl:value-of select="substring('        ', string-length($Type))" />
       <xsl:text>{</xsl:text>
@@ -467,7 +467,7 @@ function RemovePokemonSection(pokemonHtml, id) {
 
   <xsl:template match="Pokemon" mode="IdDictionary">
     <xsl:text>    "</xsl:text>
-    <xsl:value-of select="@name"/>
+    <xsl:value-of select="@name" />
     <xsl:text>",
 </xsl:text>
   </xsl:template>
@@ -477,14 +477,14 @@ function RemovePokemonSection(pokemonHtml, id) {
     <xsl:text>    "</xsl:text>
     <xsl:value-of select="@name" />
     <xsl:text>": </xsl:text>
-    <xsl:value-of select="@id"/>
+    <xsl:value-of select="@id" />
     <xsl:text>,
 </xsl:text>
   </xsl:template>
 
   <xsl:template match="MoveEffectiveness" mode="Dictionary">
     <xsl:text>    '</xsl:text>
-    <xsl:value-of select="MoveType"/>
+    <xsl:value-of select="MoveType" />
     <xsl:text>': {
 </xsl:text>
     <xsl:for-each select="PokemonType/*">

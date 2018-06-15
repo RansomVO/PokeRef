@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Images last_updated="2018-05-09">
+<Images last_updated="2018-06-15">
   <!-- #region Items -->
   <Image id="Backpack" title="Backpack" src="/images/items/backpack.png" />
 
@@ -120,6 +120,8 @@
   <Image id="Rock" title="Rock" src="/images/types/type_rock.png" />
   <Image id="Steel" title="Steel" src="/images/types/type_steel.png" />
   <Image id="Water" title="Water" src="/images/types/type_water.png" />
+  <Image id="Other" title="Other" src="/images/types/type_other.png" />
+  
   <Image id="Clear" title="Clear" src="/images/types/weather_clear.png" />
   <Image id="Cloudy" title="Cloudy" src="/images/types/weather_cloudy.png" />
   <Image id="Fog" title="Fog" src="/images/types/weather_fog.png" />
@@ -128,6 +130,6 @@
   <Image id="Snow" title="Snow" src="/images/types/weather_snow.png" />
   <Image id="Sunny" title="Sunny" src="/images/types/weather_sunny.png" />
   <Image id="Windy" title="Windy" src="/images/types/weather_windy.png" />
-
+  <Image id="Unknown" title="Other" src="/images/types/weather_unknown.png" />
   <!-- #endregion Types -->
 </Images>

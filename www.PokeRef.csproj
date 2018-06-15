@@ -102,12 +102,6 @@
   </ItemGroup>
   <!-- /__Debugging -->
   <ItemGroup>
-    <FixIntermediateFile Include="xsl\controls.xsl">
-      <SubType>Designer</SubType>
-    </FixIntermediateFile>
-    <FixIntermediateFile Include="xsl\pokemon.xsl">
-      <SubType>Designer</SubType>
-    </FixIntermediateFile>
     <None Include="__Debugging\debug.html.xml" />
     <None Include="__Debugging\debug.xsl">
       <SubType>Designer</SubType>
@@ -161,6 +155,7 @@
     <WebContent Include="images\types\type_rock.png" />
     <WebContent Include="images\types\type_steel.png" />
     <WebContent Include="images\types\type_water.png" />
+    <WebContent Include="images\types\type_other.png" />
     <WebContent Include="images\types\weather_clear.png" />
     <WebContent Include="images\types\weather_cloudy.png" />
     <WebContent Include="images\types\weather_fog.png" />
@@ -169,6 +164,7 @@
     <WebContent Include="images\types\weather_snow.png" />
     <WebContent Include="images\types\weather_sunny.png" />
     <WebContent Include="images\types\weather_windy.png" />
+    <WebContent Include="images\types\weather_unknown.png" />
   </ItemGroup>
   <!-- /images/items -->
   <ItemGroup>

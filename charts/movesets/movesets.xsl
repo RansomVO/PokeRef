@@ -12,6 +12,8 @@
   <xsl:variable name="AverageTrueDPS" select="format-number($MoveSetStats_Overall/@true_dps_avg, '#0.00')" />
 
   <xsl:variable name="DPSOkay" select="number($AverageBaseDPS)" />
+
+  <xsl:variable name="TypeSeparator" select="$amp" />
   <!-- #endregion-->
 
   <!-- Main Template -->
@@ -25,31 +27,31 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>movesets.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -61,7 +63,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="MoveSets/@gen"/>
+              <xsl:value-of select="MoveSets/@gen" />
             </xsl:otherwise>
           </xsl:choose>
         </title>
@@ -76,7 +78,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="MoveSets/@gen"/>
+              <xsl:value-of select="MoveSets/@gen" />
             </xsl:otherwise>
           </xsl:choose>
         </h1>
@@ -434,7 +436,7 @@
           <th class="DISABLED UNUSED" rowspan="2" />
           <th colspan="2">
             <xsl:attribute name="class">
-              <xsl:value-of select="concat('GEN', $gen)"/>
+              <xsl:value-of select="concat('GEN', $gen)" />
             </xsl:attribute>
             Gen <xsl:value-of select="$gen"  />
           </th>
@@ -443,13 +445,13 @@
         <tr>
           <th>
             <xsl:attribute name="class">
-              <xsl:value-of select="concat('GEN', $gen)"/>
+              <xsl:value-of select="concat('GEN', $gen)" />
             </xsl:attribute>
             Base DPS
           </th>
           <th>
             <xsl:attribute name="class">
-              <xsl:value-of select="concat('GEN', $gen)"/>
+              <xsl:value-of select="concat('GEN', $gen)" />
             </xsl:attribute>
             True DPS
           </th>
@@ -459,10 +461,10 @@
         <tr class="GREAT" style="font-weight:normal;">
           <th align="left">Maximum</th>
           <td align="right" style="margin-left:.5em;">
-            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@dps_max, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@dps_max, '#0.00')" />
           </td>
           <td align="right">
-            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@true_dps_max, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@true_dps_max, '#0.00')" />
           </td>
           <td align="right">
             <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = 0]/@dps_max, '#0.00')" />
@@ -474,10 +476,10 @@
         <tr class="POOR">
           <th align="left">Average</th>
           <td align="right">
-            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@dps_avg, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@dps_avg, '#0.00')" />
           </td>
           <td align="right">
-            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@true_dps_avg, '#0.00')"/>
+            <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = $gen]/@true_dps_avg, '#0.00')" />
           </td>
           <td align="right">
             <xsl:value-of select="format-number(/Root/Settings/GameMasterStats/MoveSets[@gen = 0]/@dps_avg, '#0.00')" />
@@ -518,7 +520,7 @@
               </xsl:attribute>
               <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name=$PokemonName]">
                 <xsl:with-param name="Settings">
-                  <Show hide_name="true" valign="middle"/>
+                  <Show hide_name="true" valign="middle" />
                 </xsl:with-param>
               </xsl:apply-templates>
             </td>
@@ -537,38 +539,12 @@
             <xsl:value-of select="concat($lt, '!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) --', $gt)" disable-output-escaping="yes" />
             <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
           </tr>
+
           <xsl:for-each select="../MoveSet[Pokemon/@name=$PokemonName]">
             <xsl:sort order="descending" data-type="number" select="@comparison" />
             <!-- TODO QZX: Why is this not sorting!!! -->
 
-            <tr>
-              <xsl:if test="contains(/Root/PokeStats/Pokemon[@name=$PokemonName]/@availability,$Availability_Unreleased)">
-                <xsl:attribute name="class">UNAVAILABLE_ROW</xsl:attribute>
-              </xsl:if>
-              <xsl:variable name="FastMoveName" select="FastAttack/@name" />
-              <xsl:variable name="FastMoveType" select="/Root/Moves/Move[@name=$FastMoveName]/@type" />
-              <xsl:attribute name="fastMoveName">
-                <xsl:value-of select="$FastMoveName"/>
-              </xsl:attribute>
-              <xsl:attribute name="fastMoveType">
-                <xsl:value-of select="$FastMoveType"/>
-              </xsl:attribute>
-              <xsl:attribute name="fastMoveBoost">
-                <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$FastMoveType]/@boost"/>
-              </xsl:attribute>
-              <xsl:variable name="ChargedMoveName" select="ChargedAttack/@name" />
-              <xsl:variable name="ChargedMoveType" select="/Root/Moves/Move[@ame=$ChargedMoveName]/@type" />
-              <xsl:attribute name="chargedMoveName">
-                <xsl:value-of select="$ChargedMoveName"/>
-              </xsl:attribute>
-              <xsl:attribute name="chargedMoveType">
-                <xsl:value-of select="$ChargedMoveType"/>
-              </xsl:attribute>
-              <xsl:attribute name="chargedMoveBoost">
-                <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$ChargedMoveType]/@boost"/>
-              </xsl:attribute>
-              <xsl:apply-templates select="." />
-            </tr>
+            <xsl:apply-templates select="." />
           </xsl:for-each>
         </xsl:for-each>
       </table>
@@ -597,7 +573,7 @@
     </tr>
   </xsl:template>
 
-  <!-- Template to create rows for a Pokemon's Move Sets -->
+  <!-- Template to create a row for a Pokemon's Move Set -->
   <xsl:template match="MoveSet">
     <xsl:variable name="legacyFast" select="pokeref:ToUpper(FastAttack/@legacy) = 'TRUE'" />
     <xsl:variable name="legacyCharged" select="pokeref:ToUpper(ChargedAttack/@legacy) = 'TRUE'" />
@@ -608,39 +584,97 @@
     <xsl:variable name="valueDamageTrueDPS" select="format-number(@true_dps, '#0.00')" />
     <xsl:variable name="valueDamagePercentOfMax" select="format-number(@comparison, '##0')" />
 
-    <xsl:variable name="FastMoveName" select="FastAttack/@name" />
-    <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="$FastMoveName" />
-      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[@name=$FastMoveName]/@type" />
-      <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
-      <xsl:with-param name="LegacyMove" select="$legacyFast" />
-      <xsl:with-param name="Legacy" select="$legacy" />
-      <xsl:with-param name="STAB" select="$fastSTAB" />
-    </xsl:call-template>
-    <xsl:variable name="ChargedMoveName" select="ChargedAttack/@name" />
-    <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="$ChargedMoveName" />
-      <xsl:with-param name="TypeIcon" select="/Root/Moves/Move[@name=$ChargedMoveName]/@type" />
-      <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
-      <xsl:with-param name="LegacyMove" select="$legacyCharged" />
-      <xsl:with-param name="Legacy" select="$legacy" />
-      <xsl:with-param name="STAB" select="$chargedSTAB" />
-    </xsl:call-template>
-    <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="$valueDamageDPS" />
-      <xsl:with-param name="BaseDPS" select="$valueDamageDPS" />
-      <xsl:with-param name="Legacy" select="$legacy" />
-    </xsl:call-template>
-    <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="$valueDamageTrueDPS" />
-      <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
-      <xsl:with-param name="Legacy" select="$legacy" />
-    </xsl:call-template>
-    <xsl:call-template name="MoveSetCell">
-      <xsl:with-param name="Content" select="$valueDamagePercentOfMax" />
-      <xsl:with-param name="Percent" select="$valueDamagePercentOfMax" />
-      <xsl:with-param name="Legacy" select="$legacy" />
-    </xsl:call-template>
+    <xsl:variable name="pokemonName" select="Pokemon/@name" />
+    <xsl:variable name="pokemonTypePrimary" select="/Root/PokeStats/Pokemon[@name=$pokemonName]/Type/@primary" />
+    <xsl:variable name="pokemonTypeSecondary" select="/Root/PokeStats/Pokemon[@name=$pokemonName]/Type/@secondary" />
+
+    <xsl:variable name="fastMoveName" select="FastAttack/@name" />
+    <xsl:variable name="fastMoveType">
+      <xsl:choose>
+        <xsl:when test="$fastMoveName='Hidden Power'">
+          <!-- Special Case: Hidden Power may be of any type, so we need to distinguish between those that boost and those that don't.-->
+          <xsl:if test="$fastSTAB">
+            <xsl:value-of select="concat($pokemonTypePrimary, $TypeSeparator, $pokemonTypeSecondary)" />
+          </xsl:if>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="/Root/Moves/Move[@name=$fastMoveName]/@type" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="fastMoveBoost">
+      <xsl:choose>
+        <xsl:when test="$fastMoveName='Hidden Power'">
+          <!-- Special Case: Hidden Power may be of any type, so we need to distinguish between those that boost and those that don't.-->
+          <xsl:if test="$fastSTAB">
+            <xsl:value-of select="concat(/Root/Constants/Mappings/WeatherBoost[@type=$pokemonTypePrimary]/@boost,
+              $TypeSeparator, /Root/Constants/Mappings/WeatherBoost[@type=$pokemonTypeSecondary]/@boost)" />
+          </xsl:if>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$fastMoveType]/@boost" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="chargedMoveName" select="ChargedAttack/@name" />
+    <xsl:variable name="chargedMoveType" select="concat(/Root/Moves/Move[@name=$chargedMoveName]/@type, $TypeSeparator)" />
+    <xsl:variable name="chargedMoveBoost" select="/Root/Constants/Mappings/WeatherBoost[@type=$chargedMoveType]/@boost" />
+
+    <tr>
+      <xsl:if test="contains(/Root/PokeStats/Pokemon[@name=$pokemonName]/@availability,$Availability_Unreleased)">
+        <xsl:attribute name="class">UNAVAILABLE_ROW</xsl:attribute>
+      </xsl:if>
+      <xsl:attribute name="fastMoveName">
+        <xsl:value-of select="$fastMoveName" />
+      </xsl:attribute>
+      <xsl:attribute name="fastMoveType">
+        <xsl:value-of select="$fastMoveType" />
+      </xsl:attribute>
+      <xsl:attribute name="fastMoveBoost">
+        <xsl:value-of select="$fastMoveBoost" />
+      </xsl:attribute>
+      <xsl:attribute name="chargedMoveName">
+        <xsl:value-of select="$chargedMoveName" />
+      </xsl:attribute>
+      <xsl:attribute name="chargedMoveType">
+        <xsl:value-of select="$chargedMoveType" />
+      </xsl:attribute>
+      <xsl:attribute name="chargedMoveBoost">
+        <xsl:value-of select="$chargedMoveBoost" />
+      </xsl:attribute>
+
+      <xsl:call-template name="MoveSetCell">
+        <xsl:with-param name="Content" select="$fastMoveName" />
+        <xsl:with-param name="TypeIcon" select="$fastMoveType" />
+        <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
+        <xsl:with-param name="LegacyMove" select="$legacyFast" />
+        <xsl:with-param name="Legacy" select="$legacy" />
+        <xsl:with-param name="STAB" select="$fastSTAB" />
+      </xsl:call-template>
+      <xsl:call-template name="MoveSetCell">
+        <xsl:with-param name="Content" select="$chargedMoveName" />
+        <xsl:with-param name="TypeIcon" select="$chargedMoveType" />
+        <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
+        <xsl:with-param name="LegacyMove" select="$legacyCharged" />
+        <xsl:with-param name="Legacy" select="$legacy" />
+        <xsl:with-param name="STAB" select="$chargedSTAB" />
+      </xsl:call-template>
+      <xsl:call-template name="MoveSetCell">
+        <xsl:with-param name="Content" select="$valueDamageDPS" />
+        <xsl:with-param name="BaseDPS" select="$valueDamageDPS" />
+        <xsl:with-param name="Legacy" select="$legacy" />
+      </xsl:call-template>
+      <xsl:call-template name="MoveSetCell">
+        <xsl:with-param name="Content" select="$valueDamageTrueDPS" />
+        <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
+        <xsl:with-param name="Legacy" select="$legacy" />
+      </xsl:call-template>
+      <xsl:call-template name="MoveSetCell">
+        <xsl:with-param name="Content" select="$valueDamagePercentOfMax" />
+        <xsl:with-param name="Percent" select="$valueDamagePercentOfMax" />
+        <xsl:with-param name="Legacy" select="$legacy" />
+      </xsl:call-template>
+    </tr>
   </xsl:template>
 
   <!-- Template to create a formatted cell in the Pokemon's Move Set -->
@@ -659,7 +693,7 @@
       <xsl:choose>
         <xsl:when test="$Align != ''">
           <xsl:attribute name="align">
-            <xsl:value-of select="$Align"/>
+            <xsl:value-of select="$Align" />
           </xsl:attribute>
         </xsl:when>
         <xsl:when test="number($Content) = $Content">
@@ -723,12 +757,46 @@
       </xsl:if>
 
       <xsl:if test="$TypeIcon">
-        <xsl:call-template name="OutputTypeIconWithBoost">
-          <xsl:with-param name="Type" select="$TypeIcon" />
-          <xsl:with-param name ="Settings">
-            <Show size="large" />
-          </xsl:with-param>
-        </xsl:call-template>
+        <!-- Handle multiple types for Hidden Power. -->
+        <xsl:variable name="typePrimary">
+          <xsl:choose>
+            <xsl:when test="contains($TypeIcon, $TypeSeparator)">
+              <xsl:value-of select="substring-before($TypeIcon, $TypeSeparator)" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$TypeIcon" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="typeSecondary" select="substring-after($TypeIcon, $TypeSeparator)" />
+
+        <xsl:choose>
+          <xsl:when test="$typePrimary=''">
+            <xsl:call-template name="OutputTypeIconWithBoost">
+              <xsl:with-param name="Type" select="'Other'" />
+              <xsl:with-param name ="Settings">
+                <Show size="large" />
+              </xsl:with-param>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:call-template name="OutputTypeIconWithBoost">
+              <xsl:with-param name="Type" select="$typePrimary" />
+              <xsl:with-param name ="Settings">
+                <Show size="large" />
+              </xsl:with-param>
+            </xsl:call-template>
+            <xsl:if test="not($typeSecondary='')">
+              <xsl:value-of select="concat($nbsp, 'or', $nbsp)" disable-output-escaping="yes" />
+              <xsl:call-template name="OutputTypeIconWithBoost">
+                <xsl:with-param name="Type" select="$typeSecondary" />
+                <xsl:with-param name ="Settings">
+                  <Show size="large" />
+                </xsl:with-param>
+              </xsl:call-template>
+            </xsl:if>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:if>
 
       <span>

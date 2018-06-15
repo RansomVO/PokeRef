@@ -15,13 +15,13 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -85,7 +85,7 @@
 
     <th rowspan="2" valign="bottom">
       <xsl:text>Possible IV </xsl:text>
-      <xsl:value-of select="$column"/>
+      <xsl:value-of select="$column" />
       <br/>
       <span class="SUBCOMMENT">
         <xsl:text>%: Atk &#8226; Def &#8226; Sta </xsl:text>
@@ -119,7 +119,7 @@
     <tr>
       <th style="padding:0; margin:0; border-collapse:collapse; border:none;">
         <span style="font-size:larger">
-          <xsl:value-of select="@cp"/>
+          <xsl:value-of select="@cp" />
         </span>
       </th>
       <th align="right">

@@ -12,28 +12,28 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
         <title>
-          <xsl:value-of select="Moves/@category"/> Moves
+          <xsl:value-of select="Moves/@category" /> Moves
         </title>
       </head>
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          <xsl:value-of select="Moves/@category"/> Moves
+          <xsl:value-of select="Moves/@category" /> Moves
         </h1>
 
         <p>
-          This chart lists the info for all of the <xsl:value-of select="Moves/Category"/> Moves for Pokemon.
+          This chart lists the info for all of the <xsl:value-of select="Moves/Category" /> Moves for Pokemon.
         </p>
         <div class="INDENT">
           <p class="PARENT">
@@ -116,14 +116,14 @@
     <xsl:variable name="Type" select="@type" />
     <tr>
       <th align="left">
-        <xsl:value-of select="@name"/>
+        <xsl:value-of select="@name" />
       </th>
       <td align="left">
         <xsl:call-template name="OutputTypeIcon">
           <xsl:with-param name="Type" select="$Type" />
         </xsl:call-template>
         <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-        <xsl:value-of select="$Type"/>
+        <xsl:value-of select="$Type" />
       </td>
       <td>
         <xsl:call-template name="OutputWeatherBoostIcon">
@@ -133,13 +133,13 @@
         <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$Type]/@boost" />
       </td>
       <td align="right">
-        <xsl:value-of select="@energy"/>
+        <xsl:value-of select="@energy" />
       </td>
       <td align="right">
-        <xsl:value-of select="@power"/>
+        <xsl:value-of select="@power" />
       </td>
       <td align="right">
-        <xsl:value-of select="format-number(@duration, '0.0')"/>
+        <xsl:value-of select="format-number(@duration, '0.0')" />
       </td>
     </tr>
   </xsl:template>

@@ -40,31 +40,31 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>fieldresearch.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -112,10 +112,10 @@
         <br />
         <hr />
         <div id="ByTask" style="display:none;">
-          <xsl:apply-templates select="FieldResearch" mode="ByTask"/>
+          <xsl:apply-templates select="FieldResearch" mode="ByTask" />
         </div>
         <div id="ByReward" style="display:none;">
-          <xsl:apply-templates select="FieldResearch" mode="ByReward"/>
+          <xsl:apply-templates select="FieldResearch" mode="ByReward" />
         </div>
 
         <xsl:call-template name="WriteFooter" />
@@ -273,10 +273,10 @@
 
   <xsl:template name="OutputRewardCheckbox">
     <xsl:param name="id" />
-    <xsl:variable name="image" select="/Root/Images/Image[@id=$id]"/>
+    <xsl:variable name="image" select="/Root/Images/Image[@id=$id]" />
     <input type="checkbox" onchange="OnToggleReward();">
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('Reward_', $image/@id)"/>
+        <xsl:value-of select="concat('Reward_', $image/@id)" />
       </xsl:attribute>
     </input>
     <xsl:call-template name="Sprite">
@@ -295,7 +295,7 @@
         <xsl:call-template name="Collapser">
           <xsl:with-param name="CollapseeID" select="concat('CATEGORY_', @type)" />
         </xsl:call-template>
-        <xsl:value-of select="@type"/>
+        <xsl:value-of select="@type" />
       </h2>
       <div style="margin-top:.5em;">
         <xsl:attribute name="id">
@@ -324,7 +324,7 @@
             <xsl:attribute name="class">UNUSED</xsl:attribute>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:apply-templates select="Encounter"/>
+            <xsl:apply-templates select="Encounter" />
           </xsl:otherwise>
         </xsl:choose>
       </td>
@@ -334,7 +334,7 @@
             <xsl:attribute name="class">UNUSED</xsl:attribute>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:apply-templates select="Item"/>
+            <xsl:apply-templates select="Item" />
           </xsl:otherwise>
         </xsl:choose>
       </td>
@@ -391,7 +391,7 @@
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="concat('SECTION_', $rewardType)" />
       </xsl:call-template>
-      <xsl:value-of select="$rewardType"/>
+      <xsl:value-of select="$rewardType" />
     </h2>
     <div style="margin-top:.5em;">
       <xsl:attribute name="id">

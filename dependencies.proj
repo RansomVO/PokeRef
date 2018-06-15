@@ -117,5 +117,21 @@
     </FixOutputFile>
   </ItemGroup>
 
+  <!-- \xsl -->
+  <ItemGroup>
+    <FixIntermediateFile Include="xsl\controls.xsl">
+      <Visible>true</Visible>
+      <Dependencies>
+        _datafiles.manual\infrequent\images.xml;
+      </Dependencies>
+    </FixIntermediateFile>
+    <FixIntermediateFile Include="xsl\pokemon.xsl">
+      <Visible>true</Visible>
+      <Dependencies>
+        _datafiles.manual\infrequent\images.xml;
+      </Dependencies>
+    </FixIntermediateFile>
+  </ItemGroup>
+  
 </Project>
 

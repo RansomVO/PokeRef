@@ -2,8 +2,8 @@
 <xsl:stylesheet version="1.0" 
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
-  <xsl:include href="/xsl/global.xsl"/>
-  <xsl:include href="raidbosses.xsl"/>
+  <xsl:include href="/xsl/global.xsl" />
+  <xsl:include href="raidbosses.xsl" />
 
   <xsl:template match="/Root">
     <!-- Trick to allow non-list to be displayed in navigation bar. -->

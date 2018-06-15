@@ -16,31 +16,31 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>evolutions.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -231,14 +231,14 @@
     <!-- Output first row. -->
     <xsl:variable name="IDs">
       <xsl:for-each select="$Family//@ID">
-        <xsl:value-of select="."/>
+        <xsl:value-of select="." />
         <xsl:text> </xsl:text>
       </xsl:for-each>
     </xsl:variable>
 
     <xsl:variable name="Names">
       <xsl:for-each select="$Family//@Name">
-        <xsl:value-of select="."/>
+        <xsl:value-of select="." />
         <xsl:text>-</xsl:text>
       </xsl:for-each>
     </xsl:variable>
@@ -246,7 +246,7 @@
     <xsl:variable name="Gens">
       <xsl:text> </xsl:text>
       <xsl:for-each select="$Family//@Gen">
-        <xsl:value-of select="."/>
+        <xsl:value-of select="." />
         <xsl:text> </xsl:text>
       </xsl:for-each>
     </xsl:variable>

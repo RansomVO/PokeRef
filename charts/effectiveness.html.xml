@@ -2,7 +2,7 @@
 <!DOCTYPE Root [
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
-  <!ENTITY Images SYSTEM "/_datafiles.manual/images.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/infrequent/images.xml">
   <!ENTITY Effectiveness SYSTEM "/_datafiles/effectiveness.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="effectiveness.xsl"?>

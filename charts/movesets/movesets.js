@@ -177,11 +177,13 @@ function MoveSetMatchesFilter(movesetRow) {
         return false;
     }
 
-    if (!PokeTypeMatchesFilter(selectionsTypes, [movesetRow.getAttribute('fastMoveType'), movesetRow.getAttribute('chargedMoveType')])) {
+    var types = movesetRow.getAttribute('fastMoveType').split('&').concat(movesetRow.getAttribute('chargedMoveType').split('&'));
+    if (types.count > 0 && !PokeTypeMatchesFilter(selectionsTypes, types)) {
         return false;
     }
 
-    if (!WeatherMatchesFilter(selectionsWeather, [movesetRow.getAttribute('fastMoveBoost'), movesetRow.getAttribute('chargedMoveBoost')])) {
+    var boosts = movesetRow.getAttribute('fastMoveBoost').split('&').concat(movesetRow.getAttribute('chargedMoveBoost').split('&'));
+    if (boosts.count > 0 && !WeatherMatchesFilter(selectionsWeather, boosts)) {
         return false;
     }
 

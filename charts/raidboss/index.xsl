@@ -3,7 +3,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
   <xsl:include href="/xsl/global.xsl" />
-  <xsl:include href="raidbosses.xsl"/>
+  <xsl:include href="raidbosses.xsl" />
 
   <xsl:template match="/Root">
     <html lang="en-us">
@@ -14,25 +14,25 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -219,7 +219,7 @@
         <h2>
           Current Raid Bosses
           <span class="NOTE">
-            <xsl:value-of select="concat('(Updated: ', /Root/RaidBosses/@last_updated, ')')"/>
+            <xsl:value-of select="concat('(Updated: ', /Root/RaidBosses/@last_updated, ')')" />
           </span>
         </h2>
         <p id="anchor_bossescurrent">

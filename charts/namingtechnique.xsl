@@ -13,19 +13,19 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -475,7 +475,7 @@
               <td class="CHARS">
                 &#x1F10B;<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger" disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger" disable-output-escaping="yes" />
                   </sup>
                 </a>
               </td>
@@ -551,7 +551,7 @@
               <td class="CHARS">
                 &#x1F10C;<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </td>
@@ -621,7 +621,7 @@
               <td class="CHARS">
                 &#x1F100;<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </td>
@@ -663,7 +663,7 @@
               <th align="left">
                 MATHEMATICAL<br />BOLD<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </th>
@@ -682,7 +682,7 @@
               <th align="left">
                 MATHEMATICAL<br />DOUBLE-STRUCK<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </th>
@@ -701,7 +701,7 @@
               <th align="left">
                 MATHEMATICAL<br />SANS-SERIF<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </th>
@@ -720,7 +720,7 @@
               <th align="left">
                 MATHEMATICAL<br />SANS-SERIF BOLD<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </th>
@@ -739,7 +739,7 @@
               <th align="left">
                 MATHEMATICAL<br />MONOSPACE<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </th>
@@ -758,7 +758,7 @@
               <th align="left">
                 COMMA<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </th>
@@ -819,21 +819,21 @@
               <td class="CHARS">
                 &#x1F51E;<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </td>
               <td class="CHARS">
                 &#x1F51F;<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </td>
               <td class="CHARS">
                 &#x1F4AF;<a href="#noshow">
                   <sup style="font-size:initial; color:red;">
-                    <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+                    <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
                   </sup>
                 </a>
               </td>
@@ -841,7 +841,7 @@
           </table>
           <p id="anchor_noshow">
             <sup style="font-size:initial; color:red;">
-              <xsl:value-of select="$dagger"  disable-output-escaping="yes"/>
+              <xsl:value-of select="$dagger"  disable-output-escaping="yes" />
             </sup>Characters outside the base 16-bit chars. <span class="NOTE">(I don't think any of these would show up in Pokemon Go's font.)</span>
           </p>
         </div>

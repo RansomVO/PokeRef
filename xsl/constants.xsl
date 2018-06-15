@@ -90,7 +90,7 @@
   <xsl:template name="WeatherBoost">
     <xsl:param name="type" />
 
-      <xsl:value-of select="*/Constants/Mappings/WeatherBoost[@type=$type]/@boost"/>
+      <xsl:value-of select="*/Constants/Mappings/WeatherBoost[@type=$type]/@boost" />
   </xsl:template>
 
   <!-- #endRegion ========== Mappings ========== -->
@@ -101,7 +101,7 @@
     <xsl:param name="number" />
 
     <span style="font-size:x-large">
-      <xsl:value-of select="*/Constants/NumericChars/NumericChar[@number=$number]/@character"/>
+      <xsl:value-of select="*/Constants/NumericChars/NumericChar[@number=$number]/@character" />
     </span>
   </xsl:template>
 
@@ -110,9 +110,9 @@
   <!-- #region  ========== CPM ========== -->
 
   <xsl:template name="CMP">
-    <xsl:param name="level"/>
+    <xsl:param name="level" />
 
-    <xsl:value-of select="*/Constants/CPMultipliers/CPM[@level=$level]/@value "/>
+    <xsl:value-of select="*/Constants/CPMultipliers/CPM[@level=$level]/@value " />
   </xsl:template>
 
   <!-- #endregion  ========== CPM ========== -->

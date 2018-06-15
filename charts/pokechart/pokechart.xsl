@@ -15,31 +15,31 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>pokechart.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/pokemon.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -54,7 +54,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="PokeStats/@gen"/>
+              <xsl:value-of select="PokeStats/@gen" />
             </xsl:otherwise>
           </xsl:choose>
         </title>
@@ -72,7 +72,7 @@
             </xsl:when>
             <xsl:otherwise>
               <xsl:text> - Gen </xsl:text>
-              <xsl:value-of select="PokeStats/@gen"/>
+              <xsl:value-of select="PokeStats/@gen" />
             </xsl:otherwise>
           </xsl:choose>
         </h1>
@@ -126,10 +126,10 @@
         <table  width="100%" style="white-space:nowrap;">
           <xsl:value-of select="concat($lt, '!-- This stupid row is so the stupid columns will be as narrow as possible. --', $gt)" disable-output-escaping="yes" />
           <tr>
-            <th style="width:1px;"/>
-            <th style="width:1px;"/>
-            <th style="width:1px;"/>
-            <th style="width:1px;"/>
+            <th style="width:1px;" />
+            <th style="width:1px;" />
+            <th style="width:1px;" />
+            <th style="width:1px;" />
           </tr>
           <tr>
             <td rowspan="4" id="Selected_Pokemon" class="POPUP_CELL" />

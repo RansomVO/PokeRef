@@ -16,19 +16,19 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/controls.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>local.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -80,7 +80,7 @@
     </a>
     <div class="CHILD">
       <xsl:attribute name="id">
-        <xsl:value-of select="@url"/>
+        <xsl:value-of select="@url" />
       </xsl:attribute>
       <xsl:if test="@description != '' and @description != 'Home Page'">
         <span class="CHILD" style="font-size:medium">
@@ -96,7 +96,7 @@
           <span class="SITE_MAP_SECTION">Anchors On Page</span>
           <ul>
             <xsl:attribute name="id">
-              <xsl:value-of select="concat(@url, '_ANCHORS')"/>
+              <xsl:value-of select="concat(@url, '_ANCHORS')" />
             </xsl:attribute>
 
             <xsl:apply-templates select="sitemap:siteMapNode[contains(@url, '#')]" mode="child">

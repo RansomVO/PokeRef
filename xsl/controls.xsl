@@ -33,8 +33,8 @@
         </tr>
         <tr>
           <!-- Split entries into 2 columns. -->
-          <xsl:variable name="types" select="/Root/Constants/Types/*"/>
-          <xsl:variable name="mid" select="count($types) div 2"/>
+          <xsl:variable name="types" select="/Root/Constants/Types/*" />
+          <xsl:variable name="mid" select="count($types) div 2" />
           <td valign="top">
             <xsl:for-each select="$types[position() &lt;= $mid]">
               <xsl:call-template name="OutputTypeCheckbox">
@@ -72,7 +72,7 @@
     <xsl:param name="Type" />
     <input type="checkbox" onchange="OnTogglePokeType();">
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('CONTROLS_PokeType_', pokeref:Replace($Type, ' ', ''), '_Check')"/>
+        <xsl:value-of select="concat('CONTROLS_PokeType_', pokeref:Replace($Type, ' ', ''), '_Check')" />
       </xsl:attribute>
     </input>
     <xsl:call-template name="OutputTypeIcon">
@@ -108,7 +108,7 @@
         <tr>
           <td valign="top">
             <xsl:for-each select="/Root/Constants/Weathers/*">
-              <xsl:sort order="ascending" data-type="text" select="."/>
+              <xsl:sort order="ascending" data-type="text" select="." />
               <xsl:call-template name="OutputWeatherCheckbox">
                 <xsl:with-param name="Weather" select="." />
               </xsl:call-template>
@@ -137,7 +137,7 @@
 
     <input type="checkbox" onchange="OnToggleWeather(this);">
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('CONTROLS_Weather_', pokeref:Replace($Weather, ' ', ''), '_Check')"/>
+        <xsl:value-of select="concat('CONTROLS_Weather_', pokeref:Replace($Weather, ' ', ''), '_Check')" />
       </xsl:attribute>
     </input>
     <xsl:call-template name="OutputWeatherIcon">
@@ -255,7 +255,7 @@
     <xsl:param name="Gen" />
     <input type="checkbox" onchange="OnToggleGeneration();">
       <xsl:attribute name="id">
-        <xsl:value-of select="concat('CONTROLS_Generations_Gen', $Gen, '_Check')"/>
+        <xsl:value-of select="concat('CONTROLS_Generations_Gen', $Gen, '_Check')" />
       </xsl:attribute>
     </input>
     <xsl:text>Gen</xsl:text>

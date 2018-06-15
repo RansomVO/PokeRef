@@ -13,7 +13,7 @@
   <!-- ************************************************************************************************************************ -->
   <!-- #region Global variables -->
   <!-- ************************************************************************************************************************ -->
-  <xsl:variable name="CurrentDate" select="pokeref:CurrentDate()"/>
+  <xsl:variable name="CurrentDate" select="pokeref:CurrentDate()" />
 
   <!-- #endregion -->
 
@@ -62,7 +62,7 @@
     <xsl:param name="id" />
     <xsl:param name="Settings" />
 
-    <xsl:variable name="image" select="/Root/Images/Image[@id=$id]"/>
+    <xsl:variable name="image" select="/Root/Images/Image[@id=$id]" />
 
     <xsl:choose>
       <xsl:when test="count($image)=0">
@@ -125,7 +125,7 @@
 
   <xsl:template name="WriteContactInfo">
     <span class="NOTE CHILD">
-      Just send me an e-mail at <a href="mailto:pokeeref@gmail.com">pokeeref@gmail.com</a> (The extra 'e' is not a typo. pokeref@gmail.com was already taken. <xsl:value-of select="smiley" disable-output-escaping="yes"/>)
+      Just send me an e-mail at <a href="mailto:pokeeref@gmail.com">pokeeref@gmail.com</a> (The extra 'e' is not a typo. pokeref@gmail.com was already taken. <xsl:value-of select="smiley" disable-output-escaping="yes" />)
     </span>
   </xsl:template>
 

@@ -3592,13 +3592,28 @@
   </MoveSet>
   <MoveSet base_dps="17.028985507246375" true_dps="21.884057971014492" comparison="85">
     <Pokemon id="121" name="Starmie" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="17.028985507246375" true_dps="21.884057971014492" comparison="85">
+    <Pokemon id="121" name="Starmie" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="15.730337078651685" true_dps="17.865168539325843" comparison="70">
     <Pokemon id="121" name="Starmie" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Power Gem" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="15.730337078651685" true_dps="17.865168539325843" comparison="70">
+    <Pokemon id="121" name="Starmie" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Power Gem" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="15.413533834586465" true_dps="19.548872180451127" comparison="76">
+    <Pokemon id="121" name="Starmie" />
+    <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Psychic" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="15.413533834586465" true_dps="19.548872180451127" comparison="76">
     <Pokemon id="121" name="Starmie" />
@@ -4015,14 +4030,29 @@
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="18.506493506493506" true_dps="17.142857142857142" comparison="91">
+    <Pokemon id="137" name="Porygon" />
+    <FastAttack name="Hidden Power" stab="false" legacy="false" />
+    <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
+  </MoveSet>
   <MoveSet base_dps="17.83216783216783" true_dps="18.88111888111888" comparison="100">
     <Pokemon id="137" name="Porygon" />
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Hyper Beam" stab="true" legacy="false" />
   </MoveSet>
+  <MoveSet base_dps="17.83216783216783" true_dps="18.88111888111888" comparison="100">
+    <Pokemon id="137" name="Porygon" />
+    <FastAttack name="Hidden Power" stab="false" legacy="false" />
+    <ChargedAttack name="Hyper Beam" stab="true" legacy="false" />
+  </MoveSet>
   <MoveSet base_dps="17.253521126760564" true_dps="16.197183098591552" comparison="86">
     <Pokemon id="137" name="Porygon" />
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
+    <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+  </MoveSet>
+  <MoveSet base_dps="17.253521126760564" true_dps="16.197183098591552" comparison="86">
+    <Pokemon id="137" name="Porygon" />
+    <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="15" true_dps="16.714285714285715" comparison="98">

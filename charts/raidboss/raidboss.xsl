@@ -21,19 +21,19 @@
         <script>
           <xsl:attribute name="src">
             <xsl:text>raidboss.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <script>
           <xsl:attribute name="src">
             <xsl:text>/js/global.js?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </script>
         <link type="text/css" rel="stylesheet" >
           <xsl:attribute name="href">
             <xsl:text>index.css?cacherefresh=</xsl:text>
-            <xsl:value-of select="$CurrentDate"/>
+            <xsl:value-of select="$CurrentDate" />
           </xsl:attribute>
         </link>
 
@@ -53,7 +53,7 @@
               <xsl:text>???</xsl:text>
             </xsl:when>
             <xsl:otherwise>
-              <xsl:value-of select="RaidBoss/@raid_cp"/>
+              <xsl:value-of select="RaidBoss/@raid_cp" />
             </xsl:otherwise>
           </xsl:choose>
           <xsl:text>)</xsl:text>
@@ -104,7 +104,7 @@
 
     <th rowspan="2" valign="bottom">
       <xsl:text>Possible IV </xsl:text>
-      <xsl:value-of select="$column"/>
+      <xsl:value-of select="$column" />
       <br/>
       <span class="SUBCOMMENT">
         <xsl:text>%: Atk &#8226; Def &#8226; Sta </xsl:text>
@@ -137,7 +137,7 @@
     <!-- Create the table -->
     <table border="1" style="display:none;">
       <xsl:attribute name="id">
-        <xsl:value-of select="name($PossibilitySet)"/>
+        <xsl:value-of select="name($PossibilitySet)" />
       </xsl:attribute>
       <xsl:call-template name="CreateTableHeaders">
         <xsl:with-param name="MaxColumns" select="$PossibilitySet/@columns" />
@@ -154,7 +154,7 @@
     <tr>
       <th style="padding:0; margin:0; border-collapse:collapse; border:none;">
         <span style="font-size:larger">
-          <xsl:value-of select="@cp"/>
+          <xsl:value-of select="@cp" />
         </span>
       </th>
       <th align="right">
