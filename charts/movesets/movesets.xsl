@@ -500,6 +500,7 @@
 
         <xsl:for-each select="MoveSet[not(Pokemon/@name=preceding-sibling::MoveSet/Pokemon/@name)]">
           <xsl:sort order="ascending" data-type="number" select="Pokemon/@id" />
+          <xsl:sort order="ascending" data-type="number" select="Pokemon/@formId" />
 
           <xsl:variable name="PokemonName" select="Pokemon/@name" />
           <xsl:variable name="PokemonStats" select="/Root/PokeStats/Pokemon[@name=$PokemonName]" />
@@ -542,7 +543,6 @@
 
           <xsl:for-each select="../MoveSet[Pokemon/@name=$PokemonName]">
             <xsl:sort order="descending" data-type="number" select="@comparison" />
-            <!-- TODO QZX: Why is this not sorting!!! -->
 
             <xsl:apply-templates select="." />
           </xsl:for-each>

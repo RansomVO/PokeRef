@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-14" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-15" gen="3">
   <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
     <Pokemon id="252" name="Treecko" />
     <FastAttack name="Pound" stab="false" legacy="false" />
@@ -2831,82 +2831,82 @@
     <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.535433070866144" true_dps="14.566929133858269" comparison="100">
-    <Pokemon id="351" name="Castform (Normal)" />
+    <Pokemon id="351" name="Castform (Normal)" form="Normal" formId="29" />
     <FastAttack name="Tackle" stab="true" legacy="false" />
     <ChargedAttack name="Hurricane" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="15.730337078651685" true_dps="13.48314606741573" comparison="93">
-    <Pokemon id="351" name="Castform (Normal)" />
+    <Pokemon id="351" name="Castform (Normal)" form="Normal" formId="29" />
     <FastAttack name="Tackle" stab="true" legacy="false" />
     <ChargedAttack name="Energy Ball" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.216216216216214" true_dps="12.702702702702702" comparison="88">
-    <Pokemon id="351" name="Castform (Normal)" />
+    <Pokemon id="351" name="Castform (Normal)" form="Normal" formId="29" />
     <FastAttack name="Hex" stab="false" legacy="false" />
     <ChargedAttack name="Hurricane" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="14.942528735632186" true_dps="11.724137931034484" comparison="81">
-    <Pokemon id="351" name="Castform (Normal)" />
+    <Pokemon id="351" name="Castform (Normal)" form="Normal" formId="29" />
     <FastAttack name="Hex" stab="false" legacy="false" />
     <ChargedAttack name="Energy Ball" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.293233082706767" true_dps="16.992481203007518" comparison="100">
-    <Pokemon id="351" name="Castform (Rainy)" />
+    <Pokemon id="351" name="Castform (Rainy)" form="Rainy" formId="31" />
     <FastAttack name="Water Gun" stab="true" legacy="false" />
     <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.129032258064516" true_dps="14.354838709677418" comparison="85">
-    <Pokemon id="351" name="Castform (Rainy)" />
+    <Pokemon id="351" name="Castform (Rainy)" form="Rainy" formId="31" />
     <FastAttack name="Water Gun" stab="true" legacy="false" />
     <ChargedAttack name="Thunder" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.293233082706767" true_dps="15.488721804511277" comparison="92">
-    <Pokemon id="351" name="Castform (Rainy)" />
+    <Pokemon id="351" name="Castform (Rainy)" form="Rainy" formId="31" />
     <FastAttack name="Tackle" stab="false" legacy="false" />
     <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.129032258064516" true_dps="12.741935483870968" comparison="75">
-    <Pokemon id="351" name="Castform (Rainy)" />
+    <Pokemon id="351" name="Castform (Rainy)" form="Rainy" formId="31" />
     <FastAttack name="Tackle" stab="false" legacy="false" />
     <ChargedAttack name="Thunder" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.029702970297031" true_dps="16.633663366336634" comparison="100">
-    <Pokemon id="351" name="Castform (Snowy)" />
+    <Pokemon id="351" name="Castform (Snowy)" form="Snowy" formId="32" />
     <FastAttack name="Powder Snow" stab="true" legacy="false" />
     <ChargedAttack name="Blizzard" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="15.616438356164384" true_dps="15.205479452054794" comparison="92">
-    <Pokemon id="351" name="Castform (Snowy)" />
+    <Pokemon id="351" name="Castform (Snowy)" form="Snowy" formId="32" />
     <FastAttack name="Powder Snow" stab="true" legacy="false" />
     <ChargedAttack name="Ice Beam" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.557251908396946" true_dps="15.725190839694657" comparison="95">
-    <Pokemon id="351" name="Castform (Snowy)" />
+    <Pokemon id="351" name="Castform (Snowy)" form="Snowy" formId="32" />
     <FastAttack name="Tackle" stab="false" legacy="false" />
     <ChargedAttack name="Blizzard" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.867469879518072" true_dps="15.301204819277107" comparison="92">
-    <Pokemon id="351" name="Castform (Snowy)" />
+    <Pokemon id="351" name="Castform (Snowy)" form="Snowy" formId="32" />
     <FastAttack name="Tackle" stab="false" legacy="false" />
     <ChargedAttack name="Ice Beam" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.901408450704228" true_dps="16.549295774647888" comparison="100">
-    <Pokemon id="351" name="Castform (Sunny)" />
+    <Pokemon id="351" name="Castform (Sunny)" form="Sunny" formId="30" />
     <FastAttack name="Ember" stab="true" legacy="false" />
     <ChargedAttack name="Fire Blast" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="18.791946308724832" true_dps="16.040268456375838" comparison="97">
-    <Pokemon id="351" name="Castform (Sunny)" />
+    <Pokemon id="351" name="Castform (Sunny)" form="Sunny" formId="30" />
     <FastAttack name="Ember" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.901408450704228" true_dps="15.140845070422536" comparison="92">
-    <Pokemon id="351" name="Castform (Sunny)" />
+    <Pokemon id="351" name="Castform (Sunny)" form="Sunny" formId="30" />
     <FastAttack name="Tackle" stab="false" legacy="false" />
     <ChargedAttack name="Fire Blast" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="18.791946308724832" true_dps="14.697986577181208" comparison="89">
-    <Pokemon id="351" name="Castform (Sunny)" />
+    <Pokemon id="351" name="Castform (Sunny)" form="Sunny" formId="30" />
     <FastAttack name="Tackle" stab="false" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
   </MoveSet>

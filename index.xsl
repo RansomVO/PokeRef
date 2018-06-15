@@ -190,7 +190,9 @@
             </h2>
             <div>
               <p>
-                <span class="TODO QZX">TODO</span>
+                Sometimes you just want to see a list of the Pokemon that fit your criteria.
+                For example, maybe you want to perform a Field Research task that involves catching Poison type Pokemon.
+                <br />This list should help you out.
               </p>
             </div>
 

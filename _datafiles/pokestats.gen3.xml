@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="3" region="Hoenn">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-15" gen="3" region="Hoenn">
   <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" />
     <Stats>
@@ -1049,7 +1049,7 @@
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Normal)" form="Normal" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="351" name="Castform (Normal)" form="Normal" formId="29" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
@@ -1059,7 +1059,7 @@
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Rainy)" form="Rainy" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="351" name="Castform (Rainy)" form="Rainy" formId="31" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
@@ -1069,7 +1069,7 @@
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Snowy)" form="Snowy" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="351" name="Castform (Snowy)" form="Snowy" formId="32" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
@@ -1079,7 +1079,7 @@
       <Max cp="1486" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="351" name="Castform (Sunny)" form="Sunny" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="351" name="Castform (Sunny)" form="Sunny" formId="30" family="Castform" buddy_km="5" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="139" defense="139" stamina="140" />
@@ -1450,7 +1450,7 @@
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Attack)" form="Attack" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Attack)" form="Attack" formId="34" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
@@ -1460,7 +1460,7 @@
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Defense)" form="Defense" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Defense)" form="Defense" formId="35" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
@@ -1470,7 +1470,7 @@
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Normal)" form="Normal" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Normal)" form="Normal" formId="33" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />
@@ -1480,7 +1480,7 @@
       <Max cp="15" hp="12" />
     </Stats>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys (Speed)" form="Speed" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="386" name="Deoxys (Speed)" form="Speed" formId="36" family="Deoxys" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="1" defense="1" stamina="1" />

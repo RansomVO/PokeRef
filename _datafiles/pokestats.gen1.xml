@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-15" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" rarity="Normal" availability="General" shiny="true">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -1091,7 +1091,7 @@
       <Max cp="2916" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" formId="78" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Dragon" />
     <Stats>
       <BaseIV attack="230" defense="158" stamina="190" />
@@ -1101,7 +1101,7 @@
       <Max cp="2881" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
+  <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" formId="77" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" rarity="Normal" availability="General">
     <Type primary="Grass" secondary="Psychic" />
     <Stats>
       <BaseIV attack="233" defense="158" stamina="190" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-14" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-15" gen="1">
   <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
     <Pokemon id="1" name="Bulbasaur" />
     <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -3011,62 +3011,62 @@
     <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="14.629629629629628" true_dps="22.962962962962962" comparison="76">
-    <Pokemon id="103" name="Exeggutor (Alola)" />
+    <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" formId="78" />
     <FastAttack name="Bullet Seed" stab="true" legacy="false" />
     <ChargedAttack name="Seed Bomb" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="15.25" true_dps="23.75" comparison="78">
-    <Pokemon id="103" name="Exeggutor (Alola)" />
+    <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" formId="78" />
     <FastAttack name="Bullet Seed" stab="true" legacy="false" />
     <ChargedAttack name="Dragon Pulse" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.810218978102188" true_dps="27.737226277372262" comparison="91">
-    <Pokemon id="103" name="Exeggutor (Alola)" />
+    <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" formId="78" />
     <FastAttack name="Bullet Seed" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.692307692307693" true_dps="27.23076923076923" comparison="90">
-    <Pokemon id="103" name="Exeggutor (Alola)" />
+    <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" formId="78" />
     <FastAttack name="Dragon Tail" stab="true" legacy="false" />
     <ChargedAttack name="Seed Bomb" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.647058823529409" true_dps="27.058823529411761" comparison="89">
-    <Pokemon id="103" name="Exeggutor (Alola)" />
+    <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" formId="78" />
     <FastAttack name="Dragon Tail" stab="true" legacy="false" />
     <ChargedAttack name="Dragon Pulse" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="19.889502762430936" true_dps="30.497237569060772" comparison="100">
-    <Pokemon id="103" name="Exeggutor (Alola)" />
+    <Pokemon id="103" name="Exeggutor (Alola)" form="Alola" formId="78" />
     <FastAttack name="Dragon Tail" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="14.629629629629628" true_dps="23.148148148148145" comparison="76">
-    <Pokemon id="103" name="Exeggutor (Normal)" />
+    <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" formId="77" />
     <FastAttack name="Bullet Seed" stab="true" legacy="false" />
     <ChargedAttack name="Seed Bomb" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="14.137931034482756" true_dps="22.413793103448274" comparison="74">
-    <Pokemon id="103" name="Exeggutor (Normal)" />
+    <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" formId="77" />
     <FastAttack name="Bullet Seed" stab="true" legacy="false" />
     <ChargedAttack name="Psychic" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="17.810218978102188" true_dps="28.029197080291969" comparison="92">
-    <Pokemon id="103" name="Exeggutor (Normal)" />
+    <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" formId="77" />
     <FastAttack name="Bullet Seed" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.851851851851851" true_dps="26.481481481481481" comparison="87">
-    <Pokemon id="103" name="Exeggutor (Normal)" />
+    <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" formId="77" />
     <FastAttack name="Extrasensory" stab="true" legacy="false" />
     <ChargedAttack name="Seed Bomb" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="16.377952755905511" true_dps="25.748031496062993" comparison="85">
-    <Pokemon id="103" name="Exeggutor (Normal)" />
+    <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" formId="77" />
     <FastAttack name="Extrasensory" stab="true" legacy="false" />
     <ChargedAttack name="Psychic" stab="true" legacy="false" />
   </MoveSet>
   <MoveSet base_dps="19.45945945945946" true_dps="30.472972972972972" comparison="100">
-    <Pokemon id="103" name="Exeggutor (Normal)" />
+    <Pokemon id="103" name="Exeggutor (Normal)" form="Normal" formId="77" />
     <FastAttack name="Extrasensory" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
   </MoveSet>
@@ -3590,7 +3590,7 @@
     <FastAttack name="Water Gun" stab="true" legacy="false" />
     <ChargedAttack name="Power Gem" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.028985507246375" true_dps="21.884057971014492" comparison="85">
+  <MoveSet base_dps="17.028985507246375" true_dps="24.420289855072461" comparison="95">
     <Pokemon id="121" name="Starmie" />
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
@@ -3600,7 +3600,7 @@
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="15.730337078651685" true_dps="17.865168539325843" comparison="70">
+  <MoveSet base_dps="15.730337078651685" true_dps="20.1123595505618" comparison="78">
     <Pokemon id="121" name="Starmie" />
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Power Gem" stab="false" legacy="false" />
@@ -3610,7 +3610,7 @@
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Power Gem" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="15.413533834586465" true_dps="19.548872180451127" comparison="76">
+  <MoveSet base_dps="15.413533834586465" true_dps="22.180451127819548" comparison="87">
     <Pokemon id="121" name="Starmie" />
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Psychic" stab="true" legacy="false" />
@@ -4030,7 +4030,7 @@
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="18.506493506493506" true_dps="17.142857142857142" comparison="91">
+  <MoveSet base_dps="18.506493506493506" true_dps="15.779220779220779" comparison="84">
     <Pokemon id="137" name="Porygon" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
@@ -4040,7 +4040,7 @@
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Hyper Beam" stab="true" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.83216783216783" true_dps="18.88111888111888" comparison="100">
+  <MoveSet base_dps="17.83216783216783" true_dps="17.412587412587413" comparison="93">
     <Pokemon id="137" name="Porygon" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Hyper Beam" stab="true" legacy="false" />
@@ -4050,7 +4050,7 @@
     <FastAttack name="Hidden Power" stab="true" legacy="false" />
     <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
   </MoveSet>
-  <MoveSet base_dps="17.253521126760564" true_dps="16.197183098591552" comparison="86">
+  <MoveSet base_dps="17.253521126760564" true_dps="14.71830985915493" comparison="78">
     <Pokemon id="137" name="Porygon" />
     <FastAttack name="Hidden Power" stab="false" legacy="false" />
     <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />

@@ -185,6 +185,9 @@
           <xsl:value-of select="concat('GEN', @gen, '_Collection')" />
         </xsl:attribute>
         <xsl:for-each select="Pokemon">
+          <xsl:sort order="ascending" data-type="number" select="@id" />
+          <xsl:sort order="ascending" data-type="number" select="@formId" />
+
           <xsl:variable name="id" select="@id" />
           <xsl:if test="not(contains(@availability, $Availability_Unreleased)) and (@form or not(../Pokemon[@id = $id and @form]))">
             <xsl:variable name="name" select="@name" />

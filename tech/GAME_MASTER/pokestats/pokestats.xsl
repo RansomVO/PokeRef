@@ -5,12 +5,6 @@
 >
   
   <xsl:include href="/xsl/global.xsl" />
-  <!--
-
-    ***** TODO *****
-    - Make it so table scrolls, leaving the headers at the top.
-
--->
 
   <!-- Main Template -->
   <xsl:template match="/Root">
@@ -58,7 +52,10 @@
         <br />
         <table border="1">
           <xsl:call-template name="CreateTableHeaders" />
-          <xsl:apply-templates select="PokeStats/Pokemon"  mode="Local" />
+          <xsl:apply-templates select="PokeStats/Pokemon"  mode="Local">
+            <xsl:sort order="ascending" data-type="number" select="@id" />
+            <xsl:sort order="ascending" data-type="number" select="@formId" />
+          </xsl:apply-templates>
         </table>
 
         <xsl:call-template name="WriteFooter" />
