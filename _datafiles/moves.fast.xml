@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Moves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-11" category="Fast">
+<Moves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-15" category="Fast">
   <Move name="Fury Cutter" type="Bug" energy="6" power="3" duration="0.4" damage_window_start="100" damage_window_end="400" />
   <Move name="Bug Bite" type="Bug" energy="6" power="5" duration="0.5" damage_window_start="250" damage_window_end="450" />
   <Move name="Bite" type="Dark" energy="4" power="6" duration="0.5" damage_window_start="300" damage_window_end="500" />
@@ -63,5 +63,5 @@
   <Move name="Waterfall" type="Water" energy="8" power="16" duration="1.2" damage_window_start="950" damage_window_end="1100" />
   <Move name="Yawn" type="Normal" energy="15" power="0" duration="1.7" damage_window_start="1400" damage_window_end="1600" />
   <Move name="Present" type="Normal" energy="20" power="5" duration="1.3" damage_window_start="1100" damage_window_end="1300" />
-  <Move name="Smack Down" type="Rock" energy="7" power="12" duration="0.9" damage_window_start="500" damage_window_end="800" />
+  <Move name="Smack Down" type="Rock" energy="8" power="16" duration="1.2" damage_window_start="800" damage_window_end="1100" />
 </Moves>
