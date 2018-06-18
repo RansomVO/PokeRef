@@ -148,6 +148,21 @@ function GetFields() {
       <xsl:text>_Value');
 </xsl:text>
     </xsl:for-each>
+    
+    <xsl:text>
+    CommunityBox_Price = document.getElementById('CommunityBox_Price');
+    CommunityBox_Total = document.getElementById('CommunityBox_Total');
+    CommunityBox_Discount = document.getElementById('CommunityBox_Discount');
+</xsl:text>
+    <xsl:for-each select="ShoppingBoxes/ItemValue">
+      <xsl:text>    CommunityBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty = document.getElementById('CommunityBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty');
+</xsl:text>
+    </xsl:for-each>
+    
     <xsl:text>
     SpecialBox_Price = document.getElementById('SpecialBox_Price');
     SpecialBox_Total = document.getElementById('SpecialBox_Total');
@@ -161,6 +176,7 @@ function GetFields() {
       <xsl:text>_Qty');
 </xsl:text>
     </xsl:for-each>
+    
     <xsl:text>
     GreatBox_Price = document.getElementById('GreatBox_Price');
     GreatBox_Total = document.getElementById('GreatBox_Total');
@@ -223,7 +239,9 @@ function InitializeChecks() {
 
 // Set the default state of a single checkbox, disabling rows that aren't used.
 function InitialCheck(checkbox, index, checkDefault) {
-    if (SpecialBox[index] === 0 </xsl:text>
+    if (CommunityBox[index] === 0 </xsl:text>
+    <xsl:value-of select="concat($amp,$amp)" disable-output-escaping="yes" />
+    <xsl:text> SpecialBox[index] === 0 </xsl:text>
     <xsl:value-of select="concat($amp,$amp)" disable-output-escaping="yes" />
     <xsl:text> GreatBox[index] === 0 </xsl:text>
     <xsl:value-of select="concat($amp,$amp)" disable-output-escaping="yes" />
@@ -307,6 +325,17 @@ function OnValueChanged(field) {
       <xsl:text>        if (</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Check.checked) {
+            if (CommunityBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty.value !== '') {
+                CommunityBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.value = CommunityBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty.value * </xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.value;
+            }
             if (SpecialBox_</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Qty.value !== '') {
@@ -345,6 +374,17 @@ function OnValueChanged(field) {
     </xsl:for-each>
     <xsl:text>
         // Calculate the Total Value for each box.
+        CommunityBox_Total.value = 0</xsl:text>
+    <xsl:for-each select="ShoppingBoxes/ItemValue">
+      <xsl:text>
+            + (</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Check.checked ? Number(CommunityBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.value) : 0)</xsl:text>
+    </xsl:for-each>
+    <xsl:text>;
+
         SpecialBox_Total.value = 0</xsl:text>
     <xsl:for-each select="ShoppingBoxes/ItemValue">
       <xsl:text>
@@ -379,6 +419,18 @@ function OnValueChanged(field) {
     <xsl:text>;
 
       // Calculate the Discount.
+      var value = Math.round((1 - (Number(CommunityBox_Price.value) / Number(CommunityBox_Total.value))) * 100);
+      CommunityBox_Discount.innerText = value + '%';
+      if (value </xsl:text>
+    <xsl:value-of select="$lt" disable-output-escaping="yes" />
+    <xsl:text> 0) {
+            CommunityBox_Discount.classList.remove('GOOD');
+            CommunityBox_Discount.classList.add('BAD');
+        } else {
+            CommunityBox_Discount.classList.remove('BAD');
+            CommunityBox_Discount.classList.add('GOOD');
+        }
+
       var value = Math.round((1 - (Number(SpecialBox_Price.value) / Number(SpecialBox_Total.value))) * 100);
       SpecialBox_Discount.innerText = value + '%';
       if (value </xsl:text>
@@ -439,6 +491,9 @@ function OnCheckChanged(checkbox) {
       </xsl:if>
       <xsl:value-of select="@item" />
       <xsl:text>_Value.parentNode.classList.remove('DISABLED');
+            CommunityBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.parentNode.classList.remove('DISABLED');
             SpecialBox_</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Value.parentNode.parentNode.classList.remove('DISABLED');
@@ -458,6 +513,9 @@ function OnCheckChanged(checkbox) {
         <xsl:text>_Price.parentNode.classList.add('DISABLED');
             </xsl:text>
       </xsl:if>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.parentNode.classList.add('DISABLED');
+            CommunityBox_</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Value.parentNode.classList.add('DISABLED');
             SpecialBox_</xsl:text>
