@@ -25,7 +25,7 @@
       <Replacement>PokéBall</Replacement>
     </SearchStrings>
     <SearchStrings Include="{$CurrentDate}">
-      <Replacement>$([System.DateTime]::Now.ToString("yyyy-MM-dd_HH:mm:ss"))</Replacement>
+      <Replacement>$([System.DateTime]::Now.ToString("yyyy-MM-dd"))</Replacement>
     </SearchStrings>
     <SearchStrings Include="id=&quot;anchor_">
       <Replacement>id="</Replacement>

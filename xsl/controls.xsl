@@ -33,7 +33,7 @@
         </tr>
         <tr>
           <!-- Split entries into 2 columns. -->
-          <xsl:variable name="types" select="/Root/Constants/Types/*" />
+          <xsl:variable name="types" select="/Root/Constants/Types/*[not(.='Other')]" />
           <xsl:variable name="mid" select="count($types) div 2" />
           <td valign="top">
             <xsl:for-each select="$types[position() &lt;= $mid]">
@@ -107,7 +107,7 @@
         </tr>
         <tr>
           <td valign="top">
-            <xsl:for-each select="/Root/Constants/Weathers/*">
+            <xsl:for-each select="/Root/Constants/Weathers/*[not(.='Unknown')]">
               <xsl:sort order="ascending" data-type="text" select="." />
               <xsl:call-template name="OutputWeatherCheckbox">
                 <xsl:with-param name="Weather" select="." />

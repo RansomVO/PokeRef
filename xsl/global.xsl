@@ -161,7 +161,7 @@
     <![CDATA[  
        public string CurrentDate() 
        {  
-         return DateTime.Now.ToString("yyyy-MM-dd_HH:mm:ss");;
+         return DateTime.Now.ToString("yyyy-MM-dd");;
        }  
 
       public string Replace(string text, string oldValue, string newValue)

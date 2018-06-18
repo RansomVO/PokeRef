@@ -111,7 +111,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
-        _datafiles.manual\pokemon.unreleased_gens.xml;
+        _datafiles.manual\infrequent\pokemon.unreleased_gens.xml;
       </Dependencies>
       <OutputFileName>evolutions.html</OutputFileName>
     </XslTransform>
@@ -246,7 +246,7 @@
         _datafiles\settings.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\movesets.gen1.xml;
-        _datafiles.manual\special.moves.xml;
+        _datafiles.manual\infrequent\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -267,7 +267,7 @@
         _datafiles\settings.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\movesets.gen2.xml;
-        _datafiles.manual\special.moves.xml;
+        _datafiles.manual\infrequent\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -288,7 +288,7 @@
         _datafiles\settings.xml;
         _datafiles\pokestats.gen3.xml;
         _datafiles\movesets.gen3.xml;
-        _datafiles.manual\special.moves.xml;
+        _datafiles.manual\infrequent\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -313,7 +313,7 @@
         _datafiles\movesets.gen1.xml;
         _datafiles\movesets.gen2.xml;
         _datafiles\movesets.gen3.xml;
-        _datafiles.manual\special.moves.xml;
+        _datafiles.manual\infrequent\special.moves.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -602,7 +602,7 @@
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
         _datafiles.manual\raidbosses.xml;
-        _datafiles.manual\images.xml;
+        _datafiles.manual\infrequent\images.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -833,7 +833,7 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
-        _datafiles.manual\images.xml;
+        _datafiles.manual\infrequent\images.xml;
         _datafiles\pokestats.gen1.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
@@ -848,7 +848,7 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
-        _datafiles.manual\images.xml;
+        _datafiles.manual\infrequent\images.xml;
         _datafiles\pokestats.gen2.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
@@ -863,7 +863,7 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
-        _datafiles.manual\images.xml;
+        _datafiles.manual\infrequent\images.xml;
         _datafiles\pokestats.gen3.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
@@ -878,7 +878,7 @@
       <Visible>true</Visible>
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
-        _datafiles.manual\images.xml;
+        _datafiles.manual\infrequent\images.xml;
         _datafiles\pokestats.gen4.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
@@ -946,7 +946,7 @@
       <Visible>true</Visible>
       <DependentUpon>shoppingboxes.xsl</DependentUpon>
       <Dependencies>
-        _datafiles.manual\shoppingboxes.xml
+        _datafiles.manual\shoppingboxes.xml;
         js\global.js;
         js\controls.js;
         xsl\global.xsl;
