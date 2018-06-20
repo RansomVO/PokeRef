@@ -593,9 +593,16 @@
       <xsl:choose>
         <xsl:when test="$fastMoveName='Hidden Power'">
           <!-- Special Case: Hidden Power may be of any type, so we need to distinguish between those that boost and those that don't.-->
-          <xsl:if test="$fastSTAB">
-            <xsl:value-of select="concat($pokemonTypePrimary, $TypeSeparator, $pokemonTypeSecondary)" />
-          </xsl:if>
+          <xsl:choose>
+            <xsl:when test="$fastSTAB">
+              <xsl:value-of select="concat($pokemonTypePrimary, $TypeSeparator, $pokemonTypeSecondary)" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:for-each select="/Root/Constants/Types/*[not(.='Other') and not(.=$pokemonTypePrimary) and not(.=$pokemonTypeSecondary)]">
+                <xsl:value-of select="concat(., $TypeSeparator)" disable-output-escaping="yes" />
+              </xsl:for-each>
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="/Root/Moves/Move[@name=$fastMoveName]/@type" />
@@ -606,10 +613,18 @@
       <xsl:choose>
         <xsl:when test="$fastMoveName='Hidden Power'">
           <!-- Special Case: Hidden Power may be of any type, so we need to distinguish between those that boost and those that don't.-->
-          <xsl:if test="$fastSTAB">
-            <xsl:value-of select="concat(/Root/Constants/Mappings/WeatherBoost[@type=$pokemonTypePrimary]/@boost,
-              $TypeSeparator, /Root/Constants/Mappings/WeatherBoost[@type=$pokemonTypeSecondary]/@boost)" />
-          </xsl:if>
+          <xsl:choose>
+            <xsl:when test="$fastSTAB">
+              <xsl:value-of select="concat(/Root/Constants/Mappings/WeatherBoost[@type=$pokemonTypePrimary]/@boost,
+                $TypeSeparator, /Root/Constants/Mappings/WeatherBoost[@type=$pokemonTypeSecondary]/@boost)" />
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:for-each select="/Root/Constants/Types/*[not(.='Other') and not(.=$pokemonTypePrimary) and not(.=$pokemonTypeSecondary)]">
+                <xsl:variable name="type" select="." />
+                <xsl:value-of select="concat(/Root/Constants/Mappings/WeatherBoost[@type=$type]/@boost, $TypeSeparator)" disable-output-escaping="yes" />
+              </xsl:for-each>
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$fastMoveType]/@boost" />
@@ -645,7 +660,11 @@
 
       <xsl:call-template name="MoveSetCell">
         <xsl:with-param name="Content" select="$fastMoveName" />
-        <xsl:with-param name="TypeIcon" select="$fastMoveType" />
+        <xsl:with-param name="TypeIcon">
+          <xsl:if test="not($fastMoveName='Hidden Power') or $fastSTAB">
+            <xsl:value-of select="$fastMoveType" />
+          </xsl:if>
+        </xsl:with-param>
         <xsl:with-param name="TrueDPS" select="$valueDamageTrueDPS" />
         <xsl:with-param name="LegacyMove" select="$legacyFast" />
         <xsl:with-param name="Legacy" select="$legacy" />

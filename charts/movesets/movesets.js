@@ -178,12 +178,12 @@ function MoveSetMatchesFilter(movesetRow) {
     }
 
     var types = movesetRow.getAttribute('fastMoveType').split('&').concat(movesetRow.getAttribute('chargedMoveType').split('&'));
-    if (types.count > 0 && !PokeTypeMatchesFilter(selectionsTypes, types)) {
+    if (types.length > 0 && !PokeTypeMatchesFilter(selectionsTypes, types)) {
         return false;
     }
 
     var boosts = movesetRow.getAttribute('fastMoveBoost').split('&').concat(movesetRow.getAttribute('chargedMoveBoost').split('&'));
-    if (boosts.count > 0 && !WeatherMatchesFilter(selectionsWeather, boosts)) {
+    if (boosts.length > 0 && !WeatherMatchesFilter(selectionsWeather, boosts)) {
         return false;
     }
 
