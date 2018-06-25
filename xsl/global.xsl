@@ -161,7 +161,7 @@
     <![CDATA[  
        public string CurrentDate() 
        {  
-         return DateTime.Now.ToString("yyyy-MM-dd");;
+         return DateTime.Now.ToString("yyyy-MM-dd");
        }  
 
       public string Replace(string text, string oldValue, string newValue)
@@ -177,6 +177,11 @@
       public string ToUpper(string text)
       {  
         return text.ToUpper();
+      }  
+      
+      public bool Contains(string text, string search) 
+      {  
+        return text.Contains(search);
       }  
     ]]>
 

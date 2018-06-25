@@ -498,28 +498,30 @@
 
         <xsl:call-template name="CreateTableHeaders" />
 
-        <xsl:for-each select="MoveSet[not(Pokemon/@name=preceding-sibling::MoveSet/Pokemon/@name)]">
-          <xsl:sort order="ascending" data-type="number" select="Pokemon/@id" />
-          <xsl:sort order="ascending" data-type="number" select="Pokemon/@formId" />
+        <xsl:for-each select="Pokemon">
+          <xsl:sort order="ascending" data-type="number" select="@id" />
+          <xsl:sort order="ascending" data-type="number" select="@formId" />
 
-          <xsl:variable name="PokemonName" select="Pokemon/@name" />
-          <xsl:variable name="PokemonStats" select="/Root/PokeStats/Pokemon[@name=$PokemonName]" />
-          <xsl:variable name="PokemonMoveSetCount" select="count(../MoveSet[Pokemon/@name=$PokemonName])" />
+          <xsl:variable name="pokemonName" select="@name" />
+          <xsl:variable name="pokemonForm" select="@form" />
+          <xsl:variable name="pokemonStats" select="/Root/PokeStats/Pokemon[@name=$pokemonName and ((not(@form) and not($pokemonForm)) or @form=$pokemonForm)]" />
+          <xsl:variable name="pokemonMoveSetCount" select="count(MoveSet)" />
 
           <tr align="left" style="border-top-width:5px">
             <xsl:attribute name="class">
               <xsl:text>PRIMARY_ROW</xsl:text>
-              <xsl:if test="contains($PokemonStats/@availability, $Availability_Unreleased)"> UNAVAILABLE_ROW</xsl:if>
+              <xsl:if test="contains($pokemonStats/@availability, $Availability_Unreleased)"> UNAVAILABLE_ROW</xsl:if>
             </xsl:attribute>
             <xsl:attribute name="movesetCount">
-              <xsl:value-of select="$PokemonMoveSetCount" />
+              <xsl:value-of select="$pokemonMoveSetCount" />
             </xsl:attribute>
 
             <td class="CELL_FILLED">
               <xsl:attribute name="rowspan">
-                <xsl:value-of select="$PokemonMoveSetCount + 1" />
+                <xsl:value-of select="$pokemonMoveSetCount + 1" />
               </xsl:attribute>
-              <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name=$PokemonName]">
+              
+              <xsl:apply-templates select="$pokemonStats">
                 <xsl:with-param name="Settings">
                   <Show hide_name="true" valign="middle" />
                 </xsl:with-param>
@@ -527,21 +529,20 @@
             </td>
             <th style="font-size:large;" align="right">
               <xsl:attribute name="rowspan">
-                <xsl:value-of select="$PokemonMoveSetCount + 1" />
+                <xsl:value-of select="$pokemonMoveSetCount + 1" />
               </xsl:attribute>
-              <xsl:value-of select="Pokemon/@id" />
+              <xsl:value-of select="@id" />
             </th>
             <th style="font-size:large;">
               <xsl:attribute name="rowspan">
-                <xsl:value-of select="$PokemonMoveSetCount + 1" />
+                <xsl:value-of select="$pokemonMoveSetCount + 1" />
               </xsl:attribute>
-              <xsl:value-of select="Pokemon/@name" />
+              <xsl:apply-templates select="$pokemonStats" mode ="DisplayName" />
             </th>
             <xsl:value-of select="concat($lt, '!-- Add a blank line as a separater. (It also makes adding the MoveSets easier.) --', $gt)" disable-output-escaping="yes" />
             <td colspan="5" class="HIDDEN_CONVENIENCE_ROW" />
           </tr>
-
-          <xsl:for-each select="../MoveSet[Pokemon/@name=$PokemonName]">
+          <xsl:for-each select="MoveSet">
             <xsl:sort order="descending" data-type="number" select="@comparison" />
 
             <xsl:apply-templates select="." />
@@ -584,9 +585,11 @@
     <xsl:variable name="valueDamageTrueDPS" select="format-number(@true_dps, '#0.00')" />
     <xsl:variable name="valueDamagePercentOfMax" select="format-number(@comparison, '##0')" />
 
-    <xsl:variable name="pokemonName" select="Pokemon/@name" />
-    <xsl:variable name="pokemonTypePrimary" select="/Root/PokeStats/Pokemon[@name=$pokemonName]/Type/@primary" />
-    <xsl:variable name="pokemonTypeSecondary" select="/Root/PokeStats/Pokemon[@name=$pokemonName]/Type/@secondary" />
+    <xsl:variable name="pokemonName" select="../@name" />
+    <xsl:variable name="pokemonForm" select="../@form" />
+    <xsl:variable name="pokemonStats" select="/Root/PokeStats/Pokemon[@name=$pokemonName and ((not(@form) and not($pokemonForm)) or @form=$pokemonForm)]" />
+    <xsl:variable name="pokemonTypePrimary" select="$pokemonStats/Type/@primary" />
+    <xsl:variable name="pokemonTypeSecondary" select="$pokemonStats/Type/@secondary" />
 
     <xsl:variable name="fastMoveName" select="FastAttack/@name" />
     <xsl:variable name="fastMoveType">
@@ -636,7 +639,7 @@
     <xsl:variable name="chargedMoveBoost" select="/Root/Constants/Mappings/WeatherBoost[@type=$chargedMoveType]/@boost" />
 
     <tr>
-      <xsl:if test="contains(/Root/PokeStats/Pokemon[@name=$pokemonName]/@availability,$Availability_Unreleased)">
+      <xsl:if test="contains(/Root/PokeStats/Pokemon[@name=$pokemonName and ((not(@form) and not($pokemonForm)) or @form=$pokemonForm)]/@availability,$Availability_Unreleased)">
         <xsl:attribute name="class">UNAVAILABLE_ROW</xsl:attribute>
       </xsl:if>
       <xsl:attribute name="fastMoveName">

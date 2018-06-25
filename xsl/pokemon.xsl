@@ -46,7 +46,7 @@
     <xsl:variable name="Name" select="@name" />
     <xsl:variable name="Form" select="@form" />
     <xsl:variable name="Pokemon" select="/Root/PokeStats/Pokemon[@name = $Name and @form = $Form]" />
-    <xsl:variable name="egg" select="/Root/Eggs/Egg[Pokemon/@name=$Name]/@type" />
+    <xsl:variable name="egg" select="/Root/Eggs/Egg[Pokemon/@name = $Name]/@type" />
     <xsl:variable name="raidboss" select="count(/Root/RaidBosses/RaidBoss[@name = $Name and @current and @tier]) != 0" />
 
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
@@ -95,10 +95,10 @@
 
       <!-- #region Attributes for PokeStats -->
       <xsl:attribute name="title">
-        <xsl:value-of select="@name" />
+        <xsl:apply-templates select="." mode="DisplayName" />
       </xsl:attribute>
       <xsl:attribute name="name">
-        <xsl:value-of select="@name" />
+        <xsl:apply-templates select="." mode="DisplayName" />
       </xsl:attribute>
       <xsl:attribute name="gen">
         <xsl:value-of select="../@gen" />
@@ -308,7 +308,8 @@
         <!-- Add ID/Name -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_name) = 0">
           <div id="Pokemon_Name_Field">
-            <xsl:value-of select="concat(@id, $nbsp, '-', $nbsp, @name)" disable-output-escaping="yes" />
+            <xsl:value-of select="concat(@id, $nbsp, '-', $nbsp)" disable-output-escaping="yes" />
+            <xsl:apply-templates select="." mode="DisplayName" />
           </div>
         </xsl:if>
 
@@ -368,71 +369,66 @@
         </xsl:if>
       </xsl:attribute>
 
-      <xsl:attribute name="alt">
-        <xsl:value-of select="@name" />
-      </xsl:attribute>
-
+      <!-- These images can be looked up at https://pokemondb.net/sprites -->
       <xsl:attribute name="src">
-        <xsl:choose>
-          <xsl:when test="../@gen = 7">
-            <xsl:text>https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/</xsl:text>
-          </xsl:when>
-          <xsl:when test="@name = 'Exeggutor (Alola)'">
-            <xsl:text>https://img.pokemondb.net/sprites/sun-moon/dex/normal/</xsl:text>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:text>https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/</xsl:text>
-          </xsl:otherwise>
-        </xsl:choose>
-
-        <!-- Handle special cases for @name -->
-        <xsl:variable name="name">
-          <xsl:choose>
-            <xsl:when test="@id = 29">
-              <xsl:value-of select="'nidoran-f'" />
-            </xsl:when>
-            <xsl:when test="@id = 32">
-              <xsl:value-of select="'nidoran-m'" />
-            </xsl:when>
-            <xsl:when test="@name='Castform (Normal)'">
-              <xsl:value-of select="'castform'" />
-            </xsl:when>
-            <xsl:when test="@name='Exeggutor (Alola)'">
-              <xsl:value-of select="'exeggutor-alolan'" />
-            </xsl:when>
-            <xsl:when test="@name='Exeggutor (Normal)'">
-              <xsl:value-of select="'exeggutor'" />
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="translate(pokeref:ToLower(@name), concat(' é:♀♂.()', $apos), '-e')" disable-output-escaping="yes" />
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:variable>
-        <xsl:value-of select="$name" />
-
-        <!-- The following do not have a default sprite on img.pokemondb.net, so I'll just choose one. -->
-        <xsl:choose>
-          <xsl:when test="@id = 741">
-            <xsl:text>-baile</xsl:text>
-          </xsl:when>
-          <xsl:when test="@id = 745">
-            <xsl:text>-midday</xsl:text>
-          </xsl:when>
-          <xsl:when test="@id = 746">
-            <xsl:text>-school</xsl:text>
-          </xsl:when>
-          <xsl:when test="@id = 774">
-            <xsl:text>-core</xsl:text>
-          </xsl:when>
-        </xsl:choose>
-
-        <xsl:text>.png</xsl:text>
+        <!-- Figure out where image should be located. -->
+        <xsl:apply-templates select="." mode="SpritePath" />
+        <xsl:apply-templates select="." mode="SpriteName" />
       </xsl:attribute>
 
       <xsl:attribute name="alt">
-        <xsl:value-of select="@name" />
+        <xsl:apply-templates select="." mode="DisplayName" />
       </xsl:attribute>
     </img>
+  </xsl:template>
+
+  <xsl:template match="Pokemon" mode="DisplayName">
+    <xsl:value-of select="@name" />
+    <xsl:if test="@form">
+      <xsl:value-of select="concat(' (', @form, ')')" />
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="Pokemon" mode="SpriteName">
+
+    <!-- Handle special cases for @name -->
+    <xsl:choose>
+      <xsl:when test="@id = 29">
+        <xsl:value-of select="'nidoran-f'" />
+      </xsl:when>
+      <xsl:when test="@id = 32">
+        <xsl:value-of select="'nidoran-m'" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="translate(pokeref:ToLower(@name), concat(' é:♀♂.()', $apos), '-e')" disable-output-escaping="yes" />
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <!-- Deal with @form. -->
+    <xsl:if test="@form and not(@form = 'Normal')">
+      <xsl:text>-</xsl:text>
+      <xsl:choose>
+        <xsl:when test="@form = 'Alola'">alolan</xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="pokeref:ToLower(@form)" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
+    <xsl:text>.png</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="Pokemon" mode="SpritePath">
+    <xsl:choose>
+      <xsl:when test="../@gen = 7">
+        <xsl:text>https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/</xsl:text>
+      </xsl:when>
+      <xsl:when test="@form = 'Alola'">
+        <xsl:text>https://img.pokemondb.net/sprites/sun-moon/dex/normal/</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <!-- #region Templates to Output icons for Pokemon Type/Boost. -->

@@ -111,6 +111,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles.manual\infrequent\pokemon.unreleased_gens.xml;
       </Dependencies>
       <OutputFileName>evolutions.html</OutputFileName>
@@ -146,6 +147,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
       </Dependencies>
       <OutputFileName>pokequick.html</OutputFileName>
     </XslTransform>
@@ -247,6 +249,7 @@
         _datafiles\pokestats.gen1.xml;
         _datafiles\movesets.gen1.xml;
         _datafiles.manual\infrequent\special.moves.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -268,6 +271,7 @@
         _datafiles\pokestats.gen2.xml;
         _datafiles\movesets.gen2.xml;
         _datafiles.manual\infrequent\special.moves.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -289,6 +293,7 @@
         _datafiles\pokestats.gen3.xml;
         _datafiles\movesets.gen3.xml;
         _datafiles.manual\infrequent\special.moves.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -314,6 +319,7 @@
         _datafiles\movesets.gen2.xml;
         _datafiles\movesets.gen3.xml;
         _datafiles.manual\infrequent\special.moves.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         js\global.js;
         js\controls.js;
         js\pokemon.js.xsl;
@@ -580,6 +586,7 @@
       <DependentUpon>_linkslist.xsl</DependentUpon>
       <Dependencies>
         _datafiles.manual\raidbosses.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
@@ -602,6 +609,7 @@
       <DependentUpon>index.xsl</DependentUpon>
       <Dependencies>
         _datafiles.manual\raidbosses.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles.manual\infrequent\images.xml;
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
@@ -834,6 +842,7 @@
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
         _datafiles.manual\infrequent\images.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles\pokestats.gen1.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
@@ -849,6 +858,7 @@
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
         _datafiles.manual\infrequent\images.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles\pokestats.gen2.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
@@ -864,6 +874,7 @@
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
         _datafiles.manual\infrequent\images.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles\pokestats.gen3.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;
@@ -879,6 +890,7 @@
       <DependentUpon>pokestats.xsl</DependentUpon>
       <Dependencies>
         _datafiles.manual\infrequent\images.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles\pokestats.gen4.xml;
         tech\GAME_MASTER\pokestats\pokestats.xsl;
         tech\GAME_MASTER\pokestats\index.css;

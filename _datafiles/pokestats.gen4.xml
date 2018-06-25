@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-27" gen="4" region="Sinnoh">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-21" gen="4" region="Sinnoh">
   <Pokemon id="387" name="Turtwig" family="Turtwig" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
@@ -86,65 +86,65 @@
   <Pokemon id="410" name="Shieldon" family="Shieldon" availability="Unreleased">
     <Type primary="Rock" secondary="Steel" />
   </Pokemon>
-  <Pokemon id="411" name="Bastiodon" family="Shieldon" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="411" name="Bastiodon" family="Shieldon" availability="Unreleased">
     <Type primary="Rock" secondary="Steel" />
     <EvolvesFrom id="410" name="Shieldon" />
   </Pokemon>
-  <Pokemon id="412" name="Burmy" family="Burmy" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="412" name="Burmy" family="Burmy" availability="Unreleased">
     <Type primary="Bug" />
   </Pokemon>
-  <Pokemon id="413" name="Wormadam" family="Burmy" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="413" name="Wormadam" family="Burmy" availability="Unreleased">
     <Type primary="Bug" secondary="Grass" />
     <EvolvesFrom id="412" name="Burmy" />
   </Pokemon>
-  <Pokemon id="413" name="Wormadam (Plant)" family="Burmy" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="413" name="Wormadam (Plant)" family="Burmy" availability="Unreleased">
     <Type primary="Bug" secondary="Grass" />
     <EvolvesFrom id="412" name="Burmy" />
   </Pokemon>
-  <Pokemon id="413" name="Wormadam (Sandy)" family="Burmy" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="413" name="Wormadam (Sandy)" family="Burmy" availability="Unreleased">
     <Type primary="Bug" secondary="Ground" />
     <EvolvesFrom id="412" name="Burmy" />
   </Pokemon>
-  <Pokemon id="413" name="Wormadam (Trash)" family="Burmy" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="413" name="Wormadam (Trash)" family="Burmy" availability="Unreleased">
     <Type primary="Bug" secondary="Steel" />
     <EvolvesFrom id="412" name="Burmy" />
   </Pokemon>
-  <Pokemon id="414" name="Mothim" family="Burmy" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="414" name="Mothim" family="Burmy" availability="Unreleased">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="412" name="Burmy" />
   </Pokemon>
-  <Pokemon id="415" name="Combee" family="Combee" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="415" name="Combee" family="Combee" availability="Unreleased">
     <Type primary="Bug" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="416" name="Vespiquen" family="Combee" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="416" name="Vespiquen" family="Combee" availability="Unreleased">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="415" name="Combee" />
   </Pokemon>
-  <Pokemon id="417" name="Pachirisu" family="Pachirisu" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="417" name="Pachirisu" family="Pachirisu" availability="Unreleased">
     <Type primary="Electric" />
   </Pokemon>
-  <Pokemon id="418" name="Buizel" family="Buizel" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="418" name="Buizel" family="Buizel" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="419" name="Floatzel" family="Buizel" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="419" name="Floatzel" family="Buizel" availability="Unreleased">
     <Type primary="Water" />
     <EvolvesFrom id="418" name="Buizel" />
   </Pokemon>
-  <Pokemon id="420" name="Cherubi" family="Cherubi" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="420" name="Cherubi" family="Cherubi" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
-  <Pokemon id="421" name="Cherrim" family="Cherubi" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="421" name="Cherrim" family="Cherubi" availability="Unreleased">
     <Type primary="Grass" />
     <EvolvesFrom id="420" name="Cherubi" />
   </Pokemon>
-  <Pokemon id="422" name="Shellos" family="Shellos" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="422" name="Shellos" family="Shellos" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="423" name="Gastrodon" family="Shellos" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="423" name="Gastrodon" family="Shellos" availability="Unreleased">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="422" name="Shellos" />
   </Pokemon>
-  <Pokemon id="424" name="Ambipom" family="Ambipom" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="424" name="Ambipom" family="Ambipom" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
   <Pokemon id="425" name="Drifloon" family="Drifloon" availability="Unreleased">
@@ -363,52 +363,52 @@
   <Pokemon id="479" name="Rotom (Mow)" family="Rotom" availability="Unreleased">
     <Type primary="Electric" secondary="Grass" />
   </Pokemon>
-  <Pokemon id="480" name="Uxie" family="Uxie" availability="Unreleased">
+  <Pokemon id="480" name="Uxie" family="Uxie" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="481" name="Mesprit" family="Mesprit" availability="Unreleased">
+  <Pokemon id="481" name="Mesprit" family="Mesprit" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="482" name="Azelf" family="Azelf" availability="Unreleased">
+  <Pokemon id="482" name="Azelf" family="Azelf" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="483" name="Dialga" family="Dialga" availability="Unreleased">
+  <Pokemon id="483" name="Dialga" family="Dialga" rarity="Legendary" availability="Unreleased">
     <Type primary="Steel" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="484" name="Palkia" family="Palkia" availability="Unreleased">
+  <Pokemon id="484" name="Palkia" family="Palkia" rarity="Legendary" availability="Unreleased">
     <Type primary="Water" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="485" name="Heatran" family="Heatran" availability="Unreleased">
+  <Pokemon id="485" name="Heatran" family="Heatran" rarity="Legendary" availability="Unreleased">
     <Type primary="Fire" secondary="Steel" />
   </Pokemon>
-  <Pokemon id="486" name="Regigigas" family="Regigigas" availability="Unreleased">
+  <Pokemon id="486" name="Regigigas" family="Regigigas" rarity="Legendary" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="487" name="Giratina" family="Giratina" availability="Unreleased">
+  <Pokemon id="487" name="Giratina" family="Giratina" rarity="Legendary" availability="Unreleased">
     <Type primary="Ghost" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="488" name="Cresselia" family="Cresselia" availability="Unreleased">
+  <Pokemon id="488" name="Cresselia" family="Cresselia" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="489" name="Phione" family="Phione" availability="Unreleased">
+  <Pokemon id="489" name="Phione" family="Phione" rarity="Mythic" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="490" name="Manaphy" family="Manaphy" availability="Unreleased">
+  <Pokemon id="490" name="Manaphy" family="Manaphy" rarity="Mythic" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="491" name="Darkrai" family="Darkrai" availability="Unreleased">
+  <Pokemon id="491" name="Darkrai" family="Darkrai" rarity="Mythic" availability="Unreleased">
     <Type primary="Dark" />
   </Pokemon>
-  <Pokemon id="492" name="Shaymin" family="Shaymin" availability="Unreleased">
+  <Pokemon id="492" name="Shaymin" family="Shaymin" rarity="Mythic" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
-  <Pokemon id="492" name="Shaymin (Land)" family="Shaymin" availability="Unreleased">
+  <Pokemon id="492" name="Shaymin (Land)" family="Shaymin" rarity="Mythic" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
-  <Pokemon id="492" name="Shaymin (Sky)" family="Shaymin" availability="Unreleased">
+  <Pokemon id="492" name="Shaymin (Sky)" family="Shaymin" rarity="Mythic" availability="Unreleased">
     <Type primary="Grass" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="493" name="Arceus" family="Arceus" availability="Unreleased">
+  <Pokemon id="493" name="Arceus" family="Arceus" rarity="Mythic" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
 </PokeStats>

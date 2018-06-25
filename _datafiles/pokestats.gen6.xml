@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-27" gen="6" region="Kalos">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-21" gen="6" region="Kalos">
   <Pokemon id="650" name="Chespin" family="Chespin" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
@@ -109,45 +109,45 @@
     <Type primary="Fighting" secondary="Dark" />
     <EvolvesFrom id="674" name="Pancham" />
   </Pokemon>
-  <Pokemon id="676" name="Furfrou" family="Furfrou" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="676" name="Furfrou" family="Furfrou" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="677" name="Espurr" family="Espurr" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="677" name="Espurr" family="Espurr" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="678" name="Meowstic" family="Espurr" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="678" name="Meowstic" family="Espurr" availability="Unreleased">
     <Type primary="Psychic" />
     <EvolvesFrom id="677" name="Espurr" />
   </Pokemon>
-  <Pokemon id="679" name="Honedge" family="Honedge" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="679" name="Honedge" family="Honedge" availability="Unreleased">
     <Type primary="Steel" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="680" name="Doublade" family="Honedge" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="680" name="Doublade" family="Honedge" availability="Unreleased">
     <Type primary="Steel" secondary="Ghost" />
     <EvolvesFrom id="679" name="Honedge" />
   </Pokemon>
-  <Pokemon id="681" name="Aegislash" family="Honedge" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="681" name="Aegislash" family="Honedge" availability="Unreleased">
     <Type primary="Steel" secondary="Ghost" />
     <EvolvesFrom id="680" name="Doublade" />
   </Pokemon>
-  <Pokemon id="682" name="Spritzee" family="Spritzee" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="682" name="Spritzee" family="Spritzee" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="683" name="Aromatisse" family="Spritzee" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="683" name="Aromatisse" family="Spritzee" availability="Unreleased">
     <Type primary="Fairy" />
     <EvolvesFrom id="682" name="Spritzee" />
   </Pokemon>
-  <Pokemon id="684" name="Swirlix" family="Swirlix" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="684" name="Swirlix" family="Swirlix" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="685" name="Slurpuff" family="Swirlix" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="685" name="Slurpuff" family="Swirlix" availability="Unreleased">
     <Type primary="Fairy" />
     <EvolvesFrom id="684" name="Swirlix" />
   </Pokemon>
-  <Pokemon id="686" name="Inkay" family="Inkay" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="686" name="Inkay" family="Inkay" availability="Unreleased">
     <Type primary="Dark" secondary="Psychic" />
   </Pokemon>
-  <Pokemon id="687" name="Malamar" family="Inkay" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="687" name="Malamar" family="Inkay" availability="Unreleased">
     <Type primary="Dark" secondary="Psychic" />
     <EvolvesFrom id="686" name="Inkay" />
   </Pokemon>
@@ -248,28 +248,28 @@
     <Type primary="Flying" secondary="Dragon" />
     <EvolvesFrom id="714" name="Noibat" />
   </Pokemon>
-  <Pokemon id="716" name="Xerneas" family="Xerneas" availability="Unreleased">
+  <Pokemon id="716" name="Xerneas" family="Xerneas" rarity="Legendary" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="717" name="Yveltal" family="Yveltal" availability="Unreleased">
+  <Pokemon id="717" name="Yveltal" family="Yveltal" rarity="Legendary" availability="Unreleased">
     <Type primary="Dark" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="718" name="Zygarde" family="Zygarde" availability="Unreleased">
+  <Pokemon id="718" name="Zygarde" family="Zygarde" rarity="Legendary" availability="Unreleased">
     <Type primary="Dragon" secondary="Ground" />
   </Pokemon>
-  <Pokemon id="719" name="Diancie" family="Diancie" availability="Unreleased">
+  <Pokemon id="719" name="Diancie" family="Diancie" rarity="Mythic" availability="Unreleased">
     <Type primary="Rock" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa" family="Hoopa" availability="Unreleased">
+  <Pokemon id="720" name="Hoopa" family="Hoopa" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa (Confined)" family="Hoopa" availability="Unreleased">
+  <Pokemon id="720" name="Hoopa (Confined)" family="Hoopa" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa (Unbound)" family="Hoopa" availability="Unreleased">
+  <Pokemon id="720" name="Hoopa (Unbound)" family="Hoopa" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Dark" />
   </Pokemon>
-  <Pokemon id="721" name="Volcanion" family="Volcanion" availability="Unreleased">
+  <Pokemon id="721" name="Volcanion" family="Volcanion" rarity="Mythic" availability="Unreleased">
     <Type primary="Fire" secondary="Water" />
   </Pokemon>
 </PokeStats>

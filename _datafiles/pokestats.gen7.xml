@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-27" gen="7" region="Alola">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-21" gen="7" region="Alola">
   <Pokemon id="722" name="Rowlet" family="Rowlet" availability="Unreleased">
     <Type primary="Grass" secondary="Flying" />
   </Pokemon>
@@ -146,25 +146,25 @@
   <Pokemon id="753" name="Fomantis" family="Fomantis" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
-  <Pokemon id="754" name="Lurantis" family="Fomantis" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="754" name="Lurantis" family="Fomantis" availability="Unreleased">
     <Type primary="Grass" />
     <EvolvesFrom id="753" name="Fomantis" />
   </Pokemon>
-  <Pokemon id="755" name="Morelull" family="Morelull" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="755" name="Morelull" family="Morelull" availability="Unreleased">
     <Type primary="Grass" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="756" name="Shiinotic" family="Morelull" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="756" name="Shiinotic" family="Morelull" availability="Unreleased">
     <Type primary="Grass" secondary="Fairy" />
     <EvolvesFrom id="755" name="Morelull" />
   </Pokemon>
-  <Pokemon id="757" name="Salandit" family="Salandit" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="757" name="Salandit" family="Salandit" availability="Unreleased">
     <Type primary="Poison" secondary="Fire" />
   </Pokemon>
-  <Pokemon id="758" name="Salazzle" family="Salandit" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="758" name="Salazzle" family="Salandit" availability="Unreleased">
     <Type primary="Poison" secondary="Fire" />
     <EvolvesFrom id="757" name="Salandit" />
   </Pokemon>
-  <Pokemon id="759" name="Stufful" family="Stufful" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="759" name="Stufful" family="Stufful" availability="Unreleased">
     <Type primary="Normal" secondary="Fighting" />
   </Pokemon>
   <Pokemon id="760" name="Bewear" family="Stufful" availability="Unreleased">
@@ -208,10 +208,10 @@
   <Pokemon id="771" name="Pyukumuku" family="Pyukumuku" availability="Unreleased">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="772" name="Type: Null" family="Type: Null" availability="Unreleased">
+  <Pokemon id="772" name="Type: Null" family="Type: Null" rarity="Legendary" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="773" name="Silvally" family="Type: Null" availability="Unreleased">
+  <Pokemon id="773" name="Silvally" family="Type: Null" rarity="Legendary" availability="Unreleased">
     <Type primary="Normal" />
     <EvolvesFrom id="772" name="Type: Null" />
   </Pokemon>
@@ -256,76 +256,76 @@
     <Type primary="Dragon" secondary="Fighting" />
     <EvolvesFrom id="783" name="Hakamo-o" />
   </Pokemon>
-  <Pokemon id="785" name="Tapu Koko" family="Tapu Koko" availability="Unreleased">
+  <Pokemon id="785" name="Tapu Koko" family="Tapu Koko" rarity="Legendary" availability="Unreleased">
     <Type primary="Electric" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="786" name="Tapu Lele" family="Tapu Lele" availability="Unreleased">
+  <Pokemon id="786" name="Tapu Lele" family="Tapu Lele" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="787" name="Tapu Bulu" family="Tapu Bulu" availability="Unreleased">
+  <Pokemon id="787" name="Tapu Bulu" family="Tapu Bulu" rarity="Legendary" availability="Unreleased">
     <Type primary="Grass" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="788" name="Tapu Fini" family="Tapu Fini" availability="Unreleased">
+  <Pokemon id="788" name="Tapu Fini" family="Tapu Fini" rarity="Legendary" availability="Unreleased">
     <Type primary="Water" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="789" name="Cosmog" family="Cosmog" availability="Unreleased">
+  <Pokemon id="789" name="Cosmog" family="Cosmog" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="790" name="Cosmoem" family="Cosmog" availability="Unreleased">
+  <Pokemon id="790" name="Cosmoem" family="Cosmog" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" />
     <EvolvesFrom id="789" name="Cosmog" />
   </Pokemon>
-  <Pokemon id="791" name="Solgaleo" family="Cosmog" availability="Unreleased">
+  <Pokemon id="791" name="Solgaleo" family="Cosmog" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" secondary="Steel" />
     <EvolvesFrom id="790" name="Cosmoem" />
   </Pokemon>
-  <Pokemon id="792" name="Lunala" family="Cosmog" availability="Unreleased">
+  <Pokemon id="792" name="Lunala" family="Cosmog" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" secondary="Ghost" />
     <EvolvesFrom id="790" name="Cosmoem" />
   </Pokemon>
-  <Pokemon id="793" name="Nihilego" family="Nihilego" availability="Unreleased">
+  <Pokemon id="793" name="Nihilego" family="Nihilego" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Rock" secondary="Poison" />
   </Pokemon>
-  <Pokemon id="794" name="Buzzwole" family="Buzzwole" availability="Unreleased">
+  <Pokemon id="794" name="Buzzwole" family="Buzzwole" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Bug" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="795" name="Pheromosa" family="Pheromosa" availability="Unreleased">
+  <Pokemon id="795" name="Pheromosa" family="Pheromosa" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Bug" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="796" name="Xurkitree" family="Xurkitree" availability="Unreleased">
+  <Pokemon id="796" name="Xurkitree" family="Xurkitree" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Electric" />
   </Pokemon>
-  <Pokemon id="797" name="Celesteela" family="Celesteela" availability="Unreleased">
+  <Pokemon id="797" name="Celesteela" family="Celesteela" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Steel" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="798" name="Kartana" family="Kartana" availability="Unreleased">
+  <Pokemon id="798" name="Kartana" family="Kartana" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Grass" secondary="Steel" />
   </Pokemon>
-  <Pokemon id="799" name="Guzzlord" family="Guzzlord" availability="Unreleased">
+  <Pokemon id="799" name="Guzzlord" family="Guzzlord" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Dark" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="800" name="Necrozma" family="Necrozma" availability="Unreleased">
+  <Pokemon id="800" name="Necrozma" family="Necrozma" rarity="Legendary" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="801" name="Magearna" family="Magearna" availability="Unreleased">
+  <Pokemon id="801" name="Magearna" family="Magearna" rarity="Mythic" availability="Unreleased">
     <Type primary="Steel" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="802" name="Marshadow" family="Marshadow" availability="Unreleased">
+  <Pokemon id="802" name="Marshadow" family="Marshadow" rarity="Mythic" availability="Unreleased">
     <Type primary="Fighting" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="803" name="Poipole" family="Poipole" availability="Unreleased">
+  <Pokemon id="803" name="Poipole" family="Poipole" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Poison" />
   </Pokemon>
-  <Pokemon id="804" name="Naganadel" family="Naganadel" availability="Unreleased">
+  <Pokemon id="804" name="Naganadel" family="Naganadel" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Poison" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="805" name="Stakataka" family="Stakataka" availability="Unreleased">
+  <Pokemon id="805" name="Stakataka" family="Stakataka" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Rock" secondary="Steel" />
   </Pokemon>
-  <Pokemon id="806" name="Blacephalon" family="Blacephalon" availability="Unreleased">
+  <Pokemon id="806" name="Blacephalon" family="Blacephalon" rarity="Ultra Beast" availability="Unreleased">
     <Type primary="Fire" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="807" name="Zeraora" family="Zeraora" availability="Unreleased">
+  <Pokemon id="807" name="Zeraora" family="Zeraora" rarity="Mythic" availability="Unreleased">
     <Type primary="Electric" />
   </Pokemon>
 </PokeStats>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-27" gen="5" region="Unova">
-  <Pokemon id="494" name="Victini" family="Victini" availability="Unreleased">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-21" gen="5" region="Unova">
+  <Pokemon id="494" name="Victini" family="Victini" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Fire" />
   </Pokemon>
   <Pokemon id="495" name="Snivy" family="Snivy" availability="Unreleased">
@@ -85,57 +85,57 @@
   <Pokemon id="517" name="Munna" family="Munna" availability="Unreleased">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="518" name="Musharna" family="Munna" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="518" name="Musharna" family="Munna" availability="Unreleased">
     <Type primary="Psychic" />
     <EvolvesFrom id="517" name="Munna" />
   </Pokemon>
-  <Pokemon id="519" name="Pidove" family="Pidove" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="519" name="Pidove" family="Pidove" availability="Unreleased">
     <Type primary="Normal" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="520" name="Tranquill" family="Pidove" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="520" name="Tranquill" family="Pidove" availability="Unreleased">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="519" name="Pidove" />
   </Pokemon>
-  <Pokemon id="521" name="Unfezant" family="Pidove" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="521" name="Unfezant" family="Pidove" availability="Unreleased">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="520" name="Tranquill" />
   </Pokemon>
-  <Pokemon id="522" name="Blitzle" family="Blitzle" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="522" name="Blitzle" family="Blitzle" availability="Unreleased">
     <Type primary="Electric" />
   </Pokemon>
-  <Pokemon id="523" name="Zebstrika" family="Blitzle" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="523" name="Zebstrika" family="Blitzle" availability="Unreleased">
     <Type primary="Electric" />
     <EvolvesFrom id="522" name="Blitzle" />
   </Pokemon>
-  <Pokemon id="524" name="Roggenrola" family="Roggenrola" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="524" name="Roggenrola" family="Roggenrola" availability="Unreleased">
     <Type primary="Rock" />
   </Pokemon>
-  <Pokemon id="525" name="Boldore" family="Roggenrola" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="525" name="Boldore" family="Roggenrola" availability="Unreleased">
     <Type primary="Rock" />
     <EvolvesFrom id="524" name="Roggenrola" />
   </Pokemon>
-  <Pokemon id="526" name="Gigalith" family="Roggenrola" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="526" name="Gigalith" family="Roggenrola" availability="Unreleased">
     <Type primary="Rock" />
     <EvolvesFrom id="525" name="Boldore" />
   </Pokemon>
-  <Pokemon id="527" name="Woobat" family="Woobat" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="527" name="Woobat" family="Woobat" availability="Unreleased">
     <Type primary="Psychic" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="528" name="Swoobat" family="Woobat" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="528" name="Swoobat" family="Woobat" availability="Unreleased">
     <Type primary="Psychic" secondary="Flying" />
     <EvolvesFrom id="527" name="Woobat" />
   </Pokemon>
-  <Pokemon id="529" name="Drilbur" family="Drilbur" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="529" name="Drilbur" family="Drilbur" availability="Unreleased">
     <Type primary="Ground" />
   </Pokemon>
-  <Pokemon id="530" name="Excadrill" family="Drilbur" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="530" name="Excadrill" family="Drilbur" availability="Unreleased">
     <Type primary="Ground" secondary="Steel" />
     <EvolvesFrom id="529" name="Drilbur" />
   </Pokemon>
-  <Pokemon id="531" name="Audino" family="Audino" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="531" name="Audino" family="Audino" availability="Unreleased">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="532" name="Timburr" family="Timburr" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="532" name="Timburr" family="Timburr" availability="Unreleased">
     <Type primary="Fighting" />
   </Pokemon>
   <Pokemon id="533" name="Gurdurr" family="Timburr" availability="Unreleased">
@@ -504,46 +504,46 @@
     <Type primary="Bug" secondary="Fire" />
     <EvolvesFrom id="636" name="Larvesta" />
   </Pokemon>
-  <Pokemon id="638" name="Cobalion" family="Cobalion" availability="Unreleased">
+  <Pokemon id="638" name="Cobalion" family="Cobalion" rarity="Legendary" availability="Unreleased">
     <Type primary="Steel" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="639" name="Terrakion" family="Terrakion" availability="Unreleased">
+  <Pokemon id="639" name="Terrakion" family="Terrakion" rarity="Legendary" availability="Unreleased">
     <Type primary="Rock" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="640" name="Virizion" family="Virizion" availability="Unreleased">
+  <Pokemon id="640" name="Virizion" family="Virizion" rarity="Legendary" availability="Unreleased">
     <Type primary="Grass" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="641" name="Tornadus" family="Tornadus" availability="Unreleased">
+  <Pokemon id="641" name="Tornadus" family="Tornadus" rarity="Legendary" availability="Unreleased">
     <Type primary="Flying" />
   </Pokemon>
-  <Pokemon id="642" name="Thundurus" family="Thundurus" availability="Unreleased">
+  <Pokemon id="642" name="Thundurus" family="Thundurus" rarity="Legendary" availability="Unreleased">
     <Type primary="Electric" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="643" name="Reshiram" family="Reshiram" availability="Unreleased">
+  <Pokemon id="643" name="Reshiram" family="Reshiram" rarity="Legendary" availability="Unreleased">
     <Type primary="Dragon" secondary="Fire" />
   </Pokemon>
-  <Pokemon id="644" name="Zekrom" family="Zekrom" availability="Unreleased">
+  <Pokemon id="644" name="Zekrom" family="Zekrom" rarity="Legendary" availability="Unreleased">
     <Type primary="Dragon" secondary="Electric" />
   </Pokemon>
-  <Pokemon id="645" name="Landorus" family="Landorus" availability="Unreleased">
+  <Pokemon id="645" name="Landorus" family="Landorus" rarity="Legendary" availability="Unreleased">
     <Type primary="Ground" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="646" name="Kyurem" family="Kyurem" availability="Unreleased">
+  <Pokemon id="646" name="Kyurem" family="Kyurem" rarity="Legendary" availability="Unreleased">
     <Type primary="Dragon" secondary="Ice" />
   </Pokemon>
-  <Pokemon id="647" name="Keldeo" family="Keldeo" availability="Unreleased">
+  <Pokemon id="647" name="Keldeo" family="Keldeo" rarity="Mythic" availability="Unreleased">
     <Type primary="Water" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="648" name="Meloetta" family="Meloetta" availability="Unreleased">
+  <Pokemon id="648" name="Meloetta" family="Meloetta" rarity="Mythic" availability="Unreleased">
     <Type primary="Normal" secondary="Psychic" />
   </Pokemon>
-  <Pokemon id="648" name="Meloetta (Aria)" family="Meloetta" availability="Unreleased">
+  <Pokemon id="648" name="Meloetta (Aria)" family="Meloetta" rarity="Mythic" availability="Unreleased">
     <Type primary="Normal" secondary="Psychic" />
   </Pokemon>
-  <Pokemon id="648" name="Meloetta (Pirouette)" family="Meloetta" availability="Unreleased">
+  <Pokemon id="648" name="Meloetta (Pirouette)" family="Meloetta" rarity="Mythic" availability="Unreleased">
     <Type primary="Normal" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="649" name="Genesect" family="Genesect" availability="Unreleased">
+  <Pokemon id="649" name="Genesect" family="Genesect" rarity="Mythic" availability="Unreleased">
     <Type primary="Bug" secondary="Steel" />
   </Pokemon>
 </PokeStats>

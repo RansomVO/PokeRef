@@ -13,9 +13,10 @@
   <RaidBoss tier="5" id="245" name="Suicune" />
   <RaidBoss tier="5" id="249" name="Lugia" />
   <RaidBoss tier="5" id="250" name="Ho-Oh" />
+  <RaidBoss tier="5" id="378" name="Regice" current="true" />
   <RaidBoss tier="5" id="380" name="Latias" />
   <RaidBoss tier="5" id="381" name="Latios" />
-  <RaidBoss tier="5" id="382" name="Kyogre" current="true" />
+  <RaidBoss tier="5" id="382" name="Kyogre" />
   <RaidBoss tier="5" id="383" name="Groudon" />
   <RaidBoss tier="5" id="384" name="Rayquaza" />
   <!-- #endregion Tier 5 -->
@@ -118,12 +119,11 @@
 
   <!-- #endregion Tier 1 -->
 
-  <!-- #region Future ? -->
+  <!-- #region ? Future ? -->
   <RaidBoss id="251" name="Celebi" />
   <RaidBoss id="377" name="Regirock" />
-  <RaidBoss id="378" name="Regice" />
   <RaidBoss id="379" name="Registeel" />
   <RaidBoss id="385" name="Jirachi" />
   <RaidBoss id="386" name="Deoxys" />
-  <!-- #endregion Future ? -->
+  <!-- #endregion ? Future ? -->
 </RaidBosses>

@@ -55,7 +55,9 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
+    <Content Include="images\game\egg_7k.png" />
     <Content Include="^\__TODO.html" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\trading.xml" />
     <None Include="^\index.html" />
   </ItemGroup>
   <!-- /_ -->
@@ -102,7 +104,9 @@
   </ItemGroup>
   <!-- /__Debugging -->
   <ItemGroup>
-    <None Include="__Debugging\debug.html.xml" />
+    <None Include="__Debugging\debug.html.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="__Debugging\debug.xsl">
       <SubType>Designer</SubType>
     </None>
