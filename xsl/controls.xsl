@@ -292,6 +292,14 @@
         </xsl:with-param>
       </xsl:call-template>
       <br />
+      <input id="CONTROLS_Egg_7K" type="checkbox" onchange="OnToggleEgg(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'Egg7K'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
+      <br />
       <input id="CONTROLS_Egg_10K" type="checkbox" onchange="OnToggleEgg(this);" />
       <xsl:call-template name="Sprite">
         <xsl:with-param name="id" select="'Egg10K'" />

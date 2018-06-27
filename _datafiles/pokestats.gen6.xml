@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-21" gen="6" region="Kalos">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-23" gen="6" region="Kalos">
   <Pokemon id="650" name="Chespin" family="Chespin" availability="Unreleased">
     <Type primary="Grass" />
   </Pokemon>
@@ -72,19 +72,19 @@
   <Pokemon id="669" name="Flabébé" family="Flabébé" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé (Red)" family="Flabébé" availability="Unreleased">
+  <Pokemon id="669" name="Flabébé" form="Red" family="Flabébé" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé (Yellow)" family="Flabébé" availability="Unreleased">
+  <Pokemon id="669" name="Flabébé" form="Yellow" family="Flabébé" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé (Orange)" family="Flabébé" availability="Unreleased">
+  <Pokemon id="669" name="Flabébé" form="Orange" family="Flabébé" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé (Blue)" family="Flabébé" availability="Unreleased">
+  <Pokemon id="669" name="Flabébé" form="Blue" family="Flabébé" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé (White)" family="Flabébé" availability="Unreleased">
+  <Pokemon id="669" name="Flabébé" form="White" family="Flabébé" availability="Unreleased">
     <Type primary="Fairy" />
   </Pokemon>
   <Pokemon id="670" name="Floette" family="Flabébé" availability="Unreleased">
@@ -263,10 +263,10 @@
   <Pokemon id="720" name="Hoopa" family="Hoopa" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa (Confined)" family="Hoopa" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="720" name="Hoopa" form="Confined" family="Hoopa" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa (Unbound)" family="Hoopa" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="720" name="Hoopa" form="Unbound" family="Hoopa" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Dark" />
   </Pokemon>
   <Pokemon id="721" name="Volcanion" family="Volcanion" rarity="Mythic" availability="Unreleased">

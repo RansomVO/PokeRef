@@ -116,15 +116,15 @@
     <xsl:param name="tier" />
     <xsl:param name="column" select="1" />
 
-    <xsl:variable name="Name" select="@name" />
-    <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name = $Name][1]" mode="Cell">
+    <xsl:variable name="name" select="@name" />
+    <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name = $name][1]" mode="Cell">
       <!-- Add @href to the Settings. -->
       <xsl:with-param name="Settings">
         <xsl:apply-templates select="exslt:node-set($Settings)/*" mode="AddSetting">
           <xsl:with-param name="Setting" select="'href'" />
           <xsl:with-param name="Value">
             <xsl:text>/charts/raidboss/raidboss.</xsl:text>
-            <xsl:value-of select="pokeref:ToLower($Name)" />
+            <xsl:value-of select="pokeref:ToLower($name)" />
             <xsl:text>.html</xsl:text>
           </xsl:with-param>
         </xsl:apply-templates>

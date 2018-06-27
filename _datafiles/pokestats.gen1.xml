@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-21" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-23" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -202,7 +202,7 @@
       <Max cp="588" hp="59" />
     </Stats>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" form="Alola" formId="46" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="19" name="Rattata" form="Alola" formId="46" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Dark" secondary="Normal" />
     <Stats>
       <BaseIV attack="103" defense="70" stamina="60" />
@@ -233,7 +233,7 @@
       <Max cp="1549" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" form="Alola" formId="48" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="20" name="Raticate" form="Alola" formId="48" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Dark" secondary="Normal" />
     <Stats>
       <BaseIV attack="135" defense="159" stamina="150" />
@@ -317,7 +317,7 @@
       <Max cp="2025" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="26" name="Raichu" form="Alola" formId="50" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="26" name="Raichu" form="Alola" formId="50" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased">
     <Type primary="Electric" secondary="Psychic" />
     <Stats>
       <BaseIV attack="201" defense="172" stamina="120" />
@@ -347,7 +347,7 @@
       <Max cp="1194" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Alola" formId="52" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="27" name="Sandshrew" form="Alola" formId="52" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only">
     <Type primary="Ice" secondary="Steel" />
     <Stats>
       <BaseIV attack="125" defense="154" stamina="100" />
@@ -378,7 +378,7 @@
       <Max cp="2328" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" form="Alola" formId="54" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="28" name="Sandslash" form="Alola" formId="54" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Ice" secondary="Steel" />
     <Stats>
       <BaseIV attack="177" defense="221" stamina="150" />
@@ -494,7 +494,7 @@
       <Max cp="774" hp="71" />
     </Stats>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" form="Alola" formId="56" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 7K">
+  <Pokemon id="37" name="Vulpix" form="Alola" formId="56" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="96" defense="122" stamina="76" />
@@ -525,7 +525,7 @@
       <Max cp="2157" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" form="Alola" formId="58" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 7K">
+  <Pokemon id="38" name="Ninetales" form="Alola" formId="58" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Evolve Only">
     <Type primary="Ice" secondary="Fairy" />
     <Stats>
       <BaseIV attack="170" defense="207" stamina="146" />
@@ -672,7 +672,7 @@
       <Max cp="465" hp="27" />
     </Stats>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Alola" formId="60" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="50" name="Diglett" form="Alola" formId="60" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
       <BaseIV attack="109" defense="89" stamina="20" />
@@ -703,7 +703,7 @@
       <Max cp="1333" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Alola" formId="62" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="51" name="Dugtrio" form="Alola" formId="62" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
       <BaseIV attack="201" defense="148" stamina="70" />
@@ -733,7 +733,7 @@
       <Max cp="638" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="52" name="Meowth" form="Alola" formId="64" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="52" name="Meowth" form="Alola" formId="64" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only">
     <Type primary="Dark" />
     <Stats>
       <BaseIV attack="99" defense="81" stamina="80" />
@@ -764,7 +764,7 @@
       <Max cp="1539" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="53" name="Persian" form="Alola" formId="66" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="53" name="Persian" form="Alola" formId="66" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Dark" />
     <Stats>
       <BaseIV attack="158" defense="139" stamina="130" />
@@ -1006,7 +1006,7 @@
       <Max cp="1193" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Alola" formId="68" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="74" name="Geodude" form="Alola" formId="68" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="132" defense="163" stamina="80" />
@@ -1037,7 +1037,7 @@
       <Max cp="1815" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Alola" formId="70" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="75" name="Graveler" form="Alola" formId="70" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="164" defense="196" stamina="110" />
@@ -1068,7 +1068,7 @@
       <Max cp="2916" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Alola" formId="72" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="76" name="Golem" form="Alola" formId="72" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="211" defense="229" stamina="160" />
@@ -1213,7 +1213,7 @@
       <Max cp="1269" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Alola" formId="74" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="88" name="Grimer" form="Alola" formId="74" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only">
     <Type primary="Poison" secondary="Dark" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="160" />
@@ -1244,7 +1244,7 @@
       <Max cp="2709" hp="177" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Alola" formId="76" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="89" name="Muk" form="Alola" formId="76" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Poison" secondary="Dark" />
     <Stats>
       <BaseIV attack="190" defense="184" stamina="210" />
@@ -1411,7 +1411,7 @@
       <Max cp="2916" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor" form="Alola" formId="78" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="103" name="Exeggutor" form="Alola" formId="78" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Dragon" />
     <Stats>
       <BaseIV attack="230" defense="158" stamina="190" />
@@ -1452,7 +1452,7 @@
       <Max cp="1691" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" form="Alola" formId="80" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="105" name="Marowak" form="Alola" formId="80" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
     <Type primary="Fire" secondary="Ghost" />
     <Stats>
       <BaseIV attack="144" defense="200" stamina="120" />
