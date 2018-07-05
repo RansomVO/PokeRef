@@ -9,7 +9,7 @@
   </Trading>
 
   <Friendship level="1" text="Friend" days="0">
-    <Bonus Raid_Balls="0" Gym_Attack="0" trade_discount="0">
+    <Bonus raid_balls="0" gym_attack="0" trade_discount="0">
       <Trade type="Regional" enabled="false" />
       <Trade type="Shiny" enabled="false" />
       <Trade type="Legendary" enabled="false" />
@@ -17,22 +17,22 @@
     </Bonus>
   </Friendship>
   <Friendship level="2" text="Good Friend" days="1">
-    <Bonus Raid_Balls="0" Gym_Attack="0" trade_discount="0">
+    <Bonus raid_balls="0" gym_attack="0" trade_discount="0">
       <TradeDisabled type="Mythic" enabled="false" />
     </Bonus>
   </Friendship>
   <Friendship level="3" text="Great Friend" days="7">
-    <Bonus Raid_Balls="1" Gym_Attack="5" trade_discount="20">
+    <Bonus raid_balls="1" gym_attack="5" trade_discount="20">
       <TradeDisabled type="Mythic" enabled="false" />
     </Bonus>
   </Friendship>
   <Friendship level="4" text="Ultra Friend" days="30">
-    <Bonus Raid_Balls="2" Gym_Attack="7" trade_discount="92">
+    <Bonus raid_balls="2" gym_attack="7" trade_discount="92">
       <TradeDisabled type="Mythic" enabled="false" />
     </Bonus>
   </Friendship>
   <Friendship level="5" text="Best Friend" days="90">
-    <Bonus Raid_Balls="4" Gym_Attack="10" trade_discount="96">
+    <Bonus raid_balls="4" gym_attack="10" trade_discount="96">
       <TradeDisabled type="Mythic" enabled="false" />
     </Bonus>
   </Friendship>
