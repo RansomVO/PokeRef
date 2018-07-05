@@ -96,9 +96,9 @@
         </div>
         <p class="NOTE TODO">
           <span class="EMPHASIS">NOTE</span>:
-          <br />I'm pretty sure the Encounters are correct, however, I have had difficulty getting a trustworthy, up-to-date list of the items.
+          <br />I have been trying to find a reliable source for Rewards.
+          I think I have the Encounters correct, but I have no faith in the Items, so I am excluding them for now.
           <br />Please let me know if you find any errors.
-          
         </p>
 
         <br />
@@ -192,7 +192,6 @@
                 <xsl:with-param name="id" select="exslt:node-set($RewardItems)/Reward[8]" />
               </xsl:call-template>
             </td>
-
             <td valign="top">
               <xsl:call-template name="OutputRewardCheckbox">
                 <xsl:with-param name="id" select="exslt:node-set($RewardItems)/Reward[9]" />
@@ -234,14 +233,14 @@
         </table>
       </div>
 
-      <!--
-      <xsl:call-template name="OutputGenerationSelection">
-        <xsl:with-param name="Settings">
-          <Show hide_slider="true" released_only="true" />
-        </xsl:with-param>
-        <xsl:with-param name="CallbackName" select="'OnCriteriaChanged'" />
-      </xsl:call-template>
-      <br />
+      <!-- TODO QZX
+        <xsl:call-template name="OutputGenerationSelection">
+          <xsl:with-param name="Settings">
+            <Show hide_slider="true" released_only="true" />
+          </xsl:with-param>
+          <xsl:with-param name="CallbackName" select="'OnCriteriaChanged'" />
+        </xsl:call-template>
+        <br />
     -->
       <table border="1" class="CRITERIA_TABLE">
         <tr>
@@ -305,9 +304,14 @@
           <tr>
             <th>Task</th>
             <th>Encounters</th>
+            <!-- TODO QZX: Omit Items until I can get a reliable source.
             <th>Items</th>
+-->
           </tr>
+          <!-- TODO QZX: Omit Items until I can get a reliable source.
           <xsl:apply-templates select="Research[*]" mode="ByTask" />
+          -->
+          <xsl:apply-templates select="Research[Encounter]" mode="ByTask" />
         </table>
       </div>
     </xsl:for-each>
@@ -328,6 +332,7 @@
           </xsl:otherwise>
         </xsl:choose>
       </td>
+      <!-- TODO QZX: Omit Items until I can get a reliable source.
       <td style="white-space:nowrap">
         <xsl:choose>
           <xsl:when test="count(Item)=0">
@@ -338,13 +343,14 @@
           </xsl:otherwise>
         </xsl:choose>
       </td>
+      -->
     </tr>
   </xsl:template>
 
   <xsl:template match="Encounter">
     <xsl:variable name="name" select="@name" />
     <div style="display:inline-block; border:1px solid black; margin:4px">
-      <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name=$name]">
+      <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name = $name and not(@form)]">
         <xsl:with-param name="Settings">
           <Show hide_type_icons="true" hide_special_icons="true">
             <xsl:attribute name="href">
@@ -377,10 +383,12 @@
       <xsl:with-param name="rewardType" select="$RewardTypeEncounter" />
     </xsl:call-template>
 
+    <!-- TODO QZX: Omit Items until I can get a reliable source.
     <xsl:call-template name="RewardSection">
       <xsl:with-param name="research" select="Category/Research[Item]" />
       <xsl:with-param name="rewardType" select="$RewardTypeItem" />
     </xsl:call-template>
+    -->
   </xsl:template>
 
   <xsl:template name="RewardSection">
@@ -422,7 +430,7 @@
       <xsl:if test="count($research/Encounter[@id=$id]) > 0">
         <xsl:variable name="name" select="($research/Encounter[@id=$id]/@name)[1]" />
         <tr>
-          <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name=$name]" mode="Cell">
+          <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name=$name and not(@form)]" mode="Cell">
             <xsl:with-param name="Settings">
               <Show hide_type_icons="true" hide_special_icons="true">
                 <xsl:attribute name="href">

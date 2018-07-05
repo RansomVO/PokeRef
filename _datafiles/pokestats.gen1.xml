@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-23" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-07-02" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -347,7 +347,7 @@
       <Max cp="1194" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Alola" formId="52" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only">
+  <Pokemon id="27" name="Sandshrew" form="Alola" formId="52" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
     <Type primary="Ice" secondary="Steel" />
     <Stats>
       <BaseIV attack="125" defense="154" stamina="100" />
@@ -494,7 +494,7 @@
       <Max cp="774" hp="71" />
     </Stats>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" form="Alola" formId="56" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only">
+  <Pokemon id="37" name="Vulpix" form="Alola" formId="56" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 7K">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="96" defense="122" stamina="76" />
@@ -733,7 +733,7 @@
       <Max cp="638" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="52" name="Meowth" form="Alola" formId="64" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only">
+  <Pokemon id="52" name="Meowth" form="Alola" formId="64" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
     <Type primary="Dark" />
     <Stats>
       <BaseIV attack="99" defense="81" stamina="80" />
@@ -1213,7 +1213,7 @@
       <Max cp="1269" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Alola" formId="74" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only">
+  <Pokemon id="88" name="Grimer" form="Alola" formId="74" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
     <Type primary="Poison" secondary="Dark" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="160" />
@@ -1868,7 +1868,7 @@
       <Max cp="3355" hp="264" />
     </Stats>
   </Pokemon>
-  <Pokemon id="144" name="Articuno" family="Articuno" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="144" name="Articuno" family="Articuno" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="true">
     <Type primary="Ice" secondary="Flying" />
     <Stats>
       <BaseIV attack="192" defense="249" stamina="180" />

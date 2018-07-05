@@ -155,6 +155,14 @@
       <FastAttack name="Fire Spin" stab="true" legacy="false" />
       <ChargedAttack name="Brave Bird" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="18.285714285714285" true_dps="27.714285714285715" comparison="85">
+      <FastAttack name="Counter" stab="true" legacy="false" />
+      <ChargedAttack name="Stone Edge" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="18.045112781954888" true_dps="26.917293233082706" comparison="82">
+      <FastAttack name="Fire Spin" stab="true" legacy="false" />
+      <ChargedAttack name="Stone Edge" stab="false" legacy="true" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="258" name="Mudkip">
     <MoveSet base_dps="15.463917525773198" true_dps="11.443298969072165" comparison="87">
@@ -2461,6 +2469,18 @@
       <FastAttack name="Dragon Tail" stab="false" legacy="false" />
       <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="17.164179104477611" true_dps="23.134328358208954" comparison="101">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Surf" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.557251908396946" true_dps="20.992366412213741" comparison="92">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Blizzard" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.115942028985508" true_dps="21.44927536231884" comparison="94">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="351" name="Castform" form="Normal" formId="29">
     <MoveSet base_dps="16.535433070866144" true_dps="14.566929133858269" comparison="100">
@@ -3309,6 +3329,18 @@
     </MoveSet>
     <MoveSet base_dps="17.111111111111111" true_dps="28.888888888888889" comparison="90">
       <FastAttack name="Waterfall" stab="true" legacy="false" />
+      <ChargedAttack name="Thunder" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.787878787878789" true_dps="30.060606060606062" comparison="94">
+      <FastAttack name="Dragon Tail" stab="false" legacy="true" />
+      <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="19.018404907975459" true_dps="27.607361963190183" comparison="86">
+      <FastAttack name="Dragon Tail" stab="false" legacy="true" />
+      <ChargedAttack name="Blizzard" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.948717948717945" true_dps="26.089743589743588" comparison="81">
+      <FastAttack name="Dragon Tail" stab="false" legacy="true" />
       <ChargedAttack name="Thunder" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>

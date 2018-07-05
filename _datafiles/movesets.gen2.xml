@@ -233,6 +233,18 @@
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Ice Beam" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="15.671641791044776" true_dps="18.955223880597014" comparison="75">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Crunch" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.293233082706767" true_dps="23.984962406015036" comparison="95">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.867469879518072" true_dps="20.481927710843372" comparison="81">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Ice Beam" stab="false" legacy="false" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="161" name="Sentret">
     <MoveSet base_dps="15.892857142857144" true_dps="8.9285714285714288" comparison="86">
@@ -928,6 +940,14 @@
     <MoveSet base_dps="17.384615384615383" true_dps="21.076923076923077" comparison="100">
       <FastAttack name="Bubble" stab="true" legacy="false" />
       <ChargedAttack name="Surf" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.476190476190476" true_dps="15" comparison="71">
+      <FastAttack name="Mud Shot" stab="false" legacy="false" />
+      <ChargedAttack name="Earthquake" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.363636363636363" true_dps="17.727272727272727" comparison="84">
+      <FastAttack name="Bubble" stab="true" legacy="false" />
+      <ChargedAttack name="Earthquake" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="187" name="Hoppip">
@@ -1891,6 +1911,18 @@
       <FastAttack name="Present" stab="false" legacy="false" />
       <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="15.636363636363637" true_dps="14.181818181818182" comparison="121">
+      <FastAttack name="Ice Shard" stab="true" legacy="true" />
+      <ChargedAttack name="Ice Punch" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="13.913043478260871" true_dps="12.608695652173914" comparison="108">
+      <FastAttack name="Ice Shard" stab="true" legacy="true" />
+      <ChargedAttack name="Icy Wind" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.166666666666666" true_dps="13.833333333333334" comparison="118">
+      <FastAttack name="Ice Shard" stab="true" legacy="true" />
+      <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="226" name="Mantine">
     <MoveSet base_dps="14.75" true_dps="15.5" comparison="94">
@@ -2019,6 +2051,18 @@
     </MoveSet>
     <MoveSet base_dps="18.076923076923077" true_dps="23.846153846153847" comparison="100">
       <FastAttack name="Dragon Breath" stab="true" legacy="false" />
+      <ChargedAttack name="Outrage" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.293233082706767" true_dps="23.308270676691727" comparison="98">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.557251908396946" true_dps="21.068702290076338" comparison="89">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Blizzard" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.977528089887638" true_dps="24.044943820224717" comparison="101">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
       <ChargedAttack name="Outrage" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
@@ -2401,6 +2445,30 @@
     </MoveSet>
     <MoveSet base_dps="14.942528735632186" true_dps="16.7816091954023" comparison="83">
       <FastAttack name="Snarl" stab="false" legacy="false" />
+      <ChargedAttack name="Water Pulse" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.028985507246375" true_dps="21.159420289855071" comparison="105">
+      <FastAttack name="Hidden Power" stab="true" legacy="true" />
+      <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.028985507246375" true_dps="19.130434782608695" comparison="95">
+      <FastAttack name="Hidden Power" stab="false" legacy="true" />
+      <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.0625" true_dps="17.5" comparison="87">
+      <FastAttack name="Hidden Power" stab="true" legacy="true" />
+      <ChargedAttack name="Bubble Beam" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.0625" true_dps="15.625" comparison="78">
+      <FastAttack name="Hidden Power" stab="false" legacy="true" />
+      <ChargedAttack name="Bubble Beam" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.130434782608697" true_dps="17.608695652173914" comparison="88">
+      <FastAttack name="Hidden Power" stab="true" legacy="true" />
+      <ChargedAttack name="Water Pulse" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.130434782608697" true_dps="15.869565217391306" comparison="79">
+      <FastAttack name="Hidden Power" stab="false" legacy="true" />
       <ChargedAttack name="Water Pulse" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>

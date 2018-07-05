@@ -114,15 +114,21 @@
     Land {0} Excellent Throws in a row.
 -->
 
-<FieldResearch category="Current" last_updated="2018-05-25">
+<FieldResearch category="Current" last_updated="2018-07-02">
+  <Category type="Research Breakthrough">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="143" name="Snorlax" current="true" />
+    </Research>
+  </Category>
+
   <Category type="Evolve or Hatch">
     <Research task="Evolve a Pokemon.">
-      <Encounter id="133" name="Eevee" />
+      <Encounter id="133" name="Eevee" current="true" />
     </Research>
     <Research task="Evolve 3 Pokemon.">
     </Research>
     <Research task="Evolve 5 Pokemon.">
-      <Encounter id="4" name="Charmander" />
+      <Encounter id="4" name="Charmander" current="true" />
     </Research>
     <Research task="Evolve a Magikarp.">
     </Research>
@@ -131,17 +137,17 @@
     <Research task="Evolve 3 Fire-type Pokemon.">
     </Research>
     <Research task="Evolve 3 Electric-Type Pokemon">
-      <Encounter id="135" name="Jolteon" />
+      <Encounter id="135" name="Jolteon" current="true" />
     </Research>
     <Research task="Hatch an Egg.">
-      <Encounter id="102" name="Exeggcute" />
+      <Encounter id="102" name="Exeggcute" current="true" />
       <Item id="BerryRazz" amount="3" />
       <Item id="BerryPinap" amount="1" />
       <Item id="BallRegular" amount="5" />
       <Item id="Stardust" amount="200" />
     </Research>
     <Research task="Hatch 3 Eggs.">
-      <Encounter id="126" name="Magmar" />
+      <Encounter id="126" name="Magmar" current="true" />
       <Item id="BerryRazz" amount="9" />
       <Item id="BerryPinap" amount="3" />
       <Item id="BallRegular" amount="10" />
@@ -152,7 +158,7 @@
       <Item id="XP" amount="1000" />
     </Research>
     <Research task="Hatch 5 Eggs.">
-      <Encounter id="113" name="Chansey" />
+      <Encounter id="113" name="Chansey" current="true" />
     </Research>
   </Category>
 
@@ -172,8 +178,8 @@
     <Research task="Make 3 Nice Throws.">
     </Research>
     <Research task="Make 5 Nice Throws.">
-      <Encounter id="100" name="Voltorb" />
-      <Encounter id="101" name="Electrode" />
+      <Encounter id="100" name="Voltorb" current="true" />
+      <Encounter id="101" name="Electrode" current="true" />
       <Item id="BerryRazz" amount="3" />
       <Item id="BerryPinap" amount="1" />
       <Item id="BallRegular" amount="5" />
@@ -195,7 +201,7 @@
       <Item id="Stardust" amount="200" />
     </Research>
     <Research task="Make 3 Nice Curveball Throws in a row.">
-      <Encounter id="101" name="Electrode" />
+      <Encounter id="101" name="Electrode" current="true" />
       <Item id="BerryRazz" amount="3" />
     </Research>
     <!-- #endregion Nice -->
@@ -204,7 +210,7 @@
     <Research task="Make a Great Throw.">
     </Research>
     <Research task="Make 3 Great Throws.">
-      <Encounter id="92" name="Gastly" />
+      <Encounter id="92" name="Gastly" current="true" />
       <Item id="BerryRazz" amount="3" />
       <Item id="BerryNanab" amount="1" />
       <Item id="BallRegular" amount="5" />
@@ -224,8 +230,8 @@
       <Item id="CandyRare" amount="1" />
     </Research>
     <Research task="Make 5 Great Throws in a row.">
-      <Encounter id="95" name="Onix" />
-      <Encounter id="180" name="Flaaffy" />
+      <Encounter id="95" name="Onix" current="true" />
+      <Encounter id="180" name="Flaaffy" current="true" />
       <Item id="BerryPinap" amount="2" />
     </Research>
     <Research task="Make a Great Curveball Throw.">
@@ -242,7 +248,7 @@
       <Item id="BallRegular" amount="5" />
     </Research>
     <Research task="Make 3 Great Curveball Throws in a row.">
-      <Encounter id="95" name="Onix" />
+      <Encounter id="95" name="Onix" current="true" />
       <Item id="BallUltra" amount="1" />
       <Item id="Stardust" amount="1500" />
       <Item id="CandyRare" amount="3" />
@@ -261,7 +267,7 @@
     <Research task="Make 3 Excellent Throws.">
     </Research>
     <Research task="Land 3 Excellent Throws in a row.">
-      <Encounter id="256" name="Larvitar" />
+      <Encounter id="256" name="Larvitar" current="true" />
     </Research>
     <Research task="Make an Excellent Curveball Throw.">
       <Item id="Stardust" amount="500" />
@@ -278,7 +284,7 @@
     <Research task="Catch a Pokemon.">
     </Research>
     <Research task="Catch 10 Pokemon.">
-      <Encounter id="129" name="Magikarp" />
+      <Encounter id="129" name="Magikarp" current="true" />
       <Item id="BerryRazz" amount="3" />
       <Item id="BerryPinap" amount="1" />
       <Item id="BallRegular" amount="5" />
@@ -287,22 +293,22 @@
     <Research task="Catch a Pokemon with Weather Boost.">
     </Research>
     <Research task="Catch 5 Pokemon with Weather Boost.">
-      <Encounter id="60" name="Poliwag" />
-      <Encounter id="37" name="Vulpix" />
+      <Encounter id="60" name="Poliwag" current="true" />
+      <Encounter id="37" name="Vulpix" current="true" />
       <Item id="BerryRazz" amount="3" />
       <Item id="BerryPinap" amount="1" />
       <Item id="BallRegular" amount="5" />
       <Item id="Stardust" amount="200" />
     </Research>
     <Research task="Catch 10 Pokemon with Weather Boost.">
-      <Encounter id="4" name="Charmander" />
+      <Encounter id="4" name="Charmander" current="true" />
       <Item id="BerryRazz" amount="6" />
       <Item id="BallRegular" amount="5" />
       <Item id="BallGreat" amount="5" />
       <Item id="Stardust" amount="500" />
     </Research>
     <Research task="Catch 20 Pokemon with Weather Boost.">
-      <Encounter id="38" name="Ninetales" />
+      <Encounter id="38" name="Ninetales" current="true" />
     </Research>
     <Research task="Use a Berry to help catch a Pokemon.">
     </Research>
@@ -325,7 +331,7 @@
     <Research task="Catch a Meowth or Skitty.">
     </Research>
     <Research task="Catch 3 Meowth or Skitty.">
-      <Encounter id="58" name="Growlithe" />
+      <Encounter id="58" name="Growlithe" current="true" />
       <Item id="BerryRazz" amount="4-6" />
       <Item id="BerryPinap" amount="1-2" />
       <Item id="BallRegular" amount="5" />
@@ -345,7 +351,7 @@
     <Research task="Catch a Pidgey or Murkrow.">
     </Research>
     <Research task="Catch 3 Pidgey or Murkrow.">
-      <Encounter id="23" name="Ekans" />
+      <Encounter id="23" name="Ekans" current="true" />
       <Item id="BerryRazz" amount="4-6" />
       <Item id="BerryPinap" amount="1-2" />
       <Item id="BallRegular" amount="5" />
@@ -365,7 +371,7 @@
     <Research task="Catch a Treecko or Mudkip.">
     </Research>
     <Research task="Catch 3 Treecko or Mudkip.">
-      <Encounter id="255" name="Torchic" />
+      <Encounter id="255" name="Torchic" current="true" />
       <Item id="BerryRazz" amount="4-6" />
       <Item id="BerryPinap" amount="1-2" />
       <Item id="BallRegular" amount="5" />
@@ -403,7 +409,7 @@
     <Research task="Catch 10 Dark-type Pokemon.">
     </Research>
     <Research task="Catch a Dragon-type Pokemon.">
-      <Encounter id="147" name="Dratini" />
+      <Encounter id="147" name="Dratini" current="true" />
     </Research>
     <Research task="Catch 3 Dragon-type Pokemon.">
       <Item id="CandyRare" amount="3" />
@@ -413,7 +419,7 @@
     <Research task="Catch an Electric-type Pokemon.">
     </Research>
     <Research task="Catch 3 Electric-type Pokemon.">
-      <Encounter id="25" name="Pikachu" />
+      <Encounter id="25" name="Pikachu" current="true" />
       <Item id="BerryRazz" amount="6" />
       <Item id="BerryPinap" amount="3" />
       <Item id="BallRegular" amount="5" />
@@ -442,8 +448,8 @@
     <Research task="Catch a Fire-type Pokemon.">
     </Research>
     <Research task="Catch 3 Fire-type Pokemon.">
-      <Encounter id="77" name="Ponyta" />
-      <Encounter id="219" name="Magcargo" />
+      <Encounter id="77" name="Ponyta" current="true" />
+      <Encounter id="219" name="Magcargo" current="true" />
       <Item id="BerryRazz" amount="6" />
       <Item id="BerryPinap" amount="3" />
       <Item id="BallRegular" amount="5" />
@@ -451,7 +457,7 @@
       <Item id="Stardust" amount="200" />
     </Research>
     <Research task="Catch 5 Fire-type Pokemon.">
-      <Encounter id="136" name="Flareon" />
+      <Encounter id="136" name="Flareon" current="true" />
     </Research>
     <Research task="Catch 10 Fire-type Pokemon.">
       <Item id="BerryRazz" amount="6" />
@@ -471,7 +477,7 @@
       <Item id="Stardust" amount="200" />
     </Research>
     <Research task="Catch 5 Flying-type Pokemon.">
-      <Encounter id="207" name="Gligar" />
+      <Encounter id="207" name="Gligar" current="true" />
     </Research>
     <Research task="Catch 10 Flying-type Pokemon.">
       <Item id="BerryRazz" amount="6" />
@@ -554,14 +560,14 @@
     <Research task="Catch a Grass-, Fire-, or Ground-type Pokemon.">
     </Research>
     <Research task="Catch 3 Grass-, Fire-, or Ground-type Pokemon.">
-      <Encounter id="322" name="Numel" />
+      <Encounter id="322" name="Numel" current="true" />
     </Research>
     <Research task="Catch 10 Grass-, Fire-, or Ground-type Pokemon.">
     </Research>
     <Research task="Catch a Water-, Electric- or Bug-Type Pokemon">
     </Research>
     <Research task="Catch 3 Water-, Electric- or Bug-Type Pokemon">
-      <Encounter id="309" name="Electrike" />
+      <Encounter id="309" name="Electrike" current="true" />
     </Research>
     <Research task="Catch 10 Water-, Electric- or Bug-Type Pokemon">
     </Research>
@@ -571,7 +577,7 @@
 
   <Category type="Gym or Raid">
     <Research task="Battle in a Gym.">
-      <Encounter id="312" name="Minun" />
+      <Encounter id="312" name="Minun" current="true" />
       <Item id="BerryNanab" amount="5" />
       <Item id="BerryPinap" amount="1" />
       <Item id="Potion" amount="5" />
@@ -580,11 +586,11 @@
       <Item id="Stardust" amount="500" />
     </Research>
     <Research task="Battle in a Gym 3 times.">
-      <Encounter id="124" name="Jynx" />
+      <Encounter id="124" name="Jynx" current="true" />
     </Research>
     <Research task="Battle in a Gym 5 times.">
-      <Encounter id="66" name="Machop" />
-      <Encounter id="56" name="Mankey" />
+      <Encounter id="66" name="Machop" current="true" />
+      <Encounter id="56" name="Mankey" current="true" />
       <Item id="BerryNanab" amount="10" />
       <Item id="Potion" amount="5" />
       <Item id="PotionSuper" amount="3" />
@@ -592,7 +598,7 @@
       <Item id="Stardust" amount="500" />
     </Research>
     <Research task="Win a Gym battle.">
-      <Encounter id="7" name="Squirtle" />
+      <Encounter id="7" name="Squirtle" current="true" />
       <Item id="BerryNanab" amount="10" />
       <Item id="Potion" amount="5" />
       <Item id="Revive" amount="4" />
@@ -611,11 +617,11 @@
       <Item id="Stardust" amount="500" />
     </Research>
     <Research task="Use a supereffective Charged Attack in 5 Gym battles.">
-      <Encounter id="125" name="Electabuzz" />
+      <Encounter id="125" name="Electabuzz" current="true" />
       <Item id="TMCharged" amount="1" />
     </Research>
     <Research task="Use a supereffective Charged Attack in 7 Gym battles.">
-      <Encounter id="125" name="Electabuzz" />
+      <Encounter id="125" name="Electabuzz" current="true" />
       <Item id="PotionSuper" amount="3" />
       <Item id="Revive" amount="6" />
       <Item id="ReviveMax" amount="1" />
@@ -623,7 +629,7 @@
       <Item id="CandyRare" amount="1" />
     </Research>
     <Research task="Battle in a raid.">
-      <Encounter id="312" name="Minun" />
+      <Encounter id="312" name="Minun" current="true" />
       <Item id="Potion" amount="5" />
       <Item id="Revive" amount="2" />
       <Item id="Stardust" amount="200" />
@@ -646,8 +652,8 @@
       <Item id="TMCharged" amount="1" />
     </Research>
     <Research task="Win 5 raids.">
-      <Encounter id="185" name="Sudowoodo" />
-      <Encounter id="132" name="Ditto" />
+      <Encounter id="185" name="Sudowoodo" current="true" />
+      <Encounter id="132" name="Ditto" current="true" />
     </Research>
     <Research task="Win a level 3 or higher raid.">
       <Item id="PotionHyper" amount="3" />
@@ -663,20 +669,20 @@
 
   <Category type="Misc">
     <Research task="Earn a Candy walking with your buddy.">
-      <Encounter id="333" name="Swablu" />
+      <Encounter id="333" name="Swablu" current="true" />
     </Research>
     <Research task="Earn {0} Candies walking with your buddy.">
     </Research>
     <Research task="Power up a Pokemon.">
-      <Encounter id="82" name="Magneton" />
+      <Encounter id="82" name="Magneton" current="true" />
     </Research>
     <Research task="Power up Pokemon 5 times.">
-      <Encounter id="1" name="Bulbasaur" />
-      <Encounter id="4" name="Charmander" />
-      <Encounter id="7" name="Squirtle" />
+      <Encounter id="1" name="Bulbasaur" current="true" />
+      <Encounter id="4" name="Charmander" current="true" />
+      <Encounter id="7" name="Squirtle" current="true" />
     </Research>
     <Research task="Power up Pokemon 7 times.">
-      <Encounter id="311" name="Plusle" />
+      <Encounter id="311" name="Plusle" current="true" />
     </Research>
     <Research task="Spin a PokeStop.">
     </Research>
@@ -689,7 +695,7 @@
     <Research task="Spin a PokeStop you haven't visited before.">
     </Research>
     <Research task="Spin 6 PokeStops you haven't visited before.">
-      <Encounter id="142" name="Aerodactyl" />
+      <Encounter id="142" name="Aerodactyl" current="true" />
     </Research>
   </Category>
 

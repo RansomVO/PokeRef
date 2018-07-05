@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Root [
+  <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/infrequent/images.xml">
+  <!ENTITY Trading SYSTEM "/_datafiles.manual/infrequent/trading.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="trading.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Constants; 
+  &Settings;
+  &Images;
+  &Trading;
+</Root>

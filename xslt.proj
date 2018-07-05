@@ -176,6 +176,22 @@
       </Dependencies>
       <OutputFileName>effectiveness.html</OutputFileName>
     </XslTransform>
+
+    <FixIntermediateFile Include="charts\trading.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\trading.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>trading.xsl</DependentUpon>
+      <Dependencies>
+        js\global.js;
+        xsl\global.xsl;
+        _datafiles.manual\trading.xml;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>trading.html</OutputFileName>
+    </XslTransform>
   </ItemGroup>
 
   <!-- Charts/FieldResearch -->
