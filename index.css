@@ -96,7 +96,7 @@ h1, h2, h3, h4 {
 
 .NUMERIC {
     text-align: right;
-       }
+}
 
 /*#endregion*/
 
@@ -278,7 +278,7 @@ h1, h2, h3, h4 {
 }
 
 .TAG_ICON_MEDIUM {
-	width: 1.5em;
+    width: 1.5em;
 }
 
 .TAG_ICON_REGULAR {
@@ -386,6 +386,7 @@ h1, h2, h3, h4 {
 }
 
 .UNUSED {
+    color: lightgray;
     background-color: darkgray;
 }
 

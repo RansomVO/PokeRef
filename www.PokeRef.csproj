@@ -55,10 +55,10 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\friends.xml" />
     <WebContent Include="images\game\egg_7k.png" />
     <Content Include="^\tools\sprites.html" />
     <Content Include="^\__TODO.html" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\trading.xml" />
     <None Include="^\index.html" />
   </ItemGroup>
   <!-- /_ -->

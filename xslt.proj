@@ -177,20 +177,20 @@
       <OutputFileName>effectiveness.html</OutputFileName>
     </XslTransform>
 
-    <FixIntermediateFile Include="charts\trading.xsl">
+    <FixIntermediateFile Include="charts\friendship.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\trading.html.xml">
+    <XslTransform Include="charts\friendship.html.xml">
       <Visible>true</Visible>
-      <DependentUpon>trading.xsl</DependentUpon>
+      <DependentUpon>friendship.xsl</DependentUpon>
       <Dependencies>
         js\global.js;
         xsl\global.xsl;
-        _datafiles.manual\trading.xml;
+        _datafiles.manual\infrequent\friends.xml;
         charts\index.css;
         index.css;
       </Dependencies>
-      <OutputFileName>trading.html</OutputFileName>
+      <OutputFileName>friendship.html</OutputFileName>
     </XslTransform>
   </ItemGroup>
 
