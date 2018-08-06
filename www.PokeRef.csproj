@@ -55,7 +55,6 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\friends.xml" />
     <WebContent Include="images\game\egg_7k.png" />
     <Content Include="^\tools\sprites.html" />
     <Content Include="^\__TODO.html" />
@@ -72,11 +71,15 @@
     <FixIntermediateFile Include="_datafiles.manual\news.xml" />
     <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml" />
     <FixIntermediateFile Include="_datafiles.manual\shoppingboxes.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.unreleased_gens.xml" />
     <FixIntermediateFile Include="_datafiles.manual\infrequent\images.xml" />
     <FixIntermediateFile Include="_datafiles.manual\infrequent\ranges.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.moves.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.moves.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
   </ItemGroup>
   <!-- /_datafiles (moves and movesets) -->
   <ItemGroup>
@@ -88,9 +91,7 @@
   </ItemGroup>
   <!-- /_datafiles (pokestats) -->
   <ItemGroup>
-    <FixIntermediateFile Include="_datafiles\pokestats.gen1.xml">
-      <SubType>Designer</SubType>
-    </FixIntermediateFile>
+    <FixIntermediateFile Include="_datafiles\pokestats.gen1.xml" />
     <FixIntermediateFile Include="_datafiles\pokestats.gen2.xml" />
     <FixIntermediateFile Include="_datafiles\pokestats.gen3.xml" />
     <FixIntermediateFile Include="_datafiles\pokestats.gen4.xml" />
@@ -100,6 +101,7 @@
   </ItemGroup>
   <!-- /_datafiles (various) -->
   <ItemGroup>
+    <FixIntermediateFile Include="_datafiles\friends.xml" />
     <FixIntermediateFile Include="_datafiles\effectiveness.xml" />
     <FixIntermediateFile Include="_datafiles\GAME_MASTER.xml" />
     <FixIntermediateFile Include="_datafiles\constants.xml" />

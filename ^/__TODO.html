@@ -250,61 +250,75 @@
         Work In Progress
     </h2>
     <div id="WORK_IN_PROGRESS" class="INDENT">
-        <ul>
-            <li class="PRIORITY_EXTREME">
-                <input type="checkbox" />
-                Find a way to leverage AWS/Azure.
-                <br />May want to get a new URL:
-                <ul>
-                    <li>pokeref.com	(<a href="https://www.godaddy.com/">GoDaddy</a>)</li>
-                    <li>pokeref.info</li>
-                    <li>pokeref.game</li>
-                    <li>pokeref.org</li>
-                    <li>pokeref.pro</li>
-                    <li>pokeref.pr	(<a href="http://domains.pr/">http://domains.pr/</a>)</li>
+		<ul>
+			<li class="PRIORITY_EXTREME">
+				<input type="checkbox" />
+				Pokechart - Mew:
+				<ul>
+					<li>Shiny Available should be no</li>
+					<li>Base Capture shouldn't be 10,000%</li>
+				</ul>
+			</li>
+			<li class="PRIORITY_EXTREME">
+				<input type="checkbox" />
+				Figure out how to get enums (e.g. fast_moves) to be written enums instead of ints when deserializing the GAME_MASTER
+				<br />ʭPokemon\GAME_MASTER\GM_Decoder\GameMasterDecoder.cs, 295
+				<br /><b>HINT:</b>[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
+			</li>
+			<li class="PRIORITY_EXTREME">
+				<input type="checkbox" />
+				Find a way to leverage AWS/Azure.
+				<br />May want to get a new URL:
+				<ul>
+					<li>pokeref.com	(<a href="https://www.godaddy.com/">GoDaddy</a>)</li>
+					<li>pokeref.info</li>
+					<li>pokeref.game</li>
+					<li>pokeref.org</li>
+					<li>pokeref.pro</li>
+					<li>pokeref.pr	(<a href="http://domains.pr/">http://domains.pr/</a>)</li>
 
-                    <li>pokeref.co.com</li>
-                    <li>pokeref.eu</li>
-                    <li>pokeref.net</li>
-                    <li>pokeref.nyc</li>
-                    <li>pokeref.name</li>
-                    <li>pokeref.us</li>
-                    <li>pokeref.help</li>
-                    <li>pokeref.tv</li>
-                    <li>pokeref.biz</li>
-                    <li>pokeref.lotto</li>
-                    <li>pokeref.xyz</li>
-                    <li>pokeref.cc</li>
-                </ul>
-            </li>
+					<li>pokeref.co.com</li>
+					<li>pokeref.eu</li>
+					<li>pokeref.net</li>
+					<li>pokeref.nyc</li>
+					<li>pokeref.name</li>
+					<li>pokeref.us</li>
+					<li>pokeref.help</li>
+					<li>pokeref.tv</li>
+					<li>pokeref.biz</li>
+					<li>pokeref.lotto</li>
+					<li>pokeref.xyz</li>
+					<li>pokeref.cc</li>
+				</ul>
+			</li>
 
-            <li class="PRIORITY_HIGH">
-                <input type="checkbox" />
-                Figure out why current code will not decode some of the GAME_MASTER files.
-            </li>
+			<li class="PRIORITY_HIGH">
+				<input type="checkbox" />
+				Figure out why current code will not decode some of the GAME_MASTER files.
+			</li>
 
-            <li class="PRIORITY_HIGH">
-                Display Unown forms in Pokechart.
-            </li>
+			<li class="PRIORITY_HIGH">
+				Display Unown forms in Pokechart.
+			</li>
 
-            <li class="PRIORITY_HIGH">
-                <input type="checkbox" />
-                Look into splitting .html up into separate files for each Pokemon and load them as needed.
-            </li>
+			<li class="PRIORITY_HIGH">
+				<input type="checkbox" />
+				Look into splitting .html up into separate files for each Pokemon and load them as needed.
+			</li>
 
-            <li class="PRIORITY_HIGH">
-                <input type="checkbox" />
-                Double check availability dates in _debug.manual\pokemon.availability.xml
-            </li>
+			<li class="PRIORITY_HIGH">
+				<input type="checkbox" />
+				Double check availability dates in _debug.manual\pokemon.availability.xml
+			</li>
 
-            <li>
-                <input type="checkbox" />
-                Field Research:
-                <ul>
-                    <li>Add code to perform filtering.</li>
-                </ul>
-            </li>
-        </ul>
+			<li>
+				<input type="checkbox" />
+				Field Research:
+				<ul>
+					<li>Add code to perform filtering.</li>
+				</ul>
+			</li>
+		</ul>
     </div>
     <!-- #endregion Work In Progress -->
     <!-- ========================================================================================================= -->

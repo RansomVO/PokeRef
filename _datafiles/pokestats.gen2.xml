@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-07-02" gen="2" region="Johto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-04" gen="2" region="Johto">
   <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General">
     <Type primary="Grass" />
     <Stats>
@@ -988,7 +988,7 @@
       <BaseIV attack="115" defense="93" stamina="100" />
       <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
       <Weight standard="72" deviation="72" />
-      <Rates capture="0.40000000596046448" flee="0.10000000149011612" attack="0" dodge="0" />
+      <Rates capture="0.40000000596046448" flee="0.10000000149011612" attack="0.30000001192092896" dodge="0.15000000596046448" />
       <Max cp="904" hp="90" />
     </Stats>
   </Pokemon>
@@ -1034,13 +1034,13 @@
       <Max cp="3889" hp="164" />
     </Stats>
   </Pokemon>
-  <Pokemon id="251" name="Celebi" family="Celebi" buddy_km="5" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="251" name="Celebi" family="Celebi" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased">
     <Type primary="Psychic" secondary="Grass" />
     <Stats>
       <BaseIV attack="210" defense="210" stamina="200" />
       <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
       <Weight standard="5" deviation="5" />
-      <Rates capture="0" flee="0.039999999105930328" attack="0.10000000149011612" dodge="0.15000000596046448" />
+      <Rates capture="100" flee="0" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="3090" hp="169" />
     </Stats>
   </Pokemon>

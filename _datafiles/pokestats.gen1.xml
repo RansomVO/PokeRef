@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-07-02" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-04" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -64,7 +64,7 @@
       <Max cp="2686" hp="135" />
     </Stats>
   </Pokemon>
-  <Pokemon id="7" name="Squirtle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="7" name="Squirtle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="94" defense="122" stamina="88" />
@@ -74,7 +74,7 @@
       <Max cp="808" hp="81" />
     </Stats>
   </Pokemon>
-  <Pokemon id="8" name="Wartortle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="8" name="Wartortle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Water" />
     <EvolvesFrom id="7" name="Squirtle" candies="25" />
     <Stats>
@@ -85,7 +85,7 @@
       <Max cp="1324" hp="105" />
     </Stats>
   </Pokemon>
-  <Pokemon id="9" name="Blastoise" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="9" name="Blastoise" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Water" />
     <EvolvesFrom id="8" name="Wartortle" candies="100" />
     <Stats>
@@ -672,7 +672,7 @@
       <Max cp="465" hp="27" />
     </Stats>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Alola" formId="60" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="50" name="Diglett" form="Alola" formId="60" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
       <BaseIV attack="109" defense="89" stamina="20" />
@@ -703,7 +703,7 @@
       <Max cp="1333" hp="67" />
     </Stats>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Alola" formId="62" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="51" name="Dugtrio" form="Alola" formId="62" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
       <BaseIV attack="201" defense="148" stamina="70" />
@@ -1006,7 +1006,7 @@
       <Max cp="1193" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Alola" formId="68" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="74" name="Geodude" form="Alola" formId="68" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="132" defense="163" stamina="80" />
@@ -1037,7 +1037,7 @@
       <Max cp="1815" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Alola" formId="70" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="75" name="Graveler" form="Alola" formId="70" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="164" defense="196" stamina="110" />
@@ -1068,7 +1068,7 @@
       <Max cp="2916" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Alola" formId="72" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="76" name="Golem" form="Alola" formId="72" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="211" defense="229" stamina="160" />
@@ -1878,7 +1878,7 @@
       <Max cp="2933" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="145" name="Zapdos" family="Zapdos" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="145" name="Zapdos" family="Zapdos" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="true">
     <Type primary="Electric" secondary="Flying" />
     <Stats>
       <BaseIV attack="253" defense="188" stamina="180" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-07-02" gen="3" region="Hoenn">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-04" gen="3" region="Hoenn">
   <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General">
     <Type primary="Grass" />
     <Stats>
@@ -624,7 +624,7 @@
       <Max cp="2131" hp="122" />
     </Stats>
   </Pokemon>
-  <Pokemon id="311" name="Plusle" family="Plusle" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="311" name="Plusle" family="Plusle" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="167" defense="147" stamina="120" />
@@ -634,7 +634,7 @@
       <Max cp="1681" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="312" name="Minun" family="Minun" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="312" name="Minun" family="Minun" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="147" defense="167" stamina="120" />
