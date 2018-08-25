@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-04" gen="2">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-13" gen="2">
   <Pokemon id="152" name="Chikorita">
     <MoveSet base_dps="16.451612903225808" true_dps="11.397849462365592" comparison="87">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -1209,6 +1209,14 @@
       <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
       <ChargedAttack name="Futuresight" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="18.279569892473116" true_dps="28.494623655913976" comparison="88">
+      <FastAttack name="Confusion" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="17.857142857142858" true_dps="27.38095238095238" comparison="85">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="197" name="Umbreon">
     <MoveSet base_dps="16.666666666666664" true_dps="14.88095238095238" comparison="95">
@@ -1226,6 +1234,14 @@
     <MoveSet base_dps="17.333333333333332" true_dps="15.6" comparison="100">
       <FastAttack name="Snarl" stab="true" legacy="false" />
       <ChargedAttack name="Foul Play" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.072289156626503" true_dps="14.216867469879517" comparison="91">
+      <FastAttack name="Feint Attack" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="17.857142857142858" true_dps="14.166666666666666" comparison="91">
+      <FastAttack name="Snarl" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="198" name="Murkrow">

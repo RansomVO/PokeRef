@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-04" gen="2" region="Johto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-13" gen="2" region="Johto">
   <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General">
     <Type primary="Grass" />
     <Stats>
@@ -263,7 +263,7 @@
       <Max cp="1543" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="177" name="Natu" family="Natu" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="177" name="Natu" family="Natu" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Psychic" secondary="Flying" />
     <Stats>
       <BaseIV attack="134" defense="89" stamina="80" />
@@ -273,7 +273,7 @@
       <Max cp="925" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="178" name="Xatu" family="Natu" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="178" name="Xatu" family="Natu" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Psychic" secondary="Flying" />
     <EvolvesFrom id="177" name="Natu" candies="50" />
     <Stats>
@@ -412,7 +412,7 @@
       <Max cp="1188" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="191" name="Sunkern" family="Sunkern" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="191" name="Sunkern" family="Sunkern" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="55" defense="55" stamina="60" />
@@ -422,7 +422,7 @@
       <Max cp="316" hp="59" />
     </Stats>
   </Pokemon>
-  <Pokemon id="192" name="Sunflora" family="Sunkern" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="192" name="Sunflora" family="Sunkern" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Grass" />
     <EvolvesFrom id="191" name="Sunkern" candies="50" special="Sun Stone" />
     <Stats>
@@ -464,7 +464,7 @@
       <Max cp="1929" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="196" name="Espeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="196" name="Espeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Psychic" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -475,7 +475,7 @@
       <Max cp="3000" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="197" name="Umbreon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="197" name="Umbreon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Dark" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -600,7 +600,7 @@
       <Max cp="2439" hp="130" />
     </Stats>
   </Pokemon>
-  <Pokemon id="209" name="Snubbull" family="Snubbull" buddy_km="3" gender_ratio="1 : 3" availability="General">
+  <Pokemon id="209" name="Snubbull" family="Snubbull" buddy_km="3" gender_ratio="1 : 3" availability="General" shiny="true">
     <Type primary="Fairy" />
     <Stats>
       <BaseIV attack="137" defense="89" stamina="120" />
@@ -610,7 +610,7 @@
       <Max cp="1124" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="210" name="Granbull" family="Snubbull" buddy_km="3" gender_ratio="1 : 3" availability="General">
+  <Pokemon id="210" name="Granbull" family="Snubbull" buddy_km="3" gender_ratio="1 : 3" availability="General" shiny="true">
     <Type primary="Fairy" />
     <EvolvesFrom id="209" name="Snubbull" candies="50" />
     <Stats>
@@ -796,7 +796,7 @@
       <Max cp="2032" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="228" name="Houndour" family="Houndour" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="228" name="Houndour" family="Houndour" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Dark" secondary="Fire" />
     <Stats>
       <BaseIV attack="152" defense="93" stamina="90" />
@@ -806,7 +806,7 @@
       <Max cp="1110" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="229" name="Houndoom" family="Houndour" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="229" name="Houndoom" family="Houndour" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Dark" secondary="Fire" />
     <EvolvesFrom id="228" name="Houndour" candies="50" />
     <Stats>

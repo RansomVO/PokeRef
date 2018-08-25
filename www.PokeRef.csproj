@@ -85,7 +85,9 @@
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles\moves.charged.xml" />
     <FixIntermediateFile Include="_datafiles\moves.fast.xml" />
-    <FixIntermediateFile Include="_datafiles\movesets.gen1.xml" />
+    <FixIntermediateFile Include="_datafiles\movesets.gen1.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles\movesets.gen2.xml" />
     <FixIntermediateFile Include="_datafiles\movesets.gen3.xml" />
   </ItemGroup>

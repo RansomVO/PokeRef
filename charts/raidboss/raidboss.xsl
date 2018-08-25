@@ -38,7 +38,13 @@
         </link>
 
         <title>
-          <xsl:value-of select="RaidBoss/Pokemon/@name" /> - Raid Boss Possible IVs
+          <xsl:value-of select="RaidBoss/Pokemon/@name" />
+          <xsl:if test="RaidBoss/Pokemon/@form">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="RaidBoss/Pokemon/@form"/>
+            <xsl:text>)</xsl:text>
+          </xsl:if>
+          <xsl:text> - Raid Boss Possible IVs</xsl:text>
         </title>
       </head>
       <body>
@@ -47,6 +53,13 @@
           RaidBoss Possible IVs:<br />
           <xsl:apply-templates select="RaidBoss/Pokemon" mode="Sprite" />
           <xsl:value-of select="RaidBoss/Pokemon/@name" />
+          <span class="NOTE">
+            <xsl:if test="RaidBoss/Pokemon/@form">
+              <xsl:text> (</xsl:text>
+              <xsl:value-of select="RaidBoss/Pokemon/@form"/>
+              <xsl:text>)</xsl:text>
+            </xsl:if>
+          </span>
           <xsl:text> (CP: </xsl:text>
           <xsl:choose>
             <xsl:when test="not(RaidBoss/@raid_cp)">

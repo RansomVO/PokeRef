@@ -94,16 +94,19 @@ function ApplyCookie() {
     <xsl:text>head</xsl:text>
     <xsl:value-of select="$gt" disable-output-escaping="yes" />
     <xsl:text> so that 
-//          the window.onnload() from the other scripts have the opportunity to overload this.
+//          the window.onload() from the other scripts have the opportunity to overload this.
 window.onload = function () {
     try {
         GetFields();</xsl:text>
 
-    <xsl:if test="ShoppingBoxes/Box[@type='Special']/@price=0 or ShoppingBoxes/Box[@type='Great']/@price=0 or ShoppingBoxes/Box[@type='Ultra']/@price=0">
+    <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0 or ShoppingBoxes/Box[@type='Special']/@price=0 or ShoppingBoxes/Box[@type='Great']/@price=0 or ShoppingBoxes/Box[@type='Ultra']/@price=0">
       <xsl:text>
 
-        // Only show boxes that are available.
+        // Hide boxes that are not available.
 </xsl:text>
+      <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0">
+        <xsl:text>        document.getElementById('CommunityBox').style.display = 'none';</xsl:text>
+      </xsl:if>
       <xsl:if test="ShoppingBoxes/Box[@type='Special']/@price=0">
         <xsl:text>        document.getElementById('SpecialBox').style.display = 'none';</xsl:text>
       </xsl:if>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-04" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-13" gen="3">
   <Pokemon id="252" name="Treecko">
     <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
       <FastAttack name="Pound" stab="false" legacy="false" />
@@ -2482,7 +2482,7 @@
       <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="351" name="Castform" form="Normal" formId="29">
+  <Pokemon id="351" name="Castform" form="Normal">
     <MoveSet base_dps="16.535433070866144" true_dps="14.566929133858269" comparison="100">
       <FastAttack name="Tackle" stab="true" legacy="false" />
       <ChargedAttack name="Hurricane" stab="false" legacy="false" />
@@ -2500,7 +2500,7 @@
       <ChargedAttack name="Energy Ball" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="351" name="Castform" form="Rainy" formId="31">
+  <Pokemon id="351" name="Castform" form="Rainy">
     <MoveSet base_dps="17.293233082706767" true_dps="16.992481203007518" comparison="100">
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
@@ -2518,7 +2518,7 @@
       <ChargedAttack name="Thunder" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="351" name="Castform" form="Snowy" formId="32">
+  <Pokemon id="351" name="Castform" form="Snowy">
     <MoveSet base_dps="17.029702970297031" true_dps="16.633663366336634" comparison="100">
       <FastAttack name="Powder Snow" stab="true" legacy="false" />
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
@@ -2536,7 +2536,7 @@
       <ChargedAttack name="Ice Beam" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="351" name="Castform" form="Sunny" formId="30">
+  <Pokemon id="351" name="Castform" form="Sunny">
     <MoveSet base_dps="16.901408450704228" true_dps="16.549295774647888" comparison="100">
       <FastAttack name="Ember" stab="true" legacy="false" />
       <ChargedAttack name="Fire Blast" stab="true" legacy="false" />

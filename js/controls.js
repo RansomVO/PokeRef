@@ -635,6 +635,7 @@ var EggCookieSettings = {
     'CONTROLS_Egg': 'false',
     'CONTROLS_Egg_2K': 'true',
     'CONTROLS_Egg_5K': 'true',
+    'CONTROLS_Egg_7K': 'true',
     'CONTROLS_Egg_10K': 'true',
     'CONTROLS_Egg_HatchOnly': 'false',
 };
@@ -662,6 +663,7 @@ function GetEggFields() {
     CONTROLS_Egg_Options = document.getElementById('CONTROLS_Egg_Options');
     CONTROLS_Egg_2K = document.getElementById('CONTROLS_Egg_2K');
     CONTROLS_Egg_5K = document.getElementById('CONTROLS_Egg_5K');
+    CONTROLS_Egg_7K = document.getElementById('CONTROLS_Egg_7K');
     CONTROLS_Egg_10K = document.getElementById('CONTROLS_Egg_10K');
     CONTROLS_Egg_HatchOnly = document.getElementById('CONTROLS_Egg_HatchOnly');
 }
@@ -693,6 +695,7 @@ function OnEggSelectionChanged() {
         eggCriteria['Enabled'] = CONTROLS_Egg.checked;
         eggCriteria['2K'] = CONTROLS_Egg_2K.checked;
         eggCriteria['5K'] = CONTROLS_Egg_5K.checked;
+        eggCriteria['7K'] = CONTROLS_Egg_7K.checked;
         eggCriteria['10K'] = CONTROLS_Egg_10K.checked;
         eggCriteria['HatchOnly'] = CONTROLS_Egg_HatchOnly.checked;
 

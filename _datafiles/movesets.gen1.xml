@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-04" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-13" gen="1">
   <Pokemon id="1" name="Bulbasaur">
     <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -536,7 +536,7 @@
       <ChargedAttack name="Air Cutter" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" form="Alola" formId="46">
+  <Pokemon id="19" name="Rattata" form="Alola">
     <MoveSet base_dps="15.671641791044776" true_dps="11.940298507462686" comparison="87">
       <FastAttack name="Tackle" stab="true" legacy="false" />
       <ChargedAttack name="Crunch" stab="true" legacy="false" />
@@ -562,7 +562,7 @@
       <ChargedAttack name="Shadow Ball" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" form="Normal" formId="45">
+  <Pokemon id="19" name="Rattata" form="Normal">
     <MoveSet base_dps="15.463917525773198" true_dps="10.309278350515465" comparison="75">
       <FastAttack name="Tackle" stab="true" legacy="false" />
       <ChargedAttack name="Dig" stab="false" legacy="false" />
@@ -588,7 +588,7 @@
       <ChargedAttack name="Body Slam" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" form="Alola" formId="48">
+  <Pokemon id="20" name="Raticate" form="Alola">
     <MoveSet base_dps="16.103896103896105" true_dps="15.584415584415584" comparison="84">
       <FastAttack name="Bite" stab="true" legacy="false" />
       <ChargedAttack name="Crunch" stab="true" legacy="false" />
@@ -614,7 +614,7 @@
       <ChargedAttack name="Hyper Beam" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" form="Normal" formId="47">
+  <Pokemon id="20" name="Raticate" form="Normal">
     <MoveSet base_dps="15.892857142857144" true_dps="14.910714285714287" comparison="69">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Dig" stab="false" legacy="false" />
@@ -810,7 +810,7 @@
       <ChargedAttack name="Surf" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="26" name="Raichu" form="Alola" formId="50">
+  <Pokemon id="26" name="Raichu" form="Alola">
     <MoveSet base_dps="15" true_dps="20.666666666666668" comparison="80">
       <FastAttack name="Volt Switch" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="true" legacy="false" />
@@ -836,7 +836,7 @@
       <ChargedAttack name="Wild Charge" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="26" name="Raichu" form="Normal" formId="49">
+  <Pokemon id="26" name="Raichu" form="Normal">
     <MoveSet base_dps="12.903225806451614" true_dps="15.483870967741938" comparison="64">
       <FastAttack name="Volt Switch" stab="true" legacy="false" />
       <ChargedAttack name="Brick Break" stab="false" legacy="false" />
@@ -862,7 +862,7 @@
       <ChargedAttack name="Wild Charge" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Alola" formId="52">
+  <Pokemon id="27" name="Sandshrew" form="Alola">
     <MoveSet base_dps="18.382352941176471" true_dps="17.205882352941178" comparison="100">
       <FastAttack name="Metal Claw" stab="true" legacy="false" />
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
@@ -888,7 +888,7 @@
       <ChargedAttack name="Night Slash" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Normal" formId="51">
+  <Pokemon id="27" name="Sandshrew" form="Normal">
     <MoveSet base_dps="15.892857142857144" true_dps="13.75" comparison="100">
       <FastAttack name="Scratch" stab="false" legacy="false" />
       <ChargedAttack name="Dig" stab="true" legacy="false" />
@@ -914,7 +914,7 @@
       <ChargedAttack name="Sand Tomb" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" form="Alola" formId="54">
+  <Pokemon id="28" name="Sandslash" form="Alola">
     <MoveSet base_dps="18.382352941176471" true_dps="22.573529411764707" comparison="100">
       <FastAttack name="Metal Claw" stab="true" legacy="false" />
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
@@ -940,7 +940,7 @@
       <ChargedAttack name="Bulldoze" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" form="Normal" formId="53">
+  <Pokemon id="28" name="Sandslash" form="Normal">
     <MoveSet base_dps="17.021276595744681" true_dps="19.00709219858156" comparison="95">
       <FastAttack name="Metal Claw" stab="false" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
@@ -1198,7 +1198,7 @@
       <ChargedAttack name="Moonblast" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" form="Alola" formId="56">
+  <Pokemon id="37" name="Vulpix" form="Alola">
     <MoveSet base_dps="16.470588235294116" true_dps="9.4117647058823533" comparison="76">
       <FastAttack name="Zen Headbutt" stab="false" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="false" />
@@ -1224,7 +1224,7 @@
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" form="Normal" formId="55">
+  <Pokemon id="37" name="Vulpix" form="Normal">
     <MoveSet base_dps="16.078431372549019" true_dps="9.4117647058823533" comparison="79">
       <FastAttack name="Quick Attack" stab="false" legacy="false" />
       <ChargedAttack name="Body Slam" stab="false" legacy="false" />
@@ -1250,7 +1250,7 @@
       <ChargedAttack name="Flame Charge" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" form="Alola" formId="58">
+  <Pokemon id="38" name="Ninetales" form="Alola">
     <MoveSet base_dps="17.977528089887638" true_dps="19.775280898876403" comparison="100">
       <FastAttack name="Feint Attack" stab="false" legacy="false" />
       <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
@@ -1276,7 +1276,7 @@
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" form="Normal" formId="57">
+  <Pokemon id="38" name="Ninetales" form="Normal">
     <MoveSet base_dps="15.579710144927535" true_dps="16.666666666666664" comparison="71">
       <FastAttack name="Feint Attack" stab="false" legacy="false" />
       <ChargedAttack name="Heat Wave" stab="true" legacy="false" />
@@ -1648,7 +1648,7 @@
       <ChargedAttack name="Poison Fang" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Alola" formId="60">
+  <Pokemon id="50" name="Diglett" form="Alola">
     <MoveSet base_dps="14.957264957264957" true_dps="11.794871794871796" comparison="88">
       <FastAttack name="Mud Slap" stab="true" legacy="false" />
       <ChargedAttack name="Dig" stab="true" legacy="false" />
@@ -1674,7 +1674,7 @@
       <ChargedAttack name="Rock Tomb" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Normal" formId="59">
+  <Pokemon id="50" name="Diglett" form="Normal">
     <MoveSet base_dps="14.957264957264957" true_dps="11.794871794871796" comparison="98">
       <FastAttack name="Mud Slap" stab="true" legacy="false" />
       <ChargedAttack name="Dig" stab="true" legacy="false" />
@@ -1700,7 +1700,7 @@
       <ChargedAttack name="Rock Tomb" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Alola" formId="62">
+  <Pokemon id="51" name="Dugtrio" form="Alola">
     <MoveSet base_dps="17.021276595744681" true_dps="23.26241134751773" comparison="100">
       <FastAttack name="Metal Claw" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
@@ -1726,7 +1726,7 @@
       <ChargedAttack name="Iron Head" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Normal" formId="61">
+  <Pokemon id="51" name="Dugtrio" form="Normal">
     <MoveSet base_dps="16.614173228346459" true_dps="17.952755905511811" comparison="98">
       <FastAttack name="Sucker Punch" stab="false" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
@@ -1786,7 +1786,7 @@
       <ChargedAttack name="Body Slam" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="53" name="Persian" form="Alola" formId="66">
+  <Pokemon id="53" name="Persian" form="Alola">
     <MoveSet base_dps="17.411764705882351" true_dps="18.117647058823529" comparison="95">
       <FastAttack name="Scratch" stab="false" legacy="false" />
       <ChargedAttack name="Foul Play" stab="true" legacy="false" />
@@ -1812,7 +1812,7 @@
       <ChargedAttack name="Play Rough" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="53" name="Persian" form="Normal" formId="65">
+  <Pokemon id="53" name="Persian" form="Normal">
     <MoveSet base_dps="17.411764705882351" true_dps="17.529411764705884" comparison="100">
       <FastAttack name="Scratch" stab="true" legacy="false" />
       <ChargedAttack name="Foul Play" stab="false" legacy="false" />
@@ -2546,7 +2546,7 @@
       <ChargedAttack name="Blizzard" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Alola" formId="68">
+  <Pokemon id="74" name="Geodude" form="Alola">
     <MoveSet base_dps="17.777777777777779" true_dps="17.171717171717169" comparison="98">
       <FastAttack name="Rock Throw" stab="true" legacy="false" />
       <ChargedAttack name="Rock Slide" stab="true" legacy="false" />
@@ -2572,7 +2572,7 @@
       <ChargedAttack name="Thunderbolt" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Normal" formId="67">
+  <Pokemon id="74" name="Geodude" form="Normal">
     <MoveSet base_dps="17.777777777777779" true_dps="17.171717171717169" comparison="100">
       <FastAttack name="Rock Throw" stab="true" legacy="false" />
       <ChargedAttack name="Rock Slide" stab="true" legacy="false" />
@@ -2598,7 +2598,7 @@
       <ChargedAttack name="Dig" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Alola" formId="70">
+  <Pokemon id="75" name="Graveler" form="Alola">
     <MoveSet base_dps="18.14432989690722" true_dps="20.824742268041238" comparison="100">
       <FastAttack name="Rock Throw" stab="true" legacy="false" />
       <ChargedAttack name="Thunderbolt" stab="true" legacy="false" />
@@ -2624,7 +2624,7 @@
       <ChargedAttack name="Rock Blast" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Normal" formId="69">
+  <Pokemon id="75" name="Graveler" form="Normal">
     <MoveSet base_dps="16.470588235294116" true_dps="18.823529411764707" comparison="93">
       <FastAttack name="Rock Throw" stab="true" legacy="false" />
       <ChargedAttack name="Dig" stab="true" legacy="false" />
@@ -2650,7 +2650,7 @@
       <ChargedAttack name="Rock Blast" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Alola" formId="72">
+  <Pokemon id="76" name="Golem" form="Alola">
     <MoveSet base_dps="17.721518987341771" true_dps="25.12658227848101" comparison="94">
       <FastAttack name="Rock Throw" stab="true" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="true" legacy="false" />
@@ -2676,7 +2676,7 @@
       <ChargedAttack name="Wild Charge" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Normal" formId="71">
+  <Pokemon id="76" name="Golem" form="Normal">
     <MoveSet base_dps="17.721518987341771" true_dps="25.12658227848101" comparison="100">
       <FastAttack name="Rock Throw" stab="true" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="true" legacy="false" />
@@ -3104,7 +3104,7 @@
       <ChargedAttack name="Aqua Jet" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Alola" formId="74">
+  <Pokemon id="88" name="Grimer" form="Alola">
     <MoveSet base_dps="16.666666666666668" true_dps="16.111111111111111" comparison="90">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Crunch" stab="true" legacy="false" />
@@ -3130,7 +3130,7 @@
       <ChargedAttack name="Sludge Bomb" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Normal" formId="73">
+  <Pokemon id="88" name="Grimer" form="Normal">
     <MoveSet base_dps="16.393442622950822" true_dps="15.901639344262296" comparison="89">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Sludge" stab="true" legacy="false" />
@@ -3156,7 +3156,7 @@
       <ChargedAttack name="Sludge Bomb" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Alola" formId="76">
+  <Pokemon id="89" name="Muk" form="Alola">
     <MoveSet base_dps="16.631578947368421" true_dps="21.789473684210527" comparison="91">
       <FastAttack name="Bite" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="true" legacy="false" />
@@ -3182,7 +3182,7 @@
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Normal" formId="75">
+  <Pokemon id="89" name="Muk" form="Normal">
     <MoveSet base_dps="16.216216216216214" true_dps="17.162162162162161" comparison="72">
       <FastAttack name="Infestation" stab="false" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="false" />
@@ -3698,7 +3698,7 @@
       <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor" form="Alola" formId="78">
+  <Pokemon id="103" name="Exeggutor" form="Alola">
     <MoveSet base_dps="14.629629629629628" true_dps="22.962962962962962" comparison="76">
       <FastAttack name="Bullet Seed" stab="true" legacy="false" />
       <ChargedAttack name="Seed Bomb" stab="true" legacy="false" />
@@ -3724,7 +3724,7 @@
       <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor" form="Normal" formId="77">
+  <Pokemon id="103" name="Exeggutor" form="Normal">
     <MoveSet base_dps="14.629629629629628" true_dps="23.148148148148145" comparison="76">
       <FastAttack name="Bullet Seed" stab="true" legacy="false" />
       <ChargedAttack name="Seed Bomb" stab="true" legacy="false" />
@@ -3776,7 +3776,7 @@
       <ChargedAttack name="Bulldoze" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" form="Alola" formId="80">
+  <Pokemon id="105" name="Marowak" form="Alola">
     <MoveSet base_dps="13.461538461538464" true_dps="11.923076923076925" comparison="67">
       <FastAttack name="Hex" stab="true" legacy="false" />
       <ChargedAttack name="Bone Club" stab="false" legacy="false" />
@@ -3802,7 +3802,7 @@
       <ChargedAttack name="Fire Blast" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" form="Normal" formId="79">
+  <Pokemon id="105" name="Marowak" form="Normal">
     <MoveSet base_dps="14.655172413793107" true_dps="14.655172413793107" comparison="94">
       <FastAttack name="Mud Slap" stab="true" legacy="false" />
       <ChargedAttack name="Bone Club" stab="true" legacy="false" />
@@ -4799,9 +4799,17 @@
       <FastAttack name="Quick Attack" stab="true" legacy="false" />
       <ChargedAttack name="Body Slam" stab="true" legacy="true" />
     </MoveSet>
+    <MoveSet base_dps="18.840579710144926" true_dps="14.057971014492752" comparison="128">
+      <FastAttack name="Quick Attack" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="true" legacy="true" />
+    </MoveSet>
     <MoveSet base_dps="15.740740740740741" true_dps="12.222222222222221" comparison="111">
       <FastAttack name="Tackle" stab="true" legacy="false" />
       <ChargedAttack name="Body Slam" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="17.721518987341771" true_dps="13.544303797468354" comparison="123">
+      <FastAttack name="Tackle" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="134" name="Vaporeon">
@@ -4816,6 +4824,10 @@
     <MoveSet base_dps="15.740740740740741" true_dps="21.851851851851851" comparison="92">
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Aqua Tail" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.721518987341771" true_dps="21.518987341772149" comparison="90">
+      <FastAttack name="Water Gun" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="135" name="Jolteon">
@@ -4842,6 +4854,14 @@
     <MoveSet base_dps="15.517241379310345" true_dps="24.051724137931036" comparison="90">
       <FastAttack name="Volt Switch" stab="true" legacy="false" />
       <ChargedAttack name="Thunder" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.605633802816904" true_dps="23.661971830985916" comparison="89">
+      <FastAttack name="Thunder Shock" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="17.333333333333332" true_dps="23.2" comparison="87">
+      <FastAttack name="Volt Switch" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="136" name="Flareon">
@@ -4873,9 +4893,17 @@
       <FastAttack name="Ember" stab="true" legacy="false" />
       <ChargedAttack name="Heat Wave" stab="true" legacy="true" />
     </MoveSet>
+    <MoveSet base_dps="17.721518987341771" true_dps="25.696202531645568" comparison="79">
+      <FastAttack name="Ember" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
+    </MoveSet>
     <MoveSet base_dps="16.785714285714285" true_dps="27.5" comparison="84">
       <FastAttack name="Fire Spin" stab="true" legacy="false" />
       <ChargedAttack name="Heat Wave" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="19.047619047619047" true_dps="27.738095238095237" comparison="85">
+      <FastAttack name="Fire Spin" stab="true" legacy="false" />
+      <ChargedAttack name="Last Resort" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="137" name="Porygon">

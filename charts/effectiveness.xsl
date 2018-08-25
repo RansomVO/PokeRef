@@ -150,7 +150,7 @@
           </tr>
         </table>
       </td>
-      <xsl:for-each select="/Root/Constants/Types/Type">
+      <xsl:for-each select="/Root/Constants/Types/Type[.!='Other']">
         <xsl:sort order="ascending" data-type="text" select="." />
         <xsl:call-template name="ColumnHeaderCell">
           <xsl:with-param name="Type" select="." />

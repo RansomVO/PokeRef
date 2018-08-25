@@ -12,7 +12,7 @@
     <xsl:param name="Settings" />
     <xsl:param name="legacy" select="false()" />
 
-    <table class="INDENT UNUSED" border="1" style="text-align:center;">
+    <table class="INDENT" border="1" style="text-align:center; background-color: darkgray;">
       <xsl:apply-templates select="." mode="Tiers">
         <xsl:with-param name="Settings" select="$Settings" />
         <xsl:with-param name="legacy" select="$legacy" />
@@ -50,11 +50,11 @@
     <tr>
       <th>
         <xsl:attribute name="style">
-          <xsl:text>background-color:white; </xsl:text>
-          <xsl:if test="count(exslt:node-set($Settings)/*/@small) > 0">font-size:smaller; </xsl:if>
+          <xsl:text>background-color:white;</xsl:text>
+          <xsl:if test="count(exslt:node-set($Settings)/*/@small) > 0"> font-size:smaller;</xsl:if>
         </xsl:attribute>
         <xsl:attribute name="rowspan">
-          <xsl:value-of select="(($count + $columnsMax - 1) div $columnsMax) + 1" />
+          <xsl:value-of select="(floor(($count + $columnsMax - 1) div $columnsMax)) + 1" />
         </xsl:attribute>
 
         <xsl:choose>
@@ -117,7 +117,8 @@
     <xsl:param name="column" select="1" />
 
     <xsl:variable name="name" select="@name" />
-    <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name = $name][1]" mode="Cell">
+    <xsl:variable name="form" select="@form" />
+    <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name = $name and (@form = $form or (not(@form) and not($form)))]" mode="Cell">
       <!-- Add @href to the Settings. -->
       <xsl:with-param name="Settings">
         <xsl:apply-templates select="exslt:node-set($Settings)/*" mode="AddSetting">
@@ -125,6 +126,10 @@
           <xsl:with-param name="Value">
             <xsl:text>/charts/raidboss/raidboss.</xsl:text>
             <xsl:value-of select="pokeref:ToLower($name)" />
+            <xsl:if test="$form">
+              <xsl:text>.</xsl:text>
+              <xsl:value-of select="pokeref:ToLower($form)" />
+            </xsl:if>
             <xsl:text>.html</xsl:text>
           </xsl:with-param>
         </xsl:apply-templates>
