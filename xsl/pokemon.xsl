@@ -406,9 +406,23 @@
       <!-- Forms -->
       <xsl:when test="@form and @form != 'Normal'">
         <xsl:variable name="baseURL" select="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/'" />
-        <xsl:value-of select="concat($baseURL, @id, '-', pokeref:ToLower(@form), '.png')" />
+        <xsl:variable name="formName">
+          <xsl:choose>
+            <xsl:when test="@form='Exclamation Point'">
+              <xsl:text>exclamation</xsl:text>
+            </xsl:when>
+            <xsl:when test="@form='Question Mark'">
+              <xsl:text>question</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="pokeref:ToLower(@form)" />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+
+        <xsl:value-of select="concat($baseURL, @id, '-', $formName, '.png')" />
       </xsl:when>
-      
+
       <!-- Everything else -->
       <xsl:otherwise>
         <xsl:variable name="baseURL" select="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'" />

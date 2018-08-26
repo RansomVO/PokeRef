@@ -84,10 +84,6 @@
         <ul>
             <li>
                 <input type="checkbox" />
-                New Friend/Trading: <a href="http://www.ign.com/articles/2018/06/18/e3-2018-pokemon-go-will-officially-get-trading-soon-alongside-new-friend-system">http://www.ign.com/articles/2018/06/18/e3-2018-pokemon-go-will-officially-get-trading-soon-alongside-new-friend-system</a>
-            </li>
-            <li>
-                <input type="checkbox" />
                 Pokemon may evolve when traded!
                 <br /><a href="https://www.reddit.com/r/TheSilphRoad/comments/8s0c7j/niantic_can_now_add_trading_triggered_evolutions/">https://www.reddit.com/r/TheSilphRoad/comments/8s0c7j/niantic_can_now_add_trading_triggered_evolutions/</a>
                 <ul>
@@ -225,7 +221,7 @@
             </li>
             <li>
                 <input type="checkbox" /><b>pokemon.availability.xml</b>
-                <br />Ditto: <a href="https://p337.info/pokemongo/pokedex/?show=ditto&sort=id">https://p337.info/pokemongo/pokedex/?show=ditto&sort=id</a>
+                <br />Can be Ditto: <a href="https://p337.info/pokemongo/pokedex/?show=ditto&sort=id">https://p337.info/pokemongo/pokedex/?show=ditto&sort=id</a>
                 <br />Shiny: <a href="https://p337.info/pokemongo/pokedex/?show=shiny">https://p337.info/pokemongo/pokedex/?show=shiny</a>
             </li>
             <li>
@@ -272,7 +268,27 @@
             </li>
 
             <li class="PRIORITY_HIGH">
-                Display Unown forms in Pokechart.
+                Find out why GAME_MASTER.json has something like:
+                <pre><code>
+"encounter": {
+    "base_capture_rate": 0.3,
+    "base_flee_rate": 0.1,
+    "attack_probability": 0.1,
+    "dodge_probability": 0.15,
+
+"pokedex_height_m": 0.51,
+"pokedex_weight_kg": 5.0,
+"height_std_dev": 0.06375,
+"weight_std_dev": 0.625,
+
+</code></pre>
+                (For Unown) but pokestats.genX.xml has something like:
+                <pre><code>
+&lt;Height standard="0.88999998569488525" deviation="0.88999998569488525" /&gt;
+&lt;Weight standard="6.4000000953674316" deviation="6.4000000953674316" /&gt;
+&lt;Rates capture="0.20000000298023224" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0.15000000596046448" /&gt;
+</code></pre>
+
             </li>
 
             <li class="PRIORITY_HIGH">
@@ -293,7 +309,7 @@
                 </ul>
             </li>
 
-            <li class="PRIORITY_NORMAL">
+            <li class="PRIORITY_LOW">
                 <input type="checkbox" />
                 Find a way to leverage AWS/Azure.
                 <br />May want to get a new URL:
