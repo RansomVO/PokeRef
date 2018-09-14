@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-13" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-13" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -826,7 +826,7 @@
       <Max cp="2105" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="58" name="Growlithe" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General">
+  <Pokemon id="58" name="Growlithe" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="true">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="136" defense="96" stamina="110" />
@@ -836,7 +836,7 @@
       <Max cp="1110" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="59" name="Arcanine" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General">
+  <Pokemon id="59" name="Arcanine" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="true">
     <Type primary="Fire" />
     <EvolvesFrom id="58" name="Growlithe" candies="50" />
     <Stats>
@@ -996,7 +996,7 @@
       <Max cp="2374" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="74" name="Geodude" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="132" defense="163" stamina="80" />
@@ -1016,7 +1016,7 @@
       <Max cp="1193" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="74" name="Geodude" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="132" defense="163" stamina="80" />
@@ -1026,7 +1026,7 @@
       <Max cp="1193" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="75" name="Graveler" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Rock" secondary="Ground" />
     <EvolvesFrom id="74" name="Geodude" candies="25" />
     <Stats>
@@ -1047,7 +1047,7 @@
       <Max cp="1815" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="164" defense="196" stamina="110" />
@@ -1057,7 +1057,7 @@
       <Max cp="1815" hp="98" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="76" name="Golem" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Rock" secondary="Ground" />
     <EvolvesFrom id="75" name="Graveler" candies="100" />
     <Stats>
@@ -1078,7 +1078,7 @@
       <Max cp="2916" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="211" defense="229" stamina="160" />
@@ -1203,7 +1203,7 @@
       <Max cp="1894" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="88" name="Grimer" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="160" />
@@ -1223,7 +1223,7 @@
       <Max cp="1269" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="88" name="Grimer" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="160" />
@@ -1233,7 +1233,7 @@
       <Max cp="1269" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="89" name="Muk" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Poison" />
     <EvolvesFrom id="88" name="Grimer" candies="50" />
     <Stats>
@@ -1254,7 +1254,7 @@
       <Max cp="2709" hp="177" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="190" defense="184" stamina="210" />
@@ -1785,7 +1785,7 @@
       <Max cp="2730" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="136" name="Flareon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="136" name="Flareon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Fire" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -1940,13 +1940,13 @@
       <Max cp="3982" hp="164" />
     </Stats>
   </Pokemon>
-  <Pokemon id="151" name="Mew" family="Mew" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="General">
+  <Pokemon id="151" name="Mew" family="Mew" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Research Encounter Only">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="210" defense="210" stamina="200" />
       <Height standard="0.40000000596046448" deviation="0.40000000596046448" />
       <Weight standard="4" deviation="4" />
-      <Rates capture="100" flee="0" attack="0" dodge="1" />
+      <Rates capture="1" flee="0" attack="0" dodge="1" />
       <Max cp="3090" hp="169" />
     </Stats>
   </Pokemon>

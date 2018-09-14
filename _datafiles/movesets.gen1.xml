@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-08-13" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-14" gen="1">
   <Pokemon id="1" name="Bulbasaur">
     <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -5241,6 +5241,10 @@
       <FastAttack name="Frost Breath" stab="true" legacy="false" />
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="16.666666666666664" true_dps="21.666666666666664" comparison="95">
+      <FastAttack name="Frost Breath" stab="true" legacy="false" />
+      <ChargedAttack name="Hurricane" stab="true" legacy="true" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="145" name="Zapdos">
     <MoveSet base_dps="17.192982456140349" true_dps="29.210526315789469" comparison="100">
@@ -5253,6 +5257,18 @@
     </MoveSet>
     <MoveSet base_dps="15.445544554455443" true_dps="26.336633663366332" comparison="91">
       <FastAttack name="Charge Beam" stab="true" legacy="false" />
+      <ChargedAttack name="Thunder" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.826086956521738" true_dps="30.608695652173914" comparison="105">
+      <FastAttack name="Thunder Shock" stab="true" legacy="true" />
+      <ChargedAttack name="Zap Cannon" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.164179104477611" true_dps="29.552238805970148" comparison="102">
+      <FastAttack name="Thunder Shock" stab="true" legacy="true" />
+      <ChargedAttack name="Thunderbolt" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.176470588235293" true_dps="27.941176470588236" comparison="96">
+      <FastAttack name="Thunder Shock" stab="true" legacy="true" />
       <ChargedAttack name="Thunder" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
@@ -5268,6 +5284,10 @@
     <MoveSet base_dps="20" true_dps="33.8" comparison="100">
       <FastAttack name="Fire Spin" stab="true" legacy="false" />
       <ChargedAttack name="Overheat" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="20" true_dps="33.866666666666667" comparison="101">
+      <FastAttack name="Fire Spin" stab="true" legacy="false" />
+      <ChargedAttack name="Sky Attack" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="147" name="Dratini">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PokemonAvailability last_updated="2018-08-13">
+<PokemonAvailability last_updated="2018-09-13">
   <Pokemon id="0" name="Dummy to make index line up." />
   <!-- #region Gen1 -->
   <Pokemon id="1" name="Bulbasaur" date="2016-07-30" availability="General" shiny="true" />
@@ -92,8 +92,8 @@
   <Pokemon id="55" name="Golduck" date="2016-07-30" availability="General" />
   <Pokemon id="56" name="Mankey" date="2016-07-30" availability="General" ditto="true" />
   <Pokemon id="57" name="Primeape" date="2016-07-30" availability="General" />
-  <Pokemon id="58" name="Growlithe" date="2016-07-30" availability="General" />
-  <Pokemon id="59" name="Arcanine" date="2016-07-30" availability="General" />
+  <Pokemon id="58" name="Growlithe" date="2016-07-30" availability="General" shiny="true" />
+  <Pokemon id="59" name="Arcanine" date="2016-07-30" availability="General" shiny="true" />
   <Pokemon id="60" name="Poliwag" date="2016-07-30" availability="General" />
   <Pokemon id="61" name="Poliwhirl" date="2016-07-30" availability="General" />
   <Pokemon id="62" name="Poliwrath" date="2016-07-30" availability="General" />
@@ -108,15 +108,15 @@
   <Pokemon id="71" name="Victreebel" date="2016-07-30" availability="General" />
   <Pokemon id="72" name="Tentacool" date="2016-07-30" availability="General" />
   <Pokemon id="73" name="Tentacruel" date="2016-07-30" availability="General" />
-  <Pokemon id="74" name="Geodude" date="2016-07-30" availability="General">
+  <Pokemon id="74" name="Geodude" date="2016-07-30" availability="General" shiny="true">
     <Form name="Normal" />
     <Form name="Alola" date="2018-07-13" availability="General" />
   </Pokemon>
-  <Pokemon id="75" name="Graveler" date="2016-07-30" availability="General">
+  <Pokemon id="75" name="Graveler" date="2016-07-30" availability="General" shiny="true">
     <Form name="Normal" />
     <Form name="Alola" date="22018-07-13" availability="General" />
   </Pokemon>
-  <Pokemon id="76" name="Golem" date="2016-07-30" availability="General">
+  <Pokemon id="76" name="Golem" date="2016-07-30" availability="General" shiny="true">
     <Form name="Normal" />
     <Form name="Alola" date="2018-07-13" availability="General" />
   </Pokemon>
@@ -131,11 +131,11 @@
   <Pokemon id="85" name="Dodrio" date="2016-07-30" availability="General" />
   <Pokemon id="86" name="Seel" date="2016-07-30" availability="General" />
   <Pokemon id="87" name="Dewgong" date="2016-07-30" availability="General" />
-  <Pokemon id="88" name="Grimer" date="2016-07-30" availability="General">
+  <Pokemon id="88" name="Grimer" date="2016-07-30" availability="General" shiny="true">
     <Form name="Normal" />
     <Form name="Alola" date="2018-06-21" availability="Hatch Only" />
   </Pokemon>
-  <Pokemon id="89" name="Muk" date="2016-07-30" availability="General">
+  <Pokemon id="89" name="Muk" date="2016-07-30" availability="General" shiny="true">
     <Form name="Normal" />
     <Form name="Alola" date="2018-06-21" availability="Evolve Only" />
   </Pokemon>
@@ -366,8 +366,8 @@
   <Pokemon id="275" name="Shiftry" date="2018-01-23" availability="General" />
   <Pokemon id="276" name="Taillow" date="2018-01-23" availability="General" />
   <Pokemon id="277" name="Swellow" date="2018-01-23" availability="General" />
-  <Pokemon id="278" name="Wingull" date="2018-01-23" availability="General" />
-  <Pokemon id="279" name="Pelipper" date="2017-12-08" availability="General" />
+  <Pokemon id="278" name="Wingull" date="2018-01-23" availability="General" shiny="true" />
+  <Pokemon id="279" name="Pelipper" date="2017-12-08" availability="General" shiny="true" />
   <Pokemon id="280" name="Ralts" date="2017-12-08" availability="General" />
   <Pokemon id="281" name="Kirlia" date="2017-12-08" availability="General" />
   <Pokemon id="282" name="Gardevoir" date="2017-12-08" availability="General" />

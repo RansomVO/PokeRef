@@ -55,7 +55,6 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
-    <WebContent Include="images\game\egg_7k.png" />
     <Content Include="^\tools\sprites.html" />
     <Content Include="^\__TODO.html" />
     <None Include="^\index.html" />
@@ -67,19 +66,22 @@
   <!-- /_datafiles.manual -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles.manual\eggs.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\fieldresearch.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\news.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\shoppingboxes.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml">
+    <FixIntermediateFile Include="_datafiles.manual\encounters.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
+    <FixIntermediateFile Include="_datafiles.manual\news.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
+    <FixIntermediateFile Include="_datafiles.manual\shoppingboxes.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml" />
     <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.unreleased_gens.xml" />
     <FixIntermediateFile Include="_datafiles.manual\infrequent\images.xml" />
     <FixIntermediateFile Include="_datafiles.manual\infrequent\ranges.xml" />
     <FixIntermediateFile Include="_datafiles.manual\infrequent\special.moves.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.research.xml" />
   </ItemGroup>
   <!-- /_datafiles (moves and movesets) -->
   <ItemGroup>
@@ -184,6 +186,7 @@
     <WebContent Include="images\items\berry_nanab.png" />
     <WebContent Include="images\items\berry_pinap.png" />
     <WebContent Include="images\items\berry_razz.png" />
+    <WebContent Include="images\items\berry_silver_pinap.png" />
     <WebContent Include="images\items\incense.png" />
     <WebContent Include="images\items\incubator-2.png" />
     <WebContent Include="images\items\incubator.png" />
@@ -202,7 +205,6 @@
     <WebContent Include="images\items\raidpass.png" />
     <WebContent Include="images\items\raidpass_ex.png" />
     <WebContent Include="images\items\raidpass_premium.png" />
-    <WebContent Include="images\items\rare_candy.png" />
     <WebContent Include="images\items\revive.png" />
     <WebContent Include="images\items\revive_max.png" />
     <WebContent Include="images\items\special_dragonscale.png" />
@@ -232,6 +234,7 @@
     <WebContent Include="images\game\egg_10K.png" />
     <WebContent Include="images\game\egg_2K.png" />
     <WebContent Include="images\game\egg_5K.png" />
+    <WebContent Include="images\game\egg_7k.png" />
     <WebContent Include="images\game\egg_raid_tier1-2.png" />
     <WebContent Include="images\game\egg_raid_tier3-4.png" />
     <WebContent Include="images\game\egg_raid_tier5.png" />
@@ -248,6 +251,12 @@
     <WebContent Include="images\game\shiny.png" />
     <WebContent Include="images\game\stardust.png" />
     <WebContent Include="images\game\xp.png" />
+  </ItemGroup>
+  <!-- /images/candy -->
+  <ItemGroup>
+    <WebContent Include="images\candy\candy_rare.png" />
+    <WebContent Include="images\candy\candy_mew.png" />
+    <WebContent Include="images\candy\candy_celebi.png" />
   </ItemGroup>
   <!-- /images/originals -->
   <ItemGroup>
@@ -307,10 +316,11 @@
     <WebContent Include="charts\images\notveryeffective.png" />
     <WebContent Include="charts\images\supereffective.png" />
   </ItemGroup>
-  <!-- /charts/fieldresearch -->
+  <!-- /charts/research -->
   <ItemGroup>
-    <FixOutputFile Include="charts\fieldresearch\_sectionname.txt" />
-    <FixOutputFile Include="charts\fieldresearch\index.css" />
+    <FixOutputFile Include="charts\research\_sectionname.txt" />
+    <FixOutputFile Include="charts\research\index.css" />
+    <FixOutputFile Include="charts\research\encounter\index.css" />
   </ItemGroup>
   <!-- /charts/movesets -->
   <ItemGroup>

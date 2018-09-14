@@ -24,8 +24,6 @@
   <Image id="TMFast" title="Fast TM" src="/images/items/tm_fast.png" />
   <Image id="TMCharged" title="Charged TM" src="/images/items/tm_charged.png" />
   
-  <Image id="CandyRare" title="Rare Candy" src="/images/items/rare_candy.png" />
-  
   <Image id="RaidPass" title="Raid Pass" src="/images/items/raidpass.png" />
   <Image id="RaidPassPremium" title="Premium Raid Pass" src="/images/items/raidpass_premium.png" />
   <Image id="RaidPassEX" title="EX Raid Pass" src="/images/items/raidpass_ex.png" />
@@ -43,7 +41,8 @@
   <Image id="BerryRazz" title="Razz Berry" src="/images/items/berry_razz.png" />
   <Image id="BerryNanab" title="Nanab Berry" src="/images/items/berry_nanab.png" />
   <Image id="BerryPinap" title="Pinap Berry" src="/images/items/berry_pinap.png" />
-  <Image id="BerryGolden" title="Golden Razz Berry" src="/images/items/berry_golden_razz.png" />
+  <Image id="BerryGoldenRazz" title="Golden Razz Berry" src="/images/items/berry_golden_razz.png" />
+  <Image id="BerrySilverPinap" title="Silver Pinap Berry" src="/images/items/berry_silver_pinap.png" />
 
   <Image id="IncubatorInfinite" title="Egg Incubator &#x221E;" src="/images/items/incubator_infinite.png" />
   <Image id="Incubator" title="Egg Incubator" src="/images/items/incubator.png" />
@@ -55,6 +54,12 @@
   <Image id="DragonScale" title="Dragon Scale" src="/images/items/special_dragonscale.png" />
   <Image id="UpGrade" title="Up-Grade" src="/images/items/special_upgrade.png" />
   <!-- #endregion Items -->
+  
+  <!-- #region Candy -->
+  <Image id="CandyRare" title="Rare Candy" src="/images/candy/candy_rare.png" />
+  <Image id="CandyMew" title="Mew Candy" src="/images/candy/candy_mew.png" />
+  <Image id="CandyCelebi" title="Celebi Candy" src="/images/candy/candy_celebi.png" />
+  <!-- #endregion Candy -->
 
   <!-- #region Game -->
   <Image id="BoxSpecial" title="Special Box" src="/images/game/box_bronze.png" />

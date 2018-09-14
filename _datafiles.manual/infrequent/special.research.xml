@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpecialResearch last_updated="2018-08-28">
+  <Event name="A Mythical Discovery" encounter="Mew">
+    <Stage stage="1">
+      <Task task="Spin Five PokeStops" reward_type="XP" reward_amount="500" />
+      <Task task="Catch 10 Pokemon" reward_type="XP" reward_amount="500" />
+      <Task task="Transver 5 Pokemon" reward_type="XP" reward_amount="500" />
+      <Rewards>
+        <Item type="BallGreat" amount="10" />
+        <Item type="Incubator" amount="1" />
+        <Item type="Lure" amount="3" />
+      </Rewards>
+    </Stage>
+    <Stage stage="2">
+      <Task task="Earn Two Candy While Walking Your Buddy" reward_type="XP" reward_amount="1000" />
+      <Task task="Make 10 Great Throws" reward_type="XP" reward_amount="1000" />
+      <Task task="Hatch Three Eggs" reward_type="XP" reward_amount="1000" />
+      <Rewards>
+        <Item type="Stardust" amount="2000" />
+        <Item type="Incense" amount="3" />
+        <Item type="BallGreat" amount="20" />
+      </Rewards>
+    </Stage>
+    <Stage stage="3">
+      <Task task="Reach Trainer Level 15" reward_type="XP" reward_amount="1500" />
+      <Task task="Battle In Two Raids" reward_type="XP" reward_amount="1500" />
+      <Task task="Battle In A Gym Twice" reward_type="XP" reward_amount="1500" />
+      <Rewards>
+        <Item type="TMFast" amount="1" />
+        <Item type="TMCharge" amount="1" />
+        <Item type="StarPiece" amount="2" />
+      </Rewards>
+    </Stage>
+    <Stage stage="4">
+      <Task task="Earn The Kanto Silver Medal" reward_type="XP" reward_amount="v" />
+      <Task task="Evolve 20 Pokemon" reward_type="XP" reward_amount="2000" />
+      <Task task="Earn Five Candy While Walking Your Buddy" reward_type="XP" reward_amount="2000" />
+      <Rewards>
+        <Item type="Stardust" amount="4000" />
+        <Item type="Lure" amount="3" />
+        <Item type="BallGreat" amount="20" />
+      </Rewards>
+    </Stage>
+    <Stage stage="5">
+      <Task task="Catch Ditto" reward_type="XP" reward_amount="2500" />
+      <Task task="Catch 10 Ghost-Types" reward_type="XP" reward_amount="2500" />
+      <Task task="Perform 20 Great Throws" reward_type="XP" reward_amount="2500" />
+      <Rewards>
+        <Item type="RaidPassPremium" amount="1" />
+        <Item type="LuckyEgg" amount="1" />
+        <Item type="Revive" amount="15" />
+      </Rewards>
+    </Stage>
+    <Stage stage="6">
+      <Task task="Reach Trainer Level 25" reward_type="XP" reward_amount="3000" />
+      <Task task="Evolve A Magikarp" reward_type="XP" reward_amount="3000" />
+      <Task task="Perform 10 Raids" reward_type="XP" reward_amount="3000" />
+      <Rewards>
+        <Item type="Stardust" amount="6000" />
+        <Item type="CandyRare" amount="5" />
+        <Item type="Incense" amount="3" />
+      </Rewards>
+    </Stage>
+    <Stage stage="7">
+      <Task task="Catch 50 Pokemon Using A Berry" reward_type="XP" reward_amount="3500" />
+      <Task task="Earn A Kanto Gold Medal" reward_type="XP" reward_amount="3500" />
+      <Task task="Perform An Excellent Curve Throw" reward_type="XP" reward_amount="3500" />
+      <Rewards>
+        <Item type="Stardust" amount="8000" />
+        <Item type="BallGreat" amount="5" />
+        <Encounter id="151" name="Mew" />
+      </Rewards>
+    </Stage>
+    <Stage stage="8">
+      <Task task="Catch Mew" reward_type="XP" reward_amount="4000" />
+      <Rewards>
+        <Item type="Stardust" amount="10000" />
+        <Item type="IncubatorSuper" amount="1" />
+        <Item type="CandyMew" amount="20" />
+      </Rewards>
+    </Stage>
+  </Event>
+  <Event name="A Ripple in Time" encounter="Celebi">
+    <Stage stage="1">
+      <Task task="Power up Pokemon 5 times" reward_type="XP" reward_amount="1000" />
+      <Task task="Battle in a raid" reward_type="XP" reward_amount="1000" />
+      <Task task="Battle in a Gym 2 times" reward_type="XP" reward_amount="1000" />
+      <Rewards>
+        <Item type="BallRegular" amount="10" />
+        <Item type="TMFast" amount="1" />
+        <Item type="IncubatorSuper" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="2">
+      <Task task="Make 3 new friends" reward_type="XP" reward_amount="1500" />
+      <Task task="Evolve an evolved Grass-Type Pokemon" reward_type="XP" reward_amount="1500" />
+      <Task task="Catch a Pokemon 3 days in a row" reward_type="XP" reward_amount="1500" />
+      <Rewards>
+        <Item type="Stardust" amount="1500" />
+        <Item type="SunStone" amount="1" />
+        <Item type="RaidPassPremium" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="3">
+      <Task task="Reach level 25" reward_type="XP" reward_amount="2000" />
+      <Task task="Use a Sun Stone to evolve Gloom or Sunkern" reward_type="XP" reward_amount="2000" />
+      <Task task="Hatch 9 eggs" reward_type="XP" reward_amount="2000" />
+      <Rewards>
+        <Encounter id="133" name="Eevee" />
+        <Item type="KingsRock" amount="1" />
+        <Item type="RaidPassPremium" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="4">
+      <Task task="Walk 10 KM with Eevee as your buddy to earn Candy" reward_type="XP" reward_amount="2500" />
+      <Task task="Evolve Eevee into Espeon during the day" reward_type="XP" reward_amount="2500" />
+      <Task task="Send 20 Gifts to friends" reward_type="XP" reward_amount="2500" />
+      <Rewards>
+        <Encounter id="133" name="Eevee" />
+        <Item type="Stardust" amount="2500" />
+        <Item type="MetalCoat" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="5">
+      <Task task="Walk 10 KM with Eevee as your buddy to earn Candy" reward_type="XP" reward_amount="3000" />
+      <Task task="Evolve Eevee into Umbreon at night" reward_type="XP" reward_amount="3000" />
+      <Task task="Trade a Pokemon" reward_type="XP" reward_amount="3000" />
+      <Rewards>
+        <Item type="StarPiece" amount="1" />
+        <Item type="BerryPinap" amount="15" />
+        <Item type="UpGrade" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="6">
+      <Task task="Visit PokeStops 7 days in a row" reward_type="XP" reward_amount="3500" />
+      <Task task="Use 25 Pinap Berries while catching Pokemon" reward_type="XP" reward_amount="3500" />
+      <Task task="Use items to evolve Pokemon 2 times" reward_type="XP" reward_amount="3500" />
+      <Rewards>
+        <Item type="Stardust" amount="3500" />
+        <Item type="DragonScale" amount="1" />
+        <Item type="BerrySilverPinap" amount="5" />
+      </Rewards>
+    </Stage>
+    <Stage stage="7">
+      <Task task="Catch 40 Grass- or Psychic-type Pokemon" reward_type="XP" reward_amount="4000" />
+      <Task task="Earn a Gold Johto medal" reward_type="XP" reward_amount="4000" />
+      <Task task="Make an Excellent Curveball Throw" reward_type="XP" reward_amount="4000" />
+      <Rewards>
+        <Encounter id="251" name="Celebi" />
+        <Item type="TMCharged" amount="1" />
+        <Item type="BerrySilverPinap" amount="10" />
+      </Rewards>
+    </Stage>
+    <Stage stage="8">
+      <Task task="Catch Celebi" reward_type="XP" reward_amount="13500" />
+      <Rewards>
+        <Item type="CandyCelebi" amount="20" />
+        <Item type="IncubatorSuper" amount="1" />
+        <Item type="Stardust" amount="5500" />
+      </Rewards>
+    </Stage>
+  </Event>
+</SpecialResearch>
+

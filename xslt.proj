@@ -50,7 +50,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- JS -->
+  <!-- js -->
   <ItemGroup>
     <FixIntermediateFile Include="js\pokemon.js.xsl">
       <Visible>true</Visible>
@@ -71,7 +71,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Charts -->
+  <!-- charts -->
   <ItemGroup>
     <FixIntermediateFile Include="charts\index.xsl">
       <Visible>true</Visible>
@@ -194,47 +194,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Charts/FieldResearch -->
-  <ItemGroup>
-    <FixIntermediateFile Include="charts\fieldresearch\index.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform Include="charts\fieldresearch\index.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>index.xsl</DependentUpon>
-      <Dependencies>
-        _datafiles.manual\fieldresearch.xml;
-        _datafiles\pokestats.gen1.xml;
-        _datafiles\pokestats.gen2.xml;
-        _datafiles\pokestats.gen3.xml;
-        _datafiles\pokestats.gen4.xml;
-        _datafiles\pokestats.gen5.xml;
-        _datafiles\pokestats.gen6.xml;
-        _datafiles\pokestats.gen7.xml;
-        xsl\controls.xsl;
-        xsl\pokemon.xsl;
-        xsl\global.xsl;
-        charts\fieldresearch\index.css;
-        charts\index.css;
-        index.css;
-      </Dependencies>
-      <OutputFileName>index.html</OutputFileName>
-    </XslTransform>
-    <FixOutputFile Include="charts\fieldresearch\fieldresearch.js">
-      <DependentUpon>index.xsl</DependentUpon>
-      <Visible>true</Visible>
-      <Dependencies>
-        js\global.js;
-      </Dependencies>
-    </FixOutputFile>
-
-    <FixIntermediateFile Include="charts\fieldresearch\encounter.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-
-  </ItemGroup>
-
-  <!-- Charts/MoveSets -->
+  <!-- charts/movesets -->
   <ItemGroup>
     <FixIntermediateFile Include="charts\movesets\index.xsl">
       <Visible>true</Visible>
@@ -355,7 +315,7 @@
     </FixOutputFile>
   </ItemGroup>
 
-  <!-- Charts/PokeChart -->
+  <!-- charts/pokechart -->
   <ItemGroup>
     <FixIntermediateFile Include="charts\pokechart\index.xsl">
       <Visible>true</Visible>
@@ -371,7 +331,6 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
-
 
     <FixIntermediateFile Include="charts\pokechart\pokechart.xsl">
       <Visible>true</Visible>
@@ -592,7 +551,7 @@
     </XslTransform>
   </ItemGroup>
   
-  <!-- Charts/RaidBoss -->
+  <!-- charts/raidboss -->
   <ItemGroup>
     <FixIntermediateFile Include="charts\raidboss\_linkslist.xsl">
       <Visible>true</Visible>
@@ -661,7 +620,80 @@
     </FixOutputFile>
   </ItemGroup>
 
-  <!-- Tech -->
+  <!-- charts/research -->
+  <ItemGroup>
+    <FixIntermediateFile Include="charts\research\index.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\research\index.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>index.xsl</DependentUpon>
+      <Dependencies>
+        _datafiles.manual\research.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        xsl\global.xsl;
+        charts\research\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>index.html</OutputFileName>
+    </XslTransform>
+    <FixOutputFile Include="charts\research\index.js">
+      <DependentUpon>index.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js\global.js;
+      </Dependencies>
+    </FixOutputFile>
+
+    <FixIntermediateFile Include="charts\research\encounter\encounter.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <!-- .html.xml files are in the generated file encounters.proj -->
+
+    <FixIntermediateFile Include="charts\research\special.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="charts\research\mythical_discovery.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>special.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        charts\research\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>mythical_discovery.html</OutputFileName>
+    </XslTransform>
+    <XslTransform Include="charts\research\ripple_in_time.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>special.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        charts\research\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>ripple_in_time.html</OutputFileName>
+    </XslTransform>
+
+  </ItemGroup>
+
+  <!-- tech -->
   <ItemGroup>
     <FixIntermediateFile Include="tech\index.xsl">
       <Visible>true</Visible>
@@ -680,7 +712,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Tech/formulas -->
+  <!-- tech/formulas -->
   <ItemGroup>
     <FixIntermediateFile Include="tech\formulas\index.xsl">
       <Visible>true</Visible>
@@ -743,7 +775,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Tech/GAME_MASTER -->
+  <!-- tech/GAME_MASTER -->
   <ItemGroup>
     <FixIntermediateFile Include="tech\GAME_MASTER\index.xsl">
       <Visible>true</Visible>
@@ -762,7 +794,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Tech/GAME_MASTER/Archive -->
+  <!-- tech/GAME_MASTER/archive -->
   <ItemGroup>
     <FixIntermediateFile Include="tech\GAME_MASTER\archive\index.xsl">
       <Visible>true</Visible>
@@ -781,7 +813,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Tech/GAME_MASTER/Moves -->
+  <!-- tech/GAME_MASTER/moves -->
   <ItemGroup>
     <FixIntermediateFile Include="tech\GAME_MASTER\moves\index.xsl">
       <Visible>true</Visible>
@@ -831,7 +863,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Tech/GAME_MASTER/PokeStats -->
+  <!-- tech/GAME_MASTER/pokestats -->
   <ItemGroup>
     <FixIntermediateFile Include="tech\GAME_MASTER\pokestats\index.xsl">
       <Visible>true</Visible>
@@ -919,7 +951,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Tools -->
+  <!-- tools -->
   <ItemGroup>
     <FixIntermediateFile Include="tools\index.xsl">
       <Visible>true</Visible>
@@ -934,6 +966,38 @@
       </Dependencies>
       <OutputFileName>index.html</OutputFileName>
     </XslTransform>
+
+    <FixIntermediateFile Include="tools\counters.xsl">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform Include="tools\counters.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>counters.xsl</DependentUpon>
+      <Dependencies>
+        _datafiles\constants.xml;
+        _datafiles\settings.xml;
+        _datafiles\pokestats.gen1.xml;
+        _datafiles\pokestats.gen2.xml;
+        _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\pokestats.gen5.xml;
+        _datafiles\pokestats.gen6.xml;
+        _datafiles\pokestats.gen7.xml;
+        _datafiles\movesets.gen1.xml;
+        _datafiles\movesets.gen2.xml;
+        _datafiles\movesets.gen3.xml;
+        tools\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>counters.html</OutputFileName>
+    </XslTransform>
+    <FixOutputFile Include="tools\counters.js">
+      <DependentUpon>counters.xsl</DependentUpon>
+      <Visible>true</Visible>
+      <Dependencies>
+        js\global.js;
+      </Dependencies>
+    </FixOutputFile>
 
     <FixIntermediateFile Include="tools\counters.xsl">
       <Visible>true</Visible>
@@ -999,7 +1063,7 @@
     </XslTransform>
   </ItemGroup>
 
-  <!-- Resources -->
+  <!-- resources -->
   <ItemGroup>
     <FixIntermediateFile Include="resources\seapokemapfilter.xsl">
       <Visible>true</Visible>

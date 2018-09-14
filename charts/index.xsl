@@ -122,7 +122,7 @@
         <br />
         <hr />
         <h2 id="anchor_fieldresearch">
-          <a href="fieldresearch/">Field Research</a>
+          <a href="research/">Research</a>
           <span class="NOTE TODO">(Beta)</span>
         </h2>
         <div class="INDENT">
