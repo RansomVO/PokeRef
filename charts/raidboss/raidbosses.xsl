@@ -79,7 +79,7 @@
     </tr>
 
     <xsl:apply-templates select="RaidBoss[(@current != $legacy and @tier = $tier) or ($tier = 0 and not(@tier))][1]" mode="Rows">
-      <xsl:sort select="@EX" data-type="text" order="descending" />
+      <xsl:sort select="@EX" data-type="text" order="ascending" />
       <xsl:sort select="@id" data-type="number" order="descending" />
       <xsl:with-param name="Settings" select="$Settings" />
       <xsl:with-param name="legacy" select="$legacy" />

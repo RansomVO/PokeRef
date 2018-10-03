@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ShoppingBoxes last_updated="2018-08-20">
-  <Event date="20 August 2018" note="Johto Festival" />
+<ShoppingBoxes last_updated="2018-09-14">
+  <Event date="13 August 2018" note="Ultra Bonus Event" />
   
   <!-- #region Boxes -->
   <!-- 
@@ -16,8 +16,8 @@
     <Item name="IncubatorSuper" quantity="0" />
     <Item name="LuckyEgg" quantity="0" />
     <Item name="RaidPassPremium" quantity="0" />
-    <Item name="Lure" quantity="0" />
     <Item name="StarPiece" quantity="0" />
+    <Item name="Lure" quantity="0" />
     <Item name="BerryPinap" quantity="0" />
     <Item name="BallUltra" quantity="0" />
 
@@ -30,15 +30,15 @@
     <Item name="BallGreat" quantity="0" />
   </Box>
   <Box type="Special" price="480" box="BoxSpecial" title="">
-    <Item name="Incense" quantity="0" />
-    <Item name="Incubator" quantity="2" />
+    <Item name="Incense" quantity="3" />
+    <Item name="Incubator" quantity="4" />
     <Item name="IncubatorSuper" quantity="0" />
-    <Item name="LuckyEgg" quantity="2" />
-    <Item name="RaidPassPremium" quantity="2" />
+    <Item name="LuckyEgg" quantity="0" />
+    <Item name="RaidPassPremium" quantity="0" />
+    <Item name="StarPiece" quantity="2" />
     <Item name="Lure" quantity="0" />
-    <Item name="BerryPinap" quantity="0" />
-    <Item name="StarPiece" quantity="0" />
-    <Item name="BallUltra" quantity="20" />
+    <Item name="BerryPinap" quantity="10" />
+    <Item name="BallUltra" quantity="0" />
 
     <Item name="ReviveMax" quantity="0" />
     <Item name="PotionMax" quantity="0" />
@@ -49,14 +49,14 @@
     <Item name="BallGreat" quantity="0" />
   </Box>
   <Box type="Great" price="780" box="BoxGreat" title="">
-    <Item name="Incense" quantity="6" />
+    <Item name="Incense" quantity="0" />
     <Item name="Incubator" quantity="0" />
-    <Item name="IncubatorSuper" quantity="4" />
+    <Item name="IncubatorSuper" quantity="6" />
     <Item name="LuckyEgg" quantity="0" />
     <Item name="RaidPassPremium" quantity="4" />
-    <Item name="Lure" quantity="0" />
+    <Item name="StarPiece" quantity="4" />
+    <Item name="Lure" quantity="2" />
     <Item name="BerryPinap" quantity="0" />
-    <Item name="StarPiece" quantity="5" />
     <Item name="BallUltra" quantity="0" />
 
     <Item name="ReviveMax" quantity="0" />
@@ -68,14 +68,14 @@
     <Item name="BallGreat" quantity="0" />
   </Box>
   <Box type="Ultra" price="1480" box="BoxUltra" title="">
-    <Item name="Incense" quantity="12" />
+    <Item name="Incense" quantity="6" />
     <Item name="Incubator" quantity="0" />
     <Item name="IncubatorSuper" quantity="12" />
-    <Item name="LuckyEgg" quantity="8" />
-    <Item name="RaidPassPremium" quantity="12" />
+    <Item name="LuckyEgg" quantity="6" />
+    <Item name="RaidPassPremium" quantity="8" />
+    <Item name="StarPiece" quantity="0" />
     <Item name="Lure" quantity="0" />
     <Item name="BerryPinap" quantity="0" />
-    <Item name="StarPiece" quantity="0" />
     <Item name="BallUltra" quantity="0" />
 
     <Item name="ReviveMax" quantity="0" />

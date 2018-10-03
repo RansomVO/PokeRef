@@ -163,21 +163,21 @@
             </div>
 
             <div class="SECTION">
-              <h2 id="anchor_fieldresearch">
+              <h2 id="anchor_research">
                 <xsl:call-template name="Collapser">
-                  <xsl:with-param name="CollapseeID" select="'HOME_FIELD_RESEARCH'" />
+                  <xsl:with-param name="CollapseeID" select="'HOME_RESEARCH'" />
                 </xsl:call-template>
-                <a href="charts/fieldresearch">Field Research</a>
+                <a href="charts/research">Encounters</a>
                 <span class="NOTE TODO">(Beta)</span>
               </h2>
               <div id="HOME_FIELD_RESEARCH">
                 <p>
                   For Field Research, you perform a Task to get a Reward.
-                  But what Tasks match up with which Rewards?
+                  If the Reward is something like Berries or Crystals, you can see exactly what you'll get.
                 </p>
                 <p>
-                  And sometimes the Reward is an Encounter with a Pokemon.
-                  But what Pokemon may be the reward for the Task?
+                  But sometimes the Reward is an Encounter with a Pokemon.
+                  What Pokemon may be the reward for completing the Task?
                 </p>
                 <p>
                   These charts can help.

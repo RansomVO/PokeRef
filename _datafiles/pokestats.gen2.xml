@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-13" gen="2" region="Johto">
-  <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-26" gen="2" region="Johto">
+  <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="92" defense="122" stamina="90" />
@@ -10,7 +10,7 @@
       <Max cp="801" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="153" name="Bayleef" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="153" name="Bayleef" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" />
     <EvolvesFrom id="152" name="Chikorita" candies="25" />
     <Stats>
@@ -21,7 +21,7 @@
       <Max cp="1296" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="154" name="Meganium" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="154" name="Meganium" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" />
     <EvolvesFrom id="153" name="Bayleef" candies="100" />
     <Stats>

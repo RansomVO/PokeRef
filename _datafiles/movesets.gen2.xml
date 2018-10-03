@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-14" gen="2">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-26" gen="2">
   <Pokemon id="152" name="Chikorita">
     <MoveSet base_dps="16.451612903225808" true_dps="11.397849462365592" comparison="87">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -76,6 +76,14 @@
     <MoveSet base_dps="17.318840579710145" true_dps="19.057971014492754" comparison="81">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="19.245283018867926" true_dps="22.169811320754718" comparison="94">
+      <FastAttack name="Razor Leaf" stab="true" legacy="false" />
+      <ChargedAttack name="Frenzy Plant" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="20.375" true_dps="24.5" comparison="104">
+      <FastAttack name="Vine Whip" stab="true" legacy="false" />
+      <ChargedAttack name="Frenzy Plant" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="155" name="Cyndaquil">

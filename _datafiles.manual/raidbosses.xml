@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RaidBosses category="Current" last_updated="2018-09-13">
+<RaidBosses category="Current" last_updated="2018-09-23">
 
   <!-- #region Tier 1 -->
   <RaidBoss tier="1" id="1" name="Bulbasaur" current="true" />
@@ -11,8 +11,8 @@
   <RaidBoss tier="1" id="11" name="Metapod" />
   <RaidBoss tier="1" id="90" name="Shellder" />
   <RaidBoss tier="1" id="129" name="Magikarp" current="true" />
-  <RaidBoss tier="1" id="138" name="Omanyte" current="true" />
-  <RaidBoss tier="1" id="140" name="Kabuto" current="true" />
+  <RaidBoss tier="1" id="138" name="Omanyte" />
+  <RaidBoss tier="1" id="140" name="Kabuto" />
   <RaidBoss tier="1" id="147" name="Dratini" current="true" />
   <RaidBoss tier="1" id="152" name="Chikorita" />
   <RaidBoss tier="1" id="153" name="Bayleef" />
@@ -71,7 +71,7 @@
   <RaidBoss tier="3" id="65" name="Alakazam" current="true" />
   <RaidBoss tier="3" id="68" name="Machamp" current="true" />
   <RaidBoss tier="3" id="94" name="Gengar" />
-  <RaidBoss tier="3" id="95" name="Onix" current="true" />
+  <RaidBoss tier="3" id="95" name="Onix" />
   <RaidBoss tier="3" id="106" name="Hitmonlee" current="true" />
   <RaidBoss tier="3" id="107" name="Hitmonchan" current="true" />
   <RaidBoss tier="3" id="114" name="Tangela" />
@@ -80,11 +80,11 @@
   <RaidBoss tier="3" id="124" name="Jynx" />
   <RaidBoss tier="3" id="127" name="Pinsir" />
   <RaidBoss tier="3" id="134" name="Vaporeon" />
-  <RaidBoss tier="3" id="135" name="Jolteon" current="true" />
+  <RaidBoss tier="3" id="135" name="Jolteon" />
   <RaidBoss tier="3" id="136" name="Flareon" />
   <RaidBoss tier="3" id="137" name="Porygon" />
   <RaidBoss tier="3" id="139" name="Omastar" />
-  <RaidBoss tier="3" id="142" name="Aerodactyl" current="true" />
+  <RaidBoss tier="3" id="142" name="Aerodactyl" />
   <RaidBoss tier="3" id="184" name="Azumarill" />
   <RaidBoss tier="3" id="210" name="Granbull" />
   <RaidBoss tier="3" id="213" name="Shuckle" />
@@ -121,15 +121,19 @@
   <!-- #endregion Tier 4 -->
 
   <!-- #region Tier 5 -->
-  <RaidBoss tier="5" id="144" name="Articuno" current="true" />
-  <RaidBoss tier="5" id="145" name="Zapdos" current="true" />
-  <RaidBoss tier="5" id="146" name="Moltres" current="true" />
+  <!-- #region EX -->
+  <RaidBoss tier="5" id="386" name="Deoxys" form="Normal" EX="true" current="true" />
+  <!-- #endregion EX -->
+  <RaidBoss tier="5" id="144" name="Articuno" />
+  <RaidBoss tier="5" id="145" name="Zapdos" />
+  <RaidBoss tier="5" id="146" name="Moltres" />
+  <RaidBoss tier="5" id="150" name="Mewtwo" EX="false" current="true" />
   <RaidBoss tier="5" id="243" name="Raikou" />
   <RaidBoss tier="5" id="244" name="Entei" />
   <RaidBoss tier="5" id="245" name="Suicune" />
   <RaidBoss tier="5" id="249" name="Lugia" />
   <RaidBoss tier="5" id="250" name="Ho-Oh" />
-  <RaidBoss tier="5" id="377" name="Regirock" current="true" />
+  <RaidBoss tier="5" id="377" name="Regirock" />
   <RaidBoss tier="5" id="378" name="Regice" />
   <RaidBoss tier="5" id="379" name="Registeel" />
   <RaidBoss tier="5" id="380" name="Latias" />
@@ -139,12 +143,10 @@
   <RaidBoss tier="5" id="384" name="Rayquaza" />
   <!-- #endregion Tier 5 -->
 
-  <!-- #region EX -->
-  <RaidBoss tier="5" id="150" name="Mewtwo" EX="true" current="true" />
-  <!-- #endregion EX -->
-
   <!-- #region ? Future ? -->
   <RaidBoss id="385" name="Jirachi" />
-  <RaidBoss id="386" name="Deoxys" />
+  <RaidBoss tier="5" id="386" name="Deoxys" form="Attack" />
+  <RaidBoss tier="5" id="386" name="Deoxys" form="Defense" />
+  <RaidBoss tier="5" id="386" name="Deoxys" form="Speed" />
   <!-- #endregion ? Future ? -->
 </RaidBosses>

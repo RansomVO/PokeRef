@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-14" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-26" gen="3">
   <Pokemon id="252" name="Treecko">
     <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
       <FastAttack name="Pound" stab="false" legacy="false" />
@@ -3422,29 +3422,107 @@
       <ChargedAttack name="Doom Desire" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="386" name="Deoxys">
-    <MoveSet base_dps="13.684210526315789" true_dps="1.8947368421052631" comparison="88">
+  <Pokemon id="386" name="Deoxys" form="Attack">
+    <MoveSet base_dps="13.684210526315789" true_dps="37.1578947368421" comparison="87">
       <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
       <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.687074829931973" true_dps="2.17687074829932" comparison="100">
+    <MoveSet base_dps="17.687074829931973" true_dps="42.925170068027214" comparison="100">
       <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
       <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.457831325301203" true_dps="1.8072289156626504" comparison="84">
+    <MoveSet base_dps="16.470588235294116" true_dps="39.647058823529413" comparison="93">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Dark Pulse" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.423076923076923" true_dps="35" comparison="82">
+      <FastAttack name="Poison Jab" stab="false" legacy="false" />
+      <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.471337579617835" true_dps="40.191082802547776" comparison="94">
+      <FastAttack name="Poison Jab" stab="false" legacy="false" />
+      <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.021276595744681" true_dps="37.021276595744681" comparison="87">
+      <FastAttack name="Poison Jab" stab="false" legacy="false" />
+      <ChargedAttack name="Dark Pulse" stab="false" legacy="false" />
+    </MoveSet>
+  </Pokemon>
+  <Pokemon id="386" name="Deoxys" form="Defense">
+    <MoveSet base_dps="13.684210526315789" true_dps="13.684210526315789" comparison="87">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.687074829931973" true_dps="15.78231292517007" comparison="100">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.073170731707318" true_dps="15.121951219512196" comparison="96">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Rock Slide" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.95145631067961" true_dps="13.592233009708737" comparison="87">
+      <FastAttack name="Counter" stab="false" legacy="false" />
+      <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="19.220779220779217" true_dps="15.714285714285712" comparison="100">
+      <FastAttack name="Counter" stab="false" legacy="false" />
+      <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.222222222222221" true_dps="14.888888888888889" comparison="95">
+      <FastAttack name="Counter" stab="false" legacy="false" />
+      <ChargedAttack name="Rock Slide" stab="false" legacy="false" />
+    </MoveSet>
+  </Pokemon>
+  <Pokemon id="386" name="Deoxys" form="Normal">
+    <MoveSet base_dps="13.684210526315789" true_dps="31.368421052631579" comparison="85">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.5" true_dps="35.625" comparison="96">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.243243243243242" true_dps="37.229729729729726" comparison="100">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="12.142857142857142" true_dps="25.952380952380953" comparison="70">
+      <FastAttack name="Charge Beam" stab="false" legacy="false" />
+      <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.231884057971012" true_dps="29.710144927536231" comparison="80">
+      <FastAttack name="Charge Beam" stab="false" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.913043478260871" true_dps="32.695652173913047" comparison="88">
+      <FastAttack name="Charge Beam" stab="false" legacy="false" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+    </MoveSet>
+  </Pokemon>
+  <Pokemon id="386" name="Deoxys" form="Speed">
+    <MoveSet base_dps="13.684210526315789" true_dps="21.368421052631579" comparison="87">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.687074829931973" true_dps="24.625850340136054" comparison="100">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.457831325301203" true_dps="20.361445783132528" comparison="83">
       <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
       <ChargedAttack name="Swift" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.95145631067961" true_dps="1.4563106796116503" comparison="67">
-      <FastAttack name="Counter" stab="false" legacy="false" />
+    <MoveSet base_dps="12.142857142857142" true_dps="17.619047619047617" comparison="72">
+      <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Psycho Boost" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="19.220779220779217" true_dps="1.6233766233766231" comparison="75">
-      <FastAttack name="Counter" stab="false" legacy="false" />
+    <MoveSet base_dps="17.192982456140349" true_dps="21.228070175438592" comparison="87">
+      <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.824175824175825" true_dps="1.3186813186813187" comparison="61">
-      <FastAttack name="Counter" stab="false" legacy="false" />
+    <MoveSet base_dps="12.777777777777777" true_dps="15.833333333333332" comparison="65">
+      <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Swift" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
