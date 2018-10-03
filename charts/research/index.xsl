@@ -43,7 +43,7 @@
           </xsl:attribute>
         </link>
 
-        <title>Research</title>
+        <title>Encounters</title>
 
         <style>
           li {
@@ -54,21 +54,19 @@
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          Research <span class="NOTE TODO">(Beta)</span>
+          Encounters <span class="NOTE TODO">(Under Construction/Beta)</span>
         </h1>
         <div class="INDENT">
           <p>
-            <span class="TODO QZX">TODO QZX: stuff</span>
+            <span class="TODO QZX">TODO: Description</span>
           </p>
         </div>
 
         <br />
-        Make this hr a thick one.
         <hr />
         <xsl:apply-templates select="SpecialResearch" />
 
         <br />
-        Make this hr a thick one.
         <hr />
         <xsl:apply-templates select="FieldResearch" />
 
@@ -88,15 +86,14 @@
     </h2>
     <div id="SPECIAL_RESEARCH" class="INDENT">
       <p>
-        <span class="TODO QZX">TODO QZX: stuff</span>
+        <span class="TODO QZX">TODO: Description</span>
       </p>
       <xsl:for-each select="Event">
         <a>
           <xsl:attribute name="href">
-            <xsl:value-of select="@name.html" />
+            <xsl:value-of select="concat(pokeref:Replace(pokeref:ToLower(@name), ' ', '_'), '.html')" />
           </xsl:attribute>
           <xsl:value-of select="@name"/>
-          (TODO QZX: Fix this link)
         </a>
         <br />
       </xsl:for-each>

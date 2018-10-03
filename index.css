@@ -49,13 +49,37 @@ h1, h2, h3, h4 {
     margin-left: 0;
 }
 
+.SECTION_BORDER {
+    border-width: 2px;
+    border-color: gray;
+    clear: both;
+}
+
+.BOTTOM_BORDER {
+    border-width: 2px;
+    border-color: darkgray;
+    clear: both;
+}
+
 .DIV_HIDDEN {
     display: none;
 }
 
+.BUTTON {
+    display: inline-block;
+    font-size: smaller;
+    padding-left: .25em;
+    padding-right: .25em;
+    cursor: context-menu;
+}
+
+    .BUTTON:hover {
+        color: white;
+        background-color: silver;
+    }
 /*#endregion*/
 
-/*#region Classes that affect text size, style, color, etc. */
+/*#region Classes that affect text (size, style, color, etc.) */
 .TODO {
     font-size: larger;
     font-weight: bold;
@@ -80,19 +104,6 @@ h1, h2, h3, h4 {
 .UNRELEASED {
     color: gray;
 }
-
-.BUTTON {
-    display: inline-block;
-    font-size: smaller;
-    padding-left: .25em;
-    padding-right: .25em;
-    cursor: context-menu;
-}
-
-    .BUTTON:hover {
-        color: white;
-        background-color: silver;
-    }
 
 .NUMERIC {
     text-align: right;
@@ -346,15 +357,6 @@ h1, h2, h3, h4 {
 .IMAGE_HALF_WIDTH {
     width: 50%;
     max-width: 256px;
-}
-
-/*#endregion*/
-
-/*#region Classes that are leveraged for outputting content general to all pages. (E.G. Footer) */
-.BOTTOM_BORDER {
-    border-width: 2px;
-    border-color: darkgray;
-    clear: both;
 }
 
 /*#endregion*/

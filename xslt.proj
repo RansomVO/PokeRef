@@ -662,7 +662,7 @@
     <FixIntermediateFile Include="charts\research\special.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
-    <XslTransform Include="charts\research\mythical_discovery.html.xml">
+    <XslTransform Include="charts\research\a_mythical_discovery.html.xml">
       <Visible>true</Visible>
       <DependentUpon>special.xsl</DependentUpon>
       <Dependencies>
@@ -674,9 +674,9 @@
         charts\index.css;
         index.css;
       </Dependencies>
-      <OutputFileName>mythical_discovery.html</OutputFileName>
+      <OutputFileName>a_mythical_discovery.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\research\ripple_in_time.html.xml">
+    <XslTransform Include="charts\research\a_ripple_in_time.html.xml">
       <Visible>true</Visible>
       <DependentUpon>special.xsl</DependentUpon>
       <Dependencies>
@@ -688,7 +688,7 @@
         charts\index.css;
         index.css;
       </Dependencies>
-      <OutputFileName>ripple_in_time.html</OutputFileName>
+      <OutputFileName>a_ripple_in_time.html</OutputFileName>
     </XslTransform>
 
   </ItemGroup>

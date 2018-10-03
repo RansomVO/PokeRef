@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PokemonAvailability last_updated="2018-09-13">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PokemonAvailability last_updated="2018-10-02">
   <Pokemon id="0" name="Dummy to make index line up." />
   <!-- #region Gen1 -->
   <Pokemon id="1" name="Bulbasaur" date="2016-07-30" availability="General" shiny="true" />
@@ -147,7 +147,7 @@
   <Pokemon id="95" name="Onix" date="2016-07-30" availability="General" />
   <Pokemon id="96" name="Drowzee" date="2016-07-30" availability="General" />
   <Pokemon id="97" name="Hypno" date="2016-07-30" availability="General" />
-  <Pokemon id="98" name="Krabby" date="2016-07-30" availability="General" />
+  <Pokemon id="98" name="Krabby" date="2016-07-30" availability="General" shiny="true" />
   <Pokemon id="99" name="Kingler" date="2016-07-30" availability="General" />
   <Pokemon id="100" name="Voltorb" date="2016-07-30" availability="General" />
   <Pokemon id="101" name="Electrode" date="2016-07-30" availability="General" />
@@ -205,13 +205,13 @@
   <Pokemon id="147" name="Dratini" date="2016-07-30" availability="General" shiny="true" />
   <Pokemon id="148" name="Dragonair" date="2016-07-30" availability="General" shiny="true" />
   <Pokemon id="149" name="Dragonite" date="2016-07-30" availability="General" shiny="true" />
-  <Pokemon id="150" name="Mewtwo" date="2017-08-13" availability="EX Raid Boss Only" rarity="Legendary" />
+  <Pokemon id="150" name="Mewtwo" date="2017-08-13" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="151" name="Mew" date="2018-03-30" availability="Research Encounter Only" rarity="Mythic" />
   <!-- #endregion Gen1 -->
   <!-- #region Gen2 -->
-  <Pokemon id="152" name="Chikorita" date="2017-02-16" availability="General" />
-  <Pokemon id="153" name="Bayleef" date="2017-02-16" availability="General" />
-  <Pokemon id="154" name="Meganium" date="2017-02-16" availability="General" />
+  <Pokemon id="152" name="Chikorita" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="153" name="Bayleef" date="2017-02-16" availability="General" shiny="true" />
+  <Pokemon id="154" name="Meganium" date="2017-02-16" availability="General" shiny="true" />
   <Pokemon id="155" name="Cyndaquil" date="2017-02-16" availability="General" />
   <Pokemon id="156" name="Quilava" date="2017-02-16" availability="General" />
   <Pokemon id="157" name="Typhlosion" date="2017-02-16" availability="General" />
@@ -488,11 +488,11 @@
   <Pokemon id="383" name="Groudon" date="2018-01-23" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="384" name="Rayquaza" date="2018-01-23" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="385" name="Jirachi" availability="Unreleased" rarity="Mythic" />
-  <Pokemon id="386" name="Deoxys" availability="Unreleased" rarity="Mythic">
+  <Pokemon id="386" name="Deoxys" date="2018-09-26" availability="EX Raid Boss Only" rarity="Mythic">
     <Form name="Normal" />
-    <Form name="Attack" availability="Unreleased" rarity="Mythic" />
-    <Form name="Defense" availability="Unreleased" rarity="Mythic" />
-    <Form name="Speed" availability="Unreleased" rarity="Mythic" />
+    <Form name="Attack" date="2018-09-26" availability="EX Raid Boss Only" rarity="Mythic" />
+    <Form name="Defense" date="2018-09-26" availability="EX Raid Boss Only" rarity="Mythic" />
+    <Form name="Speed" date="2018-09-26" availability="EX Raid Boss Only" rarity="Mythic" />
   </Pokemon>
   <!-- #endregion Gen3 -->
   <!-- #region Gen4 -->

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-26" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-02" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -1348,7 +1348,7 @@
       <Max cp="2048" hp="146" />
     </Stats>
   </Pokemon>
-  <Pokemon id="98" name="Krabby" family="Krabby" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="98" name="Krabby" family="Krabby" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="181" defense="156" stamina="60" />
@@ -1930,7 +1930,7 @@
       <Max cp="3581" hp="155" />
     </Stats>
   </Pokemon>
-  <Pokemon id="150" name="Mewtwo" family="Mewtwo" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="EX Raid Boss Only">
+  <Pokemon id="150" name="Mewtwo" family="Mewtwo" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="300" defense="182" stamina="193" />
