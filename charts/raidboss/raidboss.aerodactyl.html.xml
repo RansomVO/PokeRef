@@ -3,6 +3,7 @@
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Images SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Settings SYSTEM "/_datafiles.manual/infrequent/images.xml">
+  <!ENTITY PokeStats SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY RaidBoss SYSTEM "/_datafiles/raidboss/raidboss.aerodactyl.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="raidboss.xsl" output="raidboss.aerodactyl.html"?>
@@ -10,5 +11,6 @@
   &Constants; 
   &Settings;
   &Images;
+  &PokeStats;
   &RaidBoss;
 </Root> 

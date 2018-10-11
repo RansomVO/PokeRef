@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PokemonUnreleased last_updated="2018-08-13">
+<PokemonUnreleased last_updated="2018-10-05">
   <!-- #region Gen4 -->
   <Pokemon id="387" name="Turtwig" family="Turtwig">
     <Type primary="Grass" />
@@ -94,6 +94,15 @@
   <Pokemon id="412" name="Burmy" family="Burmy">
     <Type primary="Bug" />
   </Pokemon>
+  <Pokemon id="412" name="Burmy" form="Plant" family="Burmy">
+    <Type primary="Bug" />
+  </Pokemon>
+  <Pokemon id="412" name="Burmy" form="Sandy" family="Burmy">
+    <Type primary="Bug" />
+  </Pokemon>
+  <Pokemon id="412" name="Burmy" form="Trash" family="Burmy">
+    <Type primary="Bug" />
+  </Pokemon>
   <Pokemon id="413" name="Wormadam" family="Burmy">
     <Type primary="Bug" secondary="Grass" />
     <EvolvesFrom id="412" name="Burmy" />
@@ -138,10 +147,32 @@
     <Type primary="Grass" />
     <EvolvesFrom id="420" name="Cherubi" />
   </Pokemon>
+  <Pokemon id="421" name="Cherrim" form="Overcast" family="Cherubi">
+    <Type primary="Grass" />
+    <EvolvesFrom id="420" name="Cherubi" />
+  </Pokemon>
+  <Pokemon id="421" name="Cherrim" form="Sunshine" family="Cherubi">
+    <Type primary="Grass" />
+    <EvolvesFrom id="420" name="Cherubi" />
+  </Pokemon>
   <Pokemon id="422" name="Shellos" family="Shellos">
     <Type primary="Water" />
   </Pokemon>
+  <Pokemon id="422" name="Shellos" form="East Sea" family="Shellos">
+    <Type primary="Water" />
+  </Pokemon>
+  <Pokemon id="422" name="Shellos" form="West Sea" family="Shellos">
+    <Type primary="Water" />
+  </Pokemon>
   <Pokemon id="423" name="Gastrodon" family="Shellos">
+    <Type primary="Water" secondary="Ground" />
+    <EvolvesFrom id="422" name="Shellos" />
+  </Pokemon>
+  <Pokemon id="423" name="Gastrodon" form="East Sea" family="Shellos">
+    <Type primary="Water" secondary="Ground" />
+    <EvolvesFrom id="422" name="Shellos" />
+  </Pokemon>
+  <Pokemon id="423" name="Gastrodon" form="West Sea" family="Shellos">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="422" name="Shellos" />
   </Pokemon>
@@ -388,6 +419,12 @@
   <Pokemon id="487" name="Giratina" family="Giratina">
     <Type primary="Ghost" secondary="Dragon" />
   </Pokemon>
+  <Pokemon id="487" name="Giratina" form="Origin" family="Giratina">
+    <Type primary="Ghost" secondary="Dragon" />
+  </Pokemon>
+  <Pokemon id="487" name="Giratina" form="Altered" family="Giratina">
+    <Type primary="Ghost" secondary="Dragon" />
+  </Pokemon>
   <Pokemon id="488" name="Cresselia" family="Cresselia">
     <Type primary="Psychic" />
   </Pokemon>
@@ -409,11 +446,65 @@
   <Pokemon id="492" name="Shaymin" form="Sky" family="Shaymin">
     <Type primary="Grass" secondary="Flying" />
   </Pokemon>
-  <!-- #endregion Gen4 -->
-  <!-- #region Gen5 -->
   <Pokemon id="493" name="Arceus" family="Arceus">
     <Type primary="Normal" />
   </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Normal" family="Arceus">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Bug" family="Arceus">
+    <Type primary="Bug" />
+  </Pokemon>
+    <Pokemon id="493" name="Arceus" form="Dark" family="Arceus">
+    <Type primary="Dark" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Dragon" family="Arceus">
+    <Type primary="Dragon" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Electric" family="Arceus">
+    <Type primary="Electric" />
+  </Pokemon>
+    <Pokemon id="493" name="Arceus" form="Fairy" family="Arceus">
+    <Type primary="Fairy" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Fighting" family="Arceus">
+    <Type primary="Fighting" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Fire" family="Arceus">
+    <Type primary="Fire" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Flying" family="Arceus">
+    <Type primary="Flying" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Ghost" family="Arceus">
+    <Type primary="Ghost" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Grass" family="Arceus">
+    <Type primary="Grass" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Ice" family="Arceus">
+    <Type primary="Ice" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Poison" family="Arceus">
+    <Type primary="Poison" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Psychic" family="Arceus">
+    <Type primary="Psychic" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Rock" family="Arceus">
+    <Type primary="Rock" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Steel" family="Arceus">
+    <Type primary="Steel" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Water" family="Arceus">
+    <Type primary="Water" />
+  </Pokemon>
+  <Pokemon id="493" name="Arceus" form="Unknown" family="Arceus">
+    <Type primary="Unknown" />
+  </Pokemon>
+  <!-- #endregion Gen4 -->
+  <!-- #region Gen5 -->
   <Pokemon id="494" name="Victini" family="Victini">
     <Type primary="Psychic" secondary="Fire" />
   </Pokemon>
@@ -614,6 +705,12 @@
   <Pokemon id="550" name="Basculin" family="Basculin">
     <Type primary="Water" />
   </Pokemon>
+  <Pokemon id="550" name="Basculin" form="Blue-Striped" family="Basculin">
+    <Type primary="Water" />
+  </Pokemon>
+  <Pokemon id="550" name="Basculin" form="Red-Striped" family="Basculin">
+    <Type primary="Water" />
+  </Pokemon>
   <Pokemon id="551" name="Sandile" family="Sandile">
     <Type primary="Ground" secondary="Dark" />
   </Pokemon>
@@ -630,6 +727,14 @@
   </Pokemon>
   <Pokemon id="555" name="Darmanitan" family="Drumaka">
     <Type primary="Fire" />
+    <EvolvesFrom id="554" name="Drumaka" />
+  </Pokemon>
+  <Pokemon id="555" name="Darmanitan" form="Standard" family="Drumaka">
+    <Type primary="Standard" />
+    <EvolvesFrom id="554" name="Drumaka" />
+  </Pokemon>
+  <Pokemon id="555" name="Darmanitan" form="Zen" family="Drumaka">
+    <Type primary="Fire" secondary="Psychic" />
     <EvolvesFrom id="554" name="Drumaka" />
   </Pokemon>
   <Pokemon id="556" name="Maractus" family="Maractus">
@@ -737,9 +842,33 @@
   <Pokemon id="585" name="Deerling" family="Deerling">
     <Type primary="Normal" secondary="Grass" />
   </Pokemon>
+  <Pokemon id="585" name="Deerling" form="Spring" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="585" name="Deerling" form="Summer" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="585" name="Deerling" form="Autumn" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="585" name="Deerling" form="Winter" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
+  </Pokemon>
   <Pokemon id="586" name="Sawsbuck" family="Deerling">
     <Type primary="Normal" secondary="Grass" />
     <EvolvesFrom id="585" name="Deerling" />
+  </Pokemon>
+  <Pokemon id="586" name="Sawsbuck" form="Spring" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="586" name="Sawsbuck" form="Summer" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="586" name="Sawsbuck" form="Autumn" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="586" name="Sawsbuck" form="Winter" family="Deerling">
+    <Type primary="Normal" secondary="Grass" />
   </Pokemon>
   <Pokemon id="587" name="Emolga" family="Emolga">
     <Type primary="Electric" secondary="Flying" />
@@ -930,8 +1059,20 @@
   <Pokemon id="641" name="Tornadus" family="Tornadus">
     <Type primary="Flying" />
   </Pokemon>
+  <Pokemon id="641" name="Tornadus" form="Incarnate" family="Tornadus">
+    <Type primary="Flying" />
+  </Pokemon>
+  <Pokemon id="641" name="Tornadus" form="Therian" family="Tornadus">
+    <Type primary="Flying" />
+  </Pokemon>
   <Pokemon id="642" name="Thundurus" family="Thundurus">
     <Type primary="Electric" secondary="Flying" />
+  </Pokemon>
+  <Pokemon id="642" name="Thundurus" form="Incarnate" family="Tornadus">
+    <Type primary="Electric" />
+  </Pokemon>
+  <Pokemon id="642" name="Thundurus" form="Therian" family="Tornadus">
+    <Type primary="Electric" />
   </Pokemon>
   <Pokemon id="643" name="Reshiram" family="Reshiram">
     <Type primary="Dragon" secondary="Fire" />
@@ -942,10 +1083,28 @@
   <Pokemon id="645" name="Landorus" family="Landorus">
     <Type primary="Ground" secondary="Flying" />
   </Pokemon>
+  <Pokemon id="645" name="Landorus" form="Incarnate" family="Tornadus">
+    <Type primary="Ground" />
+  </Pokemon>
+  <Pokemon id="645" name="Landorus" form="Therian" family="Tornadus">
+    <Type primary="Ground" />
+  </Pokemon>
   <Pokemon id="646" name="Kyurem" family="Kyurem">
     <Type primary="Dragon" secondary="Ice" />
   </Pokemon>
+  <Pokemon id="646" name="Kyurem" form="White" family="Kyurem">
+    <Type primary="Dragon" secondary="Ice" />
+  </Pokemon>
+  <Pokemon id="646" name="Kyurem" form="Black" family="Kyurem">
+    <Type primary="Dragon" secondary="Ice" />
+  </Pokemon>
   <Pokemon id="647" name="Keldeo" family="Keldeo">
+    <Type primary="Water" secondary="Fighting" />
+  </Pokemon>
+  <Pokemon id="647" name="Keldeo" form="Ordinary" family="Keldeo">
+    <Type primary="Water" secondary="Fighting" />
+  </Pokemon>
+  <Pokemon id="647" name="Keldeo" form="Resolute" family="Keldeo">
     <Type primary="Water" secondary="Fighting" />
   </Pokemon>
   <Pokemon id="648" name="Meloetta" family="Meloetta">
@@ -960,6 +1119,23 @@
   <Pokemon id="649" name="Genesect" family="Genesect">
     <Type primary="Bug" secondary="Steel" />
   </Pokemon>
+  <Pokemon id="649" name="Genesect" form="Normal" family="Genesect">
+    <Type primary="Bug" secondary="Steel" />
+  </Pokemon>
+  <Pokemon id="649" name="Genesect" form="Burn" family="Genesect">
+    <Type primary="Bug" secondary="Steel" />
+  </Pokemon>
+  <Pokemon id="649" name="Genesect" form="Douse" family="Genesect">
+    <Type primary="Bug" secondary="Steel" />
+  </Pokemon>
+  <Pokemon id="649" name="Genesect" form="Shock" family="Genesect">
+    <Type primary="Bug" secondary="Steel" />
+  </Pokemon>
+  <Pokemon id="649" name="Genesect" form="Chill" family="Genesect">
+    <Type primary="Bug" secondary="Steel" />
+  </Pokemon>
+  <!-- #endregion Gen5 -->
+  <!-- #region Gen6 -->
   <Pokemon id="650" name="Chespin" family="Chespin">
     <Type primary="Grass" />
   </Pokemon>
@@ -993,6 +1169,14 @@
     <Type primary="Water" secondary="Dark" />
     <EvolvesFrom id="657" name="Frogadier" />
   </Pokemon>
+  <Pokemon id="658" name="Greninja" form="Normal" family="Froakie">
+    <Type primary="Water" secondary="Dark" />
+    <EvolvesFrom id="657" name="Frogadier" />
+  </Pokemon>
+  <Pokemon id="658" name="Greninja" form="Ash" family="Froakie">
+    <Type primary="Water" secondary="Dark" />
+    <EvolvesFrom id="657" name="Frogadier" />
+  </Pokemon>
   <Pokemon id="659" name="Bunnelby" family="Bunnelby">
     <Type primary="Normal" />
   </Pokemon>
@@ -1022,6 +1206,86 @@
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="665" name="Vivillon" />
   </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Archipelago" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Continental" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Elegant" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Garden" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="High Plains" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Icy Snow" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Jungle" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Marine" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Meadow" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Modern" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Monsoon" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Ocean" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Polar" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="River" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Sandstorm" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Savanna" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Sun" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Tundra" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Poké Ball" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
+  <Pokemon id="666" name="Vivillon" form="Fancy" family="Scatterbug">
+    <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="665" name="Vivillon" />
+  </Pokemon>
   <Pokemon id="667" name="Litleo" family="Litleo">
     <Type primary="Fire" secondary="Normal" />
   </Pokemon>
@@ -1032,26 +1296,70 @@
   <Pokemon id="669" name="Flabébé" family="Flabébé">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé" form="Red" family="Flabébé">
+  <Pokemon id="669" name="Flabébé" form="Red Flower" family="Flabébé">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé" form="Yellow" family="Flabébé">
+  <Pokemon id="669" name="Flabébé" form="Orange Flower" family="Flabébé">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé" form="Orange" family="Flabébé">
+  <Pokemon id="669" name="Flabébé" form="Yellow Flower" family="Flabébé">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé" form="Blue" family="Flabébé">
+  <Pokemon id="669" name="Flabébé" form="Blue Flower" family="Flabébé">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé" form="White" family="Flabébé">
+  <Pokemon id="669" name="Flabébé" form="White Flower" family="Flabébé">
     <Type primary="Fairy" />
   </Pokemon>
   <Pokemon id="670" name="Floette" family="Flabébé">
     <Type primary="Fairy" />
     <EvolvesFrom id="669" name="Flabébé" />
   </Pokemon>
+  <Pokemon id="670" name="Floette" form="Red Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="669" name="Flabébé" />
+  </Pokemon>
+  <Pokemon id="670" name="Floette" form="Orange Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="669" name="Flabébé" />
+  </Pokemon>
+  <Pokemon id="670" name="Floette" form="Yellow Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="669" name="Flabébé" />
+  </Pokemon>
+  <Pokemon id="670" name="Floette" form="Blue Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="669" name="Flabébé" />
+  </Pokemon>
+  <Pokemon id="670" name="Floette" form="White Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="669" name="Flabébé" />
+  </Pokemon>
+  <Pokemon id="670" name="Floette" form="Eternal Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="669" name="Flabébé" />
+  </Pokemon>
   <Pokemon id="671" name="Florges" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="670" name="Floette" />
+  </Pokemon>
+  <Pokemon id="671" name="Florges" form="Red Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="670" name="Floette" />
+  </Pokemon>
+  <Pokemon id="671" name="Florges" form="Orange Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="670" name="Floette" />
+  </Pokemon>
+  <Pokemon id="671" name="Florges" form="Yellow Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="670" name="Floette" />
+  </Pokemon>
+  <Pokemon id="671" name="Florges" form="Blue Flower" family="Flabébé">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="670" name="Floette" />
+  </Pokemon>
+  <Pokemon id="671" name="Florges" form="White Flower" family="Flabébé">
     <Type primary="Fairy" />
     <EvolvesFrom id="670" name="Floette" />
   </Pokemon>
@@ -1072,6 +1380,36 @@
   <Pokemon id="676" name="Furfrou" family="Furfrou">
     <Type primary="Normal" />
   </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Natural" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Dandy" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Debutante" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Diamond" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Heart" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Kabuki" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="La Reine" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Matron" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Pharaoh" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
+  <Pokemon id="676" name="Furfrou" form="Star" family="Furfrou">
+    <Type primary="Normal" />
+  </Pokemon>
   <Pokemon id="677" name="Espurr" family="Espurr">
     <Type primary="Psychic" />
   </Pokemon>
@@ -1087,6 +1425,14 @@
     <EvolvesFrom id="679" name="Honedge" />
   </Pokemon>
   <Pokemon id="681" name="Aegislash" family="Honedge">
+    <Type primary="Steel" secondary="Ghost" />
+    <EvolvesFrom id="680" name="Doublade" />
+  </Pokemon>
+  <Pokemon id="681" name="Aegislash" form="Blade" family="Honedge">
+    <Type primary="Steel" secondary="Ghost" />
+    <EvolvesFrom id="680" name="Doublade" />
+  </Pokemon>
+  <Pokemon id="681" name="Aegislash" form="Shield" family="Honedge">
     <Type primary="Steel" secondary="Ghost" />
     <EvolvesFrom id="680" name="Doublade" />
   </Pokemon>
@@ -1135,8 +1481,6 @@
   <Pokemon id="694" name="Helioptile" family="Helioptile">
     <Type primary="Electric" secondary="Normal" />
   </Pokemon>
-  <!-- #endregion Gen5 -->
-  <!-- #region Gen6 -->
   <Pokemon id="695" name="Heliolisk" family="Helioptile">
     <Type primary="Electric" secondary="Normal" />
     <EvolvesFrom id="694" name="Helioptile" />
@@ -1192,7 +1536,35 @@
   <Pokemon id="710" name="Pumpkaboo" family="Pumpkaboo">
     <Type primary="Ghost" secondary="Grass" />
   </Pokemon>
+  <Pokemon id="710" name="Pumpkaboo" form="Small Size" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="710" name="Pumpkaboo" form="Average Size" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="710" name="Pumpkaboo" form="Large Size" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+  </Pokemon>
+  <Pokemon id="710" name="Pumpkaboo" form="Super Size" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+  </Pokemon>
   <Pokemon id="711" name="Gourgeist" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+    <EvolvesFrom id="710" name="Pumpkaboo" />
+  </Pokemon>
+  <Pokemon id="711" name="Gourgeist" form="Small Size" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+    <EvolvesFrom id="710" name="Pumpkaboo" />
+  </Pokemon>
+  <Pokemon id="711" name="Gourgeist" form="Average Size" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+    <EvolvesFrom id="710" name="Pumpkaboo" />
+  </Pokemon>
+  <Pokemon id="711" name="Gourgeist" form="Large Size" family="Pumpkaboo">
+    <Type primary="Ghost" secondary="Grass" />
+    <EvolvesFrom id="710" name="Pumpkaboo" />
+  </Pokemon>
+  <Pokemon id="711" name="Gourgeist" form="Super Size" family="Pumpkaboo">
     <Type primary="Ghost" secondary="Grass" />
     <EvolvesFrom id="710" name="Pumpkaboo" />
   </Pokemon>
@@ -1213,10 +1585,25 @@
   <Pokemon id="716" name="Xerneas" family="Xerneas">
     <Type primary="Fairy" />
   </Pokemon>
+  <Pokemon id="716" name="Xerneas" form="Active" family="Xerneas">
+    <Type primary="Fairy" />
+  </Pokemon>
+  <Pokemon id="716" name="Xerneas" form="Neutral" family="Xerneas">
+    <Type primary="Fairy" />
+  </Pokemon>
   <Pokemon id="717" name="Yveltal" family="Yveltal">
     <Type primary="Dark" secondary="Flying" />
   </Pokemon>
   <Pokemon id="718" name="Zygarde" family="Zygarde">
+    <Type primary="Dragon" secondary="Ground" />
+  </Pokemon>
+  <Pokemon id="718" name="Zygarde" form="10%" family="Zygarde">
+    <Type primary="Dragon" secondary="Ground" />
+  </Pokemon>
+  <Pokemon id="718" name="Zygarde" form="50%" family="Zygarde">
+    <Type primary="Dragon" secondary="Ground" />
+  </Pokemon>
+  <Pokemon id="718" name="Zygarde" form="Complete" family="Zygarde">
     <Type primary="Dragon" secondary="Ground" />
   </Pokemon>
   <Pokemon id="719" name="Diancie" family="Diancie">
@@ -1306,9 +1693,6 @@
     <EvolvesFrom id="739" name="Grabrawler" />
   </Pokemon>
   <Pokemon id="741" name="Oricorio" family="Oricorio">
-    <Type primary="Flying" />
-  </Pokemon>
-  <Pokemon id="741" name="Oricorio" form="Normal" family="Oricorio">
     <Type primary="Flying" />
   </Pokemon>
   <Pokemon id="741" name="Oricorio" form="Baile" family="Oricorio">
@@ -1451,6 +1835,78 @@
     <Type primary="Normal" />
     <EvolvesFrom id="772" name="Type: Null" />
   </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Normal" family="Type: Null">
+    <Type primary="Normal" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Bug" family="Type: Null">
+    <Type primary="Bug" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Dark" family="Type: Null">
+    <Type primary="Dark" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Dragon" family="Type: Null">
+    <Type primary="Dragon" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Electric" family="Type: Null">
+    <Type primary="Electric" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Fairy" family="Type: Null">
+    <Type primary="Fairy" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Fighting" family="Type: Null">
+    <Type primary="Fighting" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Fire" family="Type: Null">
+    <Type primary="Fire" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Flying" family="Type: Null">
+    <Type primary="Flying" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Ghost" family="Type: Null">
+    <Type primary="Ghost" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Grass" family="Type: Null">
+    <Type primary="Grass" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Ground" family="Type: Null">
+    <Type primary="Ground" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Ice" family="Type: Null">
+    <Type primary="Ice" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Poison" family="Type: Null">
+    <Type primary="Poison" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Psychic" family="Type: Null">
+    <Type primary="Psychic" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Rock" family="Type: Null">
+    <Type primary="Rock" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Steel" family="Type: Null">
+    <Type primary="Steel" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Water" family="Type: Null">
+    <Type primary="Water" />
+  <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
   <Pokemon id="774" name="Minior" family="Minior">
     <Type primary="Rock" secondary="Flying" />
   </Pokemon>
@@ -1470,6 +1926,12 @@
     <Type primary="Electric" secondary="Steel" />
   </Pokemon>
   <Pokemon id="778" name="Mimikyu" family="Mimikyu">
+    <Type primary="Ghost" secondary="Fairy" />
+  </Pokemon>
+  <Pokemon id="778" name="Mimikyu" form="Disguised" family="Mimikyu">
+    <Type primary="Ghost" secondary="Fairy" />
+  </Pokemon>
+  <Pokemon id="778" name="Mimikyu" form="Busted" family="Mimikyu">
     <Type primary="Ghost" secondary="Fairy" />
   </Pokemon>
   <Pokemon id="779" name="Bruxish" family="Bruxish">

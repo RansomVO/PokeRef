@@ -223,6 +223,11 @@
                 <input type="checkbox" /><b>pokemon.availability.xml</b>
                 <br />Can be Ditto: <a href="https://p337.info/pokemongo/pokedex/?show=ditto&sort=id">https://p337.info/pokemongo/pokedex/?show=ditto&sort=id</a>
                 <br />Shiny: <a href="https://p337.info/pokemongo/pokedex/?show=shiny">https://p337.info/pokemongo/pokedex/?show=shiny</a>
+                <br />Images
+                <ul>
+                    <li><a href="http://pokemongo.wikia.com/wiki/List_of_Pok%C3%A9mon">Pokemon Go Wikia (List of Pokemon)</a></li>
+                    <li><a href="http://pokemongo.wikia.com/wiki/Category:Pok%C3%A9mon_sprites">Pokemon Go Wikia (Pokemon Sprites)</a></li>
+                </ul>
             </li>
             <li>
                 <input type="checkbox" /><b>pokemon.unreleased.xml</b>
@@ -253,7 +258,55 @@
     <div id="WORK_IN_PROGRESS" class="INDENT">
         <ul>
             <li>
-                Bug	Dark	Dragon	Electric	Fairy	Fighting	Fire	Flying	Ghost	Grass	Ground	Ice	Normal	Poison	Psychic	Rock	Steel	Water
+                Add PokeStats.xml files to RaidBoss and Encounters.
+                (So they are available for Pokemon mode="Sprite" Template )
+            </li>
+            <li>
+                Deal with sprites that are gender specific: <a href="http://pokemongo.wikia.com/wiki/List_of_Pok%C3%A9mon_gender_differences">http://pokemongo.wikia.com/wiki/List_of_Pok%C3%A9mon_gender_differences</a>
+            </li>
+            <li>
+                Deal with images with special features (hats, etc.)
+                <ul>
+                    <li>
+                        Pichu/Pikachu/Raichu
+                        <ul>
+                            <li>Ash hat</li>
+                            <li>Festive (Santa) hat</li>
+                            <li>Party hat</li>
+                            <li>Summer hat</li>
+                            <li>Witch hat</li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        BulbasaurWartortle/Blastoise
+                        <ul>
+                            <li>sunglasses</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+              <b>Research</b>
+              <ul>
+                <li>
+                  Fix Encounters page so that the look of Key/Criteria better match other pages.
+                  (Font sizes? <hr>, etc.)
+                </li>
+                <li>
+                  Fix broken images. (berries)
+                </li>
+                <li>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+		Add a "last updated" field to each page. (Populated from .xml files it accesses.)
+            </li>
+
+            <li>
+		Remove .css files as build dependencies.
             </li>
 
             <li class="PRIORITY_EXTREME">

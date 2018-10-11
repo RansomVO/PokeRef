@@ -1948,60 +1948,6 @@
      <OutputFileName>raidboss.deoxys.normal.html</OutputFileName>
     </XslTransform>
     <!-- #endregion Deoxys -->
-    <!-- #region Deoxys -->
-    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.attack.xml">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform  Include="charts\raidboss\raidboss.deoxys.attack.html.xml">
-     <Visible>true</Visible>
-     <DependentUpon>raidboss.xsl</DependentUpon>
-     <Dependencies>
-       charts\raidboss\raidboss.js;
-       js\global.js;
-       _datafiles\raidboss\raidboss.deoxys.attack.xml;
-       charts\raidboss\index.css;
-       charts\index.css;
-       index.css;
-     </Dependencies>
-     <OutputFileName>raidboss.deoxys.attack.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion Deoxys -->
-    <!-- #region Deoxys -->
-    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.defense.xml">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform  Include="charts\raidboss\raidboss.deoxys.defense.html.xml">
-     <Visible>true</Visible>
-     <DependentUpon>raidboss.xsl</DependentUpon>
-     <Dependencies>
-       charts\raidboss\raidboss.js;
-       js\global.js;
-       _datafiles\raidboss\raidboss.deoxys.defense.xml;
-       charts\raidboss\index.css;
-       charts\index.css;
-       index.css;
-     </Dependencies>
-     <OutputFileName>raidboss.deoxys.defense.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion Deoxys -->
-    <!-- #region Deoxys -->
-    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.speed.xml">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform  Include="charts\raidboss\raidboss.deoxys.speed.html.xml">
-     <Visible>true</Visible>
-     <DependentUpon>raidboss.xsl</DependentUpon>
-     <Dependencies>
-       charts\raidboss\raidboss.js;
-       js\global.js;
-       _datafiles\raidboss\raidboss.deoxys.speed.xml;
-       charts\raidboss\index.css;
-       charts\index.css;
-       index.css;
-     </Dependencies>
-     <OutputFileName>raidboss.deoxys.speed.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion Deoxys -->
     <!-- #region Articuno -->
     <FixIntermediateFile Include="_datafiles\raidboss\raidboss.articuno.xml">
       <Visible>true</Visible>
@@ -2326,5 +2272,59 @@
      <OutputFileName>raidboss.jirachi.html</OutputFileName>
     </XslTransform>
     <!-- #endregion Jirachi -->
+    <!-- #region Deoxys -->
+    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.attack.xml">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform  Include="charts\raidboss\raidboss.deoxys.attack.html.xml">
+     <Visible>true</Visible>
+     <DependentUpon>raidboss.xsl</DependentUpon>
+     <Dependencies>
+       charts\raidboss\raidboss.js;
+       js\global.js;
+       _datafiles\raidboss\raidboss.deoxys.attack.xml;
+       charts\raidboss\index.css;
+       charts\index.css;
+       index.css;
+     </Dependencies>
+     <OutputFileName>raidboss.deoxys.attack.html</OutputFileName>
+    </XslTransform>
+    <!-- #endregion Deoxys -->
+    <!-- #region Deoxys -->
+    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.defense.xml">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform  Include="charts\raidboss\raidboss.deoxys.defense.html.xml">
+     <Visible>true</Visible>
+     <DependentUpon>raidboss.xsl</DependentUpon>
+     <Dependencies>
+       charts\raidboss\raidboss.js;
+       js\global.js;
+       _datafiles\raidboss\raidboss.deoxys.defense.xml;
+       charts\raidboss\index.css;
+       charts\index.css;
+       index.css;
+     </Dependencies>
+     <OutputFileName>raidboss.deoxys.defense.html</OutputFileName>
+    </XslTransform>
+    <!-- #endregion Deoxys -->
+    <!-- #region Deoxys -->
+    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.speed.xml">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform  Include="charts\raidboss\raidboss.deoxys.speed.html.xml">
+     <Visible>true</Visible>
+     <DependentUpon>raidboss.xsl</DependentUpon>
+     <Dependencies>
+       charts\raidboss\raidboss.js;
+       js\global.js;
+       _datafiles\raidboss\raidboss.deoxys.speed.xml;
+       charts\raidboss\index.css;
+       charts\index.css;
+       index.css;
+     </Dependencies>
+     <OutputFileName>raidboss.deoxys.speed.html</OutputFileName>
+    </XslTransform>
+    <!-- #endregion Deoxys -->
   </ItemGroup>
 </Project>

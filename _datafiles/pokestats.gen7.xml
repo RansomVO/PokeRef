@@ -1,331 +1,406 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-02" gen="7" region="Alola">
-  <Pokemon id="722" name="Rowlet" family="Rowlet" availability="Unreleased">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-05" gen="7" region="Alola">
+  <Pokemon id="722" name="Rowlet" family="Rowlet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png">
     <Type primary="Grass" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="723" name="Dartrix" family="Rowlet" availability="Unreleased">
+  <Pokemon id="723" name="Dartrix" family="Rowlet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png">
     <Type primary="Grass" secondary="Flying" />
     <EvolvesFrom id="722" name="Rowlet" />
   </Pokemon>
-  <Pokemon id="724" name="Decidueye" family="Rowlet" availability="Unreleased">
+  <Pokemon id="724" name="Decidueye" family="Rowlet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png">
     <Type primary="Grass" secondary="Ghost" />
     <EvolvesFrom id="723" name="Dartrix" />
   </Pokemon>
-  <Pokemon id="725" name="Litten" family="Litten" availability="Unreleased">
+  <Pokemon id="725" name="Litten" family="Litten" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png">
     <Type primary="Fire" />
   </Pokemon>
-  <Pokemon id="726" name="Torracat" family="Litten" availability="Unreleased">
+  <Pokemon id="726" name="Torracat" family="Litten" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png">
     <Type primary="Fire" />
     <EvolvesFrom id="725" name="Litten" />
   </Pokemon>
-  <Pokemon id="727" name="Incineroar" family="Litten" availability="Unreleased">
+  <Pokemon id="727" name="Incineroar" family="Litten" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png">
     <Type primary="Fire" secondary="Dark" />
     <EvolvesFrom id="726" name="Torracat" />
   </Pokemon>
-  <Pokemon id="728" name="Popplio" family="Popplio" availability="Unreleased">
+  <Pokemon id="728" name="Popplio" family="Popplio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="729" name="Brionne" family="Popplio" availability="Unreleased">
+  <Pokemon id="729" name="Brionne" family="Popplio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png">
     <Type primary="Water" />
     <EvolvesFrom id="728" name="Popplio" />
   </Pokemon>
-  <Pokemon id="730" name="Primarina" family="Popplio" availability="Unreleased">
+  <Pokemon id="730" name="Primarina" family="Popplio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png">
     <Type primary="Water" secondary="Fairy" />
     <EvolvesFrom id="729" name="Brionne" />
   </Pokemon>
-  <Pokemon id="731" name="Pikipek" family="Pikipek" availability="Unreleased">
+  <Pokemon id="731" name="Pikipek" family="Pikipek" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png">
     <Type primary="Normal" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="732" name="Trumbeak" family="Pikipek" availability="Unreleased">
+  <Pokemon id="732" name="Trumbeak" family="Pikipek" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="731" name="Pikipek" />
   </Pokemon>
-  <Pokemon id="733" name="Toucannon" family="Pikipek" availability="Unreleased">
+  <Pokemon id="733" name="Toucannon" family="Pikipek" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="732" name="Trumbeak" />
   </Pokemon>
-  <Pokemon id="734" name="Yungoos" family="Yungoos" availability="Unreleased">
+  <Pokemon id="734" name="Yungoos" family="Yungoos" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="735" name="Gumshoos" family="Yungoos" availability="Unreleased">
+  <Pokemon id="735" name="Gumshoos" family="Yungoos" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png">
     <Type primary="Normal" />
     <EvolvesFrom id="734" name="Yungoos" />
   </Pokemon>
-  <Pokemon id="736" name="Grubbin" family="Grubbin" availability="Unreleased">
+  <Pokemon id="736" name="Grubbin" family="Grubbin" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png">
     <Type primary="Bug" />
   </Pokemon>
-  <Pokemon id="737" name="Charjabug" family="Grubbin" availability="Unreleased">
+  <Pokemon id="737" name="Charjabug" family="Grubbin" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png">
     <Type primary="Bug" secondary="Electric" />
     <EvolvesFrom id="736" name="Grubbin" />
   </Pokemon>
-  <Pokemon id="738" name="Vikavolt" family="Grubbin" availability="Unreleased">
+  <Pokemon id="738" name="Vikavolt" family="Grubbin" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png">
     <Type primary="Bug" secondary="Electric" />
     <EvolvesFrom id="737" name="Charjabug" />
   </Pokemon>
-  <Pokemon id="739" name="Crabrawler" family="Grabrawler" availability="Unreleased">
+  <Pokemon id="739" name="Crabrawler" family="Grabrawler" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png">
     <Type primary="Fighting" />
   </Pokemon>
-  <Pokemon id="740" name="Crabominable" family="Grabrawler" availability="Unreleased">
+  <Pokemon id="740" name="Crabominable" family="Grabrawler" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png">
     <Type primary="Fighting" secondary="Ice" />
     <EvolvesFrom id="739" name="Grabrawler" />
   </Pokemon>
-  <Pokemon id="741" name="Oricorio" family="Oricorio" availability="Unreleased">
+  <Pokemon id="741" name="Oricorio" family="Oricorio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png">
     <Type primary="Flying" />
   </Pokemon>
-  <Pokemon id="741" name="Oricorio" family="Oricorio" availability="Unreleased">
-    <Type primary="Flying" />
-  </Pokemon>
-  <Pokemon id="741" name="Oricorio" family="Oricorio" availability="Unreleased">
+  <Pokemon id="741" name="Oricorio" form="Baile" family="Oricorio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741-baile.png">
     <Type primary="Fire" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="741" name="Oricorio" family="Oricorio" availability="Unreleased">
+  <Pokemon id="741" name="Oricorio" form="Pom-Pom" family="Oricorio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741-pom-pom.png">
     <Type primary="Electric" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="741" name="Oricorio" family="Oricorio" availability="Unreleased">
+  <Pokemon id="741" name="Oricorio" form="Pa'u" family="Oricorio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741-pau.png">
     <Type primary="Psychic" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="741" name="Oricorio" family="Oricorio" availability="Unreleased">
+  <Pokemon id="741" name="Oricorio" form="Sensu" family="Oricorio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741-sensu.png">
     <Type primary="Ghost" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="742" name="Cutiefly" family="Cutiefly" availability="Unreleased">
+  <Pokemon id="742" name="Cutiefly" family="Cutiefly" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png">
     <Type primary="Bug" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="743" name="Ribombee" family="Cutiefly" availability="Unreleased">
+  <Pokemon id="743" name="Ribombee" family="Cutiefly" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png">
     <Type primary="Bug" secondary="Fairy" />
     <EvolvesFrom id="742" name="Cutiefly" />
   </Pokemon>
-  <Pokemon id="744" name="Rockruff" family="Rockruff" availability="Unreleased">
+  <Pokemon id="744" name="Rockruff" family="Rockruff" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png">
     <Type primary="Rock" />
   </Pokemon>
-  <Pokemon id="745" name="Lycanroc" family="Rockruff" availability="Unreleased">
-    <Type primary="Rock" />
-    <EvolvesFrom id="744" name="Rockruff" />
-  </Pokemon>
-  <Pokemon id="745" name="Lycanroc" family="Rockruff" availability="Unreleased">
+  <Pokemon id="745" name="Lycanroc" family="Rockruff" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png">
     <Type primary="Rock" />
     <EvolvesFrom id="744" name="Rockruff" />
   </Pokemon>
-  <Pokemon id="745" name="Lycanroc" family="Rockruff" availability="Unreleased">
+  <Pokemon id="745" name="Lycanroc" form="Midday" family="Rockruff" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745-midday.png">
     <Type primary="Rock" />
     <EvolvesFrom id="744" name="Rockruff" />
   </Pokemon>
-  <Pokemon id="745" name="Lycanroc" family="Rockruff" availability="Unreleased">
+  <Pokemon id="745" name="Lycanroc" form="Midnight" family="Rockruff" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745-midnight.png">
     <Type primary="Rock" />
     <EvolvesFrom id="744" name="Rockruff" />
   </Pokemon>
-  <Pokemon id="746" name="Wishiwashi" family="Wishiwashi" availability="Unreleased">
+  <Pokemon id="745" name="Lycanroc" form="Dusk" family="Rockruff" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png">
+    <Type primary="Rock" />
+    <EvolvesFrom id="744" name="Rockruff" />
+  </Pokemon>
+  <Pokemon id="746" name="Wishiwashi" family="Wishiwashi" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="746" name="Wishiwashi" family="Wishiwashi" availability="Unreleased">
+  <Pokemon id="746" name="Wishiwashi" form="Solo" family="Wishiwashi" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746-solo.png">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="746" name="Wishiwashi" family="Wishiwashi" availability="Unreleased">
+  <Pokemon id="746" name="Wishiwashi" form="School" family="Wishiwashi" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746-school.png">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="747" name="Mareanie" family="Mareanie" availability="Unreleased">
+  <Pokemon id="747" name="Mareanie" family="Mareanie" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png">
     <Type primary="Poison" secondary="Water" />
   </Pokemon>
-  <Pokemon id="748" name="Toxapex" family="Mareanie" availability="Unreleased">
+  <Pokemon id="748" name="Toxapex" family="Mareanie" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png">
     <Type primary="Poison" secondary="Water" />
     <EvolvesFrom id="747" name="Mareanie" />
   </Pokemon>
-  <Pokemon id="749" name="Mudbray" family="Mudbray" availability="Unreleased">
+  <Pokemon id="749" name="Mudbray" family="Mudbray" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png">
     <Type primary="Ground" />
   </Pokemon>
-  <Pokemon id="750" name="Mudsdale" family="Mudbray" availability="Unreleased">
+  <Pokemon id="750" name="Mudsdale" family="Mudbray" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png">
     <Type primary="Ground" />
     <EvolvesFrom id="749" name="Mudbray" />
   </Pokemon>
-  <Pokemon id="751" name="Dewpider" family="Dewpider" availability="Unreleased">
+  <Pokemon id="751" name="Dewpider" family="Dewpider" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png">
     <Type primary="Water" secondary="Bug" />
   </Pokemon>
-  <Pokemon id="752" name="Araquanid" family="Dewpider" availability="Unreleased">
+  <Pokemon id="752" name="Araquanid" family="Dewpider" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png">
     <Type primary="Water" secondary="Bug" />
     <EvolvesFrom id="751" name="Dewpider" />
   </Pokemon>
-  <Pokemon id="753" name="Fomantis" family="Fomantis" availability="Unreleased">
+  <Pokemon id="753" name="Fomantis" family="Fomantis" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png">
     <Type primary="Grass" />
   </Pokemon>
-  <Pokemon id="754" name="Lurantis" family="Fomantis" availability="Unreleased">
+  <Pokemon id="754" name="Lurantis" family="Fomantis" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png">
     <Type primary="Grass" />
     <EvolvesFrom id="753" name="Fomantis" />
   </Pokemon>
-  <Pokemon id="755" name="Morelull" family="Morelull" availability="Unreleased">
+  <Pokemon id="755" name="Morelull" family="Morelull" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/755.png">
     <Type primary="Grass" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="756" name="Shiinotic" family="Morelull" availability="Unreleased">
+  <Pokemon id="756" name="Shiinotic" family="Morelull" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png">
     <Type primary="Grass" secondary="Fairy" />
     <EvolvesFrom id="755" name="Morelull" />
   </Pokemon>
-  <Pokemon id="757" name="Salandit" family="Salandit" availability="Unreleased">
+  <Pokemon id="757" name="Salandit" family="Salandit" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png">
     <Type primary="Poison" secondary="Fire" />
   </Pokemon>
-  <Pokemon id="758" name="Salazzle" family="Salandit" availability="Unreleased">
+  <Pokemon id="758" name="Salazzle" family="Salandit" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png">
     <Type primary="Poison" secondary="Fire" />
     <EvolvesFrom id="757" name="Salandit" />
   </Pokemon>
-  <Pokemon id="759" name="Stufful" family="Stufful" availability="Unreleased">
+  <Pokemon id="759" name="Stufful" family="Stufful" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png">
     <Type primary="Normal" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="760" name="Bewear" family="Stufful" availability="Unreleased">
+  <Pokemon id="760" name="Bewear" family="Stufful" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png">
     <Type primary="Normal" secondary="Fighting" />
     <EvolvesFrom id="759" name="Stufful" />
   </Pokemon>
-  <Pokemon id="761" name="Bounsweet" family="Bounsweet" availability="Unreleased">
+  <Pokemon id="761" name="Bounsweet" family="Bounsweet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png">
     <Type primary="Grass" />
   </Pokemon>
-  <Pokemon id="762" name="Steenee" family="Bounsweet" availability="Unreleased">
+  <Pokemon id="762" name="Steenee" family="Bounsweet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png">
     <Type primary="Grass" />
     <EvolvesFrom id="761" name="Bounsweet" />
   </Pokemon>
-  <Pokemon id="763" name="Tsareena" family="Bounsweet" availability="Unreleased">
+  <Pokemon id="763" name="Tsareena" family="Bounsweet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png">
     <Type primary="Grass" />
     <EvolvesFrom id="762" name="Steene" />
   </Pokemon>
-  <Pokemon id="764" name="Comfey" family="Comfey" availability="Unreleased">
+  <Pokemon id="764" name="Comfey" family="Comfey" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="765" name="Oranguru" family="Oranguru" availability="Unreleased">
+  <Pokemon id="765" name="Oranguru" family="Oranguru" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png">
     <Type primary="Normal" secondary="Psychic" />
   </Pokemon>
-  <Pokemon id="766" name="Passimian" family="Passimian" availability="Unreleased">
+  <Pokemon id="766" name="Passimian" family="Passimian" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png">
     <Type primary="Fighting" />
   </Pokemon>
-  <Pokemon id="767" name="Wimpod" family="Wimpod" availability="Unreleased">
+  <Pokemon id="767" name="Wimpod" family="Wimpod" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png">
     <Type primary="Bug" secondary="Water" />
   </Pokemon>
-  <Pokemon id="768" name="Golisopod" family="Wimpod" availability="Unreleased">
+  <Pokemon id="768" name="Golisopod" family="Wimpod" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png">
     <Type primary="Bug" secondary="Water" />
     <EvolvesFrom id="767" name="Wimpod" />
   </Pokemon>
-  <Pokemon id="769" name="Sandygast" family="Sandygast" availability="Unreleased">
+  <Pokemon id="769" name="Sandygast" family="Sandygast" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/769.png">
     <Type primary="Ghost" secondary="Ground" />
   </Pokemon>
-  <Pokemon id="770" name="Palossand" family="Sandygast" availability="Unreleased">
+  <Pokemon id="770" name="Palossand" family="Sandygast" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/770.png">
     <Type primary="Ghost" secondary="Ground" />
     <EvolvesFrom id="769" name="Sandygast" />
   </Pokemon>
-  <Pokemon id="771" name="Pyukumuku" family="Pyukumuku" availability="Unreleased">
+  <Pokemon id="771" name="Pyukumuku" family="Pyukumuku" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png">
     <Type primary="Water" />
   </Pokemon>
-  <Pokemon id="772" name="Type: Null" family="Type: Null" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="772" name="Type: Null" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/772.png">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="773" name="Silvally" family="Type: Null" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="773" name="Silvally" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png">
     <Type primary="Normal" />
     <EvolvesFrom id="772" name="Type: Null" />
   </Pokemon>
-  <Pokemon id="774" name="Minior" family="Minior" availability="Unreleased">
+  <Pokemon id="773" name="Silvally" form="Normal" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png">
+    <Type primary="Normal" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Bug" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-bug.png">
+    <Type primary="Bug" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Dark" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-dark.png">
+    <Type primary="Dark" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Dragon" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-dragon.png">
+    <Type primary="Dragon" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Electric" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-electrick.png">
+    <Type primary="Electric" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Fairy" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-fairy.png">
+    <Type primary="Fairy" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Fighting" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-fighting.png">
+    <Type primary="Fighting" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Fire" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-fire.png">
+    <Type primary="Fire" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Flying" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-flying.png">
+    <Type primary="Flying" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Ghost" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-ghost.png">
+    <Type primary="Ghost" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Grass" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-grass.png">
+    <Type primary="Grass" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Ground" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-ground.png">
+    <Type primary="Ground" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Ice" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-ice.png">
+    <Type primary="Ice" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Poison" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-poison.png">
+    <Type primary="Poison" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Psychic" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-psychic.png">
+    <Type primary="Psychic" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Rock" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-rock.png">
+    <Type primary="Rock" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Steel" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-steel.png">
+    <Type primary="Steel" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="773" name="Silvally" form="Water" family="Type: Null" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773-water.png">
+    <Type primary="Water" />
+    <EvolvesFrom id="772" name="Type: Null" />
+  </Pokemon>
+  <Pokemon id="774" name="Minior" family="Minior" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png">
     <Type primary="Rock" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="774" name="Minior" family="Minior" availability="Unreleased">
+  <Pokemon id="774" name="Minior" form="Meteor" family="Minior" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774-red-meteor.png">
     <Type primary="Rock" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="774" name="Minior" family="Minior" availability="Unreleased">
+  <Pokemon id="774" name="Minior" form="Core" family="Minior" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774-red.png">
     <Type primary="Rock" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="775" name="Komala" family="Komala" availability="Unreleased">
+  <Pokemon id="775" name="Komala" family="Komala" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png">
     <Type primary="Normal" />
   </Pokemon>
-  <Pokemon id="776" name="Turtonator" family="Turtonator" availability="Unreleased">
+  <Pokemon id="776" name="Turtonator" family="Turtonator" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png">
     <Type primary="Fire" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="777" name="Togedemaru" family="Togedemaru" availability="Unreleased">
+  <Pokemon id="777" name="Togedemaru" family="Togedemaru" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png">
     <Type primary="Electric" secondary="Steel" />
   </Pokemon>
-  <Pokemon id="778" name="Mimikyu" family="Mimikyu" availability="Unreleased">
+  <Pokemon id="778" name="Mimikyu" family="Mimikyu" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png">
     <Type primary="Ghost" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="779" name="Bruxish" family="Bruxish" availability="Unreleased">
+  <Pokemon id="778" name="Mimikyu" form="Disguised" family="Mimikyu" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778-busted.png">
+    <Type primary="Ghost" secondary="Fairy" />
+  </Pokemon>
+  <Pokemon id="778" name="Mimikyu" form="Busted" family="Mimikyu" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778-disguised.png">
+    <Type primary="Ghost" secondary="Fairy" />
+  </Pokemon>
+  <Pokemon id="779" name="Bruxish" family="Bruxish" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png">
     <Type primary="Water" secondary="Psychic" />
   </Pokemon>
-  <Pokemon id="780" name="Drampa" family="Drampa" availability="Unreleased">
+  <Pokemon id="780" name="Drampa" family="Drampa" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png">
     <Type primary="Normal" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="781" name="Dhelmise" family="Dhelmise" availability="Unreleased">
+  <Pokemon id="781" name="Dhelmise" family="Dhelmise" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/781.png">
     <Type primary="Ghost" secondary="Grass" />
   </Pokemon>
-  <Pokemon id="782" name="Jangmo-o" family="Jangmo-o" availability="Unreleased">
+  <Pokemon id="782" name="Jangmo-o" family="Jangmo-o" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png">
     <Type primary="Dragon" />
   </Pokemon>
-  <Pokemon id="783" name="Hakamo-o" family="Jangmo-o" availability="Unreleased">
+  <Pokemon id="783" name="Hakamo-o" family="Jangmo-o" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png">
     <Type primary="Dragon" secondary="Fighting" />
     <EvolvesFrom id="782" name="Jangmo-o" />
   </Pokemon>
-  <Pokemon id="784" name="Kommo-o" family="Jangmo-o" availability="Unreleased">
+  <Pokemon id="784" name="Kommo-o" family="Jangmo-o" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png">
     <Type primary="Dragon" secondary="Fighting" />
     <EvolvesFrom id="783" name="Hakamo-o" />
   </Pokemon>
-  <Pokemon id="785" name="Tapu Koko" family="Tapu Koko" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="785" name="Tapu Koko" family="Tapu Koko" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png">
     <Type primary="Electric" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="786" name="Tapu Lele" family="Tapu Lele" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="786" name="Tapu Lele" family="Tapu Lele" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png">
     <Type primary="Psychic" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="787" name="Tapu Bulu" family="Tapu Bulu" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="787" name="Tapu Bulu" family="Tapu Bulu" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png">
     <Type primary="Grass" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="788" name="Tapu Fini" family="Tapu Fini" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="788" name="Tapu Fini" family="Tapu Fini" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png">
     <Type primary="Water" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="789" name="Cosmog" family="Cosmog" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="789" name="Cosmog" family="Cosmog" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="790" name="Cosmoem" family="Cosmog" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="790" name="Cosmoem" family="Cosmog" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png">
     <Type primary="Psychic" />
     <EvolvesFrom id="789" name="Cosmog" />
   </Pokemon>
-  <Pokemon id="791" name="Solgaleo" family="Cosmog" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="791" name="Solgaleo" family="Cosmog" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png">
     <Type primary="Psychic" secondary="Steel" />
     <EvolvesFrom id="790" name="Cosmoem" />
   </Pokemon>
-  <Pokemon id="792" name="Lunala" family="Cosmog" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="792" name="Lunala" family="Cosmog" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png">
     <Type primary="Psychic" secondary="Ghost" />
     <EvolvesFrom id="790" name="Cosmoem" />
   </Pokemon>
-  <Pokemon id="793" name="Nihilego" family="Nihilego" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="793" name="Nihilego" family="Nihilego" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/793.png">
     <Type primary="Rock" secondary="Poison" />
   </Pokemon>
-  <Pokemon id="794" name="Buzzwole" family="Buzzwole" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="794" name="Buzzwole" family="Buzzwole" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/794.png">
     <Type primary="Bug" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="795" name="Pheromosa" family="Pheromosa" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="795" name="Pheromosa" family="Pheromosa" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/795.png">
     <Type primary="Bug" secondary="Fighting" />
   </Pokemon>
-  <Pokemon id="796" name="Xurkitree" family="Xurkitree" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="796" name="Xurkitree" family="Xurkitree" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/796.png">
     <Type primary="Electric" />
   </Pokemon>
-  <Pokemon id="797" name="Celesteela" family="Celesteela" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="797" name="Celesteela" family="Celesteela" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/797.png">
     <Type primary="Steel" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="798" name="Kartana" family="Kartana" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="798" name="Kartana" family="Kartana" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png">
     <Type primary="Grass" secondary="Steel" />
   </Pokemon>
-  <Pokemon id="799" name="Guzzlord" family="Guzzlord" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="799" name="Guzzlord" family="Guzzlord" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png">
     <Type primary="Dark" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="800" name="Necrozma" family="Necrozma" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="800" name="Necrozma" family="Necrozma" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png">
     <Type primary="Psychic" />
   </Pokemon>
-  <Pokemon id="801" name="Magearna" family="Magearna" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="801" name="Magearna" family="Magearna" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png">
     <Type primary="Steel" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="802" name="Marshadow" family="Marshadow" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="802" name="Marshadow" family="Marshadow" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png">
     <Type primary="Fighting" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="803" name="Poipole" family="Poipole" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="803" name="Poipole" family="Poipole" availability="Unreleased" sprite="https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/poipole.png">
     <Type primary="Poison" />
   </Pokemon>
-  <Pokemon id="804" name="Naganadel" family="Naganadel" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="804" name="Naganadel" family="Naganadel" availability="Unreleased" sprite="https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/naganadel.png">
     <Type primary="Poison" secondary="Dragon" />
   </Pokemon>
-  <Pokemon id="805" name="Stakataka" family="Stakataka" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="805" name="Stakataka" family="Stakataka" availability="Unreleased" sprite="https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/stakataka.png">
     <Type primary="Rock" secondary="Steel" />
   </Pokemon>
-  <Pokemon id="806" name="Blacephalon" family="Blacephalon" rarity="Ultra Beast" availability="Unreleased">
+  <Pokemon id="806" name="Blacephalon" family="Blacephalon" availability="Unreleased" sprite="https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/blacephalon.png">
     <Type primary="Fire" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="807" name="Zeraora" family="Zeraora" rarity="Mythic" availability="Unreleased">
+  <Pokemon id="807" name="Zeraora" family="Zeraora" availability="Unreleased" sprite="https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/zeraora.png">
     <Type primary="Electric" />
   </Pokemon>
 </PokeStats>

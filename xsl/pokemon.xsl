@@ -7,10 +7,12 @@
 >
   <!-- For Images, check out: -->
   <!--
+    - http://pokemongo.wikia.com/wiki/Category:Pok%C3%A9mon_sprites/
+    - http://pokemongo.wikia.com/wiki/List_of_Pok%C3%A9mon/
     - https://rankedboost.com/pokemon-go/pokedex/ (No shinies)
-    - https://github.com/PokeAPI/sprites
+    - https://github.com/PokeAPI/sprites/
     - https://pocketmonsters.net/
-    - https://pokemondb.net/sprites
+    - https://pokemondb.net/sprites/
   -->
 
   <!-- ************************************************************************************************************************ -->
@@ -355,6 +357,10 @@
   <xsl:template match="Pokemon" mode="Sprite">
     <xsl:param name="Settings" />
 
+    <xsl:variable name="id" select="@id" />
+    <xsl:variable name="form" select="@form" />
+    <xsl:variable name="pokemon" select="/Root/PokeStats/Pokemon[@id=$id and ((@form=$form or (not(@form) and not($form))))]" />
+     
     <img>
       <xsl:attribute name="class">
         <xsl:choose>
@@ -365,70 +371,33 @@
             <xsl:text>SPRITE </xsl:text>
           </xsl:otherwise>
         </xsl:choose>
-        <xsl:if test="contains(@availability,'Hatch Only')">
+        <xsl:if test="contains($pokemon/@availability,'Hatch Only')">
           <xsl:text>SPRITE_WITH_WRAPPED_ICON </xsl:text>
         </xsl:if>
-        <xsl:if test="contains(@availability,$Availability_Regional)">
+        <xsl:if test="contains($pokemon/@availability,$Availability_Regional)">
           <xsl:text>REGIONAL </xsl:text>
         </xsl:if>
-        <xsl:if test="(count(exslt:node-set($Settings)/*/@show_disabled) = 0 and contains(@availability,$Availability_Unreleased)) or (Stats/BaseIV/@attack = 1 and Stats/BaseIV/@defense = 1 and Stats/BaseIV/@stamina = 1)">
+        <xsl:if test="(count(exslt:node-set($Settings)/*/@show_disabled) = 0 and contains($pokemon/@availability,$Availability_Unreleased)) or ($pokemon/Stats/BaseIV/@attack = 1 and $pokemon/Stats/BaseIV/@defense = 1 and $pokemon/Stats/BaseIV/@stamina = 1)">
           <xsl:text>DISABLED </xsl:text>
         </xsl:if>
       </xsl:attribute>
 
       <xsl:attribute name="src">
         <!-- Figure out where image should be located. -->
-        <xsl:apply-templates select="." mode="SpriteURL" />
+        <xsl:apply-templates select="$pokemon" mode="SpriteURL" />
       </xsl:attribute>
 
       <xsl:attribute name="alt">
-        <xsl:apply-templates select="." mode="DisplayName" />
+        <xsl:apply-templates select="$pokemon" mode="DisplayName" />
       </xsl:attribute>
     </img>
   </xsl:template>
 
   <xsl:template match="Pokemon" mode="SpriteURL">
-    <!--<xsl:variable name="name" select="translate(@name, concat(' é♀♂:.()', $apos), '-eFM')" />-->
-
-    <xsl:choose>
-      <!-- Released gens -->
-      <xsl:when test="4 > ../@gen and (not(@form) or @form = 'Normal')">
-        <xsl:variable name="baseURL" select="'https://pkmref.com/images/set_1/'" />
-        <xsl:value-of select="concat($baseURL, @id, '.png')" />
-      </xsl:when>
-
-      <!-- Image is not found in back-up (PokeAPI/sprites) -->
-      <xsl:when test="@id > 802">
-        <xsl:variable name="baseURL" select="'https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/'" />
-        <xsl:value-of select="concat($baseURL, pokeref:ToLower(@name), '.png')" />
-      </xsl:when>
-
-      <!-- Forms -->
-      <xsl:when test="@form and @form != 'Normal'">
-        <xsl:variable name="baseURL" select="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/'" />
-        <xsl:variable name="formName">
-          <xsl:choose>
-            <xsl:when test="@form='Exclamation Point'">
-              <xsl:text>exclamation</xsl:text>
-            </xsl:when>
-            <xsl:when test="@form='Question Mark'">
-              <xsl:text>question</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="pokeref:ToLower(@form)" />
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:variable>
-
-        <xsl:value-of select="concat($baseURL, @id, '-', $formName, '.png')" />
-      </xsl:when>
-
-      <!-- Everything else -->
-      <xsl:otherwise>
-        <xsl:variable name="baseURL" select="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'" />
-        <xsl:value-of select="concat($baseURL, @id, '.png')" />
-      </xsl:otherwise>
-    </xsl:choose>
+    <!-- TODO QZX: Add support for Shinies -->
+    <!-- TODO QZX: Add support for Genders -->
+    <!-- TODO QZX: Add support for Special features (E.G. Pikachu with a hat) -->
+    <xsl:value-of select="@sprite" />
   </xsl:template>
 
   <xsl:template match="Pokemon" mode="DisplayName">
