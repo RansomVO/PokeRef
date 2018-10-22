@@ -280,6 +280,28 @@
       </Dependencies>
       <OutputFileName>movesets.gen3.html</OutputFileName>
     </XslTransform>
+    <XslTransform Include="charts\movesets\movesets.gen4.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>movesets.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        _datafiles\pokestats.gen4.xml;
+        _datafiles\movesets.gen4.xml;
+        _datafiles.manual\infrequent\special.moves.xml;
+        _datafiles.manual\infrequent\pokemon.availability.xml;
+        js\global.js;
+        js\controls.js;
+        js\pokemon.js.xsl;
+        charts\movesets\movesets.js;
+        charts\movesets\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>movesets.gen4.html</OutputFileName>
+    </XslTransform>
     <XslTransform Include="charts\movesets\movesets.all.html.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
@@ -291,9 +313,11 @@
         _datafiles\pokestats.gen1.xml;
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
+        _datafiles\pokestats.gen4.xml;
         _datafiles\movesets.gen1.xml;
         _datafiles\movesets.gen2.xml;
         _datafiles\movesets.gen3.xml;
+        _datafiles\movesets.gen4.xml;
         _datafiles.manual\infrequent\special.moves.xml;
         _datafiles.manual\infrequent\pokemon.availability.xml;
         js\global.js;

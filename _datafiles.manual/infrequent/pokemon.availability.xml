@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokemonAvailability last_updated="2018-10-05" xmlns:pokeref="urn:pokeref">
+<PokemonAvailability last_updated="2018-10-21" xmlns:pokeref="urn:pokeref">
   <Pokemon id="0" name="Dummy to make index line up." />
   <!-- #region Gen1 -->
   <Pokemon id="1" name="Bulbasaur" date="2016-07-30" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png" />
@@ -476,9 +476,9 @@
   <Pokemon id="371" name="Bagon" date="2018-01-23" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Bagon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Bagon_shiny.png" />
   <Pokemon id="372" name="Shelgon" date="2018-01-23" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/48/Shelgon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Shelgon_shiny.png" />
   <Pokemon id="373" name="Salamence" date="2018-01-23" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Salamence.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Salamence_shiny.png" />
-  <Pokemon id="374" name="Beldum" date="2018-01-23" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Beldum.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Beldum_shiny.png" />
-  <Pokemon id="375" name="Metang" date="2018-01-23" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fb/Metang.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Metang_shiny.png" />
-  <Pokemon id="376" name="Metagross" date="2018-01-23" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Metagross.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Metagross_shiny.png" />
+  <Pokemon id="374" name="Beldum" date="2018-01-23" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Beldum.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Beldum_shiny.png" />
+  <Pokemon id="375" name="Metang" date="2018-01-23" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fb/Metang.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Metang_shiny.png" />
+  <Pokemon id="376" name="Metagross" date="2018-01-23" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Metagross.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Metagross_shiny.png" />
   <Pokemon id="377" name="Regirock" date="2018-08-16" availability="Raid Boss Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bd/Regirock.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/86/Regirock_shiny.png" />
   <Pokemon id="378" name="Regice" date="2018-06-21" availability="Raid Boss Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/ff/Regice.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Regice_shiny.png" />
   <Pokemon id="379" name="Registeel" date="2018-07-19" availability="Raid Boss Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Registeel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Registeel_shiny.png" />
@@ -496,25 +496,25 @@
   </Pokemon>
   <!-- #endregion Gen3 -->
   <!-- #region Gen4 -->
-  <Pokemon id="387" name="Turtwig" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png" />
-  <Pokemon id="388" name="Grotle" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png" />
-  <Pokemon id="389" name="Torterra" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png" />
-  <Pokemon id="390" name="Chimchar" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png" />
-  <Pokemon id="391" name="Monferno" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png" />
-  <Pokemon id="392" name="Infernape" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png" />
-  <Pokemon id="393" name="Piplup" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png" />
-  <Pokemon id="394" name="Prinplup" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png" />
-  <Pokemon id="395" name="Empoleon" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png" />
-  <Pokemon id="396" name="Starly" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png" />
-  <Pokemon id="397" name="Staravia" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png" />
-  <Pokemon id="398" name="Staraptor" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png" />
-  <Pokemon id="399" name="Bidoof" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png" />
-  <Pokemon id="400" name="Bibarel" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png" />
-  <Pokemon id="401" name="Kricketot" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png" />
-  <Pokemon id="402" name="Kricketune" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png" />
-  <Pokemon id="403" name="Shinx" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png" />
-  <Pokemon id="404" name="Luxio" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png" />
-  <Pokemon id="405" name="Luxray" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png" />
+  <Pokemon id="387" name="Turtwig" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png" />
+  <Pokemon id="388" name="Grotle" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png" />
+  <Pokemon id="389" name="Torterra" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png" />
+  <Pokemon id="390" name="Chimchar" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png" />
+  <Pokemon id="391" name="Monferno" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png" />
+  <Pokemon id="392" name="Infernape" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png" />
+  <Pokemon id="393" name="Piplup" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png" />
+  <Pokemon id="394" name="Prinplup" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png" />
+  <Pokemon id="395" name="Empoleon" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png" />
+  <Pokemon id="396" name="Starly" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png" />
+  <Pokemon id="397" name="Staravia" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png" />
+  <Pokemon id="398" name="Staraptor" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png" />
+  <Pokemon id="399" name="Bidoof" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png" />
+  <Pokemon id="400" name="Bibarel" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png" />
+  <Pokemon id="401" name="Kricketot" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png" />
+  <Pokemon id="402" name="Kricketune" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png" />
+  <Pokemon id="403" name="Shinx" date="2018-10-16" availability="Hatch or RaidBoss Only" shiny="true" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png" />
+  <Pokemon id="404" name="Luxio" date="2018-10-16" availability="Evolve Only" shiny="true" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png" />
+  <Pokemon id="405" name="Luxray" date="2018-10-16" availability="Evolve Only" shiny="true" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png" />
   <Pokemon id="406" name="Budew" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png" />
   <Pokemon id="407" name="Roserade" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png" />
   <Pokemon id="408" name="Cranidos" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png" />
@@ -534,14 +534,14 @@
   <Pokemon id="414" name="Mothim" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png" />
   <Pokemon id="415" name="Combee" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png" />
   <Pokemon id="416" name="Vespiquen" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png" />
-  <Pokemon id="417" name="Pachirisu" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png" />
+  <Pokemon id="417" name="Pachirisu" date="2018-10-16" availability="Regional: Arctic?" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png" />
   <Pokemon id="418" name="Buizel" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png" />
   <Pokemon id="419" name="Floatzel" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png" />
   <Pokemon id="420" name="Cherubi" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png" />
   <Pokemon id="421" name="Cherrim" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png">
     <Form name="Normal" />
     <Form name="Overcast" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421-overcast.png" />
-    <Form name="Sunshine" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421-sunshine.png" />
+    <Form name="Sunny" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421-sunshine.png" />
   </Pokemon>
   <Pokemon id="422" name="Shellos" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png">
     <Form name="East Sea" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422-east.png" />
@@ -554,8 +554,8 @@
   <Pokemon id="424" name="Ambipom" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png" />
   <Pokemon id="425" name="Drifloon" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png" />
   <Pokemon id="426" name="Drifblim" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png" />
-  <Pokemon id="427" name="Buneary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png" />
-  <Pokemon id="428" name="Lopunny" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png" />
+  <Pokemon id="427" name="Buneary" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png" />
+  <Pokemon id="428" name="Lopunny" date="2018-10-16" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png" />
   <Pokemon id="429" name="Mismagius" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png" />
   <Pokemon id="430" name="Honchkrow" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png" />
   <Pokemon id="431" name="Glameow" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png" />
@@ -568,13 +568,13 @@
   <Pokemon id="438" name="Bonsly" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png" />
   <Pokemon id="439" name="Mime Jr." availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png" />
   <Pokemon id="440" name="Happiny" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png" />
-  <Pokemon id="441" name="Chatot" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png" />
+  <Pokemon id="441" name="Chatot" date="2018-10-16" availability="Regional: Southern Hemisphere?" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png" />
   <Pokemon id="442" name="Spiritomb" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png" />
   <Pokemon id="443" name="Gible" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png" />
   <Pokemon id="444" name="Gabite" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png" />
   <Pokemon id="445" name="Garchomp" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png" />
   <Pokemon id="446" name="Munchlax" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png" />
-  <Pokemon id="447" name="Riolu" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png" />
+  <Pokemon id="447" name="Riolu" date="2018-10-16" availability="Hatch Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png" />
   <Pokemon id="448" name="Lucario" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png" />
   <Pokemon id="449" name="Hippopotas" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png" />
   <Pokemon id="450" name="Hippowdon" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png" />
@@ -582,7 +582,7 @@
   <Pokemon id="452" name="Drapion" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png" />
   <Pokemon id="453" name="Croagunk" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png" />
   <Pokemon id="454" name="Toxicroak" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png" />
-  <Pokemon id="455" name="Carnivine" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png" />
+  <Pokemon id="455" name="Carnivine" date="2018-10-16" availability="Regional: Southeast USA and Bahamas?" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png" />
   <Pokemon id="456" name="Finneon" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png" />
   <Pokemon id="457" name="Lumineon" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png" />
   <Pokemon id="458" name="Mantyke" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png" />

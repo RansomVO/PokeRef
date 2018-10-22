@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-05" gen="1" region="Kanto">
-  <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="Generalqzx" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="1" region="Kanto">
+  <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
       <BaseIV attack="118" defense="118" stamina="90" />
@@ -1548,6 +1548,7 @@
   </Pokemon>
   <Pokemon id="113" name="Chansey" family="Chansey" buddy_km="5" gender_ratio="♀" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Chansey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Chansey_shiny.png">
     <Type primary="Normal" />
+    <EvolvesFrom id="440" name="Happiny" candies="25" />
     <Stats>
       <BaseIV attack="60" defense="176" stamina="500" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -1641,6 +1642,7 @@
   </Pokemon>
   <Pokemon id="122" name="Mr. Mime" family="Mr Mime" buddy_km="5" gender_ratio="1 : 1" availability="Regional: Europe" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Mr._Mime.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7d/Mr._Mime_shiny.png">
     <Type primary="Psychic" secondary="Fairy" />
+    <EvolvesFrom id="439" name="Mime Jr." candies="50" />
     <Stats>
       <BaseIV attack="192" defense="233" stamina="80" />
       <Height standard="1.2999999523162842" deviation="1.2999999523162842" />
@@ -1860,6 +1862,7 @@
   </Pokemon>
   <Pokemon id="143" name="Snorlax" family="Snorlax" buddy_km="5" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0b/Snorlax.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/83/Snorlax_shiny.png">
     <Type primary="Normal" />
+    <EvolvesFrom id="446" name="Munchlax" candies="50" />
     <Stats>
       <BaseIV attack="190" defense="190" stamina="320" />
       <Height standard="2.0999999046325684" deviation="2.0999999046325684" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-26" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="3">
   <Pokemon id="252" name="Treecko">
     <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
       <FastAttack name="Pound" stab="false" legacy="false" />
@@ -3178,6 +3178,14 @@
     <MoveSet base_dps="16.438356164383563" true_dps="25.616438356164384" comparison="91">
       <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="20.422535211267608" true_dps="35.352112676056343" comparison="125">
+      <FastAttack name="Bullet Punch" stab="true" legacy="false" />
+      <ChargedAttack name="Meteor Mash" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="19.753086419753089" true_dps="34.074074074074076" comparison="121">
+      <FastAttack name="Zen Headbutt" stab="true" legacy="false" />
+      <ChargedAttack name="Meteor Mash" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="377" name="Regirock">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-05" gen="3" region="Hoenn">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="3" region="Hoenn">
   <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -666,6 +666,7 @@
   </Pokemon>
   <Pokemon id="315" name="Roselia" family="Roselia" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Roselia.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/76/Roselia_shiny.png">
     <Type primary="Grass" secondary="Poison" />
+    <EvolvesFrom id="406" name="Budew" candies="25" />
     <Stats>
       <BaseIV attack="186" defense="148" stamina="100" />
       <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
@@ -795,7 +796,7 @@
       <BaseIV attack="116" defense="116" stamina="120" />
       <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
       <Weight standard="5" deviation="5" />
-      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.0099999997764825821" dodge="0.5" />
+      <Rates capture="0.30000001192092896" flee="0.090000003576278687" attack="0.0099999997764825821" dodge="0.40000000596046448" />
       <Max cp="1088" hp="106" />
     </Stats>
   </Pokemon>
@@ -1153,6 +1154,7 @@
   </Pokemon>
   <Pokemon id="358" name="Chimecho" family="Chimecho" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Chimecho.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/04/Chimecho_shiny.png">
     <Type primary="Psychic" />
+    <EvolvesFrom id="433" name="Chingling" candies="50" />
     <Stats>
       <BaseIV attack="175" defense="174" stamina="150" />
       <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
@@ -1318,7 +1320,7 @@
       <Max cp="3532" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="374" name="Beldum" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Beldum.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Beldum_shiny.png">
+  <Pokemon id="374" name="Beldum" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Beldum.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Beldum_shiny.png">
     <Type primary="Steel" secondary="Psychic" />
     <Stats>
       <BaseIV attack="96" defense="141" stamina="80" />
@@ -1328,7 +1330,7 @@
       <Max cp="843" hp="75" />
     </Stats>
   </Pokemon>
-  <Pokemon id="375" name="Metang" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fb/Metang.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Metang_shiny.png">
+  <Pokemon id="375" name="Metang" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fb/Metang.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Metang_shiny.png">
     <Type primary="Steel" secondary="Psychic" />
     <EvolvesFrom id="374" name="Beldum" candies="25" />
     <Stats>
@@ -1339,7 +1341,7 @@
       <Max cp="1570" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="376" name="Metagross" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Metagross.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Metagross_shiny.png">
+  <Pokemon id="376" name="Metagross" family="Beldum" buddy_km="5" gender_ratio="⚲" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Metagross.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Metagross_shiny.png">
     <Type primary="Steel" secondary="Psychic" />
     <EvolvesFrom id="375" name="Metang" candies="100" />
     <Stats>

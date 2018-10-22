@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-05" gen="2" region="Johto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="2" region="Johto">
   <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Chikorita.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Chikorita_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -351,6 +351,7 @@
   </Pokemon>
   <Pokemon id="185" name="Sudowoodo" family="Sudowoodo" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sudowoodo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Sudowoodo_shiny.png">
     <Type primary="Rock" />
+    <EvolvesFrom id="438" name="Bonsly" candies="50" />
     <Stats>
       <BaseIV attack="167" defense="198" stamina="140" />
       <Height standard="1.190000057220459" deviation="1.190000057220459" />
@@ -1058,6 +1059,7 @@
   </Pokemon>
   <Pokemon id="226" name="Mantine" family="Mantine" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Mantine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Mantine_shiny.png">
     <Type primary="Water" secondary="Flying" />
+    <EvolvesFrom id="458" name="Mantyke" />
     <Stats>
       <BaseIV attack="148" defense="260" stamina="130" />
       <Height standard="2.1099998950958252" deviation="2.1099998950958252" />

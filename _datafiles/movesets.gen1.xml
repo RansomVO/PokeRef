@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-09-26" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="1">
   <Pokemon id="1" name="Bulbasaur">
     <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -5417,37 +5417,61 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="150" name="Mewtwo">
-    <MoveSet base_dps="15.566037735849058" true_dps="30.849056603773587" comparison="90">
+    <MoveSet base_dps="15.566037735849058" true_dps="30.849056603773587" comparison="91">
       <FastAttack name="Psycho Cut" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.75" true_dps="31.666666666666664" comparison="92">
+    <MoveSet base_dps="17.164179104477611" true_dps="29.402985074626866" comparison="87">
       <FastAttack name="Psycho Cut" stab="true" legacy="false" />
-      <ChargedAttack name="Shadow Ball" stab="false" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.53448275862069" true_dps="31.637931034482758" comparison="92">
+    <MoveSet base_dps="16.666666666666668" true_dps="28.266666666666666" comparison="83">
       <FastAttack name="Psycho Cut" stab="true" legacy="false" />
-      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+      <ChargedAttack name="Ice Beam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.141592920353983" true_dps="31.061946902654864" comparison="91">
+    <MoveSet base_dps="18.141592920353983" true_dps="31.061946902654864" comparison="92">
       <FastAttack name="Psycho Cut" stab="true" legacy="false" />
       <ChargedAttack name="Focus Blast" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.142857142857142" true_dps="34.071428571428569" comparison="99">
+    <MoveSet base_dps="16.40625" true_dps="28.28125" comparison="83">
+      <FastAttack name="Psycho Cut" stab="true" legacy="false" />
+      <ChargedAttack name="Flamethrower" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.142857142857142" true_dps="34.071428571428569" comparison="100">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="19.148936170212764" true_dps="33.829787234042549" comparison="99">
+    <MoveSet base_dps="17.977528089887638" true_dps="32.247191011235955" comparison="95">
       <FastAttack name="Confusion" stab="true" legacy="false" />
-      <ChargedAttack name="Shadow Ball" stab="false" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="19.333333333333332" true_dps="34.466666666666669" comparison="100">
+    <MoveSet base_dps="17.52577319587629" true_dps="31.134020618556704" comparison="92">
       <FastAttack name="Confusion" stab="true" legacy="false" />
-      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+      <ChargedAttack name="Ice Beam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="19.047619047619047" true_dps="34.08163265306122" comparison="99">
+    <MoveSet base_dps="19.047619047619047" true_dps="34.08163265306122" comparison="100">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Focus Blast" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.441860465116275" true_dps="31.511627906976738" comparison="93">
+      <FastAttack name="Confusion" stab="true" legacy="false" />
+      <ChargedAttack name="Flamethrower" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.75" true_dps="31.666666666666664" comparison="93">
+      <FastAttack name="Psycho Cut" stab="true" legacy="false" />
+      <ChargedAttack name="Shadow Ball" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="18.53448275862069" true_dps="31.637931034482758" comparison="93">
+      <FastAttack name="Psycho Cut" stab="true" legacy="false" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="19.148936170212764" true_dps="33.829787234042549" comparison="100">
+      <FastAttack name="Confusion" stab="true" legacy="false" />
+      <ChargedAttack name="Shadow Ball" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="19.333333333333332" true_dps="34.466666666666669" comparison="102">
+      <FastAttack name="Confusion" stab="true" legacy="false" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="151" name="Mew">
