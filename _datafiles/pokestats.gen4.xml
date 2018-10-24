@@ -490,7 +490,7 @@
       <Max cp="2418" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="425" name="Drifloon" family="Drifloon" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png">
+  <Pokemon id="425" name="Drifloon" family="Drifloon" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png">
     <Type primary="Ghost" secondary="Flying" />
     <Stats>
       <BaseIV attack="117" defense="80" stamina="207" />
@@ -500,7 +500,7 @@
       <Max cp="1197" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="426" name="Drifblim" family="Drifloon" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png">
+  <Pokemon id="426" name="Drifblim" family="Drifloon" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png">
     <Type primary="Ghost" secondary="Flying" />
     <EvolvesFrom id="425" name="Drifloon" candies="50" />
     <Stats>
@@ -583,7 +583,7 @@
       <Max cp="1005" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="434" name="Stunky" family="Stunky" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png">
+  <Pokemon id="434" name="Stunky" family="Stunky" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png">
     <Type primary="Poison" secondary="Dark" />
     <Stats>
       <BaseIV attack="121" defense="90" stamina="160" />
@@ -593,7 +593,7 @@
       <Max cp="1151" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="435" name="Skuntank" family="Stunky" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png">
+  <Pokemon id="435" name="Skuntank" family="Stunky" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png">
     <Type primary="Poison" secondary="Dark" />
     <EvolvesFrom id="434" name="Stunky" candies="50" />
     <Stats>
@@ -665,7 +665,7 @@
       <Max cp="1791" hp="156" />
     </Stats>
   </Pokemon>
-  <Pokemon id="442" name="Spiritomb" family="Spiritomb" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png">
+  <Pokemon id="442" name="Spiritomb" family="Spiritomb" buddy_km="5" gender_ratio="1 : 1" availability="Research Encounter Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png">
     <Type primary="Ghost" secondary="Dark" />
     <Stats>
       <BaseIV attack="169" defense="199" stamina="137" />
@@ -1183,7 +1183,7 @@
       <Max cp="4346" hp="186" />
     </Stats>
   </Pokemon>
-  <Pokemon id="487" name="Giratina" family="Giratina" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png">
+  <Pokemon id="487" name="Giratina" family="Giratina" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-altered.png">
     <Type primary="Ghost" secondary="Dragon" />
     <Stats>
       <BaseIV attack="187" defense="225" stamina="284" />
@@ -1193,7 +1193,7 @@
       <Max cp="3379" hp="236" />
     </Stats>
   </Pokemon>
-  <Pokemon id="487" name="Giratina" form="Altered" family="Giratina" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-altered.png">
+  <Pokemon id="487" name="Giratina" form="Altered" family="Giratina" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-altered.png">
     <Type primary="Ghost" secondary="Dragon" />
     <Stats>
       <BaseIV attack="187" defense="225" stamina="284" />

@@ -13,7 +13,7 @@
   <!ENTITY Pokestats_Gen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
   <!ENTITY Pokestats_Gen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
 ]>
-<?xml-stylesheet type="text/xsl" href="movesets.xsl"?>
+<?xml-stylesheet type="text/xsl" href="special.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <params event="A Mythical Discovery" />
   &Constants;

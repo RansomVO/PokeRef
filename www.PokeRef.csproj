@@ -55,6 +55,8 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
+    <WebContent Include="images\question.png" />
+    <WebContent Include="images\candy\candy_spiritomb.png" />
     <Content Include="^\tools\sprites.html" />
     <Content Include="^\__TODO.html" />
     <None Include="^\index.html" />
@@ -69,19 +71,27 @@
     <FixIntermediateFile Include="_datafiles.manual\encounters.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
-    <FixIntermediateFile Include="_datafiles.manual\news.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\news.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\shoppingboxes.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.unreleased_gens.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\images.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\images.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\infrequent\ranges.xml" />
     <FixIntermediateFile Include="_datafiles.manual\infrequent\special.moves.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.research.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.research.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
   </ItemGroup>
   <!-- /_datafiles (moves and movesets) -->
   <ItemGroup>

@@ -11,19 +11,22 @@
   https://www.reddit.com/r/TheSilphRoad/comments/88cwy8/spoilers_all_quests_texts/
 -->
 
-<FieldResearch last_updated="2018-10-02">
+<FieldResearch last_updated="2018-10-23">
   <Category type="Research Breakthrough">
     <Research task="Achieve 7 stamps">
       <Encounter id="143" name="Snorlax" />
-      <Encounter id="245" name="Suicune" current="true" />
       <Encounter id="243" name="Raikou" />
       <Encounter id="244" name="Entei" />
+      <Encounter id="245" name="Suicune" current="true" />
     </Research>
     <Research task="Complete 'A Mythical Discovery'">
       <Encounter id="151" name="Mew" current="true" />
     </Research>
     <Research task="Complete 'A Ripple in Time'">
       <Encounter id="251" name="Celebi" current="true" />
+    </Research>
+    <Research task="Complete 'Catch 108 Pokemon' in 'A Spooky Message'">
+      <Encounter id="442" name="Spiritomb" current="true" />
     </Research>
   </Category>
 
@@ -204,6 +207,9 @@
     <Research task="Catch 3 Treecko or Mudkip.">
       <Encounter id="255" name="Torchic" />
     </Research>
+    <Research task="Catch 10 Poochyena or Houndour">
+      <Encounter id="215" name="Sneasel" current="true" />
+    </Research>
     <!-- #endregion Specific -->
 
     <!-- #region Type -->
@@ -271,6 +277,7 @@
     <Research task="Catch 3 Ghost-type Pokemon.">
     </Research>
     <Research task="Catch 10 Ghost-type Pokemon.">
+      <Encounter id="302" name="Sableye" current="true" />
     </Research>
     <Research task="Catch a Grass-type Pokemon.">
     </Research>
@@ -438,7 +445,7 @@
       <Encounter id="349" name="Feebas" current="true" />
     </Research>
     <Research task="Transfer 10 Pokemon.">
-      <Encounter id="200" name="Misdreavus" />
+      <Encounter id="200" name="Misdreavus" current="true" />
     </Research>
   </Category>
 

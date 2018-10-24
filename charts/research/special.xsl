@@ -52,7 +52,7 @@
           <xsl:value-of select="$event"/>
         </h1>
         <p>
-          <span class="TODO QZX">TODO QZX: howdy.</span>
+          <span class="TODO QZX">Under Construction</span>
         </p>
 
         <br />
@@ -66,8 +66,6 @@
 
   <!-- Template to create an Event -->
   <xsl:template match="Event">
-    <span class="TODO QZX">TODO QZX: Event</span>
-    <br />
     <xsl:apply-templates select="Stage" />
   </xsl:template>
 
@@ -95,9 +93,11 @@
         <xsl:value-of select="@task" />
       </td>
       <td align="center">
-        <xsl:value-of select="@reward_amount" />
+        <xsl:call-template name="Sprite">
+          <xsl:with-param name="id" select="@reward_type" />
+        </xsl:call-template>
         <br />
-        <xsl:value-of select="@reward_type" />
+        <xsl:value-of select="@reward" />
       </td>
     </tr>
   </xsl:template>

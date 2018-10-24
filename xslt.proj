@@ -714,6 +714,20 @@
       </Dependencies>
       <OutputFileName>a_ripple_in_time.html</OutputFileName>
     </XslTransform>
+    <XslTransform Include="charts\research\a_spooky_message.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>special.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        _datafiles\settings.xml;
+        charts\research\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>a_spooky_message.html</OutputFileName>
+    </XslTransform>
 
   </ItemGroup>
 
