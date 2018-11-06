@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="3" region="Hoenn">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-05" gen="3" region="Hoenn">
   <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -404,7 +404,7 @@
       <Max cp="4548" hp="227" />
     </Stats>
   </Pokemon>
-  <Pokemon id="290" name="Nincada" family="Nincada" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Nincada.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Nincada_shiny.png">
+  <Pokemon id="290" name="Nincada" family="Nincada" buddy_km="5" gender_ratio="1 : 1" availability="Encounter Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Nincada.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Nincada_shiny.png">
     <Type primary="Bug" secondary="Ground" />
     <Stats>
       <BaseIV attack="80" defense="153" stamina="62" />
@@ -425,7 +425,7 @@
       <Max cp="1751" hp="108" />
     </Stats>
   </Pokemon>
-  <Pokemon id="292" name="Shedinja" family="Nincada" buddy_km="5" gender_ratio="⚲" availability="Unreleased" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Shedinja.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Shedinja_shiny.png">
+  <Pokemon id="292" name="Shedinja" family="Nincada" buddy_km="5" gender_ratio="⚲" availability="Encounter Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Shedinja.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Shedinja_shiny.png">
     <Type primary="Bug" secondary="Ghost" />
     <EvolvesFrom id="290" name="Nincada" candies="50" />
     <Stats>

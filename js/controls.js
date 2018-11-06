@@ -693,10 +693,10 @@ function OnEggSelectionChanged() {
     if (callbackName !== null) {
         var eggCriteria = {};
         eggCriteria['Enabled'] = CONTROLS_Egg.checked;
-        eggCriteria['2K'] = CONTROLS_Egg_2K.checked;
-        eggCriteria['5K'] = CONTROLS_Egg_5K.checked;
-        eggCriteria['7K'] = CONTROLS_Egg_7K.checked;
-        eggCriteria['10K'] = CONTROLS_Egg_10K.checked;
+        eggCriteria['2'] = CONTROLS_Egg_2K.checked;
+        eggCriteria['5'] = CONTROLS_Egg_5K.checked;
+        eggCriteria['7'] = CONTROLS_Egg_7K.checked;
+        eggCriteria['10'] = CONTROLS_Egg_10K.checked;
         eggCriteria['HatchOnly'] = CONTROLS_Egg_HatchOnly.checked;
 
         window[callbackName](eggCriteria);

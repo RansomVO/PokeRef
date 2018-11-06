@@ -55,7 +55,7 @@
     <xsl:variable name="name" select="@name" />
     <xsl:variable name="form" select="@form" />
     <xsl:variable name="pokemon" select="/Root/PokeStats/Pokemon[@name = $name and @form = $form]" />
-    <xsl:variable name="egg" select="/Root/Eggs/Egg[Pokemon/@name = $name and Pokemon/@form = $form]/@type" />
+    <xsl:variable name="egg" select="/Root/Eggs/Egg[Pokemon/@name = $name and (not($form) or Pokemon/@form = $form)]/@type" />
     <xsl:variable name="raidboss" select="count(/Root/RaidBosses/RaidBoss[@name = $name and @current and @tier]) != 0" />
 
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
@@ -270,7 +270,7 @@
                       <Show>
                         <xsl:attribute name="sprite_class">
                           <xsl:choose>
-                            <xsl:when test="@availability = 'Hatch Only'">WRAPPED_ICON</xsl:when>
+                            <xsl:when test="contains(@availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
                             <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
                           </xsl:choose>
                         </xsl:attribute>
@@ -360,12 +360,15 @@
     <xsl:variable name="id" select="@id" />
     <xsl:variable name="form" select="@form" />
     <xsl:variable name="pokemon" select="/Root/PokeStats/Pokemon[@id=$id and ((@form=$form or (not(@form) and not($form))))]" />
-     
+
     <img>
       <xsl:attribute name="class">
         <xsl:choose>
           <xsl:when test="count(exslt:node-set($Settings)/*/@small) > 0">
             <xsl:text>SPRITE_SMALL </xsl:text>
+          </xsl:when>
+          <xsl:when test="count(exslt:node-set($Settings)/*/@large) > 0">
+            <xsl:text>SPRITE_LARGE </xsl:text>
           </xsl:when>
           <xsl:otherwise>
             <xsl:text>SPRITE </xsl:text>

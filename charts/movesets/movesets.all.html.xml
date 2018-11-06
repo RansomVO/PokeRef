@@ -8,9 +8,17 @@
   <!ENTITY Pokestats_Gen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY Pokestats_Gen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
   <!ENTITY Pokestats_Gen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
+  <!ENTITY Pokestats_Gen4 SYSTEM "/_datafiles/pokestats.gen4.xml">
+  <!ENTITY Pokestats_Gen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
+  <!ENTITY Pokestats_Gen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
+  <!ENTITY Pokestats_Gen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
   <!ENTITY MoveSetsGen1 SYSTEM "/_datafiles/movesets.gen1.xml">
   <!ENTITY MoveSetsGen2 SYSTEM "/_datafiles/movesets.gen2.xml">
   <!ENTITY MoveSetsGen3 SYSTEM "/_datafiles/movesets.gen3.xml">
+  <!ENTITY MoveSetsGen4 SYSTEM "/_datafiles/movesets.gen4.xml">
+  <!ENTITY MoveSetsGen5 SYSTEM "/_datafiles/movesets.gen5.xml">
+  <!ENTITY MoveSetsGen6 SYSTEM "/_datafiles/movesets.gen6.xml">
+  <!ENTITY MoveSetsGen7 SYSTEM "/_datafiles/movesets.gen7.xml">
   <!ENTITY FastMoves SYSTEM "/_datafiles/moves.fast.xml">
   <!ENTITY ChargedMoves SYSTEM "/_datafiles/moves.charged.xml">
 ]>
@@ -24,9 +32,17 @@
   &Pokestats_Gen1;
   &Pokestats_Gen2;
   &Pokestats_Gen3;
+  &Pokestats_Gen4;
+  &Pokestats_Gen5;
+  &Pokestats_Gen6;
+  &Pokestats_Gen7;
   &MoveSetsGen1;
   &MoveSetsGen2;
   &MoveSetsGen3;
+  &MoveSetsGen4;
+  <!--&MoveSetsGen5;-->
+  <!--&MoveSetsGen6;-->
+  <!--&MoveSetsGen7;-->
   &FastMoves;
   &ChargedMoves;
 </Root>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-03" gen="1">
   <Pokemon id="1" name="Bulbasaur">
     <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -3413,17 +3413,49 @@
       <FastAttack name="Shadow Claw" stab="true" legacy="true" />
       <ChargedAttack name="Sludge Bomb" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="19.333333333333332" true_dps="33.866666666666667" comparison="108">
+      <FastAttack name="Lick" stab="true" legacy="true" />
+      <ChargedAttack name="Shadow Ball" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.75" true_dps="28.916666666666668" comparison="93">
+      <FastAttack name="Lick" stab="true" legacy="true" />
+      <ChargedAttack name="Focus Blast" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.382352941176471" true_dps="32.352941176470587" comparison="104">
+      <FastAttack name="Lick" stab="true" legacy="true" />
+      <ChargedAttack name="Sludge Bomb" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.329113924050635" true_dps="22.911392405063292" comparison="73">
       <FastAttack name="Sucker Punch" stab="false" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.05042016806723" true_dps="22.605042016806724" comparison="72">
+      <FastAttack name="Sucker Punch" stab="false" legacy="false" />
+      <ChargedAttack name="Psychic" stab="false" legacy="true" />
     </MoveSet>
     <MoveSet base_dps="15.384615384615385" true_dps="23.461538461538463" comparison="75">
       <FastAttack name="Hex" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="true" />
     </MoveSet>
+    <MoveSet base_dps="15.178571428571429" true_dps="23.660714285714288" comparison="76">
+      <FastAttack name="Hex" stab="true" legacy="false" />
+      <ChargedAttack name="Psychic" stab="false" legacy="true" />
+    </MoveSet>
     <MoveSet base_dps="17.311827956989244" true_dps="27.419354838709676" comparison="88">
       <FastAttack name="Shadow Claw" stab="true" legacy="true" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="17.2108843537415" true_dps="27.95918367346939" comparison="90">
+      <FastAttack name="Shadow Claw" stab="true" legacy="true" />
+      <ChargedAttack name="Psychic" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.666666666666668" true_dps="25.6" comparison="82">
+      <FastAttack name="Lick" stab="true" legacy="true" />
+      <ChargedAttack name="Dark Pulse" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.371681415929203" true_dps="25.840707964601769" comparison="83">
+      <FastAttack name="Lick" stab="true" legacy="true" />
+      <ChargedAttack name="Psychic" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="95" name="Onix">

@@ -11,14 +11,8 @@
   https://www.reddit.com/r/TheSilphRoad/comments/88cwy8/spoilers_all_quests_texts/
 -->
 
-<FieldResearch last_updated="2018-10-23">
+<FieldResearch last_updated="2018-11-02">
   <Category type="Research Breakthrough">
-    <Research task="Achieve 7 stamps">
-      <Encounter id="143" name="Snorlax" />
-      <Encounter id="243" name="Raikou" />
-      <Encounter id="244" name="Entei" />
-      <Encounter id="245" name="Suicune" current="true" />
-    </Research>
     <Research task="Complete 'A Mythical Discovery'">
       <Encounter id="151" name="Mew" current="true" />
     </Research>
@@ -35,9 +29,6 @@
     <Research task="Hatch an Egg.">
       <Encounter id="102" name="Exeggcute" current="true" />
     </Research>
-    <Research task="Hatch 2 Eggs.">
-      <Encounter id="120" name="Wailmer" current="true" />
-    </Research>
     <Research task="Hatch 3 Eggs.">
       <Encounter id="126" name="Magmar" current="true" />
     </Research>
@@ -45,21 +36,13 @@
       <Encounter id="113" name="Chansey" current="true" />
     </Research>
     <!-- #endregion Hatch -->
-    
+
     <!-- #region Evolve -->
     <Research task="Evolve a Pokemon.">
       <Encounter id="133" name="Eevee" current="true" />
     </Research>
-    <Research task="Evolve 3 Pokemon.">
-    </Research>
     <Research task="Evolve 5 Pokemon.">
       <Encounter id="4" name="Charmander" />
-    </Research>
-    <Research task="Evolve a Magikarp.">
-    </Research>
-    <Research task="Evolve a Fire-type Pokemon.">
-    </Research>
-    <Research task="Evolve 3 Fire-type Pokemon.">
     </Research>
     <Research task="Evolve 3 Electric-Type Pokemon">
       <Encounter id="135" name="Jolteon" />
@@ -67,33 +50,15 @@
     <Research task="Evolve 5 Fire-type Pokemon.">
       <Encounter id="38" name="Ninetales" />
     </Research>
-    <Research task="Evolve 10 Water-type Pokemon.">
-      <Encounter id="147" name="Dratini" current="true" />
-    </Research>
     <!-- #endregion Evolve -->
   </Category>
 
   <Category type="Throws">
 
     <!-- #region Nice -->
-    <Research task="Make a Nice Throw.">
-    </Research>
-    <Research task="Make 2 Nice Throws.">
-    </Research>
-    <Research task="Make 3 Nice Throws.">
-    </Research>
     <Research task="Make 5 Nice Throws.">
       <Encounter id="100" name="Voltorb" current="true" />
       <Encounter id="101" name="Electrode" />
-    </Research>
-    <Research task="Make 2 Nice Throws in a row.">
-    </Research>
-    <Research task="Make 3 Nice Throws in a row.">
-    </Research>
-    <Research task="Make 2 Nice Curveball Throws.">
-      <Encounter id="327" name="Spinda" form="3" current="true" />
-    </Research>
-    <Research task="Make 2 Nice Curveball Throws in a row.">
     </Research>
     <Research task="Make 3 Nice Curveball Throws in a row.">
       <Encounter id="101" name="Electrode" />
@@ -101,14 +66,8 @@
     <!-- #endregion Nice -->
 
     <!-- #region Great -->
-    <Research task="Make a Great Throw.">
-    </Research>
     <Research task="Make 3 Great Throws.">
       <Encounter id="92" name="Gastly" current="true" />
-    </Research>
-    <Research task="Make 5 Great Throws.">
-    </Research>
-    <Research task="Make 10 Great Throws.">
     </Research>
     <Research task="Make 3 Great Throws in a row.">
       <Encounter id="95" name="Onix" current="true" />
@@ -123,14 +82,8 @@
     <Research task="Make a Great Curveball Throw.">
       <Encounter id="327" name="Spinda" form="2" />
     </Research>
-    <Research task="Make 3 Great Curveball Throws.">
-    </Research>
-    <Research task="Make 5 Great Curveball Throws.">
-    </Research>
     <Research task="Make 3 Great Curveball Throws in a row.">
       <Encounter id="95" name="Onix" />
-    </Research>
-    <Research task="Make 5 Great Curveball Throws in a row.">
     </Research>
     <!-- #endregion Great -->
 
@@ -138,23 +91,13 @@
     <Research task="Land 3 Excellent Throws in a row.">
       <Encounter id="256" name="Larvitar" current="true" />
     </Research>
-    <Research task="Make an Excellent Curveball Throw.">
-    </Research>
-    <Research task="Make 3 Excellent Curveball Throws.">
-    </Research>
-    <Research task="Make 3 Excellent Curveball Throws in a row.">
-    </Research>
     <!-- #endregion Excellent -->
   </Category>
 
   <Category type="Catch">
     <!-- #region Basic -->
-    <Research task="Catch a Pokemon.">
-    </Research>
     <Research task="Catch 10 Pokemon.">
       <Encounter id="129" name="Magikarp" current="true" />
-    </Research>
-    <Research task="Catch a Pokemon with Weather Boost.">
     </Research>
     <Research task="Catch 5 Pokemon with Weather Boost.">
       <Encounter id="60" name="Poliwag" current="true" />
@@ -166,31 +109,17 @@
     <Research task="Catch 20 Pokemon with Weather Boost.">
       <Encounter id="38" name="Ninetales" />
     </Research>
-    <Research task="Use a Berry to help catch a Pokemon.">
-    </Research>
-    <Research task="Use 5 Berries to help catch Pokemon.">
-    </Research>
     <Research task="Use 10 Berries to help catch Pokemon.">
       <Encounter id="58" name="Growlithe" />
     </Research>
     <!-- #endregion Basic -->
 
     <!-- #region Specific -->
-    <Research task="Catch a Ditto.">
-    </Research>
-    <Research task="Catch 3 Ditto.">
-    </Research>
-    <Research task="Catch a Meowth or Skitty.">
-    </Research>
     <Research task="Catch 3 Meowth or Skitty.">
       <Encounter id="58" name="Growlithe" />
     </Research>
-    <Research task="Catch an Oddish or Bellsprout.">
-    </Research>
     <Research task="Catch 3 Oddish or Bellsprout.">
       <Encounter id="114" name="Tangela" />
-    </Research>
-    <Research task="Catch a Pidgey or Murkrow.">
     </Research>
     <Research task="Catch 3 Pidgey or Murkrow.">
       <Encounter id="23" name="Ekans" />
@@ -198,60 +127,23 @@
     <Research task="Catch a Rattata or Pikachu.">
       <Encounter id="231" name="Phanpy" />
     </Research>
-    <Research task="Catch a Swablu.">
-    </Research>
-    <Research task="Catch 3 Swablu.">
-    </Research>
-    <Research task="Catch a Treecko or Mudkip.">
-    </Research>
     <Research task="Catch 3 Treecko or Mudkip.">
       <Encounter id="255" name="Torchic" />
-    </Research>
-    <Research task="Catch 10 Poochyena or Houndour">
-      <Encounter id="215" name="Sneasel" current="true" />
     </Research>
     <!-- #endregion Specific -->
 
     <!-- #region Type -->
-    <Research task="Catch a Bug-type Pokemon.">
-    </Research>
     <Research task="Catch 3 Bug-type Pokemon.">
       <Encounter id="127" name="Pinsir" />
-    </Research>
-    <Research task="Catch 10 Bug-type Pokemon.">
     </Research>
     <Research task="Catch 3 Dark-type Pokemon.">
       <Encounter id="228" name="Houndour" />
     </Research>
-    <Research task="Catch 10 Dark-type Pokemon.">
-    </Research>
     <Research task="Catch a Dragon-type Pokemon.">
       <Encounter id="147" name="Dratini" current="true" />
     </Research>
-    <Research task="Catch 3 Dragon-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Dragon-type Pokemon.">
-    </Research>
-    <Research task="Catch an Electric-type Pokemon.">
-    </Research>
     <Research task="Catch 3 Electric-type Pokemon.">
       <Encounter id="25" name="Pikachu" />
-    </Research>
-    <Research task="Catch 10 Electric-type Pokemon.">
-    </Research>
-    <Research task="Catch a Fairy-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Fairy-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Fairy-type Pokemon.">
-    </Research>
-    <Research task="Catch a Fighting-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Fighting-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Fighting-type Pokemon.">
-    </Research>
-    <Research task="Catch a Fire-type Pokemon.">
     </Research>
     <Research task="Catch 3 Fire-type Pokemon.">
       <Encounter id="77" name="Ponyta" />
@@ -260,96 +152,20 @@
     <Research task="Catch 5 Fire-type Pokemon.">
       <Encounter id="136" name="Flareon" />
     </Research>
-    <Research task="Catch 10 Fire-type Pokemon.">
-    </Research>
-    <Research task="Catch a Flying-type Pokemon.">
-    </Research>
     <Research task="Catch 3 Flying-type Pokemon.">
       <Encounter id="84" name="Doduo" />
     </Research>
     <Research task="Catch 5 Flying-type Pokemon.">
       <Encounter id="207" name="Gligar" />
     </Research>
-    <Research task="Catch 10 Flying-type Pokemon.">
-    </Research>
-    <Research task="Catch a Ghost-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Ghost-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Ghost-type Pokemon.">
-      <Encounter id="302" name="Sableye" current="true" />
-    </Research>
-    <Research task="Catch a Grass-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Grass-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Grass-type Pokemon.">
-    </Research>
-    <Research task="Catch a Ground-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Ground-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Ground-type Pokemon.">
-    </Research>
-    <Research task="Catch an Ice-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Ice-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Ice-type Pokemon.">
-    </Research>
-    <Research task="Catch a Normal-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Normal-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Normal-type Pokemon.">
-    </Research>
-    <Research task="Catch a Poison-type Pokemon.">
-    </Research>
     <Research task="Catch 3 Poison-type Pokemon.">
       <Encounter id="88" name="Grimer" />
-    </Research>
-    <Research task="Catch 10 Poison-type Pokemon.">
-    </Research>
-    <Research task="Catch a Psychic-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Psychic-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Psychic-type Pokemon.">
-    </Research>
-    <Research task="Catch a Rock-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Rock-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Rock-type Pokemon.">
-    </Research>
-    <Research task="Catch a Steel-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Steel-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Steel-type Pokemon.">
-    </Research>
-    <Research task="Catch a Water-type Pokemon.">
-    </Research>
-    <Research task="Catch 3 Water-type Pokemon.">
-      <Encounter id="98" name="Krabby" current="true" />
-    </Research>
-    <Research task="Catch 5 Water-type Pokemon.">
-    </Research>
-    <Research task="Catch 10 Water-type Pokemon.">
-    </Research>
-    <Research task="Catch a Grass-, Fire-, or Ground-type Pokemon.">
     </Research>
     <Research task="Catch 3 Grass-, Fire-, or Ground-type Pokemon.">
       <Encounter id="322" name="Numel" />
     </Research>
-    <Research task="Catch 10 Grass-, Fire-, or Ground-type Pokemon.">
-    </Research>
-    <Research task="Catch a Water-, Electric- or Bug-Type Pokemon">
-    </Research>
     <Research task="Catch 3 Water-, Electric- or Bug-Type Pokemon">
       <Encounter id="309" name="Electrike" />
-    </Research>
-    <Research task="Catch 10 Water-, Electric- or Bug-Type Pokemon">
     </Research>
     <!-- #endregion Type -->
   </Category>
@@ -377,8 +193,6 @@
     <Research task="Win 5 Gym battles.">
       <Encounter id="66" name="Machop" current="true" />
     </Research>
-    <Research task="Use a supereffective Charged Attack in a Gym battle.">
-    </Research>
     <Research task="Use a supereffective Charged Attack in 5 Gym battles.">
       <Encounter id="125" name="Electabuzz" />
     </Research>
@@ -388,12 +202,6 @@
     <Research task="Battle in a raid.">
       <Encounter id="312" name="Minun" />
     </Research>
-    <Research task="Battle in 3 raids.">
-    </Research>
-    <Research task="Battle in 5 raids.">
-    </Research>
-    <Research task="Win 3 raids.">
-    </Research>
     <Research task="Win 5 raids.">
       <Encounter id="185" name="Sudowoodo" />
       <Encounter id="132" name="Ditto" />
@@ -401,19 +209,12 @@
     <Research task="Win a level 3 or higher raid.">
       <Encounter id="147" name="Dratini" />
     </Research>
-    <Research task="Win 3 level 3 or higher raids.">
-    </Research>
-    <Research task="Win 5 level 3 or higher raids.">
-    </Research>
   </Category>
 
   <Category type="Misc">
     <Research task="Earn a Candy walking with your buddy.">
-      <Encounter id="224" name="Octillery" current="true" />
       <Encounter id="322" name="Numel" />
       <Encounter id="333" name="Swablu" />
-    </Research>
-    <Research task="Earn {0} Candies walking with your buddy.">
     </Research>
     <Research task="Power up a Pokemon.">
       <Encounter id="82" name="Magneton" />
@@ -429,27 +230,56 @@
     <Research task="Power up Pokemon 7 times.">
       <Encounter id="311" name="Plusle" />
     </Research>
-    <Research task="Spin a PokeStop.">
-    </Research>
-    <Research task="Spin 10 PokeStops.">
-    </Research>
-    <Research task="Spin a PokeStop you haven't visited before.">
-    </Research>
     <Research task="Spin 6 PokeStops you haven't visited before.">
       <Encounter id="142" name="Aerodactyl" />
     </Research>
     <Research task="Send 5 Gifts to friends.">
       <Encounter id="315" name="Roselia" />
     </Research>
-    <Research task="Trade a Pokemon.">
-      <Encounter id="349" name="Feebas" current="true" />
-    </Research>
-    <Research task="Transfer 10 Pokemon.">
-      <Encounter id="200" name="Misdreavus" current="true" />
-    </Research>
   </Category>
 
-  <Category type="Johto Festival (obsolete)">
+  <!-- #region Events -->
+<!-- TODO QZX: Expose these when updated
+  <Event name="April 2018">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="146" name="Moltres" />
+    </Research>
+  </Event>
+  
+  <Event name="May 2018: Flying- and Electric-Type Challenges">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="145" name="Zapdos" />
+    </Research>
+  </Event>
+
+  <Event name="June 2018">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="144" name="Articuno" />
+    </Research>
+  </Event>
+  
+  <Event name="July 2018:">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="143" name="Snorlax" />
+    </Research>
+    <!- TODO QZX:
+      https://imgur.com/PhJYzCn 
+      https://i.redd.it/rpgtl8otjm711.png
+    ->
+  </Event>
+
+  <Event name="August 2018: Electric-type">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="243" name="Raikou" />
+    </Research>
+    <!- TODO QZX:
+      https://i.redd.it/n6g2h3a3sod11.png
+      https://i.redd.it/25ay0s8spne11.png
+    ->
+  </Event>
+-->
+
+  <Event name="Johto Festival" startdate="2018-08-20" enddate="2018-08-28">
     <Research task="Evolve 3 Sunkern or Natu.">
       <Encounter id="204" name="Pineco" />
     </Research>
@@ -466,19 +296,86 @@
     <Research task="Catch 5 Water-type Pokemon.">
       <Encounter id="117" name="Seadra" />
       <Encounter id="61" name="Poliwhirl" />
-      <Encounter id="98" name="Krabby" current="true" />
     </Research>
-  </Category>
+  </Event>
 
+  <!-- TODO QZX: Expose this when updated
+  <Event name="September 2018: Fire-type">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="244" name="Entei" />
+    </Research>
+    <!- TODO QZX:
+      https://i.redd.it/eibmahxbetj11.png
+    ->
+  </Event>
+  -->
 
-  <Category type="obsolete?">
-    <Research task="Earn a gold Kanto medal.">
+  <Event name="October 2018: Water-type" startdate="2018-10-01" enddate="2018-10-31">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="245" name="Suicune" />
     </Research>
-    <Research task="Earn a silver Kanto medal.">
+    <Research task="Hatch 2 Eggs.">
+      <Encounter id="120" name="Wailmer" />
     </Research>
-    <Research task="Reach level {0}.">
+    <Research task="Evolve 10 Water-type Pokemon.">
+      <Encounter id="147" name="Dratini" current="true" />
     </Research>
-    <Research task="Transfer {0} Pokemon.">
+    <Research task="Make 2 Nice Curveball Throws.">
+      <Encounter id="327" name="Spinda" form="3" />
     </Research>
-  </Category>
+    <Research task="Catch 5 Water-type Pokemon.">
+      <Encounter id="98" name="Krabby" />
+    </Research>
+    <Research task="Earn a Candy walking with your buddy.">
+      <Encounter id="224" name="Octillery" />
+    </Research>
+    <Research task="Trade a Pokemon.">
+      <Encounter id="349" name="Feebas" />
+    </Research>
+  </Event>
+
+  <Event name="Halloween 2018" startdate="2018-10-23" enddate="2018-10-31">
+    <Research task="Catch 10 Poochyena or Houndour">
+      <Encounter id="215" name="Sneasel" />
+    </Research>
+    <Research task="Catch 10 Ghost-type Pokemon.">
+      <Encounter id="302" name="Sableye" />
+    </Research>
+    <Research task="Transfer 10 Pokemon.">
+      <Encounter id="200" name="Misdreavus" />
+    </Research>
+  </Event>
+
+  <Event name="November 2018: Bug-type" startdate="2018-11-01" enddate="2018-11-30">
+    <Research task="Achieve 7 stamps">
+      <Encounter id="292" name="Shedinja" />
+    </Research>
+    <Research task="Evolve 2 Pidgey.">
+      <Encounter id="10" name="Caterpie" />
+    </Research>
+    <Research task="Make 3 Nice Curveball Throws.">
+      <Encounter id="327" name="Spinda" form="7" />
+    </Research>
+    <Research task="Make 5 Great Throws in a row.">
+      <Encounter id="40" name="Wigglytuff" />
+    </Research>
+    <Research task="Catch 5 Bug-type Pokemon.">
+      <Encounter id="290" name="Nincada" />
+    </Research>
+    <Research task="Catch 5 Normal-type Pokemon.">
+      <Encounter id="127" name="Pinsir" />
+    </Research>
+    <Research task="Win a raid.">
+      <Encounter id="204" name="Pineco" />
+    </Research>
+    <Research task="Earn a Candy walking with your buddy.">
+      <Encounter id="36" name="Clefable" />
+    </Research>
+    <Research task="Send 5 Gifts to friends.">
+      <Encounter id="42" name="Golbat" />
+    </Research>
+  </Event>
+
+  <!-- #endregion Events -->
+
 </FieldResearch>

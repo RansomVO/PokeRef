@@ -54,11 +54,24 @@
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          Encounters <span class="NOTE TODO">(Under Construction/Beta)</span>
+          Encounters
+          <span class="NOTE TODO">(Under Construction/Beta)</span>
         </h1>
         <div class="INDENT">
+          <span class="INDENT NOTE">
+            Last Updated: <xsl:value-of select="FieldResearch/@last_updated" />
+          </span>
           <p>
-            <span class="TODO QZX">TODO: Description</span>
+            Sometimes the Reward for a Research Task, is an "Encounter".
+            <xsl:call-template name="SpriteImage">
+              <xsl:with-param name="id" select="'Encounter'" />
+              <xsl:with-param name="Settings">
+                <Show sprite_class="TAG_ICON_MEDIUM" />
+              </xsl:with-param>
+            </xsl:call-template>
+            <br />
+            However, the Research Task doesn't tell you which Pokemon you will Encounter when you complete it.
+            <br />This page should help you to match up which Pokemon may be the Encounter for which Research Tasks.
           </p>
         </div>
 
@@ -97,6 +110,7 @@
         </a>
         <br />
       </xsl:for-each>
+      <xsl:apply-templates select="/Root/FieldResearch/Category[@type='Research Breakthrough']" />
     </div>
   </xsl:template>
 
@@ -113,19 +127,9 @@
     </h2>
     <div id="FIELD_RESEARCH" class="INDENT">
       <p>
-        When spinning a PokeStop you can get "Field Research" which is a task you perform, that will give you a Reward when completed.
-        There are a lot of different Research tasks. When you complete the task, you receive a Reward.
-      </p>
-      <p>
-        In a lot of cases, you will be able to see what the Reward is.
-        However, there are cases where the Reward is an "Encounter".
-        When this is the case, you won't see what Pokemon you'll Encounter.
-        <br />
-        However, for a given task there is usually only one Pokemon that it can be.
-        (Occasionally there are 2-3 possibilities.)
-      </p>
-      <p>
-        This section allows you to see what Tasks match up with which Encounters, and if you click on the Pokemon, it will show you a CP to IV reference chart.
+        When spinning a PokeStop you get a "Field Research" that may have and Encounter as a Reward.
+        And the Pokemon encountered for a specific Field Research Task may change from time to time.
+        <br />This section allows you to see what Tasks match up with which Encounters, and if you click on the Pokemon, it will show you a CP to IV reference chart.
       </p>
 
       <br />
@@ -133,7 +137,6 @@
       <xsl:call-template name="CreateKey" />
 
       <br />
-      <hr />
       <xsl:call-template name="CreateCriteria" />
 
       <br />
@@ -209,17 +212,74 @@
   <!-- #region Templates to output the Field Research tables by Task -->
 
   <xsl:template match="FieldResearch" mode="ByTask">
-    <xsl:apply-templates select="Category[not(contains(@type, '?'))]" />
+    <h2>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'EVENT_RESEARCH_TASKS'" />
+      </xsl:call-template>
+      <xsl:text>Event Research Tasks</xsl:text>
+    </h2>
+    <div id="EVENT_RESEARCH_TASKS" class="INDENT">
+      <p>
+        Some Research Tasks do change frequently.
+        In fact, except for the first few months, there are new Research Tasks and Encounters released every month.
+      </p>
+      <xsl:apply-templates select="Event">
+        <xsl:sort order="descending" select="@startdate" />
+      </xsl:apply-templates>
+    </div>
+    <h2>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'STANDARD_RESEARCH_TASKS'" />
+      </xsl:call-template>
+      <xsl:text>Standard Research Tasks</xsl:text>
+    </h2>
+    <div id="STANDARD_RESEARCH_TASKS" class="INDENT">
+      <p>
+        This is a set of Research Tasks and Encounters that don't change much.
+      </p>
+      <xsl:apply-templates select="Category[not(@type='Research Breakthrough')]" />
+    </div>
+  </xsl:template>
+
+  <xsl:template match="Event">
+    <h3>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="concat('EVENT_', @name)" />
+      </xsl:call-template>
+      <xsl:value-of select="@name" disable-output-escaping="yes" />
+      <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+      <span class="NOTE">
+        <xsl:text>(</xsl:text>
+        <xsl:value-of select="@startdate" />
+        <xsl:text> - </xsl:text>
+        <xsl:value-of select="@enddate" />
+        <xsl:text>)</xsl:text>
+      </span>
+    </h3>
+    <div style="margin-top:.5em;" class="INDENT">
+      <xsl:attribute name="id">
+        <xsl:value-of select="concat('EVENT_', @name)" />
+      </xsl:attribute>
+      <table border="1">
+        <tr>
+          <th>Task</th>
+          <th>Encounters</th>
+        </tr>
+        <xsl:apply-templates select="Research[Encounter]">
+          <xsl:with-param name="isEvent" select="'true'" />
+        </xsl:apply-templates>
+      </table>
+    </div>
   </xsl:template>
 
   <xsl:template match="Category">
-    <h2>
+    <h3>
       <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="concat('CATEGORY_', @type)" />
       </xsl:call-template>
       <xsl:value-of select="@type" />
-    </h2>
-    <div style="margin-top:.5em;">
+    </h3>
+    <div style="margin-top:.5em;" class="INDENT">
       <xsl:attribute name="id">
         <xsl:value-of select="concat('CATEGORY_', @type)" />
       </xsl:attribute>
@@ -228,18 +288,26 @@
           <th>Task</th>
           <th>Encounters</th>
         </tr>
-        <xsl:apply-templates select="Research[Encounter]" />
+        <xsl:apply-templates select="Research[Encounter/@current]" />
       </table>
     </div>
   </xsl:template>
 
   <xsl:template match="Research">
+    <xsl:param name="isEvent" />
     <tr>
       <td>
         <xsl:value-of select="@task" disable-output-escaping="yes" />
       </td>
       <td style="white-space:nowrap">
-        <xsl:apply-templates select="Encounter" />
+        <xsl:choose>
+          <xsl:when test="$isEvent">
+            <xsl:apply-templates select="Encounter" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates select="Encounter[@current]" />
+          </xsl:otherwise>
+        </xsl:choose>
       </td>
     </tr>
   </xsl:template>

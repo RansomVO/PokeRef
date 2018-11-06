@@ -240,6 +240,11 @@ h1, h2, h3, h4 {
     max-height: 40px;
 }
 
+.SPRITE_LARGE {
+    max-width: 128px;
+    max-height: 128px;
+}
+
 .SPRITE_FILLER {
     display: flex;
     justify-content: center;
@@ -534,8 +539,9 @@ h1, h2, h3, h4 {
 .COLLAPSER {
     /* This class is also used to find the collapsers and initialize them. */
     display: inline-block;
-    padding-left: .25em;
-    padding-right: .25em;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
     margin-top: .2em;
     cursor: context-menu;
     /* The strokes on this char are extremely thin, so this is to make it more visible. */

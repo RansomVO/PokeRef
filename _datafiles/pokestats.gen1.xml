@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-21" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-05" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -96,7 +96,7 @@
       <Max cp="2291" hp="136" />
     </Stats>
   </Pokemon>
-  <Pokemon id="10" name="Caterpie" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/05/Caterpie.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Caterpie_shiny.png">
+  <Pokemon id="10" name="Caterpie" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/05/Caterpie.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Caterpie_shiny.png">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="55" defense="62" stamina="90" />
@@ -106,7 +106,7 @@
       <Max cp="393" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="11" name="Metapod" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Metapod.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/66/Metapod_shiny.png">
+  <Pokemon id="11" name="Metapod" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Metapod.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/66/Metapod_shiny.png">
     <Type primary="Bug" />
     <EvolvesFrom id="10" name="Caterpie" candies="12" />
     <Stats>
@@ -117,7 +117,7 @@
       <Max cp="419" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="12" name="Butterfree" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/96/Butterfree.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Butterfree_shiny.png">
+  <Pokemon id="12" name="Butterfree" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/96/Butterfree.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Butterfree_shiny.png">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="11" name="Metapod" candies="50" />
     <Stats>
@@ -1088,7 +1088,7 @@
       <Max cp="2916" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="77" name="Ponyta" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5f/Ponyta.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Ponyta_shiny.png">
+  <Pokemon id="77" name="Ponyta" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5f/Ponyta.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Ponyta_shiny.png">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="170" defense="132" stamina="100" />
@@ -1098,7 +1098,7 @@
       <Max cp="1502" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="78" name="Rapidash" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Rapidash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Rapidash_shiny.png">
+  <Pokemon id="78" name="Rapidash" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Rapidash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Rapidash_shiny.png">
     <Type primary="Fire" />
     <EvolvesFrom id="77" name="Ponyta" candies="50" />
     <Stats>
@@ -1285,7 +1285,7 @@
       <Max cp="2475" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="92" name="Gastly" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Gastly.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Gastly_shiny.png">
+  <Pokemon id="92" name="Gastly" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Gastly.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Gastly_shiny.png">
     <Type primary="Ghost" secondary="Poison" />
     <Stats>
       <BaseIV attack="186" defense="70" stamina="60" />
@@ -1295,7 +1295,7 @@
       <Max cp="1002" hp="59" />
     </Stats>
   </Pokemon>
-  <Pokemon id="93" name="Haunter" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Haunter.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Haunter_shiny.png">
+  <Pokemon id="93" name="Haunter" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Haunter.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Haunter_shiny.png">
     <Type primary="Ghost" secondary="Poison" />
     <EvolvesFrom id="92" name="Gastly" candies="25" />
     <Stats>
@@ -1306,7 +1306,7 @@
       <Max cp="1716" hp="82" />
     </Stats>
   </Pokemon>
-  <Pokemon id="94" name="Gengar" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Gengar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/15/Gengar_shiny.png">
+  <Pokemon id="94" name="Gengar" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Gengar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/15/Gengar_shiny.png">
     <Type primary="Ghost" secondary="Poison" />
     <EvolvesFrom id="93" name="Haunter" candies="100" />
     <Stats>
@@ -1431,7 +1431,7 @@
       <Max cp="2916" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="104" name="Cubone" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Cubone.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Cubone_shiny.png">
+  <Pokemon id="104" name="Cubone" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Cubone.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Cubone_shiny.png">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="90" defense="165" stamina="100" />
@@ -1441,7 +1441,7 @@
       <Max cp="943" hp="90" />
     </Stats>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
+  <Pokemon id="105" name="Marowak" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
     <Type primary="Ground" />
     <EvolvesFrom id="104" name="Cubone" candies="50" />
     <Stats>
@@ -1462,7 +1462,7 @@
       <Max cp="1691" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" form="Normal" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
+  <Pokemon id="105" name="Marowak" form="Normal" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="144" defense="200" stamina="120" />
@@ -1694,7 +1694,7 @@
       <Max cp="2254" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="127" name="Pinsir" family="Pinsir" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b4/Pinsir.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Pinsir_shiny.png">
+  <Pokemon id="127" name="Pinsir" family="Pinsir" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b4/Pinsir.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Pinsir_shiny.png">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="238" defense="197" stamina="130" />

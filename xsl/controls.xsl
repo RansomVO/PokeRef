@@ -500,7 +500,6 @@
 
   <xsl:template name="Collapser">
     <xsl:param name="CollapseeID" />
-    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
     <div style="display:inline-block; cursor:pointer; transform:scale(1,.5);">
       <div class="COLLAPSER">
         <xsl:attribute name="id">
@@ -510,6 +509,7 @@
         <!--<xsl:text>&#x2335;</xsl:text>-->
       </div>
     </div>
+    <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
   </xsl:template>
 
   <!-- #endregion -->

@@ -122,14 +122,14 @@
             <br />I have collected links to those pages here so you don't have to go searching.
           </p>
           <div class="INDENT">
-            <div class="SECTION">
+            <div class="SECTION" comment="Raid Bosses">
               <h2 id="anchor_raidbosses">
                 <xsl:call-template name="Collapser">
                   <xsl:with-param name="CollapseeID" select="'HOME_RAID_BOSSES'" />
                 </xsl:call-template>
                 <a href="charts/raidboss">Possible IVs for Raid Bosses</a>
               </h2>
-              <div id="HOME_RAID_BOSSES">
+              <div id="HOME_RAID_BOSSES" class="INDENT">
                 <p>
                   After you defeat a Raid Boss in a Raid, it is time to try to catch him.
                   But how good is he?
@@ -144,14 +144,62 @@
               </div>
             </div>
 
-            <div class="SECTION">
+            <div class="SECTION" comment="Encounters">
+              <h2 id="anchor_research">
+                <xsl:call-template name="Collapser">
+                  <xsl:with-param name="CollapseeID" select="'HOME_FIELD_RESEARCH'" />
+                </xsl:call-template>
+                <a href="charts/research">Encounters</a>
+                <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+                <span class="NOTE TODO">(Beta)</span>
+              </h2>
+              <div id="HOME_FIELD_RESEARCH" class="INDENT">
+                <p>
+                  For Field Research, you perform a Task to get a Reward.
+                  If the Reward is something like Berries or Crystals, you can see exactly what you'll get.
+                </p>
+                <p>
+                  But sometimes the Reward is an Encounter with a Pokemon.
+                  What Pokemon may be the reward for completing the Task?
+                  And how good might it be?
+                </p>
+                <p>
+                  These charts can help.
+                </p>
+              </div>
+            </div>
+
+            <div class="SECTION" comment="Move Sets">
+              <h2 id="anchor_movesets">
+                <xsl:call-template name="Collapser">
+                  <xsl:with-param name="CollapseeID" select="'HOME_MOVESETS'" />
+                </xsl:call-template>
+                <a href="charts/movesets/">Pokemon Move Sets</a>
+              </h2>
+              <div id="HOME_MOVESETS" class="INDENT">
+                <p>
+                  Each type of Pokemon has a set of "Fast" Moves and "Charged" moves that they may have.
+                  Then each individual Pokemon has only one combination.
+                  Of course, some moves are more effective than others.
+                  <br />These pages show a list of each possible combination for each Pokemon, which then tells how much damage it will do.
+                </p>
+                <p class="PARENT">
+                  I have created a chart for each generation of Pokemon:
+                </p>
+                <div class="CHILD">
+                  <script>InsertLinksList('charts/movesets/_linkslist.html')</script>
+                </div>
+              </div>
+            </div>
+
+            <div class="SECTION" comment="PokeChart">
               <h2 id="anchor_pokecharts">
                 <xsl:call-template name="Collapser">
                   <xsl:with-param name="CollapseeID" select="'HOME_POKECHART'" />
                 </xsl:call-template>
                 <a href="charts/pokechart">Pokemon Chart</a>
               </h2>
-              <div id="HOME_POKECHART">
+              <div id="HOME_POKECHART" class="INDENT">
                 <p>
                   Want to know basic information about Pokemon?
                   Check out these charts and select the Pokemon you are interested in.
@@ -162,77 +210,54 @@
               </div>
             </div>
 
-            <div class="SECTION">
-              <h2 id="anchor_research">
-                <xsl:call-template name="Collapser">
-                  <xsl:with-param name="CollapseeID" select="'HOME_RESEARCH'" />
-                </xsl:call-template>
-                <a href="charts/research">Encounters</a>
-                <span class="NOTE TODO">(Beta)</span>
+            <div class="SECTION" comment="PokeQuick">
+              <h2 id="anchor_quickchart">
+                <a href="charts/pokequick.html">Pokemon Quick List</a>
               </h2>
-              <div id="HOME_FIELD_RESEARCH">
+              <div class="INDENT">
                 <p>
-                  For Field Research, you perform a Task to get a Reward.
-                  If the Reward is something like Berries or Crystals, you can see exactly what you'll get.
-                </p>
-                <p>
-                  But sometimes the Reward is an Encounter with a Pokemon.
-                  What Pokemon may be the reward for completing the Task?
-                </p>
-                <p>
-                  These charts can help.
+                  Sometimes you just want to see a list of the Pokemon that fit your criteria.
+                  For example, maybe you want to perform a Field Research task that involves catching Poison type Pokemon.
+                  <br />This list should help you out.
                 </p>
               </div>
             </div>
 
-            <h2 id="anchor_quickchart">
-              <a href="charts/pokequick.html">Pokemon Quick List</a>
-            </h2>
-            <div>
-              <p>
-                Sometimes you just want to see a list of the Pokemon that fit your criteria.
-                For example, maybe you want to perform a Field Research task that involves catching Poison type Pokemon.
-                <br />This list should help you out.
-              </p>
-            </div>
-
-            <h2 id="anchor_evolutions">
-              <a href="charts/evolutions.html">Evolutions Chart</a>
-            </h2>
-            <div>
-              <p>
-                One of the fun parts of Pokemon GO is Evolving.
-                But what can turn into what?
-                <br />This chart can help.
-              </p>
-            </div>
-
-            <h2 id="anchor_movesets">
-              <a href="charts/movesets/">Pokemon Move Sets</a>
-            </h2>
-            <div>
-              <p>
-                Each type of Pokemon has a set of "Fast" Moves and "Charged" moves that they may have.
-                Then each individual Pokemon has only one combination.
-                Of course, some moves are more effective than others.
-                <br />These pages show a list of each possible combination for each Pokemon, which then tells how much damage it will do.
-              </p>
-              <p class="PARENT">
-                I have created a chart for each generation of Pokemon:
-              </p>
-              <div class="CHILD">
-                <script>InsertLinksList('charts/movesets/_linkslist.html')</script>
+            <div class="SECTION" comment="ShoppingBoxes">
+              <h2 id="anchor_shoppingboxes">
+                <a href="tools/shoppingboxes.html">Shopping Boxes</a>
+              </h2>
+              <div class="INDENT">
+                <p>
+                  When there are Events in Pokémon GO, they usually have some sort of special package deals in the Shop. Ever wonder how much one of those boxes is worth <span class="EMPHISIS">to you</span>? 
+                  <br />Use this tool to find out. 
+                </p>
               </div>
             </div>
 
-            <h2 id="anchor_gamemaster">
-              <a href="tech/GAME_MASTER">GAME_MASTER</a>
-            </h2>
-            <div>
-              <p>
-                There is a file called the GAME_MASTER that contains statistics regarding just about everything in the game.
-                <br />I use the data in them to generate various tables, etc.
-              </p>
+            <div class="SECTION" comment="Evolutions">
+              <h2 id="anchor_evolutions">
+                <a href="charts/evolutions.html">Evolutions Chart</a>
+              </h2>
+              <div class="INDENT">
+                <p>
+                  One of the fun parts of Pokemon GO is Evolving.
+                  But what can turn into what?
+                  <br />This chart can help.
+                </p>
+              </div>
+            </div>
+
+            <div class="SECTION" comment="GAME_MASTER">
+              <h2 id="anchor_gamemaster">
+                <a href="tech/GAME_MASTER">GAME_MASTER</a>
+              </h2>
+              <div class="INDENT">
+                <p>
+                  There is a file called the GAME_MASTER that contains statistics regarding just about everything in the game.
+                  <br />I use the data in them to generate various tables, etc.
+                </p>
+              </div>
             </div>
           </div>
         </div>

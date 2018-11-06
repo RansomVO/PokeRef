@@ -34,7 +34,11 @@
           <xsl:call-template name="HomePageLink" />
           Encounter Possible IVs:<br />
 
-          <xsl:apply-templates select="Encounter/Pokemon" mode="Sprite" />
+          <xsl:apply-templates select="Encounter/Pokemon" mode="Sprite">
+            <xsl:with-param name="Settings">
+              <Show large="true" />
+            </xsl:with-param>
+          </xsl:apply-templates>
           <xsl:value-of select="Encounter/Pokemon/@name" />
         </h1>
         <p>

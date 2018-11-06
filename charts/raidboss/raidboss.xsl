@@ -51,7 +51,11 @@
         <h1>
           <xsl:call-template name="HomePageLink" />
           RaidBoss Possible IVs<br />
-          <xsl:apply-templates select="RaidBoss/Pokemon" mode="Sprite" />
+          <xsl:apply-templates select="RaidBoss/Pokemon" mode="Sprite">
+            <xsl:with-param name="Settings">
+              <Show large="true" />
+            </xsl:with-param>
+          </xsl:apply-templates>
           <xsl:value-of select="RaidBoss/Pokemon/@name" />
           <span class="NOTE">
             <xsl:if test="RaidBoss/Pokemon/@form">

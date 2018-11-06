@@ -81,8 +81,8 @@
             <xsl:text>display:inline-block;</xsl:text>
             <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'above' or exslt:node-set($Settings)/*/@title_pos = 'below'"> text-align:center;</xsl:if>
             <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'before' or exslt:node-set($Settings)/*/@title_pos = 'after'"> vertical-align:middle;</xsl:if>
-          
           </xsl:attribute>
+
           <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'before' or exslt:node-set($Settings)/*/@title_pos = 'above'">
             <xsl:value-of select="$image/@title" />
             <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'above'">
@@ -90,27 +90,10 @@
             </xsl:if>
           </xsl:if>
 
-          <img class="SPRITE">
-            <xsl:attribute name="src">
-              <xsl:value-of select="$image/@src" />
-            </xsl:attribute>
-            <xsl:attribute name="title">
-              <xsl:value-of select="$image/@title" disable-output-escaping="yes" />
-            </xsl:attribute>
-            <xsl:attribute name="style">
-              <xsl:if test="exslt:node-set($Settings)/*/@max_width" >
-                <xsl:value-of select="concat('max-width:', exslt:node-set($Settings)/*/@max_width, ';')" />
-              </xsl:if>
-              <xsl:if test="exslt:node-set($Settings)/*/@max_height" >
-                <xsl:value-of select="concat('max-height:', exslt:node-set($Settings)/*/@max_height, ';')" />
-              </xsl:if>
-            </xsl:attribute>
-            <xsl:if test="exslt:node-set($Settings)/*/@sprite_class" >
-              <xsl:attribute name="class">
-                <xsl:value-of select="exslt:node-set($Settings)/*/@sprite_class" />
-              </xsl:attribute>
-            </xsl:if>
-          </img>
+          <xsl:call-template name="SpriteImage">
+            <xsl:with-param name="id" select="$id" />
+            <xsl:with-param name="Settings" select="$Settings" />
+          </xsl:call-template>
 
           <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'below' or exslt:node-set($Settings)/*/@title_pos = 'after'">
             <xsl:if test="exslt:node-set($Settings)/*/@title_pos = 'below'">
@@ -121,6 +104,35 @@
         </div>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="SpriteImage">
+    <xsl:param name="id" />
+    <xsl:param name="Settings" />
+    
+    <xsl:variable name="image" select="/Root/Images/Image[@id=$id]" />
+
+    <img class="SPRITE">
+      <xsl:attribute name="src">
+        <xsl:value-of select="$image/@src" />
+      </xsl:attribute>
+      <xsl:attribute name="title">
+        <xsl:value-of select="$image/@title" disable-output-escaping="yes" />
+      </xsl:attribute>
+      <xsl:attribute name="style">
+        <xsl:if test="exslt:node-set($Settings)/*/@max_width" >
+          <xsl:value-of select="concat('max-width:', exslt:node-set($Settings)/*/@max_width, ';')" />
+        </xsl:if>
+        <xsl:if test="exslt:node-set($Settings)/*/@max_height" >
+          <xsl:value-of select="concat('max-height:', exslt:node-set($Settings)/*/@max_height, ';')" />
+        </xsl:if>
+      </xsl:attribute>
+      <xsl:if test="exslt:node-set($Settings)/*/@sprite_class" >
+        <xsl:attribute name="class">
+          <xsl:value-of select="exslt:node-set($Settings)/*/@sprite_class" />
+        </xsl:attribute>
+      </xsl:if>
+    </img>
   </xsl:template>
 
   <xsl:template name="WriteContactInfo">
