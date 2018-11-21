@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-03" gen="2">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-15" gen="2">
   <Pokemon id="152" name="Chikorita">
     <MoveSet base_dps="16.451612903225808" true_dps="11.397849462365592" comparison="87">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -162,6 +162,14 @@
     <MoveSet base_dps="19.821428571428577" true_dps="23.928571428571434" comparison="87">
       <FastAttack name="Shadow Claw" stab="false" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="19.277108433734938" true_dps="28.795180722891565" comparison="104">
+      <FastAttack name="Ember" stab="true" legacy="false" />
+      <ChargedAttack name="Blast Burn" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="19.895833333333336" true_dps="27.395833333333336" comparison="99">
+      <FastAttack name="Shadow Claw" stab="false" legacy="false" />
+      <ChargedAttack name="Blast Burn" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="158" name="Totodile">
@@ -553,6 +561,18 @@
       <FastAttack name="Thunder Shock" stab="true" legacy="false" />
       <ChargedAttack name="Thunder Punch" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="18.46153846153846" true_dps="10.307692307692308" comparison="102">
+      <FastAttack name="Quick Attack" stab="false" legacy="true" />
+      <ChargedAttack name="Thunderbolt" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.366197183098592" true_dps="6.9014084507042259" comparison="68">
+      <FastAttack name="Quick Attack" stab="false" legacy="true" />
+      <ChargedAttack name="Disarming Voice" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.4" true_dps="8.4" comparison="83">
+      <FastAttack name="Quick Attack" stab="false" legacy="true" />
+      <ChargedAttack name="Thunder Punch" stab="true" legacy="false" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="173" name="Cleffa">
     <MoveSet base_dps="19.125" true_dps="9.625" comparison="100">
@@ -579,6 +599,22 @@
       <FastAttack name="Zen Headbutt" stab="false" legacy="false" />
       <ChargedAttack name="Signal Beam" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="16.727272727272727" true_dps="8.545454545454545" comparison="89">
+      <FastAttack name="Pound" stab="false" legacy="false" />
+      <ChargedAttack name="Body Slam" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.846153846153847" true_dps="8.76923076923077" comparison="92">
+      <FastAttack name="Pound" stab="false" legacy="false" />
+      <ChargedAttack name="Psychic" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="15.555555555555554" true_dps="7.46031746031746" comparison="78">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="false" />
+      <ChargedAttack name="Body Slam" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="15.942028985507246" true_dps="7.6811594202898545" comparison="80">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="false" />
+      <ChargedAttack name="Psychic" stab="false" legacy="true" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="174" name="Igglybuff">
     <MoveSet base_dps="19.125" true_dps="9.25" comparison="99">
@@ -604,6 +640,14 @@
     <MoveSet base_dps="16.176470588235293" true_dps="7.5735294117647047" comparison="81">
       <FastAttack name="Feint Attack" stab="false" legacy="false" />
       <ChargedAttack name="Psychic" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.727272727272727" true_dps="9.2727272727272734" comparison="99">
+      <FastAttack name="Pound" stab="true" legacy="false" />
+      <ChargedAttack name="Body Slam" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.363636363636363" true_dps="8.545454545454545" comparison="91">
+      <FastAttack name="Feint Attack" stab="false" legacy="false" />
+      <ChargedAttack name="Body Slam" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="175" name="Togepi">
@@ -643,6 +687,18 @@
       <FastAttack name="Peck" stab="false" legacy="false" />
       <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="14.936708860759493" true_dps="6.20253164556962" comparison="69">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="true" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.915492957746478" true_dps="6.6197183098591541" comparison="74">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="true" />
+      <ChargedAttack name="Psyshock" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.777777777777779" true_dps="8.5555555555555554" comparison="95">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="true" />
+      <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="176" name="Togetic">
     <MoveSet base_dps="15.588235294117645" true_dps="12.352941176470587" comparison="75">
@@ -679,6 +735,30 @@
     </MoveSet>
     <MoveSet base_dps="14.492753623188404" true_dps="12.89855072463768" comparison="79">
       <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.936708860759493" true_dps="11.898734177215189" comparison="72">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="true" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.777777777777779" true_dps="16.333333333333332" comparison="99">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="true" />
+      <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.14705882352941" true_dps="13.676470588235294" comparison="83">
+      <FastAttack name="Zen Headbutt" stab="false" legacy="true" />
+      <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.385542168674696" true_dps="13.012048192771083" comparison="79">
+      <FastAttack name="Steel Wing" stab="false" legacy="true" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.598130841121495" true_dps="16.635514018691591" comparison="101">
+      <FastAttack name="Steel Wing" stab="false" legacy="true" />
+      <ChargedAttack name="Dazzling Gleam" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.805555555555554" true_dps="14.861111111111109" comparison="90">
+      <FastAttack name="Steel Wing" stab="false" legacy="true" />
       <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
@@ -1337,6 +1417,10 @@
     </MoveSet>
     <MoveSet base_dps="15.909090909090908" true_dps="12.272727272727272" comparison="100">
       <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Struggle" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.909090909090908" true_dps="12.272727272727272" comparison="100">
+      <FastAttack name="Tackle" stab="false" legacy="true" />
       <ChargedAttack name="Struggle" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
@@ -2289,6 +2373,18 @@
       <FastAttack name="Pound" stab="false" legacy="false" />
       <ChargedAttack name="Psyshock" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="16.666666666666668" true_dps="17.916666666666668" comparison="105">
+      <FastAttack name="Frost Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Ice Beam" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.625" true_dps="16.875" comparison="99">
+      <FastAttack name="Frost Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Ice Punch" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.972222222222221" true_dps="17.222222222222221" comparison="101">
+      <FastAttack name="Frost Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Psyshock" stab="true" legacy="false" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="239" name="Elekid">
     <MoveSet base_dps="14.583333333333334" true_dps="14.166666666666668" comparison="91">
@@ -2315,6 +2411,14 @@
       <FastAttack name="Low Kick" stab="false" legacy="false" />
       <ChargedAttack name="Discharge" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="17.164179104477611" true_dps="16.567164179104477" comparison="106">
+      <FastAttack name="Thunder Shock" stab="true" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.962025316455698" true_dps="15.316455696202533" comparison="98">
+      <FastAttack name="Low Kick" stab="false" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="true" legacy="true" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="240" name="Magby">
     <MoveSet base_dps="14.285714285714287" true_dps="13.928571428571429" comparison="83">
@@ -2340,6 +2444,14 @@
     <MoveSet base_dps="16.666666666666668" true_dps="16.363636363636363" comparison="98">
       <FastAttack name="Karate Chop" stab="false" legacy="false" />
       <ChargedAttack name="Flame Burst" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.666666666666668" true_dps="17.777777777777779" comparison="106">
+      <FastAttack name="Ember" stab="true" legacy="false" />
+      <ChargedAttack name="Flamethrower" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="17.741935483870968" true_dps="17.419354838709676" comparison="104">
+      <FastAttack name="Karate Chop" stab="false" legacy="false" />
+      <ChargedAttack name="Flamethrower" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="241" name="Miltank">

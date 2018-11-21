@@ -55,7 +55,7 @@
     <xsl:variable name="name" select="@name" />
     <xsl:variable name="form" select="@form" />
     <xsl:variable name="pokemon" select="/Root/PokeStats/Pokemon[@name = $name and @form = $form]" />
-    <xsl:variable name="egg" select="/Root/Eggs/Egg[Pokemon/@name = $name and (not($form) or Pokemon/@form = $form)]/@type" />
+    <xsl:variable name="egg" select="/Root/Traits/Eggs/Egg[Pokemon/@name = $name and (not($form) or Pokemon/@form = $form)]/@type" />
     <xsl:variable name="raidboss" select="count(/Root/RaidBosses/RaidBoss[@name = $name and @current and @tier]) != 0" />
 
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
@@ -234,7 +234,7 @@
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_special_icons) = 0">
 
           <!-- Shiny Icon -->
-          <xsl:if test="@shiny='true'">
+          <xsl:if test="not(@shiny='')">
             <xsl:call-template name="Sprite">
               <xsl:with-param name="id" select="'Shiny'" />
               <xsl:with-param name="Settings">

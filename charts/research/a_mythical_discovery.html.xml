@@ -4,7 +4,7 @@
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Images SYSTEM "/_datafiles.manual/infrequent/images.xml">
   <!ENTITY Event SYSTEM "/_datafiles.manual/infrequent/special.research.xml">
-  <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
+  <!ENTITY Traits SYSTEM "/_datafiles.manual/traits.xml">
   <!ENTITY Pokestats_Gen1 SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY Pokestats_Gen2 SYSTEM "/_datafiles/pokestats.gen2.xml">
   <!ENTITY Pokestats_Gen3 SYSTEM "/_datafiles/pokestats.gen3.xml">
@@ -20,7 +20,7 @@
   &Settings;
   &Images;
   &Event;
-  &Eggs;
+  &Traits;
   &Pokestats_Gen1;
   &Pokestats_Gen2;
   &Pokestats_Gen3;

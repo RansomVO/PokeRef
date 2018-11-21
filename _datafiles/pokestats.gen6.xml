@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-05" gen="6" region="Kalos">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-20" gen="6" region="Kalos">
   <Pokemon id="650" name="Chespin" family="Chespin" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png">
     <Type primary="Grass" />
   </Pokemon>
@@ -29,7 +29,7 @@
     <Type primary="Water" />
     <EvolvesFrom id="656" name="Froakie" />
   </Pokemon>
-  <Pokemon id="658" name="Greninja" family="Froakie" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png">
+  <Pokemon id="658" name="Greninja" family="Froakie" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png">
     <Type primary="Water" secondary="Dark" />
     <EvolvesFrom id="657" name="Frogadier" />
   </Pokemon>
@@ -66,7 +66,7 @@
     <Type primary="Bug" />
     <EvolvesFrom id="664" name="Scatterbug" />
   </Pokemon>
-  <Pokemon id="666" name="Vivillon" family="Scatterbug" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png">
+  <Pokemon id="666" name="Vivillon" family="Scatterbug" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="665" name="Vivillon" />
   </Pokemon>
@@ -157,7 +157,7 @@
     <Type primary="Fire" secondary="Normal" />
     <EvolvesFrom id="667" name="Litleo" />
   </Pokemon>
-  <Pokemon id="669" name="Flabébé" family="Flabébé" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png">
+  <Pokemon id="669" name="Flabébé" family="Flabébé" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png">
     <Type primary="Fairy" />
   </Pokemon>
   <Pokemon id="669" name="Flabébé" form="Red Flower" family="Flabébé" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669-red.png">
@@ -203,7 +203,7 @@
     <Type primary="Fairy" />
     <EvolvesFrom id="669" name="Flabébé" />
   </Pokemon>
-  <Pokemon id="671" name="Florges" family="Flabébé" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png">
+  <Pokemon id="671" name="Florges" family="Flabébé" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png">
     <Type primary="Fairy" />
     <EvolvesFrom id="670" name="Floette" />
   </Pokemon>
@@ -241,7 +241,7 @@
     <Type primary="Fighting" secondary="Dark" />
     <EvolvesFrom id="674" name="Pancham" />
   </Pokemon>
-  <Pokemon id="676" name="Furfrou" family="Furfrou" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png">
+  <Pokemon id="676" name="Furfrou" family="Furfrou" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png">
     <Type primary="Normal" />
   </Pokemon>
   <Pokemon id="676" name="Furfrou" form="Natural" family="Furfrou" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676-natural.png">
@@ -288,7 +288,7 @@
     <Type primary="Steel" secondary="Ghost" />
     <EvolvesFrom id="679" name="Honedge" />
   </Pokemon>
-  <Pokemon id="681" name="Aegislash" family="Honedge" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png">
+  <Pokemon id="681" name="Aegislash" family="Honedge" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png">
     <Type primary="Steel" secondary="Ghost" />
     <EvolvesFrom id="680" name="Doublade" />
   </Pokemon>
@@ -397,7 +397,7 @@
     <Type primary="Ghost" secondary="Grass" />
     <EvolvesFrom id="708" name="Phantump" />
   </Pokemon>
-  <Pokemon id="710" name="Pumpkaboo" family="Pumpkaboo" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png">
+  <Pokemon id="710" name="Pumpkaboo" family="Pumpkaboo" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png">
     <Type primary="Ghost" secondary="Grass" />
   </Pokemon>
   <Pokemon id="710" name="Pumpkaboo" form="Small Size" family="Pumpkaboo" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710-small.png">
@@ -412,7 +412,7 @@
   <Pokemon id="710" name="Pumpkaboo" form="Super Size" family="Pumpkaboo" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710-super.png">
     <Type primary="Ghost" secondary="Grass" />
   </Pokemon>
-  <Pokemon id="711" name="Gourgeist" family="Pumpkaboo" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png">
+  <Pokemon id="711" name="Gourgeist" family="Pumpkaboo" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png">
     <Type primary="Ghost" secondary="Grass" />
     <EvolvesFrom id="710" name="Pumpkaboo" />
   </Pokemon>
@@ -446,7 +446,7 @@
     <Type primary="Flying" secondary="Dragon" />
     <EvolvesFrom id="714" name="Noibat" />
   </Pokemon>
-  <Pokemon id="716" name="Xerneas" family="Xerneas" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png">
+  <Pokemon id="716" name="Xerneas" family="Xerneas" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png">
     <Type primary="Fairy" />
   </Pokemon>
   <Pokemon id="716" name="Xerneas" form="Active" family="Xerneas" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716-active.png">
@@ -455,34 +455,34 @@
   <Pokemon id="716" name="Xerneas" form="Neutral" family="Xerneas" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716-neutral.png">
     <Type primary="Fairy" />
   </Pokemon>
-  <Pokemon id="717" name="Yveltal" family="Yveltal" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png">
+  <Pokemon id="717" name="Yveltal" family="Yveltal" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png">
     <Type primary="Dark" secondary="Flying" />
   </Pokemon>
-  <Pokemon id="718" name="Zygarde" family="Zygarde" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png">
+  <Pokemon id="718" name="Zygarde" family="Zygarde" rarity="Legendary" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png">
     <Type primary="Dragon" secondary="Ground" />
   </Pokemon>
-  <Pokemon id="718" name="Zygarde" form="10%" family="Zygarde" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718-10.png">
+  <Pokemon id="718" name="Zygarde" form="10%" family="Zygarde" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718-10.png">
     <Type primary="Dragon" secondary="Ground" />
   </Pokemon>
-  <Pokemon id="718" name="Zygarde" form="50%" family="Zygarde" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718-50.png">
+  <Pokemon id="718" name="Zygarde" form="50%" family="Zygarde" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718-50.png">
     <Type primary="Dragon" secondary="Ground" />
   </Pokemon>
-  <Pokemon id="718" name="Zygarde" form="Complete" family="Zygarde" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718-complete.png">
+  <Pokemon id="718" name="Zygarde" form="Complete" family="Zygarde" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718-complete.png">
     <Type primary="Dragon" secondary="Ground" />
   </Pokemon>
-  <Pokemon id="719" name="Diancie" family="Diancie" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png">
+  <Pokemon id="719" name="Diancie" family="Diancie" rarity="Mythic" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png">
     <Type primary="Rock" secondary="Fairy" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa" family="Hoopa" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png">
+  <Pokemon id="720" name="Hoopa" family="Hoopa" rarity="Mythic" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png">
     <Type primary="Psychic" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa" form="Confined" family="Hoopa" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png">
+  <Pokemon id="720" name="Hoopa" form="Confined" family="Hoopa" rarity="Mythic" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png">
     <Type primary="Psychic" secondary="Ghost" />
   </Pokemon>
-  <Pokemon id="720" name="Hoopa" form="Unbound" family="Hoopa" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720-unbound.png">
+  <Pokemon id="720" name="Hoopa" form="Unbound" family="Hoopa" rarity="Mythic" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720-unbound.png">
     <Type primary="Psychic" secondary="Dark" />
   </Pokemon>
-  <Pokemon id="721" name="Volcanion" family="Volcanion" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png">
+  <Pokemon id="721" name="Volcanion" family="Volcanion" rarity="Mythic" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png">
     <Type primary="Fire" secondary="Water" />
   </Pokemon>
 </PokeStats>

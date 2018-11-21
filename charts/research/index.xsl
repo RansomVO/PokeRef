@@ -104,7 +104,7 @@
       <xsl:for-each select="Event">
         <a>
           <xsl:attribute name="href">
-            <xsl:value-of select="concat(pokeref:Replace(pokeref:ToLower(@name), ' ', '_'), '.html')" />
+            <xsl:value-of select="concat(pokeref:FixURLTarget(pokeref:ToLower(@name)), '.html')" />
           </xsl:attribute>
           <xsl:value-of select="@name"/>
         </a>

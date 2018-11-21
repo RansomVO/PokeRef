@@ -11,7 +11,7 @@
   https://www.reddit.com/r/TheSilphRoad/comments/88cwy8/spoilers_all_quests_texts/
 -->
 
-<FieldResearch last_updated="2018-11-02">
+<FieldResearch last_updated="2018-11-16">
   <Category type="Research Breakthrough">
     <Research task="Complete 'A Mythical Discovery'">
       <Encounter id="151" name="Mew" current="true" />
@@ -239,7 +239,6 @@
   </Category>
 
   <!-- #region Events -->
-<!-- TODO QZX: Expose these when updated
   <Event name="April 2018">
     <Research task="Achieve 7 stamps">
       <Encounter id="146" name="Moltres" />
@@ -262,22 +261,21 @@
     <Research task="Achieve 7 stamps">
       <Encounter id="143" name="Snorlax" />
     </Research>
-    <!- TODO QZX:
+    <!-- TODO QZX:
       https://imgur.com/PhJYzCn 
       https://i.redd.it/rpgtl8otjm711.png
-    ->
+    -->
   </Event>
 
   <Event name="August 2018: Electric-type">
     <Research task="Achieve 7 stamps">
       <Encounter id="243" name="Raikou" />
     </Research>
-    <!- TODO QZX:
+    <!-- TODO QZX:
       https://i.redd.it/n6g2h3a3sod11.png
       https://i.redd.it/25ay0s8spne11.png
-    ->
+    -->
   </Event>
--->
 
   <Event name="Johto Festival" startdate="2018-08-20" enddate="2018-08-28">
     <Research task="Evolve 3 Sunkern or Natu.">
@@ -299,16 +297,14 @@
     </Research>
   </Event>
 
-  <!-- TODO QZX: Expose this when updated
   <Event name="September 2018: Fire-type">
     <Research task="Achieve 7 stamps">
       <Encounter id="244" name="Entei" />
     </Research>
-    <!- TODO QZX:
+    <!-- TODO QZX:
       https://i.redd.it/eibmahxbetj11.png
-    ->
+    -->
   </Event>
-  -->
 
   <Event name="October 2018: Water-type" startdate="2018-10-01" enddate="2018-10-31">
     <Research task="Achieve 7 stamps">
@@ -373,6 +369,18 @@
     </Research>
     <Research task="Send 5 Gifts to friends.">
       <Encounter id="42" name="Golbat" />
+    </Research>
+  </Event>
+
+  <Event name="Celebration of Pokemon, Let's Go" startdate="2018-11-16" enddate="2018-11-27">
+    <Research task="Let's Go: Evolve 2 Anorith">
+      <Encounter id="123" name="Scyther" />
+    </Research>
+    <Research task="Let's Go: Make an excellet throw">
+      <Encounter id="132" name="Ditto" />
+    </Research>
+    <Research task="Let's Go: Hatch 2 Eggs">
+      <Encounter id="142" name="Aerodactyl" />
     </Research>
   </Event>
 

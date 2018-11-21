@@ -3,7 +3,7 @@
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
   <!ENTITY Images SYSTEM "/_datafiles.manual/infrequent/images.xml">
-  <!ENTITY Eggs SYSTEM "/_datafiles.manual/eggs.xml">
+  <!ENTITY Traits SYSTEM "/_datafiles.manual/traits.xml">
   <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.xml">
   <!ENTITY Pokestats SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY MoveSets SYSTEM "/_datafiles/movesets.gen1.xml">
@@ -15,7 +15,7 @@
   &Constants; 
   &Settings;
   &Images;
-  &Eggs;
+  &Traits;
   &RaidBosses;
   &Pokestats;
   &MoveSets;

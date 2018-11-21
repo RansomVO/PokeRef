@@ -55,6 +55,14 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.sprites.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
+    <WebContent Include="images\items\mystery_box.png" />
+    <WebContent Include="images\items\mystery_box_open.png" />
+    <WebContent Include="images\items\special_shinnoh_stone.png" />
+    <WebContent Include="images\candy\candy_meltan.png" />
+    <WebContent Include="images\candy\candy_meltan - Copy.png" />
     <Content Include="__Debugging\qzx.html" />
     <WebContent Include="images\question.png" />
     <WebContent Include="images\candy\candy_spiritomb.png" />
@@ -68,7 +76,7 @@
   </ItemGroup>
   <!-- /_datafiles.manual -->
   <ItemGroup>
-    <FixIntermediateFile Include="_datafiles.manual\eggs.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\traits.xml" />
     <FixIntermediateFile Include="_datafiles.manual\encounters.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
@@ -246,7 +254,7 @@
     <WebContent Include="images\game\egg_10K.png" />
     <WebContent Include="images\game\egg_2K.png" />
     <WebContent Include="images\game\egg_5K.png" />
-    <WebContent Include="images\game\egg_7k.png" />
+    <WebContent Include="images\game\egg_7K.png" />
     <WebContent Include="images\game\egg_raid_tier1-2.png" />
     <WebContent Include="images\game\egg_raid_tier3-4.png" />
     <WebContent Include="images\game\egg_raid_tier5.png" />

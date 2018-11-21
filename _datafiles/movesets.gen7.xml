@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-15" gen="7">
+  <Pokemon id="808" name="Meltan">
+    <MoveSet base_dps="15.714285714285714" true_dps="12.571428571428571" comparison="100">
+      <FastAttack name="Thunder Shock" stab="false" legacy="false" />
+      <ChargedAttack name="Flash Cannon" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.164179104477611" true_dps="11.791044776119403" comparison="94">
+      <FastAttack name="Thunder Shock" stab="false" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="false" legacy="false" />
+    </MoveSet>
+  </Pokemon>
+  <Pokemon id="809" name="Melmetal">
+    <MoveSet base_dps="15.714285714285714" true_dps="23.333333333333332" comparison="99">
+      <FastAttack name="Thunder Shock" stab="false" legacy="false" />
+      <ChargedAttack name="Flash Cannon" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.164179104477611" true_dps="22.089552238805968" comparison="93">
+      <FastAttack name="Thunder Shock" stab="false" legacy="false" />
+      <ChargedAttack name="Thunderbolt" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.53448275862069" true_dps="23.793103448275861" comparison="100">
+      <FastAttack name="Thunder Shock" stab="false" legacy="false" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.666666666666664" true_dps="21.44927536231884" comparison="91">
+      <FastAttack name="Thunder Shock" stab="false" legacy="false" />
+      <ChargedAttack name="Rock Slide" stab="false" legacy="false" />
+    </MoveSet>
+  </Pokemon>
+</MoveSets>

@@ -179,7 +179,16 @@
       public string Replace(string text, string oldValue, string newValue)
       {  
         return text.Replace(oldValue, newValue);
-      }  
+      }
+      
+      public string FixURLTarget(string text)
+      {
+        text = text.Replace(' ', '_');
+        foreach (char bad in "<>:\"/\\|?*;@&=+$,{}^[]`'")
+          text = text.Replace(bad.ToString(), string.Empty);
+        
+        return text;
+      }
 
       public string ToLower(string text)
       {  

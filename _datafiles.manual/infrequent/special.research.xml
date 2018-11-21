@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SpecialResearch last_updated="2018-10-23">
+<SpecialResearch last_updated="2018-11-16">
   <Event name="A Mythical Discovery" encounter="Mew">
     <Stage stage="1">
       <Task task="Spin Five PokeStops" reward_type="XP" reward="500" />
@@ -32,7 +32,7 @@
       </Rewards>
     </Stage>
     <Stage stage="4">
-      <Task task="Earn The Kanto Silver Medal" reward_type="XP" reward="v" />
+      <Task task="Earn The Kanto Silver Medal" reward_type="XP" reward="2000" />
       <Task task="Evolve 20 Pokemon" reward_type="XP" reward="2000" />
       <Task task="Earn Five Candy While Walking Your Buddy" reward_type="XP" reward="2000" />
       <Rewards>
@@ -189,6 +189,98 @@
         <Item type="CandySpiritomb" amount="10" />
         <Item type="CandySpiritomb" amount="8" />
         <Item type="Stardust" amount="1080" />
+      </Rewards>
+    </Stage>
+  </Event>
+  <Event name="Let's Go, Meltan" encounter="Meltan">
+    <Stage stage="1">
+      <Task task="Spin 5 PokeStops or Gyms" reward_type="XP" reward="500" />
+      <Task task="Catch 10 Pokemon" reward_type="XP" reward="500" />
+      <Task task="Transfer 5 Pokemon" reward_type="XP" reward="500" />
+      <Rewards>
+        <Item type="Stardust" amount="1000" />
+        <Item type="BallRegular" amount="10" />
+        <Item type="IncubatorSuper" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="2">
+      <Task task="Earn 2 Candies walking with your Buddy" reward_type="XP" reward="1000" />
+      <Task task="Make 10 Great Throws" reward_type="XP" reward="1000" />
+      <Task task="Hatch 3 Eggs" reward_type="XP" reward="1000" />
+      <Rewards>
+        <Item type="Stardust" amount="2000" />
+        <Item type="LuckyEgg" amount="2" />
+        <Item type="TMFast" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="3">
+      <Task task="Catch a Ditto" reward_type="XP" reward="1500" />
+      <Task task="Win 2 Gym battles" reward_type="XP" reward="1500" />
+      <Task task="Battle in 2 raids" reward_type="XP" reward="1500" />
+      <Rewards>
+        <Item type="BallGreat" amount="10" />
+        <Item type="Incense" amount="3" />
+        <Item type="ReviveMax" amount="3" />
+      </Rewards>
+    </Stage>
+    <Stage stage="4">
+      <Task task="Catch 5 Steel-type Pokemon" reward_type="XP" reward="2000" />
+      <Task task="Catch 5 Electric-type Pokemon" reward_type="XP" reward="2000" />
+      <Task task="Earn 5 Candies walking with your buddy" reward_type="XP" reward="2000" />
+      <Rewards>
+        <Item type="Stardust" amount="4000" />
+        <Item type="BerryPinap" amount="5" />
+        <Item type="CandyRare" amount="5" />
+      </Rewards>
+    </Stage>
+    <Stage stage="5">
+      <Task task="Evolve a Grimer" reward_type="XP" reward="2500" />
+      <Task task="Catch 5 Slugma or Gulpin" reward_type="XP" reward="2500" />
+      <Task task="Make 20 Great Throws" reward_type="XP" reward="2500" />
+      <Rewards>
+        <Item type="Stardust" amount="5000" />
+        <Item type="Lure" amount="5" />
+        <Item type="BallGreat" amount="20" />
+      </Rewards>
+    </Stage>
+    <Stage stage="6">
+      <Task task="Evolve a Magnemite" reward_type="XP" reward="3000" />
+      <Task task="Catch 5 Exeggcute" reward_type="XP" reward="3000" />
+      <Task task="Battle in 10 raids" reward_type="XP" reward="3000" />
+      <Rewards>
+        <Item type="BerrySilverPinap" amount="1" />
+        <Item type="MetalCoat" amount="1" />
+        <Item type="BallUltra" amount="10" />
+      </Rewards>
+    </Stage>
+    <Stage stage="7">
+      <Task task="Evolve 1 Drowzee" reward_type="XP" reward="3500" />
+      <Task task="Catch 1 Cubone" reward_type="XP" reward="3500" />
+      <Task task="Evolve 1 Scyther" reward_type="XP" reward="3500" />
+      <Rewards>
+        <Item type="BallUltra" amount="10" />
+        <Item type="TMCharged" amount="1" />
+        <Item type="RaidPassPremium" amount="3" />
+      </Rewards>
+    </Stage>
+    <Stage stage="8">
+      <Task task="Catch 2 Omanyte or Kabuto" reward_type="XP" reward="4000" />
+      <Task task="Catch 2 Lileep or Anority" reward_type="XP" reward="4000" />
+      <Task task="Catch an Aerodactyl" reward_type="XP" reward="4000" />
+      <Rewards>
+        <Item type="Stardust" amount="8000" />
+        <Encounter id="808" name="Meltan" />
+        <Item type="StarPiece" amount="1" />
+      </Rewards>
+    </Stage>
+    <Stage stage="9">
+      <Task task="Claim Reward" reward_type="XP" reward="4500" />
+      <Task task="Claim Reward" reward_type="XP" reward="4500" />
+      <Task task="Claim Reward" reward_type="XP" reward="4500" />
+      <Rewards>
+        <Item type="Stardust" amount="9000" />
+        <Item type="IncubatorSuper" amount="1" />
+        <Item type="CandyMeltan" amount="5" />
       </Rewards>
     </Stage>
   </Event>

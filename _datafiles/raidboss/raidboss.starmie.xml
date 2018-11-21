@@ -1,720 +1,722 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RaidBoss xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-23" raid_cp="17384">
+<RaidBoss xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-15" raid_cp="17384">
   <Pokemon id="121" name="Starmie" />
   <Regular columns="7">
-    <Possibilities cp="1246" min_score="0" max_score="67">
-      <IVs attack="10" defense="10" stamina="10" hp="77" score="67" />
+    <Possibilities cp="1404" min_score="0" max_score="67">
+      <IVs attack="10" defense="10" stamina="10" hp="98" score="67" />
     </Possibilities>
-    <Possibilities cp="1251" min_score="0" max_score="69">
-      <IVs attack="10" defense="10" stamina="11" hp="78" score="69" />
+    <Possibilities cp="1408" min_score="69" max_score="69">
+      <IVs attack="10" defense="10" stamina="11" hp="99" score="69" />
+      <IVs attack="10" defense="11" stamina="10" hp="98" score="69" />
     </Possibilities>
-    <Possibilities cp="1256" min_score="71" max_score="73">
-      <IVs attack="10" defense="10" stamina="12" hp="78" score="71" />
-      <IVs attack="10" defense="13" stamina="10" hp="77" score="73" />
+    <Possibilities cp="1413" min_score="0" max_score="71">
+      <IVs attack="10" defense="10" stamina="12" hp="99" score="71" />
     </Possibilities>
-    <Possibilities cp="1261" min_score="73" max_score="76">
-      <IVs attack="10" defense="10" stamina="13" hp="79" score="73" />
-      <IVs attack="10" defense="13" stamina="11" hp="78" score="76" />
-      <IVs attack="12" defense="11" stamina="10" hp="77" score="73" />
+    <Possibilities cp="1417" min_score="71" max_score="73">
+      <IVs attack="10" defense="10" stamina="13" hp="100" score="73" />
+      <IVs attack="12" defense="10" stamina="10" hp="98" score="71" />
     </Possibilities>
-    <Possibilities cp="1265" min_score="76" max_score="78">
-      <IVs attack="10" defense="10" stamina="14" hp="80" score="76" />
-      <IVs attack="11" defense="11" stamina="12" hp="78" score="76" />
-      <IVs attack="11" defense="14" stamina="10" hp="77" score="78" />
+    <Possibilities cp="1421" min_score="73" max_score="76">
+      <IVs attack="10" defense="10" stamina="14" hp="100" score="76" />
+      <IVs attack="10" defense="11" stamina="13" hp="100" score="76" />
+      <IVs attack="11" defense="13" stamina="10" hp="98" score="76" />
+      <IVs attack="12" defense="10" stamina="11" hp="99" score="73" />
+      <IVs attack="12" defense="11" stamina="10" hp="98" score="73" />
     </Possibilities>
-    <Possibilities cp="1270" min_score="78" max_score="80">
-      <IVs attack="10" defense="10" stamina="15" hp="80" score="78" />
-      <IVs attack="10" defense="13" stamina="13" hp="79" score="80" />
-      <IVs attack="11" defense="11" stamina="13" hp="79" score="78" />
-      <IVs attack="11" defense="14" stamina="11" hp="78" score="80" />
-      <IVs attack="13" defense="12" stamina="10" hp="77" score="78" />
+    <Possibilities cp="1425" min_score="76" max_score="78">
+      <IVs attack="10" defense="10" stamina="15" hp="101" score="78" />
+      <IVs attack="10" defense="11" stamina="14" hp="100" score="78" />
+      <IVs attack="11" defense="14" stamina="10" hp="98" score="78" />
+      <IVs attack="12" defense="11" stamina="11" hp="99" score="76" />
     </Possibilities>
-    <Possibilities cp="1250" min_score="0" max_score="69">
-      <IVs attack="10" defense="11" stamina="10" hp="77" score="69" />
+    <Possibilities cp="1412" min_score="0" max_score="71">
+      <IVs attack="10" defense="11" stamina="11" hp="99" score="71" />
     </Possibilities>
-    <Possibilities cp="1254" min_score="0" max_score="71">
-      <IVs attack="10" defense="11" stamina="11" hp="78" score="71" />
+    <Possibilities cp="1416" min_score="73" max_score="73">
+      <IVs attack="10" defense="11" stamina="12" hp="99" score="73" />
+      <IVs attack="10" defense="12" stamina="11" hp="99" score="73" />
     </Possibilities>
-    <Possibilities cp="1259" min_score="73" max_score="76">
-      <IVs attack="10" defense="11" stamina="12" hp="78" score="73" />
-      <IVs attack="10" defense="14" stamina="10" hp="77" score="76" />
+    <Possibilities cp="1429" min_score="78" max_score="80">
+      <IVs attack="10" defense="11" stamina="15" hp="101" score="80" />
+      <IVs attack="11" defense="14" stamina="11" hp="99" score="80" />
+      <IVs attack="11" defense="15" stamina="10" hp="98" score="80" />
+      <IVs attack="12" defense="11" stamina="12" hp="99" score="78" />
+      <IVs attack="12" defense="12" stamina="11" hp="99" score="78" />
     </Possibilities>
-    <Possibilities cp="1264" min_score="76" max_score="78">
-      <IVs attack="10" defense="11" stamina="13" hp="79" score="76" />
-      <IVs attack="10" defense="14" stamina="11" hp="78" score="78" />
-      <IVs attack="12" defense="12" stamina="10" hp="77" score="76" />
+    <Possibilities cp="1411" min_score="69" max_score="71">
+      <IVs attack="10" defense="12" stamina="10" hp="98" score="71" />
+      <IVs attack="11" defense="10" stamina="10" hp="98" score="69" />
     </Possibilities>
-    <Possibilities cp="1269" min_score="76" max_score="80">
-      <IVs attack="10" defense="11" stamina="14" hp="80" score="78" />
-      <IVs attack="10" defense="14" stamina="12" hp="78" score="80" />
-      <IVs attack="12" defense="12" stamina="11" hp="78" score="78" />
-      <IVs attack="14" defense="10" stamina="10" hp="77" score="76" />
+    <Possibilities cp="1420" min_score="0" max_score="76">
+      <IVs attack="10" defense="12" stamina="12" hp="99" score="76" />
     </Possibilities>
-    <Possibilities cp="1273" min_score="78" max_score="82">
-      <IVs attack="10" defense="11" stamina="15" hp="80" score="80" />
-      <IVs attack="11" defense="12" stamina="13" hp="79" score="80" />
-      <IVs attack="11" defense="15" stamina="11" hp="78" score="82" />
-      <IVs attack="13" defense="10" stamina="12" hp="78" score="78" />
-      <IVs attack="13" defense="13" stamina="10" hp="77" score="80" />
+    <Possibilities cp="1424" min_score="76" max_score="78">
+      <IVs attack="10" defense="12" stamina="13" hp="100" score="78" />
+      <IVs attack="10" defense="13" stamina="12" hp="99" score="78" />
+      <IVs attack="12" defense="12" stamina="10" hp="98" score="76" />
     </Possibilities>
-    <Possibilities cp="1253" min_score="0" max_score="71">
-      <IVs attack="10" defense="12" stamina="10" hp="77" score="71" />
+    <Possibilities cp="1428" min_score="76" max_score="80">
+      <IVs attack="10" defense="12" stamina="14" hp="100" score="80" />
+      <IVs attack="10" defense="13" stamina="13" hp="100" score="80" />
+      <IVs attack="11" defense="10" stamina="14" hp="100" score="78" />
+      <IVs attack="12" defense="13" stamina="10" hp="98" score="78" />
+      <IVs attack="13" defense="10" stamina="11" hp="99" score="76" />
     </Possibilities>
-    <Possibilities cp="1258" min_score="71" max_score="73">
-      <IVs attack="10" defense="12" stamina="11" hp="78" score="73" />
-      <IVs attack="11" defense="12" stamina="10" hp="77" score="73" />
-      <IVs attack="12" defense="10" stamina="10" hp="77" score="71" />
+    <Possibilities cp="1433" min_score="78" max_score="82">
+      <IVs attack="10" defense="12" stamina="15" hp="101" score="82" />
+      <IVs attack="11" defense="15" stamina="11" hp="99" score="82" />
+      <IVs attack="12" defense="12" stamina="12" hp="99" score="80" />
+      <IVs attack="14" defense="11" stamina="10" hp="98" score="78" />
     </Possibilities>
-    <Possibilities cp="1262" min_score="73" max_score="78">
-      <IVs attack="10" defense="12" stamina="12" hp="78" score="76" />
-      <IVs attack="10" defense="15" stamina="10" hp="77" score="78" />
-      <IVs attack="11" defense="10" stamina="12" hp="78" score="73" />
-      <IVs attack="11" defense="13" stamina="10" hp="77" score="76" />
+    <Possibilities cp="1415" min_score="71" max_score="73">
+      <IVs attack="10" defense="13" stamina="10" hp="98" score="73" />
+      <IVs attack="11" defense="10" stamina="11" hp="99" score="71" />
     </Possibilities>
-    <Possibilities cp="1267" min_score="76" max_score="80">
-      <IVs attack="10" defense="12" stamina="13" hp="79" score="78" />
-      <IVs attack="10" defense="15" stamina="11" hp="78" score="80" />
-      <IVs attack="11" defense="13" stamina="11" hp="78" score="78" />
-      <IVs attack="12" defense="10" stamina="12" hp="78" score="76" />
-      <IVs attack="12" defense="13" stamina="10" hp="77" score="78" />
-      <IVs attack="13" defense="11" stamina="10" hp="77" score="76" />
+    <Possibilities cp="1419" min_score="73" max_score="76">
+      <IVs attack="10" defense="13" stamina="11" hp="99" score="76" />
+      <IVs attack="10" defense="14" stamina="10" hp="98" score="76" />
+      <IVs attack="11" defense="10" stamina="12" hp="99" score="73" />
+      <IVs attack="11" defense="11" stamina="11" hp="99" score="73" />
     </Possibilities>
-    <Possibilities cp="1272" min_score="78" max_score="82">
-      <IVs attack="10" defense="12" stamina="14" hp="80" score="80" />
-      <IVs attack="10" defense="15" stamina="12" hp="78" score="82" />
-      <IVs attack="12" defense="10" stamina="13" hp="79" score="78" />
-      <IVs attack="12" defense="13" stamina="11" hp="78" score="80" />
-      <IVs attack="13" defense="11" stamina="11" hp="78" score="78" />
-      <IVs attack="14" defense="11" stamina="10" hp="77" score="78" />
+    <Possibilities cp="1432" min_score="78" max_score="82">
+      <IVs attack="10" defense="13" stamina="14" hp="100" score="82" />
+      <IVs attack="11" defense="10" stamina="15" hp="101" score="80" />
+      <IVs attack="12" defense="13" stamina="11" hp="99" score="80" />
+      <IVs attack="12" defense="14" stamina="10" hp="98" score="80" />
+      <IVs attack="13" defense="10" stamina="12" hp="99" score="78" />
     </Possibilities>
-    <Possibilities cp="1277" min_score="80" max_score="84">
-      <IVs attack="10" defense="12" stamina="15" hp="80" score="82" />
-      <IVs attack="10" defense="15" stamina="13" hp="79" score="84" />
-      <IVs attack="12" defense="10" stamina="14" hp="80" score="80" />
-      <IVs attack="12" defense="13" stamina="12" hp="78" score="82" />
-      <IVs attack="14" defense="11" stamina="11" hp="78" score="80" />
+    <Possibilities cp="1436" min_score="78" max_score="84">
+      <IVs attack="10" defense="13" stamina="15" hp="101" score="84" />
+      <IVs attack="10" defense="14" stamina="14" hp="100" score="84" />
+      <IVs attack="11" defense="11" stamina="15" hp="101" score="82" />
+      <IVs attack="12" defense="14" stamina="11" hp="99" score="82" />
+      <IVs attack="13" defense="10" stamina="13" hp="100" score="80" />
+      <IVs attack="13" defense="11" stamina="12" hp="99" score="80" />
+      <IVs attack="15" defense="10" stamina="10" hp="98" score="78" />
     </Possibilities>
-    <Possibilities cp="1266" min_score="76" max_score="78">
-      <IVs attack="10" defense="13" stamina="12" hp="78" score="78" />
-      <IVs attack="11" defense="10" stamina="13" hp="79" score="76" />
-      <IVs attack="12" defense="11" stamina="11" hp="78" score="76" />
+    <Possibilities cp="1423" min_score="73" max_score="78">
+      <IVs attack="10" defense="14" stamina="11" hp="99" score="78" />
+      <IVs attack="11" defense="10" stamina="13" hp="100" score="76" />
+      <IVs attack="11" defense="11" stamina="12" hp="99" score="76" />
+      <IVs attack="13" defense="10" stamina="10" hp="98" score="73" />
     </Possibilities>
-    <Possibilities cp="1275" min_score="78" max_score="82">
-      <IVs attack="10" defense="13" stamina="14" hp="80" score="82" />
-      <IVs attack="11" defense="14" stamina="12" hp="78" score="82" />
-      <IVs attack="12" defense="11" stamina="13" hp="79" score="80" />
-      <IVs attack="13" defense="12" stamina="11" hp="78" score="80" />
-      <IVs attack="15" defense="10" stamina="10" hp="77" score="78" />
+    <Possibilities cp="1427" min_score="76" max_score="80">
+      <IVs attack="10" defense="14" stamina="12" hp="99" score="80" />
+      <IVs attack="10" defense="15" stamina="11" hp="99" score="80" />
+      <IVs attack="11" defense="11" stamina="13" hp="100" score="78" />
+      <IVs attack="13" defense="11" stamina="10" hp="98" score="76" />
     </Possibilities>
-    <Possibilities cp="1280" min_score="80" max_score="84">
-      <IVs attack="10" defense="13" stamina="15" hp="80" score="84" />
-      <IVs attack="12" defense="11" stamina="14" hp="80" score="82" />
-      <IVs attack="12" defense="14" stamina="12" hp="78" score="84" />
-      <IVs attack="13" defense="12" stamina="12" hp="78" score="82" />
-      <IVs attack="13" defense="15" stamina="10" hp="77" score="84" />
-      <IVs attack="14" defense="12" stamina="11" hp="78" score="82" />
-      <IVs attack="15" defense="10" stamina="11" hp="78" score="80" />
+    <Possibilities cp="1431" min_score="78" max_score="82">
+      <IVs attack="10" defense="14" stamina="13" hp="100" score="82" />
+      <IVs attack="10" defense="15" stamina="12" hp="99" score="82" />
+      <IVs attack="11" defense="11" stamina="14" hp="100" score="80" />
+      <IVs attack="11" defense="12" stamina="13" hp="100" score="80" />
+      <IVs attack="13" defense="11" stamina="11" hp="99" score="78" />
+      <IVs attack="13" defense="12" stamina="10" hp="98" score="78" />
     </Possibilities>
-    <Possibilities cp="1274" min_score="78" max_score="82">
-      <IVs attack="10" defense="14" stamina="13" hp="79" score="82" />
-      <IVs attack="11" defense="11" stamina="14" hp="80" score="80" />
-      <IVs attack="12" defense="12" stamina="12" hp="78" score="80" />
-      <IVs attack="12" defense="15" stamina="10" hp="77" score="82" />
-      <IVs attack="14" defense="10" stamina="11" hp="78" score="78" />
+    <Possibilities cp="1440" min_score="80" max_score="87">
+      <IVs attack="10" defense="14" stamina="15" hp="101" score="87" />
+      <IVs attack="12" defense="14" stamina="12" hp="99" score="84" />
+      <IVs attack="12" defense="15" stamina="11" hp="99" score="84" />
+      <IVs attack="13" defense="11" stamina="13" hp="100" score="82" />
+      <IVs attack="15" defense="11" stamina="10" hp="98" score="80" />
     </Possibilities>
-    <Possibilities cp="1278" min_score="80" max_score="84">
-      <IVs attack="10" defense="14" stamina="14" hp="80" score="84" />
-      <IVs attack="11" defense="12" stamina="14" hp="80" score="82" />
-      <IVs attack="11" defense="15" stamina="12" hp="78" score="84" />
-      <IVs attack="13" defense="10" stamina="13" hp="79" score="80" />
-      <IVs attack="13" defense="13" stamina="11" hp="78" score="82" />
-      <IVs attack="15" defense="11" stamina="10" hp="77" score="80" />
+    <Possibilities cp="1422" min_score="76" max_score="78">
+      <IVs attack="10" defense="15" stamina="10" hp="98" score="78" />
+      <IVs attack="11" defense="12" stamina="11" hp="99" score="76" />
     </Possibilities>
-    <Possibilities cp="1283" min_score="82" max_score="87">
-      <IVs attack="10" defense="14" stamina="15" hp="80" score="87" />
-      <IVs attack="11" defense="15" stamina="13" hp="79" score="87" />
-      <IVs attack="12" defense="12" stamina="14" hp="80" score="84" />
-      <IVs attack="13" defense="10" stamina="14" hp="80" score="82" />
-      <IVs attack="13" defense="13" stamina="12" hp="78" score="84" />
-      <IVs attack="15" defense="11" stamina="11" hp="78" score="82" />
+    <Possibilities cp="1435" min_score="80" max_score="84">
+      <IVs attack="10" defense="15" stamina="13" hp="100" score="84" />
+      <IVs attack="11" defense="12" stamina="14" hp="100" score="82" />
+      <IVs attack="12" defense="15" stamina="10" hp="98" score="82" />
+      <IVs attack="13" defense="12" stamina="11" hp="99" score="80" />
     </Possibilities>
-    <Possibilities cp="1282" min_score="82" max_score="87">
-      <IVs attack="10" defense="15" stamina="14" hp="80" score="87" />
-      <IVs attack="11" defense="12" stamina="15" hp="80" score="84" />
-      <IVs attack="12" defense="10" stamina="15" hp="80" score="82" />
-      <IVs attack="12" defense="13" stamina="13" hp="79" score="84" />
-      <IVs attack="14" defense="11" stamina="12" hp="78" score="82" />
-      <IVs attack="14" defense="14" stamina="10" hp="77" score="84" />
+    <Possibilities cp="1439" min_score="82" max_score="87">
+      <IVs attack="10" defense="15" stamina="14" hp="100" score="87" />
+      <IVs attack="11" defense="12" stamina="15" hp="101" score="84" />
+      <IVs attack="11" defense="13" stamina="14" hp="100" score="84" />
+      <IVs attack="13" defense="12" stamina="12" hp="99" score="82" />
+      <IVs attack="13" defense="13" stamina="11" hp="99" score="82" />
     </Possibilities>
-    <Possibilities cp="1286" min_score="84" max_score="89">
-      <IVs attack="10" defense="15" stamina="15" hp="80" score="89" />
-      <IVs attack="11" defense="13" stamina="15" hp="80" score="87" />
-      <IVs attack="13" defense="11" stamina="14" hp="80" score="84" />
-      <IVs attack="13" defense="14" stamina="12" hp="78" score="87" />
-      <IVs attack="15" defense="12" stamina="11" hp="78" score="84" />
+    <Possibilities cp="1444" min_score="82" max_score="89">
+      <IVs attack="10" defense="15" stamina="15" hp="101" score="89" />
+      <IVs attack="12" defense="15" stamina="12" hp="99" score="87" />
+      <IVs attack="13" defense="11" stamina="14" hp="100" score="84" />
+      <IVs attack="13" defense="12" stamina="13" hp="100" score="84" />
+      <IVs attack="14" defense="14" stamina="10" hp="98" score="84" />
+      <IVs attack="15" defense="11" stamina="11" hp="99" score="82" />
+      <IVs attack="15" defense="12" stamina="10" hp="98" score="82" />
     </Possibilities>
-    <Possibilities cp="1252" min_score="0" max_score="69">
-      <IVs attack="11" defense="10" stamina="10" hp="77" score="69" />
+    <Possibilities cp="1414" min_score="0" max_score="71">
+      <IVs attack="11" defense="11" stamina="10" hp="98" score="71" />
     </Possibilities>
-    <Possibilities cp="1257" min_score="0" max_score="71">
-      <IVs attack="11" defense="10" stamina="11" hp="78" score="71" />
+    <Possibilities cp="1418" min_score="0" max_score="73">
+      <IVs attack="11" defense="12" stamina="10" hp="98" score="73" />
     </Possibilities>
-    <Possibilities cp="1271" min_score="78" max_score="80">
-      <IVs attack="11" defense="10" stamina="14" hp="80" score="78" />
-      <IVs attack="11" defense="13" stamina="12" hp="78" score="80" />
-      <IVs attack="12" defense="11" stamina="12" hp="78" score="78" />
-      <IVs attack="12" defense="14" stamina="10" hp="77" score="80" />
+    <Possibilities cp="1426" min_score="76" max_score="78">
+      <IVs attack="11" defense="12" stamina="12" hp="99" score="78" />
+      <IVs attack="11" defense="13" stamina="11" hp="99" score="78" />
+      <IVs attack="12" defense="10" stamina="12" hp="99" score="76" />
     </Possibilities>
-    <Possibilities cp="1276" min_score="80" max_score="82">
-      <IVs attack="11" defense="10" stamina="15" hp="80" score="80" />
-      <IVs attack="11" defense="13" stamina="13" hp="79" score="82" />
-      <IVs attack="12" defense="14" stamina="11" hp="78" score="82" />
-      <IVs attack="13" defense="11" stamina="12" hp="78" score="80" />
-      <IVs attack="13" defense="14" stamina="10" hp="77" score="82" />
-      <IVs attack="14" defense="12" stamina="10" hp="77" score="80" />
+    <Possibilities cp="1430" min_score="76" max_score="80">
+      <IVs attack="11" defense="13" stamina="12" hp="99" score="80" />
+      <IVs attack="12" defense="10" stamina="13" hp="100" score="78" />
+      <IVs attack="14" defense="10" stamina="10" hp="98" score="76" />
     </Possibilities>
-    <Possibilities cp="1255" min_score="0" max_score="71">
-      <IVs attack="11" defense="11" stamina="10" hp="77" score="71" />
+    <Possibilities cp="1434" min_score="78" max_score="82">
+      <IVs attack="11" defense="13" stamina="13" hp="100" score="82" />
+      <IVs attack="11" defense="14" stamina="12" hp="99" score="82" />
+      <IVs attack="12" defense="10" stamina="14" hp="100" score="80" />
+      <IVs attack="12" defense="11" stamina="13" hp="100" score="80" />
+      <IVs attack="13" defense="13" stamina="10" hp="98" score="80" />
+      <IVs attack="14" defense="10" stamina="11" hp="99" score="78" />
     </Possibilities>
-    <Possibilities cp="1260" min_score="0" max_score="73">
-      <IVs attack="11" defense="11" stamina="11" hp="78" score="73" />
+    <Possibilities cp="1443" min_score="82" max_score="87">
+      <IVs attack="11" defense="13" stamina="15" hp="101" score="87" />
+      <IVs attack="13" defense="13" stamina="12" hp="99" score="84" />
+      <IVs attack="14" defense="10" stamina="13" hp="100" score="82" />
     </Possibilities>
-    <Possibilities cp="1279" min_score="80" max_score="84">
-      <IVs attack="11" defense="11" stamina="15" hp="80" score="82" />
-      <IVs attack="11" defense="14" stamina="13" hp="79" score="84" />
-      <IVs attack="12" defense="12" stamina="13" hp="79" score="82" />
-      <IVs attack="12" defense="15" stamina="11" hp="78" score="84" />
-      <IVs attack="14" defense="10" stamina="12" hp="78" score="80" />
-      <IVs attack="14" defense="13" stamina="10" hp="77" score="82" />
+    <Possibilities cp="1438" min_score="80" max_score="84">
+      <IVs attack="11" defense="14" stamina="13" hp="100" score="84" />
+      <IVs attack="12" defense="10" stamina="15" hp="101" score="82" />
+      <IVs attack="12" defense="11" stamina="14" hp="100" score="82" />
+      <IVs attack="13" defense="14" stamina="10" hp="98" score="82" />
+      <IVs attack="14" defense="10" stamina="12" hp="99" score="80" />
+      <IVs attack="14" defense="11" stamina="11" hp="99" score="80" />
     </Possibilities>
-    <Possibilities cp="1263" min_score="73" max_score="76">
-      <IVs attack="11" defense="12" stamina="11" hp="78" score="76" />
-      <IVs attack="12" defense="10" stamina="11" hp="78" score="73" />
-      <IVs attack="13" defense="10" stamina="10" hp="77" score="73" />
+    <Possibilities cp="1442" min_score="82" max_score="87">
+      <IVs attack="11" defense="14" stamina="14" hp="100" score="87" />
+      <IVs attack="11" defense="15" stamina="13" hp="100" score="87" />
+      <IVs attack="12" defense="11" stamina="15" hp="101" score="84" />
+      <IVs attack="13" defense="14" stamina="11" hp="99" score="84" />
+      <IVs attack="13" defense="15" stamina="10" hp="98" score="84" />
+      <IVs attack="14" defense="11" stamina="12" hp="99" score="82" />
     </Possibilities>
-    <Possibilities cp="1268" min_score="76" max_score="80">
-      <IVs attack="11" defense="12" stamina="12" hp="78" score="78" />
-      <IVs attack="11" defense="15" stamina="10" hp="77" score="80" />
-      <IVs attack="13" defense="10" stamina="11" hp="78" score="76" />
+    <Possibilities cp="1447" min_score="84" max_score="89">
+      <IVs attack="11" defense="14" stamina="15" hp="101" score="89" />
+      <IVs attack="13" defense="13" stamina="13" hp="100" score="87" />
+      <IVs attack="13" defense="14" stamina="12" hp="99" score="87" />
+      <IVs attack="14" defense="10" stamina="14" hp="100" score="84" />
+      <IVs attack="15" defense="13" stamina="10" hp="98" score="84" />
     </Possibilities>
-    <Possibilities cp="1281" min_score="82" max_score="84">
-      <IVs attack="11" defense="13" stamina="14" hp="80" score="84" />
-      <IVs attack="13" defense="11" stamina="13" hp="79" score="82" />
-      <IVs attack="13" defense="14" stamina="11" hp="78" score="84" />
-      <IVs attack="15" defense="12" stamina="10" hp="77" score="82" />
+    <Possibilities cp="1437" min_score="80" max_score="84">
+      <IVs attack="11" defense="15" stamina="12" hp="99" score="84" />
+      <IVs attack="12" defense="12" stamina="13" hp="100" score="82" />
+      <IVs attack="12" defense="13" stamina="12" hp="99" score="82" />
+      <IVs attack="14" defense="12" stamina="10" hp="98" score="80" />
     </Possibilities>
-    <Possibilities cp="1284" min_score="82" max_score="87">
-      <IVs attack="11" defense="14" stamina="14" hp="80" score="87" />
-      <IVs attack="12" defense="15" stamina="12" hp="78" score="87" />
-      <IVs attack="13" defense="12" stamina="13" hp="79" score="84" />
-      <IVs attack="13" defense="15" stamina="11" hp="78" score="87" />
-      <IVs attack="14" defense="10" stamina="13" hp="79" score="82" />
-      <IVs attack="14" defense="13" stamina="11" hp="78" score="84" />
-      <IVs attack="15" defense="10" stamina="12" hp="78" score="82" />
+    <Possibilities cp="1446" min_score="84" max_score="89">
+      <IVs attack="11" defense="15" stamina="14" hp="100" score="89" />
+      <IVs attack="12" defense="12" stamina="15" hp="101" score="87" />
+      <IVs attack="13" defense="15" stamina="11" hp="99" score="87" />
+      <IVs attack="14" defense="11" stamina="13" hp="100" score="84" />
+      <IVs attack="14" defense="12" stamina="12" hp="99" score="84" />
     </Possibilities>
-    <Possibilities cp="1289" min_score="84" max_score="89">
-      <IVs attack="11" defense="14" stamina="15" hp="80" score="89" />
-      <IVs attack="13" defense="12" stamina="14" hp="80" score="87" />
-      <IVs attack="13" defense="15" stamina="12" hp="78" score="89" />
-      <IVs attack="14" defense="13" stamina="12" hp="78" score="87" />
-      <IVs attack="15" defense="10" stamina="13" hp="79" score="84" />
-      <IVs attack="15" defense="13" stamina="11" hp="78" score="87" />
+    <Possibilities cp="1450" min_score="87" max_score="91">
+      <IVs attack="11" defense="15" stamina="15" hp="101" score="91" />
+      <IVs attack="13" defense="15" stamina="12" hp="99" score="89" />
+      <IVs attack="14" defense="12" stamina="13" hp="100" score="87" />
+      <IVs attack="14" defense="13" stamina="12" hp="99" score="87" />
     </Possibilities>
-    <Possibilities cp="1287" min_score="84" max_score="89">
-      <IVs attack="11" defense="15" stamina="14" hp="80" score="89" />
-      <IVs attack="12" defense="13" stamina="14" hp="80" score="87" />
-      <IVs attack="13" defense="10" stamina="15" hp="80" score="84" />
-      <IVs attack="14" defense="11" stamina="13" hp="79" score="84" />
-      <IVs attack="14" defense="14" stamina="11" hp="78" score="87" />
+    <Possibilities cp="1441" min_score="80" max_score="84">
+      <IVs attack="12" defense="12" stamina="14" hp="100" score="84" />
+      <IVs attack="12" defense="13" stamina="13" hp="100" score="84" />
+      <IVs attack="13" defense="10" stamina="14" hp="100" score="82" />
+      <IVs attack="14" defense="12" stamina="11" hp="99" score="82" />
+      <IVs attack="14" defense="13" stamina="10" hp="98" score="82" />
+      <IVs attack="15" defense="10" stamina="11" hp="99" score="80" />
     </Possibilities>
-    <Possibilities cp="1292" min_score="87" max_score="91">
-      <IVs attack="11" defense="15" stamina="15" hp="80" score="91" />
-      <IVs attack="12" defense="13" stamina="15" hp="80" score="89" />
-      <IVs attack="14" defense="11" stamina="14" hp="80" score="87" />
-      <IVs attack="14" defense="14" stamina="12" hp="78" score="89" />
+    <Possibilities cp="1445" min_score="82" max_score="87">
+      <IVs attack="12" defense="13" stamina="14" hp="100" score="87" />
+      <IVs attack="12" defense="14" stamina="13" hp="100" score="87" />
+      <IVs attack="13" defense="10" stamina="15" hp="101" score="84" />
+      <IVs attack="14" defense="13" stamina="11" hp="99" score="84" />
+      <IVs attack="15" defense="10" stamina="12" hp="99" score="82" />
     </Possibilities>
-    <Possibilities cp="1285" min_score="84" max_score="87">
-      <IVs attack="12" defense="11" stamina="15" hp="80" score="84" />
-      <IVs attack="12" defense="14" stamina="13" hp="79" score="87" />
-      <IVs attack="14" defense="12" stamina="12" hp="78" score="84" />
-      <IVs attack="14" defense="15" stamina="10" hp="77" score="87" />
-      <IVs attack="15" defense="13" stamina="10" hp="77" score="84" />
+    <Possibilities cp="1449" min_score="84" max_score="89">
+      <IVs attack="12" defense="13" stamina="15" hp="101" score="89" />
+      <IVs attack="12" defense="14" stamina="14" hp="100" score="89" />
+      <IVs attack="13" defense="11" stamina="15" hp="101" score="87" />
+      <IVs attack="14" defense="14" stamina="11" hp="99" score="87" />
+      <IVs attack="15" defense="10" stamina="13" hp="100" score="84" />
+      <IVs attack="15" defense="11" stamina="12" hp="99" score="84" />
     </Possibilities>
-    <Possibilities cp="1288" min_score="84" max_score="89">
-      <IVs attack="12" defense="12" stamina="15" hp="80" score="87" />
-      <IVs attack="12" defense="15" stamina="13" hp="79" score="89" />
-      <IVs attack="13" defense="13" stamina="13" hp="79" score="87" />
-      <IVs attack="14" defense="10" stamina="14" hp="80" score="84" />
-      <IVs attack="15" defense="11" stamina="12" hp="78" score="84" />
-      <IVs attack="15" defense="14" stamina="10" hp="77" score="87" />
+    <Possibilities cp="1453" min_score="87" max_score="91">
+      <IVs attack="12" defense="14" stamina="15" hp="101" score="91" />
+      <IVs attack="14" defense="14" stamina="12" hp="99" score="89" />
+      <IVs attack="15" defense="10" stamina="14" hp="100" score="87" />
+      <IVs attack="15" defense="11" stamina="13" hp="100" score="87" />
     </Possibilities>
-    <Possibilities cp="1290" min_score="87" max_score="89">
-      <IVs attack="12" defense="14" stamina="14" hp="80" score="89" />
-      <IVs attack="14" defense="12" stamina="13" hp="79" score="87" />
-      <IVs attack="14" defense="15" stamina="11" hp="78" score="89" />
+    <Possibilities cp="1448" min_score="84" max_score="89">
+      <IVs attack="12" defense="15" stamina="13" hp="100" score="89" />
+      <IVs attack="13" defense="12" stamina="14" hp="100" score="87" />
+      <IVs attack="14" defense="15" stamina="10" hp="98" score="87" />
+      <IVs attack="15" defense="12" stamina="11" hp="99" score="84" />
     </Possibilities>
-    <Possibilities cp="1295" min_score="89" max_score="91">
-      <IVs attack="12" defense="14" stamina="15" hp="80" score="91" />
-      <IVs attack="14" defense="12" stamina="14" hp="80" score="89" />
-      <IVs attack="14" defense="15" stamina="12" hp="78" score="91" />
+    <Possibilities cp="1452" min_score="87" max_score="91">
+      <IVs attack="12" defense="15" stamina="14" hp="100" score="91" />
+      <IVs attack="13" defense="12" stamina="15" hp="101" score="89" />
+      <IVs attack="13" defense="13" stamina="14" hp="100" score="89" />
+      <IVs attack="14" defense="15" stamina="11" hp="99" score="89" />
+      <IVs attack="15" defense="12" stamina="12" hp="99" score="87" />
+      <IVs attack="15" defense="13" stamina="11" hp="99" score="87" />
     </Possibilities>
-    <Possibilities cp="1293" min_score="87" max_score="91">
-      <IVs attack="12" defense="15" stamina="14" hp="80" score="91" />
-      <IVs attack="13" defense="13" stamina="14" hp="80" score="89" />
-      <IVs attack="14" defense="10" stamina="15" hp="80" score="87" />
-      <IVs attack="15" defense="11" stamina="13" hp="79" score="87" />
-      <IVs attack="15" defense="14" stamina="11" hp="78" score="89" />
+    <Possibilities cp="1457" min_score="89" max_score="93">
+      <IVs attack="12" defense="15" stamina="15" hp="101" score="93" />
+      <IVs attack="14" defense="15" stamina="12" hp="99" score="91" />
+      <IVs attack="15" defense="11" stamina="14" hp="100" score="89" />
+      <IVs attack="15" defense="12" stamina="13" hp="100" score="89" />
     </Possibilities>
-    <Possibilities cp="1298" min_score="89" max_score="93">
-      <IVs attack="12" defense="15" stamina="15" hp="80" score="93" />
-      <IVs attack="14" defense="13" stamina="14" hp="80" score="91" />
-      <IVs attack="15" defense="11" stamina="14" hp="80" score="89" />
-      <IVs attack="15" defense="14" stamina="12" hp="78" score="91" />
+    <Possibilities cp="1456" min_score="89" max_score="91">
+      <IVs attack="13" defense="13" stamina="15" hp="101" score="91" />
+      <IVs attack="15" defense="13" stamina="12" hp="99" score="89" />
     </Possibilities>
-    <Possibilities cp="1291" min_score="87" max_score="89">
-      <IVs attack="13" defense="11" stamina="15" hp="80" score="87" />
-      <IVs attack="13" defense="14" stamina="13" hp="79" score="89" />
-      <IVs attack="15" defense="12" stamina="12" hp="78" score="87" />
-      <IVs attack="15" defense="15" stamina="10" hp="77" score="89" />
+    <Possibilities cp="1451" min_score="87" max_score="89">
+      <IVs attack="13" defense="14" stamina="13" hp="100" score="89" />
+      <IVs attack="14" defense="10" stamina="15" hp="101" score="87" />
+      <IVs attack="14" defense="11" stamina="14" hp="100" score="87" />
+      <IVs attack="15" defense="14" stamina="10" hp="98" score="87" />
     </Possibilities>
-    <Possibilities cp="1294" min_score="87" max_score="91">
-      <IVs attack="13" defense="12" stamina="15" hp="80" score="89" />
-      <IVs attack="13" defense="15" stamina="13" hp="79" score="91" />
-      <IVs attack="14" defense="13" stamina="13" hp="79" score="89" />
-      <IVs attack="15" defense="10" stamina="14" hp="80" score="87" />
-      <IVs attack="15" defense="13" stamina="12" hp="78" score="89" />
+    <Possibilities cp="1455" min_score="89" max_score="91">
+      <IVs attack="13" defense="14" stamina="14" hp="100" score="91" />
+      <IVs attack="13" defense="15" stamina="13" hp="100" score="91" />
+      <IVs attack="14" defense="11" stamina="15" hp="101" score="89" />
+      <IVs attack="15" defense="14" stamina="11" hp="99" score="89" />
+      <IVs attack="15" defense="15" stamina="10" hp="98" score="89" />
     </Possibilities>
-    <Possibilities cp="1297" min_score="89" max_score="91">
-      <IVs attack="13" defense="13" stamina="15" hp="80" score="91" />
-      <IVs attack="14" defense="11" stamina="15" hp="80" score="89" />
-      <IVs attack="14" defense="14" stamina="13" hp="79" score="91" />
+    <Possibilities cp="1460" min_score="91" max_score="93">
+      <IVs attack="13" defense="14" stamina="15" hp="101" score="93" />
+      <IVs attack="15" defense="13" stamina="13" hp="100" score="91" />
+      <IVs attack="15" defense="14" stamina="12" hp="99" score="91" />
     </Possibilities>
-    <Possibilities cp="1296" min_score="89" max_score="91">
-      <IVs attack="13" defense="14" stamina="14" hp="80" score="91" />
-      <IVs attack="15" defense="12" stamina="13" hp="79" score="89" />
-      <IVs attack="15" defense="15" stamina="11" hp="78" score="91" />
+    <Possibilities cp="1459" min_score="91" max_score="93">
+      <IVs attack="13" defense="15" stamina="14" hp="100" score="93" />
+      <IVs attack="14" defense="12" stamina="15" hp="101" score="91" />
+      <IVs attack="15" defense="15" stamina="11" hp="99" score="91" />
     </Possibilities>
-    <Possibilities cp="1301" min_score="91" max_score="93">
-      <IVs attack="13" defense="14" stamina="15" hp="80" score="93" />
-      <IVs attack="15" defense="12" stamina="14" hp="80" score="91" />
-      <IVs attack="15" defense="15" stamina="12" hp="78" score="93" />
+    <Possibilities cp="1463" min_score="93" max_score="96">
+      <IVs attack="13" defense="15" stamina="15" hp="101" score="96" />
+      <IVs attack="15" defense="15" stamina="12" hp="99" score="93" />
     </Possibilities>
-    <Possibilities cp="1299" min_score="89" max_score="93">
-      <IVs attack="13" defense="15" stamina="14" hp="80" score="93" />
-      <IVs attack="15" defense="10" stamina="15" hp="80" score="89" />
-      <IVs attack="15" defense="13" stamina="13" hp="79" score="91" />
+    <Possibilities cp="1454" min_score="89" max_score="89">
+      <IVs attack="14" defense="12" stamina="14" hp="100" score="89" />
+      <IVs attack="14" defense="13" stamina="13" hp="100" score="89" />
     </Possibilities>
-    <Possibilities cp="1304" min_score="93" max_score="96">
-      <IVs attack="13" defense="15" stamina="15" hp="80" score="96" />
-      <IVs attack="15" defense="13" stamina="14" hp="80" score="93" />
+    <Possibilities cp="1458" min_score="89" max_score="91">
+      <IVs attack="14" defense="13" stamina="14" hp="100" score="91" />
+      <IVs attack="14" defense="14" stamina="13" hp="100" score="91" />
+      <IVs attack="15" defense="10" stamina="15" hp="101" score="89" />
     </Possibilities>
-    <Possibilities cp="1300" min_score="91" max_score="93">
-      <IVs attack="14" defense="12" stamina="15" hp="80" score="91" />
-      <IVs attack="14" defense="15" stamina="13" hp="79" score="93" />
+    <Possibilities cp="1462" min_score="91" max_score="93">
+      <IVs attack="14" defense="13" stamina="15" hp="101" score="93" />
+      <IVs attack="14" defense="14" stamina="14" hp="100" score="93" />
+      <IVs attack="15" defense="11" stamina="15" hp="101" score="91" />
     </Possibilities>
-    <Possibilities cp="1303" min_score="93" max_score="93">
-      <IVs attack="14" defense="13" stamina="15" hp="80" score="93" />
-      <IVs attack="15" defense="14" stamina="13" hp="79" score="93" />
+    <Possibilities cp="1466" min_score="96" max_score="96">
+      <IVs attack="14" defense="14" stamina="15" hp="101" score="96" />
+      <IVs attack="14" defense="15" stamina="14" hp="100" score="96" />
     </Possibilities>
-    <Possibilities cp="1302" min_score="91" max_score="93">
-      <IVs attack="14" defense="14" stamina="14" hp="80" score="93" />
-      <IVs attack="15" defense="11" stamina="15" hp="80" score="91" />
+    <Possibilities cp="1461" min_score="91" max_score="93">
+      <IVs attack="14" defense="15" stamina="13" hp="100" score="93" />
+      <IVs attack="15" defense="12" stamina="14" hp="100" score="91" />
     </Possibilities>
-    <Possibilities cp="1307" min_score="96" max_score="96">
-      <IVs attack="14" defense="14" stamina="15" hp="80" score="96" />
-      <IVs attack="15" defense="14" stamina="14" hp="80" score="96" />
+    <Possibilities cp="1470" min_score="0" max_score="98">
+      <IVs attack="14" defense="15" stamina="15" hp="101" score="98" />
     </Possibilities>
-    <Possibilities cp="1305" min_score="0" max_score="96">
-      <IVs attack="14" defense="15" stamina="14" hp="80" score="96" />
+    <Possibilities cp="1465" min_score="93" max_score="93">
+      <IVs attack="15" defense="12" stamina="15" hp="101" score="93" />
+      <IVs attack="15" defense="13" stamina="14" hp="100" score="93" />
     </Possibilities>
-    <Possibilities cp="1310" min_score="0" max_score="98">
-      <IVs attack="14" defense="15" stamina="15" hp="80" score="98" />
+    <Possibilities cp="1469" min_score="0" max_score="96">
+      <IVs attack="15" defense="13" stamina="15" hp="101" score="96" />
     </Possibilities>
-    <Possibilities cp="1306" min_score="93" max_score="96">
-      <IVs attack="15" defense="12" stamina="15" hp="80" score="93" />
-      <IVs attack="15" defense="15" stamina="13" hp="79" score="96" />
+    <Possibilities cp="1464" min_score="0" max_score="93">
+      <IVs attack="15" defense="14" stamina="13" hp="100" score="93" />
     </Possibilities>
-    <Possibilities cp="1309" min_score="0" max_score="96">
-      <IVs attack="15" defense="13" stamina="15" hp="80" score="96" />
+    <Possibilities cp="1468" min_score="96" max_score="96">
+      <IVs attack="15" defense="14" stamina="14" hp="100" score="96" />
+      <IVs attack="15" defense="15" stamina="13" hp="100" score="96" />
     </Possibilities>
-    <Possibilities cp="1312" min_score="0" max_score="98">
-      <IVs attack="15" defense="14" stamina="15" hp="80" score="98" />
+    <Possibilities cp="1473" min_score="0" max_score="98">
+      <IVs attack="15" defense="14" stamina="15" hp="101" score="98" />
     </Possibilities>
-    <Possibilities cp="1311" min_score="0" max_score="98">
-      <IVs attack="15" defense="15" stamina="14" hp="80" score="98" />
+    <Possibilities cp="1472" min_score="0" max_score="98">
+      <IVs attack="15" defense="15" stamina="14" hp="100" score="98" />
     </Possibilities>
-    <Possibilities cp="1316" min_score="0" max_score="100">
-      <IVs attack="15" defense="15" stamina="15" hp="80" score="100" />
+    <Possibilities cp="1476" min_score="0" max_score="100">
+      <IVs attack="15" defense="15" stamina="15" hp="101" score="100" />
     </Possibilities>
   </Regular>
   <Boosted columns="6">
-    <Possibilities cp="1558" min_score="0" max_score="67">
-      <IVs attack="10" defense="10" stamina="10" hp="86" score="67" />
-    </Possibilities>
-    <Possibilities cp="1564" min_score="0" max_score="69">
-      <IVs attack="10" defense="10" stamina="11" hp="87" score="69" />
-    </Possibilities>
-    <Possibilities cp="1570" min_score="71" max_score="73">
-      <IVs attack="10" defense="10" stamina="12" hp="88" score="71" />
-      <IVs attack="10" defense="13" stamina="10" hp="86" score="73" />
-    </Possibilities>
-    <Possibilities cp="1576" min_score="73" max_score="76">
-      <IVs attack="10" defense="10" stamina="13" hp="88" score="73" />
-      <IVs attack="10" defense="13" stamina="11" hp="87" score="76" />
-      <IVs attack="12" defense="11" stamina="10" hp="86" score="73" />
-    </Possibilities>
-    <Possibilities cp="1582" min_score="76" max_score="78">
-      <IVs attack="10" defense="10" stamina="14" hp="89" score="76" />
-      <IVs attack="10" defense="13" stamina="12" hp="88" score="78" />
-      <IVs attack="12" defense="11" stamina="11" hp="87" score="76" />
-    </Possibilities>
-    <Possibilities cp="1588" min_score="78" max_score="80">
-      <IVs attack="10" defense="10" stamina="15" hp="90" score="78" />
-      <IVs attack="10" defense="13" stamina="13" hp="88" score="80" />
-      <IVs attack="13" defense="12" stamina="10" hp="86" score="78" />
-    </Possibilities>
-    <Possibilities cp="1562" min_score="0" max_score="69">
-      <IVs attack="10" defense="11" stamina="10" hp="86" score="69" />
-    </Possibilities>
-    <Possibilities cp="1568" min_score="0" max_score="71">
-      <IVs attack="10" defense="11" stamina="11" hp="87" score="71" />
-    </Possibilities>
-    <Possibilities cp="1574" min_score="73" max_score="76">
-      <IVs attack="10" defense="11" stamina="12" hp="88" score="73" />
-      <IVs attack="10" defense="14" stamina="10" hp="86" score="76" />
-    </Possibilities>
-    <Possibilities cp="1580" min_score="76" max_score="78">
-      <IVs attack="10" defense="11" stamina="13" hp="88" score="76" />
-      <IVs attack="10" defense="14" stamina="11" hp="87" score="78" />
-      <IVs attack="12" defense="12" stamina="10" hp="86" score="76" />
-    </Possibilities>
-    <Possibilities cp="1586" min_score="76" max_score="80">
-      <IVs attack="10" defense="11" stamina="14" hp="89" score="78" />
-      <IVs attack="10" defense="14" stamina="12" hp="88" score="80" />
-      <IVs attack="13" defense="10" stamina="11" hp="87" score="76" />
-    </Possibilities>
-    <Possibilities cp="1592" min_score="78" max_score="82">
-      <IVs attack="10" defense="11" stamina="15" hp="90" score="80" />
-      <IVs attack="10" defense="14" stamina="13" hp="88" score="82" />
-      <IVs attack="13" defense="10" stamina="12" hp="88" score="78" />
-      <IVs attack="13" defense="13" stamina="10" hp="86" score="80" />
-    </Possibilities>
-    <Possibilities cp="1566" min_score="0" max_score="71">
-      <IVs attack="10" defense="12" stamina="10" hp="86" score="71" />
-    </Possibilities>
-    <Possibilities cp="1572" min_score="71" max_score="73">
-      <IVs attack="10" defense="12" stamina="11" hp="87" score="73" />
-      <IVs attack="12" defense="10" stamina="10" hp="86" score="71" />
-    </Possibilities>
-    <Possibilities cp="1578" min_score="73" max_score="78">
-      <IVs attack="10" defense="12" stamina="12" hp="88" score="76" />
-      <IVs attack="10" defense="15" stamina="10" hp="86" score="78" />
-      <IVs attack="12" defense="10" stamina="11" hp="87" score="73" />
-    </Possibilities>
-    <Possibilities cp="1584" min_score="76" max_score="80">
-      <IVs attack="10" defense="12" stamina="13" hp="88" score="78" />
-      <IVs attack="10" defense="15" stamina="11" hp="87" score="80" />
-      <IVs attack="12" defense="10" stamina="12" hp="88" score="76" />
-      <IVs attack="12" defense="13" stamina="10" hp="86" score="78" />
-      <IVs attack="13" defense="11" stamina="10" hp="86" score="76" />
-    </Possibilities>
-    <Possibilities cp="1590" min_score="78" max_score="82">
-      <IVs attack="10" defense="12" stamina="14" hp="89" score="80" />
-      <IVs attack="10" defense="15" stamina="12" hp="88" score="82" />
-      <IVs attack="12" defense="10" stamina="13" hp="88" score="78" />
-      <IVs attack="13" defense="11" stamina="11" hp="87" score="78" />
-    </Possibilities>
-    <Possibilities cp="1596" min_score="80" max_score="84">
-      <IVs attack="10" defense="12" stamina="15" hp="90" score="82" />
-      <IVs attack="10" defense="15" stamina="13" hp="88" score="84" />
-      <IVs attack="12" defense="10" stamina="14" hp="89" score="80" />
-      <IVs attack="13" defense="11" stamina="12" hp="88" score="80" />
-      <IVs attack="13" defense="14" stamina="10" hp="86" score="82" />
-    </Possibilities>
-    <Possibilities cp="1594" min_score="78" max_score="82">
-      <IVs attack="10" defense="13" stamina="14" hp="89" score="82" />
-      <IVs attack="13" defense="12" stamina="11" hp="87" score="80" />
-      <IVs attack="15" defense="10" stamina="10" hp="86" score="78" />
-    </Possibilities>
-    <Possibilities cp="1600" min_score="80" max_score="84">
-      <IVs attack="10" defense="13" stamina="15" hp="90" score="84" />
-      <IVs attack="12" defense="11" stamina="14" hp="89" score="82" />
-      <IVs attack="13" defense="12" stamina="12" hp="88" score="82" />
-      <IVs attack="13" defense="15" stamina="10" hp="86" score="84" />
-      <IVs attack="15" defense="10" stamina="11" hp="87" score="80" />
-    </Possibilities>
-    <Possibilities cp="1598" min_score="80" max_score="84">
-      <IVs attack="10" defense="14" stamina="14" hp="89" score="84" />
-      <IVs attack="13" defense="10" stamina="13" hp="88" score="80" />
-      <IVs attack="13" defense="13" stamina="11" hp="87" score="82" />
-      <IVs attack="15" defense="11" stamina="10" hp="86" score="80" />
-    </Possibilities>
-    <Possibilities cp="1604" min_score="82" max_score="87">
-      <IVs attack="10" defense="14" stamina="15" hp="90" score="87" />
-      <IVs attack="11" defense="15" stamina="13" hp="88" score="87" />
-      <IVs attack="13" defense="10" stamina="14" hp="89" score="82" />
-      <IVs attack="13" defense="13" stamina="12" hp="88" score="84" />
-      <IVs attack="15" defense="11" stamina="11" hp="87" score="82" />
-    </Possibilities>
-    <Possibilities cp="1602" min_score="82" max_score="87">
-      <IVs attack="10" defense="15" stamina="14" hp="89" score="87" />
-      <IVs attack="12" defense="10" stamina="15" hp="90" score="82" />
-      <IVs attack="13" defense="11" stamina="13" hp="88" score="82" />
-      <IVs attack="13" defense="14" stamina="11" hp="87" score="84" />
-      <IVs attack="15" defense="12" stamina="10" hp="86" score="82" />
-    </Possibilities>
-    <Possibilities cp="1608" min_score="84" max_score="89">
-      <IVs attack="10" defense="15" stamina="15" hp="90" score="89" />
-      <IVs attack="13" defense="11" stamina="14" hp="89" score="84" />
-      <IVs attack="13" defense="14" stamina="12" hp="88" score="87" />
-      <IVs attack="15" defense="12" stamina="11" hp="87" score="84" />
-    </Possibilities>
-    <Possibilities cp="1565" min_score="0" max_score="69">
-      <IVs attack="11" defense="10" stamina="10" hp="86" score="69" />
-    </Possibilities>
-    <Possibilities cp="1571" min_score="0" max_score="71">
-      <IVs attack="11" defense="10" stamina="11" hp="87" score="71" />
-    </Possibilities>
-    <Possibilities cp="1577" min_score="73" max_score="76">
-      <IVs attack="11" defense="10" stamina="12" hp="88" score="73" />
-      <IVs attack="11" defense="13" stamina="10" hp="86" score="76" />
-    </Possibilities>
-    <Possibilities cp="1583" min_score="76" max_score="78">
-      <IVs attack="11" defense="10" stamina="13" hp="88" score="76" />
-      <IVs attack="11" defense="13" stamina="11" hp="87" score="78" />
-    </Possibilities>
-    <Possibilities cp="1589" min_score="78" max_score="80">
-      <IVs attack="11" defense="10" stamina="14" hp="89" score="78" />
-      <IVs attack="11" defense="13" stamina="12" hp="88" score="80" />
-      <IVs attack="12" defense="11" stamina="12" hp="88" score="78" />
-      <IVs attack="12" defense="14" stamina="10" hp="86" score="80" />
-    </Possibilities>
-    <Possibilities cp="1595" min_score="80" max_score="82">
-      <IVs attack="11" defense="10" stamina="15" hp="90" score="80" />
-      <IVs attack="11" defense="13" stamina="13" hp="88" score="82" />
-      <IVs attack="12" defense="11" stamina="13" hp="88" score="80" />
-      <IVs attack="12" defense="14" stamina="11" hp="87" score="82" />
-      <IVs attack="14" defense="12" stamina="10" hp="86" score="80" />
-    </Possibilities>
-    <Possibilities cp="1569" min_score="0" max_score="71">
-      <IVs attack="11" defense="11" stamina="10" hp="86" score="71" />
-    </Possibilities>
-    <Possibilities cp="1575" min_score="0" max_score="73">
-      <IVs attack="11" defense="11" stamina="11" hp="87" score="73" />
-    </Possibilities>
-    <Possibilities cp="1581" min_score="76" max_score="78">
-      <IVs attack="11" defense="11" stamina="12" hp="88" score="76" />
-      <IVs attack="11" defense="14" stamina="10" hp="86" score="78" />
-    </Possibilities>
-    <Possibilities cp="1587" min_score="76" max_score="80">
-      <IVs attack="11" defense="11" stamina="13" hp="88" score="78" />
-      <IVs attack="11" defense="14" stamina="11" hp="87" score="80" />
-      <IVs attack="12" defense="12" stamina="11" hp="87" score="78" />
-      <IVs attack="14" defense="10" stamina="10" hp="86" score="76" />
-    </Possibilities>
-    <Possibilities cp="1593" min_score="78" max_score="82">
-      <IVs attack="11" defense="11" stamina="14" hp="89" score="80" />
-      <IVs attack="11" defense="14" stamina="12" hp="88" score="82" />
-      <IVs attack="12" defense="12" stamina="12" hp="88" score="80" />
-      <IVs attack="12" defense="15" stamina="10" hp="86" score="82" />
-      <IVs attack="14" defense="10" stamina="11" hp="87" score="78" />
-    </Possibilities>
-    <Possibilities cp="1599" min_score="80" max_score="84">
-      <IVs attack="11" defense="11" stamina="15" hp="90" score="82" />
-      <IVs attack="11" defense="14" stamina="13" hp="88" score="84" />
-      <IVs attack="12" defense="12" stamina="13" hp="88" score="82" />
-      <IVs attack="12" defense="15" stamina="11" hp="87" score="84" />
-      <IVs attack="14" defense="10" stamina="12" hp="88" score="80" />
-      <IVs attack="14" defense="13" stamina="10" hp="86" score="82" />
-    </Possibilities>
-    <Possibilities cp="1573" min_score="0" max_score="73">
-      <IVs attack="11" defense="12" stamina="10" hp="86" score="73" />
-    </Possibilities>
-    <Possibilities cp="1579" min_score="73" max_score="76">
-      <IVs attack="11" defense="12" stamina="11" hp="87" score="76" />
-      <IVs attack="13" defense="10" stamina="10" hp="86" score="73" />
-    </Possibilities>
-    <Possibilities cp="1585" min_score="78" max_score="80">
-      <IVs attack="11" defense="12" stamina="12" hp="88" score="78" />
-      <IVs attack="11" defense="15" stamina="10" hp="86" score="80" />
-    </Possibilities>
-    <Possibilities cp="1591" min_score="78" max_score="82">
-      <IVs attack="11" defense="12" stamina="13" hp="88" score="80" />
-      <IVs attack="11" defense="15" stamina="11" hp="87" score="82" />
-      <IVs attack="12" defense="13" stamina="11" hp="87" score="80" />
-      <IVs attack="14" defense="11" stamina="10" hp="86" score="78" />
-    </Possibilities>
-    <Possibilities cp="1597" min_score="80" max_score="84">
-      <IVs attack="11" defense="12" stamina="14" hp="89" score="82" />
-      <IVs attack="11" defense="15" stamina="12" hp="88" score="84" />
-      <IVs attack="12" defense="13" stamina="12" hp="88" score="82" />
-      <IVs attack="14" defense="11" stamina="11" hp="87" score="80" />
-    </Possibilities>
-    <Possibilities cp="1603" min_score="82" max_score="84">
-      <IVs attack="11" defense="12" stamina="15" hp="90" score="84" />
-      <IVs attack="12" defense="13" stamina="13" hp="88" score="84" />
-      <IVs attack="14" defense="11" stamina="12" hp="88" score="82" />
-      <IVs attack="14" defense="14" stamina="10" hp="86" score="84" />
-    </Possibilities>
-    <Possibilities cp="1601" min_score="82" max_score="84">
-      <IVs attack="11" defense="13" stamina="14" hp="89" score="84" />
-      <IVs attack="12" defense="14" stamina="12" hp="88" score="84" />
-      <IVs attack="14" defense="12" stamina="11" hp="87" score="82" />
-    </Possibilities>
-    <Possibilities cp="1607" min_score="84" max_score="87">
-      <IVs attack="11" defense="13" stamina="15" hp="90" score="87" />
-      <IVs attack="12" defense="14" stamina="13" hp="88" score="87" />
-      <IVs attack="14" defense="12" stamina="12" hp="88" score="84" />
-      <IVs attack="14" defense="15" stamina="10" hp="86" score="87" />
-    </Possibilities>
-    <Possibilities cp="1605" min_score="82" max_score="87">
-      <IVs attack="11" defense="14" stamina="14" hp="89" score="87" />
-      <IVs attack="12" defense="12" stamina="14" hp="89" score="84" />
-      <IVs attack="12" defense="15" stamina="12" hp="88" score="87" />
-      <IVs attack="14" defense="10" stamina="13" hp="88" score="82" />
-      <IVs attack="14" defense="13" stamina="11" hp="87" score="84" />
-    </Possibilities>
-    <Possibilities cp="1611" min_score="84" max_score="89">
-      <IVs attack="11" defense="14" stamina="15" hp="90" score="89" />
-      <IVs attack="12" defense="12" stamina="15" hp="90" score="87" />
-      <IVs attack="12" defense="15" stamina="13" hp="88" score="89" />
-      <IVs attack="14" defense="10" stamina="14" hp="89" score="84" />
-      <IVs attack="14" defense="13" stamina="12" hp="88" score="87" />
-    </Possibilities>
-    <Possibilities cp="1610" min_score="84" max_score="89">
-      <IVs attack="11" defense="15" stamina="14" hp="89" score="89" />
-      <IVs attack="13" defense="10" stamina="15" hp="90" score="84" />
-      <IVs attack="13" defense="13" stamina="13" hp="88" score="87" />
-      <IVs attack="15" defense="11" stamina="12" hp="88" score="84" />
-      <IVs attack="15" defense="14" stamina="10" hp="86" score="87" />
-    </Possibilities>
-    <Possibilities cp="1616" min_score="87" max_score="91">
-      <IVs attack="11" defense="15" stamina="15" hp="90" score="91" />
-      <IVs attack="13" defense="13" stamina="14" hp="89" score="89" />
-      <IVs attack="15" defense="11" stamina="13" hp="88" score="87" />
-      <IVs attack="15" defense="14" stamina="11" hp="87" score="89" />
-    </Possibilities>
-    <Possibilities cp="1606" min_score="82" max_score="87">
-      <IVs attack="12" defense="11" stamina="15" hp="90" score="84" />
-      <IVs attack="13" defense="12" stamina="13" hp="88" score="84" />
-      <IVs attack="13" defense="15" stamina="11" hp="87" score="87" />
-      <IVs attack="15" defense="10" stamina="12" hp="88" score="82" />
-      <IVs attack="15" defense="13" stamina="10" hp="86" score="84" />
-    </Possibilities>
-    <Possibilities cp="1609" min_score="84" max_score="87">
-      <IVs attack="12" defense="13" stamina="14" hp="89" score="87" />
-      <IVs attack="14" defense="11" stamina="13" hp="88" score="84" />
-      <IVs attack="14" defense="14" stamina="11" hp="87" score="87" />
-    </Possibilities>
-    <Possibilities cp="1615" min_score="87" max_score="89">
-      <IVs attack="12" defense="13" stamina="15" hp="90" score="89" />
-      <IVs attack="14" defense="11" stamina="14" hp="89" score="87" />
-      <IVs attack="14" defense="14" stamina="12" hp="88" score="89" />
-    </Possibilities>
-    <Possibilities cp="1613" min_score="87" max_score="89">
-      <IVs attack="12" defense="14" stamina="14" hp="89" score="89" />
-      <IVs attack="14" defense="12" stamina="13" hp="88" score="87" />
-      <IVs attack="14" defense="15" stamina="11" hp="87" score="89" />
-    </Possibilities>
-    <Possibilities cp="1619" min_score="89" max_score="91">
-      <IVs attack="12" defense="14" stamina="15" hp="90" score="91" />
-      <IVs attack="14" defense="12" stamina="14" hp="89" score="89" />
-      <IVs attack="14" defense="15" stamina="12" hp="88" score="91" />
-    </Possibilities>
-    <Possibilities cp="1617" min_score="87" max_score="91">
-      <IVs attack="12" defense="15" stamina="14" hp="89" score="91" />
-      <IVs attack="14" defense="10" stamina="15" hp="90" score="87" />
-      <IVs attack="14" defense="13" stamina="13" hp="88" score="89" />
-    </Possibilities>
-    <Possibilities cp="1623" min_score="91" max_score="93">
-      <IVs attack="12" defense="15" stamina="15" hp="90" score="93" />
-      <IVs attack="14" defense="13" stamina="14" hp="89" score="91" />
-    </Possibilities>
-    <Possibilities cp="1614" min_score="87" max_score="89">
-      <IVs attack="13" defense="11" stamina="15" hp="90" score="87" />
-      <IVs attack="13" defense="14" stamina="13" hp="88" score="89" />
-      <IVs attack="15" defense="12" stamina="12" hp="88" score="87" />
-      <IVs attack="15" defense="15" stamina="10" hp="86" score="89" />
-    </Possibilities>
-    <Possibilities cp="1612" min_score="84" max_score="89">
-      <IVs attack="13" defense="12" stamina="14" hp="89" score="87" />
-      <IVs attack="13" defense="15" stamina="12" hp="88" score="89" />
-      <IVs attack="15" defense="10" stamina="13" hp="88" score="84" />
-      <IVs attack="15" defense="13" stamina="11" hp="87" score="87" />
-    </Possibilities>
-    <Possibilities cp="1618" min_score="87" max_score="91">
-      <IVs attack="13" defense="12" stamina="15" hp="90" score="89" />
-      <IVs attack="13" defense="15" stamina="13" hp="88" score="91" />
-      <IVs attack="15" defense="10" stamina="14" hp="89" score="87" />
-      <IVs attack="15" defense="13" stamina="12" hp="88" score="89" />
-    </Possibilities>
-    <Possibilities cp="1622" min_score="89" max_score="91">
-      <IVs attack="13" defense="13" stamina="15" hp="90" score="91" />
-      <IVs attack="15" defense="11" stamina="14" hp="89" score="89" />
-      <IVs attack="15" defense="14" stamina="12" hp="88" score="91" />
-    </Possibilities>
-    <Possibilities cp="1620" min_score="89" max_score="91">
-      <IVs attack="13" defense="14" stamina="14" hp="89" score="91" />
-      <IVs attack="15" defense="12" stamina="13" hp="88" score="89" />
-      <IVs attack="15" defense="15" stamina="11" hp="87" score="91" />
-    </Possibilities>
-    <Possibilities cp="1626" min_score="91" max_score="93">
-      <IVs attack="13" defense="14" stamina="15" hp="90" score="93" />
-      <IVs attack="15" defense="12" stamina="14" hp="89" score="91" />
-      <IVs attack="15" defense="15" stamina="12" hp="88" score="93" />
-    </Possibilities>
-    <Possibilities cp="1624" min_score="89" max_score="93">
-      <IVs attack="13" defense="15" stamina="14" hp="89" score="93" />
-      <IVs attack="15" defense="10" stamina="15" hp="90" score="89" />
-      <IVs attack="15" defense="13" stamina="13" hp="88" score="91" />
-    </Possibilities>
-    <Possibilities cp="1630" min_score="93" max_score="96">
-      <IVs attack="13" defense="15" stamina="15" hp="90" score="96" />
-      <IVs attack="15" defense="13" stamina="14" hp="89" score="93" />
-    </Possibilities>
-    <Possibilities cp="1621" min_score="89" max_score="91">
-      <IVs attack="14" defense="11" stamina="15" hp="90" score="89" />
-      <IVs attack="14" defense="14" stamina="13" hp="88" score="91" />
-    </Possibilities>
-    <Possibilities cp="1625" min_score="91" max_score="93">
-      <IVs attack="14" defense="12" stamina="15" hp="90" score="91" />
-      <IVs attack="14" defense="15" stamina="13" hp="88" score="93" />
-    </Possibilities>
-    <Possibilities cp="1629" min_score="0" max_score="93">
-      <IVs attack="14" defense="13" stamina="15" hp="90" score="93" />
-    </Possibilities>
-    <Possibilities cp="1627" min_score="0" max_score="93">
-      <IVs attack="14" defense="14" stamina="14" hp="89" score="93" />
-    </Possibilities>
-    <Possibilities cp="1633" min_score="96" max_score="96">
-      <IVs attack="14" defense="14" stamina="15" hp="90" score="96" />
-      <IVs attack="15" defense="15" stamina="13" hp="88" score="96" />
-    </Possibilities>
-    <Possibilities cp="1631" min_score="0" max_score="96">
-      <IVs attack="14" defense="15" stamina="14" hp="89" score="96" />
-    </Possibilities>
-    <Possibilities cp="1637" min_score="96" max_score="98">
-      <IVs attack="14" defense="15" stamina="15" hp="90" score="98" />
-      <IVs attack="15" defense="13" stamina="15" hp="90" score="96" />
-    </Possibilities>
-    <Possibilities cp="1628" min_score="91" max_score="93">
-      <IVs attack="15" defense="11" stamina="15" hp="90" score="91" />
-      <IVs attack="15" defense="14" stamina="13" hp="88" score="93" />
-    </Possibilities>
-    <Possibilities cp="1632" min_score="0" max_score="93">
-      <IVs attack="15" defense="12" stamina="15" hp="90" score="93" />
-    </Possibilities>
-    <Possibilities cp="1635" min_score="0" max_score="96">
-      <IVs attack="15" defense="14" stamina="14" hp="89" score="96" />
-    </Possibilities>
-    <Possibilities cp="1641" min_score="0" max_score="98">
-      <IVs attack="15" defense="14" stamina="15" hp="90" score="98" />
-    </Possibilities>
-    <Possibilities cp="1639" min_score="0" max_score="98">
-      <IVs attack="15" defense="15" stamina="14" hp="89" score="98" />
-    </Possibilities>
-    <Possibilities cp="1645" min_score="0" max_score="100">
-      <IVs attack="15" defense="15" stamina="15" hp="90" score="100" />
+    <Possibilities cp="1756" min_score="0" max_score="67">
+      <IVs attack="10" defense="10" stamina="10" hp="110" score="67" />
+    </Possibilities>
+    <Possibilities cp="1761" min_score="0" max_score="69">
+      <IVs attack="10" defense="10" stamina="11" hp="110" score="69" />
+    </Possibilities>
+    <Possibilities cp="1766" min_score="0" max_score="71">
+      <IVs attack="10" defense="10" stamina="12" hp="111" score="71" />
+    </Possibilities>
+    <Possibilities cp="1771" min_score="71" max_score="73">
+      <IVs attack="10" defense="10" stamina="13" hp="112" score="73" />
+      <IVs attack="10" defense="11" stamina="12" hp="111" score="73" />
+      <IVs attack="12" defense="10" stamina="10" hp="110" score="71" />
+    </Possibilities>
+    <Possibilities cp="1777" min_score="73" max_score="76">
+      <IVs attack="10" defense="10" stamina="14" hp="112" score="76" />
+      <IVs attack="11" defense="13" stamina="10" hp="110" score="76" />
+      <IVs attack="12" defense="10" stamina="11" hp="110" score="73" />
+    </Possibilities>
+    <Possibilities cp="1782" min_score="76" max_score="78">
+      <IVs attack="10" defense="10" stamina="15" hp="113" score="78" />
+      <IVs attack="11" defense="13" stamina="11" hp="110" score="78" />
+      <IVs attack="11" defense="14" stamina="10" hp="110" score="78" />
+      <IVs attack="12" defense="10" stamina="12" hp="111" score="76" />
+    </Possibilities>
+    <Possibilities cp="1760" min_score="0" max_score="69">
+      <IVs attack="10" defense="11" stamina="10" hp="110" score="69" />
+    </Possibilities>
+    <Possibilities cp="1765" min_score="71" max_score="71">
+      <IVs attack="10" defense="11" stamina="11" hp="110" score="71" />
+      <IVs attack="10" defense="12" stamina="10" hp="110" score="71" />
+    </Possibilities>
+    <Possibilities cp="1776" min_score="73" max_score="76">
+      <IVs attack="10" defense="11" stamina="13" hp="112" score="76" />
+      <IVs attack="12" defense="11" stamina="10" hp="110" score="73" />
+    </Possibilities>
+    <Possibilities cp="1781" min_score="76" max_score="78">
+      <IVs attack="10" defense="11" stamina="14" hp="112" score="78" />
+      <IVs attack="10" defense="12" stamina="13" hp="112" score="78" />
+      <IVs attack="12" defense="11" stamina="11" hp="110" score="76" />
+      <IVs attack="12" defense="12" stamina="10" hp="110" score="76" />
+    </Possibilities>
+    <Possibilities cp="1787" min_score="76" max_score="80">
+      <IVs attack="10" defense="11" stamina="15" hp="113" score="80" />
+      <IVs attack="11" defense="14" stamina="11" hp="110" score="80" />
+      <IVs attack="12" defense="11" stamina="12" hp="111" score="78" />
+      <IVs attack="14" defense="10" stamina="10" hp="110" score="76" />
+    </Possibilities>
+    <Possibilities cp="1770" min_score="0" max_score="73">
+      <IVs attack="10" defense="12" stamina="11" hp="110" score="73" />
+    </Possibilities>
+    <Possibilities cp="1775" min_score="0" max_score="76">
+      <IVs attack="10" defense="12" stamina="12" hp="111" score="76" />
+    </Possibilities>
+    <Possibilities cp="1786" min_score="78" max_score="80">
+      <IVs attack="10" defense="12" stamina="14" hp="112" score="80" />
+      <IVs attack="11" defense="15" stamina="10" hp="110" score="80" />
+      <IVs attack="12" defense="12" stamina="11" hp="110" score="78" />
+    </Possibilities>
+    <Possibilities cp="1791" min_score="80" max_score="82">
+      <IVs attack="10" defense="12" stamina="15" hp="113" score="82" />
+      <IVs attack="12" defense="12" stamina="12" hp="111" score="80" />
+      <IVs attack="12" defense="13" stamina="11" hp="110" score="80" />
+    </Possibilities>
+    <Possibilities cp="1769" min_score="71" max_score="73">
+      <IVs attack="10" defense="13" stamina="10" hp="110" score="73" />
+      <IVs attack="11" defense="10" stamina="11" hp="110" score="71" />
+    </Possibilities>
+    <Possibilities cp="1774" min_score="73" max_score="76">
+      <IVs attack="10" defense="13" stamina="11" hp="110" score="76" />
+      <IVs attack="10" defense="14" stamina="10" hp="110" score="76" />
+      <IVs attack="11" defense="10" stamina="12" hp="111" score="73" />
+    </Possibilities>
+    <Possibilities cp="1780" min_score="0" max_score="78">
+      <IVs attack="10" defense="13" stamina="12" hp="111" score="78" />
+    </Possibilities>
+    <Possibilities cp="1785" min_score="76" max_score="80">
+      <IVs attack="10" defense="13" stamina="13" hp="112" score="80" />
+      <IVs attack="11" defense="10" stamina="14" hp="112" score="78" />
+      <IVs attack="12" defense="13" stamina="10" hp="110" score="78" />
+      <IVs attack="13" defense="10" stamina="11" hp="110" score="76" />
+    </Possibilities>
+    <Possibilities cp="1790" min_score="78" max_score="82">
+      <IVs attack="10" defense="13" stamina="14" hp="112" score="82" />
+      <IVs attack="10" defense="14" stamina="13" hp="112" score="82" />
+      <IVs attack="11" defense="10" stamina="15" hp="113" score="80" />
+      <IVs attack="12" defense="14" stamina="10" hp="110" score="80" />
+      <IVs attack="13" defense="10" stamina="12" hp="111" score="78" />
+    </Possibilities>
+    <Possibilities cp="1796" min_score="80" max_score="84">
+      <IVs attack="10" defense="13" stamina="15" hp="113" score="84" />
+      <IVs attack="12" defense="13" stamina="12" hp="111" score="82" />
+      <IVs attack="13" defense="10" stamina="13" hp="112" score="80" />
+    </Possibilities>
+    <Possibilities cp="1779" min_score="73" max_score="78">
+      <IVs attack="10" defense="14" stamina="11" hp="110" score="78" />
+      <IVs attack="11" defense="10" stamina="13" hp="112" score="76" />
+      <IVs attack="11" defense="11" stamina="12" hp="111" score="76" />
+      <IVs attack="13" defense="10" stamina="10" hp="110" score="73" />
+    </Possibilities>
+    <Possibilities cp="1784" min_score="76" max_score="80">
+      <IVs attack="10" defense="14" stamina="12" hp="111" score="80" />
+      <IVs attack="11" defense="11" stamina="13" hp="112" score="78" />
+      <IVs attack="13" defense="11" stamina="10" hp="110" score="76" />
+    </Possibilities>
+    <Possibilities cp="1795" min_score="78" max_score="84">
+      <IVs attack="10" defense="14" stamina="14" hp="112" score="84" />
+      <IVs attack="11" defense="11" stamina="15" hp="113" score="82" />
+      <IVs attack="12" defense="14" stamina="11" hp="110" score="82" />
+      <IVs attack="13" defense="11" stamina="12" hp="111" score="80" />
+      <IVs attack="15" defense="10" stamina="10" hp="110" score="78" />
+    </Possibilities>
+    <Possibilities cp="1800" min_score="80" max_score="87">
+      <IVs attack="10" defense="14" stamina="15" hp="113" score="87" />
+      <IVs attack="12" defense="14" stamina="12" hp="111" score="84" />
+      <IVs attack="12" defense="15" stamina="11" hp="110" score="84" />
+      <IVs attack="13" defense="11" stamina="13" hp="112" score="82" />
+      <IVs attack="15" defense="11" stamina="10" hp="110" score="80" />
+    </Possibilities>
+    <Possibilities cp="1778" min_score="76" max_score="78">
+      <IVs attack="10" defense="15" stamina="10" hp="110" score="78" />
+      <IVs attack="11" defense="12" stamina="11" hp="110" score="76" />
+    </Possibilities>
+    <Possibilities cp="1783" min_score="78" max_score="80">
+      <IVs attack="10" defense="15" stamina="11" hp="110" score="80" />
+      <IVs attack="11" defense="12" stamina="12" hp="111" score="78" />
+    </Possibilities>
+    <Possibilities cp="1789" min_score="78" max_score="82">
+      <IVs attack="10" defense="15" stamina="12" hp="111" score="82" />
+      <IVs attack="11" defense="11" stamina="14" hp="112" score="80" />
+      <IVs attack="11" defense="12" stamina="13" hp="112" score="80" />
+      <IVs attack="13" defense="11" stamina="11" hp="110" score="78" />
+      <IVs attack="13" defense="12" stamina="10" hp="110" score="78" />
+    </Possibilities>
+    <Possibilities cp="1794" min_score="80" max_score="84">
+      <IVs attack="10" defense="15" stamina="13" hp="112" score="84" />
+      <IVs attack="11" defense="12" stamina="14" hp="112" score="82" />
+      <IVs attack="12" defense="15" stamina="10" hp="110" score="82" />
+      <IVs attack="13" defense="12" stamina="11" hp="110" score="80" />
+    </Possibilities>
+    <Possibilities cp="1799" min_score="82" max_score="87">
+      <IVs attack="10" defense="15" stamina="14" hp="112" score="87" />
+      <IVs attack="11" defense="12" stamina="15" hp="113" score="84" />
+      <IVs attack="11" defense="13" stamina="14" hp="112" score="84" />
+      <IVs attack="13" defense="12" stamina="12" hp="111" score="82" />
+      <IVs attack="13" defense="13" stamina="11" hp="110" score="82" />
+    </Possibilities>
+    <Possibilities cp="1805" min_score="82" max_score="89">
+      <IVs attack="10" defense="15" stamina="15" hp="113" score="89" />
+      <IVs attack="12" defense="15" stamina="12" hp="111" score="87" />
+      <IVs attack="13" defense="12" stamina="13" hp="112" score="84" />
+      <IVs attack="15" defense="12" stamina="10" hp="110" score="82" />
+    </Possibilities>
+    <Possibilities cp="1764" min_score="0" max_score="69">
+      <IVs attack="11" defense="10" stamina="10" hp="110" score="69" />
+    </Possibilities>
+    <Possibilities cp="1768" min_score="0" max_score="71">
+      <IVs attack="11" defense="11" stamina="10" hp="110" score="71" />
+    </Possibilities>
+    <Possibilities cp="1773" min_score="73" max_score="73">
+      <IVs attack="11" defense="11" stamina="11" hp="110" score="73" />
+      <IVs attack="11" defense="12" stamina="10" hp="110" score="73" />
+    </Possibilities>
+    <Possibilities cp="1788" min_score="78" max_score="80">
+      <IVs attack="11" defense="13" stamina="12" hp="111" score="80" />
+      <IVs attack="12" defense="10" stamina="13" hp="112" score="78" />
+    </Possibilities>
+    <Possibilities cp="1793" min_score="78" max_score="82">
+      <IVs attack="11" defense="13" stamina="13" hp="112" score="82" />
+      <IVs attack="12" defense="10" stamina="14" hp="112" score="80" />
+      <IVs attack="13" defense="13" stamina="10" hp="110" score="80" />
+      <IVs attack="14" defense="10" stamina="11" hp="110" score="78" />
+    </Possibilities>
+    <Possibilities cp="1804" min_score="82" max_score="87">
+      <IVs attack="11" defense="13" stamina="15" hp="113" score="87" />
+      <IVs attack="13" defense="13" stamina="12" hp="111" score="84" />
+      <IVs attack="14" defense="10" stamina="13" hp="112" score="82" />
+    </Possibilities>
+    <Possibilities cp="1792" min_score="78" max_score="82">
+      <IVs attack="11" defense="14" stamina="12" hp="111" score="82" />
+      <IVs attack="11" defense="15" stamina="11" hp="110" score="82" />
+      <IVs attack="12" defense="11" stamina="13" hp="112" score="80" />
+      <IVs attack="14" defense="11" stamina="10" hp="110" score="78" />
+    </Possibilities>
+    <Possibilities cp="1798" min_score="80" max_score="84">
+      <IVs attack="11" defense="14" stamina="13" hp="112" score="84" />
+      <IVs attack="12" defense="10" stamina="15" hp="113" score="82" />
+      <IVs attack="13" defense="14" stamina="10" hp="110" score="82" />
+      <IVs attack="14" defense="10" stamina="12" hp="111" score="80" />
+    </Possibilities>
+    <Possibilities cp="1803" min_score="82" max_score="87">
+      <IVs attack="11" defense="14" stamina="14" hp="112" score="87" />
+      <IVs attack="12" defense="11" stamina="15" hp="113" score="84" />
+      <IVs attack="13" defense="14" stamina="11" hp="110" score="84" />
+      <IVs attack="14" defense="11" stamina="12" hp="111" score="82" />
+    </Possibilities>
+    <Possibilities cp="1808" min_score="84" max_score="89">
+      <IVs attack="11" defense="14" stamina="15" hp="113" score="89" />
+      <IVs attack="11" defense="15" stamina="14" hp="112" score="89" />
+      <IVs attack="13" defense="15" stamina="11" hp="110" score="87" />
+      <IVs attack="14" defense="11" stamina="13" hp="112" score="84" />
+      <IVs attack="14" defense="12" stamina="12" hp="111" score="84" />
+    </Possibilities>
+    <Possibilities cp="1797" min_score="80" max_score="84">
+      <IVs attack="11" defense="15" stamina="12" hp="111" score="84" />
+      <IVs attack="12" defense="11" stamina="14" hp="112" score="82" />
+      <IVs attack="12" defense="12" stamina="13" hp="112" score="82" />
+      <IVs attack="14" defense="11" stamina="11" hp="110" score="80" />
+      <IVs attack="14" defense="12" stamina="10" hp="110" score="80" />
+    </Possibilities>
+    <Possibilities cp="1802" min_score="82" max_score="87">
+      <IVs attack="11" defense="15" stamina="13" hp="112" score="87" />
+      <IVs attack="12" defense="12" stamina="14" hp="112" score="84" />
+      <IVs attack="13" defense="15" stamina="10" hp="110" score="84" />
+      <IVs attack="14" defense="12" stamina="11" hp="110" score="82" />
+    </Possibilities>
+    <Possibilities cp="1813" min_score="87" max_score="91">
+      <IVs attack="11" defense="15" stamina="15" hp="113" score="91" />
+      <IVs attack="13" defense="15" stamina="12" hp="111" score="89" />
+      <IVs attack="14" defense="12" stamina="13" hp="112" score="87" />
+    </Possibilities>
+    <Possibilities cp="1807" min_score="84" max_score="87">
+      <IVs attack="12" defense="12" stamina="15" hp="113" score="87" />
+      <IVs attack="12" defense="13" stamina="14" hp="112" score="87" />
+      <IVs attack="14" defense="13" stamina="11" hp="110" score="84" />
+    </Possibilities>
+    <Possibilities cp="1801" min_score="80" max_score="84">
+      <IVs attack="12" defense="13" stamina="13" hp="112" score="84" />
+      <IVs attack="13" defense="10" stamina="14" hp="112" score="82" />
+      <IVs attack="14" defense="13" stamina="10" hp="110" score="82" />
+      <IVs attack="15" defense="10" stamina="11" hp="110" score="80" />
+    </Possibilities>
+    <Possibilities cp="1812" min_score="84" max_score="89">
+      <IVs attack="12" defense="13" stamina="15" hp="113" score="89" />
+      <IVs attack="14" defense="13" stamina="12" hp="111" score="87" />
+      <IVs attack="15" defense="10" stamina="13" hp="112" score="84" />
+    </Possibilities>
+    <Possibilities cp="1806" min_score="82" max_score="87">
+      <IVs attack="12" defense="14" stamina="13" hp="112" score="87" />
+      <IVs attack="13" defense="10" stamina="15" hp="113" score="84" />
+      <IVs attack="13" defense="11" stamina="14" hp="112" score="84" />
+      <IVs attack="14" defense="14" stamina="10" hp="110" score="84" />
+      <IVs attack="15" defense="10" stamina="12" hp="111" score="82" />
+      <IVs attack="15" defense="11" stamina="11" hp="110" score="82" />
+    </Possibilities>
+    <Possibilities cp="1811" min_score="84" max_score="89">
+      <IVs attack="12" defense="14" stamina="14" hp="112" score="89" />
+      <IVs attack="13" defense="11" stamina="15" hp="113" score="87" />
+      <IVs attack="14" defense="14" stamina="11" hp="110" score="87" />
+      <IVs attack="15" defense="11" stamina="12" hp="111" score="84" />
+    </Possibilities>
+    <Possibilities cp="1817" min_score="87" max_score="91">
+      <IVs attack="12" defense="14" stamina="15" hp="113" score="91" />
+      <IVs attack="14" defense="14" stamina="12" hp="111" score="89" />
+      <IVs attack="15" defense="10" stamina="14" hp="112" score="87" />
+    </Possibilities>
+    <Possibilities cp="1810" min_score="84" max_score="89">
+      <IVs attack="12" defense="15" stamina="13" hp="112" score="89" />
+      <IVs attack="13" defense="12" stamina="14" hp="112" score="87" />
+      <IVs attack="14" defense="15" stamina="10" hp="110" score="87" />
+      <IVs attack="15" defense="12" stamina="11" hp="110" score="84" />
+    </Possibilities>
+    <Possibilities cp="1816" min_score="87" max_score="91">
+      <IVs attack="12" defense="15" stamina="14" hp="112" score="91" />
+      <IVs attack="13" defense="12" stamina="15" hp="113" score="89" />
+      <IVs attack="14" defense="15" stamina="11" hp="110" score="89" />
+      <IVs attack="15" defense="11" stamina="13" hp="112" score="87" />
+      <IVs attack="15" defense="12" stamina="12" hp="111" score="87" />
+    </Possibilities>
+    <Possibilities cp="1821" min_score="89" max_score="93">
+      <IVs attack="12" defense="15" stamina="15" hp="113" score="93" />
+      <IVs attack="14" defense="15" stamina="12" hp="111" score="91" />
+      <IVs attack="15" defense="12" stamina="13" hp="112" score="89" />
+    </Possibilities>
+    <Possibilities cp="1809" min_score="84" max_score="87">
+      <IVs attack="13" defense="13" stamina="13" hp="112" score="87" />
+      <IVs attack="13" defense="14" stamina="12" hp="111" score="87" />
+      <IVs attack="14" defense="10" stamina="14" hp="112" score="84" />
+      <IVs attack="15" defense="13" stamina="10" hp="110" score="84" />
+    </Possibilities>
+    <Possibilities cp="1815" min_score="87" max_score="89">
+      <IVs attack="13" defense="13" stamina="14" hp="112" score="89" />
+      <IVs attack="15" defense="13" stamina="11" hp="110" score="87" />
+    </Possibilities>
+    <Possibilities cp="1820" min_score="89" max_score="91">
+      <IVs attack="13" defense="13" stamina="15" hp="113" score="91" />
+      <IVs attack="15" defense="13" stamina="12" hp="111" score="89" />
+    </Possibilities>
+    <Possibilities cp="1814" min_score="87" max_score="89">
+      <IVs attack="13" defense="14" stamina="13" hp="112" score="89" />
+      <IVs attack="14" defense="10" stamina="15" hp="113" score="87" />
+      <IVs attack="14" defense="11" stamina="14" hp="112" score="87" />
+      <IVs attack="15" defense="14" stamina="10" hp="110" score="87" />
+    </Possibilities>
+    <Possibilities cp="1819" min_score="89" max_score="91">
+      <IVs attack="13" defense="14" stamina="14" hp="112" score="91" />
+      <IVs attack="13" defense="15" stamina="13" hp="112" score="91" />
+      <IVs attack="14" defense="11" stamina="15" hp="113" score="89" />
+      <IVs attack="15" defense="14" stamina="11" hp="110" score="89" />
+    </Possibilities>
+    <Possibilities cp="1825" min_score="91" max_score="93">
+      <IVs attack="13" defense="14" stamina="15" hp="113" score="93" />
+      <IVs attack="15" defense="14" stamina="12" hp="111" score="91" />
+    </Possibilities>
+    <Possibilities cp="1824" min_score="91" max_score="93">
+      <IVs attack="13" defense="15" stamina="14" hp="112" score="93" />
+      <IVs attack="14" defense="12" stamina="15" hp="113" score="91" />
+      <IVs attack="15" defense="15" stamina="11" hp="110" score="91" />
+    </Possibilities>
+    <Possibilities cp="1829" min_score="93" max_score="96">
+      <IVs attack="13" defense="15" stamina="15" hp="113" score="96" />
+      <IVs attack="15" defense="15" stamina="12" hp="111" score="93" />
+    </Possibilities>
+    <Possibilities cp="1818" min_score="89" max_score="89">
+      <IVs attack="14" defense="12" stamina="14" hp="112" score="89" />
+      <IVs attack="14" defense="13" stamina="13" hp="112" score="89" />
+      <IVs attack="15" defense="15" stamina="10" hp="110" score="89" />
+    </Possibilities>
+    <Possibilities cp="1823" min_score="0" max_score="91">
+      <IVs attack="14" defense="13" stamina="14" hp="112" score="91" />
+    </Possibilities>
+    <Possibilities cp="1828" min_score="93" max_score="93">
+      <IVs attack="14" defense="13" stamina="15" hp="113" score="93" />
+      <IVs attack="14" defense="14" stamina="14" hp="112" score="93" />
+    </Possibilities>
+    <Possibilities cp="1822" min_score="89" max_score="91">
+      <IVs attack="14" defense="14" stamina="13" hp="112" score="91" />
+      <IVs attack="15" defense="10" stamina="15" hp="113" score="89" />
+      <IVs attack="15" defense="11" stamina="14" hp="112" score="89" />
+    </Possibilities>
+    <Possibilities cp="1833" min_score="0" max_score="96">
+      <IVs attack="14" defense="14" stamina="15" hp="113" score="96" />
+    </Possibilities>
+    <Possibilities cp="1827" min_score="91" max_score="93">
+      <IVs attack="14" defense="15" stamina="13" hp="112" score="93" />
+      <IVs attack="15" defense="11" stamina="15" hp="113" score="91" />
+    </Possibilities>
+    <Possibilities cp="1832" min_score="93" max_score="96">
+      <IVs attack="14" defense="15" stamina="14" hp="112" score="96" />
+      <IVs attack="15" defense="12" stamina="15" hp="113" score="93" />
+    </Possibilities>
+    <Possibilities cp="1838" min_score="0" max_score="98">
+      <IVs attack="14" defense="15" stamina="15" hp="113" score="98" />
+    </Possibilities>
+    <Possibilities cp="1826" min_score="91" max_score="91">
+      <IVs attack="15" defense="12" stamina="14" hp="112" score="91" />
+      <IVs attack="15" defense="13" stamina="13" hp="112" score="91" />
+    </Possibilities>
+    <Possibilities cp="1831" min_score="0" max_score="93">
+      <IVs attack="15" defense="13" stamina="14" hp="112" score="93" />
+    </Possibilities>
+    <Possibilities cp="1836" min_score="96" max_score="96">
+      <IVs attack="15" defense="13" stamina="15" hp="113" score="96" />
+      <IVs attack="15" defense="14" stamina="14" hp="112" score="96" />
+    </Possibilities>
+    <Possibilities cp="1830" min_score="0" max_score="93">
+      <IVs attack="15" defense="14" stamina="13" hp="112" score="93" />
+    </Possibilities>
+    <Possibilities cp="1841" min_score="0" max_score="98">
+      <IVs attack="15" defense="14" stamina="15" hp="113" score="98" />
+    </Possibilities>
+    <Possibilities cp="1835" min_score="0" max_score="96">
+      <IVs attack="15" defense="15" stamina="13" hp="112" score="96" />
+    </Possibilities>
+    <Possibilities cp="1840" min_score="0" max_score="98">
+      <IVs attack="15" defense="15" stamina="14" hp="112" score="98" />
+    </Possibilities>
+    <Possibilities cp="1846" min_score="0" max_score="100">
+      <IVs attack="15" defense="15" stamina="15" hp="113" score="100" />
     </Possibilities>
   </Boosted>
 </RaidBoss>
