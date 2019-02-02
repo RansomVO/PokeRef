@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Root [
+  <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
+  <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY Images SYSTEM "/_datafiles.manual/infrequent/images.xml">
+  <!ENTITY Traits SYSTEM "/_datafiles.manual/traits.xml">
+  <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.xml">
+  <!ENTITY Pokestats SYSTEM "/_datafiles/pokestats.gen7.xml">
+  <!ENTITY MoveSets SYSTEM "/_datafiles/movesets.gen7.xml">
+  <!ENTITY FastMoves SYSTEM "/_datafiles/moves.fast.xml">
+  <!ENTITY ChargedMoves SYSTEM "/_datafiles/moves.charged.xml">
+]>
+<?xml-stylesheet type="text/xsl" href="movesets.xsl"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  &Constants; 
+  &Settings;
+  &Images;
+  &Traits;
+  &Pokestats;
+  &MoveSets;
+  &FastMoves;
+  &ChargedMoves;
+  &RaidBosses;
+</Root>

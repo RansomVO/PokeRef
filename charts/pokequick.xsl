@@ -71,27 +71,13 @@
           <hr />
           <xsl:call-template name="CreateKey" />
 
-          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 1">
-            <xsl:apply-templates select="PokeStats[@gen = 1]" />
-          </xsl:if>
-          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 2">
-            <xsl:apply-templates select="PokeStats[@gen = 2]" />
-          </xsl:if>
-          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 3">
-            <xsl:apply-templates select="PokeStats[@gen = 3]" />
-          </xsl:if>
-          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 4">
-            <xsl:apply-templates select="PokeStats[@gen = 4]" />
-          </xsl:if>
-          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 5">
-            <xsl:apply-templates select="PokeStats[@gen = 5]" />
-          </xsl:if>
-          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 6">
-            <xsl:apply-templates select="PokeStats[@gen = 6]" />
-          </xsl:if>
-          <xsl:if test="/Root/Settings/GameMasterStats/@gens_released >= 7">
-            <xsl:apply-templates select="PokeStats[@gen = 7]" />
-          </xsl:if>
+          <xsl:apply-templates select="PokeStats[@gen = 1]" />
+          <xsl:apply-templates select="PokeStats[@gen = 2]" />
+          <xsl:apply-templates select="PokeStats[@gen = 3]" />
+          <xsl:apply-templates select="PokeStats[@gen = 4]" />
+          <xsl:apply-templates select="PokeStats[@gen = 5]" />
+          <xsl:apply-templates select="PokeStats[@gen = 6]" />
+          <xsl:apply-templates select="PokeStats[@gen = 7]" />
         </div>
 
         <xsl:call-template name="WriteFooter" />
@@ -164,49 +150,51 @@
   </xsl:template>
 
   <xsl:template match="PokeStats">
-    <br />
-    <hr />
-    <h2>
-      <xsl:attribute name="id">
-        <xsl:value-of select="concat('GEN', @gen)" />
-      </xsl:attribute>
-      <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="concat('GENERATION_', @gen)" />
-      </xsl:call-template>
-      <xsl:text>Generation </xsl:text>
-      <xsl:value-of select="@gen" />
-    </h2>
-    <div>
-      <xsl:attribute name="id">
-        <xsl:value-of select="concat('GENERATION_', @gen)" />
-      </xsl:attribute>
-      <div style="display:flex; flex-wrap:wrap;">
+    <xsl:if test="Pokemon[not(contains(@availability, $Availability_Unreleased) or not(@availability) and not(contains(Form/@availability, $Availability_Unreleased)))]">
+      <br />
+      <hr />
+      <h2>
         <xsl:attribute name="id">
-          <xsl:value-of select="concat('GEN', @gen, '_Collection')" />
+          <xsl:value-of select="concat('GEN', @gen)" />
         </xsl:attribute>
-        <xsl:for-each select="Pokemon">
-          <xsl:sort order="ascending" data-type="number" select="@id" />
-          <xsl:sort order="ascending" data-type="number" select="@formId" />
+        <xsl:call-template name="Collapser">
+          <xsl:with-param name="CollapseeID" select="concat('GENERATION_', @gen)" />
+        </xsl:call-template>
+        <xsl:text>Generation </xsl:text>
+        <xsl:value-of select="@gen" />
+      </h2>
+      <div>
+        <xsl:attribute name="id">
+          <xsl:value-of select="concat('GENERATION_', @gen)" />
+        </xsl:attribute>
+        <div style="display:flex; flex-wrap:wrap;">
+          <xsl:attribute name="id">
+            <xsl:value-of select="concat('GEN', @gen, '_Collection')" />
+          </xsl:attribute>
+          <xsl:for-each select="Pokemon">
+            <xsl:sort order="ascending" data-type="number" select="@id" />
+            <xsl:sort order="ascending" data-type="number" select="@formId" />
 
-          <xsl:variable name="id" select="@id" />
-          <xsl:if test="not(contains(@availability, $Availability_Unreleased)) and (@form or not(../Pokemon[@id = $id and @form]))">
-            <xsl:variable name="name" select="@name" />
-            <xsl:apply-templates select=".">
-              <xsl:with-param name="Settings">
-                <Show boxed="true" small="true" valign="bottom" />
-              </xsl:with-param>
-              <xsl:with-param name="CustomAttributes">
-                <Attributes>
-                  <xsl:if test="count(/Root/RaidBosses/Tier[not(@name = '? Future ?') and RaidBoss = $name]) != 0">
-                    <xsl:attribute name="raidboss">true</xsl:attribute>
-                  </xsl:if>
-                </Attributes>
-              </xsl:with-param>
-            </xsl:apply-templates>
-          </xsl:if>
-        </xsl:for-each>
+            <xsl:variable name="id" select="@id" />
+            <xsl:if test="not(contains(@availability, $Availability_Unreleased)) and (@form or not(../Pokemon[@id = $id and @form]))">
+              <xsl:variable name="name" select="@name" />
+              <xsl:apply-templates select=".">
+                <xsl:with-param name="Settings">
+                  <Show boxed="true" small="true" valign="bottom" />
+                </xsl:with-param>
+                <xsl:with-param name="CustomAttributes">
+                  <Attributes>
+                    <xsl:if test="count(/Root/RaidBosses/Tier[not(@name = '? Future ?') and RaidBoss = $name]) != 0">
+                      <xsl:attribute name="raidboss">true</xsl:attribute>
+                    </xsl:if>
+                  </Attributes>
+                </xsl:with-param>
+              </xsl:apply-templates>
+            </xsl:if>
+          </xsl:for-each>
+        </div>
       </div>
-    </div>
+    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-23">
+  <GameMasterStats last_updated="2018-10-23" gens_total="7" gens_released="4">
+    <PokemonCount gen="0" total="1013" available="448" available_wa="433" />
+    <PokemonCount gen="1" total="187" available="187" available_wa="184" />
+    <PokemonCount gen="2" total="100" available="99" available_wa="97" />
+    <PokemonCount gen="3" total="143" available="132" available_wa="125" />
+    <PokemonCount gen="4" total="144" available="30" available_wa="27" />
+    <PokemonCount gen="5" total="185" available="0" available_wa="0" />
+    <PokemonCount gen="6" total="137" available="0" available_wa="0" />
+    <PokemonCount gen="7" total="117" available="0" available_wa="0" />
+    <MoveSets gen="0" dps_max="20.454545454545453" dps_avg="16.383801494453881" true_dps_max="42.925170068027214" true_dps_avg="17.856068172890733" />
+    <MoveSets gen="1" dps_max="20.454545454545453" dps_avg="16.515313176675104" true_dps_max="34.821428571428569" true_dps_avg="18.571394739906978" />
+    <MoveSets gen="2" dps_max="20.375" dps_avg="16.368730268702485" true_dps_max="32.589928057553955" true_dps_avg="16.249570969616467" />
+    <MoveSets gen="3" dps_max="20.422535211267608" dps_avg="16.101872038542268" true_dps_max="42.925170068027214" true_dps_avg="16.762708490776873" />
+    <MoveSets gen="4" dps_max="20.155038759689923" dps_avg="16.418317556641085" true_dps_max="36.488095238095234" true_dps_avg="18.89863399892581" />
+    <MoveSets gen="5" dps_max="0" dps_avg="0" true_dps_max="0" true_dps_avg="0" />
+    <MoveSets gen="6" dps_max="0" dps_avg="0" true_dps_max="0" true_dps_avg="0" />
+    <MoveSets gen="7" dps_max="0" dps_avg="0" true_dps_max="0" true_dps_avg="0" />
+  </GameMasterStats>
+  <Desirable iv="90" attack="100" max_cp="2000" base_dps="29" />
+  <MaxCP great="3000" good="2500" okay="2000" />
+  <MaxHP great="200" good="150" okay="100" />
+  <DPSPercent great="100" good="90" okay="80" />
+  <DPS great="90" good="75" okay="0" />
+  <Capture easy="50" moderate="20" difficult="10" />
+  <Flee bad="20" okay="10" nice="5" />
+  <Attack bad="30" okay="15" nice="10" />
+  <Dodge bad="20" okay="15" nice="1" />
+</Settings>

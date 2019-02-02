@@ -54,8 +54,8 @@
 
     <xsl:variable name="name" select="@name" />
     <xsl:variable name="form" select="@form" />
-    <xsl:variable name="pokemon" select="/Root/PokeStats/Pokemon[@name = $name and @form = $form]" />
-    <xsl:variable name="egg" select="/Root/Traits/Eggs/Egg[Pokemon/@name = $name and (not($form) or Pokemon/@form = $form)]/@type" />
+    <xsl:variable name="pokemon" select="/Root/PokeStats/Pokemon[@name = $name and ((not($form) and not(@form)) or @form = $form)]" />
+    <xsl:variable name="egg" select="/Root/Traits/Eggs/Egg[Pokemon/@current and Pokemon/@name = $name and (not($form) or Pokemon/@form = $form)]/@type" />
     <xsl:variable name="raidboss" select="count(/Root/RaidBosses/RaidBoss[@name = $name and @current and @tier]) != 0" />
 
     <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
@@ -63,7 +63,7 @@
       <xsl:value-of select="concat($lt, 'a ')" disable-output-escaping="yes" />
       <xsl:value-of select="concat('href=', $quot, exslt:node-set($Settings)/*/@href, $quot)" disable-output-escaping="yes" />
       <xsl:text> class="CELL_FILLER SPRITE_LINK</xsl:text>
-      <xsl:if test="Stats/BaseIV/@attack = 1 and Stats/BaseIV/@defense = 1 and Stats/BaseIV/@stamina = 1">
+      <xsl:if test="$pokemon/Stats/BaseIV/@attack = 1 and $pokemon/Stats/BaseIV/@defense = 1 and $pokemon/Stats/BaseIV/@stamina = 1">
         <xsl:text> DISABLED</xsl:text>
       </xsl:if>
       <xsl:value-of select="concat($quot, $gt)" disable-output-escaping="yes" />
@@ -77,9 +77,9 @@
           <xsl:otherwise>CELL_FILLER </xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
-          <xsl:when test="@rarity = $Rarity_Legendary">LEGENDARY </xsl:when>
-          <xsl:when test="@rarity = $Rarity_Mythic">MYTHIC </xsl:when>
-          <xsl:when test="@rarity = $Rarity_UltraBeast">ULTRA_BEAST </xsl:when>
+          <xsl:when test="$pokemon/@rarity = $Rarity_Legendary">LEGENDARY </xsl:when>
+          <xsl:when test="$pokemon/@rarity = $Rarity_Mythic">MYTHIC </xsl:when>
+          <xsl:when test="$pokemon/@rarity = $Rarity_UltraBeast">ULTRA_BEAST </xsl:when>
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="contains(@availability,$Availability_RaidBossOnly_EX)">
@@ -90,13 +90,13 @@
           </xsl:when>
           <xsl:otherwise>
             <xsl:choose>
-              <xsl:when test="../@gen = 1">GEN1 </xsl:when>
-              <xsl:when test="../@gen = 2">GEN2 </xsl:when>
-              <xsl:when test="../@gen = 3">GEN3 </xsl:when>
-              <xsl:when test="../@gen = 4">GEN4 </xsl:when>
-              <xsl:when test="../@gen = 5">GEN5 </xsl:when>
-              <xsl:when test="../@gen = 6">GEN6 </xsl:when>
-              <xsl:when test="../@gen = 7">GEN7 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 1">GEN1 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 2">GEN2 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 3">GEN3 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 4">GEN4 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 5">GEN5 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 6">GEN6 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 7">GEN7 </xsl:when>
             </xsl:choose>
           </xsl:otherwise>
         </xsl:choose>
@@ -104,72 +104,72 @@
 
       <!-- #region Attributes for PokeStats -->
       <xsl:attribute name="title">
-        <xsl:apply-templates select="." mode="DisplayName" />
+        <xsl:apply-templates select="$pokemon" mode="DisplayName" />
       </xsl:attribute>
       <xsl:attribute name="name">
-        <xsl:apply-templates select="." mode="DisplayName" />
+        <xsl:apply-templates select="$pokemon" mode="DisplayName" />
       </xsl:attribute>
       <xsl:attribute name="gen">
-        <xsl:value-of select="../@gen" />
+        <xsl:value-of select="$pokemon/../@gen" />
       </xsl:attribute>
       <xsl:attribute name="id">
-        <xsl:value-of select="@id" />
+        <xsl:value-of select="$pokemon/@id" />
       </xsl:attribute>
       <xsl:attribute name="type1">
-        <xsl:value-of select="Type/@primary" />
+        <xsl:value-of select="$pokemon/Type/@primary" />
       </xsl:attribute>
       <xsl:attribute name="type2">
-        <xsl:value-of select="Type/@secondary" />
+        <xsl:value-of select="$pokemon/Type/@secondary" />
       </xsl:attribute>
       <xsl:attribute name="family">
-        <xsl:value-of select="@family" />
+        <xsl:value-of select="$pokemon/@family" />
       </xsl:attribute>
       <xsl:attribute name="evolvesFrom">
-        <xsl:value-of select="EvolvesFrom/@id" />
+        <xsl:value-of select="$pokemon/EvolvesFrom/@id" />
       </xsl:attribute>
       <xsl:attribute name="shiny">
-        <xsl:value-of select="@shiny" />
+        <xsl:value-of select="$pokemon/@shiny" />
       </xsl:attribute>
       <xsl:attribute name="availability">
-        <xsl:value-of select="@availability" />
+        <xsl:value-of select="$pokemon/@availability" />
       </xsl:attribute>
       <xsl:attribute name="rarity">
-        <xsl:value-of select="@rarity" />
+        <xsl:value-of select="$pokemon/@rarity" />
       </xsl:attribute>
       <xsl:attribute name="boost1">
-        <xsl:variable name="Type" select="Type/@primary" />
+        <xsl:variable name="Type" select="$pokemon/Type/@primary" />
         <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$Type]/@boost" />
       </xsl:attribute>
       <xsl:attribute name="boost2">
-        <xsl:variable name="Type" select="Type/@secondary" />
+        <xsl:variable name="Type" select="$pokemon/Type/@secondary" />
         <xsl:value-of select="/Root/Constants/Mappings/WeatherBoost[@type=$Type]/@boost" />
       </xsl:attribute>
       <xsl:attribute name="genderRatio">
-        <xsl:value-of select="@gender_ratio" />
+        <xsl:value-of select="$pokemon/@gender_ratio" />
       </xsl:attribute>
       <xsl:attribute name="maxCP">
-        <xsl:value-of select="Stats/Max/@cp" />
+        <xsl:value-of select="$pokemon/Stats/Max/@cp" />
       </xsl:attribute>
       <xsl:attribute name="maxHP">
-        <xsl:value-of select="Stats/Max/@hp" />
+        <xsl:value-of select="$pokemon/Stats/Max/@hp" />
       </xsl:attribute>
       <xsl:attribute name="buddyKM">
-        <xsl:value-of select="@buddy_km" />
+        <xsl:value-of select="$pokemon/@buddy_km" />
       </xsl:attribute>
       <xsl:attribute name="baseAttack">
-        <xsl:value-of select="Stats/BaseIV/@attack" />
+        <xsl:value-of select="$pokemon/Stats/BaseIV/@attack" />
       </xsl:attribute>
       <xsl:attribute name="baseDefense">
-        <xsl:value-of select="Stats/BaseIV/@defense" />
+        <xsl:value-of select="$pokemon/Stats/BaseIV/@defense" />
       </xsl:attribute>
       <xsl:attribute name="baseStamina">
-        <xsl:value-of select="Stats/BaseIV/@stamina" />
+        <xsl:value-of select="$pokemon/Stats/BaseIV/@stamina" />
       </xsl:attribute>
       <xsl:attribute name="captureRate">
-        <xsl:value-of select="Stats/Rates/@capture" />
+        <xsl:value-of select="$pokemon/Stats/Rates/@capture" />
       </xsl:attribute>
       <xsl:attribute name="fleeRate">
-        <xsl:value-of select="Stats/Rates/@flee" />
+        <xsl:value-of select="$pokemon/Stats/Rates/@flee" />
       </xsl:attribute>
       <xsl:attribute name="egg">
         <xsl:value-of select="$egg" />
@@ -202,7 +202,7 @@
       <xsl:if test="count(exslt:node-set($CustomAttributes)) != 0">
         <xsl:for-each select="exslt:node-set($CustomAttributes)/*/@*">
           <xsl:attribute name="{name()}">
-            <xsl:value-of select="." />
+            <xsl:value-of select="$pokemon" />
           </xsl:attribute>
         </xsl:for-each>
       </xsl:if>
@@ -234,14 +234,14 @@
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_special_icons) = 0">
 
           <!-- Shiny Icon -->
-          <xsl:if test="not(@shiny='')">
+          <xsl:if test="$pokemon/@shiny">
             <xsl:call-template name="Sprite">
               <xsl:with-param name="id" select="'Shiny'" />
               <xsl:with-param name="Settings">
                 <Show>
                   <xsl:attribute name="sprite_class">
                     <xsl:text>LEFT_ICON</xsl:text>
-                    <xsl:if test="contains(@availability,'Hatch Only')">
+                    <xsl:if test="contains($pokemon/@availability,'Hatch Only')">
                       <xsl:text> TODO_QZX_TOP_MARGIN</xsl:text>
                     </xsl:if>
                   </xsl:attribute>
@@ -254,7 +254,7 @@
           <xsl:if test="$egg != ''">
             <div>
               <xsl:choose>
-                <xsl:when test="contains(@availability,'Hatch Only')">
+                <xsl:when test="contains($pokemon/@availability,'Hatch Only')">
                   <xsl:attribute name="class">RIGHT_ICON ICON_WRAPPER</xsl:attribute>
                   <xsl:attribute name="style">background-image:url('/images/game/hatchonly.png');</xsl:attribute>
                 </xsl:when>
@@ -270,7 +270,7 @@
                       <Show>
                         <xsl:attribute name="sprite_class">
                           <xsl:choose>
-                            <xsl:when test="contains(@availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
+                            <xsl:when test="contains($pokemon/@availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
                             <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
                           </xsl:choose>
                         </xsl:attribute>
@@ -284,7 +284,7 @@
                       <th style="width:1px; white-space:nowrap;">Egg:</th>
                       <td >
                         <xsl:choose>
-                          <xsl:when test="@availability = 'Hatch Only'">
+                          <xsl:when test="$pokemon/@availability = 'Hatch Only'">
                             <xsl:text>Only Hatches From </xsl:text>
                           </xsl:when>
                           <xsl:otherwise>
@@ -303,22 +303,22 @@
         </xsl:if>
 
         <!-- Add the Image -->
-        <xsl:apply-templates select="." mode="Sprite">
+        <xsl:apply-templates select="$pokemon" mode="Sprite">
           <xsl:with-param name="Settings" select="$Settings" />
         </xsl:apply-templates>
 
         <!-- Add Type/Boost Icons -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_type_icons) = 0">
           <div id="Pokemon_Type_Icons_Field">
-            <xsl:apply-templates select="Type" mode="icons" />
+            <xsl:apply-templates select="$pokemon/Type" mode="icons" />
           </div>
         </xsl:if>
 
         <!-- Add ID/Name -->
         <xsl:if test="count(exslt:node-set($Settings)/*/@hide_name) = 0">
           <div id="Pokemon_Name_Field">
-            <xsl:value-of select="concat(@id, $nbsp, '-', $nbsp)" disable-output-escaping="yes" />
-            <xsl:apply-templates select="." mode="DisplayName" />
+            <xsl:value-of select="concat($pokemon/@id, $nbsp, '-', $nbsp)" disable-output-escaping="yes" />
+            <xsl:apply-templates select="$pokemon" mode="DisplayName" />
           </div>
         </xsl:if>
 
@@ -353,6 +353,7 @@
     </td>
   </xsl:template>
 
+  
   <!-- Template to create the image of the specified Pokemon -->
   <xsl:template match="Pokemon" mode="Sprite">
     <xsl:param name="Settings" />

@@ -265,7 +265,7 @@
           <th>Task</th>
           <th>Encounters</th>
         </tr>
-        <xsl:apply-templates select="Research[Encounter]">
+        <xsl:apply-templates select="Research[Pokemon]">
           <xsl:with-param name="isEvent" select="'true'" />
         </xsl:apply-templates>
       </table>
@@ -288,7 +288,7 @@
           <th>Task</th>
           <th>Encounters</th>
         </tr>
-        <xsl:apply-templates select="Research[Encounter/@current]" />
+        <xsl:apply-templates select="Research[Pokemon/@current]" />
       </table>
     </div>
   </xsl:template>
@@ -302,20 +302,22 @@
       <td style="white-space:nowrap">
         <xsl:choose>
           <xsl:when test="$isEvent">
-            <xsl:apply-templates select="Encounter" />
+            <xsl:apply-templates select="Pokemon" mode="ByTask" />
           </xsl:when>
           <xsl:otherwise>
-            <xsl:apply-templates select="Encounter[@current]" />
+            <xsl:apply-templates select="Pokemon[@current]" mode="ByTask" />
           </xsl:otherwise>
         </xsl:choose>
       </td>
     </tr>
   </xsl:template>
 
-  <xsl:template match="Encounter">
+  <xsl:template match="Pokemon" mode="ByTask">
     <xsl:variable name="name" select="@name" />
+    <xsl:variable name="form" select="@form" />
     <div style="display:inline-block; border:1px solid black; margin:4px">
-      <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name = $name and not(@form)]">
+      <!-- TODO QZX: Figure out how to avoid this crap. -->
+      <xsl:apply-templates select=".">
         <xsl:with-param name="Settings">
           <Show hide_type_icons="true" hide_special_icons="true">
             <xsl:attribute name="href">
@@ -348,14 +350,14 @@
           <th>Encounters</th>
           <th>Task</th>
         </tr>
-        <xsl:apply-templates select="Category/Research/Encounter[not(@id=preceding::Encounter/@id)]" mode="ByEncounter">
+        <xsl:apply-templates select="Category/Research/Pokemon[not(@id=preceding::Research/Pokemon/@id)]" mode="ByEncounter">
           <xsl:sort order="ascending" data-type="number" select="@id" />
         </xsl:apply-templates>
       </table>
     </div>
   </xsl:template>
 
-  <xsl:template match="Encounter" mode="ByEncounter">
+  <xsl:template match="Pokemon" mode="ByEncounter">
     <xsl:variable name="name" select="@name" />
     <xsl:variable name="id" select="@id" />
 
@@ -370,10 +372,10 @@
         </xsl:with-param>
       </xsl:apply-templates>
       <td>
-        <xsl:for-each select="../../../Category/Research[Encounter/@id=$id]">
+        <xsl:for-each select="../../../Category/Research[Pokemon/@id=$id]">
           <xsl:variable name="task" select="@task" />
           <xsl:value-of select="$task" disable-output-escaping="yes" />
-          <xsl:variable name="count" select="count(../../Category/Research[@task=$task]/Encounter)" />
+          <xsl:variable name="count" select="count(../../Category/Research[@task=$task]/Pokemon)" />
           <xsl:if test="$count != 1">
             <span class="EMPHASIS">
               <xsl:value-of select="concat($nbsp, '(1', $nbsp, 'of', $nbsp, $count, $nbsp, 'possibilities)')" disable-output-escaping="yes" />

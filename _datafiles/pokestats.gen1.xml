@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-20" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -317,7 +317,7 @@
       <Max cp="2182" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="26" name="Raichu" form="Alola" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Raid Boss Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Raichu_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Raichu_alolan_shiny.png">
+  <Pokemon id="26" name="Raichu" form="Alola" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-03" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Raichu_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Raichu_alolan_shiny.png">
     <Type primary="Electric" secondary="Psychic" />
     <Stats>
       <BaseIV attack="201" defense="154" stamina="155" />
@@ -357,7 +357,7 @@
       <Max cp="1293" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Sandshrew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Sandshrew_shiny.png">
+  <Pokemon id="27" name="Sandshrew" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Sandshrew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Sandshrew_shiny.png">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="126" defense="120" stamina="137" />
@@ -388,7 +388,7 @@
       <Max cp="2432" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sandslash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Sandslash_shiny.png">
+  <Pokemon id="28" name="Sandslash" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sandslash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Sandslash_shiny.png">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="182" defense="175" stamina="181" />
@@ -675,11 +675,11 @@
   <Pokemon id="50" name="Diglett" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Diglett_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Diglett_alolan_shiny.png">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
-      <BaseIV attack="109" defense="82" stamina="67" />
+      <BaseIV attack="108" defense="81" stamina="67" />
       <Height standard="0.20000000298023224" deviation="0.20000000298023224" />
       <Weight standard="1" deviation="1" />
       <Rates capture="0.5" flee="0.10000000149011612" attack="0.10000000149011612" dodge="0" />
-      <Max cp="690" hp="64" />
+      <Max cp="681" hp="64" />
     </Stats>
   </Pokemon>
   <Pokemon id="50" name="Diglett" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Diglett.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Diglett_shiny.png">
@@ -706,21 +706,21 @@
   <Pokemon id="51" name="Dugtrio" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Dugtrio_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Dugtrio_alolan_shiny.png">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
-      <BaseIV attack="201" defense="145" stamina="111" />
+      <BaseIV attack="201" defense="142" stamina="111" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
       <Weight standard="66.5999984741211" deviation="66.5999984741211" />
       <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0" />
-      <Max cp="1915" hp="99" />
+      <Max cp="1897" hp="99" />
     </Stats>
   </Pokemon>
   <Pokemon id="51" name="Dugtrio" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Dugtrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Dugtrio_shiny.png">
     <Type primary="Ground" />
     <Stats>
-      <BaseIV attack="167" defense="134" stamina="111" />
+      <BaseIV attack="167" defense="136" stamina="111" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
       <Weight standard="33.299999237060547" deviation="33.299999237060547" />
       <Rates capture="0.20000000298023224" flee="0.059999998658895493" attack="0.10000000149011612" dodge="0" />
-      <Max cp="1557" hp="99" />
+      <Max cp="1567" hp="99" />
     </Stats>
   </Pokemon>
   <Pokemon id="52" name="Meowth" family="Meowth" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Meowth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Meowth_shiny.png">
@@ -784,7 +784,7 @@
       <Max cp="1689" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="54" name="Psyduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Psyduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Psyduck_shiny.png">
+  <Pokemon id="54" name="Psyduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-01-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Psyduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Psyduck_shiny.png">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="122" defense="95" stamina="137" />
@@ -794,7 +794,7 @@
       <Max cp="1106" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="55" name="Golduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Golduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Golduck_shiny.png">
+  <Pokemon id="55" name="Golduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-01-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Golduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Golduck_shiny.png">
     <Type primary="Water" />
     <EvolvesFrom id="54" name="Psyduck" candies="50" />
     <Stats>
@@ -1016,7 +1016,7 @@
       <Max cp="1293" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-14" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Geodude.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Geodude_shiny.png">
+  <Pokemon id="74" name="Geodude" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Geodude.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Geodude_shiny.png">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="132" defense="132" stamina="120" />
@@ -1047,7 +1047,7 @@
       <Max cp="1897" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-14" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Graveler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Graveler_shiny.png">
+  <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Graveler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Graveler_shiny.png">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="164" defense="164" stamina="146" />
@@ -1078,7 +1078,7 @@
       <Max cp="2949" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-14" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Golem.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Golem_shiny.png">
+  <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Golem.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Golem_shiny.png">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="211" defense="198" stamina="190" />
@@ -1223,7 +1223,7 @@
       <Max cp="1374" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-14" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Grimer.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Grimer_shiny.png">
+  <Pokemon id="88" name="Grimer" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Grimer.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Grimer_shiny.png">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="190" />
@@ -1254,7 +1254,7 @@
       <Max cp="2757" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-14" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Muk.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Muk_shiny.png">
+  <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Muk.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Muk_shiny.png">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="190" defense="172" stamina="233" />
@@ -1285,7 +1285,7 @@
       <Max cp="2547" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="92" name="Gastly" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Gastly.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Gastly_shiny.png">
+  <Pokemon id="92" name="Gastly" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Gastly.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Gastly_shiny.png">
     <Type primary="Ghost" secondary="Poison" />
     <Stats>
       <BaseIV attack="186" defense="67" stamina="102" />

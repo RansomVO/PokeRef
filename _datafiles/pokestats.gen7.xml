@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-20" gen="7" region="Alola">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="7" region="Alola">
   <Pokemon id="722" name="Rowlet" family="Rowlet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png">
     <Type primary="Grass" secondary="Flying" />
   </Pokemon>
@@ -406,22 +406,22 @@
   <Pokemon id="808" name="Meltan" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Mystery Box Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Meltan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ac/Meltan_shiny.png">
     <Type primary="Steel" />
     <Stats>
-      <BaseIV attack="112" defense="113" stamina="130" />
+      <BaseIV attack="118" defense="99" stamina="130" />
       <Height standard="0.20000000298023224" deviation="0.20000000298023224" />
       <Weight standard="8" deviation="8" />
       <Rates capture="0.30000001192092896" flee="0" attack="0.10000000149011612" dodge="0.15000000596046448" />
-      <Max cp="1080" hp="114" />
+      <Max cp="1068" hp="114" />
     </Stats>
   </Pokemon>
   <Pokemon id="809" name="Melmetal" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4b/Melmetal.png">
     <Type primary="Steel" />
     <EvolvesFrom id="808" name="Meltan" candies="400" />
     <Stats>
-      <BaseIV attack="231" defense="213" stamina="264" />
+      <BaseIV attack="226" defense="190" stamina="264" />
       <Height standard="2.5" deviation="2.5" />
       <Weight standard="800" deviation="800" />
       <Rates capture="0.30000001192092896" flee="0" attack="0.10000000149011612" dodge="0.15000000596046448" />
-      <Max cp="3875" hp="220" />
+      <Max cp="3599" hp="220" />
     </Stats>
   </Pokemon>
 </PokeStats>

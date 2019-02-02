@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-15" gen="4">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="4">
   <Pokemon id="387" name="Turtwig">
     <MoveSet base_dps="15.730337078651685" true_dps="13.033707865168539" comparison="91">
       <FastAttack name="Tackle" stab="false" legacy="false" />
@@ -469,6 +469,30 @@
       <FastAttack name="Snarl" stab="false" legacy="false" />
       <ChargedAttack name="Crunch" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="17.83216783216783" true_dps="24.755244755244753" comparison="85">
+      <FastAttack name="Hidden Power" stab="true" legacy="false" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.83216783216783" true_dps="22.307692307692307" comparison="77">
+      <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Hyper Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.441860465116278" true_dps="27.325581395348838" comparison="94">
+      <FastAttack name="Hidden Power" stab="true" legacy="false" />
+      <ChargedAttack name="Wild Charge" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.441860465116278" true_dps="25" comparison="86">
+      <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Wild Charge" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.935064935064935" true_dps="20.649350649350648" comparison="71">
+      <FastAttack name="Hidden Power" stab="true" legacy="false" />
+      <ChargedAttack name="Crunch" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.935064935064935" true_dps="18.7012987012987" comparison="64">
+      <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Crunch" stab="false" legacy="false" />
+    </MoveSet>
   </Pokemon>
   <Pokemon id="406" name="Budew">
     <MoveSet base_dps="15.151515151515151" true_dps="10.1010101010101" comparison="82">
@@ -509,6 +533,10 @@
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Dazzling Gleam" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="18.888888888888889" true_dps="31.333333333333332" comparison="97">
+      <FastAttack name="Poison Jab" stab="true" legacy="false" />
+      <ChargedAttack name="Grass Knot" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="18.844221105527641" true_dps="30.452261306532666" comparison="95">
       <FastAttack name="Razor Leaf" stab="true" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
@@ -520,6 +548,10 @@
     <MoveSet base_dps="17.739130434782609" true_dps="25.913043478260871" comparison="81">
       <FastAttack name="Razor Leaf" stab="true" legacy="false" />
       <ChargedAttack name="Dazzling Gleam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.30188679245283" true_dps="29.622641509433965" comparison="92">
+      <FastAttack name="Razor Leaf" stab="true" legacy="false" />
+      <ChargedAttack name="Grass Knot" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="408" name="Cranidos">
@@ -1147,29 +1179,37 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="430" name="Honchkrow">
-    <MoveSet base_dps="15.833333333333334" true_dps="26.333333333333332" comparison="97">
+    <MoveSet base_dps="15.833333333333334" true_dps="26.333333333333332" comparison="86">
       <FastAttack name="Peck" stab="true" legacy="false" />
       <ChargedAttack name="Brave Bird" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.625" true_dps="23.4375" comparison="86">
+    <MoveSet base_dps="15.625" true_dps="23.4375" comparison="77">
       <FastAttack name="Peck" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.25" true_dps="26.875" comparison="99">
+    <MoveSet base_dps="16.25" true_dps="26.875" comparison="88">
       <FastAttack name="Peck" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.638655462184872" true_dps="27.394957983193276" comparison="100">
+    <MoveSet base_dps="18.571428571428573" true_dps="30.714285714285715" comparison="100">
+      <FastAttack name="Peck" stab="true" legacy="false" />
+      <ChargedAttack name="Sky Attack" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.638655462184872" true_dps="27.394957983193276" comparison="90">
       <FastAttack name="Snarl" stab="true" legacy="false" />
       <ChargedAttack name="Brave Bird" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.377952755905511" true_dps="24.409448818897641" comparison="90">
+    <MoveSet base_dps="16.377952755905511" true_dps="24.409448818897641" comparison="80">
       <FastAttack name="Snarl" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.470588235294116" true_dps="27.058823529411764" comparison="99">
+    <MoveSet base_dps="16.470588235294116" true_dps="27.058823529411764" comparison="89">
       <FastAttack name="Snarl" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.666666666666668" true_dps="30.666666666666668" comparison="100">
+      <FastAttack name="Snarl" stab="true" legacy="false" />
+      <ChargedAttack name="Sky Attack" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="431" name="Glameow">
@@ -1719,28 +1759,40 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="452" name="Drapion">
-    <MoveSet base_dps="15.32258064516129" true_dps="19.516129032258064" comparison="90">
+    <MoveSet base_dps="15.32258064516129" true_dps="19.516129032258064" comparison="86">
       <FastAttack name="Poison Sting" stab="true" legacy="false" />
       <ChargedAttack name="Crunch" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.306122448979592" true_dps="17.142857142857142" comparison="80">
+    <MoveSet base_dps="15.306122448979592" true_dps="17.142857142857142" comparison="75">
       <FastAttack name="Poison Sting" stab="true" legacy="false" />
       <ChargedAttack name="Aqua Tail" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.901408450704228" true_dps="21.690140845070424" comparison="100">
+    <MoveSet base_dps="16.901408450704228" true_dps="21.690140845070424" comparison="95">
       <FastAttack name="Poison Sting" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Bomb" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.384615384615385" true_dps="17.846153846153847" comparison="83">
+    <MoveSet base_dps="15.384615384615385" true_dps="17.846153846153847" comparison="78">
       <FastAttack name="Infestation" stab="false" legacy="false" />
       <ChargedAttack name="Crunch" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.384615384615383" true_dps="15.192307692307692" comparison="71">
+    <MoveSet base_dps="15.384615384615383" true_dps="15.192307692307692" comparison="67">
       <FastAttack name="Infestation" stab="false" legacy="false" />
       <ChargedAttack name="Aqua Tail" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.910447761194028" true_dps="20.597014925373134" comparison="95">
+    <MoveSet base_dps="17.910447761194028" true_dps="20.597014925373134" comparison="90">
       <FastAttack name="Infestation" stab="false" legacy="false" />
+      <ChargedAttack name="Sludge Bomb" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.103896103896105" true_dps="20.519480519480521" comparison="90">
+      <FastAttack name="Bite" stab="true" legacy="false" />
+      <ChargedAttack name="Crunch" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.25" true_dps="18.90625" comparison="83">
+      <FastAttack name="Bite" stab="true" legacy="false" />
+      <ChargedAttack name="Aqua Tail" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.954545454545453" true_dps="22.954545454545453" comparison="100">
+      <FastAttack name="Bite" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Bomb" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
@@ -2121,6 +2173,10 @@
       <FastAttack name="Fire Spin" stab="true" legacy="false" />
       <ChargedAttack name="Fire Blast" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="17.391304347826086" true_dps="26.231884057971012" comparison="87">
+      <FastAttack name="Fire Spin" stab="true" legacy="false" />
+      <ChargedAttack name="Psychic" stab="false" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="14.999999999999998" true_dps="20.208333333333329" comparison="67">
       <FastAttack name="Karate Chop" stab="false" legacy="false" />
       <ChargedAttack name="Brick Break" stab="false" legacy="false" />
@@ -2132,6 +2188,10 @@
     <MoveSet base_dps="18.0327868852459" true_dps="27.868852459016395" comparison="93">
       <FastAttack name="Karate Chop" stab="false" legacy="false" />
       <ChargedAttack name="Fire Blast" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.666666666666664" true_dps="22.407407407407405" comparison="75">
+      <FastAttack name="Karate Chop" stab="false" legacy="false" />
+      <ChargedAttack name="Psychic" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="468" name="Togekiss">
@@ -2146,6 +2206,10 @@
     <MoveSet base_dps="15.416666666666668" true_dps="23.750000000000004" comparison="87">
       <FastAttack name="Air Slash" stab="true" legacy="false" />
       <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.073170731707318" true_dps="23.780487804878049" comparison="87">
+      <FastAttack name="Air Slash" stab="true" legacy="false" />
+      <ChargedAttack name="Flamethrower" stab="false" legacy="false" />
     </MoveSet>
     <MoveSet base_dps="14.375" true_dps="19.25" comparison="71">
       <FastAttack name="Hidden Power" stab="true" legacy="false" />
@@ -2170,6 +2234,14 @@
     <MoveSet base_dps="14.492753623188404" true_dps="20.289855072463766" comparison="74">
       <FastAttack name="Hidden Power" stab="false" legacy="false" />
       <ChargedAttack name="Aerial Ace" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.853658536585368" true_dps="21.585365853658537" comparison="79">
+      <FastAttack name="Hidden Power" stab="true" legacy="false" />
+      <ChargedAttack name="Flamethrower" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.853658536585368" true_dps="19.634146341463417" comparison="72">
+      <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Flamethrower" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="469" name="Yanmega">
@@ -2327,6 +2399,14 @@
       <FastAttack name="Hidden Power" stab="false" legacy="false" />
       <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="17.279411764705884" true_dps="27.279411764705884" comparison="87">
+      <FastAttack name="Hidden Power" stab="true" legacy="false" />
+      <ChargedAttack name="Blizzard" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.279411764705884" true_dps="24.191176470588236" comparison="77">
+      <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Blizzard" stab="false" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="18.730158730158728" true_dps="26.666666666666664" comparison="85">
       <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
@@ -2338,6 +2418,10 @@
     <MoveSet base_dps="17.192982456140349" true_dps="24.561403508771924" comparison="78">
       <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Zap Cannon" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.222222222222221" true_dps="24.62962962962963" comparison="79">
+      <FastAttack name="Charge Beam" stab="false" legacy="false" />
+      <ChargedAttack name="Blizzard" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="475" name="Gallade">

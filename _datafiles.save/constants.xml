@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Constants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-06-14">
+  <Gender male="♂" female="♀" neutral="⚲" />
+  <Types>
+    <Type>Other</Type>
+    <Type>Bug</Type>
+    <Type>Dark</Type>
+    <Type>Dragon</Type>
+    <Type>Electric</Type>
+    <Type>Fairy</Type>
+    <Type>Fighting</Type>
+    <Type>Fire</Type>
+    <Type>Flying</Type>
+    <Type>Ghost</Type>
+    <Type>Grass</Type>
+    <Type>Ground</Type>
+    <Type>Ice</Type>
+    <Type>Normal</Type>
+    <Type>Poison</Type>
+    <Type>Psychic</Type>
+    <Type>Rock</Type>
+    <Type>Steel</Type>
+    <Type>Water</Type>
+  </Types>
+  <Weathers>
+    <Weather>Unknown</Weather>
+    <Weather>Rainy</Weather>
+    <Weather>Fog</Weather>
+    <Weather>Windy</Weather>
+    <Weather>Cloudy</Weather>
+    <Weather>Sunny</Weather>
+    <Weather>Snow</Weather>
+    <Weather>Partly Cloudy</Weather>
+  </Weathers>
+  <Availability Unreleased="Unreleased" General="General" Regional="Regional" RaidBossOnly="Raid Boss Only" RaidBossOnly_EX="EX Raid Boss Only" HatchOnly_2K="Hatch Only: 2K" HatchOnly_5K="Hatch Only: 5K" HatchOnly_7K="Hatch Only: 7K" HatchOnly_10K="Hatch Only: 10K" EvolveOnly="Evolve Only" />
+  <Rarity Legendary="Legendary" Mythic="Mythic" UltraBeast="Ultra Beast" />
+  <IV_Evaluation>
+    <Overall max="45">
+      <NotGreat min="0" max="22" />
+      <Decent min="23" max="29" />
+      <Strong min="30" max="36" />
+      <Amazes min="37" max="45" />
+    </Overall>
+    <Attribute max="15">
+      <NotGreatness min="0" max="7" />
+      <JobDone min="8" max="12" />
+      <Excellent min="13" max="14" />
+      <Wow min="15" max="15" />
+    </Attribute>
+  </IV_Evaluation>
+  <Mappings>
+    <WeatherBoost type="Bug" boost="Rainy" />
+    <WeatherBoost type="Dark" boost="Fog" />
+    <WeatherBoost type="Dragon" boost="Windy" />
+    <WeatherBoost type="Electric" boost="Rainy" />
+    <WeatherBoost type="Fairy" boost="Cloudy" />
+    <WeatherBoost type="Fighting" boost="Cloudy" />
+    <WeatherBoost type="Fire" boost="Sunny" />
+    <WeatherBoost type="Flying" boost="Windy" />
+    <WeatherBoost type="Ghost" boost="Fog" />
+    <WeatherBoost type="Grass" boost="Sunny" />
+    <WeatherBoost type="Ground" boost="Sunny" />
+    <WeatherBoost type="Ice" boost="Snow" />
+    <WeatherBoost type="Normal" boost="Partly Cloudy" />
+    <WeatherBoost type="Poison" boost="Cloudy" />
+    <WeatherBoost type="Psychic" boost="Windy" />
+    <WeatherBoost type="Rock" boost="Partly Cloudy" />
+    <WeatherBoost type="Steel" boost="Snow" />
+    <WeatherBoost type="Water" boost="Rainy" />
+    <WeatherBoost type="Other" boost="Unknown" />
+  </Mappings>
+  <NumericChars>
+    <NumericChar number="0" character="⓪" />
+    <NumericChar number="1" character="①" />
+    <NumericChar number="2" character="②" />
+    <NumericChar number="3" character="③" />
+    <NumericChar number="4" character="④" />
+    <NumericChar number="5" character="⑤" />
+    <NumericChar number="6" character="⑥" />
+    <NumericChar number="7" character="⑦" />
+    <NumericChar number="8" character="⑧" />
+    <NumericChar number="9" character="⑨" />
+    <NumericChar number="10" character="⑩" />
+    <NumericChar number="11" character="⑪" />
+    <NumericChar number="12" character="⑫" />
+    <NumericChar number="13" character="⑬" />
+    <NumericChar number="14" character="⑭" />
+    <NumericChar number="15" character="⑮" />
+    <NumericChar number="16" character="⑯" />
+    <NumericChar number="17" character="⑰" />
+    <NumericChar number="18" character="⑱" />
+    <NumericChar number="19" character="⑲" />
+    <NumericChar number="20" character="⑳" />
+    <NumericChar number="21" character="㉑" />
+    <NumericChar number="22" character="㉒" />
+    <NumericChar number="23" character="㉓" />
+    <NumericChar number="24" character="㉔" />
+    <NumericChar number="25" character="㉕" />
+    <NumericChar number="26" character="㉖" />
+    <NumericChar number="27" character="㉗" />
+    <NumericChar number="28" character="㉘" />
+    <NumericChar number="29" character="㉙" />
+    <NumericChar number="30" character="㉚" />
+    <NumericChar number="31" character="㉛" />
+    <NumericChar number="32" character="㉜" />
+    <NumericChar number="33" character="㉝" />
+    <NumericChar number="34" character="㉞" />
+    <NumericChar number="35" character="㉟" />
+    <NumericChar number="36" character="㊱" />
+    <NumericChar number="37" character="㊲" />
+    <NumericChar number="38" character="㊳" />
+    <NumericChar number="39" character="㊴" />
+    <NumericChar number="40" character="㊵" />
+    <NumericChar number="41" character="㊶" />
+    <NumericChar number="42" character="㊷" />
+    <NumericChar number="43" character="㊸" />
+    <NumericChar number="44" character="㊹" />
+    <NumericChar number="45" character="㊺" />
+    <NumericChar number="46" character="㊻" />
+    <NumericChar number="47" character="㊼" />
+    <NumericChar number="48" character="㊽" />
+    <NumericChar number="49" character="㊾" />
+    <NumericChar number="50" character="㊿" />
+  </NumericChars>
+  <CPMultipliers>
+    <CPM level="1" value="0.093999996781349182" />
+    <CPM level="2" value="0.16639786958694458" />
+    <CPM level="3" value="0.21573247015476227" />
+    <CPM level="4" value="0.25572004914283752" />
+    <CPM level="5" value="0.29024988412857056" />
+    <CPM level="6" value="0.32108759880065918" />
+    <CPM level="7" value="0.34921267628669739" />
+    <CPM level="8" value="0.37523558735847473" />
+    <CPM level="9" value="0.39956727623939514" />
+    <CPM level="10" value="0.42250001430511475" />
+    <CPM level="11" value="0.443107545375824" />
+    <CPM level="12" value="0.46279838681221008" />
+    <CPM level="13" value="0.48168495297431946" />
+    <CPM level="14" value="0.49985843896865845" />
+    <CPM level="15" value="0.517393946647644" />
+    <CPM level="16" value="0.53435432910919189" />
+    <CPM level="17" value="0.55079269409179688" />
+    <CPM level="18" value="0.56675451993942261" />
+    <CPM level="19" value="0.58227890729904175" />
+    <CPM level="20" value="0.5974000096321106" />
+    <CPM level="21" value="0.61215728521347046" />
+    <CPM level="22" value="0.62656712532043457" />
+    <CPM level="23" value="0.64065295457839966" />
+    <CPM level="24" value="0.65443563461303711" />
+    <CPM level="25" value="0.667934000492096" />
+    <CPM level="26" value="0.68116492033004761" />
+    <CPM level="27" value="0.69414365291595459" />
+    <CPM level="28" value="0.70688420534133911" />
+    <CPM level="29" value="0.719399094581604" />
+    <CPM level="30" value="0.73170000314712524" />
+    <CPM level="31" value="0.7377694845199585" />
+    <CPM level="32" value="0.7437894344329834" />
+    <CPM level="33" value="0.74976104497909546" />
+    <CPM level="34" value="0.75568550825119019" />
+    <CPM level="35" value="0.76156383752822876" />
+    <CPM level="36" value="0.76739716529846191" />
+    <CPM level="37" value="0.77318650484085083" />
+    <CPM level="38" value="0.77893275022506714" />
+    <CPM level="39" value="0.7846369743347168" />
+    <CPM level="40" value="0.79030001163482666" />
+    <CPM level="1.5" value="0.13513743078430837" />
+    <CPM level="2.5" value="0.19265091445688651" />
+    <CPM level="3.5" value="0.23657265502662245" />
+    <CPM level="4.5" value="0.273530381100769" />
+    <CPM level="5.5" value="0.30605738133577315" />
+    <CPM level="6.5" value="0.33544503229507722" />
+    <CPM level="7.5" value="0.36245774877879022" />
+    <CPM level="8.5" value="0.38759241108516856" />
+    <CPM level="9.5" value="0.41119354951725062" />
+    <CPM level="10.5" value="0.43292641341041438" />
+    <CPM level="11.5" value="0.45305995387198589" />
+    <CPM level="12.5" value="0.47233607778670494" />
+    <CPM level="13.5" value="0.49085581025900893" />
+    <CPM level="14.5" value="0.50870175694399222" />
+    <CPM level="15.5" value="0.52594250877132931" />
+    <CPM level="16.5" value="0.54263576223035392" />
+    <CPM level="17.5" value="0.55883059943808777" />
+    <CPM level="18.5" value="0.57456914803926407" />
+    <CPM level="19.5" value="0.58988791197727208" />
+    <CPM level="20.5" value="0.6048236575020739" />
+    <CPM level="21.5" value="0.61940411056605016" />
+    <CPM level="22.5" value="0.63364918162274386" />
+    <CPM level="23.5" value="0.647580963301656" />
+    <CPM level="24.5" value="0.661219263506722" />
+    <CPM level="25.5" value="0.67458189929081824" />
+    <CPM level="26.5" value="0.6876849058877712" />
+    <CPM level="27.5" value="0.70054289327797825" />
+    <CPM level="28.5" value="0.71316910233334141" />
+    <CPM level="29.5" value="0.72557561697259876" />
+    <CPM level="30.5" value="0.73474101113737633" />
+    <CPM level="31.5" value="0.74078557459732652" />
+    <CPM level="32.5" value="0.74678120870248288" />
+    <CPM level="33.5" value="0.75272910530582149" />
+    <CPM level="34.5" value="0.75863036651968463" />
+    <CPM level="35.5" value="0.76448606525522667" />
+    <CPM level="36.5" value="0.77029727397159009" />
+    <CPM level="37.5" value="0.776064945942412" />
+    <CPM level="38.5" value="0.781790064808426" />
+    <CPM level="39.5" value="0.787473583646825" />
+  </CPMultipliers>
+</Constants>

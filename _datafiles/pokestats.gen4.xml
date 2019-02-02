@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-20" gen="4" region="Sinnoh">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="4" region="Sinnoh">
   <Pokemon id="387" name="Turtwig" family="Turtwig" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png">
     <Type primary="Grass" />
     <Stats>
@@ -223,8 +223,8 @@
       <Max cp="2971" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="408" name="Cranidos" family="Cranidos" buddy_km="1" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png">
-    <Type primary="Rock" secondary="Rock" />
+  <Pokemon id="408" name="Cranidos" family="Cranidos" buddy_km="5" gender_ratio="7 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png">
+    <Type primary="Rock" />
     <Stats>
       <BaseIV attack="218" defense="71" stamina="167" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -233,8 +233,8 @@
       <Max cp="1820" hp="143" />
     </Stats>
   </Pokemon>
-  <Pokemon id="409" name="Rampardos" family="Cranidos" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png">
-    <Type primary="Rock" secondary="Rock" />
+  <Pokemon id="409" name="Rampardos" family="Cranidos" buddy_km="5" gender_ratio="7 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png">
+    <Type primary="Rock" />
     <EvolvesFrom id="408" name="Cranidos" candies="50" />
     <Stats>
       <BaseIV attack="295" defense="109" stamina="219" />
@@ -244,7 +244,7 @@
       <Max cp="3298" hp="184" />
     </Stats>
   </Pokemon>
-  <Pokemon id="410" name="Shieldon" family="Shieldon" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png">
+  <Pokemon id="410" name="Shieldon" family="Shieldon" buddy_km="5" gender_ratio="7 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png">
     <Type primary="Rock" secondary="Steel" />
     <Stats>
       <BaseIV attack="76" defense="195" stamina="102" />
@@ -254,7 +254,7 @@
       <Max cp="890" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="411" name="Bastiodon" family="Shieldon" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png">
+  <Pokemon id="411" name="Bastiodon" family="Shieldon" buddy_km="5" gender_ratio="7 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png">
     <Type primary="Rock" secondary="Steel" />
     <EvolvesFrom id="410" name="Shieldon" candies="50" />
     <Stats>
@@ -266,6 +266,36 @@
     </Stats>
   </Pokemon>
   <Pokemon id="412" name="Burmy" family="Burmy" buddy_km="5" gender_ratio="1 : 1" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png">
+    <Type primary="Bug" />
+    <Stats>
+      <BaseIV attack="53" defense="83" stamina="120" />
+      <Height standard="0.20000000298023224" deviation="0.20000000298023224" />
+      <Weight standard="3.4000000953674316" deviation="3.4000000953674316" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.05000000074505806" dodge="0.30000001192092896" />
+      <Max cp="488" hp="106" />
+    </Stats>
+  </Pokemon>
+  <Pokemon id="412" name="Burmy" form="Plant" family="Burmy" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-plant.png">
+    <Type primary="Bug" />
+    <Stats>
+      <BaseIV attack="53" defense="83" stamina="120" />
+      <Height standard="0.20000000298023224" deviation="0.20000000298023224" />
+      <Weight standard="3.4000000953674316" deviation="3.4000000953674316" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.05000000074505806" dodge="0.30000001192092896" />
+      <Max cp="488" hp="106" />
+    </Stats>
+  </Pokemon>
+  <Pokemon id="412" name="Burmy" form="Sandy" family="Burmy" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-sandy.png">
+    <Type primary="Bug" />
+    <Stats>
+      <BaseIV attack="53" defense="83" stamina="120" />
+      <Height standard="0.20000000298023224" deviation="0.20000000298023224" />
+      <Weight standard="3.4000000953674316" deviation="3.4000000953674316" />
+      <Rates capture="0.5" flee="0.20000000298023224" attack="0.05000000074505806" dodge="0.30000001192092896" />
+      <Max cp="488" hp="106" />
+    </Stats>
+  </Pokemon>
+  <Pokemon id="412" name="Burmy" form="Trash" family="Burmy" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-trash.png">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="53" defense="83" stamina="120" />
@@ -327,7 +357,7 @@
       <Max cp="1815" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="415" name="Combee" family="Combee" buddy_km="3" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png">
+  <Pokemon id="415" name="Combee" family="Combee" buddy_km="3" gender_ratio="♀" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png">
     <Type primary="Bug" secondary="Flying" />
     <Stats>
       <BaseIV attack="59" defense="83" stamina="102" />
@@ -337,7 +367,7 @@
       <Max cp="494" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="416" name="Vespiquen" family="Combee" buddy_km="3" gender_ratio="♀" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png">
+  <Pokemon id="416" name="Vespiquen" family="Combee" buddy_km="3" gender_ratio="♀" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="415" name="Combee" candies="50" />
     <Stats>
@@ -481,8 +511,9 @@
       <Max cp="2324" hp="204" />
     </Stats>
   </Pokemon>
-  <Pokemon id="424" name="Ambipom" family="Aipom" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png">
+  <Pokemon id="424" name="Ambipom" family="Aipom" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png">
     <Type primary="Normal" />
+    <EvolvesFrom id="190" name="Aipom" candies="100" special="Sinnoh Stone" />
     <Stats>
       <BaseIV attack="205" defense="143" stamina="181" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -533,7 +564,7 @@
       <Max cp="2059" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="429" name="Mismagius" family="Misdreavus" buddy_km="1" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png">
+  <Pokemon id="429" name="Mismagius" family="Misdreavus" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" shiny="2018-12-01" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png">
     <Type primary="Ghost" />
     <EvolvesFrom id="200" name="Misdreavus" candies="100" special="Sinnoh Stone" />
     <Stats>
@@ -555,7 +586,7 @@
       <Max cp="2711" hp="189" />
     </Stats>
   </Pokemon>
-  <Pokemon id="431" name="Glameow" family="Glameow" buddy_km="3" gender_ratio="1 : 3" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png">
+  <Pokemon id="431" name="Glameow" family="Glameow" buddy_km="3" gender_ratio="1 : 3" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="109" defense="82" stamina="135" />
@@ -565,7 +596,7 @@
       <Max cp="934" hp="118" />
     </Stats>
   </Pokemon>
-  <Pokemon id="432" name="Purugly" family="Glameow" buddy_km="3" gender_ratio="1 : 3" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png">
+  <Pokemon id="432" name="Purugly" family="Glameow" buddy_km="3" gender_ratio="1 : 3" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png">
     <Type primary="Normal" />
     <EvolvesFrom id="431" name="Glameow" candies="50" />
     <Stats>
@@ -576,7 +607,7 @@
       <Max cp="1953" hp="149" />
     </Stats>
   </Pokemon>
-  <Pokemon id="433" name="Chingling" family="Chimecho" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png">
+  <Pokemon id="433" name="Chingling" family="Chimecho" buddy_km="5" gender_ratio="1 : 1" availability="Hatch Only: 7K" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="114" defense="94" stamina="128" />
@@ -607,7 +638,7 @@
       <Max cp="2358" hp="193" />
     </Stats>
   </Pokemon>
-  <Pokemon id="436" name="Bronzor" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png">
+  <Pokemon id="436" name="Bronzor" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png">
     <Type primary="Steel" secondary="Psychic" />
     <Stats>
       <BaseIV attack="43" defense="154" stamina="149" />
@@ -617,7 +648,7 @@
       <Max cp="603" hp="129" />
     </Stats>
   </Pokemon>
-  <Pokemon id="437" name="Bronzong" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png">
+  <Pokemon id="437" name="Bronzong" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png">
     <Type primary="Steel" secondary="Psychic" />
     <EvolvesFrom id="436" name="Bronzor" candies="50" />
     <Stats>
@@ -628,7 +659,7 @@
       <Max cp="2239" hp="143" />
     </Stats>
   </Pokemon>
-  <Pokemon id="438" name="Bonsly" family="Sudowoodo" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png">
+  <Pokemon id="438" name="Bonsly" family="Sudowoodo" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png">
     <Type primary="Rock" />
     <Stats>
       <BaseIV attack="124" defense="133" stamina="137" />
@@ -638,7 +669,7 @@
       <Max cp="1302" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="439" name="Mime Jr." family="Mr Mime" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png">
+  <Pokemon id="439" name="Mime Jr." family="Mr Mime" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png">
     <Type primary="Psychic" secondary="Fairy" />
     <Stats>
       <BaseIV attack="125" defense="142" stamina="85" />
@@ -710,7 +741,7 @@
       <Max cp="3962" hp="200" />
     </Stats>
   </Pokemon>
-  <Pokemon id="446" name="Munchlax" family="Snorlax" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png">
+  <Pokemon id="446" name="Munchlax" family="Snorlax" buddy_km="5" gender_ratio="7 : 1" availability="Hatch Only: 7K" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="137" defense="117" stamina="286" />
@@ -720,7 +751,7 @@
       <Max cp="1892" hp="237" />
     </Stats>
   </Pokemon>
-  <Pokemon id="447" name="Riolu" family="Lucario" buddy_km="5" gender_ratio="7 : 1" availability="Hatch Only: 10K" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png">
+  <Pokemon id="447" name="Riolu" family="Lucario" buddy_km="5" gender_ratio="7 : 1" availability="Hatch Only: 7K" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="127" defense="78" stamina="120" />
@@ -762,7 +793,7 @@
       <Max cp="3085" hp="200" />
     </Stats>
   </Pokemon>
-  <Pokemon id="451" name="Skorupi" family="Skorupi" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png">
+  <Pokemon id="451" name="Skorupi" family="Skorupi" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png">
     <Type primary="Poison" secondary="Bug" />
     <Stats>
       <BaseIV attack="93" defense="151" stamina="120" />
@@ -772,7 +803,7 @@
       <Max cp="1009" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="452" name="Drapion" family="Skorupi" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png">
+  <Pokemon id="452" name="Drapion" family="Skorupi" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png">
     <Type primary="Poison" secondary="Dark" />
     <EvolvesFrom id="451" name="Skorupi" candies="50" />
     <Stats>
@@ -783,7 +814,7 @@
       <Max cp="2453" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="453" name="Croagunk" family="Croagunk" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png">
+  <Pokemon id="453" name="Croagunk" family="Croagunk" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png">
     <Type primary="Poison" secondary="Fighting" />
     <Stats>
       <BaseIV attack="116" defense="76" stamina="134" />
@@ -793,7 +824,7 @@
       <Max cp="952" hp="117" />
     </Stats>
   </Pokemon>
-  <Pokemon id="454" name="Toxicroak" family="Croagunk" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png">
+  <Pokemon id="454" name="Toxicroak" family="Croagunk" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png">
     <Type primary="Poison" secondary="Fighting" />
     <EvolvesFrom id="453" name="Croagunk" candies="50" />
     <Stats>
@@ -814,7 +845,7 @@
       <Max cp="2159" hp="153" />
     </Stats>
   </Pokemon>
-  <Pokemon id="456" name="Finneon" family="Finneon" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png">
+  <Pokemon id="456" name="Finneon" family="Finneon" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="96" defense="116" stamina="135" />
@@ -824,7 +855,7 @@
       <Max cp="971" hp="118" />
     </Stats>
   </Pokemon>
-  <Pokemon id="457" name="Lumineon" family="Finneon" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png">
+  <Pokemon id="457" name="Lumineon" family="Finneon" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png">
     <Type primary="Water" />
     <EvolvesFrom id="456" name="Finneon" candies="50" />
     <Stats>
@@ -835,7 +866,7 @@
       <Max cp="1814" hp="146" />
     </Stats>
   </Pokemon>
-  <Pokemon id="458" name="Mantyke" family="Mantine" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png">
+  <Pokemon id="458" name="Mantyke" family="Mantine" buddy_km="5" gender_ratio="1 : 1" availability="Hatch Only: 7K" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png">
     <Type primary="Water" secondary="Flying" />
     <Stats>
       <BaseIV attack="105" defense="179" stamina="128" />
@@ -845,7 +876,7 @@
       <Max cp="1248" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="459" name="Snover" family="Snover" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png">
+  <Pokemon id="459" name="Snover" family="Snover" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png">
     <Type primary="Grass" secondary="Ice" />
     <Stats>
       <BaseIV attack="115" defense="105" stamina="155" />
@@ -855,7 +886,7 @@
       <Max cp="1159" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="460" name="Abomasnow" family="Snover" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png">
+  <Pokemon id="460" name="Abomasnow" family="Snover" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png">
     <Type primary="Grass" secondary="Ice" />
     <EvolvesFrom id="459" name="Snover" candies="50" />
     <Stats>
@@ -887,8 +918,9 @@
       <Max cp="3205" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="463" name="Lickilicky" family="Lickitung" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png">
+  <Pokemon id="463" name="Lickilicky" family="Lickitung" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png">
     <Type primary="Normal" />
+    <EvolvesFrom id="108" name="Lickitung" candies="100" special="Sinnoh Stone" />
     <Stats>
       <BaseIV attack="161" defense="181" stamina="242" />
       <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
@@ -908,8 +940,9 @@
       <Max cp="3733" hp="210" />
     </Stats>
   </Pokemon>
-  <Pokemon id="465" name="Tangrowth" family="Tangela" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png">
+  <Pokemon id="465" name="Tangrowth" family="Tangela" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png">
     <Type primary="Grass" />
+    <EvolvesFrom id="114" name="Tangela" candies="100" special="Sinnoh Stone" />
     <Stats>
       <BaseIV attack="207" defense="184" stamina="225" />
       <Height standard="2" deviation="2" />
@@ -918,7 +951,7 @@
       <Max cp="3030" hp="189" />
     </Stats>
   </Pokemon>
-  <Pokemon id="466" name="Electivire" family="Electabuzz" buddy_km="3" gender_ratio="3 : 1" availability="Evolve Only" shiny="2018-11-14" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png">
+  <Pokemon id="466" name="Electivire" family="Electabuzz" buddy_km="5" gender_ratio="3 : 1" availability="Evolve Only" shiny="2018-11-14" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png">
     <Type primary="Electric" />
     <EvolvesFrom id="125" name="Electabuzz" candies="100" special="Sinnoh Stone" />
     <Stats>
@@ -929,7 +962,7 @@
       <Max cp="3079" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="467" name="Magmortar" family="Magmar" buddy_km="3" gender_ratio="3 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png">
+  <Pokemon id="467" name="Magmortar" family="Magmar" buddy_km="5" gender_ratio="3 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png">
     <Type primary="Fire" />
     <EvolvesFrom id="126" name="Magmar" candies="100" special="Sinnoh Stone" />
     <Stats>
@@ -951,8 +984,9 @@
       <Max cp="3332" hp="168" />
     </Stats>
   </Pokemon>
-  <Pokemon id="469" name="Yanmega" family="Yanma" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png">
+  <Pokemon id="469" name="Yanmega" family="Yanma" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png">
     <Type primary="Bug" secondary="Flying" />
+    <EvolvesFrom id="193" name="Yanma" candies="100" special="Sinnoh Stone" />
     <Stats>
       <BaseIV attack="231" defense="156" stamina="200" />
       <Height standard="1.8999999761581421" deviation="1.8999999761581421" />
@@ -961,7 +995,7 @@
       <Max cp="2946" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="470" name="Leafeon" family="Eevee" buddy_km="3" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png">
+  <Pokemon id="470" name="Leafeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="216" defense="219" stamina="163" />
@@ -971,7 +1005,7 @@
       <Max cp="2944" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="471" name="Glaceon" family="Eevee" buddy_km="3" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png">
+  <Pokemon id="471" name="Glaceon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="238" defense="205" stamina="163" />
@@ -981,7 +1015,7 @@
       <Max cp="3126" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="472" name="Gliscor" family="Gligar" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png">
+  <Pokemon id="472" name="Gliscor" family="Gligar" buddy_km="5" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png">
     <Type primary="Ground" secondary="Flying" />
     <EvolvesFrom id="207" name="Gligar" candies="100" special="Sinnoh Stone" />
     <Stats>
@@ -992,7 +1026,7 @@
       <Max cp="2692" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="473" name="Mamoswine" family="Swinub" buddy_km="1" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png">
+  <Pokemon id="473" name="Mamoswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png">
     <Type primary="Ice" secondary="Ground" />
     <Stats>
       <BaseIV attack="247" defense="146" stamina="242" />
@@ -1013,8 +1047,9 @@
       <Max cp="3266" hp="168" />
     </Stats>
   </Pokemon>
-  <Pokemon id="475" name="Gallade" family="Ralts" buddy_km="5" gender_ratio="♂" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png">
+  <Pokemon id="475" name="Gallade" family="Ralts" buddy_km="5" gender_ratio="♂" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png">
     <Type primary="Psychic" secondary="Fighting" />
+    <EvolvesFrom id="281" name="Kirlia" candies="100" special="Sinnoh Stone" />
     <Stats>
       <BaseIV attack="237" defense="195" stamina="169" />
       <Height standard="1.6000000238418579" deviation="1.6000000238418579" />
@@ -1044,8 +1079,9 @@
       <Max cp="2388" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="478" name="Froslass" family="Snorunt" buddy_km="3" gender_ratio="♀" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png">
+  <Pokemon id="478" name="Froslass" family="Snorunt" buddy_km="3" gender_ratio="♀" availability="Evolve Only" shiny="2019-01-31" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png">
     <Type primary="Ice" secondary="Ghost" />
+    <EvolvesFrom id="361" name="Snorunt" candies="100" special="Sinnoh Stone" />
     <Stats>
       <BaseIV attack="171" defense="150" stamina="172" />
       <Height standard="1.2999999523162842" deviation="1.2999999523162842" />
@@ -1164,7 +1200,7 @@
       <Max cp="4038" hp="173" />
     </Stats>
   </Pokemon>
-  <Pokemon id="484" name="Palkia" family="Palkia" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png">
+  <Pokemon id="484" name="Palkia" family="Palkia" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png">
     <Type primary="Water" secondary="Dragon" />
     <Stats>
       <BaseIV attack="280" defense="215" stamina="189" />
@@ -1174,7 +1210,7 @@
       <Max cp="3991" hp="161" />
     </Stats>
   </Pokemon>
-  <Pokemon id="485" name="Heatran" family="Heatran" buddy_km="20" gender_ratio="1 : 1" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png">
+  <Pokemon id="485" name="Heatran" family="Heatran" buddy_km="20" gender_ratio="1 : 1" rarity="Legendary" availability="Raid Boss Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png">
     <Type primary="Fire" secondary="Steel" />
     <Stats>
       <BaseIV attack="251" defense="213" stamina="209" />

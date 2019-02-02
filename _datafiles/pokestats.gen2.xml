@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-11-20" gen="2" region="Johto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="2" region="Johto">
   <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-09-22" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Chikorita.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Chikorita_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -32,7 +32,7 @@
       <Max cp="2410" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="155" name="Cyndaquil" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Cyndaquil.png/revision/latest/scale-to-width-down/256">
+  <Pokemon id="155" name="Cyndaquil" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-11-10" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Cyndaquil.png/revision/latest/scale-to-width-down/256">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="116" defense="93" stamina="118" />
@@ -42,7 +42,7 @@
       <Max cp="980" hp="105" />
     </Stats>
   </Pokemon>
-  <Pokemon id="156" name="Quilava" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4a/Quilava.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Quilava_shiny.png">
+  <Pokemon id="156" name="Quilava" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-11-10" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4a/Quilava.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Quilava_shiny.png">
     <Type primary="Fire" />
     <EvolvesFrom id="155" name="Cyndaquil" candies="25" />
     <Stats>
@@ -53,7 +53,7 @@
       <Max cp="1653" hp="131" />
     </Stats>
   </Pokemon>
-  <Pokemon id="157" name="Typhlosion" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Typhlosion.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Typhlosion_shiny.png">
+  <Pokemon id="157" name="Typhlosion" family="Cyndaquil" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-11-10" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Typhlosion.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Typhlosion_shiny.png">
     <Type primary="Fire" />
     <EvolvesFrom id="156" name="Quilava" candies="100" />
     <Stats>
@@ -64,7 +64,7 @@
       <Max cp="2889" hp="158" />
     </Stats>
   </Pokemon>
-  <Pokemon id="158" name="Totodile" family="Totodile" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Totodile.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/54/Totodile_shiny.png">
+  <Pokemon id="158" name="Totodile" family="Totodile" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-01-12" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Totodile.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/54/Totodile_shiny.png">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="117" defense="109" stamina="137" />
@@ -74,7 +74,7 @@
       <Max cp="1131" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="159" name="Croconaw" family="Totodile" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Croconaw.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Croconaw_shiny.png">
+  <Pokemon id="159" name="Croconaw" family="Totodile" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-01-12" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Croconaw.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Croconaw_shiny.png">
     <Type primary="Water" />
     <EvolvesFrom id="158" name="Totodile" candies="25" />
     <Stats>
@@ -85,7 +85,7 @@
       <Max cp="1722" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="160" name="Feraligatr" family="Totodile" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Feraligatr.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Feraligatr_shiny.png">
+  <Pokemon id="160" name="Feraligatr" family="Totodile" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-01-12" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Feraligatr.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Feraligatr_shiny.png">
     <Type primary="Water" />
     <EvolvesFrom id="159" name="Croconaw" candies="100" />
     <Stats>
@@ -327,7 +327,7 @@
       <Max cp="2281" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="183" name="Marill" family="Marill" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/55/Marill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Marill_shiny.png">
+  <Pokemon id="183" name="Marill" family="Marill" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-18" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/55/Marill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Marill_shiny.png">
     <Type primary="Water" secondary="Fairy" />
     <EvolvesFrom id="298" name="Azurill" candies="25" />
     <Stats>
@@ -338,7 +338,7 @@
       <Max cp="461" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="184" name="Azumarill" family="Marill" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Azumarill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/08/Azumarill_shiny.png">
+  <Pokemon id="184" name="Azumarill" family="Marill" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-18" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Azumarill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/08/Azumarill_shiny.png">
     <Type primary="Water" secondary="Fairy" />
     <EvolvesFrom id="183" name="Marill" candies="25" />
     <Stats>
@@ -472,7 +472,7 @@
       <BaseIV attack="261" defense="175" stamina="163" />
       <Height standard="0.88999998569488525" deviation="0.88999998569488525" />
       <Weight standard="26.5" deviation="26.5" />
-      <Rates capture="0" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
+      <Rates capture="0.125" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="3170" hp="140" />
     </Stats>
   </Pokemon>
@@ -483,7 +483,7 @@
       <BaseIV attack="126" defense="240" stamina="216" />
       <Height standard="0.99000000953674316" deviation="0.99000000953674316" />
       <Weight standard="27" deviation="27" />
-      <Rates capture="0" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
+      <Rates capture="0.125" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="2137" hp="182" />
     </Stats>
   </Pokemon>
@@ -508,7 +508,7 @@
       <Max cp="2545" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="200" name="Misdreavus" family="Misdreavus" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Misdreavus.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Misdreavus_shiny.png">
+  <Pokemon id="200" name="Misdreavus" family="Misdreavus" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Misdreavus.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Misdreavus_shiny.png">
     <Type primary="Ghost" />
     <Stats>
       <BaseIV attack="167" defense="154" stamina="155" />
@@ -1026,7 +1026,7 @@
       <Max cp="1378" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="223" name="Remoraid" family="Remoraid" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/ba/Remoraid.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a5/Remoraid_shiny.png">
+  <Pokemon id="223" name="Remoraid" family="Remoraid" buddy_km="1" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/ba/Remoraid.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a5/Remoraid_shiny.png">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="127" defense="69" stamina="111" />
@@ -1047,7 +1047,7 @@
       <Max cp="2315" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="225" name="Delibird" family="Delibird" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Delibird.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Delibird_shiny.png">
+  <Pokemon id="225" name="Delibird" family="Delibird" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-12-18" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Delibird.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Delibird_shiny.png">
     <Type primary="Ice" secondary="Flying" />
     <Stats>
       <BaseIV attack="128" defense="90" stamina="128" />
@@ -1059,7 +1059,7 @@
   </Pokemon>
   <Pokemon id="226" name="Mantine" family="Mantine" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Mantine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Mantine_shiny.png">
     <Type primary="Water" secondary="Flying" />
-    <EvolvesFrom id="458" name="Mantyke" />
+    <EvolvesFrom id="458" name="Mantyke" candies="50" />
     <Stats>
       <BaseIV attack="148" defense="226" stamina="163" />
       <Height standard="2.1099998950958252" deviation="2.1099998950958252" />
@@ -1162,7 +1162,7 @@
       <Max cp="431" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="236" name="Tyrogue" family="Tyrogue" buddy_km="5" gender_ratio="♂" availability="Hatch Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Tyrogue.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Tyrogue_shiny.png">
+  <Pokemon id="236" name="Tyrogue" family="Tyrogue" buddy_km="5" gender_ratio="♂" availability="Hatch Only: 7K" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Tyrogue.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Tyrogue_shiny.png">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="64" defense="64" stamina="111" />
@@ -1296,7 +1296,7 @@
       <Max cp="3834" hp="189" />
     </Stats>
   </Pokemon>
-  <Pokemon id="249" name="Lugia" family="Lugia" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-03-15" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Lugia.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Lugia_shiny.png">
+  <Pokemon id="249" name="Lugia" family="Lugia" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-03-16" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Lugia.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Lugia_shiny.png">
     <Type primary="Psychic" secondary="Flying" />
     <Stats>
       <BaseIV attack="193" defense="310" stamina="235" />

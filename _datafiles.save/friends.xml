@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Friendships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2018-10-23">
+  <Friendship level="0" points_to_reach="0" xp_reward="1000">
+    <Bonus raid_ball="0" attack_percentage="100" trading_discount="0">
+      <Trade type="1" category="Regular" in_pokedex="true" />
+    </Bonus>
+  </Friendship>
+  <Friendship level="1" points_to_reach="1" xp_reward="3000">
+    <Bonus raid_ball="0" attack_percentage="102" trading_discount="0">
+      <Trade type="1" category="Regular" in_pokedex="true" />
+      <Trade type="2" category="Special" in_pokedex="true" />
+      <Trade type="3" category="Regular" in_pokedex="false" />
+      <Trade type="4" category="Regional" in_pokedex="false" />
+      <Trade type="5" category="Form" in_pokedex="false" />
+      <Trade type="6" category="Legendary" in_pokedex="false" />
+      <Trade type="7" category="Shiny" in_pokedex="false" />
+    </Bonus>
+  </Friendship>
+  <Friendship level="2" points_to_reach="7" xp_reward="10000">
+    <Bonus raid_ball="1" attack_percentage="104" trading_discount="20">
+      <Trade type="1" category="Regular" in_pokedex="true" />
+      <Trade type="2" category="Special" in_pokedex="true" />
+      <Trade type="3" category="Regular" in_pokedex="false" />
+      <Trade type="4" category="Regional" in_pokedex="false" />
+      <Trade type="5" category="Form" in_pokedex="false" />
+      <Trade type="6" category="Legendary" in_pokedex="false" />
+      <Trade type="7" category="Shiny" in_pokedex="false" />
+    </Bonus>
+  </Friendship>
+  <Friendship level="3" points_to_reach="30" xp_reward="50000">
+    <Bonus raid_ball="2" attack_percentage="107" trading_discount="92">
+      <Trade type="1" category="Regular" in_pokedex="true" />
+      <Trade type="2" category="Special" in_pokedex="true" />
+      <Trade type="3" category="Regular" in_pokedex="false" />
+      <Trade type="4" category="Regional" in_pokedex="false" />
+      <Trade type="5" category="Form" in_pokedex="false" />
+      <Trade type="6" category="Legendary" in_pokedex="false" />
+      <Trade type="7" category="Shiny" in_pokedex="false" />
+    </Bonus>
+  </Friendship>
+  <Friendship level="4" points_to_reach="90" xp_reward="100000">
+    <Bonus raid_ball="4" attack_percentage="110" trading_discount="95">
+      <Trade type="1" category="Regular" in_pokedex="true" />
+      <Trade type="2" category="Special" in_pokedex="true" />
+      <Trade type="3" category="Regular" in_pokedex="false" />
+      <Trade type="4" category="Regional" in_pokedex="false" />
+      <Trade type="5" category="Form" in_pokedex="false" />
+      <Trade type="6" category="Legendary" in_pokedex="false" />
+      <Trade type="7" category="Shiny" in_pokedex="false" />
+    </Bonus>
+  </Friendship>
+</Friendships>
