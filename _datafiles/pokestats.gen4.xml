@@ -318,6 +318,7 @@
   </Pokemon>
   <Pokemon id="413" name="Wormadam" form="Plant" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413-plant.png">
     <Type primary="Bug" secondary="Grass" />
+    <EvolvesFrom id="412" name="Burmy" candies="50" />
     <Stats>
       <BaseIV attack="141" defense="180" stamina="155" />
       <Height standard="0.5" deviation="0.5" />
@@ -328,6 +329,7 @@
   </Pokemon>
   <Pokemon id="413" name="Wormadam" form="Sandy" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413-sandy.png">
     <Type primary="Bug" secondary="Ground" />
+    <EvolvesFrom id="412" name="Burmy" candies="50" />
     <Stats>
       <BaseIV attack="141" defense="180" stamina="155" />
       <Height standard="0.5" deviation="0.5" />
@@ -338,6 +340,7 @@
   </Pokemon>
   <Pokemon id="413" name="Wormadam" form="Trash" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413-trash.png">
     <Type primary="Bug" secondary="Steel" />
+    <EvolvesFrom id="412" name="Burmy" candies="50" />
     <Stats>
       <BaseIV attack="127" defense="175" stamina="155" />
       <Height standard="0.5" deviation="0.5" />
@@ -348,7 +351,6 @@
   </Pokemon>
   <Pokemon id="414" name="Mothim" family="Burmy" buddy_km="1" gender_ratio="♂" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png">
     <Type primary="Bug" secondary="Flying" />
-    <EvolvesFrom id="412" name="Burmy" candies="50" />
     <Stats>
       <BaseIV attack="185" defense="98" stamina="172" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -432,6 +434,7 @@
   </Pokemon>
   <Pokemon id="421" name="Cherrim" form="Overcast" family="Cherubi" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421-overcast.png">
     <Type primary="Grass" />
+    <EvolvesFrom id="420" name="Cherubi" candies="50" />
     <Stats>
       <BaseIV attack="170" defense="153" stamina="172" />
       <Height standard="0.5" deviation="0.5" />
@@ -442,6 +445,7 @@
   </Pokemon>
   <Pokemon id="421" name="Cherrim" form="Sunny" family="Cherubi" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421-sunshine.png">
     <Type primary="Grass" />
+    <EvolvesFrom id="420" name="Cherubi" candies="50" />
     <Stats>
       <BaseIV attack="170" defense="153" stamina="172" />
       <Height standard="0.5" deviation="0.5" />
@@ -482,7 +486,6 @@
   </Pokemon>
   <Pokemon id="423" name="Gastrodon" family="Shellos" buddy_km="5" gender_ratio="1 : 1" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png">
     <Type primary="Water" secondary="Ground" />
-    <EvolvesFrom id="422" name="Shellos" candies="50" />
     <Stats>
       <BaseIV attack="169" defense="143" stamina="244" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -493,6 +496,7 @@
   </Pokemon>
   <Pokemon id="423" name="Gastrodon" form="East Sea" family="Shellos" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423-east.png">
     <Type primary="Water" secondary="Ground" />
+    <EvolvesFrom id="422" name="Shellos" candies="50" />
     <Stats>
       <BaseIV attack="169" defense="143" stamina="244" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -503,6 +507,7 @@
   </Pokemon>
   <Pokemon id="423" name="Gastrodon" form="West Sea" family="Shellos" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423-west.png">
     <Type primary="Water" secondary="Ground" />
+    <EvolvesFrom id="422" name="Shellos" candies="50" />
     <Stats>
       <BaseIV attack="169" defense="143" stamina="244" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -857,7 +862,6 @@
   </Pokemon>
   <Pokemon id="457" name="Lumineon" family="Finneon" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png">
     <Type primary="Water" />
-    <EvolvesFrom id="456" name="Finneon" candies="50" />
     <Stats>
       <BaseIV attack="142" defense="170" stamina="170" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -910,6 +914,7 @@
   </Pokemon>
   <Pokemon id="462" name="Magnezone" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png">
     <Type primary="Electric" secondary="Steel" />
+    <EvolvesFrom id="82" name="Magneton" />
     <Stats>
       <BaseIV attack="238" defense="205" stamina="172" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -997,6 +1002,7 @@
   </Pokemon>
   <Pokemon id="470" name="Leafeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png">
     <Type primary="Grass" />
+    <EvolvesFrom id="133" name="Eevee" />
     <Stats>
       <BaseIV attack="216" defense="219" stamina="163" />
       <Height standard="1" deviation="1" />
@@ -1007,6 +1013,7 @@
   </Pokemon>
   <Pokemon id="471" name="Glaceon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png">
     <Type primary="Ice" />
+    <EvolvesFrom id="133" name="Eevee" />
     <Stats>
       <BaseIV attack="238" defense="205" stamina="163" />
       <Height standard="0.800000011920929" deviation="0.800000011920929" />
@@ -1028,6 +1035,7 @@
   </Pokemon>
   <Pokemon id="473" name="Mamoswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png">
     <Type primary="Ice" secondary="Ground" />
+    <EvolvesFrom id="221" name="Piloswine" />
     <Stats>
       <BaseIV attack="247" defense="146" stamina="242" />
       <Height standard="2.5" deviation="2.5" />
@@ -1060,6 +1068,7 @@
   </Pokemon>
   <Pokemon id="476" name="Probopass" family="Nosepass" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png">
     <Type primary="Rock" secondary="Steel" />
+    <EvolvesFrom id="299" name="Nosepass" />
     <Stats>
       <BaseIV attack="135" defense="275" stamina="155" />
       <Height standard="1.3999999761581421" deviation="1.3999999761581421" />
@@ -1282,6 +1291,7 @@
   </Pokemon>
   <Pokemon id="490" name="Manaphy" family="Manaphy" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png">
     <Type primary="Water" />
+    <EvolvesFrom id="489" name="Phione" />
     <Stats>
       <BaseIV attack="210" defense="210" stamina="225" />
       <Height standard="0.30000001192092896" deviation="0.30000001192092896" />

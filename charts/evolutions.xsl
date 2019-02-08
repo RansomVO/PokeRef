@@ -51,12 +51,6 @@
           <xsl:call-template name="HomePageLink" />
           Evolutions Chart
         </h1>
-        <div class="INDENT">
-          <p class="NOTE PARENT">
-            Please let me know if you find any issues!
-            <xsl:call-template name="WriteFeedbackNote" />
-          </p>
-        </div>
         <p>
           One of the fun parts of Pokemon GO is Evolving.
           But what can turn into what?

@@ -202,7 +202,7 @@
       <xsl:if test="count(exslt:node-set($CustomAttributes)) != 0">
         <xsl:for-each select="exslt:node-set($CustomAttributes)/*/@*">
           <xsl:attribute name="{name()}">
-            <xsl:value-of select="$pokemon" />
+            <xsl:value-of select="." />
           </xsl:attribute>
         </xsl:for-each>
       </xsl:if>
