@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="4" region="Sinnoh">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09" gen="4" region="Sinnoh">
   <Pokemon id="387" name="Turtwig" family="Turtwig" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png">
     <Type primary="Grass" />
     <Stats>
@@ -214,7 +214,7 @@
   </Pokemon>
   <Pokemon id="407" name="Roserade" family="Roselia" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png">
     <Type primary="Grass" secondary="Poison" />
-    <EvolvesFrom id="315" name="Roselia" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="315" name="Roselia" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="243" defense="185" stamina="155" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -518,7 +518,7 @@
   </Pokemon>
   <Pokemon id="424" name="Ambipom" family="Aipom" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png">
     <Type primary="Normal" />
-    <EvolvesFrom id="190" name="Aipom" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="190" name="Aipom" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="205" defense="143" stamina="181" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -571,7 +571,7 @@
   </Pokemon>
   <Pokemon id="429" name="Mismagius" family="Misdreavus" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" shiny="2018-12-01" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png">
     <Type primary="Ghost" />
-    <EvolvesFrom id="200" name="Misdreavus" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="200" name="Misdreavus" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="211" defense="187" stamina="155" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -582,7 +582,7 @@
   </Pokemon>
   <Pokemon id="430" name="Honchkrow" family="Murkrow" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png">
     <Type primary="Dark" secondary="Flying" />
-    <EvolvesFrom id="198" name="Murkrow" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="198" name="Murkrow" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="243" defense="103" stamina="225" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -664,7 +664,7 @@
       <Max cp="2239" hp="143" />
     </Stats>
   </Pokemon>
-  <Pokemon id="438" name="Bonsly" family="Sudowoodo" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png">
+  <Pokemon id="438" name="Bonsly" family="Sudowoodo" buddy_km="5" gender_ratio="1 : 1" availability="Hatch Only: 7K" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png">
     <Type primary="Rock" />
     <Stats>
       <BaseIV attack="124" defense="133" stamina="137" />
@@ -903,7 +903,7 @@
   </Pokemon>
   <Pokemon id="461" name="Weavile" family="Sneasel" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png">
     <Type primary="Dark" secondary="Ice" />
-    <EvolvesFrom id="215" name="Sneasel" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="215" name="Sneasel" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="243" defense="171" stamina="172" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -925,7 +925,7 @@
   </Pokemon>
   <Pokemon id="463" name="Lickilicky" family="Lickitung" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png">
     <Type primary="Normal" />
-    <EvolvesFrom id="108" name="Lickitung" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="108" name="Lickitung" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="161" defense="181" stamina="242" />
       <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
@@ -936,7 +936,7 @@
   </Pokemon>
   <Pokemon id="464" name="Rhyperior" family="Rhyhorn" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png">
     <Type primary="Ground" secondary="Rock" />
-    <EvolvesFrom id="112" name="Rhydon" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="112" name="Rhydon" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="241" defense="190" stamina="251" />
       <Height standard="2.4000000953674316" deviation="2.4000000953674316" />
@@ -947,7 +947,7 @@
   </Pokemon>
   <Pokemon id="465" name="Tangrowth" family="Tangela" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png">
     <Type primary="Grass" />
-    <EvolvesFrom id="114" name="Tangela" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="114" name="Tangela" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="207" defense="184" stamina="225" />
       <Height standard="2" deviation="2" />
@@ -958,7 +958,7 @@
   </Pokemon>
   <Pokemon id="466" name="Electivire" family="Electabuzz" buddy_km="5" gender_ratio="3 : 1" availability="Evolve Only" shiny="2018-11-14" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png">
     <Type primary="Electric" />
-    <EvolvesFrom id="125" name="Electabuzz" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="125" name="Electabuzz" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="249" defense="163" stamina="181" />
       <Height standard="1.7999999523162842" deviation="1.7999999523162842" />
@@ -969,7 +969,7 @@
   </Pokemon>
   <Pokemon id="467" name="Magmortar" family="Magmar" buddy_km="5" gender_ratio="3 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png">
     <Type primary="Fire" />
-    <EvolvesFrom id="126" name="Magmar" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="126" name="Magmar" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="247" defense="172" stamina="181" />
       <Height standard="1.6000000238418579" deviation="1.6000000238418579" />
@@ -980,7 +980,7 @@
   </Pokemon>
   <Pokemon id="468" name="Togekiss" family="Togepi" buddy_km="3" gender_ratio="7 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png">
     <Type primary="Fairy" secondary="Flying" />
-    <EvolvesFrom id="176" name="Togetic" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="176" name="Togetic" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="225" defense="217" stamina="198" />
       <Height standard="1.5" deviation="1.5" />
@@ -991,7 +991,7 @@
   </Pokemon>
   <Pokemon id="469" name="Yanmega" family="Yanma" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png">
     <Type primary="Bug" secondary="Flying" />
-    <EvolvesFrom id="193" name="Yanma" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="193" name="Yanma" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="231" defense="156" stamina="200" />
       <Height standard="1.8999999761581421" deviation="1.8999999761581421" />
@@ -1024,7 +1024,7 @@
   </Pokemon>
   <Pokemon id="472" name="Gliscor" family="Gligar" buddy_km="5" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png">
     <Type primary="Ground" secondary="Flying" />
-    <EvolvesFrom id="207" name="Gligar" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="207" name="Gligar" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="185" defense="222" stamina="181" />
       <Height standard="2" deviation="2" />
@@ -1046,7 +1046,7 @@
   </Pokemon>
   <Pokemon id="474" name="Porygon-Z" family="Porygon" buddy_km="3" gender_ratio="⚲" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png">
     <Type primary="Normal" />
-    <EvolvesFrom id="233" name="Porygon2" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="233" name="Porygon2" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="264" defense="150" stamina="198" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -1057,7 +1057,7 @@
   </Pokemon>
   <Pokemon id="475" name="Gallade" family="Ralts" buddy_km="5" gender_ratio="♂" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png">
     <Type primary="Psychic" secondary="Fighting" />
-    <EvolvesFrom id="281" name="Kirlia" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="281" name="Kirlia" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="237" defense="195" stamina="169" />
       <Height standard="1.6000000238418579" deviation="1.6000000238418579" />
@@ -1077,9 +1077,9 @@
       <Max cp="2080" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="477" name="Dusknoir" family="Duskull" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png">
+  <Pokemon id="477" name="Dusknoir" family="Duskull" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" shiny="2018-11-14" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png">
     <Type primary="Ghost" />
-    <EvolvesFrom id="356" name="Dusclops" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="356" name="Dusclops" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="180" defense="254" stamina="128" />
       <Height standard="2.2000000476837158" deviation="2.2000000476837158" />
@@ -1090,7 +1090,7 @@
   </Pokemon>
   <Pokemon id="478" name="Froslass" family="Snorunt" buddy_km="3" gender_ratio="♀" availability="Evolve Only" shiny="2019-01-31" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png">
     <Type primary="Ice" secondary="Ghost" />
-    <EvolvesFrom id="361" name="Snorunt" candies="100" special="Sinnoh Stone" />
+    <EvolvesFrom id="361" name="Snorunt" candies="100" special="SinnohStone" />
     <Stats>
       <BaseIV attack="171" defense="150" stamina="172" />
       <Height standard="1.2999999523162842" deviation="1.2999999523162842" />

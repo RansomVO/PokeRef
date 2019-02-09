@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="7" region="Alola">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09" gen="7" region="Alola">
   <Pokemon id="722" name="Rowlet" family="Rowlet" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png">
     <Type primary="Grass" secondary="Flying" />
   </Pokemon>
@@ -403,7 +403,7 @@
   <Pokemon id="807" name="Zeraora" family="Zeraora" rarity="Mythic" availability="Unreleased" sprite="https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/zeraora.png">
     <Type primary="Electric" />
   </Pokemon>
-  <Pokemon id="808" name="Meltan" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Mystery Box Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Meltan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ac/Meltan_shiny.png">
+  <Pokemon id="808" name="Meltan" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Mystery Box Only" shiny="2019-02-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Meltan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ac/Meltan_shiny.png">
     <Type primary="Steel" />
     <Stats>
       <BaseIV attack="118" defense="99" stamina="130" />
@@ -413,7 +413,7 @@
       <Max cp="1068" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="809" name="Melmetal" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4b/Melmetal.png">
+  <Pokemon id="809" name="Melmetal" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Evolve Only" shiny="2019-02-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4b/Melmetal.png">
     <Type primary="Steel" />
     <EvolvesFrom id="808" name="Meltan" candies="400" />
     <Stats>

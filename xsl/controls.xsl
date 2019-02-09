@@ -259,7 +259,34 @@
       </xsl:attribute>
     </input>
     <xsl:text>Gen</xsl:text>
-    <xsl:value-of select="concat($nbsp, $Gen)" disable-output-escaping="yes" />
+    <xsl:value-of select="concat($nbsp, $Gen, ':', $nbsp)" disable-output-escaping="yes" />
+    <xsl:choose>
+      <xsl:when test="$Gen = 1">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen1"/>
+      </xsl:when>
+      <xsl:when test="$Gen = 2">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen2"/>
+      </xsl:when>
+      <xsl:when test="$Gen = 3">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen3"/>
+      </xsl:when>
+      <xsl:when test="$Gen = 4">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen4"/>
+      </xsl:when>
+      <xsl:when test="$Gen = 5">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen5"/>
+      </xsl:when>
+      <xsl:when test="$Gen = 6">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen6"/>
+      </xsl:when>
+      <xsl:when test="$Gen = 7">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen7"/>
+      </xsl:when>
+      <xsl:when test="$Gen = 8">
+        <xsl:value-of select="/Root/Constants/Regions/@Gen8"/>
+      </xsl:when>
+    </xsl:choose>
+    <xsl:value-of select="concat($nbsp, 'Region')" disable-output-escaping="yes" />
   </xsl:template>
   <!-- #endregion -->
 
@@ -405,6 +432,73 @@
 
   <!-- #endregion -->
 
+  <!-- ************************************************************************************************************************ -->
+  <!-- #region Filter by Special Item Control -->
+
+  <xsl:template name="OutputSpecialItemSelectionControl" >
+    <xsl:param name="CallbackName" />
+
+    <div id="CONTROLS_Special_Item_Selector" class="PARENT">
+      <xsl:attribute name="callbackName">
+        <xsl:value-of select="$CallbackName" />
+      </xsl:attribute>
+      <input id="CONTROLS_Special_Item" type="checkbox" onchange="OnToggleSpecialItem(this);" /> Special Items
+    </div>
+
+    <div id="CONTROLS_Special_Item_Options" class="INDENT CHILD">
+      <input id="CONTROLS_Special_Item_SunStone" type="checkbox" onchange="OnToggleSpecialItem(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'SunStone'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
+      <br />
+      <input id="CONTROLS_Special_Item_KingsRock" type="checkbox" onchange="OnToggleSpecialItem(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'KingsRock'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
+      <br />
+      <input id="CONTROLS_Special_Item_MetalCoat" type="checkbox" onchange="OnToggleSpecialItem(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'MetalCoat'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
+      <br />
+      <input id="CONTROLS_Special_Item_DragonScale" type="checkbox" onchange="OnToggleSpecialItem(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'DragonScale'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
+      <br />
+      <input id="CONTROLS_Special_Item_UpGrade" type="checkbox" onchange="OnToggleSpecialItem(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'UpGrade'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
+      <br />
+      <input id="CONTROLS_Special_Item_SinnohStone" type="checkbox" onchange="OnToggleSpecialItem(this);" />
+      <xsl:call-template name="Sprite">
+        <xsl:with-param name="id" select="'SinnohStone'" />
+        <xsl:with-param name="Settings">
+          <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+        </xsl:with-param>
+      </xsl:call-template>
+    </div>
+
+  </xsl:template>
+
+  <!-- #endregion -->
+  
   <!-- #endregion -->
 
   <!-- ************************************************************************************************************************ -->

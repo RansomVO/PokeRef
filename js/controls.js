@@ -16,6 +16,7 @@ window.onload = function () {
         InitWeatherSelector();
         InitGenerationsSelector();
         InitEggSelector();
+        InitSpecialItemSelector();
         InitFilterNameIDSelector();
 
         ExposeLoaded();
@@ -716,12 +717,114 @@ function EggMatchesFilter(eggCriteria, pokemon) {
         (!eggCriteria['HatchOnly'] || GetPokemonAvailability(pokemon).contains('Hatch Only'));
 }
 
-
 // Clears the selection and reverts to the default.
 function ClearEggSelector() {
     ClearCookieSettings(EggCookieSettings);
     ApplyEggCookies();
     OnToggleEgg();
+}
+
+// #endregion
+
+// ============================================================================
+// #region methods for Special Item Selection Control
+
+// ---------------------------------------------------------------------------
+// #region Special Item Cookies
+var SpecialItemCookieSettings = {
+    'CONTROLS_Special_Item': 'false',
+    'CONTROLS_Special_Item_SunStone': 'true',
+    'CONTROLS_Special_Item_KingsRock': 'true',
+    'CONTROLS_Special_Item_MetalCoat': 'true',
+    'CONTROLS_Special_Item_DragonScale': 'true',
+    'CONTROLS_Special_Item_UpGrade': 'true',
+    'CONTROLS_Special_Item_SinnohStone': 'true',
+};
+
+// Read the Cookie and apply it to the fields.
+function ApplySpecialItemCookies() {
+    ApplyCookieSettings(SpecialItemCookieSettings);
+}
+// #endregion
+
+// Initialize the Special Item Selection Control
+function InitSpecialItemSelector() {
+    if (document.getElementById('CONTROLS_Special_Item_Selector') !== null) {
+        GetSpecialItemFields();
+        ApplySpecialItemCookies();
+        OnToggleSpecialItem();
+    }
+}
+
+// Get the fields we will be using multiple times.
+//  NOTE: Do not use keyword "var" and the value will be global.
+function GetSpecialItemFields() {
+    CONTROLS_Special_Item_Selector = document.getElementById('CONTROLS_Special_Item_Selector');
+    CONTROLS_Special_Item = document.getElementById('CONTROLS_Special_Item');
+    CONTROLS_Special_Item_Options = document.getElementById('CONTROLS_Special_Item_Options');
+    CONTROLS_Special_Item_SunStone = document.getElementById('CONTROLS_Special_Item_SunStone');
+    CONTROLS_Special_Item_KingsRock = document.getElementById('CONTROLS_Special_Item_KingsRock');
+    CONTROLS_Special_Item_MetalCoat = document.getElementById('CONTROLS_Special_Item_MetalCoat');
+    CONTROLS_Special_Item_DragonScale = document.getElementById('CONTROLS_Special_Item_DragonScale');
+    CONTROLS_Special_Item_UpGrade = document.getElementById('CONTROLS_Special_Item_UpGrade');
+    CONTROLS_Special_Item_SinnohStone = document.getElementById('CONTROLS_Special_Item_SinnohStone');
+}
+
+// If one of the type checkboxes changes, need to update the All checkbox then refilter.
+function OnToggleSpecialItem(field) {
+    try {
+        if (field === undefined || field === null || field.id === 'CONTROLS_Special_Item') {
+            if (GetFieldValue(CONTROLS_Special_Item)) {
+                CONTROLS_Special_Item_Options.classList.remove('DISABLED');
+            } else {
+                CONTROLS_Special_Item_Options.classList.add('DISABLED');
+            }
+        }
+
+        OnSpecialItemSelectionChanged();
+    } catch (err) {
+        ShowError(err);
+    }
+}
+
+// Update the cookie with the new selection, then call the specified callback with the latest settings.
+function OnSpecialItemSelectionChanged() {
+    UpdateCookieSettings(SpecialItemCookieSettings);
+
+    var callbackName = CONTROLS_Special_Item_Selector.attributes['callbackName'].value;
+    if (callbackName !== null) {
+        var specialItemCriteria = {};
+
+        specialItemCriteria['Enabled'] = CONTROLS_Special_Item.checked;
+        specialItemCriteria['SunStone'] = CONTROLS_Special_Item_SunStone.checked;
+        specialItemCriteria['KingsRock'] = CONTROLS_Special_Item_KingsRock.checked;
+        specialItemCriteria['MetalCoat'] = CONTROLS_Special_Item_MetalCoat.checked;
+        specialItemCriteria['DragonScale'] = CONTROLS_Special_Item_DragonScale.checked;
+        specialItemCriteria['UpGrade'] = CONTROLS_Special_Item_UpGrade.checked;
+        specialItemCriteria['SinnohStone'] = CONTROLS_Special_Item_SinnohStone.checked;
+
+        window[callbackName](specialItemCriteria);
+    }
+}
+
+// Determine whether Pokemon matches the selected criteria.
+function SpecialItemMatchesFilter(specialItemCriteria, pokemon) {
+    // If no criteria are supplied, (or the selector is turned off) assume a match.
+    if (specialItemCriteria === undefined || specialItemCriteria === null || !specialItemCriteria['Enabled']) {
+        return true;
+    }
+
+    var specialItem = GetPokemonSpecialItem(pokemon);
+
+    return specialItem !== '' &&
+        specialItemCriteria[specialItem];
+}
+
+// Clears the selection and reverts to the default.
+function ClearSpecialItemSelector() {
+    ClearCookieSettings(SpecialItemCookieSettings);
+    ApplySpecialItemCookies();
+    OnToggleSpecialItem();
 }
 
 // #endregion

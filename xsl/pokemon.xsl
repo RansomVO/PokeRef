@@ -127,6 +127,9 @@
       <xsl:attribute name="evolvesFrom">
         <xsl:value-of select="$pokemon/EvolvesFrom/@id" />
       </xsl:attribute>
+      <xsl:attribute name="special">
+        <xsl:value-of select="$pokemon/EvolvesFrom/@special" />
+      </xsl:attribute>
       <xsl:attribute name="shiny">
         <xsl:value-of select="$pokemon/@shiny" />
       </xsl:attribute>

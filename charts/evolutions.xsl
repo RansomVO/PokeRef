@@ -110,25 +110,39 @@
       <div class="FLOWING_TABLE_WRAPPER">
         <table border="1" class="CRITERIA_TABLE">
           <tr>
-            <th>Show Only Families Containing</th>
+            <th colspan="2">Show Only Families Containing</th>
           </tr>
           <tr>
-            <td valign="top" style="padding-bottom:.25em;">
-              <xsl:call-template name="OutputEggSelectionControl" >
-                <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
-              </xsl:call-template>
-              <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
-              <xsl:call-template name="Sprite">
-                <xsl:with-param name="id" select="'Shiny'" />
-                <xsl:with-param name="Settings">
-                  <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
-                </xsl:with-param>
-              </xsl:call-template>
-              <br />
-              <xsl:call-template name="OutputFilterPokemonNameIDLabel" />
-              <xsl:call-template name="OutputFilterPokemonNameID">
-                <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
-              </xsl:call-template>
+            <td>
+              <table>
+                <tr>
+                  <td valign="top" style="padding-bottom:.25em;">
+                    <xsl:call-template name="OutputEggSelectionControl" >
+                      <xsl:with-param name="CallbackName">OnEggChanged</xsl:with-param>
+                    </xsl:call-template>
+                    <input id="Shiny_Check" type="checkbox" onchange="OnFilterCriteriaChanged(this);" />
+                    <xsl:call-template name="Sprite">
+                      <xsl:with-param name="id" select="'Shiny'" />
+                      <xsl:with-param name="Settings">
+                        <Show sprite_class="TAG_ICON_REGULAR" title_pos="after" />
+                      </xsl:with-param>
+                    </xsl:call-template>
+                  </td>
+                  <td valign="top" style="padding-bottom:.25em;">
+                    <xsl:call-template name="OutputSpecialItemSelectionControl" >
+                      <xsl:with-param name="CallbackName">OnSpecialItemChanged</xsl:with-param>
+                    </xsl:call-template>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <xsl:call-template name="OutputFilterPokemonNameIDLabel" />
+                    <xsl:call-template name="OutputFilterPokemonNameID">
+                      <xsl:with-param name="CallbackName" select="'OnPokemonNameIDChanged'" />
+                    </xsl:call-template>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
@@ -278,7 +292,66 @@
       <!-- When we are starting a new Family. -->
       <xsl:when test="$FirstRow">
         <!-- Output the current cell -->
-        <xsl:apply-templates select="$FamilyBranch" />
+        <xsl:variable name="id" select="$FamilyBranch/@ID" />
+        <xsl:variable name="pokemon" select="$Pokemon[@id = $id and not(@form)]" />
+
+        <td class="CELL_FILLED">
+          <xsl:attribute name="rowspan">
+            <xsl:value-of select="$FamilyBranch/@rowspan" />
+          </xsl:attribute>
+
+          <xsl:variable name="Header">
+            <i>
+              <xsl:text>(Gen </xsl:text>
+              <xsl:value-of select="$pokemon/../@gen" />
+              <xsl:text>)</xsl:text>
+            </i>
+          </xsl:variable>
+
+          <xsl:variable name="Footer">
+            <xsl:choose>
+              <xsl:when test="$pokemon/EvolvesFrom/@candies">
+                <xsl:value-of select="concat($pokemon/EvolvesFrom/@candies, $nbsp, 'Candies')" disable-output-escaping="yes" />
+                <xsl:if test="$pokemon/EvolvesFrom/@special">
+                  <xsl:value-of select="concat($nbsp, '+', $nbsp)" disable-output-escaping="yes" />
+                  <xsl:call-template name="Sprite">
+                    <xsl:with-param name="Settings">
+                      <Show sprite_class="TAG_ICON_MEDIUM" />
+                    </xsl:with-param>
+                    <xsl:with-param name="id" select="$pokemon/EvolvesFrom/@special" />
+                  </xsl:call-template>
+                </xsl:if>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:variable>
+
+          <!-- This template (from /xsl/global.xsl) outputs the Visual image of the Pokemon with various decorations. -->
+          <xsl:apply-templates select="$pokemon">
+            <xsl:with-param name="Settings">
+              <Show>
+                <xsl:attribute name="valign">
+                  <xsl:choose>
+                    <xsl:when test="$FamilyBranch/@rowspan > 1">
+                      <xsl:text>middle</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:text>bottom</xsl:text>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:attribute>
+              </Show>
+            </xsl:with-param>
+            <xsl:with-param name="Header">
+              <xsl:copy-of select="$Header"/>
+            </xsl:with-param>
+            <xsl:with-param name="Footer">
+              <xsl:copy-of select="$Footer"/>
+            </xsl:with-param>
+          </xsl:apply-templates>
+        </td>
 
         <!-- Call recursively to output the rest of the cells in this row. -->
         <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 0">
@@ -297,44 +370,81 @@
         </xsl:call-template>
       </xsl:when>
 
-      <!-- When the Pokemon is the one with multiple Evolutions. -->
+      <!-- When the Pokemon is one with multiple Evolutions. E.G. Eevee -->
       <xsl:when test="count($FamilyBranch/Evolutions/FamilyBranch) > 1">
-        <xsl:for-each select="$FamilyBranch/Evolutions/FamilyBranch[position() > 1]">
+        <!-- NOTE: If this is done with an xsl:for-each, it changes the Root node and images quit working.-->
+        <tr>
+          <xsl:call-template name="OutputFamilyBranch">
+            <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[2]" />
+            <xsl:with-param name="FirstRow" select="true()" />
+          </xsl:call-template>
+        </tr>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 2">
           <tr>
             <xsl:call-template name="OutputFamilyBranch">
-              <xsl:with-param name="FamilyBranch" select="." />
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[3]" />
               <xsl:with-param name="FirstRow" select="true()" />
             </xsl:call-template>
           </tr>
-        </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 3">
+          <tr>
+            <xsl:call-template name="OutputFamilyBranch">
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[4]" />
+              <xsl:with-param name="FirstRow" select="true()" />
+            </xsl:call-template>
+          </tr>
+        </xsl:if>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 4">
+          <tr>
+            <xsl:call-template name="OutputFamilyBranch">
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[5]" />
+              <xsl:with-param name="FirstRow" select="true()" />
+            </xsl:call-template>
+          </tr>
+        </xsl:if>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 5">
+          <tr>
+            <xsl:call-template name="OutputFamilyBranch">
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[6]" />
+              <xsl:with-param name="FirstRow" select="true()" />
+            </xsl:call-template>
+          </tr>
+        </xsl:if>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 6">
+          <tr>
+            <xsl:call-template name="OutputFamilyBranch">
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[7]" />
+              <xsl:with-param name="FirstRow" select="true()" />
+            </xsl:call-template>
+          </tr>
+        </xsl:if>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 7">
+          <tr>
+            <xsl:call-template name="OutputFamilyBranch">
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[8]" />
+              <xsl:with-param name="FirstRow" select="true()" />
+            </xsl:call-template>
+          </tr>
+        </xsl:if>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 8">
+          <tr>
+            <xsl:call-template name="OutputFamilyBranch">
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[9]" />
+              <xsl:with-param name="FirstRow" select="true()" />
+            </xsl:call-template>
+          </tr>
+        </xsl:if>
+        <xsl:if test="count($FamilyBranch/Evolutions/FamilyBranch) > 9">
+          <tr>
+            <xsl:call-template name="OutputFamilyBranch">
+              <xsl:with-param name="FamilyBranch" select="$FamilyBranch/Evolutions/FamilyBranch[10]" />
+              <xsl:with-param name="FirstRow" select="true()" />
+            </xsl:call-template>
+          </tr>
+        </xsl:if>
       </xsl:when>
     </xsl:choose>
-  </xsl:template>
-
-  <!-- Template to output a cell containing a Pokemon -->
-  <xsl:template match="FamilyBranch">
-    <xsl:variable name="ID" select="@ID" />
-
-    <td class="CELL_FILLED">
-      <xsl:attribute name="rowspan">
-        <xsl:value-of select="@rowspan" />
-      </xsl:attribute>
-
-      <!-- This template (from /xsl/global.xsl) outputs the Visual image of the Pokemon with various decorations. -->
-      <xsl:apply-templates select="$Pokemon[@id = $ID and not(@form)]">
-        <xsl:with-param name="Settings">
-          <Show valign="bottom" />
-        </xsl:with-param>
-        <xsl:with-param name="Footer">
-          <i>
-            <xsl:text>(Gen </xsl:text>
-            <xsl:value-of select="$Pokemon[@id = $ID]/../@gen" />
-            <xsl:text>)</xsl:text>
-          </i>
-        </xsl:with-param>
-      </xsl:apply-templates>
-
-    </td>
   </xsl:template>
 
   <!-- Creates a structure of evolutions for a single Family of Pokemon. -->

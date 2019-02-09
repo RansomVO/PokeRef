@@ -196,6 +196,11 @@ function GetPokemonEgg(pokemon) {
     return GetPokemon(pokemon).attributes['egg'].value;
 }
 <!-- #endregion -->
+<!-- #region GetPokemonEgg() -->
+function GetPokemonSpecialItem(pokemon) {
+    return GetPokemon(pokemon).attributes['special'].value;
+}
+<!-- #endregion -->
 <!-- #region GetPokemonShiny() -->
 function GetPokemonShiny(pokemon) {
     return GetPokemon(pokemon).attributes['shiny'].value !== '';

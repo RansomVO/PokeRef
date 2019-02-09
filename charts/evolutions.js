@@ -5,6 +5,7 @@
 // ============================================================================
 
 var selectionsEgg = null;
+var selectionsSpecialItem = null;
 var selectionsGenerations = null;
 var filterNameID = null;
 
@@ -79,9 +80,10 @@ function OnFilterCriteriaChanged(field) {
             var matchName = filterNameID === null;
             var matchShiny = !Shiny_Check.checked;
             var matchEgg = false;
+            var matchSpecialItem = false;
             var matchesGenerations = GenerationsMatchesFilter(selectionsGenerations, family);
             if (matchesGenerations) {
-                for (var i = 0, iEnd = family.length; i < iEnd && (!matchName || !matchShiny || !matchEgg); i++) {
+                for (var i = 0, iEnd = family.length; i < iEnd && (!matchName || !matchShiny || !matchEgg || !matchSpecialItem); i++) {
                     if (!matchName && MatchFilterPokemonNameID(family[i], filterNameID)) {
                         matchName = true;
                     }
@@ -91,10 +93,13 @@ function OnFilterCriteriaChanged(field) {
                     if (!matchEgg && EggMatchesFilter(selectionsEgg, family[i])) {
                         matchEgg = true;
                     }
+                    if (!matchSpecialItem && SpecialItemMatchesFilter(selectionsSpecialItem, family[i])) {
+                        matchSpecialItem = true;
+                    }
                 }
             }
 
-            if (matchName && matchShiny && matchEgg && matchesGenerations) {
+            if (matchName && matchShiny && matchEgg && matchSpecialItem && matchesGenerations) {
                 display = true;
                 found++;
             } else {
@@ -130,6 +135,12 @@ function OnEggChanged(egg) {
     OnFilterCriteriaChanged();
 }
 
+// Called when any of the Special Item checkboxes change.
+function OnSpecialItemChanged(specialItem) {
+    selectionsSpecialItem = specialItem;
+    OnFilterCriteriaChanged();
+}
+
 // Called when the Pokemon Name/ID filter changes.
 function OnPokemonNameIDChanged(filter) {
     filterNameID = filter;
@@ -140,6 +151,7 @@ function OnPokemonNameIDChanged(filter) {
 function OnResetCriteriaClicked() {
     try {
         ClearEggSelector();
+        ClearSpecialItemSelector();
         ClearGenerationsSelector();
         ClearFilterNameID();
         ClearCookieSettings(CookieSettings);

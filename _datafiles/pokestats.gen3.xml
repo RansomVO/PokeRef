@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="3" region="Hoenn">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09" gen="3" region="Hoenn">
   <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -427,6 +427,7 @@
   </Pokemon>
   <Pokemon id="292" name="Shedinja" family="Nincada" buddy_km="5" gender_ratio="⚲" availability="Encounter Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Shedinja.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Shedinja_shiny.png">
     <Type primary="Bug" secondary="Ghost" />
+    <EvolvesFrom id="290" name="Nincada" />
     <Stats>
       <BaseIV attack="153" defense="73" stamina="1" />
       <Height standard="0.79000002145767212" deviation="0.79000002145767212" />
@@ -768,7 +769,7 @@
       <Max cp="2093" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="325" name="Spoink" family="Spoink" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Spoink.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Spoink_shiny.png">
+  <Pokemon id="325" name="Spoink" family="Spoink" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-04" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Spoink.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Spoink_shiny.png">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="125" defense="122" stamina="155" />
@@ -778,7 +779,7 @@
       <Max cp="1334" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="326" name="Grumpig" family="Spoink" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/46/Grumpig.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Grumpig_shiny.png">
+  <Pokemon id="326" name="Grumpig" family="Spoink" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-04" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/46/Grumpig.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Grumpig_shiny.png">
     <Type primary="Psychic" />
     <EvolvesFrom id="325" name="Spoink" candies="50" />
     <Stats>
@@ -1233,7 +1234,6 @@
   </Pokemon>
   <Pokemon id="358" name="Chimecho" family="Chimecho" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Chimecho.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/04/Chimecho_shiny.png">
     <Type primary="Psychic" />
-    <EvolvesFrom id="433" name="Chingling" candies="50" />
     <Stats>
       <BaseIV attack="175" defense="170" stamina="181" />
       <Height standard="0.61000001430511475" deviation="0.61000001430511475" />

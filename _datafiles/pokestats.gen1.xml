@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -235,6 +235,7 @@
   </Pokemon>
   <Pokemon id="20" name="Raticate" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Raticate_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Raticate_alolan_shiny.png">
     <Type primary="Dark" secondary="Normal" />
+    <EvolvesFrom id="19" name="Rattata" candies="25" />
     <Stats>
       <BaseIV attack="135" defense="154" stamina="181" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -245,6 +246,7 @@
   </Pokemon>
   <Pokemon id="20" name="Raticate" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
     <Type primary="Normal" />
+    <EvolvesFrom id="19" name="Rattata" candies="25" />
     <Stats>
       <BaseIV attack="161" defense="139" stamina="146" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -319,6 +321,7 @@
   </Pokemon>
   <Pokemon id="26" name="Raichu" form="Alola" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-03" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Raichu_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Raichu_alolan_shiny.png">
     <Type primary="Electric" secondary="Psychic" />
+    <EvolvesFrom id="25" name="Pikachu" candies="50" />
     <Stats>
       <BaseIV attack="201" defense="154" stamina="155" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -329,6 +332,7 @@
   </Pokemon>
   <Pokemon id="26" name="Raichu" form="Normal" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-08-09" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/34/Raichu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Raichu_shiny.png">
     <Type primary="Electric" />
+    <EvolvesFrom id="25" name="Pikachu" candies="50" />
     <Stats>
       <BaseIV attack="193" defense="151" stamina="155" />
       <Height standard="0.800000011920929" deviation="0.800000011920929" />
@@ -380,6 +384,7 @@
   </Pokemon>
   <Pokemon id="28" name="Sandslash" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Sandslash_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Sandslash_alolan_shiny.png">
     <Type primary="Ice" secondary="Steel" />
+    <EvolvesFrom id="27" name="Sandshrew" candies="50" />
     <Stats>
       <BaseIV attack="177" defense="195" stamina="181" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -390,6 +395,7 @@
   </Pokemon>
   <Pokemon id="28" name="Sandslash" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sandslash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Sandslash_shiny.png">
     <Type primary="Ground" />
+    <EvolvesFrom id="27" name="Sandshrew" candies="50" />
     <Stats>
       <BaseIV attack="182" defense="175" stamina="181" />
       <Height standard="1" deviation="1" />
@@ -527,6 +533,7 @@
   </Pokemon>
   <Pokemon id="38" name="Ninetales" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Ninetales_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Ninetales_alolan_shiny.png">
     <Type primary="Ice" secondary="Fairy" />
+    <EvolvesFrom id="37" name="Vulpix" candies="50" />
     <Stats>
       <BaseIV attack="170" defense="193" stamina="177" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -537,6 +544,7 @@
   </Pokemon>
   <Pokemon id="38" name="Ninetales" form="Normal" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Ninetales.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/74/Ninetales_shiny.png">
     <Type primary="Fire" />
+    <EvolvesFrom id="37" name="Vulpix" candies="50" />
     <Stats>
       <BaseIV attack="169" defense="190" stamina="177" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -705,6 +713,7 @@
   </Pokemon>
   <Pokemon id="51" name="Dugtrio" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Dugtrio_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Dugtrio_alolan_shiny.png">
     <Type primary="Ground" secondary="Steel" />
+    <EvolvesFrom id="50" name="Diglett" candies="50" />
     <Stats>
       <BaseIV attack="201" defense="142" stamina="111" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -715,6 +724,7 @@
   </Pokemon>
   <Pokemon id="51" name="Dugtrio" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Dugtrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Dugtrio_shiny.png">
     <Type primary="Ground" />
+    <EvolvesFrom id="50" name="Diglett" candies="50" />
     <Stats>
       <BaseIV attack="167" defense="136" stamina="111" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -766,6 +776,7 @@
   </Pokemon>
   <Pokemon id="53" name="Persian" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/82/Persian_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Persian_alolan_shiny.png">
     <Type primary="Dark" />
+    <EvolvesFrom id="52" name="Meowth" candies="50" />
     <Stats>
       <BaseIV attack="158" defense="136" stamina="163" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -776,6 +787,7 @@
   </Pokemon>
   <Pokemon id="53" name="Persian" form="Normal" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Persian.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Persian_shiny.png">
     <Type primary="Normal" />
+    <EvolvesFrom id="52" name="Meowth" candies="50" />
     <Stats>
       <BaseIV attack="150" defense="136" stamina="163" />
       <Height standard="1" deviation="1" />
@@ -1039,6 +1051,7 @@
   </Pokemon>
   <Pokemon id="75" name="Graveler" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/22/Graveler_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/16/Graveler_alolan_shiny.png">
     <Type primary="Rock" secondary="Electric" />
+    <EvolvesFrom id="74" name="Geodude" candies="25" />
     <Stats>
       <BaseIV attack="164" defense="164" stamina="146" />
       <Height standard="1" deviation="1" />
@@ -1049,6 +1062,7 @@
   </Pokemon>
   <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Graveler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Graveler_shiny.png">
     <Type primary="Rock" secondary="Ground" />
+    <EvolvesFrom id="74" name="Geodude" candies="25" />
     <Stats>
       <BaseIV attack="164" defense="164" stamina="146" />
       <Height standard="1" deviation="1" />
@@ -1070,6 +1084,7 @@
   </Pokemon>
   <Pokemon id="76" name="Golem" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/dd/Golem_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Golem_alolan_shiny.png">
     <Type primary="Rock" secondary="Electric" />
+    <EvolvesFrom id="75" name="Graveler" candies="100" />
     <Stats>
       <BaseIV attack="211" defense="198" stamina="190" />
       <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
@@ -1080,6 +1095,7 @@
   </Pokemon>
   <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Golem.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Golem_shiny.png">
     <Type primary="Rock" secondary="Ground" />
+    <EvolvesFrom id="75" name="Graveler" candies="100" />
     <Stats>
       <BaseIV attack="211" defense="198" stamina="190" />
       <Height standard="1.3999999761581421" deviation="1.3999999761581421" />
@@ -1246,6 +1262,7 @@
   </Pokemon>
   <Pokemon id="89" name="Muk" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Muk_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Muk_alolan_shiny.png">
     <Type primary="Poison" secondary="Dark" />
+    <EvolvesFrom id="88" name="Grimer" candies="50" />
     <Stats>
       <BaseIV attack="190" defense="172" stamina="233" />
       <Height standard="1" deviation="1" />
@@ -1256,6 +1273,7 @@
   </Pokemon>
   <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Muk.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Muk_shiny.png">
     <Type primary="Poison" />
+    <EvolvesFrom id="88" name="Grimer" candies="50" />
     <Stats>
       <BaseIV attack="190" defense="172" stamina="233" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -1413,6 +1431,7 @@
   </Pokemon>
   <Pokemon id="103" name="Exeggutor" form="Alola" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/94/Exeggutor_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Exeggutor_alolan_shiny.png">
     <Type primary="Grass" secondary="Dragon" />
+    <EvolvesFrom id="102" name="Exeggcute" candies="50" />
     <Stats>
       <BaseIV attack="230" defense="153" stamina="216" />
       <Height standard="10.899999618530273" deviation="10.899999618530273" />
@@ -1423,6 +1442,7 @@
   </Pokemon>
   <Pokemon id="103" name="Exeggutor" form="Normal" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Exeggutor.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Exeggutor_shiny.png">
     <Type primary="Grass" secondary="Psychic" />
+    <EvolvesFrom id="102" name="Exeggcute" candies="50" />
     <Stats>
       <BaseIV attack="233" defense="149" stamina="216" />
       <Height standard="2" deviation="2" />
@@ -1454,6 +1474,7 @@
   </Pokemon>
   <Pokemon id="105" name="Marowak" form="Alola" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/af/Marowak_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Marowak_alolan_shiny.png">
     <Type primary="Fire" secondary="Ghost" />
+    <EvolvesFrom id="104" name="Cubone" candies="50" />
     <Stats>
       <BaseIV attack="144" defense="186" stamina="155" />
       <Height standard="1" deviation="1" />
@@ -1464,6 +1485,7 @@
   </Pokemon>
   <Pokemon id="105" name="Marowak" form="Normal" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
     <Type primary="Ground" />
+    <EvolvesFrom id="104" name="Cubone" candies="50" />
     <Stats>
       <BaseIV attack="144" defense="186" stamina="155" />
       <Height standard="1" deviation="1" />

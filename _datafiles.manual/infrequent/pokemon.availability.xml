@@ -4,8 +4,9 @@
   https://thesilphroad.com/catalog
 -->
 
-<PokemonAvailability last_updated="2019-01-31">
+<PokemonAvailability last_updated="2019-02-09">
   <Pokemon id="0" name="Dummy to make index line up." />
+  
   <!-- #region Gen1 -->
   <Pokemon id="1" name="Bulbasaur" date="2016-07-06" availability="General" shiny="2018-03-25" />
   <Pokemon id="2" name="Ivysaur" date="2016-07-06" availability="General" shiny="2018-03-25" />
@@ -213,6 +214,7 @@
   <Pokemon id="150" name="Mewtwo" date="2017-08-14" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="151" name="Mew" date="2018-03-30" availability="Research Encounter Only" rarity="Mythic" />
   <!-- #endregion Gen1 -->
+  
   <!-- #region Gen2 -->
   <Pokemon id="152" name="Chikorita" date="2017-02-16" availability="General" shiny="2018-09-22" />
   <Pokemon id="153" name="Bayleef" date="2017-02-16" availability="General" shiny="2018-09-22" />
@@ -344,6 +346,7 @@
   <Pokemon id="250" name="Ho-Oh" date="2017-11-27" availability="Raid Boss Only" rarity="Legendary" shiny="2018-05-19" />
   <Pokemon id="251" name="Celebi" date="2018-07-14" availability="Research Encounter Only" rarity="Mythic" />
   <!-- #endregion Gen2 -->
+  
   <!-- #region Gen3 -->
   <Pokemon id="252" name="Treecko" date="2017-12-08" availability="General" />
   <Pokemon id="253" name="Grovyle" date="2017-12-08" availability="General" />
@@ -418,8 +421,8 @@
   <Pokemon id="322" name="Numel" date="2018-01-23" availability="General" />
   <Pokemon id="323" name="Camerupt" date="2018-01-23" availability="General" />
   <Pokemon id="324" name="Torkoal" date="2018-01-23" availability="Regional: India + Thailand + Surrounding Area" />
-  <Pokemon id="325" name="Spoink" date="2017-12-08" availability="General" />
-  <Pokemon id="326" name="Grumpig" date="2018-01-23" availability="General" />
+  <Pokemon id="325" name="Spoink" date="2017-12-08" availability="General" shiny="2019-02-04" />
+  <Pokemon id="326" name="Grumpig" date="2018-01-23" availability="General" shiny="2019-02-04" />
   <Pokemon id="327" name="Spinda">
     <Form name="Pattern 1" date="2018-08-01" availability="Encounter Only" />
     <Form name="Pattern 2" date="2018-09-01" availability="Encounter Only" />
@@ -500,6 +503,7 @@
     <Form name="Speed" availability="Unreleased" />
   </Pokemon>
   <!-- #endregion Gen3 -->
+  
   <!-- #region Gen4 -->
   <Pokemon id="387" name="Turtwig" date="2018-10-16" availability="General" />
   <Pokemon id="388" name="Grotle" date="2018-10-16" availability="General" />
@@ -570,7 +574,7 @@
   <Pokemon id="435" name="Skuntank" date="2018-10-23" availability="General" />
   <Pokemon id="436" name="Bronzor" date="2018-12-18" availability="General" />
   <Pokemon id="437" name="Bronzong" date="2018-12-18" availability="General" />
-  <Pokemon id="438" name="Bonsly" availability="Unreleased" />
+  <Pokemon id="438" name="Bonsly" date="2019-01-31" availability="Hatch Only" />
   <Pokemon id="439" name="Mime Jr." availability="Unreleased" />
   <Pokemon id="440" name="Happiny" availability="Unreleased" />
   <Pokemon id="441" name="Chatot" date="2018-10-16" availability="Regional: Southern Hemisphere?" />
@@ -609,7 +613,7 @@
   <Pokemon id="474" name="Porygon-Z" date="2018-11-14" availability="Evolve Only" />
   <Pokemon id="475" name="Gallade" date="2019-01-31" availability="Evolve Only" />
   <Pokemon id="476" name="Probopass" availability="Unreleased" />
-  <Pokemon id="477" name="Dusknoir" date="2018-11-14" availability="Evolve Only" />
+  <Pokemon id="477" name="Dusknoir" date="2018-11-14" availability="Evolve Only" shiny="2018-11-14" />
   <Pokemon id="478" name="Froslass" date="2019-01-31" availability="Evolve Only" shiny="2019-01-31" />
   <Pokemon id="479" name="Rotom">
     <Form name="Normal" availability="Unreleased" />
@@ -660,6 +664,7 @@
     <Form name="Unknown" availability="Unreleased" />
   </Pokemon>
   <!-- #endregion Gen4 -->
+  
   <!-- #region Gen5 -->
   <Pokemon id="494" name="Victini" availability="Unreleased" rarity="Mythic" />
   <Pokemon id="495" name="Snivy" availability="Unreleased" />
@@ -859,6 +864,7 @@
     <Form name="Shock" availability="Unreleased" />
   </Pokemon>
   <!-- #endregion Gen5 -->
+  
   <!-- #region Gen6 -->
   <Pokemon id="650" name="Chespin" availability="Unreleased" />
   <Pokemon id="651" name="Quilladin" availability="Unreleased" />
@@ -1010,6 +1016,7 @@
   </Pokemon>
   <Pokemon id="721" name="Volcanion" availability="Unreleased" rarity="Mythic" />
   <!-- #endregion Gen6 -->
+  
   <!-- #region Gen7 -->
   <Pokemon id="722" name="Rowlet" availability="Unreleased" />
   <Pokemon id="723" name="Dartrix" availability="Unreleased" />
@@ -1135,8 +1142,10 @@
   <Pokemon id="806" name="Blacephalon" availability="Unreleased" rarity="Ultra Beast" />
   <Pokemon id="807" name="Zeraora" availability="Unreleased" rarity="Mythic" />
   <!-- #endregion Gen7 -->
+  
   <!-- #region Unknown -->
-  <Pokemon id="808" name="Meltan" date="2018-11-14" availability="Mystery Box Only" />
-  <Pokemon id="809" name="Melmetal" date="2018-11-14" availability="Evolve Only" />
+  <Pokemon id="808" name="Meltan" date="2018-11-14" availability="Mystery Box Only" shiny="2019-02-05" />
+  <Pokemon id="809" name="Melmetal" date="2018-11-14" availability="Evolve Only" shiny="2019-02-05" />
   <!-- #endregion Unknown -->
+  
 </PokemonAvailability>

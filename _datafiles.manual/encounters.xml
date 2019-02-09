@@ -7,7 +7,7 @@
   TODO QZX: Finish July, August and September 2018
 -->
 
-<FieldResearch last_updated="2019-01-30">
+<FieldResearch last_updated="2019-02-09">
   <Category type="Special Research Breakthrough">
     <Research task="Complete 'A Mythical Discovery'">
       <Pokemon id="151" name="Mew" current="true" />
@@ -23,10 +23,10 @@
     </Research>
   </Category>
 
-  <!-- #region Standard -->
-  
+  <!-- #region General -->
+
   <Category type="Hatch or Evolve">
-    
+
     <!-- #region Hatch -->
     <Research task="Hatch an Egg.">
       <Pokemon id="102" name="Exeggcute" current="true" />
@@ -53,7 +53,7 @@
       <Pokemon id="38" name="Ninetales" />
     </Research>
     <!-- #endregion Evolve -->
-    
+
   </Category>
 
   <Category type="Throws">
@@ -96,7 +96,7 @@
   </Category>
 
   <Category type="Catch">
-    
+
     <!-- #region Basic -->
     <Research task="Catch 10 Pokemon.">
       <Pokemon id="129" name="Magikarp" current="true" />
@@ -170,7 +170,7 @@
       <Pokemon id="309" name="Electrike" />
     </Research>
     <!-- #endregion Type -->
-    
+
   </Category>
 
   <Category type="Gym or Raid">
@@ -247,12 +247,12 @@
     </Research>
   </Category>
 
-  <!-- #endregion Standard -->
+  <!-- #endregion General -->
 
   <!-- #region Events -->
-  
+
   <!-- #region 2018 -->
-  
+
   <Event name="April 2018">
     <Research task="Achieve 7 stamps">
       <Pokemon id="146" name="Moltres" />
@@ -417,7 +417,7 @@
       <Pokemon id="327" name="Spinda" form="Pattern 6" />
     </Research>
   </Event>
-  
+
   <!-- #endregion 2018 -->
 
   <!-- #region 2019 -->
@@ -459,7 +459,7 @@
       <Pokemon id="138" name="Omanyte" current="true" />
       <Pokemon id="140" name="Kabuto" current="true" />
     </Research>
-    <Research task="Use 5 Berries to help catch Pokemon.">
+    <Research task="Use 5 Razz Berries to help catch Pokemon.">
       <Pokemon id="104" name="Cubone" current="true" />
     </Research>
     <Research task="Catch 7 Flying- Psychic-, or Dark-type Pokemon.">
@@ -538,8 +538,17 @@
       <Pokemon id="244" name="Entei" />
       <Pokemon id="245" name="Suicune" />
     </Research>
-        <Research task="I have no idea.">
+    <Research task="I have no idea.">
+      <Pokemon id="390" name="Chimchar" />
+    </Research>
+    <Research task="Trade 10 Pokemon with a friend">
       <Pokemon id="327" name="Spinda" form="Pattern 4" />
+    </Research>
+    <Research task="Use 5 Razz Berries to help catch Pokemon.">
+      <Pokemon id="104" name="Cubone" current="true" />
+    </Research>
+    <Research task="Catch 7 Flying- Psychic-, or Dark-type Pokemon.">
+      <Pokemon id="347" name="Anorith" current="true" />
     </Research>
 
   </Event>
