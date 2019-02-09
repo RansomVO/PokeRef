@@ -227,112 +227,137 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:attribute>
-        <xsl:if test="$Header != ''">
-          <div id="Pokemon_Header_Field">
-            <xsl:copy-of select="$Header" />
-          </div>
-        </xsl:if>
-
-        <!-- Add Special Icons -->
-        <xsl:if test="count(exslt:node-set($Settings)/*/@hide_special_icons) = 0">
-
-          <!-- Shiny Icon -->
-          <xsl:if test="$pokemon/@shiny">
-            <xsl:call-template name="Sprite">
-              <xsl:with-param name="id" select="'Shiny'" />
-              <xsl:with-param name="Settings">
-                <Show>
-                  <xsl:attribute name="sprite_class">
-                    <xsl:text>LEFT_ICON</xsl:text>
-                    <xsl:if test="contains($pokemon/@availability,'Hatch Only')">
-                      <xsl:text> TODO_QZX_TOP_MARGIN</xsl:text>
-                    </xsl:if>
-                  </xsl:attribute>
-                </Show>
-              </xsl:with-param>
-            </xsl:call-template>
+        <table>
+          <xsl:if test="$Header != ''">
+            <tr>
+              <td id="Pokemon_Header_Field" align="center">
+                <xsl:copy-of select="$Header" />
+              </td>
+            </tr>
           </xsl:if>
+          <tr>
+            <td align="center">
+              <div>
+                <xsl:attribute name="class">
+                  <xsl:text>SPRITE_FRAME </xsl:text>
+                  <xsl:choose>
+                    <xsl:when test="exslt:node-set($Settings)/*/@valign = 'top'">
+                      <xsl:text>SPRITE_ALIGN_TOP</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="exslt:node-set($Settings)/*/@valign = 'bottom'">
+                      <xsl:text>SPRITE_ALIGN_BOTTOM</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:text>SPRITE_ALIGN_MIDDLE</xsl:text>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:attribute>
 
-          <!-- Egg Icon -->
-          <xsl:if test="$egg != ''">
-            <div>
-              <xsl:choose>
-                <xsl:when test="contains($pokemon/@availability,'Hatch Only')">
-                  <xsl:attribute name="class">RIGHT_ICON ICON_WRAPPER</xsl:attribute>
-                  <xsl:attribute name="style">background-image:url('/images/game/hatchonly.png');</xsl:attribute>
-                </xsl:when>
-              </xsl:choose>
+                <!-- Add Special Icons -->
+                <xsl:if test="count(exslt:node-set($Settings)/*/@hide_special_icons) = 0">
 
-              <xsl:call-template name="OutputInfoWrapper">
-                <xsl:with-param name="Wrapped">
-                  <xsl:call-template name="Sprite">
-                    <xsl:with-param name="id">
-                      <xsl:value-of select="concat('Egg', $egg, 'K')" />
-                    </xsl:with-param>
-                    <xsl:with-param name="Settings">
-                      <Show>
-                        <xsl:attribute name="sprite_class">
-                          <xsl:choose>
-                            <xsl:when test="contains($pokemon/@availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
-                            <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
-                          </xsl:choose>
-                        </xsl:attribute>
-                      </Show>
-                    </xsl:with-param>
-                  </xsl:call-template>
-                </xsl:with-param>
-                <xsl:with-param name="Info">
-                  <table style="width:15em;">
-                    <tr>
-                      <th style="width:1px; white-space:nowrap;">Egg:</th>
-                      <td >
-                        <xsl:choose>
-                          <xsl:when test="$pokemon/@availability = 'Hatch Only'">
-                            <xsl:text>Only Hatches From </xsl:text>
-                          </xsl:when>
-                          <xsl:otherwise>
-                            <xsl:text>May Hatch From </xsl:text>
-                          </xsl:otherwise>
-                        </xsl:choose>
-                        <xsl:value-of select="$egg" />
-                        <xsl:text>K Egg</xsl:text>
-                      </td>
-                    </tr>
-                  </table>
-                </xsl:with-param>
-              </xsl:call-template>
-            </div>
+                  <!-- Shiny Icon -->
+                  <xsl:if test="$pokemon/@shiny">
+                    <xsl:call-template name="Sprite">
+                      <xsl:with-param name="id" select="'Shiny'" />
+                      <xsl:with-param name="Settings">
+                        <Show>
+                          <xsl:attribute name="sprite_class">
+                            <xsl:text>LEFT_ICON</xsl:text>
+                            <xsl:if test="contains($pokemon/@availability,'Hatch Only')">
+                              <xsl:text> TODO_QZX_TOP_MARGIN</xsl:text>
+                            </xsl:if>
+                          </xsl:attribute>
+                        </Show>
+                      </xsl:with-param>
+                    </xsl:call-template>
+                  </xsl:if>
+
+                  <!-- Egg Icon -->
+                  <xsl:if test="$egg != ''">
+                    <div>
+                      <xsl:choose>
+                        <xsl:when test="contains($pokemon/@availability,'Hatch Only')">
+                          <xsl:attribute name="class">RIGHT_ICON ICON_WRAPPER</xsl:attribute>
+                          <xsl:attribute name="style">background-image:url('/images/game/hatchonly.png');</xsl:attribute>
+                        </xsl:when>
+                      </xsl:choose>
+
+                      <xsl:call-template name="OutputInfoWrapper">
+                        <xsl:with-param name="Wrapped">
+                          <xsl:call-template name="Sprite">
+                            <xsl:with-param name="id">
+                              <xsl:value-of select="concat('Egg', $egg, 'K')" />
+                            </xsl:with-param>
+                            <xsl:with-param name="Settings">
+                              <Show>
+                                <xsl:attribute name="sprite_class">
+                                  <xsl:choose>
+                                    <xsl:when test="contains($pokemon/@availability,'Hatch Only')">WRAPPED_ICON</xsl:when>
+                                    <xsl:otherwise>RIGHT_ICON</xsl:otherwise>
+                                  </xsl:choose>
+                                </xsl:attribute>
+                              </Show>
+                            </xsl:with-param>
+                          </xsl:call-template>
+                        </xsl:with-param>
+                        <xsl:with-param name="Info">
+                          <table style="width:15em;">
+                            <tr>
+                              <th style="width:1px; white-space:nowrap;">Egg:</th>
+                              <td >
+                                <xsl:choose>
+                                  <xsl:when test="$pokemon/@availability = 'Hatch Only'">
+                                    <xsl:text>Only Hatches From </xsl:text>
+                                  </xsl:when>
+                                  <xsl:otherwise>
+                                    <xsl:text>May Hatch From </xsl:text>
+                                  </xsl:otherwise>
+                                </xsl:choose>
+                                <xsl:value-of select="$egg" />
+                                <xsl:text>K Egg</xsl:text>
+                              </td>
+                            </tr>
+                          </table>
+                        </xsl:with-param>
+                      </xsl:call-template>
+                    </div>
+                  </xsl:if>
+
+                </xsl:if>
+
+                <!-- Add the Image -->
+                <xsl:apply-templates select="$pokemon" mode="Sprite">
+                  <xsl:with-param name="Settings" select="$Settings" />
+                </xsl:apply-templates>
+
+                <!-- Add Type/Boost Icons -->
+                <xsl:if test="count(exslt:node-set($Settings)/*/@hide_type_icons) = 0">
+                  <div id="Pokemon_Type_Icons_Field" style="text-align:center;">
+                    <xsl:apply-templates select="$pokemon/Type" mode="icons" />
+                  </div>
+                </xsl:if>
+
+                <!-- Add ID/Name -->
+                <xsl:if test="count(exslt:node-set($Settings)/*/@hide_name) = 0">
+                  <div id="Pokemon_Name_Field" style="white-space:nowrap;">
+                    <xsl:value-of select="concat($pokemon/@id, $nbsp, '-', $nbsp)" disable-output-escaping="yes" />
+                    <xsl:apply-templates select="$pokemon" mode="DisplayName" />
+                  </div>
+                </xsl:if>
+              </div>
+            </td>
+          </tr>
+          <xsl:if test="$Footer != ''">
+            <tr>
+              <td id="Pokemon_Footer_Field" align="center">
+                <xsl:copy-of select="$Footer" />
+              </td>
+            </tr>
           </xsl:if>
-        </xsl:if>
-
-        <!-- Add the Image -->
-        <xsl:apply-templates select="$pokemon" mode="Sprite">
-          <xsl:with-param name="Settings" select="$Settings" />
-        </xsl:apply-templates>
-
-        <!-- Add Type/Boost Icons -->
-        <xsl:if test="count(exslt:node-set($Settings)/*/@hide_type_icons) = 0">
-          <div id="Pokemon_Type_Icons_Field">
-            <xsl:apply-templates select="$pokemon/Type" mode="icons" />
-          </div>
-        </xsl:if>
-
-        <!-- Add ID/Name -->
-        <xsl:if test="count(exslt:node-set($Settings)/*/@hide_name) = 0">
-          <div id="Pokemon_Name_Field">
-            <xsl:value-of select="concat($pokemon/@id, $nbsp, '-', $nbsp)" disable-output-escaping="yes" />
-            <xsl:apply-templates select="$pokemon" mode="DisplayName" />
-          </div>
-        </xsl:if>
-
-        <xsl:if test="$Footer != ''">
-          <div id="Pokemon_Footer_Field">
-            <xsl:copy-of select="$Footer" />
-          </div>
-        </xsl:if>
+        </table>
       </div>
     </div>
-
     <xsl:if test="exslt:node-set($Settings)/*/@href">
       <xsl:value-of select="concat($lt, '/a', $gt)" disable-output-escaping="yes" />
     </xsl:if>
@@ -356,7 +381,6 @@
     </td>
   </xsl:template>
 
-  
   <!-- Template to create the image of the specified Pokemon -->
   <xsl:template match="Pokemon" mode="Sprite">
     <xsl:param name="Settings" />
@@ -416,21 +440,35 @@
 
   <!-- #region Templates to Output icons for Pokemon Type/Boost. -->
   <xsl:template match="Type" mode="icons">
-    <xsl:call-template name="OutputTypeIcon">
-      <xsl:with-param name="Type" select="@primary" />
-    </xsl:call-template>
-    <xsl:call-template name="OutputTypeIcon">
-      <xsl:with-param name="Type" select="@secondary" />
-    </xsl:call-template>
-
-    <img class="SPACER_ICON" />
-
-    <xsl:call-template name="OutputWeatherBoostIcon">
-      <xsl:with-param name="Type" select="@primary" />
-    </xsl:call-template>
-    <xsl:call-template name="OutputWeatherBoostIcon">
-      <xsl:with-param name="Type" select="@secondary" />
-    </xsl:call-template>
+      <table class="TABLE_ARRANGER">
+        <tr>
+          <td style="margin:0; padding:0">
+            <xsl:call-template name="OutputTypeIcon">
+              <xsl:with-param name="Type" select="@primary" />
+            </xsl:call-template>
+          </td>
+          <xsl:if test="@secondary">
+            <td>
+              <xsl:call-template name="OutputTypeIcon">
+                <xsl:with-param name="Type" select="@secondary" />
+              </xsl:call-template>
+            </td>
+          </xsl:if>
+          <td class="SPACER_ICON" />
+          <td>
+            <xsl:call-template name="OutputWeatherBoostIcon">
+              <xsl:with-param name="Type" select="@primary" />
+            </xsl:call-template>
+          </td>
+          <xsl:if test="@secondary">
+            <td>
+              <xsl:call-template name="OutputWeatherBoostIcon">
+                <xsl:with-param name="Type" select="@secondary" />
+              </xsl:call-template>
+            </td>
+          </xsl:if>
+        </tr>
+      </table>
   </xsl:template>
 
   <xsl:template name="OutputTypeIcon">

@@ -330,20 +330,11 @@
 
           <!-- This template (from /xsl/global.xsl) outputs the Visual image of the Pokemon with various decorations. -->
           <xsl:apply-templates select="$pokemon">
-            <xsl:with-param name="Settings">
-              <Show>
-                <xsl:attribute name="valign">
-                  <xsl:choose>
-                    <xsl:when test="$FamilyBranch/@rowspan > 1">
-                      <xsl:text>middle</xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <xsl:text>bottom</xsl:text>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </xsl:attribute>
-              </Show>
-            </xsl:with-param>
+              <xsl:with-param name="Settings">
+                <xsl:if test="$FamilyBranch/@rowspan = 1">
+                  <Show valign="bottom" />
+                </xsl:if>
+              </xsl:with-param>
             <xsl:with-param name="Header">
               <xsl:copy-of select="$Header"/>
             </xsl:with-param>

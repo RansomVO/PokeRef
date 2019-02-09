@@ -227,6 +227,17 @@ h1, h2, h3, h4 {
     background-color: lightsteelblue;
 }
 
+.TABLE_ARRANGER {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+    .TABLE_ARRANGER td {
+        margin: 0;
+        padding: 0;
+    }
+
 /*#endregion*/
 
 /*#region Classes for outputting Pokemon images. */
@@ -287,22 +298,27 @@ h1, h2, h3, h4 {
 
 .SPACER_ICON {
     width: .5em;
+    float: none;
 }
 
 .TAG_ICON_LARGE {
     width: 2em;
+    float: none;
 }
 
 .TAG_ICON_MEDIUM {
     width: 1.5em;
+    float: none;
 }
 
 .TAG_ICON_REGULAR {
     width: 1em;
+    float: none;
 }
 
 .TAG_ICON_SMALL {
     width: .75em;
+    float: none;
 }
 
 .TAG_ICON_OVERLAP {
