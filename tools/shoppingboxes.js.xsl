@@ -101,7 +101,6 @@ window.onload = function () {
 
     <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0 or ShoppingBoxes/Box[@type='Special']/@price=0 or ShoppingBoxes/Box[@type='Great']/@price=0 or ShoppingBoxes/Box[@type='Ultra']/@price=0">
       <xsl:text>
-
         // Hide boxes that are not available.
 </xsl:text>
       <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0">
@@ -151,7 +150,7 @@ function GetFields() {
       <xsl:text>_Value');
 </xsl:text>
     </xsl:for-each>
-    
+
     <xsl:text>
     CommunityBox_Price = document.getElementById('CommunityBox_Price');
     CommunityBox_Total = document.getElementById('CommunityBox_Total');
@@ -165,7 +164,7 @@ function GetFields() {
       <xsl:text>_Qty');
 </xsl:text>
     </xsl:for-each>
-    
+
     <xsl:text>
     SpecialBox_Price = document.getElementById('SpecialBox_Price');
     SpecialBox_Total = document.getElementById('SpecialBox_Total');
@@ -179,7 +178,7 @@ function GetFields() {
       <xsl:text>_Qty');
 </xsl:text>
     </xsl:for-each>
-    
+
     <xsl:text>
     GreatBox_Price = document.getElementById('GreatBox_Price');
     GreatBox_Total = document.getElementById('GreatBox_Total');

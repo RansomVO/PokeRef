@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="4">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="4">
   <Pokemon id="387" name="Turtwig">
     <MoveSet base_dps="15.730337078651685" true_dps="13.033707865168539" comparison="91">
       <FastAttack name="Tackle" stab="false" legacy="false" />
@@ -1659,6 +1659,10 @@
       <FastAttack name="Counter" stab="true" legacy="false" />
       <ChargedAttack name="Close Combat" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="16.923076923076923" true_dps="26.76923076923077" comparison="93">
+      <FastAttack name="Counter" stab="true" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.239316239316242" true_dps="26.239316239316242" comparison="91">
       <FastAttack name="Bullet Punch" stab="true" legacy="false" />
       <ChargedAttack name="Flash Cannon" stab="true" legacy="false" />
@@ -1670,6 +1674,10 @@
     <MoveSet base_dps="16.8141592920354" true_dps="27.168141592920353" comparison="95">
       <FastAttack name="Bullet Punch" stab="true" legacy="false" />
       <ChargedAttack name="Close Combat" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.357142857142858" true_dps="24.821428571428573" comparison="87">
+      <FastAttack name="Bullet Punch" stab="true" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="449" name="Hippopotas">

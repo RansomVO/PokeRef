@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="3">
   <Pokemon id="252" name="Treecko">
     <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
       <FastAttack name="Pound" stab="false" legacy="false" />
@@ -1389,6 +1389,10 @@
       <FastAttack name="Psycho Cut" stab="true" legacy="false" />
       <ChargedAttack name="Dynamic Punch" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="15" true_dps="13.6" comparison="80">
+      <FastAttack name="Psycho Cut" stab="true" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.1875" true_dps="14.0625" comparison="83">
       <FastAttack name="Counter" stab="true" legacy="false" />
       <ChargedAttack name="Ice Punch" stab="false" legacy="false" />
@@ -1400,6 +1404,10 @@
     <MoveSet base_dps="19.333333333333332" true_dps="17.111111111111111" comparison="100">
       <FastAttack name="Counter" stab="true" legacy="false" />
       <ChargedAttack name="Dynamic Punch" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.923076923076923" true_dps="15.076923076923077" comparison="89">
+      <FastAttack name="Counter" stab="true" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="309" name="Electrike">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09" gen="3" region="Hoenn">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="3" region="Hoenn">
   <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -830,7 +830,7 @@
       <Max cp="1220" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="327" name="Spinda" form="Pattern 4" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ec/Spinda_pattern_4.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Spinda_pattern_4_shiny.png">
+  <Pokemon id="327" name="Spinda" form="Pattern 4" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Encounter Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ec/Spinda_pattern_4.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Spinda_pattern_4_shiny.png">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="116" defense="116" stamina="155" />
@@ -1234,6 +1234,7 @@
   </Pokemon>
   <Pokemon id="358" name="Chimecho" family="Chimecho" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Chimecho.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/04/Chimecho_shiny.png">
     <Type primary="Psychic" />
+    <EvolvesFrom id="433" name="Chingling" candies="50" />
     <Stats>
       <BaseIV attack="175" defense="170" stamina="181" />
       <Height standard="0.61000001430511475" deviation="0.61000001430511475" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="1">
   <Pokemon id="1" name="Bulbasaur">
     <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -2183,6 +2183,10 @@
       <FastAttack name="Bubble" stab="true" legacy="false" />
       <ChargedAttack name="Ice Punch" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="15.357142857142858" true_dps="19.107142857142858" comparison="84">
+      <FastAttack name="Bubble" stab="true" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.177914110429448" true_dps="21.533742331288341" comparison="95">
       <FastAttack name="Rock Smash" stab="true" legacy="false" />
       <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
@@ -2195,6 +2199,10 @@
       <FastAttack name="Rock Smash" stab="true" legacy="false" />
       <ChargedAttack name="Ice Punch" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="15.277777777777777" true_dps="19.166666666666668" comparison="85">
+      <FastAttack name="Rock Smash" stab="true" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.666666666666664" true_dps="19.1869918699187" comparison="85">
       <FastAttack name="Mud Shot" stab="false" legacy="true" />
       <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
@@ -2206,6 +2214,10 @@
     <MoveSet base_dps="15.306122448979592" true_dps="15.306122448979592" comparison="68">
       <FastAttack name="Mud Shot" stab="false" legacy="true" />
       <ChargedAttack name="Ice Punch" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15" true_dps="17.4" comparison="77">
+      <FastAttack name="Mud Shot" stab="false" legacy="true" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
     </MoveSet>
     <MoveSet base_dps="15.428571428571429" true_dps="19.142857142857142" comparison="84">
       <FastAttack name="Bubble" stab="true" legacy="false" />
@@ -4047,6 +4059,10 @@
       <FastAttack name="Bullet Punch" stab="false" legacy="false" />
       <ChargedAttack name="Close Combat" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="15.357142857142858" true_dps="18.928571428571431" comparison="79">
+      <FastAttack name="Bullet Punch" stab="false" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.164179104477611" true_dps="20.597014925373134" comparison="86">
       <FastAttack name="Counter" stab="true" legacy="false" />
       <ChargedAttack name="Fire Punch" stab="false" legacy="false" />
@@ -4063,6 +4079,10 @@
       <FastAttack name="Counter" stab="true" legacy="false" />
       <ChargedAttack name="Close Combat" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="16.923076923076923" true_dps="22.46153846153846" comparison="93">
+      <FastAttack name="Counter" stab="true" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="15.54054054054054" true_dps="18.648648648648649" comparison="78">
       <FastAttack name="Rock Smash" stab="true" legacy="true" />
       <ChargedAttack name="Fire Punch" stab="false" legacy="false" />
@@ -4078,6 +4098,10 @@
     <MoveSet base_dps="16.33986928104575" true_dps="21.633986928104573" comparison="90">
       <FastAttack name="Rock Smash" stab="true" legacy="true" />
       <ChargedAttack name="Close Combat" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.277777777777777" true_dps="20.277777777777779" comparison="84">
+      <FastAttack name="Rock Smash" stab="true" legacy="true" />
+      <ChargedAttack name="Power Up Punch" stab="true" legacy="false" />
     </MoveSet>
     <MoveSet base_dps="14.615384615384615" true_dps="17.884615384615383" comparison="74">
       <FastAttack name="Bullet Punch" stab="false" legacy="false" />
@@ -4347,6 +4371,10 @@
       <FastAttack name="Mud Slap" stab="false" legacy="false" />
       <ChargedAttack name="Outrage" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="15.322580645161292" true_dps="15.322580645161292" comparison="88">
+      <FastAttack name="Mud Slap" stab="false" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="false" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="15.588235294117647" true_dps="15.441176470588236" comparison="89">
       <FastAttack name="Low Kick" stab="false" legacy="false" />
       <ChargedAttack name="Crunch" stab="false" legacy="false" />
@@ -4358,6 +4386,10 @@
     <MoveSet base_dps="17.63440860215054" true_dps="17.41935483870968" comparison="100">
       <FastAttack name="Low Kick" stab="false" legacy="false" />
       <ChargedAttack name="Outrage" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.357142857142858" true_dps="15.357142857142858" comparison="89">
+      <FastAttack name="Low Kick" stab="false" legacy="false" />
+      <ChargedAttack name="Power Up Punch" stab="false" legacy="false" />
     </MoveSet>
     <MoveSet base_dps="14.655172413793107" true_dps="14.655172413793107" comparison="85">
       <FastAttack name="Mud Slap" stab="false" legacy="false" />

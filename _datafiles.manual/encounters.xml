@@ -3,26 +3,9 @@
   Research Links
   https://thesilphroad.com/research-tasks
   https://pokemongohub.net/post/guide/field-research-missions-list/
-  
-  TODO QZX: Finish July, August and September 2018
 -->
 
 <FieldResearch last_updated="2019-02-09">
-  <Category type="Special Research Breakthrough">
-    <Research task="Complete 'A Mythical Discovery'">
-      <Pokemon id="151" name="Mew" current="true" />
-    </Research>
-    <Research task="Complete 'A Ripple in Time'">
-      <Pokemon id="251" name="Celebi" current="true" />
-    </Research>
-    <Research task="Complete 'Catch 108 Pokemon' in 'A Spooky Message'">
-      <Pokemon id="442" name="Spiritomb" current="true" />
-    </Research>
-    <Research task="Complete 'Let's GO, Meltan">
-      <Pokemon id="808" name="Meltan" current="true" />
-    </Research>
-  </Category>
-
   <!-- #region General -->
 
   <Category type="Hatch or Evolve">
@@ -30,6 +13,10 @@
     <!-- #region Hatch -->
     <Research task="Hatch an Egg.">
       <Pokemon id="102" name="Exeggcute" current="true" />
+      <Pokemon id="209" name="Snubbull" current="true" />
+    </Research>
+    <Research task="Hatch 2 Eggs.">
+      <Pokemon id="120" name="Wailmer" />
     </Research>
     <Research task="Hatch 3 Eggs.">
       <Pokemon id="126" name="Magmar" current="true" />
@@ -42,6 +29,7 @@
     <!-- #region Evolve -->
     <Research task="Evolve a Pokemon.">
       <Pokemon id="133" name="Eevee" current="true" />
+      <Pokemon id="191" name="Sunkern" current="true" />
     </Research>
     <Research task="Evolve 5 Pokemon.">
       <Pokemon id="4" name="Charmander" />
@@ -51,6 +39,15 @@
     </Research>
     <Research task="Evolve 5 Fire-type Pokemon.">
       <Pokemon id="38" name="Ninetales" />
+    </Research>
+    <Research task="Evolve 10 Water-type Pokemon.">
+      <Pokemon id="147" name="Dratini" />
+    </Research>
+    <Research task="Evolve 2 Pidgey.">
+      <Pokemon id="10" name="Caterpie" />
+    </Research>
+    <Research task="Use an item to evolve a Pokemon.">
+      <Pokemon id="142" name="Aerodactyl" current="true" />
     </Research>
     <!-- #endregion Evolve -->
 
@@ -62,20 +59,21 @@
     <Research task="Make 5 Nice Throws.">
       <Pokemon id="100" name="Voltorb" current="true" />
       <Pokemon id="101" name="Electrode" />
-    </Research>
-    <Research task="Make 3 Nice Curveball Throws in a row.">
-      <Pokemon id="101" name="Electrode" />
+      <Pokemon id="399" name="Bidoof" current="true" />
     </Research>
     <!-- #endregion Nice -->
 
     <!-- #region Great -->
     <Research task="Make 3 Great Throws.">
       <Pokemon id="92" name="Gastly" current="true" />
+      <Pokemon id="345" name="Lileep" current="true" />
+      <Pokemon id="347" name="Anorith" current="true" />
     </Research>
     <Research task="Make 3 Great Throws in a row.">
       <Pokemon id="95" name="Onix" current="true" />
     </Research>
     <Research task="Make 5 Great Throws in a row.">
+      <Pokemon id="40" name="Wigglytuff" />
       <Pokemon id="95" name="Onix" />
       <Pokemon id="180" name="Flaaffy" />
     </Research>
@@ -88,9 +86,40 @@
     <!-- #endregion Excellent -->
 
     <!-- #region Curveball -->
+    <Research task="Make 3 Curveball Throws in a row.">
+      <Pokemon id="55" name="Golduck" />
+    </Research>
+    <Research task="Make 3 Nice Curveball Throws in a row.">
+      <Pokemon id="101" name="Electrode" />
+    </Research>
     <Research task="Make 3 Great Curveball Throws in a row.">
       <Pokemon id="95" name="Onix" />
     </Research>
+
+    <!-- #region Spinda -->
+    <Research task="Make 5 Curveball Throws in a row.">
+      <Pokemon id="327" name="Spinda" form="Pattern 1" />
+    </Research>
+    <Research task="Make a Great Curveball Throw.">
+      <Pokemon id="327" name="Spinda" form="Pattern 2" />
+    </Research>
+    <Research task="Make 2 Nice Curveball Throws.">
+      <Pokemon id="327" name="Spinda" form="Pattern 3" />
+    </Research>
+    <Research task="Make 3 Nice Curveball Throws.">
+      <Pokemon id="327" name="Spinda" form="Pattern 7" />
+    </Research>
+    <Research task="Make a Great Curveball Throw.">
+      <Pokemon id="327" name="Spinda" form="Pattern 6" />
+    </Research>
+    <Research task="Make 3 Great Curveball Throws in a row.">
+      <Pokemon id="327" name="Spinda" form="Pattern 5" />
+    </Research>
+    <Research task="Make 5 Great Curveball Throws in a row.">
+      <Pokemon id="327" name="Spinda" form="Pattern 4" current="true" />
+    </Research>
+    <!-- #endregion Spinda -->
+
     <!-- #endregion Curveball -->
 
   </Category>
@@ -100,6 +129,7 @@
     <!-- #region Basic -->
     <Research task="Catch 10 Pokemon.">
       <Pokemon id="129" name="Magikarp" current="true" />
+      <Pokemon id="228" name="Houndour" current="true" />
     </Research>
     <Research task="Catch 5 Pokemon with Weather Boost.">
       <Pokemon id="60" name="Poliwag" current="true" />
@@ -111,8 +141,17 @@
     <Research task="Catch 20 Pokemon with Weather Boost.">
       <Pokemon id="38" name="Ninetales" />
     </Research>
+    <Research task="Use 5 Berries to help catch Pokemon.">
+      <Pokemon id="58" name="Growlithe" current="true" />
+    </Research>
+    <Research task="Use 5 Razz Berries to help catch Pokemon.">
+      <Pokemon id="104" name="Cubone" current="true" />
+    </Research>
     <Research task="Use 10 Berries to help catch Pokemon.">
       <Pokemon id="58" name="Growlithe" />
+    </Research>
+    <Research task="Use 10 Pinap Berries while catching a Pokemon.">
+      <Pokemon id="129" name="Magikarp" current="true" />
     </Research>
     <!-- #endregion Basic -->
 
@@ -138,6 +177,9 @@
     <Research task="Catch 3 Bug-type Pokemon.">
       <Pokemon id="127" name="Pinsir" />
     </Research>
+    <Research task="Catch 5 Bug-type Pokemon.">
+      <Pokemon id="290" name="Nincada" />
+    </Research>
     <Research task="Catch 3 Dark-type Pokemon.">
       <Pokemon id="228" name="Houndour" />
     </Research>
@@ -146,6 +188,12 @@
     </Research>
     <Research task="Catch 3 Electric-type Pokemon.">
       <Pokemon id="25" name="Pikachu" />
+    </Research>
+    <Research task="Catch 7 Electric- Normal-, or Poison-type Pokemon.">
+      <Pokemon id="121" name="Starmie" current="true" />
+    </Research>
+    <Research task="Catch 5 Fighting-type Pokemon.">
+      <Pokemon id="81" name="Magnemite" current="true" />
     </Research>
     <Research task="Catch 3 Fire-type Pokemon.">
       <Pokemon id="77" name="Ponyta" />
@@ -159,6 +207,18 @@
     </Research>
     <Research task="Catch 5 Flying-type Pokemon.">
       <Pokemon id="207" name="Gligar" />
+    </Research>
+    <Research task="Catch 10 Ground-type Pokemon.">
+      <Pokemon id="27" name="Sandshrew" current="true" />
+    </Research>
+    <Research task="Catch 10 Ice-type Pokemon.">
+      <Pokemon id="140" name="Kabuto" current="true" />
+    </Research>
+    <Research task="Catch 5 Normal-type Pokemon.">
+      <Pokemon id="127" name="Pinsir" />
+    </Research>
+    <Research task="Catch 7 Flying- Psychic-, or Dark-type Pokemon.">
+      <Pokemon id="347" name="Anorith" current="true" />
     </Research>
     <Research task="Catch 3 Poison-type Pokemon.">
       <Pokemon id="88" name="Grimer" />
@@ -174,16 +234,19 @@
   </Category>
 
   <Category type="Gym or Raid">
+
+    <!-- #region Gym -->
     <Research task="Battle in a Gym.">
       <Pokemon id="56" name="Mankey" current="true" />
+      <Pokemon id="66" name="Machop" current="true" />
       <Pokemon id="312" name="Minun" />
     </Research>
     <Research task="Battle in a Gym 3 times.">
       <Pokemon id="124" name="Jynx" />
     </Research>
     <Research task="Battle in a Gym 5 times.">
-      <Pokemon id="56" name="Mankey" current="true" />
-      <Pokemon id="66" name="Machop" />
+      <Pokemon id="56" name="Mankey" />
+      <Pokemon id="66" name="Machop" current="true" />
     </Research>
     <Research task="Win a Gym battle.">
       <Pokemon id="1" name="Bulbasaur" current="true" />
@@ -195,6 +258,7 @@
     </Research>
     <Research task="Win 5 Gym battles.">
       <Pokemon id="66" name="Machop" />
+      <Pokemon id="131" name="Lapras" current="true" />
     </Research>
     <Research task="Use a supereffective Charged Attack in 5 Gym battles.">
       <Pokemon id="125" name="Electabuzz" />
@@ -202,22 +266,40 @@
     <Research task="Use a supereffective Charged Attack in 7 Gym battles.">
       <Pokemon id="125" name="Electabuzz" current="true" />
     </Research>
+    <!-- #endregion Gym -->
+
+    <!-- #region Raid -->
     <Research task="Battle in a raid.">
+      <Pokemon id="96" name="Drowzee" current="true" />
       <Pokemon id="312" name="Minun" />
+    </Research>
+    <Research task="Win a raid.">
+      <Pokemon id="137" name="Porygon" />
+      <Pokemon id="204" name="Pineco" />
     </Research>
     <Research task="Win a level 3 or higher raid.">
       <Pokemon id="147" name="Dratini" />
+      <Pokemon id="138" name="Omanyte" current="true" />
+      <Pokemon id="140" name="Kabuto" current="true" />
     </Research>
     <Research task="Win 5 raids.">
+      <Pokemon id="142" name="Aerodactyl" current="true" />
       <Pokemon id="185" name="Sudowoodo" />
       <Pokemon id="132" name="Ditto" />
     </Research>
+    <!-- #endregion Raid -->
+
   </Category>
 
   <Category type="Misc">
     <Research task="Earn a Candy walking with your buddy.">
+      <Pokemon id="36" name="Clefable" />
+      <Pokemon id="224" name="Octillery" />
       <Pokemon id="322" name="Numel" />
       <Pokemon id="333" name="Swablu" />
+    </Research>
+    <Research task="Earn 5 Candies walking with your buddy.">
+      <Pokemon id="73" name="Tentacruel" current="true" />
     </Research>
     <Research task="Power up a Pokemon.">
       <Pokemon id="82" name="Magneton" />
@@ -233,197 +315,56 @@
     <Research task="Power up Pokemon 7 times.">
       <Pokemon id="311" name="Plusle" />
     </Research>
+    <Research task="Transfer 3 Pokemon.">
+      <Pokemon id="37" name="Vulpix" current="true" />
+    </Research>
     <Research task="Transfer 10 Pokemon.">
       <Pokemon id="200" name="Misdreavus" />
     </Research>
     <Research task="Spin 6 PokeStops you haven't visited before.">
       <Pokemon id="142" name="Aerodactyl" />
     </Research>
+    <Research task="Send 2 Gifts to friends.">
+      <Pokemon id="92" name="Gastly" current="true" />
+    </Research>
     <Research task="Send 5 Gifts to friends.">
+      <Pokemon id="42" name="Golbat" />
       <Pokemon id="315" name="Roselia" />
     </Research>
     <Research task="Trade a Pokemon.">
       <Pokemon id="349" name="Feebas" />
+      <Pokemon id="310" name="Manectric" current="true" />
     </Research>
   </Category>
 
-  <!-- #endregion General -->
+  <!-- #region Research Breakthrough -->
 
-  <!-- #region Events -->
-
-  <!-- #region 2018 -->
-
-  <Event name="April 2018">
-    <Research task="Achieve 7 stamps">
+  <Category type="Research Breakthrough">
+    <Research task="Achieve 7 stamps" startdate="2018-04-01" enddate="2018-04-30">
       <Pokemon id="146" name="Moltres" />
     </Research>
-  </Event>
-
-  <Event name="May 2018: Flying- and Electric-Type Challenges">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-05-01" enddate="2018-05-31">
       <Pokemon id="145" name="Zapdos" />
     </Research>
-  </Event>
-
-  <Event name="June 2018">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-06-01" enddate="2018-06-30">
       <Pokemon id="144" name="Articuno" />
     </Research>
-  </Event>
-
-  <Event name="July 2018:">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-07-01" enddate="2018-07-31">
       <Pokemon id="143" name="Snorlax" />
     </Research>
-    <!-- TODO QZX:
-      https://imgur.com/PhJYzCn 
-      https://i.redd.it/rpgtl8otjm711.png
-    -->
-  </Event>
-
-  <Event name="August 2018: Electric-type">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-08-01" enddate="2018-08-31">
       <Pokemon id="243" name="Raikou" />
     </Research>
-    <Research task="Make 5 Curveball Throws in a row.">
-      <Pokemon id="327" name="Spinda" form="Pattern 1" />
-    </Research>
-    <!-- TODO QZX:
-      https://i.redd.it/n6g2h3a3sod11.png
-      https://i.redd.it/25ay0s8spne11.png
-    -->
-  </Event>
-
-  <Event name="Johto Festival" startdate="2018-08-20" enddate="2018-08-28">
-    <Research task="Evolve 3 Sunkern or Natu.">
-      <Pokemon id="204" name="Pineco" />
-    </Research>
-    <Research task="Win a raid.">
-      <Pokemon id="137" name="Porygon" />
-    </Research>
-    <Research task="Make 3 Excellent Throws.">
-      <Pokemon id="95" name="Onix" />
-      <Pokemon id="123" name="Scyther" />
-    </Research>
-    <Research task="Make 4 Great Curveball Throws in a row.">
-      <Pokemon id="241" name="Miltank" />
-    </Research>
-    <Research task="Catch 5 Water-type Pokemon.">
-      <Pokemon id="117" name="Seadra" />
-      <Pokemon id="61" name="Poliwhirl" />
-    </Research>
-  </Event>
-
-  <Event name="September 2018: Fire-type">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-09-01" enddate="2018-09-30">
       <Pokemon id="244" name="Entei" />
     </Research>
-    <Research task="Make a Great Curveball Throw.">
-      <Pokemon id="327" name="Spinda" form="Pattern 2" />
-    </Research>
-    <!-- TODO QZX:
-      https://i.redd.it/eibmahxbetj11.png
-    -->
-  </Event>
-
-  <Event name="October 2018: Water-type" startdate="2018-10-01" enddate="2018-10-31">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-10-01" enddate="2018-10-31">
       <Pokemon id="245" name="Suicune" />
     </Research>
-    <Research task="Hatch 2 Eggs.">
-      <Pokemon id="120" name="Wailmer" />
-    </Research>
-    <Research task="Evolve 10 Water-type Pokemon.">
-      <Pokemon id="147" name="Dratini" />
-    </Research>
-    <Research task="Make 2 Nice Curveball Throws.">
-      <Pokemon id="327" name="Spinda" form="Pattern 3" />
-    </Research>
-    <Research task="Catch 5 Water-type Pokemon.">
-      <Pokemon id="98" name="Krabby" />
-    </Research>
-    <Research task="Earn a Candy walking with your buddy.">
-      <Pokemon id="224" name="Octillery" />
-    </Research>
-  </Event>
-
-  <Event name="Halloween 2018" startdate="2018-10-23" enddate="2018-10-31">
-    <Research task="Catch 10 Poochyena or Houndour">
-      <Pokemon id="215" name="Sneasel" />
-    </Research>
-    <Research task="Catch 10 Ghost-type Pokemon.">
-      <Pokemon id="302" name="Sableye" />
-    </Research>
-  </Event>
-
-  <Event name="November 2018: Bug-type" startdate="2018-11-01" enddate="2018-11-30">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-11-01" enddate="2018-11-30">
       <Pokemon id="292" name="Shedinja" />
     </Research>
-    <Research task="Evolve 2 Pidgey.">
-      <Pokemon id="10" name="Caterpie" />
-    </Research>
-    <Research task="Make 3 Nice Curveball Throws.">
-      <Pokemon id="327" name="Spinda" form="Pattern 7" />
-    </Research>
-    <Research task="Make 5 Great Throws in a row.">
-      <Pokemon id="40" name="Wigglytuff" />
-    </Research>
-    <Research task="Catch 5 Bug-type Pokemon.">
-      <Pokemon id="290" name="Nincada" />
-    </Research>
-    <Research task="Catch 5 Normal-type Pokemon.">
-      <Pokemon id="127" name="Pinsir" />
-    </Research>
-    <Research task="Win a raid.">
-      <Pokemon id="204" name="Pineco" />
-    </Research>
-    <Research task="Earn a Candy walking with your buddy.">
-      <Pokemon id="36" name="Clefable" />
-    </Research>
-    <Research task="Send 5 Gifts to friends.">
-      <Pokemon id="42" name="Golbat" />
-    </Research>
-  </Event>
-
-  <Event name="Celebration of Pokemon, Let's Go" startdate="2018-11-16" enddate="2018-11-27">
-    <Research task="Let's Go: Evolve 2 Anorith">
-      <Pokemon id="123" name="Scyther" />
-    </Research>
-    <Research task="Let's Go: Make an excellet throw">
-      <Pokemon id="132" name="Ditto" />
-    </Research>
-    <Research task="Let's Go: Hatch 2 Eggs">
-      <Pokemon id="142" name="Aerodactyl" />
-    </Research>
-  </Event>
-
-  <Event name="December 2018: " startdate="2018-12-01" enddate="2018-12-31">
-    <Research task="Achieve 7 stamps">
-      <Pokemon id="144" name="Articuno" />
-      <Pokemon id="145" name="Zapdos" />
-      <Pokemon id="146" name="Moltres" />
-      <Pokemon id="243" name="Raikou" />
-      <Pokemon id="244" name="Entei" />
-      <Pokemon id="245" name="Suicune" />
-    </Research>
-    <Research task="Make 3 Curveball Throws in a row.">
-      <Pokemon id="55" name="Golduck" />
-    </Research>
-    <Research task="Win a raid.">
-      <Pokemon id="137" name="Porygon" />
-    </Research>
-    <Research task="Make a Great Curveball Throw.">
-      <Pokemon id="327" name="Spinda" form="Pattern 6" />
-    </Research>
-  </Event>
-
-  <!-- #endregion 2018 -->
-
-  <!-- #region 2019 -->
-
-  <Event name="January 2019: " startdate="2019-01-01" enddate="2019-01-31">
-    <Research task="Achieve 7 stamps">
+    <Research task="Achieve 7 stamps" startdate="2018-11-01" enddate="2018-02-28">
       <Pokemon id="144" name="Articuno" current="true" />
       <Pokemon id="145" name="Zapdos" current="true" />
       <Pokemon id="146" name="Moltres" current="true" />
@@ -431,129 +372,26 @@
       <Pokemon id="244" name="Entei" current="true" />
       <Pokemon id="245" name="Suicune" current="true" />
     </Research>
-    <Research task="Transfer 3 Pokemon.">
-      <Pokemon id="37" name="Vulpix" current="true" />
-    </Research>
-    <Research task="Trade a Pokemon.">
-      <Pokemon id="310" name="Manectric" current="true" />
-    </Research>
-    <Research task="Earn 5 Candies walking with your buddy.">
-      <Pokemon id="73" name="Tentacruel" current="true" />
-    </Research>
-    <Research task="Send 2 Gifts to friends.">
-      <Pokemon id="92" name="Gastly" current="true" />
-    </Research>
-    <Research task="Win 5 raids.">
-      <Pokemon id="142" name="Aerodactyl" current="true" />
-    </Research>
-    <Research task="Win 5 Gym battles.">
-      <Pokemon id="131" name="Lapras" />
-    </Research>
-    <Research task="Battle in a Gym.">
-      <Pokemon id="66" name="Machop" current="true" />
-    </Research>
-    <Research task="Battle in a raid.">
-      <Pokemon id="96" name="Drowzee" current="true" />
-    </Research>
-    <Research task="Win a level 3 or higher raid.">
-      <Pokemon id="138" name="Omanyte" current="true" />
-      <Pokemon id="140" name="Kabuto" current="true" />
-    </Research>
-    <Research task="Use 5 Razz Berries to help catch Pokemon.">
-      <Pokemon id="104" name="Cubone" current="true" />
-    </Research>
-    <Research task="Catch 7 Flying- Psychic-, or Dark-type Pokemon.">
-      <Pokemon id="347" name="Anorith" current="true" />
-    </Research>
-    <Research task="Catch 7 Electric- Normal-, or Poison-type Pokemon.">
-      <Pokemon id="121" name="Starmie" current="true" />
-    </Research>
-    <Research task="Catch 10 Ground-type Pokemon.">
-      <Pokemon id="27" name="Sandshrew" current="true" />
-    </Research>
-    <Research task="Catch 5 Fighting-type Pokemon.">
-      <Pokemon id="81" name="Magnemite" current="true" />
-    </Research>
-    <Research task="Use 10 Pinap Berries while catching a Pokemon.">
-      <Pokemon id="129" name="Magikarp" current="true" />
-    </Research>
-    <Research task="Catch 10 Pokemon.">
-      <Pokemon id="228" name="Houndour" current="true" />
-    </Research>
-    <Research task="Use 5 Berries to help catch Pokemon.">
-      <Pokemon id="58" name="Growlithe" current="true" />
-    </Research>
-    <Research task="Use an item to evolve a Pokemon.">
-      <Pokemon id="142" name="Aerodactyl" current="true" />
-    </Research>
-    <Research task="Evolve a Pokemon.">
-      <Pokemon id="191" name="Sunkern" current="true" />
-    </Research>
-    <Research task="Hatch an Egg.">
-      <Pokemon id="209" name="Snubbull" current="true" />
-    </Research>
-    <Research task="Make 3 Great Throws.">
-      <Pokemon id="345" name="Lileep" current="true" />
-      <Pokemon id="347" name="Anorith" current="true" />
-    </Research>
-    <Research task="Make 5 Nice Throws.">
-      <Pokemon id="399" name="Bidoof" current="true" />
-    </Research>
-    <Research task="Make 3 Great Curveball Throws in a row.">
-      <Pokemon id="327" name="Spinda" form="Pattern 5" current="true" />
-    </Research>
-  </Event>
+  </Category>
 
-  <Event name="Celebrate the Hoenn region" startdate="2019-01-15" enddate="2019-01-29">
-    <Research task="Hatch 2 Eggs.">
-      <Pokemon id="299" name="Nosepass" />
-    </Research>
-    <Research task="Evolve 3 Wurmple">
-      <Pokemon id="328" name="Trapinch" />
-    </Research>
+  <!-- #endregion Research Breakthrough -->
 
-  </Event>
+  <!-- #endregion General -->
 
-  <Event name="Discover more with Limited Research, featuring Feebas!" startdate="2019-01-19" enddate="2019-01-19">
-    <Research task="Hatch 1 Egg.">
-      <Pokemon id="349" name="Feebas" />
+  <!--
+  <Category type="Special Research Breakthrough">
+    <Research task="Complete 'A Mythical Discovery'">
+      <Pokemon id="151" name="Mew" current="true" />
     </Research>
-    <Research task="Earn a Candy walking with your buddy.">
-      <Pokemon id="349" name="Feebas" />
+    <Research task="Complete 'A Ripple in Time'">
+      <Pokemon id="251" name="Celebi" current="true" />
     </Research>
-    <Research task="Make 15 Nice Throws.">
-      <Pokemon id="349" name="Feebas" />
+    <Research task="Complete 'Catch 108 Pokemon' in 'A Spooky Message'">
+      <Pokemon id="442" name="Spiritomb" current="true" />
     </Research>
-    <Research task="Make 10 Great Throws.">
-      <Pokemon id="349" name="Feebas" />
+    <Research task="Complete 'Let's GO, Meltan">
+      <Pokemon id="808" name="Meltan" current="true" />
     </Research>
-  </Event>
-
-  <Event name="February 2019: " startdate="2019-02-01" enddate="2019-02-28">
-    <Research task="Achieve 7 stamps">
-      <Pokemon id="144" name="Articuno" />
-      <Pokemon id="145" name="Zapdos" />
-      <Pokemon id="146" name="Moltres" />
-      <Pokemon id="243" name="Raikou" />
-      <Pokemon id="244" name="Entei" />
-      <Pokemon id="245" name="Suicune" />
-    </Research>
-    <Research task="I have no idea.">
-      <Pokemon id="390" name="Chimchar" />
-    </Research>
-    <Research task="Trade 10 Pokemon with a friend">
-      <Pokemon id="327" name="Spinda" form="Pattern 4" />
-    </Research>
-    <Research task="Use 5 Razz Berries to help catch Pokemon.">
-      <Pokemon id="104" name="Cubone" current="true" />
-    </Research>
-    <Research task="Catch 7 Flying- Psychic-, or Dark-type Pokemon.">
-      <Pokemon id="347" name="Anorith" current="true" />
-    </Research>
-
-  </Event>
-  <!-- #endregion 2019 -->
-
-  <!-- #endregion Events -->
-
+  </Category>
+-->
 </FieldResearch>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09" gen="2" region="Johto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="2" region="Johto">
   <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-09-22" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Chikorita.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Chikorita_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -1007,7 +1007,7 @@
   </Pokemon>
   <Pokemon id="221" name="Piloswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Piloswine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Piloswine_shiny.png">
     <Type primary="Ice" secondary="Ground" />
-    <EvolvesFrom id="220" name="Swinub" candies="50" />
+    <EvolvesFrom id="220" name="Swinub" candies="25" />
     <Stats>
       <BaseIV attack="181" defense="138" stamina="225" />
       <Height standard="1.0900000333786011" deviation="1.0900000333786011" />
@@ -1059,6 +1059,7 @@
   </Pokemon>
   <Pokemon id="226" name="Mantine" family="Mantine" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Mantine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Mantine_shiny.png">
     <Type primary="Water" secondary="Flying" />
+    <EvolvesFrom id="458" name="Mantyke" candies="50" />
     <Stats>
       <BaseIV attack="148" defense="226" stamina="163" />
       <Height standard="2.1099998950958252" deviation="2.1099998950958252" />
@@ -1151,7 +1152,7 @@
       <Max cp="2164" hp="151" />
     </Stats>
   </Pokemon>
-  <Pokemon id="235" name="Smeargle" family="Smeargle" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Smeargle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/90/Smeargle_shiny.png">
+  <Pokemon id="235" name="Smeargle" family="Smeargle" buddy_km="3" gender_ratio="1 : 1" availability="Photobomb Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Smeargle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/90/Smeargle_shiny.png">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="40" defense="83" stamina="146" />

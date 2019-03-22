@@ -62,7 +62,12 @@
     <WebContent Include="images\items\mystery_box_open.png" />
     <WebContent Include="images\items\special_sinnoh_stone.png" />
     <WebContent Include="images\candy\candy_meltan.png" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\research.event.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
+    <WebContent Include="images\game\box_adventure.png" />
     <Content Include="_datafiles\movesets.gen7.xml" />
+    <Content Include="^\trade.html" />
     <Content Include="__Debugging\qzx.html" />
     <WebContent Include="images\question.png" />
     <WebContent Include="images\candy\candy_spiritomb.png" />
@@ -86,7 +91,9 @@
     <FixIntermediateFile Include="_datafiles.manual\raidbosses.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
-    <FixIntermediateFile Include="_datafiles.manual\shoppingboxes.xml" />
+    <FixIntermediateFile Include="_datafiles.manual\shoppingboxes.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.availability.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
@@ -98,7 +105,7 @@
     <FixIntermediateFile Include="_datafiles.manual\infrequent\special.moves.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.research.xml">
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\research.special.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
   </ItemGroup>

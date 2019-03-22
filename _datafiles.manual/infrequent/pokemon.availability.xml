@@ -4,7 +4,7 @@
   https://thesilphroad.com/catalog
 -->
 
-<PokemonAvailability last_updated="2019-02-09">
+<PokemonAvailability last_updated="2019-02-26">
   <Pokemon id="0" name="Dummy to make index line up." />
   
   <!-- #region Gen1 -->
@@ -23,15 +23,15 @@
   <Pokemon id="13" name="Weedle" date="2016-07-06" availability="General" />
   <Pokemon id="14" name="Kakuna" date="2016-07-06" availability="General" />
   <Pokemon id="15" name="Beedrill" date="2016-07-06" availability="General" />
-  <Pokemon id="16" name="Pidgey" date="2016-07-06" availability="General" />
-  <Pokemon id="17" name="Pidgeotto" date="2016-07-06" availability="General" />
-  <Pokemon id="18" name="Pidgeot" date="2016-07-06" availability="General" />
+  <Pokemon id="16" name="Pidgey" date="2016-07-06" availability="General" shiny="2019-02-26" />
+  <Pokemon id="17" name="Pidgeotto" date="2016-07-06" availability="General" shiny="2019-02-26" />
+  <Pokemon id="18" name="Pidgeot" date="2016-07-06" availability="General" shiny="2019-02-26" />
   <Pokemon id="19" name="Rattata">
-    <Form name="Normal" date="2016-07-06" availability="General" />
+    <Form name="Normal" date="2016-07-06" availability="General" shiny="2019-02-26" />
     <Form name="Alola" date="2018-06-23" availability="General" />
   </Pokemon>
   <Pokemon id="20" name="Raticate">
-    <Form name="Normal" date="2016-07-06" availability="General" />
+    <Form name="Normal" date="2016-07-06" availability="General" shiny="2019-02-26" />
     <Form name="Alola" date="2018-06-23" availability="General" />
   </Pokemon>
   <Pokemon id="21" name="Spearow" date="2016-07-06" availability="General" />
@@ -328,7 +328,7 @@
   <Pokemon id="232" name="Donphan" date="2017-02-16" availability="General" />
   <Pokemon id="233" name="Porygon2" date="2017-02-16" availability="General" />
   <Pokemon id="234" name="Stantler" date="2017-02-16" availability="General" />
-  <Pokemon id="235" name="Smeargle" availability="Unreleased" />
+  <Pokemon id="235" name="Smeargle" date="2019-02-26" availability="Photobomb Only" />
   <Pokemon id="236" name="Tyrogue" date="2017-02-16" availability="Hatch Only" />
   <Pokemon id="237" name="Hitmontop" date="2017-02-16" availability="General" />
   <Pokemon id="238" name="Smoochum" date="2016-12-12" availability="Hatch Only" />
@@ -427,7 +427,7 @@
     <Form name="Pattern 1" date="2018-08-01" availability="Encounter Only" />
     <Form name="Pattern 2" date="2018-09-01" availability="Encounter Only" />
     <Form name="Pattern 3" date="2018-10-01" availability="Encounter Only" />
-    <Form name="Pattern 4" availability="Unreleased" />
+    <Form name="Pattern 4" date="2019-02-01" availability="Encounter Only" />
     <Form name="Pattern 5" date="2019-01-01" availability="Encounter Only" />
     <Form name="Pattern 6" date="2018-12-01" availability="Encounter Only" />
     <Form name="Pattern 7" availability="Unreleased" />

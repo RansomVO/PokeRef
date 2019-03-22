@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Moves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" category="Charged">
+<Moves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" category="Charged">
   <Move name="Wrap" type="Normal" energy="-33" power="60" duration="2.9" damage_window_start="2050" damage_window_end="2700" />
   <Move name="Hyper Beam" type="Normal" energy="-100" power="150" duration="3.8" damage_window_start="3300" damage_window_end="3600" />
   <Move name="Dark Pulse" type="Dark" energy="-50" power="80" duration="3" damage_window_start="1400" damage_window_end="2300" />
@@ -133,4 +133,7 @@
   <Move name="Hydro Cannon" type="Water" energy="-50" power="90" duration="1.9" damage_window_start="500" damage_window_end="1600" />
   <Move name="Last Resort" type="Normal" energy="-50" power="90" duration="2.9" damage_window_start="2700" damage_window_end="2850" />
   <Move name="Meteor Mash" type="Steel" energy="-50" power="100" duration="2.6" damage_window_start="2300" damage_window_end="2500" />
+  <Move name="Acid Spray" type="Poison" energy="-50" power="20" duration="3" damage_window_start="2100" damage_window_end="2800" />
+  <Move name="Leaf Tornado" type="Grass" energy="-33" power="45" duration="3.1" damage_window_start="2000" damage_window_end="2600" />
+  <Move name="Power Up Punch" type="Fighting" energy="-33" power="50" duration="2" damage_window_start="1700" damage_window_end="1900" />
 </Moves>

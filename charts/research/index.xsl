@@ -77,18 +77,20 @@
 
         <br />
         <hr />
-        <xsl:apply-templates select="SpecialResearch" />
+        <xsl:call-template name="CreateKey" />
 
         <br />
-        <hr />
+        <hr class="SECTION_BORDER" />
         <xsl:apply-templates select="FieldResearch" />
+
+        <br />
+        <hr class="SECTION_BORDER" />
+        <xsl:apply-templates select="SpecialResearch" />
 
         <xsl:call-template name="WriteFooter" />
       </body>
     </html>
   </xsl:template>
-
-  <!-- #region Special Research -->
 
   <xsl:template match="SpecialResearch">
     <h2>
@@ -114,7 +116,24 @@
     </div>
   </xsl:template>
 
-  <!-- #endregion Special Research -->
+  <xsl:template match="EventResearch">
+    <h2>
+      <xsl:call-template name="Collapser">
+        <xsl:with-param name="CollapseeID" select="'EVENT_RESEARCH_TASKS'" />
+      </xsl:call-template>
+      <xsl:text>Event Research Tasks</xsl:text>
+    </h2>
+    <div id="EVENT_RESEARCH_TASKS" class="INDENT">
+      <p>
+        Occasionally, Pokemon GO has special events which have research tasks associated with them.
+      </p>
+
+      <hr />
+      <xsl:apply-templates select="Event">
+        <xsl:sort order="descending" select="@startdate" />
+      </xsl:apply-templates>
+    </div>
+  </xsl:template>
 
   <!-- #region Field Research -->
 
@@ -134,19 +153,17 @@
 
       <br />
       <hr />
-      <xsl:call-template name="CreateKey" />
-
-      <br />
       <xsl:call-template name="CreateCriteria" />
-
-      <br />
-      <hr />
       <div id="ByTask" style="display:none;">
         <xsl:apply-templates select="." mode="ByTask" />
       </div>
       <div id="ByEncounter" style="display:none;">
         <xsl:apply-templates select="." mode="ByEncounter" />
       </div>
+
+      <br />
+      <hr />
+      <xsl:apply-templates select="../EventResearch" />
     </div>
   </xsl:template>
 
@@ -214,21 +231,6 @@
   <xsl:template match="FieldResearch" mode="ByTask">
     <h2>
       <xsl:call-template name="Collapser">
-        <xsl:with-param name="CollapseeID" select="'EVENT_RESEARCH_TASKS'" />
-      </xsl:call-template>
-      <xsl:text>Event Research Tasks</xsl:text>
-    </h2>
-    <div id="EVENT_RESEARCH_TASKS" class="INDENT">
-      <p>
-        Some Research Tasks do change frequently.
-        In fact, except for the first few months, there are new Research Tasks and Encounters released every month.
-      </p>
-      <xsl:apply-templates select="Event">
-        <xsl:sort order="descending" select="@startdate" />
-      </xsl:apply-templates>
-    </div>
-    <h2>
-      <xsl:call-template name="Collapser">
         <xsl:with-param name="CollapseeID" select="'STANDARD_RESEARCH_TASKS'" />
       </xsl:call-template>
       <xsl:text>Standard Research Tasks</xsl:text>
@@ -237,7 +239,7 @@
       <p>
         This is a set of Research Tasks and Encounters that don't change much.
       </p>
-      <xsl:apply-templates select="Category[not(@type='Research Breakthrough')]" />
+      <xsl:apply-templates select="Category" />
     </div>
   </xsl:template>
 
@@ -350,7 +352,7 @@
           <th>Encounters</th>
           <th>Task</th>
         </tr>
-        <xsl:apply-templates select="Category/Research/Pokemon[not(@id=preceding::Research/Pokemon/@id)]" mode="ByEncounter">
+        <xsl:apply-templates select="Category/Research[@current]/Pokemon[not(@id=preceding::Research/Pokemon/@id)]" mode="ByEncounter">
           <xsl:sort order="ascending" data-type="number" select="@id" />
         </xsl:apply-templates>
       </table>

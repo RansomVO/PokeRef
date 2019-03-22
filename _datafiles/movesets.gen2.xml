@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-01" gen="2">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="2">
   <Pokemon id="152" name="Chikorita">
     <MoveSet base_dps="16.451612903225808" true_dps="11.397849462365592" comparison="87">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -2342,12 +2342,7 @@
       <ChargedAttack name="Megahorn" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="235" name="Smeargle">
-    <MoveSet base_dps="15.909090909090908" true_dps="5.9090909090909083" comparison="100">
-      <FastAttack name="Tackle" stab="true" legacy="false" />
-      <ChargedAttack name="Struggle" stab="true" legacy="false" />
-    </MoveSet>
-  </Pokemon>
+  <Pokemon id="235" name="Smeargle" />
   <Pokemon id="236" name="Tyrogue">
     <MoveSet base_dps="14.705882352941176" true_dps="7.6470588235294112" comparison="98">
       <FastAttack name="Rock Smash" stab="true" legacy="false" />

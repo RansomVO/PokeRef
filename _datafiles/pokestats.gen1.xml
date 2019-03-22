@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -160,7 +160,7 @@
       <Max cp="1846" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="16" name="Pidgey" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Pidgey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Pidgey_shiny.png">
+  <Pokemon id="16" name="Pidgey" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Pidgey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Pidgey_shiny.png">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="85" defense="73" stamina="120" />
@@ -170,7 +170,7 @@
       <Max cp="680" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="17" name="Pidgeotto" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Pidgeotto.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/02/Pidgeotto_shiny.png">
+  <Pokemon id="17" name="Pidgeotto" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Pidgeotto.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/02/Pidgeotto_shiny.png">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="16" name="Pidgey" candies="12" />
     <Stats>
@@ -181,7 +181,7 @@
       <Max cp="1194" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="18" name="Pidgeot" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Pidgeot.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Pidgeot_shiny.png">
+  <Pokemon id="18" name="Pidgeot" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Pidgeot.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Pidgeot_shiny.png">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="17" name="Pidgeotto" candies="50" />
     <Stats>
@@ -212,7 +212,7 @@
       <Max cp="734" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
+  <Pokemon id="19" name="Rattata" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="103" defense="70" stamina="102" />
@@ -244,7 +244,7 @@
       <Max cp="1705" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
+  <Pokemon id="20" name="Raticate" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
     <Type primary="Normal" />
     <EvolvesFrom id="19" name="Rattata" candies="25" />
     <Stats>
