@@ -112,7 +112,6 @@
         </a>
         <br />
       </xsl:for-each>
-      <xsl:apply-templates select="/Root/FieldResearch/Category[@type='Research Breakthrough']" />
     </div>
   </xsl:template>
 

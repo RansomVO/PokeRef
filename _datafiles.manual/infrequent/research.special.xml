@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SpecialResearch last_updated="2018-11-16">
+<SpecialResearch last_updated="201-11-16">
   <Event name="A Mythical Discovery" encounter="Mew">
     <Stage stage="1">
       <Research task="Spin Five PokeStops">
-        <Item id="XP" reward="500" />
+        <Item id="XP" amount="500" />
       </Research>
       <Research task="Catch 10 Pokemon">
-        <Item id="XP" reward="500" />
+        <Item id="XP" amount="500" />
       </Research>
       <Research task="Transver 5 Pokemon">
-        <Item id="XP" reward="500" />
+        <Item id="XP" amount="500" />
       </Research>
       <Rewards>
         <Item id="BallGreat" amount="10" />
@@ -19,13 +19,13 @@
     </Stage>
     <Stage stage="2">
       <Research task="Earn Two Candy While Walking Your Buddy">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Research task="Make 10 Great Throws">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Research task="Hatch Three Eggs">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="2000" />
@@ -35,29 +35,29 @@
     </Stage>
     <Stage stage="3">
       <Research task="Reach Trainer Level 15">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Research task="Battle In Two Raids">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Research task="Battle In A Gym Twice">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Rewards>
         <Item id="TMFast" amount="1" />
-        <Item id="TMCharge" amount="1" />
+        <Item id="TMCharged" amount="1" />
         <Item id="StarPiece" amount="2" />
       </Rewards>
     </Stage>
     <Stage stage="4">
       <Research task="Earn The Kanto Silver Medal">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Research task="Evolve 20 Pokemon">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Research task="Earn Five Candy While Walking Your Buddy">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="4000" />
@@ -67,13 +67,13 @@
     </Stage>
     <Stage stage="5">
       <Research task="Catch Ditto">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Research task="Catch 10 Ghost-Types">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Research task="Perform 20 Great Throws">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Rewards>
         <Item id="RaidPassPremium" amount="1" />
@@ -83,13 +83,13 @@
     </Stage>
     <Stage stage="6">
       <Research task="Reach Trainer Level 25">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Research task="Evolve A Magikarp">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Research task="Perform 10 Raids">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="6000" />
@@ -99,13 +99,13 @@
     </Stage>
     <Stage stage="7">
       <Research task="Catch 50 Pokemon Using A Berry">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Research task="Earn A Kanto Gold Medal">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Research task="Perform An Excellent Curve Throw">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="8000" />
@@ -115,7 +115,7 @@
     </Stage>
     <Stage stage="8">
       <Research task="Catch Mew">
-        <Item id="XP" reward="4000" />
+        <Item id="XP" amount="4000" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="10000" />
@@ -127,13 +127,13 @@
   <Event name="A Ripple in Time" encounter="Celebi">
     <Stage stage="1">
       <Research task="Power up Pokemon 5 times">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Research task="Battle in a raid">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Research task="Battle in a Gym 2 times">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Rewards>
         <Item id="BallRegular" amount="10" />
@@ -143,13 +143,13 @@
     </Stage>
     <Stage stage="2">
       <Research task="Make 3 new friends">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Research task="Evolve an evolved Grass-Type Pokemon">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Research task="Catch a Pokemon 3 days in a row">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="1500" />
@@ -159,13 +159,13 @@
     </Stage>
     <Stage stage="3">
       <Research task="Reach level 25">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Research task="Use a Sun Stone to evolve Gloom or Sunkern">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Research task="Hatch 9 eggs">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Rewards>
         <Pokemon id="133" name="Eevee" />
@@ -175,13 +175,13 @@
     </Stage>
     <Stage stage="4">
       <Research task="Walk 10 KM with Eevee as your buddy to earn Candy">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Research task="Evolve Eevee into Espeon during the day">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Research task="Send 20 Gifts to friends">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Rewards>
         <Pokemon id="133" name="Eevee" />
@@ -191,13 +191,13 @@
     </Stage>
     <Stage stage="5">
       <Research task="Walk 10 KM with Eevee as your buddy to earn Candy">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Research task="Evolve Eevee into Umbreon at night">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Research task="Trade a Pokemon">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Rewards>
         <Item id="StarPiece" amount="1" />
@@ -207,13 +207,13 @@
     </Stage>
     <Stage stage="6">
       <Research task="Visit PokeStops 7 days in a row">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Research task="Use 25 Pinap Berries while catching Pokemon">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Research task="Use items to evolve Pokemon 2 times">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="3500" />
@@ -223,13 +223,13 @@
     </Stage>
     <Stage stage="7">
       <Research task="Catch 40 Grass- or Psychic-type Pokemon">
-        <Item id="XP" reward="4000" />
+        <Item id="XP" amount="4000" />
       </Research>
       <Research task="Earn a Gold Johto medal">
-        <Item id="XP" reward="4000" />
+        <Item id="XP" amount="4000" />
       </Research>
       <Research task="Make an Excellent Curveball Throw">
-        <Item id="XP" reward="4000" />
+        <Item id="XP" amount="4000" />
       </Research>
       <Rewards>
         <Pokemon id="251" name="Celebi" />
@@ -239,7 +239,7 @@
     </Stage>
     <Stage stage="8">
       <Research task="Catch Celebi">
-        <Item id="XP" reward="13500" />
+        <Item id="XP" amount="13500" />
       </Research>
       <Rewards>
         <Item id="CandyCelebi" amount="20" />
@@ -254,7 +254,7 @@
         <Pokemon id="355" name="Duskull" />
       </Research>
       <Research task="Make 8 Great Throws">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Research task="Use 108 Berries to help catch Pokemon">
         <Pokemon id="108" name="Lickitung" />
@@ -270,7 +270,7 @@
         <Pokemon id="200" name="Misdreavus" />
       </Research>
       <Research task="Spin 8 PokeStops you haven't visited before">
-        <Item id="XP" reward="1080" />
+        <Item id="XP" amount="1080" />
       </Research>
       <Research task="Catch 108 Pokemon">
         <Pokemon id="442" name="Spiritomb" />
@@ -283,13 +283,13 @@
     </Stage>
     <Stage stage="3">
       <Research task="Claim Reward">
-        <Item id="XP" reward="1080" />
+        <Item id="XP" amount="1080" />
       </Research>
       <Research task="Claim Reward">
-        <Item id="XP" reward="1080" />
+        <Item id="XP" amount="1080" />
       </Research>
       <Research task="Claim Reward">
-        <Item id="XP" reward="1080" />
+        <Item id="XP" amount="1080" />
       </Research>
       <Rewards>
         <Item id="CandySpiritomb" amount="10" />
@@ -301,13 +301,13 @@
   <Event name="Let's Go, Meltan" encounter="Meltan">
     <Stage stage="1">
       <Research task="Spin 5 PokeStops or Gyms">
-        <Item id="XP" reward="500" />
+        <Item id="XP" amount="500" />
       </Research>
       <Research task="Catch 10 Pokemon">
-        <Item id="XP" reward="500" />
+        <Item id="XP" amount="500" />
       </Research>
       <Research task="Transfer 5 Pokemon">
-        <Item id="XP" reward="500" />
+        <Item id="XP" amount="500" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="1000" />
@@ -317,13 +317,13 @@
     </Stage>
     <Stage stage="2">
       <Research task="Earn 2 Candies walking with your Buddy">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Research task="Make 10 Great Throws">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Research task="Hatch 3 Eggs">
-        <Item id="XP" reward="1000" />
+        <Item id="XP" amount="1000" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="2000" />
@@ -333,13 +333,13 @@
     </Stage>
     <Stage stage="3">
       <Research task="Catch a Ditto">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Research task="Win 2 Gym battles">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Research task="Battle in 2 raids">
-        <Item id="XP" reward="1500" />
+        <Item id="XP" amount="1500" />
       </Research>
       <Rewards>
         <Item id="BallGreat" amount="10" />
@@ -349,13 +349,13 @@
     </Stage>
     <Stage stage="4">
       <Research task="Catch 5 Steel-type Pokemon">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Research task="Catch 5 Electric-type Pokemon">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Research task="Earn 5 Candies walking with your buddy">
-        <Item id="XP" reward="2000" />
+        <Item id="XP" amount="2000" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="4000" />
@@ -365,13 +365,13 @@
     </Stage>
     <Stage stage="5">
       <Research task="Evolve a Grimer">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Research task="Catch 5 Slugma or Gulpin">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Research task="Make 20 Great Throws">
-        <Item id="XP" reward="2500" />
+        <Item id="XP" amount="2500" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="5000" />
@@ -381,13 +381,13 @@
     </Stage>
     <Stage stage="6">
       <Research task="Evolve a Magnemite">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Research task="Catch 5 Exeggcute">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Research task="Battle in 10 raids">
-        <Item id="XP" reward="3000" />
+        <Item id="XP" amount="3000" />
       </Research>
       <Rewards>
         <Item id="BerrySilverPinap" amount="1" />
@@ -397,13 +397,13 @@
     </Stage>
     <Stage stage="7">
       <Research task="Evolve 1 Drowzee">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Research task="Catch 1 Cubone">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Research task="Evolve 1 Scyther">
-        <Item id="XP" reward="3500" />
+        <Item id="XP" amount="3500" />
       </Research>
       <Rewards>
         <Item id="BallUltra" amount="10" />
@@ -413,13 +413,13 @@
     </Stage>
     <Stage stage="8">
       <Research task="Catch 2 Omanyte or Kabuto">
-        <Item id="XP" reward="4000" />
+        <Item id="XP" amount="4000" />
       </Research>
       <Research task="Catch 2 Lileep or Anority">
-        <Item id="XP" reward="4000" />
+        <Item id="XP" amount="4000" />
       </Research>
       <Research task="Catch an Aerodactyl">
-        <Item id="XP" reward="4000" />
+        <Item id="XP" amount="4000" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="8000" />
@@ -429,13 +429,13 @@
     </Stage>
     <Stage stage="9">
       <Research task="Claim Reward">
-        <Item id="XP" reward="4500" />
+        <Item id="XP" amount="4500" />
       </Research>
       <Research task="Claim Reward">
-        <Item id="XP" reward="4500" />
+        <Item id="XP" amount="4500" />
       </Research>
       <Research task="Claim Reward">
-        <Item id="XP" reward="4500" />
+        <Item id="XP" amount="4500" />
       </Research>
       <Rewards>
         <Item id="Stardust" amount="9000" />

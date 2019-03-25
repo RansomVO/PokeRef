@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="4" region="Sinnoh">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="4" region="Sinnoh">
   <Pokemon id="387" name="Turtwig" family="Turtwig" buddy_km="3" gender_ratio="7 : 1" availability="General" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png">
     <Type primary="Grass" />
     <Stats>
@@ -686,7 +686,7 @@
       <Max cp="1095" hp="79" />
     </Stats>
   </Pokemon>
-  <Pokemon id="440" name="Happiny" family="Chansey" buddy_km="5" gender_ratio="♀" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png">
+  <Pokemon id="440" name="Happiny" family="Chansey" buddy_km="5" gender_ratio="♀" availability="Hatch Only: 7K" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="25" defense="77" stamina="225" />
@@ -1036,7 +1036,7 @@
       <Max cp="2692" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="473" name="Mamoswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png">
+  <Pokemon id="473" name="Mamoswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" shiny="2019-02-16" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png">
     <Type primary="Ice" secondary="Ground" />
     <EvolvesFrom id="221" name="Piloswine" candies="100" special="SinnohStone" />
     <Stats>
@@ -1202,7 +1202,7 @@
       <Max cp="3210" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="483" name="Dialga" family="Dialga" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png">
+  <Pokemon id="483" name="Dialga" family="Dialga" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png">
     <Type primary="Steel" secondary="Dragon" />
     <Stats>
       <BaseIV attack="275" defense="211" stamina="205" />
@@ -1262,7 +1262,7 @@
       <Max cp="3379" hp="236" />
     </Stats>
   </Pokemon>
-  <Pokemon id="487" name="Giratina" form="Origin" family="Giratina" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-origin.png">
+  <Pokemon id="487" name="Giratina" form="Origin" family="Giratina" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-origin.png">
     <Type primary="Ghost" secondary="Dragon" />
     <Stats>
       <BaseIV attack="225" defense="187" stamina="284" />

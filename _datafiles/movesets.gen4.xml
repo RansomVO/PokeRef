@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="4">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="4">
   <Pokemon id="387" name="Turtwig">
     <MoveSet base_dps="15.730337078651685" true_dps="13.033707865168539" comparison="91">
       <FastAttack name="Tackle" stab="false" legacy="false" />
@@ -1455,14 +1455,6 @@
       <FastAttack name="Zen Headbutt" stab="false" legacy="false" />
       <ChargedAttack name="Psychic" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.314606741573037" true_dps="4.3820224719101128" comparison="104">
-      <FastAttack name="Pound" stab="true" legacy="false" />
-      <ChargedAttack name="Dazzling Gleam" stab="false" legacy="true" />
-    </MoveSet>
-    <MoveSet base_dps="17.777777777777779" true_dps="4" comparison="95">
-      <FastAttack name="Zen Headbutt" stab="false" legacy="false" />
-      <ChargedAttack name="Dazzling Gleam" stab="false" legacy="true" />
-    </MoveSet>
   </Pokemon>
   <Pokemon id="441" name="Chatot">
     <MoveSet base_dps="14.473684210526317" true_dps="16.447368421052634" comparison="70">
@@ -2372,6 +2364,14 @@
     <MoveSet base_dps="15.268817204301074" true_dps="21.72043010752688" comparison="78">
       <FastAttack name="Powder Snow" stab="true" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="14.935064935064936" true_dps="21.688311688311689" comparison="78">
+      <FastAttack name="Mud Slap" stab="true" legacy="false" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="13.538461538461538" true_dps="18.76923076923077" comparison="67">
+      <FastAttack name="Powder Snow" stab="true" legacy="false" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="474" name="Porygon-Z">

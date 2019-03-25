@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="2" region="Johto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="2" region="Johto">
   <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-09-22" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Chikorita.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Chikorita_shiny.png">
     <Type primary="Grass" />
     <Stats>
@@ -138,7 +138,7 @@
       <Max cp="2024" hp="189" />
     </Stats>
   </Pokemon>
-  <Pokemon id="165" name="Ledyba" family="Ledyba" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a8/Ledyba.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e5/Ledyba_shiny.png">
+  <Pokemon id="165" name="Ledyba" family="Ledyba" buddy_km="1" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a8/Ledyba.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e5/Ledyba_shiny.png">
     <Type primary="Bug" secondary="Flying" />
     <Stats>
       <BaseIV attack="72" defense="118" stamina="120" />
@@ -222,7 +222,7 @@
       <Max cp="473" hp="79" />
     </Stats>
   </Pokemon>
-  <Pokemon id="173" name="Cleffa" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="Hatch Only: 2K" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Cleffa.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Cleffa_shiny.png">
+  <Pokemon id="173" name="Cleffa" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="Hatch Only: 2K" shiny="2019-02-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Cleffa.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Cleffa_shiny.png">
     <Type primary="Fairy" />
     <Stats>
       <BaseIV attack="75" defense="79" stamina="137" />
@@ -995,7 +995,7 @@
       <Max cp="1702" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="220" name="Swinub" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Swinub.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f7/Swinub_shiny.png">
+  <Pokemon id="220" name="Swinub" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-02-22" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Swinub.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f7/Swinub_shiny.png">
     <Type primary="Ice" secondary="Ground" />
     <Stats>
       <BaseIV attack="90" defense="69" stamina="137" />
@@ -1005,7 +1005,7 @@
       <Max cp="741" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="221" name="Piloswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Piloswine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Piloswine_shiny.png">
+  <Pokemon id="221" name="Piloswine" family="Swinub" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-02-22" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Piloswine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Piloswine_shiny.png">
     <Type primary="Ice" secondary="Ground" />
     <EvolvesFrom id="220" name="Swinub" candies="25" />
     <Stats>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="2">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="2">
   <Pokemon id="152" name="Chikorita">
     <MoveSet base_dps="16.451612903225808" true_dps="11.397849462365592" comparison="87">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -260,6 +260,18 @@
     <MoveSet base_dps="16.867469879518072" true_dps="20.481927710843372" comparison="81">
       <FastAttack name="Water Gun" stab="true" legacy="true" />
       <ChargedAttack name="Ice Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="19.611650485436893" true_dps="27.669902912621357" comparison="110">
+      <FastAttack name="Waterfall" stab="true" legacy="false" />
+      <ChargedAttack name="Hydro Cannon" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="20" true_dps="25.595238095238095" comparison="102">
+      <FastAttack name="Bite" stab="false" legacy="false" />
+      <ChargedAttack name="Hydro Cannon" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="20.289855072463766" true_dps="28.115942028985504" comparison="112">
+      <FastAttack name="Water Gun" stab="true" legacy="true" />
+      <ChargedAttack name="Hydro Cannon" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="161" name="Sentret">

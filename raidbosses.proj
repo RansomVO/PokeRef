@@ -382,6 +382,24 @@
      <OutputFileName>raidboss.yanma.html</OutputFileName>
     </XslTransform>
     <!-- #endregion Yanma -->
+    <!-- #region Lotad -->
+    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.lotad.xml">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform  Include="charts\raidboss\raidboss.lotad.html.xml">
+     <Visible>true</Visible>
+     <DependentUpon>raidboss.xsl</DependentUpon>
+     <Dependencies>
+       charts\raidboss\raidboss.js;
+       js\global.js;
+       _datafiles\raidboss\raidboss.lotad.xml;
+       charts\raidboss\index.css;
+       charts\index.css;
+       index.css;
+     </Dependencies>
+     <OutputFileName>raidboss.lotad.html</OutputFileName>
+    </XslTransform>
+    <!-- #endregion Lotad -->
     <!-- #region Wingull -->
     <FixIntermediateFile Include="_datafiles\raidboss\raidboss.wingull.xml">
       <Visible>true</Visible>
@@ -490,6 +508,24 @@
      <OutputFileName>raidboss.wailmer.html</OutputFileName>
     </XslTransform>
     <!-- #endregion Wailmer -->
+    <!-- #region Cacnea -->
+    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.cacnea.xml">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform  Include="charts\raidboss\raidboss.cacnea.html.xml">
+     <Visible>true</Visible>
+     <DependentUpon>raidboss.xsl</DependentUpon>
+     <Dependencies>
+       charts\raidboss\raidboss.js;
+       js\global.js;
+       _datafiles\raidboss\raidboss.cacnea.xml;
+       charts\raidboss\index.css;
+       charts\index.css;
+       index.css;
+     </Dependencies>
+     <OutputFileName>raidboss.cacnea.html</OutputFileName>
+    </XslTransform>
+    <!-- #endregion Cacnea -->
     <!-- #region Swablu -->
     <FixIntermediateFile Include="_datafiles\raidboss\raidboss.swablu.xml">
       <Visible>true</Visible>
@@ -2308,6 +2344,24 @@
      <OutputFileName>raidboss.deoxys.attack.html</OutputFileName>
     </XslTransform>
     <!-- #endregion Deoxys -->
+    <!-- #region Deoxys -->
+    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.defense.xml">
+      <Visible>true</Visible>
+    </FixIntermediateFile>
+    <XslTransform  Include="charts\raidboss\raidboss.deoxys.defense.html.xml">
+     <Visible>true</Visible>
+     <DependentUpon>raidboss.xsl</DependentUpon>
+     <Dependencies>
+       charts\raidboss\raidboss.js;
+       js\global.js;
+       _datafiles\raidboss\raidboss.deoxys.defense.xml;
+       charts\raidboss\index.css;
+       charts\index.css;
+       index.css;
+     </Dependencies>
+     <OutputFileName>raidboss.deoxys.defense.html</OutputFileName>
+    </XslTransform>
+    <!-- #endregion Deoxys -->
     <!-- #region Articuno -->
     <FixIntermediateFile Include="_datafiles\raidboss\raidboss.articuno.xml">
       <Visible>true</Visible>
@@ -2722,24 +2776,6 @@
      <OutputFileName>raidboss.jirachi.html</OutputFileName>
     </XslTransform>
     <!-- #endregion Jirachi -->
-    <!-- #region Deoxys -->
-    <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.defense.xml">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform  Include="charts\raidboss\raidboss.deoxys.defense.html.xml">
-     <Visible>true</Visible>
-     <DependentUpon>raidboss.xsl</DependentUpon>
-     <Dependencies>
-       charts\raidboss\raidboss.js;
-       js\global.js;
-       _datafiles\raidboss\raidboss.deoxys.defense.xml;
-       charts\raidboss\index.css;
-       charts\index.css;
-       index.css;
-     </Dependencies>
-     <OutputFileName>raidboss.deoxys.defense.html</OutputFileName>
-    </XslTransform>
-    <!-- #endregion Deoxys -->
     <!-- #region Deoxys -->
     <FixIntermediateFile Include="_datafiles\raidboss\raidboss.deoxys.speed.xml">
       <Visible>true</Visible>

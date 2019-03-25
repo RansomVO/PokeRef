@@ -253,9 +253,10 @@
           <th colspan="3" style="font-size:1em;">
             <xsl:attribute name="style">
               <xsl:choose>
-                <xsl:when test="$type='Special'">font-size:1em;</xsl:when>
+                <xsl:when test="$type='Special'">font-size:1.5em;</xsl:when>
                 <xsl:when test="$type='Great'">font-size:2em;</xsl:when>
                 <xsl:when test="$type='Ultra'">font-size:3em;</xsl:when>
+                <xsl:when test="$type='Other'">font-size:3em;</xsl:when>
               </xsl:choose>
             </xsl:attribute>
 

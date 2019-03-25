@@ -99,7 +99,7 @@ window.onload = function () {
     try {
         GetFields();</xsl:text>
 
-    <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0 or ShoppingBoxes/Box[@type='Special']/@price=0 or ShoppingBoxes/Box[@type='Great']/@price=0 or ShoppingBoxes/Box[@type='Ultra']/@price=0">
+    <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0 or ShoppingBoxes/Box[@type='Special']/@price=0 or ShoppingBoxes/Box[@type='Great']/@price=0 or ShoppingBoxes/Box[@type='Ultra']/@price=0 or ShoppingBoxes/Box[@type='Other']/@price=0">
       <xsl:text>
         // Hide boxes that are not available.
 </xsl:text>
@@ -114,6 +114,9 @@ window.onload = function () {
       </xsl:if>
       <xsl:if test="ShoppingBoxes/Box[@type='Ultra']/@price=0">
         <xsl:text>        document.getElementById('UltraBox').style.display = 'none';</xsl:text>
+      </xsl:if>
+      <xsl:if test="ShoppingBoxes/Box[@type='Other']/@price=0">
+        <xsl:text>        document.getElementById('Other').style.display = 'none';</xsl:text>
       </xsl:if>
     </xsl:if>
     <xsl:text>
@@ -206,7 +209,21 @@ function GetFields() {
       <xsl:text>_Qty');
 </xsl:text>
     </xsl:for-each>
-    <xsl:text>}
+
+    <xsl:text>
+    OtherBox_Price = document.getElementById('OtherBox_Price');
+    OtherBox_Total = document.getElementById('OtherBox_Total');
+    OtherBox_Discount = document.getElementById('OtherBox_Discount');
+</xsl:text>
+    <xsl:for-each select="ShoppingBoxes/ItemValue">
+      <xsl:text>    OtherBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty = document.getElementById('OtherBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty');
+</xsl:text>
+    </xsl:for-each>}
+    <xsl:text>
 
 // Reset all of the fields.
 //  (If clearCache, also reset the cookies.)
@@ -247,7 +264,9 @@ function InitialCheck(checkbox, index, checkDefault) {
     <xsl:value-of select="concat($amp,$amp)" disable-output-escaping="yes" />
     <xsl:text> GreatBox[index] === 0 </xsl:text>
     <xsl:value-of select="concat($amp,$amp)" disable-output-escaping="yes" />
-    <xsl:text> UltraBox[index] === 0) {
+    <xsl:text> UltraBox[index] === 0 </xsl:text> 
+    <xsl:value-of select="concat($amp,$amp)" disable-output-escaping="yes" />
+      <xsl:text> OtherBox[index] === 0) {
         checkbox.checked = false;
         checkbox.parentNode.classList.add('DISABLED');
     } else {
@@ -371,6 +390,17 @@ function OnValueChanged(field) {
       <xsl:value-of select="@item" />
       <xsl:text>_Value.value;
             }
+            if (OtherBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty.value !== '') {
+                OtherBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.value = OtherBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Qty.value * </xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.value;
+            }
         }
 </xsl:text>
     </xsl:for-each>
@@ -415,6 +445,17 @@ function OnValueChanged(field) {
             + (</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Check.checked ? Number(UltraBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.value) : 0)</xsl:text>
+    </xsl:for-each>
+    <xsl:text>;
+
+        OtherBox_Total.value = 0</xsl:text>
+    <xsl:for-each select="ShoppingBoxes/ItemValue">
+      <xsl:text>
+            + (</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Check.checked ? Number(OtherBox_</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Value.value) : 0)</xsl:text>
     </xsl:for-each>
@@ -468,6 +509,18 @@ function OnValueChanged(field) {
             UltraBox_Discount.classList.remove('BAD');
             UltraBox_Discount.classList.add('GOOD');
         }
+
+        value = Math.round((1 - (Number(OtherBox_Price.value) / Number(OtherBox_Total.value))) * 100);
+        OtherBox_Discount.innerText = value + '%';
+        if (value </xsl:text>
+    <xsl:value-of select="$lt" disable-output-escaping="yes" />
+    <xsl:text> 0) {
+            OtherBox_Discount.classList.remove('GOOD');
+            OtherBox_Discount.classList.add('BAD');
+        } else {
+            OtherBox_Discount.classList.remove('BAD');
+            OtherBox_Discount.classList.add('GOOD');
+        }
     } catch (err) {
         ShowError(err);
     }
@@ -505,6 +558,9 @@ function OnCheckChanged(checkbox) {
             UltraBox_</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Value.parentNode.parentNode.classList.remove('DISABLED');
+            OtherBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.parentNode.parentNode.classList.remove('DISABLED');
         } else {
             </xsl:text>
       <xsl:if test="not(@assumed)">
@@ -527,6 +583,9 @@ function OnCheckChanged(checkbox) {
       <xsl:value-of select="@item" />
       <xsl:text>_Value.parentNode.parentNode.classList.add('DISABLED');
             UltraBox_</xsl:text>
+      <xsl:value-of select="@item" />
+      <xsl:text>_Value.parentNode.parentNode.classList.add('DISABLED');
+            OtherBox_</xsl:text>
       <xsl:value-of select="@item" />
       <xsl:text>_Value.parentNode.parentNode.classList.add('DISABLED');
         }

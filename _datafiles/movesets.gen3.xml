@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="3">
   <Pokemon id="252" name="Treecko">
     <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
       <FastAttack name="Pound" stab="false" legacy="false" />
@@ -76,6 +76,14 @@
     <MoveSet base_dps="14.838709677419354" true_dps="19.274193548387096" comparison="72">
       <FastAttack name="Bullet Seed" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="20.483870967741936" true_dps="29.838709677419352" comparison="112">
+      <FastAttack name="Fury Cutter" stab="false" legacy="false" />
+      <ChargedAttack name="Frenzy Plant" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="18.857142857142858" true_dps="28.142857142857142" comparison="105">
+      <FastAttack name="Bullet Seed" stab="true" legacy="false" />
+      <ChargedAttack name="Frenzy Plant" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="255" name="Torchic">

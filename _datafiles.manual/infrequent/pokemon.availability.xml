@@ -4,7 +4,7 @@
   https://thesilphroad.com/catalog
 -->
 
-<PokemonAvailability last_updated="2019-02-26">
+<PokemonAvailability last_updated="2019-03-22">
   <Pokemon id="0" name="Dummy to make index line up." />
   
   <!-- #region Gen1 -->
@@ -57,8 +57,8 @@
   <Pokemon id="32" name="Nidoran♂" date="2016-07-06" availability="General" />
   <Pokemon id="33" name="Nidorino" date="2016-07-06" availability="General" />
   <Pokemon id="34" name="Nidoking" date="2016-07-06" availability="General" />
-  <Pokemon id="35" name="Clefairy" date="2016-07-06" availability="General" />
-  <Pokemon id="36" name="Clefable" date="2016-07-06" availability="General" />
+  <Pokemon id="35" name="Clefairy" date="2016-07-06" availability="General" shiny="2019-02-13" />
+  <Pokemon id="36" name="Clefable" date="2016-07-06" availability="General" shiny="2019-02-13" />
   <Pokemon id="37" name="Vulpix">
     <Form name="Normal" date="2016-07-06" availability="General" />
     <Form name="Alola" date="2018-06-22" availability="Hatch Only" />
@@ -96,8 +96,8 @@
   </Pokemon>
   <Pokemon id="54" name="Psyduck" date="2016-07-06" availability="General" shiny="2019-01-25" />
   <Pokemon id="55" name="Golduck" date="2016-07-06" availability="General" shiny="2019-01-25" />
-  <Pokemon id="56" name="Mankey" date="2016-07-06" availability="General" />
-  <Pokemon id="57" name="Primeape" date="2016-07-06" availability="General" />
+  <Pokemon id="56" name="Mankey" date="2016-07-06" availability="General" shiny="2018-03-05" />
+  <Pokemon id="57" name="Primeape" date="2016-07-06" availability="General" shiny="2018-03-05" />
   <Pokemon id="58" name="Growlithe" date="2016-07-06" availability="General" shiny="2018-09-01" />
   <Pokemon id="59" name="Arcanine" date="2016-07-06" availability="General" shiny="2018-09-01" />
   <Pokemon id="60" name="Poliwag" date="2016-07-06" availability="General" />
@@ -106,9 +106,9 @@
   <Pokemon id="63" name="Abra" date="2016-07-06" availability="General" />
   <Pokemon id="64" name="Kadabra" date="2016-07-06" availability="General" />
   <Pokemon id="65" name="Alakazam" date="2016-07-06" availability="General" />
-  <Pokemon id="66" name="Machop" date="2016-07-06" availability="General" />
-  <Pokemon id="67" name="Machoke" date="2016-07-06" availability="General" />
-  <Pokemon id="68" name="Machamp" date="2016-07-06" availability="General" />
+  <Pokemon id="66" name="Machop" date="2016-07-06" availability="General" shiny="2018-03-05" />
+  <Pokemon id="67" name="Machoke" date="2016-07-06" availability="General" shiny="2018-03-05" />
+  <Pokemon id="68" name="Machamp" date="2016-07-06" availability="General" shiny="2018-03-05" />
   <Pokemon id="69" name="Bellsprout" date="2016-07-06" availability="General" />
   <Pokemon id="70" name="Weepinbell" date="2016-07-06" availability="General" />
   <Pokemon id="71" name="Victreebel" date="2016-07-06" availability="General" />
@@ -237,7 +237,7 @@
   <Pokemon id="170" name="Chinchou" date="2017-02-16" availability="General" />
   <Pokemon id="171" name="Lanturn" date="2017-02-16" availability="General" />
   <Pokemon id="172" name="Pichu" date="2016-12-12" availability="Hatch Only" shiny="2017-08-09" />
-  <Pokemon id="173" name="Cleffa" date="2016-12-12" availability="Hatch Only" />
+  <Pokemon id="173" name="Cleffa" date="2016-12-12" availability="Hatch Only" shiny="2019-02-13" />
   <Pokemon id="174" name="Igglybuff" date="2016-12-12" availability="Hatch Only" />
   <Pokemon id="175" name="Togepi" date="2016-12-12" availability="Hatch Only" shiny="2018-03-22" />
   <Pokemon id="176" name="Togetic" date="2016-12-12" availability="General" shiny="2018-03-22" />
@@ -313,8 +313,8 @@
   <Pokemon id="217" name="Ursaring" date="2017-02-16" availability="General" />
   <Pokemon id="218" name="Slugma" date="2017-02-16" availability="General" />
   <Pokemon id="219" name="Magcargo" date="2017-02-16" availability="General" />
-  <Pokemon id="220" name="Swinub" date="2017-02-16" availability="General" />
-  <Pokemon id="221" name="Piloswine" date="2017-02-16" availability="General" />
+  <Pokemon id="220" name="Swinub" date="2017-02-16" availability="General" shiny="2019-02-22" />
+  <Pokemon id="221" name="Piloswine" date="2017-02-16" availability="General" shiny="2019-02-22" />
   <Pokemon id="222" name="Corsola" date="2017-02-16" availability="Regional: Southern Hemisphere + Mexico" />
   <Pokemon id="223" name="Remoraid" date="2017-02-16" availability="General" />
   <Pokemon id="224" name="Octillery" date="2017-02-16" availability="General" />
@@ -348,9 +348,9 @@
   <!-- #endregion Gen2 -->
   
   <!-- #region Gen3 -->
-  <Pokemon id="252" name="Treecko" date="2017-12-08" availability="General" />
-  <Pokemon id="253" name="Grovyle" date="2017-12-08" availability="General" />
-  <Pokemon id="254" name="Sceptile" date="2017-12-08" availability="General" />
+  <Pokemon id="252" name="Treecko" date="2017-12-08" availability="General" shiny="2019-03-23" />
+  <Pokemon id="253" name="Grovyle" date="2017-12-08" availability="General" shiny="2019-03-23" />
+  <Pokemon id="254" name="Sceptile" date="2017-12-08" availability="General" shiny="2019-03-23" />
   <Pokemon id="255" name="Torchic" date="2017-12-08" availability="General" />
   <Pokemon id="256" name="Combusken" date="2017-12-08" availability="General" />
   <Pokemon id="257" name="Blaziken" date="2017-12-08" availability="General" />
@@ -424,14 +424,15 @@
   <Pokemon id="325" name="Spoink" date="2017-12-08" availability="General" shiny="2019-02-04" />
   <Pokemon id="326" name="Grumpig" date="2018-01-23" availability="General" shiny="2019-02-04" />
   <Pokemon id="327" name="Spinda">
-    <Form name="Pattern 1" date="2018-08-01" availability="Encounter Only" />
-    <Form name="Pattern 2" date="2018-09-01" availability="Encounter Only" />
-    <Form name="Pattern 3" date="2018-10-01" availability="Encounter Only" />
-    <Form name="Pattern 4" date="2019-02-01" availability="Encounter Only" />
+    <Form name="Pattern 1" date="2018-10-01" availability="Encounter Only" />
+    <Form name="Pattern 2" date="2019-03-01" availability="Encounter Only" />
+    <Form name="Pattern 3" date="2018-09-01" availability="Encounter Only" />
+    <Form name="Pattern 4" availability="Unreleased" />
     <Form name="Pattern 5" date="2019-01-01" availability="Encounter Only" />
     <Form name="Pattern 6" date="2018-12-01" availability="Encounter Only" />
-    <Form name="Pattern 7" availability="Unreleased" />
-    <Form name="Pattern 8" date="2018-11-01" availability="Encounter Only" />
+    <Form name="Pattern 7" date="2018-11-01" availability="Encounter Only" />
+    <Form name="Pattern 8" date="2018-08-01" availability="Encounter Only" />
+    <Form name="Pattern 9" date="2018-02-13" availability="Encounter Only" />
   </Pokemon>
   <Pokemon id="328" name="Trapinch" date="2018-01-23" availability="General" />
   <Pokemon id="329" name="Vibrava" date="2018-01-23" availability="General" />
@@ -442,8 +443,8 @@
   <Pokemon id="334" name="Altaria" date="2018-02-09" availability="General" shiny="2018-02-08" />
   <Pokemon id="335" name="Zangoose" date="2017-12-08" availability="Regional: Europe + Asia + Australia" />
   <Pokemon id="336" name="Seviper" date="2018-01-23" availability="Regional: Americas + Africa" />
-  <Pokemon id="337" name="Lunatone" date="2018-01-23" availability="Regional: Rotating" />
-  <Pokemon id="338" name="Solrock" date="2018-01-23" availability="Regional: Rotating" />
+  <Pokemon id="337" name="Lunatone" date="2018-01-23" availability="Regional: Rotating" shiny="2018-03-19" />
+  <Pokemon id="338" name="Solrock" date="2018-01-23" availability="Regional: Rotating" shiny="2018-03-19" />
   <Pokemon id="339" name="Barboach" date="2017-12-21" availability="General" />
   <Pokemon id="340" name="Whiscash" date="2017-12-21" availability="General" />
   <Pokemon id="341" name="Corphish" date="2017-12-21" availability="General" />
@@ -476,9 +477,9 @@
   <Pokemon id="363" name="Spheal" date="2017-12-21" availability="General" />
   <Pokemon id="364" name="Sealeo" date="2017-12-21" availability="General" />
   <Pokemon id="365" name="Walrein" date="2017-12-21" availability="General" />
-  <Pokemon id="366" name="Clamperl" availability="Unreleased" />
-  <Pokemon id="367" name="Huntail" availability="Unreleased" />
-  <Pokemon id="368" name="Gorebyss" date="2017-12-08" availability="Unreleased" />
+  <Pokemon id="366" name="Clamperl" date="2019-02-23" availability="General" shiny="2019-02-23" />
+  <Pokemon id="367" name="Huntail" date="2019-02-23" availability="Evolve Only" shiny="2019-02-23" />
+  <Pokemon id="368" name="Gorebyss" date="2019-02-23" availability="General" />
   <Pokemon id="369" name="Relicanth" date="2017-12-21" availability="Regional: New Zealand + Fiji" />
   <Pokemon id="370" name="Luvdisc" date="2017-12-21" availability="General" shiny="2018-02-14" />
   <Pokemon id="371" name="Bagon" date="2018-02-09" availability="General" />
@@ -490,7 +491,7 @@
   <Pokemon id="377" name="Regirock" date="2018-08-17" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="378" name="Regice" date="2018-06-22" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="379" name="Registeel" date="2018-07-20" availability="Raid Boss Only" rarity="Legendary" />
-  <Pokemon id="380" name="Latias" date="2018-04-02" availability="Raid Boss Only Regional: Rotating: Americas + Africa / Europe + Asia + Pacific" rarity="Legendary" />
+  <Pokemon id="380" name="Latias" date="2018-04-02" availability="Raid Boss Only Regional: Rotating: Americas + Africa / Europe + Asia + Pacific" rarity="Legendary" shiny="2019-02-22" />
   <Pokemon id="381" name="Latios" date="2018-04-02" availability="Raid Boss Only Regional: Rotating: Europe + Asia + Pacific / Americas + Africa" rarity="Legendary" />
   <Pokemon id="382" name="Kyogre" date="2016-11-21" availability="Raid Boss Only" rarity="Legendary" shiny="2018-06-07" />
   <Pokemon id="383" name="Groudon" date="2018-01-12" availability="Raid Boss Only" rarity="Legendary" shiny="2019-01-15" />
@@ -498,8 +499,8 @@
   <Pokemon id="385" name="Jirachi" availability="Unreleased" rarity="Legendary" />
   <Pokemon id="386" name="Deoxys" rarity="Mythic">
     <Form name="Normal" date="2018-10-01" availability="EX Raid Boss Only" />
-    <Form name="Attack" date="20018-12-28" availability="EX Raid Boss Only" />
-    <Form name="Defense" availability="Unreleased" />
+    <Form name="Attack" date="2018-12-28" availability="EX Raid Boss Only" />
+    <Form name="Defense" date="2019-03-25" availability="EX Raid Boss Only" />
     <Form name="Speed" availability="Unreleased" />
   </Pokemon>
   <!-- #endregion Gen3 -->
@@ -576,7 +577,7 @@
   <Pokemon id="437" name="Bronzong" date="2018-12-18" availability="General" />
   <Pokemon id="438" name="Bonsly" date="2019-01-31" availability="Hatch Only" />
   <Pokemon id="439" name="Mime Jr." availability="Unreleased" />
-  <Pokemon id="440" name="Happiny" availability="Unreleased" />
+  <Pokemon id="440" name="Happiny" date="2019-02-13" availability="Hatch Only" />
   <Pokemon id="441" name="Chatot" date="2018-10-16" availability="Regional: Southern Hemisphere?" />
   <Pokemon id="442" name="Spiritomb" date="2018-10-23" availability="Research Encounter Only" />
   <Pokemon id="443" name="Gible" availability="Unreleased" />
@@ -609,7 +610,7 @@
   <Pokemon id="470" name="Leafeon" availability="Unreleased" />
   <Pokemon id="471" name="Glaceon" availability="Unreleased" />
   <Pokemon id="472" name="Gliscor" date="2018-11-14" availability="Evolve Only" />
-  <Pokemon id="473" name="Mamoswine" date="2019-02-16" availability="Unreleased" />
+  <Pokemon id="473" name="Mamoswine" date="2019-02-16" availability="Evolve Only" shiny="2019-02-16" />
   <Pokemon id="474" name="Porygon-Z" date="2018-11-14" availability="Evolve Only" />
   <Pokemon id="475" name="Gallade" date="2019-01-31" availability="Evolve Only" />
   <Pokemon id="476" name="Probopass" availability="Unreleased" />
@@ -626,13 +627,13 @@
   <Pokemon id="480" name="Uxie" availability="Unreleased" rarity="Legendary" />
   <Pokemon id="481" name="Mesprit" availability="Unreleased" rarity="Legendary" />
   <Pokemon id="482" name="Azelf" availability="Unreleased" rarity="Legendary" />
-  <Pokemon id="483" name="Dialga" availability="Unreleased" rarity="Legendary" />
+  <Pokemon id="483" name="Dialga" date="2019-03-01" availability="Raid Boss Only"  rarity="Legendary" />
   <Pokemon id="484" name="Palkia" date="2019-01-29" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="485" name="Heatran" date="2018-12-18" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="486" name="Regigigas" availability="Unreleased" rarity="Legendary" />
   <Pokemon id="487" name="Giratina" rarity="Legendary">
     <Form name="Altered" date="2018-10-23" availability="Raid Boss Only" />
-    <Form name="Origin" availability="Unreleased" />
+    <Form name="Origin" date="2019-04-02" availability="Raid Boss Only" />
   </Pokemon>
   <Pokemon id="488" name="Cresselia" date="2018-11-21" availability="Raid Boss Only" rarity="Legendary" />
   <Pokemon id="489" name="Phione" availability="Unreleased" rarity="Mythic" />

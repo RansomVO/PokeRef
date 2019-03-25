@@ -12,9 +12,9 @@
   <!ENTITY Pokestats_Gen5 SYSTEM "/_datafiles/pokestats.gen5.xml">
   <!ENTITY Pokestats_Gen6 SYSTEM "/_datafiles/pokestats.gen6.xml">
   <!ENTITY Pokestats_Gen7 SYSTEM "/_datafiles/pokestats.gen7.xml">
-  <!ENTITY Encounters SYSTEM "/_datafiles.manual/encounters.xml">
+  <!ENTITY Encounters SYSTEM "/_datafiles.manual/research.encounters.xml">
   <!ENTITY SpecialResearch SYSTEM "/_datafiles.manual/infrequent/research.special.xml">
-  <!ENTITY EventResearch SYSTEM "/_datafiles.manual/infrequent/research.event.xml">
+  <!ENTITY EventResearch SYSTEM "/_datafiles.manual/research.event.xml">
 ]>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

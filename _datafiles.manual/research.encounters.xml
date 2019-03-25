@@ -5,8 +5,7 @@
   https://pokemongohub.net/post/guide/field-research-missions-list/
 -->
 
-<FieldResearch last_updated="2019-02-09">
-  <!-- #region General -->
+<FieldResearch last_updated="2019-03-23">
 
   <Category type="Hatch or Evolve">
 
@@ -86,6 +85,7 @@
     <!-- #endregion Excellent -->
 
     <!-- #region Curveball -->
+    
     <Research task="Make 3 Curveball Throws in a row.">
       <Pokemon id="55" name="Golduck" />
     </Research>
@@ -98,13 +98,13 @@
 
     <!-- #region Spinda -->
     <Research task="Make 5 Curveball Throws in a row.">
-      <Pokemon id="327" name="Spinda" form="Pattern 1" />
+      <Pokemon id="327" name="Spinda" form="Pattern 8" />
     </Research>
     <Research task="Make a Great Curveball Throw.">
-      <Pokemon id="327" name="Spinda" form="Pattern 2" />
+      <Pokemon id="327" name="Spinda" form="Pattern 3" />
     </Research>
     <Research task="Make 2 Nice Curveball Throws.">
-      <Pokemon id="327" name="Spinda" form="Pattern 3" />
+      <Pokemon id="327" name="Spinda" form="Pattern 1" />
     </Research>
     <Research task="Make 3 Nice Curveball Throws.">
       <Pokemon id="327" name="Spinda" form="Pattern 7" />
@@ -116,7 +116,10 @@
       <Pokemon id="327" name="Spinda" form="Pattern 5" />
     </Research>
     <Research task="Make 5 Great Curveball Throws in a row.">
-      <Pokemon id="327" name="Spinda" form="Pattern 4" current="true" />
+      <Pokemon id="327" name="Spinda" form="Pattern 9" />
+    </Research>
+    <Research task="Make 5 Great Curveball Throws in a row.">
+      <Pokemon id="327" name="Spinda" form="Pattern 2" current="true" />
     </Research>
     <!-- #endregion Spinda -->
 
@@ -337,8 +340,6 @@
     </Research>
   </Category>
 
-  <!-- #region Research Breakthrough -->
-
   <Category type="Research Breakthrough">
     <Research task="Achieve 7 stamps" startdate="2018-04-01" enddate="2018-04-30">
       <Pokemon id="146" name="Moltres" />
@@ -365,33 +366,23 @@
       <Pokemon id="292" name="Shedinja" />
     </Research>
     <Research task="Achieve 7 stamps" startdate="2018-11-01" enddate="2018-02-28">
-      <Pokemon id="144" name="Articuno" current="true" />
-      <Pokemon id="145" name="Zapdos" current="true" />
-      <Pokemon id="146" name="Moltres" current="true" />
+      <Pokemon id="144" name="Articuno" />
+      <Pokemon id="145" name="Zapdos" />
+      <Pokemon id="146" name="Moltres" />
+      <Pokemon id="243" name="Raikou" />
+      <Pokemon id="244" name="Entei" />
+      <Pokemon id="245" name="Suicune" />
+    </Research>
+    <Research task="Achieve 7 stamps" startdate="2019-03-01" enddate="2019-03-31">
       <Pokemon id="243" name="Raikou" current="true" />
       <Pokemon id="244" name="Entei" current="true" />
       <Pokemon id="245" name="Suicune" current="true" />
+      <Pokemon id="249" name="Lugia" current="true" />
+      <Pokemon id="250" name="Ho-Oh" current="true" />
+      <Pokemon id="377" name="Regirock" current="true" />
+      <Pokemon id="378" name="Regice" current="true" />
+      <Pokemon id="379" name="Registeel" current="true" />
     </Research>
   </Category>
 
-  <!-- #endregion Research Breakthrough -->
-
-  <!-- #endregion General -->
-
-  <!--
-  <Category type="Special Research Breakthrough">
-    <Research task="Complete 'A Mythical Discovery'">
-      <Pokemon id="151" name="Mew" current="true" />
-    </Research>
-    <Research task="Complete 'A Ripple in Time'">
-      <Pokemon id="251" name="Celebi" current="true" />
-    </Research>
-    <Research task="Complete 'Catch 108 Pokemon' in 'A Spooky Message'">
-      <Pokemon id="442" name="Spiritomb" current="true" />
-    </Research>
-    <Research task="Complete 'Let's GO, Meltan">
-      <Pokemon id="808" name="Meltan" current="true" />
-    </Research>
-  </Category>
--->
 </FieldResearch>

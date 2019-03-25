@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-15" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -160,7 +160,7 @@
       <Max cp="1846" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="16" name="Pidgey" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Pidgey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Pidgey_shiny.png">
+  <Pokemon id="16" name="Pidgey" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Pidgey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Pidgey_shiny.png">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="85" defense="73" stamina="120" />
@@ -192,7 +192,7 @@
       <Max cp="2129" hp="165" />
     </Stats>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" family="Rattata" buddy_km="1" gender_ratio="1 : 1" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
+  <Pokemon id="19" name="Rattata" family="Rattata" buddy_km="1" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="103" defense="70" stamina="102" />
@@ -468,7 +468,7 @@
       <Max cp="2567" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="35" name="Clefairy" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Clefairy.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Clefairy_shiny.png">
+  <Pokemon id="35" name="Clefairy" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" shiny="2019-02-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Clefairy.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Clefairy_shiny.png">
     <Type primary="Fairy" />
     <EvolvesFrom id="173" name="Cleffa" candies="25" />
     <Stats>
@@ -479,7 +479,7 @@
       <Max cp="1155" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="36" name="Clefable" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Clefable.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/00/Clefable_shiny.png">
+  <Pokemon id="36" name="Clefable" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" shiny="2019-02-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Clefable.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/00/Clefable_shiny.png">
     <Type primary="Fairy" />
     <EvolvesFrom id="35" name="Clefairy" candies="50" />
     <Stats>
@@ -628,7 +628,7 @@
       <Max cp="2559" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="46" name="Paras" family="Paras" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ee/Paras.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Paras_shiny.png">
+  <Pokemon id="46" name="Paras" family="Paras" buddy_km="3" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ee/Paras.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Paras_shiny.png">
     <Type primary="Bug" secondary="Grass" />
     <Stats>
       <BaseIV attack="121" defense="99" stamina="111" />
@@ -649,7 +649,7 @@
       <Max cp="1859" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="48" name="Venonat" family="Venonat" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Venonat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Venonat_shiny.png">
+  <Pokemon id="48" name="Venonat" family="Venonat" buddy_km="3" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Venonat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Venonat_shiny.png">
     <Type primary="Bug" secondary="Poison" />
     <Stats>
       <BaseIV attack="100" defense="100" stamina="155" />
@@ -817,7 +817,7 @@
       <Max cp="2450" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="56" name="Mankey" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Mankey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Mankey_shiny.png">
+  <Pokemon id="56" name="Mankey" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Mankey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Mankey_shiny.png">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="148" defense="82" stamina="120" />
@@ -827,7 +827,7 @@
       <Max cp="1164" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="57" name="Primeape" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Primeape.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/26/Primeape_shiny.png">
+  <Pokemon id="57" name="Primeape" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Primeape.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/26/Primeape_shiny.png">
     <Type primary="Fighting" />
     <EvolvesFrom id="56" name="Mankey" candies="50" />
     <Stats>
@@ -923,7 +923,7 @@
       <Max cp="3057" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="66" name="Machop" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Machop.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7c/Machop_shiny.png">
+  <Pokemon id="66" name="Machop" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Machop.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7c/Machop_shiny.png">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="137" defense="82" stamina="172" />
@@ -933,7 +933,7 @@
       <Max cp="1278" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="67" name="Machoke" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Machoke.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Machoke_shiny.png">
+  <Pokemon id="67" name="Machoke" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Machoke.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Machoke_shiny.png">
     <Type primary="Fighting" />
     <EvolvesFrom id="66" name="Machop" candies="25" />
     <Stats>
@@ -944,7 +944,7 @@
       <Max cp="2031" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="68" name="Machamp" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Machamp.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Machamp_shiny.png">
+  <Pokemon id="68" name="Machamp" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Machamp.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Machamp_shiny.png">
     <Type primary="Fighting" />
     <EvolvesFrom id="67" name="Machoke" candies="100" />
     <Stats>

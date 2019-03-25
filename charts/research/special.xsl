@@ -81,24 +81,18 @@
         <xsl:value-of select="concat('STAGE_', @stage)" />
       </xsl:attribute>
       <table border="1">
-        <xsl:apply-templates select="Task" />
+        <xsl:apply-templates select="Research" />
         <xsl:apply-templates select="Rewards" />
       </table>
     </div>
   </xsl:template>
 
-  <xsl:template match="Task">
+  <xsl:template match="Research">
     <tr>
       <td>
         <xsl:value-of select="@task" />
       </td>
-      <td align="center">
-        <xsl:call-template name="Sprite">
-          <xsl:with-param name="id" select="@reward_type" />
-        </xsl:call-template>
-        <br />
-        <xsl:value-of select="@reward" />
-      </td>
+      <xsl:apply-templates select="*" mode="Reward" />
     </tr>
   </xsl:template>
 
@@ -107,24 +101,24 @@
       <td colspan="2">
         <table width="100%">
           <tr>
-            <xsl:apply-templates select="*" />
+            <xsl:apply-templates select="*" mode="Reward" />
           </tr>
         </table>
       </td>
     </tr>
   </xsl:template>
 
-  <xsl:template match="Item">
+  <xsl:template match="Item" mode="Reward">
     <td align="center">
       <xsl:call-template name="Sprite">
-        <xsl:with-param name="id" select="@type" />
+        <xsl:with-param name="id" select="@id" />
       </xsl:call-template>
       <br />
       <xsl:value-of select="concat($times, @amount)" disable-output-escaping="yes"/>
     </td>
   </xsl:template>
 
-  <xsl:template match="Encounter">
+  <xsl:template match="Pokemon" mode="Reward">
     <xsl:variable name="name" select="@name" />
 
     <xsl:apply-templates select="/Root/PokeStats/Pokemon[@name = $name]" mode="Cell">

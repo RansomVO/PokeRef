@@ -62,12 +62,13 @@
     <WebContent Include="images\items\mystery_box_open.png" />
     <WebContent Include="images\items\special_sinnoh_stone.png" />
     <WebContent Include="images\candy\candy_meltan.png" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\research.event.xml">
+    <FixIntermediateFile Include="_datafiles.manual\research.event.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
     <WebContent Include="images\game\box_adventure.png" />
     <Content Include="_datafiles\movesets.gen7.xml" />
     <Content Include="^\trade.html" />
+    <Content Include="_\looking.html" />
     <Content Include="__Debugging\qzx.html" />
     <WebContent Include="images\question.png" />
     <WebContent Include="images\candy\candy_spiritomb.png" />
@@ -82,7 +83,7 @@
   <!-- /_datafiles.manual -->
   <ItemGroup>
     <FixIntermediateFile Include="_datafiles.manual\traits.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\encounters.xml">
+    <FixIntermediateFile Include="_datafiles.manual\research.encounters.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\news.xml">
@@ -102,7 +103,7 @@
       <SubType>Designer</SubType>
     </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\infrequent\ranges.xml" />
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\special.moves.xml">
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\moves.special.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\infrequent\research.special.xml">

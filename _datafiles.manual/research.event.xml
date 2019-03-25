@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<EventResearch last_updated="2019-02-26">
+<EventResearch last_updated="2019-03-22">
 
   <Event name="Johto Festival" startdate="2018-08-20" enddate="2018-08-28">
     <Research task="Evolve 3 Sunkern or Natu.">
@@ -72,6 +72,18 @@
     </Research>
     <Research task="Pokemon Day: Evolve 1 Meowth.">
       <Pokemon id="133" name="Eevee" />
+    </Research>
+  </Event>
+
+  <Event name="Celebrate the Equinox" startdate="2019-03-19" enddate="2019-03-26">
+    <Research task="Catch 2 Bulbasaur or Chikorita">
+      <Pokemon id="387" name="Turtwig" />
+    </Research>
+    <Research task="Evolve 2 Grass-type Pokemon">
+      <Pokemon id="114" name="Tangela" />
+    </Research>
+    <Research task="Evolve 5 Grass-type Pokemon">
+      <Pokemon id="3" name="Venusaur" />
     </Research>
   </Event>
 
