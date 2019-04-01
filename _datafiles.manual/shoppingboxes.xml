@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ShoppingBoxes last_updated="2019-03-21">
-  <Event date="2019-03-19" note="Equinox Event" />
+<ShoppingBoxes last_updated="2019-04-01">
+  <Event date="2019-04-01" note="It's time to bug out!" />
   
   <!-- #region Boxes -->
   <!-- 
     NOTES:
-      - Set price to 0 to hide the box.
+      - Set price to "" to hide the box.
       - If you want a title different than the default (from images.xml) then specify the title attribute on the box.
       - If you want a different Icon for the box, specify the id for the image from _datafiles.manual\infrequent\images.xml
   -->
   
-  <Box type="Community" price="480" box="BoxCommunity" title="">
+  <Box type="Community" price="" box="BoxCommunity" title="">
     <Item name="Incense" quantity="0" />
-    <Item name="Incubator" quantity="3" />
-    <Item name="IncubatorSuper" quantity="2" />
+    <Item name="Incubator" quantity="0" />
+    <Item name="IncubatorSuper" quantity="0" />
     <Item name="LuckyEgg" quantity="0" />
     <Item name="RaidPassPremium" quantity="0" />
-    <Item name="Lure" quantity="1" />
+    <Item name="Lure" quantity="0" />
     <Item name="StarPiece" quantity="0" />
     <Item name="ReviveMax" quantity="0" />
     <Item name="PotionMax" quantity="0" />
@@ -26,13 +26,13 @@
     <Item name="BerryGoldenRazz" quantity="0" />
     <Item name="BallRegular" quantity="0" />
     <Item name="BallGreat" quantity="0" />
-    <Item name="BallUltra" quantity="30" />
+    <Item name="BallUltra" quantity="0" />
   </Box>
   <Box type="Special" price="480" box="BoxSpecial" title="">
-    <Item name="Incense" quantity="0" />
-    <Item name="Incubator" quantity="2" />
+    <Item name="Incense" quantity="2" />
+    <Item name="Incubator" quantity="3" />
     <Item name="IncubatorSuper" quantity="0" />
-    <Item name="LuckyEgg" quantity="1" />
+    <Item name="LuckyEgg" quantity="0" />
     <Item name="RaidPassPremium" quantity="2" />
     <Item name="Lure" quantity="0" />
     <Item name="StarPiece" quantity="0" />
@@ -47,30 +47,12 @@
     <Item name="BallUltra" quantity="20" />
   </Box>
   <Box type="Great" price="780" box="BoxGreat" title="">
-    <Item name="Incense" quantity="0" />
-    <Item name="Incubator" quantity="0" />
-    <Item name="IncubatorSuper" quantity="4" />
-    <Item name="LuckyEgg" quantity="0" />
-    <Item name="RaidPassPremium" quantity="3" />
-    <Item name="Lure" quantity="0" />
-    <Item name="StarPiece" quantity="6" />
-    <Item name="ReviveMax" quantity="0" />
-    <Item name="PotionMax" quantity="0" />
-    <Item name="BerryRazz" quantity="0" />
-    <Item name="BerryNanab" quantity="0" />
-    <Item name="BerryPinap" quantity="10" />
-    <Item name="BerryGoldenRazz" quantity="0" />
-    <Item name="BallRegular" quantity="0" />
-    <Item name="BallGreat" quantity="0" />
-    <Item name="BallUltra" quantity="0" />
-  </Box>
-  <Box type="Ultra" price="1480" box="BoxUltra" title="">
-    <Item name="Incense" quantity="0" />
+    <Item name="Incense" quantity="4" />
     <Item name="Incubator" quantity="0" />
     <Item name="IncubatorSuper" quantity="3" />
     <Item name="LuckyEgg" quantity="4" />
-    <Item name="RaidPassPremium" quantity="16" />
-    <Item name="Lure" quantity="3" />
+    <Item name="RaidPassPremium" quantity="4" />
+    <Item name="Lure" quantity="0" />
     <Item name="StarPiece" quantity="0" />
     <Item name="ReviveMax" quantity="0" />
     <Item name="PotionMax" quantity="0" />
@@ -82,14 +64,32 @@
     <Item name="BallGreat" quantity="0" />
     <Item name="BallUltra" quantity="0" />
   </Box>
+  <Box type="Ultra" price="1480" box="BoxUltra" title="">
+    <Item name="Incense" quantity="4" />
+    <Item name="Incubator" quantity="0" />
+    <Item name="IncubatorSuper" quantity="10" />
+    <Item name="LuckyEgg" quantity="0" />
+    <Item name="RaidPassPremium" quantity="10" />
+    <Item name="Lure" quantity="0" />
+    <Item name="StarPiece" quantity="4" />
+    <Item name="ReviveMax" quantity="0" />
+    <Item name="PotionMax" quantity="0" />
+    <Item name="BerryRazz" quantity="0" />
+    <Item name="BerryNanab" quantity="0" />
+    <Item name="BerryPinap" quantity="0" />
+    <Item name="BerryGoldenRazz" quantity="0" />
+    <Item name="BallRegular" quantity="0" />
+    <Item name="BallGreat" quantity="0" />
+    <Item name="BallUltra" quantity="0" />
+  </Box>
   <Box type="Other" price="1480" box="BoxAdventure" title="Adventure Box">
-    <Item name="Incense" quantity="0" />
-    <Item name="Incubator" quantity="2" />
-    <Item name="IncubatorSuper" quantity="12" />
-    <Item name="LuckyEgg" quantity="4" />
+    <Item name="Incense" quantity="4" />
+    <Item name="Incubator" quantity="4" />
+    <Item name="IncubatorSuper" quantity="11" />
+    <Item name="LuckyEgg" quantity="0" />
     <Item name="RaidPassPremium" quantity="0" />
-    <Item name="Lure" quantity="3" />
-    <Item name="StarPiece" quantity="0" />
+    <Item name="Lure" quantity="0" />
+    <Item name="StarPiece" quantity="4" />
     <Item name="ReviveMax" quantity="0" />
     <Item name="PotionMax" quantity="0" />
     <Item name="BerryRazz" quantity="0" />

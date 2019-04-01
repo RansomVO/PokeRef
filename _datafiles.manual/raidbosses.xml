@@ -3,7 +3,7 @@
   https://thesilphroad.com/catalog
 -->
 
-<RaidBosses category="Current" last_updated="2019-03-22">
+<RaidBosses category="Current" last_updated="2019-03-28">
 
   <!-- #region Tier 1 -->
   <RaidBoss tier="1" id="1" name="Bulbasaur" />
@@ -146,11 +146,13 @@
   <!-- #endregion Tier 4 -->
 
   <!-- #region Tier 5 -->
+  
   <!-- #region EX -->
   <RaidBoss tier="5" id="386" name="Deoxys" form="Normal" EX="true" />
   <RaidBoss tier="5" id="386" name="Deoxys" form="Attack" EX="true" current="true" />
   <RaidBoss tier="5" id="386" name="Deoxys" form="Defense" EX="true" current="true" />
   <!-- #endregion EX -->
+  
   <RaidBoss tier="5" id="144" name="Articuno" />
   <RaidBoss tier="5" id="145" name="Zapdos" />
   <RaidBoss tier="5" id="146" name="Moltres" />
@@ -168,10 +170,10 @@
   <RaidBoss tier="5" id="382" name="Kyogre" />
   <RaidBoss tier="5" id="383" name="Groudon" />
   <RaidBoss tier="5" id="384" name="Rayquaza" />
-  <RaidBoss tier="5" id="483" name="Dialga" current="true" />
+  <RaidBoss tier="5" id="483" name="Dialga" />
   <RaidBoss tier="5" id="484" name="Palkia" />
   <RaidBoss tier="5" id="485" name="Heatran" />
-  <RaidBoss tier="5" id="487" name="Giratina" form="Altered" />
+  <RaidBoss tier="5" id="487" name="Giratina" form="Altered" current="true" />
   <RaidBoss tier="5" id="488" name="Cresselia" />
   <!-- #endregion Tier 5 -->
 

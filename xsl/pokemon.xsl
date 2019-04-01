@@ -341,6 +341,9 @@
                 <!-- Add ID/Name -->
                 <xsl:if test="count(exslt:node-set($Settings)/*/@hide_name) = 0">
                   <div id="Pokemon_Name_Field" style="white-space:nowrap;">
+                    <xsl:if test="contains(@availability,$Availability_RaidBossOnly_EX)">
+                      <xsl:attribute name="class">RAIDBOSS_ONLY_EX</xsl:attribute>
+                    </xsl:if>
                     <xsl:value-of select="concat($pokemon/@id, $nbsp, '-', $nbsp)" disable-output-escaping="yes" />
                     <xsl:apply-templates select="$pokemon" mode="DisplayName" />
                   </div>

@@ -99,23 +99,27 @@ window.onload = function () {
     try {
         GetFields();</xsl:text>
 
-    <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0 or ShoppingBoxes/Box[@type='Special']/@price=0 or ShoppingBoxes/Box[@type='Great']/@price=0 or ShoppingBoxes/Box[@type='Ultra']/@price=0 or ShoppingBoxes/Box[@type='Other']/@price=0">
+    <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=''
+            or ShoppingBoxes/Box[@type='Special']/@price=''
+            or ShoppingBoxes/Box[@type='Great']/@price=''
+            or ShoppingBoxes/Box[@type='Ultra']/@price=''
+            or ShoppingBoxes/Box[@type='Other']/@price=''">
       <xsl:text>
         // Hide boxes that are not available.
 </xsl:text>
-      <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=0">
+      <xsl:if test="ShoppingBoxes/Box[@type='Community']/@price=''">
         <xsl:text>        document.getElementById('CommunityBox').style.display = 'none';</xsl:text>
       </xsl:if>
-      <xsl:if test="ShoppingBoxes/Box[@type='Special']/@price=0">
+      <xsl:if test="ShoppingBoxes/Box[@type='Special']/@price=''">
         <xsl:text>        document.getElementById('SpecialBox').style.display = 'none';</xsl:text>
       </xsl:if>
-      <xsl:if test="ShoppingBoxes/Box[@type='Great']/@price=0">
+      <xsl:if test="ShoppingBoxes/Box[@type='Great']/@price=''">
         <xsl:text>        document.getElementById('GreatBox').style.display = 'none';</xsl:text>
       </xsl:if>
-      <xsl:if test="ShoppingBoxes/Box[@type='Ultra']/@price=0">
+      <xsl:if test="ShoppingBoxes/Box[@type='Ultra']/@price=''">
         <xsl:text>        document.getElementById('UltraBox').style.display = 'none';</xsl:text>
       </xsl:if>
-      <xsl:if test="ShoppingBoxes/Box[@type='Other']/@price=0">
+      <xsl:if test="ShoppingBoxes/Box[@type='Other']/@price=''">
         <xsl:text>        document.getElementById('Other').style.display = 'none';</xsl:text>
       </xsl:if>
     </xsl:if>
@@ -474,7 +478,7 @@ function OnValueChanged(field) {
             CommunityBox_Discount.classList.add('GOOD');
         }
 
-      var value = Math.round((1 - (Number(SpecialBox_Price.value) / Number(SpecialBox_Total.value))) * 100);
+      value = Math.round((1 - (Number(SpecialBox_Price.value) / Number(SpecialBox_Total.value))) * 100);
       SpecialBox_Discount.innerText = value + '%';
       if (value </xsl:text>
     <xsl:value-of select="$lt" disable-output-escaping="yes" />
