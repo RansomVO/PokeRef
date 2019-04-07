@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<EventResearch last_updated="2019-03-22">
+<EventResearch last_updated="2019-04-05">
 
   <Event name="Johto Festival" startdate="2018-08-20" enddate="2018-08-28">
     <Research task="Evolve 3 Sunkern or Natu.">
@@ -87,5 +87,20 @@
     </Research>
   </Event>
 
+  <Event name="It's time to bug out!" startdate="2019-04-02" enddate="2019-04-09">
+    <Research task="Evolve 3 bug-type Pokemon.">
+      <Pokemon id="290" name="Nincada" />
+    </Research>
+    <Research task="Catch 10 bug-type Pokemon.">
+      <Pokemon id="123" name="Scyther" />
+    </Research>
+    <Research task="Catch 5 Ledyba or Spinarak.">
+      <Pokemon id="193" name="Yanma" />
+    </Research>
+    <Research task="Catch 2 Wurmple">
+      <Pokemon id="10" name="Caterpie" />
+    </Research>
+  </Event>
+  
 </EventResearch>
 

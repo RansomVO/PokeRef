@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Constants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-02-09">
+<Constants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-06">
   <Gender male="♂" female="♀" neutral="⚲" />
   <Types>
     <Type>Other</Type>
@@ -32,7 +32,16 @@
     <Weather>Snow</Weather>
     <Weather>Partly Cloudy</Weather>
   </Weathers>
-  <Regions Gen1="Kanto" Gen2="Johto" Gen3="Hoenn" Gen4="Sinnoh" Gen5="Unova" Gen6="Kalos" Gen7="Alola" Gen8="Unknown" />
+  <Regions>
+    <Region gen="1" name="Kanto" rangeMin="1" rangeMax="151" />
+    <Region gen="2" name="Johto" rangeMin="152" rangeMax="251" />
+    <Region gen="3" name="Hoenn" rangeMin="252" rangeMax="386" />
+    <Region gen="4" name="Sinnoh" rangeMin="387" rangeMax="493" />
+    <Region gen="5" name="Unova" rangeMin="494" rangeMax="649" />
+    <Region gen="6" name="Kalos" rangeMin="650" rangeMax="721" />
+    <Region gen="7" name="Alola" rangeMin="722" rangeMax="807" />
+    <Region gen="8" name="Unknown" rangeMin="808" rangeMax="809" />
+  </Regions>
   <Availability Unreleased="Unreleased" General="General" Regional="Regional" RaidBossOnly="Raid Boss Only" RaidBossOnly_EX="EX Raid Boss Only" HatchOnly_2K="Hatch Only: 2K" HatchOnly_5K="Hatch Only: 5K" HatchOnly_7K="Hatch Only: 7K" HatchOnly_10K="Hatch Only: 10K" EvolveOnly="Evolve Only" />
   <Rarity Legendary="Legendary" Mythic="Mythic" UltraBeast="Ultra Beast" />
   <IV_Evaluation>

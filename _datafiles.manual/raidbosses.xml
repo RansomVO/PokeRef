@@ -3,7 +3,7 @@
   https://thesilphroad.com/catalog
 -->
 
-<RaidBosses category="Current" last_updated="2019-03-28">
+<RaidBosses category="Current" last_updated="2019-04-05">
 
   <!-- #region Tier 1 -->
   <RaidBoss tier="1" id="1" name="Bulbasaur" />
@@ -12,6 +12,7 @@
   <RaidBoss tier="1" id="5" name="Charmeleon" />
   <RaidBoss tier="1" id="4" name="Squirtle" />
   <RaidBoss tier="1" id="8" name="Wartortle" />
+  <RaidBoss tier="1" id="10" name="Caterpie" current="true" />
   <RaidBoss tier="1" id="11" name="Metapod" />
   <RaidBoss tier="1" id="81" name="Magnemite" />
   <RaidBoss tier="1" id="90" name="Shellder" />
@@ -19,22 +20,22 @@
   <RaidBoss tier="1" id="138" name="Omanyte" />
   <RaidBoss tier="1" id="140" name="Kabuto" />
   <RaidBoss tier="1" id="147" name="Dratini" />
-  <RaidBoss tier="1" id="152" name="Chikorita" current="true" />
+  <RaidBoss tier="1" id="152" name="Chikorita" />
   <RaidBoss tier="1" id="153" name="Bayleef" />
   <RaidBoss tier="1" id="155" name="Cyndaquil" />
   <RaidBoss tier="1" id="156" name="Quilava" />
   <RaidBoss tier="1" id="158" name="Totodile" />
   <RaidBoss tier="1" id="179" name="Mareep" />
-  <RaidBoss tier="1" id="191" name="Sunkern" current="true" />
+  <RaidBoss tier="1" id="191" name="Sunkern" />
   <RaidBoss tier="1" id="193" name="Yanma" />
-  <RaidBoss tier="1" id="270" name="Lotad" current="true" />
+  <RaidBoss tier="1" id="270" name="Lotad" />
   <RaidBoss tier="1" id="278" name="Wingull" />
   <RaidBoss tier="1" id="296" name="Makuhita" />
   <RaidBoss tier="1" id="307" name="Meditite" />
   <RaidBoss tier="1" id="311" name="Plusle" />
   <RaidBoss tier="1" id="312" name="Minun" />
   <RaidBoss tier="1" id="320" name="Wailmer" />
-  <RaidBoss tier="1" id="331" name="Cacnea" current="true" />
+  <RaidBoss tier="1" id="331" name="Cacnea" />
   <RaidBoss tier="1" id="333" name="Swablu" />
   <RaidBoss tier="1" id="345" name="Lileep" />
   <RaidBoss tier="1" id="347" name="Anorith" />
@@ -45,8 +46,10 @@
   <RaidBoss tier="1" id="399" name="Bidoof" />
   <RaidBoss tier="1" id="401" name="Kricketot" />
   <RaidBoss tier="1" id="427" name="Buneary" />
+  <RaidBoss tier="1" id="401" name="Kricketot" current="true" />
   <RaidBoss tier="1" id="403" name="Shinx" current="true" />
   <RaidBoss tier="1" id="418" name="Buizel" />
+  <RaidBoss tier="1" id="451" name="Skorupi" current="true" />
   <!-- #endregion Tier 1 -->
 
   <!-- #region Tier 2 -->
@@ -69,22 +72,24 @@
   <RaidBoss tier="2" id="171" name="Lanturn" />
   <RaidBoss tier="2" id="185" name="Sudowoodo" />
   <RaidBoss tier="2" id="200" name="Misdreavus" />
-  <RaidBoss tier="2" id="204" name="Pineco" />
+  <RaidBoss tier="2" id="204" name="Pineco" current="true" />
   <RaidBoss tier="2" id="215" name="Sneasel" />
   <RaidBoss tier="2" id="219" name="Magcargo" />
-  <RaidBoss tier="2" id="253" name="Grovyle" current="true" />
+  <RaidBoss tier="2" id="253" name="Grovyle" />
   <RaidBoss tier="2" id="256" name="Combusken" />
   <RaidBoss tier="2" id="259" name="Marshtomp" />
   <RaidBoss tier="2" id="281" name="Kirlia" />
+  <RaidBoss tier="2" id="284" name="Masquerain" current="true" />
   <RaidBoss tier="2" id="299" name="Nosepass" />
   <RaidBoss tier="2" id="302" name="Sableye" />
   <RaidBoss tier="2" id="303" name="Mawile" current="true" />
   <RaidBoss tier="2" id="310" name="Manectric" />
-  <RaidBoss tier="2" id="315" name="Roselia" current="true" />
+  <RaidBoss tier="2" id="315" name="Roselia" />
+  <RaidBoss tier="2" id="415" name="Combee" current="true" />
   <!-- #endregion Tier 2 -->
 
   <!-- #region Tier 3 -->
-  <RaidBoss tier="3" id="26" name="Raichu" form="Alola" />
+  <RaidBoss tier="3" id="26" name="Raichu" form="Alola" current="true" />
   <RaidBoss tier="3" id="38" name="Ninetales" />
   <RaidBoss tier="3" id="59" name="Arcanine" />
   <RaidBoss tier="3" id="65" name="Alakazam" />
@@ -93,11 +98,11 @@
   <RaidBoss tier="3" id="95" name="Onix" />
   <RaidBoss tier="3" id="106" name="Hitmonlee" />
   <RaidBoss tier="3" id="107" name="Hitmonchan" />
-  <RaidBoss tier="3" id="114" name="Tangela" current="true" />
+  <RaidBoss tier="3" id="114" name="Tangela" />
   <RaidBoss tier="3" id="121" name="Starmie" />
-  <RaidBoss tier="3" id="123" name="Scyther" />
+  <RaidBoss tier="3" id="123" name="Scyther" current="true" />
   <RaidBoss tier="3" id="124" name="Jynx" />
-  <RaidBoss tier="3" id="127" name="Pinsir" />
+  <RaidBoss tier="3" id="127" name="Pinsir" current="true" />
   <RaidBoss tier="3" id="134" name="Vaporeon" />
   <RaidBoss tier="3" id="135" name="Jolteon" />
   <RaidBoss tier="3" id="136" name="Flareon" />
@@ -106,11 +111,11 @@
   <RaidBoss tier="3" id="142" name="Aerodactyl" />
   <RaidBoss tier="3" id="184" name="Azumarill" />
   <RaidBoss tier="3" id="210" name="Granbull" />
-  <RaidBoss tier="3" id="213" name="Shuckle" />
+  <RaidBoss tier="3" id="213" name="Shuckle" current="true" />
   <RaidBoss tier="3" id="221" name="Piloswine" />
   <RaidBoss tier="3" id="227" name="Skarmory" />
   <RaidBoss tier="3" id="232" name="Donphan" />
-  <RaidBoss tier="3" id="286" name="Breloom" current="true" />
+  <RaidBoss tier="3" id="286" name="Breloom" />
   <RaidBoss tier="3" id="319" name="Sharpedo" />
   <RaidBoss tier="3" id="337" name="Lunatone" />
   <RaidBoss tier="3" id="338" name="Solrock" />
@@ -125,7 +130,7 @@
   <RaidBoss tier="4" id="31" name="Nidoqueen" />
   <RaidBoss tier="4" id="34" name="Nidoking" />
   <RaidBoss tier="4" id="62" name="Poliwrath" />
-  <RaidBoss tier="4" id="71" name="Victreebel" current="true" />
+  <RaidBoss tier="4" id="71" name="Victreebel" />
   <RaidBoss tier="4" id="76" name="Golem" />
   <RaidBoss tier="4" id="103" name="Exeggutor" form="Alola" />
   <RaidBoss tier="4" id="105" name="Marowak" form="Alola" current="true" />
@@ -136,7 +141,8 @@
   <RaidBoss tier="4" id="176" name="Togetic" />
   <RaidBoss tier="4" id="217" name="Ursaring" />
   <RaidBoss tier="4" id="229" name="Houndoom" />
-  <RaidBoss tier="4" id="275" name="Shiftry" current="true" />
+  <RaidBoss tier="4" id="275" name="Shiftry" />
+  <RaidBoss tier="4" id="291" name="Ninjask" current="true" />
   <RaidBoss tier="4" id="356" name="Ursaring" />
   <RaidBoss tier="4" id="248" name="Tyranitar" current="true" />
   <RaidBoss tier="4" id="306" name="Aggron" />
@@ -149,7 +155,7 @@
   
   <!-- #region EX -->
   <RaidBoss tier="5" id="386" name="Deoxys" form="Normal" EX="true" />
-  <RaidBoss tier="5" id="386" name="Deoxys" form="Attack" EX="true" current="true" />
+  <RaidBoss tier="5" id="386" name="Deoxys" form="Attack" EX="true" />
   <RaidBoss tier="5" id="386" name="Deoxys" form="Defense" EX="true" current="true" />
   <!-- #endregion EX -->
   
@@ -173,7 +179,8 @@
   <RaidBoss tier="5" id="483" name="Dialga" />
   <RaidBoss tier="5" id="484" name="Palkia" />
   <RaidBoss tier="5" id="485" name="Heatran" />
-  <RaidBoss tier="5" id="487" name="Giratina" form="Altered" current="true" />
+  <RaidBoss tier="5" id="487" name="Giratina" form="Altered" />
+  <RaidBoss tier="5" id="487" name="Giratina" form="Origin" current="true" />
   <RaidBoss tier="5" id="488" name="Cresselia" />
   <!-- #endregion Tier 5 -->
 
@@ -184,7 +191,6 @@
   <RaidBoss id="481" name="Mesprit" />
   <RaidBoss id="482" name="Azelf" />
   <RaidBoss id="486" name="Regigigas" />
-  <RaidBoss id="487" name="Giratina" form="Origin" />
   <RaidBoss id="490" name="Phione" />
   <RaidBoss id="491" name="Darkrai" />
   <RaidBoss id="492" name="Shaymin" form="Land" />

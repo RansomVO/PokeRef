@@ -66,6 +66,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
       </Dependencies>
       <OutputFileName>pokemon.js</OutputFileName>
     </XslTransform>
@@ -111,6 +112,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles.manual\infrequent\pokemon.sprites.xml;
         _datafiles.manual\infrequent\pokemon.unreleased_gens.xml;
@@ -148,6 +150,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles.manual\infrequent\pokemon.sprites.xml;
       </Dependencies>
@@ -308,7 +311,7 @@
       </Dependencies>
       <OutputFileName>movesets.gen4.html</OutputFileName>
     </XslTransform>
-    <XslTransform Include="charts\movesets\movesets.gen7.html.xml">
+    <XslTransform Include="charts\movesets\movesets.gen8.html.xml">
       <Visible>true</Visible>
       <DependentUpon>movesets.xsl</DependentUpon>
       <Dependencies>
@@ -316,8 +319,8 @@
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         _datafiles\settings.xml;
-        _datafiles\pokestats.gen7.xml;
-        _datafiles\movesets.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
+        _datafiles\movesets.gen8.xml;
         _datafiles.manual\infrequent\moves.special.xml;
         _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles.manual\infrequent\pokemon.sprites.xml;
@@ -329,7 +332,7 @@
         charts\index.css;
         index.css;
       </Dependencies>
-      <OutputFileName>movesets.gen7.html</OutputFileName>
+      <OutputFileName>movesets.gen8.html</OutputFileName>
     </XslTransform>
     <XslTransform Include="charts\movesets\movesets.all.html.xml">
       <Visible>true</Visible>
@@ -343,12 +346,12 @@
         _datafiles\pokestats.gen2.xml;
         _datafiles\pokestats.gen3.xml;
         _datafiles\pokestats.gen4.xml;
-        _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         _datafiles\movesets.gen1.xml;
         _datafiles\movesets.gen2.xml;
         _datafiles\movesets.gen3.xml;
         _datafiles\movesets.gen4.xml;
-        _datafiles\movesets.gen7.xml;
+        _datafiles\movesets.gen8.xml;
         _datafiles.manual\infrequent\moves.special.xml;
         _datafiles.manual\infrequent\pokemon.availability.xml;
         _datafiles.manual\infrequent\pokemon.sprites.xml;
@@ -531,6 +534,26 @@
       </Dependencies>
       <OutputFileName>pokechart.gen7.html</OutputFileName>
     </XslTransform>
+    <XslTransform Include="charts\pokechart\pokechart.gen8.html.xml">
+      <Visible>true</Visible>
+      <DependentUpon>pokechart.xsl</DependentUpon>
+      <Dependencies>
+        xsl\global.xsl;
+        xsl\controls.xsl;
+        xsl\pokemon.xsl;
+        js\global.js;
+        js\pokemon.js.xsl;
+        js\controls.js;
+        _datafiles\constants.xml;
+        _datafiles\settings.xml;
+        _datafiles\pokestats.gen8.xml;
+        charts\pokechart\pokechart.js;
+        charts\pokechart\index.css;
+        charts\index.css;
+        index.css;
+      </Dependencies>
+      <OutputFileName>pokechart.gen8.html</OutputFileName>
+    </XslTransform>
     <XslTransform Include="charts\pokechart\pokechart.all.html.xml">
       <Visible>true</Visible>
       <DependentUpon>pokechart.xsl</DependentUpon>
@@ -550,6 +573,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
         charts\index.css;
@@ -576,6 +600,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         charts\pokechart\pokechart.js;
         charts\pokechart\index.css;
         charts\index.css;
@@ -626,6 +651,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         charts\raidboss\raidbosses.xsl;
         xsl\pokemon.xsl;
         xsl\global.xsl;
@@ -651,6 +677,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         xsl\pokemon.xsl;
         xsl\global.xsl;
         charts\raidboss\raidbosses.xsl;
@@ -695,6 +722,7 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         xsl\controls.xsl;
         xsl\pokemon.xsl;
         xsl\global.xsl;
@@ -1073,9 +1101,12 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         _datafiles\movesets.gen1.xml;
         _datafiles\movesets.gen2.xml;
         _datafiles\movesets.gen3.xml;
+        _datafiles\movesets.gen4.xml;
+        _datafiles\movesets.gen8.xml;
         tools\index.css;
         index.css;
       </Dependencies>
@@ -1105,9 +1136,11 @@
         _datafiles\pokestats.gen5.xml;
         _datafiles\pokestats.gen6.xml;
         _datafiles\pokestats.gen7.xml;
+        _datafiles\pokestats.gen8.xml;
         _datafiles\movesets.gen1.xml;
         _datafiles\movesets.gen2.xml;
         _datafiles\movesets.gen3.xml;
+        _datafiles\movesets.gen4.xml;
         tools\index.css;
         index.css;
       </Dependencies>
@@ -1155,31 +1188,6 @@
 
   <!-- resources -->
   <ItemGroup>
-    <FixIntermediateFile Include="resources\seapokemapfilter.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform Include="resources\seapokemapfilter.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>seapokemapfilter.xsl</DependentUpon>
-      <Dependencies>
-        _datafiles\pokestats.gen1.xml;
-        _datafiles\pokestats.gen2.xml;
-        _datafiles\pokestats.gen3.xml;
-        _datafiles\pokestats.gen4.xml;
-        _datafiles\pokestats.gen5.xml;
-        _datafiles\pokestats.gen6.xml;
-        _datafiles\pokestats.gen7.xml;
-      </Dependencies>
-      <OutputFileName>seapokemapfilter.html</OutputFileName>
-    </XslTransform>
-    <FixOutputFile Include="resources\seapokemapfilter.js">
-      <Visible>true</Visible>
-      <DependentUpon>seapokemapfilter.xsl</DependentUpon>
-      <Dependencies>
-        js\global.js;
-      </Dependencies>
-    </FixOutputFile>
-
     <FixIntermediateFile Include="resources\index.xsl">
       <Visible>true</Visible>
     </FixIntermediateFile>
@@ -1187,15 +1195,6 @@
       <Visible>true</Visible>
       <DependentUpon>index.xsl</DependentUpon>
       <OutputFileName>index.html</OutputFileName>
-    </XslTransform>
-
-    <FixIntermediateFile Include="resources\seattlearea.xsl">
-      <Visible>true</Visible>
-    </FixIntermediateFile>
-    <XslTransform Include="resources\seattlearea.html.xml">
-      <Visible>true</Visible>
-      <DependentUpon>seattlearea.xsl</DependentUpon>
-      <OutputFileName>seattlearea.html</OutputFileName>
     </XslTransform>
 
     <FixIntermediateFile Include="resources\tips.xsl">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="4">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-01" gen="4">
   <Pokemon id="387" name="Turtwig">
     <MoveSet base_dps="15.730337078651685" true_dps="13.033707865168539" comparison="91">
       <FastAttack name="Tackle" stab="false" legacy="false" />
@@ -2938,7 +2938,7 @@
       <ChargedAttack name="Heavy Slam" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
-  <Pokemon id="487" name="Giratina">
+  <Pokemon id="487" name="Giratina" form="Altered">
     <MoveSet base_dps="16.774193548387096" true_dps="21.93548387096774" comparison="96">
       <FastAttack name="Dragon Breath" stab="true" legacy="false" />
       <ChargedAttack name="Dragon Claw" stab="true" legacy="false" />
@@ -2962,6 +2962,80 @@
     <MoveSet base_dps="14.647887323943662" true_dps="19.154929577464788" comparison="84">
       <FastAttack name="Shadow Claw" stab="true" legacy="false" />
       <ChargedAttack name="Shadow Sneak" stab="true" legacy="false" />
+    </MoveSet>
+  </Pokemon>
+  <Pokemon id="487" name="Giratina" form="Origin">
+    <MoveSet base_dps="17.647058823529409" true_dps="26.862745098039213" comparison="90">
+      <FastAttack name="Dragon Tail" stab="true" legacy="false" />
+      <ChargedAttack name="Dragon Pulse" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.417910447761194" true_dps="25.07462686567164" comparison="84">
+      <FastAttack name="Dragon Tail" stab="true" legacy="false" />
+      <ChargedAttack name="Ominous Wind" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="19.791666666666664" true_dps="30.104166666666661" comparison="100">
+      <FastAttack name="Dragon Tail" stab="true" legacy="false" />
+      <ChargedAttack name="Shadow Ball" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.272727272727273" true_dps="26.464646464646464" comparison="88">
+      <FastAttack name="Shadow Claw" stab="true" legacy="false" />
+      <ChargedAttack name="Dragon Pulse" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.000000000000004" true_dps="24.61538461538462" comparison="82">
+      <FastAttack name="Shadow Claw" stab="true" legacy="false" />
+      <ChargedAttack name="Ominous Wind" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="19.462365591397848" true_dps="29.784946236559136" comparison="99">
+      <FastAttack name="Shadow Claw" stab="true" legacy="false" />
+      <ChargedAttack name="Shadow Ball" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.633663366336634" true_dps="26.336633663366339" comparison="88">
+      <FastAttack name="Dragon Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Dragon Pulse" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.294117647058824" true_dps="24.411764705882355" comparison="82">
+      <FastAttack name="Dragon Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Ominous Wind" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.736842105263158" true_dps="29.578947368421051" comparison="99">
+      <FastAttack name="Dragon Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Shadow Ball" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.0327868852459" true_dps="27.540983606557376" comparison="92">
+      <FastAttack name="Dragon Tail" stab="true" legacy="false" />
+      <ChargedAttack name="Dragon Claw" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.455696202531644" true_dps="22.405063291139239" comparison="75">
+      <FastAttack name="Dragon Tail" stab="true" legacy="false" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="15.06849315068493" true_dps="23.013698630136982" comparison="77">
+      <FastAttack name="Dragon Tail" stab="true" legacy="false" />
+      <ChargedAttack name="Shadow Sneak" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="17.6271186440678" true_dps="27.118644067796613" comparison="91">
+      <FastAttack name="Shadow Claw" stab="true" legacy="false" />
+      <ChargedAttack name="Dragon Claw" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.103896103896105" true_dps="21.948051948051951" comparison="73">
+      <FastAttack name="Shadow Claw" stab="true" legacy="false" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="14.647887323943662" true_dps="22.535211267605636" comparison="75">
+      <FastAttack name="Shadow Claw" stab="true" legacy="false" />
+      <ChargedAttack name="Shadow Sneak" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="16.774193548387096" true_dps="26.774193548387096" comparison="89">
+      <FastAttack name="Dragon Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Dragon Claw" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="15.5" true_dps="21.875" comparison="73">
+      <FastAttack name="Dragon Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Ancient Power" stab="false" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="14.054054054054053" true_dps="22.432432432432432" comparison="75">
+      <FastAttack name="Dragon Breath" stab="true" legacy="true" />
+      <ChargedAttack name="Shadow Sneak" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="488" name="Cresselia">

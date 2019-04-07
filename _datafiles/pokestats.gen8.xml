@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-05" gen="8" region="Unknown">
+  <Pokemon id="808" name="Meltan" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Mystery Box Only" shiny="2019-02-05">
+    <Type primary="Steel" />
+    <Stats>
+      <BaseIV attack="118" defense="99" stamina="130" />
+      <Height standard="0.20000000298023224" deviation="0.20000000298023224" />
+      <Weight standard="8" deviation="8" />
+      <Rates capture="0.30000001192092896" flee="0" attack="0.10000000149011612" dodge="0.15000000596046448" />
+      <Max cp="1068" hp="114" />
+    </Stats>
+  </Pokemon>
+  <Pokemon id="809" name="Melmetal" family="Meltan" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Evolve Only" shiny="2019-02-05">
+    <Type primary="Steel" />
+    <EvolvesFrom id="808" name="Meltan" candies="400" />
+    <Stats>
+      <BaseIV attack="226" defense="190" stamina="264" />
+      <Height standard="2.5" deviation="2.5" />
+      <Weight standard="800" deviation="800" />
+      <Rates capture="0.30000001192092896" flee="0" attack="0.10000000149011612" dodge="0.15000000596046448" />
+      <Max cp="3599" hp="220" />
+    </Stats>
+  </Pokemon>
+</PokeStats>

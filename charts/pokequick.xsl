@@ -78,6 +78,7 @@
           <xsl:apply-templates select="PokeStats[@gen = 5]" />
           <xsl:apply-templates select="PokeStats[@gen = 6]" />
           <xsl:apply-templates select="PokeStats[@gen = 7]" />
+          <xsl:apply-templates select="PokeStats[@gen = 8]" />
         </div>
 
         <xsl:call-template name="WriteFooter" />

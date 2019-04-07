@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
     pointer-events: none;
     cursor: default;
     color: gray;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .SEPARATOR_BORDER {
@@ -242,18 +242,18 @@ h1, h2, h3, h4 {
 
 /*#region Classes for outputting Pokemon images. */
 .SPRITE {
-    max-width: 65px;
-    max-height: 65px;
+    max-width: 128px;
+    max-height: 128px;
 }
 
 .SPRITE_SMALL {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 96px;
+    max-height: 96px;
 }
 
 .SPRITE_LARGE {
-    max-width: 128px;
-    max-height: 128px;
+    max-width: 192px;
+    max-height: 192px;
 }
 
 .SPRITE_FILLER {

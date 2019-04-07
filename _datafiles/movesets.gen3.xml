@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-01" gen="3">
   <Pokemon id="252" name="Treecko">
     <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
       <FastAttack name="Pound" stab="false" legacy="false" />
@@ -579,6 +579,10 @@
       <FastAttack name="Razor Leaf" stab="true" legacy="false" />
       <ChargedAttack name="Foul Play" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="13.580246913580247" true_dps="18.641975308641975" comparison="75">
+      <FastAttack name="Razor Leaf" stab="true" legacy="false" />
+      <ChargedAttack name="Leaf Tornado" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="18.333333333333332" true_dps="25.166666666666668" comparison="100">
       <FastAttack name="Feint Attack" stab="true" legacy="false" />
       <ChargedAttack name="Leaf Blade" stab="true" legacy="false" />
@@ -590,6 +594,10 @@
     <MoveSet base_dps="17.567567567567568" true_dps="24.189189189189189" comparison="97">
       <FastAttack name="Feint Attack" stab="true" legacy="false" />
       <ChargedAttack name="Foul Play" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="12.686567164179104" true_dps="17.46268656716418" comparison="70">
+      <FastAttack name="Feint Attack" stab="true" legacy="false" />
+      <ChargedAttack name="Leaf Tornado" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="276" name="Taillow">
@@ -1639,6 +1647,10 @@
       <FastAttack name="Rock Smash" stab="false" legacy="false" />
       <ChargedAttack name="Ice Beam" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="10" true_dps="8.4210526315789469" comparison="52">
+      <FastAttack name="Rock Smash" stab="false" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.647058823529409" true_dps="15.966386554621849" comparison="98">
       <FastAttack name="Infestation" stab="false" legacy="false" />
       <ChargedAttack name="Gunk Shot" stab="true" legacy="false" />
@@ -1650,6 +1662,10 @@
     <MoveSet base_dps="16.883116883116884" true_dps="13.246753246753247" comparison="81">
       <FastAttack name="Infestation" stab="false" legacy="false" />
       <ChargedAttack name="Ice Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="8.108108108108107" true_dps="7.0270270270270263" comparison="43">
+      <FastAttack name="Infestation" stab="false" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="318" name="Carvanha">
@@ -2495,75 +2511,107 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="351" name="Castform" form="Normal">
-    <MoveSet base_dps="16.535433070866144" true_dps="14.566929133858269" comparison="100">
+    <MoveSet base_dps="16.535433070866144" true_dps="14.566929133858269" comparison="80">
       <FastAttack name="Tackle" stab="true" legacy="false" />
       <ChargedAttack name="Hurricane" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.730337078651685" true_dps="13.48314606741573" comparison="93">
+    <MoveSet base_dps="15.730337078651685" true_dps="13.48314606741573" comparison="74">
       <FastAttack name="Tackle" stab="true" legacy="false" />
       <ChargedAttack name="Energy Ball" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.216216216216214" true_dps="12.702702702702702" comparison="88">
+    <MoveSet base_dps="18.627450980392158" true_dps="18.235294117647062" comparison="100">
+      <FastAttack name="Tackle" stab="true" legacy="false" />
+      <ChargedAttack name="Weather Ball Rock" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.216216216216214" true_dps="12.702702702702702" comparison="70">
       <FastAttack name="Hex" stab="false" legacy="false" />
       <ChargedAttack name="Hurricane" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.942528735632186" true_dps="11.724137931034484" comparison="81">
+    <MoveSet base_dps="14.942528735632186" true_dps="11.724137931034484" comparison="65">
       <FastAttack name="Hex" stab="false" legacy="false" />
       <ChargedAttack name="Energy Ball" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.30769230769231" true_dps="15.769230769230772" comparison="87">
+      <FastAttack name="Hex" stab="false" legacy="false" />
+      <ChargedAttack name="Weather Ball Rock" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="351" name="Castform" form="Rainy">
-    <MoveSet base_dps="17.293233082706767" true_dps="16.992481203007518" comparison="100">
+    <MoveSet base_dps="17.293233082706767" true_dps="16.992481203007518" comparison="94">
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.129032258064516" true_dps="14.354838709677418" comparison="85">
+    <MoveSet base_dps="16.129032258064516" true_dps="14.354838709677418" comparison="79">
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Thunder" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.293233082706767" true_dps="15.488721804511277" comparison="92">
+    <MoveSet base_dps="18.627450980392158" true_dps="18.235294117647062" comparison="100">
+      <FastAttack name="Water Gun" stab="true" legacy="false" />
+      <ChargedAttack name="Weather Ball Water" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.293233082706767" true_dps="15.488721804511277" comparison="85">
       <FastAttack name="Tackle" stab="false" legacy="false" />
       <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.129032258064516" true_dps="12.741935483870968" comparison="75">
+    <MoveSet base_dps="16.129032258064516" true_dps="12.741935483870968" comparison="70">
       <FastAttack name="Tackle" stab="false" legacy="false" />
       <ChargedAttack name="Thunder" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.627450980392158" true_dps="16.862745098039216" comparison="93">
+      <FastAttack name="Tackle" stab="false" legacy="false" />
+      <ChargedAttack name="Weather Ball Water" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="351" name="Castform" form="Snowy">
-    <MoveSet base_dps="17.029702970297031" true_dps="16.633663366336634" comparison="100">
+    <MoveSet base_dps="17.029702970297031" true_dps="16.633663366336634" comparison="99">
       <FastAttack name="Powder Snow" stab="true" legacy="false" />
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.616438356164384" true_dps="15.205479452054794" comparison="92">
+    <MoveSet base_dps="15.616438356164384" true_dps="15.205479452054794" comparison="91">
       <FastAttack name="Powder Snow" stab="true" legacy="false" />
       <ChargedAttack name="Ice Beam" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.557251908396946" true_dps="15.725190839694657" comparison="95">
+    <MoveSet base_dps="16.956521739130437" true_dps="16.521739130434785" comparison="98">
+      <FastAttack name="Powder Snow" stab="true" legacy="false" />
+      <ChargedAttack name="Weather Ball Ice" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.557251908396946" true_dps="15.725190839694657" comparison="94">
       <FastAttack name="Tackle" stab="false" legacy="false" />
       <ChargedAttack name="Blizzard" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.867469879518072" true_dps="15.301204819277107" comparison="92">
+    <MoveSet base_dps="16.867469879518072" true_dps="15.301204819277107" comparison="91">
       <FastAttack name="Tackle" stab="false" legacy="false" />
       <ChargedAttack name="Ice Beam" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.627450980392158" true_dps="16.862745098039216" comparison="100">
+      <FastAttack name="Tackle" stab="false" legacy="false" />
+      <ChargedAttack name="Weather Ball Ice" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="351" name="Castform" form="Sunny">
-    <MoveSet base_dps="16.901408450704228" true_dps="16.549295774647888" comparison="100">
+    <MoveSet base_dps="16.901408450704228" true_dps="16.549295774647888" comparison="95">
       <FastAttack name="Ember" stab="true" legacy="false" />
       <ChargedAttack name="Fire Blast" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.791946308724832" true_dps="16.040268456375838" comparison="97">
+    <MoveSet base_dps="18.791946308724832" true_dps="16.040268456375838" comparison="92">
       <FastAttack name="Ember" stab="true" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.901408450704228" true_dps="15.140845070422536" comparison="92">
+    <MoveSet base_dps="17.857142857142858" true_dps="17.5" comparison="100">
+      <FastAttack name="Ember" stab="true" legacy="false" />
+      <ChargedAttack name="Weather Ball Fire" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.901408450704228" true_dps="15.140845070422536" comparison="87">
       <FastAttack name="Tackle" stab="false" legacy="false" />
       <ChargedAttack name="Fire Blast" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.791946308724832" true_dps="14.697986577181208" comparison="89">
+    <MoveSet base_dps="18.791946308724832" true_dps="14.697986577181208" comparison="84">
       <FastAttack name="Tackle" stab="false" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.627450980392158" true_dps="16.862745098039216" comparison="97">
+      <FastAttack name="Tackle" stab="false" legacy="false" />
+      <ChargedAttack name="Weather Ball Fire" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="352" name="Kecleon">

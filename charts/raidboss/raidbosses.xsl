@@ -5,7 +5,7 @@
                 xmlns:pokeref="urn:pokeref"
 >
 
-  <xsl:variable name="columnsMax" select="10" />
+  <xsl:variable name="columnsMax" select="6" />
 
   <!-- Templates to output RaidBoss Chart-->
   <xsl:template match="RaidBosses">

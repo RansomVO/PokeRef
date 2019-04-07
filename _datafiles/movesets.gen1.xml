@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-01" gen="1">
   <Pokemon id="1" name="Bulbasaur">
     <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -755,6 +755,10 @@
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Gunk Shot" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="10.315789473684211" true_dps="10.631578947368421" comparison="50">
+      <FastAttack name="Bite" stab="false" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.627906976744182" true_dps="17.441860465116275" comparison="81">
       <FastAttack name="Acid" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="false" />
@@ -767,6 +771,10 @@
       <FastAttack name="Acid" stab="true" legacy="false" />
       <ChargedAttack name="Gunk Shot" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="9.651162790697672" true_dps="11.627906976744184" comparison="54">
+      <FastAttack name="Acid" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.708333333333332" true_dps="16.354166666666664" comparison="76">
       <FastAttack name="Dragon Tail" stab="false" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="false" />
@@ -778,6 +786,10 @@
     <MoveSet base_dps="19.018404907975459" true_dps="19.386503067484661" comparison="90">
       <FastAttack name="Dragon Tail" stab="false" legacy="false" />
       <ChargedAttack name="Gunk Shot" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="11.458333333333332" true_dps="11.145833333333332" comparison="52">
+      <FastAttack name="Dragon Tail" stab="false" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="25" name="Pikachu">
@@ -2569,6 +2581,14 @@
       <FastAttack name="Razor Leaf" stab="true" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="13.580246913580247" true_dps="19.506172839506174" comparison="72">
+      <FastAttack name="Razor Leaf" stab="true" legacy="false" />
+      <ChargedAttack name="Leaf Tornado" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="11.272727272727273" true_dps="16.363636363636363" comparison="60">
+      <FastAttack name="Razor Leaf" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.96875" true_dps="25.46875" comparison="94">
       <FastAttack name="Acid" stab="true" legacy="false" />
       <ChargedAttack name="Leaf Blade" stab="true" legacy="false" />
@@ -2580,6 +2600,14 @@
     <MoveSet base_dps="19.411764705882351" true_dps="27.385620915032678" comparison="100">
       <FastAttack name="Acid" stab="true" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="12.67605633802817" true_dps="18.028169014084508" comparison="66">
+      <FastAttack name="Acid" stab="true" legacy="false" />
+      <ChargedAttack name="Leaf Tornado" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="9.651162790697672" true_dps="13.837209302325579" comparison="51">
+      <FastAttack name="Acid" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="72" name="Tentacool">
@@ -2621,6 +2649,10 @@
       <FastAttack name="Acid" stab="true" legacy="false" />
       <ChargedAttack name="Blizzard" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="9.651162790697672" true_dps="11.627906976744184" comparison="55">
+      <FastAttack name="Acid" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="18.300653594771241" true_dps="21.437908496732025" comparison="100">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Hydro Pump" stab="true" legacy="false" />
@@ -2632,6 +2664,10 @@
     <MoveSet base_dps="18.543046357615893" true_dps="19.735099337748345" comparison="93">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Blizzard" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="10.638297872340425" true_dps="12.659574468085106" comparison="60">
+      <FastAttack name="Poison Jab" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="74" name="Geodude" form="Alola">
@@ -3273,6 +3309,10 @@
       <FastAttack name="Bite" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="10.315789473684211" true_dps="13.684210526315789" comparison="58">
+      <FastAttack name="Bite" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.021276595744681" true_dps="22.021276595744681" comparison="92">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="true" legacy="false" />
@@ -3285,6 +3325,10 @@
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="10.638297872340425" true_dps="13.829787234042552" comparison="58">
+      <FastAttack name="Poison Jab" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.470588235294116" true_dps="21.529411764705884" comparison="90">
       <FastAttack name="Snarl" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="true" legacy="false" />
@@ -3296,6 +3340,10 @@
     <MoveSet base_dps="16.6412213740458" true_dps="21.755725190839691" comparison="91">
       <FastAttack name="Snarl" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="9.4117647058823533" true_dps="12.470588235294118" comparison="53">
+      <FastAttack name="Snarl" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="89" name="Muk" form="Normal">
@@ -3315,6 +3363,10 @@
       <FastAttack name="Infestation" stab="false" legacy="false" />
       <ChargedAttack name="Thunder Punch" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="8.108108108108107" true_dps="9.45945945945946" comparison="40">
+      <FastAttack name="Infestation" stab="false" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="17.021276595744681" true_dps="19.893617021276594" comparison="83">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Dark Pulse" stab="false" legacy="false" />
@@ -3330,6 +3382,10 @@
     <MoveSet base_dps="16.379310344827587" true_dps="19.310344827586206" comparison="81">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Thunder Punch" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="10.638297872340425" true_dps="13.829787234042552" comparison="58">
+      <FastAttack name="Poison Jab" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="90" name="Shellder">

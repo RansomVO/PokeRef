@@ -1,665 +1,667 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- SOURCES:
+  For images of released: https://github.com/ZeChrales/PogoAssets
+
   https://github.com/PokeAPI/sprites/tree/master/sprites/pokemon
   https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_National_Pokédex_number
   https://pokemongo.fandom.com/wiki/List_of_Shiny_Pok%C3%A9mon
   https://pokemongo.fandom.com/wiki/List_of_Pok%C3%A9mon_forms_by_release_date
 -->
 
-<PokemonSprites last_updated="2018-11-05" xmlns:pokeref="urn:pokeref">
+<!-- If there is no @sprite specified, then the URL will be generated to the images of released. -->
+<PokemonSprites last_updated="2019-04-06" xmlns:pokeref="urn:pokeref">
   <Pokemon id="0" name="Dummy to make index line up." />
   <!-- #region Gen1 -->
-  <Pokemon id="1" name="Bulbasaur" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png" />
-  <Pokemon id="2" name="Ivysaur" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/86/Ivysaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/72/Ivysaur_shiny.png" />
-  <Pokemon id="3" name="Venusaur" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/be/Venusaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Venusaur_shiny.png" />
-  <Pokemon id="4" name="Charmander" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Charmander.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Charmander_shiny.png" />
-  <Pokemon id="5" name="Charmeleon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fb/Charmeleon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Charmeleon_shiny.png" />
-  <Pokemon id="6" name="Charizard" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Charizard.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Charizard_shiny.png" />
-  <Pokemon id="7" name="Squirtle" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e3/Squirtle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/26/Squirtle_shiny.png" />
-  <Pokemon id="8" name="Wartortle" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Wartortle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Wartortle_shiny.png" />
-  <Pokemon id="9" name="Blastoise" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Blastoise.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/dd/Blastoise_shiny.png" />
-  <Pokemon id="10" name="Caterpie" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/05/Caterpie.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Caterpie_shiny.png" />
-  <Pokemon id="11" name="Metapod" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Metapod.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/66/Metapod_shiny.png" />
-  <Pokemon id="12" name="Butterfree" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/96/Butterfree.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Butterfree_shiny.png" />
-  <Pokemon id="13" name="Weedle" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d6/Weedle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/db/Weedle_shiny.png" />
-  <Pokemon id="14" name="Kakuna" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/63/Kakuna.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Kakuna_shiny.png" />
-  <Pokemon id="15" name="Beedrill" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0d/Beedrill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Beedrill_shiny.png" />
-  <Pokemon id="16" name="Pidgey" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Pidgey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Pidgey_shiny.png" />
-  <Pokemon id="17" name="Pidgeotto" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Pidgeotto.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/02/Pidgeotto_shiny.png" />
-  <Pokemon id="18" name="Pidgeot" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Pidgeot.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Pidgeot_shiny.png" />
-  <Pokemon id="19" name="Rattata" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3d/Rattata_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Rattata_alolan_shiny.png" />
+  <Pokemon id="1" name="Bulbasaur" />
+  <Pokemon id="2" name="Ivysaur" />
+  <Pokemon id="3" name="Venusaur" />
+  <Pokemon id="4" name="Charmander" />
+  <Pokemon id="5" name="Charmeleon" />
+  <Pokemon id="6" name="Charizard" />
+  <Pokemon id="7" name="Squirtle" />
+  <Pokemon id="8" name="Wartortle" />
+  <Pokemon id="9" name="Blastoise" />
+  <Pokemon id="10" name="Caterpie" />
+  <Pokemon id="11" name="Metapod" />
+  <Pokemon id="12" name="Butterfree" />
+  <Pokemon id="13" name="Weedle" />
+  <Pokemon id="14" name="Kakuna" />
+  <Pokemon id="15" name="Beedrill" />
+  <Pokemon id="16" name="Pidgey" />
+  <Pokemon id="17" name="Pidgeotto" />
+  <Pokemon id="18" name="Pidgeot" />
+  <Pokemon id="19" name="Rattata">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="20" name="Raticate" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Raticate_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Raticate_alolan_shiny.png" />
+  <Pokemon id="20" name="Raticate">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="21" name="Spearow" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Spearow.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/07/Spearow_shiny.png" />
-  <Pokemon id="22" name="Fearow" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Fearow.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fa/Fearow_shiny.png" />
-  <Pokemon id="23" name="Ekans" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/11/Ekans.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1b/Ekans_shiny.png" />
-  <Pokemon id="24" name="Arbok" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Arbok.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9f/Arbok_shiny.png" />
-  <Pokemon id="25" name="Pikachu" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/77/Pikachu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Pikachu_shiny.png" />
-  <Pokemon id="26" name="Raichu" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/34/Raichu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Raichu_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/34/Raichu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Raichu_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Raichu_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Raichu_alolan_shiny.png" />
+  <Pokemon id="21" name="Spearow" />
+  <Pokemon id="22" name="Fearow" />
+  <Pokemon id="23" name="Ekans" />
+  <Pokemon id="24" name="Arbok" />
+  <Pokemon id="25" name="Pikachu" />
+  <Pokemon id="26" name="Raichu">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Sandshrew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Sandshrew_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Sandshrew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Sandshrew_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Sandshrew_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Sandshrew_alolan_shiny.png" />
+  <Pokemon id="27" name="Sandshrew">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sandslash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Sandslash_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sandslash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Sandslash_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Sandslash_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Sandslash_alolan_shiny.png" />
+  <Pokemon id="28" name="Sandslash">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="29" name="Nidoran♀" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c8/Nidoran%E2%99%80.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Nidoran%E2%99%80_shiny.png" />
-  <Pokemon id="30" name="Nidorina" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Nidorina.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/53/Nidorina_shiny.png" />
-  <Pokemon id="31" name="Nidoqueen" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Nidoqueen.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/35/Nidoqueen_shiny.png" />
-  <Pokemon id="32" name="Nidoran♂" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Nidoran%E2%99%82.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c0/Nidoran%E2%99%82_shiny.png" />
-  <Pokemon id="33" name="Nidorino" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Nidorino.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/48/Nidorino_shiny.png" />
-  <Pokemon id="34" name="Nidoking" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/76/Nidoking.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Nidoking_shiny.png" />
-  <Pokemon id="35" name="Clefairy" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Clefairy.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Clefairy_shiny.png" />
-  <Pokemon id="36" name="Clefable" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Clefable.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/00/Clefable_shiny.png" />
-  <Pokemon id="37" name="Vulpix" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Vulpix.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Vulpix_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Vulpix.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Vulpix_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Vulpix_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8c/Vulpix_alolan_shiny.png" />
+  <Pokemon id="29" name="Nidoran♀" />
+  <Pokemon id="30" name="Nidorina" />
+  <Pokemon id="31" name="Nidoqueen" />
+  <Pokemon id="32" name="Nidoran♂" />
+  <Pokemon id="33" name="Nidorino" />
+  <Pokemon id="34" name="Nidoking" />
+  <Pokemon id="35" name="Clefairy" />
+  <Pokemon id="36" name="Clefable" />
+  <Pokemon id="37" name="Vulpix">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Ninetales.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/74/Ninetales_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Ninetales.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/74/Ninetales_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Ninetales_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Ninetales_alolan_shiny.png" />
+  <Pokemon id="38" name="Ninetales">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="39" name="Jigglypuff" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/af/Jigglypuff.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Jigglypuff_shiny.png" />
-  <Pokemon id="40" name="Wigglytuff" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Wigglytuff.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e6/Wigglytuff_shiny.png" />
-  <Pokemon id="41" name="Zubat" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/67/Zubat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/78/Zubat_shiny.png" />
-  <Pokemon id="42" name="Golbat" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Golbat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ad/Golbat_shiny.png" />
-  <Pokemon id="43" name="Oddish" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Oddish.png" sprite_shiny="" />
-  <Pokemon id="44" name="Gloom" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/59/Gloom.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Gloom_shiny.png" />
-  <Pokemon id="45" name="Vileplume" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Vileplume.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Vileplume_shiny.png" />
-  <Pokemon id="46" name="Paras" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ee/Paras.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Paras_shiny.png" />
-  <Pokemon id="47" name="Parasect" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/62/Parasect.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/64/Parasect_shiny.png" />
-  <Pokemon id="48" name="Venonat" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Venonat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Venonat_shiny.png" />
-  <Pokemon id="49" name="Venomoth" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c2/Venomoth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/bb/Venomoth_shiny.png" />
-  <Pokemon id="50" name="Diglett" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Diglett.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Diglett_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Diglett.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Diglett_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Diglett_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Diglett_alolan_shiny.png" />
+  <Pokemon id="39" name="Jigglypuff" />
+  <Pokemon id="40" name="Wigglytuff" />
+  <Pokemon id="41" name="Zubat" />
+  <Pokemon id="42" name="Golbat" />
+  <Pokemon id="43" name="Oddish" />
+  <Pokemon id="44" name="Gloom" />
+  <Pokemon id="45" name="Vileplume" />
+  <Pokemon id="46" name="Paras" />
+  <Pokemon id="47" name="Parasect" />
+  <Pokemon id="48" name="Venonat" />
+  <Pokemon id="49" name="Venomoth" />
+  <Pokemon id="50" name="Diglett">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Dugtrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Dugtrio_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Dugtrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Dugtrio_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Dugtrio_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Dugtrio_alolan_shiny.png" />
+  <Pokemon id="51" name="Dugtrio">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="52" name="Meowth" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Meowth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Meowth_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Meowth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Meowth_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Meowth_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/84/Meowth_alolan_shiny.png" />
+  <Pokemon id="52" name="Meowth">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="53" name="Persian" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Persian.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Persian_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Persian.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Persian_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/82/Persian_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Persian_alolan_shiny.png" />
+  <Pokemon id="53" name="Persian">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="54" name="Psyduck" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Psyduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Psyduck_shiny.png" />
-  <Pokemon id="55" name="Golduck" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Golduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Golduck_shiny.png" />
-  <Pokemon id="56" name="Mankey" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Mankey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Mankey_shiny.png" />
-  <Pokemon id="57" name="Primeape" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Primeape.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/26/Primeape_shiny.png" />
-  <Pokemon id="58" name="Growlithe" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bb/Growlithe.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/64/Growlithe_shiny.png" />
-  <Pokemon id="59" name="Arcanine" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/50/Arcanine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/16/Arcanine_shiny.png" />
-  <Pokemon id="60" name="Poliwag" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/90/Poliwag.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Poliwag_shiny.png" />
-  <Pokemon id="61" name="Poliwhirl" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/24/Poliwhirl.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Poliwhirl_shiny.png" />
-  <Pokemon id="62" name="Poliwrath" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Poliwrath.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Poliwrath_shiny.png" />
-  <Pokemon id="63" name="Abra" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f6/Abra.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Abra_shiny.png" />
-  <Pokemon id="64" name="Kadabra" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Kadabra.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Kadabra_shiny.png" />
-  <Pokemon id="65" name="Alakazam" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Alakazam.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Alakazam_shiny.png" />
-  <Pokemon id="66" name="Machop" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Machop.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7c/Machop_shiny.png" />
-  <Pokemon id="67" name="Machoke" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Machoke.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Machoke_shiny.png" />
-  <Pokemon id="68" name="Machamp" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Machamp.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Machamp_shiny.png" />
-  <Pokemon id="69" name="Bellsprout" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Bellsprout.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/93/Bellsprout_shiny.png" />
-  <Pokemon id="70" name="Weepinbell" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Weepinbell.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Weepinbell_shiny.png" />
-  <Pokemon id="71" name="Victreebel" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/55/Victreebel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Victreebel_shiny.png" />
-  <Pokemon id="72" name="Tentacool" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Tentacool.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Tentacool_shiny.png" />
-  <Pokemon id="73" name="Tentacruel" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/78/Tentacruel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Tentacruel_shiny.png" />
-  <Pokemon id="74" name="Geodude" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Geodude.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Geodude_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Geodude.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Geodude_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4c/Geodude_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/75/Geodude_alolan_shiny.png" />
+  <Pokemon id="54" name="Psyduck" />
+  <Pokemon id="55" name="Golduck" />
+  <Pokemon id="56" name="Mankey" />
+  <Pokemon id="57" name="Primeape" />
+  <Pokemon id="58" name="Growlithe" />
+  <Pokemon id="59" name="Arcanine" />
+  <Pokemon id="60" name="Poliwag" />
+  <Pokemon id="61" name="Poliwhirl" />
+  <Pokemon id="62" name="Poliwrath" />
+  <Pokemon id="63" name="Abra" />
+  <Pokemon id="64" name="Kadabra" />
+  <Pokemon id="65" name="Alakazam" />
+  <Pokemon id="66" name="Machop" />
+  <Pokemon id="67" name="Machoke" />
+  <Pokemon id="68" name="Machamp" />
+  <Pokemon id="69" name="Bellsprout" />
+  <Pokemon id="70" name="Weepinbell" />
+  <Pokemon id="71" name="Victreebel" />
+  <Pokemon id="72" name="Tentacool" />
+  <Pokemon id="73" name="Tentacruel" />
+  <Pokemon id="74" name="Geodude">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="75" name="Graveler" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Graveler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Graveler_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Graveler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Graveler_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/22/Graveler_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/16/Graveler_alolan_shiny.png" />
+  <Pokemon id="75" name="Graveler">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="76" name="Golem" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Golem.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Golem_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Golem.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Golem_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/dd/Golem_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Golem_alolan_shiny.png" />
+  <Pokemon id="76" name="Golem">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="77" name="Ponyta" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5f/Ponyta.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Ponyta_shiny.png" />
-  <Pokemon id="78" name="Rapidash" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Rapidash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Rapidash_shiny.png" />
-  <Pokemon id="79" name="Slowpoke" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9b/Slowpoke.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Slowpoke_shiny.png" />
-  <Pokemon id="80" name="Slowbro" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Slowbro.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Slowbro_shiny.png" />
-  <Pokemon id="81" name="Magnemite" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/80/Magnemite.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fa/Magnemite_shiny.png" />
-  <Pokemon id="82" name="Magneton" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Magneton.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c6/Magneton_shiny.png" />
-  <Pokemon id="83" name="Farfetch'd" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b5/Farfetch%27d.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8f/Farfetch%27d_shiny.png" />
-  <Pokemon id="84" name="Doduo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9c/Doduo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2f/Doduo_shiny.png" />
-  <Pokemon id="85" name="Dodrio" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Dodrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Dodrio_shiny.png" />
-  <Pokemon id="86" name="Seel" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Seel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0d/Seel_shiny.png" />
-  <Pokemon id="87" name="Dewgong" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Dewgong.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Dewgong_shiny.png" />
-  <Pokemon id="88" name="Grimer" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Grimer.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Grimer_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Grimer.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Grimer_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Grimer_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e8/Grimer_alolan_shiny.png" />
+  <Pokemon id="77" name="Ponyta" />
+  <Pokemon id="78" name="Rapidash" />
+  <Pokemon id="79" name="Slowpoke" />
+  <Pokemon id="80" name="Slowbro" />
+  <Pokemon id="81" name="Magnemite" />
+  <Pokemon id="82" name="Magneton" />
+  <Pokemon id="83" name="Farfetch'd" />
+  <Pokemon id="84" name="Doduo" />
+  <Pokemon id="85" name="Dodrio" />
+  <Pokemon id="86" name="Seel" />
+  <Pokemon id="87" name="Dewgong" />
+  <Pokemon id="88" name="Grimer">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="89" name="Muk" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Muk.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Muk_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Muk.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Muk_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Muk_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Muk_alolan_shiny.png" />
+  <Pokemon id="89" name="Muk">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="90" name="Shellder" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/63/Shellder.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Shellder_shiny.png" />
-  <Pokemon id="91" name="Cloyster" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/71/Cloyster.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Cloyster_shiny.png" />
-  <Pokemon id="92" name="Gastly" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Gastly.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Gastly_shiny.png" />
-  <Pokemon id="93" name="Haunter" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Haunter.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Haunter_shiny.png" />
-  <Pokemon id="94" name="Gengar" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Gengar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/15/Gengar_shiny.png" />
-  <Pokemon id="95" name="Onix" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Onix.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/ba/Onix_shiny.png" />
-  <Pokemon id="96" name="Drowzee" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5d/Drowzee.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Drowzee_shiny.png" />
-  <Pokemon id="97" name="Hypno" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0e/Hypno.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/20/Hypno_shiny.png" />
-  <Pokemon id="98" name="Krabby" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Krabby.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/82/Krabby_shiny.png" />
-  <Pokemon id="99" name="Kingler" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Kingler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3d/Kingler_shiny.png" />
-  <Pokemon id="100" name="Voltorb" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/80/Voltorb.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/be/Voltorb_shiny.png" />
-  <Pokemon id="101" name="Electrode" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Electrode.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9f/Electrode_shiny.png" />
-  <Pokemon id="102" name="Exeggcute" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5f/Exeggcute.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2e/Exeggcute_shiny.png" />
-  <Pokemon id="103" name="Exeggutor" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Exeggutor.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Exeggutor_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Exeggutor.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Exeggutor_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/94/Exeggutor_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Exeggutor_alolan_shiny.png" />
+  <Pokemon id="90" name="Shellder" />
+  <Pokemon id="91" name="Cloyster" />
+  <Pokemon id="92" name="Gastly" />
+  <Pokemon id="93" name="Haunter" />
+  <Pokemon id="94" name="Gengar" />
+  <Pokemon id="95" name="Onix" />
+  <Pokemon id="96" name="Drowzee" />
+  <Pokemon id="97" name="Hypno" />
+  <Pokemon id="98" name="Krabby" />
+  <Pokemon id="99" name="Kingler" />
+  <Pokemon id="100" name="Voltorb" />
+  <Pokemon id="101" name="Electrode" />
+  <Pokemon id="102" name="Exeggcute" />
+  <Pokemon id="103" name="Exeggutor">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="104" name="Cubone" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Cubone.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Cubone_shiny.png" />
-  <Pokemon id="105" name="Marowak" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png" />
-    <Form name="Alola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/af/Marowak_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Marowak_alolan_shiny.png" />
+  <Pokemon id="104" name="Cubone" />
+  <Pokemon id="105" name="Marowak">
+    <Form name="Normal" />
+    <Form name="Alola" value="61" />
   </Pokemon>
-  <Pokemon id="106" name="Hitmonlee" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0f/Hitmonlee.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/62/Hitmonlee_shiny.png" />
-  <Pokemon id="107" name="Hitmonchan" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Hitmonchan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7b/Hitmonchan_shiny.png" />
-  <Pokemon id="108" name="Lickitung" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/ab/Lickitung.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Lickitung_shiny.png" />
-  <Pokemon id="109" name="Koffing" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Koffing.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5c/Koffing_shiny.png" />
-  <Pokemon id="110" name="Weezing" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/88/Weezing.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Weezing_shiny.png" />
-  <Pokemon id="111" name="Rhyhorn" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Rhyhorn.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5d/Rhyhorn_shiny.png" />
-  <Pokemon id="112" name="Rhydon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Rhydon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Rhydon_shiny.png" />
-  <Pokemon id="113" name="Chansey" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Chansey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Chansey_shiny.png" />
-  <Pokemon id="114" name="Tangela" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/03/Tangela.png" sprite_shiny="" />
-  <Pokemon id="115" name="Kangaskhan" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/39/Kangaskhan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/70/Kangaskhan_shiny.png" />
-  <Pokemon id="116" name="Horsea" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Horsea.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Horsea_shiny.png" />
-  <Pokemon id="117" name="Seadra" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Seadra.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d6/Seadra_shiny.png" />
-  <Pokemon id="118" name="Goldeen" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Goldeen.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/53/Goldeen_shiny.png" />
-  <Pokemon id="119" name="Seaking" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Seaking.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Seaking_shiny.png" />
-  <Pokemon id="120" name="Staryu" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e8/Staryu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/88/Staryu_shiny.png" />
-  <Pokemon id="121" name="Starmie" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Starmie.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Starmie_shiny.png" />
-  <Pokemon id="122" name="Mr. Mime" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Mr._Mime.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7d/Mr._Mime_shiny.png" />
-  <Pokemon id="123" name="Scyther" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c2/Scyther.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2f/Scyther_shiny.png" />
-  <Pokemon id="124" name="Jynx" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Jynx.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/24/Jynx_shiny.png" />
-  <Pokemon id="125" name="Electabuzz" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3a/Electabuzz.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Electabuzz_shiny.png" />
-  <Pokemon id="126" name="Magmar" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/46/Magmar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7b/Magmar_shiny.png" />
-  <Pokemon id="127" name="Pinsir" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b4/Pinsir.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Pinsir_shiny.png" />
-  <Pokemon id="128" name="Tauros" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Tauros.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Tauros_shiny.png" />
-  <Pokemon id="129" name="Magikarp" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Magikarp.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Magikarp_shiny.png" />
-  <Pokemon id="130" name="Gyarados" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Gyarados.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3f/Gyarados_shiny.png" />
-  <Pokemon id="131" name="Lapras" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Lapras.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Lapras_shiny.png" />
-  <Pokemon id="132" name="Ditto" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/03/Ditto.png" sprite_shiny="" />
-  <Pokemon id="133" name="Eevee" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f2/Eevee.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0b/Eevee_shiny.png" />
-  <Pokemon id="134" name="Vaporeon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fc/Vaporeon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e5/Vaporeon_shiny.png" />
-  <Pokemon id="135" name="Jolteon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Jolteon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/35/Jolteon_shiny.png" />
-  <Pokemon id="136" name="Flareon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/17/Flareon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0d/Flareon_shiny.png" />
-  <Pokemon id="137" name="Porygon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Porygon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f7/Porygon_shiny.png" />
-  <Pokemon id="138" name="Omanyte" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Omanyte.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/22/Omanyte_shiny.png" />
-  <Pokemon id="139" name="Omastar" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/97/Omastar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8f/Omastar_shiny.png" />
-  <Pokemon id="140" name="Kabuto" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Kabuto.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Kabuto_shiny.png" />
-  <Pokemon id="141" name="Kabutops" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/72/Kabutops.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b9/Kabutops_shiny.png" />
-  <Pokemon id="142" name="Aerodactyl" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e6/Aerodactyl.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/cc/Aerodactyl_shiny.png" />
-  <Pokemon id="143" name="Snorlax" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0b/Snorlax.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/83/Snorlax_shiny.png" />
-  <Pokemon id="144" name="Articuno" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Articuno.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b5/Articuno_shiny.png" />
-  <Pokemon id="145" name="Zapdos" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Zapdos.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Zapdos_shiny.png" />
-  <Pokemon id="146" name="Moltres" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Moltres.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Moltres_shiny.png" />
-  <Pokemon id="147" name="Dratini" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Dratini.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Dratini_shiny.png" />
-  <Pokemon id="148" name="Dragonair" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Dragonair.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Dragonair_shiny.png" />
-  <Pokemon id="149" name="Dragonite" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a6/Dragonite.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Dragonite_shiny.png" />
-  <Pokemon id="150" name="Mewtwo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Mewtwo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3d/Mewtwo_shiny.png" />
-  <Pokemon id="151" name="Mew" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Mew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Mew_shiny.png" />
+  <Pokemon id="106" name="Hitmonlee" />
+  <Pokemon id="107" name="Hitmonchan" />
+  <Pokemon id="108" name="Lickitung" />
+  <Pokemon id="109" name="Koffing" />
+  <Pokemon id="110" name="Weezing" />
+  <Pokemon id="111" name="Rhyhorn" />
+  <Pokemon id="112" name="Rhydon" />
+  <Pokemon id="113" name="Chansey" />
+  <Pokemon id="114" name="Tangela" />
+  <Pokemon id="115" name="Kangaskhan" />
+  <Pokemon id="116" name="Horsea" />
+  <Pokemon id="117" name="Seadra" />
+  <Pokemon id="118" name="Goldeen" />
+  <Pokemon id="119" name="Seaking" />
+  <Pokemon id="120" name="Staryu" />
+  <Pokemon id="121" name="Starmie" />
+  <Pokemon id="122" name="Mr. Mime" />
+  <Pokemon id="123" name="Scyther" />
+  <Pokemon id="124" name="Jynx" />
+  <Pokemon id="125" name="Electabuzz" />
+  <Pokemon id="126" name="Magmar" />
+  <Pokemon id="127" name="Pinsir" />
+  <Pokemon id="128" name="Tauros" />
+  <Pokemon id="129" name="Magikarp" />
+  <Pokemon id="130" name="Gyarados" />
+  <Pokemon id="131" name="Lapras" />
+  <Pokemon id="132" name="Ditto" />
+  <Pokemon id="133" name="Eevee" />
+  <Pokemon id="134" name="Vaporeon" />
+  <Pokemon id="135" name="Jolteon" />
+  <Pokemon id="136" name="Flareon" />
+  <Pokemon id="137" name="Porygon" />
+  <Pokemon id="138" name="Omanyte" />
+  <Pokemon id="139" name="Omastar" />
+  <Pokemon id="140" name="Kabuto" />
+  <Pokemon id="141" name="Kabutops" />
+  <Pokemon id="142" name="Aerodactyl" />
+  <Pokemon id="143" name="Snorlax" />
+  <Pokemon id="144" name="Articuno" />
+  <Pokemon id="145" name="Zapdos" />
+  <Pokemon id="146" name="Moltres" />
+  <Pokemon id="147" name="Dratini" />
+  <Pokemon id="148" name="Dragonair" />
+  <Pokemon id="149" name="Dragonite" />
+  <Pokemon id="150" name="Mewtwo" />
+  <Pokemon id="151" name="Mew" />
   <!-- #endregion Gen1 -->
   <!-- #region Gen2 -->
-  <Pokemon id="152" name="Chikorita" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Chikorita.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Chikorita_shiny.png" />
-  <Pokemon id="153" name="Bayleef" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1b/Bayleef.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/94/Bayleef_shiny.png" />
-  <Pokemon id="154" name="Meganium" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/40/Meganium.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0b/Meganium_shiny.png" />
-  <Pokemon id="155" name="Cyndaquil" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Cyndaquil.png/revision/latest/scale-to-width-down/256" sprite_shiny="" />
-  <Pokemon id="156" name="Quilava" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4a/Quilava.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Quilava_shiny.png" />
-  <Pokemon id="157" name="Typhlosion" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Typhlosion.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Typhlosion_shiny.png" />
-  <Pokemon id="158" name="Totodile" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Totodile.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/54/Totodile_shiny.png" />
-  <Pokemon id="159" name="Croconaw" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Croconaw.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Croconaw_shiny.png" />
-  <Pokemon id="160" name="Feraligatr" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Feraligatr.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Feraligatr_shiny.png" />
-  <Pokemon id="161" name="Sentret" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5c/Sentret.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Sentret_shiny.png" />
-  <Pokemon id="162" name="Furret" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Furret.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c3/Furret_shiny.png" />
-  <Pokemon id="163" name="Hoothoot" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Hoothoot.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e8/Hoothoot_shiny.png" />
-  <Pokemon id="164" name="Noctowl" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/37/Noctowl.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/86/Noctowl_shiny.png" />
-  <Pokemon id="165" name="Ledyba" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a8/Ledyba.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e5/Ledyba_shiny.png" />
-  <Pokemon id="166" name="Ledian" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ee/Ledian.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/05/Ledian_shiny.png" />
-  <Pokemon id="167" name="Spinarak" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/aa/Spinarak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9a/Spinarak_shiny.png" />
-  <Pokemon id="168" name="Ariados" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Ariados.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Ariados_shiny.png" />
-  <Pokemon id="169" name="Crobat" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Crobat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Crobat_shiny.png" />
-  <Pokemon id="170" name="Chinchou" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b1/Chinchou.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Chinchou_shiny.png" />
-  <Pokemon id="171" name="Lanturn" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/16/Lanturn.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5c/Lanturn_shiny.png" />
-  <Pokemon id="172" name="Pichu" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Pichu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Pichu_shiny.png" />
-  <Pokemon id="173" name="Cleffa" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Cleffa.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Cleffa_shiny.png" />
-  <Pokemon id="174" name="Igglybuff" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Igglybuff.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/11/Igglybuff_shiny.png" />
-  <Pokemon id="175" name="Togepi" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/ff/Togepi.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Togepi_shiny.png" />
-  <Pokemon id="176" name="Togetic" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Togetic.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Togetic_shiny.png" />
-  <Pokemon id="177" name="Natu" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Natu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Natu_shiny.png" />
-  <Pokemon id="178" name="Xatu" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Xatu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Xatu_shiny.png" />
-  <Pokemon id="179" name="Mareep" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Mareep.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c5/Mareep_shiny.png" />
-  <Pokemon id="180" name="Flaaffy" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Flaaffy.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9b/Flaaffy_shiny.png" />
-  <Pokemon id="181" name="Ampharos" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Ampharos.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/03/Ampharos_shiny.png" />
-  <Pokemon id="182" name="Bellossom" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Bellossom.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/bb/Bellossom_shiny.png" />
-  <Pokemon id="183" name="Marill" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/55/Marill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Marill_shiny.png" />
-  <Pokemon id="184" name="Azumarill" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Azumarill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/08/Azumarill_shiny.png" />
-  <Pokemon id="185" name="Sudowoodo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sudowoodo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Sudowoodo_shiny.png" />
-  <Pokemon id="186" name="Politoed" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Politoed.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0e/Politoed_shiny.png" />
-  <Pokemon id="187" name="Hoppip" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/90/Hoppip.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Hoppip_shiny.png" />
-  <Pokemon id="188" name="Skiploom" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Skiploom.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/86/Skiploom_shiny.png" />
-  <Pokemon id="189" name="Jumpluff" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Jumpluff.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9c/Jumpluff_shiny.png" />
-  <Pokemon id="190" name="Aipom" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bd/Aipom.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Aipom_shiny.png" />
-  <Pokemon id="191" name="Sunkern" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Sunkern.png/revision/latest/scale-to-width-down/256" sprite_shiny="" />
-  <Pokemon id="192" name="Sunflora" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/70/Sunflora.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Sunflora_shiny.png" />
-  <Pokemon id="193" name="Yanma" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Yanma.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Yanma_shiny.png" />
-  <Pokemon id="194" name="Wooper" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/42/Wooper.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/50/Wooper_shiny.png" />
-  <Pokemon id="195" name="Quagsire" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1b/Quagsire.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Quagsire_shiny.png" />
-  <Pokemon id="196" name="Espeon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ef/Espeon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/23/Espeon_shiny.png" />
-  <Pokemon id="197" name="Umbreon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9f/Umbreon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Umbreon_shiny.png" />
-  <Pokemon id="198" name="Murkrow" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5c/Murkrow.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4c/Murkrow_shiny.png" />
-  <Pokemon id="199" name="Slowking" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c5/Slowking.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/91/Slowking_shiny.png" />
-  <Pokemon id="200" name="Misdreavus" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Misdreavus.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Misdreavus_shiny.png" />
-  <Pokemon id="201" name="Unown" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Unown.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Unown_%21_shiny.png/revision/latest/scale-to-width-down/256">
-    <Form name="A" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Unown_A.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f3/Unown_A_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="B" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Unown_B.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/bc/Unown_B_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="C" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/71/Unown_C.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Unown_C_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="D" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Unown_D.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/88/Unown_D_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="E" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Unown_E.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Unown_E_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="F" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Unown.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Unown_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="G" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Unown_G.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f0/Unown_G_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="H" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Unown_H.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Unown_H_shiny.png" />
-    <Form name="I" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Unown_I.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5e/Unown_I_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="J" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Unown_J.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Unown_J_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="K" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Unown_K.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/81/Unown_K_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="L" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bd/Unown_L.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/dd/Unown_L_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="M" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Unown_M.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/14/Unown_M_shiny.png" />
-    <Form name="N" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Unown_N.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/22/Unown_N_shiny.png" />
-    <Form name="O" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Unown_O.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/46/Unown_O_shiny.png" />
-    <Form name="P" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Unown_P.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/66/Unown_P_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="Q" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Unown_Q.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/33/Unown_Q_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="R" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a5/Unown_R.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/42/Unown_R_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="S" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Unown_S.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/14/Unown_S_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="T" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Unown_T.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/ff/Unown_T_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="U" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/70/Unown_U.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fc/Unown_U_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="V" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/dc/Unown_V.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/59/Unown_V_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="W" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e9/Unown_W.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/48/Unown_W_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="X" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Unown_X.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/20/Unown_X_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="Y" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Unown_Y.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/23/Unown_Y_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="Z" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0f/Unown_Z.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/93/Unown_Z_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="Exclamation Point" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Unown_%21.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Unown_%21_shiny.png/revision/latest/scale-to-width-down/256" />
-    <Form name="Question Mark" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3b/Unown_%3F.png/revision/latest/scale-to-width-down/256" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Unown_%3F_shiny.png/revision/latest/scale-to-width-down/256" />
+  <Pokemon id="152" name="Chikorita" />
+  <Pokemon id="153" name="Bayleef" />
+  <Pokemon id="154" name="Meganium" />
+  <Pokemon id="155" name="Cyndaquil" />
+  <Pokemon id="156" name="Quilava" />
+  <Pokemon id="157" name="Typhlosion" />
+  <Pokemon id="158" name="Totodile" />
+  <Pokemon id="159" name="Croconaw" />
+  <Pokemon id="160" name="Feraligatr" />
+  <Pokemon id="161" name="Sentret" />
+  <Pokemon id="162" name="Furret" />
+  <Pokemon id="163" name="Hoothoot" />
+  <Pokemon id="164" name="Noctowl" />
+  <Pokemon id="165" name="Ledyba" />
+  <Pokemon id="166" name="Ledian" />
+  <Pokemon id="167" name="Spinarak" />
+  <Pokemon id="168" name="Ariados" />
+  <Pokemon id="169" name="Crobat" />
+  <Pokemon id="170" name="Chinchou" />
+  <Pokemon id="171" name="Lanturn" />
+  <Pokemon id="172" name="Pichu" />
+  <Pokemon id="173" name="Cleffa" />
+  <Pokemon id="174" name="Igglybuff" />
+  <Pokemon id="175" name="Togepi" />
+  <Pokemon id="176" name="Togetic" />
+  <Pokemon id="177" name="Natu" />
+  <Pokemon id="178" name="Xatu" />
+  <Pokemon id="179" name="Mareep" />
+  <Pokemon id="180" name="Flaaffy" />
+  <Pokemon id="181" name="Ampharos" />
+  <Pokemon id="182" name="Bellossom" />
+  <Pokemon id="183" name="Marill" />
+  <Pokemon id="184" name="Azumarill" />
+  <Pokemon id="185" name="Sudowoodo" />
+  <Pokemon id="186" name="Politoed" />
+  <Pokemon id="187" name="Hoppip" />
+  <Pokemon id="188" name="Skiploom" />
+  <Pokemon id="189" name="Jumpluff" />
+  <Pokemon id="190" name="Aipom" />
+  <Pokemon id="191" name="Sunkern" />
+  <Pokemon id="192" name="Sunflora" />
+  <Pokemon id="193" name="Yanma" />
+  <Pokemon id="194" name="Wooper" />
+  <Pokemon id="195" name="Quagsire" />
+  <Pokemon id="196" name="Espeon" />
+  <Pokemon id="197" name="Umbreon" />
+  <Pokemon id="198" name="Murkrow" />
+  <Pokemon id="199" name="Slowking" />
+  <Pokemon id="200" name="Misdreavus" />
+  <Pokemon id="201" name="Unown">
+    <Form name="A" value="11" />
+    <Form name="B" value="12" />
+    <Form name="C" value="13" />
+    <Form name="D" value="14" />
+    <Form name="E" value="15" />
+    <Form name="F" value="16" />
+    <Form name="G" value="17" />
+    <Form name="H" value="18" />
+    <Form name="I" value="19" />
+    <Form name="J" value="20" />
+    <Form name="K" value="21" />
+    <Form name="L" value="22" />
+    <Form name="M" value="23" />
+    <Form name="N" value="24" />
+    <Form name="O" value="25" />
+    <Form name="P" value="26" />
+    <Form name="Q" value="27" />
+    <Form name="R" value="28" />
+    <Form name="S" value="29" />
+    <Form name="T" value="30" />
+    <Form name="U" value="31" />
+    <Form name="V" value="32" />
+    <Form name="W" value="33" />
+    <Form name="X" value="34" />
+    <Form name="Y" value="35" />
+    <Form name="Z" value="36" />
+    <Form name="Exclamation Point" value="37" />
+    <Form name="Question Mark" value="38" />
   </Pokemon>
-  <Pokemon id="202" name="Wobbuffet" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Wobbuffet.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Wobbuffet_shiny.png" />
-  <Pokemon id="203" name="Girafarig" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/eb/Girafarig.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Girafarig_shiny.png" />
-  <Pokemon id="204" name="Pineco" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Pineco.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Pineco_shiny.png" />
-  <Pokemon id="205" name="Forretress" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d6/Forretress.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Forretress_shiny.png" />
-  <Pokemon id="206" name="Dunsparce" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/50/Dunsparce.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/39/Dunsparce_shiny.png" />
-  <Pokemon id="207" name="Gligar" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/20/Gligar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/37/Gligar_shiny.png" />
-  <Pokemon id="208" name="Steelix" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2a/Steelix.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/37/Steelix_shiny.png" />
-  <Pokemon id="209" name="Snubbull" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/23/Snubbull.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Snubbull_shiny.png" />
-  <Pokemon id="210" name="Granbull" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Granbull.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Granbull_shiny.png" />
-  <Pokemon id="211" name="Qwilfish" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Qwilfish.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/10/Qwilfish_shiny.png" />
-  <Pokemon id="212" name="Scizor" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/87/Scizor.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/dc/Scizor_shiny.png" />
-  <Pokemon id="213" name="Shuckle" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3c/Shuckle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Shuckle_shiny.png" />
-  <Pokemon id="214" name="Heracross" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Heracross.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2a/Heracross_shiny.png" />
-  <Pokemon id="215" name="Sneasel" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/47/Sneasel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Sneasel_shiny.png" />
-  <Pokemon id="216" name="Teddiursa" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Teddiursa.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Teddiursa_shiny.png" />
-  <Pokemon id="217" name="Ursaring" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/61/Ursaring.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Ursaring_shiny.png" />
-  <Pokemon id="218" name="Slugma" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/06/Slugma.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f2/Slugma_shiny.png" />
-  <Pokemon id="219" name="Magcargo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8f/Magcargo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7f/Magcargo_shiny.png" />
-  <Pokemon id="220" name="Swinub" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Swinub.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f7/Swinub_shiny.png" />
-  <Pokemon id="221" name="Piloswine" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Piloswine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Piloswine_shiny.png" />
-  <Pokemon id="222" name="Corsola" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Corsola.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Corsola_shiny.png" />
-  <Pokemon id="223" name="Remoraid" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/ba/Remoraid.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a5/Remoraid_shiny.png" />
-  <Pokemon id="224" name="Octillery" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Octillery.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Octillery_shiny.png" />
-  <Pokemon id="225" name="Delibird" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Delibird.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Delibird_shiny.png" />
-  <Pokemon id="226" name="Mantine" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Mantine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Mantine_shiny.png" />
-  <Pokemon id="227" name="Skarmory" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Skarmory.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e4/Skarmory_shiny.png" />
-  <Pokemon id="228" name="Houndour" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/ba/Houndour.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Houndour_shiny.png" />
-  <Pokemon id="229" name="Houndoom" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3f/Houndoom.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Houndoom_shiny.png" />
-  <Pokemon id="230" name="Kingdra" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bd/Kingdra.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3e/Kingdra_shiny.png" />
-  <Pokemon id="231" name="Phanpy" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9f/Phanpy.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b1/Phanpy_shiny.png" />
-  <Pokemon id="232" name="Donphan" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/68/Donphan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Donphan_shiny.png" />
-  <Pokemon id="233" name="Porygon2" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Porygon2.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/24/Porygon2_shiny.png" />
-  <Pokemon id="234" name="Stantler" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Stantler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Stantler_shiny.png" />
-  <Pokemon id="235" name="Smeargle" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Smeargle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/90/Smeargle_shiny.png" />
-  <Pokemon id="236" name="Tyrogue" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Tyrogue.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Tyrogue_shiny.png" />
-  <Pokemon id="237" name="Hitmontop" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a2/Hitmontop.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fc/Hitmontop_shiny.png" />
-  <Pokemon id="238" name="Smoochum" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Smoochum.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Smoochum_shiny.png" />
-  <Pokemon id="239" name="Elekid" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a6/Elekid.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Elekid_shiny.png" />
-  <Pokemon id="240" name="Magby" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/42/Magby.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4c/Magby_shiny.png" />
-  <Pokemon id="241" name="Miltank" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b9/Miltank.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Miltank_shiny.png" />
-  <Pokemon id="242" name="Blissey" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2a/Blissey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/97/Blissey_shiny.png" />
-  <Pokemon id="243" name="Raikou" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d6/Raikou.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Raikou_shiny.png" />
-  <Pokemon id="244" name="Entei" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0a/Entei.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Entei_shiny.png" />
-  <Pokemon id="245" name="Suicune" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c3/Suicune.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a0/Suicune_shiny.png" />
-  <Pokemon id="246" name="Larvitar" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/71/Larvitar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/be/Larvitar_shiny.png" />
-  <Pokemon id="247" name="Pupitar" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/58/Pupitar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/07/Pupitar_shiny.png" />
-  <Pokemon id="248" name="Tyranitar" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Tyranitar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ec/Tyranitar_shiny.png" />
-  <Pokemon id="249" name="Lugia" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Lugia.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Lugia_shiny.png" />
-  <Pokemon id="250" name="Ho-Oh" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/00/Ho-Oh.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Ho-Oh_shiny.png" />
-  <Pokemon id="251" name="Celebi" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e4/Celebi.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Celebi_shiny.png" />
+  <Pokemon id="202" name="Wobbuffet" />
+  <Pokemon id="203" name="Girafarig" />
+  <Pokemon id="204" name="Pineco" />
+  <Pokemon id="205" name="Forretress" />
+  <Pokemon id="206" name="Dunsparce" />
+  <Pokemon id="207" name="Gligar" />
+  <Pokemon id="208" name="Steelix" />
+  <Pokemon id="209" name="Snubbull" />
+  <Pokemon id="210" name="Granbull" />
+  <Pokemon id="211" name="Qwilfish" />
+  <Pokemon id="212" name="Scizor" />
+  <Pokemon id="213" name="Shuckle" />
+  <Pokemon id="214" name="Heracross" />
+  <Pokemon id="215" name="Sneasel" />
+  <Pokemon id="216" name="Teddiursa" />
+  <Pokemon id="217" name="Ursaring" />
+  <Pokemon id="218" name="Slugma" />
+  <Pokemon id="219" name="Magcargo" />
+  <Pokemon id="220" name="Swinub" />
+  <Pokemon id="221" name="Piloswine" />
+  <Pokemon id="222" name="Corsola" />
+  <Pokemon id="223" name="Remoraid" />
+  <Pokemon id="224" name="Octillery" />
+  <Pokemon id="225" name="Delibird" />
+  <Pokemon id="226" name="Mantine" />
+  <Pokemon id="227" name="Skarmory" />
+  <Pokemon id="228" name="Houndour" />
+  <Pokemon id="229" name="Houndoom" />
+  <Pokemon id="230" name="Kingdra" />
+  <Pokemon id="231" name="Phanpy" />
+  <Pokemon id="232" name="Donphan" />
+  <Pokemon id="233" name="Porygon2" />
+  <Pokemon id="234" name="Stantler" />
+  <Pokemon id="235" name="Smeargle" />
+  <Pokemon id="236" name="Tyrogue" />
+  <Pokemon id="237" name="Hitmontop" />
+  <Pokemon id="238" name="Smoochum" />
+  <Pokemon id="239" name="Elekid" />
+  <Pokemon id="240" name="Magby" />
+  <Pokemon id="241" name="Miltank" />
+  <Pokemon id="242" name="Blissey" />
+  <Pokemon id="243" name="Raikou" />
+  <Pokemon id="244" name="Entei" />
+  <Pokemon id="245" name="Suicune" />
+  <Pokemon id="246" name="Larvitar" />
+  <Pokemon id="247" name="Pupitar" />
+  <Pokemon id="248" name="Tyranitar" />
+  <Pokemon id="249" name="Lugia" />
+  <Pokemon id="250" name="Ho-Oh" />
+  <Pokemon id="251" name="Celebi" />
   <!-- #endregion Gen2 -->
   <!-- #region Gen3 -->
-  <Pokemon id="252" name="Treecko" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Treecko_shiny.png" />
-  <Pokemon id="253" name="Grovyle" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Grovyle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Grovyle_shiny.png" />
-  <Pokemon id="254" name="Sceptile" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/79/Sceptile.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/87/Sceptile_shiny.png" />
-  <Pokemon id="255" name="Torchic" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Torchic.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/54/Torchic_shiny.png" />
-  <Pokemon id="256" name="Combusken" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Combusken.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Combusken_shiny.png" />
-  <Pokemon id="257" name="Blaziken" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/ab/Blaziken.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Blaziken_shiny.png" />
-  <Pokemon id="258" name="Mudkip" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Mudkip.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Mudkip_shiny.png" />
-  <Pokemon id="259" name="Marshtomp" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Marshtomp.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/51/Marshtomp_shiny.png" />
-  <Pokemon id="260" name="Swampert" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Swampert.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5d/Swampert_shiny.png" />
-  <Pokemon id="261" name="Poochyena" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d4/Poochyena.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Poochyena_shiny.png" />
-  <Pokemon id="262" name="Mightyena" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7c/Mightyena.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/64/Mightyena_shiny.png" />
-  <Pokemon id="263" name="Zigzagoon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Zigzagoon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5c/Zigzagoon_shiny.png" />
-  <Pokemon id="264" name="Linoone" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b5/Linoone.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ef/Linoone_shiny.png" />
-  <Pokemon id="265" name="Wurmple" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Wurmple.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Wurmple_shiny.png" />
-  <Pokemon id="266" name="Silcoon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/50/Silcoon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/bd/Silcoon_shiny.png" />
-  <Pokemon id="267" name="Beautifly" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Beautifly.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Beautifly_shiny.png" />
-  <Pokemon id="268" name="Cascoon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7c/Cascoon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Cascoon_shiny.png" />
-  <Pokemon id="269" name="Dustox" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Dustox.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Dustox_shiny.png" />
-  <Pokemon id="270" name="Lotad" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3c/Lotad.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8c/Lotad_shiny.png" />
-  <Pokemon id="271" name="Lombre" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Lombre.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Lombre_shiny.png" />
-  <Pokemon id="272" name="Ludicolo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Ludicolo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/aa/Ludicolo_shiny.png" />
-  <Pokemon id="273" name="Seedot" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Seedot.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/97/Seedot_shiny.png" />
-  <Pokemon id="274" name="Nuzleaf" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4b/Nuzleaf.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/07/Nuzleaf_shiny.png" />
-  <Pokemon id="275" name="Shiftry" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Shiftry.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/24/Shiftry_shiny.png" />
-  <Pokemon id="276" name="Taillow" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a3/Taillow.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Taillow_shiny.png" />
-  <Pokemon id="277" name="Swellow" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/71/Swellow.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b9/Swellow_shiny.png" />
-  <Pokemon id="278" name="Wingull" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/ff/Wingull.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/79/Wingull_shiny.png" />
-  <Pokemon id="279" name="Pelipper" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Pelipper.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Pelipper_shiny.png" />
-  <Pokemon id="280" name="Ralts" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e8/Ralts.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Ralts_shiny.png" />
-  <Pokemon id="281" name="Kirlia" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Kirlia.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Kirlia_shiny.png" />
-  <Pokemon id="282" name="Gardevoir" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Gardevoir.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/82/Gardevoir_shiny.png" />
-  <Pokemon id="283" name="Surskit" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9f/Surskit.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Surskit_shiny.png" />
-  <Pokemon id="284" name="Masquerain" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Masquerain.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Masquerain_shiny.png" />
-  <Pokemon id="285" name="Shroomish" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Shroomish.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/26/Shroomish_shiny.png" />
-  <Pokemon id="286" name="Breloom" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/39/Breloom.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Breloom_shiny.png" />
-  <Pokemon id="287" name="Slakoth" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e3/Slakoth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Slakoth_shiny.png" />
-  <Pokemon id="288" name="Vigoroth" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6d/Vigoroth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Vigoroth_shiny.png" />
-  <Pokemon id="289" name="Slaking" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1c/Slaking.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Slaking_shiny.png" />
-  <Pokemon id="290" name="Nincada" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Nincada.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Nincada_shiny.png" />
-  <Pokemon id="291" name="Ninjask" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Ninjask.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Ninjask_shiny.png" />
-  <Pokemon id="292" name="Shedinja" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Shedinja.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Shedinja_shiny.png" />
-  <Pokemon id="293" name="Whismur" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f4/Whismur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/22/Whismur_shiny.png" />
-  <Pokemon id="294" name="Loudred" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Loudred.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Loudred_shiny.png" />
-  <Pokemon id="295" name="Exploud" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Exploud.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Exploud_shiny.png" />
-  <Pokemon id="296" name="Makuhita" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Makuhita.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Makuhita_shiny.png" />
-  <Pokemon id="297" name="Hariyama" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cb/Hariyama.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Hariyama_shiny.png" />
-  <Pokemon id="298" name="Azurill" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Azurill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8f/Azurill_shiny.png" />
-  <Pokemon id="299" name="Nosepass" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Nosepass.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Nosepass_shiny.png" />
-  <Pokemon id="300" name="Skitty" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f0/Skitty.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1c/Skitty_shiny.png" />
-  <Pokemon id="301" name="Delcatty" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3e/Delcatty.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Delcatty_shiny.png" />
-  <Pokemon id="302" name="Sableye" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Sableye.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/04/Sableye_shiny.png" />
-  <Pokemon id="303" name="Mawile" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bd/Mawile.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/86/Mawile_shiny.png" />
-  <Pokemon id="304" name="Aron" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Aron.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Aron_shiny.png" />
-  <Pokemon id="305" name="Lairon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Lairon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Lairon_shiny.png" />
-  <Pokemon id="306" name="Aggron" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Aggron.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Aggron_shiny.png" />
-  <Pokemon id="307" name="Meditite" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Meditite.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/db/Meditite_shiny.png" />
-  <Pokemon id="308" name="Medicham" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/be/Medicham.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3b/Medicham_shiny.png" />
-  <Pokemon id="309" name="Electrike" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/07/Electrike.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/ba/Electrike_shiny.png" />
-  <Pokemon id="310" name="Manectric" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/37/Manectric.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Manectric_shiny.png" />
-  <Pokemon id="311" name="Plusle" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Plusle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Plusle_shiny.png" />
-  <Pokemon id="312" name="Minun" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Minun.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Minun_shiny.png" />
-  <Pokemon id="313" name="Volbeat" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3a/Volbeat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Volbeat_shiny.png" />
-  <Pokemon id="314" name="Illumise" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Illumise.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/00/Illumise_shiny.png" />
-  <Pokemon id="315" name="Roselia" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Roselia.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/76/Roselia_shiny.png" />
-  <Pokemon id="316" name="Gulpin" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Gulpin.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Gulpin_shiny.png" />
-  <Pokemon id="317" name="Swalot" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/48/Swalot.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Swalot_shiny.png" />
-  <Pokemon id="318" name="Carvanha" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Carvanha.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/44/Carvanha_shiny.png" />
-  <Pokemon id="319" name="Sharpedo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Sharpedo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/04/Sharpedo_shiny.png" />
-  <Pokemon id="320" name="Wailmer" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Wailmer.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d0/Wailmer_shiny.png" />
-  <Pokemon id="321" name="Wailord" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/89/Wailord.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/67/Wailord_shiny.png" />
-  <Pokemon id="322" name="Numel" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/10/Numel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Numel_shiny.png" />
-  <Pokemon id="323" name="Camerupt" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a6/Camerupt.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/63/Camerupt_shiny.png" />
-  <Pokemon id="324" name="Torkoal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/63/Torkoal.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Torkoal_shiny.png" />
-  <Pokemon id="325" name="Spoink" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Spoink.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Spoink_shiny.png" />
-  <Pokemon id="326" name="Grumpig" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/46/Grumpig.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Grumpig_shiny.png" />
-  <Pokemon id="327" name="Spinda" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3b/Spinda.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Spinda_shiny.png">
-    <Form name="Pattern 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3b/Spinda.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Spinda_shiny.png" />
-    <Form name="Pattern 2" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Spinda_pattern_2.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Spinda_pattern_2_shiny.png" />
-    <Form name="Pattern 3" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/dc/Spinda_pattern_3.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f7/Spinda_pattern_3_shiny.png" />
-    <Form name="Pattern 4" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ec/Spinda_pattern_4.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Spinda_pattern_4_shiny.png" />
-    <Form name="Pattern 5" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6e/Spinda_pattern_5.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Spinda_pattern_5_shiny.png" />
-    <Form name="Pattern 6" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Spinda_pattern_6.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2f/Spinda_pattern_6_shiny.png" />
-    <Form name="Pattern 7" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c8/Spinda_pattern_7.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Spinda_pattern_7_shiny.png" />
-    <Form name="Pattern 8" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/97/Spinda_pattern_8.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/17/Spinda_pattern_8_shiny.png" />
+  <Pokemon id="252" name="Treecko" />
+  <Pokemon id="253" name="Grovyle" />
+  <Pokemon id="254" name="Sceptile" />
+  <Pokemon id="255" name="Torchic" />
+  <Pokemon id="256" name="Combusken" />
+  <Pokemon id="257" name="Blaziken" />
+  <Pokemon id="258" name="Mudkip" />
+  <Pokemon id="259" name="Marshtomp" />
+  <Pokemon id="260" name="Swampert" />
+  <Pokemon id="261" name="Poochyena" />
+  <Pokemon id="262" name="Mightyena" />
+  <Pokemon id="263" name="Zigzagoon" />
+  <Pokemon id="264" name="Linoone" />
+  <Pokemon id="265" name="Wurmple" />
+  <Pokemon id="266" name="Silcoon" />
+  <Pokemon id="267" name="Beautifly" />
+  <Pokemon id="268" name="Cascoon" />
+  <Pokemon id="269" name="Dustox" />
+  <Pokemon id="270" name="Lotad" />
+  <Pokemon id="271" name="Lombre" />
+  <Pokemon id="272" name="Ludicolo" />
+  <Pokemon id="273" name="Seedot" />
+  <Pokemon id="274" name="Nuzleaf" />
+  <Pokemon id="275" name="Shiftry" />
+  <Pokemon id="276" name="Taillow" />
+  <Pokemon id="277" name="Swellow" />
+  <Pokemon id="278" name="Wingull" />
+  <Pokemon id="279" name="Pelipper" />
+  <Pokemon id="280" name="Ralts" />
+  <Pokemon id="281" name="Kirlia" />
+  <Pokemon id="282" name="Gardevoir" />
+  <Pokemon id="283" name="Surskit" />
+  <Pokemon id="284" name="Masquerain" />
+  <Pokemon id="285" name="Shroomish" />
+  <Pokemon id="286" name="Breloom" />
+  <Pokemon id="287" name="Slakoth" />
+  <Pokemon id="288" name="Vigoroth" />
+  <Pokemon id="289" name="Slaking" />
+  <Pokemon id="290" name="Nincada" />
+  <Pokemon id="291" name="Ninjask" />
+  <Pokemon id="292" name="Shedinja" />
+  <Pokemon id="293" name="Whismur" />
+  <Pokemon id="294" name="Loudred" />
+  <Pokemon id="295" name="Exploud" />
+  <Pokemon id="296" name="Makuhita" />
+  <Pokemon id="297" name="Hariyama" />
+  <Pokemon id="298" name="Azurill" />
+  <Pokemon id="299" name="Nosepass" />
+  <Pokemon id="300" name="Skitty" />
+  <Pokemon id="301" name="Delcatty" />
+  <Pokemon id="302" name="Sableye" />
+  <Pokemon id="303" name="Mawile" />
+  <Pokemon id="304" name="Aron" />
+  <Pokemon id="305" name="Lairon" />
+  <Pokemon id="306" name="Aggron" />
+  <Pokemon id="307" name="Meditite" />
+  <Pokemon id="308" name="Medicham" />
+  <Pokemon id="309" name="Electrike" />
+  <Pokemon id="310" name="Manectric" />
+  <Pokemon id="311" name="Plusle" />
+  <Pokemon id="312" name="Minun" />
+  <Pokemon id="313" name="Volbeat" />
+  <Pokemon id="314" name="Illumise" />
+  <Pokemon id="315" name="Roselia" />
+  <Pokemon id="316" name="Gulpin" />
+  <Pokemon id="317" name="Swalot" />
+  <Pokemon id="318" name="Carvanha" />
+  <Pokemon id="319" name="Sharpedo" />
+  <Pokemon id="320" name="Wailmer" />
+  <Pokemon id="321" name="Wailord" />
+  <Pokemon id="322" name="Numel" />
+  <Pokemon id="323" name="Camerupt" />
+  <Pokemon id="324" name="Torkoal" />
+  <Pokemon id="325" name="Spoink" />
+  <Pokemon id="326" name="Grumpig" />
+  <Pokemon id="327" name="Spinda">
+    <Form name="Pattern 1" value="11" />
+    <Form name="Pattern 2" value="12" />
+    <Form name="Pattern 3" value="13" />
+    <Form name="Pattern 4" value="14" />
+    <Form name="Pattern 5" value="15" />
+    <Form name="Pattern 6" value="16" />
+    <Form name="Pattern 7" value="17" />
+    <Form name="Pattern 8" value="18" />
+    <Form name="Pattern 9" value="19" />
   </Pokemon>
-  <Pokemon id="328" name="Trapinch" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Trapinch.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Trapinch_shiny.png" />
-  <Pokemon id="329" name="Vibrava" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Vibrava.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f0/Vibrava_shiny.png" />
-  <Pokemon id="330" name="Flygon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/72/Flygon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Flygon_shiny.png" />
-  <Pokemon id="331" name="Cacnea" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/14/Cacnea.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Cacnea_shiny.png" />
-  <Pokemon id="332" name="Cacturne" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ec/Cacturne.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f6/Cacturne_shiny.png" />
-  <Pokemon id="333" name="Swablu" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Swablu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Swablu_shiny.png" />
-  <Pokemon id="334" name="Altaria" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/24/Altaria.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/af/Altaria_shiny.png" />
-  <Pokemon id="335" name="Zangoose" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Zangoose.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Zangoose_shiny.png" />
-  <Pokemon id="336" name="Seviper" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Seviper.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a5/Seviper_shiny.png" />
-  <Pokemon id="337" name="Lunatone" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Lunatone.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9a/Lunatone_shiny.png" />
-  <Pokemon id="338" name="Solrock" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5f/Solrock.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/be/Solrock_shiny.png" />
-  <Pokemon id="339" name="Barboach" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f3/Barboach.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Barboach_shiny.png" />
-  <Pokemon id="340" name="Whiscash" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9a/Whiscash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b5/Whiscash_shiny.png" />
-  <Pokemon id="341" name="Corphish" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Corphish.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/75/Corphish_shiny.png" />
-  <Pokemon id="342" name="Crawdaunt" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Crawdaunt.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2e/Crawdaunt_shiny.png" />
-  <Pokemon id="343" name="Baltoy" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fa/Baltoy.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Baltoy_shiny.png" />
-  <Pokemon id="344" name="Claydol" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ec/Claydol.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/55/Claydol_shiny.png" />
-  <Pokemon id="345" name="Lileep" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6e/Lileep.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9a/Lileep_shiny.png" />
-  <Pokemon id="346" name="Cradily" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Cradily.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/83/Cradily_shiny.png" />
-  <Pokemon id="347" name="Anorith" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e6/Anorith.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Anorith_shiny.png" />
-  <Pokemon id="348" name="Armaldo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7b/Armaldo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Armaldo_shiny.png" />
-  <Pokemon id="349" name="Feebas" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Feebas.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/78/Feebas_shiny.png" />
-  <Pokemon id="350" name="Milotic" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b1/Milotic.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0a/Milotic_shiny.png" />
-  <Pokemon id="351" name="Castform" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Castform.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Castform_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Castform.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Castform_shiny.png" />
-    <Form name="Rainy" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Castform_Rainy.png" sprite_shiny="TODO QZX" />
-    <Form name="Snowy" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Castform_Snowy.png" sprite_shiny="TODO QZX" />
-    <Form name="Sunny" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0d/Castform_Sunny.png" sprite_shiny="TODO QZX" />
+  <Pokemon id="328" name="Trapinch" />
+  <Pokemon id="329" name="Vibrava" />
+  <Pokemon id="330" name="Flygon" />
+  <Pokemon id="331" name="Cacnea" />
+  <Pokemon id="332" name="Cacturne" />
+  <Pokemon id="333" name="Swablu" />
+  <Pokemon id="334" name="Altaria" />
+  <Pokemon id="335" name="Zangoose" />
+  <Pokemon id="336" name="Seviper" />
+  <Pokemon id="337" name="Lunatone" />
+  <Pokemon id="338" name="Solrock" />
+  <Pokemon id="339" name="Barboach" />
+  <Pokemon id="340" name="Whiscash" />
+  <Pokemon id="341" name="Corphish" />
+  <Pokemon id="342" name="Crawdaunt" />
+  <Pokemon id="343" name="Baltoy" />
+  <Pokemon id="344" name="Claydol" />
+  <Pokemon id="345" name="Lileep" />
+  <Pokemon id="346" name="Cradily" />
+  <Pokemon id="347" name="Anorith" />
+  <Pokemon id="348" name="Armaldo" />
+  <Pokemon id="349" name="Feebas" />
+  <Pokemon id="350" name="Milotic" />
+  <Pokemon id="351" name="Castform">
+    <Form name="Normal" value="11" />
+    <Form name="Sunny" value="12" />
+    <Form name="Rainy" value="13" />
+    <Form name="Snowy" value="14" />
   </Pokemon>
-  <Pokemon id="352" name="Kecleon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Kecleon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Kecleon_shiny.png" />
-  <Pokemon id="353" name="Shuppet" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e5/Shuppet.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Shuppet_shiny.png" />
-  <Pokemon id="354" name="Banette" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/10/Banette.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6e/Banette_shiny.png" />
-  <Pokemon id="355" name="Duskull" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1b/Duskull.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Duskull_shiny.png" />
-  <Pokemon id="356" name="Dusclops" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Dusclops.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/84/Dusclops_shiny.png" />
-  <Pokemon id="357" name="Tropius" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cd/Tropius.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Tropius_shiny.png" />
-  <Pokemon id="358" name="Chimecho" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Chimecho.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/04/Chimecho_shiny.png" />
-  <Pokemon id="359" name="Absol" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7d/Absol.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9b/Absol_shiny.png" />
-  <Pokemon id="360" name="Wynaut" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a0/Wynaut.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Wynaut_shiny.png" />
-  <Pokemon id="361" name="Snorunt" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Snorunt.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Snorunt_shiny.png" />
-  <Pokemon id="362" name="Glalie" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/07/Glalie.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3f/Glalie_shiny.png" />
-  <Pokemon id="363" name="Spheal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Spheal.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/48/Spheal_shiny.png" />
-  <Pokemon id="364" name="Sealeo" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Sealeo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Sealeo_shiny.png" />
-  <Pokemon id="365" name="Walrein" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/80/Walrein.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3b/Walrein_shiny.png" />
-  <Pokemon id="366" name="Clamperl" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Clamperl.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Clamperl_shiny.png" />
-  <Pokemon id="367" name="Huntail" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Huntail.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Huntail_shiny.png" />
-  <Pokemon id="368" name="Gorebyss" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Gorebyss.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Gorebyss_shiny.png" />
-  <Pokemon id="369" name="Relicanth" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Relicanth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Relicanth_shiny.png" />
-  <Pokemon id="370" name="Luvdisc" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Luvdisc.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Luvdisc_shiny.png" />
-  <Pokemon id="371" name="Bagon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Bagon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Bagon_shiny.png" />
-  <Pokemon id="372" name="Shelgon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/48/Shelgon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Shelgon_shiny.png" />
-  <Pokemon id="373" name="Salamence" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Salamence.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Salamence_shiny.png" />
-  <Pokemon id="374" name="Beldum" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Beldum.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Beldum_shiny.png" />
-  <Pokemon id="375" name="Metang" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fb/Metang.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Metang_shiny.png" />
-  <Pokemon id="376" name="Metagross" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Metagross.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Metagross_shiny.png" />
-  <Pokemon id="377" name="Regirock" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bd/Regirock.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/86/Regirock_shiny.png" />
-  <Pokemon id="378" name="Regice" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/ff/Regice.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Regice_shiny.png" />
-  <Pokemon id="379" name="Registeel" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Registeel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Registeel_shiny.png" />
-  <Pokemon id="380" name="Latias" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Latias.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a3/Latias_shiny.png" />
-  <Pokemon id="381" name="Latios" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6f/Latios.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/55/Latios_shiny.png" />
-  <Pokemon id="382" name="Kyogre" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f3/Kyogre.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f7/Kyogre_shiny.png" />
-  <Pokemon id="383" name="Groudon" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Groudon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f6/Groudon_shiny.png" />
-  <Pokemon id="384" name="Rayquaza" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/66/Rayquaza.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/90/Rayquaza_shiny.png" />
-  <Pokemon id="385" name="Jirachi" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Jirachi.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/cd/Jirachi_shiny.png" />
-  <Pokemon id="386" name="Deoxys" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Deoxys.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c8/Deoxys_shiny.png">
-    <Form name="Normal" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Deoxys.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c8/Deoxys_shiny.png" />
-    <Form name="Attack" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/62/Deoxys_attack.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Deoxys_attack_shiny.png" />
-    <Form name="Defense" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b4/Deoxys_defense.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/23/Deoxys_defense_shiny.png" />
-    <Form name="Speed" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Deoxys_speed.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/03/Deoxys_speed_shiny.png" />
+  <Pokemon id="352" name="Kecleon" />
+  <Pokemon id="353" name="Shuppet" />
+  <Pokemon id="354" name="Banette" />
+  <Pokemon id="355" name="Duskull" />
+  <Pokemon id="356" name="Dusclops" />
+  <Pokemon id="357" name="Tropius" />
+  <Pokemon id="358" name="Chimecho" />
+  <Pokemon id="359" name="Absol" />
+  <Pokemon id="360" name="Wynaut" />
+  <Pokemon id="361" name="Snorunt" />
+  <Pokemon id="362" name="Glalie" />
+  <Pokemon id="363" name="Spheal" />
+  <Pokemon id="364" name="Sealeo" />
+  <Pokemon id="365" name="Walrein" />
+  <Pokemon id="366" name="Clamperl" />
+  <Pokemon id="367" name="Huntail" />
+  <Pokemon id="368" name="Gorebyss" />
+  <Pokemon id="369" name="Relicanth" />
+  <Pokemon id="370" name="Luvdisc" />
+  <Pokemon id="371" name="Bagon" />
+  <Pokemon id="372" name="Shelgon" />
+  <Pokemon id="373" name="Salamence" />
+  <Pokemon id="374" name="Beldum" />
+  <Pokemon id="375" name="Metang" />
+  <Pokemon id="376" name="Metagross" />
+  <Pokemon id="377" name="Regirock" />
+  <Pokemon id="378" name="Regice" />
+  <Pokemon id="379" name="Registeel" />
+  <Pokemon id="380" name="Latias" />
+  <Pokemon id="381" name="Latios" />
+  <Pokemon id="382" name="Kyogre" />
+  <Pokemon id="383" name="Groudon" />
+  <Pokemon id="384" name="Rayquaza" />
+  <Pokemon id="385" name="Jirachi" />
+  <Pokemon id="386" name="Deoxys">
+    <Form name="Normal" value="11" />
+    <Form name="Attack" value="12" />
+    <Form name="Defense" value="13" />
+    <Form name="Speed" value="14" />
   </Pokemon>
   <!-- #endregion Gen3 -->
   <!-- #region Gen4 -->
-  <Pokemon id="387" name="Turtwig" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png" />
-  <Pokemon id="388" name="Grotle" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png" />
-  <Pokemon id="389" name="Torterra" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png" />
-  <Pokemon id="390" name="Chimchar" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png" />
-  <Pokemon id="391" name="Monferno" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png" />
-  <Pokemon id="392" name="Infernape" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png" />
-  <Pokemon id="393" name="Piplup" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png" />
-  <Pokemon id="394" name="Prinplup" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png" />
-  <Pokemon id="395" name="Empoleon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png" />
-  <Pokemon id="396" name="Starly" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png" />
-  <Pokemon id="397" name="Staravia" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png" />
-  <Pokemon id="398" name="Staraptor" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png" />
-  <Pokemon id="399" name="Bidoof" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png" />
-  <Pokemon id="400" name="Bibarel" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png" />
-  <Pokemon id="401" name="Kricketot" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png" />
-  <Pokemon id="402" name="Kricketune" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png" />
-  <Pokemon id="403" name="Shinx" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png" />
-  <Pokemon id="404" name="Luxio" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png" />
-  <Pokemon id="405" name="Luxray" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png" />
-  <Pokemon id="406" name="Budew" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png" />
-  <Pokemon id="407" name="Roserade" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png" />
-  <Pokemon id="408" name="Cranidos" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png" />
-  <Pokemon id="409" name="Rampardos" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png" />
-  <Pokemon id="410" name="Shieldon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png" />
-  <Pokemon id="411" name="Bastiodon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png" />
-  <Pokemon id="412" name="Burmy" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png">
-    <Form name="Plant" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-plant.png" />
-    <Form name="Sandy" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-sandy.png" />
-    <Form name="Trash" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412-trash.png" />
+  <Pokemon id="387" name="Turtwig" />
+  <Pokemon id="388" name="Grotle" />
+  <Pokemon id="389" name="Torterra" />
+  <Pokemon id="390" name="Chimchar" />
+  <Pokemon id="391" name="Monferno" />
+  <Pokemon id="392" name="Infernape" />
+  <Pokemon id="393" name="Piplup" />
+  <Pokemon id="394" name="Prinplup" />
+  <Pokemon id="395" name="Empoleon" />
+  <Pokemon id="396" name="Starly" />
+  <Pokemon id="397" name="Staravia" />
+  <Pokemon id="398" name="Staraptor" />
+  <Pokemon id="399" name="Bidoof" />
+  <Pokemon id="400" name="Bibarel" />
+  <Pokemon id="401" name="Kricketot" />
+  <Pokemon id="402" name="Kricketune" />
+  <Pokemon id="403" name="Shinx" />
+  <Pokemon id="404" name="Luxio" />
+  <Pokemon id="405" name="Luxray" />
+  <Pokemon id="406" name="Budew" />
+  <Pokemon id="407" name="Roserade" />
+  <Pokemon id="408" name="Cranidos" />
+  <Pokemon id="409" name="Rampardos" />
+  <Pokemon id="410" name="Shieldon" />
+  <Pokemon id="411" name="Bastiodon" />
+  <Pokemon id="412" name="Burmy">
+    <Form name="Plant" value="11" />
+    <Form name="Sandy" value="12" />
+    <Form name="Trash" value="13" />
   </Pokemon>
-  <Pokemon id="413" name="Wormadam" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png">
-    <Form name="Plant" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413-plant.png" />
-    <Form name="Sandy" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413-sandy.png" />
-    <Form name="Trash" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413-trash.png" />
+  <Pokemon id="413" name="Wormadam">
+      <Form name="Plant" value="11" />
+      <Form name="Sandy" value="12" />
+      <Form name="Trash" value="13" />
   </Pokemon>
-  <Pokemon id="414" name="Mothim" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png" />
-  <Pokemon id="415" name="Combee" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png" />
-  <Pokemon id="416" name="Vespiquen" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png" />
-  <Pokemon id="417" name="Pachirisu" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png" />
-  <Pokemon id="418" name="Buizel" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png" />
-  <Pokemon id="419" name="Floatzel" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png" />
-  <Pokemon id="420" name="Cherubi" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png" />
-  <Pokemon id="421" name="Cherrim" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png">
-    <Form name="Normal" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png" />
-    <Form name="Overcast" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421-overcast.png" />
-    <Form name="Sunny" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421-sunshine.png" />
+  <Pokemon id="414" name="Mothim" />
+  <Pokemon id="415" name="Combee" />
+  <Pokemon id="416" name="Vespiquen" />
+  <Pokemon id="417" name="Pachirisu" />
+  <Pokemon id="418" name="Buizel" />
+  <Pokemon id="419" name="Floatzel" />
+  <Pokemon id="420" name="Cherubi" />
+  <Pokemon id="421" name="Cherrim">
+    <Form name="Overcast" value="11" />
+    <Form name="Sunny" value="12" />
   </Pokemon>
-  <Pokemon id="422" name="Shellos" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png">
-    <Form name="East Sea" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422-east.png" />
-    <Form name="West Sea" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422-west.png" />
+  <Pokemon id="422" name="Shellos">
+    <Form name="West Sea" value="11" />
+    <Form name="East Sea" value="12" />
   </Pokemon>
-  <Pokemon id="423" name="Gastrodon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png">
-    <Form name="East Sea" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423-east.png" />
-    <Form name="West Sea" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423-west.png" />
+  <Pokemon id="423" name="Gastrodon">
+    <Form name="West Sea" value="11" />
+    <Form name="East Sea" value="12" />
   </Pokemon>
-  <Pokemon id="424" name="Ambipom" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png" />
-  <Pokemon id="425" name="Drifloon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png" />
-  <Pokemon id="426" name="Drifblim" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png" />
-  <Pokemon id="427" name="Buneary" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png" />
-  <Pokemon id="428" name="Lopunny" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png" />
-  <Pokemon id="429" name="Mismagius" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png" />
-  <Pokemon id="430" name="Honchkrow" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png" />
-  <Pokemon id="431" name="Glameow" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png" />
-  <Pokemon id="432" name="Purugly" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png" />
-  <Pokemon id="433" name="Chingling" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png" />
-  <Pokemon id="434" name="Stunky" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png" />
-  <Pokemon id="435" name="Skuntank" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png" />
-  <Pokemon id="436" name="Bronzor" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png" />
-  <Pokemon id="437" name="Bronzong" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png" />
-  <Pokemon id="438" name="Bonsly" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png" />
-  <Pokemon id="439" name="Mime Jr." sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png" />
-  <Pokemon id="440" name="Happiny" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png" />
-  <Pokemon id="441" name="Chatot" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png" />
-  <Pokemon id="442" name="Spiritomb" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png" />
-  <Pokemon id="443" name="Gible" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png" />
-  <Pokemon id="444" name="Gabite" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png" />
-  <Pokemon id="445" name="Garchomp" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png" />
-  <Pokemon id="446" name="Munchlax" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png" />
-  <Pokemon id="447" name="Riolu" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png" />
-  <Pokemon id="448" name="Lucario" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png" />
-  <Pokemon id="449" name="Hippopotas" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png" />
-  <Pokemon id="450" name="Hippowdon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png" />
-  <Pokemon id="451" name="Skorupi" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png" />
-  <Pokemon id="452" name="Drapion" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png" />
-  <Pokemon id="453" name="Croagunk" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png" />
-  <Pokemon id="454" name="Toxicroak" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png" />
-  <Pokemon id="455" name="Carnivine" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png" />
-  <Pokemon id="456" name="Finneon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png" />
-  <Pokemon id="457" name="Lumineon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png" />
-  <Pokemon id="458" name="Mantyke" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png" />
-  <Pokemon id="459" name="Snover" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png" />
-  <Pokemon id="460" name="Abomasnow" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png" />
-  <Pokemon id="461" name="Weavile" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png" />
-  <Pokemon id="462" name="Magnezone" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png" />
-  <Pokemon id="463" name="Lickilicky" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png" />
-  <Pokemon id="464" name="Rhyperior" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png" />
-  <Pokemon id="465" name="Tangrowth" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png" />
-  <Pokemon id="466" name="Electivire" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png" />
-  <Pokemon id="467" name="Magmortar" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png" />
-  <Pokemon id="468" name="Togekiss" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png" />
-  <Pokemon id="469" name="Yanmega" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png" />
-  <Pokemon id="470" name="Leafeon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png" />
-  <Pokemon id="471" name="Glaceon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png" />
-  <Pokemon id="472" name="Gliscor" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png" />
-  <Pokemon id="473" name="Mamoswine" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png" />
-  <Pokemon id="474" name="Porygon-Z" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png" />
-  <Pokemon id="475" name="Gallade" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png" />
-  <Pokemon id="476" name="Probopass" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png" />
-  <Pokemon id="477" name="Dusknoir" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png" />
-  <Pokemon id="478" name="Froslass" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png" />
-  <Pokemon id="479" name="Rotom" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png">
-    <Form name="Normal" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png" />
-    <Form name="Heat" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479-fan.png" />
-    <Form name="Wash" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479-frost.png" />
-    <Form name="Frost" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479-heat.png" />
-    <Form name="Fan" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479-mow.png" />
-    <Form name="Mow" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479-wash.png" />
+  <Pokemon id="424" name="Ambipom" />
+  <Pokemon id="425" name="Drifloon" />
+  <Pokemon id="426" name="Drifblim" />
+  <Pokemon id="427" name="Buneary" />
+  <Pokemon id="428" name="Lopunny" />
+  <Pokemon id="429" name="Mismagius" />
+  <Pokemon id="430" name="Honchkrow" />
+  <Pokemon id="431" name="Glameow" />
+  <Pokemon id="432" name="Purugly" />
+  <Pokemon id="433" name="Chingling" />
+  <Pokemon id="434" name="Stunky" />
+  <Pokemon id="435" name="Skuntank" />
+  <Pokemon id="436" name="Bronzor" />
+  <Pokemon id="437" name="Bronzong" />
+  <Pokemon id="438" name="Bonsly" />
+  <Pokemon id="439" name="Mime Jr." />
+  <Pokemon id="440" name="Happiny" />
+  <Pokemon id="441" name="Chatot" />
+  <Pokemon id="442" name="Spiritomb" />
+  <Pokemon id="443" name="Gible" />
+  <Pokemon id="444" name="Gabite" />
+  <Pokemon id="445" name="Garchomp" />
+  <Pokemon id="446" name="Munchlax" />
+  <Pokemon id="447" name="Riolu" />
+  <Pokemon id="448" name="Lucario" />
+  <Pokemon id="449" name="Hippopotas" />
+  <Pokemon id="450" name="Hippowdon" />
+  <Pokemon id="451" name="Skorupi" />
+  <Pokemon id="452" name="Drapion" />
+  <Pokemon id="453" name="Croagunk" />
+  <Pokemon id="454" name="Toxicroak" />
+  <Pokemon id="455" name="Carnivine" />
+  <Pokemon id="456" name="Finneon" />
+  <Pokemon id="457" name="Lumineon" />
+  <Pokemon id="458" name="Mantyke" />
+  <Pokemon id="459" name="Snover" />
+  <Pokemon id="460" name="Abomasnow" />
+  <Pokemon id="461" name="Weavile" />
+  <Pokemon id="462" name="Magnezone" />
+  <Pokemon id="463" name="Lickilicky" />
+  <Pokemon id="464" name="Rhyperior" />
+  <Pokemon id="465" name="Tangrowth" />
+  <Pokemon id="466" name="Electivire" />
+  <Pokemon id="467" name="Magmortar" />
+  <Pokemon id="468" name="Togekiss" />
+  <Pokemon id="469" name="Yanmega" />
+  <Pokemon id="470" name="Leafeon" />
+  <Pokemon id="471" name="Glaceon" />
+  <Pokemon id="472" name="Gliscor" />
+  <Pokemon id="473" name="Mamoswine" />
+  <Pokemon id="474" name="Porygon-Z" />
+  <Pokemon id="475" name="Gallade" />
+  <Pokemon id="476" name="Probopass" />
+  <Pokemon id="477" name="Dusknoir" />
+  <Pokemon id="478" name="Froslass" />
+  <Pokemon id="479" name="Rotom">
+    <Form name="Normal" value="00" />
+    <Form name="Frost" value="12" />
+    <Form name="Mow" value="13" />
+    <Form name="Wash" value="14" />
+    <Form name="Heat" value="15" />
+    <Form name="Fan" value="16" />
   </Pokemon>
-  <Pokemon id="480" name="Uxie" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png" />
-  <Pokemon id="481" name="Mesprit" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png" />
-  <Pokemon id="482" name="Azelf" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png" />
-  <Pokemon id="483" name="Dialga" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png" />
-  <Pokemon id="484" name="Palkia" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png" />
-  <Pokemon id="485" name="Heatran" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png" />
-  <Pokemon id="486" name="Regigigas" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png" />
-  <Pokemon id="487" name="Giratina" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-altered.png">
-    <Form name="Altered" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-altered.png" />
-    <Form name="Origin" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487-origin.png" />
+  <Pokemon id="480" name="Uxie" />
+  <Pokemon id="481" name="Mesprit" />
+  <Pokemon id="482" name="Azelf" />
+  <Pokemon id="483" name="Dialga" />
+  <Pokemon id="484" name="Palkia" />
+  <Pokemon id="485" name="Heatran" />
+  <Pokemon id="486" name="Regigigas" />
+  <Pokemon id="487" name="Giratina">
+    <Form name="Altered" value="11" />
+    <Form name="Origin" value="12" />
   </Pokemon>
-  <Pokemon id="488" name="Cresselia" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png" />
-  <Pokemon id="489" name="Phione" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png" />
-  <Pokemon id="490" name="Manaphy" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png" />
-  <Pokemon id="491" name="Darkrai" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png" />
-  <Pokemon id="492" name="Shaymin" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png">
-    <Form name="Land" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492-land.png" />
-    <Form name="Sky" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492-sky.png" />
+  <Pokemon id="488" name="Cresselia" />
+  <Pokemon id="489" name="Phione" />
+  <Pokemon id="490" name="Manaphy" />
+  <Pokemon id="491" name="Darkrai" />
+  <Pokemon id="492" name="Shaymin">
+    <Form name="Land" value="11" />
+    <Form name="Sky" value="12" />
   </Pokemon>
-  <Pokemon id="493" name="Arceus" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png">
-    <Form name="Normal" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-normal.png" />
-    <Form name="Bug" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-bug.png" />
-    <Form name="Dark" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-dark.png" />
-    <Form name="Dragon" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-dragon.png" />
-    <Form name="Electric" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-electric.png" />
-    <Form name="Fairy" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-fairy.png" />
-    <Form name="Fighting" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-fighting.png" />
-    <Form name="Fire" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-fire.png" />
-    <Form name="Flying" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-flying.png" />
-    <Form name="Ghost" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-ghost.png" />
-    <Form name="Grass" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-grass.png" />
-    <Form name="Ground" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-ground.png" />
-    <Form name="Ice" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-ice.png" />
-    <Form name="Poison" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-poison.png" />
-    <Form name="Psychic" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-psychic.png" />
-    <Form name="Rock" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-rock.png" />
-    <Form name="Steel" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-steel.png" />
-    <Form name="Water" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-water.png" />
-    <Form name="Unknown" sprite="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493-unknown.png" />
+  <Pokemon id="493" name="Arceus">
+    <Form name="Unknown" value="11" />
+    <Form name="Fighting" value="12" />
+    <Form name="Flying" value="13" />
+    <Form name="Poison" value="14" />
+    <Form name="Ground" value="15" />
+    <Form name="Rock" value="16" />
+    <Form name="Bug" value="17" />
+    <Form name="Ghost" value="18" />
+    <Form name="Steel" value="19" />
+    <Form name="Fire" value="20" />
+    <Form name="Water" value="21" />
+    <Form name="Grass" value="22" />
+    <Form name="Electric" value="23" />
+    <Form name="Psychic" value="24" />
+    <Form name="Ice" value="25" />
+    <Form name="Dragon" value="26" />
+    <Form name="Dark" value="27" />
+    <Form name="Fairy" value="28" />
   </Pokemon>
   <!-- #endregion Gen4 -->
   <!-- #region Gen5 -->

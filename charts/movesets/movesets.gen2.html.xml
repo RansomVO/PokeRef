@@ -2,6 +2,7 @@
 <!DOCTYPE Root [
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY PokeSprites SYSTEM "/_datafiles.manual/infrequent/pokemon.sprites.xml">
   <!ENTITY Images SYSTEM "/_datafiles.manual/infrequent/images.xml">
   <!ENTITY Traits SYSTEM "/_datafiles.manual/traits.xml">
   <!ENTITY RaidBosses SYSTEM "/_datafiles.manual/raidbosses.xml">
@@ -14,6 +15,7 @@
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Constants;
   &Settings;
+  &PokeSprites;
   &Images;
   &Traits;
   &RaidBosses;

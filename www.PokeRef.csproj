@@ -55,21 +55,22 @@
   </ItemGroup>
   <!-- /^ -->
   <ItemGroup>
-    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.sprites.xml">
-      <SubType>Designer</SubType>
-    </FixIntermediateFile>
     <WebContent Include="images\items\mystery_box.png" />
     <WebContent Include="images\items\mystery_box_open.png" />
     <WebContent Include="images\items\special_sinnoh_stone.png" />
     <WebContent Include="images\candy\candy_meltan.png" />
+    <FixIntermediateFile Include="_datafiles.manual\infrequent\pokemon.sprites.xml">
+      <SubType>Designer</SubType>
+    </FixIntermediateFile>
     <FixIntermediateFile Include="_datafiles.manual\research.event.xml">
       <SubType>Designer</SubType>
     </FixIntermediateFile>
     <WebContent Include="images\game\box_adventure.png" />
-    <Content Include="_datafiles\movesets.gen7.xml" />
+    <Content Include="^\qzx.html" />
+    <FixIntermediateFile Include="_datafiles\movesets.gen8.xml" />
     <Content Include="^\trade.html" />
+    <FixIntermediateFile Include="_datafiles\pokestats.gen8.xml" />
     <Content Include="_\looking.html" />
-    <Content Include="__Debugging\qzx.html" />
     <WebContent Include="images\question.png" />
     <WebContent Include="images\candy\candy_spiritomb.png" />
     <Content Include="^\tools\sprites.html" />

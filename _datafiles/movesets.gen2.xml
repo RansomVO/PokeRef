@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="2">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-01" gen="2">
   <Pokemon id="152" name="Chikorita">
     <MoveSet base_dps="16.451612903225808" true_dps="11.397849462365592" comparison="87">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -1279,6 +1279,10 @@
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="8.75" true_dps="9.625" comparison="54">
+      <FastAttack name="Water Gun" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="false" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.901408450704228" true_dps="16.197183098591552" comparison="90">
       <FastAttack name="Mud Shot" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Bomb" stab="false" legacy="false" />
@@ -1290,6 +1294,10 @@
     <MoveSet base_dps="15.486725663716813" true_dps="15.398230088495573" comparison="86">
       <FastAttack name="Mud Shot" stab="true" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="7.6923076923076925" true_dps="8.3333333333333339" comparison="47">
+      <FastAttack name="Mud Shot" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="196" name="Espeon">
@@ -1675,6 +1683,10 @@
       <FastAttack name="Poison Sting" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="7.6923076923076925" true_dps="10.384615384615385" comparison="50">
+      <FastAttack name="Poison Sting" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="15.740740740740741" true_dps="20.74074074074074" comparison="99">
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Aqua Tail" stab="true" legacy="false" />
@@ -1686,6 +1698,10 @@
     <MoveSet base_dps="15.90909090909091" true_dps="20.984848484848484" comparison="100">
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="8.75" true_dps="11.875" comparison="57">
+      <FastAttack name="Water Gun" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="212" name="Scizor">
@@ -2025,6 +2041,10 @@
       <FastAttack name="Water Gun" stab="true" legacy="false" />
       <ChargedAttack name="Aurora Beam" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="8.75" true_dps="11.5" comparison="55">
+      <FastAttack name="Water Gun" stab="true" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="false" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.942148760330578" true_dps="18.84297520661157" comparison="89">
       <FastAttack name="Mud Shot" stab="false" legacy="false" />
       <ChargedAttack name="Gunk Shot" stab="false" legacy="false" />
@@ -2036,6 +2056,10 @@
     <MoveSet base_dps="14.371257485029942" true_dps="15.928143712574851" comparison="76">
       <FastAttack name="Mud Shot" stab="false" legacy="false" />
       <ChargedAttack name="Aurora Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="7.6923076923076925" true_dps="8.9743589743589744" comparison="43">
+      <FastAttack name="Mud Shot" stab="false" legacy="false" />
+      <ChargedAttack name="Acid Spray" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="225" name="Delibird">

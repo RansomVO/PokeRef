@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-03-22" gen="1" region="Kanto">
-  <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Bulbasaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Bulbasaur_shiny.png">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-05" gen="1" region="Kanto">
+  <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
       <BaseIV attack="118" defense="111" stamina="128" />
@@ -10,7 +10,7 @@
       <Max cp="1115" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="2" name="Ivysaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/86/Ivysaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/72/Ivysaur_shiny.png">
+  <Pokemon id="2" name="Ivysaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25">
     <Type primary="Grass" secondary="Poison" />
     <EvolvesFrom id="1" name="Bulbasaur" candies="25" />
     <Stats>
@@ -21,7 +21,7 @@
       <Max cp="1699" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="3" name="Venusaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/be/Venusaur.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Venusaur_shiny.png">
+  <Pokemon id="3" name="Venusaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25">
     <Type primary="Grass" secondary="Poison" />
     <EvolvesFrom id="2" name="Ivysaur" candies="100" />
     <Stats>
@@ -32,7 +32,7 @@
       <Max cp="2720" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="4" name="Charmander" family="Charmander" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-05-19" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Charmander.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Charmander_shiny.png">
+  <Pokemon id="4" name="Charmander" family="Charmander" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-05-19">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="116" defense="93" stamina="118" />
@@ -42,7 +42,7 @@
       <Max cp="980" hp="105" />
     </Stats>
   </Pokemon>
-  <Pokemon id="5" name="Charmeleon" family="Charmander" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-05-19" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fb/Charmeleon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Charmeleon_shiny.png">
+  <Pokemon id="5" name="Charmeleon" family="Charmander" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-05-19">
     <Type primary="Fire" />
     <EvolvesFrom id="4" name="Charmander" candies="25" />
     <Stats>
@@ -53,7 +53,7 @@
       <Max cp="1653" hp="131" />
     </Stats>
   </Pokemon>
-  <Pokemon id="6" name="Charizard" family="Charmander" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-05-19" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/95/Charizard.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Charizard_shiny.png">
+  <Pokemon id="6" name="Charizard" family="Charmander" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-05-19">
     <Type primary="Fire" secondary="Flying" />
     <EvolvesFrom id="5" name="Charmeleon" candies="100" />
     <Stats>
@@ -64,7 +64,7 @@
       <Max cp="2889" hp="158" />
     </Stats>
   </Pokemon>
-  <Pokemon id="7" name="Squirtle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-07-08" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e3/Squirtle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/26/Squirtle_shiny.png">
+  <Pokemon id="7" name="Squirtle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-07-08">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="94" defense="121" stamina="127" />
@@ -74,7 +74,7 @@
       <Max cp="946" hp="112" />
     </Stats>
   </Pokemon>
-  <Pokemon id="8" name="Wartortle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-07-08" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Wartortle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Wartortle_shiny.png">
+  <Pokemon id="8" name="Wartortle" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-07-08">
     <Type primary="Water" />
     <EvolvesFrom id="7" name="Squirtle" candies="25" />
     <Stats>
@@ -85,7 +85,7 @@
       <Max cp="1488" hp="132" />
     </Stats>
   </Pokemon>
-  <Pokemon id="9" name="Blastoise" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-07-08" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Blastoise.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/dd/Blastoise_shiny.png">
+  <Pokemon id="9" name="Blastoise" family="Squirtle" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-07-08">
     <Type primary="Water" />
     <EvolvesFrom id="8" name="Wartortle" candies="100" />
     <Stats>
@@ -96,7 +96,7 @@
       <Max cp="2466" hp="160" />
     </Stats>
   </Pokemon>
-  <Pokemon id="10" name="Caterpie" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-11-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/05/Caterpie.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Caterpie_shiny.png">
+  <Pokemon id="10" name="Caterpie" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-11-01">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="55" defense="55" stamina="128" />
@@ -106,7 +106,7 @@
       <Max cp="437" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="11" name="Metapod" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-11-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6b/Metapod.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/66/Metapod_shiny.png">
+  <Pokemon id="11" name="Metapod" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-11-01">
     <Type primary="Bug" />
     <EvolvesFrom id="10" name="Caterpie" candies="12" />
     <Stats>
@@ -117,7 +117,7 @@
       <Max cp="450" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="12" name="Butterfree" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-11-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/96/Butterfree.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Butterfree_shiny.png">
+  <Pokemon id="12" name="Butterfree" family="Caterpie" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-11-01">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="11" name="Metapod" candies="50" />
     <Stats>
@@ -128,7 +128,7 @@
       <Max cp="1827" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="13" name="Weedle" family="Weedle" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d6/Weedle.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/db/Weedle_shiny.png">
+  <Pokemon id="13" name="Weedle" family="Weedle" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" secondary="Poison" />
     <Stats>
       <BaseIV attack="63" defense="50" stamina="120" />
@@ -138,7 +138,7 @@
       <Max cp="456" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="14" name="Kakuna" family="Weedle" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/63/Kakuna.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4e/Kakuna_shiny.png">
+  <Pokemon id="14" name="Kakuna" family="Weedle" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" secondary="Poison" />
     <EvolvesFrom id="13" name="Weedle" candies="12" />
     <Stats>
@@ -149,7 +149,7 @@
       <Max cp="432" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="15" name="Beedrill" family="Weedle" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0d/Beedrill.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Beedrill_shiny.png">
+  <Pokemon id="15" name="Beedrill" family="Weedle" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" secondary="Poison" />
     <EvolvesFrom id="14" name="Kakuna" candies="50" />
     <Stats>
@@ -160,7 +160,7 @@
       <Max cp="1846" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="16" name="Pidgey" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Pidgey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Pidgey_shiny.png">
+  <Pokemon id="16" name="Pidgey" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="85" defense="73" stamina="120" />
@@ -170,7 +170,7 @@
       <Max cp="680" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="17" name="Pidgeotto" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Pidgeotto.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/02/Pidgeotto_shiny.png">
+  <Pokemon id="17" name="Pidgeotto" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="16" name="Pidgey" candies="12" />
     <Stats>
@@ -181,7 +181,7 @@
       <Max cp="1194" hp="138" />
     </Stats>
   </Pokemon>
-  <Pokemon id="18" name="Pidgeot" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Pidgeot.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Pidgeot_shiny.png">
+  <Pokemon id="18" name="Pidgeot" family="Pidgey" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="17" name="Pidgeotto" candies="50" />
     <Stats>
@@ -192,7 +192,7 @@
       <Max cp="2129" hp="165" />
     </Stats>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" family="Rattata" buddy_km="1" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
+  <Pokemon id="19" name="Rattata" family="Rattata" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="103" defense="70" stamina="102" />
@@ -202,7 +202,7 @@
       <Max cp="734" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3d/Rattata_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Rattata_alolan_shiny.png">
+  <Pokemon id="19" name="Rattata" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Dark" secondary="Normal" />
     <Stats>
       <BaseIV attack="103" defense="70" stamina="102" />
@@ -212,7 +212,7 @@
       <Max cp="734" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
+  <Pokemon id="19" name="Rattata" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="103" defense="70" stamina="102" />
@@ -222,7 +222,7 @@
       <Max cp="734" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" family="Rattata" buddy_km="1" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
+  <Pokemon id="20" name="Raticate" family="Rattata" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Normal" />
     <EvolvesFrom id="19" name="Rattata" candies="25" />
     <Stats>
@@ -233,7 +233,7 @@
       <Max cp="1730" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Raticate_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Raticate_alolan_shiny.png">
+  <Pokemon id="20" name="Raticate" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Dark" secondary="Normal" />
     <EvolvesFrom id="19" name="Rattata" candies="25" />
     <Stats>
@@ -244,7 +244,7 @@
       <Max cp="1705" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Rattata.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Rattata_shiny.png">
+  <Pokemon id="20" name="Raticate" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26">
     <Type primary="Normal" />
     <EvolvesFrom id="19" name="Rattata" candies="25" />
     <Stats>
@@ -255,7 +255,7 @@
       <Max cp="1730" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="21" name="Spearow" family="Spearow" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Spearow.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/07/Spearow_shiny.png">
+  <Pokemon id="21" name="Spearow" family="Spearow" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="112" defense="60" stamina="120" />
@@ -265,7 +265,7 @@
       <Max cp="798" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="22" name="Fearow" family="Spearow" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Fearow.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fa/Fearow_shiny.png">
+  <Pokemon id="22" name="Fearow" family="Spearow" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="21" name="Spearow" candies="50" />
     <Stats>
@@ -276,7 +276,7 @@
       <Max cp="1997" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="23" name="Ekans" family="Ekans" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/11/Ekans.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1b/Ekans_shiny.png">
+  <Pokemon id="23" name="Ekans" family="Ekans" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="110" defense="97" stamina="111" />
@@ -286,7 +286,7 @@
       <Max cp="927" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="24" name="Arbok" family="Ekans" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Arbok.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9f/Arbok_shiny.png">
+  <Pokemon id="24" name="Arbok" family="Ekans" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Poison" />
     <EvolvesFrom id="23" name="Ekans" candies="50" />
     <Stats>
@@ -297,7 +297,7 @@
       <Max cp="1921" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="25" name="Pikachu" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-08-09" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/77/Pikachu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fe/Pikachu_shiny.png">
+  <Pokemon id="25" name="Pikachu" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-08-09">
     <Type primary="Electric" />
     <EvolvesFrom id="172" name="Pichu" candies="25" />
     <Stats>
@@ -308,7 +308,7 @@
       <Max cp="938" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="26" name="Raichu" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/34/Raichu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Raichu_shiny.png">
+  <Pokemon id="26" name="Raichu" family="Pikachu" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Electric" />
     <EvolvesFrom id="25" name="Pikachu" candies="50" />
     <Stats>
@@ -319,7 +319,7 @@
       <Max cp="2182" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="26" name="Raichu" form="Alola" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-03" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Raichu_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Raichu_alolan_shiny.png">
+  <Pokemon id="26" name="Raichu" form="Alola" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-03">
     <Type primary="Electric" secondary="Psychic" />
     <EvolvesFrom id="25" name="Pikachu" candies="50" />
     <Stats>
@@ -330,7 +330,7 @@
       <Max cp="2286" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="26" name="Raichu" form="Normal" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-08-09" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/34/Raichu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Raichu_shiny.png">
+  <Pokemon id="26" name="Raichu" form="Normal" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-08-09">
     <Type primary="Electric" />
     <EvolvesFrom id="25" name="Pikachu" candies="50" />
     <Stats>
@@ -341,7 +341,7 @@
       <Max cp="2182" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Sandshrew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Sandshrew_shiny.png">
+  <Pokemon id="27" name="Sandshrew" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="126" defense="120" stamina="137" />
@@ -351,7 +351,7 @@
       <Max cp="1261" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Sandshrew_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Sandshrew_alolan_shiny.png">
+  <Pokemon id="27" name="Sandshrew" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
     <Type primary="Ice" secondary="Steel" />
     <Stats>
       <BaseIV attack="125" defense="129" stamina="137" />
@@ -361,7 +361,7 @@
       <Max cp="1293" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Sandshrew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Sandshrew_shiny.png">
+  <Pokemon id="27" name="Sandshrew" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="126" defense="120" stamina="137" />
@@ -371,7 +371,7 @@
       <Max cp="1261" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sandslash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Sandslash_shiny.png">
+  <Pokemon id="28" name="Sandslash" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Ground" />
     <EvolvesFrom id="27" name="Sandshrew" candies="50" />
     <Stats>
@@ -382,7 +382,7 @@
       <Max cp="2374" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Sandslash_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/38/Sandslash_alolan_shiny.png">
+  <Pokemon id="28" name="Sandslash" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Ice" secondary="Steel" />
     <EvolvesFrom id="27" name="Sandshrew" candies="50" />
     <Stats>
@@ -393,7 +393,7 @@
       <Max cp="2432" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="28" name="Sandslash" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Sandslash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Sandslash_shiny.png">
+  <Pokemon id="28" name="Sandslash" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06">
     <Type primary="Ground" />
     <EvolvesFrom id="27" name="Sandshrew" candies="50" />
     <Stats>
@@ -404,7 +404,7 @@
       <Max cp="2374" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="29" name="Nidoran♀" family="Nidoran Female" buddy_km="3" gender_ratio="♀" availability="General" shiny="2018-10-11" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c8/Nidoran%E2%99%80.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Nidoran%E2%99%80_shiny.png">
+  <Pokemon id="29" name="Nidoran♀" family="Nidoran Female" buddy_km="3" gender_ratio="♀" availability="General" shiny="2018-10-11">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="86" defense="89" stamina="146" />
@@ -414,7 +414,7 @@
       <Max cp="816" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="30" name="Nidorina" family="Nidoran Female" buddy_km="3" gender_ratio="♀" availability="General" shiny="2018-10-11" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/31/Nidorina.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/53/Nidorina_shiny.png">
+  <Pokemon id="30" name="Nidorina" family="Nidoran Female" buddy_km="3" gender_ratio="♀" availability="General" shiny="2018-10-11">
     <Type primary="Poison" />
     <EvolvesFrom id="29" name="Nidoran♀" candies="25" />
     <Stats>
@@ -425,7 +425,7 @@
       <Max cp="1309" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="31" name="Nidoqueen" family="Nidoran Female" buddy_km="3" gender_ratio="♀" availability="General" shiny="2018-10-11" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Nidoqueen.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/35/Nidoqueen_shiny.png">
+  <Pokemon id="31" name="Nidoqueen" family="Nidoran Female" buddy_km="3" gender_ratio="♀" availability="General" shiny="2018-10-11">
     <Type primary="Poison" secondary="Ground" />
     <EvolvesFrom id="30" name="Nidorina" candies="100" />
     <Stats>
@@ -436,7 +436,7 @@
       <Max cp="2488" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="32" name="Nidoran♂" family="Nidoran Male" buddy_km="3" gender_ratio="♂" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/60/Nidoran%E2%99%82.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c0/Nidoran%E2%99%82_shiny.png">
+  <Pokemon id="32" name="Nidoran♂" family="Nidoran Male" buddy_km="3" gender_ratio="♂" availability="General">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="105" defense="76" stamina="130" />
@@ -446,7 +446,7 @@
       <Max cp="860" hp="114" />
     </Stats>
   </Pokemon>
-  <Pokemon id="33" name="Nidorino" family="Nidoran Male" buddy_km="3" gender_ratio="♂" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Nidorino.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/48/Nidorino_shiny.png">
+  <Pokemon id="33" name="Nidorino" family="Nidoran Male" buddy_km="3" gender_ratio="♂" availability="General">
     <Type primary="Poison" />
     <EvolvesFrom id="32" name="Nidoran♂" candies="25" />
     <Stats>
@@ -457,7 +457,7 @@
       <Max cp="1393" hp="135" />
     </Stats>
   </Pokemon>
-  <Pokemon id="34" name="Nidoking" family="Nidoran Male" buddy_km="3" gender_ratio="♂" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/76/Nidoking.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Nidoking_shiny.png">
+  <Pokemon id="34" name="Nidoking" family="Nidoran Male" buddy_km="3" gender_ratio="♂" availability="General">
     <Type primary="Poison" secondary="Ground" />
     <EvolvesFrom id="33" name="Nidorino" candies="100" />
     <Stats>
@@ -468,7 +468,7 @@
       <Max cp="2567" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="35" name="Clefairy" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" shiny="2019-02-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d2/Clefairy.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Clefairy_shiny.png">
+  <Pokemon id="35" name="Clefairy" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" shiny="2019-02-13">
     <Type primary="Fairy" />
     <EvolvesFrom id="173" name="Cleffa" candies="25" />
     <Stats>
@@ -479,7 +479,7 @@
       <Max cp="1155" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="36" name="Clefable" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" shiny="2019-02-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d5/Clefable.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/00/Clefable_shiny.png">
+  <Pokemon id="36" name="Clefable" family="Clefairy" buddy_km="1" gender_ratio="1 : 3" availability="General" shiny="2019-02-13">
     <Type primary="Fairy" />
     <EvolvesFrom id="35" name="Clefairy" candies="50" />
     <Stats>
@@ -490,7 +490,7 @@
       <Max cp="2437" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Vulpix.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Vulpix_shiny.png">
+  <Pokemon id="37" name="Vulpix" family="Vulpix" buddy_km="3" gender_ratio="1 : 3">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="96" defense="109" stamina="116" />
@@ -500,7 +500,7 @@
       <Max cp="883" hp="103" />
     </Stats>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 7K" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/92/Vulpix_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8c/Vulpix_alolan_shiny.png">
+  <Pokemon id="37" name="Vulpix" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 7K">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="96" defense="109" stamina="116" />
@@ -510,7 +510,7 @@
       <Max cp="883" hp="103" />
     </Stats>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" form="Normal" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Vulpix.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/13/Vulpix_shiny.png">
+  <Pokemon id="37" name="Vulpix" form="Normal" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="General">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="96" defense="109" stamina="116" />
@@ -520,7 +520,7 @@
       <Max cp="883" hp="103" />
     </Stats>
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Ninetales.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/74/Ninetales_shiny.png">
+  <Pokemon id="38" name="Ninetales" family="Vulpix" buddy_km="3" gender_ratio="1 : 3">
     <Type primary="Fire" />
     <EvolvesFrom id="37" name="Vulpix" candies="50" />
     <Stats>
@@ -531,7 +531,7 @@
       <Max cp="2279" hp="151" />
     </Stats>
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Ninetales_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Ninetales_alolan_shiny.png">
+  <Pokemon id="38" name="Ninetales" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Evolve Only">
     <Type primary="Ice" secondary="Fairy" />
     <EvolvesFrom id="37" name="Vulpix" candies="50" />
     <Stats>
@@ -542,7 +542,7 @@
       <Max cp="2309" hp="151" />
     </Stats>
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" form="Normal" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Ninetales.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/74/Ninetales_shiny.png">
+  <Pokemon id="38" name="Ninetales" form="Normal" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="General">
     <Type primary="Fire" />
     <EvolvesFrom id="37" name="Vulpix" candies="50" />
     <Stats>
@@ -553,7 +553,7 @@
       <Max cp="2279" hp="151" />
     </Stats>
   </Pokemon>
-  <Pokemon id="39" name="Jigglypuff" family="Jigglypuff" buddy_km="1" gender_ratio="1 : 3" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/af/Jigglypuff.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Jigglypuff_shiny.png">
+  <Pokemon id="39" name="Jigglypuff" family="Jigglypuff" buddy_km="1" gender_ratio="1 : 3" availability="General">
     <Type primary="Normal" secondary="Fairy" />
     <EvolvesFrom id="174" name="Igglybuff" candies="25" />
     <Stats>
@@ -564,7 +564,7 @@
       <Max cp="724" hp="210" />
     </Stats>
   </Pokemon>
-  <Pokemon id="40" name="Wigglytuff" family="Jigglypuff" buddy_km="1" gender_ratio="1 : 3" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Wigglytuff.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e6/Wigglytuff_shiny.png">
+  <Pokemon id="40" name="Wigglytuff" family="Jigglypuff" buddy_km="1" gender_ratio="1 : 3" availability="General">
     <Type primary="Normal" secondary="Fairy" />
     <EvolvesFrom id="39" name="Jigglypuff" candies="50" />
     <Stats>
@@ -575,7 +575,7 @@
       <Max cp="1926" hp="244" />
     </Stats>
   </Pokemon>
-  <Pokemon id="41" name="Zubat" family="Zubat" buddy_km="1" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/67/Zubat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/78/Zubat_shiny.png">
+  <Pokemon id="41" name="Zubat" family="Zubat" buddy_km="1" gender_ratio="1 : 1" availability="General" ditto="true">
     <Type primary="Poison" secondary="Flying" />
     <Stats>
       <BaseIV attack="83" defense="73" stamina="120" />
@@ -585,7 +585,7 @@
       <Max cp="667" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="42" name="Golbat" family="Zubat" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Golbat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ad/Golbat_shiny.png">
+  <Pokemon id="42" name="Golbat" family="Zubat" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Poison" secondary="Flying" />
     <EvolvesFrom id="41" name="Zubat" candies="25" />
     <Stats>
@@ -596,7 +596,7 @@
       <Max cp="1976" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="43" name="Oddish" family="Oddish" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d9/Oddish.png">
+  <Pokemon id="43" name="Oddish" family="Oddish" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
       <BaseIV attack="131" defense="112" stamina="128" />
@@ -606,7 +606,7 @@
       <Max cp="1228" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="44" name="Gloom" family="Oddish" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/59/Gloom.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Gloom_shiny.png">
+  <Pokemon id="44" name="Gloom" family="Oddish" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Poison" />
     <EvolvesFrom id="43" name="Oddish" candies="25" />
     <Stats>
@@ -617,7 +617,7 @@
       <Max cp="1681" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="45" name="Vileplume" family="Oddish" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Vileplume.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Vileplume_shiny.png">
+  <Pokemon id="45" name="Vileplume" family="Oddish" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Poison" />
     <EvolvesFrom id="44" name="Gloom" candies="100" />
     <Stats>
@@ -628,7 +628,7 @@
       <Max cp="2559" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="46" name="Paras" family="Paras" buddy_km="3" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/ee/Paras.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Paras_shiny.png">
+  <Pokemon id="46" name="Paras" family="Paras" buddy_km="3" gender_ratio="1 : 1" availability="General" ditto="true">
     <Type primary="Bug" secondary="Grass" />
     <Stats>
       <BaseIV attack="121" defense="99" stamina="111" />
@@ -638,7 +638,7 @@
       <Max cp="1018" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="47" name="Parasect" family="Paras" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/62/Parasect.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/64/Parasect_shiny.png">
+  <Pokemon id="47" name="Parasect" family="Paras" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" secondary="Grass" />
     <EvolvesFrom id="46" name="Paras" candies="50" />
     <Stats>
@@ -649,7 +649,7 @@
       <Max cp="1859" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="48" name="Venonat" family="Venonat" buddy_km="3" gender_ratio="1 : 1" availability="General" ditto="true" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Venonat.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fd/Venonat_shiny.png">
+  <Pokemon id="48" name="Venonat" family="Venonat" buddy_km="3" gender_ratio="1 : 1" availability="General" ditto="true">
     <Type primary="Bug" secondary="Poison" />
     <Stats>
       <BaseIV attack="100" defense="100" stamina="155" />
@@ -659,7 +659,7 @@
       <Max cp="1004" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="49" name="Venomoth" family="Venonat" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c2/Venomoth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/bb/Venomoth_shiny.png">
+  <Pokemon id="49" name="Venomoth" family="Venonat" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" secondary="Poison" />
     <EvolvesFrom id="48" name="Venonat" candies="50" />
     <Stats>
@@ -670,7 +670,7 @@
       <Max cp="2082" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" family="Diglett" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Diglett.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Diglett_shiny.png">
+  <Pokemon id="50" name="Diglett" family="Diglett" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="109" defense="78" stamina="67" />
@@ -680,7 +680,7 @@
       <Max cp="676" hp="64" />
     </Stats>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8d/Diglett_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Diglett_alolan_shiny.png">
+  <Pokemon id="50" name="Diglett" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
       <BaseIV attack="108" defense="81" stamina="67" />
@@ -690,7 +690,7 @@
       <Max cp="681" hp="64" />
     </Stats>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/7a/Diglett.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c7/Diglett_shiny.png">
+  <Pokemon id="50" name="Diglett" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="109" defense="78" stamina="67" />
@@ -700,7 +700,7 @@
       <Max cp="676" hp="64" />
     </Stats>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" family="Diglett" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Dugtrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Dugtrio_shiny.png">
+  <Pokemon id="51" name="Dugtrio" family="Diglett" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Ground" />
     <EvolvesFrom id="50" name="Diglett" candies="50" />
     <Stats>
@@ -711,7 +711,7 @@
       <Max cp="1557" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/28/Dugtrio_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Dugtrio_alolan_shiny.png">
+  <Pokemon id="51" name="Dugtrio" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" secondary="Steel" />
     <EvolvesFrom id="50" name="Diglett" candies="50" />
     <Stats>
@@ -722,7 +722,7 @@
       <Max cp="1897" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Dugtrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Dugtrio_shiny.png">
+  <Pokemon id="51" name="Dugtrio" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" />
     <EvolvesFrom id="50" name="Diglett" candies="50" />
     <Stats>
@@ -733,7 +733,7 @@
       <Max cp="1567" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="52" name="Meowth" family="Meowth" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Meowth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Meowth_shiny.png">
+  <Pokemon id="52" name="Meowth" family="Meowth" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="92" defense="78" stamina="120" />
@@ -743,7 +743,7 @@
       <Max cp="748" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="52" name="Meowth" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Meowth_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/84/Meowth_alolan_shiny.png">
+  <Pokemon id="52" name="Meowth" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
     <Type primary="Dark" />
     <Stats>
       <BaseIV attack="99" defense="78" stamina="120" />
@@ -753,7 +753,7 @@
       <Max cp="797" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="52" name="Meowth" form="Normal" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Meowth.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e7/Meowth_shiny.png">
+  <Pokemon id="52" name="Meowth" form="Normal" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="92" defense="78" stamina="120" />
@@ -763,7 +763,7 @@
       <Max cp="748" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="53" name="Persian" family="Meowth" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Persian.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Persian_shiny.png">
+  <Pokemon id="53" name="Persian" family="Meowth" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Normal" />
     <EvolvesFrom id="52" name="Meowth" candies="50" />
     <Stats>
@@ -774,7 +774,7 @@
       <Max cp="1689" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="53" name="Persian" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/82/Persian_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/de/Persian_alolan_shiny.png">
+  <Pokemon id="53" name="Persian" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Dark" />
     <EvolvesFrom id="52" name="Meowth" candies="50" />
     <Stats>
@@ -785,7 +785,7 @@
       <Max cp="1771" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="53" name="Persian" form="Normal" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b3/Persian.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/57/Persian_shiny.png">
+  <Pokemon id="53" name="Persian" form="Normal" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="52" name="Meowth" candies="50" />
     <Stats>
@@ -796,7 +796,7 @@
       <Max cp="1689" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="54" name="Psyduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-01-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/32/Psyduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Psyduck_shiny.png">
+  <Pokemon id="54" name="Psyduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-01-25">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="122" defense="95" stamina="137" />
@@ -806,7 +806,7 @@
       <Max cp="1106" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="55" name="Golduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-01-25" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/cf/Golduck.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ed/Golduck_shiny.png">
+  <Pokemon id="55" name="Golduck" family="Psyduck" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-01-25">
     <Type primary="Water" />
     <EvolvesFrom id="54" name="Psyduck" candies="50" />
     <Stats>
@@ -817,7 +817,7 @@
       <Max cp="2450" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="56" name="Mankey" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Mankey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Mankey_shiny.png">
+  <Pokemon id="56" name="Mankey" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-03-05">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="148" defense="82" stamina="120" />
@@ -827,7 +827,7 @@
       <Max cp="1164" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="57" name="Primeape" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Primeape.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/26/Primeape_shiny.png">
+  <Pokemon id="57" name="Primeape" family="Mankey" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-03-05">
     <Type primary="Fighting" />
     <EvolvesFrom id="56" name="Mankey" candies="50" />
     <Stats>
@@ -838,7 +838,7 @@
       <Max cp="2288" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="58" name="Growlithe" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-09-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bb/Growlithe.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/64/Growlithe_shiny.png">
+  <Pokemon id="58" name="Growlithe" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-09-01">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="136" defense="93" stamina="146" />
@@ -848,7 +848,7 @@
       <Max cp="1243" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="59" name="Arcanine" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-09-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/50/Arcanine.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/16/Arcanine_shiny.png">
+  <Pokemon id="59" name="Arcanine" family="Growlithe" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-09-01">
     <Type primary="Fire" />
     <EvolvesFrom id="58" name="Growlithe" candies="50" />
     <Stats>
@@ -859,7 +859,7 @@
       <Max cp="3029" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="60" name="Poliwag" family="Poliwag" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/90/Poliwag.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Poliwag_shiny.png">
+  <Pokemon id="60" name="Poliwag" family="Poliwag" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="101" defense="82" stamina="120" />
@@ -869,7 +869,7 @@
       <Max cp="829" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="61" name="Poliwhirl" family="Poliwag" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/24/Poliwhirl.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Poliwhirl_shiny.png">
+  <Pokemon id="61" name="Poliwhirl" family="Poliwag" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="60" name="Poliwag" candies="25" />
     <Stats>
@@ -880,7 +880,7 @@
       <Max cp="1419" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="62" name="Poliwrath" family="Poliwag" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Poliwrath.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Poliwrath_shiny.png">
+  <Pokemon id="62" name="Poliwrath" family="Poliwag" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" secondary="Fighting" />
     <EvolvesFrom id="61" name="Poliwhirl" candies="100" />
     <Stats>
@@ -891,7 +891,7 @@
       <Max cp="2586" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="63" name="Abra" family="Abra" buddy_km="3" gender_ratio="3 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f6/Abra.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7e/Abra_shiny.png">
+  <Pokemon id="63" name="Abra" family="Abra" buddy_km="3" gender_ratio="3 : 1" availability="General">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="195" defense="82" stamina="93" />
@@ -901,7 +901,7 @@
       <Max cp="1342" hp="85" />
     </Stats>
   </Pokemon>
-  <Pokemon id="64" name="Kadabra" family="Abra" buddy_km="3" gender_ratio="3 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b0/Kadabra.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Kadabra_shiny.png">
+  <Pokemon id="64" name="Kadabra" family="Abra" buddy_km="3" gender_ratio="3 : 1" availability="General">
     <Type primary="Psychic" />
     <EvolvesFrom id="63" name="Abra" candies="25" />
     <Stats>
@@ -912,7 +912,7 @@
       <Max cp="2059" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="65" name="Alakazam" family="Abra" buddy_km="3" gender_ratio="3 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f5/Alakazam.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Alakazam_shiny.png">
+  <Pokemon id="65" name="Alakazam" family="Abra" buddy_km="3" gender_ratio="3 : 1" availability="General">
     <Type primary="Psychic" />
     <EvolvesFrom id="64" name="Kadabra" candies="100" />
     <Stats>
@@ -923,7 +923,7 @@
       <Max cp="3057" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="66" name="Machop" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Machop.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7c/Machop_shiny.png">
+  <Pokemon id="66" name="Machop" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05">
     <Type primary="Fighting" />
     <Stats>
       <BaseIV attack="137" defense="82" stamina="172" />
@@ -933,7 +933,7 @@
       <Max cp="1278" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="67" name="Machoke" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Machoke.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Machoke_shiny.png">
+  <Pokemon id="67" name="Machoke" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05">
     <Type primary="Fighting" />
     <EvolvesFrom id="66" name="Machop" candies="25" />
     <Stats>
@@ -944,7 +944,7 @@
       <Max cp="2031" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="68" name="Machamp" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Machamp.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Machamp_shiny.png">
+  <Pokemon id="68" name="Machamp" family="Machop" buddy_km="3" gender_ratio="3 : 1" availability="General" shiny="2018-03-05">
     <Type primary="Fighting" />
     <EvolvesFrom id="67" name="Machoke" candies="100" />
     <Stats>
@@ -955,7 +955,7 @@
       <Max cp="3056" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="69" name="Bellsprout" family="Bellsprout" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Bellsprout.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/93/Bellsprout_shiny.png">
+  <Pokemon id="69" name="Bellsprout" family="Bellsprout" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
       <BaseIV attack="139" defense="61" stamina="137" />
@@ -965,7 +965,7 @@
       <Max cp="1033" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="70" name="Weepinbell" family="Bellsprout" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f9/Weepinbell.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Weepinbell_shiny.png">
+  <Pokemon id="70" name="Weepinbell" family="Bellsprout" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Poison" />
     <EvolvesFrom id="69" name="Bellsprout" candies="25" />
     <Stats>
@@ -976,7 +976,7 @@
       <Max cp="1611" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="71" name="Victreebel" family="Bellsprout" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/55/Victreebel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/69/Victreebel_shiny.png">
+  <Pokemon id="71" name="Victreebel" family="Bellsprout" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Poison" />
     <EvolvesFrom id="70" name="Weepinbell" candies="100" />
     <Stats>
@@ -987,7 +987,7 @@
       <Max cp="2431" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="72" name="Tentacool" family="Tentacool" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/43/Tentacool.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Tentacool_shiny.png">
+  <Pokemon id="72" name="Tentacool" family="Tentacool" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" secondary="Poison" />
     <Stats>
       <BaseIV attack="97" defense="149" stamina="120" />
@@ -997,7 +997,7 @@
       <Max cp="1040" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="73" name="Tentacruel" family="Tentacool" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/78/Tentacruel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Tentacruel_shiny.png">
+  <Pokemon id="73" name="Tentacruel" family="Tentacool" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" secondary="Poison" />
     <EvolvesFrom id="72" name="Tentacool" candies="50" />
     <Stats>
@@ -1008,7 +1008,7 @@
       <Max cp="2422" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" family="Geodude" buddy_km="1" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Geodude.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Geodude_shiny.png">
+  <Pokemon id="74" name="Geodude" family="Geodude" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="132" defense="132" stamina="120" />
@@ -1018,7 +1018,7 @@
       <Max cp="1293" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4c/Geodude_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/75/Geodude_alolan_shiny.png">
+  <Pokemon id="74" name="Geodude" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="132" defense="132" stamina="120" />
@@ -1028,7 +1028,7 @@
       <Max cp="1293" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Geodude.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/ae/Geodude_shiny.png">
+  <Pokemon id="74" name="Geodude" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="132" defense="132" stamina="120" />
@@ -1038,7 +1038,7 @@
       <Max cp="1293" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" family="Geodude" buddy_km="1" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Graveler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Graveler_shiny.png">
+  <Pokemon id="75" name="Graveler" family="Geodude" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Rock" secondary="Ground" />
     <EvolvesFrom id="74" name="Geodude" candies="25" />
     <Stats>
@@ -1049,7 +1049,7 @@
       <Max cp="1897" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/22/Graveler_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/16/Graveler_alolan_shiny.png">
+  <Pokemon id="75" name="Graveler" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Rock" secondary="Electric" />
     <EvolvesFrom id="74" name="Geodude" candies="25" />
     <Stats>
@@ -1060,7 +1060,7 @@
       <Max cp="1897" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b6/Graveler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8a/Graveler_shiny.png">
+  <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Rock" secondary="Ground" />
     <EvolvesFrom id="74" name="Geodude" candies="25" />
     <Stats>
@@ -1071,7 +1071,7 @@
       <Max cp="1897" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" family="Geodude" buddy_km="1" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Golem.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Golem_shiny.png">
+  <Pokemon id="76" name="Golem" family="Geodude" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Rock" secondary="Ground" />
     <EvolvesFrom id="75" name="Graveler" candies="100" />
     <Stats>
@@ -1082,7 +1082,7 @@
       <Max cp="2949" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/dd/Golem_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Golem_alolan_shiny.png">
+  <Pokemon id="76" name="Golem" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Rock" secondary="Electric" />
     <EvolvesFrom id="75" name="Graveler" candies="100" />
     <Stats>
@@ -1093,7 +1093,7 @@
       <Max cp="2949" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Golem.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b7/Golem_shiny.png">
+  <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Rock" secondary="Ground" />
     <EvolvesFrom id="75" name="Graveler" candies="100" />
     <Stats>
@@ -1104,7 +1104,7 @@
       <Max cp="2949" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="77" name="Ponyta" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5f/Ponyta.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Ponyta_shiny.png">
+  <Pokemon id="77" name="Ponyta" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="170" defense="127" stamina="137" />
@@ -1114,7 +1114,7 @@
       <Max cp="1697" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="78" name="Rapidash" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Rapidash.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/ea/Rapidash_shiny.png">
+  <Pokemon id="78" name="Rapidash" family="Ponyta" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05">
     <Type primary="Fire" />
     <EvolvesFrom id="77" name="Ponyta" candies="50" />
     <Stats>
@@ -1125,7 +1125,7 @@
       <Max cp="2461" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="79" name="Slowpoke" family="Slowpoke" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9b/Slowpoke.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Slowpoke_shiny.png">
+  <Pokemon id="79" name="Slowpoke" family="Slowpoke" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" secondary="Psychic" />
     <Stats>
       <BaseIV attack="109" defense="98" stamina="207" />
@@ -1135,7 +1135,7 @@
       <Max cp="1226" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="80" name="Slowbro" family="Slowpoke" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Slowbro.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Slowbro_shiny.png">
+  <Pokemon id="80" name="Slowbro" family="Slowpoke" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" secondary="Psychic" />
     <EvolvesFrom id="79" name="Slowpoke" candies="50" />
     <Stats>
@@ -1146,7 +1146,7 @@
       <Max cp="2545" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="81" name="Magnemite" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="General" shiny="2018-11-16" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/80/Magnemite.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/fa/Magnemite_shiny.png">
+  <Pokemon id="81" name="Magnemite" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="General" shiny="2018-11-16">
     <Type primary="Electric" secondary="Steel" />
     <Stats>
       <BaseIV attack="165" defense="121" stamina="93" />
@@ -1156,7 +1156,7 @@
       <Max cp="1362" hp="85" />
     </Stats>
   </Pokemon>
-  <Pokemon id="82" name="Magneton" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="General" shiny="2018-11-16" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d1/Magneton.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c6/Magneton_shiny.png">
+  <Pokemon id="82" name="Magneton" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="General" shiny="2018-11-16">
     <Type primary="Electric" secondary="Steel" />
     <EvolvesFrom id="81" name="Magnemite" candies="50" />
     <Stats>
@@ -1167,7 +1167,7 @@
       <Max cp="2485" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="83" name="Farfetch'd" family="Farfetchd" buddy_km="3" gender_ratio="1 : 1" availability="Regional: Asia" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b5/Farfetch%27d.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8f/Farfetch%27d_shiny.png">
+  <Pokemon id="83" name="Farfetch'd" family="Farfetchd" buddy_km="3" gender_ratio="1 : 1" availability="Regional: Asia">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="124" defense="115" stamina="141" />
@@ -1177,7 +1177,7 @@
       <Max cp="1236" hp="123" />
     </Stats>
   </Pokemon>
-  <Pokemon id="84" name="Doduo" family="Doduo" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/9c/Doduo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2f/Doduo_shiny.png">
+  <Pokemon id="84" name="Doduo" family="Doduo" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" secondary="Flying" />
     <Stats>
       <BaseIV attack="158" defense="83" stamina="111" />
@@ -1187,7 +1187,7 @@
       <Max cp="1200" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="85" name="Dodrio" family="Doduo" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1a/Dodrio.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/49/Dodrio_shiny.png">
+  <Pokemon id="85" name="Dodrio" family="Doduo" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" secondary="Flying" />
     <EvolvesFrom id="84" name="Doduo" candies="50" />
     <Stats>
@@ -1198,7 +1198,7 @@
       <Max cp="2362" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="86" name="Seel" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f1/Seel.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0d/Seel_shiny.png">
+  <Pokemon id="86" name="Seel" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="85" defense="121" stamina="163" />
@@ -1208,7 +1208,7 @@
       <Max cp="971" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="87" name="Dewgong" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1d/Dewgong.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Dewgong_shiny.png">
+  <Pokemon id="87" name="Dewgong" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" secondary="Ice" />
     <EvolvesFrom id="86" name="Seel" candies="50" />
     <Stats>
@@ -1219,7 +1219,7 @@
       <Max cp="1985" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" family="Grimer" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Grimer.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Grimer_shiny.png">
+  <Pokemon id="88" name="Grimer" family="Grimer" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="190" />
@@ -1229,7 +1229,7 @@
       <Max cp="1374" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Grimer_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e8/Grimer_alolan_shiny.png">
+  <Pokemon id="88" name="Grimer" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
     <Type primary="Poison" secondary="Dark" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="190" />
@@ -1239,7 +1239,7 @@
       <Max cp="1374" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Grimer.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Grimer_shiny.png">
+  <Pokemon id="88" name="Grimer" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="190" />
@@ -1249,7 +1249,7 @@
       <Max cp="1374" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" family="Grimer" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Muk.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Muk_shiny.png">
+  <Pokemon id="89" name="Muk" family="Grimer" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Poison" />
     <EvolvesFrom id="88" name="Grimer" candies="50" />
     <Stats>
@@ -1260,7 +1260,7 @@
       <Max cp="2757" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Muk_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0c/Muk_alolan_shiny.png">
+  <Pokemon id="89" name="Muk" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Poison" secondary="Dark" />
     <EvolvesFrom id="88" name="Grimer" candies="50" />
     <Stats>
@@ -1271,7 +1271,7 @@
       <Max cp="2757" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8e/Muk.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Muk_shiny.png">
+  <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Poison" />
     <EvolvesFrom id="88" name="Grimer" candies="50" />
     <Stats>
@@ -1282,7 +1282,7 @@
       <Max cp="2757" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="90" name="Shellder" family="Shellder" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-06-07" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/63/Shellder.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Shellder_shiny.png">
+  <Pokemon id="90" name="Shellder" family="Shellder" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-06-07">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="116" defense="134" stamina="102" />
@@ -1292,7 +1292,7 @@
       <Max cp="1080" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="91" name="Cloyster" family="Shellder" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-06-07" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/71/Cloyster.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/45/Cloyster_shiny.png">
+  <Pokemon id="91" name="Cloyster" family="Shellder" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-06-07">
     <Type primary="Water" secondary="Ice" />
     <EvolvesFrom id="90" name="Shellder" candies="50" />
     <Stats>
@@ -1303,7 +1303,7 @@
       <Max cp="2547" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="92" name="Gastly" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c1/Gastly.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Gastly_shiny.png">
+  <Pokemon id="92" name="Gastly" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03">
     <Type primary="Ghost" secondary="Poison" />
     <Stats>
       <BaseIV attack="186" defense="67" stamina="102" />
@@ -1313,7 +1313,7 @@
       <Max cp="1229" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="93" name="Haunter" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/41/Haunter.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b8/Haunter_shiny.png">
+  <Pokemon id="93" name="Haunter" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03">
     <Type primary="Ghost" secondary="Poison" />
     <EvolvesFrom id="92" name="Gastly" candies="25" />
     <Stats>
@@ -1324,7 +1324,7 @@
       <Max cp="1963" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="94" name="Gengar" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f8/Gengar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/15/Gengar_shiny.png">
+  <Pokemon id="94" name="Gengar" family="Gastly" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-03">
     <Type primary="Ghost" secondary="Poison" />
     <EvolvesFrom id="93" name="Haunter" candies="100" />
     <Stats>
@@ -1335,7 +1335,7 @@
       <Max cp="2878" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="95" name="Onix" family="Onix" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Onix.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/ba/Onix_shiny.png">
+  <Pokemon id="95" name="Onix" family="Onix" buddy_km="5" gender_ratio="1 : 1" availability="General">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="85" defense="232" stamina="111" />
@@ -1345,7 +1345,7 @@
       <Max cp="1101" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="96" name="Drowzee" family="Drowzee" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5d/Drowzee.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/25/Drowzee_shiny.png">
+  <Pokemon id="96" name="Drowzee" family="Drowzee" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-05">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="89" defense="136" stamina="155" />
@@ -1355,7 +1355,7 @@
       <Max cp="1040" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="97" name="Hypno" family="Drowzee" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0e/Hypno.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/20/Hypno_shiny.png">
+  <Pokemon id="97" name="Hypno" family="Drowzee" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-05">
     <Type primary="Psychic" />
     <EvolvesFrom id="96" name="Drowzee" candies="50" />
     <Stats>
@@ -1366,7 +1366,7 @@
       <Max cp="2090" hp="168" />
     </Stats>
   </Pokemon>
-  <Pokemon id="98" name="Krabby" family="Krabby" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/da/Krabby.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/82/Krabby_shiny.png">
+  <Pokemon id="98" name="Krabby" family="Krabby" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-01">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="181" defense="124" stamina="102" />
@@ -1376,7 +1376,7 @@
       <Max cp="1561" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="99" name="Kingler" family="Krabby" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Kingler.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3d/Kingler_shiny.png">
+  <Pokemon id="99" name="Kingler" family="Krabby" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-10-01">
     <Type primary="Water" />
     <EvolvesFrom id="98" name="Krabby" candies="50" />
     <Stats>
@@ -1387,7 +1387,7 @@
       <Max cp="2829" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="100" name="Voltorb" family="Voltorb" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/80/Voltorb.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/be/Voltorb_shiny.png">
+  <Pokemon id="100" name="Voltorb" family="Voltorb" buddy_km="3" gender_ratio="⚲" availability="General">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="109" defense="111" stamina="120" />
@@ -1397,7 +1397,7 @@
       <Max cp="1010" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="101" name="Electrode" family="Voltorb" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Electrode.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9f/Electrode_shiny.png">
+  <Pokemon id="101" name="Electrode" family="Voltorb" buddy_km="3" gender_ratio="⚲" availability="General">
     <Type primary="Electric" />
     <EvolvesFrom id="100" name="Voltorb" candies="50" />
     <Stats>
@@ -1408,7 +1408,7 @@
       <Max cp="2099" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="102" name="Exeggcute" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5f/Exeggcute.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2e/Exeggcute_shiny.png">
+  <Pokemon id="102" name="Exeggcute" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Psychic" />
     <Stats>
       <BaseIV attack="107" defense="125" stamina="155" />
@@ -1418,7 +1418,7 @@
       <Max cp="1175" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Exeggutor.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Exeggutor_shiny.png">
+  <Pokemon id="103" name="Exeggutor" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Grass" secondary="Psychic" />
     <EvolvesFrom id="102" name="Exeggcute" candies="50" />
     <Stats>
@@ -1429,7 +1429,7 @@
       <Max cp="3014" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor" form="Alola" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/94/Exeggutor_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/85/Exeggutor_alolan_shiny.png">
+  <Pokemon id="103" name="Exeggutor" form="Alola" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Dragon" />
     <EvolvesFrom id="102" name="Exeggcute" candies="50" />
     <Stats>
@@ -1440,7 +1440,7 @@
       <Max cp="3014" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor" form="Normal" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e0/Exeggutor.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/29/Exeggutor_shiny.png">
+  <Pokemon id="103" name="Exeggutor" form="Normal" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Psychic" />
     <EvolvesFrom id="102" name="Exeggcute" candies="50" />
     <Stats>
@@ -1451,7 +1451,7 @@
       <Max cp="3014" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="104" name="Cubone" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/65/Cubone.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a7/Cubone_shiny.png">
+  <Pokemon id="104" name="Cubone" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="90" defense="144" stamina="137" />
@@ -1461,7 +1461,7 @@
       <Max cp="1019" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" family="Cubone" buddy_km="3" gender_ratio="1 : 1" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
+  <Pokemon id="105" name="Marowak" family="Cubone" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Ground" />
     <EvolvesFrom id="104" name="Cubone" candies="50" />
     <Stats>
@@ -1472,7 +1472,7 @@
       <Max cp="1835" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" form="Alola" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/af/Marowak_alolan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Marowak_alolan_shiny.png">
+  <Pokemon id="105" name="Marowak" form="Alola" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-05">
     <Type primary="Fire" secondary="Ghost" />
     <EvolvesFrom id="104" name="Cubone" candies="50" />
     <Stats>
@@ -1483,7 +1483,7 @@
       <Max cp="1835" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="105" name="Marowak" form="Normal" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Marowak.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Marowak_shiny.png">
+  <Pokemon id="105" name="Marowak" form="Normal" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05">
     <Type primary="Ground" />
     <EvolvesFrom id="104" name="Cubone" candies="50" />
     <Stats>
@@ -1494,7 +1494,7 @@
       <Max cp="1835" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="106" name="Hitmonlee" family="Tyrogue" buddy_km="5" gender_ratio="♂" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0f/Hitmonlee.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/62/Hitmonlee_shiny.png">
+  <Pokemon id="106" name="Hitmonlee" family="Tyrogue" buddy_km="5" gender_ratio="♂" availability="General">
     <Type primary="Fighting" />
     <EvolvesFrom id="236" name="Tyrogue" candies="25" />
     <Stats>
@@ -1505,7 +1505,7 @@
       <Max cp="2576" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="107" name="Hitmonchan" family="Tyrogue" buddy_km="5" gender_ratio="♂" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/73/Hitmonchan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7b/Hitmonchan_shiny.png">
+  <Pokemon id="107" name="Hitmonchan" family="Tyrogue" buddy_km="5" gender_ratio="♂" availability="General">
     <Type primary="Fighting" />
     <EvolvesFrom id="236" name="Tyrogue" candies="25" />
     <Stats>
@@ -1516,7 +1516,7 @@
       <Max cp="2332" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="108" name="Lickitung" family="Lickitung" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/ab/Lickitung.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Lickitung_shiny.png">
+  <Pokemon id="108" name="Lickitung" family="Lickitung" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="108" defense="137" stamina="207" />
@@ -1526,7 +1526,7 @@
       <Max cp="1411" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="109" name="Koffing" family="Koffing" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b2/Koffing.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5c/Koffing_shiny.png">
+  <Pokemon id="109" name="Koffing" family="Koffing" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Poison" />
     <Stats>
       <BaseIV attack="119" defense="141" stamina="120" />
@@ -1536,7 +1536,7 @@
       <Max cp="1214" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="110" name="Weezing" family="Koffing" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/88/Weezing.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Weezing_shiny.png">
+  <Pokemon id="110" name="Weezing" family="Koffing" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Poison" />
     <EvolvesFrom id="109" name="Koffing" candies="50" />
     <Stats>
@@ -1547,7 +1547,7 @@
       <Max cp="2293" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="111" name="Rhyhorn" family="Rhyhorn" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/36/Rhyhorn.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5d/Rhyhorn_shiny.png">
+  <Pokemon id="111" name="Rhyhorn" family="Rhyhorn" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" secondary="Rock" />
     <Stats>
       <BaseIV attack="140" defense="127" stamina="190" />
@@ -1557,7 +1557,7 @@
       <Max cp="1651" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="112" name="Rhydon" family="Rhyhorn" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Rhydon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/a/a9/Rhydon_shiny.png">
+  <Pokemon id="112" name="Rhydon" family="Rhyhorn" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" secondary="Rock" />
     <EvolvesFrom id="111" name="Rhyhorn" candies="25" />
     <Stats>
@@ -1568,7 +1568,7 @@
       <Max cp="3179" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="113" name="Chansey" family="Chansey" buddy_km="5" gender_ratio="♀" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2b/Chansey.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/21/Chansey_shiny.png">
+  <Pokemon id="113" name="Chansey" family="Chansey" buddy_km="5" gender_ratio="♀" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="440" name="Happiny" candies="25" />
     <Stats>
@@ -1579,7 +1579,7 @@
       <Max cp="1255" hp="396" />
     </Stats>
   </Pokemon>
-  <Pokemon id="114" name="Tangela" family="Tangela" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/03/Tangela.png">
+  <Pokemon id="114" name="Tangela" family="Tangela" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="183" defense="169" stamina="163" />
@@ -1589,7 +1589,7 @@
       <Max cp="2238" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="115" name="Kangaskhan" family="Kangaskhan" buddy_km="3" gender_ratio="♀" availability="Regional: Australia" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/39/Kangaskhan.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/70/Kangaskhan_shiny.png">
+  <Pokemon id="115" name="Kangaskhan" family="Kangaskhan" buddy_km="3" gender_ratio="♀" availability="Regional: Australia">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="181" defense="165" stamina="233" />
@@ -1599,7 +1599,7 @@
       <Max cp="2586" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="116" name="Horsea" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/6/6c/Horsea.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ca/Horsea_shiny.png">
+  <Pokemon id="116" name="Horsea" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="129" defense="103" stamina="102" />
@@ -1609,7 +1609,7 @@
       <Max cp="1056" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="117" name="Seadra" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Seadra.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/d6/Seadra_shiny.png">
+  <Pokemon id="117" name="Seadra" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="116" name="Horsea" candies="25" />
     <Stats>
@@ -1620,7 +1620,7 @@
       <Max cp="2093" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="118" name="Goldeen" family="Goldeen" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Goldeen.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/53/Goldeen_shiny.png">
+  <Pokemon id="118" name="Goldeen" family="Goldeen" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="123" defense="110" stamina="128" />
@@ -1630,7 +1630,7 @@
       <Max cp="1152" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="119" name="Seaking" family="Goldeen" buddy_km="3" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/8/8b/Seaking.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/6/6a/Seaking_shiny.png">
+  <Pokemon id="119" name="Seaking" family="Goldeen" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" />
     <EvolvesFrom id="118" name="Goldeen" candies="50" />
     <Stats>
@@ -1641,7 +1641,7 @@
       <Max cp="2162" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="120" name="Staryu" family="Staryu" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e8/Staryu.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/88/Staryu_shiny.png">
+  <Pokemon id="120" name="Staryu" family="Staryu" buddy_km="3" gender_ratio="⚲" availability="General">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="137" defense="112" stamina="102" />
@@ -1651,7 +1651,7 @@
       <Max cp="1157" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="121" name="Starmie" family="Staryu" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/56/Starmie.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/9/9d/Starmie_shiny.png">
+  <Pokemon id="121" name="Starmie" family="Staryu" buddy_km="3" gender_ratio="⚲" availability="General">
     <Type primary="Water" secondary="Psychic" />
     <EvolvesFrom id="120" name="Staryu" candies="50" />
     <Stats>
@@ -1662,7 +1662,7 @@
       <Max cp="2584" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="122" name="Mr. Mime" family="Mr Mime" buddy_km="5" gender_ratio="1 : 1" availability="Regional: Europe" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/4f/Mr._Mime.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7d/Mr._Mime_shiny.png">
+  <Pokemon id="122" name="Mr. Mime" family="Mr Mime" buddy_km="5" gender_ratio="1 : 1" availability="Regional: Europe">
     <Type primary="Psychic" secondary="Fairy" />
     <EvolvesFrom id="439" name="Mime Jr." candies="50" />
     <Stats>
@@ -1673,7 +1673,7 @@
       <Max cp="2228" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="123" name="Scyther" family="Scyther" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/c/c2/Scyther.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2f/Scyther_shiny.png">
+  <Pokemon id="123" name="Scyther" family="Scyther" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-04-02">
     <Type primary="Bug" secondary="Flying" />
     <Stats>
       <BaseIV attack="218" defense="170" stamina="172" />
@@ -1683,7 +1683,7 @@
       <Max cp="2706" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="124" name="Jynx" family="Jynx" buddy_km="5" gender_ratio="♀" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Jynx.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/24/Jynx_shiny.png">
+  <Pokemon id="124" name="Jynx" family="Jynx" buddy_km="5" gender_ratio="♀" availability="General" shiny="2019-02-13">
     <Type primary="Ice" secondary="Psychic" />
     <EvolvesFrom id="238" name="Smoochum" candies="25" />
     <Stats>
@@ -1694,7 +1694,7 @@
       <Max cp="2555" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="125" name="Electabuzz" family="Electabuzz" buddy_km="5" gender_ratio="3 : 1" availability="General" shiny="2018-11-14" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/3a/Electabuzz.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/12/Electabuzz_shiny.png">
+  <Pokemon id="125" name="Electabuzz" family="Electabuzz" buddy_km="5" gender_ratio="3 : 1" availability="General" shiny="2018-11-14">
     <Type primary="Electric" />
     <EvolvesFrom id="239" name="Elekid" candies="25" />
     <Stats>
@@ -1705,7 +1705,7 @@
       <Max cp="2334" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="126" name="Magmar" family="Magmar" buddy_km="5" gender_ratio="3 : 1" availability="General" shiny="2018-03-22" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/4/46/Magmar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/7/7b/Magmar_shiny.png">
+  <Pokemon id="126" name="Magmar" family="Magmar" buddy_km="5" gender_ratio="3 : 1" availability="General" shiny="2018-03-22">
     <Type primary="Fire" />
     <EvolvesFrom id="240" name="Magby" candies="25" />
     <Stats>
@@ -1716,7 +1716,7 @@
       <Max cp="2394" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="127" name="Pinsir" family="Pinsir" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-11-01" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/b4/Pinsir.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/ce/Pinsir_shiny.png">
+  <Pokemon id="127" name="Pinsir" family="Pinsir" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-11-01">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="238" defense="182" stamina="163" />
@@ -1726,7 +1726,7 @@
       <Max cp="2959" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="128" name="Tauros" family="Tauros" buddy_km="3" gender_ratio="♂" availability="Regional: United States" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/98/Tauros.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c9/Tauros_shiny.png">
+  <Pokemon id="128" name="Tauros" family="Tauros" buddy_km="3" gender_ratio="♂" availability="Regional: United States">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="198" defense="183" stamina="181" />
@@ -1736,7 +1736,7 @@
       <Max cp="2620" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="129" name="Magikarp" family="Magikarp" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-03-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Magikarp.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Magikarp_shiny.png">
+  <Pokemon id="129" name="Magikarp" family="Magikarp" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-03-24">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="29" defense="85" stamina="85" />
@@ -1746,7 +1746,7 @@
       <Max cp="274" hp="79" />
     </Stats>
   </Pokemon>
-  <Pokemon id="130" name="Gyarados" family="Magikarp" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-03-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d7/Gyarados.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3f/Gyarados_shiny.png">
+  <Pokemon id="130" name="Gyarados" family="Magikarp" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-03-24">
     <Type primary="Water" secondary="Flying" />
     <EvolvesFrom id="129" name="Magikarp" candies="400" />
     <Stats>
@@ -1757,7 +1757,7 @@
       <Max cp="3391" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="131" name="Lapras" family="Lapras" buddy_km="5" gender_ratio="1 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/3/30/Lapras.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/4/4d/Lapras_shiny.png">
+  <Pokemon id="131" name="Lapras" family="Lapras" buddy_km="5" gender_ratio="1 : 1" availability="General">
     <Type primary="Water" secondary="Ice" />
     <Stats>
       <BaseIV attack="165" defense="174" stamina="277" />
@@ -1767,7 +1767,7 @@
       <Max cp="2641" hp="230" />
     </Stats>
   </Pokemon>
-  <Pokemon id="132" name="Ditto" family="Ditto" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/03/Ditto.png">
+  <Pokemon id="132" name="Ditto" family="Ditto" buddy_km="3" gender_ratio="⚲" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="91" defense="91" stamina="134" />
@@ -1777,7 +1777,7 @@
       <Max cp="832" hp="117" />
     </Stats>
   </Pokemon>
-  <Pokemon id="133" name="Eevee" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/f2/Eevee.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0b/Eevee_shiny.png">
+  <Pokemon id="133" name="Eevee" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="104" defense="114" stamina="146" />
@@ -1787,7 +1787,7 @@
       <Max cp="1071" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="134" name="Vaporeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/f/fc/Vaporeon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e5/Vaporeon_shiny.png">
+  <Pokemon id="134" name="Vaporeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11">
     <Type primary="Water" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -1798,7 +1798,7 @@
       <Max cp="3114" hp="230" />
     </Stats>
   </Pokemon>
-  <Pokemon id="135" name="Jolteon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/1e/Jolteon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/35/Jolteon_shiny.png">
+  <Pokemon id="135" name="Jolteon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11">
     <Type primary="Electric" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -1809,7 +1809,7 @@
       <Max cp="2888" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="136" name="Flareon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/1/17/Flareon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/0/0d/Flareon_shiny.png">
+  <Pokemon id="136" name="Flareon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-08-11">
     <Type primary="Fire" />
     <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
@@ -1820,7 +1820,7 @@
       <Max cp="3029" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="137" name="Porygon" family="Porygon" buddy_km="3" gender_ratio="⚲" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/2/2d/Porygon.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/f/f7/Porygon_shiny.png">
+  <Pokemon id="137" name="Porygon" family="Porygon" buddy_km="3" gender_ratio="⚲" availability="General">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="153" defense="136" stamina="163" />
@@ -1830,7 +1830,7 @@
       <Max cp="1720" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="138" name="Omanyte" family="Omanyte" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a4/Omanyte.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/22/Omanyte_shiny.png">
+  <Pokemon id="138" name="Omanyte" family="Omanyte" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24">
     <Type primary="Rock" secondary="Water" />
     <Stats>
       <BaseIV attack="155" defense="153" stamina="111" />
@@ -1840,7 +1840,7 @@
       <Max cp="1544" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="139" name="Omastar" family="Omanyte" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/97/Omastar.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/8f/Omastar_shiny.png">
+  <Pokemon id="139" name="Omastar" family="Omanyte" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24">
     <Type primary="Rock" secondary="Water" />
     <EvolvesFrom id="138" name="Omanyte" candies="50" />
     <Stats>
@@ -1851,7 +1851,7 @@
       <Max cp="2786" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="140" name="Kabuto" family="Kabuto" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a1/Kabuto.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e1/Kabuto_shiny.png">
+  <Pokemon id="140" name="Kabuto" family="Kabuto" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24">
     <Type primary="Rock" secondary="Water" />
     <Stats>
       <BaseIV attack="148" defense="140" stamina="102" />
@@ -1861,7 +1861,7 @@
       <Max cp="1370" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="141" name="Kabutops" family="Kabuto" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/7/72/Kabutops.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b9/Kabutops_shiny.png">
+  <Pokemon id="141" name="Kabutops" family="Kabuto" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24">
     <Type primary="Rock" secondary="Water" />
     <EvolvesFrom id="140" name="Kabuto" candies="50" />
     <Stats>
@@ -1872,7 +1872,7 @@
       <Max cp="2713" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="142" name="Aerodactyl" family="Aerodactyl" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/e/e6/Aerodactyl.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/cc/Aerodactyl_shiny.png">
+  <Pokemon id="142" name="Aerodactyl" family="Aerodactyl" buddy_km="5" gender_ratio="7 : 1" availability="General" shiny="2018-05-24">
     <Type primary="Rock" secondary="Flying" />
     <Stats>
       <BaseIV attack="221" defense="159" stamina="190" />
@@ -1882,7 +1882,7 @@
       <Max cp="2783" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="143" name="Snorlax" family="Snorlax" buddy_km="5" gender_ratio="7 : 1" availability="General" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/0b/Snorlax.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/8/83/Snorlax_shiny.png">
+  <Pokemon id="143" name="Snorlax" family="Snorlax" buddy_km="5" gender_ratio="7 : 1" availability="General">
     <Type primary="Normal" />
     <EvolvesFrom id="446" name="Munchlax" candies="50" />
     <Stats>
@@ -1893,7 +1893,7 @@
       <Max cp="3225" hp="272" />
     </Stats>
   </Pokemon>
-  <Pokemon id="144" name="Articuno" family="Articuno" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-07-07" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/52/Articuno.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/b/b5/Articuno_shiny.png">
+  <Pokemon id="144" name="Articuno" family="Articuno" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-07-07">
     <Type primary="Ice" secondary="Flying" />
     <Stats>
       <BaseIV attack="192" defense="236" stamina="207" />
@@ -1903,7 +1903,7 @@
       <Max cp="3051" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="145" name="Zapdos" family="Zapdos" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-07-21" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d8/Zapdos.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/2/2c/Zapdos_shiny.png">
+  <Pokemon id="145" name="Zapdos" family="Zapdos" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-07-21">
     <Type primary="Electric" secondary="Flying" />
     <Stats>
       <BaseIV attack="253" defense="185" stamina="207" />
@@ -1913,7 +1913,7 @@
       <Max cp="3527" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="146" name="Moltres" family="Moltres" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-09-08" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/0/01/Moltres.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/e/e2/Moltres_shiny.png">
+  <Pokemon id="146" name="Moltres" family="Moltres" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" shiny="2018-09-08">
     <Type primary="Fire" secondary="Flying" />
     <Stats>
       <BaseIV attack="251" defense="181" stamina="207" />
@@ -1923,7 +1923,7 @@
       <Max cp="3465" hp="175" />
     </Stats>
   </Pokemon>
-  <Pokemon id="147" name="Dratini" family="Dratini" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-02-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/9/99/Dratini.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/1/18/Dratini_shiny.png">
+  <Pokemon id="147" name="Dratini" family="Dratini" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-02-24">
     <Type primary="Dragon" />
     <Stats>
       <BaseIV attack="119" defense="91" stamina="121" />
@@ -1933,7 +1933,7 @@
       <Max cp="1004" hp="107" />
     </Stats>
   </Pokemon>
-  <Pokemon id="148" name="Dragonair" family="Dratini" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-02-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/5/5a/Dragonair.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/d/df/Dragonair_shiny.png">
+  <Pokemon id="148" name="Dragonair" family="Dratini" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-02-24">
     <Type primary="Dragon" />
     <EvolvesFrom id="147" name="Dratini" candies="25" />
     <Stats>
@@ -1944,7 +1944,7 @@
       <Max cp="1780" hp="135" />
     </Stats>
   </Pokemon>
-  <Pokemon id="149" name="Dragonite" family="Dratini" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-02-24" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/a/a6/Dragonite.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/c/c4/Dragonite_shiny.png">
+  <Pokemon id="149" name="Dragonite" family="Dratini" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2018-02-24">
     <Type primary="Dragon" secondary="Flying" />
     <EvolvesFrom id="148" name="Dragonair" candies="100" />
     <Stats>
@@ -1955,7 +1955,7 @@
       <Max cp="3792" hp="177" />
     </Stats>
   </Pokemon>
-  <Pokemon id="150" name="Mewtwo" family="Mewtwo" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/d/d3/Mewtwo.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/3/3d/Mewtwo_shiny.png">
+  <Pokemon id="150" name="Mewtwo" family="Mewtwo" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Raid Boss Only">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="300" defense="182" stamina="214" />
@@ -1965,7 +1965,7 @@
       <Max cp="4178" hp="180" />
     </Stats>
   </Pokemon>
-  <Pokemon id="151" name="Mew" family="Mew" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Research Encounter Only" sprite="https://vignette.wikia.nocookie.net/pokemongo/images/b/bf/Mew.png" sprite_shiny="https://vignette.wikia.nocookie.net/pokemongo/images/5/5b/Mew_shiny.png">
+  <Pokemon id="151" name="Mew" family="Mew" buddy_km="20" gender_ratio="⚲" rarity="Mythic" availability="Research Encounter Only">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="210" defense="210" stamina="225" />

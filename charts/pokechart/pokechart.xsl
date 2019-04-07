@@ -102,6 +102,7 @@
           <xsl:apply-templates select="PokeStats[@gen = 5]" />
           <xsl:apply-templates select="PokeStats[@gen = 6]" />
           <xsl:apply-templates select="PokeStats[@gen = 7]" />
+          <xsl:apply-templates select="PokeStats[@gen = 8]" />
         </div>
 
         <xsl:call-template name="PokemonDialog" />
@@ -342,7 +343,6 @@
         </xsl:attribute>
         <xsl:for-each select="Pokemon">
           <xsl:sort order="ascending" data-type="number" select="@id" />
-          <xsl:sort order="ascending" data-type="number" select="@formId" />
 
           <xsl:variable name="id" select="@id" />
           <xsl:if test="(not(/Root/params/@released-only) or not(contains(@availability, $Availability_Unreleased))) and (@form or not(../Pokemon[@id = $id and @form]))">

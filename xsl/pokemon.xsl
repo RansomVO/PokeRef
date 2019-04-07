@@ -428,10 +428,43 @@
   </xsl:template>
 
   <xsl:template match="Pokemon" mode="SpriteURL">
-    <!-- TODO QZX: Add support for Shinies -->
-    <!-- TODO QZX: Add support for Genders -->
-    <!-- TODO QZX: Add support for Special features (E.G. Pikachu with a hat) -->
-    <xsl:value-of select="@sprite" />
+    <xsl:param name="Settings" />
+
+    <xsl:variable name="pokemon" select="." />
+
+    <xsl:variable name="spriteUnreleased" select="/Root/PokemonSprites/Pokemon[@id = $pokemon/@id]/@sprite" />
+    <xsl:choose>
+      <xsl:when test="$spriteUnreleased">
+        <xsl:value-of select="$spriteUnreleased" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>https://raw.githubusercontent.com/ZeChrales/PogoAssets/master/pokemon_icons/pokemon_icon_</xsl:text>
+        <xsl:value-of select="format-number($pokemon/@id, '000')" />
+
+        <!-- Choose the correct form if one is specified -->
+        <xsl:variable name="form" select="/Root/PokemonSprites/Pokemon[@id = $pokemon/@id]/Form[@name = $pokemon/@form]/@value" />
+        <xsl:choose>
+          <xsl:when test="$form">
+            <xsl:text>_</xsl:text>
+            <xsl:value-of select="$form" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>_00</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+
+        <!-- TODO QZX: Add support for Genders -->
+
+        <!-- TODO QZX: Add support for Special features (E.G. Pikachu with a hat) -->
+
+        <!-- Handle when Shiny is specified. -->
+        <xsl:if test="exslt:node-set($Settings)/*/@shiny">
+          <xsl:text>_shiny</xsl:text>
+        </xsl:if>
+
+        <xsl:text>.png</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="Pokemon" mode="DisplayName">
@@ -443,35 +476,35 @@
 
   <!-- #region Templates to Output icons for Pokemon Type/Boost. -->
   <xsl:template match="Type" mode="icons">
-      <table class="TABLE_ARRANGER">
-        <tr>
-          <td style="margin:0; padding:0">
+    <table class="TABLE_ARRANGER">
+      <tr>
+        <td style="margin:0; padding:0">
+          <xsl:call-template name="OutputTypeIcon">
+            <xsl:with-param name="Type" select="@primary" />
+          </xsl:call-template>
+        </td>
+        <xsl:if test="@secondary">
+          <td>
             <xsl:call-template name="OutputTypeIcon">
-              <xsl:with-param name="Type" select="@primary" />
+              <xsl:with-param name="Type" select="@secondary" />
             </xsl:call-template>
           </td>
-          <xsl:if test="@secondary">
-            <td>
-              <xsl:call-template name="OutputTypeIcon">
-                <xsl:with-param name="Type" select="@secondary" />
-              </xsl:call-template>
-            </td>
-          </xsl:if>
-          <td class="SPACER_ICON" />
+        </xsl:if>
+        <td class="SPACER_ICON" />
+        <td>
+          <xsl:call-template name="OutputWeatherBoostIcon">
+            <xsl:with-param name="Type" select="@primary" />
+          </xsl:call-template>
+        </td>
+        <xsl:if test="@secondary">
           <td>
             <xsl:call-template name="OutputWeatherBoostIcon">
-              <xsl:with-param name="Type" select="@primary" />
+              <xsl:with-param name="Type" select="@secondary" />
             </xsl:call-template>
           </td>
-          <xsl:if test="@secondary">
-            <td>
-              <xsl:call-template name="OutputWeatherBoostIcon">
-                <xsl:with-param name="Type" select="@secondary" />
-              </xsl:call-template>
-            </td>
-          </xsl:if>
-        </tr>
-      </table>
+        </xsl:if>
+      </tr>
+    </table>
   </xsl:template>
 
   <xsl:template name="OutputTypeIcon">
