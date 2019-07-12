@@ -4,7 +4,7 @@
   https://thesilphroad.com/catalog
 -->
 
-<Traits last_updated="2019-03-22">
+<Traits last_updated="2019-06-29">
   <Eggs>
     <Egg type="2">
       <Pokemon id="1" name="Bulbasaur" current="true" />
@@ -17,29 +17,33 @@
       <Pokemon id="63" name="Abra" current="true" />
       <Pokemon id="66" name="Machop" current="true" />
       <Pokemon id="69" name="Bellsprout" />
-      <Pokemon id="79" name="Slowpoke" current="true" />
-      <Pokemon id="90" name="Shellder" />
+      <Pokemon id="79" name="Slowpoke" />
+      <Pokemon id="90" name="Shellder" current="true" />
       <Pokemon id="92" name="Gastly" current="true" />
+      <Pokemon id="98" name="Krabby" current="true" />
       <Pokemon id="102" name="Exeggcute" />
       <Pokemon id="129" name="Magikarp" current="true" />
       <Pokemon id="152" name="Chikorita" current="true" />
       <Pokemon id="155" name="Cyndaquil" current="true" />
       <Pokemon id="158" name="Totodile" current="true" />
-      <Pokemon id="172" name="Pichu" />
-      <Pokemon id="173" name="Cleffa" />
-      <Pokemon id="174" name="Igglybuff" />
-      <Pokemon id="175" name="Togepi" />
+      <Pokemon id="172" name="Pichu" current="true" />
+      <Pokemon id="173" name="Cleffa" current="true" />
+      <Pokemon id="174" name="Igglybuff" current="true" />
+      <Pokemon id="175" name="Togepi" current="true" />
       <Pokemon id="200" name="Misdreavus" current="true" />
       <Pokemon id="220" name="Swinub" current="true" />
       <Pokemon id="223" name="Remoraid" />
       <Pokemon id="252" name="Treecko" current="true" />
+      <Pokemon id="255" name="Torchic" current="true" />
       <Pokemon id="258" name="Mudkip" current="true" />
       <Pokemon id="261" name="Poochyena" />
       <Pokemon id="263" name="Zigzagoon" />
       <Pokemon id="265" name="Wurmple" />
       <Pokemon id="276" name="Taillow" />
       <Pokemon id="293" name="Whismur" />
+      <Pokemon id="296" name="Makuhita" current="true" />
       <Pokemon id="304" name="Aron" current="true" />
+      <Pokemon id="307" name="Meditite" current="true" />
       <Pokemon id="316" name="Gulpin" />
       <Pokemon id="320" name="Wailmer" current="true" />
       <Pokemon id="325" name="Spoink" current="true" />
@@ -50,22 +54,25 @@
       <Pokemon id="387" name="Turtwig" current="true" />
       <Pokemon id="390" name="Chimchar" current="true" />
       <Pokemon id="393" name="Piplup" current="true" />
-      <Pokemon id="396" name="Starly" current="true" />
+      <Pokemon id="396" name="Starly" />
       <Pokemon id="401" name="Kricketot" current="true" />
+      <Pokemon id="438" name="Bonsly" current="true" />
     </Egg>
 
     <Egg type="5">
       <Pokemon id="1" name="Bulbasaur" />
       <Pokemon id="4" name="Charmander" />
       <Pokemon id="7" name="Squirtle" />
-      <Pokemon id="27" name="Sandshrew" />
+      <Pokemon id="27" name="Sandshrew" current="true" />
+      <Pokemon id="54" name="Psyduck" current="true" />
       <Pokemon id="58" name="Growlithe" current="true" />
-      <Pokemon id="60" name="Poliwag" current="true" />
-      <Pokemon id="77" name="Ponyta" />
+      <Pokemon id="60" name="Poliwag" />
+      <Pokemon id="77" name="Ponyta" current="true" />
       <Pokemon id="81" name="Magnemite" current="true" />
-      <Pokemon id="86" name="Seel" />
+      <Pokemon id="86" name="Seel" current="true" />
       <Pokemon id="88" name="Grimer" />
       <Pokemon id="96" name="Onix" current="true" />
+      <Pokemon id="104" name="Cubone" current="true" />
       <Pokemon id="108" name="Lickitung" current="true" />
       <Pokemon id="109" name="Koffing" />
       <Pokemon id="112" name="Rhyhorn" current="true" />
@@ -74,12 +81,14 @@
       <Pokemon id="123" name="Scyther" current="true" />
       <Pokemon id="127" name="Pinsir" />
       <Pokemon id="133" name="Eevee" current="true" />
-      <Pokemon id="138" name="Omanyte" />
-      <Pokemon id="140" name="Kabuto" />
+      <Pokemon id="138" name="Omanyte" current="true" />
+      <Pokemon id="140" name="Kabuto" current="true" />
       <Pokemon id="152" name="Chikorita" />
       <Pokemon id="155" name="Cyndaquil" />
       <Pokemon id="158" name="Totodile" />
       <Pokemon id="170" name="Chinchou" />
+      <Pokemon id="179" name="Mareep" current="true" />
+      <Pokemon id="184" name="Azumarill" />
       <Pokemon id="193" name="Yanma" current="true" />
       <Pokemon id="203" name="Girafarig" />
       <Pokemon id="204" name="Pineco" current="true" />
@@ -89,13 +98,14 @@
       <Pokemon id="215" name="Sneasel" current="true" />
       <Pokemon id="216" name="Teddiursa" />
       <Pokemon id="226" name="Mantine" />
+      <Pokemon id="227" name="Skarmory" current="true" />
       <Pokemon id="228" name="Houndour" current="true" />
-      <Pokemon id="231" name="Phanpy" current="true" />
+      <Pokemon id="231" name="Phanpy" />
       <Pokemon id="243" name="Stantler" />
-      <Pokemon id="235" name="Tyrogue" />
-      <Pokemon id="238" name="Smoochum" />
-      <Pokemon id="239" name="Elekid" />
-      <Pokemon id="240" name="Magby" />
+      <Pokemon id="235" name="Tyrogue" current="true" />
+      <Pokemon id="238" name="Smoochum" current="true" />
+      <Pokemon id="239" name="Elekid" current="true" />
+      <Pokemon id="240" name="Magby" current="true" />
       <Pokemon id="252" name="Treecko" />
       <Pokemon id="255" name="Torchic" />
       <Pokemon id="258" name="Mudkip" />
@@ -104,31 +114,41 @@
       <Pokemon id="278" name="Wingull" />
       <Pokemon id="285" name="Shroomish" />
       <Pokemon id="296" name="Makuhita" />
-      <Pokemon id="298" name="Azurill" />
+      <Pokemon id="298" name="Azurill" current="true" />
       <Pokemon id="299" name="Nosepass" current="true" />
       <Pokemon id="300" name="Skitty" />
       <Pokemon id="307" name="Meditite" />
-      <Pokemon id="309" name="Electrike" current="true" />
+      <Pokemon id="309" name="Electrike" />
       <Pokemon id="318" name="Carvanha" current="true" />
       <Pokemon id="322" name="Numel" />
+      <Pokemon id="328" name="Trapinch" current="true" />
       <Pokemon id="331" name="Cacnea" current="true" />
       <Pokemon id="341" name="Corphish" />
       <Pokemon id="343" name="Baltoy" />
       <Pokemon id="345" name="Lileep" current="true" />
       <Pokemon id="347" name="Anorith" current="true" />
-      <Pokemon id="353" name="Shuppet" />
+      <Pokemon id="353" name="Shuppet" current="true" />
       <Pokemon id="355" name="Duskull" current="true" />
-      <Pokemon id="360" name="Wynaut" />
+      <Pokemon id="360" name="Wynaut" current="true" />
       <Pokemon id="361" name="Snorunt" current="true" />
+      <Pokemon id="366" name="Clamperl" current="true" />
       <Pokemon id="387" name="Turtwig" />
       <Pokemon id="390" name="Chimchar" />
       <Pokemon id="393" name="Piplup" />
-      <Pokemon id="406" name="Budew" />
+      <Pokemon id="406" name="Budew" current="true" />
+      <Pokemon id="415" name="Combee" current="true" />
       <Pokemon id="418" name="Buizel" current="true" />
+      <Pokemon id="420" name="Cherubi" current="true" />
+      <Pokemon id="425" name="Drifloon" current="true" />
       <Pokemon id="427" name="Buneary" current="true" />
       <Pokemon id="431" name="Glameow" current="true" />
       <Pokemon id="434" name="Stunky" current="true" />
+      <Pokemon id="436" name="Bronzor" current="true" />
+      <Pokemon id="449" name="Hippopotas" current="true" />
+      <Pokemon id="451" name="Skorupi" current="true" />
       <Pokemon id="453" name="Croagunk" current="true" />
+      <Pokemon id="456" name="Finneon" current="true" />
+      <Pokemon id="458" name="Mantyke" current="true" />
       <Pokemon id="459" name="Snover" current="true" />
     </Egg>
 
@@ -166,34 +186,40 @@
 
     <Egg type="10">
       <Pokemon id="113" name="Chansey" />
-      <Pokemon id="131" name="Lapras" />
+      <Pokemon id="131" name="Lapras" current="true" />
       <Pokemon id="137" name="Porygon" current="true" />
       <Pokemon id="142" name="Aerodactyl" current="true" />
       <Pokemon id="143" name="Snorlax" />
       <Pokemon id="147" name="Dratini" current="true" />
-      <Pokemon id="179" name="Mareep" current="true" />
+      <Pokemon id="179" name="Mareep" />
       <Pokemon id="185" name="Sudowoodo" />
       <Pokemon id="227" name="Skarmory" />
-      <Pokemon id="241" name="Miltank" current="true" />
+      <Pokemon id="241" name="Miltank" />
       <Pokemon id="246" name="Larvitar" current="true" />
       <Pokemon id="280" name="Ralts" current="true" />
       <Pokemon id="287" name="Slakoth" current="true" />
+      <Pokemon id="290" name="Nincada" current="true" />
+      <Pokemon id="302" name="Sableye" current="true" />
       <Pokemon id="303" name="Mawile" current="true" />
-      <Pokemon id="328" name="Trapinch" current="true" />
+      <Pokemon id="328" name="Trapinch" />
       <Pokemon id="349" name="Feebas" current="true" />
       <Pokemon id="358" name="Chimecho" />
       <Pokemon id="359" name="Absol" current="true" />
       <Pokemon id="371" name="Bagon" current="true" />
       <Pokemon id="374" name="Beldum" current="true" />
-      <Pokemon id="403" name="Shinx" />
+      <Pokemon id="403" name="Shinx" current="true" />
       <Pokemon id="408" name="Cranidos" current="true" />
       <Pokemon id="410" name="Shieldon" current="true" />
-      <Pokemon id="425" name="Drifloon" current="true" />
+      <Pokemon id="425" name="Drifloon" />
+      <Pokemon id="433" name="Chingling" current="true" />
+      <Pokemon id="440" name="Happiny" current="true" />
+      <Pokemon id="443" name="Gible" current="true" />
+      <Pokemon id="446" name="Munchlax" current="true" />
       <Pokemon id="447" name="Riolu" current="true" />
-      <Pokemon id="451" name="Skorupi" current="true" />
+      <Pokemon id="451" name="Skorupi" />
     </Egg>
   </Eggs>
-  
+
   <Ditto>
     <!--<Pokemon id="16" name="Pidgey" />-->
     <!--<Pokemon id="19" name="Rattata" />-->

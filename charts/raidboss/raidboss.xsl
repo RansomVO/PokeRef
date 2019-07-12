@@ -57,13 +57,13 @@
             </xsl:with-param>
           </xsl:apply-templates>
           <xsl:value-of select="RaidBoss/Pokemon/@name" />
-          <span class="NOTE">
-            <xsl:if test="RaidBoss/Pokemon/@form">
+          <xsl:if test="RaidBoss/Pokemon/@form">
+            <span class="NOTE">
               <xsl:text> (</xsl:text>
               <xsl:value-of select="RaidBoss/Pokemon/@form"/>
               <xsl:text>)</xsl:text>
-            </xsl:if>
-          </span>
+            </span>
+          </xsl:if>
           <xsl:text> (CP: </xsl:text>
           <xsl:choose>
             <xsl:when test="not(RaidBoss/@raid_cp)">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-05" gen="3" region="Hoenn">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-07-02" gen="3" region="Hoenn">
   <Pokemon id="252" name="Treecko" family="Treecko" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-03-23">
     <Type primary="Grass" />
     <Stats>
@@ -32,7 +32,7 @@
       <Max cp="2757" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="255" name="Torchic" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="255" name="Torchic" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-05-19">
     <Type primary="Fire" />
     <Stats>
       <BaseIV attack="130" defense="87" stamina="128" />
@@ -42,7 +42,7 @@
       <Max cp="1093" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="256" name="Combusken" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="256" name="Combusken" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-05-19">
     <Type primary="Fire" secondary="Fighting" />
     <EvolvesFrom id="255" name="Torchic" candies="25" />
     <Stats>
@@ -53,7 +53,7 @@
       <Max cp="1652" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="257" name="Blaziken" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="257" name="Blaziken" family="Torchic" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-05-19">
     <Type primary="Fire" secondary="Fighting" />
     <EvolvesFrom id="256" name="Combusken" candies="100" />
     <Stats>
@@ -64,7 +64,7 @@
       <Max cp="2848" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="258" name="Mudkip" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="258" name="Mudkip" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-07-21">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="126" defense="93" stamina="137" />
@@ -74,7 +74,7 @@
       <Max cp="1128" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="259" name="Marshtomp" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="259" name="Marshtomp" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-07-21">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="258" name="Mudkip" candies="25" />
     <Stats>
@@ -85,7 +85,7 @@
       <Max cp="1776" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="260" name="Swampert" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="260" name="Swampert" family="Mudkip" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-07-21">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="259" name="Marshtomp" candies="100" />
     <Stats>
@@ -372,7 +372,7 @@
       <Max cp="2628" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="287" name="Slakoth" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="287" name="Slakoth" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-06-08">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="104" defense="92" stamina="155" />
@@ -382,7 +382,7 @@
       <Max cp="1002" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="288" name="Vigoroth" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="288" name="Vigoroth" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-06-08">
     <Type primary="Normal" />
     <EvolvesFrom id="287" name="Slakoth" candies="25" />
     <Stats>
@@ -393,7 +393,7 @@
       <Max cp="1968" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="289" name="Slaking" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="289" name="Slaking" family="Slakoth" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-06-08">
     <Type primary="Normal" />
     <EvolvesFrom id="288" name="Vigoroth" candies="100" />
     <Stats>
@@ -830,7 +830,7 @@
       <Max cp="1220" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="327" name="Spinda" form="Pattern 4" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="327" name="Spinda" form="Pattern 4" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Encounter Only">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="116" defense="116" stamina="155" />
@@ -870,7 +870,7 @@
       <Max cp="1220" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="327" name="Spinda" form="Pattern 8" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Encounter Only">
+  <Pokemon id="327" name="Spinda" form="Pattern 8" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Encounter Only" shiny="2019-07-01">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="116" defense="116" stamina="155" />
@@ -880,7 +880,7 @@
       <Max cp="1220" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="327" name="Spinda" family="Spinda" buddy_km="3" gender_ratio="1 : 1">
+  <Pokemon id="327" name="Spinda" form="Pattern 9" family="Spinda" buddy_km="3" gender_ratio="1 : 1" availability="Encounter Only">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="116" defense="116" stamina="155" />
@@ -1067,7 +1067,7 @@
       <Max cp="1971" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="345" name="Lileep" family="Lileep" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="345" name="Lileep" family="Lileep" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-06-04">
     <Type primary="Rock" secondary="Grass" />
     <Stats>
       <BaseIV attack="105" defense="150" stamina="165" />
@@ -1077,7 +1077,7 @@
       <Max cp="1291" hp="142" />
     </Stats>
   </Pokemon>
-  <Pokemon id="346" name="Cradily" family="Lileep" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="346" name="Cradily" family="Lileep" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-06-04">
     <Type primary="Rock" secondary="Grass" />
     <EvolvesFrom id="345" name="Lileep" candies="50" />
     <Stats>
@@ -1088,7 +1088,7 @@
       <Max cp="2211" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="347" name="Anorith" family="Anorith" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="347" name="Anorith" family="Anorith" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-06-04">
     <Type primary="Rock" secondary="Bug" />
     <Stats>
       <BaseIV attack="176" defense="100" stamina="128" />
@@ -1098,7 +1098,7 @@
       <Max cp="1529" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="348" name="Armaldo" family="Anorith" buddy_km="3" gender_ratio="7 : 1" availability="General">
+  <Pokemon id="348" name="Armaldo" family="Anorith" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2019-06-04">
     <Type primary="Rock" secondary="Bug" />
     <EvolvesFrom id="347" name="Anorith" candies="50" />
     <Stats>
@@ -1378,7 +1378,7 @@
       <Max cp="848" hp="110" />
     </Stats>
   </Pokemon>
-  <Pokemon id="371" name="Bagon" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="371" name="Bagon" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-04-13">
     <Type primary="Dragon" />
     <Stats>
       <BaseIV attack="134" defense="93" stamina="128" />
@@ -1388,7 +1388,7 @@
       <Max cp="1156" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="372" name="Shelgon" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="372" name="Shelgon" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-04-13">
     <Type primary="Dragon" />
     <EvolvesFrom id="371" name="Bagon" candies="25" />
     <Stats>
@@ -1399,7 +1399,7 @@
       <Max cp="2031" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="373" name="Salamence" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="373" name="Salamence" family="Bagon" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-04-13">
     <Type primary="Dragon" secondary="Flying" />
     <EvolvesFrom id="372" name="Shelgon" candies="100" />
     <Stats>
@@ -1482,7 +1482,7 @@
       <Max cp="3510" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="381" name="Latios" family="Latios" buddy_km="20" gender_ratio="♂" rarity="Legendary" availability="Raid Boss Only Regional: Rotating: Europe + Asia + Pacific / Americas + Africa">
+  <Pokemon id="381" name="Latios" family="Latios" buddy_km="20" gender_ratio="♂" rarity="Legendary" availability="Raid Boss Only Regional: Rotating: Europe + Asia + Pacific / Americas + Africa" shiny="2019-04-15">
     <Type primary="Dragon" secondary="Psychic" />
     <Stats>
       <BaseIV attack="268" defense="212" stamina="190" />
@@ -1528,7 +1528,7 @@
       <BaseIV attack="210" defense="210" stamina="225" />
       <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
       <Weight standard="1.1000000238418579" deviation="1.1000000238418579" />
-      <Rates capture="0.019999999552965164" flee="0.0099999997764825821" attack="0.10000000149011612" dodge="0.15000000596046448" />
+      <Rates capture="1" flee="0" attack="0.10000000149011612" dodge="0.019999999552965164" />
       <Max cp="3265" hp="189" />
     </Stats>
   </Pokemon>

@@ -444,5 +444,104 @@
       </Rewards>
     </Stage>
   </Event>
+  <Event name="Jump-Start Research">
+    <Stage stage="1">
+      <Research task="Make a new friend">
+        <Item id="XP" amount="5000" />
+      </Research>
+      <Research task="Catch 3 Pokemon with Weather Boost">
+        <Item id="XP" amount="5000" />
+      </Research>
+      <Research task="Hatch an Egg">
+        <Item id="XP" amount="5000" />
+      </Research>
+      <Rewards>
+        <Item id="LuckyEgg" amount="2" />
+        <Pokemon id="147" name="Dratini" />
+        <Item id="Stardust" amount="15000" />
+      </Rewards>
+    </Stage>
+    <Stage stage="2">
+      <Research task="Evolve a Dratini">
+        <Item id="XP" amount="10000" />
+      </Research>
+      <Research task="Take a snapshot of a Dratini">
+        <Item id="CandyDratini" amount="30" />
+      </Research>
+      <Research task="Earn a candy walking with your buddy">
+        <Item id="CandyDratini" amount="30" />
+      </Research>
+      <Rewards>
+        <Item id="RaidPassPremium" amount="1" />
+        <Item id="Stardust" amount="15000" />
+        <Item id="LuckyEgg" amount="2" />
+      </Rewards>
+    </Stage>
+    <Stage stage="3">
+      <Research task="Power up Pokemon 10 times">
+        <Item id="XP" amount="15000" />
+      </Research>
+      <Research task="Battle another Trainer in the Great League">
+        <Item id="XP" amount="15000" />
+      </Research>
+      <Research task="Battle in a raid">
+        <Item id="XP" amount="15000" />
+      </Research>
+      <Rewards>
+        <Item id="LuckyEgg" amount="2" />
+        <Item id="XP" amount="15000" />
+        <Item id="StarPiece" amount="2" />
+      </Rewards>
+    </Stage>
+    <Stage stage="4">
+      <Research task="Catch 5 different species of Pokemon">
+        <Pokemon id="390" name="Chimchar" />
+      </Research>
+      <Research task="Catch a Legendary Pokemon from a Field Research Breakthrough or raid">
+        <Pokemon id="393" name="Piplup" />
+      </Research>
+      <Research task="Hatch 3 Eggs">
+        <Pokemon id="387" name="Turtwig" />
+      </Research>
+      <Rewards>
+        <Item id="LuckyEgg" amount="2" />
+        <Pokemon id="133" name="Eevee" shiny="true" />
+        <Item id="startdust" amount="15000" />
+      </Rewards>
+    </Stage>
+    <Stage stage="5">
+      <Research task="Take a Snapshot of Eevee">
+        <Item id="XP" amount="30000" />
+      </Research>
+      <Research task="Send 5 gifts to friends">
+        <Item id="XP" amount="30000" />
+      </Research>
+      <Research task="Trade 3 Pokemon">
+        <Item id="XP" amount="000" />
+      </Research>
+      <Rewards>
+        <Pokemon id="131" name="Lapras" />
+        <Item id="XP" amount="30000" />
+        <Item id="LuckyEgg" amount="2" />
+      </Rewards>
+    </Stage>
+    <Stage stage="6">
+      <Research task="Make a new friend">
+        <Item id="CandyDratini" amount="60" />
+      </Research>
+      <Research task="Win a level 3 or higher raid">
+        <Item id="CandyDratini" amount="60" />
+      </Research>
+      <Research task="Evolve a Dragonair">
+        <Item id="XP" amount="100000" />
+      </Research>
+      <Rewards>
+        <Item id="LuckyEgg" amount="2" />
+        <Item id="XP" amount="100000" />
+        <Item id="Stardust" amount="15000" />
+      </Rewards>
+    </Stage>
+  </Event>
+
 </SpecialResearch>
 

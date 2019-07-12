@@ -230,6 +230,14 @@
                 <xsl:with-param name="Gen" select="7" />
               </xsl:call-template>
             </div>
+            <div>
+              <xsl:if test="exslt:node-set($Settings)/*/@released_only and 8 > /Root/Settings/GameMasterStats/@gens_released">
+                <xsl:attribute name="style">display:none;</xsl:attribute>
+              </xsl:if>
+              <xsl:call-template name="OutputGenCheckbox">
+                <xsl:with-param name="Gen" select="8" />
+              </xsl:call-template>
+            </div>
           </td>
         </tr>
         <tr>
@@ -260,32 +268,7 @@
     </input>
     <xsl:text>Gen</xsl:text>
     <xsl:value-of select="concat($nbsp, $Gen, ':', $nbsp)" disable-output-escaping="yes" />
-    <xsl:choose>
-      <xsl:when test="$Gen = 1">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen1"/>
-      </xsl:when>
-      <xsl:when test="$Gen = 2">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen2"/>
-      </xsl:when>
-      <xsl:when test="$Gen = 3">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen3"/>
-      </xsl:when>
-      <xsl:when test="$Gen = 4">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen4"/>
-      </xsl:when>
-      <xsl:when test="$Gen = 5">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen5"/>
-      </xsl:when>
-      <xsl:when test="$Gen = 6">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen6"/>
-      </xsl:when>
-      <xsl:when test="$Gen = 7">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen7"/>
-      </xsl:when>
-      <xsl:when test="$Gen = 8">
-        <xsl:value-of select="/Root/Constants/Regions/@Gen8"/>
-      </xsl:when>
-    </xsl:choose>
+    <xsl:value-of select="/Root/Constants/Regions/Region[$Gen]/@name" />
     <xsl:value-of select="concat($nbsp, 'Region')" disable-output-escaping="yes" />
   </xsl:template>
   <!-- #endregion -->

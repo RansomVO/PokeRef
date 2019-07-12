@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-01" gen="3">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-07-02" gen="3">
   <Pokemon id="252" name="Treecko">
     <MoveSet base_dps="16.451612903225808" true_dps="13.333333333333336" comparison="87">
       <FastAttack name="Pound" stab="false" legacy="false" />
@@ -151,6 +151,10 @@
       <FastAttack name="Counter" stab="true" legacy="false" />
       <ChargedAttack name="Brave Bird" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="18.421052631578945" true_dps="30.175438596491226" comparison="92">
+      <FastAttack name="Counter" stab="true" legacy="false" />
+      <ChargedAttack name="Blaze Kick" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="19.310344827586206" true_dps="31.310344827586206" comparison="96">
       <FastAttack name="Fire Spin" stab="true" legacy="false" />
       <ChargedAttack name="Focus Blast" stab="true" legacy="false" />
@@ -162,6 +166,10 @@
     <MoveSet base_dps="17.692307692307693" true_dps="26.53846153846154" comparison="81">
       <FastAttack name="Fire Spin" stab="true" legacy="false" />
       <ChargedAttack name="Brave Bird" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18.035714285714285" true_dps="29.285714285714285" comparison="90">
+      <FastAttack name="Fire Spin" stab="true" legacy="false" />
+      <ChargedAttack name="Blaze Kick" stab="true" legacy="false" />
     </MoveSet>
     <MoveSet base_dps="18.285714285714285" true_dps="27.714285714285715" comparison="85">
       <FastAttack name="Counter" stab="true" legacy="false" />
@@ -1811,6 +1819,10 @@
       <FastAttack name="Ember" stab="true" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="17.441860465116278" true_dps="23.372093023255815" comparison="94">
+      <FastAttack name="Ember" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="16.265060240963855" true_dps="19.096385542168672" comparison="77">
       <FastAttack name="Rock Smash" stab="false" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
@@ -1822,6 +1834,10 @@
     <MoveSet base_dps="18.435754189944134" true_dps="19.497206703910617" comparison="78">
       <FastAttack name="Rock Smash" stab="false" legacy="false" />
       <ChargedAttack name="Solar Beam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.326732673267326" true_dps="20.89108910891089" comparison="84">
+      <FastAttack name="Rock Smash" stab="false" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="324" name="Torkoal">
@@ -2345,29 +2361,37 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="344" name="Claydol">
-    <MoveSet base_dps="15.909090909090908" true_dps="13.977272727272727" comparison="81">
+    <MoveSet base_dps="15.909090909090908" true_dps="13.977272727272727" comparison="79">
       <FastAttack name="Extrasensory" stab="true" legacy="false" />
       <ChargedAttack name="Gyro Ball" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.377952755905511" true_dps="16.141732283464567" comparison="93">
+    <MoveSet base_dps="16.377952755905511" true_dps="16.141732283464567" comparison="92">
       <FastAttack name="Extrasensory" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.888888888888889" true_dps="16.666666666666668" comparison="96">
+    <MoveSet base_dps="16.888888888888889" true_dps="16.666666666666668" comparison="95">
       <FastAttack name="Extrasensory" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.494845360824744" true_dps="14.742268041237114" comparison="85">
+    <MoveSet base_dps="17.582417582417584" true_dps="17.252747252747252" comparison="98">
+      <FastAttack name="Extrasensory" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.494845360824744" true_dps="14.742268041237114" comparison="84">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Gyro Ball" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.142857142857142" true_dps="16.928571428571427" comparison="98">
+    <MoveSet base_dps="17.142857142857142" true_dps="16.928571428571427" comparison="96">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.567567567567568" true_dps="17.364864864864863" comparison="100">
+    <MoveSet base_dps="17.567567567567568" true_dps="17.364864864864863" comparison="99">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="18" true_dps="17.7" comparison="100">
+      <FastAttack name="Confusion" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="345" name="Lileep">
@@ -3469,27 +3493,27 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="385" name="Jirachi">
-    <MoveSet base_dps="18.18181818181818" true_dps="23.131313131313131" comparison="82">
+    <MoveSet base_dps="18.18181818181818" true_dps="23.131313131313131" comparison="81">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Dazzling Gleam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.142857142857142" true_dps="24.571428571428573" comparison="87">
+    <MoveSet base_dps="17.142857142857142" true_dps="24.571428571428573" comparison="86">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Psychic" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="19.753086419753089" true_dps="28.271604938271608" comparison="100">
+    <MoveSet base_dps="19.999999999999996" true_dps="28.615384615384613" comparison="100">
       <FastAttack name="Confusion" stab="true" legacy="false" />
       <ChargedAttack name="Doom Desire" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.708860759493671" true_dps="19.367088607594937" comparison="69">
+    <MoveSet base_dps="16.708860759493671" true_dps="19.367088607594937" comparison="68">
       <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Dazzling Gleam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.857142857142858" true_dps="20.095238095238095" comparison="72">
+    <MoveSet base_dps="14.857142857142858" true_dps="20.095238095238095" comparison="71">
       <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Psychic" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.360655737704917" true_dps="25.081967213114751" comparison="89">
+    <MoveSet base_dps="18.8" true_dps="25.8" comparison="91">
       <FastAttack name="Charge Beam" stab="false" legacy="false" />
       <ChargedAttack name="Doom Desire" stab="true" legacy="false" />
     </MoveSet>

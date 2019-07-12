@@ -5,14 +5,15 @@
   https://pokemongohub.net/post/guide/field-research-missions-list/
 -->
 
-<FieldResearch last_updated="2019-04-05">
+<FieldResearch last_updated="2019-07-01">
 
-  <Category type="Hatch or Evolve">
+  <Category type="Power up, Evolve or Hatch">
 
     <!-- #region Hatch -->
     <Research task="Hatch an Egg.">
       <Pokemon id="102" name="Exeggcute" current="true" />
-      <Pokemon id="209" name="Snubbull" current="true" />
+      <Pokemon id="209" name="Snubbull" />
+      <Pokemon id="325" name="Spoink" current="true" />
     </Research>
     <Research task="Hatch 2 Eggs.">
       <Pokemon id="120" name="Wailmer" />
@@ -27,8 +28,9 @@
 
     <!-- #region Evolve -->
     <Research task="Evolve a Pokemon.">
+      <Pokemon id="16" name="Pidgey" current="true" />
       <Pokemon id="133" name="Eevee" current="true" />
-      <Pokemon id="191" name="Sunkern" current="true" />
+      <Pokemon id="191" name="Sunkern" />
     </Research>
     <Research task="Evolve 5 Pokemon.">
       <Pokemon id="4" name="Charmander" />
@@ -46,9 +48,27 @@
       <Pokemon id="10" name="Caterpie" />
     </Research>
     <Research task="Use an item to evolve a Pokemon.">
-      <Pokemon id="142" name="Aerodactyl" current="true" />
+      <Pokemon id="142" name="Aerodactyl" />
+      <Pokemon id="227" name="Skarmory" current="true" />
     </Research>
     <!-- #endregion Evolve -->
+
+    <!-- #region Power up -->
+    <Research task="Power up a Pokemon.">
+      <Pokemon id="82" name="Magneton" />
+    </Research>
+    <Research task="Power up Pokemon 3 times.">
+      <Pokemon id="109" name="Koffing" />
+    </Research>
+    <Research task="Power up Pokemon 5 times.">
+      <Pokemon id="1" name="Bulbasaur" current="true" />
+      <Pokemon id="4" name="Charmander" current="true" />
+      <Pokemon id="7" name="Squirtle" current="true" />
+    </Research>
+    <Research task="Power up Pokemon 7 times.">
+      <Pokemon id="311" name="Plusle" />
+    </Research>
+    <!-- #endregion Power up -->
 
   </Category>
 
@@ -56,9 +76,10 @@
 
     <!-- #region Nice -->
     <Research task="Make 5 Nice Throws.">
+      <Pokemon id="74" name="Geodude" current="true" />
       <Pokemon id="100" name="Voltorb" current="true" />
       <Pokemon id="101" name="Electrode" />
-      <Pokemon id="399" name="Bidoof" current="true" />
+      <Pokemon id="399" name="Bidoof" />
     </Research>
     <!-- #endregion Nice -->
 
@@ -119,7 +140,9 @@
       <Pokemon id="327" name="Spinda" form="Pattern 9" />
     </Research>
     <Research task="Make 5 Great Curveball Throws in a row.">
-      <Pokemon id="327" name="Spinda" form="Pattern 2" current="true" />
+      <Pokemon id="327" name="Spinda" form="Pattern 2" />
+      <Pokemon id="327" name="Spinda" form="Pattern 4" />
+      <Pokemon id="327" name="Spinda" form="Pattern 8" current="true" />
     </Research>
     <!-- #endregion Spinda -->
 
@@ -132,7 +155,8 @@
     <!-- #region Basic -->
     <Research task="Catch 10 Pokemon.">
       <Pokemon id="129" name="Magikarp" current="true" />
-      <Pokemon id="228" name="Houndour" current="true" />
+      <Pokemon id="216" name="Teddiursa" current="true" />
+      <Pokemon id="228" name="Houndour" />
     </Research>
     <Research task="Catch 5 Pokemon with Weather Boost.">
       <Pokemon id="60" name="Poliwag" current="true" />
@@ -145,16 +169,21 @@
       <Pokemon id="38" name="Ninetales" />
     </Research>
     <Research task="Use 5 Berries to help catch Pokemon.">
-      <Pokemon id="58" name="Growlithe" current="true" />
+      <Pokemon id="58" name="Growlithe" />
+      <Pokemon id="71" name="Victreebel" current="true" />
     </Research>
     <Research task="Use 5 Razz Berries to help catch Pokemon.">
-      <Pokemon id="104" name="Cubone" current="true" />
+      <Pokemon id="104" name="Cubone" />
+    </Research>
+    <Research task="Use 5 Nanab Berries to help catch Pokemon.">
+      <Pokemon id="317" name="Swalot" current="true" />
     </Research>
     <Research task="Use 10 Berries to help catch Pokemon.">
       <Pokemon id="58" name="Growlithe" />
     </Research>
     <Research task="Use 10 Pinap Berries while catching a Pokemon.">
-      <Pokemon id="129" name="Magikarp" current="true" />
+      <Pokemon id="129" name="Magikarp" />
+      <Pokemon id="294" name="Loudred" current="true" />
     </Research>
     <!-- #endregion Basic -->
 
@@ -177,6 +206,7 @@
     <!-- #endregion Specific -->
 
     <!-- #region Type -->
+    
     <Research task="Catch 3 Bug-type Pokemon.">
       <Pokemon id="127" name="Pinsir" />
     </Research>
@@ -192,11 +222,9 @@
     <Research task="Catch 3 Electric-type Pokemon.">
       <Pokemon id="25" name="Pikachu" />
     </Research>
-    <Research task="Catch 7 Electric- Normal-, or Poison-type Pokemon.">
-      <Pokemon id="121" name="Starmie" current="true" />
-    </Research>
     <Research task="Catch 5 Fighting-type Pokemon.">
-      <Pokemon id="81" name="Magnemite" current="true" />
+      <Pokemon id="81" name="Magnemite" />
+      <Pokemon id="286" name="Breloom" current="true" />
     </Research>
     <Research task="Catch 3 Fire-type Pokemon.">
       <Pokemon id="77" name="Ponyta" />
@@ -212,26 +240,45 @@
       <Pokemon id="207" name="Gligar" />
     </Research>
     <Research task="Catch 10 Ground-type Pokemon.">
-      <Pokemon id="27" name="Sandshrew" current="true" />
+      <Pokemon id="27" name="Sandshrew" />
+      <Pokemon id="50" name="Diglett" current="true" />
     </Research>
     <Research task="Catch 10 Ice-type Pokemon.">
-      <Pokemon id="140" name="Kabuto" current="true" />
+      <Pokemon id="140" name="Kabuto" />
     </Research>
     <Research task="Catch 5 Normal-type Pokemon.">
       <Pokemon id="127" name="Pinsir" />
     </Research>
-    <Research task="Catch 7 Flying- Psychic-, or Dark-type Pokemon.">
-      <Pokemon id="347" name="Anorith" current="true" />
-    </Research>
     <Research task="Catch 3 Poison-type Pokemon.">
       <Pokemon id="88" name="Grimer" />
+    </Research>
+    <Research task="Catch 5 Water-type Pokemon.">
+      <Pokemon id="86" name="Seel" current="true" />
+    </Research>
+
+    <Research task="Catch 5 Flying- Psychic-, or Dark-type Pokemon.">
+      <Pokemon id="261" name="Poochyena" />
+    </Research>
+    <Research task="Catch 7 Flying- Psychic-, or Dark-type Pokemon.">
+      <Pokemon id="347" name="Anorith" />
     </Research>
     <Research task="Catch 3 Grass-, Fire-, or Ground-type Pokemon.">
       <Pokemon id="322" name="Numel" />
     </Research>
+    <Research task="Catch 7 Grass-, Water- or Fire-type Pokemon.">
+      <Pokemon id="58" name="Growlithe" current="true" />
+    </Research>
+    <Research task="Catch 3 Electric- Normal-, or Poison-type Pokemon.">
+      <Pokemon id="311" name="Plusle" current="true" />
+      <Pokemon id="312" name="Minun" current="true" />
+    </Research>
+    <Research task="Catch 7 Electric- Normal-, or Poison-type Pokemon.">
+      <Pokemon id="121" name="Starmie" />
+    </Research>
     <Research task="Catch 3 Water-, Electric- or Bug-Type Pokemon">
       <Pokemon id="309" name="Electrike" />
     </Research>
+
     <!-- #endregion Type -->
 
   </Category>
@@ -241,7 +288,8 @@
     <!-- #region Gym -->
     <Research task="Battle in a Gym.">
       <Pokemon id="56" name="Mankey" current="true" />
-      <Pokemon id="66" name="Machop" current="true" />
+      <Pokemon id="66" name="Machop" />
+      <Pokemon id="296" name="Makuhita" current="true" />
       <Pokemon id="312" name="Minun" />
     </Research>
     <Research task="Battle in a Gym 3 times.">
@@ -261,7 +309,8 @@
     </Research>
     <Research task="Win 5 Gym battles.">
       <Pokemon id="66" name="Machop" />
-      <Pokemon id="131" name="Lapras" current="true" />
+      <Pokemon id="89" name="Muk" current="true" />
+      <Pokemon id="131" name="Lapras" />
     </Research>
     <Research task="Use a supereffective Charged Attack in 5 Gym battles.">
       <Pokemon id="125" name="Electabuzz" />
@@ -273,12 +322,16 @@
 
     <!-- #region Raid -->
     <Research task="Battle in a raid.">
-      <Pokemon id="96" name="Drowzee" current="true" />
+      <Pokemon id="96" name="Drowzee" />
+      <Pokemon id="307" name="Meditite" current="true" />
       <Pokemon id="312" name="Minun" />
     </Research>
     <Research task="Win a raid.">
       <Pokemon id="137" name="Porygon" />
       <Pokemon id="204" name="Pineco" />
+    </Research>
+    <Research task="Win a level 2 or higher raid.">
+      <Pokemon id="302" name="Sableye" current="true" />
     </Research>
     <Research task="Win a level 3 or higher raid.">
       <Pokemon id="147" name="Dratini" />
@@ -302,24 +355,12 @@
       <Pokemon id="333" name="Swablu" />
     </Research>
     <Research task="Earn 5 Candies walking with your buddy.">
-      <Pokemon id="73" name="Tentacruel" current="true" />
-    </Research>
-    <Research task="Power up a Pokemon.">
-      <Pokemon id="82" name="Magneton" />
-    </Research>
-    <Research task="Power up Pokemon 3 times.">
-      <Pokemon id="109" name="Koffing" />
-    </Research>
-    <Research task="Power up Pokemon 5 times.">
-      <Pokemon id="1" name="Bulbasaur" current="true" />
-      <Pokemon id="4" name="Charmander" current="true" />
-      <Pokemon id="7" name="Squirtle" current="true" />
-    </Research>
-    <Research task="Power up Pokemon 7 times.">
-      <Pokemon id="311" name="Plusle" />
+      <Pokemon id="73" name="Tentacruel" />
+      <Pokemon id="287" name="Slakoth" current="true" />
     </Research>
     <Research task="Transfer 3 Pokemon.">
-      <Pokemon id="37" name="Vulpix" current="true" />
+      <Pokemon id="37" name="Vulpix" />
+      <Pokemon id="353" name="Shuppet" current="true" />
     </Research>
     <Research task="Transfer 10 Pokemon.">
       <Pokemon id="200" name="Misdreavus" />
@@ -328,15 +369,19 @@
       <Pokemon id="142" name="Aerodactyl" />
     </Research>
     <Research task="Send 2 Gifts to friends.">
-      <Pokemon id="92" name="Gastly" current="true" />
+      <Pokemon id="92" name="Gastly" />
     </Research>
     <Research task="Send 5 Gifts to friends.">
       <Pokemon id="42" name="Golbat" />
       <Pokemon id="315" name="Roselia" />
     </Research>
+    <Research task="Send 10 Gifts to friends.">
+      <Pokemon id="103" name="Exeggutor" form="Alola" current="true" />
+    </Research>
     <Research task="Trade a Pokemon.">
       <Pokemon id="349" name="Feebas" />
-      <Pokemon id="310" name="Manectric" current="true" />
+      <Pokemon id="310" name="Manectric" />
+      <Pokemon id="425" name="Drifloon" current="true" />
     </Research>
   </Category>
 
@@ -373,15 +418,21 @@
       <Pokemon id="244" name="Entei" />
       <Pokemon id="245" name="Suicune" />
     </Research>
-    <Research task="Achieve 7 stamps" startdate="2019-03-01" enddate="2019-03-31">
-      <Pokemon id="243" name="Raikou" current="true" />
-      <Pokemon id="244" name="Entei" current="true" />
-      <Pokemon id="245" name="Suicune" current="true" />
-      <Pokemon id="249" name="Lugia" current="true" />
-      <Pokemon id="250" name="Ho-Oh" current="true" />
-      <Pokemon id="377" name="Regirock" current="true" />
-      <Pokemon id="378" name="Regice" current="true" />
-      <Pokemon id="379" name="Registeel" current="true" />
+    <Research task="Achieve 7 stamps" startdate="2019-03-01" enddate="2019-06-30">
+      <Pokemon id="243" name="Raikou" />
+      <Pokemon id="244" name="Entei" />
+      <Pokemon id="245" name="Suicune" />
+      <Pokemon id="249" name="Lugia" />
+      <Pokemon id="250" name="Ho-Oh" />
+      <Pokemon id="377" name="Regirock" />
+      <Pokemon id="378" name="Regice" />
+      <Pokemon id="379" name="Registeel" />
+    </Research>
+    <Research task="Achieve 7 stamps" startdate="2019-07-01" enddate="2019-08-31">
+      <Pokemon id="380" name="Latias" current="true" />
+      <Pokemon id="381" name="Latios" current="true" />
+      <Pokemon id="382" name="Kyogre" current="true" />
+      <Pokemon id="383" name="Groudon" current="true" />
     </Research>
   </Category>
 

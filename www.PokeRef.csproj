@@ -67,8 +67,21 @@
     </FixIntermediateFile>
     <WebContent Include="images\game\box_adventure.png" />
     <FixIntermediateFile Include="_datafiles\movesets.gen8.xml" />
+    <Content Include="images\candy\candy_dratini.png" />
+    <Content Include="images\items\backpack.png" />
+    <Content Include="images\items\berry_bluk.png" />
+    <Content Include="images\items\berry_wepear.png" />
+    <Content Include="images\items\gift.png" />
+    <WebContent Include="images\items\lure_module_glacial.png" />
+    <WebContent Include="images\items\lure_module_magnetic.png" />
+    <WebContent Include="images\items\lure_module_mossy.png" />
+    <Content Include="images\items\pokeball_premier.png" />
     <Content Include="^\trade.html" />
     <FixIntermediateFile Include="_datafiles\pokestats.gen8.xml" />
+    <Content Include="_GAME_MASTER\0000016AC88D96E3_GAME_MASTER" />
+    <None Include="_GAME_MASTER\_mangles.csv">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="_\looking.html" />
     <WebContent Include="images\question.png" />
     <WebContent Include="images\candy\candy_spiritomb.png" />

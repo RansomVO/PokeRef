@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-05" gen="4" region="Sinnoh">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-07-02" gen="4" region="Sinnoh">
   <Pokemon id="387" name="Turtwig" family="Turtwig" buddy_km="3" gender_ratio="7 : 1" availability="General">
     <Type primary="Grass" />
     <Stats>
@@ -265,7 +265,7 @@
       <Max cp="1539" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="412" name="Burmy" family="Burmy" buddy_km="5" gender_ratio="1 : 1">
+  <Pokemon id="412" name="Burmy" family="Burmy" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="53" defense="83" stamina="120" />
@@ -275,7 +275,7 @@
       <Max cp="488" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="412" name="Burmy" form="Plant" family="Burmy" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="412" name="Burmy" form="Plant" family="Burmy" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="53" defense="83" stamina="120" />
@@ -285,7 +285,7 @@
       <Max cp="488" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="412" name="Burmy" form="Sandy" family="Burmy" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="412" name="Burmy" form="Sandy" family="Burmy" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="53" defense="83" stamina="120" />
@@ -295,7 +295,7 @@
       <Max cp="488" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="412" name="Burmy" form="Trash" family="Burmy" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="412" name="Burmy" form="Trash" family="Burmy" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Bug" />
     <Stats>
       <BaseIV attack="53" defense="83" stamina="120" />
@@ -316,9 +316,9 @@
       <Max cp="1773" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="413" name="Wormadam" form="Plant" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Unreleased">
+  <Pokemon id="413" name="Wormadam" form="Plant" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Evolve Only">
     <Type primary="Bug" secondary="Grass" />
-    <EvolvesFrom id="412" name="Burmy" candies="50" />
+    <EvolvesFrom id="412" name="Burmy" form="Plant" candies="50" />
     <Stats>
       <BaseIV attack="141" defense="180" stamina="155" />
       <Height standard="0.5" deviation="0.5" />
@@ -327,9 +327,9 @@
       <Max cp="1773" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="413" name="Wormadam" form="Sandy" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Unreleased">
+  <Pokemon id="413" name="Wormadam" form="Sandy" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Evolve Only">
     <Type primary="Bug" secondary="Ground" />
-    <EvolvesFrom id="412" name="Burmy" candies="50" />
+    <EvolvesFrom id="412" name="Burmy" form="Sandy" candies="50" />
     <Stats>
       <BaseIV attack="141" defense="180" stamina="155" />
       <Height standard="0.5" deviation="0.5" />
@@ -338,9 +338,9 @@
       <Max cp="1773" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="413" name="Wormadam" form="Trash" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Unreleased">
+  <Pokemon id="413" name="Wormadam" form="Trash" family="Burmy" buddy_km="1" gender_ratio="♀" availability="Evolve Only">
     <Type primary="Bug" secondary="Steel" />
-    <EvolvesFrom id="412" name="Burmy" candies="50" />
+    <EvolvesFrom id="412" name="Burmy" form="Trash" candies="50" />
     <Stats>
       <BaseIV attack="127" defense="175" stamina="155" />
       <Height standard="0.5" deviation="0.5" />
@@ -349,7 +349,7 @@
       <Max cp="1593" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="414" name="Mothim" family="Burmy" buddy_km="1" gender_ratio="♂" availability="Unreleased">
+  <Pokemon id="414" name="Mothim" family="Burmy" buddy_km="1" gender_ratio="♂" availability="Evolve Only">
     <Type primary="Bug" secondary="Flying" />
     <EvolvesFrom id="412" name="Burmy" candies="50" />
     <Stats>
@@ -381,7 +381,7 @@
       <Max cp="2005" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="417" name="Pachirisu" family="Pachirisu" buddy_km="5" gender_ratio="7 : 1" availability="Regional: Arctic?">
+  <Pokemon id="417" name="Pachirisu" family="Pachirisu" buddy_km="5" gender_ratio="1 : 1" availability="Regional: Arctic?">
     <Type primary="Electric" />
     <Stats>
       <BaseIV attack="94" defense="172" stamina="155" />
@@ -412,7 +412,7 @@
       <Max cp="2443" hp="168" />
     </Stats>
   </Pokemon>
-  <Pokemon id="420" name="Cherubi" family="Cherubi" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="420" name="Cherubi" family="Cherubi" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" />
     <Stats>
       <BaseIV attack="108" defense="92" stamina="128" />
@@ -422,7 +422,7 @@
       <Max cp="950" hp="113" />
     </Stats>
   </Pokemon>
-  <Pokemon id="421" name="Cherrim" family="Cherubi" buddy_km="3" gender_ratio="1 : 1">
+  <Pokemon id="421" name="Cherrim" family="Cherubi" buddy_km="1" gender_ratio="1 : 1">
     <Type primary="Grass" />
     <EvolvesFrom id="420" name="Cherubi" candies="50" />
     <Stats>
@@ -433,9 +433,9 @@
       <Max cp="2048" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="421" name="Cherrim" form="Overcast" family="Cherubi" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="421" name="Cherrim" form="Overcast" family="Cherubi" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" />
-    <EvolvesFrom id="420" name="Cherubi" candies="50" />
+    <EvolvesFrom id="420" name="Cherubi" form="Overcast" candies="50" />
     <Stats>
       <BaseIV attack="170" defense="153" stamina="172" />
       <Height standard="0.5" deviation="0.5" />
@@ -444,9 +444,9 @@
       <Max cp="2048" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="421" name="Cherrim" form="Sunny" family="Cherubi" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="421" name="Cherrim" form="Sunny" family="Cherubi" buddy_km="1" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" />
-    <EvolvesFrom id="420" name="Cherubi" candies="50" />
+    <EvolvesFrom id="420" name="Cherubi" form="Sunny" candies="50" />
     <Stats>
       <BaseIV attack="170" defense="153" stamina="172" />
       <Height standard="0.5" deviation="0.5" />
@@ -455,7 +455,7 @@
       <Max cp="2048" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="422" name="Shellos" family="Shellos" buddy_km="5" gender_ratio="1 : 1">
+  <Pokemon id="422" name="Shellos" family="Shellos" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="103" defense="105" stamina="183" />
@@ -465,7 +465,7 @@
       <Max cp="1136" hp="156" />
     </Stats>
   </Pokemon>
-  <Pokemon id="422" name="Shellos" form="East Sea" family="Shellos" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="422" name="Shellos" form="East Sea" family="Shellos" buddy_km="3" gender_ratio="1 : 1" availability="Regional: Eastern Hemisphere">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="103" defense="105" stamina="183" />
@@ -475,7 +475,7 @@
       <Max cp="1136" hp="156" />
     </Stats>
   </Pokemon>
-  <Pokemon id="422" name="Shellos" form="West Sea" family="Shellos" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="422" name="Shellos" form="West Sea" family="Shellos" buddy_km="3" gender_ratio="1 : 1" availability="Regional: Western Hemisphere">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="103" defense="105" stamina="183" />
@@ -485,7 +485,7 @@
       <Max cp="1136" hp="156" />
     </Stats>
   </Pokemon>
-  <Pokemon id="423" name="Gastrodon" family="Shellos" buddy_km="5" gender_ratio="1 : 1">
+  <Pokemon id="423" name="Gastrodon" family="Shellos" buddy_km="3" gender_ratio="1 : 1">
     <Type primary="Water" secondary="Ground" />
     <EvolvesFrom id="422" name="Shellos" candies="50" />
     <Stats>
@@ -496,9 +496,9 @@
       <Max cp="2324" hp="204" />
     </Stats>
   </Pokemon>
-  <Pokemon id="423" name="Gastrodon" form="East Sea" family="Shellos" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="423" name="Gastrodon" form="East Sea" family="Shellos" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Water" secondary="Ground" />
-    <EvolvesFrom id="422" name="Shellos" candies="50" />
+    <EvolvesFrom id="422" name="Shellos" form="East Sea" candies="50" />
     <Stats>
       <BaseIV attack="169" defense="143" stamina="244" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -507,9 +507,9 @@
       <Max cp="2324" hp="204" />
     </Stats>
   </Pokemon>
-  <Pokemon id="423" name="Gastrodon" form="West Sea" family="Shellos" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="423" name="Gastrodon" form="West Sea" family="Shellos" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Water" secondary="Ground" />
-    <EvolvesFrom id="422" name="Shellos" candies="50" />
+    <EvolvesFrom id="422" name="Shellos" form="West Sea" candies="50" />
     <Stats>
       <BaseIV attack="169" defense="143" stamina="244" />
       <Height standard="0.89999997615814209" deviation="0.89999997615814209" />
@@ -518,7 +518,7 @@
       <Max cp="2324" hp="204" />
     </Stats>
   </Pokemon>
-  <Pokemon id="424" name="Ambipom" family="Aipom" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
+  <Pokemon id="424" name="Ambipom" family="Aipom" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" shiny="2019-05-07">
     <Type primary="Normal" />
     <EvolvesFrom id="190" name="Aipom" candies="100" special="SinnohStone" />
     <Stats>
@@ -550,7 +550,7 @@
       <Max cp="2382" hp="258" />
     </Stats>
   </Pokemon>
-  <Pokemon id="427" name="Buneary" family="Buneary" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="427" name="Buneary" family="Buneary" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-04-16">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="130" defense="105" stamina="146" />
@@ -560,7 +560,7 @@
       <Max cp="1258" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="428" name="Lopunny" family="Buneary" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="428" name="Lopunny" family="Buneary" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-04-16">
     <Type primary="Normal" />
     <EvolvesFrom id="427" name="Buneary" candies="50" />
     <Stats>
@@ -645,7 +645,7 @@
       <Max cp="2358" hp="193" />
     </Stats>
   </Pokemon>
-  <Pokemon id="436" name="Bronzor" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="General">
+  <Pokemon id="436" name="Bronzor" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="General" shiny="2019-05-21">
     <Type primary="Steel" secondary="Psychic" />
     <Stats>
       <BaseIV attack="43" defense="154" stamina="149" />
@@ -655,7 +655,7 @@
       <Max cp="603" hp="129" />
     </Stats>
   </Pokemon>
-  <Pokemon id="437" name="Bronzong" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="General">
+  <Pokemon id="437" name="Bronzong" family="Bronzor" buddy_km="3" gender_ratio="⚲" availability="General" shiny="2019-05-21">
     <Type primary="Steel" secondary="Psychic" />
     <EvolvesFrom id="436" name="Bronzor" candies="50" />
     <Stats>
@@ -666,7 +666,7 @@
       <Max cp="2239" hp="143" />
     </Stats>
   </Pokemon>
-  <Pokemon id="438" name="Bonsly" family="Sudowoodo" buddy_km="5" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="438" name="Bonsly" family="Sudowoodo" buddy_km="5" gender_ratio="1 : 1" availability="Hatch Only: 2K">
     <Type primary="Rock" />
     <Stats>
       <BaseIV attack="124" defense="133" stamina="137" />
@@ -716,7 +716,7 @@
       <Max cp="2072" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="443" name="Gible" family="Gible" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="443" name="Gible" family="Gible" buddy_km="5" gender_ratio="1 : 1" availability="General">
     <Type primary="Dragon" secondary="Ground" />
     <Stats>
       <BaseIV attack="124" defense="84" stamina="151" />
@@ -726,7 +726,7 @@
       <Max cp="1112" hp="131" />
     </Stats>
   </Pokemon>
-  <Pokemon id="444" name="Gabite" family="Gible" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="444" name="Gabite" family="Gible" buddy_km="5" gender_ratio="1 : 1" availability="General">
     <Type primary="Dragon" secondary="Ground" />
     <EvolvesFrom id="443" name="Gible" candies="25" />
     <Stats>
@@ -737,7 +737,7 @@
       <Max cp="1874" hp="145" />
     </Stats>
   </Pokemon>
-  <Pokemon id="445" name="Garchomp" family="Gible" buddy_km="5" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="445" name="Garchomp" family="Gible" buddy_km="5" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Dragon" secondary="Ground" />
     <EvolvesFrom id="444" name="Gabite" candies="100" />
     <Stats>
@@ -779,7 +779,7 @@
       <Max cp="2703" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="449" name="Hippopotas" family="Hippopotas" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="449" name="Hippopotas" family="Hippopotas" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="124" defense="118" stamina="169" />
@@ -789,7 +789,7 @@
       <Max cp="1358" hp="145" />
     </Stats>
   </Pokemon>
-  <Pokemon id="450" name="Hippowdon" family="Hippopotas" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="450" name="Hippowdon" family="Hippopotas" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Ground" />
     <EvolvesFrom id="449" name="Hippopotas" candies="50" />
     <Stats>
@@ -873,7 +873,7 @@
       <Max cp="1814" hp="146" />
     </Stats>
   </Pokemon>
-  <Pokemon id="458" name="Mantyke" family="Mantine" buddy_km="5" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="458" name="Mantyke" family="Mantine" buddy_km="5" gender_ratio="1 : 1" availability="Hatch Only: 5K">
     <Type primary="Water" secondary="Flying" />
     <Stats>
       <BaseIV attack="105" defense="179" stamina="128" />
@@ -915,9 +915,9 @@
       <Max cp="3005" hp="147" />
     </Stats>
   </Pokemon>
-  <Pokemon id="462" name="Magnezone" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="Unreleased">
+  <Pokemon id="462" name="Magnezone" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="Evolve Only - Requires Magnetic Lure" shiny="2019-05-17">
     <Type primary="Electric" secondary="Steel" />
-    <EvolvesFrom id="82" name="Magneton" />
+    <EvolvesFrom id="82" name="Magneton" candies="100" />
     <Stats>
       <BaseIV attack="238" defense="205" stamina="172" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -1003,9 +1003,9 @@
       <Max cp="2946" hp="169" />
     </Stats>
   </Pokemon>
-  <Pokemon id="470" name="Leafeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased">
+  <Pokemon id="470" name="Leafeon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Evolve Only - Requires Mossy Lure" shiny="2019-05-17">
     <Type primary="Grass" />
-    <EvolvesFrom id="133" name="Eevee" />
+    <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
       <BaseIV attack="216" defense="219" stamina="163" />
       <Height standard="1" deviation="1" />
@@ -1014,9 +1014,9 @@
       <Max cp="2944" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="471" name="Glaceon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Unreleased">
+  <Pokemon id="471" name="Glaceon" family="Eevee" buddy_km="5" gender_ratio="7 : 1" availability="Evolve Only - Requires Glacial Lure" shiny="2019-05-17">
     <Type primary="Ice" />
-    <EvolvesFrom id="133" name="Eevee" />
+    <EvolvesFrom id="133" name="Eevee" candies="25" />
     <Stats>
       <BaseIV attack="238" defense="205" stamina="163" />
       <Height standard="0.800000011920929" deviation="0.800000011920929" />
@@ -1069,9 +1069,9 @@
       <Max cp="3093" hp="145" />
     </Stats>
   </Pokemon>
-  <Pokemon id="476" name="Probopass" family="Nosepass" buddy_km="3" gender_ratio="1 : 1" availability="Unreleased">
+  <Pokemon id="476" name="Probopass" family="Nosepass" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only - Requires Magnetic Lure">
     <Type primary="Rock" secondary="Steel" />
-    <EvolvesFrom id="299" name="Nosepass" />
+    <EvolvesFrom id="299" name="Nosepass" candies="50" />
     <Stats>
       <BaseIV attack="135" defense="275" stamina="155" />
       <Height standard="1.3999999761581421" deviation="1.3999999761581421" />
@@ -1172,33 +1172,33 @@
       <Max cp="2579" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="480" name="Uxie" family="Uxie" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="480" name="Uxie" family="Uxie" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Regional: Asia-Pacific">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="156" defense="270" stamina="181" />
       <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
       <Weight standard="0.30000001192092896" deviation="0.30000001192092896" />
-      <Rates capture="0.019999999552965164" flee="0.039999999105930328" attack="0.05000000074505806" dodge="0.20000000298023224" />
+      <Rates capture="0.019999999552965164" flee="0" attack="0.05000000074505806" dodge="0.20000000298023224" />
       <Max cp="2524" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="481" name="Mesprit" family="Mesprit" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="481" name="Mesprit" family="Mesprit" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Regional: Europe, the Middle East, Africa, and India">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="212" defense="212" stamina="190" />
       <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
       <Weight standard="0.30000001192092896" deviation="0.30000001192092896" />
-      <Rates capture="0.019999999552965164" flee="0.039999999105930328" attack="0.05000000074505806" dodge="0.20000000298023224" />
+      <Rates capture="0.019999999552965164" flee="0" attack="0.05000000074505806" dodge="0.20000000298023224" />
       <Max cp="3058" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="482" name="Azelf" family="Azelf" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Unreleased">
+  <Pokemon id="482" name="Azelf" family="Azelf" buddy_km="20" gender_ratio="⚲" rarity="Legendary" availability="Regional: The Americas and Greenland">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="270" defense="151" stamina="181" />
       <Height standard="0.30000001192092896" deviation="0.30000001192092896" />
       <Weight standard="0.30000001192092896" deviation="0.30000001192092896" />
-      <Rates capture="0.019999999552965164" flee="0.039999999105930328" attack="0.05000000074505806" dodge="0.20000000298023224" />
+      <Rates capture="0.019999999552965164" flee="0" attack="0.05000000074505806" dodge="0.20000000298023224" />
       <Max cp="3210" hp="154" />
     </Stats>
   </Pokemon>
@@ -1272,7 +1272,7 @@
       <Max cp="3683" hp="236" />
     </Stats>
   </Pokemon>
-  <Pokemon id="488" name="Cresselia" family="Cresselia" buddy_km="20" gender_ratio="♀" rarity="Legendary" availability="Raid Boss Only">
+  <Pokemon id="488" name="Cresselia" family="Cresselia" buddy_km="20" gender_ratio="♀" rarity="Legendary" availability="Raid Boss Only" shiny="2019-05-27">
     <Type primary="Psychic" />
     <Stats>
       <BaseIV attack="152" defense="258" stamina="260" />

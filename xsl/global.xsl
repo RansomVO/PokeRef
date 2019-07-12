@@ -57,7 +57,6 @@
       @sprite_height
           The height of the Sprite.
   -->
-
   <xsl:template name="Sprite">
     <xsl:param name="id" />
     <xsl:param name="Settings" />
@@ -109,7 +108,7 @@
   <xsl:template name="SpriteImage">
     <xsl:param name="id" />
     <xsl:param name="Settings" />
-    
+
     <xsl:variable name="image" select="/Root/Images/Image[@id=$id]" />
 
     <img class="SPRITE">

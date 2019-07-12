@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-05" gen="2" region="Johto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-07-02" gen="2" region="Johto">
   <Pokemon id="152" name="Chikorita" family="Chikorita" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-09-22">
     <Type primary="Grass" />
     <Stats>
@@ -259,7 +259,7 @@
       <BaseIV attack="139" defense="181" stamina="146" />
       <Height standard="0.61000001430511475" deviation="0.61000001430511475" />
       <Weight standard="3.2000000476837158" deviation="3.2000000476837158" />
-      <Rates capture="0.05000000074505806" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
+      <Rates capture="0.20000000298023224" flee="0.05000000074505806" attack="0.10000000149011612" dodge="0.15000000596046448" />
       <Max cp="1708" hp="127" />
     </Stats>
   </Pokemon>
@@ -403,7 +403,7 @@
       <Max cp="1636" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="190" name="Aipom" family="Aipom" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="190" name="Aipom" family="Aipom" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-05-07">
     <Type primary="Normal" />
     <Stats>
       <BaseIV attack="136" defense="112" stamina="146" />
@@ -870,7 +870,7 @@
       <Max cp="1857" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="208" name="Steelix" family="Onix" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="208" name="Steelix" family="Onix" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-06-04">
     <Type primary="Steel" secondary="Ground" />
     <EvolvesFrom id="95" name="Onix" candies="50" special="MetalCoat" />
     <Stats>
@@ -1099,7 +1099,7 @@
       <Max cp="2635" hp="154" />
     </Stats>
   </Pokemon>
-  <Pokemon id="230" name="Kingdra" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="230" name="Kingdra" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-06-13">
     <Type primary="Water" secondary="Dragon" />
     <EvolvesFrom id="117" name="Seadra" candies="100" special="DragonScale" />
     <Stats>

@@ -58,7 +58,7 @@
     <xsl:variable name="egg" select="/Root/Traits/Eggs/Egg[Pokemon/@current and Pokemon/@name = $name and (not($form) or Pokemon/@form = $form)]/@type" />
     <xsl:variable name="raidboss" select="count(/Root/RaidBosses/RaidBoss[@name = $name and @current and @tier]) != 0" />
 
-    <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below. -->
+    <!-- If @href is specified, use this trick to wrap it up in a <a> (Which is closed in similar segement below.) -->
     <xsl:if test="exslt:node-set($Settings)/*/@href">
       <xsl:value-of select="concat($lt, 'a ')" disable-output-escaping="yes" />
       <xsl:value-of select="concat('href=', $quot, exslt:node-set($Settings)/*/@href, $quot)" disable-output-escaping="yes" />
@@ -97,6 +97,7 @@
               <xsl:when test="$pokemon/../@gen = 5">GEN5 </xsl:when>
               <xsl:when test="$pokemon/../@gen = 6">GEN6 </xsl:when>
               <xsl:when test="$pokemon/../@gen = 7">GEN7 </xsl:when>
+              <xsl:when test="$pokemon/../@gen = 8">GEN8 </xsl:when>
             </xsl:choose>
           </xsl:otherwise>
         </xsl:choose>
@@ -443,13 +444,16 @@
 
         <!-- Choose the correct form if one is specified -->
         <xsl:variable name="form" select="/Root/PokemonSprites/Pokemon[@id = $pokemon/@id]/Form[@name = $pokemon/@form]/@value" />
+            <xsl:text>_</xsl:text>
         <xsl:choose>
           <xsl:when test="$form">
-            <xsl:text>_</xsl:text>
             <xsl:value-of select="$form" />
           </xsl:when>
+          <xsl:when test="/Root/PokemonSprites/Pokemon[@id = $pokemon/@id]/Form[1]/@value != ''">
+            <xsl:value-of select="/Root/PokemonSprites/Pokemon[@id = $pokemon/@id]/Form[1]/@value"/>
+          </xsl:when>
           <xsl:otherwise>
-            <xsl:text>_00</xsl:text>
+            <xsl:text>00</xsl:text>
           </xsl:otherwise>
         </xsl:choose>
 

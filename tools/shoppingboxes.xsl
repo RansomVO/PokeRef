@@ -96,13 +96,20 @@
         </p>
         <p>
           <b>Last Updated</b>:
-          <xsl:value-of select="ShoppingBoxes/Event/@date" />
-          <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
-          <span class="NOTE">
-            <xsl:text>(</xsl:text>
-            <xsl:value-of select="ShoppingBoxes/Event/@note" />
-            <xsl:text>)</xsl:text>
-          </span>
+          <xsl:choose>
+            <xsl:when test="ShoppingBoxes/Event/@note != ''">
+              <xsl:value-of select="ShoppingBoxes/Event/@date" />
+              <xsl:value-of select="$nbsp" disable-output-escaping="yes" />
+              <span class="NOTE">
+                <xsl:text>(</xsl:text>
+                <xsl:value-of select="ShoppingBoxes/Event/@note" />
+                <xsl:text>)</xsl:text>
+              </span>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="ShoppingBoxes/@last_updated" />
+            </xsl:otherwise>
+          </xsl:choose>
         </p>
 
         <br />

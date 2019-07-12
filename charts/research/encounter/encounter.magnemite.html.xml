@@ -2,6 +2,7 @@
 <!DOCTYPE Root [
   <!ENTITY Constants SYSTEM "/_datafiles/constants.xml">
   <!ENTITY Settings SYSTEM "/_datafiles/settings.xml">
+  <!ENTITY PokeSprites SYSTEM "/_datafiles.manual/infrequent/pokemon.sprites.xml">
   <!ENTITY Images SYSTEM "/_datafiles.manual/infrequent/images.xml">
   <!ENTITY PokeStats SYSTEM "/_datafiles/pokestats.gen1.xml">
   <!ENTITY Encounter SYSTEM "/_datafiles/encounter/encounter.magnemite.xml">
@@ -10,6 +11,7 @@
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   &Constants; 
   &Settings;
+  &PokeSprites;
   &Images;
   &PokeStats;
   &Encounter;

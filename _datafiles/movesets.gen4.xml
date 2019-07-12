@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-01" gen="4">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-07-02" gen="4">
   <Pokemon id="387" name="Turtwig">
     <MoveSet base_dps="15.730337078651685" true_dps="13.033707865168539" comparison="91">
       <FastAttack name="Tackle" stab="false" legacy="false" />
@@ -911,14 +911,6 @@
       <FastAttack name="Bullet Seed" stab="true" legacy="false" />
       <ChargedAttack name="Seed Bomb" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="18.421052631578949" true_dps="14.473684210526317" comparison="111">
-      <FastAttack name="Tackle" stab="false" legacy="false" />
-      <ChargedAttack name="Power Whip" stab="true" legacy="true" />
-    </MoveSet>
-    <MoveSet base_dps="17.428571428571427" true_dps="14" comparison="107">
-      <FastAttack name="Bullet Seed" stab="true" legacy="false" />
-      <ChargedAttack name="Power Whip" stab="true" legacy="true" />
-    </MoveSet>
   </Pokemon>
   <Pokemon id="421" name="Cherrim">
     <MoveSet base_dps="17.739130434782609" true_dps="19.217391304347824" comparison="86">
@@ -993,41 +985,53 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="423" name="Gastrodon">
-    <MoveSet base_dps="14.215686274509805" true_dps="16.764705882352942" comparison="90">
+    <MoveSet base_dps="14.215686274509805" true_dps="16.764705882352942" comparison="86">
       <FastAttack name="Mud Slap" stab="true" legacy="false" />
       <ChargedAttack name="Water Pulse" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.740740740740742" true_dps="18.580246913580247" comparison="99">
+    <MoveSet base_dps="16.509433962264151" true_dps="19.433962264150946" comparison="100">
       <FastAttack name="Mud Slap" stab="true" legacy="false" />
-      <ChargedAttack name="Earthquake" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.57377049180328" true_dps="16.557377049180328" comparison="89">
+    <MoveSet base_dps="15.57377049180328" true_dps="16.557377049180328" comparison="85">
       <FastAttack name="Mud Slap" stab="true" legacy="false" />
       <ChargedAttack name="Body Slam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.130434782608697" true_dps="16.630434782608695" comparison="89">
+    <MoveSet base_dps="14.130434782608697" true_dps="16.630434782608695" comparison="85">
       <FastAttack name="Hidden Power" stab="true" legacy="false" />
       <ChargedAttack name="Water Pulse" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.130434782608697" true_dps="14.891304347826088" comparison="80">
+    <MoveSet base_dps="14.130434782608697" true_dps="14.891304347826088" comparison="77">
       <FastAttack name="Hidden Power" stab="false" legacy="false" />
       <ChargedAttack name="Water Pulse" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.957446808510639" true_dps="18.794326241134751" comparison="100">
+    <MoveSet base_dps="16.666666666666668" true_dps="19.583333333333336" comparison="100">
       <FastAttack name="Hidden Power" stab="true" legacy="false" />
-      <ChargedAttack name="Earthquake" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.957446808510639" true_dps="16.808510638297872" comparison="90">
+    <MoveSet base_dps="16.666666666666668" true_dps="17.916666666666668" comparison="92">
       <FastAttack name="Hidden Power" stab="false" legacy="false" />
-      <ChargedAttack name="Earthquake" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.84375" true_dps="15.78125" comparison="84">
+    <MoveSet base_dps="14.84375" true_dps="15.78125" comparison="81">
       <FastAttack name="Hidden Power" stab="true" legacy="false" />
       <ChargedAttack name="Body Slam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="14.84375" true_dps="13.90625" comparison="74">
+    <MoveSet base_dps="14.84375" true_dps="13.90625" comparison="72">
       <FastAttack name="Hidden Power" stab="false" legacy="false" />
       <ChargedAttack name="Body Slam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="15.740740740740742" true_dps="18.580246913580247" comparison="95">
+      <FastAttack name="Mud Slap" stab="true" legacy="false" />
+      <ChargedAttack name="Earthquake" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="15.957446808510639" true_dps="18.794326241134751" comparison="96">
+      <FastAttack name="Hidden Power" stab="true" legacy="false" />
+      <ChargedAttack name="Earthquake" stab="true" legacy="true" />
+    </MoveSet>
+    <MoveSet base_dps="15.957446808510639" true_dps="16.808510638297872" comparison="86">
+      <FastAttack name="Hidden Power" stab="false" legacy="false" />
+      <ChargedAttack name="Earthquake" stab="true" legacy="true" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="424" name="Ambipom">
@@ -1699,29 +1703,37 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="450" name="Hippowdon">
-    <MoveSet base_dps="17.18954248366013" true_dps="20.84967320261438" comparison="100">
+    <MoveSet base_dps="17.18954248366013" true_dps="20.84967320261438" comparison="93">
       <FastAttack name="Fire Fang" stab="false" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.357142857142858" true_dps="18.928571428571427" comparison="91">
+    <MoveSet base_dps="17.357142857142858" true_dps="18.928571428571427" comparison="85">
       <FastAttack name="Fire Fang" stab="false" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.40625" true_dps="17.96875" comparison="86">
+    <MoveSet base_dps="16.40625" true_dps="17.96875" comparison="80">
       <FastAttack name="Fire Fang" stab="false" legacy="false" />
       <ChargedAttack name="Body Slam" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.770186335403725" true_dps="20.993788819875775" comparison="100">
+    <MoveSet base_dps="17.878787878787879" true_dps="22.222222222222221" comparison="99">
+      <FastAttack name="Fire Fang" stab="false" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.770186335403725" true_dps="20.993788819875775" comparison="94">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.891891891891891" true_dps="19.189189189189189" comparison="92">
+    <MoveSet base_dps="16.891891891891891" true_dps="19.189189189189189" comparison="86">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.25" true_dps="18.4375" comparison="88">
+    <MoveSet base_dps="16.25" true_dps="18.4375" comparison="83">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Body Slam" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.623762376237625" true_dps="22.475247524752476" comparison="100">
+      <FastAttack name="Bite" stab="false" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="451" name="Skorupi">

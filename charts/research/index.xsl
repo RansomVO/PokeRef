@@ -322,7 +322,12 @@
         <xsl:with-param name="Settings">
           <Show hide_type_icons="true" hide_special_icons="true">
             <xsl:attribute name="href">
-              <xsl:value-of select="concat('encounter/encounter.', pokeref:ToLower($name), '.html')" />
+              <xsl:text>encounter/encounter.</xsl:text>
+              <xsl:value-of select="pokeref:ToLower($name)" />
+              <xsl:if test="$form != ''">
+                <xsl:value-of select="concat('.', pokeref:ToLower(pokeref:Replace($form,' ', '_')))" />
+              </xsl:if>
+              <xsl:text>.html</xsl:text>
             </xsl:attribute>
           </Show>
         </xsl:with-param>

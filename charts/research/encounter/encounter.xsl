@@ -26,20 +26,32 @@
         </link>
 
         <title>
-          <xsl:value-of select="Encounter/Pokemon/@name" /> - Encounter Possible IVs
+          <xsl:value-of select="Encounter/Pokemon/@name" />
+          <xsl:if test="Encounter/Pokemon/@form">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="Encounter/Pokemon/@form"/>
+            <xsl:text>)</xsl:text>
+          </xsl:if>
+          <xsl:text> - Encounter Possible IVs</xsl:text>
         </title>
       </head>
       <body>
         <h1>
           <xsl:call-template name="HomePageLink" />
-          Encounter Possible IVs:<br />
-
+          Encounter Possible IVs<br />
           <xsl:apply-templates select="Encounter/Pokemon" mode="Sprite">
             <xsl:with-param name="Settings">
               <Show large="true" />
             </xsl:with-param>
           </xsl:apply-templates>
           <xsl:value-of select="Encounter/Pokemon/@name" />
+          <xsl:if test="Encounter/Pokemon/@form">
+            <span class="NOTE">
+              <xsl:text> (</xsl:text>
+              <xsl:value-of select="Encounter/Pokemon/@form"/>
+              <xsl:text>)</xsl:text>
+            </span>
+          </xsl:if>
         </h1>
         <p>
           When you are trying to catch a Pokemon from an Encounter that is a reward for Research, you can figure out how good it may be before you even throw your first ball.

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-05" gen="1" region="Kanto">
+<PokeStats xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-07-02" gen="1" region="Kanto">
   <Pokemon id="1" name="Bulbasaur" family="Bulbasaur" buddy_km="3" gender_ratio="7 : 1" availability="General" shiny="2018-03-25">
     <Type primary="Grass" secondary="Poison" />
     <Stats>
@@ -202,7 +202,7 @@
       <Max cp="734" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="19" name="Rattata" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="19" name="Rattata" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Dark" secondary="Normal" />
     <Stats>
       <BaseIV attack="103" defense="70" stamina="102" />
@@ -233,9 +233,9 @@
       <Max cp="1730" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="20" name="Raticate" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="20" name="Raticate" form="Alola" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Dark" secondary="Normal" />
-    <EvolvesFrom id="19" name="Rattata" candies="25" />
+    <EvolvesFrom id="19" name="Rattata" form="Alola" candies="25" />
     <Stats>
       <BaseIV attack="135" defense="154" stamina="181" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -246,7 +246,7 @@
   </Pokemon>
   <Pokemon id="20" name="Raticate" form="Normal" family="Rattata" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-02-26">
     <Type primary="Normal" />
-    <EvolvesFrom id="19" name="Rattata" candies="25" />
+    <EvolvesFrom id="19" name="Rattata" form="Normal" candies="25" />
     <Stats>
       <BaseIV attack="161" defense="139" stamina="146" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -321,7 +321,7 @@
   </Pokemon>
   <Pokemon id="26" name="Raichu" form="Alola" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-03">
     <Type primary="Electric" secondary="Psychic" />
-    <EvolvesFrom id="25" name="Pikachu" candies="50" />
+    <EvolvesFrom id="25" name="Pikachu" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="201" defense="154" stamina="155" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -332,7 +332,7 @@
   </Pokemon>
   <Pokemon id="26" name="Raichu" form="Normal" family="Pikachu" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2017-08-09">
     <Type primary="Electric" />
-    <EvolvesFrom id="25" name="Pikachu" candies="50" />
+    <EvolvesFrom id="25" name="Pikachu" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="193" defense="151" stamina="155" />
       <Height standard="0.800000011920929" deviation="0.800000011920929" />
@@ -351,7 +351,7 @@
       <Max cp="1261" hp="120" />
     </Stats>
   </Pokemon>
-  <Pokemon id="27" name="Sandshrew" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="27" name="Sandshrew" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K" shiny="2019-06-28">
     <Type primary="Ice" secondary="Steel" />
     <Stats>
       <BaseIV attack="125" defense="129" stamina="137" />
@@ -384,7 +384,7 @@
   </Pokemon>
   <Pokemon id="28" name="Sandslash" form="Alola" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
     <Type primary="Ice" secondary="Steel" />
-    <EvolvesFrom id="27" name="Sandshrew" candies="50" />
+    <EvolvesFrom id="27" name="Sandshrew" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="177" defense="195" stamina="181" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -395,7 +395,7 @@
   </Pokemon>
   <Pokemon id="28" name="Sandslash" form="Normal" family="Sandshrew" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-12-06">
     <Type primary="Ground" />
-    <EvolvesFrom id="27" name="Sandshrew" candies="50" />
+    <EvolvesFrom id="27" name="Sandshrew" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="182" defense="175" stamina="181" />
       <Height standard="1" deviation="1" />
@@ -500,7 +500,7 @@
       <Max cp="883" hp="103" />
     </Stats>
   </Pokemon>
-  <Pokemon id="37" name="Vulpix" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 7K">
+  <Pokemon id="37" name="Vulpix" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Hatch Only: 7K" shiny="2019-06-28">
     <Type primary="Ice" />
     <Stats>
       <BaseIV attack="96" defense="109" stamina="116" />
@@ -531,9 +531,9 @@
       <Max cp="2279" hp="151" />
     </Stats>
   </Pokemon>
-  <Pokemon id="38" name="Ninetales" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Evolve Only">
+  <Pokemon id="38" name="Ninetales" form="Alola" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="Evolve Only" shiny="2019-06-28">
     <Type primary="Ice" secondary="Fairy" />
-    <EvolvesFrom id="37" name="Vulpix" candies="50" />
+    <EvolvesFrom id="37" name="Vulpix" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="170" defense="193" stamina="177" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -544,7 +544,7 @@
   </Pokemon>
   <Pokemon id="38" name="Ninetales" form="Normal" family="Vulpix" buddy_km="3" gender_ratio="1 : 3" availability="General">
     <Type primary="Fire" />
-    <EvolvesFrom id="37" name="Vulpix" candies="50" />
+    <EvolvesFrom id="37" name="Vulpix" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="169" defense="190" stamina="177" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -680,7 +680,7 @@
       <Max cp="676" hp="64" />
     </Stats>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="50" name="Diglett" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Ground" secondary="Steel" />
     <Stats>
       <BaseIV attack="108" defense="81" stamina="67" />
@@ -690,7 +690,7 @@
       <Max cp="681" hp="64" />
     </Stats>
   </Pokemon>
-  <Pokemon id="50" name="Diglett" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="50" name="Diglett" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-04-29">
     <Type primary="Ground" />
     <Stats>
       <BaseIV attack="109" defense="78" stamina="67" />
@@ -711,9 +711,9 @@
       <Max cp="1557" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="51" name="Dugtrio" form="Alola" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Ground" secondary="Steel" />
-    <EvolvesFrom id="50" name="Diglett" candies="50" />
+    <EvolvesFrom id="50" name="Diglett" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="201" defense="142" stamina="111" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -722,9 +722,9 @@
       <Max cp="1897" hp="99" />
     </Stats>
   </Pokemon>
-  <Pokemon id="51" name="Dugtrio" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="51" name="Dugtrio" form="Normal" family="Diglett" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-04-29">
     <Type primary="Ground" />
-    <EvolvesFrom id="50" name="Diglett" candies="50" />
+    <EvolvesFrom id="50" name="Diglett" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="167" defense="136" stamina="111" />
       <Height standard="0.699999988079071" deviation="0.699999988079071" />
@@ -743,7 +743,7 @@
       <Max cp="748" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="52" name="Meowth" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="52" name="Meowth" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K" shiny="2019-06-28">
     <Type primary="Dark" />
     <Stats>
       <BaseIV attack="99" defense="78" stamina="120" />
@@ -774,9 +774,9 @@
       <Max cp="1689" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="53" name="Persian" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
+  <Pokemon id="53" name="Persian" form="Alola" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" shiny="2019-06-28">
     <Type primary="Dark" />
-    <EvolvesFrom id="52" name="Meowth" candies="50" />
+    <EvolvesFrom id="52" name="Meowth" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="158" defense="136" stamina="163" />
       <Height standard="1.1000000238418579" deviation="1.1000000238418579" />
@@ -787,7 +787,7 @@
   </Pokemon>
   <Pokemon id="53" name="Persian" form="Normal" family="Meowth" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Normal" />
-    <EvolvesFrom id="52" name="Meowth" candies="50" />
+    <EvolvesFrom id="52" name="Meowth" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="150" defense="136" stamina="163" />
       <Height standard="1" deviation="1" />
@@ -1018,7 +1018,7 @@
       <Max cp="1293" hp="106" />
     </Stats>
   </Pokemon>
-  <Pokemon id="74" name="Geodude" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="74" name="Geodude" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Rock" secondary="Electric" />
     <Stats>
       <BaseIV attack="132" defense="132" stamina="120" />
@@ -1049,9 +1049,9 @@
       <Max cp="1897" hp="127" />
     </Stats>
   </Pokemon>
-  <Pokemon id="75" name="Graveler" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="75" name="Graveler" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Rock" secondary="Electric" />
-    <EvolvesFrom id="74" name="Geodude" candies="25" />
+    <EvolvesFrom id="74" name="Geodude" form="Alola" candies="25" />
     <Stats>
       <BaseIV attack="164" defense="164" stamina="146" />
       <Height standard="1" deviation="1" />
@@ -1062,7 +1062,7 @@
   </Pokemon>
   <Pokemon id="75" name="Graveler" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Rock" secondary="Ground" />
-    <EvolvesFrom id="74" name="Geodude" candies="25" />
+    <EvolvesFrom id="74" name="Geodude" form="Normal" candies="25" />
     <Stats>
       <BaseIV attack="164" defense="164" stamina="146" />
       <Height standard="1" deviation="1" />
@@ -1082,9 +1082,9 @@
       <Max cp="2949" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="76" name="Golem" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="76" name="Golem" form="Alola" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Rock" secondary="Electric" />
-    <EvolvesFrom id="75" name="Graveler" candies="100" />
+    <EvolvesFrom id="75" name="Graveler" form="Alola" candies="100" />
     <Stats>
       <BaseIV attack="211" defense="198" stamina="190" />
       <Height standard="1.7000000476837158" deviation="1.7000000476837158" />
@@ -1095,7 +1095,7 @@
   </Pokemon>
   <Pokemon id="76" name="Golem" form="Normal" family="Geodude" buddy_km="1" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Rock" secondary="Ground" />
-    <EvolvesFrom id="75" name="Graveler" candies="100" />
+    <EvolvesFrom id="75" name="Graveler" form="Normal" candies="100" />
     <Stats>
       <BaseIV attack="211" defense="198" stamina="190" />
       <Height standard="1.3999999761581421" deviation="1.3999999761581421" />
@@ -1158,7 +1158,7 @@
   </Pokemon>
   <Pokemon id="82" name="Magneton" family="Magnemite" buddy_km="3" gender_ratio="⚲" availability="General" shiny="2018-11-16">
     <Type primary="Electric" secondary="Steel" />
-    <EvolvesFrom id="81" name="Magnemite" candies="50" />
+    <EvolvesFrom id="81" name="Magnemite" candies="25" />
     <Stats>
       <BaseIV attack="223" defense="169" stamina="137" />
       <Height standard="1" deviation="1" />
@@ -1198,7 +1198,7 @@
       <Max cp="2362" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="86" name="Seel" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="86" name="Seel" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-05-01">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="85" defense="121" stamina="163" />
@@ -1208,7 +1208,7 @@
       <Max cp="971" hp="140" />
     </Stats>
   </Pokemon>
-  <Pokemon id="87" name="Dewgong" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="87" name="Dewgong" family="Seel" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-05-01">
     <Type primary="Water" secondary="Ice" />
     <EvolvesFrom id="86" name="Seel" candies="50" />
     <Stats>
@@ -1229,7 +1229,7 @@
       <Max cp="1374" hp="162" />
     </Stats>
   </Pokemon>
-  <Pokemon id="88" name="Grimer" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K">
+  <Pokemon id="88" name="Grimer" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Hatch Only: 7K" shiny="2019-06-28">
     <Type primary="Poison" secondary="Dark" />
     <Stats>
       <BaseIV attack="135" defense="90" stamina="190" />
@@ -1260,9 +1260,9 @@
       <Max cp="2757" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="89" name="Muk" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only">
+  <Pokemon id="89" name="Muk" form="Alola" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="Evolve Only" shiny="2019-06-28">
     <Type primary="Poison" secondary="Dark" />
-    <EvolvesFrom id="88" name="Grimer" candies="50" />
+    <EvolvesFrom id="88" name="Grimer" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="190" defense="172" stamina="233" />
       <Height standard="1" deviation="1" />
@@ -1273,7 +1273,7 @@
   </Pokemon>
   <Pokemon id="89" name="Muk" form="Normal" family="Grimer" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-09-13">
     <Type primary="Poison" />
-    <EvolvesFrom id="88" name="Grimer" candies="50" />
+    <EvolvesFrom id="88" name="Grimer" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="190" defense="172" stamina="233" />
       <Height standard="1.2000000476837158" deviation="1.2000000476837158" />
@@ -1335,7 +1335,7 @@
       <Max cp="2878" hp="134" />
     </Stats>
   </Pokemon>
-  <Pokemon id="95" name="Onix" family="Onix" buddy_km="5" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="95" name="Onix" family="Onix" buddy_km="5" gender_ratio="1 : 1" availability="General" shiny="2019-06-04">
     <Type primary="Rock" secondary="Ground" />
     <Stats>
       <BaseIV attack="85" defense="232" stamina="111" />
@@ -1429,9 +1429,9 @@
       <Max cp="3014" hp="182" />
     </Stats>
   </Pokemon>
-  <Pokemon id="103" name="Exeggutor" form="Alola" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="103" name="Exeggutor" form="Alola" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-06-28">
     <Type primary="Grass" secondary="Dragon" />
-    <EvolvesFrom id="102" name="Exeggcute" candies="50" />
+    <EvolvesFrom id="102" name="Exeggcute" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="230" defense="153" stamina="216" />
       <Height standard="10.899999618530273" deviation="10.899999618530273" />
@@ -1442,7 +1442,7 @@
   </Pokemon>
   <Pokemon id="103" name="Exeggutor" form="Normal" family="Exeggcute" buddy_km="3" gender_ratio="1 : 1" availability="General">
     <Type primary="Grass" secondary="Psychic" />
-    <EvolvesFrom id="102" name="Exeggcute" candies="50" />
+    <EvolvesFrom id="102" name="Exeggcute" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="233" defense="149" stamina="216" />
       <Height standard="2" deviation="2" />
@@ -1474,7 +1474,7 @@
   </Pokemon>
   <Pokemon id="105" name="Marowak" form="Alola" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="Raid Boss Only" shiny="2018-11-05">
     <Type primary="Fire" secondary="Ghost" />
-    <EvolvesFrom id="104" name="Cubone" candies="50" />
+    <EvolvesFrom id="104" name="Cubone" form="Alola" candies="50" />
     <Stats>
       <BaseIV attack="144" defense="186" stamina="155" />
       <Height standard="1" deviation="1" />
@@ -1485,7 +1485,7 @@
   </Pokemon>
   <Pokemon id="105" name="Marowak" form="Normal" family="Cubone" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2018-11-05">
     <Type primary="Ground" />
-    <EvolvesFrom id="104" name="Cubone" candies="50" />
+    <EvolvesFrom id="104" name="Cubone" form="Normal" candies="50" />
     <Stats>
       <BaseIV attack="144" defense="186" stamina="155" />
       <Height standard="1" deviation="1" />
@@ -1599,7 +1599,7 @@
       <Max cp="2586" hp="195" />
     </Stats>
   </Pokemon>
-  <Pokemon id="116" name="Horsea" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="116" name="Horsea" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-06-13">
     <Type primary="Water" />
     <Stats>
       <BaseIV attack="129" defense="103" stamina="102" />
@@ -1609,7 +1609,7 @@
       <Max cp="1056" hp="92" />
     </Stats>
   </Pokemon>
-  <Pokemon id="117" name="Seadra" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General">
+  <Pokemon id="117" name="Seadra" family="Horsea" buddy_km="3" gender_ratio="1 : 1" availability="General" shiny="2019-06-13">
     <Type primary="Water" />
     <EvolvesFrom id="116" name="Horsea" candies="25" />
     <Stats>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-04-01" gen="1">
+<MoveSets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" last_updated="2019-07-02" gen="1">
   <Pokemon id="1" name="Bulbasaur">
     <MoveSet base_dps="18.571428571428573" true_dps="15.714285714285715" comparison="98">
       <FastAttack name="Vine Whip" stab="true" legacy="false" />
@@ -1043,29 +1043,37 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="31" name="Nidoqueen">
-    <MoveSet base_dps="17.307692307692307" true_dps="21.923076923076923" comparison="100">
+    <MoveSet base_dps="17.307692307692307" true_dps="21.923076923076923" comparison="98">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.105263157894736" true_dps="21.710526315789476" comparison="100">
+    <MoveSet base_dps="17.105263157894736" true_dps="21.710526315789476" comparison="97">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.482517482517483" true_dps="20.48951048951049" comparison="94">
+    <MoveSet base_dps="17.482517482517483" true_dps="20.48951048951049" comparison="91">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.770186335403725" true_dps="18.4472049689441" comparison="85">
+    <MoveSet base_dps="18" true_dps="22.6" comparison="100">
+      <FastAttack name="Poison Jab" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.770186335403725" true_dps="18.4472049689441" comparison="82">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.560509554140129" true_dps="18.152866242038218" comparison="83">
+    <MoveSet base_dps="16.560509554140129" true_dps="18.152866242038218" comparison="81">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.891891891891891" true_dps="16.756756756756754" comparison="77">
+    <MoveSet base_dps="16.891891891891891" true_dps="16.756756756756754" comparison="75">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Stone Edge" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.623762376237625" true_dps="19.801980198019802" comparison="88">
+      <FastAttack name="Bite" stab="false" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="32" name="Nidoran♂">
@@ -1121,41 +1129,53 @@
     </MoveSet>
   </Pokemon>
   <Pokemon id="34" name="Nidoking">
-    <MoveSet base_dps="17.307692307692307" true_dps="24.03846153846154" comparison="100">
+    <MoveSet base_dps="17.307692307692307" true_dps="24.03846153846154" comparison="97">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.105263157894736" true_dps="23.75" comparison="99">
+    <MoveSet base_dps="17.105263157894736" true_dps="23.75" comparison="96">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.901408450704228" true_dps="21.760563380281692" comparison="91">
+    <MoveSet base_dps="16.901408450704228" true_dps="21.760563380281692" comparison="88">
       <FastAttack name="Poison Jab" stab="true" legacy="false" />
       <ChargedAttack name="Megahorn" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.164179104477611" true_dps="20.8955223880597" comparison="87">
+    <MoveSet base_dps="18" true_dps="24.9" comparison="100">
+      <FastAttack name="Poison Jab" stab="true" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.164179104477611" true_dps="20.8955223880597" comparison="84">
       <FastAttack name="Iron Tail" stab="false" legacy="false" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="17.00507614213198" true_dps="20.609137055837564" comparison="86">
+    <MoveSet base_dps="17.00507614213198" true_dps="20.609137055837564" comparison="83">
       <FastAttack name="Iron Tail" stab="false" legacy="false" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.844919786096256" true_dps="18.930481283422459" comparison="79">
+    <MoveSet base_dps="16.844919786096256" true_dps="18.930481283422459" comparison="77">
       <FastAttack name="Iron Tail" stab="false" legacy="false" />
       <ChargedAttack name="Megahorn" stab="false" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.442307692307693" true_dps="22.403846153846153" comparison="94">
+    <MoveSet base_dps="17.741935483870968" true_dps="22.016129032258064" comparison="89">
+      <FastAttack name="Iron Tail" stab="false" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="16.442307692307693" true_dps="22.403846153846153" comparison="90">
       <FastAttack name="Fury Cutter" stab="false" legacy="true" />
       <ChargedAttack name="Earthquake" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="16.1" true_dps="21.9" comparison="92">
+    <MoveSet base_dps="16.1" true_dps="21.9" comparison="88">
       <FastAttack name="Fury Cutter" stab="false" legacy="true" />
       <ChargedAttack name="Sludge Wave" stab="true" legacy="false" />
     </MoveSet>
-    <MoveSet base_dps="15.666666666666666" true_dps="18.555555555555557" comparison="78">
+    <MoveSet base_dps="15.666666666666666" true_dps="18.555555555555557" comparison="75">
       <FastAttack name="Fury Cutter" stab="false" legacy="true" />
       <ChargedAttack name="Megahorn" stab="false" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.638888888888889" true_dps="24.027777777777779" comparison="97">
+      <FastAttack name="Fury Cutter" stab="false" legacy="true" />
+      <ChargedAttack name="Earth Power" stab="true" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="35" name="Clefairy">
@@ -5653,6 +5673,10 @@
       <FastAttack name="Steel Wing" stab="false" legacy="false" />
       <ChargedAttack name="Rock Slide" stab="true" legacy="false" />
     </MoveSet>
+    <MoveSet base_dps="18.425925925925924" true_dps="21.851851851851851" comparison="91">
+      <FastAttack name="Steel Wing" stab="false" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="false" legacy="false" />
+    </MoveSet>
     <MoveSet base_dps="15.5" true_dps="22" comparison="91">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Ancient Power" stab="true" legacy="false" />
@@ -5668,6 +5692,10 @@
     <MoveSet base_dps="17.173913043478262" true_dps="24.239130434782609" comparison="100">
       <FastAttack name="Bite" stab="false" legacy="false" />
       <ChargedAttack name="Rock Slide" stab="true" legacy="false" />
+    </MoveSet>
+    <MoveSet base_dps="17.623762376237625" true_dps="22.079207920792079" comparison="92">
+      <FastAttack name="Bite" stab="false" legacy="false" />
+      <ChargedAttack name="Earth Power" stab="false" legacy="false" />
     </MoveSet>
   </Pokemon>
   <Pokemon id="143" name="Snorlax">
